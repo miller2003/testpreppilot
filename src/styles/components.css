@@ -15,6 +15,9 @@
   font-family: var(--font-body);
   letter-spacing: -0.01em;
 }
+.button, .button:visited, .button:hover, .button:active {
+  color: var(--paper);
+}
 .button:hover {
   transform: translateY(-2px) scale(1.02);
   box-shadow: var(--shadow-md);
@@ -137,6 +140,11 @@
     color: var(--muted);
   }
 }
+.mobile-only { display: none; }
+@media (max-width: 800px) {
+  .desktop-only { display: none; }
+  .mobile-only { display: block; }
+}
 
 /* Affiliate Box */
 .affiliate-box {
@@ -186,7 +194,6 @@
 .breadcrumb-nav { font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: var(--space-4); }
 .breadcrumb-nav ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
 .breadcrumb-nav li { display: inline-flex; align-items: center; gap: 0.4rem; }
-.breadcrumb-nav li:not(:last-child)::after { content: "›"; color: var(--muted); margin-left: 0.4rem; font-family: var(--font-body); }
 .breadcrumb-nav a { color: var(--primary); text-decoration: none; }
 .breadcrumb-nav a:hover { text-decoration: underline; }
 .breadcrumb-nav [aria-current="page"] { color: var(--muted); }

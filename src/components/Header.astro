@@ -4,16 +4,16 @@ import ThemeToggle from './ThemeToggle.astro';
 <header class="header">
   <div class="header-container">
     <a href="/" class="brand" aria-label="TestPrepPilot Home">
-      <span class="brand-mark">C</span>
-      <span>TestPrep<br/>Pilot</span>
+      TestPrepPilot
     </a>
 
     <nav class="desktop-nav" aria-label="Main Navigation">
-      <a href="/explore">Explore</a>
       <a href="/how-it-works">How it works</a>
-      <a href="/methodology">Methodology</a>
+      <a href="/reviews">Reviews</a>
+      <a href="/guides">Guides</a>
+      <a href="/about">About</a>
       <ThemeToggle />
-      <a href="/explore" class="button button-small">Explore</a>
+      <a href="/explore" class="button button-small">Exams</a>
     </nav>
 
     <div class="mobile-menu-wrapper">
@@ -24,10 +24,11 @@ import ThemeToggle from './ThemeToggle.astro';
         <span></span>
       </label>
       <nav class="mobile-nav" aria-label="Mobile Navigation">
-        <a href="/explore">Explore</a>
         <a href="/how-it-works">How it works</a>
-        <a href="/methodology">Methodology</a>
-        <a href="/explore" class="button button-small">Explore</a>
+        <a href="/reviews">Reviews</a>
+        <a href="/guides">Guides</a>
+        <a href="/about">About</a>
+        <a href="/explore" class="button button-small">Exams</a>
       </nav>
     </div>
   </div>

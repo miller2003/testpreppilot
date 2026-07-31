@@ -4,25 +4,29 @@ import { credentials } from '../data/credentials';
 import { categories } from '../data/categories';
 import BreadcrumbNav from '../components/BreadcrumbNav.astro';
 import SearchUI from '../components/SearchUI.astro';
-const categoryParam = Astro.url.searchParams.get('category');
-const filteredCredentials = categoryParam 
-  ? credentials.filter(c => c.category === categoryParam)
-  : credentials;
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: 'Explore', href: '/explore' }
 ];
+
+const categoriesWithCredentials = categories.map(cat => ({
+  ...cat,
+  credentials: credentials.filter(c => c.category === cat.id)
+})).filter(cat => cat.credentials.length > 0);
+
+const canonicalUrl = new URL('/explore', Astro.site || 'https://testpreppilot.com').toString();
 ---
 
 <BaseLayout 
   title="Explore Credentials Directory — TestPrepPilot" 
   description="Browse our comprehensive directory of professional credentials, certifications, and licenses."
+  canonical={canonicalUrl}
 >
   <div class="container | animate-on-scroll">
     <BreadcrumbNav items={breadcrumbItems} />
     
-    <header class="page-hero">
+    <header class="explore-hero">
       <p class="eyebrow">CREDENTIAL DIRECTORY</p>
       <h1>Find the path that <em>fits your future.</em></h1>
       <p class="lede">Browse our curated database of verified professional certifications and state licenses.</p>
@@ -30,10 +34,9 @@ const breadcrumbItems = [
 
     <div class="directory-layout">
       <aside class="filter-sidebar">
-        <nav class="filter-nav">
-          <a href="/explore" class={!categoryParam ? 'active' : ''}>All paths</a>
-          {categories.map(cat => (
-            <a href={`/explore?category=${cat.id}`} class={categoryParam === cat.id ? 'active' : ''}>
+        <nav class="filter-nav" id="scroll-spy-nav">
+          {categoriesWithCredentials.map((cat, idx) => (
+            <a href={`#${cat.id}`} class={`spy-link ${idx === 0 ? 'active' : ''}`} data-target={cat.id}>
               {cat.name}
             </a>
           ))}
@@ -45,76 +48,144 @@ const breadcrumbItems = [
           <SearchUI />
         </div>
 
-        <ul class="directory-list" id="directory-list">
-          {filteredCredentials.length > 0 ? (
-            filteredCredentials.map(cred => (
-              <li class="directory-item" data-name={cred.name.toLowerCase()} data-category={cred.category.toLowerCase()} data-tagline={cred.tagline?.toLowerCase() || ''}>
-                <a href={`/paths/${cred.slug}`} class="item-link">
-                  <div class="item-dot"></div>
-                  <div class="item-content">
-                    <div class="item-meta">
-                      <span class="item-category">{cred.category}</span>
-                      <span class="item-type">{cred.type}</span>
-                    </div>
-                    <h2 class="item-title">{cred.name}</h2>
-                    <p class="item-tagline">{cred.tagline}</p>
-                    <div class="item-details">
-                      {cred.time && <span><i class="icon-clock"></i> {cred.time}</span>}
-                      {cred.cost && <span><i class="icon-wallet"></i> {cred.cost}</span>}
-                    </div>
-                  </div>
-                  <div class="item-arrow">&rarr;</div>
-                </a>
-              </li>
-            ))
-          ) : (
-            <li class="empty-state">
-              <p>No credentials found for this category.</p>
-              <a href="/explore" class="btn btn-outline">Clear filters</a>
-            </li>
-          )}
-        </ul>
+        <div class="category-sections">
+          {categoriesWithCredentials.map(cat => (
+            <section id={cat.id} class="category-section scroll-spy-section">
+              <div class="section-header">
+                <h2>{cat.name}</h2>
+                <p>{cat.description}</p>
+              </div>
+              
+              <ul class="directory-list" id={`list-${cat.id}`}>
+                {cat.credentials.map(cred => (
+                  <li class="directory-item" data-name={cred.name.toLowerCase()} data-category={cred.category.toLowerCase()} data-tagline={cred.tagline?.toLowerCase() || ''}>
+                    <a href={`/paths/${cred.slug}`} class="item-link">
+                      <div class="item-content">
+                        <h3 class="item-title">{cred.name}</h3>
+                      </div>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
       </main>
     </div>
   </div>
 </BaseLayout>
 
+<script is:inline>
+  document.addEventListener('astro:page-load', () => {
+    const sections = document.querySelectorAll('.scroll-spy-section');
+    const navLinks = document.querySelectorAll('.spy-link');
 
+    if (!sections.length || !navLinks.length) return;
+
+    // Smooth scroll for nav links
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+          history.pushState(null, null, `#${targetId}`);
+        }
+      });
+    });
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-100px 0px -60% 0px',
+      threshold: 0
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const currentId = entry.target.getAttribute('id');
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('data-target') === currentId) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    sections.forEach(section => observer.observe(section));
+
+    // Handle initial hash on load
+    if (window.location.hash) {
+      const id = window.location.hash.substring(1);
+      const target = document.getElementById(id);
+      if (target) {
+        setTimeout(() => target.scrollIntoView({ behavior: 'smooth' }), 100);
+      }
+    }
+  });
+</script>
 
 <style>
-  .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-  .page-hero { padding: 4rem 0; border-bottom: 1px solid var(--ink); margin-bottom: 2rem; }
-  .page-hero h1 { font-size: 3.5rem; margin: 1rem 0; }
-  .page-hero .lede { font-size: 1.25rem; max-width: 700px; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
   
-  .directory-layout { display: grid; grid-template-columns: 250px 1fr; gap: 3rem; }
+  /* Hero Section */
+  .explore-hero { margin-top: -1rem; padding: 0 0 1rem 0; border-bottom: 1px solid var(--line); margin-bottom: 1rem; }
+  .explore-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.75rem; margin-bottom: 0.25rem; font-weight: 700; }
+  .explore-hero h1 { font-family: var(--font-heading); font-size: clamp(2rem, 3.5vw, 3.5rem); margin: 0 0 0.25rem; font-weight: 700; line-height: 1.1; }
+  .explore-hero .lede { font-family: var(--font-body); font-size: 1.1rem; color: var(--muted); max-width: 750px; line-height: 1.5; margin: 0; }
   
-  .filter-nav { display: flex; flex-direction: column; gap: 0.5rem; position: sticky; top: 2rem; }
-  .filter-nav a { padding: 0.5rem 1rem; border-left: 2px solid transparent; color: var(--ink); text-decoration: none; transition: all 0.2s; }
-  .filter-nav a:hover, .filter-nav a.active { border-left-color: var(--primary); font-weight: bold; background: var(--cream); }
+  /* Layout */
+  .directory-layout { display: grid; grid-template-columns: 240px 1fr; gap: 2rem; padding-bottom: 4rem; }
   
-  .search-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; gap: 1rem; flex-wrap: wrap; }
-  .search-bar input { flex: 1; min-width: 250px; padding: 0.75rem 1rem; border: 1px solid var(--ink); border-radius: 4px; font-family: var(--font-body); }
-  .result-count { font-family: var(--font-mono); font-size: 0.875rem; color: #666; }
+  /* Sidebar Nav */
+  .filter-sidebar { position: relative; }
+  .filter-nav { display: flex; flex-direction: column; gap: 0.25rem; position: sticky; top: 120px; border-right: 1px solid var(--line); padding-right: 1.5rem; }
+  .filter-nav a { padding: 0.75rem 1rem; border-right: 2px solid transparent; margin-right: -1.5rem; color: var(--muted); text-decoration: none; transition: all var(--transition); font-family: var(--font-body); font-size: 1.05rem; }
+  .filter-nav a:hover { color: var(--ink); }
+  .filter-nav a.active { border-right-color: var(--primary); color: var(--ink); font-weight: 700; font-family: var(--font-heading); font-size: 1.25rem; }
   
-  .directory-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1rem; }
-  .directory-item .item-link { display: grid; grid-template-columns: auto 1fr auto; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--paper); border: 1px solid #ddd; text-decoration: none; color: var(--ink); transition: all 0.2s ease; border-radius: 4px; }
-  .directory-item .item-link:hover { border-color: var(--ink); box-shadow: 4px 4px 0 var(--ink); transform: translate(-2px, -2px); }
+  /* Main Content */
+  .search-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0; gap: 1rem; flex-wrap: wrap; }
+  .search-bar input { flex: 1; min-width: 250px; padding: 0.65rem 1rem; border: 1px solid var(--line); border-radius: var(--radius); font-family: var(--font-body); font-size: 1rem; transition: border-color var(--transition); background: var(--paper); color: var(--ink); }
+  .search-bar input:focus { outline: none; border-color: var(--primary); }
   
-  .item-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--primary); }
-  .item-meta { display: flex; gap: 1rem; font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.5rem; color: #666; }
-  .item-title { font-size: 1.25rem; margin: 0 0 0.5rem 0; font-family: var(--font-serif); }
-  .item-tagline { margin: 0 0 1rem 0; font-size: 0.9rem; }
-  .item-details { display: flex; gap: 1.5rem; font-family: var(--font-mono); font-size: 0.8rem; color: #555; }
-  .item-arrow { font-size: 1.5rem; opacity: 0; transition: opacity 0.2s, transform 0.2s; }
-  .directory-item .item-link:hover .item-arrow { opacity: 1; transform: translateX(5px); }
+  /* Sections */
+  .category-sections { display: flex; flex-direction: column; gap: 1rem; }
+  .category-section { scroll-margin-top: 60px; }
+  .section-header { margin-bottom: 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--line); }
+  .section-header h2 { font-family: var(--font-heading); font-size: 1.4rem; margin: 0 0 0.15rem 0; color: var(--ink); font-weight: 600; line-height: 1.2; }
+  .section-header p { font-family: var(--font-body); font-size: 0.85rem; color: var(--muted); margin: 0; line-height: 1.4; }
   
-  .empty-state { padding: 3rem; text-align: center; background: var(--cream); border-radius: 4px; }
+  /* Directory Grid (Strict 3 Columns) */
+  .directory-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
   
-  @media (max-width: 768px) {
-    .directory-layout { grid-template-columns: 1fr; }
-    .filter-nav { flex-direction: row; flex-wrap: wrap; position: static; }
-    .filter-nav a { border-left: none; border-bottom: 2px solid transparent; }
-    .filter-nav a:hover, .filter-nav a.active { border-left-color: transparent; border-bottom-color: var(--primary); }
+  /* Credential Card */
+  .directory-item { display: flex; }
+  .item-link { display: flex; flex-direction: column; width: 100%; padding: 1rem 1.25rem; background: var(--paper); border: 1px solid var(--line); text-decoration: none; color: var(--ink); transition: all var(--transition); border-radius: var(--radius); position: relative; overflow: hidden; }
+  
+  .item-link::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--primary); transform: scaleX(0); transform-origin: left; transition: transform var(--transition); }
+  
+  .item-link:hover { border-color: transparent; box-shadow: var(--shadow-hover); transform: translateY(-3px); text-decoration: none; }
+  .item-link:hover::before { transform: scaleX(1); }
+  
+  .item-title { font-size: 1.15rem; margin: 0; font-family: var(--font-body); font-weight: 600; line-height: 1.3; text-rendering: optimizeLegibility; }
+  
+  /* Removed item-dot and item-arrow from original DOM to simplify elegant design */
+  .item-dot, .item-arrow { display: none; }
+  
+  .empty-state { grid-column: 1 / -1; padding: 4rem; text-align: center; background: var(--cream); border-radius: var(--radius); border: 1px solid var(--line); }
+  .empty-state p { font-size: 1.25rem; font-family: var(--font-heading); color: var(--ink); margin-bottom: 1.5rem; }
+  
+  @media (max-width: 900px) {
+    .directory-layout { grid-template-columns: 1fr; gap: 2rem; }
+    .filter-nav { flex-direction: row; flex-wrap: wrap; position: static; border-right: none; padding-right: 0; border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
+    .filter-nav a { border-right: none; border-bottom: 2px solid transparent; margin-right: 0; margin-bottom: -1rem; padding: 0.5rem 1rem; }
+    .filter-nav a.active { border-right-color: transparent; border-bottom-color: var(--primary); }
+    .page-hero { padding: 3rem 0; margin-bottom: 2rem; }
+    .directory-list { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
   }
 </style>

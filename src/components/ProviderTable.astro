@@ -7,8 +7,23 @@ interface Props {
   credentialName?: string;
 }
 
-const { providers } = Astro.props;
+const { providers, credentialName = 'Certification Providers' } = Astro.props;
 const hasAffiliate = providers.some(p => p.affiliateUrl);
+
+const schemaData = providers && providers.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": `${credentialName} Approved Providers`,
+  "itemListElement": providers.map((provider, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "Organization",
+      "name": provider.name,
+      "url": provider.affiliateUrl || provider.url
+    }
+  }))
+} : null;
 ---
 <div class="provider-table-wrapper">
   <table class="provider-table desktop-only">
@@ -67,4 +82,7 @@ const hasAffiliate = providers.some(p => p.affiliateUrl);
   </div>
 
   {hasAffiliate && <InlineDisclosure />}
+  {schemaData && (
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData, null, 2)} is:inline />
+  )}
 </div>

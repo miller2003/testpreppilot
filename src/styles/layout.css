@@ -25,26 +25,17 @@
 }
 
 .brand {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
   text-decoration: none;
   color: var(--ink);
   font-family: var(--font-heading);
   font-weight: 700;
-  line-height: 1.1;
+  font-size: 1.85rem;
+  letter-spacing: -0.02em;
+  transition: opacity var(--transition);
 }
 
-.brand-mark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: var(--ink);
-  color: var(--paper);
-  border-radius: var(--radius);
-  font-size: 1.5rem;
+.brand:hover {
+  opacity: 0.8;
 }
 
 .desktop-nav {

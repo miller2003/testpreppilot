@@ -9,50 +9,101 @@ const breadcrumbItems = [
 ---
 
 <BaseLayout 
-  title="How It Works — TestPrepPilot"
-  description="Learn how to use TestPrepPilot to find and pursue your next career milestone."
+  title="How It Works & Methodology — TestPrepPilot"
+  description="Learn how TestPrepPilot researches and structures our certification roadmaps to help you pass."
 >
-  <div class="container | animate-on-scroll">
+  <div class="container">
     <BreadcrumbNav items={breadcrumbItems} />
     
-    <header class="page-hero">
-      <p class="eyebrow">HOW IT WORKS</p>
-      <h1>A more useful way to <em>move forward.</em></h1>
-      <p class="lede">We've designed this platform to cut through the noise and get you straight to the information that matters.</p>
+    <header class="editorial-hero">
+      <div class="affiliate-notice">
+        <a href="/affiliate-disclosure">Read our Affiliate Disclosure</a>
+      </div>
+      <h1>A rigorous approach to <em>your success.</em></h1>
+      <p class="lede">We cut through regulatory jargon and marketing noise to deliver independently researched, data-backed roadmaps for your career.</p>
     </header>
 
-    <main class="principles">
-      <section class="principle">
-        <div class="numeral">01</div>
-        <h2>Start with a goal</h2>
-        <p>Use our Path Finder or browse our directory to locate the exact certification or license required for your desired role. We cover everything from entry-level IT certifications to complex state-by-state medical licenses.</p>
+    <main class="principles-grid">
+      <section class="principle-card">
+        <div class="principle-meta">
+          <span class="numeral">01</span>
+          <span class="phase">Research</span>
+        </div>
+        <div class="principle-content">
+          <h2>Independent Analysis</h2>
+          <p>Our editorial team manually reviews state regulations, official candidate handbooks, and testing provider requirements. We translate hundreds of pages of bureaucratic legalese into clear, sequential steps so you know exactly what is required.</p>
+        </div>
       </section>
       
-      <section class="principle">
-        <div class="numeral">02</div>
-        <h2>See the full route</h2>
-        <p>Our guides lay out the exact steps, prerequisites, costs, and time commitments. No surprises. We distill hundreds of pages of regulatory jargon into simple, sequential checklists.</p>
+      <section class="principle-card">
+        <div class="principle-meta">
+          <span class="numeral">02</span>
+          <span class="phase">Structure</span>
+        </div>
+        <div class="principle-content">
+          <h2>The Optimal Route</h2>
+          <p>Not all prep is created equal. We analyze pass rates, syllabus coverage, and student feedback to structure roadmaps that maximize your score while minimizing wasted time. We lay out prerequisites, costs, and timelines upfront.</p>
+        </div>
       </section>
       
-      <section class="principle">
-        <div class="numeral">03</div>
-        <h2>Choose deliberately</h2>
-        <p>Review our side-by-side comparisons of approved educational providers and exam prep materials. Find the option that fits your budget and schedule, then take the next step with confidence.</p>
+      <section class="principle-card">
+        <div class="principle-meta">
+          <span class="numeral">03</span>
+          <span class="phase">Action</span>
+        </div>
+        <div class="principle-content">
+          <h2>Curated Comparisons</h2>
+          <p>We provide side-by-side comparisons of approved educational providers and premium exam prep materials. Find the option that perfectly aligns with your learning style, budget, and schedule, then take the next step with absolute confidence.</p>
+        </div>
       </section>
     </main>
   </div>
 </BaseLayout>
 
 <style>
-  .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
   
-  .page-hero { padding: 4rem 0; border-bottom: 2px solid var(--ink); margin-bottom: 4rem; text-align: center; }
-  .page-hero h1 { font-size: 4rem; margin: 1rem 0; }
-  .page-hero .lede { font-size: 1.5rem; color: #444; max-width: 700px; margin: 0 auto; }
+  /* Hero Section */
+  .editorial-hero { padding: 3rem 0 4rem; border-bottom: 1px solid var(--line); margin-bottom: 4rem; text-align: center; }
   
-  .principles { display: grid; gap: 4rem; margin-bottom: 6rem; }
-  .principle { background: var(--cream); padding: 3rem; border-radius: 4px; border: 1px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); position: relative; }
-  .numeral { font-family: var(--font-mono); font-size: 4rem; color: var(--primary); font-weight: bold; position: absolute; top: -2rem; left: 2rem; background: var(--paper); padding: 0 1rem; border: 1px solid var(--ink); }
-  .principle h2 { font-size: 2.5rem; font-family: var(--font-serif); margin-top: 1rem; margin-bottom: 1rem; }
-  .principle p { font-size: 1.25rem; line-height: 1.6; color: var(--ink); }
+  .affiliate-notice { margin-bottom: 2rem; text-align: center; }
+  .affiliate-notice a { font-family: var(--font-body); font-size: 0.85rem; color: #888888 !important; text-decoration: none; transition: color var(--transition); }
+  .affiliate-notice a:hover { color: var(--ink) !important; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px; }
+  
+  .editorial-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 1.5rem; font-weight: 700; }
+  .editorial-hero h1 { font-family: var(--font-heading); font-size: clamp(3rem, 5vw, 4.5rem); margin: 0 0 1.5rem; font-weight: 700; line-height: 1.1; color: var(--ink); }
+  .editorial-hero .lede { font-family: var(--font-body); font-size: 1.35rem; color: var(--muted); max-width: 750px; margin: 0 auto; line-height: 1.7; }
+  
+  /* Principles Grid */
+  .principles-grid { display: flex; flex-direction: column; gap: 3rem; margin-bottom: 8rem; }
+  
+  .principle-card { 
+    background: var(--paper); 
+    padding: 3rem; 
+    border-radius: var(--radius); 
+    border: 1px solid var(--line); 
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 3rem;
+    align-items: start;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  
+  .principle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .principle-meta { display: flex; flex-direction: column; gap: 0.5rem; }
+  .numeral { font-family: var(--font-heading); font-size: 4.5rem; color: var(--primary); font-weight: 400; line-height: 1; opacity: 0.9; }
+  .phase { font-family: var(--font-mono); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); font-weight: 600; padding-top: 0.5rem; border-top: 1px solid var(--line); margin-top: 1rem; }
+  
+  .principle-content h2 { font-size: 2.2rem; font-family: var(--font-heading); margin: 0 0 1.25rem 0; color: var(--ink); line-height: 1.2; font-weight: 600; }
+  .principle-content p { font-size: 1.15rem; line-height: 1.7; color: var(--muted); font-family: var(--font-body); margin: 0; }
+  
+  @media (max-width: 768px) {
+    .principle-card { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
+    .numeral { font-size: 3.5rem; }
+    .editorial-hero { padding: 3rem 0; margin-bottom: 3rem; }
+  }
 </style>

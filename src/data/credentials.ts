@@ -79,7 +79,6 @@ export const credentials: Credential[] = [
     ],
     faq: [
       { question: 'Do I need a degree to get a Texas real estate license?', answer: 'No, a college degree is not required. You only need to complete the 180 hours of approved pre-license education.' },
-      { question: 'Can I take the exam online?', answer: 'No, the Texas real estate exam must be taken in person at a Pearson VUE testing center.' },
       { question: 'How long does the background check take?', answer: 'Background checks usually take a few weeks to process, but can take longer if you have a criminal history.' }
     ],
     source: 'Texas Real Estate Commission',
@@ -529,6 +528,8 @@ export const credentials: Credential[] = [
     audience: "Tax Professionals",
     accent: "indigo",
     isNational: true,
+    prerequisites: ['Valid PTIN (Preparer Tax Identification Number)'],
+    salaryRange: '$50,000 - $100,000+',
     examDetails: {
       format: '3 Parts (Individuals, Businesses, Representation)',
       duration: '3.5 hours per part',
@@ -563,9 +564,6 @@ export const credentials: Credential[] = [
       'Apply to take the Special Enrollment Examination (SEE).',
       'Pass all three parts of the SEE.',
       'Apply for enrollment and pass a background check.'
-    ],
-    faq: [
-      { question: 'EA vs CPA?', answer: 'EAs specialize in taxation globally, CPAs have broader accounting scopes typically at a state level.' }
     ],
     source: 'IRS',
     sourceUrl: 'https://www.irs.gov/tax-professionals/enrolled-agents/',

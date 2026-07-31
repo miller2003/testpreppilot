@@ -23,9 +23,9 @@
   --accent-copper: #c2410c;
 
   /* Typography */
-  --font-body: 'Inter', 'DM Sans', sans-serif;
-  --font-heading: 'Outfit', 'Playfair Display', serif;
-  --font-mono: 'JetBrains Mono', 'DM Mono', monospace;
+  --font-body: 'Lora', Georgia, serif;
+  --font-heading: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-mono: 'Lora', Georgia, serif;
 
   /* Spacing Scale */
   --space-1: 0.25rem;

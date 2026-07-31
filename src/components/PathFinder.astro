@@ -6,7 +6,7 @@ const getCredentialCount = (categoryId: string) => {
   return credentials.filter(c => c.category === categoryId).length;
 };
 ---
-<section id="path-finder" class="path-finder-section">
+<section class="path-finder-section">
   <div class="path-finder-container">
     <div class="path-finder-left">
       <span class="eyebrow">Discover</span>
@@ -22,7 +22,7 @@ const getCredentialCount = (categoryId: string) => {
             <a href={`/categories/${category.id}`} class="choice-card">
               <span class="choice-icon" aria-hidden="true">{category.icon}</span>
               <span class="choice-name">{category.name}</span>
-              <span class="choice-count">{count} paths</span>
+              <span class="choice-count">{count} {count === 1 ? 'path' : 'paths'}</span>
             </a>
           );
         })}

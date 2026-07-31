@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Affiliate Disclosure', href: '/affiliate-disclosure' }
+];
+---
+
+<BaseLayout 
+  title="Affiliate Disclosure — TestPrepPilot"
+  description="How we fund TestPrepPilot while maintaining our editorial independence."
+>
+  <div class="container">
+    <BreadcrumbNav items={breadcrumbItems} />
+    
+    <header class="editorial-hero">
+      <p class="eyebrow">TRANSPARENCY</p>
+      <h1>Affiliate <em>Disclosure</em>.</h1>
+    </header>
+
+    <main class="document-content">
+      <p>At TestPrepPilot, our primary mission is to provide you with clear, accurate, and independently researched roadmaps for your career certifications and licenses. To maintain this website and continue producing high-quality editorial content, we participate in various affiliate marketing programs.</p>
+
+      <h2>What is an affiliate link?</h2>
+      <p>Some of the links on our website are "affiliate links." This means if you click on the link and purchase an item or service, TestPrepPilot may receive an affiliate commission at absolutely no additional cost to you.</p>
+
+      <h2>Our Editorial Independence</h2>
+      <p>We want to be entirely clear: <strong>our participation in affiliate programs does not influence our editorial independence, reviews, or recommendations.</strong></p>
+      
+      <p>Our editorial team manually reviews state regulations, candidate handbooks, and testing provider requirements to structure the optimal route for you. We only recommend prep materials and educational providers that we believe will genuinely help you pass your exams. A provider cannot pay to alter a review or secure a false recommendation on our site.</p>
+
+      <h2>Why we use affiliate links</h2>
+      <p>Running a comprehensive, ad-free research platform requires significant resources—from server costs to compensating our dedicated research team. Affiliate commissions allow us to keep our core roadmaps and guides completely free for all professionals.</p>
+
+      <p>If you have any questions regarding our affiliate relationships or how we fund our operations, please feel free to contact us.</p>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .container { max-width: 800px; margin: 0 auto; padding: 0 2rem 6rem; }
+  
+  /* Hero Section */
+  .editorial-hero { padding: 4rem 0 3rem; border-bottom: 1px solid var(--line); margin-bottom: 3rem; }
+  .editorial-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 1.5rem; font-weight: 700; }
+  .editorial-hero h1 { font-family: var(--font-heading); font-size: clamp(2.5rem, 4vw, 3.5rem); margin: 0; font-weight: 700; line-height: 1.1; color: var(--ink); }
+  
+  /* Document Content */
+  .document-content { font-family: var(--font-body); font-size: 1.15rem; line-height: 1.8; color: var(--ink); }
+  .document-content h2 { font-family: var(--font-heading); font-size: 1.8rem; margin: 3rem 0 1rem; font-weight: 600; line-height: 1.3; }
+  .document-content p { margin-bottom: 1.5rem; color: var(--muted); }
+  .document-content strong { color: var(--ink); font-weight: 600; }
+</style>

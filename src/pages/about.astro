@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' }
+];
+---
+
+<BaseLayout 
+  title="About Us — TestPrepPilot"
+  description="Learn about the team behind TestPrepPilot and our mission to clarify career advancement."
+>
+  <div class="container">
+    <BreadcrumbNav items={breadcrumbItems} />
+    
+    <header class="editorial-hero">
+      <p class="eyebrow">OUR MISSION</p>
+      <h1>Clarity in an industry of <em>confusion.</em></h1>
+      <p class="lede">We believe that advancing your career shouldn't require a law degree to understand the prerequisites.</p>
+    </header>
+
+    <main class="about-content">
+      <section class="prose-section">
+        <h2>The Problem We're Solving</h2>
+        <p>If you've ever tried to figure out exactly what it takes to become a licensed professional in your state, you know the frustration. Between outdated government websites, conflicting third-party blogs, and exam prep companies trying to sell you expensive courses, finding a single, reliable source of truth is nearly impossible.</p>
+        <p>TestPrepPilot was built to fix this.</p>
+      </section>
+
+      <section class="prose-section">
+        <h2>Our Approach</h2>
+        <p>We are a team of researchers, educators, and industry professionals dedicated to mapping out the optimal path for every major certification and license. We don't just aggregate links; we manually read the official statutes, candidate handbooks, and testing board requirements.</p>
+        <p>Then, we distill that bureaucratic legalese into elegant, sequential roadmaps that tell you exactly what to do, in what order, and how much it will cost.</p>
+      </section>
+
+      <div class="editorial-divider"></div>
+
+      <section class="team-section">
+        <p class="eyebrow">EDITORIAL STANDARDS</p>
+        <h2>Independent & Objective</h2>
+        <p class="team-lede">We maintain strict editorial independence. While we may earn affiliate commissions if you purchase a prep course through our links, our recommendations are always based on rigorous, objective analysis of the course's quality, syllabus coverage, and student outcomes.</p>
+        
+        <div class="values-grid">
+          <div class="value-item">
+            <h3>Verified Data</h3>
+            <p>Every requirement listed on our site is cited and verified against official state or national board documentation.</p>
+          </div>
+          <div class="value-item">
+            <h3>No Fluff</h3>
+            <p>We respect your time. Our guides are designed to be scanned, understood, and acted upon immediately.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .container { max-width: 900px; margin: 0 auto; padding: 0 2rem; }
+  
+  /* Hero Section */
+  .editorial-hero { padding: 5rem 0 4rem; border-bottom: 1px solid var(--line); margin-bottom: 4rem; text-align: center; }
+  .editorial-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 1.5rem; font-weight: 700; }
+  .editorial-hero h1 { font-family: var(--font-heading); font-size: clamp(3rem, 5vw, 4.5rem); margin: 0 0 1.5rem; font-weight: 700; line-height: 1.1; color: var(--ink); }
+  .editorial-hero .lede { font-family: var(--font-body); font-size: 1.35rem; color: var(--muted); max-width: 750px; margin: 0 auto; line-height: 1.7; }
+  
+  /* Content Sections */
+  .about-content { padding-bottom: 8rem; }
+  
+  .prose-section { margin-bottom: 4rem; }
+  .prose-section h2 { font-family: var(--font-heading); font-size: 2.5rem; margin: 0 0 1.5rem 0; line-height: 1.2; }
+  .prose-section p { font-family: var(--font-body); font-size: 1.25rem; color: var(--ink); line-height: 1.8; margin: 0 0 1.5rem 0; }
+  
+  .editorial-divider { height: 1px; background: var(--line); width: 100px; margin: 5rem auto; }
+  
+  .team-section { text-align: center; }
+  .team-section .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 1rem; font-weight: 700; }
+  .team-section h2 { font-family: var(--font-heading); font-size: 3rem; margin: 0 0 1.5rem 0; }
+  .team-section .team-lede { font-family: var(--font-body); font-size: 1.25rem; color: var(--muted); line-height: 1.7; max-width: 700px; margin: 0 auto 4rem auto; }
+  
+  .values-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; text-align: left; }
+  .value-item { padding: 3rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+  .value-item h3 { font-family: var(--font-heading); font-size: 1.8rem; margin: 0 0 1rem 0; }
+  .value-item p { font-family: var(--font-body); font-size: 1.1rem; color: var(--muted); line-height: 1.6; margin: 0; }
+  
+  @media (max-width: 768px) {
+    .values-grid { grid-template-columns: 1fr; }
+  }
+</style>

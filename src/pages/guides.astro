@@ -1,0 +1,217 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Guides', href: '/guides' }
+];
+
+const articles = [
+  {
+    title: "How to Build a Realistic Study Schedule While Working Full-Time",
+    tagline: "Time-blocking strategies and psychological framing to ensure you actually study when you say you will.",
+    category: "Study Strategy",
+    date: "Oct 12, 2024",
+    readTime: "6 min read",
+    featured: true
+  },
+  {
+    title: "The 3 Biggest Mistakes People Make on the Real Estate Exam",
+    tagline: "Don't fall into these common traps that cost candidates hundreds of dollars in retake fees.",
+    category: "Exam Tactics",
+    date: "Sep 28, 2024",
+    readTime: "4 min read",
+    featured: false
+  },
+  {
+    title: "Is the CPA Worth It in 2025? A Salary Analysis",
+    tagline: "Breaking down the ROI of the CPA vs Enrolled Agent based on location and firm size.",
+    category: "Career Planning",
+    date: "Sep 15, 2024",
+    readTime: "8 min read",
+    featured: false
+  },
+  {
+    title: "Understanding Reciprocity: Moving Your License Across State Lines",
+    tagline: "A comprehensive guide to transferring your professional credentials when you relocate.",
+    category: "Regulation",
+    date: "Aug 30, 2024",
+    readTime: "5 min read",
+    featured: false
+  },
+  {
+    title: "Handling Test Anxiety: A Cognitive Behavioral Approach",
+    tagline: "Science-backed methods to keep your heart rate down and your focus sharp during the exam.",
+    category: "Mindset",
+    date: "Aug 14, 2024",
+    readTime: "7 min read",
+    featured: false
+  }
+];
+
+const featuredArticle = articles.find(a => a.featured);
+const gridArticles = articles.filter(a => !a.featured);
+---
+
+<BaseLayout 
+  title="Study Guides & Articles — TestPrepPilot"
+  description="Read our latest strategies, analyses, and guides to help you navigate your certification journey."
+>
+  <div class="container">
+    <BreadcrumbNav items={breadcrumbItems} />
+    
+    <header class="editorial-hero">
+      <p class="eyebrow">GUIDES & ANALYSIS</p>
+      <h1>Intelligence for your <em>career trajectory.</em></h1>
+      <p class="lede">Study strategies, industry analyses, and regulatory breakdowns from our editorial team.</p>
+    </header>
+
+    <main class="guides-layout">
+      {featuredArticle && (
+        <section class="featured-article">
+          <a href="#" class="article-link">
+            <div class="article-meta">
+              <span class="category">{featuredArticle.category}</span>
+              <span class="date">{featuredArticle.date}</span>
+            </div>
+            <h2>{featuredArticle.title}</h2>
+            <p>{featuredArticle.tagline}</p>
+            <div class="read-more">Read Full Guide &rarr;</div>
+          </a>
+        </section>
+      )}
+
+      <section class="articles-grid">
+        {gridArticles.map(article => (
+          <article class="grid-article">
+            <a href="#" class="article-link">
+              <div class="article-meta">
+                <span class="category">{article.category}</span>
+              </div>
+              <h3>{article.title}</h3>
+              <p>{article.tagline}</p>
+              <div class="date-read">
+                <span>{article.date}</span>
+                <span>{article.readTime}</span>
+              </div>
+            </a>
+          </article>
+        ))}
+      </section>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+  
+  /* Hero Section */
+  .editorial-hero { padding: 5rem 0 3rem; border-bottom: 1px solid var(--line); margin-bottom: 4rem; }
+  .editorial-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 1.5rem; font-weight: 700; }
+  .editorial-hero h1 { font-family: var(--font-heading); font-size: clamp(3rem, 5vw, 4.5rem); margin: 0 0 1.5rem; font-weight: 700; line-height: 1.1; color: var(--ink); }
+  .editorial-hero .lede { font-family: var(--font-body); font-size: 1.35rem; color: var(--muted); max-width: 750px; line-height: 1.7; margin: 0; }
+  
+  /* Layout */
+  .guides-layout { display: flex; flex-direction: column; gap: 4rem; padding-bottom: 8rem; }
+  
+  /* Featured Article */
+  .featured-article .article-link {
+    display: block;
+    background: var(--paper);
+    padding: 4rem;
+    border: 1px solid var(--line);
+    text-decoration: none;
+    color: var(--ink);
+    border-radius: var(--radius);
+    transition: all var(--transition);
+  }
+  
+  .featured-article .article-link:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-5px);
+    border-color: var(--primary);
+  }
+  
+  .featured-article .article-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+  }
+  
+  .featured-article .category { color: var(--primary); font-weight: 700; }
+  .featured-article .date { color: var(--muted); }
+  
+  .featured-article h2 {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .featured-article p {
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+    color: var(--muted);
+    max-width: 800px;
+    line-height: 1.6;
+    margin: 0 0 3rem 0;
+  }
+  
+  .featured-article .read-more {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  /* Grid Articles */
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 3rem;
+  }
+  
+  .grid-article .article-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: var(--ink);
+    padding: 2.5rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    transition: all var(--transition);
+  }
+  
+  .grid-article .article-link:hover {
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-4px);
+    border-color: var(--ink);
+  }
+  
+  .grid-article .article-meta { margin-bottom: 1.25rem; font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); font-weight: 700; }
+  .grid-article h3 { font-family: var(--font-heading); font-size: 2rem; line-height: 1.2; margin: 0 0 1rem 0; }
+  .grid-article p { font-family: var(--font-body); font-size: 1.1rem; color: var(--muted); line-height: 1.6; margin: 0 0 2rem 0; flex-grow: 1; }
+  
+  .grid-article .date-read {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--muted);
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+  
+  @media (max-width: 768px) {
+    .featured-article .article-link { padding: 2.5rem; }
+    .featured-article h2 { font-size: 2.5rem; }
+    .featured-article p { font-size: 1.25rem; }
+  }
+</style>
