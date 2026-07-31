@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ExamGuide from '../../components/ExamGuide.astro';
+import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import RelatedPaths from '../../components/RelatedPaths.astro';
+import { credentials, getRelatedCredentials } from '../../data/credentials';
+import examEditorial from '../../data/examEditorial.mjs';
+
+export function getStaticPaths() {
+  return credentials.map(credential => ({
+    params: { slug: credential.slug },
+    props: { credential },
+  }));
+}
+
+const { credential } = Astro.props;
+const ex = examEditorial[credential.slug] || null;
+const relatedCredentials = getRelatedCredentials(credential.slug);
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Explore', href: '/explore' },
+  { label: credential.name, href: `/paths/${credential.slug}` }
+];
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": credential.name,
+  "description": credential.description || credential.tagline,
+  "provider": {
+    "@type": "Organization",
+    "name": credential.providers?.[0]?.name || "Various Providers"
+  }
+};
+---
+
+<BaseLayout
+  title={`${credential.name} Requirements & Guide — TestPrepPilot`}
+  description={credential.tagline || `Everything you need to know about getting your ${credential.name}.`}
+>
+  <SchemaMarkup type="Course" data={schemaData} />
+  <ExamGuide credential={credential} ex={ex} breadcrumbs={breadcrumbItems} />
+
+  {relatedCredentials && relatedCredentials.length > 0 && (
+    <section class="related-section bg-cream">
+      <div class="container">
+        <RelatedPaths slugs={credential.relatedSlugs || []} />
+      </div>
+    </section>
+  )}
+</BaseLayout>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+  .bg-cream { background-color: var(--cream); }
+  .related-section { padding: 3rem 0; }
+</style>

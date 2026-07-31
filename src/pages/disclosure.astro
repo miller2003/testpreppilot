@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Affiliate disclosure', href: '/disclosure' }
+];
+---
+
+<BaseLayout 
+  title="Affiliate Disclosure — TestPrepPilot"
+  description="How we fund our research while maintaining our integrity."
+>
+  <div class="container | animate-on-scroll">
+    <BreadcrumbNav items={breadcrumbItems} />
+    
+    <header class="page-hero">
+      <p class="eyebrow">AFFILIATE DISCLOSURE</p>
+      <h1>Trust should never <em>be implicit.</em></h1>
+      <p class="lede">We believe in being entirely upfront about how TestPrepPilot makes money.</p>
+    </header>
+
+    <main class="prose">
+      <section>
+        <h2>How relationships work</h2>
+        <p>To keep this site free for users and to fund our ongoing research into complex state and national requirements, TestPrepPilot participates in affiliate marketing programs. This means that if you click on certain links to educational providers on our site and make a purchase, we may earn a commission.</p>
+        <p>This comes at no additional cost to you.</p>
+      </section>
+      
+      <section>
+        <h2>Our commitment</h2>
+        <p>These relationships <strong>do not influence</strong> our editorial content, our analysis of requirements, or our core recommendations. We often list and recommend providers with whom we have no financial relationship simply because they offer the best path for a specific credential.</p>
+        <p>Whenever an affiliate link is present near a specific recommendation, we include an inline disclosure so you are fully informed.</p>
+      </section>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+  
+  .page-hero { padding: 4rem 0; border-bottom: 2px solid var(--ink); margin-bottom: 4rem; }
+  .page-hero h1 { font-size: 3.5rem; margin: 1rem 0; }
+  .page-hero .lede { font-size: 1.25rem; color: #444; }
+  
+  .prose section { margin-bottom: 3rem; }
+  .prose h2 { font-size: 2rem; margin-bottom: 1rem; }
+  .prose p { font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--ink); }
+  .prose strong { color: var(--primary); }
+</style>

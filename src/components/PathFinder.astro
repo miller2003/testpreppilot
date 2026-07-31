@@ -1,0 +1,35 @@
+---
+import { categories } from '../data/categories';
+import { credentials } from '../data/credentials';
+
+const getCredentialCount = (categoryId: string) => {
+  return credentials.filter(c => c.category === categoryId).length;
+};
+---
+<section id="path-finder" class="path-finder-section">
+  <div class="path-finder-container">
+    <div class="path-finder-left">
+      <span class="eyebrow">Discover</span>
+      <h2>Where do you want your work to take you?</h2>
+      <p>Select an industry to explore the top credentials and certifications that can accelerate your career.</p>
+    </div>
+    
+    <div class="path-finder-right">
+      <div class="choice-grid">
+        {categories.map(category => {
+          const count = getCredentialCount(category.id);
+          return (
+            <a href={`/categories/${category.id}`} class="choice-card">
+              <span class="choice-icon" aria-hidden="true">{category.icon}</span>
+              <span class="choice-name">{category.name}</span>
+              <span class="choice-count">{count} paths</span>
+            </a>
+          );
+        })}
+      </div>
+      <div class="path-finder-action">
+        <a href="/explore" class="button">Explore all paths</a>
+      </div>
+    </div>
+  </div>
+</section>

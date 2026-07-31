@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Page Not Found — TestPrepPilot"
+>
+  <div class="container | animate-on-scroll">
+    <header class="page-hero">
+      <p class="eyebrow">404 · WRONG TURN</p>
+      <h1>That path isn't <em>on the map.</em></h1>
+      <p class="lede">The page you're looking for might have been moved, deleted, or never existed in the first place.</p>
+      
+      <div class="cta-wrapper">
+        <a href="/explore" class="btn btn-primary">Explore all credentials &rarr;</a>
+      </div>
+    </header>
+  </div>
+</BaseLayout>
+
+<style>
+  .container { max-width: 800px; margin: 0 auto; padding: 2rem; min-height: 70vh; display: flex; align-items: center; justify-content: center; }
+  
+  .page-hero { text-align: center; }
+  .page-hero h1 { font-size: 4rem; margin: 1rem 0; }
+  .page-hero .lede { font-size: 1.25rem; color: #444; margin-bottom: 2rem; }
+  .cta-wrapper { margin-top: 3rem; }
+</style>

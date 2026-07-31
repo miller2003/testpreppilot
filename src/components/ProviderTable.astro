@@ -1,0 +1,70 @@
+---
+import type { Provider } from '../data/types';
+import InlineDisclosure from './InlineDisclosure.astro';
+
+interface Props {
+  providers: Provider[];
+  credentialName?: string;
+}
+
+const { providers } = Astro.props;
+const hasAffiliate = providers.some(p => p.affiliateUrl);
+---
+<div class="provider-table-wrapper">
+  <table class="provider-table desktop-only">
+    <thead>
+      <tr>
+        <th>Provider</th>
+        <th>Price</th>
+        <th>Key Features</th>
+        <th>Rating</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {providers.map(provider => (
+        <tr>
+          <td>
+            {provider.name}
+            {provider.isSponsored && <span class="sponsored-badge">Sponsored</span>}
+          </td>
+          <td>{provider.price}</td>
+          <td>
+            <ul>
+              {provider.features.map(f => <li>{f}</li>)}
+            </ul>
+          </td>
+          <td>{provider.rating ? `${provider.rating} stars` : 'N/A'}</td>
+          <td>
+            <a href={provider.affiliateUrl || provider.url} class="button button-small" target="_blank" rel="noopener noreferrer">
+              View Program
+            </a>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  <div class="provider-cards mobile-only">
+    {providers.map(provider => (
+      <div class="provider-card">
+        <div class="provider-header">
+          <h4>
+            {provider.name}
+            {provider.isSponsored && <span class="sponsored-badge">Sponsored</span>}
+          </h4>
+          <span class="provider-rating">{provider.rating ? `${provider.rating} stars` : ''}</span>
+        </div>
+        <div class="provider-price">{provider.price}</div>
+        <ul class="provider-features">
+          {provider.features.map(f => <li>{f}</li>)}
+        </ul>
+        <a href={provider.affiliateUrl || provider.url} class="button button-small provider-cta" target="_blank" rel="noopener noreferrer">
+          View Program
+        </a>
+      </div>
+    ))}
+  </div>
+
+  {hasAffiliate && <InlineDisclosure />}
+</div>

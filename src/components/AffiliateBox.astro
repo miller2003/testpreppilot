@@ -1,0 +1,27 @@
+---
+import type { Provider } from '../data/types';
+
+interface Props {
+  provider: Provider;
+  credentialName: string;
+}
+
+const { provider } = Astro.props;
+---
+<div class="affiliate-box">
+  <div class="affiliate-header">
+    <h3>{provider.name}</h3>
+    <span class="affiliate-price">{provider.price}</span>
+  </div>
+  <ul class="affiliate-features">
+    {provider.features.slice(0, 3).map(feature => (
+      <li>{feature}</li>
+    ))}
+  </ul>
+  <a href={provider.affiliateUrl || provider.url} class="button affiliate-cta" target="_blank" rel="noopener noreferrer">
+    Start with {provider.name}
+  </a>
+  <p class="disclosure-line">
+    Sponsored link — see our <a href="/disclosure">disclosure</a>
+  </p>
+</div>

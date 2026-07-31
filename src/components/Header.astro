@@ -1,0 +1,34 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+---
+<header class="header">
+  <div class="header-container">
+    <a href="/" class="brand" aria-label="TestPrepPilot Home">
+      <span class="brand-mark">C</span>
+      <span>TestPrep<br/>Pilot</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main Navigation">
+      <a href="/explore">Explore</a>
+      <a href="/how-it-works">How it works</a>
+      <a href="/methodology">Methodology</a>
+      <ThemeToggle />
+      <a href="/explore" class="button button-small">Explore</a>
+    </nav>
+
+    <div class="mobile-menu-wrapper">
+      <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle-input" aria-label="Toggle mobile menu" />
+      <label for="mobile-menu-toggle" class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <a href="/explore">Explore</a>
+        <a href="/how-it-works">How it works</a>
+        <a href="/methodology">Methodology</a>
+        <a href="/explore" class="button button-small">Explore</a>
+      </nav>
+    </div>
+  </div>
+</header>

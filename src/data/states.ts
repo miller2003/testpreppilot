@@ -1,0 +1,64 @@
+import { StateInfo } from './types';
+
+export const states: StateInfo[] = [
+  { code: 'AL', name: 'Alabama', slug: 'alabama', capital: 'Montgomery', region: 'South' },
+  { code: 'AK', name: 'Alaska', slug: 'alaska', capital: 'Juneau', region: 'West' },
+  { code: 'AZ', name: 'Arizona', slug: 'arizona', capital: 'Phoenix', region: 'West' },
+  { code: 'AR', name: 'Arkansas', slug: 'arkansas', capital: 'Little Rock', region: 'South' },
+  { code: 'CA', name: 'California', slug: 'california', capital: 'Sacramento', region: 'West' },
+  { code: 'CO', name: 'Colorado', slug: 'colorado', capital: 'Denver', region: 'West' },
+  { code: 'CT', name: 'Connecticut', slug: 'connecticut', capital: 'Hartford', region: 'Northeast' },
+  { code: 'DE', name: 'Delaware', slug: 'delaware', capital: 'Dover', region: 'Northeast' },
+  { code: 'FL', name: 'Florida', slug: 'florida', capital: 'Tallahassee', region: 'South' },
+  { code: 'GA', name: 'Georgia', slug: 'georgia', capital: 'Atlanta', region: 'South' },
+  { code: 'HI', name: 'Hawaii', slug: 'hawaii', capital: 'Honolulu', region: 'West' },
+  { code: 'ID', name: 'Idaho', slug: 'idaho', capital: 'Boise', region: 'West' },
+  { code: 'IL', name: 'Illinois', slug: 'illinois', capital: 'Springfield', region: 'Midwest' },
+  { code: 'IN', name: 'Indiana', slug: 'indiana', capital: 'Indianapolis', region: 'Midwest' },
+  { code: 'IA', name: 'Iowa', slug: 'iowa', capital: 'Des Moines', region: 'Midwest' },
+  { code: 'KS', name: 'Kansas', slug: 'kansas', capital: 'Topeka', region: 'Midwest' },
+  { code: 'KY', name: 'Kentucky', slug: 'kentucky', capital: 'Frankfort', region: 'South' },
+  { code: 'LA', name: 'Louisiana', slug: 'louisiana', capital: 'Baton Rouge', region: 'South' },
+  { code: 'ME', name: 'Maine', slug: 'maine', capital: 'Augusta', region: 'Northeast' },
+  { code: 'MD', name: 'Maryland', slug: 'maryland', capital: 'Annapolis', region: 'South' },
+  { code: 'MA', name: 'Massachusetts', slug: 'massachusetts', capital: 'Boston', region: 'Northeast' },
+  { code: 'MI', name: 'Michigan', slug: 'michigan', capital: 'Lansing', region: 'Midwest' },
+  { code: 'MN', name: 'Minnesota', slug: 'minnesota', capital: 'St. Paul', region: 'Midwest' },
+  { code: 'MS', name: 'Mississippi', slug: 'mississippi', capital: 'Jackson', region: 'South' },
+  { code: 'MO', name: 'Missouri', slug: 'missouri', capital: 'Jefferson City', region: 'Midwest' },
+  { code: 'MT', name: 'Montana', slug: 'montana', capital: 'Helena', region: 'West' },
+  { code: 'NE', name: 'Nebraska', slug: 'nebraska', capital: 'Lincoln', region: 'Midwest' },
+  { code: 'NV', name: 'Nevada', slug: 'nevada', capital: 'Carson City', region: 'West' },
+  { code: 'NH', name: 'New Hampshire', slug: 'new-hampshire', capital: 'Concord', region: 'Northeast' },
+  { code: 'NJ', name: 'New Jersey', slug: 'new-jersey', capital: 'Trenton', region: 'Northeast' },
+  { code: 'NM', name: 'New Mexico', slug: 'new-mexico', capital: 'Santa Fe', region: 'West' },
+  { code: 'NY', name: 'New York', slug: 'new-york', capital: 'Albany', region: 'Northeast' },
+  { code: 'NC', name: 'North Carolina', slug: 'north-carolina', capital: 'Raleigh', region: 'South' },
+  { code: 'ND', name: 'North Dakota', slug: 'north-dakota', capital: 'Bismarck', region: 'Midwest' },
+  { code: 'OH', name: 'Ohio', slug: 'ohio', capital: 'Columbus', region: 'Midwest' },
+  { code: 'OK', name: 'Oklahoma', slug: 'oklahoma', capital: 'Oklahoma City', region: 'South' },
+  { code: 'OR', name: 'Oregon', slug: 'oregon', capital: 'Salem', region: 'West' },
+  { code: 'PA', name: 'Pennsylvania', slug: 'pennsylvania', capital: 'Harrisburg', region: 'Northeast' },
+  { code: 'RI', name: 'Rhode Island', slug: 'rhode-island', capital: 'Providence', region: 'Northeast' },
+  { code: 'SC', name: 'South Carolina', slug: 'south-carolina', capital: 'Columbia', region: 'South' },
+  { code: 'SD', name: 'South Dakota', slug: 'south-dakota', capital: 'Pierre', region: 'Midwest' },
+  { code: 'TN', name: 'Tennessee', slug: 'tennessee', capital: 'Nashville', region: 'South' },
+  { code: 'TX', name: 'Texas', slug: 'texas', capital: 'Austin', region: 'South' },
+  { code: 'UT', name: 'Utah', slug: 'utah', capital: 'Salt Lake City', region: 'West' },
+  { code: 'VT', name: 'Vermont', slug: 'vermont', capital: 'Montpelier', region: 'Northeast' },
+  { code: 'VA', name: 'Virginia', slug: 'virginia', capital: 'Richmond', region: 'South' },
+  { code: 'WA', name: 'Washington', slug: 'washington', capital: 'Olympia', region: 'West' },
+  { code: 'WV', name: 'West Virginia', slug: 'west-virginia', capital: 'Charleston', region: 'South' },
+  { code: 'WI', name: 'Wisconsin', slug: 'wisconsin', capital: 'Madison', region: 'Midwest' },
+  { code: 'WY', name: 'Wyoming', slug: 'wyoming', capital: 'Cheyenne', region: 'West' },
+  { code: 'DC', name: 'District of Columbia', slug: 'district-of-columbia', capital: 'Washington', region: 'South' },
+];
+
+export function getStateBySlug(slug: string): StateInfo | undefined {
+  return states.find(s => s.slug === slug);
+}
+
+export function getStateByCode(code: string): StateInfo | undefined {
+  const upperCode = code.toUpperCase();
+  return states.find(s => s.code === upperCode);
+}

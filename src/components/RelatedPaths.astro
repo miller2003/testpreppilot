@@ -1,0 +1,22 @@
+---
+import { getCredentialBySlug } from '../data/credentials';
+import CredentialCard from './CredentialCard.astro';
+
+interface Props {
+  slugs: string[];
+}
+
+const { slugs } = Astro.props;
+const credentials = slugs.map(slug => getCredentialBySlug(slug)).filter(Boolean);
+---
+{credentials.length > 0 && (
+  <section class="related-paths">
+    <h2>Related pathways</h2>
+    <div class="related-paths-grid">
+      {credentials.map(credential => (
+        // @ts-ignore
+        <CredentialCard credential={credential} />
+      ))}
+    </div>
+  </section>
+)}

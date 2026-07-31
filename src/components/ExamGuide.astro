@@ -1,0 +1,531 @@
+---
+import BreadcrumbNav from './BreadcrumbNav.astro';
+import ProviderTable from './ProviderTable.astro';
+import AffiliateBox from './AffiliateBox.astro';
+import FAQAccordion from './FAQAccordion.astro';
+import InlineDisclosure from './InlineDisclosure.astro';
+
+interface Props {
+  credential: any;
+  ex?: any;
+  breadcrumbs?: { label: string; href: string }[];
+  stateInfo?: any;
+  stateData?: any;
+}
+
+const { credential, ex, breadcrumbs = [], stateInfo = null, stateData = null } = Astro.props;
+
+const isState = !!stateInfo;
+const title = credential.name;
+const lede = (stateData?.description || credential.description || credential.tagline || '').toString();
+
+// ----- Fact strip -----
+const factStrip =
+  ex?.factStrip ||
+  (credential.facts
+    ? credential.facts.map((f: any) => ({ label: f.label, value: f.value }))
+    : null) ||
+  (stateData
+    ? [
+        stateData.requiredHours && { label: 'Required Hours', value: stateData.requiredHours },
+        stateData.examFee && { label: 'Exam Fee', value: stateData.examFee },
+        stateData.licenseFee && { label: 'License Fee', value: stateData.licenseFee },
+        stateData.regulatorName && { label: 'Regulator', value: stateData.regulatorName }
+      ].filter(Boolean)
+    : null);
+
+// ----- Path at a glance -----
+const roadmap = (credential.roadmap || []).map((r: string) => {
+  const i = r.indexOf('(');
+  if (i > 0) return { label: r.slice(0, i).trim(), desc: r.slice(i + 1).replace(/\)$/, '') };
+  return { label: r, desc: '' };
+});
+
+// ----- FAQ merge (dedupe) -----
+const faqItems: { question: string; answer: string }[] = [];
+const seen = new Set<string>();
+if (ex?.faqs) {
+  for (const f of ex.faqs) {
+    if (!seen.has(f.q)) { seen.add(f.q); faqItems.push({ question: f.q, answer: f.a }); }
+  }
+}
+if (credential.faq) {
+  for (const f of credential.faq) {
+    if (!seen.has(f.question)) { seen.add(f.question); faqItems.push({ question: f.question, answer: f.answer }); }
+  }
+}
+
+// ----- Section presence for sidebar -----
+const nav: { id: string; label: string }[] = [
+  { id: 'overview', label: 'Overview' },
+];
+if (credential.quickAnswer) nav.push({ id: 'quick-answer', label: 'Quick Answer' });
+if (roadmap.length) nav.push({ id: 'path', label: 'The Path' });
+nav.push({ id: 'requirements', label: 'Requirements' });
+if (ex || credential.examDetails) nav.push({ id: 'exam', label: 'The Exam' });
+if (credential.providers?.length) nav.push({ id: 'providers', label: 'Providers' });
+if ((credential.registrationSteps?.length || credential.steps?.length)) nav.push({ id: 'route', label: 'Your Route' });
+if (credential.timeline?.length) nav.push({ id: 'timeline', label: 'Timeline' });
+if (credential.costBreakdown?.items?.length) nav.push({ id: 'costs', label: 'Costs' });
+if (faqItems.length) nav.push({ id: 'faq', label: 'FAQ' });
+if (credential.summaryPoints?.length) nav.push({ id: 'summary', label: 'Summary' });
+nav.push({ id: 'sources', label: 'Sources' });
+
+const hasTopics = ex?.topics?.length;
+const hasParts = ex?.parts?.length;
+const hasModules = ex?.modules?.length;
+
+const topProvider = credential.providers?.[0];
+const hasAffiliate = topProvider?.affiliateUrl;
+---
+
+<BreadcrumbNav items={breadcrumbs} />
+
+<header class="eg-hero">
+  <div class="container">
+    <p class="eyebrow">{isState ? `${stateInfo.name} • ${credential.category}` : `${credential.category} • ${credential.type}`}</p>
+    <h1>{title}</h1>
+    <p class="lede">{lede}</p>
+
+    {factStrip && factStrip.length > 0 && (
+      <div class="eg-factstrip">
+        {factStrip.map((f: any) => (
+          <div class="eg-fact">
+            <span class="label">{f.label}</span>
+            <span class="value">{f.value}</span>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+</header>
+
+<div class="container two-column-content">
+  <aside class="sidebar">
+    <div class="sticky-nav">
+      <h3>On this page</h3>
+      <nav>
+        <ul>
+          {nav.map(n => <li><a href={`#${n.id}`}>{n.label}</a></li>)}
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <main class="main-article">
+    {/* OVERVIEW */}
+    <section id="overview" class="eg-section">
+      <p class="eg-kicker">Is this the right path for you?</p>
+      <h2>What you're getting into</h2>
+      <p class="eg-tagline">{credential.tagline}</p>
+
+      <div class="eg-infogrid">
+        {credential.time && <div class="eg-info"><h4>Time</h4><p>{credential.time}</p></div>}
+        {credential.cost && <div class="eg-info"><h4>Cost</h4><p>{credential.cost}</p></div>}
+        {credential.difficulty && <div class="eg-info"><h4>Difficulty</h4><p>{credential.difficulty}</p></div>}
+        {credential.audience && <div class="eg-info"><h4>Best for</h4><p>{credential.audience}</p></div>}
+        {credential.salaryRange && <div class="eg-info"><h4>Avg Salary</h4><p>{credential.salaryRange}</p></div>}
+      </div>
+
+      {credential.prerequisites && (
+        <div class="eg-callout">
+          <strong>Prerequisites.</strong> {credential.prerequisites}
+        </div>
+      )}
+    </section>
+
+    {/* QUICK ANSWER */}
+    {credential.quickAnswer && (
+      <section id="quick-answer" class="eg-section">
+        <p class="eg-kicker">TL;DR</p>
+        <h2>Quick Answer</h2>
+        <div class="eg-quick">
+          <p>{credential.quickAnswer.summary}</p>
+          {credential.quickAnswer.advantages?.length > 0 && (
+            <ul class="eg-advantages">
+              {credential.quickAnswer.advantages.map((adv: string) => <li>{adv}</li>)}
+            </ul>
+          )}
+        </div>
+      </section>
+    )}
+
+    {/* THE PATH AT A GLANCE */}
+    {roadmap.length > 0 && (
+      <section id="path" class="eg-section eg-section-cream">
+        <p class="eg-kicker">The journey</p>
+        <h2>The Path at a Glance</h2>
+        <p class="eg-lead">You can't skip ahead — each phase unlocks the next. Here's the full route, end to end.</p>
+        <div class="eg-path">
+          {roadmap.map((step: any, i: number) => (
+            <div class="eg-step">
+              <div class="eg-step-num">{i + 1}</div>
+              <div class="eg-step-body">
+                <span class="eg-step-label">{step.label}</span>
+                {step.desc && <span class="eg-step-desc">{step.desc}</span>}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {/* REQUIREMENTS */}
+    <section id="requirements" class="eg-section">
+      <p class="eg-kicker">Before you start</p>
+      <h2>Eligibility &amp; Requirements</h2>
+      {isState && stateData?.additionalRequirements?.length > 0 && (
+        <div class="eg-callout">
+          <strong>Note for {stateInfo.name}.</strong> Requirements may differ from national averages — complete education with a state-approved provider.
+          <ul class="eg-reqlist">
+            {stateData.additionalRequirements.map((req: string) => <li>{req}</li>)}
+          </ul>
+        </div>
+      )}
+      {credential.comparison && (
+        <div class="eg-tablewrap">
+          <table class="eg-table">
+            <thead>
+              <tr>
+                {credential.comparison.columns.map((col: string) => <th>{col}</th>)}
+              </tr>
+            </thead>
+            <tbody>
+              {credential.comparison.rows.map((row: any) => (
+                <tr>
+                  <th scope="row">{row.label}</th>
+                  {row.values.map((v: string) => <td>{v}</td>)}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </section>
+
+    {/* THE EXAM IN DETAIL */}
+    {(ex || credential.examDetails) && (
+      <section id="exam" class="eg-section eg-section-cream">
+        <p class="eg-kicker">Inside the test</p>
+        <h2>The Exam in Detail</h2>
+
+        {ex?.examMeta && (
+          <div class="eg-meta">
+            <div class="eg-meta-item"><span class="k">Questions</span><span class="v">{ex.examMeta.questions}</span></div>
+            <div class="eg-meta-item"><span class="k">Time limit</span><span class="v">{ex.examMeta.time}</span></div>
+            <div class="eg-meta-item"><span class="k">Pass mark</span><span class="v">{ex.examMeta.pass}</span></div>
+            <div class="eg-meta-item"><span class="k">Exam fee</span><span class="v">{ex.examMeta.fee}</span></div>
+            <div class="eg-meta-item"><span class="k">Format</span><span class="v">{ex.examMeta.format}</span></div>
+            <div class="eg-meta-item"><span class="k">Administered by</span><span class="v">{ex.examMeta.admin}</span></div>
+          </div>
+        )}
+
+        {ex?.examTopicsTitle && <h3 class="eg-subhead">{ex.examTopicsTitle}</h3>}
+        {ex?.examTopicsIntro && <p class="eg-lead">{ex.examTopicsIntro}</p>}
+
+        {hasTopics && (
+          <div class="eg-topics">
+            {ex.topics.map((t: any) => (
+              <div class="eg-topic">
+                <span class="eg-topic-weight">{t.weight}</span>
+                <span class="eg-topic-name">{t.name}</span>
+                {t.note && <span class="eg-topic-note">{t.note}</span>}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {hasParts && ex.parts.map((p: any) => (
+          <div class="eg-part">
+            <h4>{p.name}</h4>
+            <ul class="eg-partlist">
+              {p.items.map((it: string) => <li>{it}</li>)}
+            </ul>
+          </div>
+        ))}
+
+        {hasModules && (
+          <div class="eg-modules">
+            {ex.modules.map((m: string) => <span class="eg-module">{m}</span>)}
+          </div>
+        )}
+
+        {ex?.examEssentials?.length > 0 && (
+          <div class="eg-essentials">
+            {ex.examEssentials.map((row: any) => (
+              <div class="row"><span class="k">{row[0]}</span><span class="v">{row[1]}</span></div>
+            ))}
+          </div>
+        )}
+      </section>
+    )}
+
+    {/* PROVIDERS */}
+    {credential.providers?.length > 0 && (
+      <section id="providers" class="eg-section">
+        <p class="eg-kicker">Choose your school</p>
+        <h2>Approved Providers</h2>
+        <InlineDisclosure />
+
+        {hasAffiliate && topProvider && (
+          <div class="eg-affiliate">
+            <AffiliateBox provider={topProvider} credentialName={title} />
+          </div>
+        )}
+
+        <ProviderTable providers={credential.providers} />
+      </section>
+    )}
+
+    {/* ROUTE */}
+    {((credential.registrationSteps?.length || credential.steps?.length)) > 0 && (
+      <section id="route" class="eg-section eg-section-cream">
+        <p class="eg-kicker">Step by step</p>
+        <h2>Your Step-by-Step Route</h2>
+        {credential.registrationSteps?.length > 0 ? (
+          <ol class="eg-route">
+            {credential.registrationSteps.map((step: any, index: number) => (
+              <li>
+                <div class="eg-route-num">{index + 1}</div>
+                <div class="eg-route-body">
+                  <h3>{step.title}</h3>
+                  {step.description && <p>{step.description}</p>}
+                  {step.subSteps?.length > 0 && (
+                    <ul class="eg-substeps">
+                      {step.subSteps.map((s: string) => <li>{s}</li>)}
+                    </ul>
+                  )}
+                  <div class="eg-route-meta">
+                    {step.duration && <span class="eg-pill">⏱ {step.duration}</span>}
+                    {step.note && <span class="eg-note">Note: {step.note}</span>}
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        ) : (
+          <ol class="eg-route">
+            {credential.steps.map((step: string, index: number) => (
+              <li>
+                <div class="eg-route-num">{index + 1}</div>
+                <div class="eg-route-body">
+                  <h3>Step {index + 1}</h3>
+                  <p>{step}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        )}
+      </section>
+    )}
+
+    {/* TIMELINE */}
+    {credential.timeline?.length > 0 && (
+      <section id="timeline" class="eg-section">
+        <p class="eg-kicker">How long</p>
+        <h2>Timeline</h2>
+        <div class="eg-tablewrap">
+          <table class="eg-table">
+            <thead><tr><th>Stage</th><th>Typical Duration</th></tr></thead>
+            <tbody>
+              {credential.timeline.map((row: any) => (
+                <tr><td>{row.stage}</td><td class="eg-duration">{row.duration}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    {/* COSTS */}
+    {credential.costBreakdown?.items?.length > 0 && (
+      <section id="costs" class="eg-section eg-section-cream">
+        <p class="eg-kicker">The bill</p>
+        <h2>Cost Breakdown</h2>
+        <div class="eg-tablewrap">
+          <table class="eg-table">
+            <thead><tr><th>Item</th><th>Fee</th></tr></thead>
+            <tbody>
+              {credential.costBreakdown.items.map((item: any) => (
+                <tr><td>{item.item}</td><td class="eg-fee">{item.fee}</td></tr>
+              ))}
+              <tr class="eg-total"><td>Total</td><td class="eg-fee">{credential.costBreakdown.total}</td></tr>
+            </tbody>
+          </table>
+        </div>
+        {credential.costBreakdown.footnote && <p class="eg-footnote">{credential.costBreakdown.footnote}</p>}
+      </section>
+    )}
+
+    {/* FAQ */}
+    {faqItems.length > 0 && (
+      <section id="faq" class="eg-section">
+        <p class="eg-kicker">Good to know</p>
+        <h2>{isState ? 'State FAQ' : 'Frequently Asked Questions'}</h2>
+        <FAQAccordion items={faqItems} />
+      </section>
+    )}
+
+    {/* SUMMARY */}
+    {credential.summaryPoints?.length > 0 && (
+      <section id="summary" class="eg-section">
+        <p class="eg-kicker">In short</p>
+        <h2>Summary</h2>
+        <div class="eg-summary">
+          <ul>
+            {credential.summaryPoints.map((point: string) => <li>{point}</li>)}
+          </ul>
+        </div>
+        {topProvider?.affiliateUrl && (
+          <div class="eg-cta">
+            <h3>Ready to start your {credential.shortName || credential.name}?</h3>
+            <a href={topProvider.affiliateUrl} class="button" target="_blank" rel="noopener noreferrer">Start with {topProvider.name}</a>
+          </div>
+        )}
+      </section>
+    )}
+
+    {/* SOURCES */}
+    <section id="sources" class="eg-section eg-section-cream">
+      <p class="eg-kicker">Trust</p>
+      <h2>Sources</h2>
+      <p class="eg-lead">We believe in showing our work. The information on this page was sourced from official requirements.</p>
+      {credential.sourceUrl && (
+        <a href={credential.sourceUrl} target="_blank" rel="noopener noreferrer" class="eg-sourcelink">View official requirements source &rarr;</a>
+      )}
+      <p class="eg-reviewed">Last reviewed: {credential.reviewed || 'Recently'}</p>
+    </section>
+  </main>
+</div>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+  /* Hero */
+  .eg-hero { padding: 3rem 0 2.75rem; border-bottom: 1px solid var(--line); }
+  .eg-hero .eyebrow { color: var(--primary); }
+  .eg-hero h1 { font-family: var(--font-heading); font-weight: 700; font-size: clamp(2.4rem, 5.5vw, 3.6rem); line-height: 1.04; letter-spacing: -0.025em; margin: 0.85rem 0 1.1rem; }
+  .eg-hero .lede { font-size: 1.18rem; color: var(--muted); max-width: 720px; line-height: 1.6; margin: 0; }
+
+  .eg-factstrip { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; margin-top: 2rem; }
+  .eg-fact { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.35rem; transition: transform var(--transition), box-shadow var(--transition); }
+  .eg-fact:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+  .eg-fact .label { display: block; font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  .eg-fact .value { display: block; font-family: var(--font-heading); font-size: 1.45rem; font-weight: 600; margin-top: 0.35rem; color: var(--ink); }
+
+  /* Two-column layout */
+  .two-column-content { display: grid; grid-template-columns: 230px 1fr; gap: 3.5rem; padding-top: 3rem; padding-bottom: 4rem; }
+  .sidebar { position: relative; }
+  .sticky-nav { position: sticky; top: 2rem; }
+  .sticky-nav h3 { font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--line); color: var(--ink); }
+  .sticky-nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.55rem; }
+  .sticky-nav a { color: var(--muted); text-decoration: none; transition: color var(--transition); font-size: 0.9rem; }
+  .sticky-nav a:hover { color: var(--primary); }
+
+  /* Sections */
+  .eg-section { padding: 2.75rem 0; border-top: 1px solid var(--line); }
+  .eg-section-cream { background: var(--cream); border-radius: var(--radius-lg); border-top: none; margin: 1.5rem 0; padding: 2.75rem 2.5rem; }
+  .eg-kicker { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); font-weight: 700; margin: 0 0 0.5rem; }
+  .eg-section h2 { font-family: var(--font-heading); font-size: clamp(1.7rem, 3vw, 2.2rem); letter-spacing: -0.01em; margin: 0 0 1.25rem; }
+  .eg-lead { color: var(--muted); line-height: 1.65; margin: 0 0 1.5rem; font-size: 1.02rem; }
+  .eg-tagline { font-style: italic; font-family: var(--font-heading); font-size: 1.2rem; color: var(--ink); margin: 0 0 1.75rem; }
+
+  .eg-infogrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.75rem; }
+  .eg-info { background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.3rem; }
+  .eg-info h4 { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 0 0 0.4rem; }
+  .eg-info p { margin: 0; font-weight: 600; font-size: 1.05rem; }
+
+  .eg-callout { border-left: 4px solid var(--primary); background: var(--cream); padding: 1.1rem 1.5rem; border-radius: var(--radius); line-height: 1.6; }
+  .eg-reqlist { margin: 0.75rem 0 0 1.1rem; display: flex; flex-direction: column; gap: 0.35rem; color: var(--muted); }
+
+  .eg-quick { background: var(--primary-light); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 2rem 2.25rem; }
+  .eg-quick p { font-size: 1.15rem; line-height: 1.6; margin: 0 0 1.25rem; }
+  .eg-advantages { margin: 0; padding-left: 1.2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.6rem 1.5rem; }
+  .eg-advantages li { line-height: 1.5; }
+
+  /* Path flow */
+  .eg-path { display: flex; flex-wrap: wrap; gap: 0; margin: 0.5rem 0 0.5rem; }
+  .eg-step { flex: 1 1 240px; display: flex; align-items: flex-start; gap: 1rem; position: relative; padding: 1rem 1.5rem 1rem 0; }
+  .eg-step:not(:last-child)::after { content: ""; position: absolute; top: 2.2rem; left: 2.7rem; right: 0.25rem; height: 2px; background: var(--line); }
+  .eg-step-num { width: 44px; height: 44px; flex: 0 0 auto; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: 600; font-size: 1.1rem; box-shadow: var(--shadow-sm); position: relative; z-index: 1; }
+  .eg-step:last-child .eg-step-num { background: var(--ink); }
+  .eg-step-body { display: flex; flex-direction: column; gap: 0.2rem; padding-top: 0.4rem; }
+  .eg-step-label { font-weight: 600; font-family: var(--font-heading); font-size: 1.02rem; line-height: 1.35; }
+  .eg-step-desc { color: var(--muted); font-size: 0.92rem; line-height: 1.45; }
+
+  /* Exam meta */
+  .eg-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.85rem; margin: 0 0 2rem; }
+  .eg-meta-item { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 0.9rem 1.1rem; }
+  .eg-meta-item .k { display: block; font-family: var(--font-mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary); font-weight: 700; }
+  .eg-meta-item .v { display: block; font-weight: 600; margin-top: 0.3rem; font-size: 0.98rem; }
+
+  .eg-subhead { font-family: var(--font-heading); font-size: 1.35rem; margin: 1.5rem 0 0.5rem; }
+  .eg-topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin: 1.25rem 0; }
+  .eg-topic { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.3rem; position: relative; }
+  .eg-topic-weight { position: absolute; top: 1.1rem; right: 1.3rem; font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700; color: var(--primary); background: var(--primary-light); padding: 0.15rem 0.55rem; border-radius: 999px; }
+  .eg-topic-name { display: block; font-weight: 600; font-family: var(--font-heading); padding-right: 3.5rem; line-height: 1.4; }
+  .eg-topic-note { display: block; color: var(--muted); font-size: 0.88rem; margin-top: 0.45rem; line-height: 1.45; }
+
+  .eg-part { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem 1.6rem; margin-bottom: 1rem; }
+  .eg-part h4 { font-family: var(--font-heading); margin: 0 0 0.85rem; font-size: 1.1rem; }
+  .eg-partlist { margin: 0; padding-left: 1.2rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.4rem 1.5rem; color: var(--muted); font-size: 0.95rem; line-height: 1.5; }
+  .eg-partlist li { margin-bottom: 0.3rem; }
+
+  .eg-modules { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.25rem 0; }
+  .eg-module { background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 0.5rem 1rem; font-size: 0.92rem; }
+
+  .eg-essentials { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin: 1.5rem 0 0; }
+  .eg-essentials .row { display: grid; grid-template-columns: 220px 1fr; gap: 1rem; padding: 0.95rem 1.5rem; border-bottom: 1px solid var(--line); }
+  .eg-essentials .row:last-child { border-bottom: none; }
+  .eg-essentials .k { font-weight: 600; color: var(--ink); }
+  .eg-essentials .v { color: var(--muted); }
+
+  /* Tables */
+  .eg-tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
+  .eg-table { width: 100%; border-collapse: collapse; }
+  .eg-table th, .eg-table td { padding: 0.95rem 1.2rem; text-align: left; border-bottom: 1px solid var(--line); }
+  .eg-table thead th { background: var(--primary); color: #fff; font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; font-weight: 700; }
+  .eg-table tbody th { font-weight: 600; width: 34%; background: var(--cream); }
+  .eg-table tbody tr:last-child th, .eg-table tbody tr:last-child td { border-bottom: none; }
+  .eg-duration, .eg-fee { font-family: var(--font-mono); font-weight: 600; white-space: nowrap; }
+  .eg-fee { color: var(--primary); }
+  .eg-total td { font-weight: 700; background: var(--cream); border-top: 2px solid var(--ink); }
+  .eg-footnote { font-size: 0.85rem; color: var(--muted); font-style: italic; margin-top: 1rem; }
+
+  /* Providers */
+  .eg-affiliate { margin-bottom: 2rem; }
+
+  /* Route */
+  .eg-route { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.5rem; }
+  .eg-route li { display: grid; grid-template-columns: auto 1fr; gap: 1.4rem; background: var(--paper); padding: 1.75rem; border: 1px solid var(--line); border-radius: var(--radius); }
+  .eg-route-num { width: 42px; height: 42px; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-family: var(--font-heading); font-weight: 700; font-size: 1.15rem; }
+  .eg-route-body h3 { margin: 0 0 0.5rem; font-size: 1.35rem; font-family: var(--font-heading); }
+  .eg-route-body p { margin: 0 0 1rem; color: var(--muted); line-height: 1.6; }
+  .eg-substeps { margin: 0 0 1rem 0; padding-left: 1.2rem; color: var(--muted); line-height: 1.7; }
+  .eg-substeps li { margin-bottom: 0.3rem; }
+  .eg-route-meta { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+  .eg-pill { background: var(--cream); border: 1px solid var(--line); border-radius: 999px; padding: 0.3rem 0.85rem; font-family: var(--font-mono); font-size: 0.78rem; font-weight: 600; }
+  .eg-note { font-size: 0.88rem; color: var(--muted); font-style: italic; }
+
+  /* Summary */
+  .eg-summary { background: var(--primary-light); border: 1px solid var(--line); border-left: 4px solid var(--primary); border-radius: var(--radius); padding: 1.5rem 2rem; }
+  .eg-summary ul { margin: 0; padding-left: 1.25rem; line-height: 1.8; }
+  .eg-summary li { margin-bottom: 0.6rem; }
+
+  .eg-cta { background: var(--primary); color: #fff; border-radius: var(--radius-lg); padding: 2.5rem; text-align: center; margin-top: 2rem; }
+  .eg-cta h3 { font-family: var(--font-heading); color: #fff; margin: 0 0 1.25rem; font-size: 1.5rem; }
+  .eg-cta .button { background: #fff; color: var(--primary); width: auto; }
+  .eg-cta .button:hover { background: var(--cream); }
+
+  .eg-sourcelink { color: var(--primary); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+  .eg-reviewed { font-family: var(--font-mono); font-size: 0.82rem; color: var(--muted); opacity: 0.8; margin-top: 1rem; }
+
+  @media (max-width: 900px) {
+    .two-column-content { grid-template-columns: 1fr; gap: 1rem; }
+    .sticky-nav { display: none; }
+    .eg-step:not(:last-child)::after { display: none; }
+    .eg-step { flex: 1 1 100%; border-bottom: 1px solid var(--line); padding: 1rem 0; }
+    .eg-section-cream { padding: 2rem 1.25rem; }
+    .eg-essentials .row { grid-template-columns: 1fr; gap: 0.25rem; }
+  }
+</style>

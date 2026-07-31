@@ -1,0 +1,135 @@
+---
+// SearchUI.astro
+// Integrates Pagefind for static site search
+---
+
+<div id="search" class="search-ui-container"></div>
+
+<script is:inline>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    // Only load Pagefind if we're not in the dev server (or if it's been built)
+    if (document.getElementById('search')) {
+      // Create a style element for pagefind CSS to avoid 404 in dev
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = '/pagefind/pagefind-ui.css';
+      link.onerror = () => {
+        // Fallback for dev environment or before pagefind is run
+        const devMsg = document.createElement('p');
+        devMsg.className = 'search-dev-fallback';
+        devMsg.textContent = 'Search is disabled in dev mode. Run `npm run build` to test Pagefind.';
+        document.getElementById('search').appendChild(devMsg);
+      };
+      document.head.appendChild(link);
+
+      // Load Pagefind JS
+      const script = document.createElement('script');
+      script.src = '/pagefind/pagefind-ui.js';
+      script.onload = () => {
+        // @ts-ignore
+        new PagefindUI({ 
+          element: "#search", 
+          showImages: false,
+          showEmptyFilters: false,
+          resetStyles: false
+        });
+      };
+      document.body.appendChild(script);
+    }
+  });
+</script>
+
+<style>
+  .search-ui-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .search-dev-fallback {
+    padding: 1rem;
+    background: var(--cream);
+    border: 1px dashed var(--muted);
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--muted);
+    border-radius: var(--radius);
+  }
+  
+  /* Overrides for Pagefind default styles to match our design system */
+  :global(.pagefind-ui__search-input) {
+    font-family: var(--font-body) !important;
+    font-size: 1.125rem !important;
+    padding: 1.25rem 1.25rem 1.25rem 3.5rem !important;
+    border: 2px solid var(--line) !important;
+    border-radius: var(--radius-lg) !important;
+    background-color: var(--glass-bg) !important;
+    color: var(--ink) !important;
+    font-weight: 500 !important;
+    transition: all var(--transition) !important;
+    box-shadow: var(--shadow-sm) !important;
+  }
+  
+  :global(.pagefind-ui__search-input:focus) {
+    outline: none !important;
+    border-color: var(--primary) !important;
+    box-shadow: var(--shadow-md), 0 0 0 3px var(--primary-light) !important;
+    background-color: var(--paper) !important;
+  }
+  
+  :global(.pagefind-ui__search-clear) {
+    background-color: transparent !important;
+    color: var(--muted) !important;
+    padding-right: 1rem !important;
+  }
+  
+  :global(.pagefind-ui__result) {
+    border-bottom: 1px solid var(--line) !important;
+    padding: 1.5rem 0 !important;
+    transition: transform var(--transition) !important;
+  }
+  
+  :global(.pagefind-ui__result-title), :global(.pagefind-ui__result-link) {
+    font-family: var(--font-heading) !important;
+    font-size: 1.25rem !important;
+    color: var(--ink) !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    transition: color var(--transition) !important;
+  }
+  
+  :global(.pagefind-ui__result-link:hover) {
+    color: var(--primary) !important;
+  }
+  
+  :global(.pagefind-ui__result-excerpt) {
+    font-family: var(--font-body) !important;
+    color: var(--muted) !important;
+    margin-top: 0.5rem !important;
+    line-height: 1.6 !important;
+  }
+  
+  :global(.pagefind-ui__button) {
+    font-family: var(--font-body) !important;
+    background-color: var(--cream) !important;
+    color: var(--ink) !important;
+    border: 1px solid var(--line) !important;
+    border-radius: var(--radius) !important;
+    padding: 0.75rem 1.5rem !important;
+    font-weight: 600 !important;
+    transition: all var(--transition) !important;
+    cursor: pointer !important;
+  }
+  
+  :global(.pagefind-ui__button:hover) {
+    background-color: var(--ink) !important;
+    color: var(--paper) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: var(--shadow-md) !important;
+  }
+  
+  :global([data-theme="dark"] .pagefind-ui__search-input) {
+    background-color: var(--glass-bg) !important;
+    color: var(--paper) !important;
+    border-color: var(--line) !important;
+  }
+</style>

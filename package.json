@@ -1,0 +1,23 @@
+{
+  "name": "testpreppilot",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "format": "prettier --write \"src/**/*.{astro,css,ts,js}\""
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/sitemap": "^3.0.0",
+    "astro": "^5.0.0",
+    "pagefind": "^1.5.2",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.0",
+    "prettier-plugin-astro": "^0.14.0"
+  }
+}

@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Editorial policy', href: '/editorial-policy' }
+];
+---
+
+<BaseLayout 
+  title="Editorial Policy — TestPrepPilot"
+  description="Our standards for accuracy and honesty."
+>
+  <div class="container | animate-on-scroll">
+    <BreadcrumbNav items={breadcrumbItems} />
+    
+    <header class="page-hero">
+      <p class="eyebrow">EDITORIAL POLICY</p>
+      <h1>Useful information, <em>honestly presented.</em></h1>
+      <p class="lede">Our commitment is to the reader. We aim to be the most reliable source for credentialing requirements.</p>
+    </header>
+
+    <main class="prose">
+      <section>
+        <h2>Our standards</h2>
+        <p>Every piece of content on TestPrepPilot undergoes a rigorous review process. We rely on primary sources—government sites, official handbooks, and direct regulatory guidance. We do our best to note when a requirement was last verified, as rules frequently change.</p>
+        <p>Our writers and researchers are instructed to prioritize clarity over cleverness, and accuracy over everything else.</p>
+      </section>
+      
+      <section>
+        <h2>What we do not do</h2>
+        <p>We do not accept guest posts that are disguised marketing. We do not alter facts or requirements to make a specific provider look more appealing. We do not hide the total cost or timeline of a credential to make the path seem artificially easy.</p>
+      </section>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+  
+  .page-hero { padding: 4rem 0; border-bottom: 2px solid var(--ink); margin-bottom: 4rem; }
+  .page-hero h1 { font-size: 3.5rem; margin: 1rem 0; }
+  .page-hero .lede { font-size: 1.25rem; color: #444; }
+  
+  .prose section { margin-bottom: 3rem; }
+  .prose h2 { font-size: 2rem; margin-bottom: 1rem; }
+  .prose p { font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--ink); }
+</style>

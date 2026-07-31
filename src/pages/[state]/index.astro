@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { states } from '../../data/states';
+import { getCredentialsByState } from '../../data/credentials';
+import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
+import CredentialCard from '../../components/CredentialCard.astro';
+
+export function getStaticPaths() {
+  return states.map(state => ({
+    params: { state: state.slug },
+    props: { stateInfo: state },
+  }));
+}
+
+const { stateInfo } = Astro.props;
+const stateCredentials = getCredentialsByState(stateInfo.slug);
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: stateInfo.name, href: `/${stateInfo.slug}` }
+];
+---
+
+<BaseLayout 
+  title={`Professional Licenses & Certifications in ${stateInfo.name} — TestPrepPilot`}
+  description={`Find official requirements and verified guides for professional pathways in ${stateInfo.name}.`}
+>
+  <div class="container | animate-on-scroll">
+    <BreadcrumbNav items={breadcrumbItems} />
+    
+    <header class="state-hero">
+      <h1>Professional Licenses & Certifications in <em>{stateInfo.name}</em></h1>
+      <p class="lede">Every state has its own specific rules and regulatory boards. Browse verified credential requirements specific to {stateInfo.name}.</p>
+    </header>
+
+    <main class="state-content">
+      {stateCredentials.length > 0 ? (
+        <div class="credential-grid">
+          {stateCredentials.map(cred => (
+            <CredentialCard credential={cred} stateInfo={stateInfo} />
+          ))}
+        </div>
+      ) : (
+        <div class="empty-state">
+          <h2>Coming soon to {stateInfo.name}</h2>
+          <p>We're actively building guides for this state. Check back soon or browse all our pathways globally.</p>
+          <a href="/explore" class="btn btn-primary">Browse all pathways</a>
+        </div>
+      )}
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+  .state-hero { padding: 4rem 0; border-bottom: 2px solid var(--ink); margin-bottom: 3rem; text-align: center; }
+  .state-hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+  .state-hero .lede { font-size: 1.25rem; max-width: 700px; margin: 0 auto; color: #444; }
+  
+  .credential-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
+  
+  .empty-state { text-align: center; padding: 5rem 2rem; background: var(--cream); border-radius: 4px; max-width: 600px; margin: 0 auto 4rem auto; }
+  .empty-state h2 { font-size: 2rem; margin-bottom: 1rem; }
+  .empty-state p { margin-bottom: 2rem; color: #555; }
+</style>

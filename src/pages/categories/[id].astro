@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { categories } from '../../data/categories';
+import { getCredentialsByCategory } from '../../data/credentials';
+import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
+import CredentialCard from '../../components/CredentialCard.astro';
+
+export function getStaticPaths() {
+  return categories.map(category => ({
+    params: { id: category.id },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+const categoryCredentials = getCredentialsByCategory(category.id);
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: category.name, href: `/categories/${category.id}` }
+];
+---
+
+<BaseLayout
+  title={`${category.seoTitle} — TestPrepPilot`}
+  description={`Compare ${category.name.toLowerCase()} credentials, licenses, and certifications. Independently researched requirement guides and provider comparisons.`}
+>
+  <div class="container | animate-on-scroll">
+    <BreadcrumbNav items={breadcrumbItems} />
+
+    <header class="category-hero">
+      <span class="category-icon" aria-hidden="true">{category.icon}</span>
+      <h1>{category.name}</h1>
+      <p class="lede">{category.description}</p>
+    </header>
+
+    <main class="category-content">
+      {categoryCredentials.length > 0 ? (
+        <div class="credential-grid">
+          {categoryCredentials.map(cred => (
+            <CredentialCard credential={cred} />
+          ))}
+        </div>
+      ) : (
+        <div class="empty-state">
+          <h2>Coming soon</h2>
+          <p>We're actively building {category.name} guides. Check back soon or browse all our pathways.</p>
+          <a href="/explore" class="btn btn-primary">Browse all pathways</a>
+        </div>
+      )}
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+  .category-hero { padding: 4rem 0; border-bottom: 2px solid var(--ink); margin-bottom: 3rem; text-align: center; }
+  .category-icon { font-size: 3rem; display: block; margin-bottom: 1rem; }
+  .category-hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+  .category-hero .lede { font-size: 1.25rem; max-width: 700px; margin: 0 auto; color: #444; }
+  .credential-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
+  .empty-state { text-align: center; padding: 5rem 2rem; background: var(--cream); border-radius: 4px; max-width: 600px; margin: 0 auto 4rem auto; }
+  .empty-state h2 { font-size: 2rem; margin-bottom: 1rem; }
+  .empty-state p { margin-bottom: 2rem; color: #555; }
+</style>

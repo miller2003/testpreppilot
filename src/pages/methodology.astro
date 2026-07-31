@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Methodology', href: '/methodology' }
+];
+---
+
+<BaseLayout 
+  title="Our Methodology — TestPrepPilot"
+  description="How we review, verify, and recommend professional credentials."
+>
+  <div class="container | animate-on-scroll">
+    <BreadcrumbNav items={breadcrumbItems} />
+    
+    <header class="page-hero">
+      <p class="eyebrow">OUR METHODOLOGY</p>
+      <h1>Clarity requires <em>showing the work.</em></h1>
+      <p class="lede">We believe that navigating your career should be based on facts, not marketing. Here is how we evaluate credentials and providers.</p>
+    </header>
+
+    <main class="principles">
+      <section class="principle">
+        <h2>01. Requirements first</h2>
+        <p>Before we list any credential, we go straight to the source—state regulatory boards, national associations, and official credentialing bodies. We break down these dense, often confusing documents into clear, actionable steps. If a provider doesn't meet the official requirements, they aren't recommended.</p>
+      </section>
+      
+      <section class="principle">
+        <h2>02. Useful comparisons</h2>
+        <p>Not all providers are created equal. We evaluate them on cost, format, pass rates (when available), and student support. Our tables are designed to let you compare apples to apples, so you can make the decision that fits your specific situation, budget, and learning style.</p>
+      </section>
+      
+      <section class="principle">
+        <h2>03. Clear disclosures</h2>
+        <p>Trust is built on transparency. While we do earn affiliate commissions from some providers we recommend, this never dictates <em>if</em> a provider is listed or what the official requirements are. If a provider is clearly superior for a certain path, we will say so, regardless of any financial relationship. See our full <a href="/disclosure">affiliate disclosure</a>.</p>
+      </section>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+  
+  .page-hero { padding: 4rem 0; border-bottom: 2px solid var(--ink); margin-bottom: 4rem; }
+  .page-hero h1 { font-size: 4rem; margin: 1rem 0; }
+  .page-hero .lede { font-size: 1.5rem; color: #444; line-height: 1.4; }
+  
+  .principles { display: flex; flex-direction: column; gap: 4rem; margin-bottom: 6rem; }
+  .principle h2 { font-size: 2.5rem; font-family: var(--font-serif); margin-bottom: 1.5rem; color: var(--primary); }
+  .principle p { font-size: 1.25rem; line-height: 1.8; color: var(--ink); }
+  .principle a { color: var(--ink); font-weight: bold; text-decoration: underline; text-decoration-color: var(--primary); text-underline-offset: 4px; }
+  .principle a:hover { color: var(--primary); }
+</style>

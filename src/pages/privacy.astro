@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Privacy', href: '/privacy' }
+];
+---
+
+<BaseLayout 
+  title="Privacy Policy — TestPrepPilot"
+  description="How we handle and protect your data."
+>
+  <div class="container | animate-on-scroll">
+    <BreadcrumbNav items={breadcrumbItems} />
+    
+    <header class="page-hero">
+      <p class="eyebrow">PRIVACY</p>
+      <h1>Your information <em>is not the product.</em></h1>
+      <p class="lede">A straightforward summary of our privacy practices.</p>
+    </header>
+
+    <main class="prose">
+      <section>
+        <h2>Data collection</h2>
+        <p>We collect basic, anonymized analytics to understand which credentials are most sought after and how we can improve the site's navigation. If you choose to sign up for our newsletter, we securely store your email address solely for that purpose.</p>
+      </section>
+      
+      <section>
+        <h2>User choices</h2>
+        <p>You will not be tracked across the internet by aggressive ad networks through our site. We do not sell your personal data to third parties. If you wish to unsubscribe from any communications, you can do so immediately via the link in our emails.</p>
+      </section>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+  
+  .page-hero { padding: 4rem 0; border-bottom: 2px solid var(--ink); margin-bottom: 4rem; }
+  .page-hero h1 { font-size: 3.5rem; margin: 1rem 0; }
+  .page-hero .lede { font-size: 1.25rem; color: #444; }
+  
+  .prose section { margin-bottom: 3rem; }
+  .prose h2 { font-size: 2rem; margin-bottom: 1rem; }
+  .prose p { font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--ink); }
+</style>

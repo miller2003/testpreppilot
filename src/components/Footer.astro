@@ -1,0 +1,39 @@
+---
+import { categories } from '../data/categories';
+---
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <a href="/" class="brand" aria-label="TestPrepPilot Home">
+        <span class="brand-mark">C</span>
+        <span>TestPrep<br/>Pilot</span>
+      </a>
+      <p class="tagline">Guiding your professional journey with verified credential paths.</p>
+    </div>
+    
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul>
+          {categories.map((category) => (
+            <li><a href={`/categories/${category.id}`}>{category.name}</a></li>
+          ))}
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Trust</h4>
+        <ul>
+          <li><a href="/methodology">Methodology</a></li>
+          <li><a href="/editorial-policy">Editorial Policy</a></li>
+          <li><a href="/disclosure">Disclosure</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; {new Date().getFullYear()} TestPrepPilot. All rights reserved.</p>
+  </div>
+</footer>

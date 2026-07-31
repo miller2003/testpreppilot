@@ -1,0 +1,91 @@
+/* Hero Sections */
+.hero {
+  padding: var(--space-8) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-art { margin-bottom: var(--space-6); position: relative; }
+.hero-art .sun { width: 60px; height: 60px; background: var(--primary); border-radius: 50%; margin: 0 auto; box-shadow: 0 0 40px rgba(239, 101, 78, 0.4); }
+.hero-art .orbits { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 1px solid var(--line); border-radius: 50%; width: 200px; height: 200px; opacity: 0.5; }
+.hero .path-cards { margin-top: var(--space-6); display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap; }
+
+.page-hero {
+  padding: var(--space-6) 0;
+  background-color: var(--cream);
+  border-bottom: 1px solid var(--line);
+}
+.page-hero h1 { font-family: var(--font-heading); font-size: 3rem; margin-bottom: var(--space-2); }
+
+/* Page Hero Color Variants */
+.page-hero.coral { border-top: 6px solid var(--accent-coral); }
+.page-hero.blue { border-top: 6px solid var(--accent-blue); }
+.page-hero.gold { border-top: 6px solid var(--accent-gold); }
+.page-hero.mint { border-top: 6px solid var(--accent-mint); }
+.page-hero.indigo { border-top: 6px solid var(--accent-indigo); }
+.page-hero.rose { border-top: 6px solid var(--accent-rose); }
+.page-hero.slate { border-top: 6px solid var(--accent-slate); }
+.page-hero.amber { border-top: 6px solid var(--accent-amber); }
+.page-hero.teal { border-top: 6px solid var(--accent-teal); }
+.page-hero.plum { border-top: 6px solid var(--accent-plum); }
+.page-hero.sage { border-top: 6px solid var(--accent-sage); }
+.page-hero.copper { border-top: 6px solid var(--accent-copper); }
+
+/* Path & Directory */
+.path-content, .directory {
+  padding: var(--space-6) 0;
+}
+.path-hero {
+  text-align: center;
+  padding: var(--space-6) 0;
+}
+
+/* Article & Prose */
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-6) 0;
+}
+.prose {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--ink);
+}
+.prose h2, .prose h3 { font-family: var(--font-heading); margin-top: var(--space-5); margin-bottom: var(--space-3); }
+.prose p { margin-bottom: var(--space-4); }
+
+/* Finder Panels */
+.finder-inner {
+  display: flex;
+  gap: var(--space-6);
+  align-items: flex-start;
+}
+.finder-panel {
+  flex: 1;
+  background: white;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  padding: var(--space-5);
+}
+@media (max-width: 800px) {
+  .finder-inner { flex-direction: column; }
+}
+
+/* Sections */
+.how-section, .steps, .principles, .sources {
+  padding: var(--space-6) 0;
+}
+.fact-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  padding: var(--space-2) 0;
+}
+.newsletter {
+  background: var(--ink);
+  color: var(--paper);
+  padding: var(--space-6);
+  border-radius: var(--radius);
+  text-align: center;
+  margin: var(--space-6) 0;
+}

@@ -1,0 +1,69 @@
+:root {
+  /* Colors */
+  --ink: #111e1f;
+  --paper: #faf9f6;
+  --cream: #f0eee5;
+  --muted: #647476;
+  --primary: #1d4ed8;
+  --line: #e3e4df;
+  --primary-light: #eff6ff;
+
+  /* Credential Card Accents (12 colors) - tweaked for better vibrancy */
+  --accent-coral: #ff6b52;
+  --accent-blue: #3b82f6;
+  --accent-gold: #f59e0b;
+  --accent-mint: #10b981;
+  --accent-indigo: #6366f1;
+  --accent-rose: #f43f5e;
+  --accent-slate: #64748b;
+  --accent-amber: #d97706;
+  --accent-teal: #0d9488;
+  --accent-plum: #d946ef;
+  --accent-sage: #65a30d;
+  --accent-copper: #c2410c;
+
+  /* Typography */
+  --font-body: 'Inter', 'DM Sans', sans-serif;
+  --font-heading: 'Outfit', 'Playfair Display', serif;
+  --font-mono: 'JetBrains Mono', 'DM Mono', monospace;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-8: 4rem;
+
+  /* Misc */
+  --radius: 12px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 4px 12px rgba(17, 30, 31, 0.03);
+  --shadow-md: 0 12px 32px rgba(17, 30, 31, 0.06);
+  --shadow-hover: 0 20px 48px rgba(17, 30, 31, 0.12), 0 0 0 1px rgba(17, 30, 31, 0.05);
+  --transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --glass-bg: rgba(250, 249, 246, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  
+  /* Z-index */
+  --z-base: 1;
+  --z-nav: 100;
+  --z-modal: 200;
+}
+
+[data-theme="dark"] {
+  --ink: #fdfdfc;
+  --paper: #0b0c0d;
+  --cream: #151617;
+  --muted: #8b999a;
+  --line: #222526;
+  --primary-light: #1e3a8a;
+  
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.7);
+  --shadow-hover: 0 20px 48px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  
+  --glass-bg: rgba(11, 12, 13, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
