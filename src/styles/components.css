@@ -184,3 +184,9 @@
 .next-box { padding: var(--space-4); border: 2px dashed var(--line); border-radius: var(--radius); text-align: center; }
 .inline-disclosure { font-size: 0.8rem; color: var(--muted); font-style: italic; }
 .breadcrumb-nav { font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: var(--space-4); }
+.breadcrumb-nav ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+.breadcrumb-nav li { display: inline-flex; align-items: center; gap: 0.4rem; }
+.breadcrumb-nav li:not(:last-child)::after { content: "›"; color: var(--muted); margin-left: 0.4rem; font-family: var(--font-body); }
+.breadcrumb-nav a { color: var(--primary); text-decoration: none; }
+.breadcrumb-nav a:hover { text-decoration: underline; }
+.breadcrumb-nav [aria-current="page"] { color: var(--muted); }
