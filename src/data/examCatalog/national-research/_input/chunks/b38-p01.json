@@ -1,0 +1,410 @@
+{
+ "chunkId": "b38-p01",
+ "batch": 38,
+ "part": 1,
+ "categories": [
+  "trades"
+ ],
+ "groups": [
+  "Automotive & Diesel"
+ ],
+ "bodies": [
+  "National Institute for Automotive Service Excellence (ASE)"
+ ],
+ "examCount": 28,
+ "exams": [
+  {
+   "slug": "ase-a1-engine-repair",
+   "name": "ASE A1 Engine Repair Certification Test",
+   "short": "ASE A1",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "A1"
+   ],
+   "blurb": "Automobile series test covering diagnosis and repair of engine mechanical, lubrication, cooling and fuel systems on cars and light trucks."
+  },
+  {
+   "slug": "ase-a2-automatic-transmission",
+   "name": "ASE A2 Automatic Transmission/Transaxle Certification Test",
+   "short": "ASE A2",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "A2"
+   ],
+   "blurb": "Automobile series test on diagnosis, in-vehicle service and overhaul of automatic transmissions and transaxles, including electronic controls."
+  },
+  {
+   "slug": "ase-a3-manual-drive-train-axles",
+   "name": "ASE A3 Manual Drive Train and Axles Certification Test",
+   "short": "ASE A3",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "A3"
+   ],
+   "blurb": "Automobile series test covering clutches, manual transmissions, transaxles, drive shafts, differentials and four-wheel drive components."
+  },
+  {
+   "slug": "ase-a4-suspension-steering",
+   "name": "ASE A4 Suspension and Steering Certification Test",
+   "short": "ASE A4",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "A4"
+   ],
+   "blurb": "Automobile series test on steering systems, suspension components, wheel alignment, wheels and tyres for cars and light trucks."
+  },
+  {
+   "slug": "ase-a5-brakes",
+   "name": "ASE A5 Brakes Certification Test",
+   "short": "ASE A5",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "A5"
+   ],
+   "blurb": "Automobile series test covering hydraulic, power assist, disc, drum, parking brake, antilock and traction control brake systems."
+  },
+  {
+   "slug": "ase-a6-electrical-electronic-systems",
+   "name": "ASE A6 Electrical/Electronic Systems Certification Test",
+   "short": "ASE A6",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "A6"
+   ],
+   "blurb": "Automobile series test on battery, starting, charging, lighting, instrumentation, accessory and network communication diagnosis."
+  },
+  {
+   "slug": "ase-a7-heating-air-conditioning",
+   "name": "ASE A7 Heating and Air Conditioning Certification Test",
+   "short": "ASE A7",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "A7"
+   ],
+   "blurb": "Automobile series test covering refrigeration system diagnosis, heating and engine cooling, operating controls and refrigerant recovery."
+  },
+  {
+   "slug": "ase-a8-engine-performance",
+   "name": "ASE A8 Engine Performance Certification Test",
+   "short": "ASE A8",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "A8"
+   ],
+   "blurb": "Automobile series test on driveability diagnosis, ignition, fuel, air induction, emission control and computerised engine controls."
+  },
+  {
+   "slug": "ase-a9-light-vehicle-diesel-engines",
+   "name": "ASE A9 Light Vehicle Diesel Engines Certification Test",
+   "short": "ASE A9",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "A9"
+   ],
+   "blurb": "Automobile series test covering diesel engine diagnosis and repair in light-duty pickups and vans, including fuel and emission systems."
+  },
+  {
+   "slug": "ase-advanced-level-specialist",
+   "name": "ASE Advanced Level Specialist Certification",
+   "short": "ASE L Series",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "L Series",
+    "Advanced Level"
+   ],
+   "blurb": "Umbrella for the ASE L-series advanced diagnostic tests, which require three years of experience and a composite vehicle reference booklet."
+  },
+  {
+   "slug": "ase-b2-painting-refinishing",
+   "name": "ASE B2 Painting and Refinishing Certification Test",
+   "short": "ASE B2",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "B2"
+   ],
+   "blurb": "Collision repair series test on surface preparation, spray gun operation, paint mixing, application and finish defect correction."
+  },
+  {
+   "slug": "ase-b3-non-structural-damage-repair",
+   "name": "ASE B3 Non-Structural Analysis and Damage Repair Certification Test",
+   "short": "ASE B3",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "B3"
+   ],
+   "blurb": "Collision repair series test covering outer body panel repair, metal finishing, plastic repair, welding and corrosion protection."
+  },
+  {
+   "slug": "ase-b4-structural-damage-repair",
+   "name": "ASE B4 Structural Analysis and Damage Repair Certification Test",
+   "short": "ASE B4",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "B4"
+   ],
+   "blurb": "Collision repair series test on frame and unibody measurement, straightening, sectioning and structural component replacement."
+  },
+  {
+   "slug": "ase-b5-mechanical-electrical-components",
+   "name": "ASE B5 Mechanical and Electrical Components Certification Test",
+   "short": "ASE B5",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "B5"
+   ],
+   "blurb": "Collision repair series test covering suspension, steering, brakes, electrical, restraint and cooling components affected by collisions."
+  },
+  {
+   "slug": "ase-b6-damage-analysis-estimating",
+   "name": "ASE B6 Damage Analysis and Estimating Certification Test",
+   "short": "ASE B6",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "B6"
+   ],
+   "blurb": "Collision estimator test on damage analysis, repair versus replace decisions, estimating systems and customer and insurer communication."
+  },
+  {
+   "slug": "ase-c1-service-consultant",
+   "name": "ASE C1 Automobile Service Consultant Certification Test",
+   "short": "ASE C1",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "C1"
+   ],
+   "blurb": "Test for service writers and advisors covering vehicle systems knowledge, customer relations, sales skills and shop workflow management."
+  },
+  {
+   "slug": "ase-e1-truck-equipment-installation",
+   "name": "ASE E1 Truck Equipment Installation and Repair Certification Test",
+   "short": "ASE E1",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "E1"
+   ],
+   "blurb": "Truck equipment series test on mounting bodies, frames, hydraulics and weight distribution when upfitting commercial truck chassis."
+  },
+  {
+   "slug": "ase-e2-truck-electrical-installation",
+   "name": "ASE E2 Electrical/Electronic Systems Installation and Repair Certification Test",
+   "short": "ASE E2",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "E2"
+   ],
+   "blurb": "Truck equipment series test covering wiring, circuit protection, lighting and electronic accessory installation on commercial truck bodies."
+  },
+  {
+   "slug": "ase-e3-auxiliary-power-systems",
+   "name": "ASE E3 Auxiliary Power Systems Installation and Repair Certification Test",
+   "short": "ASE E3",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "E3"
+   ],
+   "blurb": "Truck equipment series test on installing and servicing power take-off, hydraulic pumps, generators and other auxiliary power systems."
+  },
+  {
+   "slug": "ase-entry-level-student-certification",
+   "name": "ASE Entry-Level Certification Tests",
+   "short": "ASE Entry-Level",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "ASE Student Certification"
+   ],
+   "blurb": "Student-level tests in automobile, collision and medium-heavy truck areas for career and technical education programme graduates."
+  },
+  {
+   "slug": "ase-f1-alternate-fuels-cng",
+   "name": "ASE F1 Alternate Fuels Compressed Natural Gas Vehicle Certification Test",
+   "short": "ASE F1",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "F1"
+   ],
+   "blurb": "Test covering diagnosis, service and repair of compressed natural gas fuel systems, cylinders and engine controls on light vehicles."
+  },
+  {
+   "slug": "ase-g1-maintenance-light-repair",
+   "name": "ASE G1 Auto Maintenance and Light Repair Certification Test",
+   "short": "ASE G1",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "G1"
+   ],
+   "blurb": "Entry test on the most common maintenance and light repair tasks, requiring one year of experience and available by remote proctoring."
+  },
+  {
+   "slug": "ase-h1-transit-bus-cng-engines",
+   "name": "ASE H1 Transit Bus Compressed Natural Gas Engines Certification Test",
+   "short": "ASE H1",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "H1"
+   ],
+   "blurb": "Transit bus series test on compressed natural gas engine diagnosis, fuel storage systems, emissions and related safety procedures."
+  },
+  {
+   "slug": "ase-h2-transit-bus-diesel-engines",
+   "name": "ASE H2 Transit Bus Diesel Engines Certification Test",
+   "short": "ASE H2",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "H2"
+   ],
+   "blurb": "Transit bus series test covering diesel engine diagnosis, fuel injection, air induction, exhaust aftertreatment and cooling systems."
+  },
+  {
+   "slug": "ase-h3-transit-bus-drive-train",
+   "name": "ASE H3 Transit Bus Drive Train Certification Test",
+   "short": "ASE H3",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "H3"
+   ],
+   "blurb": "Transit bus series test on automatic transmissions, driveline components, differentials and axle service for heavy transit vehicles."
+  },
+  {
+   "slug": "ase-h4-transit-bus-brakes",
+   "name": "ASE H4 Transit Bus Brakes Certification Test",
+   "short": "ASE H4",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "H4"
+   ],
+   "blurb": "Transit bus series test covering air and hydraulic brake systems, antilock controls, foundation brakes and parking brake service."
+  },
+  {
+   "slug": "ase-h5-transit-bus-suspension-steering",
+   "name": "ASE H5 Transit Bus Suspension and Steering Certification Test",
+   "short": "ASE H5",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "H5"
+   ],
+   "blurb": "Transit bus series test on air suspension, steering gears, kneeling systems, alignment and wheel and tyre service for buses."
+  },
+  {
+   "slug": "ase-h6-transit-bus-electrical",
+   "name": "ASE H6 Transit Bus Electrical/Electronic Systems Certification Test",
+   "short": "ASE H6",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "H6"
+   ],
+   "blurb": "Transit bus series test covering batteries, charging, starting, lighting, multiplexed networks and accessory electrical diagnosis."
+  }
+ ]
+}

@@ -1,0 +1,358 @@
+{
+ "chunkId": "b08-p03",
+ "batch": 8,
+ "part": 3,
+ "categories": [
+  "aviation-maritime"
+ ],
+ "groups": [
+  "FAA Airman Knowledge Tests"
+ ],
+ "bodies": [
+  "Federal Aviation Administration"
+ ],
+ "examCount": 26,
+ "exams": [
+  {
+   "slug": "faa-mci-military-competence-instructor",
+   "name": "Military Competence Instructor Knowledge Test",
+   "short": "MCI",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "MCI"
+   ],
+   "blurb": "125-question test for military instructor pilots seeking a civilian flight instructor certificate on the basis of service experience."
+  },
+  {
+   "slug": "faa-pcp-private-pilot-airplane-canadian-conversion",
+   "name": "Private Pilot Airplane Canadian Conversion Knowledge Test",
+   "short": "PCP",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "PCP"
+   ],
+   "blurb": "40-question test converting a Canadian private pilot aeroplane licence into an FAA private pilot certificate."
+  },
+  {
+   "slug": "faa-par-private-pilot-airplane",
+   "name": "Private Pilot Airplane Knowledge Test",
+   "short": "PAR",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "PAR",
+    "Private Pilot Written"
+   ],
+   "blurb": "60-question test on airspace, weather, sectional charts, weight and balance and regulations for the private pilot certificate."
+  },
+  {
+   "slug": "faa-pat-private-pilot-recreational-transition",
+   "name": "Private Pilot Airplane Recreational Pilot Transition Knowledge Test",
+   "short": "PAT",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "PAT"
+   ],
+   "blurb": "30-question bridging test for recreational pilots upgrading to a private pilot airplane certificate."
+  },
+  {
+   "slug": "faa-pla-private-pilot-airship",
+   "name": "Private Pilot Airship Knowledge Test",
+   "short": "PLA",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "PLA"
+   ],
+   "blurb": "60-question test on airship buoyancy, envelope pressure, mooring and airspace rules for private airship pilots."
+  },
+  {
+   "slug": "faa-pbg-private-pilot-balloon-gas",
+   "name": "Private Pilot Balloon Gas Knowledge Test",
+   "short": "PBG",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "PBG"
+   ],
+   "blurb": "60-question test on gas balloon inflation, ballast, valve operation and weather for the private pilot balloon rating."
+  },
+  {
+   "slug": "faa-pbh-private-pilot-balloon-hot-air",
+   "name": "Private Pilot Balloon Hot Air Knowledge Test",
+   "short": "PBH",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "PBH"
+   ],
+   "blurb": "60-question test on hot air balloon systems, launch and landing site selection, surface winds and balloon regulations."
+  },
+  {
+   "slug": "faa-pgl-private-pilot-glider",
+   "name": "Private Pilot Glider Knowledge Test",
+   "short": "PGL",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "PGL"
+   ],
+   "blurb": "60-question test on glider aerodynamics, aerotow and winch launch procedures, thermals and airspace for glider pilots."
+  },
+  {
+   "slug": "faa-prg-private-pilot-gyroplane",
+   "name": "Private Pilot Gyroplane Knowledge Test",
+   "short": "PRG",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "PRG"
+   ],
+   "blurb": "60-question test covering gyroplane rotor systems, prerotation, performance limits and general aviation regulations."
+  },
+  {
+   "slug": "faa-pgt-private-pilot-gyroplane-recreational-transition",
+   "name": "Private Pilot Gyroplane Recreational Pilot Transition Knowledge Test",
+   "short": "PGT",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "PGT"
+   ],
+   "blurb": "30-question bridging test for recreational gyroplane pilots moving up to private pilot privileges."
+  },
+  {
+   "slug": "faa-pch-private-pilot-helicopter-canadian-conversion",
+   "name": "Private Pilot Helicopter Canadian Conversion Knowledge Test",
+   "short": "PCH",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "PCH"
+   ],
+   "blurb": "40-question test converting a Canadian private helicopter licence into an FAA private pilot rotorcraft certificate."
+  },
+  {
+   "slug": "faa-prh-private-pilot-helicopter",
+   "name": "Private Pilot Helicopter Knowledge Test",
+   "short": "PRH",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "PRH"
+   ],
+   "blurb": "60-question test on helicopter aerodynamics, height-velocity diagrams, weather and airspace for private rotorcraft pilots."
+  },
+  {
+   "slug": "faa-pht-private-pilot-helicopter-recreational-transition",
+   "name": "Private Pilot Helicopter Recreational Pilot Transition Knowledge Test",
+   "short": "PHT",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "PHT"
+   ],
+   "blurb": "30-question bridging test for recreational helicopter pilots upgrading to a private pilot rotorcraft certificate."
+  },
+  {
+   "slug": "faa-ppp-private-pilot-powered-parachute",
+   "name": "Private Pilot Powered Parachute Knowledge Test",
+   "short": "PPP",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "PPP"
+   ],
+   "blurb": "60-question test on powered parachute canopies, launch technique, wind limitations and airspace for private pilots."
+  },
+  {
+   "slug": "faa-pws-private-pilot-weight-shift-control",
+   "name": "Private Pilot Weight-Shift-Control Knowledge Test",
+   "short": "PWS",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "PWS"
+   ],
+   "blurb": "60-question test on weight-shift-control trike handling, performance, weather and regulations for private pilot applicants."
+  },
+  {
+   "slug": "faa-rpa-recreational-pilot-airplane",
+   "name": "Recreational Pilot Airplane Knowledge Test",
+   "short": "RPA",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "RPA"
+   ],
+   "blurb": "50-question test for the recreational pilot certificate, which limits pilots to smaller aircraft and nearby airports."
+  },
+  {
+   "slug": "faa-rpg-recreational-pilot-gyroplane",
+   "name": "Recreational Pilot Gyroplane Knowledge Test",
+   "short": "RPG",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "RPG"
+   ],
+   "blurb": "50-question test covering gyroplane basics and the operating limitations that apply to recreational pilot certificate holders."
+  },
+  {
+   "slug": "faa-rph-recreational-pilot-helicopter",
+   "name": "Recreational Pilot Helicopter Knowledge Test",
+   "short": "RPH",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "RPH"
+   ],
+   "blurb": "50-question test on helicopter fundamentals and recreational pilot restrictions such as distance and passenger limits."
+  },
+  {
+   "slug": "faa-spa-sport-pilot-airplane",
+   "name": "Sport Pilot Airplane Knowledge Test",
+   "short": "SPA",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "SPA"
+   ],
+   "blurb": "40-question test on light-sport aircraft limits, airspace, weather and regulations for the sport pilot certificate."
+  },
+  {
+   "slug": "faa-spi-sport-pilot-glider",
+   "name": "Sport Pilot Glider Knowledge Test",
+   "short": "SPI",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "SPI"
+   ],
+   "blurb": "40-question test on glider operations within sport pilot privileges, including launch methods and airspace rules."
+  },
+  {
+   "slug": "faa-spy-sport-pilot-gyroplane",
+   "name": "Sport Pilot Gyroplane Knowledge Test",
+   "short": "SPY",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "SPY"
+   ],
+   "blurb": "40-question test covering gyroplane handling and the sport pilot operating limitations set out in Part 61 Subpart J."
+  },
+  {
+   "slug": "faa-spl-sport-pilot-airship",
+   "name": "Sport Pilot Lighter-Than-Air Airship Knowledge Test",
+   "short": "SPL",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "SPL"
+   ],
+   "blurb": "40-question test on light-sport airship operation, buoyancy control and sport pilot rules for lighter-than-air aircraft."
+  },
+  {
+   "slug": "faa-spb-sport-pilot-balloon",
+   "name": "Sport Pilot Lighter-Than-Air Balloon Knowledge Test",
+   "short": "SPB",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "SPB"
+   ],
+   "blurb": "40-question test on balloon systems, launch site assessment and sport pilot privileges for lighter-than-air balloon pilots."
+  },
+  {
+   "slug": "faa-spp-sport-pilot-powered-parachute",
+   "name": "Sport Pilot Powered Parachute Knowledge Test",
+   "short": "SPP",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "SPP"
+   ],
+   "blurb": "40-question test on powered parachute operation, canopy inflation, surface wind limits and sport pilot regulations."
+  },
+  {
+   "slug": "faa-spw-sport-pilot-weight-shift-control",
+   "name": "Sport Pilot Weight-Shift-Control Knowledge Test",
+   "short": "SPW",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "SPW"
+   ],
+   "blurb": "40-question test on weight-shift-control trike operation and sport pilot limitations on airspace, altitude and passengers."
+  },
+  {
+   "slug": "faa-uag-unmanned-aircraft-general",
+   "name": "Unmanned Aircraft General Small Knowledge Test",
+   "short": "UAG",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "UAG",
+    "Part 107 Test",
+    "Remote Pilot Exam"
+   ],
+   "blurb": "60-question test on airspace, weather, loading and drone regulations required for the Part 107 remote pilot certificate."
+  }
+ ]
+}

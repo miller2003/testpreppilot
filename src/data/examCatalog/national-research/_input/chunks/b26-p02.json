@@ -1,0 +1,303 @@
+{
+ "chunkId": "b26-p02",
+ "batch": 26,
+ "part": 2,
+ "categories": [
+  "legal"
+ ],
+ "groups": [
+  "Paralegal & Legal Support",
+  "Bar Exam Components",
+  "Compliance & Investigations",
+  "Patent & IP"
+ ],
+ "bodies": [
+  "National Federation of Paralegal Associations",
+  "New York State Board of Law Examiners",
+  "Society of Corporate Compliance and Ethics",
+  "Association of Accredited Legal Professionals",
+  "Association of Certified E-Discovery Specialists",
+  "National Association of Legal Investigators",
+  "Association of Legal Administrators",
+  "American Association of Legal Nurse Consultants",
+  "National Notary Association",
+  "State Bar of California",
+  "Committee on Bar Admissions (Louisiana Supreme Court)",
+  "Association of Government Accountants",
+  "HIPAA certification providers",
+  "American Bankers Association",
+  "Licensing Executives Society International",
+  "Certified Patent Valuation Analyst Program"
+ ],
+ "examCount": 19,
+ "exams": [
+  {
+   "slug": "nfpa-pace",
+   "name": "NFPA Paralegal Advanced Competency Exam",
+   "short": "PACE",
+   "category": "legal",
+   "group": "Paralegal & Legal Support",
+   "body": "National Federation of Paralegal Associations",
+   "bodyUrl": "https://www.paralegals.org/",
+   "type": "Certification",
+   "aka": [
+    "PACE",
+    "Registered Paralegal",
+    "RP"
+   ],
+   "blurb": "A two-tier exam leading to the Registered Paralegal (RP) designation for experienced paralegals demonstrating advanced competency and ethics."
+  },
+  {
+   "slug": "nfpa-pcce",
+   "name": "NFPA Paralegal CORE Competency Exam",
+   "short": "PCCE",
+   "category": "legal",
+   "group": "Paralegal & Legal Support",
+   "body": "National Federation of Paralegal Associations",
+   "bodyUrl": "https://www.paralegals.org/",
+   "type": "Certification",
+   "aka": [
+    "PCCE",
+    "Certified Paralegal",
+    "CRP"
+   ],
+   "blurb": "An entry-level exam granting the Certified Paralegal (CRP) designation for candidates with less than two years of substantive paralegal experience."
+  },
+  {
+   "slug": "nylc",
+   "name": "New York Law Course",
+   "short": "NYLC",
+   "category": "legal",
+   "group": "Bar Exam Components",
+   "body": "New York State Board of Law Examiners",
+   "bodyUrl": "https://www.nybarexam.org/",
+   "type": "Training",
+   "aka": [
+    "NYLC"
+   ],
+   "blurb": "A free online course of approximately 15 hours covering New York practice and procedure that candidates must complete before taking the NYLE."
+  },
+  {
+   "slug": "nyle",
+   "name": "New York Law Exam",
+   "short": "NYLE",
+   "category": "legal",
+   "group": "Bar Exam Components",
+   "body": "New York State Board of Law Examiners",
+   "bodyUrl": "https://www.nybarexam.org/",
+   "type": "Exam",
+   "aka": [
+    "NYLE"
+   ],
+   "blurb": "A 50-question open-book multiple-choice test of New York-specific law that candidates must pass in addition to the UBE for New York bar admission."
+  },
+  {
+   "slug": "ccep",
+   "name": "Certified Compliance & Ethics Professional",
+   "short": "CCEP",
+   "category": "legal",
+   "group": "Compliance & Investigations",
+   "body": "Society of Corporate Compliance and Ethics",
+   "bodyUrl": "https://www.corporatecompliance.org/",
+   "type": "Certification",
+   "aka": [
+    "CCEP"
+   ],
+   "blurb": "A credential for compliance officers covering program design, risk assessment, investigation and ethics within organizational compliance functions."
+  },
+  {
+   "slug": "ccep-international",
+   "name": "Certified Compliance & Ethics Professional - International",
+   "short": "CCEP-I",
+   "category": "legal",
+   "group": "Compliance & Investigations",
+   "body": "Society of Corporate Compliance and Ethics",
+   "bodyUrl": "https://www.corporatecompliance.org/",
+   "type": "Certification",
+   "aka": [
+    "CCEP-I"
+   ],
+   "blurb": "An international variant of the CCEP focusing on anti-corruption, cross-border regulations and multinational compliance program requirements."
+  },
+  {
+   "slug": "aapi-accredited-legal-professional",
+   "name": "AAPI Accredited Legal Professional",
+   "short": "ALP",
+   "category": "legal",
+   "group": "Paralegal & Legal Support",
+   "body": "Association of Accredited Legal Professionals",
+   "type": "Certification",
+   "aka": [
+    "Accredited Legal Professional"
+   ],
+   "blurb": "A specialized accreditation for legal support professionals emphasizing compliance, document management and procedures within legal operations."
+  },
+  {
+   "slug": "ceds",
+   "name": "Certified E-Discovery Specialist",
+   "short": "CEDS",
+   "category": "legal",
+   "group": "Paralegal & Legal Support",
+   "body": "Association of Certified E-Discovery Specialists",
+   "bodyUrl": "https://www.aceds.org/",
+   "type": "Certification",
+   "aka": [
+    "CEDS"
+   ],
+   "blurb": "A credential validating expertise in the legal hold, collection, processing and review of electronically stored information in litigation."
+  },
+  {
+   "slug": "certified-legal-investigator",
+   "name": "Certified Legal Investigator",
+   "short": "CLI",
+   "category": "legal",
+   "group": "Paralegal & Legal Support",
+   "body": "National Association of Legal Investigators",
+   "bodyUrl": "https://www.nali.org/",
+   "type": "Certification",
+   "aka": [
+    "CLI"
+   ],
+   "blurb": "An advanced credential for professional investigators demonstrating proficiency in evidence gathering, surveillance and courtroom testimony."
+  },
+  {
+   "slug": "clm",
+   "name": "Certified Legal Manager",
+   "short": "CLM",
+   "category": "legal",
+   "group": "Paralegal & Legal Support",
+   "body": "Association of Legal Administrators",
+   "bodyUrl": "https://www.alanet.org/",
+   "type": "Certification",
+   "aka": [
+    "CLM"
+   ],
+   "blurb": "A credential for law firm and legal department administrators covering finance, human resources, operations and legal industry ethics."
+  },
+  {
+   "slug": "clnc",
+   "name": "Certified Legal Nurse Consultant",
+   "short": "CLNC",
+   "category": "legal",
+   "group": "Paralegal & Legal Support",
+   "body": "American Association of Legal Nurse Consultants",
+   "bodyUrl": "https://www.aalnc.org/",
+   "type": "Certification",
+   "aka": [
+    "CLNC"
+   ],
+   "blurb": "A certification for registered nurses who analyze medical records and provide expert consultation on healthcare-related legal cases."
+  },
+  {
+   "slug": "notary-signing-agent",
+   "name": "Certified Notary Signing Agent",
+   "short": "NSA",
+   "category": "legal",
+   "group": "Paralegal & Legal Support",
+   "body": "National Notary Association",
+   "bodyUrl": "https://www.nationalnotary.org/",
+   "type": "Certification",
+   "aka": [
+    "NSA",
+    "Signing Agent"
+   ],
+   "blurb": "A Notary Public certification specializing in properly executing and witnessing mortgage and real estate loan document signings."
+  },
+  {
+   "slug": "california-bar-exam",
+   "name": "California Bar Exam",
+   "short": "Cal Bar",
+   "category": "legal",
+   "group": "Bar Exam Components",
+   "body": "State Bar of California",
+   "bodyUrl": "https://www.calbar.ca.gov/",
+   "type": "Exam",
+   "aka": [
+    "Cal Bar Exam"
+   ],
+   "blurb": "California’s jurisdiction-specific two-day bar exam combining state essays, performance tests and the Multistate Bar Examination for state licensure."
+  },
+  {
+   "slug": "louisiana-bar-exam",
+   "name": "Louisiana Bar Exam",
+   "short": "LA Bar",
+   "category": "legal",
+   "group": "Bar Exam Components",
+   "body": "Committee on Bar Admissions (Louisiana Supreme Court)",
+   "bodyUrl": "https://www.lasc.org/",
+   "type": "Exam",
+   "aka": [
+    "Louisiana State Bar Exam"
+   ],
+   "blurb": "Louisiana’s civil-law jurisdiction exam using state-written essays and multiple-choice questions rather than the MBE for admission to practice."
+  },
+  {
+   "slug": "certified-government-financial-manager",
+   "name": "Certified Government Financial Manager",
+   "short": "CGFM",
+   "category": "legal",
+   "group": "Compliance & Investigations",
+   "body": "Association of Government Accountants",
+   "bodyUrl": "https://www.agacgfm.org/",
+   "type": "Certification",
+   "aka": [
+    "CGFM"
+   ],
+   "blurb": "A credential for public-sector financial professionals covering governmental accounting, auditing and financial reporting and control standards."
+  },
+  {
+   "slug": "certified-hipaa-professional",
+   "name": "Certified HIPAA Professional",
+   "short": "CHP",
+   "category": "legal",
+   "group": "Compliance & Investigations",
+   "body": "HIPAA certification providers",
+   "type": "Certification",
+   "aka": [
+    "CHP"
+   ],
+   "blurb": "A certification demonstrating working knowledge of the Health Insurance Portability and Accountability Act privacy and security rule requirements."
+  },
+  {
+   "slug": "certified-regulatory-compliance-manager",
+   "name": "Certified Regulatory Compliance Manager",
+   "short": "CRCM",
+   "category": "legal",
+   "group": "Compliance & Investigations",
+   "body": "American Bankers Association",
+   "bodyUrl": "https://www.aba.com/",
+   "type": "Certification",
+   "aka": [
+    "CRCM"
+   ],
+   "blurb": "A banking credential for compliance managers demonstrating knowledge of consumer regulations, risk management and examination readiness."
+  },
+  {
+   "slug": "clp-certified-licensing-professional",
+   "name": "Certified Licensing Professional",
+   "short": "CLP",
+   "category": "legal",
+   "group": "Patent & IP",
+   "body": "Licensing Executives Society International",
+   "bodyUrl": "https://www.lesi.org/",
+   "type": "Certification",
+   "aka": [
+    "CLP"
+   ],
+   "blurb": "A credential for professionals who negotiate and manage intellectual property licenses, covering valuation, deal structuring and IP strategy."
+  },
+  {
+   "slug": "cpva",
+   "name": "Certified Patent Valuation Analyst",
+   "short": "CPVA",
+   "category": "legal",
+   "group": "Patent & IP",
+   "body": "Certified Patent Valuation Analyst Program",
+   "type": "Certification",
+   "aka": [
+    "CPVA"
+   ],
+   "blurb": "A specialization certifying expertise in quantifying the financial value of patent portfolios for transactions, licensing and litigation support."
+  }
+ ]
+}

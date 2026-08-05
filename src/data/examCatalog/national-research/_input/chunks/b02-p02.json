@@ -1,0 +1,460 @@
+{
+ "chunkId": "b02-p02",
+ "batch": 2,
+ "part": 2,
+ "categories": [
+  "admissions-academic"
+ ],
+ "groups": [
+  "Advanced Placement"
+ ],
+ "bodies": [
+  "College Board"
+ ],
+ "examCount": 37,
+ "exams": [
+  {
+   "slug": "ap-art-history",
+   "name": "AP Art History",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam built around 250 required works of art from global cultures, testing visual analysis, contextual knowledge and comparative essay writing."
+  },
+  {
+   "slug": "ap-biology",
+   "name": "AP Biology",
+   "short": "AP Bio",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "College-level AP exam covering cellular processes, genetics, evolution, ecology and experimental design, scored 1 to 5 for possible college credit."
+  },
+  {
+   "slug": "ap-calculus-ab",
+   "name": "AP Calculus AB",
+   "short": "Calc AB",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam equivalent to a first-semester college calculus course, covering limits, derivatives, integrals and the fundamental theorem of calculus."
+  },
+  {
+   "slug": "ap-calculus-bc",
+   "name": "AP Calculus BC",
+   "short": "Calc BC",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Extended AP calculus exam covering all Calculus AB topics plus parametric, polar and vector functions, sequences and series, with an AB subscore."
+  },
+  {
+   "slug": "ap-chemistry",
+   "name": "AP Chemistry",
+   "short": "AP Chem",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam equivalent to first-year college chemistry, covering atomic structure, bonding, kinetics, thermodynamics, equilibrium and acid-base reactions."
+  },
+  {
+   "slug": "ap-chinese-language-and-culture",
+   "name": "AP Chinese Language and Culture",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [
+    "AP Mandarin"
+   ],
+   "blurb": "Computer-delivered AP exam assessing Mandarin listening, reading, speaking and writing at roughly the fourth-semester college level."
+  },
+  {
+   "slug": "ap-comparative-government-and-politics",
+   "name": "AP Comparative Government and Politics",
+   "short": "AP Comp Gov",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Fully digital AP exam comparing the political systems of China, Iran, Mexico, Nigeria, Russia and the United Kingdom through six core course countries."
+  },
+  {
+   "slug": "ap-computer-science-a",
+   "name": "AP Computer Science A",
+   "short": "AP CSA",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam in object-oriented programming taught in Java, covering data types, control structures, classes, arrays, recursion and algorithm analysis."
+  },
+  {
+   "slug": "ap-computer-science-principles",
+   "name": "AP Computer Science Principles",
+   "short": "AP CSP",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Broad AP computing exam combining an end-of-course digital test with the Create performance task submitted through the AP Digital Portfolio."
+  },
+  {
+   "slug": "ap-drawing",
+   "name": "AP Drawing",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [
+    "AP Studio Art Drawing"
+   ],
+   "blurb": "Portfolio-based AP assessment in drawing and mark-making where students submit a sustained investigation plus selected works for external scoring."
+  },
+  {
+   "slug": "ap-english-language-and-composition",
+   "name": "AP English Language and Composition",
+   "short": "AP Lang",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Fully digital AP exam in rhetorical analysis, argument and synthesis writing, widely accepted as first-year college composition credit."
+  },
+  {
+   "slug": "ap-english-literature-and-composition",
+   "name": "AP English Literature and Composition",
+   "short": "AP Lit",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Fully digital AP exam on close reading of poetry, prose fiction and drama, with three free-response essays including a literary argument."
+  },
+  {
+   "slug": "ap-environmental-science",
+   "name": "AP Environmental Science",
+   "short": "APES",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Interdisciplinary AP exam covering ecosystems, biodiversity, populations, energy resources, pollution and global change from a scientific perspective."
+  },
+  {
+   "slug": "ap-european-history",
+   "name": "AP European History",
+   "short": "AP Euro",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam covering European history from about 1450 to the present, including a document-based question and a long essay on historical reasoning."
+  },
+  {
+   "slug": "ap-french-language-and-culture",
+   "name": "AP French Language and Culture",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam assessing French interpretive, interpersonal and presentational communication with recorded speaking tasks at intermediate-high proficiency."
+  },
+  {
+   "slug": "ap-german-language-and-culture",
+   "name": "AP German Language and Culture",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam assessing German listening, reading, speaking and writing through authentic materials and recorded responses across six themed units."
+  },
+  {
+   "slug": "ap-human-geography",
+   "name": "AP Human Geography",
+   "short": "AP HuG",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Introductory AP exam on population, migration, culture, political geography, agriculture, urbanisation and economic development patterns."
+  },
+  {
+   "slug": "ap-italian-language-and-culture",
+   "name": "AP Italian Language and Culture",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam measuring Italian proficiency across listening, reading, speaking and writing, including recorded conversation and cultural comparison tasks."
+  },
+  {
+   "slug": "ap-japanese-language-and-culture",
+   "name": "AP Japanese Language and Culture",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Computer-delivered AP exam testing Japanese listening, reading, speaking and writing, including kanji recognition and typed character input."
+  },
+  {
+   "slug": "ap-latin",
+   "name": "AP Latin",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [
+    "AP Latin: Vergil and Caesar"
+   ],
+   "blurb": "AP exam requiring translation and analysis of set passages from the Aeneid of Vergil and the Gallic War of Caesar, plus sight reading."
+  },
+  {
+   "slug": "ap-macroeconomics",
+   "name": "AP Macroeconomics",
+   "short": "AP Macro",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam covering national income, inflation, unemployment, fiscal and monetary policy, and international trade at introductory college level."
+  },
+  {
+   "slug": "ap-microeconomics",
+   "name": "AP Microeconomics",
+   "short": "AP Micro",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam covering supply and demand, elasticity, production costs, market structures, factor markets and market failure at college introductory level."
+  },
+  {
+   "slug": "ap-music-theory",
+   "name": "AP Music Theory",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam combining written harmony and analysis with aural skills, melodic and harmonic dictation, and recorded sight-singing performance tasks."
+  },
+  {
+   "slug": "ap-physics-1-algebra-based",
+   "name": "AP Physics 1: Algebra-Based",
+   "short": "AP Physics 1",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Algebra-based AP exam covering kinematics, forces, energy, momentum, torque, simple harmonic motion and fluids for a first college physics course."
+  },
+  {
+   "slug": "ap-physics-2-algebra-based",
+   "name": "AP Physics 2: Algebra-Based",
+   "short": "AP Physics 2",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Algebra-based AP exam covering thermodynamics, electricity and magnetism, optics, and modern physics as a second-semester college course."
+  },
+  {
+   "slug": "ap-physics-c-electricity-and-magnetism",
+   "name": "AP Physics C: Electricity and Magnetism",
+   "short": "AP Physics C E&M",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Calculus-based AP exam covering electrostatics, conductors and capacitors, circuits, magnetic fields and electromagnetic induction."
+  },
+  {
+   "slug": "ap-physics-c-mechanics",
+   "name": "AP Physics C: Mechanics",
+   "short": "AP Physics C Mech",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Calculus-based AP exam covering kinematics, Newtonian mechanics, work and energy, momentum, rotation, oscillations and gravitation."
+  },
+  {
+   "slug": "ap-precalculus",
+   "name": "AP Precalculus",
+   "short": "AP Precalc",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP course and exam launched in 2023 covering polynomial, rational, exponential, logarithmic, trigonometric and polar functions and modelling."
+  },
+  {
+   "slug": "ap-psychology",
+   "name": "AP Psychology",
+   "short": "AP Psych",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Fully digital AP exam covering biological bases of behaviour, cognition, development, social psychology, mental health and research methods."
+  },
+  {
+   "slug": "ap-research",
+   "name": "AP Research",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [
+    "AP Capstone Research"
+   ],
+   "blurb": "Second AP Capstone course assessed entirely by a 4000-5000 word academic paper, presentation and oral defence rather than a timed written exam."
+  },
+  {
+   "slug": "ap-seminar",
+   "name": "AP Seminar",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [
+    "AP Capstone Seminar"
+   ],
+   "blurb": "First AP Capstone course scored from team and individual research performance tasks plus a written end-of-course exam on source analysis."
+  },
+  {
+   "slug": "ap-spanish-language-and-culture",
+   "name": "AP Spanish Language and Culture",
+   "short": "AP Spanish Lang",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Most-taken AP world language exam, assessing Spanish listening, reading, writing and recorded speaking at intermediate-high proficiency."
+  },
+  {
+   "slug": "ap-spanish-literature-and-culture",
+   "name": "AP Spanish Literature and Culture",
+   "short": "AP Spanish Lit",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam on a required reading list of Peninsular, Latin American and US Hispanic literature, with analysis and essays written in Spanish."
+  },
+  {
+   "slug": "ap-statistics",
+   "name": "AP Statistics",
+   "short": "AP Stats",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam covering exploratory data analysis, sampling and experimental design, probability and statistical inference, requiring a graphing calculator."
+  },
+  {
+   "slug": "ap-united-states-government-and-politics",
+   "name": "AP United States Government and Politics",
+   "short": "AP Gov",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam on US constitutional foundations, branches of government, civil liberties, political behaviour and required Supreme Court cases."
+  },
+  {
+   "slug": "ap-united-states-history",
+   "name": "AP United States History",
+   "short": "APUSH",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Fully digital AP exam covering US history from 1491 to the present with a document-based question and long essay testing historical reasoning."
+  },
+  {
+   "slug": "ap-world-history-modern",
+   "name": "AP World History: Modern",
+   "short": "AP World",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "AP exam covering global history from about 1200 CE to the present, emphasising comparison, causation, continuity and change across regions."
+  }
+ ]
+}

@@ -1,0 +1,437 @@
+{
+ "chunkId": "b28-p02",
+ "batch": 28,
+ "part": 2,
+ "categories": [
+  "project-business"
+ ],
+ "groups": [
+  "Project & Program Management",
+  "Agile & Product",
+  "Human Resources"
+ ],
+ "bodies": [
+  "Project Management Institute",
+  "Scrum Alliance",
+  "HR Certification Institute",
+  "WorldatWork"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "pmi-capm",
+   "name": "Certified Associate in Project Management",
+   "short": "CAPM",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Project Management Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry PMI credential requiring no leadership experience, covering predictive, agile and business analysis fundamentals."
+  },
+  {
+   "slug": "pmi-certified-sustainable-project-professional",
+   "name": "Certified Sustainable Project Professional",
+   "short": "CSPP",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Project Management Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification giving project leaders tools to embed sustainability, resilience and long-term value into delivery decisions."
+  },
+  {
+   "slug": "disciplined-agile-foundations",
+   "name": "Disciplined Agile Foundations",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Project Management Institute",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Course that replaced the retired DASM certification, covering the Disciplined Agile tool kit and team ways of working."
+  },
+  {
+   "slug": "disciplined-agile-leadership",
+   "name": "Disciplined Agile Leadership",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Project Management Institute",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Course merging the retired DAC and DAVSC certifications, covering value delivery and enterprise agility for leaders."
+  },
+  {
+   "slug": "pmi-acp",
+   "name": "PMI Agile Certified Practitioner",
+   "short": "PMI-ACP",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Project Management Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Framework-agnostic agile certification spanning Scrum, Kanban, Lean and XP, refreshed to absorb Disciplined Agile content."
+  },
+  {
+   "slug": "pmi-cpmai",
+   "name": "PMI Certified Professional in Managing AI",
+   "short": "PMI-CPMAI",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Project Management Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification built on the CPMAI methodology for running artificial intelligence and data projects through iterative phases."
+  },
+  {
+   "slug": "pmi-citizen-developer-practitioner",
+   "name": "PMI Citizen Developer Practitioner",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Project Management Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential covering low-code and no-code application delivery, governance guardrails and citizen development practice."
+  },
+  {
+   "slug": "pmi-construction-professional",
+   "name": "PMI Construction Professional",
+   "short": "PMI-CP",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Project Management Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Construction-focused certification covering contract management, interface management, scope change and built environment risk."
+  },
+  {
+   "slug": "pmi-pmocp",
+   "name": "PMI PMO Certified Professional",
+   "short": "PMI-PMOCP",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Project Management Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering setting up, assessing, managing and improving value-oriented project management offices."
+  },
+  {
+   "slug": "pmi-risk-management-professional",
+   "name": "PMI Risk Management Professional",
+   "short": "PMI-RMP",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Project Management Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering risk strategy, identification, qualitative and quantitative analysis, response planning and monitoring."
+  },
+  {
+   "slug": "pmi-scheduling-professional",
+   "name": "PMI Scheduling Professional",
+   "short": "PMI-SP",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Project Management Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering schedule development, maintenance, analysis and reporting on complex multi-workstream projects."
+  },
+  {
+   "slug": "pmi-pfmp",
+   "name": "Portfolio Management Professional",
+   "short": "PfMP",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Project Management Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Senior credential for portfolio managers aligning programmes and projects with organisational strategy and investment goals."
+  },
+  {
+   "slug": "pmi-pgmp",
+   "name": "Program Management Professional",
+   "short": "PgMP",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Project Management Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced credential with a panel review and examination for professionals managing multiple related projects strategically."
+  },
+  {
+   "slug": "pmi-pmp",
+   "name": "Project Management Professional",
+   "short": "PMP",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Project Management Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Flagship project management certification covering people, process and business environment across predictive and agile delivery."
+  },
+  {
+   "slug": "scrum-alliance-advanced-cspo",
+   "name": "Advanced Certified Scrum Product Owner",
+   "short": "A-CSPO",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum Alliance",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Second-level Product Owner credential covering product discovery, validation, stakeholder alignment and value measurement."
+  },
+  {
+   "slug": "scrum-alliance-advanced-csm",
+   "name": "Advanced Certified ScrumMaster",
+   "short": "A-CSM",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum Alliance",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Second-level Scrum Master credential requiring experience plus training in facilitation, coaching and scaling practices."
+  },
+  {
+   "slug": "scrum-alliance-certified-agile-leadership-1",
+   "name": "Certified Agile Leadership I",
+   "short": "CAL I",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum Alliance",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Leadership credential covering organisational agility, leadership mindset, culture and systems thinking for managers."
+  },
+  {
+   "slug": "scrum-alliance-certified-agile-leadership-2",
+   "name": "Certified Agile Leadership II",
+   "short": "CAL II",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum Alliance",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced leadership credential requiring applied organisational change work validated through a mentored learning journey."
+  },
+  {
+   "slug": "scrum-alliance-certified-enterprise-coach",
+   "name": "Certified Enterprise Coach",
+   "short": "CEC",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum Alliance",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Peer-reviewed guide-level credential for coaches leading agile transformation at organisation and portfolio scale."
+  },
+  {
+   "slug": "scrum-alliance-certified-scrum-developer",
+   "name": "Certified Scrum Developer",
+   "short": "CSD",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum Alliance",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for developers covering Scrum plus technical practices such as test-driven development and continuous integration."
+  },
+  {
+   "slug": "scrum-alliance-certified-scrum-product-owner",
+   "name": "Certified Scrum Product Owner",
+   "short": "CSPO",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum Alliance",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Course-based credential covering product vision, backlog management, stakeholder collaboration and release planning."
+  },
+  {
+   "slug": "scrum-alliance-csp-po",
+   "name": "Certified Scrum Professional – Product Owner",
+   "short": "CSP-PO",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum Alliance",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Third-level Product Owner credential requiring advanced training plus documented product ownership experience."
+  },
+  {
+   "slug": "scrum-alliance-csp-sm",
+   "name": "Certified Scrum Professional – ScrumMaster",
+   "short": "CSP-SM",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum Alliance",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Third-level Scrum Master credential requiring advanced training plus at least two years of documented practice."
+  },
+  {
+   "slug": "scrum-alliance-certified-scrummaster",
+   "name": "Certified ScrumMaster",
+   "short": "CSM",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum Alliance",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Widely held entry Scrum credential requiring an accredited two-day course followed by an online knowledge test."
+  },
+  {
+   "slug": "scrum-alliance-certified-team-coach",
+   "name": "Certified Team Coach",
+   "short": "CTC",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum Alliance",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Peer-reviewed credential validating coaching experience with multiple Scrum teams and demonstrated coaching competencies."
+  },
+  {
+   "slug": "hrci-aphr",
+   "name": "Associate Professional in Human Resources",
+   "short": "aPHR",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "HR Certification Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry knowledge-based HR credential with no experience requirement, covering operations, recruitment, compensation and law."
+  },
+  {
+   "slug": "hrci-aphri",
+   "name": "Associate Professional in Human Resources – International",
+   "short": "aPHRi",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "HR Certification Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry HR credential for professionals outside the United States, covering core HR practice without country-specific law."
+  },
+  {
+   "slug": "hrci-gphr",
+   "name": "Global Professional in Human Resources",
+   "short": "GPHR",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "HR Certification Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential covering cross-border HR strategy, global mobility, international employment law and multinational talent practice."
+  },
+  {
+   "slug": "hrci-phr",
+   "name": "Professional in Human Resources",
+   "short": "PHR",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "HR Certification Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Operational HR credential covering employee relations, recruitment, compensation, development and United States employment law."
+  },
+  {
+   "slug": "hrci-phrca",
+   "name": "Professional in Human Resources – California",
+   "short": "PHRca",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "HR Certification Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential on California-specific employment law, wage and hour rules, and leave requirements for HR practitioners."
+  },
+  {
+   "slug": "hrci-phri",
+   "name": "Professional in Human Resources – International",
+   "short": "PHRi",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "HR Certification Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Operational HR credential for practitioners outside the United States, focused on generally accepted global HR practice."
+  },
+  {
+   "slug": "hrci-sphr",
+   "name": "Senior Professional in Human Resources",
+   "short": "SPHR",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "HR Certification Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Strategic HR credential covering policy design, workforce planning, organisational effectiveness and executive partnership."
+  },
+  {
+   "slug": "hrci-sphri",
+   "name": "Senior Professional in Human Resources – International",
+   "short": "SPHRi",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "HR Certification Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Strategic HR credential for senior practitioners outside the United States covering global policy and leadership practice."
+  },
+  {
+   "slug": "certified-benefits-professional",
+   "name": "Certified Benefits Professional",
+   "short": "CBP",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "WorldatWork",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Course and examination series covering health, retirement and voluntary benefit plan design, regulation and administration."
+  },
+  {
+   "slug": "certified-compensation-professional",
+   "name": "Certified Compensation Professional",
+   "short": "CCP",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "WorldatWork",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Multi-examination credential covering job analysis, market pricing, pay structures, incentives and regulatory compliance."
+  },
+  {
+   "slug": "worldatwork-certified-sales-compensation-professional",
+   "name": "Certified Sales Compensation Professional",
+   "short": "CSCP",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "WorldatWork",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation covering sales incentive plan design, quota setting, territory alignment and plan governance and audit."
+  },
+  {
+   "slug": "global-remuneration-professional",
+   "name": "Global Remuneration Professional",
+   "short": "GRP",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "WorldatWork",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation covering international pay structures, expatriate remuneration, currency issues and cross-border compliance."
+  },
+  {
+   "slug": "worldatwork-work-life-certified-professional",
+   "name": "Work-Life Certified Professional",
+   "short": "WLCP",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "WorldatWork",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation covering flexible work, caregiving support, wellbeing programmes and workplace culture initiatives."
+  }
+ ]
+}

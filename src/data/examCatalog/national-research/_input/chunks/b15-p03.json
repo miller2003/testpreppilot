@@ -1,0 +1,395 @@
+{
+ "chunkId": "b15-p03",
+ "batch": 15,
+ "part": 3,
+ "categories": [
+  "engineering-design"
+ ],
+ "groups": [
+  "Architecture",
+  "Green Building & Energy",
+  "Manufacturing & Systems Engineering"
+ ],
+ "bodies": [
+  "Construction Specifications Institute (CSI)",
+  "Passive House Institute US (PHIUS)",
+  "IPC (Association Connecting Electronics Industries)",
+  "Council for Interior Design Qualification (CIDQ)",
+  "Green Business Certification Inc. (GBCI)",
+  "International WELL Building Institute (IWBI)",
+  "American Society of Mechanical Engineers (ASME)",
+  "Dassault Systèmes / SOLIDWORKS",
+  "Society for Maintenance & Reliability Professionals (SMRP)",
+  "International Finance Corporation (IFC)",
+  "Green Building Initiative (GBI)",
+  "International Living Future Institute",
+  "Home Innovation Research Labs"
+ ],
+ "examCount": 27,
+ "exams": [
+  {
+   "slug": "csi-ccca",
+   "name": "CSI Certified Construction Contract Administrator (CCCA)",
+   "short": "CCCA",
+   "category": "engineering-design",
+   "group": "Architecture",
+   "body": "Construction Specifications Institute (CSI)",
+   "bodyUrl": "https://www.csiresources.org",
+   "type": "Certification",
+   "aka": [
+    "CCCA"
+   ],
+   "blurb": "Certifies administration of construction contracts, changes and closeout documentation."
+  },
+  {
+   "slug": "csi-ccpr",
+   "name": "CSI Certified Construction Products Representative (CCPR)",
+   "short": "CCPR",
+   "category": "engineering-design",
+   "group": "Architecture",
+   "body": "Construction Specifications Institute (CSI)",
+   "bodyUrl": "https://www.csiresources.org",
+   "type": "Certification",
+   "aka": [
+    "CCPR"
+   ],
+   "blurb": "Certifies representatives in construction products, specifications and project delivery."
+  },
+  {
+   "slug": "csi-ccs",
+   "name": "CSI Certified Construction Specifier (CCS)",
+   "short": "CCS",
+   "category": "engineering-design",
+   "group": "Architecture",
+   "body": "Construction Specifications Institute (CSI)",
+   "bodyUrl": "https://www.csiresources.org",
+   "type": "Certification",
+   "aka": [
+    "CCS"
+   ],
+   "blurb": "Advanced certification for professionals who write and manage construction specifications."
+  },
+  {
+   "slug": "csi-cdt",
+   "name": "CSI Construction Document Technician (CDT)",
+   "short": "CDT",
+   "category": "engineering-design",
+   "group": "Architecture",
+   "body": "Construction Specifications Institute (CSI)",
+   "bodyUrl": "https://www.csiresources.org",
+   "type": "Certification",
+   "aka": [
+    "CDT"
+   ],
+   "blurb": "Certifies knowledge of construction documents, contracts and the specification process."
+  },
+  {
+   "slug": "phiuc-passive-house-builder",
+   "name": "PHIUS Certified Passive House Builder",
+   "short": "CPHB",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Passive House Institute US (PHIUS)",
+   "bodyUrl": "https://www.phius.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for builders and contractors constructing passive house projects to PHIUS standards."
+  },
+  {
+   "slug": "phiuc-cphc",
+   "name": "PHIUS Certified Passive House Consultant (CPHC)",
+   "short": "CPHC",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Passive House Institute US (PHIUS)",
+   "bodyUrl": "https://www.phius.org",
+   "type": "Certification",
+   "aka": [
+    "CPHC"
+   ],
+   "blurb": "Credential for designing and consulting on passive house buildings to PHIUS climate-specific standards."
+  },
+  {
+   "slug": "phiuc-passive-house-designer",
+   "name": "PHIUS Certified Passive House Designer",
+   "short": "CPHD",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Passive House Institute US (PHIUS)",
+   "bodyUrl": "https://www.phius.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for designers modelling and detailing passive house envelopes and mechanical systems."
+  },
+  {
+   "slug": "ipc-cid",
+   "name": "IPC Certified Interconnect Designer (CID)",
+   "short": "CID",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "IPC (Association Connecting Electronics Industries)",
+   "bodyUrl": "https://www.ipc.org",
+   "type": "Certification",
+   "aka": [
+    "CID"
+   ],
+   "blurb": "Credential for printed circuit board designers covering layout and documentation standards."
+  },
+  {
+   "slug": "ipc-cid-plus",
+   "name": "IPC Certified Interconnect Designer+ (CID+)",
+   "short": "CID+",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "IPC (Association Connecting Electronics Industries)",
+   "bodyUrl": "https://www.ipc.org",
+   "type": "Certification",
+   "aka": [
+    "CID+"
+   ],
+   "blurb": "Advanced credential for senior PCB designers covering complex high-speed and multilayer design."
+  },
+  {
+   "slug": "ipc-a-610-cis",
+   "name": "IPC-A-610 Certified IPC Specialist (CIS)",
+   "short": "IPC-A-610",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "IPC (Association Connecting Electronics Industries)",
+   "bodyUrl": "https://www.ipc.org",
+   "type": "Certification",
+   "aka": [
+    "CIS"
+   ],
+   "blurb": "Credential for inspectors of electronic assemblies per the IPC-A-610 acceptability standard."
+  },
+  {
+   "slug": "ncidx-idfx",
+   "name": "NCIDQ Interior Design Fundamentals Exam (IDFX)",
+   "short": "IDFX",
+   "category": "engineering-design",
+   "group": "Architecture",
+   "body": "Council for Interior Design Qualification (CIDQ)",
+   "bodyUrl": "https://www.cidq.org",
+   "type": "Certification",
+   "aka": [
+    "IDFX"
+   ],
+   "blurb": "First NCIDQ exam testing design fundamentals, design elements and programming for interior designers."
+  },
+  {
+   "slug": "ncidx-idpx",
+   "name": "NCIDQ Interior Design Professional Exam (IDPX)",
+   "short": "IDPX",
+   "category": "engineering-design",
+   "group": "Architecture",
+   "body": "Council for Interior Design Qualification (CIDQ)",
+   "bodyUrl": "https://www.cidq.org",
+   "type": "Certification",
+   "aka": [
+    "IDPX"
+   ],
+   "blurb": "Second NCIDQ exam testing building systems, codes and professional practice for interior designers."
+  },
+  {
+   "slug": "ncidx-prac",
+   "name": "NCIDQ Practicum (PRAC)",
+   "short": "PRAC",
+   "category": "engineering-design",
+   "group": "Architecture",
+   "body": "Council for Interior Design Qualification (CIDQ)",
+   "bodyUrl": "https://www.cidq.org",
+   "type": "Certification",
+   "aka": [
+    "PRAC"
+   ],
+   "blurb": "Third NCIDQ exam testing applied interior design solutions through a scenario-based practicum."
+  },
+  {
+   "slug": "sites-ap",
+   "name": "SITES AP",
+   "short": "SITES AP",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Green Business Certification Inc. (GBCI)",
+   "bodyUrl": "https://www.gbci.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential on sustainable land design and development via the SITES rating system."
+  },
+  {
+   "slug": "true-advisor",
+   "name": "TRUE Advisor",
+   "short": "TRUE",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Green Business Certification Inc. (GBCI)",
+   "bodyUrl": "https://www.gbci.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential on zero waste strategies and the TRUE certification for waste diversion programmes."
+  },
+  {
+   "slug": "well-ap",
+   "name": "WELL Accredited Professional (WELL AP)",
+   "short": "WELL AP",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "International WELL Building Institute (IWBI)",
+   "bodyUrl": "https://www.wellcertified.com",
+   "type": "Certification",
+   "aka": [
+    "WELL AP"
+   ],
+   "blurb": "Credential on the WELL standard for human health and wellness in the built environment."
+  },
+  {
+   "slug": "well-faculty",
+   "name": "WELL Faculty",
+   "short": "WELL Faculty",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "International WELL Building Institute (IWBI)",
+   "bodyUrl": "https://www.wellcertified.com",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced credential recognising experts who educate and advocate for WELL building principles."
+  },
+  {
+   "slug": "asme-gdtp-senior",
+   "name": "ASME GDTP Senior (Y14.5)",
+   "short": "GDTP-S",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "American Society of Mechanical Engineers (ASME)",
+   "bodyUrl": "https://www.asme.org",
+   "type": "Certification",
+   "aka": [
+    "GDTP-S"
+   ],
+   "blurb": "Senior credential covering advanced geometric dimensioning and tolerancing application."
+  },
+  {
+   "slug": "asme-gdtp-technologist",
+   "name": "ASME GDTP Technologist (Y14.5)",
+   "short": "GDTP-T",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "American Society of Mechanical Engineers (ASME)",
+   "bodyUrl": "https://www.asme.org",
+   "type": "Certification",
+   "aka": [
+    "GDTP"
+   ],
+   "blurb": "Credential covering geometric dimensioning and tolerancing fundamentals per ASME Y14.5."
+  },
+  {
+   "slug": "cswa",
+   "name": "Certified SOLIDWORKS Associate (CSWA)",
+   "short": "CSWA",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "Dassault Systèmes / SOLIDWORKS",
+   "bodyUrl": "https://www.solidworks.com",
+   "type": "Certification",
+   "aka": [
+    "CSWA"
+   ],
+   "blurb": "Entry credential demonstrating basic mechanical design and SOLIDWORKS software skills."
+  },
+  {
+   "slug": "cswp",
+   "name": "Certified SOLIDWORKS Professional (CSWP)",
+   "short": "CSWP",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "Dassault Systèmes / SOLIDWORKS",
+   "bodyUrl": "https://www.solidworks.com",
+   "type": "Certification",
+   "aka": [
+    "CSWP"
+   ],
+   "blurb": "Advanced credential demonstrating complex part, assembly and drawing modelling in SOLIDWORKS."
+  },
+  {
+   "slug": "smrp-cmrp",
+   "name": "SMRP Certified Maintenance & Reliability Professional (CMRP)",
+   "short": "CMRP",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "Society for Maintenance & Reliability Professionals (SMRP)",
+   "bodyUrl": "https://www.smrp.org",
+   "type": "Certification",
+   "aka": [
+    "CMRP"
+   ],
+   "blurb": "Credential covering maintenance strategy, reliability engineering and asset management."
+  },
+  {
+   "slug": "smrp-cmrt",
+   "name": "SMRP Certified Maintenance & Reliability Technician (CMRT)",
+   "short": "CMRT",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "Society for Maintenance & Reliability Professionals (SMRP)",
+   "bodyUrl": "https://www.smrp.org",
+   "type": "Certification",
+   "aka": [
+    "CMRT"
+   ],
+   "blurb": "Credential for technicians in preventive maintenance, troubleshooting and reliability practices."
+  },
+  {
+   "slug": "edge-expert",
+   "name": "EDGE Expert",
+   "short": "EDGE",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "International Finance Corporation (IFC)",
+   "bodyUrl": "https://www.edgebuildings.com",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential certifying green buildings in emerging markets using the EDGE resource-efficiency standard."
+  },
+  {
+   "slug": "green-globes-professional",
+   "name": "Green Globes Professional (GGP)",
+   "short": "GGP",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Green Building Initiative (GBI)",
+   "bodyUrl": "https://thegbi.org",
+   "type": "Certification",
+   "aka": [
+    "GGP"
+   ],
+   "blurb": "Credential for assessing and guiding projects through the Green Globes rating system."
+  },
+  {
+   "slug": "living-future-accredited",
+   "name": "Living Future Accredited (LFA)",
+   "short": "LFA",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "International Living Future Institute",
+   "bodyUrl": "https://living-future.org",
+   "type": "Certification",
+   "aka": [
+    "LFA"
+   ],
+   "blurb": "Credential on the Living Building Challenge and regenerative, net-positive design principles."
+  },
+  {
+   "slug": "ngbs-green-professional",
+   "name": "NGBS Green Professional",
+   "short": "NGBS",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Home Innovation Research Labs",
+   "bodyUrl": "https://www.homeinnovation.com",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential on the National Green Building Standard for residential green building verification."
+  }
+ ]
+}

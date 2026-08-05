@@ -1,0 +1,1499 @@
+{
+  "batch": "36",
+  "categories": [
+    "technology"
+  ],
+  "groups": [
+    "Cloud Native & DevOps",
+    "Linux, Unix & Open Source",
+    "Google Cloud & Google",
+    "CompTIA",
+    "Amazon Web Services"
+  ],
+  "examCount": 105,
+  "bodyCount": 15,
+  "bodies": [
+    "Cloud Native Computing Foundation",
+    "CloudBees",
+    "Docker",
+    "GitLab",
+    "HashiCorp",
+    "Perforce Software",
+    "BSD Certification Group",
+    "Linux Professional Institute",
+    "Oracle",
+    "Red Hat",
+    "SUSE",
+    "Google Cloud",
+    "Google",
+    "CompTIA",
+    "Amazon Web Services"
+  ],
+  "exams": [
+    {
+      "slug": "certified-argo-project-associate",
+      "name": "Certified Argo Project Associate",
+      "short": "CAPA",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Cloud Native Computing Foundation",
+      "bodyUrl": "https://www.cncf.io/training/certification/",
+      "type": "Certification",
+      "aka": [
+        "CAPA"
+      ],
+      "blurb": "CNCF associate exam covering the Argo ecosystem including Argo CD, Argo Workflows, Argo Rollouts and Argo Events for GitOps delivery on Kubernetes."
+    },
+    {
+      "slug": "certified-backstage-associate",
+      "name": "Certified Backstage Associate",
+      "short": "CBA",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Cloud Native Computing Foundation",
+      "bodyUrl": "https://www.cncf.io/training/certification/",
+      "type": "Certification",
+      "aka": [
+        "CBA"
+      ],
+      "blurb": "CNCF associate certification on the Backstage developer portal covering software catalogues, templates, TechDocs, plugins and platform engineering basics."
+    },
+    {
+      "slug": "certified-cilium-associate",
+      "name": "Certified Cilium Associate",
+      "short": "CCA",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Cloud Native Computing Foundation",
+      "bodyUrl": "https://www.cncf.io/training/certification/",
+      "type": "Certification",
+      "aka": [
+        "CCA"
+      ],
+      "blurb": "CNCF associate exam on Cilium eBPF-based networking, network policy, service mesh and observability with Hubble in Kubernetes clusters."
+    },
+    {
+      "slug": "certified-cloud-native-platform-engineering-associate",
+      "name": "Certified Cloud Native Platform Engineering Associate",
+      "short": "CNPA",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Cloud Native Computing Foundation",
+      "bodyUrl": "https://www.cncf.io/training/certification/",
+      "type": "Certification",
+      "aka": [
+        "CNPA"
+      ],
+      "blurb": "CNCF associate certification on platform engineering practice, internal developer platforms, golden paths, GitOps delivery and measuring platform value."
+    },
+    {
+      "slug": "certified-gitops-associate",
+      "name": "Certified GitOps Associate",
+      "short": "CGOA",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Cloud Native Computing Foundation",
+      "bodyUrl": "https://www.cncf.io/training/certification/",
+      "type": "Certification",
+      "aka": [
+        "CGOA"
+      ],
+      "blurb": "CNCF associate exam covering GitOps principles, declarative configuration, reconciliation, drift detection and secrets handling in continuous delivery."
+    },
+    {
+      "slug": "certified-kubernetes-administrator",
+      "name": "Certified Kubernetes Administrator",
+      "short": "CKA",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Cloud Native Computing Foundation",
+      "bodyUrl": "https://www.cncf.io/training/certification/",
+      "type": "Certification",
+      "aka": [
+        "CKA"
+      ],
+      "blurb": "Hands-on performance-based exam on installing, configuring and operating production Kubernetes clusters, including networking, storage and troubleshooting."
+    },
+    {
+      "slug": "certified-kubernetes-application-developer",
+      "name": "Certified Kubernetes Application Developer",
+      "short": "CKAD",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Cloud Native Computing Foundation",
+      "bodyUrl": "https://www.cncf.io/training/certification/",
+      "type": "Certification",
+      "aka": [
+        "CKAD"
+      ],
+      "blurb": "Performance-based CNCF exam on designing, building and deploying cloud-native applications to Kubernetes using pods, config, services and observability."
+    },
+    {
+      "slug": "certified-kubernetes-security-specialist",
+      "name": "Certified Kubernetes Security Specialist",
+      "short": "CKS",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Cloud Native Computing Foundation",
+      "bodyUrl": "https://www.cncf.io/training/certification/",
+      "type": "Certification",
+      "aka": [
+        "CKS"
+      ],
+      "blurb": "Advanced hands-on CNCF exam on Kubernetes cluster hardening, supply chain security, runtime security and monitoring; requires a current CKA."
+    },
+    {
+      "slug": "cloudbees-certified-jenkins-engineer",
+      "name": "CloudBees Certified Jenkins Engineer",
+      "short": "CJE",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "CloudBees",
+      "type": "Certification",
+      "aka": [
+        "CJE"
+      ],
+      "blurb": "Vendor certification on Jenkins administration and pipeline development, covering jobs, agents, plugins, security and continuous integration practice."
+    },
+    {
+      "slug": "docker-certified-associate",
+      "name": "Docker Certified Associate",
+      "short": "DCA",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Docker",
+      "type": "Certification",
+      "aka": [
+        "DCA"
+      ],
+      "blurb": "Container fundamentals credential covering image management, orchestration, storage, networking and security; the programme is no longer actively sold."
+    },
+    {
+      "slug": "gitlab-certified-ci-cd-associate",
+      "name": "GitLab Certified CI/CD Associate",
+      "short": "GitLab CI/CD Associate",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "GitLab",
+      "type": "Certification",
+      "aka": [
+        "GitLab CI/CD"
+      ],
+      "blurb": "Hands-on GitLab credential covering pipeline configuration, runners, jobs, artefacts, environments and continuous integration workflows in GitLab."
+    },
+    {
+      "slug": "gitlab-certified-git-associate",
+      "name": "GitLab Certified Git Associate",
+      "short": "GitLab Git Associate",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "GitLab",
+      "type": "Certification",
+      "aka": [
+        "GitLab Git"
+      ],
+      "blurb": "Entry-level GitLab credential validating Git fundamentals such as branching, merging, rebasing, conflict resolution and remote repository workflows."
+    },
+    {
+      "slug": "hashicorp-certified-consul-associate",
+      "name": "HashiCorp Certified: Consul Associate",
+      "short": "Consul Associate",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "HashiCorp",
+      "bodyUrl": "https://www.hashicorp.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Consul Associate 003"
+      ],
+      "blurb": "Associate exam on HashiCorp Consul service discovery, service mesh, health checking, key-value configuration and multi-datacentre federation."
+    },
+    {
+      "slug": "hashicorp-certified-terraform-associate",
+      "name": "HashiCorp Certified: Terraform Associate",
+      "short": "Terraform Associate",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "HashiCorp",
+      "bodyUrl": "https://www.hashicorp.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Terraform Associate 003"
+      ],
+      "blurb": "Widely held infrastructure-as-code certification covering Terraform workflow, state management, modules, providers and HCP Terraform collaboration."
+    },
+    {
+      "slug": "hashicorp-certified-terraform-authoring-and-operations-professional",
+      "name": "HashiCorp Certified: Terraform Authoring and Operations Professional",
+      "short": "Terraform Professional",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "HashiCorp",
+      "bodyUrl": "https://www.hashicorp.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Terraform Professional"
+      ],
+      "blurb": "Hands-on professional exam requiring candidates to write, refactor and operate Terraform configurations and modules in a live lab environment."
+    },
+    {
+      "slug": "hashicorp-certified-vault-associate",
+      "name": "HashiCorp Certified: Vault Associate",
+      "short": "Vault Associate",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "HashiCorp",
+      "bodyUrl": "https://www.hashicorp.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Vault Associate 003"
+      ],
+      "blurb": "Associate exam on HashiCorp Vault secrets management, authentication methods, policies, dynamic credentials, encryption as a service and tokens."
+    },
+    {
+      "slug": "hashicorp-certified-vault-operations-professional",
+      "name": "HashiCorp Certified: Vault Operations Professional",
+      "short": "Vault Professional",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "HashiCorp",
+      "bodyUrl": "https://www.hashicorp.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Vault Operations Professional"
+      ],
+      "blurb": "Lab-based professional exam on deploying, monitoring and troubleshooting production Vault clusters including replication, seals and disaster recovery."
+    },
+    {
+      "slug": "istio-certified-associate",
+      "name": "Istio Certified Associate",
+      "short": "ICA",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Cloud Native Computing Foundation",
+      "bodyUrl": "https://www.cncf.io/training/certification/",
+      "type": "Certification",
+      "aka": [
+        "ICA"
+      ],
+      "blurb": "CNCF associate exam on the Istio service mesh covering traffic management, resilience, security policy, observability and mesh installation."
+    },
+    {
+      "slug": "kubernetes-and-cloud-native-associate",
+      "name": "Kubernetes and Cloud Native Associate",
+      "short": "KCNA",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Cloud Native Computing Foundation",
+      "bodyUrl": "https://www.cncf.io/training/certification/",
+      "type": "Certification",
+      "aka": [
+        "KCNA"
+      ],
+      "blurb": "Entry-level CNCF exam covering Kubernetes architecture, container orchestration basics, cloud-native observability, delivery and the CNCF ecosystem."
+    },
+    {
+      "slug": "kubernetes-and-cloud-native-security-associate",
+      "name": "Kubernetes and Cloud Native Security Associate",
+      "short": "KCSA",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Cloud Native Computing Foundation",
+      "bodyUrl": "https://www.cncf.io/training/certification/",
+      "type": "Certification",
+      "aka": [
+        "KCSA"
+      ],
+      "blurb": "CNCF associate exam on Kubernetes security fundamentals including the 4C model, threat modelling, platform hardening and compliance frameworks."
+    },
+    {
+      "slug": "certified-kyverno-associate",
+      "name": "Kyverno Certified Associate",
+      "short": "KCA",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Cloud Native Computing Foundation",
+      "bodyUrl": "https://www.cncf.io/training/certification/",
+      "type": "Certification",
+      "aka": [
+        "KCA"
+      ],
+      "blurb": "CNCF associate exam on Kyverno policy-as-code for Kubernetes, covering validation, mutation, generation rules, policy reporting and image verification."
+    },
+    {
+      "slug": "opentelemetry-certified-associate",
+      "name": "OpenTelemetry Certified Associate",
+      "short": "OTCA",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Cloud Native Computing Foundation",
+      "bodyUrl": "https://www.cncf.io/training/certification/",
+      "type": "Certification",
+      "aka": [
+        "OTCA"
+      ],
+      "blurb": "CNCF associate exam covering OpenTelemetry traces, metrics and logs, instrumentation, the Collector, semantic conventions and observability pipelines."
+    },
+    {
+      "slug": "prometheus-certified-associate",
+      "name": "Prometheus Certified Associate",
+      "short": "PCA",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Cloud Native Computing Foundation",
+      "bodyUrl": "https://www.cncf.io/training/certification/",
+      "type": "Certification",
+      "aka": [
+        "PCA"
+      ],
+      "blurb": "CNCF associate exam on Prometheus monitoring covering PromQL, exporters, alerting rules, Alertmanager, service discovery and instrumentation."
+    },
+    {
+      "slug": "puppet-certified-professional",
+      "name": "Puppet Certified Professional",
+      "short": "PCP",
+      "category": "technology",
+      "group": "Cloud Native & DevOps",
+      "body": "Perforce Software",
+      "type": "Certification",
+      "aka": [
+        "PCP"
+      ],
+      "blurb": "Configuration-management certification covering Puppet manifests, modules, Hiera data, node classification and Puppet Enterprise administration."
+    },
+    {
+      "slug": "bsd-associate",
+      "name": "BSD Associate",
+      "short": "BSDA",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "BSD Certification Group",
+      "type": "Certification",
+      "aka": [
+        "BSDA"
+      ],
+      "blurb": "Long-standing entry-level BSD certification covering installation, user management, networking and maintenance across the major BSD operating systems."
+    },
+    {
+      "slug": "lpi-bsd-specialist",
+      "name": "LPI BSD Specialist",
+      "short": "BSD Specialist",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Linux Professional Institute",
+      "bodyUrl": "https://www.lpi.org/",
+      "type": "Certification",
+      "aka": [
+        "702-100"
+      ],
+      "blurb": "LPI certification covering FreeBSD, NetBSD and OpenBSD administration including installation, packages, storage, networking and system services."
+    },
+    {
+      "slug": "lpi-devops-tools-engineer",
+      "name": "LPI DevOps Tools Engineer",
+      "short": "LPI DevOps",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Linux Professional Institute",
+      "bodyUrl": "https://www.lpi.org/",
+      "type": "Certification",
+      "aka": [
+        "701-100"
+      ],
+      "blurb": "Vendor-neutral LPI certification covering container and configuration management tools, CI/CD, infrastructure as code and service operations."
+    },
+    {
+      "slug": "lpi-linux-essentials",
+      "name": "LPI Linux Essentials",
+      "short": "Linux Essentials",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Linux Professional Institute",
+      "bodyUrl": "https://www.lpi.org/",
+      "type": "Certification",
+      "aka": [
+        "010-160"
+      ],
+      "blurb": "Entry-level LPI certificate covering Linux history and licensing, the command line, files and directories, scripting basics and security concepts."
+    },
+    {
+      "slug": "lpi-open-source-essentials",
+      "name": "LPI Open Source Essentials",
+      "short": "Open Source Essentials",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Linux Professional Institute",
+      "bodyUrl": "https://www.lpi.org/",
+      "type": "Certification",
+      "aka": [
+        "050-100"
+      ],
+      "blurb": "LPI certificate covering open source licensing, governance, community collaboration, compliance and building an open source strategy."
+    },
+    {
+      "slug": "lpi-security-essentials",
+      "name": "LPI Security Essentials",
+      "short": "Security Essentials",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Linux Professional Institute",
+      "bodyUrl": "https://www.lpi.org/",
+      "type": "Certification",
+      "aka": [
+        "020-100"
+      ],
+      "blurb": "Entry-level LPI certificate covering security concepts, device and network security, encryption, privacy and safe use of everyday computing services."
+    },
+    {
+      "slug": "lpi-web-development-essentials",
+      "name": "LPI Web Development Essentials",
+      "short": "Web Development Essentials",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Linux Professional Institute",
+      "bodyUrl": "https://www.lpi.org/",
+      "type": "Certification",
+      "aka": [
+        "030-100"
+      ],
+      "blurb": "Entry-level LPI certificate covering HTML, CSS, JavaScript, NodeJS and SQL fundamentals for people starting in web software development."
+    },
+    {
+      "slug": "lpic-1-system-administrator",
+      "name": "LPIC-1: Linux Administrator",
+      "short": "LPIC-1",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Linux Professional Institute",
+      "bodyUrl": "https://www.lpi.org/",
+      "type": "Certification",
+      "aka": [
+        "101-500",
+        "102-500"
+      ],
+      "blurb": "Two-exam LPI certification covering Linux installation, package management, shell scripting, file systems, networking and basic system security."
+    },
+    {
+      "slug": "lpic-2-linux-engineer",
+      "name": "LPIC-2: Linux Engineer",
+      "short": "LPIC-2",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Linux Professional Institute",
+      "bodyUrl": "https://www.lpi.org/",
+      "type": "Certification",
+      "aka": [
+        "201-450",
+        "202-450"
+      ],
+      "blurb": "Two-exam LPI certification on advanced administration including kernel tuning, storage, network services, email, web servers and system maintenance."
+    },
+    {
+      "slug": "lpic-3-high-availability-and-storage-clusters",
+      "name": "LPIC-3: High Availability and Storage Clusters",
+      "short": "LPIC-3 306",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Linux Professional Institute",
+      "bodyUrl": "https://www.lpi.org/",
+      "type": "Certification",
+      "aka": [
+        "306-300"
+      ],
+      "blurb": "Senior LPI specialisation covering cluster management, load balancing, distributed storage and high-availability Linux service configuration."
+    },
+    {
+      "slug": "lpic-3-mixed-environments",
+      "name": "LPIC-3: Mixed Environments",
+      "short": "LPIC-3 300",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Linux Professional Institute",
+      "bodyUrl": "https://www.lpi.org/",
+      "type": "Certification",
+      "aka": [
+        "300-300"
+      ],
+      "blurb": "Senior LPI specialisation covering Samba, OpenLDAP and integrating Linux servers into Windows and mixed enterprise directory environments."
+    },
+    {
+      "slug": "lpic-3-security",
+      "name": "LPIC-3: Security",
+      "short": "LPIC-3 303",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Linux Professional Institute",
+      "bodyUrl": "https://www.lpi.org/",
+      "type": "Certification",
+      "aka": [
+        "303-300"
+      ],
+      "blurb": "Senior LPI specialisation covering cryptography, access control, application security, network security and intrusion detection on Linux systems."
+    },
+    {
+      "slug": "oracle-linux-system-administrator",
+      "name": "Oracle Linux System Administrator Certified Professional",
+      "short": "Oracle Linux Administrator",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Oracle",
+      "bodyUrl": "https://education.oracle.com/",
+      "type": "Certification",
+      "aka": [
+        "1Z0-100"
+      ],
+      "blurb": "Oracle certification covering Oracle Linux installation, package management with DNF, storage, systemd services, networking and kernel management."
+    },
+    {
+      "slug": "red-hat-certified-architect",
+      "name": "Red Hat Certified Architect",
+      "short": "RHCA",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Red Hat",
+      "bodyUrl": "https://www.redhat.com/en/services/certifications",
+      "type": "Certification",
+      "aka": [
+        "RHCA"
+      ],
+      "blurb": "Top Red Hat credential earned by passing five additional specialist exams after RHCE, across infrastructure, cloud, containers or automation tracks."
+    },
+    {
+      "slug": "red-hat-certified-engineer",
+      "name": "Red Hat Certified Engineer",
+      "short": "RHCE",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Red Hat",
+      "bodyUrl": "https://www.redhat.com/en/services/certifications",
+      "type": "Certification",
+      "aka": [
+        "EX294"
+      ],
+      "blurb": "Performance-based Red Hat exam focused on automating RHEL administration with Ansible playbooks, roles and system roles; requires a current RHCSA."
+    },
+    {
+      "slug": "red-hat-certified-specialist-in-advanced-automation",
+      "name": "Red Hat Certified Specialist in Advanced Automation",
+      "short": "EX374",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Red Hat",
+      "bodyUrl": "https://www.redhat.com/en/services/certifications",
+      "type": "Certification",
+      "aka": [
+        "EX374"
+      ],
+      "blurb": "Red Hat exam on advanced Ansible Automation Platform skills including complex playbooks, custom filters, collections and automation controller workflows."
+    },
+    {
+      "slug": "red-hat-certified-specialist-in-containers",
+      "name": "Red Hat Certified Specialist in Containers",
+      "short": "EX188",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Red Hat",
+      "bodyUrl": "https://www.redhat.com/en/services/certifications",
+      "type": "Certification",
+      "aka": [
+        "EX188"
+      ],
+      "blurb": "Hands-on Red Hat exam on building, running and managing containers with Podman, including images, registries, volumes and multi-container applications."
+    },
+    {
+      "slug": "red-hat-certified-specialist-in-openshift-administration",
+      "name": "Red Hat Certified Specialist in OpenShift Administration",
+      "short": "EX280",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Red Hat",
+      "bodyUrl": "https://www.redhat.com/en/services/certifications",
+      "type": "Certification",
+      "aka": [
+        "EX280"
+      ],
+      "blurb": "Hands-on Red Hat exam on installing, configuring and managing OpenShift clusters including authentication, networking, storage and application workloads."
+    },
+    {
+      "slug": "red-hat-certified-specialist-in-openshift-application-development",
+      "name": "Red Hat Certified Specialist in OpenShift Application Development",
+      "short": "EX288",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Red Hat",
+      "bodyUrl": "https://www.redhat.com/en/services/certifications",
+      "type": "Certification",
+      "aka": [
+        "EX288"
+      ],
+      "blurb": "Performance-based Red Hat exam on deploying and managing containerised applications on OpenShift, including builds, pipelines and configuration."
+    },
+    {
+      "slug": "red-hat-certified-specialist-in-security-linux",
+      "name": "Red Hat Certified Specialist in Security: Linux",
+      "short": "EX415",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Red Hat",
+      "bodyUrl": "https://www.redhat.com/en/services/certifications",
+      "type": "Certification",
+      "aka": [
+        "EX415"
+      ],
+      "blurb": "Red Hat exam on hardening RHEL systems using SELinux, auditing, OpenSCAP compliance scanning, encryption and centralised identity management."
+    },
+    {
+      "slug": "red-hat-certified-system-administrator",
+      "name": "Red Hat Certified System Administrator",
+      "short": "RHCSA",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "Red Hat",
+      "bodyUrl": "https://www.redhat.com/en/services/certifications",
+      "type": "Certification",
+      "aka": [
+        "EX200"
+      ],
+      "blurb": "Hands-on Red Hat exam on core Linux administration including users, storage, networking, SELinux, containers and system troubleshooting on RHEL."
+    },
+    {
+      "slug": "suse-certified-administrator",
+      "name": "SUSE Certified Administrator in SUSE Linux Enterprise Server",
+      "short": "SCA",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "SUSE",
+      "type": "Certification",
+      "aka": [
+        "SCA"
+      ],
+      "blurb": "SUSE certification covering SUSE Linux Enterprise Server installation, YaST and Zypper administration, storage, networking and system services."
+    },
+    {
+      "slug": "suse-certified-engineer",
+      "name": "SUSE Certified Engineer in SUSE Linux Enterprise Server",
+      "short": "SCE",
+      "category": "technology",
+      "group": "Linux, Unix & Open Source",
+      "body": "SUSE",
+      "type": "Certification",
+      "aka": [
+        "SCE"
+      ],
+      "blurb": "Advanced SUSE certification on enterprise Linux deployment, automation with AutoYaST and Salt, high availability, security and troubleshooting."
+    },
+    {
+      "slug": "google-associate-google-workspace-administrator",
+      "name": "Associate Google Workspace Administrator",
+      "short": "Workspace Administrator",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Associate Google Workspace Administrator"
+      ],
+      "blurb": "Associate certification on managing Google Workspace users, groups, devices, security policies, data controls and service configuration."
+    },
+    {
+      "slug": "google-advanced-data-analytics-certificate",
+      "name": "Google Advanced Data Analytics Professional Certificate",
+      "short": "Google Advanced Data Analytics",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google",
+      "type": "Training",
+      "aka": [
+        "Google Advanced Data Analytics"
+      ],
+      "blurb": "Follow-on Google programme covering Python, statistics, regression modelling and machine learning for candidates moving beyond entry-level analytics."
+    },
+    {
+      "slug": "google-apigee-certified-api-engineer",
+      "name": "Google Cloud Apigee Certified API Engineer",
+      "short": "Apigee API Engineer",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Apigee API Engineer"
+      ],
+      "blurb": "Google Cloud certification on designing, building, securing and operating API programmes and proxies using the Apigee API management platform."
+    },
+    {
+      "slug": "google-associate-cloud-engineer",
+      "name": "Google Cloud Associate Cloud Engineer",
+      "short": "ACE",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Associate Cloud Engineer"
+      ],
+      "blurb": "Associate certification on deploying applications, monitoring operations and managing Google Cloud projects, IAM, compute, storage and networking."
+    },
+    {
+      "slug": "google-associate-data-practitioner",
+      "name": "Google Cloud Associate Data Practitioner",
+      "short": "ADP",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Associate Data Practitioner"
+      ],
+      "blurb": "Associate certification on data ingestion, transformation, pipeline management, analysis and visualisation using BigQuery and related Google services."
+    },
+    {
+      "slug": "google-cloud-digital-leader",
+      "name": "Google Cloud Digital Leader",
+      "short": "Cloud Digital Leader",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "CDL"
+      ],
+      "blurb": "Foundational Google Cloud exam on cloud concepts, digital transformation, data and AI innovation, infrastructure modernisation and security basics."
+    },
+    {
+      "slug": "google-cloud-generative-ai-leader",
+      "name": "Google Cloud Generative AI Leader",
+      "short": "Generative AI Leader",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Gen AI Leader"
+      ],
+      "blurb": "Business-focused Google Cloud certification on generative AI fundamentals, Gemini and Vertex AI offerings, prompt techniques and adoption strategy."
+    },
+    {
+      "slug": "google-professional-cloud-architect",
+      "name": "Google Cloud Professional Cloud Architect",
+      "short": "PCA",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Professional Cloud Architect"
+      ],
+      "blurb": "Professional certification on designing secure, scalable and cost-effective Google Cloud solutions, including case-study based architecture decisions."
+    },
+    {
+      "slug": "google-professional-cloud-database-engineer",
+      "name": "Google Cloud Professional Cloud Database Engineer",
+      "short": "PCDE",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Professional Cloud Database Engineer"
+      ],
+      "blurb": "Professional certification on designing, migrating and operating Google Cloud databases including Cloud SQL, Spanner, Bigtable and AlloyDB."
+    },
+    {
+      "slug": "google-professional-cloud-developer",
+      "name": "Google Cloud Professional Cloud Developer",
+      "short": "PCD",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Professional Cloud Developer"
+      ],
+      "blurb": "Professional certification on building scalable applications with Cloud Run, GKE, Cloud Functions, managed services and Google Cloud APIs."
+    },
+    {
+      "slug": "google-professional-cloud-devops-engineer",
+      "name": "Google Cloud Professional Cloud DevOps Engineer",
+      "short": "PCDOE",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Professional Cloud DevOps Engineer"
+      ],
+      "blurb": "Professional certification on CI/CD pipelines, site reliability engineering practice, service monitoring, incident response and performance optimisation."
+    },
+    {
+      "slug": "google-professional-cloud-network-engineer",
+      "name": "Google Cloud Professional Cloud Network Engineer",
+      "short": "PCNE",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Professional Cloud Network Engineer"
+      ],
+      "blurb": "Professional certification on Google Cloud VPC design, hybrid interconnect, load balancing, DNS, network security and troubleshooting."
+    },
+    {
+      "slug": "google-professional-cloud-security-engineer",
+      "name": "Google Cloud Professional Cloud Security Engineer",
+      "short": "PCSE",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Professional Cloud Security Engineer"
+      ],
+      "blurb": "Professional certification on securing Google Cloud workloads including IAM, org policy, data protection, network security and compliance controls."
+    },
+    {
+      "slug": "google-professional-data-engineer",
+      "name": "Google Cloud Professional Data Engineer",
+      "short": "PDE",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Professional Data Engineer"
+      ],
+      "blurb": "Professional certification on designing data processing systems with BigQuery, Dataflow, Pub/Sub and Dataproc plus operationalising machine learning."
+    },
+    {
+      "slug": "google-professional-machine-learning-engineer",
+      "name": "Google Cloud Professional Machine Learning Engineer",
+      "short": "PMLE",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Professional Machine Learning Engineer"
+      ],
+      "blurb": "Professional certification on designing, building and productionising machine learning models with Vertex AI, including MLOps and responsible AI."
+    },
+    {
+      "slug": "google-professional-security-operations-engineer",
+      "name": "Google Cloud Professional Security Operations Engineer",
+      "short": "PSOE",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Professional Security Operations Engineer"
+      ],
+      "blurb": "Google Cloud certification on running security operations with Google Security Operations, covering detection engineering, threat hunting and response."
+    },
+    {
+      "slug": "google-cybersecurity-professional-certificate",
+      "name": "Google Cybersecurity Professional Certificate",
+      "short": "Google Cybersecurity",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google",
+      "type": "Training",
+      "aka": [
+        "Google Cybersecurity Certificate"
+      ],
+      "blurb": "Entry-level online programme covering security frameworks, network security, Linux, SQL, Python and incident detection for aspiring SOC analysts."
+    },
+    {
+      "slug": "google-data-analytics-professional-certificate",
+      "name": "Google Data Analytics Professional Certificate",
+      "short": "Google Data Analytics",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google",
+      "type": "Training",
+      "aka": [
+        "Google Data Analytics Certificate"
+      ],
+      "blurb": "Entry-level online programme covering the data analysis process with spreadsheets, SQL, R and Tableau, ending in a portfolio case study."
+    },
+    {
+      "slug": "google-it-support-professional-certificate",
+      "name": "Google IT Support Professional Certificate",
+      "short": "Google IT Support",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google",
+      "type": "Training",
+      "aka": [
+        "Google IT Support Certificate"
+      ],
+      "blurb": "Entry-level online programme covering troubleshooting, networking, operating systems, system administration and security for help desk roles."
+    },
+    {
+      "slug": "google-ux-design-professional-certificate",
+      "name": "Google UX Design Professional Certificate",
+      "short": "Google UX Design",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google",
+      "type": "Training",
+      "aka": [
+        "Google UX Certificate"
+      ],
+      "blurb": "Entry-level online programme covering user research, wireframing, prototyping in Figma and building a user experience design portfolio."
+    },
+    {
+      "slug": "google-professional-chromeos-administrator",
+      "name": "Professional ChromeOS Administrator",
+      "short": "ChromeOS Administrator",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "ChromeOS Administrator"
+      ],
+      "blurb": "Google certification on deploying and managing ChromeOS devices at scale, covering enrolment, policies, security and troubleshooting in the enterprise."
+    },
+    {
+      "slug": "google-professional-google-workspace-administrator",
+      "name": "Professional Google Workspace Administrator",
+      "short": "Professional Workspace Admin",
+      "category": "technology",
+      "group": "Google Cloud & Google",
+      "body": "Google Cloud",
+      "bodyUrl": "https://cloud.google.com/certification",
+      "type": "Certification",
+      "aka": [
+        "Professional Google Workspace Administrator"
+      ],
+      "blurb": "Retired at the end of 2024 and replaced by the associate-level Workspace Administrator exam, it covered Workspace configuration and security."
+    },
+    {
+      "slug": "comptia-a-plus",
+      "name": "CompTIA A+ Certification",
+      "short": "A+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "220-1201",
+        "220-1202"
+      ],
+      "blurb": "Entry-level IT support credential earned by passing two core exams on hardware, operating systems, networking, security and troubleshooting procedures."
+    },
+    {
+      "slug": "comptia-ai-essentials",
+      "name": "CompTIA AI Essentials",
+      "short": "AI Essentials",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Training",
+      "aka": [
+        "CompTIA Prompting Essentials"
+      ],
+      "blurb": "Self-paced CompTIA course on artificial intelligence literacy, prompt writing and responsible AI use for business professionals rather than engineers."
+    },
+    {
+      "slug": "comptia-cloud-essentials-plus",
+      "name": "CompTIA Cloud Essentials+",
+      "short": "Cloud Essentials+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "CLO-002"
+      ],
+      "blurb": "Business-focused CompTIA certification covering cloud principles, vendor selection, financial analysis, governance and cloud migration decision making."
+    },
+    {
+      "slug": "comptia-cloud-plus",
+      "name": "CompTIA Cloud+",
+      "short": "Cloud+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "CV0-004"
+      ],
+      "blurb": "Vendor-neutral certification on deploying and operating cloud infrastructure, covering architecture, security, deployment, operations and troubleshooting."
+    },
+    {
+      "slug": "comptia-cloudnetx",
+      "name": "CompTIA CloudNetX",
+      "short": "CloudNetX",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "CNX-001"
+      ],
+      "blurb": "Expert-level Xpert Series certification for network and cloud architects designing secure, scalable hybrid network and system architectures."
+    },
+    {
+      "slug": "comptia-cysa-plus",
+      "name": "CompTIA Cybersecurity Analyst (CySA+)",
+      "short": "CySA+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "CS0-003"
+      ],
+      "blurb": "Intermediate security analyst certification covering threat detection, behavioural analytics, vulnerability management and incident response processes."
+    },
+    {
+      "slug": "comptia-data-plus",
+      "name": "CompTIA Data+",
+      "short": "Data+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "DA0-001"
+      ],
+      "blurb": "Early-career data analytics certification covering data concepts, mining, statistical analysis, visualisation and data governance for business decisions."
+    },
+    {
+      "slug": "comptia-datasys-plus",
+      "name": "CompTIA DataSys+",
+      "short": "DataSys+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "DS0-001"
+      ],
+      "blurb": "Database administration certification covering deployment, management, security, scripting, backup and recovery of relational database systems."
+    },
+    {
+      "slug": "comptia-datax",
+      "name": "CompTIA DataX",
+      "short": "DataX",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "DY0-001"
+      ],
+      "blurb": "Expert-level Xpert Series data science certification covering mathematics, modelling, machine learning operations and communicating results to leaders."
+    },
+    {
+      "slug": "comptia-it-fundamentals",
+      "name": "CompTIA IT Fundamentals (ITF+)",
+      "short": "ITF+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "FC0-U61"
+      ],
+      "blurb": "Pre-career CompTIA certification covering IT concepts, infrastructure, applications, software development and database basics; superseded by Tech+."
+    },
+    {
+      "slug": "comptia-linux-plus",
+      "name": "CompTIA Linux+",
+      "short": "Linux+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "XK0-006",
+        "XK0-005"
+      ],
+      "blurb": "Vendor-neutral Linux administration certification covering system management, scripting, containers, security and troubleshooting on Linux servers."
+    },
+    {
+      "slug": "comptia-network-plus",
+      "name": "CompTIA Network+",
+      "short": "Network+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "N10-009"
+      ],
+      "blurb": "Core networking certification covering network topologies, addressing, routing and switching, wireless, network security and troubleshooting methods."
+    },
+    {
+      "slug": "comptia-pentest-plus",
+      "name": "CompTIA PenTest+",
+      "short": "PenTest+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "PT0-003",
+        "PT0-002"
+      ],
+      "blurb": "Intermediate penetration testing certification covering scoping, reconnaissance, exploitation, post-exploitation, reporting and vulnerability management."
+    },
+    {
+      "slug": "comptia-project-plus",
+      "name": "CompTIA Project+",
+      "short": "Project+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "PK0-005"
+      ],
+      "blurb": "Entry-level project management certification aimed at IT staff, covering project lifecycle, communication, change control, tools and documentation."
+    },
+    {
+      "slug": "comptia-secai-plus",
+      "name": "CompTIA SecAI+",
+      "short": "SecAI+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "CY0-001"
+      ],
+      "blurb": "CompTIA certification launched in 2025 covering the security of artificial intelligence systems and the practical use of AI within security operations."
+    },
+    {
+      "slug": "comptia-security-plus",
+      "name": "CompTIA Security+",
+      "short": "Security+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "SY0-701"
+      ],
+      "blurb": "Baseline cybersecurity certification covering threats, architecture, implementation, operations and governance; approved for US DoD 8140 workforce roles."
+    },
+    {
+      "slug": "comptia-securityx",
+      "name": "CompTIA SecurityX",
+      "short": "SecurityX",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "CAS-005",
+        "CASP+",
+        "CompTIA Advanced Security Practitioner"
+      ],
+      "blurb": "Expert Xpert Series certification for security architects, renamed from CASP+ with the CAS-005 exam version; existing CASP+ holders received SecurityX."
+    },
+    {
+      "slug": "comptia-server-plus",
+      "name": "CompTIA Server+",
+      "short": "Server+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "SK0-005"
+      ],
+      "blurb": "Server administration certification covering hardware, virtualisation, storage, security, disaster recovery and troubleshooting in data centre settings."
+    },
+    {
+      "slug": "comptia-tech-plus",
+      "name": "CompTIA Tech+",
+      "short": "Tech+",
+      "category": "technology",
+      "group": "CompTIA",
+      "body": "CompTIA",
+      "bodyUrl": "https://www.comptia.org/",
+      "type": "Certification",
+      "aka": [
+        "FC0-U71"
+      ],
+      "blurb": "Foundational CompTIA certification that replaced ITF+, covering IT concepts, infrastructure, software development, databases, security and AI basics."
+    },
+    {
+      "slug": "aws-certified-advanced-networking-specialty",
+      "name": "AWS Certified Advanced Networking - Specialty",
+      "short": "AWS Advanced Networking",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "ANS-C01"
+      ],
+      "blurb": "Specialty exam on hybrid and complex AWS networking including Direct Connect, Transit Gateway and VPC design; AWS has scheduled it for retirement in 2026."
+    },
+    {
+      "slug": "aws-certified-ai-practitioner",
+      "name": "AWS Certified AI Practitioner",
+      "short": "AWS AI Practitioner",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "AIF-C01"
+      ],
+      "blurb": "Foundational AWS credential covering artificial intelligence, machine learning and generative AI concepts plus Amazon Bedrock and SageMaker services."
+    },
+    {
+      "slug": "aws-certified-cloud-practitioner",
+      "name": "AWS Certified Cloud Practitioner",
+      "short": "AWS CCP",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "CLF-C02"
+      ],
+      "blurb": "Entry-level AWS certification covering cloud concepts, core services, security, pricing and support models for technical and non-technical candidates."
+    },
+    {
+      "slug": "aws-certified-cloudops-engineer-associate",
+      "name": "AWS Certified CloudOps Engineer - Associate",
+      "short": "AWS CloudOps",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "SOA-C03"
+      ],
+      "blurb": "Operations-focused associate exam on deploying, monitoring and troubleshooting AWS workloads; it replaced the SysOps Administrator exam in late 2025."
+    },
+    {
+      "slug": "aws-certified-data-analytics-specialty",
+      "name": "AWS Certified Data Analytics - Specialty",
+      "short": "AWS Data Analytics",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "DAS-C01"
+      ],
+      "blurb": "Retired in April 2024 and superseded by the Data Engineer Associate exam, this specialty covered Kinesis, Redshift, Glue and analytics pipeline design."
+    },
+    {
+      "slug": "aws-certified-data-engineer-associate",
+      "name": "AWS Certified Data Engineer - Associate",
+      "short": "AWS Data Engineer",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "DEA-C01"
+      ],
+      "blurb": "Associate exam on building and operating AWS data pipelines with Glue, Athena, Redshift, Kinesis and EMR, including data governance and quality."
+    },
+    {
+      "slug": "aws-certified-database-specialty",
+      "name": "AWS Certified Database - Specialty",
+      "short": "AWS Database Specialty",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "DBS-C01"
+      ],
+      "blurb": "Retired by AWS in April 2024, this specialty exam covered Aurora, RDS, DynamoDB and database migration design and remains a widely searched credential."
+    },
+    {
+      "slug": "aws-certified-developer-associate",
+      "name": "AWS Certified Developer - Associate",
+      "short": "AWS Developer",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "DVA-C02"
+      ],
+      "blurb": "Associate-level exam for developers building on AWS with Lambda, API Gateway, DynamoDB, SDKs, CI/CD tooling and application security practices."
+    },
+    {
+      "slug": "aws-certified-devops-engineer-professional",
+      "name": "AWS Certified DevOps Engineer - Professional",
+      "short": "AWS DevOps Pro",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "DOP-C02"
+      ],
+      "blurb": "Professional-level exam on continuous delivery, infrastructure as code, monitoring, incident response and automation across AWS environments."
+    },
+    {
+      "slug": "aws-certified-generative-ai-developer-professional",
+      "name": "AWS Certified Generative AI Developer - Professional",
+      "short": "AWS GenAI Developer",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "AIP-C01"
+      ],
+      "blurb": "Professional exam introduced in late 2025 covering production generative AI on AWS including Bedrock agents, RAG pipelines, guardrails and vector stores."
+    },
+    {
+      "slug": "aws-certified-machine-learning-specialty",
+      "name": "AWS Certified Machine Learning - Specialty",
+      "short": "AWS ML Specialty",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "MLS-C01"
+      ],
+      "blurb": "Long-running AWS machine learning specialty exam covering data engineering, modelling and deployment; AWS set 31 March 2026 as the final test date."
+    },
+    {
+      "slug": "aws-certified-machine-learning-engineer-associate",
+      "name": "AWS Certified Machine Learning Engineer - Associate",
+      "short": "AWS MLA",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "MLA-C01"
+      ],
+      "blurb": "Associate exam on building, deploying and operating machine learning workloads with SageMaker, replacing the ML Specialty as the default AWS ML credential."
+    },
+    {
+      "slug": "aws-certified-security-specialty",
+      "name": "AWS Certified Security - Specialty",
+      "short": "AWS Security Specialty",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "SCS-C03",
+        "SCS-C02"
+      ],
+      "blurb": "Specialty exam on AWS incident response, logging, identity management, data protection and infrastructure security; SCS-C03 replaced SCS-C02 in 2025."
+    },
+    {
+      "slug": "aws-certified-solutions-architect-associate",
+      "name": "AWS Certified Solutions Architect - Associate",
+      "short": "AWS SAA",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "SAA-C03"
+      ],
+      "blurb": "The most widely held AWS certification, covering resilient, secure, high-performing and cost-optimised architecture design on AWS."
+    },
+    {
+      "slug": "aws-certified-solutions-architect-professional",
+      "name": "AWS Certified Solutions Architect - Professional",
+      "short": "AWS SAP",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "SAP-C02"
+      ],
+      "blurb": "Professional exam on complex multi-account, multi-region AWS architecture, migration strategy, cost control and continuous improvement."
+    },
+    {
+      "slug": "aws-certified-sysops-administrator-associate",
+      "name": "AWS Certified SysOps Administrator - Associate",
+      "short": "AWS SysOps",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "SOA-C02"
+      ],
+      "blurb": "Retired on 29 September 2025 and replaced by the CloudOps Engineer Associate exam, it covered deployment, monitoring and operations of AWS workloads."
+    },
+    {
+      "slug": "aws-certified-sap-on-aws-specialty",
+      "name": "AWS Certified: SAP on AWS - Specialty",
+      "short": "SAP on AWS",
+      "category": "technology",
+      "group": "Amazon Web Services",
+      "body": "Amazon Web Services",
+      "bodyUrl": "https://aws.amazon.com/certification/",
+      "type": "Certification",
+      "aka": [
+        "PAS-C01"
+      ],
+      "blurb": "Retired in April 2024, this specialty validated designing, migrating and operating SAP workloads such as S/4HANA on AWS infrastructure."
+    }
+  ]
+}

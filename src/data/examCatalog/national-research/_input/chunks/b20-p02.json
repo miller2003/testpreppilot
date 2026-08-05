@@ -1,0 +1,430 @@
+{
+ "chunkId": "b20-p02",
+ "batch": 20,
+ "part": 2,
+ "categories": [
+  "fitness-recreation"
+ ],
+ "groups": [
+  "Fitness, Sport & Recreation"
+ ],
+ "bodies": [
+  "American Red Cross",
+  "National Rifle Association",
+  "Professional Ski Instructors of America and American Association of Snowboard Instructors",
+  "Athletics and Fitness Association of America",
+  "PGA of America",
+  "Precision Nutrition",
+  "USA Weightlifting",
+  "Wilderness Medical Society scope providers",
+  "Yoga Alliance",
+  "The Cooper Institute",
+  "Jeff Ellis & Associates",
+  "International Hunter Education Association – USA",
+  "Leave No Trace Center for Outdoor Ethics",
+  "National Association of State Boating Law Administrators",
+  "National Association of Underwater Instructors",
+  "National Council for Certified Personal Trainers",
+  "National Council on Strength and Fitness",
+  "National Federation of State High School Associations",
+  "National Federation of Professional Trainers",
+  "National Pilates Certification Program",
+  "National Strength Professionals Association",
+  "Professional Tennis Registry",
+  "Scuba Schools International",
+  "StarGuard ELITE",
+  "Technical Diving International",
+  "United States Soccer Federation"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "american-red-cross-lifeguarding",
+   "name": "American Red Cross Lifeguarding Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "American Red Cross",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Water rescue certification with written and in-water skills testing plus CPR/AED and first aid for professional rescuers."
+  },
+  {
+   "slug": "american-red-cross-lifeguard-instructor",
+   "name": "American Red Cross Lifeguarding Instructor Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "American Red Cross",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Instructor course qualifying certified lifeguards to teach and evaluate Red Cross lifeguarding and first aid courses."
+  },
+  {
+   "slug": "american-red-cross-water-safety-instructor",
+   "name": "American Red Cross Water Safety Instructor Certification",
+   "short": "WSI",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "American Red Cross",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification qualifying candidates to teach Red Cross swim lessons and water safety courses to all age groups."
+  },
+  {
+   "slug": "nra-certified-instructor",
+   "name": "NRA Certified Instructor",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "National Rifle Association",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Discipline-specific instructor training in pistol, rifle, shotgun, muzzleloading, personal protection and home firearm safety."
+  },
+  {
+   "slug": "nra-chief-range-safety-officer",
+   "name": "NRA Chief Range Safety Officer",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "National Rifle Association",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced course qualifying holders to train range safety officers and to develop range standard operating procedures."
+  },
+  {
+   "slug": "nra-range-safety-officer",
+   "name": "NRA Range Safety Officer",
+   "short": "RSO",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "National Rifle Association",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Course and assessment covering range standard operating procedures, firing line commands, stoppages and emergency response."
+  },
+  {
+   "slug": "psia-aasi-level-1",
+   "name": "PSIA-AASI Level 1 Instructor Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Professional Ski Instructors of America and American Association of Snowboard Instructors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry snowsports instructor credential assessed on teaching, technical skiing or riding, and people skills for beginner lessons."
+  },
+  {
+   "slug": "psia-aasi-level-2",
+   "name": "PSIA-AASI Level 2 Instructor Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Professional Ski Instructors of America and American Association of Snowboard Instructors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Intermediate snowsports credential assessed on advanced terrain performance, movement analysis and intermediate lesson delivery."
+  },
+  {
+   "slug": "psia-aasi-level-3",
+   "name": "PSIA-AASI Level 3 Instructor Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Professional Ski Instructors of America and American Association of Snowboard Instructors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Highest snowsports teaching credential assessed on expert terrain skiing or riding, precise movement analysis and advanced coaching."
+  },
+  {
+   "slug": "afaa-certified-personal-trainer",
+   "name": "AFAA Certified Personal Trainer",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Athletics and Fitness Association of America",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Personal training credential covering assessment, exercise technique, programme design and client communication fundamentals."
+  },
+  {
+   "slug": "afaa-group-fitness-instructor",
+   "name": "AFAA Group Fitness Instructor Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Athletics and Fitness Association of America",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Long-running group exercise credential covering class construction, movement analysis, cueing and injury prevention."
+  },
+  {
+   "slug": "pga-associate-program",
+   "name": "PGA Associate Program",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "PGA of America",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Three-level education and testing pathway in golf operations, teaching and business leading to PGA membership."
+  },
+  {
+   "slug": "pga-playing-ability-test",
+   "name": "PGA Playing Ability Test",
+   "short": "PAT",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "PGA of America",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Thirty-six hole one-day playing examination against a target score, required for entry to the PGA Associate Program."
+  },
+  {
+   "slug": "precision-nutrition-level-1",
+   "name": "Precision Nutrition Level 1 Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Precision Nutrition",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Self-paced nutrition coaching certification covering nutrition science, client assessment and habit-based behaviour change."
+  },
+  {
+   "slug": "precision-nutrition-level-2",
+   "name": "Precision Nutrition Level 2 Master Health Coaching Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Precision Nutrition",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Mentored advanced programme applying coaching psychology, client change frameworks and practice-building over a full year."
+  },
+  {
+   "slug": "usa-weightlifting-level-1-coach",
+   "name": "USA Weightlifting Level 1 Coach Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "USA Weightlifting",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Two-day course and examination on snatch and clean and jerk technique, teaching progressions and basic programme design."
+  },
+  {
+   "slug": "usa-weightlifting-level-2-coach",
+   "name": "USA Weightlifting Level 2 Coach Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "USA Weightlifting",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced course covering periodisation, error correction, competition preparation and athlete management for weightlifting."
+  },
+  {
+   "slug": "wilderness-emt",
+   "name": "Wilderness EMT Certification",
+   "short": "WEMT",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Wilderness Medical Society scope providers",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Wilderness upgrade for licensed EMTs covering extended patient care, environmental emergencies and technical evacuation."
+  },
+  {
+   "slug": "wilderness-first-responder",
+   "name": "Wilderness First Responder Certification",
+   "short": "WFR",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Wilderness Medical Society scope providers",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Multi-day course and testing in patient assessment, improvised care and evacuation decisions for remote backcountry settings."
+  },
+  {
+   "slug": "yoga-alliance-ryt-200",
+   "name": "Yoga Alliance Registered Yoga Teacher 200",
+   "short": "RYT 200",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Yoga Alliance",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Registry credential granted after a 200-hour registered school programme; Yoga Alliance registers teachers rather than testing them."
+  },
+  {
+   "slug": "yoga-alliance-ryt-500",
+   "name": "Yoga Alliance Registered Yoga Teacher 500",
+   "short": "RYT 500",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Yoga Alliance",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced registry level requiring 500 hours of registered training plus documented teaching hours, with no central examination."
+  },
+  {
+   "slug": "cooper-institute-personal-trainer",
+   "name": "Cooper Institute Personal Trainer Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "The Cooper Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Research-based personal trainer credential emphasising cardiorespiratory fitness assessment and preventive exercise programming."
+  },
+  {
+   "slug": "ellis-international-lifeguard-training-program",
+   "name": "Ellis & Associates International Lifeguard Training Program",
+   "short": "ILTP",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Jeff Ellis & Associates",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Aquatic risk management lifeguard programme widely used at waterparks, with skills auditing and unannounced performance checks."
+  },
+  {
+   "slug": "ihea-hunter-education-instructor",
+   "name": "IHEA-USA Hunter Education Instructor Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "International Hunter Education Association – USA",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Standards-based instructor training for volunteers teaching state hunter education courses in firearm safety and ethics."
+  },
+  {
+   "slug": "leave-no-trace-master-educator",
+   "name": "Leave No Trace Master Educator Course",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Leave No Trace Center for Outdoor Ethics",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Five-day field course qualifying outdoor professionals to teach Leave No Trace trainer courses and outdoor ethics curricula."
+  },
+  {
+   "slug": "nasbla-boating-safety-certificate",
+   "name": "NASBLA-Approved Boating Safety Education Certificate",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "National Association of State Boating Law Administrators",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National standard for recreational boating safety courses, with certificates accepted reciprocally by most state agencies."
+  },
+  {
+   "slug": "naui-scuba-instructor",
+   "name": "NAUI Scuba Instructor Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "National Association of Underwater Instructors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Instructor training course and examination covering dive theory, teaching methodology, rescue skills and academic presentation."
+  },
+  {
+   "slug": "nccpt-certified-personal-trainer",
+   "name": "NCCPT Certified Personal Trainer",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "National Council for Certified Personal Trainers",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "NCCA-accredited personal training examination covering anatomy, assessment, exercise technique and business fundamentals."
+  },
+  {
+   "slug": "ncsf-certified-personal-trainer",
+   "name": "NCSF Certified Personal Trainer",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "National Council on Strength and Fitness",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "NCCA-accredited trainer credential emphasising exercise science, client screening and structured programme progression."
+  },
+  {
+   "slug": "nfhs-officials-certification",
+   "name": "NFHS Officials Certification Program",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "National Federation of State High School Associations",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National courses and rules testing supporting state association registration of high school sports officials across sports."
+  },
+  {
+   "slug": "nfpt-certified-personal-trainer",
+   "name": "NFPT Certified Personal Trainer",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "National Federation of Professional Trainers",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "NCCA-accredited trainer examination covering muscular anatomy, resistance training principles, nutrition basics and safety."
+  },
+  {
+   "slug": "npcp-pilates-certification",
+   "name": "NPCP Pilates Certification Examination",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "National Pilates Certification Program",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Independent third-party examination establishing entry-level competence for comprehensively trained Pilates teachers."
+  },
+  {
+   "slug": "nspa-certified-personal-trainer",
+   "name": "NSPA Certified Personal Trainer",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "National Strength Professionals Association",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Personal trainer credential combining exercise science coursework with practical coaching and assessment competencies."
+  },
+  {
+   "slug": "ptr-professional-certification",
+   "name": "PTR Professional Tennis Teacher Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Professional Tennis Registry",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Workshop and testing pathway for tennis coaches assessed on stroke production, teaching, group management and rules."
+  },
+  {
+   "slug": "ssi-open-water-instructor",
+   "name": "SSI Open Water Instructor Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Scuba Schools International",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Instructor training and evaluation covering dive theory examinations, classroom teaching, pool skills and open water supervision."
+  },
+  {
+   "slug": "starguard-elite-lifeguard-certification",
+   "name": "StarGuard ELITE Lifeguard Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "StarGuard ELITE",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Aquatic safety certification for pools and waterparks emphasising surveillance, scanning strategy and rescue response auditing."
+  },
+  {
+   "slug": "sdi-tdi-technical-diver",
+   "name": "TDI Technical Diver Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "Technical Diving International",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Progressive technical diving credentials covering decompression procedures, gas blending, trimix and overhead environments."
+  },
+  {
+   "slug": "us-soccer-grassroots-coaching-license",
+   "name": "U.S. Soccer Grassroots Coaching License",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "United States Soccer Federation",
+   "type": "License",
+   "aka": [],
+   "blurb": "Introductory coaching licences by age format covering session design, player development and safe practice environments."
+  }
+ ]
+}

@@ -1,0 +1,227 @@
+{
+ "chunkId": "b02-p03",
+ "batch": 2,
+ "part": 3,
+ "categories": [
+  "admissions-academic"
+ ],
+ "groups": [
+  "CLEP & Credit by Exam"
+ ],
+ "bodies": [
+  "Prometric"
+ ],
+ "examCount": 20,
+ "exams": [
+  {
+   "slug": "dsst-a-history-of-the-vietnam-war",
+   "name": "DSST A History of the Vietnam War",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test covering the origins, escalation, conduct and aftermath of the Vietnam War, normally worth three credits."
+  },
+  {
+   "slug": "dsst-art-of-the-western-world",
+   "name": "DSST Art of the Western World",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test surveying Western art and architecture from classical Greece through twentieth-century movements."
+  },
+  {
+   "slug": "dsst-astronomy",
+   "name": "DSST Astronomy",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on the solar system, stellar evolution, galaxies and cosmology at introductory college level."
+  },
+  {
+   "slug": "dsst-business-ethics-and-society",
+   "name": "DSST Business Ethics and Society",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on ethical theory, corporate social responsibility, governance and stakeholder issues in business."
+  },
+  {
+   "slug": "dsst-business-mathematics",
+   "name": "DSST Business Mathematics",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on applied business calculations including interest, discounts, depreciation, payroll and financial ratios."
+  },
+  {
+   "slug": "dsst-computing-and-information-technology",
+   "name": "DSST Computing and Information Technology",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [
+    "DSST Introduction to Computing"
+   ],
+   "blurb": "DANTES subject standardized test covering computer hardware, software, networking, databases and information technology fundamentals."
+  },
+  {
+   "slug": "dsst-criminal-justice",
+   "name": "DSST Criminal Justice",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test covering policing, courts, corrections and the structure of the American criminal justice system."
+  },
+  {
+   "slug": "dsst-environmental-science",
+   "name": "DSST Environmental Science",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [
+    "Environment and Humanity: The Race to Save the Planet"
+   ],
+   "blurb": "DANTES subject standardized test on ecosystems, resource use, pollution, energy and environmental policy, formerly titled Environment and Humanity."
+  },
+  {
+   "slug": "dsst-ethics-in-america",
+   "name": "DSST Ethics in America",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on major ethical traditions and their application to contemporary moral problems in American life."
+  },
+  {
+   "slug": "dsst-ethics-in-technology",
+   "name": "DSST Ethics in Technology",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on privacy, intellectual property, computer crime and professional responsibility in technology work."
+  },
+  {
+   "slug": "dsst-foundations-of-education",
+   "name": "DSST Foundations of Education",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on the history, philosophy, organisation and legal framework of American schooling."
+  },
+  {
+   "slug": "dsst-fundamentals-of-college-algebra",
+   "name": "DSST Fundamentals of College Algebra",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on linear and quadratic equations, inequalities, functions, exponents and logarithms."
+  },
+  {
+   "slug": "dsst-fundamentals-of-counseling",
+   "name": "DSST Fundamentals of Counseling",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on counselling theories, the helping relationship, assessment and professional ethics."
+  },
+  {
+   "slug": "dsst-fundamentals-of-cybersecurity",
+   "name": "DSST Fundamentals of Cybersecurity",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on threats, cryptography, network defence, risk management and security governance concepts."
+  },
+  {
+   "slug": "dsst-general-anthropology",
+   "name": "DSST General Anthropology",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test covering physical anthropology, archaeology, linguistics and cultural anthropology as four subfields."
+  },
+  {
+   "slug": "dsst-health-and-human-development",
+   "name": "DSST Health and Human Development",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [
+    "Here is to Your Health"
+   ],
+   "blurb": "DANTES subject standardized test on nutrition, fitness, disease prevention, mental health and substance use across the lifespan."
+  },
+  {
+   "slug": "dsst-history-of-the-soviet-union",
+   "name": "DSST History of the Soviet Union",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [
+    "Rise and Fall of the Soviet Union"
+   ],
+   "blurb": "DANTES subject standardized test covering Russian revolution, Stalinism, the Cold War and the collapse of the Soviet state in 1991."
+  },
+  {
+   "slug": "dsst-human-resource-management",
+   "name": "DSST Human Resource Management",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on recruitment, selection, training, compensation, labour relations and employment law."
+  },
+  {
+   "slug": "dsst-introduction-to-business",
+   "name": "DSST Introduction to Business",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test surveying business forms, management, marketing, finance and the economic environment of firms."
+  },
+  {
+   "slug": "dsst-introduction-to-geography",
+   "name": "DSST Introduction to Geography",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [
+    "Human/Cultural Geography"
+   ],
+   "blurb": "DANTES subject standardized test on population, culture, settlement, economic activity and regional geography, formerly Human Cultural Geography."
+  }
+ ]
+}

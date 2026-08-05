@@ -1,0 +1,128 @@
+{
+  "slug": "microsoft-az-500",
+  "exam": {
+    "tagline": "The Azure security engineer exam — retiring August 31, 2026, so sit it soon or target the SC-series successor.",
+    "description": "Microsoft Certified: Azure Security Engineer Associate (AZ-500) validates the skills to implement security controls, maintain an organization's security posture, and identify and remediate vulnerabilities across Azure, multi-cloud, and hybrid environments. It is aimed at engineers who implement and manage security with Microsoft Defender for Cloud, Microsoft Sentinel, and Entra ID, and who align infrastructure to the Microsoft Cloud Security Benchmark. Candidates need practical Azure and hybrid administration experience plus strong familiarity with Entra ID, compute, network, and storage. Important: Microsoft has announced that AZ-500, its exam, and renewal assessments will retire on August 31, 2026; after that date you can no longer earn or renew the certification, though credentials already earned remain valid until their 12-month expiry. If your realistic test date is after retirement, plan for the active SC-series security successor instead.",
+    "quickAnswer": {
+      "summary": "AZ-500 is the Azure Security Engineer Associate exam. It costs $165, runs about 100 minutes, and requires a scaled score of 700/1000. Expect 40–60 questions plus lab tasks. Critically, AZ-500 retires on August 31, 2026, so schedule before then or move to the SC-series successor.",
+      "advantages": [
+        "Proves hands-on Azure security implementation skills",
+        "Centers on Defender for Cloud and Microsoft Sentinel",
+        "Maps to cloud security engineer and security architect roles",
+        "Pairs naturally with SC-200 for operations depth",
+        "Renews for free every 12 months while active"
+      ]
+    },
+    "roadmap": [
+      "Build Azure admin + security hands-on experience",
+      "Study the free AZ-500 Microsoft Learn paths",
+      "Schedule before the Aug 31 2026 retirement date",
+      "Pass with 700/1000 via Pearson VUE",
+      "If after retirement, target the SC-series successor"
+    ],
+    "prerequisites": "Microsoft recommends practical experience administering Azure and hybrid environments, with strong familiarity with Microsoft Entra ID, compute, network, and storage. There is no mandatory prerequisite exam, but AZ-104 is advised.",
+    "eligibility": "Open to all. Anyone may register and sit AZ-500 while it is still offered; after August 31, 2026 it is retired and cannot be scheduled.",
+    "examMeta": {
+      "questions": "40–60 (includes hands-on lab tasks)",
+      "time": "100 minutes",
+      "pass": "700 / 1000 (scaled)",
+      "fee": "$165 USD",
+      "format": "Computer-based, multiple-choice, case studies, and labs",
+      "admin": "Pearson VUE"
+    },
+    "topics": [
+      { "name": "Secure identity and access", "note": "RBAC, custom and Entra roles, PIM, MFA, Conditional Access, app registrations, service principals, and managed identities.", "weight": "15–20%" },
+      { "name": "Secure networking", "note": "NSGs and ASGs, Azure Firewall, WAF, Private Endpoints, Private Link, VPN, ExpressRoute, and Virtual WAN security.", "weight": "20–25%" },
+      { "name": "Secure compute, storage, and databases", "note": "VM and AKS security, disk encryption, Key Vault, storage security, and database protection (TDE, Always Encrypted).", "weight": "20–25%" },
+      { "name": "Secure Azure using Microsoft Defender for Cloud and Microsoft Sentinel", "note": "Security posture, Defender plans, vulnerability remediation, alerts, incidents, and regulatory compliance.", "weight": "30–35%" }
+    ],
+    "examEssentials": [
+      ["Credential", "Microsoft Certified: Azure Security Engineer Associate"],
+      ["Exam code", "AZ-500"],
+      ["Level", "Associate (intermediate)"],
+      ["Retirement date", "August 31, 2026"],
+      ["Exam length", "40–60 questions · 100 minutes"],
+      ["Passing score", "700 / 1000"],
+      ["Exam fee", "$165 USD"],
+      ["Delivery", "Pearson VUE test center or online proctoring"],
+      ["Validity", "12 months (free annual renewal while active)"]
+    ],
+    "timeline": [
+      ["Study + labs", "6–10 weeks typical"],
+      ["Schedule before retirement", "By Aug 31 2026"],
+      ["Take exam", "Year-round until retirement"],
+      ["Get results", "Pass/fail on screen; report in ~24h"]
+    ],
+    "costBreakdown": {
+      "items": [
+        ["Exam fee", "$165"],
+        ["Official Microsoft Learn study material", "$0 (free)"],
+        ["Optional instructor-led course", "$0–$600+"],
+        ["Practice-test subscriptions", "$15–$99"],
+        ["Retake (if needed)", "$165 again"]
+      ],
+      "total": "$165+ (exam only; official study material is free)",
+      "footnote": "AZ-500 retires August 31, 2026. Fees are set by Microsoft and billed in local currency; regional taxes may apply."
+    },
+    "difficulty": "Hard",
+    "audience": "Cloud security engineers, security architects, and Azure admins moving into security.",
+    "time": "2–4 months of study",
+    "cost": "$165+",
+    "faqs": [
+      { "q": "Is AZ-500 being retired?", "a": "Yes. Microsoft states AZ-500, its exam, and the renewal assessments retire on August 31, 2026. You can no longer earn or renew it after that date, so schedule before then or consider the SC-series successor." },
+      { "q": "Does AZ-500 include labs?", "a": "Yes. Like other Azure exams it includes hands-on, performance-based tasks in a live environment, so lab practice with Defender for Cloud and Sentinel is important." },
+      { "q": "How long should I study for AZ-500?", "a": "Most candidates need 6–10 weeks with real Azure security practice. Prior AZ-104-level administration experience shortens the path." },
+      { "q": "How much does AZ-500 cost and does it expire?", "a": "The exam fee is $165 USD. The certification is valid for 12 months and renews for free via Microsoft Learn while the credential is active." },
+      { "q": "What is the AZ-500 exam format?", "a": "It is delivered as 40–60 questions, including labs, in about 100 minutes, with a scaled pass mark of 700/1000." }
+    ],
+    "summaryPoints": [
+      "AZ-500 is the Azure Security Engineer Associate exam covering identity, networking, compute/storage, and Defender for Cloud/Sentinel.",
+      "The exam is 40–60 questions (with labs) in about 100 minutes; the passing scaled score is 700/1000.",
+      "Microsoft's published weights are identity 15–20%, networking 20–25%, compute/storage 20–25%, and Defender/Sentinel 30–35%.",
+      "AZ-500 retires on August 31, 2026 — sit it before then or plan for the active SC-series successor."
+    ],
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/",
+    "reviewed": "2026-08",
+    "confidence": "high"
+  },
+  "program": {
+    "body": "Microsoft",
+    "about": "Microsoft Certifications are role-based, fundamentals, and specialty credentials that validate cloud, AI, security, and developer skills on Microsoft Azure and related platforms. Exams are authored by Microsoft and delivered through Pearson VUE (and Certiport for academic scheduling of Fundamentals exams). Preparation is built around free, official Microsoft Learn training paths and instructor-led courses, and most role-based and specialty credentials must be renewed every 12 months via a free online assessment on Microsoft Learn. Badges are issued through Microsoft's certification profile and Credly.",
+    "registrationSteps": [
+      { "title": "Prepare with Microsoft Learn", "description": "Work through the free official self-paced learning paths and, optionally, instructor-led courses for your exam. Microsoft Learn is the primary, no-cost study source and maps directly to the exam skills outline.", "duration": "1–10 weeks depending on exam and experience" },
+      { "title": "Schedule through Pearson VUE", "description": "Sign in with a personal Microsoft account (MSA) and schedule the exam on the Pearson VUE portal. Choose an in-person test center or online proctoring (OnVUE). Students and educators can use Certiport for Fundamentals exams.", "duration": "about 15 minutes", "note": "Microsoft recommends a personal MSA account; a work or school account can lose exam records if you leave the organization." },
+      { "title": "Take the exam", "description": "Arrive at the test center or launch the online proctoring session. Exams are computer-based and may include multiple-choice, drag-and-drop, case studies, and performance-based lab tasks in a live environment.", "duration": "45–120 minutes depending on the exam" },
+      { "title": "Receive results and badge", "description": "You see a pass/fail result on screen immediately. A detailed score report is emailed within about 24 hours and posted to your Microsoft certification profile. On passing, your digital badge is issued via Credly.", "duration": "score at end; badge within a few days" },
+      { "title": "Renew annually", "description": "Most Microsoft role-based, specialty, and fundamentals certifications expire after 12 months. Renew for free by passing a shorter online renewal assessment on Microsoft Learn before the expiry date — no need to retake the full exam.", "duration": "about 45 minutes, once a year" }
+    ],
+    "proctoring": "Delivered by Pearson VUE. You can sit the exam at a Pearson VUE test center or take it online through OnVUE remote proctoring; the fee is the same for both. Online proctoring requires a quiet, private space, a working webcam, and a system check beforehand.",
+    "retakePolicy": "If you do not pass, you may retake the exam after 24 hours. A second failed attempt requires a 14-day waiting period, and any further attempts also require a 14-day wait between them, up to a maximum of five attempts in a 12-month period.",
+    "recertification": "Microsoft role-based, specialty, and fundamentals certifications are valid for 12 months from the date earned. Renew at no cost by passing the shorter online renewal assessment on Microsoft Learn before the credential expires. Retired certifications cannot be renewed and must be re-earned through the active successor if one exists.",
+    "scoreReporting": "A pass/fail result is shown immediately after the exam. The official score report is emailed within about 24 hours and is also available in your Microsoft certification profile, with section-level feedback on how you performed.",
+    "refundPolicy": "Exam fees are generally non-refundable once a seat is purchased, but you can cancel or reschedule through Pearson VUE at no charge if you do so at least 24–48 hours before the appointment (exact window varies by region).",
+    "providersNote": "Microsoft certification exams are delivered exclusively through Pearson VUE (and Certiport for academic or student Fundamentals scheduling). No other provider is authorized to administer these exams.",
+    "comparison": {
+      "title": "Microsoft Azure / AI certifications compared",
+      "columns": ["Credential", "Level", "Focus", "Exam fee", "Validity"],
+      "rows": [
+        { "label": "AZ-900 Azure Fundamentals", "values": ["Fundamentals", "Cloud concepts", "$99", "1 year"] },
+        { "label": "AI-900 Azure AI Fundamentals", "values": ["Fundamentals", "AI concepts", "$99", "1 year (retired Jun 30 2026)"] },
+        { "label": "AI-901 Azure AI Fundamentals", "values": ["Fundamentals", "AI + Microsoft Foundry", "$99", "1 year"] },
+        { "label": "AZ-104 Azure Administrator", "values": ["Associate", "Administer Azure", "$165", "1 year"] },
+        { "label": "AZ-204 Azure Developer", "values": ["Associate", "Build cloud apps", "$165", "1 year (retired 2026)"] },
+        { "label": "AZ-500 Azure Security Engineer", "values": ["Associate", "Security operations", "$165", "1 year (retires Aug 31 2026)"] },
+        { "label": "AZ-700 Azure Network Engineer", "values": ["Associate", "Networking", "$165", "1 year"] },
+        { "label": "AZ-140 Azure Virtual Desktop", "values": ["Specialty", "Virtual desktop (AVD)", "$165", "1 year"] },
+        { "label": "AZ-305 Azure Solutions Architect", "values": ["Expert", "Solution design", "$165", "1 year"] }
+      ]
+    },
+    "orgFaqs": [
+      { "q": "Can I take a Microsoft exam online from home?", "a": "Yes. Exams are delivered by Pearson VUE with two options: an in-person test center or OnVUE online proctoring from a private space with a webcam. The fee is identical for both." },
+      { "q": "Do Microsoft certifications expire?", "a": "Most role-based, specialty, and fundamentals certifications are valid for 12 months. You renew for free by passing a shorter online assessment on Microsoft Learn before the expiry date." },
+      { "q": "What happens if my certification is retired?", "a": "You keep the credential until its current expiry date, but you can no longer earn or renew it. Microsoft typically points candidates to the active successor exam or certification." }
+    ],
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/",
+    "verified": true,
+    "confidence": "high"
+  }
+}

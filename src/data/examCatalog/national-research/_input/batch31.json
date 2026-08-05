@@ -1,0 +1,276 @@
+{
+  "batch": "31",
+  "categories": [
+    "security-investigation"
+  ],
+  "groups": [
+    "Security & Investigation"
+  ],
+  "examCount": 23,
+  "bodyCount": 14,
+  "bodies": [
+    "ASIS International",
+    "National Defense Investigator Association",
+    "International Society of Forensic Computer Examiners",
+    "International Association of Computer Investigative Specialists",
+    "Association of Certified Fraud Specialists",
+    "International Association for Healthcare Security and Safety",
+    "International Foundation for Protection Officers",
+    "Council of International Investigators",
+    "Security Industry Association",
+    "Electronic Security Association National Training School",
+    "National Notary Association",
+    "Executive Protection Institute",
+    "Center for Development of Security Excellence",
+    "Transportation Security Administration"
+  ],
+  "exams": [
+    {
+      "slug": "asis-associate-protection-professional",
+      "name": "Associate Protection Professional",
+      "short": "APP",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "ASIS International",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Entry security management credential covering security principles, business operations, risk management and response protocols."
+    },
+    {
+      "slug": "board-certified-criminal-defense-investigator",
+      "name": "Board Certified Criminal Defense Investigator",
+      "short": "CDI",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "National Defense Investigator Association",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Advanced credential for defence investigators covering capital case work, mitigation, discovery review and expert coordination."
+    },
+    {
+      "slug": "certified-computer-examiner",
+      "name": "Certified Computer Examiner",
+      "short": "CCE",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "International Society of Forensic Computer Examiners",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Digital forensics credential combining a written examination with practical media examinations and peer-reviewed reporting."
+    },
+    {
+      "slug": "certified-criminal-defense-investigator",
+      "name": "Certified Criminal Defense Investigator",
+      "short": "CCDI",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "National Defense Investigator Association",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Credential for investigators supporting defence counsel, covering criminal procedure, witness interviews and evidence review."
+    },
+    {
+      "slug": "certified-forensic-computer-examiner",
+      "name": "Certified Forensic Computer Examiner",
+      "short": "CFCE",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "International Association of Computer Investigative Specialists",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Peer review and certification testing process covering forensic imaging, file system analysis, artefacts and courtroom reporting."
+    },
+    {
+      "slug": "certified-fraud-specialist",
+      "name": "Certified Fraud Specialist",
+      "short": "CFS",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "Association of Certified Fraud Specialists",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Credential for fraud investigators covering financial crime schemes, interviewing, evidence handling and case documentation."
+    },
+    {
+      "slug": "certified-healthcare-protection-administrator",
+      "name": "Certified Healthcare Protection Administrator",
+      "short": "CHPA",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "International Association for Healthcare Security and Safety",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certification for hospital security leaders covering patient management, regulatory compliance, emergency planning and staffing."
+    },
+    {
+      "slug": "certified-security-supervision-management",
+      "name": "Certified in Security Supervision and Management",
+      "short": "CSSM",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "International Foundation for Protection Officers",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Supervisory security credential covering scheduling, training, discipline, ethics, budgeting and post orders development."
+    },
+    {
+      "slug": "certified-international-investigator",
+      "name": "Certified International Investigator",
+      "short": "CII",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "Council of International Investigators",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Credential for private investigators working across borders, covering ethics, cross-jurisdiction law and investigative methods."
+    },
+    {
+      "slug": "asis-certified-protection-professional",
+      "name": "Certified Protection Professional",
+      "short": "CPP",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "ASIS International",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Board certification in security management covering risk, business principles, investigations, personnel and physical security."
+    },
+    {
+      "slug": "certified-security-project-manager",
+      "name": "Certified Security Project Manager",
+      "short": "CSPM",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "Security Industry Association",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certification for managers of electronic security installations covering scope, scheduling, procurement, commissioning and handover."
+    },
+    {
+      "slug": "esa-electronic-security-networking-technician",
+      "name": "Electronic Security Networking Technician",
+      "short": "ESNT",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "Electronic Security Association National Training School",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certification covering IP networking fundamentals as applied to video surveillance, access control and alarm transmission."
+    },
+    {
+      "slug": "esa-certified-alarm-technician-level-1",
+      "name": "ESA Certified Alarm Technician Level I",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "Electronic Security Association National Training School",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Entry technician certification covering intrusion system components, wiring, code requirements and installation practices."
+    },
+    {
+      "slug": "esa-certified-alarm-technician-level-2",
+      "name": "ESA Certified Alarm Technician Level II",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "Electronic Security Association National Training School",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Advanced alarm technician certification covering troubleshooting, access control, video systems and communication pathways."
+    },
+    {
+      "slug": "esa-certified-fire-alarm-installer",
+      "name": "ESA Certified Fire Alarm Installer",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "Electronic Security Association National Training School",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certification covering fire alarm system components, NFPA 72 requirements, initiating devices and installation documentation."
+    },
+    {
+      "slug": "iahss-basic-officer-certification",
+      "name": "IAHSS Basic Security Officer Certification",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "International Association for Healthcare Security and Safety",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Entry certification for hospital security officers covering patient interaction, de-escalation, infection control and reporting."
+    },
+    {
+      "slug": "nna-certified-notary-signing-agent",
+      "name": "NNA Certified Notary Signing Agent",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "National Notary Association",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Annual training, examination and background screening for notaries who handle mortgage and loan document signings."
+    },
+    {
+      "slug": "nna-remote-online-notarization-training",
+      "name": "NNA Remote Online Notarization Certification",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "National Notary Association",
+      "type": "Training",
+      "aka": [],
+      "blurb": "National training on remote online notarization technology, identity proofing, audio-video records and platform compliance."
+    },
+    {
+      "slug": "personal-protection-specialist",
+      "name": "Personal Protection Specialist",
+      "short": "PPS",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "Executive Protection Institute",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Executive protection credential covering advance work, motorcade operations, threat assessment and protective detail formations."
+    },
+    {
+      "slug": "cdse-physical-security-certification",
+      "name": "Physical Security Certification",
+      "short": "PSC",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "Center for Development of Security Excellence",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Department of Defense credential validating physical security competencies for personnel protecting federal assets and facilities."
+    },
+    {
+      "slug": "asis-physical-security-professional",
+      "name": "Physical Security Professional",
+      "short": "PSP",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "ASIS International",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certification covering physical security assessment, application of integrated systems, and implementation and evaluation."
+    },
+    {
+      "slug": "asis-professional-certified-investigator",
+      "name": "Professional Certified Investigator",
+      "short": "PCI",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "ASIS International",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certification covering case management, evidence collection, interviewing and preparation of investigative findings for hearings."
+    },
+    {
+      "slug": "tsa-certified-cargo-screening-program",
+      "name": "TSA Certified Cargo Screening Program Training",
+      "short": "CCSP",
+      "category": "security-investigation",
+      "group": "Security & Investigation",
+      "body": "Transportation Security Administration",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Required training and vetting for staff screening air cargo at certified facilities under TSA security programme rules."
+    }
+  ]
+}

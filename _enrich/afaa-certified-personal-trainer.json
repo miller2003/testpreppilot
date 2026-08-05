@@ -1,0 +1,126 @@
+{
+  "slug": "afaa-certified-personal-trainer",
+  "exam": {
+    "tagline": "AFAA's NCCA-accredited personal trainer credential — the practical, group-fitness-rooted path to coaching one-on-one clients.",
+    "description": "The AFAA Certified Personal Trainer (AFAA-CPT) is a National Commission for Certifying Agencies (NCCA)-accredited credential from the Athletics and Fitness Association of America, a fitness-education leader since 1983. The exam is a 120-question, computer-based test (120 minutes) delivered through PSI, requiring a scaled score of 70% to pass. The curriculum emphasizes practical, client-centered training built on exercise science, assessment, program design, and coaching rather than heavy theory memorization. It suits career-changers and fitness enthusiasts who want a respected, widely accepted entry-level personal training credential. Because AFAA operates within the NASM/Ascend Learning family, the CPT pairs naturally with NASM specializations such as the Certified Nutrition Coach.",
+    "quickAnswer": {
+      "summary": "The AFAA Certified Personal Trainer (AFAA-CPT) is an NCCA-accredited, entry-level personal training credential from the Athletics and Fitness Association of America. To earn it you pass a 120-question computer-based exam (100 scored + 20 pretest, 120 minutes) at a scaled score of 70%, delivered by PSI at a test center or via live online proctoring.",
+      "advantages": [
+        "NCCA-accredited and widely accepted by gyms and health clubs for employment",
+        "120-question computer-based exam with a clear 70% scaled pass mark",
+        "Practical, client-centered curriculum: assessment, programming, coaching, and safety",
+        "Flexible delivery via PSI test centers or live remote online proctoring",
+        "Part of the NASM/Ascend Learning family, so it stacks with NASM specializations"
+      ]
+    },
+    "roadmap": [
+      "Be at least 18 with a high school diploma and current CPR/AED",
+      "Choose an AFAA study package (Self-Study or guided support)",
+      "Complete the coursework and practice quizzes",
+      "Register and pay through AFAA; receive your PSI authorization",
+      "Schedule and pass the 120-question exam at a PSI center or online",
+      "Maintain the credential with 1.5 CEUs and CPR/AED every 2 years"
+    ],
+    "prerequisites": "Candidates must be at least 18 years old, hold a high school diploma or equivalent, and hold a current CPR/AED certificate (e.g., American Heart Association or Red Cross) before sitting for the exam.",
+    "eligibility": "There are no degree or work-experience requirements to enroll. Anyone 18 or older who meets the age, education, and CPR/AED prerequisites may register for the AFAA-CPT. The credential is open to career-changers, current fitness staff, and students, and it does not require a bachelor's degree or prior personal training experience.",
+    "examMeta": {
+      "questions": "120 multiple-choice (100 scored + 20 unscored pretest items)",
+      "time": "120 minutes",
+      "pass": "Scaled score of 70% (minimum)",
+      "fee": "Self-Study certification package from $499 (includes the exam); standalone exam/retake $199",
+      "format": "Computer-based, proctored — at a PSI test center or via live remote online proctoring",
+      "admin": "Athletics and Fitness Association of America (AFAA); delivered by PSI Services"
+    },
+    "topics": [
+      { "name": "Exercise Programming & Design", "note": "Program design, periodization, exercise selection and progression for individual clients", "weight": "≈25%" },
+      { "name": "Health Screening & Assessment", "note": "Pre-participation screening, fitness assessment, and risk stratification", "weight": "≈20%" },
+      { "name": "Anatomy, Physiology & Kinesiology", "note": "Human movement science, energy systems, and biomechanics", "weight": "≈20%" },
+      { "name": "Nutrition", "note": "Basic nutrition principles and client guidance within scope of practice", "weight": "≈10%" },
+      { "name": "Special Populations", "note": "Training considerations for older adults, youth, and clients with limitations", "weight": "≈10%" },
+      { "name": "Behavior Change & Coaching", "note": "Motivation, communication, adherence, and client accountability", "weight": "≈10%" },
+      { "name": "Safety, Risk Management & Scope of Practice", "note": "Liability, emergency response, and professional boundaries", "weight": "≈5%" }
+    ],
+    "examEssentials": [
+      ["Credential", "AFAA Certified Personal Trainer (AFAA-CPT)"],
+      ["Issuing body", "Athletics and Fitness Association of America (AFAA)"],
+      ["Accreditation", "NCCA-accredited"],
+      ["Exam length", "120 questions · 120 minutes"],
+      ["Passing score", "Scaled 70%"],
+      ["Testing partner", "PSI Services (center or online proctor)"],
+      ["Renewal", "Every 2 years (1.5 CEUs + CPR/AED + $99)"]
+    ],
+    "timeline": [
+      ["Confirm prerequisites", "Before enrolling"],
+      ["Study", "3–9 months typical (self-paced)"],
+      ["Register + pay", "On AFAA site after choosing a package"],
+      ["Schedule exam", "Year-round via PSI"],
+      ["Get results", "Immediate pass/fail on screen"]
+    ],
+    "costBreakdown": {
+      "items": [
+        ["Self-Study package (course + exam)", "from $499"],
+        ["Standalone exam / retake", "$199"],
+        ["Recertification fee", "$99 every 2 years"],
+        ["CPR/AED course", "Varies (often $50–$100)"]
+      ],
+      "total": "$499+ for the package (or $199 exam only); $99 renewal every 2 years",
+      "footnote": "Package pricing and promotions change frequently; confirm the current price on afaa.com. The $199 figure is the standalone exam/retake fee."
+    },
+    "difficulty": "Moderate",
+    "audience": "Aspiring and early-career personal trainers, career-changers, and group fitness instructors adding one-on-one training.",
+    "time": "3–9 months of self-paced study (exam itself 2 hours)",
+    "cost": "$499+ (package) or $199 (exam only)",
+    "faqs": [
+      { "q": "How do I register for the AFAA-CPT exam?", "a": "Purchase a study package on the AFAA website (afaa.com). After enrollment, AFAA issues a PSI authorization so you can schedule the exam at a PSI test center or via PSI's online proctoring." },
+      { "q": "How much does the AFAA-CPT cost?", "a": "The Self-Study certification package (course plus exam) starts at about $499, while a standalone exam or retake is about $199. Promotion pricing changes often, so verify the current amount on afaa.com before purchasing." },
+      { "q": "What is the passing score?", "a": "The exam has 120 multiple-choice questions (100 scored plus 20 unscored pretest) and a 120-minute limit. You must reach a scaled score of 70% to pass, and you see a pass/fail result on screen immediately." },
+      { "q": "What if I do not pass?", "a": "You may retake the exam; a retake fee of about $199 applies. The specific waiting period between attempts should be confirmed with AFAA/PSI when you schedule." },
+      { "q": "How do I keep the AFAA-CPT active?", "a": "Renew every 2 years by earning 1.5 CEUs (15 contact hours) of AFAA-approved continuing education, keeping a current CPR/AED certificate, and paying the $99 recertification fee." }
+    ],
+    "summaryPoints": [
+      "NCCA-accredited entry-level CPT from AFAA, part of the NASM/Ascend Learning family.",
+      "120 questions in 120 minutes; pass at a scaled 70% (delivered by PSI).",
+      "Offered at PSI test centers or via live remote online proctoring, year-round.",
+      "Renew every 2 years with 1.5 CEUs, current CPR/AED, and a $99 fee."
+    ],
+    "sourceUrl": "https://www.afaa.com",
+    "reviewed": "2026-08",
+    "confidence": "high"
+  },
+  "program": {
+    "body": "Athletics and Fitness Association of America",
+    "about": "The Athletics and Fitness Association of America (AFAA) has been a leading fitness-education provider since 1983 and is best known for its group fitness instructor program. Its Certified Personal Trainer (AFAA-CPT) is NCCA-accredited and operates within the NASM/Ascend Learning family of credentials. Exams are delivered through PSI Services at U.S. test centers and via live remote proctoring.",
+    "registrationSteps": [
+      { "title": "Confirm prerequisites", "description": "Be at least 18 years old, hold a high school diploma or equivalent, and have a current CPR/AED certificate before you sit for the exam.", "duration": "before enrolling" },
+      { "title": "Choose a study package", "description": "Select a Self-Study or guided-support package on afaa.com and complete your purchase. The package includes the exam registration.", "duration": "about 15 minutes" },
+      { "title": "Complete the coursework", "description": "Work through the online, self-paced modules, instructional videos, and practice quizzes that cover exercise science, assessment, programming, and coaching.", "duration": "3–9 months typical" },
+      { "title": "Get your PSI authorization", "description": "After enrollment AFAA issues a scheduling authorization so you can book the exam through PSI.", "duration": "issued after purchase" },
+      { "title": "Schedule with PSI", "description": "Book a seat at a PSI test center or choose PSI's live online remote proctoring. Exams are offered year-round.", "note": "You need a government-issued photo ID at check-in." },
+      { "title": "Take the exam and earn the credential", "description": "Complete the 120-question, 120-minute exam. You see a pass/fail result on screen immediately, and your certificate and official score post to your AFAA account.", "duration": "about 2.5 hours on site" }
+    ],
+    "proctoring": "Live proctored by PSI — in person at a PSI test center or via PSI's online remote proctoring from a home computer. A government-issued photo ID is required at check-in.",
+    "retakePolicy": "If you do not pass, you may retake the exam; a retake fee of about $199 applies. The required waiting period between attempts should be confirmed with AFAA/PSI at the time of scheduling.",
+    "recertification": "AFAA-CPT must be renewed every 2 years. Requirements: earn 1.5 CEUs (15 contact hours) of AFAA-approved continuing education (at least 0.2 CEU from an AFAA-developed course), maintain a current CPR/AED certificate, and pay the $99 recertification fee.",
+    "scoreReporting": "A pass/fail result is shown on screen immediately after the exam. Official results and your certificate are posted to your AFAA account, and the score report is also available through PSI.",
+    "refundPolicy": "Enrollment and package refunds follow AFAA's purchase terms and typically apply only within a short window after purchase. The exam fee becomes non-refundable once the exam is scheduled. Confirm current terms on afaa.com.",
+    "providersNote": "AFAA is owned by Ascend Learning and operates within the NASM family of credentials. The AFAA-CPT exam is delivered exclusively through PSI Services; there is no other authorized testing vendor.",
+    "comparison": {
+      "title": "Personal trainer certifications compared",
+      "columns": ["Credential", "Issuer", "Accreditation", "Exam", "Renewal"],
+      "rows": [
+        { "label": "AFAA-CPT", "values": ["AFAA (NASM family)", "NCCA", "120 Q · 120 min · 70% scaled", "2 yr (1.5 CEU + CPR/AED + $99)"] },
+        { "label": "NASM-CPT", "values": ["NASM", "NCCA", "120 Q · 120 min · 70% scaled", "2 yr (2.0 CEU + CPR/AED + fee)"] },
+        { "label": "ACE-CPT", "values": ["ACE", "NCCA", "150 Q · 3 hr", "2 yr (2.0 CEU + fee)"] },
+        { "label": "ACSM-CPT", "values": ["ACSM", "NCCA", "150 Q · ~3 hr", "3 yr (45 CEU + $55)"] }
+      ]
+    },
+    "orgFaqs": [
+      { "q": "Is the AFAA-CPT NCCA-accredited?", "a": "Yes. The AFAA Certified Personal Trainer is accredited by the National Commission for Certifying Agencies (NCCA), which is the standard employers look for in a personal training credential." },
+      { "q": "Can I take the exam online?", "a": "Yes. The exam is delivered by PSI and can be taken at a PSI test center or through PSI's live remote online proctoring from your home computer." },
+      { "q": "How long is the credential valid and how do I renew?", "a": "The AFAA-CPT is valid for 2 years. Renew by earning 1.5 CEUs of AFAA-approved continuing education, keeping a current CPR/AED certificate, and paying the $99 recertification fee." }
+    ],
+    "sourceUrl": "https://www.afaa.com",
+    "verified": true,
+    "confidence": "high"
+  }
+}

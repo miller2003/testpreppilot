@@ -1,0 +1,507 @@
+{
+ "chunkId": "b17-p02",
+ "batch": 17,
+ "part": 2,
+ "categories": [
+  "environment"
+ ],
+ "groups": [
+  "Environmental Remediation & Building Hazards",
+  "Pesticide, Agriculture & Land",
+  "Water, Wastewater & Utilities"
+ ],
+ "bodies": [
+  "U.S. Environmental Protection Agency",
+  "International Society of Arboriculture (ISA)",
+  "EnviroCert International, Inc. (ECI)",
+  "Water Quality Association (WQA)",
+  "U.S. Environmental Protection Agency (AHERA Model Accreditation Plan)",
+  "American Council for Accredited Certification (ACAC)",
+  "National Radon Proficiency Program (AARST-NRPP)"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "epa-brownfields-job-training",
+   "name": "EPA Brownfields Environmental Job Training Program",
+   "short": "Brownfields Job Training",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "U.S. Environmental Protection Agency",
+   "type": "Training",
+   "aka": [
+    "Brownfields Workforce Development"
+   ],
+   "blurb": "Grant-funded programme combining HAZWOPER, lead, asbestos and site-assessment training for workers entering brownfields remediation."
+  },
+  {
+   "slug": "epa-lead-abatement-project-designer",
+   "name": "EPA Lead Abatement Project Designer Certification",
+   "short": "Lead Project Designer",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "U.S. Environmental Protection Agency",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for designers preparing lead abatement project specifications and occupant-protection plans under 40 CFR Part 745."
+  },
+  {
+   "slug": "epa-lead-abatement-supervisor",
+   "name": "EPA Lead Abatement Supervisor Certification",
+   "short": "Lead Supervisor",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "U.S. Environmental Protection Agency",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for supervisors directing lead-based paint abatement crews, containment and clearance testing in target housing."
+  },
+  {
+   "slug": "epa-lead-abatement-worker",
+   "name": "EPA Lead Abatement Worker Certification",
+   "short": "Lead Worker",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "U.S. Environmental Protection Agency",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for workers performing permanent removal or enclosure of lead-based paint hazards in housing and child-occupied facilities."
+  },
+  {
+   "slug": "epa-lead-dust-sampling-technician",
+   "name": "EPA Lead Dust Sampling Technician Certification",
+   "short": "Dust Sampling Technician",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "U.S. Environmental Protection Agency",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for technicians collecting lead dust-wipe clearance samples following renovation or abatement in target housing."
+  },
+  {
+   "slug": "epa-lead-renovator-rrp",
+   "name": "EPA Lead Renovation, Repair and Painting Renovator Certification",
+   "short": "Lead RRP",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "U.S. Environmental Protection Agency",
+   "type": "Certification",
+   "aka": [
+    "RRP Certified Renovator",
+    "Lead-Safe Renovator"
+   ],
+   "blurb": "Eight-hour certification required for renovators disturbing lead paint in pre-1978 homes and child-occupied facilities under the RRP Rule."
+  },
+  {
+   "slug": "epa-lead-risk-assessor",
+   "name": "EPA Lead Risk Assessor Certification",
+   "short": "Lead Risk Assessor",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "U.S. Environmental Protection Agency",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for professionals performing lead risk assessments, hazard screens and recommendations for interim controls or abatement."
+  },
+  {
+   "slug": "epa-lead-inspector",
+   "name": "EPA Lead-Based Paint Inspector Certification",
+   "short": "Lead Inspector",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "U.S. Environmental Protection Agency",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for inspectors conducting surface-by-surface lead-based paint inspections using XRF analysers and paint chip sampling."
+  },
+  {
+   "slug": "isa-board-certified-master-arborist",
+   "name": "ISA Board Certified Master Arborist",
+   "short": "BCMA",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "International Society of Arboriculture (ISA)",
+   "type": "Certification",
+   "aka": [
+    "BCMA"
+   ],
+   "blurb": "Highest ISA credential, examining tree science, practice and management for arborists with extensive documented field experience."
+  },
+  {
+   "slug": "isa-certified-arborist",
+   "name": "ISA Certified Arborist",
+   "short": "Certified Arborist",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "International Society of Arboriculture (ISA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Core arboriculture certification covering tree biology, pruning, diagnosis, soil management, safety and tree risk fundamentals."
+  },
+  {
+   "slug": "isa-certified-arborist-municipal-specialist",
+   "name": "ISA Certified Arborist Municipal Specialist",
+   "short": "Municipal Specialist",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "International Society of Arboriculture (ISA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for arborists managing public urban forests, tree ordinances, inventories and community forestry programmes."
+  },
+  {
+   "slug": "isa-certified-arborist-utility-specialist",
+   "name": "ISA Certified Arborist Utility Specialist",
+   "short": "Utility Specialist",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "International Society of Arboriculture (ISA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for arborists managing vegetation around electric utility lines, covering clearance standards and outage prevention."
+  },
+  {
+   "slug": "isa-certified-tree-worker-aerial-lift",
+   "name": "ISA Certified Tree Worker Aerial Lift Specialist",
+   "short": "Aerial Lift Specialist",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "International Society of Arboriculture (ISA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Skills and written certification for tree workers operating aerial lifts safely during pruning and removal operations."
+  },
+  {
+   "slug": "isa-certified-tree-worker-climber",
+   "name": "ISA Certified Tree Worker Climber Specialist",
+   "short": "Climber Specialist",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "International Society of Arboriculture (ISA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Written and practical certification testing climbing systems, aerial rescue, chainsaw use and rigging for production tree workers."
+  },
+  {
+   "slug": "isa-tree-risk-assessment-qualification",
+   "name": "ISA Tree Risk Assessment Qualification",
+   "short": "TRAQ",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "International Society of Arboriculture (ISA)",
+   "type": "Certification",
+   "aka": [
+    "TRAQ"
+   ],
+   "blurb": "Qualification course and assessment on the systematic tree risk assessment process, likelihood matrices and mitigation options."
+  },
+  {
+   "slug": "cesswi-erosion-sediment-stormwater-inspector",
+   "name": "Certified Erosion, Sediment and Storm Water Inspector",
+   "short": "CESSWI",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "EnviroCert International, Inc. (ECI)",
+   "bodyUrl": "https://www.envirocert.org",
+   "type": "Certification",
+   "aka": [
+    "CESSWI"
+   ],
+   "blurb": "Certification for inspectors verifying erosion, sediment and stormwater control installation and maintenance on construction sites."
+  },
+  {
+   "slug": "cpesc-erosion-and-sediment-control",
+   "name": "Certified Professional in Erosion and Sediment Control",
+   "short": "CPESC",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "EnviroCert International, Inc. (ECI)",
+   "bodyUrl": "https://www.envirocert.org",
+   "type": "Certification",
+   "aka": [
+    "CPESC"
+   ],
+   "blurb": "Certification recognising expertise in soil erosion processes, sediment control design and construction site stormwater compliance."
+  },
+  {
+   "slug": "cpmsm-municipal-stormwater-management",
+   "name": "Certified Professional in Municipal Stormwater Management",
+   "short": "CPMSM",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "EnviroCert International, Inc. (ECI)",
+   "bodyUrl": "https://www.envirocert.org",
+   "type": "Certification",
+   "aka": [
+    "CPMSM"
+   ],
+   "blurb": "Certification for professionals administering MS4 permit programmes, illicit discharge detection and municipal stormwater planning."
+  },
+  {
+   "slug": "cpswq-stormwater-quality",
+   "name": "Certified Professional in StormWater Quality",
+   "short": "CPSWQ",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "EnviroCert International, Inc. (ECI)",
+   "bodyUrl": "https://www.envirocert.org",
+   "type": "Certification",
+   "aka": [
+    "CPSWQ"
+   ],
+   "blurb": "Certification covering watershed hydrology, pollutant transport and design of stormwater quality treatment and mitigation measures."
+  },
+  {
+   "slug": "ngicp-green-infrastructure-certification",
+   "name": "National Green Infrastructure Certification Program",
+   "short": "NGICP",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "EnviroCert International, Inc. (ECI)",
+   "bodyUrl": "https://www.envirocert.org",
+   "type": "Certification",
+   "aka": [
+    "NGICP"
+   ],
+   "blurb": "Entry-level certification for workers constructing and maintaining bioretention, permeable paving and other green infrastructure."
+  },
+  {
+   "slug": "wqa-certified-installer",
+   "name": "WQA Certified Installer",
+   "short": "CI",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Water Quality Association (WQA)",
+   "bodyUrl": "https://wqa.org",
+   "type": "Certification",
+   "aka": [
+    "WQA CI"
+   ],
+   "blurb": "Certification for professionals installing point-of-use and point-of-entry water treatment equipment to plumbing code requirements."
+  },
+  {
+   "slug": "wqa-certified-service-technician",
+   "name": "WQA Certified Service Technician",
+   "short": "CST",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Water Quality Association (WQA)",
+   "bodyUrl": "https://wqa.org",
+   "type": "Certification",
+   "aka": [
+    "WQA CST"
+   ],
+   "blurb": "Certification for field technicians troubleshooting and servicing residential point-of-use and point-of-entry treatment systems."
+  },
+  {
+   "slug": "wqa-certified-water-specialist",
+   "name": "WQA Certified Water Specialist",
+   "short": "CWS",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Water Quality Association (WQA)",
+   "bodyUrl": "https://wqa.org",
+   "type": "Certification",
+   "aka": [
+    "CWS"
+   ],
+   "blurb": "Certification for professionals specifying multistage treatment trains for residential problem water and health-related contaminants."
+  },
+  {
+   "slug": "wqa-certified-water-treatment-representative",
+   "name": "WQA Certified Water Treatment Representative",
+   "short": "CWR",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Water Quality Association (WQA)",
+   "bodyUrl": "https://wqa.org",
+   "type": "Certification",
+   "aka": [
+    "CWR"
+   ],
+   "blurb": "Core certification for representatives selling and configuring treatment options for aesthetic drinking water problems."
+  },
+  {
+   "slug": "wqa-master-water-specialist",
+   "name": "WQA Master Water Specialist",
+   "short": "MWS",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Water Quality Association (WQA)",
+   "bodyUrl": "https://wqa.org",
+   "type": "Certification",
+   "aka": [
+    "MWS"
+   ],
+   "blurb": "Advanced WQA credential requiring existing CWS certification, five years of experience and two advanced-level examinations."
+  },
+  {
+   "slug": "ahera-asbestos-supervisor",
+   "name": "AHERA Asbestos Abatement Contractor/Supervisor Accreditation",
+   "short": "Asbestos Supervisor",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "U.S. Environmental Protection Agency (AHERA Model Accreditation Plan)",
+   "type": "Certification",
+   "aka": [
+    "Asbestos Competent Person",
+    "Contractor/Supervisor"
+   ],
+   "blurb": "Five-day AHERA accreditation for competent persons supervising asbestos abatement crews, containments and clearance procedures."
+  },
+  {
+   "slug": "ahera-asbestos-worker",
+   "name": "AHERA Asbestos Abatement Worker Accreditation",
+   "short": "Asbestos Worker",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "U.S. Environmental Protection Agency (AHERA Model Accreditation Plan)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Four-day initial accreditation required for workers performing asbestos removal, encapsulation and enclosure inside regulated areas."
+  },
+  {
+   "slug": "ahera-asbestos-inspector",
+   "name": "AHERA Asbestos Building Inspector Accreditation",
+   "short": "Asbestos Inspector",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "U.S. Environmental Protection Agency (AHERA Model Accreditation Plan)",
+   "type": "Certification",
+   "aka": [
+    "Asbestos Inspector",
+    "AHERA Inspector"
+   ],
+   "blurb": "AHERA accreditation for personnel who survey buildings, identify suspect asbestos-containing materials and collect bulk samples."
+  },
+  {
+   "slug": "ahera-asbestos-management-planner",
+   "name": "AHERA Asbestos Management Planner Accreditation",
+   "short": "Management Planner",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "U.S. Environmental Protection Agency (AHERA Model Accreditation Plan)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "AHERA accreditation for professionals who interpret inspection results and write asbestos management plans for school and public buildings."
+  },
+  {
+   "slug": "ahera-asbestos-project-designer",
+   "name": "AHERA Asbestos Project Designer Accreditation",
+   "short": "Project Designer",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "U.S. Environmental Protection Agency (AHERA Model Accreditation Plan)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "AHERA accreditation for designers who specify containment, engineering controls and work practices for asbestos abatement projects."
+  },
+  {
+   "slug": "acac-council-certified-indoor-environmental-consultant",
+   "name": "Council-certified Indoor Environmental Consultant",
+   "short": "CIEC",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "American Council for Accredited Certification (ACAC)",
+   "type": "Certification",
+   "aka": [
+    "CIEC"
+   ],
+   "blurb": "Board certification for consultants who investigate indoor air quality complaints and write remediation protocols for buildings."
+  },
+  {
+   "slug": "acac-council-certified-indoor-environmentalist",
+   "name": "Council-certified Indoor Environmentalist",
+   "short": "CIE",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "American Council for Accredited Certification (ACAC)",
+   "type": "Certification",
+   "aka": [
+    "CIE",
+    "Certified Indoor Environmentalist"
+   ],
+   "blurb": "Entry-level board certification covering indoor air quality assessment, ventilation evaluation and common building contaminants."
+  },
+  {
+   "slug": "acac-council-certified-microbial-consultant",
+   "name": "Council-certified Microbial Consultant",
+   "short": "CMC",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "American Council for Accredited Certification (ACAC)",
+   "type": "Certification",
+   "aka": [
+    "CMC"
+   ],
+   "blurb": "Advanced board certification for consultants who design mould remediation protocols and verify post-remediation clearance."
+  },
+  {
+   "slug": "acac-council-certified-microbial-investigator",
+   "name": "Council-certified Microbial Investigator",
+   "short": "CMI",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "American Council for Accredited Certification (ACAC)",
+   "type": "Certification",
+   "aka": [
+    "CMI"
+   ],
+   "blurb": "Board certification for investigators who inspect buildings for mould growth, moisture intrusion and microbial contamination."
+  },
+  {
+   "slug": "nrpp-radon-measurement-field-technician",
+   "name": "NRPP Radon Measurement Field Technician",
+   "short": "RMFT",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "National Radon Proficiency Program (AARST-NRPP)",
+   "type": "Certification",
+   "aka": [
+    "RMFT"
+   ],
+   "blurb": "Certification for technicians who deploy and retrieve radon measurement devices under the oversight of a measurement professional."
+  },
+  {
+   "slug": "nrpp-radon-measurement-professional",
+   "name": "NRPP Radon Measurement Professional",
+   "short": "RMP",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "National Radon Proficiency Program (AARST-NRPP)",
+   "type": "Certification",
+   "aka": [
+    "RMP",
+    "Radon Measurement Professional"
+   ],
+   "blurb": "Certification for professionals conducting radon testing with analytical or passive devices and managing quality-assurance procedures."
+  },
+  {
+   "slug": "nrpp-radon-mitigation-installer",
+   "name": "NRPP Radon Mitigation Installer",
+   "short": "RMI",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "National Radon Proficiency Program (AARST-NRPP)",
+   "type": "Certification",
+   "aka": [
+    "RMI"
+   ],
+   "blurb": "Certification for installers building soil depressurisation systems under the supervision of a certified radon mitigation specialist."
+  },
+  {
+   "slug": "nrpp-radon-mitigation-specialist",
+   "name": "NRPP Radon Mitigation Specialist",
+   "short": "RMS",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "National Radon Proficiency Program (AARST-NRPP)",
+   "type": "Certification",
+   "aka": [
+    "RMS",
+    "Radon Mitigation Professional"
+   ],
+   "blurb": "Certification for specialists who evaluate radon results and design, install and diagnose radon reduction systems to ANSI-AARST standards."
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "chunkId": "b28-p04",
+ "batch": 28,
+ "part": 4,
+ "categories": [
+  "project-business"
+ ],
+ "groups": [
+  "Human Resources",
+  "Agile & Product",
+  "Project & Program Management"
+ ],
+ "bodies": [
+  "PayrollOrg",
+  "Human Capital Institute",
+  "The LeSS Company",
+  "Pragmatic Institute",
+  "GPM Global",
+  "PM4NGOs",
+  "Institute of Certified Professional Managers"
+ ],
+ "examCount": 9,
+ "exams": [
+  {
+   "slug": "certified-payroll-professional",
+   "name": "Certified Payroll Professional",
+   "short": "CPP",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "PayrollOrg",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Senior payroll credential covering calculations, taxation, garnishments, accounting and payroll systems; overlaps finance topics."
+  },
+  {
+   "slug": "fundamental-payroll-certification",
+   "name": "Fundamental Payroll Certification",
+   "short": "FPC",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "PayrollOrg",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry payroll examination covering worker classification, calculations, deposits and reporting for new payroll practitioners."
+  },
+  {
+   "slug": "hci-strategic-hr-business-partner",
+   "name": "Strategic HR Business Partner",
+   "short": "sHRBP",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "Human Capital Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Programme and assessment covering consulting skills, workforce planning and aligning HR practice with business strategy."
+  },
+  {
+   "slug": "hci-talent-acquisition-strategist",
+   "name": "Talent Acquisition Strategist",
+   "short": "TAS",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "Human Capital Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering sourcing strategy, employer brand, candidate experience and recruiting analytics for talent teams."
+  },
+  {
+   "slug": "certified-less-practitioner",
+   "name": "Certified LeSS Practitioner",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "The LeSS Company",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Course-based credential covering Large-Scale Scrum principles, organisational design and multi-team product development."
+  },
+  {
+   "slug": "pragmatic-institute-product-management-certification",
+   "name": "Pragmatic Institute Product Management Certification",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Pragmatic Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Levelled certification series built on the Pragmatic Framework covering market problems, strategy, launch and product growth."
+  },
+  {
+   "slug": "gpm-b-green-project-manager",
+   "name": "Green Project Manager Basic",
+   "short": "GPM-b",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "GPM Global",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Sustainability credential covering the P5 standard, sustainable delivery methods and environmental and social impact analysis."
+  },
+  {
+   "slug": "project-dpro",
+   "name": "Project DPro Certification",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "PM4NGOs",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for development and humanitarian project managers, formerly PMD Pro, covering the project phase model."
+  },
+  {
+   "slug": "certified-manager-icpm",
+   "name": "Certified Manager",
+   "short": "CM",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "Institute of Certified Professional Managers",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Three-part examination covering foundations of management, planning and organising, and leading and controlling work."
+  }
+ ]
+}

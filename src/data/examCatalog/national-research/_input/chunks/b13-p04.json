@@ -1,0 +1,59 @@
+{
+ "chunkId": "b13-p04",
+ "batch": 13,
+ "part": 4,
+ "categories": [
+  "education-teaching"
+ ],
+ "groups": [
+  "TESOL, Language & Education Technology"
+ ],
+ "bodies": [
+  "Apple",
+  "Various accredited TEFL providers",
+  "TESOL International Association"
+ ],
+ "examCount": 3,
+ "exams": [
+  {
+   "slug": "apple-teacher",
+   "name": "Apple Teacher",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "Apple",
+   "type": "Certification",
+   "aka": [
+    "Apple Teacher recognition"
+   ],
+   "blurb": "Free professional learning programme recognising educators who complete skill quizzes on iPad and Mac productivity and creativity apps."
+  },
+  {
+   "slug": "tefl-certification",
+   "name": "Teaching English as a Foreign Language Certification",
+   "short": "TEFL",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "Various accredited TEFL providers",
+   "type": "Certification",
+   "aka": [
+    "TEFL",
+    "TESL",
+    "120-hour TEFL"
+   ],
+   "blurb": "Umbrella term for accredited English teaching courses, most commonly 120 hours, used to qualify for teaching posts abroad and online."
+  },
+  {
+   "slug": "tesol-core-certificate-program",
+   "name": "TESOL Core Certificate Program",
+   "short": "TCCP",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "TESOL International Association",
+   "type": "Certification",
+   "aka": [
+    "TCCP"
+   ],
+   "blurb": "Blended certificate from the professional association covering English language teaching foundations plus a practicum with a mentor."
+  }
+ ]
+}

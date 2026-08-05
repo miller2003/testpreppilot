@@ -5,12 +5,14 @@ interface Props {
   canonical?: string;
   ogImage?: string;
   ogTitle?: string;
+  noindex?: boolean;
 }
 
-const { title, description, canonical, ogImage, ogTitle } = Astro.props;
+const { title, description, canonical, ogImage, ogTitle, noindex = false } = Astro.props;
 const siteUrl = Astro.site || 'https://testpreppilot.com';
 const currentUrl = new URL(Astro.url.pathname, siteUrl).toString();
 
+const finalCanonical = canonical || currentUrl;
 const finalOgTitle = ogTitle || title;
 ---
 
@@ -18,8 +20,11 @@ const finalOgTitle = ogTitle || title;
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 {description && <meta name="description" content={description} />}
 <meta name="theme-color" content="#f8f7f3" />
-{canonical && <link rel="canonical" href={canonical} />}
+<link rel="canonical" href={finalCanonical} />
+<meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
 
+<meta property="og:site_name" content="TestPrepPilot" />
+<meta property="og:locale" content="en_US" />
 <meta property="og:title" content={finalOgTitle} />
 {description && <meta property="og:description" content={description} />}
 {ogImage && <meta property="og:image" content={new URL(ogImage, siteUrl).toString()} />}
@@ -29,6 +34,7 @@ const finalOgTitle = ogTitle || title;
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={finalOgTitle} />
 {description && <meta name="twitter:description" content={description} />}
+{ogImage && <meta name="twitter:image" content={new URL(ogImage, siteUrl).toString()} />}
 
 <title>{title}</title>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

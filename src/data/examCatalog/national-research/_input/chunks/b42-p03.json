@@ -1,0 +1,341 @@
+{
+ "chunkId": "b42-p03",
+ "batch": 42,
+ "part": 3,
+ "categories": [
+  "workplace-safety"
+ ],
+ "groups": [
+  "Safety Professional Certifications",
+  "Hazardous Materials & Emergency Response"
+ ],
+ "bodies": [
+  "National Association of Fire Investigators (NAFI)",
+  "American Board of Industrial Hygiene (ABIH)",
+  "Utility Safety and Ops Leadership Network (USOLN)",
+  "Exemplar Global and IRCA-Accredited Training Providers",
+  "National Examination Board in Occupational Safety and Health (NEBOSH)",
+  "Employers under OSHA 29 CFR 1926.453 and ANSI A92 Standards",
+  "Employers under OSHA 29 CFR 1910.1030",
+  "Employers under OSHA 29 CFR 1926 Subpart P",
+  "Employers under OSHA 29 CFR 1926 Subpart M",
+  "Employers under OSHA 29 CFR 1910.1200",
+  "Employers under OSHA 29 CFR 1910.120(q) and NFPA 470",
+  "ANSI/ASSP Z390.1 Accepted Practices for H2S Training Programs",
+  "International Air Transport Association (IATA)",
+  "International Maritime Organization (IMDG Code)",
+  "Employers under OSHA 29 CFR 1926.62 and 1910.1025",
+  "Employers under OSHA 29 CFR 1910.147",
+  "National Fire Protection Association (NFPA)",
+  "Employers under OSHA 29 CFR 1910.146 and 1926 Subpart AA",
+  "Employers under OSHA 29 CFR 1910.178",
+  "Employers under OSHA 29 CFR 1910.119",
+  "U.S. Environmental Protection Agency (40 CFR Part 262)",
+  "Employers under OSHA 29 CFR 1926.1153 and 1910.1053",
+  "Employers under OSHA 29 CFR 1910.134",
+  "Employers under OSHA 29 CFR 1926 Subpart L"
+ ],
+ "examCount": 24,
+ "exams": [
+  {
+   "slug": "certified-fire-and-explosion-investigator",
+   "name": "Certified Fire and Explosion Investigator",
+   "short": "CFEI",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "National Association of Fire Investigators (NAFI)",
+   "type": "Certification",
+   "aka": [
+    "CFEI"
+   ],
+   "blurb": "Certification examining origin and cause methodology from NFPA 921 for investigators of fire and explosion incidents."
+  },
+  {
+   "slug": "certified-industrial-hygienist",
+   "name": "Certified Industrial Hygienist",
+   "short": "CIH",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "American Board of Industrial Hygiene (ABIH)",
+   "type": "Certification",
+   "aka": [
+    "CIH"
+   ],
+   "blurb": "Leading industrial hygiene certification examining exposure assessment, toxicology, ventilation, noise and control strategies."
+  },
+  {
+   "slug": "certified-utility-safety-professional",
+   "name": "Certified Utility Safety Professional",
+   "short": "CUSP",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Utility Safety and Ops Leadership Network (USOLN)",
+   "type": "Certification",
+   "aka": [
+    "CUSP"
+   ],
+   "blurb": "Certification for safety professionals in electric utility work covering OSHA 1910.269, grounding, clearances and incident investigation."
+  },
+  {
+   "slug": "iso-45001-lead-auditor",
+   "name": "ISO 45001 Occupational Health and Safety Lead Auditor",
+   "short": "ISO 45001 LA",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Exemplar Global and IRCA-Accredited Training Providers",
+   "type": "Certification",
+   "aka": [
+    "OHSMS Lead Auditor"
+   ],
+   "blurb": "Five-day accredited course and examination qualifying auditors to lead occupational health and safety management system audits."
+  },
+  {
+   "slug": "nebosh-international-general-certificate",
+   "name": "NEBOSH International General Certificate in Occupational Health and Safety",
+   "short": "NEBOSH IGC",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "National Examination Board in Occupational Safety and Health (NEBOSH)",
+   "type": "Certification",
+   "aka": [
+    "IGC",
+    "NEBOSH IGC"
+   ],
+   "blurb": "Widely recognised entry qualification in occupational safety management, accepted by BCSP as a credential toward the CSP."
+  },
+  {
+   "slug": "aerial-lift-operator-certification",
+   "name": "Aerial Lift and MEWP Operator Certification",
+   "short": "Aerial Lift",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1926.453 and ANSI A92 Standards",
+   "type": "Certification",
+   "aka": [
+    "Scissor Lift",
+    "Boom Lift",
+    "MEWP Operator"
+   ],
+   "blurb": "Operator qualification covering mobile elevating work platform inspection, fall protection and safe positioning under ANSI A92 standards."
+  },
+  {
+   "slug": "bloodborne-pathogens-training",
+   "name": "Bloodborne Pathogens Awareness Training",
+   "short": "BBP",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1910.1030",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Annual training on exposure control plans, universal precautions and post-exposure procedures required for at-risk employees."
+  },
+  {
+   "slug": "excavation-competent-person",
+   "name": "Excavation and Trenching Competent Person Training",
+   "short": "Excavation CP",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1926 Subpart P",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Competent person training on soil classification, protective systems, access and daily inspection of excavations and trenches."
+  },
+  {
+   "slug": "fall-protection-competent-person",
+   "name": "Fall Protection Competent Person Training",
+   "short": "Fall Protection CP",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1926 Subpart M",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Competent person training on fall hazard identification, anchorage selection, harness inspection and rescue planning at height."
+  },
+  {
+   "slug": "hazard-communication-ghs-training",
+   "name": "Hazard Communication and GHS Training",
+   "short": "HazCom",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1910.1200",
+   "type": "Training",
+   "aka": [
+    "Right to Know",
+    "GHS Training"
+   ],
+   "blurb": "Training on GHS labels, pictograms and safety data sheets required for every employee exposed to hazardous chemicals at work."
+  },
+  {
+   "slug": "hazmat-technician-training",
+   "name": "Hazardous Materials Technician Level Training",
+   "short": "Hazmat Technician",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1910.120(q) and NFPA 470",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Twenty-four hour minimum training for responders who take offensive action to plug, patch or stop a hazardous materials release."
+  },
+  {
+   "slug": "h2s-awareness-training",
+   "name": "Hydrogen Sulfide (H2S) Awareness Training",
+   "short": "H2S Awareness",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "ANSI/ASSP Z390.1 Accepted Practices for H2S Training Programs",
+   "type": "Training",
+   "aka": [
+    "H2S Alive",
+    "Hydrogen Sulphide Safety"
+   ],
+   "blurb": "Training for oil, gas and wastewater workers on hydrogen sulfide properties, detection, respiratory protection and rescue procedures."
+  },
+  {
+   "slug": "iata-dangerous-goods-regulations-training",
+   "name": "IATA Dangerous Goods Regulations Training",
+   "short": "IATA DGR",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "International Air Transport Association (IATA)",
+   "type": "Training",
+   "aka": [
+    "DGR",
+    "Air Shipping Dangerous Goods"
+   ],
+   "blurb": "Category-based training required every 24 months for shippers and freight staff preparing dangerous goods for carriage by air."
+  },
+  {
+   "slug": "imdg-code-training",
+   "name": "IMDG Code Dangerous Goods Training",
+   "short": "IMDG",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "International Maritime Organization (IMDG Code)",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Training on classification, packing, segregation and documentation for shipping dangerous goods by sea under the IMDG Code."
+  },
+  {
+   "slug": "lead-awareness-training",
+   "name": "Lead Awareness Training",
+   "short": "Lead Awareness",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1926.62 and 1910.1025",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Awareness training on lead exposure routes, permissible exposure limits, hygiene facilities and medical surveillance requirements."
+  },
+  {
+   "slug": "lockout-tagout-authorized-employee",
+   "name": "Lockout/Tagout Authorized Employee Training",
+   "short": "LOTO",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1910.147",
+   "type": "Training",
+   "aka": [
+    "Control of Hazardous Energy"
+   ],
+   "blurb": "Training for authorised employees on energy-isolating devices, machine-specific procedures and periodic inspection of energy control."
+  },
+  {
+   "slug": "nfpa-70e-electrical-safety-training",
+   "name": "NFPA 70E Electrical Safety in the Workplace Training",
+   "short": "NFPA 70E",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "National Fire Protection Association (NFPA)",
+   "type": "Training",
+   "aka": [
+    "Arc Flash Training"
+   ],
+   "blurb": "Qualified person training on arc flash boundaries, incident energy analysis, PPE categories and energised work permits."
+  },
+  {
+   "slug": "confined-space-entry-training",
+   "name": "Permit-Required Confined Space Entry Training",
+   "short": "Confined Space",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1910.146 and 1926 Subpart AA",
+   "type": "Training",
+   "aka": [
+    "Entrant Attendant Supervisor Training"
+   ],
+   "blurb": "Training for entrants, attendants and entry supervisors covering atmospheric testing, permits, ventilation and rescue arrangements."
+  },
+  {
+   "slug": "forklift-operator-certification",
+   "name": "Powered Industrial Truck (Forklift) Operator Certification",
+   "short": "Forklift",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1910.178",
+   "type": "Certification",
+   "aka": [
+    "Forklift Certification",
+    "PIT Operator"
+   ],
+   "blurb": "Formal instruction, practical evaluation and three-yearly re-evaluation required before an employee may operate a powered industrial truck."
+  },
+  {
+   "slug": "process-safety-management-training",
+   "name": "Process Safety Management Training",
+   "short": "PSM",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1910.119",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Training on the fourteen PSM elements including process hazard analysis, mechanical integrity and management of change."
+  },
+  {
+   "slug": "rcra-hazardous-waste-training",
+   "name": "RCRA Hazardous Waste Generator Training",
+   "short": "RCRA",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "U.S. Environmental Protection Agency (40 CFR Part 262)",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Annual training for large-quantity generator personnel on waste determination, accumulation, manifesting and contingency planning."
+  },
+  {
+   "slug": "silica-competent-person",
+   "name": "Respirable Crystalline Silica Competent Person Training",
+   "short": "Silica CP",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1926.1153 and 1910.1053",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Competent person training on Table 1 control methods, exposure assessment and written exposure control plans for silica dust."
+  },
+  {
+   "slug": "respirator-fit-test-administrator",
+   "name": "Respirator Fit Test Administrator Training",
+   "short": "Fit Test",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1910.134",
+   "type": "Training",
+   "aka": [
+    "Qualitative Fit Test",
+    "Quantitative Fit Test"
+   ],
+   "blurb": "Training for personnel administering qualitative and quantitative respirator fit tests and managing written respiratory protection programmes."
+  },
+  {
+   "slug": "scaffold-competent-person",
+   "name": "Scaffold Competent Person Training",
+   "short": "Scaffold CP",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1926 Subpart L",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Competent person training on scaffold erection, capacity, fall protection and pre-shift inspection of supported and suspended scaffolds."
+  }
+ ]
+}

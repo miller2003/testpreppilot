@@ -1,0 +1,553 @@
+{
+ "chunkId": "b36-p02",
+ "batch": 36,
+ "part": 2,
+ "categories": [
+  "technology"
+ ],
+ "groups": [
+  "Amazon Web Services",
+  "Cloud Native & DevOps",
+  "Linux, Unix & Open Source"
+ ],
+ "bodies": [
+  "Amazon Web Services",
+  "Cloud Native Computing Foundation",
+  "HashiCorp",
+  "SUSE"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "aws-certified-advanced-networking-specialty",
+   "name": "AWS Certified Advanced Networking - Specialty",
+   "short": "AWS Advanced Networking",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "ANS-C01"
+   ],
+   "blurb": "Specialty exam on hybrid and complex AWS networking including Direct Connect, Transit Gateway and VPC design; AWS has scheduled it for retirement in 2026."
+  },
+  {
+   "slug": "aws-certified-ai-practitioner",
+   "name": "AWS Certified AI Practitioner",
+   "short": "AWS AI Practitioner",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "AIF-C01"
+   ],
+   "blurb": "Foundational AWS credential covering artificial intelligence, machine learning and generative AI concepts plus Amazon Bedrock and SageMaker services."
+  },
+  {
+   "slug": "aws-certified-cloud-practitioner",
+   "name": "AWS Certified Cloud Practitioner",
+   "short": "AWS CCP",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "CLF-C02"
+   ],
+   "blurb": "Entry-level AWS certification covering cloud concepts, core services, security, pricing and support models for technical and non-technical candidates."
+  },
+  {
+   "slug": "aws-certified-cloudops-engineer-associate",
+   "name": "AWS Certified CloudOps Engineer - Associate",
+   "short": "AWS CloudOps",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "SOA-C03"
+   ],
+   "blurb": "Operations-focused associate exam on deploying, monitoring and troubleshooting AWS workloads; it replaced the SysOps Administrator exam in late 2025."
+  },
+  {
+   "slug": "aws-certified-data-analytics-specialty",
+   "name": "AWS Certified Data Analytics - Specialty",
+   "short": "AWS Data Analytics",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "DAS-C01"
+   ],
+   "blurb": "Retired in April 2024 and superseded by the Data Engineer Associate exam, this specialty covered Kinesis, Redshift, Glue and analytics pipeline design."
+  },
+  {
+   "slug": "aws-certified-data-engineer-associate",
+   "name": "AWS Certified Data Engineer - Associate",
+   "short": "AWS Data Engineer",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "DEA-C01"
+   ],
+   "blurb": "Associate exam on building and operating AWS data pipelines with Glue, Athena, Redshift, Kinesis and EMR, including data governance and quality."
+  },
+  {
+   "slug": "aws-certified-database-specialty",
+   "name": "AWS Certified Database - Specialty",
+   "short": "AWS Database Specialty",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "DBS-C01"
+   ],
+   "blurb": "Retired by AWS in April 2024, this specialty exam covered Aurora, RDS, DynamoDB and database migration design and remains a widely searched credential."
+  },
+  {
+   "slug": "aws-certified-developer-associate",
+   "name": "AWS Certified Developer - Associate",
+   "short": "AWS Developer",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "DVA-C02"
+   ],
+   "blurb": "Associate-level exam for developers building on AWS with Lambda, API Gateway, DynamoDB, SDKs, CI/CD tooling and application security practices."
+  },
+  {
+   "slug": "aws-certified-devops-engineer-professional",
+   "name": "AWS Certified DevOps Engineer - Professional",
+   "short": "AWS DevOps Pro",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "DOP-C02"
+   ],
+   "blurb": "Professional-level exam on continuous delivery, infrastructure as code, monitoring, incident response and automation across AWS environments."
+  },
+  {
+   "slug": "aws-certified-generative-ai-developer-professional",
+   "name": "AWS Certified Generative AI Developer - Professional",
+   "short": "AWS GenAI Developer",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "AIP-C01"
+   ],
+   "blurb": "Professional exam introduced in late 2025 covering production generative AI on AWS including Bedrock agents, RAG pipelines, guardrails and vector stores."
+  },
+  {
+   "slug": "aws-certified-machine-learning-specialty",
+   "name": "AWS Certified Machine Learning - Specialty",
+   "short": "AWS ML Specialty",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "MLS-C01"
+   ],
+   "blurb": "Long-running AWS machine learning specialty exam covering data engineering, modelling and deployment; AWS set 31 March 2026 as the final test date."
+  },
+  {
+   "slug": "aws-certified-machine-learning-engineer-associate",
+   "name": "AWS Certified Machine Learning Engineer - Associate",
+   "short": "AWS MLA",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "MLA-C01"
+   ],
+   "blurb": "Associate exam on building, deploying and operating machine learning workloads with SageMaker, replacing the ML Specialty as the default AWS ML credential."
+  },
+  {
+   "slug": "aws-certified-security-specialty",
+   "name": "AWS Certified Security - Specialty",
+   "short": "AWS Security Specialty",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "SCS-C03",
+    "SCS-C02"
+   ],
+   "blurb": "Specialty exam on AWS incident response, logging, identity management, data protection and infrastructure security; SCS-C03 replaced SCS-C02 in 2025."
+  },
+  {
+   "slug": "aws-certified-solutions-architect-associate",
+   "name": "AWS Certified Solutions Architect - Associate",
+   "short": "AWS SAA",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "SAA-C03"
+   ],
+   "blurb": "The most widely held AWS certification, covering resilient, secure, high-performing and cost-optimised architecture design on AWS."
+  },
+  {
+   "slug": "aws-certified-solutions-architect-professional",
+   "name": "AWS Certified Solutions Architect - Professional",
+   "short": "AWS SAP",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "SAP-C02"
+   ],
+   "blurb": "Professional exam on complex multi-account, multi-region AWS architecture, migration strategy, cost control and continuous improvement."
+  },
+  {
+   "slug": "aws-certified-sysops-administrator-associate",
+   "name": "AWS Certified SysOps Administrator - Associate",
+   "short": "AWS SysOps",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "SOA-C02"
+   ],
+   "blurb": "Retired on 29 September 2025 and replaced by the CloudOps Engineer Associate exam, it covered deployment, monitoring and operations of AWS workloads."
+  },
+  {
+   "slug": "aws-certified-sap-on-aws-specialty",
+   "name": "AWS Certified: SAP on AWS - Specialty",
+   "short": "SAP on AWS",
+   "category": "technology",
+   "group": "Amazon Web Services",
+   "body": "Amazon Web Services",
+   "bodyUrl": "https://aws.amazon.com/certification/",
+   "type": "Certification",
+   "aka": [
+    "PAS-C01"
+   ],
+   "blurb": "Retired in April 2024, this specialty validated designing, migrating and operating SAP workloads such as S/4HANA on AWS infrastructure."
+  },
+  {
+   "slug": "certified-argo-project-associate",
+   "name": "Certified Argo Project Associate",
+   "short": "CAPA",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Cloud Native Computing Foundation",
+   "bodyUrl": "https://www.cncf.io/training/certification/",
+   "type": "Certification",
+   "aka": [
+    "CAPA"
+   ],
+   "blurb": "CNCF associate exam covering the Argo ecosystem including Argo CD, Argo Workflows, Argo Rollouts and Argo Events for GitOps delivery on Kubernetes."
+  },
+  {
+   "slug": "certified-backstage-associate",
+   "name": "Certified Backstage Associate",
+   "short": "CBA",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Cloud Native Computing Foundation",
+   "bodyUrl": "https://www.cncf.io/training/certification/",
+   "type": "Certification",
+   "aka": [
+    "CBA"
+   ],
+   "blurb": "CNCF associate certification on the Backstage developer portal covering software catalogues, templates, TechDocs, plugins and platform engineering basics."
+  },
+  {
+   "slug": "certified-cilium-associate",
+   "name": "Certified Cilium Associate",
+   "short": "CCA",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Cloud Native Computing Foundation",
+   "bodyUrl": "https://www.cncf.io/training/certification/",
+   "type": "Certification",
+   "aka": [
+    "CCA"
+   ],
+   "blurb": "CNCF associate exam on Cilium eBPF-based networking, network policy, service mesh and observability with Hubble in Kubernetes clusters."
+  },
+  {
+   "slug": "certified-cloud-native-platform-engineering-associate",
+   "name": "Certified Cloud Native Platform Engineering Associate",
+   "short": "CNPA",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Cloud Native Computing Foundation",
+   "bodyUrl": "https://www.cncf.io/training/certification/",
+   "type": "Certification",
+   "aka": [
+    "CNPA"
+   ],
+   "blurb": "CNCF associate certification on platform engineering practice, internal developer platforms, golden paths, GitOps delivery and measuring platform value."
+  },
+  {
+   "slug": "certified-gitops-associate",
+   "name": "Certified GitOps Associate",
+   "short": "CGOA",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Cloud Native Computing Foundation",
+   "bodyUrl": "https://www.cncf.io/training/certification/",
+   "type": "Certification",
+   "aka": [
+    "CGOA"
+   ],
+   "blurb": "CNCF associate exam covering GitOps principles, declarative configuration, reconciliation, drift detection and secrets handling in continuous delivery."
+  },
+  {
+   "slug": "certified-kubernetes-administrator",
+   "name": "Certified Kubernetes Administrator",
+   "short": "CKA",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Cloud Native Computing Foundation",
+   "bodyUrl": "https://www.cncf.io/training/certification/",
+   "type": "Certification",
+   "aka": [
+    "CKA"
+   ],
+   "blurb": "Hands-on performance-based exam on installing, configuring and operating production Kubernetes clusters, including networking, storage and troubleshooting."
+  },
+  {
+   "slug": "certified-kubernetes-application-developer",
+   "name": "Certified Kubernetes Application Developer",
+   "short": "CKAD",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Cloud Native Computing Foundation",
+   "bodyUrl": "https://www.cncf.io/training/certification/",
+   "type": "Certification",
+   "aka": [
+    "CKAD"
+   ],
+   "blurb": "Performance-based CNCF exam on designing, building and deploying cloud-native applications to Kubernetes using pods, config, services and observability."
+  },
+  {
+   "slug": "certified-kubernetes-security-specialist",
+   "name": "Certified Kubernetes Security Specialist",
+   "short": "CKS",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Cloud Native Computing Foundation",
+   "bodyUrl": "https://www.cncf.io/training/certification/",
+   "type": "Certification",
+   "aka": [
+    "CKS"
+   ],
+   "blurb": "Advanced hands-on CNCF exam on Kubernetes cluster hardening, supply chain security, runtime security and monitoring; requires a current CKA."
+  },
+  {
+   "slug": "istio-certified-associate",
+   "name": "Istio Certified Associate",
+   "short": "ICA",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Cloud Native Computing Foundation",
+   "bodyUrl": "https://www.cncf.io/training/certification/",
+   "type": "Certification",
+   "aka": [
+    "ICA"
+   ],
+   "blurb": "CNCF associate exam on the Istio service mesh covering traffic management, resilience, security policy, observability and mesh installation."
+  },
+  {
+   "slug": "kubernetes-and-cloud-native-associate",
+   "name": "Kubernetes and Cloud Native Associate",
+   "short": "KCNA",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Cloud Native Computing Foundation",
+   "bodyUrl": "https://www.cncf.io/training/certification/",
+   "type": "Certification",
+   "aka": [
+    "KCNA"
+   ],
+   "blurb": "Entry-level CNCF exam covering Kubernetes architecture, container orchestration basics, cloud-native observability, delivery and the CNCF ecosystem."
+  },
+  {
+   "slug": "kubernetes-and-cloud-native-security-associate",
+   "name": "Kubernetes and Cloud Native Security Associate",
+   "short": "KCSA",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Cloud Native Computing Foundation",
+   "bodyUrl": "https://www.cncf.io/training/certification/",
+   "type": "Certification",
+   "aka": [
+    "KCSA"
+   ],
+   "blurb": "CNCF associate exam on Kubernetes security fundamentals including the 4C model, threat modelling, platform hardening and compliance frameworks."
+  },
+  {
+   "slug": "certified-kyverno-associate",
+   "name": "Kyverno Certified Associate",
+   "short": "KCA",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Cloud Native Computing Foundation",
+   "bodyUrl": "https://www.cncf.io/training/certification/",
+   "type": "Certification",
+   "aka": [
+    "KCA"
+   ],
+   "blurb": "CNCF associate exam on Kyverno policy-as-code for Kubernetes, covering validation, mutation, generation rules, policy reporting and image verification."
+  },
+  {
+   "slug": "opentelemetry-certified-associate",
+   "name": "OpenTelemetry Certified Associate",
+   "short": "OTCA",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Cloud Native Computing Foundation",
+   "bodyUrl": "https://www.cncf.io/training/certification/",
+   "type": "Certification",
+   "aka": [
+    "OTCA"
+   ],
+   "blurb": "CNCF associate exam covering OpenTelemetry traces, metrics and logs, instrumentation, the Collector, semantic conventions and observability pipelines."
+  },
+  {
+   "slug": "prometheus-certified-associate",
+   "name": "Prometheus Certified Associate",
+   "short": "PCA",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Cloud Native Computing Foundation",
+   "bodyUrl": "https://www.cncf.io/training/certification/",
+   "type": "Certification",
+   "aka": [
+    "PCA"
+   ],
+   "blurb": "CNCF associate exam on Prometheus monitoring covering PromQL, exporters, alerting rules, Alertmanager, service discovery and instrumentation."
+  },
+  {
+   "slug": "hashicorp-certified-consul-associate",
+   "name": "HashiCorp Certified: Consul Associate",
+   "short": "Consul Associate",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "HashiCorp",
+   "bodyUrl": "https://www.hashicorp.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Consul Associate 003"
+   ],
+   "blurb": "Associate exam on HashiCorp Consul service discovery, service mesh, health checking, key-value configuration and multi-datacentre federation."
+  },
+  {
+   "slug": "hashicorp-certified-terraform-associate",
+   "name": "HashiCorp Certified: Terraform Associate",
+   "short": "Terraform Associate",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "HashiCorp",
+   "bodyUrl": "https://www.hashicorp.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Terraform Associate 003"
+   ],
+   "blurb": "Widely held infrastructure-as-code certification covering Terraform workflow, state management, modules, providers and HCP Terraform collaboration."
+  },
+  {
+   "slug": "hashicorp-certified-terraform-authoring-and-operations-professional",
+   "name": "HashiCorp Certified: Terraform Authoring and Operations Professional",
+   "short": "Terraform Professional",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "HashiCorp",
+   "bodyUrl": "https://www.hashicorp.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Terraform Professional"
+   ],
+   "blurb": "Hands-on professional exam requiring candidates to write, refactor and operate Terraform configurations and modules in a live lab environment."
+  },
+  {
+   "slug": "hashicorp-certified-vault-associate",
+   "name": "HashiCorp Certified: Vault Associate",
+   "short": "Vault Associate",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "HashiCorp",
+   "bodyUrl": "https://www.hashicorp.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Vault Associate 003"
+   ],
+   "blurb": "Associate exam on HashiCorp Vault secrets management, authentication methods, policies, dynamic credentials, encryption as a service and tokens."
+  },
+  {
+   "slug": "hashicorp-certified-vault-operations-professional",
+   "name": "HashiCorp Certified: Vault Operations Professional",
+   "short": "Vault Professional",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "HashiCorp",
+   "bodyUrl": "https://www.hashicorp.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Vault Operations Professional"
+   ],
+   "blurb": "Lab-based professional exam on deploying, monitoring and troubleshooting production Vault clusters including replication, seals and disaster recovery."
+  },
+  {
+   "slug": "suse-certified-administrator",
+   "name": "SUSE Certified Administrator in SUSE Linux Enterprise Server",
+   "short": "SCA",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "SUSE",
+   "type": "Certification",
+   "aka": [
+    "SCA"
+   ],
+   "blurb": "SUSE certification covering SUSE Linux Enterprise Server installation, YaST and Zypper administration, storage, networking and system services."
+  },
+  {
+   "slug": "suse-certified-engineer",
+   "name": "SUSE Certified Engineer in SUSE Linux Enterprise Server",
+   "short": "SCE",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "SUSE",
+   "type": "Certification",
+   "aka": [
+    "SCE"
+   ],
+   "blurb": "Advanced SUSE certification on enterprise Linux deployment, automation with AutoYaST and Salt, high availability, security and troubleshooting."
+  }
+ ]
+}

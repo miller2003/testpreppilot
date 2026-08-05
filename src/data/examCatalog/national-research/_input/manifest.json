@@ -1,0 +1,296 @@
+[
+  {
+    "batch": "01",
+    "categories": "accounting",
+    "groups": "Accounting & Audit | Tax Practice | Public Accounting",
+    "exams": 41,
+    "bodies": 17
+  },
+  {
+    "batch": "02",
+    "categories": "admissions-academic",
+    "groups": "CLEP & Credit by Exam | Advanced Placement",
+    "exams": 117,
+    "bodies": 6
+  },
+  {
+    "batch": "03",
+    "categories": "admissions-academic",
+    "groups": "K-12 Private School Admissions | Graduate & Professional Admissions | English Proficiency | College Placement | Military & Aptitude | International Baccalaureate | Standardized State & National Assessments",
+    "exams": 106,
+    "bodies": 41
+  },
+  {
+    "batch": "04",
+    "categories": "admissions-academic",
+    "groups": "College Admissions | High School Equivalency",
+    "exams": 15,
+    "bodies": 7
+  },
+  {
+    "batch": "05",
+    "categories": "allied-health",
+    "groups": "Coding and HIM | Specialized Allied Health | Medical Imaging | Laboratory",
+    "exams": 104,
+    "bodies": 19
+  },
+  {
+    "batch": "06",
+    "categories": "allied-health",
+    "groups": "EMS | Pharmacy Support | Respiratory Care | Cardiovascular | Dental Support | Surgical and Sterile Processing | Medical Office | Nursing Support",
+    "exams": 81,
+    "bodies": 15
+  },
+  {
+    "batch": "07",
+    "categories": "animal-agriculture",
+    "groups": "Animal & Veterinary Support",
+    "exams": 25,
+    "bodies": 19
+  },
+  {
+    "batch": "08",
+    "categories": "aviation-maritime",
+    "groups": "FAA Airman Knowledge Tests",
+    "exams": 84,
+    "bodies": 4
+  },
+  {
+    "batch": "09",
+    "categories": "aviation-maritime",
+    "groups": "Maritime & USCG | Radio & Communications | Aircraft Maintenance",
+    "exams": 109,
+    "bodies": 17
+  },
+  {
+    "batch": "10",
+    "categories": "beauty-wellness",
+    "groups": "Cosmetology & Barbering | Spa, Massage & Wellness",
+    "exams": 52,
+    "bodies": 17
+  },
+  {
+    "batch": "11",
+    "categories": "behavioral-health",
+    "groups": "Psychology Licensure & Board Certification | Specialty Clinical Practice | Addiction & Recovery | Social Work | Counseling | Applied Behavior Analysis | Creative Arts & Expressive Therapy",
+    "exams": 100,
+    "bodies": 35
+  },
+  {
+    "batch": "12",
+    "categories": "behavioral-health",
+    "groups": "School & Child Behavioral Health | Marriage & Family Therapy",
+    "exams": 8,
+    "bodies": 7
+  },
+  {
+    "batch": "13",
+    "categories": "education-teaching",
+    "groups": "Praxis Elementary & Early Childhood | National Teaching Credentials & Performance Assessments | Praxis Humanities & Social Studies | TESOL, Language & Education Technology",
+    "exams": 101,
+    "bodies": 10
+  },
+  {
+    "batch": "14",
+    "categories": "education-teaching",
+    "groups": "Early Childhood, Paraeducator & Instructional Support | Praxis Special Education | Praxis Career, Technical & Physical Education | Praxis Mathematics & Science | Praxis School Services & Leadership | Praxis Pedagogy & Middle School | Praxis World Languages | Praxis Core & Basic Skills",
+    "exams": 80,
+    "bodies": 7
+  },
+  {
+    "batch": "15",
+    "categories": "engineering-design",
+    "groups": "Green Building & Energy | Manufacturing & Systems Engineering | NCEES PE Exams | Architecture | Structural & Surveying",
+    "exams": 103,
+    "bodies": 24
+  },
+  {
+    "batch": "16",
+    "categories": "engineering-design",
+    "groups": "NCEES FE Exams",
+    "exams": 7,
+    "bodies": 1
+  },
+  {
+    "batch": "17",
+    "categories": "environment",
+    "groups": "Water, Wastewater & Utilities | Pesticide, Agriculture & Land | Environmental Remediation & Building Hazards",
+    "exams": 111,
+    "bodies": 32
+  },
+  {
+    "batch": "18",
+    "categories": "finance-securities",
+    "groups": "Banking & Lending | FINRA & Securities Licensing | Financial Planning & Advice",
+    "exams": 100,
+    "bodies": 29
+  },
+  {
+    "batch": "19",
+    "categories": "finance-securities",
+    "groups": "Investment & Portfolio Management | Corporate & Specialty Finance",
+    "exams": 38,
+    "bodies": 18
+  },
+  {
+    "batch": "20",
+    "categories": "fitness-recreation",
+    "groups": "Fitness, Sport & Recreation",
+    "exams": 81,
+    "bodies": 40
+  },
+  {
+    "batch": "21",
+    "categories": "food-hospitality",
+    "groups": "Food Safety & Culinary | Hospitality & Events",
+    "exams": 82,
+    "bodies": 38
+  },
+  {
+    "batch": "22",
+    "categories": "government-civil-service",
+    "groups": "Federal Hiring & Civil Service",
+    "exams": 43,
+    "bodies": 28
+  },
+  {
+    "batch": "23",
+    "categories": "healthcare-clinical",
+    "groups": "Physician | Nursing | Other Clinicians | Pharmacy | Osteopathic Medicine | Rehabilitation",
+    "exams": 113,
+    "bodies": 47
+  },
+  {
+    "batch": "24",
+    "categories": "healthcare-clinical",
+    "groups": "Dental | Vision",
+    "exams": 23,
+    "bodies": 16
+  },
+  {
+    "batch": "25",
+    "categories": "insurance",
+    "groups": "Insurance Designations | Claims & Adjusting | Actuarial | Life & Health Designations | Risk & Compliance",
+    "exams": 114,
+    "bodies": 21
+  },
+  {
+    "batch": "26",
+    "categories": "legal",
+    "groups": "Court Reporting & Transcription | Paralegal & Legal Support | Bar Exam Components | Compliance & Investigations | Patent & IP",
+    "exams": 57,
+    "bodies": 26
+  },
+  {
+    "batch": "27",
+    "categories": "personal-services",
+    "groups": "Funeral, Personal & Community Services",
+    "exams": 38,
+    "bodies": 28
+  },
+  {
+    "batch": "28",
+    "categories": "project-business",
+    "groups": "Agile & Product | Project & Program Management | Human Resources",
+    "exams": 123,
+    "bodies": 25
+  },
+  {
+    "batch": "29",
+    "categories": "project-business",
+    "groups": "Real Estate Adjacent Business | Quality, Lean & Six Sigma | Marketing, Sales & Communications | Supply Chain & Operations | Business Analysis & Data",
+    "exams": 103,
+    "bodies": 39
+  },
+  {
+    "batch": "30",
+    "categories": "public-safety",
+    "groups": "Firefighter | Law Enforcement Entrance | Emergency Management & Dispatch | Corrections & Security-adjacent Public Safety | Military Occupational & Federal Safety",
+    "exams": 95,
+    "bodies": 39
+  },
+  {
+    "batch": "31",
+    "categories": "security-investigation",
+    "groups": "Security & Investigation",
+    "exams": 23,
+    "bodies": 14
+  },
+  {
+    "batch": "32",
+    "categories": "technology",
+    "groups": "Cybersecurity (Vendor-Neutral)",
+    "exams": 80,
+    "bodies": 11
+  },
+  {
+    "batch": "33",
+    "categories": "technology",
+    "groups": "Microsoft",
+    "exams": 77,
+    "bodies": 2
+  },
+  {
+    "batch": "34",
+    "categories": "technology",
+    "groups": "Data, Analytics & AI | Enterprise Platforms",
+    "exams": 99,
+    "bodies": 30
+  },
+  {
+    "batch": "35",
+    "categories": "technology",
+    "groups": "Networking & Wireless | Cisco | IT Service Management & Governance | Programming & Development",
+    "exams": 122,
+    "bodies": 26
+  },
+  {
+    "batch": "36",
+    "categories": "technology",
+    "groups": "Cloud Native & DevOps | Linux, Unix & Open Source | Google Cloud & Google | CompTIA | Amazon Web Services",
+    "exams": 105,
+    "bodies": 15
+  },
+  {
+    "batch": "37",
+    "categories": "technology",
+    "groups": "Virtualisation & Infrastructure",
+    "exams": 17,
+    "bodies": 6
+  },
+  {
+    "batch": "38",
+    "categories": "trades",
+    "groups": "Automotive & Diesel | HVAC/Refrigeration & Energy | NCCER & Craft Training",
+    "exams": 110,
+    "bodies": 10
+  },
+  {
+    "batch": "39",
+    "categories": "trades",
+    "groups": "Electrical/Solar & Low Voltage | Elevator/Locksmith & Specialty Trades | Welding & Metal | Building Codes & Inspection | Fire Protection & Life Safety Systems",
+    "exams": 103,
+    "bodies": 23
+  },
+  {
+    "batch": "40",
+    "categories": "trades",
+    "groups": "Nondestructive Testing & Inspection | Heavy Equipment/Crane & Rigging | HVAC & Refrigeration",
+    "exams": 33,
+    "bodies": 7
+  },
+  {
+    "batch": "41",
+    "categories": "transportation",
+    "groups": "Commercial Driving & Road | Logistics & Supply Chain | Rail & Transit",
+    "exams": 64,
+    "bodies": 30
+  },
+  {
+    "batch": "42",
+    "categories": "workplace-safety",
+    "groups": "OSHA Outreach & Trainer | Safety Professional Certifications | Hazardous Materials & Emergency Response",
+    "exams": 99,
+    "bodies": 35
+  }
+]

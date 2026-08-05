@@ -1,0 +1,521 @@
+{
+ "chunkId": "b33-p01",
+ "batch": 33,
+ "part": 1,
+ "categories": [
+  "technology"
+ ],
+ "groups": [
+  "Microsoft"
+ ],
+ "bodies": [
+  "Microsoft"
+ ],
+ "examCount": 36,
+ "exams": [
+  {
+   "slug": "microsoft-az-800",
+   "name": "Administering Windows Server Hybrid Core Infrastructure",
+   "short": "AZ-800",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Exam",
+   "aka": [
+    "AZ-800"
+   ],
+   "blurb": "Windows Server hybrid exam on identity, compute, network infrastructure and storage; Microsoft is replacing AZ-800 and AZ-801 with the single AZ-802."
+  },
+  {
+   "slug": "microsoft-az-801",
+   "name": "Configuring Windows Server Hybrid Advanced Services",
+   "short": "AZ-801",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Exam",
+   "aka": [
+    "AZ-801"
+   ],
+   "blurb": "Second Windows Server hybrid exam covering security, high availability, disaster recovery, migration and monitoring; being replaced by AZ-802."
+  },
+  {
+   "slug": "microsoft-ms-102",
+   "name": "Microsoft 365 Certified: Administrator Expert",
+   "short": "MS-102",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MS-102"
+   ],
+   "blurb": "Expert exam on Microsoft 365 tenant administration covering Entra identity, Defender security, Purview compliance and Copilot governance."
+  },
+  {
+   "slug": "microsoft-ab-650",
+   "name": "Microsoft 365 Certified: AI Services Administrator Associate",
+   "short": "AB-650",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AB-650"
+   ],
+   "blurb": "Associate certification announced for 2026 covering administration of Microsoft 365 AI services, agent governance and tenant-level AI controls."
+  },
+  {
+   "slug": "microsoft-ms-721",
+   "name": "Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate",
+   "short": "MS-721",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MS-721"
+   ],
+   "blurb": "Associate exam on Teams voice and meeting room engineering, covering Direct Routing, Operator Connect, calling plans and device management."
+  },
+  {
+   "slug": "microsoft-md-102",
+   "name": "Microsoft 365 Certified: Endpoint Administrator Associate",
+   "short": "MD-102",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MD-102"
+   ],
+   "blurb": "Associate exam on deploying and securing Windows endpoints with Intune and Autopilot, covering compliance policies, apps and device lifecycle."
+  },
+  {
+   "slug": "microsoft-ms-900",
+   "name": "Microsoft 365 Certified: Fundamentals",
+   "short": "MS-900",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Exam",
+   "aka": [
+    "MS-900"
+   ],
+   "blurb": "Fundamentals exam on Microsoft 365 cloud services, productivity, security and licensing; Microsoft retired it on 31 March 2026 with no direct successor."
+  },
+  {
+   "slug": "microsoft-ms-700",
+   "name": "Microsoft 365 Certified: Teams Administrator Associate",
+   "short": "MS-700",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MS-700"
+   ],
+   "blurb": "Associate exam on configuring and managing Microsoft Teams including governance, meetings, apps, policies and collaboration workloads."
+  },
+  {
+   "slug": "microsoft-ab-900",
+   "name": "Microsoft 365 Copilot and Agent Administration Fundamentals",
+   "short": "AB-900",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AB-900"
+   ],
+   "blurb": "Fundamentals certification introduced in 2026 covering Microsoft 365 Copilot licensing, deployment, agent management and governance."
+  },
+  {
+   "slug": "microsoft-ab-620",
+   "name": "Microsoft Certified: AI Agent Builder Associate",
+   "short": "AB-620",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AB-620"
+   ],
+   "blurb": "Associate certification on building production Microsoft Copilot Studio agents and multi-agent solutions with workflow automation and integration."
+  },
+  {
+   "slug": "microsoft-az-104",
+   "name": "Microsoft Certified: Azure Administrator Associate",
+   "short": "AZ-104",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AZ-104"
+   ],
+   "blurb": "Associate exam on managing Azure identities, governance, storage, compute, virtual networking and monitoring of Azure resources."
+  },
+  {
+   "slug": "microsoft-ai-103",
+   "name": "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
+   "short": "AI-103",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AI-103"
+   ],
+   "blurb": "Associate exam introduced in 2026 on building generative AI applications and production agents with Microsoft Foundry and Azure AI services."
+  },
+  {
+   "slug": "microsoft-ai-200",
+   "name": "Microsoft Certified: Azure AI Cloud Developer Associate",
+   "short": "AI-200",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AI-200"
+   ],
+   "blurb": "Associate certification introduced in 2026 for developers building and managing AI solutions on Azure using cloud-native application architectures."
+  },
+  {
+   "slug": "microsoft-ai-102",
+   "name": "Microsoft Certified: Azure AI Engineer Associate",
+   "short": "AI-102",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Exam",
+   "aka": [
+    "AI-102"
+   ],
+   "blurb": "Associate exam on building Azure AI solutions with vision, language, search and OpenAI services; retired by Microsoft in June 2026 in favour of AI-103."
+  },
+  {
+   "slug": "microsoft-ai-901",
+   "name": "Microsoft Certified: Azure AI Fundamentals",
+   "short": "AI-901",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AI-901"
+   ],
+   "blurb": "Updated fundamentals exam that replaced AI-900 in 2026, covering generative AI concepts and building basic AI applications and agents on Azure."
+  },
+  {
+   "slug": "microsoft-ai-900",
+   "name": "Microsoft Certified: Azure AI Fundamentals (AI-900)",
+   "short": "AI-900",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Exam",
+   "aka": [
+    "AI-900"
+   ],
+   "blurb": "Fundamentals exam on AI workloads, machine learning, computer vision and language services; Microsoft retired AI-900 in June 2026 in favour of AI-901."
+  },
+  {
+   "slug": "microsoft-dp-203",
+   "name": "Microsoft Certified: Azure Data Engineer Associate",
+   "short": "DP-203",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Exam",
+   "aka": [
+    "DP-203"
+   ],
+   "blurb": "Retired in March 2025, this associate exam covered Azure data storage, batch and stream processing with Synapse and Databricks, and pipeline security."
+  },
+  {
+   "slug": "microsoft-dp-900",
+   "name": "Microsoft Certified: Azure Data Fundamentals",
+   "short": "DP-900",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "DP-900"
+   ],
+   "blurb": "Fundamentals exam covering relational and non-relational data concepts, analytics workloads and core Azure data services and roles."
+  },
+  {
+   "slug": "microsoft-dp-100",
+   "name": "Microsoft Certified: Azure Data Scientist Associate",
+   "short": "DP-100",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Exam",
+   "aka": [
+    "DP-100"
+   ],
+   "blurb": "Associate exam on running machine learning workloads in Azure Machine Learning; retired in June 2026 and succeeded by the MLOps Engineer credential."
+  },
+  {
+   "slug": "microsoft-dp-300",
+   "name": "Microsoft Certified: Azure Database Administrator Associate",
+   "short": "DP-300",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "DP-300"
+   ],
+   "blurb": "Associate exam on administering SQL Server and Azure SQL, covering provisioning, security, performance tuning, high availability and automation."
+  },
+  {
+   "slug": "microsoft-dp-750",
+   "name": "Microsoft Certified: Azure Databricks Data Engineer Associate",
+   "short": "DP-750",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "DP-750"
+   ],
+   "blurb": "Certification introduced in 2026 covering scalable and secure data pipelines on Azure Databricks for real-time analytics and AI-ready data."
+  },
+  {
+   "slug": "microsoft-az-204",
+   "name": "Microsoft Certified: Azure Developer Associate",
+   "short": "AZ-204",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AZ-204"
+   ],
+   "blurb": "Associate exam for developers building Azure solutions with App Service, Functions, containers, storage, Cosmos DB, messaging and security."
+  },
+  {
+   "slug": "microsoft-az-900",
+   "name": "Microsoft Certified: Azure Fundamentals",
+   "short": "AZ-900",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AZ-900"
+   ],
+   "blurb": "Entry-level Microsoft exam covering cloud concepts, core Azure services, security, governance, pricing and support; the certification does not expire."
+  },
+  {
+   "slug": "microsoft-az-700",
+   "name": "Microsoft Certified: Azure Network Engineer Associate",
+   "short": "AZ-700",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AZ-700"
+   ],
+   "blurb": "Associate exam on designing and implementing Azure networking including virtual networks, hybrid connectivity, routing, load balancing and security."
+  },
+  {
+   "slug": "microsoft-az-500",
+   "name": "Microsoft Certified: Azure Security Engineer Associate",
+   "short": "AZ-500",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AZ-500"
+   ],
+   "blurb": "Associate exam on securing Azure workloads through identity and access, platform protection, security operations and data and application security."
+  },
+  {
+   "slug": "microsoft-az-305",
+   "name": "Microsoft Certified: Azure Solutions Architect Expert",
+   "short": "AZ-305",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AZ-305"
+   ],
+   "blurb": "Expert exam on designing Azure identity, governance, data storage, business continuity and infrastructure solutions; requires AZ-104 as a prerequisite."
+  },
+  {
+   "slug": "microsoft-az-140",
+   "name": "Microsoft Certified: Azure Virtual Desktop Specialty",
+   "short": "AZ-140",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AZ-140"
+   ],
+   "blurb": "Specialty exam on planning, deploying and managing Azure Virtual Desktop host pools, images, FSLogix profiles, access control and monitoring."
+  },
+  {
+   "slug": "microsoft-sc-500",
+   "name": "Microsoft Certified: Cloud and AI Security Engineer Associate",
+   "short": "SC-500",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "SC-500"
+   ],
+   "blurb": "Certification introduced in 2026 covering end-to-end security controls for cloud and AI workloads across Azure and Microsoft security services."
+  },
+  {
+   "slug": "microsoft-sc-100",
+   "name": "Microsoft Certified: Cybersecurity Architect Expert",
+   "short": "SC-100",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "SC-100"
+   ],
+   "blurb": "Expert exam on designing zero trust security strategy, governance and risk architecture across Microsoft cloud and hybrid estates."
+  },
+  {
+   "slug": "microsoft-az-400",
+   "name": "Microsoft Certified: DevOps Engineer Expert",
+   "short": "AZ-400",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AZ-400"
+   ],
+   "blurb": "Expert exam on DevOps practice with Azure DevOps and GitHub, covering source control, pipelines, infrastructure as code, security and monitoring."
+  },
+  {
+   "slug": "microsoft-mb-820",
+   "name": "Microsoft Certified: Dynamics 365 Business Central Developer Associate",
+   "short": "MB-820",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MB-820"
+   ],
+   "blurb": "Associate developer exam on building Business Central extensions with AL, covering data models, events, testing, integration and app publishing."
+  },
+  {
+   "slug": "microsoft-mb-800",
+   "name": "Microsoft Certified: Dynamics 365 Business Central Functional Consultant Associate",
+   "short": "MB-800",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MB-800"
+   ],
+   "blurb": "Associate exam on setting up and configuring Dynamics 365 Business Central including finance, sales, purchasing, inventory and reporting."
+  },
+  {
+   "slug": "microsoft-ab-250",
+   "name": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate",
+   "short": "AB-250",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AB-250"
+   ],
+   "blurb": "Associate certification on designing and running contact centre as a service solutions with Dynamics 365 Contact Center and autonomous agents."
+  },
+  {
+   "slug": "microsoft-mb-280",
+   "name": "Microsoft Certified: Dynamics 365 Customer Experience Analyst Associate",
+   "short": "MB-280",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MB-280"
+   ],
+   "blurb": "Associate exam covering Dynamics 365 customer experience apps, configuring sales and marketing capabilities and analysing customer data with Copilot."
+  },
+  {
+   "slug": "microsoft-mb-260",
+   "name": "Microsoft Certified: Dynamics 365 Customer Insights - Data Specialty",
+   "short": "MB-260",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MB-260"
+   ],
+   "blurb": "Specialty exam on customer data platform work in Dynamics 365 Customer Insights covering ingestion, unification, enrichment and segmentation."
+  },
+  {
+   "slug": "microsoft-mb-220",
+   "name": "Microsoft Certified: Dynamics 365 Customer Insights - Journeys Functional Consultant Associate",
+   "short": "MB-220",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MB-220"
+   ],
+   "blurb": "Associate exam on marketing automation in Dynamics 365 covering segments, customer journeys, email marketing, events and lead management."
+  }
+ ]
+}

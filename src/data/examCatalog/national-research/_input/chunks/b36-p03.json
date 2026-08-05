@@ -1,0 +1,425 @@
+{
+ "chunkId": "b36-p03",
+ "batch": 36,
+ "part": 3,
+ "categories": [
+  "technology"
+ ],
+ "groups": [
+  "Linux, Unix & Open Source",
+  "Google Cloud & Google",
+  "Cloud Native & DevOps"
+ ],
+ "bodies": [
+  "Linux Professional Institute",
+  "Red Hat",
+  "Google",
+  "CloudBees",
+  "Docker",
+  "Perforce Software",
+  "BSD Certification Group",
+  "Oracle"
+ ],
+ "examCount": 29,
+ "exams": [
+  {
+   "slug": "lpi-bsd-specialist",
+   "name": "LPI BSD Specialist",
+   "short": "BSD Specialist",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Linux Professional Institute",
+   "bodyUrl": "https://www.lpi.org/",
+   "type": "Certification",
+   "aka": [
+    "702-100"
+   ],
+   "blurb": "LPI certification covering FreeBSD, NetBSD and OpenBSD administration including installation, packages, storage, networking and system services."
+  },
+  {
+   "slug": "lpi-devops-tools-engineer",
+   "name": "LPI DevOps Tools Engineer",
+   "short": "LPI DevOps",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Linux Professional Institute",
+   "bodyUrl": "https://www.lpi.org/",
+   "type": "Certification",
+   "aka": [
+    "701-100"
+   ],
+   "blurb": "Vendor-neutral LPI certification covering container and configuration management tools, CI/CD, infrastructure as code and service operations."
+  },
+  {
+   "slug": "lpi-linux-essentials",
+   "name": "LPI Linux Essentials",
+   "short": "Linux Essentials",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Linux Professional Institute",
+   "bodyUrl": "https://www.lpi.org/",
+   "type": "Certification",
+   "aka": [
+    "010-160"
+   ],
+   "blurb": "Entry-level LPI certificate covering Linux history and licensing, the command line, files and directories, scripting basics and security concepts."
+  },
+  {
+   "slug": "lpi-open-source-essentials",
+   "name": "LPI Open Source Essentials",
+   "short": "Open Source Essentials",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Linux Professional Institute",
+   "bodyUrl": "https://www.lpi.org/",
+   "type": "Certification",
+   "aka": [
+    "050-100"
+   ],
+   "blurb": "LPI certificate covering open source licensing, governance, community collaboration, compliance and building an open source strategy."
+  },
+  {
+   "slug": "lpi-security-essentials",
+   "name": "LPI Security Essentials",
+   "short": "Security Essentials",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Linux Professional Institute",
+   "bodyUrl": "https://www.lpi.org/",
+   "type": "Certification",
+   "aka": [
+    "020-100"
+   ],
+   "blurb": "Entry-level LPI certificate covering security concepts, device and network security, encryption, privacy and safe use of everyday computing services."
+  },
+  {
+   "slug": "lpi-web-development-essentials",
+   "name": "LPI Web Development Essentials",
+   "short": "Web Development Essentials",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Linux Professional Institute",
+   "bodyUrl": "https://www.lpi.org/",
+   "type": "Certification",
+   "aka": [
+    "030-100"
+   ],
+   "blurb": "Entry-level LPI certificate covering HTML, CSS, JavaScript, NodeJS and SQL fundamentals for people starting in web software development."
+  },
+  {
+   "slug": "lpic-1-system-administrator",
+   "name": "LPIC-1: Linux Administrator",
+   "short": "LPIC-1",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Linux Professional Institute",
+   "bodyUrl": "https://www.lpi.org/",
+   "type": "Certification",
+   "aka": [
+    "101-500",
+    "102-500"
+   ],
+   "blurb": "Two-exam LPI certification covering Linux installation, package management, shell scripting, file systems, networking and basic system security."
+  },
+  {
+   "slug": "lpic-2-linux-engineer",
+   "name": "LPIC-2: Linux Engineer",
+   "short": "LPIC-2",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Linux Professional Institute",
+   "bodyUrl": "https://www.lpi.org/",
+   "type": "Certification",
+   "aka": [
+    "201-450",
+    "202-450"
+   ],
+   "blurb": "Two-exam LPI certification on advanced administration including kernel tuning, storage, network services, email, web servers and system maintenance."
+  },
+  {
+   "slug": "lpic-3-high-availability-and-storage-clusters",
+   "name": "LPIC-3: High Availability and Storage Clusters",
+   "short": "LPIC-3 306",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Linux Professional Institute",
+   "bodyUrl": "https://www.lpi.org/",
+   "type": "Certification",
+   "aka": [
+    "306-300"
+   ],
+   "blurb": "Senior LPI specialisation covering cluster management, load balancing, distributed storage and high-availability Linux service configuration."
+  },
+  {
+   "slug": "lpic-3-mixed-environments",
+   "name": "LPIC-3: Mixed Environments",
+   "short": "LPIC-3 300",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Linux Professional Institute",
+   "bodyUrl": "https://www.lpi.org/",
+   "type": "Certification",
+   "aka": [
+    "300-300"
+   ],
+   "blurb": "Senior LPI specialisation covering Samba, OpenLDAP and integrating Linux servers into Windows and mixed enterprise directory environments."
+  },
+  {
+   "slug": "lpic-3-security",
+   "name": "LPIC-3: Security",
+   "short": "LPIC-3 303",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Linux Professional Institute",
+   "bodyUrl": "https://www.lpi.org/",
+   "type": "Certification",
+   "aka": [
+    "303-300"
+   ],
+   "blurb": "Senior LPI specialisation covering cryptography, access control, application security, network security and intrusion detection on Linux systems."
+  },
+  {
+   "slug": "red-hat-certified-architect",
+   "name": "Red Hat Certified Architect",
+   "short": "RHCA",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Red Hat",
+   "bodyUrl": "https://www.redhat.com/en/services/certifications",
+   "type": "Certification",
+   "aka": [
+    "RHCA"
+   ],
+   "blurb": "Top Red Hat credential earned by passing five additional specialist exams after RHCE, across infrastructure, cloud, containers or automation tracks."
+  },
+  {
+   "slug": "red-hat-certified-engineer",
+   "name": "Red Hat Certified Engineer",
+   "short": "RHCE",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Red Hat",
+   "bodyUrl": "https://www.redhat.com/en/services/certifications",
+   "type": "Certification",
+   "aka": [
+    "EX294"
+   ],
+   "blurb": "Performance-based Red Hat exam focused on automating RHEL administration with Ansible playbooks, roles and system roles; requires a current RHCSA."
+  },
+  {
+   "slug": "red-hat-certified-specialist-in-advanced-automation",
+   "name": "Red Hat Certified Specialist in Advanced Automation",
+   "short": "EX374",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Red Hat",
+   "bodyUrl": "https://www.redhat.com/en/services/certifications",
+   "type": "Certification",
+   "aka": [
+    "EX374"
+   ],
+   "blurb": "Red Hat exam on advanced Ansible Automation Platform skills including complex playbooks, custom filters, collections and automation controller workflows."
+  },
+  {
+   "slug": "red-hat-certified-specialist-in-containers",
+   "name": "Red Hat Certified Specialist in Containers",
+   "short": "EX188",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Red Hat",
+   "bodyUrl": "https://www.redhat.com/en/services/certifications",
+   "type": "Certification",
+   "aka": [
+    "EX188"
+   ],
+   "blurb": "Hands-on Red Hat exam on building, running and managing containers with Podman, including images, registries, volumes and multi-container applications."
+  },
+  {
+   "slug": "red-hat-certified-specialist-in-openshift-administration",
+   "name": "Red Hat Certified Specialist in OpenShift Administration",
+   "short": "EX280",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Red Hat",
+   "bodyUrl": "https://www.redhat.com/en/services/certifications",
+   "type": "Certification",
+   "aka": [
+    "EX280"
+   ],
+   "blurb": "Hands-on Red Hat exam on installing, configuring and managing OpenShift clusters including authentication, networking, storage and application workloads."
+  },
+  {
+   "slug": "red-hat-certified-specialist-in-openshift-application-development",
+   "name": "Red Hat Certified Specialist in OpenShift Application Development",
+   "short": "EX288",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Red Hat",
+   "bodyUrl": "https://www.redhat.com/en/services/certifications",
+   "type": "Certification",
+   "aka": [
+    "EX288"
+   ],
+   "blurb": "Performance-based Red Hat exam on deploying and managing containerised applications on OpenShift, including builds, pipelines and configuration."
+  },
+  {
+   "slug": "red-hat-certified-specialist-in-security-linux",
+   "name": "Red Hat Certified Specialist in Security: Linux",
+   "short": "EX415",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Red Hat",
+   "bodyUrl": "https://www.redhat.com/en/services/certifications",
+   "type": "Certification",
+   "aka": [
+    "EX415"
+   ],
+   "blurb": "Red Hat exam on hardening RHEL systems using SELinux, auditing, OpenSCAP compliance scanning, encryption and centralised identity management."
+  },
+  {
+   "slug": "red-hat-certified-system-administrator",
+   "name": "Red Hat Certified System Administrator",
+   "short": "RHCSA",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Red Hat",
+   "bodyUrl": "https://www.redhat.com/en/services/certifications",
+   "type": "Certification",
+   "aka": [
+    "EX200"
+   ],
+   "blurb": "Hands-on Red Hat exam on core Linux administration including users, storage, networking, SELinux, containers and system troubleshooting on RHEL."
+  },
+  {
+   "slug": "google-advanced-data-analytics-certificate",
+   "name": "Google Advanced Data Analytics Professional Certificate",
+   "short": "Google Advanced Data Analytics",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google",
+   "type": "Training",
+   "aka": [
+    "Google Advanced Data Analytics"
+   ],
+   "blurb": "Follow-on Google programme covering Python, statistics, regression modelling and machine learning for candidates moving beyond entry-level analytics."
+  },
+  {
+   "slug": "google-cybersecurity-professional-certificate",
+   "name": "Google Cybersecurity Professional Certificate",
+   "short": "Google Cybersecurity",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google",
+   "type": "Training",
+   "aka": [
+    "Google Cybersecurity Certificate"
+   ],
+   "blurb": "Entry-level online programme covering security frameworks, network security, Linux, SQL, Python and incident detection for aspiring SOC analysts."
+  },
+  {
+   "slug": "google-data-analytics-professional-certificate",
+   "name": "Google Data Analytics Professional Certificate",
+   "short": "Google Data Analytics",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google",
+   "type": "Training",
+   "aka": [
+    "Google Data Analytics Certificate"
+   ],
+   "blurb": "Entry-level online programme covering the data analysis process with spreadsheets, SQL, R and Tableau, ending in a portfolio case study."
+  },
+  {
+   "slug": "google-it-support-professional-certificate",
+   "name": "Google IT Support Professional Certificate",
+   "short": "Google IT Support",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google",
+   "type": "Training",
+   "aka": [
+    "Google IT Support Certificate"
+   ],
+   "blurb": "Entry-level online programme covering troubleshooting, networking, operating systems, system administration and security for help desk roles."
+  },
+  {
+   "slug": "google-ux-design-professional-certificate",
+   "name": "Google UX Design Professional Certificate",
+   "short": "Google UX Design",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google",
+   "type": "Training",
+   "aka": [
+    "Google UX Certificate"
+   ],
+   "blurb": "Entry-level online programme covering user research, wireframing, prototyping in Figma and building a user experience design portfolio."
+  },
+  {
+   "slug": "cloudbees-certified-jenkins-engineer",
+   "name": "CloudBees Certified Jenkins Engineer",
+   "short": "CJE",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "CloudBees",
+   "type": "Certification",
+   "aka": [
+    "CJE"
+   ],
+   "blurb": "Vendor certification on Jenkins administration and pipeline development, covering jobs, agents, plugins, security and continuous integration practice."
+  },
+  {
+   "slug": "docker-certified-associate",
+   "name": "Docker Certified Associate",
+   "short": "DCA",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Docker",
+   "type": "Certification",
+   "aka": [
+    "DCA"
+   ],
+   "blurb": "Container fundamentals credential covering image management, orchestration, storage, networking and security; the programme is no longer actively sold."
+  },
+  {
+   "slug": "puppet-certified-professional",
+   "name": "Puppet Certified Professional",
+   "short": "PCP",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "Perforce Software",
+   "type": "Certification",
+   "aka": [
+    "PCP"
+   ],
+   "blurb": "Configuration-management certification covering Puppet manifests, modules, Hiera data, node classification and Puppet Enterprise administration."
+  },
+  {
+   "slug": "bsd-associate",
+   "name": "BSD Associate",
+   "short": "BSDA",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "BSD Certification Group",
+   "type": "Certification",
+   "aka": [
+    "BSDA"
+   ],
+   "blurb": "Long-standing entry-level BSD certification covering installation, user management, networking and maintenance across the major BSD operating systems."
+  },
+  {
+   "slug": "oracle-linux-system-administrator",
+   "name": "Oracle Linux System Administrator Certified Professional",
+   "short": "Oracle Linux Administrator",
+   "category": "technology",
+   "group": "Linux, Unix & Open Source",
+   "body": "Oracle",
+   "bodyUrl": "https://education.oracle.com/",
+   "type": "Certification",
+   "aka": [
+    "1Z0-100"
+   ],
+   "blurb": "Oracle certification covering Oracle Linux installation, package management with DNF, storage, systemd services, networking and kernel management."
+  }
+ ]
+}

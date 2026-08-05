@@ -1,0 +1,288 @@
+{
+ "chunkId": "b30-p03",
+ "batch": 30,
+ "part": 3,
+ "categories": [
+  "public-safety"
+ ],
+ "groups": [
+  "Law Enforcement Entrance",
+  "Emergency Management & Dispatch",
+  "Corrections & Security-adjacent Public Safety",
+  "Military Occupational & Federal Safety"
+ ],
+ "bodies": [
+  "Stanard & Associates",
+  "Pearson Assessments",
+  "New York City Police Department",
+  "California Commission on POST",
+  "County sheriff offices",
+  "State police agencies",
+  "Texas Commission on Law Enforcement",
+  "Association of Public-Safety Communications Officials",
+  "CritiCall Testing",
+  "National Emergency Number Association",
+  "American Jail Association",
+  "State and county corrections agencies",
+  "State juvenile justice agencies",
+  "State corrections departments",
+  "Department of Defense Anti-Terrorism",
+  "U.S. Navy and Marine Corps",
+  "Board of Certified Safety Professionals",
+  "U.S. Department of Defense",
+  "Department of Defense OPSEC Program"
+ ],
+ "examCount": 19,
+ "exams": [
+  {
+   "slug": "post-entry-level",
+   "name": "National Police Officer Selection Test",
+   "short": "POST",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "Stanard & Associates",
+   "type": "Exam",
+   "aka": [
+    "POST",
+    "Police Officer Selection Test"
+   ],
+   "blurb": "A widely used written police entrance exam from Stanard & Associates assessing math, reading, writing and situational judgment."
+  },
+  {
+   "slug": "nelson-denny",
+   "name": "Nelson-Denny Reading Test",
+   "short": "N-D",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "Pearson Assessments",
+   "type": "Exam",
+   "aka": [
+    "Nelson-Denny"
+   ],
+   "blurb": "A standardized reading comprehension and vocabulary test frequently used during public safety hiring and promotion processes."
+  },
+  {
+   "slug": "nypd-police-officer-exam",
+   "name": "NYPD Police Officer Exam",
+   "short": "NYPD Exam",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "New York City Police Department",
+   "type": "Exam",
+   "aka": [
+    "NYPD Exam"
+   ],
+   "blurb": "The open-competitive written exam for appointment as a New York City police officer covering reading, reasoning and situational judgment."
+  },
+  {
+   "slug": "pelletb",
+   "name": "POST Entry-Level Law Enforcement Test Battery",
+   "short": "PELLETB",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "California Commission on POST",
+   "type": "Exam",
+   "aka": [
+    "PELLETB"
+   ],
+   "blurb": "California’s standardized written peace-officer exam measuring reading comprehension, writing and reasoning for law enforcement eligibility."
+  },
+  {
+   "slug": "sheriff-deputy-exam",
+   "name": "Sheriff’s Deputy Entrance Exam",
+   "short": "Deputy Exam",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "County sheriff offices",
+   "type": "Exam",
+   "aka": [
+    "Deputy Sheriff Exam"
+   ],
+   "blurb": "A county-level written and physical exam for deputy sheriff candidates assessing judgment, reading and law enforcement aptitude."
+  },
+  {
+   "slug": "state-trooper-entrance-exam",
+   "name": "State Trooper Entrance Exam",
+   "short": "Trooper Exam",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "State police agencies",
+   "type": "Exam",
+   "aka": [
+    "State Police Exam"
+   ],
+   "blurb": "The written entrance exam used by state police and highway patrol agencies covering reading, reasoning and situational awareness."
+  },
+  {
+   "slug": "texas-tcole",
+   "name": "Texas Commission on Law Enforcement Exam",
+   "short": "TCOLE",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "Texas Commission on Law Enforcement",
+   "type": "Exam",
+   "aka": [
+    "TCOLE"
+   ],
+   "blurb": "Texas’s licensing exam for peace officers completing the basic academy and covering state law, traffic and use-of-force knowledge."
+  },
+  {
+   "slug": "apco-pst1",
+   "name": "APCO Public Safety Telecommunicator 1",
+   "short": "PST1",
+   "category": "public-safety",
+   "group": "Emergency Management & Dispatch",
+   "body": "Association of Public-Safety Communications Officials",
+   "bodyUrl": "https://www.apcointl.org/",
+   "type": "Certification",
+   "aka": [
+    "PST1"
+   ],
+   "blurb": "The APCO standard for training and certifying entry-level 911 telecommunicators in call handling, protocols and stress management."
+  },
+  {
+   "slug": "critica-call",
+   "name": "CritiCall Dispatcher Test",
+   "short": "CritiCall",
+   "category": "public-safety",
+   "group": "Emergency Management & Dispatch",
+   "body": "CritiCall Testing",
+   "type": "Exam",
+   "aka": [
+    "CritiCall"
+   ],
+   "blurb": "A computer-based 911 dispatcher exam measuring multitasking, data entry, memory, map reading and call-summary writing skills."
+  },
+  {
+   "slug": "nena-enp",
+   "name": "Emergency Number Professional",
+   "short": "ENP",
+   "category": "public-safety",
+   "group": "Emergency Management & Dispatch",
+   "body": "National Emergency Number Association",
+   "bodyUrl": "https://www.nena.org/",
+   "type": "Certification",
+   "aka": [
+    "ENP"
+   ],
+   "blurb": "A certification for 911 center managers covering telecommunications technology, policy and the operation of public safety answering points."
+  },
+  {
+   "slug": "certified-jail-officer",
+   "name": "Certified Jail Officer",
+   "short": "CJO",
+   "category": "public-safety",
+   "group": "Corrections & Security-adjacent Public Safety",
+   "body": "American Jail Association",
+   "type": "Certification",
+   "aka": [
+    "CJO"
+   ],
+   "blurb": "A credential for jail officers covering detention standards, inmate management and facility safety best practices."
+  },
+  {
+   "slug": "corrections-officer-entrance-exam",
+   "name": "Corrections Officer Entrance Exam",
+   "short": "CO Exam",
+   "category": "public-safety",
+   "group": "Corrections & Security-adjacent Public Safety",
+   "body": "State and county corrections agencies",
+   "type": "Exam",
+   "aka": [
+    "Correctional Officer Exam"
+   ],
+   "blurb": "A written and physical exam for correctional officer candidates assessing judgment, reading, situational awareness and fitness."
+  },
+  {
+   "slug": "juvenile-detention-officer-exam",
+   "name": "Juvenile Detention Officer Exam",
+   "short": "JDO Exam",
+   "category": "public-safety",
+   "group": "Corrections & Security-adjacent Public Safety",
+   "body": "State juvenile justice agencies",
+   "type": "Exam",
+   "aka": [
+    "JDO Exam"
+   ],
+   "blurb": "A written and fitness exam for staff supervising youth in juvenile detention covering behavior management and safety."
+  },
+  {
+   "slug": "probation-parole-officer-exam",
+   "name": "Probation and Parole Officer Exam",
+   "short": "PO Exam",
+   "category": "public-safety",
+   "group": "Corrections & Security-adjacent Public Safety",
+   "body": "State corrections departments",
+   "type": "Exam",
+   "aka": [
+    "PO Exam"
+   ],
+   "blurb": "A written exam for community supervision officers assessing judgment, writing, casework reasoning and legal knowledge."
+  },
+  {
+   "slug": "antiterrorism-officer",
+   "name": "Antiterrorism Officer Certification",
+   "short": "AT Officer",
+   "category": "public-safety",
+   "group": "Military Occupational & Federal Safety",
+   "body": "Department of Defense Anti-Terrorism",
+   "type": "Certification",
+   "aka": [
+    "AT Level"
+   ],
+   "blurb": "The DoD antiterrorism training and certification for officers who plan and coordinate force protection measures against terrorist threats."
+  },
+  {
+   "slug": "astb",
+   "name": "Aviation Selection Test Battery",
+   "short": "ASTB",
+   "category": "public-safety",
+   "group": "Military Occupational & Federal Safety",
+   "body": "U.S. Navy and Marine Corps",
+   "type": "Exam",
+   "aka": [
+    "ASTB"
+   ],
+   "blurb": "A selection battery for Navy and Marine aviation candidates measuring math, aviation and nautical aptitude for flight training."
+  },
+  {
+   "slug": "construction-health-safety-technician",
+   "name": "Construction Health and Safety Technician",
+   "short": "CHST",
+   "category": "public-safety",
+   "group": "Military Occupational & Federal Safety",
+   "body": "Board of Certified Safety Professionals",
+   "type": "Certification",
+   "aka": [
+    "CHST"
+   ],
+   "blurb": "A BCSP credential for technicians who support safety and health programs on construction projects and job sites."
+  },
+  {
+   "slug": "dod-skillbridge",
+   "name": "DoD SkillBridge Program",
+   "short": "SkillBridge",
+   "category": "public-safety",
+   "group": "Military Occupational & Federal Safety",
+   "body": "U.S. Department of Defense",
+   "type": "Training",
+   "aka": [
+    "SkillBridge"
+   ],
+   "blurb": "A DoD transition program letting service members train and earn civilian credentials with employers before leaving the military."
+  },
+  {
+   "slug": "opsec-professional",
+   "name": "OPSEC Professional Certification",
+   "short": "OPSEC",
+   "category": "public-safety",
+   "group": "Military Occupational & Federal Safety",
+   "body": "Department of Defense OPSEC Program",
+   "type": "Certification",
+   "aka": [
+    "OPSEC"
+   ],
+   "blurb": "A DoD certification for practitioners who identify critical information and apply operations security countermeasures to protect it."
+  }
+ ]
+}

@@ -1,0 +1,520 @@
+{
+ "chunkId": "b42-p02",
+ "batch": 42,
+ "part": 2,
+ "categories": [
+  "workplace-safety"
+ ],
+ "groups": [
+  "Safety Professional Certifications",
+  "OSHA Outreach & Trainer",
+  "Hazardous Materials & Emergency Response"
+ ],
+ "bodies": [
+  "Board of Certified Safety Professionals (BCSP)",
+  "Occupational Safety and Health Administration (OSHA)",
+  "Board of Certification in Professional Ergonomics (BCPE)",
+  "Employers under OSHA 29 CFR 1910.120",
+  "Institute for Safety and Health Management (ISHM)",
+  "Institute of Hazardous Materials Management (IHMM)",
+  "Alliance Safety Council",
+  "National Association of Safety Professionals (NASP)",
+  "Pipeline and Hazardous Materials Safety Administration (PHMSA)",
+  "Employers under OSHA 29 CFR 1910.120(q)"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "associate-safety-professional",
+   "name": "Associate Safety Professional",
+   "short": "ASP",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Board of Certified Safety Professionals (BCSP)",
+   "bodyUrl": "https://www.bcsp.org",
+   "type": "Certification",
+   "aka": [
+    "ASP"
+   ],
+   "blurb": "Five-hour examination on safety fundamentals that also satisfies the credential prerequisite for the Certified Safety Professional."
+  },
+  {
+   "slug": "certified-environmental-safety-and-health-trainer",
+   "name": "Certified Environmental, Safety and Health Trainer",
+   "short": "CET",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Board of Certified Safety Professionals (BCSP)",
+   "bodyUrl": "https://www.bcsp.org",
+   "type": "Certification",
+   "aka": [
+    "CET"
+   ],
+   "blurb": "BCSP certification for professionals who design and deliver environmental, safety and health training programmes to workers."
+  },
+  {
+   "slug": "certified-instructional-trainer",
+   "name": "Certified Instructional Trainer",
+   "short": "CIT",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Board of Certified Safety Professionals (BCSP)",
+   "bodyUrl": "https://www.bcsp.org",
+   "type": "Certification",
+   "aka": [
+    "CIT"
+   ],
+   "blurb": "BCSP credential for trainers demonstrating instructional design and delivery skills across safety and technical subject matter."
+  },
+  {
+   "slug": "certified-safety-professional",
+   "name": "Certified Safety Professional",
+   "short": "CSP",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Board of Certified Safety Professionals (BCSP)",
+   "bodyUrl": "https://www.bcsp.org",
+   "type": "Certification",
+   "aka": [
+    "CSP"
+   ],
+   "blurb": "Flagship BCSP certification requiring a degree, four years of professional safety experience and a five and a half hour examination."
+  },
+  {
+   "slug": "construction-health-and-safety-technician",
+   "name": "Construction Health and Safety Technician",
+   "short": "CHST",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Board of Certified Safety Professionals (BCSP)",
+   "bodyUrl": "https://www.bcsp.org",
+   "type": "Certification",
+   "aka": [
+    "CHST"
+   ],
+   "blurb": "BCSP certification for construction site safety specialists with three years of qualifying jobsite safety experience."
+  },
+  {
+   "slug": "graduate-safety-practitioner",
+   "name": "Graduate Safety Practitioner",
+   "short": "GSP",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Board of Certified Safety Professionals (BCSP)",
+   "bodyUrl": "https://www.bcsp.org",
+   "type": "Certification",
+   "aka": [
+    "GSP"
+   ],
+   "blurb": "Designation awarded to graduates of BCSP-qualified academic programmes, waiving the ASP requirement on the path to the CSP."
+  },
+  {
+   "slug": "occupational-hygiene-and-safety-technician",
+   "name": "Occupational Hygiene and Safety Technician",
+   "short": "OHST",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Board of Certified Safety Professionals (BCSP)",
+   "bodyUrl": "https://www.bcsp.org",
+   "type": "Certification",
+   "aka": [
+    "OHST"
+   ],
+   "blurb": "BCSP technician certification for staff performing industrial hygiene sampling and occupational safety duties in the field."
+  },
+  {
+   "slug": "safety-management-specialist",
+   "name": "Safety Management Specialist",
+   "short": "SMS",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Board of Certified Safety Professionals (BCSP)",
+   "bodyUrl": "https://www.bcsp.org",
+   "type": "Certification",
+   "aka": [
+    "SMS"
+   ],
+   "blurb": "BCSP certification for experienced managers whose duties include directing safety programmes, people and budgets."
+  },
+  {
+   "slug": "safety-trained-supervisor",
+   "name": "Safety Trained Supervisor",
+   "short": "STS",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Board of Certified Safety Professionals (BCSP)",
+   "bodyUrl": "https://www.bcsp.org",
+   "type": "Certification",
+   "aka": [
+    "STS"
+   ],
+   "blurb": "Two-hour BCSP examination for supervisors and crew leaders whose primary job is not safety but who influence workplace conditions."
+  },
+  {
+   "slug": "safety-trained-supervisor-construction",
+   "name": "Safety Trained Supervisor Construction",
+   "short": "STSC",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Board of Certified Safety Professionals (BCSP)",
+   "bodyUrl": "https://www.bcsp.org",
+   "type": "Certification",
+   "aka": [
+    "STSC"
+   ],
+   "blurb": "Construction-focused BCSP supervisory certification covering jobsite hazard control, toolbox talks and crew safety leadership."
+  },
+  {
+   "slug": "osha-10-general-industry",
+   "name": "OSHA 10-Hour General Industry Outreach Training",
+   "short": "OSHA 10 GI",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "Occupational Safety and Health Administration (OSHA)",
+   "bodyUrl": "https://www.osha.gov/training/outreach",
+   "type": "Training",
+   "aka": [
+    "OSHA 10 General Industry",
+    "1910 Outreach"
+   ],
+   "blurb": "Ten-hour Outreach Training Program course on 29 CFR 1910 hazards, worker rights and abatement, ending in a DOL completion card."
+  },
+  {
+   "slug": "osha-10-maritime",
+   "name": "OSHA 10-Hour Maritime Industry Outreach Training",
+   "short": "OSHA 10 Maritime",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "Occupational Safety and Health Administration (OSHA)",
+   "bodyUrl": "https://www.osha.gov/training/outreach",
+   "type": "Training",
+   "aka": [
+    "Shipyard Outreach",
+    "Marine Terminals Outreach"
+   ],
+   "blurb": "Ten-hour Outreach course for shipyard, marine terminal and longshoring workers covering hazards under 29 CFR Parts 1915, 1917 and 1918."
+  },
+  {
+   "slug": "osha-30-general-industry",
+   "name": "OSHA 30-Hour General Industry Outreach Training",
+   "short": "OSHA 30 GI",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "Occupational Safety and Health Administration (OSHA)",
+   "bodyUrl": "https://www.osha.gov/training/outreach",
+   "type": "Training",
+   "aka": [
+    "OSHA 30 General Industry"
+   ],
+   "blurb": "Thirty-hour Outreach course for supervisors and safety staff covering general industry standards, programme management and recordkeeping."
+  },
+  {
+   "slug": "osha-30-maritime",
+   "name": "OSHA 30-Hour Maritime Industry Outreach Training",
+   "short": "OSHA 30 Maritime",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "Occupational Safety and Health Administration (OSHA)",
+   "bodyUrl": "https://www.osha.gov/training/outreach",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Thirty-hour Outreach course for maritime supervisors covering shipyard employment, marine terminals and longshoring safety standards."
+  },
+  {
+   "slug": "associate-ergonomics-professional",
+   "name": "Associate Ergonomics Professional",
+   "short": "AEP",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Board of Certification in Professional Ergonomics (BCPE)",
+   "type": "Certification",
+   "aka": [
+    "AEP"
+   ],
+   "blurb": "Interim BCPE credential for ergonomics graduates who have passed the written examination but not yet completed practice requirements."
+  },
+  {
+   "slug": "certified-ergonomics-associate",
+   "name": "Certified Ergonomics Associate",
+   "short": "CEA",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Board of Certification in Professional Ergonomics (BCPE)",
+   "type": "Certification",
+   "aka": [
+    "CEA"
+   ],
+   "blurb": "Technician-level ergonomics certification for practitioners applying established ergonomic methods and workplace assessment tools."
+  },
+  {
+   "slug": "certified-human-factors-professional",
+   "name": "Certified Human Factors Professional",
+   "short": "CHFP",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Board of Certification in Professional Ergonomics (BCPE)",
+   "type": "Certification",
+   "aka": [
+    "CHFP"
+   ],
+   "blurb": "BCPE certification for practitioners applying human factors research to system, interface and equipment design."
+  },
+  {
+   "slug": "certified-professional-ergonomist",
+   "name": "Certified Professional Ergonomist",
+   "short": "CPE",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Board of Certification in Professional Ergonomics (BCPE)",
+   "type": "Certification",
+   "aka": [
+    "CPE"
+   ],
+   "blurb": "Senior BCPE certification for ergonomists with graduate education and documented practice in workplace and product design."
+  },
+  {
+   "slug": "hazwoper-24-hour",
+   "name": "HAZWOPER 24-Hour Training",
+   "short": "HAZWOPER 24",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1910.120",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Training for occasional site workers and visitors unlikely to be exposed above permissible limits on hazardous waste sites."
+  },
+  {
+   "slug": "hazwoper-40-hour",
+   "name": "HAZWOPER 40-Hour Training",
+   "short": "HAZWOPER 40",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1910.120",
+   "type": "Training",
+   "aka": [
+    "Hazardous Waste Operations and Emergency Response"
+   ],
+   "blurb": "Initial training required for general site workers on uncontrolled hazardous waste sites, plus three days of supervised field experience."
+  },
+  {
+   "slug": "hazwoper-8-hour-refresher",
+   "name": "HAZWOPER 8-Hour Annual Refresher",
+   "short": "HAZWOPER Refresher",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1910.120",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Annual refresher required to keep HAZWOPER 24-hour or 40-hour site worker training current for hazardous waste operations."
+  },
+  {
+   "slug": "hazwoper-8-hour-supervisor",
+   "name": "HAZWOPER 8-Hour Supervisor Training",
+   "short": "HAZWOPER Supervisor",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1910.120",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Supplemental training for on-site managers covering health and safety plans, monitoring programmes and spill containment oversight."
+  },
+  {
+   "slug": "associate-safety-and-health-manager",
+   "name": "Associate Safety and Health Manager",
+   "short": "ASHM",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Institute for Safety and Health Management (ISHM)",
+   "type": "Certification",
+   "aka": [
+    "ASHM"
+   ],
+   "blurb": "Entry-level ISHM credential for early-career practitioners moving toward full safety and health management certification."
+  },
+  {
+   "slug": "certified-safety-and-health-manager",
+   "name": "Certified Safety and Health Manager",
+   "short": "CSHM",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Institute for Safety and Health Management (ISHM)",
+   "type": "Certification",
+   "aka": [
+    "CSHM"
+   ],
+   "blurb": "Certification for safety managers covering programme leadership, risk assessment, regulatory compliance and business integration."
+  },
+  {
+   "slug": "certified-safety-management-practitioner",
+   "name": "Certified Safety Management Practitioner",
+   "short": "CSMP",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Institute for Safety and Health Management (ISHM)",
+   "type": "Certification",
+   "aka": [
+    "CSMP"
+   ],
+   "blurb": "ISHM credential for practitioners applying safety management systems at operational level without full manager responsibilities."
+  },
+  {
+   "slug": "certified-dangerous-goods-professional",
+   "name": "Certified Dangerous Goods Professional",
+   "short": "CDGP",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Institute of Hazardous Materials Management (IHMM)",
+   "type": "Certification",
+   "aka": [
+    "CDGP"
+   ],
+   "blurb": "Certification for professionals managing multimodal dangerous goods shipping compliance under DOT, IATA, IMDG and TDG rules."
+  },
+  {
+   "slug": "certified-hazardous-materials-manager",
+   "name": "Certified Hazardous Materials Manager",
+   "short": "CHMM",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Institute of Hazardous Materials Management (IHMM)",
+   "type": "Certification",
+   "aka": [
+    "CHMM"
+   ],
+   "blurb": "Senior certification covering hazardous waste regulation, risk assessment, emergency planning and environmental management systems."
+  },
+  {
+   "slug": "certified-hazardous-materials-practitioner",
+   "name": "Certified Hazardous Materials Practitioner",
+   "short": "CHMP",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Institute of Hazardous Materials Management (IHMM)",
+   "type": "Certification",
+   "aka": [
+    "CHMP"
+   ],
+   "blurb": "Practitioner-level hazardous materials certification for staff implementing waste handling, storage and compliance procedures."
+  },
+  {
+   "slug": "osha-10-construction",
+   "name": "OSHA 10-Hour Construction",
+   "short": "OSHA 10",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Ten-hour entry-level outreach course covering the Focus Four hazards, required on many construction sites and by several states."
+  },
+  {
+   "slug": "osha-30-construction",
+   "name": "OSHA 30-Hour Construction",
+   "short": "OSHA 30",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Supervisor-level outreach training covering hazard recognition, OSHA standards and site safety management responsibilities."
+  },
+  {
+   "slug": "certified-occupational-safety-manager",
+   "name": "Certified Occupational Safety Manager",
+   "short": "COSM",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Alliance Safety Council",
+   "type": "Certification",
+   "aka": [
+    "COSM"
+   ],
+   "blurb": "Management-level safety certification covering programme development, leadership, regulatory compliance and performance measurement."
+  },
+  {
+   "slug": "certified-occupational-safety-specialist",
+   "name": "Certified Occupational Safety Specialist",
+   "short": "COSS",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "Alliance Safety Council",
+   "type": "Certification",
+   "aka": [
+    "COSS"
+   ],
+   "blurb": "Multi-day course and examination on OSHA general industry and construction standards for site-level safety specialists."
+  },
+  {
+   "slug": "certified-safety-director-nasp",
+   "name": "Certified Safety Director",
+   "short": "CSD",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "National Association of Safety Professionals (NASP)",
+   "type": "Certification",
+   "aka": [
+    "CSD"
+   ],
+   "blurb": "Certification for directors accountable for corporate safety strategy, budgeting, auditing and regulatory relationships."
+  },
+  {
+   "slug": "certified-safety-manager-nasp",
+   "name": "Certified Safety Manager",
+   "short": "CSM",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "National Association of Safety Professionals (NASP)",
+   "type": "Certification",
+   "aka": [
+    "CSM"
+   ],
+   "blurb": "Certification covering OSHA compliance, hazard analysis and safety programme administration for workplace safety managers."
+  },
+  {
+   "slug": "dot-49-cfr-hazmat-regulations-training",
+   "name": "DOT 49 CFR Hazardous Materials Regulations Function-Specific Training",
+   "short": "49 CFR HMR",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Pipeline and Hazardous Materials Safety Administration (PHMSA)",
+   "type": "Training",
+   "aka": [
+    "HMR Training"
+   ],
+   "blurb": "Function-specific instruction on classification, packaging, marking, labelling, placarding and shipping papers under 49 CFR Parts 171-180."
+  },
+  {
+   "slug": "dot-hazmat-employee-training",
+   "name": "DOT Hazmat Employee Training",
+   "short": "Hazmat Employee",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Pipeline and Hazardous Materials Safety Administration (PHMSA)",
+   "type": "Training",
+   "aka": [
+    "49 CFR 172 Subpart H"
+   ],
+   "blurb": "Recurrent training required every three years for anyone who prepares, handles or transports hazardous materials in commerce."
+  },
+  {
+   "slug": "hazmat-first-responder-awareness",
+   "name": "Hazardous Materials First Responder Awareness Level Training",
+   "short": "FRA",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1910.120(q)",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Awareness-level training for personnel likely to discover a hazardous substance release and required to notify emergency responders."
+  },
+  {
+   "slug": "hazmat-first-responder-operations",
+   "name": "Hazardous Materials First Responder Operations Level Training",
+   "short": "FRO",
+   "category": "workplace-safety",
+   "group": "Hazardous Materials & Emergency Response",
+   "body": "Employers under OSHA 29 CFR 1910.120(q)",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Eight-hour operations-level training for responders taking defensive action to contain a hazardous substance release from a safe distance."
+  }
+ ]
+}

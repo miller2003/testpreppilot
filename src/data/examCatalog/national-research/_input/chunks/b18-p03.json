@@ -1,0 +1,304 @@
+{
+ "chunkId": "b18-p03",
+ "batch": 18,
+ "part": 3,
+ "categories": [
+  "finance-securities"
+ ],
+ "groups": [
+  "FINRA & Securities Licensing",
+  "Financial Planning & Advice",
+  "Banking & Lending"
+ ],
+ "bodies": [
+  "North American Securities Administrators Association (NASAA)",
+  "Investments and Wealth Institute",
+  "National Association of Mortgage Brokers (NAMB)",
+  "Association for Financial Counseling and Planning Education (AFCPE)",
+  "Fi360, a Broadridge company",
+  "Association of Certified Financial Crime Specialists (ACFCS)",
+  "Association for Financial Professionals (AFP)",
+  "Risk Management Association (RMA)",
+  "ECCHO, a Nacha company",
+  "Nationwide Multistate Licensing System (NMLS)",
+  "The Retirement Advisor University",
+  "Institute for Divorce Financial Analysts (IDFA)",
+  "National Association of Plan Advisors (NAPA)",
+  "International Foundation for Retirement Education (InFRE)",
+  "American Institute for Philanthropic Studies",
+  "Cannon Financial Institute",
+  "Certified Financial Planner Board of Standards"
+ ],
+ "examCount": 24,
+ "exams": [
+  {
+   "slug": "series-63",
+   "name": "Series 63 Uniform Securities Agent State Law Exam",
+   "short": "Series 63",
+   "category": "finance-securities",
+   "group": "FINRA & Securities Licensing",
+   "body": "North American Securities Administrators Association (NASAA)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "State law paper covering the Uniform Securities Act, registration of agents and issuers, and prohibited sales practices."
+  },
+  {
+   "slug": "series-65",
+   "name": "Series 65 Uniform Investment Adviser Law Exam",
+   "short": "Series 65",
+   "category": "finance-securities",
+   "group": "FINRA & Securities Licensing",
+   "body": "North American Securities Administrators Association (NASAA)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Qualifies an individual to act as an investment adviser representative, covering ethics, fiduciary duty, economics and portfolio theory."
+  },
+  {
+   "slug": "series-66",
+   "name": "Series 66 Uniform Combined State Law Exam",
+   "short": "Series 66",
+   "category": "finance-securities",
+   "group": "FINRA & Securities Licensing",
+   "body": "North American Securities Administrators Association (NASAA)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Combined agent and investment adviser representative state law paper, taken alongside the Series 7 as its corequisite."
+  },
+  {
+   "slug": "certified-investment-management-analyst",
+   "name": "Certified Investment Management Analyst",
+   "short": "CIMA",
+   "category": "finance-securities",
+   "group": "Financial Planning & Advice",
+   "body": "Investments and Wealth Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced investment consulting certification requiring an executive education programme and a proctored certification examination."
+  },
+  {
+   "slug": "certified-private-wealth-advisor",
+   "name": "Certified Private Wealth Advisor",
+   "short": "CPWA",
+   "category": "finance-securities",
+   "group": "Financial Planning & Advice",
+   "body": "Investments and Wealth Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced certification for advisers to high net worth clients, covering tax, estate, executive compensation and legacy planning."
+  },
+  {
+   "slug": "retirement-management-advisor",
+   "name": "Retirement Management Advisor",
+   "short": "RMA",
+   "category": "finance-securities",
+   "group": "Financial Planning & Advice",
+   "body": "Investments and Wealth Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification programme on household retirement risk management, goals-based income planning and decumulation portfolio design."
+  },
+  {
+   "slug": "namb-certified-mortgage-consultant",
+   "name": "Certified Mortgage Consultant",
+   "short": "CMC",
+   "category": "finance-securities",
+   "group": "Banking & Lending",
+   "body": "National Association of Mortgage Brokers (NAMB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Senior broker designation requiring education, five years of experience and an examination on mortgage products and ethics."
+  },
+  {
+   "slug": "namb-certified-residential-mortgage-specialist",
+   "name": "Certified Residential Mortgage Specialist",
+   "short": "CRMS",
+   "category": "finance-securities",
+   "group": "Banking & Lending",
+   "body": "National Association of Mortgage Brokers (NAMB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Residential broker designation requiring continuing education, two years of experience and an examination on residential lending."
+  },
+  {
+   "slug": "accredited-financial-counselor",
+   "name": "Accredited Financial Counselor",
+   "short": "AFC",
+   "category": "finance-securities",
+   "group": "Financial Planning & Advice",
+   "body": "Association for Financial Counseling and Planning Education (AFCPE)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for counsellors helping households with budgeting, debt, credit and savings, requiring exams and supervised experience hours."
+  },
+  {
+   "slug": "financial-fitness-coach",
+   "name": "Financial Fitness Coach",
+   "short": "FFC",
+   "category": "finance-securities",
+   "group": "Financial Planning & Advice",
+   "body": "Association for Financial Counseling and Planning Education (AFCPE)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Coaching credential focused on client behaviour change, goal setting and accountability techniques applied to personal finance."
+  },
+  {
+   "slug": "accredited-investment-fiduciary",
+   "name": "Accredited Investment Fiduciary",
+   "short": "AIF",
+   "category": "finance-securities",
+   "group": "Financial Planning & Advice",
+   "body": "Fi360, a Broadridge company",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation covering fiduciary duty, prudent investment process, investment policy statements and ongoing monitoring obligations."
+  },
+  {
+   "slug": "accredited-investment-fiduciary-analyst",
+   "name": "Accredited Investment Fiduciary Analyst",
+   "short": "AIFA",
+   "category": "finance-securities",
+   "group": "Financial Planning & Advice",
+   "body": "Fi360, a Broadridge company",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced fiduciary designation adding assessment and audit skills for reviewing the investment governance of institutions and advisers."
+  },
+  {
+   "slug": "acfcs-cfcs",
+   "name": "Certified Financial Crime Specialist",
+   "short": "CFCS",
+   "category": "finance-securities",
+   "group": "Banking & Lending",
+   "body": "Association of Certified Financial Crime Specialists (ACFCS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Cross-disciplinary certification spanning money laundering, fraud, corruption, tax evasion, sanctions and asset recovery."
+  },
+  {
+   "slug": "afp-ctp",
+   "name": "Certified Treasury Professional",
+   "short": "CTP",
+   "category": "finance-securities",
+   "group": "Banking & Lending",
+   "body": "Association for Financial Professionals (AFP)",
+   "bodyUrl": "https://www.afponline.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Corporate treasury certification covering liquidity management, capital markets, payments, working capital and treasury risk."
+  },
+  {
+   "slug": "rma-credit-risk-certification",
+   "name": "Credit Risk Certification",
+   "short": "CRC",
+   "category": "finance-securities",
+   "group": "Banking & Lending",
+   "body": "Risk Management Association (RMA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Commercial credit certification covering underwriting, financial and cash flow analysis, loan structuring and portfolio monitoring."
+  },
+  {
+   "slug": "eccho-ncp",
+   "name": "National Check Professional Accreditation",
+   "short": "NCP",
+   "category": "finance-securities",
+   "group": "Banking & Lending",
+   "body": "ECCHO, a Nacha company",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Accreditation examination covering check law, Regulation CC, image exchange, returns, adjustments and check fraud controls."
+  },
+  {
+   "slug": "nmls-safe-mlo-national-test",
+   "name": "SAFE Mortgage Loan Originator National Test with Uniform State Content",
+   "short": "SAFE MLO",
+   "category": "finance-securities",
+   "group": "Banking & Lending",
+   "body": "Nationwide Multistate Licensing System (NMLS)",
+   "type": "License",
+   "aka": [
+    "National Test Component with UST",
+    "MLO exam"
+   ],
+   "blurb": "National licensing test for mortgage loan originators covering federal law, ethics, loan products and uniform state content."
+  },
+  {
+   "slug": "certified-401k-professional",
+   "name": "Certified 401(k) Professional",
+   "short": "C(k)P",
+   "category": "finance-securities",
+   "group": "Financial Planning & Advice",
+   "body": "The Retirement Advisor University",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme for retirement plan advisers covering plan design, fiduciary governance, investment oversight and participant outcomes."
+  },
+  {
+   "slug": "certified-divorce-financial-analyst",
+   "name": "Certified Divorce Financial Analyst",
+   "short": "CDFA",
+   "category": "finance-securities",
+   "group": "Financial Planning & Advice",
+   "body": "Institute for Divorce Financial Analysts (IDFA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme covering marital property division, support calculations, tax consequences and settlement modelling in divorce."
+  },
+  {
+   "slug": "certified-plan-fiduciary-advisor",
+   "name": "Certified Plan Fiduciary Advisor",
+   "short": "CPFA",
+   "category": "finance-securities",
+   "group": "Financial Planning & Advice",
+   "body": "National Association of Plan Advisors (NAPA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for retirement plan advisers covering ERISA fiduciary roles, plan investments, administration and participant services."
+  },
+  {
+   "slug": "certified-retirement-counselor",
+   "name": "Certified Retirement Counselor",
+   "short": "CRC",
+   "category": "finance-securities",
+   "group": "Financial Planning & Advice",
+   "body": "International Foundation for Retirement Education (InFRE)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Retirement counselling certification examination covering accumulation, distribution planning, Social Security, health care and taxation."
+  },
+  {
+   "slug": "certified-specialist-in-planned-giving",
+   "name": "Certified Specialist in Planned Giving",
+   "short": "CSPG",
+   "category": "finance-securities",
+   "group": "Financial Planning & Advice",
+   "body": "American Institute for Philanthropic Studies",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering charitable gift vehicles, bequests, charitable trusts, gift annuities and the tax treatment of planned giving."
+  },
+  {
+   "slug": "certified-wealth-strategist",
+   "name": "Certified Wealth Strategist",
+   "short": "CWS",
+   "category": "finance-securities",
+   "group": "Financial Planning & Advice",
+   "body": "Cannon Financial Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme teaching advisers to address wealth management life events across investment, credit, tax and estate needs."
+  },
+  {
+   "slug": "cfp-certification-exam",
+   "name": "CFP Certification Examination",
+   "short": "CFP exam",
+   "category": "finance-securities",
+   "group": "Financial Planning & Advice",
+   "body": "Certified Financial Planner Board of Standards",
+   "bodyUrl": "https://www.cfp.net",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Comprehensive financial planning examination covering the planning process, tax, retirement, insurance, investments, estate and ethics."
+  }
+ ]
+}

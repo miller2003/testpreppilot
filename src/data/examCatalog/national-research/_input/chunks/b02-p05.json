@@ -1,0 +1,73 @@
+{
+ "chunkId": "b02-p05",
+ "batch": 2,
+ "part": 5,
+ "categories": [
+  "admissions-academic"
+ ],
+ "groups": [
+  "CLEP & Credit by Exam"
+ ],
+ "bodies": [
+  "Cambridge International Education",
+  "Modern States Education Alliance",
+  "Thomas Edison State University",
+  "Excelsior University"
+ ],
+ "examCount": 4,
+ "exams": [
+  {
+   "slug": "cambridge-international-as-a-level",
+   "name": "Cambridge International AS and A Level Examinations",
+   "short": "Cambridge A Level",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Cambridge International Education",
+   "type": "Exam",
+   "aka": [
+    "CAIE",
+    "Cambridge Advanced"
+   ],
+   "blurb": "Subject-by-subject Cambridge qualifications taken in some US high schools and accepted by many American universities for admission and course credit."
+  },
+  {
+   "slug": "modern-states-freshman-year-for-free",
+   "name": "Modern States Freshman Year for Free",
+   "short": "Modern States",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Modern States Education Alliance",
+   "bodyUrl": "https://modernstates.org",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Free online course programme that prepares learners for CLEP exams and issues vouchers covering the CLEP exam fee after course completion."
+  },
+  {
+   "slug": "tecep-thomas-edison-credit-by-exam",
+   "name": "TECEP Thomas Edison State University Credit by Exam",
+   "short": "TECEP",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Thomas Edison State University",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-examination program offering subject tests in business, humanities and applied fields that award Thomas Edison State University credit."
+  },
+  {
+   "slug": "uexcel-excelsior-college-examinations",
+   "name": "UExcel and Excelsior College Examinations",
+   "short": "UExcel",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Excelsior University",
+   "bodyUrl": "https://www.excelsior.edu",
+   "type": "Exam",
+   "aka": [
+    "Regents College Examinations",
+    "Excelsior College Examinations",
+    "ECE"
+   ],
+   "blurb": "Credit-by-exam program discontinued after 21 August 2022; previously earned UExcel credits can still be transferred to accepting institutions."
+  }
+ ]
+}

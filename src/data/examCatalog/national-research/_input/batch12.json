@@ -1,0 +1,135 @@
+{
+  "batch": "12",
+  "categories": [
+    "behavioral-health"
+  ],
+  "groups": [
+    "School & Child Behavioral Health",
+    "Marriage & Family Therapy"
+  ],
+  "examCount": 8,
+  "bodyCount": 7,
+  "bodies": [
+    "Association of Child Life Professionals",
+    "National Association of Social Workers",
+    "National Association of School Psychologists",
+    "Association for Play Therapy",
+    "American Association for Marriage and Family Therapy",
+    "Association of Marital and Family Therapy Regulatory Boards",
+    "National Council on Family Relations"
+  ],
+  "exams": [
+    {
+      "slug": "ccls-certified-child-life-specialist",
+      "name": "Certified Child Life Specialist",
+      "short": "CCLS",
+      "category": "behavioral-health",
+      "group": "School & Child Behavioral Health",
+      "body": "Association of Child Life Professionals",
+      "bodyUrl": "https://www.childlife.org",
+      "type": "Certification",
+      "aka": [
+        "CCLS"
+      ],
+      "blurb": "Credential for professionals supporting children coping with hospitalisation and illness, requiring an internship and a national examination."
+    },
+    {
+      "slug": "school-social-work-specialist",
+      "name": "Certified School Social Work Specialist",
+      "short": "C-SSWS",
+      "category": "behavioral-health",
+      "group": "School & Child Behavioral Health",
+      "body": "National Association of Social Workers",
+      "bodyUrl": "https://www.socialworkers.org",
+      "type": "Certification",
+      "aka": [
+        "C-SSWS"
+      ],
+      "blurb": "NASW speciality credential for master-level social workers practising in schools, requiring supervised school-based experience and references."
+    },
+    {
+      "slug": "ncsp-nationally-certified-school-psychologist",
+      "name": "Nationally Certified School Psychologist",
+      "short": "NCSP",
+      "category": "behavioral-health",
+      "group": "School & Child Behavioral Health",
+      "body": "National Association of School Psychologists",
+      "bodyUrl": "https://www.nasponline.org",
+      "type": "Certification",
+      "aka": [
+        "NCSP"
+      ],
+      "blurb": "National school psychology credential requiring a NASP-approved specialist degree, a 1,200-hour internship and the Praxis School Psychologist test."
+    },
+    {
+      "slug": "rpt-registered-play-therapist",
+      "name": "Registered Play Therapist",
+      "short": "RPT",
+      "category": "behavioral-health",
+      "group": "School & Child Behavioral Health",
+      "body": "Association for Play Therapy",
+      "bodyUrl": "https://www.a4pt.org",
+      "type": "Certification",
+      "aka": [
+        "RPT"
+      ],
+      "blurb": "Credential for licensed mental health professionals who complete play therapy instruction and supervised play therapy client contact hours."
+    },
+    {
+      "slug": "rpt-s-registered-play-therapist-supervisor",
+      "name": "Registered Play Therapist-Supervisor",
+      "short": "RPT-S",
+      "category": "behavioral-health",
+      "group": "School & Child Behavioral Health",
+      "body": "Association for Play Therapy",
+      "bodyUrl": "https://www.a4pt.org",
+      "type": "Certification",
+      "aka": [
+        "RPT-S"
+      ],
+      "blurb": "Advanced play therapy designation authorising holders to supervise other clinicians pursuing the Registered Play Therapist credential."
+    },
+    {
+      "slug": "aamft-approved-supervisor",
+      "name": "AAMFT Approved Supervisor",
+      "category": "behavioral-health",
+      "group": "Marriage & Family Therapy",
+      "body": "American Association for Marriage and Family Therapy",
+      "bodyUrl": "https://www.aamft.org",
+      "type": "Certification",
+      "aka": [
+        "Approved Supervisor",
+        "AAMFT supervision designation"
+      ],
+      "blurb": "Designation for experienced marriage and family therapists who complete supervision coursework and mentored supervision of supervision."
+    },
+    {
+      "slug": "amftrb-national-mft-examination",
+      "name": "AMFTRB National Marital and Family Therapy Examination",
+      "short": "National MFT Exam",
+      "category": "behavioral-health",
+      "group": "Marriage & Family Therapy",
+      "body": "Association of Marital and Family Therapy Regulatory Boards",
+      "bodyUrl": "https://www.amftrb.org",
+      "type": "Exam",
+      "aka": [
+        "National MFT Exam",
+        "AMFTRB exam"
+      ],
+      "blurb": "Licensure examination for marriage and family therapists covering systemic assessment, treatment planning, therapeutic interventions and legal ethics."
+    },
+    {
+      "slug": "ncfr-certified-family-life-educator",
+      "name": "Certified Family Life Educator",
+      "short": "CFLE",
+      "category": "behavioral-health",
+      "group": "Marriage & Family Therapy",
+      "body": "National Council on Family Relations",
+      "type": "Certification",
+      "aka": [
+        "CFLE"
+      ],
+      "blurb": "National credential for family life education professionals, available by examination or through an approved academic programme pathway."
+    }
+  ]
+}

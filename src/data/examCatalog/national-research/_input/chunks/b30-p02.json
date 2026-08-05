@@ -1,0 +1,539 @@
+{
+ "chunkId": "b30-p02",
+ "batch": 30,
+ "part": 2,
+ "categories": [
+  "public-safety"
+ ],
+ "groups": [
+  "Firefighter",
+  "Military Occupational & Federal Safety",
+  "Law Enforcement Entrance",
+  "Emergency Management & Dispatch",
+  "Corrections & Security-adjacent Public Safety"
+ ],
+ "bodies": [
+  "National Wildfire Coordinating Group",
+  "Defense Counterintelligence and Security Agency",
+  "National Testing Network",
+  "International Academies of Emergency Dispatch",
+  "American Correctional Association",
+  "ASIS International",
+  "International Fire Service Accreditation Congress",
+  "National Board on Fire Service Professional Qualifications",
+  "Law enforcement agencies",
+  "International Association of Emergency Managers",
+  "International Foundation for Protection Officers",
+  "International Association of Fire Fighters / IAFC",
+  "Criterion Solutions",
+  "Florida Department of Law Enforcement",
+  "Illinois Law Enforcement Training and Standards Board",
+  "Los Angeles Police Department",
+  "Pennsylvania MPOETC"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "wildland-s190",
+   "name": "Wildland Fire Behavior S-190",
+   "short": "S-190",
+   "category": "public-safety",
+   "group": "Firefighter",
+   "body": "National Wildfire Coordinating Group",
+   "type": "Training",
+   "aka": [
+    "S-190"
+   ],
+   "blurb": "The NWCG course covering wildland fire behavior, weather and fuels needed alongside S-130 for entry-level wildland qualification."
+  },
+  {
+   "slug": "wildland-s130",
+   "name": "Wildland Firefighter Training S-130",
+   "short": "S-130",
+   "category": "public-safety",
+   "group": "Firefighter",
+   "body": "National Wildfire Coordinating Group",
+   "type": "Training",
+   "aka": [
+    "S-130"
+   ],
+   "blurb": "The NWCG field skills course teaching wildland firefighting tactics, safety and hand-tool use for initial attack crews."
+  },
+  {
+   "slug": "wildland-fft1",
+   "name": "Wildland Firefighter Type 1",
+   "short": "FFT1",
+   "category": "public-safety",
+   "group": "Firefighter",
+   "body": "National Wildfire Coordinating Group",
+   "type": "Certification",
+   "aka": [
+    "FFT1"
+   ],
+   "blurb": "An advanced NWCG wildland qualification for firefighters who lead squads and perform complex suppression assignments."
+  },
+  {
+   "slug": "wildland-fft2",
+   "name": "Wildland Firefighter Type 2",
+   "short": "FFT2",
+   "category": "public-safety",
+   "group": "Firefighter",
+   "body": "National Wildfire Coordinating Group",
+   "type": "Certification",
+   "aka": [
+    "FFT2"
+   ],
+   "blurb": "The entry-level NWCG wildland firefighter qualification for crew members performing basic suppression and holding tasks."
+  },
+  {
+   "slug": "wildland-ict5",
+   "name": "Wildland Incident Commander Type 5",
+   "short": "ICT5",
+   "category": "public-safety",
+   "group": "Firefighter",
+   "body": "National Wildfire Coordinating Group",
+   "type": "Certification",
+   "aka": [
+    "ICT5"
+   ],
+   "blurb": "The NWCG single-resource incident commander qualification for managing small initial-attack wildland fire incidents."
+  },
+  {
+   "slug": "wildland-red-card-pack-test",
+   "name": "Wildland Red Card Work Capacity Test",
+   "short": "Pack Test",
+   "category": "public-safety",
+   "group": "Firefighter",
+   "body": "National Wildfire Coordinating Group",
+   "type": "Exam",
+   "aka": [
+    "Red Card Pack Test"
+   ],
+   "blurb": "The arduous fitness test required for a wildland firefighting Red Card, typically a three-mile hike carrying 45 pounds in 45 minutes."
+  },
+  {
+   "slug": "sped-isoc",
+   "name": "SPeD Industrial Security Officer Certification",
+   "short": "ISOC",
+   "category": "public-safety",
+   "group": "Military Occupational & Federal Safety",
+   "body": "Defense Counterintelligence and Security Agency",
+   "type": "Certification",
+   "aka": [
+    "ISOC"
+   ],
+   "blurb": "A DCSA certification for industrial security officers overseeing facility clearances and contractor security compliance."
+  },
+  {
+   "slug": "sped-psc",
+   "name": "SPeD Program Security Certification",
+   "short": "PSC",
+   "category": "public-safety",
+   "group": "Military Occupational & Federal Safety",
+   "body": "Defense Counterintelligence and Security Agency",
+   "type": "Certification",
+   "aka": [
+    "PSC"
+   ],
+   "blurb": "A DCSA certification for program security officers managing classified programs and special access requirements."
+  },
+  {
+   "slug": "sped-sfpc",
+   "name": "SPeD Security Fundamentals Professional Certification",
+   "short": "SFPC",
+   "category": "public-safety",
+   "group": "Military Occupational & Federal Safety",
+   "body": "Defense Counterintelligence and Security Agency",
+   "type": "Certification",
+   "aka": [
+    "SFPC"
+   ],
+   "blurb": "The entry-level DCSA security certification validating knowledge of the national industrial security program and personnel security."
+  },
+  {
+   "slug": "sped-sappc",
+   "name": "SPeD Special Access Program Professional Certification",
+   "short": "SAPPC",
+   "category": "public-safety",
+   "group": "Military Occupational & Federal Safety",
+   "body": "Defense Counterintelligence and Security Agency",
+   "type": "Certification",
+   "aka": [
+    "SAPPC"
+   ],
+   "blurb": "A DCSA certification for professionals administering special access programs and their heightened control requirements."
+  },
+  {
+   "slug": "ntn-corrections",
+   "name": "NTN Corrections Exam",
+   "short": "NTN Corrections",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "National Testing Network",
+   "type": "Exam",
+   "aka": [
+    "Corrections Test"
+   ],
+   "blurb": "A National Testing Network entry exam for correctional officer candidates assessing judgment, reading and report-writing skills."
+  },
+  {
+   "slug": "ntn-dispatch-ecomm",
+   "name": "NTN Dispatch / ECOMM Exam",
+   "short": "ECOMM",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "National Testing Network",
+   "type": "Exam",
+   "aka": [
+    "ECOMM",
+    "Dispatch Exam"
+   ],
+   "blurb": "A National Testing Network entry exam for 911 dispatchers measuring multitasking, memory, map reading and customer service aptitude."
+  },
+  {
+   "slug": "ntn-frontline-national",
+   "name": "NTN FrontLine National Exam",
+   "short": "FrontLine",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "National Testing Network",
+   "type": "Exam",
+   "aka": [
+    "FrontLine National"
+   ],
+   "blurb": "A video-based police entry exam from the National Testing Network measuring situational judgment, reading and writing for member agencies."
+  },
+  {
+   "slug": "iaed-efd",
+   "name": "Emergency Fire Dispatch",
+   "short": "EFD",
+   "category": "public-safety",
+   "group": "Emergency Management & Dispatch",
+   "body": "International Academies of Emergency Dispatch",
+   "type": "Certification",
+   "aka": [
+    "EFD"
+   ],
+   "blurb": "A certification for dispatchers who use the MPFD protocols to classify fire incidents and coordinate appropriate response levels."
+  },
+  {
+   "slug": "iaed-emd",
+   "name": "Emergency Medical Dispatch",
+   "short": "EMD",
+   "category": "public-safety",
+   "group": "Emergency Management & Dispatch",
+   "body": "International Academies of Emergency Dispatch",
+   "type": "Certification",
+   "aka": [
+    "EMD"
+   ],
+   "blurb": "A certification for dispatchers who use the MPDS protocols to triage medical calls and give pre-arrival instructions to callers."
+  },
+  {
+   "slug": "iaed-epd",
+   "name": "Emergency Police Dispatch",
+   "short": "EPD",
+   "category": "public-safety",
+   "group": "Emergency Management & Dispatch",
+   "body": "International Academies of Emergency Dispatch",
+   "type": "Certification",
+   "aka": [
+    "EPD"
+   ],
+   "blurb": "A certification for dispatchers who use the MPPD protocols to prioritize police calls and guide officers before arrival."
+  },
+  {
+   "slug": "aca-cce",
+   "name": "ACA Certified Correctional Executive",
+   "short": "CCE",
+   "category": "public-safety",
+   "group": "Corrections & Security-adjacent Public Safety",
+   "body": "American Correctional Association",
+   "type": "Certification",
+   "aka": [
+    "CCE"
+   ],
+   "blurb": "An ACA credential for senior correctional leaders confirming executive-level mastery of policy, finance and agency administration."
+  },
+  {
+   "slug": "aca-ccm",
+   "name": "ACA Certified Correctional Manager",
+   "short": "CCM",
+   "category": "public-safety",
+   "group": "Corrections & Security-adjacent Public Safety",
+   "body": "American Correctional Association",
+   "type": "Certification",
+   "aka": [
+    "CCM"
+   ],
+   "blurb": "An ACA credential for correctional managers demonstrating leadership, operations and staff development competence."
+  },
+  {
+   "slug": "aca-cco",
+   "name": "ACA Certified Correctional Officer",
+   "short": "CCO",
+   "category": "public-safety",
+   "group": "Corrections & Security-adjacent Public Safety",
+   "body": "American Correctional Association",
+   "type": "Certification",
+   "aka": [
+    "CCO"
+   ],
+   "blurb": "An ACA credential validating the knowledge and skills of line correctional officers in institutional security and inmate supervision."
+  },
+  {
+   "slug": "cpp",
+   "name": "Certified Protection Professional",
+   "short": "CPP",
+   "category": "public-safety",
+   "group": "Corrections & Security-adjacent Public Safety",
+   "body": "ASIS International",
+   "bodyUrl": "https://www.asisonline.org/",
+   "type": "Certification",
+   "aka": [
+    "CPP"
+   ],
+   "blurb": "ASIS’s senior security management credential covering physical, personnel and intellectual property protection for experienced practitioners."
+  },
+  {
+   "slug": "psp",
+   "name": "Physical Security Professional",
+   "short": "PSP",
+   "category": "public-safety",
+   "group": "Corrections & Security-adjacent Public Safety",
+   "body": "ASIS International",
+   "bodyUrl": "https://www.asisonline.org/",
+   "type": "Certification",
+   "aka": [
+    "PSP"
+   ],
+   "blurb": "An ASIS credential for specialists in physical security assessments, design and the integration of protective measures and technology."
+  },
+  {
+   "slug": "pci",
+   "name": "Professional Certified Investigator",
+   "short": "PCI",
+   "category": "public-safety",
+   "group": "Corrections & Security-adjacent Public Safety",
+   "body": "ASIS International",
+   "bodyUrl": "https://www.asisonline.org/",
+   "type": "Certification",
+   "aka": [
+    "PCI"
+   ],
+   "blurb": "An ASIS credential for investigators demonstrating skill in case management, evidence handling and surveillance techniques."
+  },
+  {
+   "slug": "ifsac-firefighter-i",
+   "name": "IFSAC Firefighter I",
+   "short": "FF I",
+   "category": "public-safety",
+   "group": "Firefighter",
+   "body": "International Fire Service Accreditation Congress",
+   "type": "Certification",
+   "aka": [
+    "Firefighter I"
+   ],
+   "blurb": "An accredited certification confirming a firefighter meets NFPA 1001 Firefighter I performance and knowledge job standards."
+  },
+  {
+   "slug": "ifsac-firefighter-ii",
+   "name": "IFSAC Firefighter II",
+   "short": "FF II",
+   "category": "public-safety",
+   "group": "Firefighter",
+   "body": "International Fire Service Accreditation Congress",
+   "type": "Certification",
+   "aka": [
+    "Firefighter II"
+   ],
+   "blurb": "An accredited advanced certification confirming mastery of NFPA 1001 Firefighter II incident and fireground leadership competencies."
+  },
+  {
+   "slug": "pro-board-firefighter-i",
+   "name": "Pro Board Firefighter I",
+   "short": "FF I",
+   "category": "public-safety",
+   "group": "Firefighter",
+   "body": "National Board on Fire Service Professional Qualifications",
+   "type": "Certification",
+   "aka": [
+    "Pro Board FF I"
+   ],
+   "blurb": "A Pro Board accredited Firefighter I credential aligned with NFPA 1001 for structural firefighting minimum job performance requirements."
+  },
+  {
+   "slug": "pro-board-firefighter-ii",
+   "name": "Pro Board Firefighter II",
+   "short": "FF II",
+   "category": "public-safety",
+   "group": "Firefighter",
+   "body": "National Board on Fire Service Professional Qualifications",
+   "type": "Certification",
+   "aka": [
+    "Pro Board FF II"
+   ],
+   "blurb": "A Pro Board accredited Firefighter II credential confirming advanced NFPA 1001 structural firefighting and incident command knowledge."
+  },
+  {
+   "slug": "law-enforcement-pat",
+   "name": "Law Enforcement Physical Ability Test",
+   "short": "PAT",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "Law enforcement agencies",
+   "type": "Exam",
+   "aka": [
+    "PAT",
+    "Agility Test"
+   ],
+   "blurb": "A job-task physical test for police candidates covering running, push-ups, sit-ups and an obstacle or pursuit course simulation."
+  },
+  {
+   "slug": "police-polygraph-phq",
+   "name": "Police Pre-Employment Polygraph and PHQ",
+   "short": "PHQ",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "Law enforcement agencies",
+   "type": "Exam",
+   "aka": [
+    "PHQ",
+    "Pre-Employment Polygraph"
+   ],
+   "blurb": "The background questionnaire and polygraph screening stage verifying an applicant’s honesty, history and suitability for police service."
+  },
+  {
+   "slug": "iaem-aem",
+   "name": "Associate Emergency Manager",
+   "short": "AEM",
+   "category": "public-safety",
+   "group": "Emergency Management & Dispatch",
+   "body": "International Association of Emergency Managers",
+   "bodyUrl": "https://www.iaem.com/",
+   "type": "Certification",
+   "aka": [
+    "AEM"
+   ],
+   "blurb": "An entry-level IAEM credential for emerging emergency managers who have not yet met the experience threshold for the CEM."
+  },
+  {
+   "slug": "iaem-cem",
+   "name": "Certified Emergency Manager",
+   "short": "CEM",
+   "category": "public-safety",
+   "group": "Emergency Management & Dispatch",
+   "body": "International Association of Emergency Managers",
+   "bodyUrl": "https://www.iaem.com/",
+   "type": "Certification",
+   "aka": [
+    "CEM"
+   ],
+   "blurb": "The premier emergency management credential requiring education, experience, training and a written exam on the profession’s principles."
+  },
+  {
+   "slug": "certified-protection-officer",
+   "name": "Certified Protection Officer",
+   "short": "CPO",
+   "category": "public-safety",
+   "group": "Corrections & Security-adjacent Public Safety",
+   "body": "International Foundation for Protection Officers",
+   "type": "Certification",
+   "aka": [
+    "CPO"
+   ],
+   "blurb": "A foundational security officer credential covering patrol, emergency response, report writing and customer service in protection roles."
+  },
+  {
+   "slug": "certified-security-supervisor",
+   "name": "Certified Security Supervisor",
+   "short": "CSS",
+   "category": "public-safety",
+   "group": "Corrections & Security-adjacent Public Safety",
+   "body": "International Foundation for Protection Officers",
+   "type": "Certification",
+   "aka": [
+    "CSS"
+   ],
+   "blurb": "A mid-level security credential for front-line supervisors covering leadership, scheduling and on-site security operations management."
+  },
+  {
+   "slug": "cpat",
+   "name": "Candidate Physical Ability Test",
+   "short": "CPAT",
+   "category": "public-safety",
+   "group": "Firefighter",
+   "body": "International Association of Fire Fighters / IAFC",
+   "type": "Exam",
+   "aka": [
+    "CPAT"
+   ],
+   "blurb": "The standard timed firefighter physical test of eight job-simulated events including hose drag, ladder raise and stair climb with gear."
+  },
+  {
+   "slug": "nfsi",
+   "name": "National Firefighter Selection Inventory",
+   "short": "NFSI",
+   "category": "public-safety",
+   "group": "Firefighter",
+   "body": "Criterion Solutions",
+   "type": "Exam",
+   "aka": [
+    "NFSI"
+   ],
+   "blurb": "A behavioral inventory assessing the work styles and interpersonal traits associated with effective firefighter performance."
+  },
+  {
+   "slug": "cjbat",
+   "name": "Criminal Justice Basic Abilities Test",
+   "short": "CJBAT",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "Florida Department of Law Enforcement",
+   "type": "Exam",
+   "aka": [
+    "CJBAT"
+   ],
+   "blurb": "Florida’s entry exam for law enforcement and corrections officers assessing memory, visualization, reasoning and language abilities."
+  },
+  {
+   "slug": "illinois-power-test",
+   "name": "Illinois POWER Test",
+   "short": "POWER",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "Illinois Law Enforcement Training and Standards Board",
+   "type": "Exam",
+   "aka": [
+    "POWER Test"
+   ],
+   "blurb": "Illinois’s physical ability test for police and corrections candidates measuring strength, endurance, speed and agility benchmarks."
+  },
+  {
+   "slug": "lapd-patb",
+   "name": "LAPD Personal Attributes and Behavioral Styles Test",
+   "short": "PATB",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "Los Angeles Police Department",
+   "type": "Exam",
+   "aka": [
+    "PATB"
+   ],
+   "blurb": "The LAPD written exam measuring behavioral styles, interpersonal judgment and decision-making for police officer candidates."
+  },
+  {
+   "slug": "mpoetc",
+   "name": "Municipal Police Officers’ Education and Training Commission Test",
+   "short": "MPOETC",
+   "category": "public-safety",
+   "group": "Law Enforcement Entrance",
+   "body": "Pennsylvania MPOETC",
+   "type": "Exam",
+   "aka": [
+    "MPOETC"
+   ],
+   "blurb": "Pennsylvania’s certification exam for municipal police officers covering state law, procedure and the duties of a peace officer."
+  }
+ ]
+}

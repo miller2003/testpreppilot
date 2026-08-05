@@ -1,0 +1,72 @@
+{
+ "chunkId": "b08-p04",
+ "batch": 8,
+ "part": 4,
+ "categories": [
+  "aviation-maritime"
+ ],
+ "groups": [
+  "FAA Airman Knowledge Tests"
+ ],
+ "bodies": [
+  "Federal Aviation Administration (FAASafety.gov)",
+  "FAA-Accepted Flight Instructor Refresher Course Providers",
+  "Federal Aviation Administration (approved test administrators)"
+ ],
+ "examCount": 4,
+ "exams": [
+  {
+   "slug": "faa-part-107-initial-training-alc-451",
+   "name": "Part 107 Small UAS Initial Training for Part 61 Pilots",
+   "short": "ALC-451",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration (FAASafety.gov)",
+   "type": "Training",
+   "aka": [
+    "ALC-451"
+   ],
+   "blurb": "Online course allowing current Part 61 pilots with a flight review to earn a remote pilot certificate without sitting the UAG test."
+  },
+  {
+   "slug": "faa-part-107-recurrent-training-alc-677",
+   "name": "Part 107 Small UAS Recurrent Training",
+   "short": "ALC-677",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration (FAASafety.gov)",
+   "type": "Training",
+   "aka": [
+    "ALC-677",
+    "Part 107 Recurrent"
+   ],
+   "blurb": "Free online course remote pilots complete every 24 calendar months to keep Part 107 certificate privileges current."
+  },
+  {
+   "slug": "faa-firc-flight-instructor-refresher-course",
+   "name": "Flight Instructor Refresher Course",
+   "short": "FIRC",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "FAA-Accepted Flight Instructor Refresher Course Providers",
+   "type": "Training",
+   "aka": [
+    "FIRC"
+   ],
+   "blurb": "FAA-accepted 16-hour refresher course used by certificated flight instructors to renew their certificate every 24 calendar months."
+  },
+  {
+   "slug": "faa-trust-recreational-uas-safety-test",
+   "name": "The Recreational UAS Safety Test",
+   "short": "TRUST",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration (approved test administrators)",
+   "type": "Exam",
+   "aka": [
+    "TRUST"
+   ],
+   "blurb": "Free online safety test that every recreational drone flyer in the United States must pass and carry proof of completion."
+  }
+ ]
+}

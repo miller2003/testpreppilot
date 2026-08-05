@@ -1,0 +1,1493 @@
+{
+  "batch": "09",
+  "categories": [
+    "aviation-maritime"
+  ],
+  "groups": [
+    "Maritime & USCG",
+    "Radio & Communications",
+    "Aircraft Maintenance"
+  ],
+  "examCount": 109,
+  "bodyCount": 17,
+  "bodies": [
+    "U.S. Coast Guard National Maritime Center",
+    "American Boat and Yacht Council",
+    "American Sailing",
+    "U.S. Coast Guard-Approved Training Providers",
+    "National Fire Protection Association Marine Chemist Qualification Board",
+    "National Association of Marine Surveyors",
+    "National Association of State Boating Law Administrators",
+    "National Marine Electronics Association",
+    "Society of Accredited Marine Surveyors",
+    "Transportation Security Administration",
+    "Federal Communications Commission (Volunteer Examiner Coordinators)",
+    "Federal Communications Commission (COLEM administrators)",
+    "Federal Communications Commission",
+    "ETA International",
+    "Federal Aviation Administration",
+    "Federal Aviation Administration (Designated Mechanic Examiner)",
+    "National Business Aviation Association"
+  ],
+  "exams": [
+    {
+      "slug": "stcw-able-seafarer-deck",
+      "name": "Able Seafarer-Deck Endorsement",
+      "short": "AS-D",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Able Seafarer Deck",
+        "STCW II/5"
+      ],
+      "blurb": "STCW deck rating under Regulation II/5 requiring assessed competencies in navigation watch support, mooring and cargo handling."
+    },
+    {
+      "slug": "stcw-able-seafarer-engine",
+      "name": "Able Seafarer-Engine Endorsement",
+      "short": "AS-E",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Able Seafarer Engine",
+        "STCW III/5"
+      ],
+      "blurb": "STCW engine rating under Regulation III/5 covering watchkeeping support, machinery operation and engine room maintenance tasks."
+    },
+    {
+      "slug": "uscg-able-seaman-endorsement",
+      "name": "Able Seaman Endorsement",
+      "short": "AB",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "AB Unlimited",
+        "AB Special",
+        "Able Bodied Seaman"
+      ],
+      "blurb": "Deck rating issued in grades from Special to Unlimited, requiring sea service plus an examination in seamanship and safety."
+    },
+    {
+      "slug": "abyc-diesel-engines-certification",
+      "name": "ABYC Diesel Engines Certification",
+      "short": "ABYC Diesel",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "American Boat and Yacht Council",
+      "type": "Certification",
+      "aka": [
+        "ABYC Diesel Engines"
+      ],
+      "blurb": "Marine technician certification on diesel propulsion installation, fuel systems, cooling, exhaust and troubleshooting to ABYC standards."
+    },
+    {
+      "slug": "abyc-gasoline-engines-certification",
+      "name": "ABYC Gasoline Engines Certification",
+      "short": "ABYC Gasoline",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "American Boat and Yacht Council",
+      "type": "Certification",
+      "aka": [
+        "ABYC Gasoline Engines"
+      ],
+      "blurb": "Certification on inboard and sterndrive gasoline engine service, ignition protection, ventilation and fuel system standards."
+    },
+    {
+      "slug": "abyc-marine-air-conditioning-refrigeration",
+      "name": "ABYC Marine Air Conditioning and Refrigeration Certification",
+      "short": "ABYC A/C",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "American Boat and Yacht Council",
+      "type": "Certification",
+      "aka": [
+        "ABYC Marine A/C and Refrigeration"
+      ],
+      "blurb": "Certification covering marine chilled water and direct expansion systems, seawater cooling, refrigerants and onboard installation practice."
+    },
+    {
+      "slug": "abyc-marine-corrosion-certification",
+      "name": "ABYC Marine Corrosion Certification",
+      "short": "ABYC Corrosion",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "American Boat and Yacht Council",
+      "type": "Certification",
+      "aka": [
+        "ABYC Corrosion"
+      ],
+      "blurb": "Certification on galvanic and stray current corrosion, bonding systems, anodes and cathodic protection surveys for boats."
+    },
+    {
+      "slug": "abyc-marine-electrical-certification",
+      "name": "ABYC Marine Electrical Certification",
+      "short": "ABYC Electrical",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "American Boat and Yacht Council",
+      "type": "Certification",
+      "aka": [
+        "ABYC Marine Electrical"
+      ],
+      "blurb": "Widely held marine technician certification covering AC and DC systems, shore power, bonding and ABYC E-11 wiring standards."
+    },
+    {
+      "slug": "abyc-marine-systems-certification",
+      "name": "ABYC Marine Systems Certification",
+      "short": "ABYC Systems",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "American Boat and Yacht Council",
+      "type": "Certification",
+      "aka": [
+        "ABYC Marine Systems"
+      ],
+      "blurb": "Certification spanning steering, fuel, plumbing, ventilation, LPG and other onboard systems assessed against ABYC standards."
+    },
+    {
+      "slug": "abyc-standards-certification",
+      "name": "ABYC Standards Certification",
+      "short": "ABYC Standards",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "American Boat and Yacht Council",
+      "type": "Certification",
+      "aka": [
+        "ABYC Standards Accreditation"
+      ],
+      "blurb": "Certification demonstrating working knowledge of the full ABYC standards manual and federal boat construction regulations."
+    },
+    {
+      "slug": "asa-101-basic-keelboat-sailing",
+      "name": "American Sailing 101 Basic Keelboat Sailing",
+      "short": "ASA 101",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "American Sailing",
+      "type": "Certification",
+      "aka": [
+        "ASA 101"
+      ],
+      "blurb": "Entry sailing certification covering points of sail, tacking, gybing, rules of the road and crew overboard recovery on small keelboats."
+    },
+    {
+      "slug": "asa-103-basic-coastal-cruising",
+      "name": "American Sailing 103 Basic Coastal Cruising",
+      "short": "ASA 103",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "American Sailing",
+      "type": "Certification",
+      "aka": [
+        "ASA 103"
+      ],
+      "blurb": "Certification for skippering an auxiliary-powered sailboat of about 25 to 35 feet in moderate coastal conditions by day."
+    },
+    {
+      "slug": "asa-104-bareboat-cruising",
+      "name": "American Sailing 104 Bareboat Cruising",
+      "short": "ASA 104",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "American Sailing",
+      "type": "Certification",
+      "aka": [
+        "ASA 104"
+      ],
+      "blurb": "Certification for chartering and skippering a 30 to 45 foot cruising sailboat, including provisioning, anchoring and systems management."
+    },
+    {
+      "slug": "uscg-apprentice-mate-steersman-towing",
+      "name": "Apprentice Mate (Steersman) of Towing Vessels",
+      "short": "Apprentice Mate",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Steersman"
+      ],
+      "blurb": "Entry towing endorsement requiring 30 days of deck service and an examination before a mariner may begin supervised wheelhouse training."
+    },
+    {
+      "slug": "uscg-assistance-towing-endorsement",
+      "name": "Assistance Towing Endorsement",
+      "short": "Assistance Towing",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Commercial Assistance Towing"
+      ],
+      "blurb": "Optional endorsement added to an OUPV or Master licence allowing the holder to tow disabled recreational vessels for hire."
+    },
+    {
+      "slug": "uscg-auxiliary-sail-endorsement",
+      "name": "Auxiliary Sail Endorsement",
+      "short": "Sail Endorsement",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Sail/Auxiliary Sail"
+      ],
+      "blurb": "Endorsement permitting a licensed operator to work on sail or auxiliary sail vessels after qualifying sea service and an exam module."
+    },
+    {
+      "slug": "uscg-chief-engineer-limited",
+      "name": "Chief Engineer (Limited) Endorsement",
+      "short": "Chief Engineer Limited",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Chief Engineer Limited-Oceans"
+      ],
+      "blurb": "Engineering licence for chief engineers on vessels of limited horsepower and tonnage, tested on motor and steam plant operation."
+    },
+    {
+      "slug": "uscg-chief-mate-endorsement",
+      "name": "Chief Mate Endorsement",
+      "short": "Chief Mate",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Chief Mate Unlimited"
+      ],
+      "blurb": "Senior deck licence for vessels of any gross tons, requiring management-level STCW training plus extensive Coast Guard examination modules."
+    },
+    {
+      "slug": "isps-company-security-officer",
+      "name": "Company Security Officer Course",
+      "short": "CSO",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Training",
+      "aka": [
+        "CSO"
+      ],
+      "blurb": "Approved course preparing shoreside personnel to develop and maintain vessel security plans under the ISPS Code and MTSA."
+    },
+    {
+      "slug": "uscg-designated-duty-engineer",
+      "name": "Designated Duty Engineer Endorsement",
+      "short": "DDE",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "DDE 1000",
+        "DDE 4000",
+        "DDE Unlimited"
+      ],
+      "blurb": "Engineering licence for sole-engineer vessels, issued in horsepower tiers and requiring exams on diesel plants, electrical and auxiliary systems."
+    },
+    {
+      "slug": "isps-facility-security-officer",
+      "name": "Facility Security Officer Course",
+      "short": "FSO",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Training",
+      "aka": [
+        "FSO"
+      ],
+      "blurb": "Training required for officers responsible for security plans, drills and access control at MTSA-regulated waterfront facilities."
+    },
+    {
+      "slug": "uscg-first-class-pilot-endorsement",
+      "name": "First Class Pilot Endorsement",
+      "short": "First Class Pilot",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Federal Pilotage"
+      ],
+      "blurb": "Route-specific federal pilotage endorsement earned by round trips over the route and a chart examination drawn from memory."
+    },
+    {
+      "slug": "uscg-lifeboatman-endorsement",
+      "name": "Lifeboatman Endorsement",
+      "short": "Lifeboatman",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Proficiency in Survival Craft",
+        "PSC"
+      ],
+      "blurb": "Rating endorsement requiring practical assessment in launching and handling survival craft, matched by the STCW proficiency in survival craft."
+    },
+    {
+      "slug": "nfpa-marine-chemist-certification",
+      "name": "Marine Chemist Certification",
+      "short": "Marine Chemist",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "National Fire Protection Association Marine Chemist Qualification Board",
+      "type": "Certification",
+      "aka": [
+        "Certified Marine Chemist"
+      ],
+      "blurb": "Certification allowing a chemist to issue safe-for-workers and safe-for-hot-work certificates on vessels under NFPA 306."
+    },
+    {
+      "slug": "uscg-master-of-towing-vessels",
+      "name": "Master of Towing Vessels",
+      "short": "Master Towing",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Towing Master"
+      ],
+      "blurb": "Licence to command towing vessels on a specified route, earned through a towing officer assessment record and Coast Guard examination."
+    },
+    {
+      "slug": "uscg-master-1600-gross-tons",
+      "name": "Master of Vessels 1600 Gross Tons",
+      "short": "Master 1600",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "1600 Ton Master"
+      ],
+      "blurb": "Deck licence for oceans, near coastal or inland service on vessels up to 1600 gross tons, requiring multi-module Coast Guard examinations."
+    },
+    {
+      "slug": "uscg-master-500-gross-tons",
+      "name": "Master of Vessels 500 Gross Tons",
+      "short": "Master 500",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "500 Ton Master"
+      ],
+      "blurb": "Mid-tier deck licence for vessels up to 500 gross tons covering navigation, stability, cargo handling and rules of the road."
+    },
+    {
+      "slug": "uscg-master-any-gross-tons",
+      "name": "Master of Vessels Any Gross Tons",
+      "short": "Master Unlimited",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Unlimited Master",
+        "Master Oceans Any Gross Tons"
+      ],
+      "blurb": "Highest deck licence authorising command of vessels of unlimited tonnage on oceans, subject to management-level STCW and extensive exams."
+    },
+    {
+      "slug": "uscg-master-less-than-100-grt",
+      "name": "Master of Vessels Less Than 100 GRT",
+      "short": "Master 100 Ton",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "100 Ton Captain",
+        "Master 100 GRT"
+      ],
+      "blurb": "Widely held captain licence for inspected passenger vessels under 100 gross tons, tested on deck general, deck safety, rules and chart plot."
+    },
+    {
+      "slug": "uscg-master-less-than-200-grt",
+      "name": "Master of Vessels Less Than 200 GRT",
+      "short": "Master 200 Ton",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "200 Ton Master"
+      ],
+      "blurb": "Deck licence for vessels under 200 gross tons requiring additional sea service and examination beyond the 100 ton master level."
+    },
+    {
+      "slug": "uscg-master-less-than-25-grt",
+      "name": "Master of Vessels Less Than 25 GRT",
+      "short": "Master 25 Ton",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "25 Ton Master"
+      ],
+      "blurb": "Entry master licence assigned when a mariner qualifying sea service is on vessels of very small tonnage under 46 CFR 11.422."
+    },
+    {
+      "slug": "uscg-master-less-than-50-grt",
+      "name": "Master of Vessels Less Than 50 GRT",
+      "short": "Master 50 Ton",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "50 Ton Master"
+      ],
+      "blurb": "Master licence tier assigned from documented tonnage history, authorising command of inspected vessels under 50 gross tons."
+    },
+    {
+      "slug": "uscg-mate-of-towing-vessels",
+      "name": "Mate (Pilot) of Towing Vessels",
+      "short": "Mate Towing",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Towing Mate",
+        "Pilot of Towing Vessels"
+      ],
+      "blurb": "Wheelhouse licence permitting a mariner to stand a navigation watch aboard towing vessels after completing assessed towing competencies."
+    },
+    {
+      "slug": "uscg-mate-less-than-200-grt",
+      "name": "Mate of Vessels Less Than 200 GRT",
+      "short": "Mate 200 Ton",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Mate 200 GRT"
+      ],
+      "blurb": "Deck licence authorising watchkeeping as mate on inspected vessels under 200 gross tons on inland or near coastal routes."
+    },
+    {
+      "slug": "uscg-merchant-mariner-credential",
+      "name": "Merchant Mariner Credential",
+      "short": "MMC",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "MMC",
+        "Merchant Mariner's Document"
+      ],
+      "blurb": "Single credential book that consolidates all officer, rating and STCW endorsements a United States mariner holds."
+    },
+    {
+      "slug": "uscg-merchant-mariner-medical-certificate",
+      "name": "Merchant Mariner Medical Certificate",
+      "short": "Medical Certificate",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "Certification",
+      "aka": [
+        "CG-719K"
+      ],
+      "blurb": "Medical and physical fitness certificate required alongside the merchant mariner credential, based on the CG-719K examination."
+    },
+    {
+      "slug": "nams-certified-marine-surveyor",
+      "name": "NAMS Certified Marine Surveyor",
+      "short": "NAMS-CMS",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "National Association of Marine Surveyors",
+      "type": "Certification",
+      "aka": [
+        "NAMS-CMS"
+      ],
+      "blurb": "Peer-reviewed surveyor credential requiring documented experience, sample surveys and examination in yachts, cargo or hull and machinery."
+    },
+    {
+      "slug": "nasbla-approved-boating-safety-course",
+      "name": "NASBLA-Approved Boating Safety Course",
+      "short": "Boater Education",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "National Association of State Boating Law Administrators",
+      "type": "Training",
+      "aka": [
+        "Boater Education Card",
+        "Boating Safety Certificate"
+      ],
+      "blurb": "Nationally approved recreational boating course covering navigation rules, required equipment and emergencies, accepted by most states."
+    },
+    {
+      "slug": "nmea-2000-network-installer",
+      "name": "NMEA 2000 Network Installer Certification",
+      "short": "NMEA 2000",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "National Marine Electronics Association",
+      "type": "Certification",
+      "aka": [
+        "NMEA 2000 Installer"
+      ],
+      "blurb": "Certification on designing, wiring and troubleshooting NMEA 2000 backbone networks for marine navigation and engine data."
+    },
+    {
+      "slug": "nmea-marine-electronics-installer",
+      "name": "NMEA Marine Electronics Installer Certification",
+      "short": "MEI",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "National Marine Electronics Association",
+      "type": "Certification",
+      "aka": [
+        "MEI",
+        "NMEA Advanced Installer"
+      ],
+      "blurb": "Tiered certification for technicians installing radar, chartplotters, autopilots, VHF and interfaced navigation electronics on vessels."
+    },
+    {
+      "slug": "uscg-oupv-operator-uninspected-passenger-vessels",
+      "name": "Operator of Uninspected Passenger Vessels",
+      "short": "OUPV",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Six-Pack License",
+        "OUPV",
+        "Six Pack Captain"
+      ],
+      "blurb": "Entry captain licence allowing carriage of up to six paying passengers on uninspected vessels for inland, Great Lakes or near coastal routes."
+    },
+    {
+      "slug": "uscg-ordinary-seaman-endorsement",
+      "name": "Ordinary Seaman Endorsement",
+      "short": "OS",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "OS"
+      ],
+      "blurb": "Entry-level deck rating requiring no sea service, used as the starting endorsement for new mariners joining a vessel crew."
+    },
+    {
+      "slug": "uscg-qmed-qualified-member-engine-department",
+      "name": "Qualified Member of the Engine Department",
+      "short": "QMED",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "QMED",
+        "Oiler",
+        "Junior Engineer"
+      ],
+      "blurb": "Engine rating covering oiler, fireman-watertender, junior engineer and refrigerating engineer roles, earned by sea service and examination."
+    },
+    {
+      "slug": "uscg-radar-observer-inland",
+      "name": "Radar Observer (Inland) Certification",
+      "short": "Radar Inland",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Certification",
+      "aka": [
+        "Radar Observer Inland"
+      ],
+      "blurb": "Short course and practical assessment on radar navigation and collision avoidance for inland and river route mariners."
+    },
+    {
+      "slug": "uscg-radar-observer-unlimited",
+      "name": "Radar Observer (Unlimited) Certification",
+      "short": "Radar Unlimited",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Certification",
+      "aka": [
+        "Radar Observer Unlimited"
+      ],
+      "blurb": "Approved course covering radar plotting, relative motion, ARPA principles and collision avoidance for unlimited tonnage service."
+    },
+    {
+      "slug": "stcw-rating-forming-part-of-navigational-watch",
+      "name": "Rating Forming Part of a Navigational Watch",
+      "short": "RFPNW",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "RFPNW",
+        "STCW II/4"
+      ],
+      "blurb": "STCW deck rating requiring assessed steering, lookout and watchkeeping competencies for service on seagoing vessels."
+    },
+    {
+      "slug": "stcw-rating-forming-part-of-engineering-watch",
+      "name": "Rating Forming Part of an Engineering Watch",
+      "short": "RFPEW",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "RFPEW",
+        "STCW III/4"
+      ],
+      "blurb": "STCW engine rating certifying competence to keep an engine room watch under the direction of a licensed engineer officer."
+    },
+    {
+      "slug": "sams-accredited-marine-surveyor",
+      "name": "SAMS Accredited Marine Surveyor",
+      "short": "SAMS AMS",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "Society of Accredited Marine Surveyors",
+      "type": "Certification",
+      "aka": [
+        "AMS",
+        "SAMS AMS"
+      ],
+      "blurb": "Accreditation for marine surveyors requiring experience, continuing education and an examination on survey practice and standards."
+    },
+    {
+      "slug": "uscg-second-mate-endorsement",
+      "name": "Second Mate Endorsement",
+      "short": "Second Mate",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Second Mate Unlimited"
+      ],
+      "blurb": "Unlimited-tonnage deck licence above third mate, requiring additional sea service and Coast Guard examination modules."
+    },
+    {
+      "slug": "uscg-ships-cook-endorsement",
+      "name": "Ship's Cook Endorsement",
+      "short": "Ship's Cook",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Ships Cook",
+        "STCW III/7 Cook"
+      ],
+      "blurb": "Steward department endorsement requiring approved food safety training and sea service before a mariner may serve as ship cook."
+    },
+    {
+      "slug": "stcw-advanced-firefighting",
+      "name": "STCW Advanced Firefighting",
+      "short": "Advanced Firefighting",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Training",
+      "aka": [
+        "AFF"
+      ],
+      "blurb": "Approved course on shipboard fire command, fixed systems, fire investigation and casualty control required for officer endorsements."
+    },
+    {
+      "slug": "stcw-arpa-automatic-radar-plotting-aids",
+      "name": "STCW Automatic Radar Plotting Aids",
+      "short": "ARPA",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Training",
+      "aka": [
+        "ARPA"
+      ],
+      "blurb": "Approved course on ARPA target acquisition, trial manoeuvres, system limitations and errors for officers in charge of a navigational watch."
+    },
+    {
+      "slug": "stcw-basic-training",
+      "name": "STCW Basic Training",
+      "short": "BT",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Training",
+      "aka": [
+        "Basic Safety Training",
+        "BST",
+        "BT"
+      ],
+      "blurb": "Four-module STCW course covering personal survival, basic firefighting, elementary first aid and personal safety and social responsibility."
+    },
+    {
+      "slug": "stcw-bridge-resource-management",
+      "name": "STCW Bridge Resource Management",
+      "short": "BRM",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Training",
+      "aka": [
+        "BRM"
+      ],
+      "blurb": "Approved course on bridge teamwork, situational awareness, communication and error management for watchkeeping deck officers."
+    },
+    {
+      "slug": "stcw-ecdis",
+      "name": "STCW Electronic Chart Display and Information Systems",
+      "short": "ECDIS",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Training",
+      "aka": [
+        "ECDIS"
+      ],
+      "blurb": "Approved course on electronic chart systems, route planning, alarms, sensor inputs and ECDIS limitations for navigating officers."
+    },
+    {
+      "slug": "stcw-leadership-and-managerial-skills",
+      "name": "STCW Leadership and Managerial Skills",
+      "short": "LMS",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Training",
+      "aka": [
+        "Leadership and Managerial Skills"
+      ],
+      "blurb": "Management-level STCW course on shipboard leadership, resource management, decision making and workload assessment."
+    },
+    {
+      "slug": "stcw-leadership-and-teamwork",
+      "name": "STCW Leadership and Teamwork",
+      "short": "LTW",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Training",
+      "aka": [
+        "Leadership and Teamworking Skills"
+      ],
+      "blurb": "Operational-level STCW course on teamwork, task allocation and effective communication aboard vessels for junior officers."
+    },
+    {
+      "slug": "stcw-medical-care-provider",
+      "name": "STCW Medical Care Provider",
+      "short": "Medical Care",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Training",
+      "aka": [
+        "Medical Care Provider"
+      ],
+      "blurb": "Advanced shipboard medical course covering patient assessment, medication administration and radio medical advice for masters and mates."
+    },
+    {
+      "slug": "stcw-medical-first-aid-provider",
+      "name": "STCW Medical First Aid Provider",
+      "short": "Medical First Aid",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Training",
+      "aka": [
+        "Proficiency in Medical First Aid"
+      ],
+      "blurb": "Approved course on immediate care of shipboard casualties including bleeding, burns, fractures, hypothermia and rescue breathing."
+    },
+    {
+      "slug": "uscg-tankerman-assistant",
+      "name": "Tankerman-Assistant Endorsement",
+      "short": "Tankerman-Assistant",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Tankerman Assistant"
+      ],
+      "blurb": "Endorsement allowing a mariner to assist in cargo transfers of oil or hazardous liquids under the supervision of a person in charge."
+    },
+    {
+      "slug": "uscg-tankerman-engineer",
+      "name": "Tankerman-Engineer Endorsement",
+      "short": "Tankerman-Engineer",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Tankerman Engineer"
+      ],
+      "blurb": "Endorsement for licensed engineers supervising transfer of fuel oil and bunkering operations aboard tank vessels."
+    },
+    {
+      "slug": "uscg-tankerman-pic-barge",
+      "name": "Tankerman-PIC (Barge) Endorsement",
+      "short": "Tankerman-PIC Barge",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Tankerman PIC Barge"
+      ],
+      "blurb": "Restricted tankerman endorsement covering cargo transfers on tank barges rather than self-propelled tank vessels."
+    },
+    {
+      "slug": "uscg-tankerman-pic",
+      "name": "Tankerman-PIC Endorsement",
+      "short": "Tankerman-PIC",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Person in Charge",
+        "Tankerman PIC DL"
+      ],
+      "blurb": "Endorsement authorising a mariner to act as person in charge of transferring dangerous liquid or liquefied gas cargo."
+    },
+    {
+      "slug": "uscg-third-assistant-engineer",
+      "name": "Third Assistant Engineer Endorsement",
+      "short": "Third A/E",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "3 A/E Unlimited"
+      ],
+      "blurb": "Entry unlimited engineering officer licence requiring extensive Coast Guard examinations in motor, steam, gas turbine and electrical plants."
+    },
+    {
+      "slug": "uscg-third-mate-endorsement",
+      "name": "Third Mate Endorsement",
+      "short": "Third Mate",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "License",
+      "aka": [
+        "Third Mate Unlimited",
+        "3 M Oceans"
+      ],
+      "blurb": "Entry unlimited deck officer licence for oceans service, examined across navigation, stability, cargo, safety and rules of the road."
+    },
+    {
+      "slug": "twic-transportation-worker-identification-credential",
+      "name": "Transportation Worker Identification Credential",
+      "short": "TWIC",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "Transportation Security Administration",
+      "type": "Certification",
+      "aka": [
+        "TWIC Card"
+      ],
+      "blurb": "Biometric identity card required for unescorted access to secure port areas and for all credentialed merchant mariners."
+    },
+    {
+      "slug": "uscg-chart-plot-exam-module",
+      "name": "USCG Chart Plot Exam Module",
+      "short": "Chart Plot",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "Exam",
+      "aka": [
+        "Chart Navigation Module"
+      ],
+      "blurb": "Ten-question plotting module requiring 90 percent to pass, covering fixes, set and drift, courses to steer and estimated times of arrival."
+    },
+    {
+      "slug": "uscg-deck-general-exam-module",
+      "name": "USCG Deck General Exam Module",
+      "short": "Deck General",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "Exam",
+      "aka": [
+        "Deck General Module"
+      ],
+      "blurb": "Examination module on seamanship, marlinespike, ship construction, stability and deck operations for master level credentials."
+    },
+    {
+      "slug": "uscg-deck-safety-exam-module",
+      "name": "USCG Deck Safety Exam Module",
+      "short": "Deck Safety",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "Exam",
+      "aka": [
+        "Deck Safety Module"
+      ],
+      "blurb": "Examination module covering firefighting, damage control, lifesaving equipment, pollution regulations and emergency procedures."
+    },
+    {
+      "slug": "uscg-navigation-general-exam-module",
+      "name": "USCG Navigation General Exam Module",
+      "short": "Navigation General",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "Exam",
+      "aka": [
+        "Nav General Module"
+      ],
+      "blurb": "Fifty-question module on aids to navigation, tides and currents, compass error, weather and publications, requiring 90 percent to pass."
+    },
+    {
+      "slug": "uscg-rules-of-the-road-exam-module",
+      "name": "USCG Rules of the Road Exam Module",
+      "short": "Rules of the Road",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard National Maritime Center",
+      "type": "Exam",
+      "aka": [
+        "COLREGS Exam",
+        "Rules Module"
+      ],
+      "blurb": "Module on International and Inland navigation rules, lights, shapes and sound signals requiring a 90 percent passing score."
+    },
+    {
+      "slug": "stcw-vessel-personnel-designated-security-duties",
+      "name": "Vessel Personnel with Designated Security Duties",
+      "short": "VPDSD",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Training",
+      "aka": [
+        "VPDSD"
+      ],
+      "blurb": "STCW security training for crew assigned security tasks, covering threat recognition, screening, search and security equipment use."
+    },
+    {
+      "slug": "isps-vessel-security-officer",
+      "name": "Vessel Security Officer Course",
+      "short": "VSO",
+      "category": "aviation-maritime",
+      "group": "Maritime & USCG",
+      "body": "U.S. Coast Guard-Approved Training Providers",
+      "type": "Training",
+      "aka": [
+        "VSO"
+      ],
+      "blurb": "Approved course for officers responsible for implementing and maintaining the ship security plan under the ISPS Code."
+    },
+    {
+      "slug": "fcc-amateur-extra-class-license",
+      "name": "Amateur Extra Class License Exam",
+      "short": "Extra Class",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission (Volunteer Examiner Coordinators)",
+      "type": "License",
+      "aka": [
+        "Element 4",
+        "Amateur Extra"
+      ],
+      "blurb": "50-question examination granting full amateur radio privileges, covering advanced theory, transmission lines and specialised operating rules."
+    },
+    {
+      "slug": "fcc-amateur-general-class-license",
+      "name": "Amateur Radio General Class License Exam",
+      "short": "General Class",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission (Volunteer Examiner Coordinators)",
+      "type": "License",
+      "aka": [
+        "Element 3 Amateur",
+        "General Class"
+      ],
+      "blurb": "35-question examination opening most high-frequency amateur bands, covering propagation, antennas, rules and station operation."
+    },
+    {
+      "slug": "fcc-amateur-technician-class-license",
+      "name": "Amateur Radio Technician Class License Exam",
+      "short": "Technician Class",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission (Volunteer Examiner Coordinators)",
+      "type": "License",
+      "aka": [
+        "Element 2",
+        "Technician Class"
+      ],
+      "blurb": "Entry amateur radio examination of 35 questions on regulations, operating practice and electronics for VHF and UHF privileges."
+    },
+    {
+      "slug": "fcc-element-1-basic-radio-law",
+      "name": "FCC Element 1 Basic Radio Law and Operating Practice",
+      "short": "Element 1",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission (COLEM administrators)",
+      "type": "Exam",
+      "aka": [
+        "Element 1"
+      ],
+      "blurb": "24-question examination on radio law and operating practice that underpins the Marine Radio Operator Permit and other commercial licences."
+    },
+    {
+      "slug": "fcc-element-3-general-radiotelephone",
+      "name": "FCC Element 3 General Radiotelephone",
+      "short": "Element 3",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission (COLEM administrators)",
+      "type": "Exam",
+      "aka": [
+        "Element 3 Commercial"
+      ],
+      "blurb": "76-question technical examination on electronics, antennas and transmitters taken with Element 1 to earn the GROL."
+    },
+    {
+      "slug": "fcc-element-5-radiotelegraph-operating-practice",
+      "name": "FCC Element 5 Radiotelegraph Operating Practice",
+      "short": "Element 5",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission (COLEM administrators)",
+      "type": "Exam",
+      "aka": [
+        "Element 5"
+      ],
+      "blurb": "Written examination on radiotelegraph operating procedures and regulations required toward the Radiotelegraph Operator License."
+    },
+    {
+      "slug": "fcc-element-6-advanced-radiotelegraph",
+      "name": "FCC Element 6 Advanced Radiotelegraph",
+      "short": "Element 6",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission (COLEM administrators)",
+      "type": "Exam",
+      "aka": [
+        "Element 6"
+      ],
+      "blurb": "Technical examination on radiotelegraph equipment, installation and maintenance for the commercial radiotelegraph operator licence."
+    },
+    {
+      "slug": "fcc-element-7-gmdss-radio-operating-practices",
+      "name": "FCC Element 7 GMDSS Radio Operating Practices",
+      "short": "Element 7",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission (COLEM administrators)",
+      "type": "Exam",
+      "aka": [
+        "Element 7"
+      ],
+      "blurb": "76-question examination on distress alerting, digital selective calling, Inmarsat and NAVTEX for the GMDSS operator licence."
+    },
+    {
+      "slug": "fcc-element-7r-restricted-gmdss-operating-practices",
+      "name": "FCC Element 7R Restricted GMDSS Radio Operating Practices",
+      "short": "Element 7R",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission (COLEM administrators)",
+      "type": "Exam",
+      "aka": [
+        "Element 7R"
+      ],
+      "blurb": "Examination covering GMDSS operating practices limited to sea area A1, leading to the restricted GMDSS operator licence."
+    },
+    {
+      "slug": "fcc-element-8-ship-radar-techniques",
+      "name": "FCC Element 8 Ship Radar Techniques",
+      "short": "Element 8",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission (COLEM administrators)",
+      "type": "Exam",
+      "aka": [
+        "Element 8"
+      ],
+      "blurb": "50-question technical examination on radar theory, pulse circuits, magnetrons and alignment required for the radar endorsement."
+    },
+    {
+      "slug": "fcc-element-9-gmdss-radio-maintenance",
+      "name": "FCC Element 9 GMDSS Radio Maintenance Practices and Procedures",
+      "short": "Element 9",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission (COLEM administrators)",
+      "type": "Exam",
+      "aka": [
+        "Element 9"
+      ],
+      "blurb": "50-question examination on at-sea maintenance and repair of GMDSS equipment for the radio maintainer licence."
+    },
+    {
+      "slug": "fcc-general-radiotelephone-operator-license",
+      "name": "General Radiotelephone Operator License",
+      "short": "GROL",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission",
+      "type": "License",
+      "aka": [
+        "GROL",
+        "PG License"
+      ],
+      "blurb": "Lifetime commercial licence earned by passing Elements 1 and 3, required to repair and maintain most ship and aircraft radio transmitters."
+    },
+    {
+      "slug": "fcc-gmdss-radio-maintainers-license",
+      "name": "GMDSS Radio Maintainer's License",
+      "short": "GMDSS Maintainer",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission",
+      "type": "License",
+      "aka": [
+        "DM License"
+      ],
+      "blurb": "Licence earned through Elements 1, 3 and 9 authorising at-sea maintenance and repair of Global Maritime Distress and Safety System equipment."
+    },
+    {
+      "slug": "fcc-gmdss-radio-operators-license",
+      "name": "GMDSS Radio Operator's License",
+      "short": "GMDSS Operator",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission",
+      "type": "License",
+      "aka": [
+        "DO License"
+      ],
+      "blurb": "Licence earned through Elements 1 and 7 authorising operation of GMDSS distress and safety communications equipment at sea."
+    },
+    {
+      "slug": "fcc-gmdss-radio-operator-maintainer-license",
+      "name": "GMDSS Radio Operator/Maintainer License",
+      "short": "GMDSS Op/Maintainer",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission",
+      "type": "License",
+      "aka": [
+        "DB License"
+      ],
+      "blurb": "Combined licence covering both GMDSS operating and maintenance privileges, requiring Elements 1, 3, 7 and 9 to be passed."
+    },
+    {
+      "slug": "fcc-marine-radio-operator-permit",
+      "name": "Marine Radio Operator Permit",
+      "short": "MROP",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission",
+      "type": "License",
+      "aka": [
+        "MROP",
+        "MP Permit"
+      ],
+      "blurb": "Permit obtained by passing Element 1, required to operate radiotelephone stations aboard many passenger and commercial vessels."
+    },
+    {
+      "slug": "fcc-radiotelegraph-operator-license",
+      "name": "Radiotelegraph Operator License",
+      "short": "Radiotelegraph",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission",
+      "type": "License",
+      "aka": [
+        "T License"
+      ],
+      "blurb": "Commercial licence requiring Elements 1, 5 and 6 plus Morse code proficiency for operating and maintaining radiotelegraph stations."
+    },
+    {
+      "slug": "fcc-restricted-gmdss-radio-operator-license",
+      "name": "Restricted GMDSS Radio Operator License",
+      "short": "Restricted GMDSS",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission",
+      "type": "License",
+      "aka": [
+        "RG License"
+      ],
+      "blurb": "Licence earned through Elements 1 and 7R for GMDSS operation on vessels trading only within VHF coverage of coast stations."
+    },
+    {
+      "slug": "fcc-restricted-radiotelephone-operator-permit",
+      "name": "Restricted Radiotelephone Operator Permit",
+      "short": "RR Permit",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission",
+      "type": "License",
+      "aka": [
+        "RP License",
+        "Restricted Radiotelephone"
+      ],
+      "blurb": "Lifetime permit issued without examination, commonly required by pilots flying internationally and by operators of certain radio stations."
+    },
+    {
+      "slug": "fcc-restricted-radiotelephone-permit-limited-use",
+      "name": "Restricted Radiotelephone Operator Permit Limited Use",
+      "short": "RL Permit",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission",
+      "type": "License",
+      "aka": [
+        "RL License"
+      ],
+      "blurb": "Permit variant issued to aircraft pilots and other operators who do not qualify for the standard restricted permit."
+    },
+    {
+      "slug": "fcc-ship-radar-endorsement",
+      "name": "Ship Radar Endorsement",
+      "short": "Radar Endorsement",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission",
+      "type": "License",
+      "aka": [
+        "Radar Endorsement"
+      ],
+      "blurb": "Endorsement added to a GROL or radiotelegraph licence by passing Element 8, required to service shipboard radar systems."
+    },
+    {
+      "slug": "fcc-six-months-service-endorsement",
+      "name": "Six Months Service Endorsement",
+      "short": "Six Months Service",
+      "category": "aviation-maritime",
+      "group": "Radio & Communications",
+      "body": "Federal Communications Commission",
+      "type": "License",
+      "aka": [
+        "Six Months Service"
+      ],
+      "blurb": "Endorsement documenting six months of shipboard radio service, needed for certain sole radio operator positions at sea."
+    },
+    {
+      "slug": "eta-aircraft-electronics-technician",
+      "name": "Aircraft Electronics Technician Certification",
+      "short": "AET",
+      "category": "aviation-maritime",
+      "group": "Aircraft Maintenance",
+      "body": "ETA International",
+      "type": "Certification",
+      "aka": [
+        "AET",
+        "NCATT AET",
+        "Avionics Technician Certification"
+      ],
+      "blurb": "Baseline avionics credential covering aircraft electrical fundamentals, wiring, soldering, EMI control and troubleshooting of onboard electronic systems."
+    },
+    {
+      "slug": "faa-ama-airframe-knowledge-test",
+      "name": "Aviation Maintenance Technician Airframe Knowledge Test",
+      "short": "AMA",
+      "category": "aviation-maritime",
+      "group": "Aircraft Maintenance",
+      "body": "Federal Aviation Administration",
+      "type": "Exam",
+      "aka": [
+        "AMA",
+        "A&P Airframe Written"
+      ],
+      "blurb": "100-question FAA written test on airframe structures, systems and inspection required for the airframe rating of a mechanic certificate."
+    },
+    {
+      "slug": "faa-airframe-oral-and-practical",
+      "name": "Aviation Maintenance Technician Airframe Oral and Practical Test",
+      "short": "Airframe O&P",
+      "category": "aviation-maritime",
+      "group": "Aircraft Maintenance",
+      "body": "Federal Aviation Administration (Designated Mechanic Examiner)",
+      "type": "Exam",
+      "aka": [
+        "Airframe O&P",
+        "Airframe Oral and Practical"
+      ],
+      "blurb": "Examiner-administered oral questioning and hands-on projects covering airframe subject areas required before the airframe rating is issued."
+    },
+    {
+      "slug": "faa-amg-general-knowledge-test",
+      "name": "Aviation Maintenance Technician General Knowledge Test",
+      "short": "AMG",
+      "category": "aviation-maritime",
+      "group": "Aircraft Maintenance",
+      "body": "Federal Aviation Administration",
+      "type": "Exam",
+      "aka": [
+        "AMG",
+        "A&P General Written"
+      ],
+      "blurb": "60-question FAA written test covering basic electricity, weight and balance, materials, maintenance forms and regulations shared by all mechanics."
+    },
+    {
+      "slug": "faa-general-oral-and-practical",
+      "name": "Aviation Maintenance Technician General Oral and Practical Test",
+      "short": "General O&P",
+      "category": "aviation-maritime",
+      "group": "Aircraft Maintenance",
+      "body": "Federal Aviation Administration (Designated Mechanic Examiner)",
+      "type": "Exam",
+      "aka": [
+        "General O&P"
+      ],
+      "blurb": "Oral and practical examination on general maintenance subjects that every applicant must pass before receiving an airframe or powerplant rating."
+    },
+    {
+      "slug": "faa-amp-powerplant-knowledge-test",
+      "name": "Aviation Maintenance Technician Powerplant Knowledge Test",
+      "short": "AMP",
+      "category": "aviation-maritime",
+      "group": "Aircraft Maintenance",
+      "body": "Federal Aviation Administration",
+      "type": "Exam",
+      "aka": [
+        "AMP",
+        "A&P Powerplant Written"
+      ],
+      "blurb": "100-question FAA written test on reciprocating and turbine engines, propellers, fuel and ignition systems for the powerplant rating."
+    },
+    {
+      "slug": "faa-powerplant-oral-and-practical",
+      "name": "Aviation Maintenance Technician Powerplant Oral and Practical Test",
+      "short": "Powerplant O&P",
+      "category": "aviation-maritime",
+      "group": "Aircraft Maintenance",
+      "body": "Federal Aviation Administration (Designated Mechanic Examiner)",
+      "type": "Exam",
+      "aka": [
+        "Powerplant O&P"
+      ],
+      "blurb": "Oral questioning and hands-on engine projects assessed by a designated examiner before the powerplant rating is added to a mechanic certificate."
+    },
+    {
+      "slug": "nbaa-certified-aviation-manager",
+      "name": "Certified Aviation Manager",
+      "short": "CAM",
+      "category": "aviation-maritime",
+      "group": "Aircraft Maintenance",
+      "body": "National Business Aviation Association",
+      "type": "Certification",
+      "aka": [
+        "CAM",
+        "NBAA CAM"
+      ],
+      "blurb": "Credential for business aviation leaders covering flight operations, human resources, technical services, facilities and aviation business management."
+    },
+    {
+      "slug": "faa-repairman-experimental-aircraft-builder",
+      "name": "FAA Repairman Certificate (Experimental Aircraft Builder)",
+      "short": "Repairman EAB",
+      "category": "aviation-maritime",
+      "group": "Aircraft Maintenance",
+      "body": "Federal Aviation Administration",
+      "type": "Certification",
+      "aka": [
+        "Experimental Amateur-Built Repairman"
+      ],
+      "blurb": "Certificate allowing the primary builder of an amateur-built aircraft to perform the annual condition inspection on that specific airplane."
+    },
+    {
+      "slug": "faa-repairman-lsa-inspection-rating",
+      "name": "FAA Repairman Certificate (Light-Sport Aircraft Inspection Rating)",
+      "short": "LSRI",
+      "category": "aviation-maritime",
+      "group": "Aircraft Maintenance",
+      "body": "Federal Aviation Administration",
+      "type": "Certification",
+      "aka": [
+        "LSA Repairman Inspection",
+        "LSRI"
+      ],
+      "blurb": "Short-course credential permitting owners of special light-sport aircraft to carry out the required annual condition inspection."
+    },
+    {
+      "slug": "faa-repairman-lsa-maintenance-rating",
+      "name": "FAA Repairman Certificate (Light-Sport Aircraft Maintenance Rating)",
+      "short": "LSRM",
+      "category": "aviation-maritime",
+      "group": "Aircraft Maintenance",
+      "body": "Federal Aviation Administration",
+      "type": "Certification",
+      "aka": [
+        "LSA Repairman Maintenance",
+        "LSRM"
+      ],
+      "blurb": "Credential earned through an approved 80 to 120 hour course authorising maintenance and inspection of light-sport aircraft by class."
+    },
+    {
+      "slug": "faa-iar-inspection-authorization",
+      "name": "Inspection Authorization Knowledge Test",
+      "short": "IAR",
+      "category": "aviation-maritime",
+      "group": "Aircraft Maintenance",
+      "body": "Federal Aviation Administration",
+      "type": "Exam",
+      "aka": [
+        "IAR",
+        "IA Written Test"
+      ],
+      "blurb": "50-question test for experienced A&P mechanics seeking Inspection Authorization to approve major repairs and perform annual inspections."
+    },
+    {
+      "slug": "faa-rig-parachute-rigger",
+      "name": "Parachute Rigger Knowledge Test",
+      "short": "RIG",
+      "category": "aviation-maritime",
+      "group": "Aircraft Maintenance",
+      "body": "Federal Aviation Administration",
+      "type": "Exam",
+      "aka": [
+        "RIG"
+      ],
+      "blurb": "FAA written test covering parachute construction, packing, maintenance and record keeping for senior and master parachute rigger certificates."
+    },
+    {
+      "slug": "faa-rmc-parachute-rigger-military-competence",
+      "name": "Parachute Rigger Military Competence Knowledge Test",
+      "short": "RMC",
+      "category": "aviation-maritime",
+      "group": "Aircraft Maintenance",
+      "body": "Federal Aviation Administration",
+      "type": "Exam",
+      "aka": [
+        "RMC"
+      ],
+      "blurb": "Abbreviated 25-question test for military-trained riggers converting service experience into an FAA parachute rigger certificate."
+    }
+  ]
+}

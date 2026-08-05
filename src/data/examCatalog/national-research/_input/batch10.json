@@ -1,0 +1,562 @@
+{
+  "batch": "10",
+  "categories": [
+    "beauty-wellness"
+  ],
+  "groups": [
+    "Cosmetology & Barbering",
+    "Spa, Massage & Wellness"
+  ],
+  "examCount": 52,
+  "bodyCount": 17,
+  "bodies": [
+    "American Academy of Micropigmentation",
+    "Alliance of Professional Tattooists",
+    "Society of Permanent Cosmetic Professionals",
+    "World Trichology Society",
+    "National-Interstate Council of State Boards of Cosmetology",
+    "Prov, Inc.",
+    "PSI Services",
+    "American Reflexology Certification Board",
+    "National Certification Board for Therapeutic Massage & Bodywork",
+    "National Ayurvedic Medical Association Certification Board",
+    "Board for Certification of Nutrition Specialists",
+    "Spencer Institute",
+    "National Wellness Institute",
+    "International Association of Yoga Therapists",
+    "National Association of Nutrition Professionals",
+    "National Board for Health & Wellness Coaching",
+    "Aromatherapy Registration Council"
+  ],
+  "exams": [
+    {
+      "slug": "aam-board-certification-micropigmentation",
+      "name": "AAM Board Certification in Micropigmentation",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "American Academy of Micropigmentation",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Written and practical board certification for permanent makeup and micropigmentation practitioners including medical tattoo work."
+    },
+    {
+      "slug": "apt-bloodborne-pathogens-body-art",
+      "name": "Bloodborne Pathogens Training for Body Artists",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "Alliance of Professional Tattooists",
+      "type": "Training",
+      "aka": [],
+      "blurb": "OSHA-aligned course on bloodborne pathogen exposure control, sterilisation and cross-contamination prevention for tattoo and piercing artists."
+    },
+    {
+      "slug": "certified-permanent-cosmetics-professional",
+      "name": "Certified Permanent Cosmetics Professional",
+      "short": "CPCP",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "Society of Permanent Cosmetic Professionals",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Examination covering colour theory, skin anatomy, sterilisation and device handling for permanent cosmetic makeup artists."
+    },
+    {
+      "slug": "certified-trichologist-wts",
+      "name": "Certified Trichologist",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "World Trichology Society",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Programme and examination in hair and scalp science, diagnosis of hair loss disorders and non-medical treatment protocols."
+    },
+    {
+      "slug": "nic-advanced-micropigmentation-theory",
+      "name": "NIC Advanced Micropigmentation Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "National written examination on advanced micropigmentation techniques, pigment science, infection control and client assessment."
+    },
+    {
+      "slug": "nic-advanced-practice-esthetics-practical",
+      "name": "NIC Advanced Practice Esthetics Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Hands-on national examination on advanced esthetic modalities such as chemical exfoliation, microdermabrasion and light-based treatments."
+    },
+    {
+      "slug": "nic-advanced-practice-esthetics-theory",
+      "name": "NIC Advanced Practice Esthetics Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Written national examination covering advanced and combined esthetics practice, skin physiology, device safety and contraindications."
+    },
+    {
+      "slug": "nic-barber-1-no-chemical-practical",
+      "name": "NIC Barber 1 (No Chemical) Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Practical examination for restricted barber licences covering haircutting and shaving without chemical service components."
+    },
+    {
+      "slug": "nic-barber-1-no-chemical-theory",
+      "name": "NIC Barber 1 (No Chemical) Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Written examination for barber licences that exclude chemical services, focusing on cutting, shaving, sanitation and safety."
+    },
+    {
+      "slug": "nic-barber-practical",
+      "name": "NIC Barber Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Hands-on national barbering examination covering haircutting, shaving, chemical services and infection control procedures."
+    },
+    {
+      "slug": "nic-barber-styling-practical",
+      "name": "NIC Barber Styling Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Practical national examination for barber stylists covering styling, chemical waving, colour and disinfection procedures."
+    },
+    {
+      "slug": "nic-barber-styling-theory",
+      "name": "NIC Barber Styling Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Written national examination for barber stylist licensure covering chemical services, hair structure, styling and safety practice."
+    },
+    {
+      "slug": "nic-barber-theory",
+      "name": "NIC Barber Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Multiple-choice national written examination used by state boards for barber licensure, covering science, hair and skin services."
+    },
+    {
+      "slug": "nic-blow-dry-styling-practical",
+      "name": "NIC Blow Dry Styling Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Practical examination for limited blow dry styling licences covering shampooing, thermal styling and disinfection procedures."
+    },
+    {
+      "slug": "nic-blow-dry-styling-theory",
+      "name": "NIC Blow Dry Styling Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Written examination for blow dry styling licensure covering hair and scalp basics, thermal tools, products and infection control."
+    },
+    {
+      "slug": "nic-body-piercing-practical",
+      "name": "NIC Body Piercing Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Hands-on national examination on aseptic setup, needle handling, jewellery insertion and post-procedure care for body piercers."
+    },
+    {
+      "slug": "nic-body-piercing-theory",
+      "name": "NIC Body Piercing Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Written national examination on anatomy, sterilisation, bloodborne pathogens, jewellery materials and client aftercare for piercers."
+    },
+    {
+      "slug": "nic-cosmetology-practical",
+      "name": "NIC Cosmetology Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Hands-on licensure examination with a hair core plus optional facial, hair removal, manicure and sculptured nail sections."
+    },
+    {
+      "slug": "nic-cosmetology-theory",
+      "name": "NIC Cosmetology Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "National 110-question written examination on scientific concepts plus hair, skin and nail care services used by most state boards."
+    },
+    {
+      "slug": "nic-cosmetology-written-practical",
+      "name": "NIC Cosmetology Written Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Scenario-based written alternative to the hands-on cosmetology practical, testing procedure sequencing and safety judgement."
+    },
+    {
+      "slug": "nic-electrology-practical",
+      "name": "NIC Electrology Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Hands-on examination in probe insertion, epilation technique, equipment setup and infection control for electrologist licensure."
+    },
+    {
+      "slug": "nic-electrology-theory",
+      "name": "NIC Electrology Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Written licensure examination on hair growth cycles, electrolysis modalities, skin anatomy, sterilisation and client consultation."
+    },
+    {
+      "slug": "nic-esthetics-practical",
+      "name": "NIC Esthetics Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Hands-on esthetician licensure examination covering facial treatment, extraction, masks, hair removal and infection control."
+    },
+    {
+      "slug": "nic-esthetics-theory",
+      "name": "NIC Esthetics Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "National written examination for esthetician licensure covering skin sciences, treatments, products, devices and safe practice."
+    },
+    {
+      "slug": "nic-eyelash-eyebrow-practical",
+      "name": "NIC Eyelash and Eyebrow Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Practical examination covering eyelash extension application, eyebrow shaping, adhesive safety and sanitation for limited licences."
+    },
+    {
+      "slug": "nic-hair-design-practical",
+      "name": "NIC Hair Design Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Hands-on examination in cutting, chemical waving, colour application and thermal styling for hair designer licence categories."
+    },
+    {
+      "slug": "nic-hair-design-theory",
+      "name": "NIC Hair Design Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Written examination for hair-only licence categories covering hair structure, chemical services, styling theory and disinfection."
+    },
+    {
+      "slug": "nic-hair-removal-practical",
+      "name": "NIC Hair Removal Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Practical examination on soft and hard waxing, threading, tweezing and post-treatment care for hair removal specialty licences."
+    },
+    {
+      "slug": "nic-hair-removal-theory",
+      "name": "NIC Hair Removal Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Written examination on temporary hair removal methods, skin analysis, contraindications and infection control for specialty licences."
+    },
+    {
+      "slug": "nic-instructor-practical",
+      "name": "NIC Instructor Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Teaching demonstration examination assessing lesson delivery, clinic supervision and student evaluation for beauty school instructors."
+    },
+    {
+      "slug": "nic-instructor-theory",
+      "name": "NIC Instructor Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Written examination on teaching methods, curriculum, classroom management and assessment for cosmetology and barbering instructors."
+    },
+    {
+      "slug": "nic-nail-technology-practical",
+      "name": "NIC Nail Technology Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Hands-on examination covering manicure, pedicure, sculptured nail and tip application plus implement disinfection procedures."
+    },
+    {
+      "slug": "nic-nail-technology-theory",
+      "name": "NIC Nail Technology Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "National written examination for manicurist and nail technician licensure covering nail anatomy, products, services and sanitation."
+    },
+    {
+      "slug": "nic-national-manager-theory",
+      "name": "NIC National Manager Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Written examination for salon manager licence categories covering supervision, sanitation enforcement, records and business practice."
+    },
+    {
+      "slug": "nic-natural-hair-styling-practical",
+      "name": "NIC Natural Hair Styling Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Practical examination covering braiding, twisting, locking and extension techniques performed without chemical services."
+    },
+    {
+      "slug": "nic-natural-hair-styling-theory",
+      "name": "NIC Natural Hair Styling Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Written examination for natural hair stylist and braider licences covering textured hair care, scalp health, tools and sanitation."
+    },
+    {
+      "slug": "nic-permanent-cosmetics-theory",
+      "name": "NIC Permanent Cosmetics/Micropigmentation Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Written national examination on permanent makeup procedures, pigments, skin anatomy, sterilisation and bloodborne pathogen control."
+    },
+    {
+      "slug": "nic-tattooing-practical",
+      "name": "NIC Tattooing Practical Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Hands-on examination on workstation setup, machine handling, aseptic technique and aftercare instruction for tattoo artists."
+    },
+    {
+      "slug": "nic-tattooing-theory",
+      "name": "NIC Tattooing Theory Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "National-Interstate Council of State Boards of Cosmetology",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Written national tattooing examination covering skin anatomy, pigments, equipment, sterilisation and bloodborne pathogen standards."
+    },
+    {
+      "slug": "prov-cosmetology-examination-administration",
+      "name": "Prov Cosmetology Licensing Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "Prov, Inc.",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Test administration channel delivering NIC theory and remote practical beauty licensure examinations for many state boards."
+    },
+    {
+      "slug": "psi-cosmetology-examination",
+      "name": "PSI Cosmetology Licensing Examination",
+      "category": "beauty-wellness",
+      "group": "Cosmetology & Barbering",
+      "body": "PSI Services",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Umbrella testing programme delivering NIC and state-authored cosmetology, barbering and esthetics licensure examinations."
+    },
+    {
+      "slug": "arcb-certified-reflexologist",
+      "name": "ARCB Certified Reflexologist",
+      "category": "beauty-wellness",
+      "group": "Spa, Massage & Wellness",
+      "body": "American Reflexology Certification Board",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "National examination and documentation review covering foot reflexology theory, technique, anatomy and professional practice."
+    },
+    {
+      "slug": "bctmb",
+      "name": "Board Certification in Therapeutic Massage and Bodywork",
+      "short": "BCTMB",
+      "category": "beauty-wellness",
+      "group": "Spa, Massage & Wellness",
+      "body": "National Certification Board for Therapeutic Massage & Bodywork",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Advanced voluntary credential above state licensure, requiring extra education, a background check and a board certification examination."
+    },
+    {
+      "slug": "certified-ayurvedic-health-counselor",
+      "name": "Certified Ayurvedic Health Counselor",
+      "short": "AHC",
+      "category": "beauty-wellness",
+      "group": "Spa, Massage & Wellness",
+      "body": "National Ayurvedic Medical Association Certification Board",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Entry-level Ayurvedic credential examination covering diet, lifestyle counselling, doshas and preventive health practice."
+    },
+    {
+      "slug": "certified-ayurvedic-practitioner",
+      "name": "Certified Ayurvedic Practitioner",
+      "short": "AP",
+      "category": "beauty-wellness",
+      "group": "Spa, Massage & Wellness",
+      "body": "National Ayurvedic Medical Association Certification Board",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Examination for Ayurvedic practitioners covering assessment, herbal formulation, panchakarma principles and client management."
+    },
+    {
+      "slug": "certified-nutrition-specialist",
+      "name": "Certified Nutrition Specialist",
+      "short": "CNS",
+      "category": "beauty-wellness",
+      "group": "Spa, Massage & Wellness",
+      "body": "Board for Certification of Nutrition Specialists",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Graduate-level advanced nutrition credential requiring supervised practice hours and a examination in personalised clinical nutrition."
+    },
+    {
+      "slug": "certified-sleep-science-coach",
+      "name": "Certified Sleep Science Coach",
+      "category": "beauty-wellness",
+      "group": "Spa, Massage & Wellness",
+      "body": "Spencer Institute",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Online programme and assessment on sleep physiology, circadian rhythm, sleep hygiene coaching and behaviour change strategies."
+    },
+    {
+      "slug": "nwi-certified-wellness-practitioner",
+      "name": "Certified Wellness Practitioner",
+      "short": "CWP",
+      "category": "beauty-wellness",
+      "group": "Spa, Massage & Wellness",
+      "body": "National Wellness Institute",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Credential for wellness programme professionals covering multidimensional wellness models, planning, evaluation and ethics."
+    },
+    {
+      "slug": "c-iayt-certified-yoga-therapist",
+      "name": "Certified Yoga Therapist",
+      "short": "C-IAYT",
+      "category": "beauty-wellness",
+      "group": "Spa, Massage & Wellness",
+      "body": "International Association of Yoga Therapists",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Credential for graduates of accredited yoga therapy programmes applying yoga practices to specific health conditions and populations."
+    },
+    {
+      "slug": "nanp-board-exam-holistic-nutrition",
+      "name": "NANP Board Exam in Holistic Nutrition",
+      "category": "beauty-wellness",
+      "group": "Spa, Massage & Wellness",
+      "body": "National Association of Nutrition Professionals",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Board examination for holistic nutrition professionals covering whole-food nutrition, biochemistry, client education and scope of practice."
+    },
+    {
+      "slug": "nbc-hwc",
+      "name": "National Board Certified Health & Wellness Coach",
+      "short": "NBC-HWC",
+      "category": "beauty-wellness",
+      "group": "Spa, Massage & Wellness",
+      "body": "National Board for Health & Wellness Coaching",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Board examination delivered with the NBME covering coaching structure, health behaviour change theory and ethical practice."
+    },
+    {
+      "slug": "registered-aromatherapist-arc",
+      "name": "Registered Aromatherapist Examination",
+      "short": "RA",
+      "category": "beauty-wellness",
+      "group": "Spa, Massage & Wellness",
+      "body": "Aromatherapy Registration Council",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "National examination on essential oil chemistry, botany, safety and therapeutic application for practising aromatherapists."
+    }
+  ]
+}

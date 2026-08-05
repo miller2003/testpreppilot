@@ -1,0 +1,129 @@
+{
+  "slug": "microsoft-az-305",
+  "exam": {
+    "tagline": "The expert-level architect exam that proves you can design end-to-end Azure solutions, not just run them.",
+    "description": "Microsoft Certified: Azure Solutions Architect Expert (AZ-305) is the expert credential for professionals who design cloud and hybrid solutions on Azure. It centers on translating business requirements into secure, scalable designs that follow the Azure Well-Architected Framework and the Cloud Adoption Framework. Candidates need advanced experience across IT operations — networking, virtualization, identity, security, business continuity, data platforms, and governance — plus hands-on Azure administration, development, or DevOps experience. AZ-305 measures four design areas: identity and governance, data storage, business continuity, and infrastructure. To earn the Expert certification you must first hold the Azure Administrator Associate (AZ-104) or Azure Developer Associate (AZ-204) credential; AZ-305 itself is a single exam. It is a strong differentiator for cloud architect and senior engineering roles.",
+    "quickAnswer": {
+      "summary": "AZ-305 is the Azure Solutions Architect Expert exam. It costs $165, runs about 120 minutes, and requires a scaled score of 700/1000. Expect 40–60 questions plus case studies. You must already hold AZ-104 or AZ-204 to earn the Expert credential, and it renews yearly with a free assessment.",
+      "advantages": [
+        "Expert-level credential that signals design leadership",
+        "Builds on the Azure Well-Architected Framework",
+        "Single exam once you hold the associate prerequisite",
+        "Maps to cloud architect and principal engineer roles",
+        "Renews for free every 12 months via Microsoft Learn"
+      ]
+    },
+    "roadmap": [
+      "Earn AZ-104 (or AZ-204) first",
+      "Study the free AZ-305 design learning paths",
+      "Review the Well-Architected and Cloud Adoption Frameworks",
+      "Schedule the $165 exam via Pearson VUE",
+      "Pass with 700/1000 and renew yearly for free"
+    ],
+    "prerequisites": "You must earn the Microsoft Certified: Azure Administrator Associate (AZ-104) or Azure Developer Associate (AZ-204) before the Expert credential is granted. Microsoft recommends advanced IT-operations experience across networking, identity, security, business continuity, and governance.",
+    "eligibility": "Open to all, but the Expert certification is only awarded after the associate prerequisite is met. Anyone may sit AZ-305; the credential is granted once both conditions are satisfied.",
+    "examMeta": {
+      "questions": "40–60 (includes case studies)",
+      "time": "120 minutes",
+      "pass": "700 / 1000 (scaled)",
+      "fee": "$165 USD",
+      "format": "Computer-based, multiple-choice and case studies",
+      "admin": "Pearson VUE"
+    },
+    "topics": [
+      { "name": "Design identity, governance, and monitoring solutions", "note": "Entra ID, RBAC, Azure Policy, management groups, landing zones, and monitoring strategy.", "weight": "25–30%" },
+      { "name": "Design data storage solutions", "note": "Relational, NoSQL, and data lake options, plus caching, data integration, and governance.", "weight": "20–25%" },
+      { "name": "Design business continuity solutions", "note": "Backup, disaster recovery, replication, and failover for apps and data.", "weight": "15–20%" },
+      { "name": "Design infrastructure solutions", "note": "Compute, networking, application architecture, and migration/modernization.", "weight": "30–35%" }
+    ],
+    "examEssentials": [
+      ["Credential", "Microsoft Certified: Azure Solutions Architect Expert"],
+      ["Exam code", "AZ-305"],
+      ["Level", "Expert (advanced)"],
+      ["Prerequisite", "AZ-104 or AZ-204 associate"],
+      ["Exam length", "40–60 questions · 120 minutes"],
+      ["Passing score", "700 / 1000"],
+      ["Exam fee", "$165 USD"],
+      ["Delivery", "Pearson VUE test center or online proctoring"],
+      ["Validity", "12 months (free annual renewal)"]
+    ],
+    "timeline": [
+      ["Earn associate prerequisite", "Before AZ-305"],
+      ["Study design paths", "4–8 weeks typical"],
+      ["Take practice assessment", "2–3 hours"],
+      ["Schedule and sit exam", "Year-round"],
+      ["Get results", "Pass/fail on screen; report in ~24h"]
+    ],
+    "costBreakdown": {
+      "items": [
+        ["AZ-305 exam fee", "$165"],
+        ["Prerequisite associate exam (AZ-104/204)", "$165 if not already held"],
+        ["Official Microsoft Learn study material", "$0 (free)"],
+        ["Optional instructor-led course", "$0–$600+"],
+        ["Retake (if needed)", "$165 again"]
+      ],
+      "total": "$165+ (plus the associate prerequisite if not already earned)",
+      "footnote": "Fees are set by Microsoft and billed in local currency; regional taxes may apply. Academic pricing is lower where available."
+    },
+    "difficulty": "Hard",
+    "audience": "Cloud solution architects and senior engineers with broad Azure operations experience.",
+    "time": "3–5 months including the associate prerequisite",
+    "cost": "$165+",
+    "faqs": [
+      { "q": "Do I need AZ-104 before AZ-305?", "a": "You need either AZ-104 (Administrator) or AZ-204 (Developer) as the associate prerequisite. AZ-305 alone does not grant the Expert credential until the associate is earned." },
+      { "q": "Is AZ-305 harder than AZ-104?", "a": "Yes. It is an Expert exam focused on design judgment across identity, data, continuity, and infrastructure, and assumes you already operate Azure at the associate level." },
+      { "q": "How long should I study for AZ-305?", "a": "Plan 4–8 weeks of design-focused study after the associate, plus time to earn the prerequisite if you do not hold it yet." },
+      { "q": "How much does AZ-305 cost and does it expire?", "a": "The exam fee is $165 USD. The certification is valid for 12 months and renews for free through an online assessment on Microsoft Learn." },
+      { "q": "What is the AZ-305 exam format?", "a": "It is delivered as 40–60 questions, including case studies, in about 120 minutes, with a scaled pass mark of 700/1000." }
+    ],
+    "summaryPoints": [
+      "AZ-305 is the Azure Solutions Architect Expert exam; you must already hold AZ-104 or AZ-204 to earn the credential.",
+      "The exam is 40–60 questions (with case studies) in about 120 minutes; the passing scaled score is 700/1000.",
+      "Microsoft's published weights are identity/governance/monitoring 25–30%, data storage 20–25%, business continuity 15–20%, and infrastructure 30–35%.",
+      "It costs $165 and renews for free every 12 months via a Microsoft Learn assessment."
+    ],
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
+    "reviewed": "2026-08",
+    "confidence": "high"
+  },
+  "program": {
+    "body": "Microsoft",
+    "about": "Microsoft Certifications are role-based, fundamentals, and specialty credentials that validate cloud, AI, security, and developer skills on Microsoft Azure and related platforms. Exams are authored by Microsoft and delivered through Pearson VUE (and Certiport for academic scheduling of Fundamentals exams). Preparation is built around free, official Microsoft Learn training paths and instructor-led courses, and most role-based and specialty credentials must be renewed every 12 months via a free online assessment on Microsoft Learn. Badges are issued through Microsoft's certification profile and Credly.",
+    "registrationSteps": [
+      { "title": "Prepare with Microsoft Learn", "description": "Work through the free official self-paced learning paths and, optionally, instructor-led courses for your exam. Microsoft Learn is the primary, no-cost study source and maps directly to the exam skills outline.", "duration": "1–10 weeks depending on exam and experience" },
+      { "title": "Schedule through Pearson VUE", "description": "Sign in with a personal Microsoft account (MSA) and schedule the exam on the Pearson VUE portal. Choose an in-person test center or online proctoring (OnVUE). Students and educators can use Certiport for Fundamentals exams.", "duration": "about 15 minutes", "note": "Microsoft recommends a personal MSA account; a work or school account can lose exam records if you leave the organization." },
+      { "title": "Take the exam", "description": "Arrive at the test center or launch the online proctoring session. Exams are computer-based and may include multiple-choice, drag-and-drop, case studies, and performance-based lab tasks in a live environment.", "duration": "45–120 minutes depending on the exam" },
+      { "title": "Receive results and badge", "description": "You see a pass/fail result on screen immediately. A detailed score report is emailed within about 24 hours and posted to your Microsoft certification profile. On passing, your digital badge is issued via Credly.", "duration": "score at end; badge within a few days" },
+      { "title": "Renew annually", "description": "Most Microsoft role-based, specialty, and fundamentals certifications expire after 12 months. Renew for free by passing a shorter online renewal assessment on Microsoft Learn before the expiry date — no need to retake the full exam.", "duration": "about 45 minutes, once a year" }
+    ],
+    "proctoring": "Delivered by Pearson VUE. You can sit the exam at a Pearson VUE test center or take it online through OnVUE remote proctoring; the fee is the same for both. Online proctoring requires a quiet, private space, a working webcam, and a system check beforehand.",
+    "retakePolicy": "If you do not pass, you may retake the exam after 24 hours. A second failed attempt requires a 14-day waiting period, and any further attempts also require a 14-day wait between them, up to a maximum of five attempts in a 12-month period.",
+    "recertification": "Microsoft role-based, specialty, and fundamentals certifications are valid for 12 months from the date earned. Renew at no cost by passing the shorter online renewal assessment on Microsoft Learn before the credential expires. Retired certifications cannot be renewed and must be re-earned through the active successor if one exists.",
+    "scoreReporting": "A pass/fail result is shown immediately after the exam. The official score report is emailed within about 24 hours and is also available in your Microsoft certification profile, with section-level feedback on how you performed.",
+    "refundPolicy": "Exam fees are generally non-refundable once a seat is purchased, but you can cancel or reschedule through Pearson VUE at no charge if you do so at least 24–48 hours before the appointment (exact window varies by region).",
+    "providersNote": "Microsoft certification exams are delivered exclusively through Pearson VUE (and Certiport for academic or student Fundamentals scheduling). No other provider is authorized to administer these exams.",
+    "comparison": {
+      "title": "Microsoft Azure / AI certifications compared",
+      "columns": ["Credential", "Level", "Focus", "Exam fee", "Validity"],
+      "rows": [
+        { "label": "AZ-900 Azure Fundamentals", "values": ["Fundamentals", "Cloud concepts", "$99", "1 year"] },
+        { "label": "AI-900 Azure AI Fundamentals", "values": ["Fundamentals", "AI concepts", "$99", "1 year (retired Jun 30 2026)"] },
+        { "label": "AI-901 Azure AI Fundamentals", "values": ["Fundamentals", "AI + Microsoft Foundry", "$99", "1 year"] },
+        { "label": "AZ-104 Azure Administrator", "values": ["Associate", "Administer Azure", "$165", "1 year"] },
+        { "label": "AZ-204 Azure Developer", "values": ["Associate", "Build cloud apps", "$165", "1 year (retired 2026)"] },
+        { "label": "AZ-500 Azure Security Engineer", "values": ["Associate", "Security operations", "$165", "1 year (retires Aug 31 2026)"] },
+        { "label": "AZ-700 Azure Network Engineer", "values": ["Associate", "Networking", "$165", "1 year"] },
+        { "label": "AZ-140 Azure Virtual Desktop", "values": ["Specialty", "Virtual desktop (AVD)", "$165", "1 year"] },
+        { "label": "AZ-305 Azure Solutions Architect", "values": ["Expert", "Solution design", "$165", "1 year"] }
+      ]
+    },
+    "orgFaqs": [
+      { "q": "Can I take a Microsoft exam online from home?", "a": "Yes. Exams are delivered by Pearson VUE with two options: an in-person test center or OnVUE online proctoring from a private space with a webcam. The fee is identical for both." },
+      { "q": "Do Microsoft certifications expire?", "a": "Most role-based, specialty, and fundamentals certifications are valid for 12 months. You renew for free by passing a shorter online assessment on Microsoft Learn before the expiry date." },
+      { "q": "What happens if my certification is retired?", "a": "You keep the credential until its current expiry date, but you can no longer earn or renew it. Microsoft typically points candidates to the active successor exam or certification." }
+    ],
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/",
+    "verified": true,
+    "confidence": "high"
+  }
+}

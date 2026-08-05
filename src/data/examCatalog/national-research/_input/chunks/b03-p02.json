@@ -1,0 +1,485 @@
+{
+ "chunkId": "b03-p02",
+ "batch": 3,
+ "part": 2,
+ "categories": [
+  "admissions-academic"
+ ],
+ "groups": [
+  "K-12 Private School Admissions",
+  "Graduate & Professional Admissions",
+  "English Proficiency",
+  "Standardized State & National Assessments",
+  "Military & Aptitude"
+ ],
+ "bodies": [
+  "Pearson",
+  "Enrollment Management Association",
+  "Educational Records Bureau",
+  "United States Department of Defense",
+  "Riverside Insights",
+  "Cambridge University Press and Assessment",
+  "Acuity Insights",
+  "American Dental Association",
+  "Graduate Management Admission Council",
+  "Michigan Language Assessment",
+  "British Council, IDP: IELTS Australia and Cambridge University Press and Assessment",
+  "Participating Catholic diocesan school systems"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "kbit-2",
+   "name": "Kaufman Brief Intelligence Test, Second Edition",
+   "short": "KBIT-2",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Pearson",
+   "bodyUrl": "https://www.pearsonassessments.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Brief individually administered measure of verbal and nonverbal intelligence often used to screen children for gifted programs."
+  },
+  {
+   "slug": "nnat3",
+   "name": "Naglieri Nonverbal Ability Test, Third Edition",
+   "short": "NNAT3",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Pearson",
+   "bodyUrl": "https://www.pearsonassessments.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Language-free reasoning test using shapes and patterns, used for gifted screening of students from kindergarten through grade twelve."
+  },
+  {
+   "slug": "olsat-8",
+   "name": "Otis-Lennon School Ability Test, Eighth Edition",
+   "short": "OLSAT 8",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Pearson",
+   "bodyUrl": "https://www.pearsonassessments.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Group-administered school ability test measuring verbal and nonverbal reasoning, used for gifted admissions in several large districts."
+  },
+  {
+   "slug": "wisc-v",
+   "name": "Wechsler Intelligence Scale for Children, Fifth Edition",
+   "short": "WISC-V",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Pearson",
+   "bodyUrl": "https://www.pearsonassessments.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Individually administered IQ test for ages six to sixteen that many private schools and gifted programs accept as cognitive evidence."
+  },
+  {
+   "slug": "wppsi-iv",
+   "name": "Wechsler Preschool and Primary Scale of Intelligence, Fourth Edition",
+   "short": "WPPSI-IV",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Pearson",
+   "bodyUrl": "https://www.pearsonassessments.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Individually administered intelligence test for children aged two through seven, commonly required for early private school admission."
+  },
+  {
+   "slug": "miller-analogies-test",
+   "name": "Miller Analogies Test",
+   "short": "MAT",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "Pearson",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Analogy-based graduate admissions test that Pearson officially retired on 15 November 2023; score reports are no longer issued."
+  },
+  {
+   "slug": "pharmacy-college-admission-test",
+   "name": "Pharmacy College Admission Test",
+   "short": "PCAT",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "Pearson",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Pharmacy school admissions test retired on 10 January 2024; PharmCAS programs no longer require or accept new PCAT scores."
+  },
+  {
+   "slug": "pte-academic",
+   "name": "PTE Academic",
+   "category": "admissions-academic",
+   "group": "English Proficiency",
+   "body": "Pearson",
+   "bodyUrl": "https://www.pearsonpte.com",
+   "type": "Exam",
+   "aka": [
+    "Pearson Test of English Academic"
+   ],
+   "blurb": "Computer-scored English proficiency test lasting about two hours with results usually returned within two days for university admission."
+  },
+  {
+   "slug": "stanford-achievement-test-10",
+   "name": "Stanford Achievement Test Series, Tenth Edition",
+   "short": "Stanford 10",
+   "category": "admissions-academic",
+   "group": "Standardized State & National Assessments",
+   "body": "Pearson",
+   "bodyUrl": "https://www.pearsonassessments.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Nationally normed achievement battery used by private schools and homeschool families to document reading, mathematics and content mastery."
+  },
+  {
+   "slug": "character-skills-snapshot",
+   "name": "Character Skills Snapshot",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Enrollment Management Association",
+   "bodyUrl": "https://www.ssat.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Online questionnaire that complements the SSAT by reporting a student preferences, attitudes and beliefs to independent school admission teams."
+  },
+  {
+   "slug": "ssat-elementary-level",
+   "name": "SSAT Elementary Level",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Enrollment Management Association",
+   "bodyUrl": "https://www.ssat.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Secondary School Admission Test level for students in grades three and four, with no wrong-answer penalty and an unscored writing sample."
+  },
+  {
+   "slug": "ssat-middle-level",
+   "name": "SSAT Middle Level",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Enrollment Management Association",
+   "bodyUrl": "https://www.ssat.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Secondary School Admission Test level for students in grades five through seven, scored 440 to 710 per section with a guessing penalty."
+  },
+  {
+   "slug": "ssat-upper-level",
+   "name": "SSAT Upper Level",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Enrollment Management Association",
+   "bodyUrl": "https://www.ssat.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Secondary School Admission Test level for grades eight through eleven, scored 500 to 800 per section and required by most boarding schools."
+  },
+  {
+   "slug": "isee-lower-level",
+   "name": "ISEE Lower Level",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Educational Records Bureau",
+   "bodyUrl": "https://www.erblearn.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Independent School Entrance Exam level for students in grades four and five, with verbal, quantitative, reading, mathematics and an essay."
+  },
+  {
+   "slug": "isee-middle-level",
+   "name": "ISEE Middle Level",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Educational Records Bureau",
+   "bodyUrl": "https://www.erblearn.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Independent School Entrance Exam level for students in grades six and seven applying to grades seven and eight at independent schools."
+  },
+  {
+   "slug": "isee-primary-level",
+   "name": "ISEE Primary Level",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Educational Records Bureau",
+   "bodyUrl": "https://www.erblearn.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Shortest Independent School Entrance Exam level, given on computer to young applicants in grades two through four with a picture prompt."
+  },
+  {
+   "slug": "isee-upper-level",
+   "name": "ISEE Upper Level",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Educational Records Bureau",
+   "bodyUrl": "https://www.erblearn.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Independent School Entrance Exam level for students in grades eight through eleven, reported in stanines with no penalty for wrong answers."
+  },
+  {
+   "slug": "afqt",
+   "name": "Armed Forces Qualification Test",
+   "short": "AFQT",
+   "category": "admissions-academic",
+   "group": "Military & Aptitude",
+   "body": "United States Department of Defense",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Percentile score derived from four ASVAB subtests that determines whether an applicant is eligible to enlist in a US military branch."
+  },
+  {
+   "slug": "asvab",
+   "name": "Armed Services Vocational Aptitude Battery",
+   "short": "ASVAB",
+   "category": "admissions-academic",
+   "group": "Military & Aptitude",
+   "body": "United States Department of Defense",
+   "bodyUrl": "https://www.officialasvab.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Multiple-aptitude enlistment battery used by all US military branches to determine eligibility and qualification for military occupations."
+  },
+  {
+   "slug": "asvab-career-exploration-program",
+   "name": "ASVAB Career Exploration Program",
+   "short": "ASVAB CEP",
+   "category": "admissions-academic",
+   "group": "Military & Aptitude",
+   "body": "United States Department of Defense",
+   "bodyUrl": "https://www.asvabprogram.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "School-based version of the ASVAB paired with interest inventories and career planning tools for high school and postsecondary students."
+  },
+  {
+   "slug": "picat",
+   "name": "Pending Internet Computerized Adaptive Test",
+   "short": "PiCAT",
+   "category": "admissions-academic",
+   "group": "Military & Aptitude",
+   "body": "United States Department of Defense",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Unproctored at-home version of the ASVAB that must be confirmed by a shortened verification test at a military entrance processing station."
+  },
+  {
+   "slug": "cogat",
+   "name": "Cognitive Abilities Test",
+   "short": "CogAT",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Riverside Insights",
+   "bodyUrl": "https://www.riversideinsights.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Group-administered reasoning test with verbal, quantitative and nonverbal batteries used widely for gifted and talented program screening."
+  },
+  {
+   "slug": "iowa-assessments",
+   "name": "Iowa Assessments",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Riverside Insights",
+   "bodyUrl": "https://www.riversideinsights.com",
+   "type": "Exam",
+   "aka": [
+    "Iowa Tests of Basic Skills",
+    "ITBS"
+   ],
+   "blurb": "Nationally normed achievement battery used by homeschool families and private schools and often paired with CogAT for gifted identification."
+  },
+  {
+   "slug": "stanford-binet-5",
+   "name": "Stanford-Binet Intelligence Scales, Fifth Edition",
+   "short": "SB5",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Riverside Insights",
+   "bodyUrl": "https://www.riversideinsights.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Individually administered intelligence test accepted by many gifted programs and high-IQ societies for verifying cognitive ability."
+  },
+  {
+   "slug": "cambridge-b2-first",
+   "name": "Cambridge English B2 First",
+   "short": "FCE",
+   "category": "admissions-academic",
+   "group": "English Proficiency",
+   "body": "Cambridge University Press and Assessment",
+   "bodyUrl": "https://www.cambridgeenglish.org",
+   "type": "Exam",
+   "aka": [
+    "First Certificate in English"
+   ],
+   "blurb": "Upper-intermediate Cambridge English qualification at CEFR B2 level, accepted by some US institutions as evidence of English proficiency."
+  },
+  {
+   "slug": "cambridge-c1-advanced",
+   "name": "Cambridge English C1 Advanced",
+   "short": "CAE",
+   "category": "admissions-academic",
+   "group": "English Proficiency",
+   "body": "Cambridge University Press and Assessment",
+   "bodyUrl": "https://www.cambridgeenglish.org",
+   "type": "Exam",
+   "aka": [
+    "Certificate in Advanced English"
+   ],
+   "blurb": "CEFR C1 Cambridge English qualification tested across reading, writing, listening and speaking and accepted by many US universities."
+  },
+  {
+   "slug": "cambridge-c2-proficiency",
+   "name": "Cambridge English C2 Proficiency",
+   "short": "CPE",
+   "category": "admissions-academic",
+   "group": "English Proficiency",
+   "body": "Cambridge University Press and Assessment",
+   "bodyUrl": "https://www.cambridgeenglish.org",
+   "type": "Exam",
+   "aka": [
+    "Certificate of Proficiency in English"
+   ],
+   "blurb": "Highest-level Cambridge English qualification at CEFR C2, demonstrating near-native mastery for academic and professional purposes."
+  },
+  {
+   "slug": "casper-test",
+   "name": "Casper Situational Judgment Test",
+   "short": "Casper",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "Acuity Insights",
+   "bodyUrl": "https://www.acuityinsights.app",
+   "type": "Exam",
+   "aka": [
+    "CASPer",
+    "Altus Suite"
+   ],
+   "blurb": "Open-response situational judgment test required by many medical, dental, nursing and health professions programs in the United States."
+  },
+  {
+   "slug": "duet-acuity-insights",
+   "name": "Duet Values Alignment Assessment",
+   "short": "Duet",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "Acuity Insights",
+   "bodyUrl": "https://www.acuityinsights.app",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Short values-alignment assessment in the Altus Suite that compares applicant priorities with the characteristics of a specific program."
+  },
+  {
+   "slug": "dental-admission-test",
+   "name": "Dental Admission Test",
+   "short": "DAT",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "American Dental Association",
+   "bodyUrl": "https://www.ada.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Computer-based admissions test for US dental schools covering natural sciences, perceptual ability, reading comprehension and quantitative reasoning."
+  },
+  {
+   "slug": "optometry-admission-test",
+   "name": "Optometry Admission Test",
+   "short": "OAT",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "American Dental Association",
+   "bodyUrl": "https://www.ada.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Admissions test for US optometry schools covering natural sciences, reading comprehension, physics and quantitative reasoning."
+  },
+  {
+   "slug": "executive-assessment",
+   "name": "Executive Assessment",
+   "short": "EA",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "Graduate Management Admission Council",
+   "bodyUrl": "https://www.gmac.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Ninety-minute business school admissions test designed for executive MBA candidates, covering integrated, verbal and quantitative reasoning."
+  },
+  {
+   "slug": "gmat-focus-edition",
+   "name": "GMAT Focus Edition",
+   "short": "GMAT",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "Graduate Management Admission Council",
+   "bodyUrl": "https://www.gmac.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Current graduate management admissions test with Quantitative, Verbal and Data Insights sections and a total score from 205 to 805."
+  },
+  {
+   "slug": "ecpe-michigan",
+   "name": "Examination for the Certificate of Proficiency in English",
+   "short": "ECPE",
+   "category": "admissions-academic",
+   "group": "English Proficiency",
+   "body": "Michigan Language Assessment",
+   "bodyUrl": "https://michiganassessment.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Advanced English proficiency certificate at CEFR C2 issued by Michigan Language Assessment and used for academic and employment purposes."
+  },
+  {
+   "slug": "michigan-english-test",
+   "name": "Michigan English Test",
+   "short": "MET",
+   "category": "admissions-academic",
+   "group": "English Proficiency",
+   "body": "Michigan Language Assessment",
+   "bodyUrl": "https://michiganassessment.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Modular English proficiency test covering CEFR A2 to C1 that reports listening, reading, speaking and writing scores for study and work."
+  },
+  {
+   "slug": "ielts-academic",
+   "name": "IELTS Academic",
+   "category": "admissions-academic",
+   "group": "English Proficiency",
+   "body": "British Council, IDP: IELTS Australia and Cambridge University Press and Assessment",
+   "bodyUrl": "https://www.ielts.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Four-skill English test scored 0 to 9 bands and required by many US universities for admission of international applicants."
+  },
+  {
+   "slug": "ielts-general-training",
+   "name": "IELTS General Training",
+   "category": "admissions-academic",
+   "group": "English Proficiency",
+   "body": "British Council, IDP: IELTS Australia and Cambridge University Press and Assessment",
+   "bodyUrl": "https://www.ielts.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Version of IELTS focused on everyday and workplace English, used mainly for migration and vocational programmes rather than degree entry."
+  },
+  {
+   "slug": "coop-exam",
+   "name": "Cooperative Admissions Examination",
+   "short": "COOP",
+   "category": "admissions-academic",
+   "group": "K-12 Private School Admissions",
+   "body": "Participating Catholic diocesan school systems",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Entrance examination used by Catholic high schools in New Jersey and the Philadelphia area, covering reasoning, language and mathematics."
+  }
+ ]
+}

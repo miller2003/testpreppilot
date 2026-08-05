@@ -1,0 +1,371 @@
+{
+ "chunkId": "b08-p02",
+ "batch": 8,
+ "part": 2,
+ "categories": [
+  "aviation-maritime"
+ ],
+ "groups": [
+  "FAA Airman Knowledge Tests"
+ ],
+ "bodies": [
+  "Federal Aviation Administration"
+ ],
+ "examCount": 27,
+ "exams": [
+  {
+   "slug": "faa-gfa-flight-instructor-gyroplane-added-rating",
+   "name": "Flight Instructor Gyroplane Added Rating Knowledge Test",
+   "short": "GFA",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "GFA"
+   ],
+   "blurb": "25-question test for certificated instructors adding a gyroplane class rating to an existing CFI certificate."
+  },
+  {
+   "slug": "faa-frg-flight-instructor-gyroplane",
+   "name": "Flight Instructor Gyroplane Knowledge Test",
+   "short": "FRG",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "FRG"
+   ],
+   "blurb": "100-question test on gyroplane instruction, rotor blade management, autorotation training and student pilot endorsements."
+  },
+  {
+   "slug": "faa-hfa-flight-instructor-helicopter-added-rating",
+   "name": "Flight Instructor Helicopter Added Rating Knowledge Test",
+   "short": "HFA",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "HFA"
+   ],
+   "blurb": "25-question test for instructors adding a rotorcraft-helicopter rating to a flight instructor certificate already held."
+  },
+  {
+   "slug": "faa-frh-flight-instructor-helicopter",
+   "name": "Flight Instructor Helicopter Knowledge Test",
+   "short": "FRH",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "FRH",
+    "CFI Helicopter"
+   ],
+   "blurb": "100-question test on helicopter teaching methods, settling with power, autorotation instruction and instructor record keeping."
+  },
+  {
+   "slug": "faa-aif-flight-instructor-instrument-airplane-added-rating",
+   "name": "Flight Instructor Instrument Airplane Added Rating Knowledge Test",
+   "short": "AIF",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "AIF"
+   ],
+   "blurb": "20-question test for instrument instructors in another category adding the instrument-airplane instructor rating."
+  },
+  {
+   "slug": "faa-fii-flight-instructor-instrument-airplane",
+   "name": "Flight Instructor Instrument Airplane Knowledge Test",
+   "short": "FII",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "FII",
+    "CFII Written"
+   ],
+   "blurb": "50-question test on teaching instrument procedures, approach charts, IFR regulations and partial-panel training for CFII applicants."
+  },
+  {
+   "slug": "faa-hif-flight-instructor-instrument-helicopter-added-rating",
+   "name": "Flight Instructor Instrument Helicopter Added Rating Knowledge Test",
+   "short": "HIF",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "HIF"
+   ],
+   "blurb": "20-question test for instrument instructors adding the instrument-helicopter rating to their instructor certificate."
+  },
+  {
+   "slug": "faa-fih-flight-instructor-instrument-helicopter",
+   "name": "Flight Instructor Instrument Helicopter Knowledge Test",
+   "short": "FIH",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "FIH"
+   ],
+   "blurb": "50-question test covering instrument instruction in helicopters, IFR procedures and instrument student endorsement requirements."
+  },
+  {
+   "slug": "faa-sia-flight-instructor-sport-airplane",
+   "name": "Flight Instructor Sport Airplane Knowledge Test",
+   "short": "SIA",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "SIA"
+   ],
+   "blurb": "70-question test for sport pilot instructors teaching in light-sport airplanes, covering instruction technique and sport pilot rules."
+  },
+  {
+   "slug": "faa-sib-flight-instructor-sport-balloon",
+   "name": "Flight Instructor Sport Balloon Knowledge Test",
+   "short": "SIB",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "SIB"
+   ],
+   "blurb": "70-question test for instructors providing sport pilot training in lighter-than-air balloons under Part 61 Subpart K."
+  },
+  {
+   "slug": "faa-sig-flight-instructor-sport-glider",
+   "name": "Flight Instructor Sport Glider Knowledge Test",
+   "short": "SIG",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "SIG"
+   ],
+   "blurb": "70-question test for sport pilot instructors delivering glider instruction, including launch procedures and soaring safety."
+  },
+  {
+   "slug": "faa-siy-flight-instructor-sport-gyroplane",
+   "name": "Flight Instructor Sport Gyroplane Knowledge Test",
+   "short": "SIY",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "SIY"
+   ],
+   "blurb": "70-question test for instructors teaching sport pilot applicants in gyroplanes, covering rotor handling and training methodology."
+  },
+  {
+   "slug": "faa-sil-flight-instructor-sport-airship",
+   "name": "Flight Instructor Sport Lighter-Than-Air Airship Knowledge Test",
+   "short": "SIL",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "SIL"
+   ],
+   "blurb": "70-question test for sport pilot instructors in the lighter-than-air airship class, covering buoyancy control and instruction."
+  },
+  {
+   "slug": "faa-sip-flight-instructor-sport-powered-parachute",
+   "name": "Flight Instructor Sport Powered Parachute Knowledge Test",
+   "short": "SIP",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "SIP"
+   ],
+   "blurb": "70-question test for instructors teaching powered parachute sport pilots, covering canopy handling, wind limits and endorsements."
+  },
+  {
+   "slug": "faa-siw-flight-instructor-sport-weight-shift-control",
+   "name": "Flight Instructor Sport Weight-Shift-Control Knowledge Test",
+   "short": "SIW",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "SIW"
+   ],
+   "blurb": "70-question test for instructors of weight-shift-control trikes covering control inputs, teaching technique and sport pilot limits."
+  },
+  {
+   "slug": "faa-fnx-flight-navigator",
+   "name": "Flight Navigator Knowledge Test",
+   "short": "FNX",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "FNX"
+   ],
+   "blurb": "80-question test on celestial and dead-reckoning navigation, charts and instruments for the FAA flight navigator certificate."
+  },
+  {
+   "slug": "faa-foi-fundamentals-of-instructing",
+   "name": "Fundamentals of Instructing Knowledge Test",
+   "short": "FOI",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "FOI"
+   ],
+   "blurb": "50-question test on learning theory, human behaviour, teaching methods and evaluation required of all flight and ground instructor applicants."
+  },
+  {
+   "slug": "faa-agi-ground-instructor-advanced",
+   "name": "Ground Instructor Advanced Knowledge Test",
+   "short": "AGI",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "AGI"
+   ],
+   "blurb": "100-question test qualifying holders to give ground instruction for any certificate or rating other than instrument."
+  },
+  {
+   "slug": "faa-bgi-ground-instructor-basic",
+   "name": "Ground Instructor Basic Knowledge Test",
+   "short": "BGI",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "BGI"
+   ],
+   "blurb": "80-question test for the basic ground instructor certificate, limited to sport, recreational and private pilot instruction."
+  },
+  {
+   "slug": "faa-igi-ground-instructor-instrument",
+   "name": "Ground Instructor Instrument Knowledge Test",
+   "short": "IGI",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "IGI"
+   ],
+   "blurb": "50-question test qualifying holders to provide ground instruction for the instrument rating and instrument proficiency checks."
+  },
+  {
+   "slug": "faa-icp-instrument-rating-airplane-canadian-conversion",
+   "name": "Instrument Rating Airplane Canadian Conversion Knowledge Test",
+   "short": "ICP",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "ICP"
+   ],
+   "blurb": "40-question conversion test for Canadian instrument-rated aeroplane pilots seeking the equivalent FAA instrument rating."
+  },
+  {
+   "slug": "faa-ira-instrument-rating-airplane",
+   "name": "Instrument Rating Airplane Knowledge Test",
+   "short": "IRA",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "IRA",
+    "Instrument Written"
+   ],
+   "blurb": "60-question test covering IFR regulations, approach plates, holding procedures, icing and instrument navigation systems."
+  },
+  {
+   "slug": "faa-ifp-instrument-rating-foreign-pilot",
+   "name": "Instrument Rating Foreign Pilot Knowledge Test",
+   "short": "IFP",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "IFP"
+   ],
+   "blurb": "50-question test taken by foreign licence holders adding an FAA instrument rating on the basis of a foreign pilot certificate."
+  },
+  {
+   "slug": "faa-ich-instrument-rating-helicopter-canadian-conversion",
+   "name": "Instrument Rating Helicopter Canadian Conversion Knowledge Test",
+   "short": "ICH",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "ICH"
+   ],
+   "blurb": "40-question conversion test for Canadian instrument-rated helicopter pilots applying for the FAA instrument-helicopter rating."
+  },
+  {
+   "slug": "faa-irh-instrument-rating-helicopter",
+   "name": "Instrument Rating Helicopter Knowledge Test",
+   "short": "IRH",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "IRH"
+   ],
+   "blurb": "60-question test on IFR rules, helicopter instrument approaches, weather and navigation for the instrument-helicopter rating."
+  },
+  {
+   "slug": "faa-mca-military-competence-airplane",
+   "name": "Military Competence Airplane Knowledge Test",
+   "short": "MCA",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "MCA"
+   ],
+   "blurb": "50-question regulations test allowing qualified military aeroplane pilots to obtain a civil FAA pilot certificate."
+  },
+  {
+   "slug": "faa-mch-military-competence-helicopter",
+   "name": "Military Competence Helicopter Knowledge Test",
+   "short": "MCH",
+   "category": "aviation-maritime",
+   "group": "FAA Airman Knowledge Tests",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "MCH"
+   ],
+   "blurb": "50-question test on civil regulations and airspace enabling military helicopter pilots to convert to FAA certificates."
+  }
+ ]
+}

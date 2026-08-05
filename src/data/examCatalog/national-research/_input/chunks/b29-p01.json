@@ -1,0 +1,436 @@
+{
+ "chunkId": "b29-p01",
+ "batch": 29,
+ "part": 1,
+ "categories": [
+  "project-business"
+ ],
+ "groups": [
+  "Quality, Lean & Six Sigma",
+  "Real Estate Adjacent Business",
+  "Supply Chain & Operations"
+ ],
+ "bodies": [
+  "American Society for Quality",
+  "National Association of Realtors",
+  "Association for Supply Chain Management",
+  "Community Associations Institute"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "asq-certified-calibration-technician",
+   "name": "ASQ Certified Calibration Technician",
+   "short": "CCT",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination covering measurement standards, calibration intervals, uncertainty, traceability and instrument maintenance."
+  },
+  {
+   "slug": "asq-certified-construction-quality-manager",
+   "name": "ASQ Certified Construction Quality Manager",
+   "short": "CCQM",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination covering construction quality planning, inspection, documentation, nonconformance and contract requirements."
+  },
+  {
+   "slug": "asq-certified-food-safety-and-quality-auditor",
+   "name": "ASQ Certified Food Safety and Quality Auditor",
+   "short": "CFSQA",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Auditor examination covering HACCP, prerequisite programmes and food safety management systems; replaced the former CHA."
+  },
+  {
+   "slug": "asq-certified-manager-of-quality",
+   "name": "ASQ Certified Manager of Quality/Organizational Excellence",
+   "short": "CMQ/OE",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Senior examination covering strategic planning, leadership, customer focus, supply chain quality and change management."
+  },
+  {
+   "slug": "asq-certified-master-black-belt",
+   "name": "ASQ Certified Master Black Belt",
+   "short": "CMBB",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Top Six Sigma credential requiring a portfolio review plus an examination on deployment, coaching and programme governance."
+  },
+  {
+   "slug": "asq-certified-medical-device-auditor",
+   "name": "ASQ Certified Medical Device Auditor",
+   "short": "CMDA",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Auditor examination covering ISO 13485, FDA quality system regulation, risk management and medical device audit practice."
+  },
+  {
+   "slug": "asq-certified-pharmaceutical-gmp-professional",
+   "name": "ASQ Certified Pharmaceutical GMP Professional",
+   "short": "CPGP",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination covering good manufacturing practice regulations, validation, documentation and quality systems for drug products."
+  },
+  {
+   "slug": "asq-certified-quality-auditor",
+   "name": "ASQ Certified Quality Auditor",
+   "short": "CQA",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "ISO 17024 accredited examination covering audit planning, execution, reporting and corrective action management."
+  },
+  {
+   "slug": "asq-certified-quality-engineer",
+   "name": "ASQ Certified Quality Engineer",
+   "short": "CQE",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Flagship technical examination covering quality systems, process control, statistics, reliability and problem solving."
+  },
+  {
+   "slug": "asq-certified-quality-improvement-associate",
+   "name": "ASQ Certified Quality Improvement Associate",
+   "short": "CQIA",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry examination covering basic quality concepts, team tools, the improvement cycle and customer-supplier relationships."
+  },
+  {
+   "slug": "asq-certified-quality-inspector",
+   "name": "ASQ Certified Quality Inspector",
+   "short": "CQI",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination covering inspection methods, blueprint reading, gauge use, sampling and documenting nonconforming material."
+  },
+  {
+   "slug": "asq-certified-quality-process-analyst",
+   "name": "ASQ Certified Quality Process Analyst",
+   "short": "CQPA",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination for paraprofessionals analysing and solving quality problems using data collection, basic statistics and tools."
+  },
+  {
+   "slug": "asq-certified-quality-technician",
+   "name": "ASQ Certified Quality Technician",
+   "short": "CQT",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination covering measurement, inspection, testing, basic statistics, quality cost and calibration support activities."
+  },
+  {
+   "slug": "asq-certified-reliability-engineer",
+   "name": "ASQ Certified Reliability Engineer",
+   "short": "CRE",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Accredited examination covering reliability modelling, FMEA, fault tree analysis, maintainability and life testing."
+  },
+  {
+   "slug": "asq-certified-six-sigma-black-belt",
+   "name": "ASQ Certified Six Sigma Black Belt",
+   "short": "CSSBB",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Accredited examination covering advanced DMAIC, design of experiments, hypothesis testing and team leadership, plus projects."
+  },
+  {
+   "slug": "asq-certified-six-sigma-green-belt",
+   "name": "ASQ Certified Six Sigma Green Belt",
+   "short": "CSSGB",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination covering DMAIC, process capability, control charts and basic statistics for improvement project team members."
+  },
+  {
+   "slug": "asq-certified-six-sigma-yellow-belt",
+   "name": "ASQ Certified Six Sigma Yellow Belt",
+   "short": "CSSYB",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry examination introducing Six Sigma concepts, DMAIC phases and basic improvement tools for project support roles."
+  },
+  {
+   "slug": "asq-certified-software-quality-engineer",
+   "name": "ASQ Certified Software Quality Engineer",
+   "short": "CSQE",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination covering software quality management, verification and validation, configuration management and defect processes."
+  },
+  {
+   "slug": "asq-certified-supplier-quality-professional",
+   "name": "ASQ Certified Supplier Quality Professional",
+   "short": "CSQP",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "American Society for Quality",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination covering supplier selection, qualification, risk, performance monitoring and supplier improvement programmes."
+  },
+  {
+   "slug": "nar-accredited-buyers-representative",
+   "name": "Accredited Buyer's Representative",
+   "short": "ABR",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "National Association of Realtors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation for agents representing buyers, covering agency duties, buyer counselling, negotiation and closing services."
+  },
+  {
+   "slug": "nar-at-home-with-diversity",
+   "name": "At Home With Diversity Certification",
+   "short": "AHWD",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "National Association of Realtors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering fair housing compliance, cultural competence and serving diverse buyer and seller populations."
+  },
+  {
+   "slug": "nar-certified-international-property-specialist",
+   "name": "Certified International Property Specialist",
+   "short": "CIPS",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "National Association of Realtors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation covering cross-border transactions, currency issues, taxation, and working with international buyers."
+  },
+  {
+   "slug": "nar-e-pro-certification",
+   "name": "e-PRO Certification",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "National Association of Realtors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering digital marketing, social media, online lead generation and data privacy for real estate agents."
+  },
+  {
+   "slug": "nar-graduate-realtor-institute",
+   "name": "Graduate, REALTOR Institute Designation",
+   "short": "GRI",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "National Association of Realtors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Multi-course designation covering law, contracts, finance, marketing and technology, delivered through state associations."
+  },
+  {
+   "slug": "nar-military-relocation-professional",
+   "name": "Military Relocation Professional Certification",
+   "short": "MRP",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "National Association of Realtors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering VA loans, permanent change of station timing and housing needs of service members and families."
+  },
+  {
+   "slug": "nar-pricing-strategy-advisor",
+   "name": "Pricing Strategy Advisor Certification",
+   "short": "PSA",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "National Association of Realtors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering comparative market analysis, pricing adjustments, appraisal interaction and seller pricing discussions."
+  },
+  {
+   "slug": "nar-real-estate-negotiation-expert",
+   "name": "Real Estate Negotiation Expert Certification",
+   "short": "RENE",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "National Association of Realtors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering negotiation tactics, multiple-offer situations, counterparty psychology and transaction advocacy."
+  },
+  {
+   "slug": "nar-resort-and-second-home-property-specialist",
+   "name": "Resort and Second-Home Property Specialist",
+   "short": "RSPS",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "National Association of Realtors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering resort markets, vacation rental economics, seasonal demand and second-home buyer motivations."
+  },
+  {
+   "slug": "nar-seniors-real-estate-specialist",
+   "name": "Seniors Real Estate Specialist",
+   "short": "SRES",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "National Association of Realtors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation covering downsizing, reverse mortgages, retirement housing options and working with clients over fifty."
+  },
+  {
+   "slug": "ascm-cltd",
+   "name": "ASCM Certified in Logistics, Transportation and Distribution",
+   "short": "CLTD",
+   "category": "project-business",
+   "group": "Supply Chain & Operations",
+   "body": "Association for Supply Chain Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination covering warehouse management, transportation modes, global logistics, order management and reverse logistics."
+  },
+  {
+   "slug": "ascm-cpim",
+   "name": "ASCM Certified in Planning and Inventory Management",
+   "short": "CPIM",
+   "category": "project-business",
+   "group": "Supply Chain & Operations",
+   "body": "Association for Supply Chain Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Core operations credential covering demand planning, master scheduling, MRP, capacity planning and inventory control."
+  },
+  {
+   "slug": "ascm-ctsc",
+   "name": "ASCM Certified in Transformation for Supply Chain",
+   "short": "CTSC",
+   "category": "project-business",
+   "group": "Supply Chain & Operations",
+   "body": "Association for Supply Chain Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering supply chain transformation strategy, technology adoption, change management and performance design."
+  },
+  {
+   "slug": "ascm-cscp",
+   "name": "ASCM Certified Supply Chain Professional",
+   "short": "CSCP",
+   "category": "project-business",
+   "group": "Supply Chain & Operations",
+   "body": "Association for Supply Chain Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "End-to-end supply chain credential covering design, planning, execution, supplier relationships and global considerations."
+  },
+  {
+   "slug": "ascm-supply-chain-planning-certificate",
+   "name": "ASCM Supply Chain Planning Certificate",
+   "category": "project-business",
+   "group": "Supply Chain & Operations",
+   "body": "Association for Supply Chain Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Short assessed certificate covering demand forecasting, sales and operations planning, and inventory planning methods."
+  },
+  {
+   "slug": "ascm-supply-chain-procurement-certificate",
+   "name": "ASCM Supply Chain Procurement Certificate",
+   "category": "project-business",
+   "group": "Supply Chain & Operations",
+   "body": "Association for Supply Chain Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Short assessed certificate covering sourcing strategy, supplier selection, contracting and procurement performance metrics."
+  },
+  {
+   "slug": "ascm-supply-chain-warehousing-certificate",
+   "name": "ASCM Supply Chain Warehousing Certificate",
+   "category": "project-business",
+   "group": "Supply Chain & Operations",
+   "body": "Association for Supply Chain Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Short assessed certificate covering warehouse layout, receiving, storage, picking strategies and inventory accuracy."
+  },
+  {
+   "slug": "cai-association-management-specialist",
+   "name": "Association Management Specialist",
+   "short": "AMS",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "Community Associations Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Mid-level community association manager designation requiring CMCA certification, coursework and two years of experience."
+  },
+  {
+   "slug": "cai-professional-community-association-manager",
+   "name": "Professional Community Association Manager",
+   "short": "PCAM",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "Community Associations Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Highest community association management designation requiring coursework, experience and a case study evaluation."
+  }
+ ]
+}

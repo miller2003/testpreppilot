@@ -1,0 +1,125 @@
+{
+  "slug": "microsoft-ai-901",
+  "exam": {
+    "tagline": "The 2026 Azure AI Fundamentals exam — the no-code on-ramp to AI, now built around Microsoft Foundry.",
+    "description": "Microsoft Certified: Azure AI Fundamentals (AI-901) is the current beginner credential for artificial intelligence on Azure, launched in 2026 to replace the retired AI-900. It validates conceptual knowledge of AI capabilities plus the foundational technical skills to work with them, including basic Python syntax and familiarity with Azure resources. Unlike the older AI-900, AI-901 is organized around two areas: identifying AI concepts and capabilities, and implementing AI solutions by using Microsoft Foundry. It is intended for candidates at the beginning of an AI solution-development career and is open to both technical and non-technical backgrounds — data-science and software-engineering experience are not required, though awareness of basic cloud concepts helps. Employers use it to confirm baseline AI literacy as generative AI and agentic solutions become mainstream.",
+    "quickAnswer": {
+      "summary": "AI-901 is the current Azure AI Fundamentals exam. It costs $99, lasts about 45 minutes, and requires a scaled score of 700/1000. It has two skills areas — AI concepts (40–45%) and implementing AI solutions with Microsoft Foundry (55–60%) — and renews yearly with a free assessment.",
+      "advantages": [
+        "Beginner-friendly: no data-science or engineering experience required",
+        "Centered on Microsoft Foundry and agentic AI, the 2026 focus",
+        "Low cost ($99) and short format (about 45 minutes)",
+        "The official replacement for the retired AI-900",
+        "Renews for free every 12 months via Microsoft Learn"
+      ]
+    },
+    "roadmap": [
+      "Confirm AI-901 is your target (AI fundamentals)",
+      "Study the free AI-901 Microsoft Learn path",
+      "Take the official practice assessment",
+      "Schedule the $99 exam via Pearson VUE",
+      "Pass with 700/1000 and renew yearly for free"
+    ],
+    "prerequisites": "None. AI-901 has no formal prerequisite. The exam expects conceptual AI knowledge and basic familiarity with Python syntax and Azure resources, but no prior certification or coding project is required.",
+    "eligibility": "Open to all. Anyone may register and sit AI-901; students can schedule through Certiport.",
+    "examMeta": {
+      "questions": "40–60 (includes unscored preview items)",
+      "time": "45 minutes",
+      "pass": "700 / 1000 (scaled)",
+      "fee": "$99 USD",
+      "format": "Computer-based, multiple-choice and other auto-graded item types",
+      "admin": "Pearson VUE (students and educators via Certiport)"
+    },
+    "topics": [
+      { "name": "Identify AI concepts and capabilities", "note": "What AI can do, types of AI workloads, responsible AI, and when to use AI solutions.", "weight": "40–45%" },
+      { "name": "Implement AI solutions by using Microsoft Foundry", "note": "Using Microsoft Foundry to build and configure AI solutions, including agentic and generative-AI capabilities, with awareness of REST APIs, SDKs, and CLIs.", "weight": "55–60%" }
+    ],
+    "examEssentials": [
+      ["Credential", "Microsoft Certified: Azure AI Fundamentals"],
+      ["Exam code", "AI-901 (replaces AI-900)"],
+      ["Level", "Fundamentals (beginner)"],
+      ["Exam length", "40–60 questions · 45 minutes"],
+      ["Passing score", "700 / 1000"],
+      ["Exam fee", "$99 USD"],
+      ["Delivery", "Pearson VUE test center or online proctoring"],
+      ["Validity", "12 months (free annual renewal)"]
+    ],
+    "timeline": [
+      ["Study Microsoft Learn", "1–3 weeks typical"],
+      ["Take practice assessment", "1–2 hours"],
+      ["Schedule and sit exam", "Year-round"],
+      ["Get results", "Pass/fail on screen; report in ~24h"]
+    ],
+    "costBreakdown": {
+      "items": [
+        ["Exam fee (standard)", "$99"],
+        ["Exam fee (academic / Certiport)", "Lower per region"],
+        ["Official Microsoft Learn study material", "$0 (free)"],
+        ["Optional instructor-led course", "$0–$600+"],
+        ["Retake (if needed)", "$99 again"]
+      ],
+      "total": "$99+ (exam only; official study material is free)",
+      "footnote": "AI-901 replaced AI-900 on June 30, 2026. Fees are set by Microsoft and billed in local currency; regional taxes may apply."
+    },
+    "difficulty": "Easy",
+    "audience": "Students, career changers, business stakeholders, and AI beginners.",
+    "time": "2–4 weeks of study",
+    "cost": "$99+",
+    "faqs": [
+      { "q": "Is AI-901 the same as AI-900?", "a": "No. AI-901 is the 2026 replacement for the retired AI-900. It keeps the beginner, no-code focus but reorganizes the content around AI concepts and implementing solutions with Microsoft Foundry." },
+      { "q": "Does AI-901 require coding or a Python project?", "a": "No project is required, but the exam expects basic familiarity with Python syntax and Azure resources. You describe and configure AI solutions rather than build large applications." },
+      { "q": "How long does the AI-901 exam take?", "a": "About 45 minutes for 40–60 questions. You see a pass/fail result on screen immediately, with a detailed score report emailed roughly 24 hours later." },
+      { "q": "How much does AI-901 cost and does it expire?", "a": "The exam fee is $99 USD (lower for students via Certiport). The certification is valid for 12 months and renews for free through an online assessment on Microsoft Learn." },
+      { "q": "Is AI-901 worth it?", "a": "If you are starting in AI, yes. It is inexpensive, quick, and recognized as the current baseline Azure AI literacy credential, and it feeds naturally into role-based AI certifications." }
+    ],
+    "summaryPoints": [
+      "AI-901 is the current Azure AI Fundamentals exam, launched in 2026 to replace the retired AI-900.",
+      "The exam is 40–60 questions in about 45 minutes; the passing scaled score is 700/1000.",
+      "Microsoft's published weights are AI concepts and capabilities 40–45% and implementing AI solutions with Microsoft Foundry 55–60%.",
+      "It costs $99 and renews for free every 12 months via a Microsoft Learn assessment."
+    ],
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+    "reviewed": "2026-08",
+    "confidence": "high"
+  },
+  "program": {
+    "body": "Microsoft",
+    "about": "Microsoft Certifications are role-based, fundamentals, and specialty credentials that validate cloud, AI, security, and developer skills on Microsoft Azure and related platforms. Exams are authored by Microsoft and delivered through Pearson VUE (and Certiport for academic scheduling of Fundamentals exams). Preparation is built around free, official Microsoft Learn training paths and instructor-led courses, and most role-based and specialty credentials must be renewed every 12 months via a free online assessment on Microsoft Learn. Badges are issued through Microsoft's certification profile and Credly.",
+    "registrationSteps": [
+      { "title": "Prepare with Microsoft Learn", "description": "Work through the free official self-paced learning paths and, optionally, instructor-led courses for your exam. Microsoft Learn is the primary, no-cost study source and maps directly to the exam skills outline.", "duration": "1–10 weeks depending on exam and experience" },
+      { "title": "Schedule through Pearson VUE", "description": "Sign in with a personal Microsoft account (MSA) and schedule the exam on the Pearson VUE portal. Choose an in-person test center or online proctoring (OnVUE). Students and educators can use Certiport for Fundamentals exams.", "duration": "about 15 minutes", "note": "Microsoft recommends a personal MSA account; a work or school account can lose exam records if you leave the organization." },
+      { "title": "Take the exam", "description": "Arrive at the test center or launch the online proctoring session. Exams are computer-based and may include multiple-choice, drag-and-drop, case studies, and performance-based lab tasks in a live environment.", "duration": "45–120 minutes depending on the exam" },
+      { "title": "Receive results and badge", "description": "You see a pass/fail result on screen immediately. A detailed score report is emailed within about 24 hours and posted to your Microsoft certification profile. On passing, your digital badge is issued via Credly.", "duration": "score at end; badge within a few days" },
+      { "title": "Renew annually", "description": "Most Microsoft role-based, specialty, and fundamentals certifications expire after 12 months. Renew for free by passing a shorter online renewal assessment on Microsoft Learn before the expiry date — no need to retake the full exam.", "duration": "about 45 minutes, once a year" }
+    ],
+    "proctoring": "Delivered by Pearson VUE. You can sit the exam at a Pearson VUE test center or take it online through OnVUE remote proctoring; the fee is the same for both. Online proctoring requires a quiet, private space, a working webcam, and a system check beforehand.",
+    "retakePolicy": "If you do not pass, you may retake the exam after 24 hours. A second failed attempt requires a 14-day waiting period, and any further attempts also require a 14-day wait between them, up to a maximum of five attempts in a 12-month period.",
+    "recertification": "Microsoft role-based, specialty, and fundamentals certifications are valid for 12 months from the date earned. Renew at no cost by passing the shorter online renewal assessment on Microsoft Learn before the credential expires. Retired certifications cannot be renewed and must be re-earned through the active successor if one exists.",
+    "scoreReporting": "A pass/fail result is shown immediately after the exam. The official score report is emailed within about 24 hours and is also available in your Microsoft certification profile, with section-level feedback on how you performed.",
+    "refundPolicy": "Exam fees are generally non-refundable once a seat is purchased, but you can cancel or reschedule through Pearson VUE at no charge if you do so at least 24–48 hours before the appointment (exact window varies by region).",
+    "providersNote": "Microsoft certification exams are delivered exclusively through Pearson VUE (and Certiport for academic or student Fundamentals scheduling). No other provider is authorized to administer these exams.",
+    "comparison": {
+      "title": "Microsoft Azure / AI certifications compared",
+      "columns": ["Credential", "Level", "Focus", "Exam fee", "Validity"],
+      "rows": [
+        { "label": "AZ-900 Azure Fundamentals", "values": ["Fundamentals", "Cloud concepts", "$99", "1 year"] },
+        { "label": "AI-900 Azure AI Fundamentals", "values": ["Fundamentals", "AI concepts", "$99", "1 year (retired Jun 30 2026)"] },
+        { "label": "AI-901 Azure AI Fundamentals", "values": ["Fundamentals", "AI + Microsoft Foundry", "$99", "1 year"] },
+        { "label": "AZ-104 Azure Administrator", "values": ["Associate", "Administer Azure", "$165", "1 year"] },
+        { "label": "AZ-204 Azure Developer", "values": ["Associate", "Build cloud apps", "$165", "1 year (retired 2026)"] },
+        { "label": "AZ-500 Azure Security Engineer", "values": ["Associate", "Security operations", "$165", "1 year (retires Aug 31 2026)"] },
+        { "label": "AZ-700 Azure Network Engineer", "values": ["Associate", "Networking", "$165", "1 year"] },
+        { "label": "AZ-140 Azure Virtual Desktop", "values": ["Specialty", "Virtual desktop (AVD)", "$165", "1 year"] },
+        { "label": "AZ-305 Azure Solutions Architect", "values": ["Expert", "Solution design", "$165", "1 year"] }
+      ]
+    },
+    "orgFaqs": [
+      { "q": "Can I take a Microsoft exam online from home?", "a": "Yes. Exams are delivered by Pearson VUE with two options: an in-person test center or OnVUE online proctoring from a private space with a webcam. The fee is identical for both." },
+      { "q": "Do Microsoft certifications expire?", "a": "Most role-based, specialty, and fundamentals certifications are valid for 12 months. You renew for free by passing a shorter online assessment on Microsoft Learn before the expiry date." },
+      { "q": "What happens if my certification is retired?", "a": "You keep the credential until its current expiry date, but you can no longer earn or renew it. Microsoft typically points candidates to the active successor exam or certification." }
+    ],
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/",
+    "verified": true,
+    "confidence": "high"
+  }
+}

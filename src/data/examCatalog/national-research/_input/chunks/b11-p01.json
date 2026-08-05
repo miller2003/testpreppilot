@@ -1,0 +1,553 @@
+{
+ "chunkId": "b11-p01",
+ "batch": 11,
+ "part": 1,
+ "categories": [
+  "behavioral-health"
+ ],
+ "groups": [
+  "Psychology Licensure & Board Certification",
+  "Social Work",
+  "Addiction & Recovery"
+ ],
+ "bodies": [
+  "American Board of Professional Psychology",
+  "National Association of Social Workers",
+  "International Certification & Reciprocity Consortium",
+  "NAADAC, the Association for Addiction Professionals"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "abpp-addiction-psychology",
+   "name": "ABPP Board Certification in Addiction Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP Addiction"
+   ],
+   "blurb": "ABPP speciality board recognising advanced competence in assessing and treating substance use and addictive behaviour disorders."
+  },
+  {
+   "slug": "abpp-behavioral-and-cognitive-psychology",
+   "name": "ABPP Board Certification in Behavioral and Cognitive Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP Behavioral and Cognitive",
+    "ABBCP"
+   ],
+   "blurb": "Speciality board certification covering applied behaviour analysis, behaviour therapy and cognitive behavioural therapy practice."
+  },
+  {
+   "slug": "abpp-clinical-child-and-adolescent-psychology",
+   "name": "ABPP Board Certification in Clinical Child and Adolescent Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP Clinical Child and Adolescent"
+   ],
+   "blurb": "ABPP speciality board for psychologists assessing and treating children, adolescents and families across developmental and clinical contexts."
+  },
+  {
+   "slug": "abpp-clinical-health-psychology",
+   "name": "ABPP Board Certification in Clinical Health Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP Health Psychology"
+   ],
+   "blurb": "Speciality board certification in the psychological assessment and treatment of physical illness, health behaviour and medical settings."
+  },
+  {
+   "slug": "abpp-clinical-psychology",
+   "name": "ABPP Board Certification in Clinical Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP Clinical",
+    "ABCP"
+   ],
+   "blurb": "The oldest ABPP speciality, recognising advanced competence in the assessment, diagnosis and treatment of psychological disorders."
+  },
+  {
+   "slug": "abpp-counseling-psychology",
+   "name": "ABPP Board Certification in Counseling Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP Counseling"
+   ],
+   "blurb": "ABPP speciality board recognising competence in strengths-based counseling practice across personal, vocational and interpersonal functioning."
+  },
+  {
+   "slug": "abpp-couple-and-family-psychology",
+   "name": "ABPP Board Certification in Couple and Family Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP Couple and Family"
+   ],
+   "blurb": "Speciality board certification in systemic assessment and intervention with couples, families and larger relational systems."
+  },
+  {
+   "slug": "abpp-forensic-psychology",
+   "name": "ABPP Board Certification in Forensic Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP Forensic",
+    "ABFP"
+   ],
+   "blurb": "Speciality board for psychologists applying clinical science to legal questions, including competency, risk and civil and criminal evaluations."
+  },
+  {
+   "slug": "abpp-geropsychology",
+   "name": "ABPP Board Certification in Geropsychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP Geropsychology",
+    "ABGERO"
+   ],
+   "blurb": "ABPP speciality board recognising advanced competence in the psychological care of older adults and their caregivers."
+  },
+  {
+   "slug": "abpp-group-psychology",
+   "name": "ABPP Board Certification in Group Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP Group"
+   ],
+   "blurb": "Speciality board certification in group psychotherapy theory, group dynamics, leadership and the assessment of group processes."
+  },
+  {
+   "slug": "abpp-organizational-and-business-consulting-psychology",
+   "name": "ABPP Board Certification in Organizational and Business Consulting Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP Organizational",
+    "ABOBCP"
+   ],
+   "blurb": "Speciality board for psychologists consulting to organisations on leadership, assessment, team effectiveness and workplace change."
+  },
+  {
+   "slug": "abpp-police-and-public-safety-psychology",
+   "name": "ABPP Board Certification in Police and Public Safety Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP Police and Public Safety"
+   ],
+   "blurb": "Speciality board covering officer selection, fitness-for-duty evaluation, operational support and intervention services for public safety agencies."
+  },
+  {
+   "slug": "abpp-psychoanalytic-and-psychodynamic-psychology",
+   "name": "ABPP Board Certification in Psychoanalytic and Psychodynamic Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP Psychoanalytic",
+    "ABAPPP"
+   ],
+   "blurb": "Speciality board recognising depth-oriented practice, with an additional subspecialty certification available in psychoanalysis."
+  },
+  {
+   "slug": "abpp-rehabilitation-psychology",
+   "name": "ABPP Board Certification in Rehabilitation Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP Rehabilitation",
+    "ABRP"
+   ],
+   "blurb": "Speciality board for psychologists working with disability, chronic illness and injury across rehabilitation and community settings."
+  },
+  {
+   "slug": "abpp-school-psychology",
+   "name": "ABPP Board Certification in School Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP School Psychology",
+    "ABSP"
+   ],
+   "blurb": "Speciality board certification for psychologists delivering assessment, intervention and consultation services in educational settings."
+  },
+  {
+   "slug": "abpp-serious-mental-illness-psychology",
+   "name": "ABPP Board Certification in Serious Mental Illness Psychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Professional Psychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABPP SMI"
+   ],
+   "blurb": "Speciality board recognising recovery-oriented practice with people experiencing schizophrenia, bipolar disorder and other severe conditions."
+  },
+  {
+   "slug": "acsw-academy-of-certified-social-workers",
+   "name": "Academy of Certified Social Workers",
+   "short": "ACSW",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "National Association of Social Workers",
+   "bodyUrl": "https://www.socialworkers.org",
+   "type": "Certification",
+   "aka": [
+    "ACSW"
+   ],
+   "blurb": "Long-standing NASW credential recognising master-level social workers with documented postgraduate supervised practice and professional references."
+  },
+  {
+   "slug": "hospice-and-palliative-social-worker-certification",
+   "name": "Advanced Certified Hospice and Palliative Social Worker",
+   "short": "ACHP-SW",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "National Association of Social Workers",
+   "bodyUrl": "https://www.socialworkers.org",
+   "type": "Certification",
+   "aka": [
+    "ACHP-SW",
+    "CHP-SW"
+   ],
+   "blurb": "Credential for social workers in hospice and palliative care, offered at bachelor and advanced master levels with supervised practice requirements."
+  },
+  {
+   "slug": "c-aswcm-certified-advanced-social-work-case-manager",
+   "name": "Certified Advanced Social Work Case Manager",
+   "short": "C-ASWCM",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "National Association of Social Workers",
+   "bodyUrl": "https://www.socialworkers.org",
+   "type": "Certification",
+   "aka": [
+    "C-ASWCM"
+   ],
+   "blurb": "NASW case management credential for master-level social workers coordinating complex health and social service plans."
+  },
+  {
+   "slug": "c-cyfsw-certified-children-youth-and-family-social-worker",
+   "name": "Certified Children, Youth and Family Social Worker",
+   "short": "C-CYFSW",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "National Association of Social Workers",
+   "bodyUrl": "https://www.socialworkers.org",
+   "type": "Certification",
+   "aka": [
+    "C-CYFSW"
+   ],
+   "blurb": "NASW speciality credential for master-level social workers practising in child welfare, family services and youth-serving agencies."
+  },
+  {
+   "slug": "c-catodsw-clinical-alcohol-tobacco-and-other-drugs-social-worker",
+   "name": "Certified Clinical Alcohol, Tobacco and Other Drugs Social Worker",
+   "short": "C-CATODSW",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "National Association of Social Workers",
+   "bodyUrl": "https://www.socialworkers.org",
+   "type": "Certification",
+   "aka": [
+    "C-CATODSW",
+    "CATODSW"
+   ],
+   "blurb": "NASW speciality credential for clinically licensed social workers treating substance use disorders in health and community settings."
+  },
+  {
+   "slug": "c-swcm-certified-social-work-case-manager",
+   "name": "Certified Social Work Case Manager",
+   "short": "C-SWCM",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "National Association of Social Workers",
+   "bodyUrl": "https://www.socialworkers.org",
+   "type": "Certification",
+   "aka": [
+    "C-SWCM"
+   ],
+   "blurb": "NASW credential for BSW-level case managers, verifying supervised practice in assessment, service coordination and client advocacy."
+  },
+  {
+   "slug": "c-swhc-certified-social-worker-in-health-care",
+   "name": "Certified Social Worker in Health Care",
+   "short": "C-SWHC",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "National Association of Social Workers",
+   "bodyUrl": "https://www.socialworkers.org",
+   "type": "Certification",
+   "aka": [
+    "C-SWHC"
+   ],
+   "blurb": "NASW speciality credential for master-level social workers practising in hospitals, clinics and other health care settings."
+  },
+  {
+   "slug": "csw-g-clinical-social-worker-in-gerontology",
+   "name": "Clinical Social Worker in Gerontology",
+   "short": "CSW-G",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "National Association of Social Workers",
+   "bodyUrl": "https://www.socialworkers.org",
+   "type": "Certification",
+   "aka": [
+    "CSW-G",
+    "SW-G"
+   ],
+   "blurb": "NASW gerontology credential for clinically licensed social workers serving older adults, families and long-term care programmes."
+  },
+  {
+   "slug": "dcsw-diplomate-in-clinical-social-work",
+   "name": "Diplomate in Clinical Social Work",
+   "short": "DCSW",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "National Association of Social Workers",
+   "bodyUrl": "https://www.socialworkers.org",
+   "type": "Certification",
+   "aka": [
+    "DCSW"
+   ],
+   "blurb": "Advanced NASW clinical credential requiring state clinical licensure plus extensive documented postgraduate clinical social work experience."
+  },
+  {
+   "slug": "qcsw-qualified-clinical-social-worker",
+   "name": "Qualified Clinical Social Worker",
+   "short": "QCSW",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "National Association of Social Workers",
+   "bodyUrl": "https://www.socialworkers.org",
+   "type": "Certification",
+   "aka": [
+    "QCSW"
+   ],
+   "blurb": "NASW credential verifying clinical social work education, licensure and supervised clinical hours for practitioners in direct practice."
+  },
+  {
+   "slug": "icrc-advanced-alcohol-and-drug-counselor",
+   "name": "IC&RC Advanced Alcohol and Drug Counselor",
+   "short": "AADC",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "International Certification & Reciprocity Consortium",
+   "type": "Certification",
+   "aka": [
+    "AADC",
+    "IC&RC AADC exam"
+   ],
+   "blurb": "Master-level addiction counseling credential from IC&RC, tested on clinical evaluation, treatment planning, counseling and professional ethics."
+  },
+  {
+   "slug": "icrc-alcohol-and-drug-counselor",
+   "name": "IC&RC Alcohol and Drug Counselor",
+   "short": "ADC",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "International Certification & Reciprocity Consortium",
+   "type": "Certification",
+   "aka": [
+    "ADC",
+    "IC&RC ADC exam",
+    "CADC reciprocal exam"
+   ],
+   "blurb": "Core IC&RC substance use counselor examination used by most state boards as the written test behind CADC and LADC licensure."
+  },
+  {
+   "slug": "icrc-certified-criminal-justice-addictions-professional",
+   "name": "IC&RC Certified Criminal Justice Addictions Professional",
+   "short": "CCJP",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "International Certification & Reciprocity Consortium",
+   "type": "Certification",
+   "aka": [
+    "CCJP"
+   ],
+   "blurb": "Credential for addiction professionals working in courts, probation, jails and prisons, covering case management and offender treatment."
+  },
+  {
+   "slug": "icrc-clinical-supervisor",
+   "name": "IC&RC Clinical Supervisor",
+   "short": "CCS",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "International Certification & Reciprocity Consortium",
+   "type": "Certification",
+   "aka": [
+    "CCS",
+    "Certified Clinical Supervisor"
+   ],
+   "blurb": "Supervisory credential for experienced addiction counselors, examining counselor development, performance evaluation and administrative oversight."
+  },
+  {
+   "slug": "icrc-co-occurring-disorders-professional",
+   "name": "IC&RC Co-Occurring Disorders Professional",
+   "short": "CCDP",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "International Certification & Reciprocity Consortium",
+   "type": "Certification",
+   "aka": [
+    "CCDP",
+    "CCDP-Diplomate"
+   ],
+   "blurb": "Credential for clinicians treating combined substance use and mental health disorders, with a diplomate tier for independently licensed staff."
+  },
+  {
+   "slug": "icrc-peer-recovery",
+   "name": "IC&RC Peer Recovery",
+   "short": "PR",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "International Certification & Reciprocity Consortium",
+   "type": "Certification",
+   "aka": [
+    "PR",
+    "CPRS",
+    "Certified Peer Recovery Specialist"
+   ],
+   "blurb": "Reciprocal credential for peer recovery support workers with lived experience, covering advocacy, mentoring, recovery planning and ethics."
+  },
+  {
+   "slug": "icrc-prevention-specialist",
+   "name": "IC&RC Prevention Specialist",
+   "short": "PS",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "International Certification & Reciprocity Consortium",
+   "type": "Certification",
+   "aka": [
+    "PS",
+    "CPS",
+    "Certified Prevention Specialist"
+   ],
+   "blurb": "Examination for substance misuse prevention professionals covering planning, education, community organisation and evaluation of prevention programmes."
+  },
+  {
+   "slug": "naadac-master-addiction-counselor",
+   "name": "NAADAC Master Addiction Counselor",
+   "short": "MAC",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "NAADAC, the Association for Addiction Professionals",
+   "bodyUrl": "https://www.naadac.org",
+   "type": "Certification",
+   "aka": [
+    "MAC",
+    "NCC AP MAC"
+   ],
+   "blurb": "Graduate-level addiction credential from the NCC AP requiring a master degree, supervised clinical hours and a national written examination."
+  },
+  {
+   "slug": "naadac-ncac-i",
+   "name": "National Certified Addiction Counselor Level I",
+   "short": "NCAC I",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "NAADAC, the Association for Addiction Professionals",
+   "bodyUrl": "https://www.naadac.org",
+   "type": "Certification",
+   "aka": [
+    "NCAC I",
+    "NCC AP NCAC I"
+   ],
+   "blurb": "Entry national addiction counselor credential requiring current state certification, supervised experience and a written examination."
+  },
+  {
+   "slug": "naadac-ncac-ii",
+   "name": "National Certified Addiction Counselor Level II",
+   "short": "NCAC II",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "NAADAC, the Association for Addiction Professionals",
+   "bodyUrl": "https://www.naadac.org",
+   "type": "Certification",
+   "aka": [
+    "NCAC II"
+   ],
+   "blurb": "Advanced NCC AP addiction counselor credential requiring a bachelor degree, five years of experience and a higher-level national examination."
+  },
+  {
+   "slug": "naadac-national-certified-adolescent-addictions-counselor",
+   "name": "National Certified Adolescent Addictions Counselor",
+   "short": "NCAAC",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "NAADAC, the Association for Addiction Professionals",
+   "bodyUrl": "https://www.naadac.org",
+   "type": "Certification",
+   "aka": [
+    "NCAAC"
+   ],
+   "blurb": "NCC AP credential for counselors specialising in adolescent substance use, covering developmental issues, family systems and youth treatment models."
+  },
+  {
+   "slug": "naadac-national-certified-peer-recovery-support-specialist",
+   "name": "National Certified Peer Recovery Support Specialist",
+   "short": "NCPRSS",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "NAADAC, the Association for Addiction Professionals",
+   "bodyUrl": "https://www.naadac.org",
+   "type": "Certification",
+   "aka": [
+    "NCPRSS"
+   ],
+   "blurb": "National peer recovery credential for people in sustained recovery who support others, tested on advocacy, mentoring, ethics and recovery wellness."
+  }
+ ]
+}

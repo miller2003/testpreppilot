@@ -1,0 +1,472 @@
+{
+ "chunkId": "b23-p03",
+ "batch": 23,
+ "part": 3,
+ "categories": [
+  "healthcare-clinical"
+ ],
+ "groups": [
+  "Other Clinicians",
+  "Pharmacy",
+  "Rehabilitation",
+  "Physician",
+  "Nursing"
+ ],
+ "bodies": [
+  "National Commission on Certification of Physician Assistants (NCCPA)",
+  "National Association of Boards of Pharmacy (NABP)",
+  "American Speech-Language-Hearing Association (ASHA)",
+  "Federation of State Boards of Physical Therapy (FSBPT)",
+  "American Board of Anesthesiology (ABMS member board)",
+  "American Board of Colon and Rectal Surgery (ABMS member board)",
+  "American Board of Dermatology (ABMS member board)",
+  "American Board of Emergency Medicine (ABMS member board)",
+  "American Board of Family Medicine (ABMS member board)",
+  "American Board of Internal Medicine (ABMS member board)",
+  "American Board of Medical Genetics and Genomics (ABMS member board)",
+  "American Board of Neurological Surgery (ABMS member board)",
+  "American Board of Nuclear Medicine (ABMS member board)",
+  "American Board of Obstetrics and Gynecology (ABMS member board)",
+  "American Board of Ophthalmology (ABMS member board)",
+  "American Board of Orthopaedic Surgery (ABMS member board)",
+  "American Board of Otolaryngology–Head and Neck Surgery (ABMS member board)",
+  "American Board of Pathology (ABMS member board)",
+  "American Board of Pediatrics (ABMS member board)",
+  "American Board of Physical Medicine and Rehabilitation (ABMS member board)",
+  "American Board of Plastic Surgery (ABMS member board)",
+  "American Board of Preventive Medicine (ABMS member board)",
+  "American Board of Psychiatry and Neurology (ABMS member board)",
+  "American Board of Radiology (ABMS member board)",
+  "American Board of Surgery (ABMS member board)",
+  "American Board of Thoracic Surgery (ABMS member board)",
+  "American Board of Urology (ABMS member board)",
+  "American Midwifery Certification Board (AMCB)",
+  "National Board of Certification and Recertification for Nurse Anesthetists (NBCRNA)",
+  "National Certification Corporation (NCC)",
+  "Federation of State Massage Therapy Boards (FSMTB)",
+  "North American Registry of Midwives (NARM)",
+  "National Board for Certification in Occupational Therapy (NBCOT)"
+ ],
+ "examCount": 37,
+ "exams": [
+  {
+   "slug": "pance",
+   "name": "Physician Assistant National Certifying Examination",
+   "short": "PANCE",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "National Commission on Certification of Physician Assistants (NCCPA)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Entry-level certification examination required to become a licensed physician assistant."
+  },
+  {
+   "slug": "panre",
+   "name": "Physician Assistant National Recertifying Examination",
+   "short": "PANRE",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "National Commission on Certification of Physician Assistants (NCCPA)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Recertification examination for maintaining physician assistant certification., a standardized national examination required for this credential."
+  },
+  {
+   "slug": "mpje",
+   "name": "Multistate Pharmacy Jurisprudence Examination",
+   "short": "MPJE",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "National Association of Boards of Pharmacy (NABP)",
+   "type": "Exam",
+   "aka": [
+    "Pharmacy Law Exam"
+   ],
+   "blurb": "Examination assessing knowledge of pharmacy law and regulations required for pharmacist licensure in participating jurisdictions."
+  },
+  {
+   "slug": "naplex",
+   "name": "North American Pharmacist Licensure Examination",
+   "short": "NAPLEX",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "National Association of Boards of Pharmacy (NABP)",
+   "type": "Exam",
+   "aka": [
+    "Pharmacist Licensure Exam"
+   ],
+   "blurb": "Computer-based examination assessing the knowledge and skills required for entry-level pharmacist licensure in the U.S."
+  },
+  {
+   "slug": "asha-ccc-a",
+   "name": "ASHA CCC-A Certification",
+   "short": "CCC-A",
+   "category": "healthcare-clinical",
+   "group": "Rehabilitation",
+   "body": "American Speech-Language-Hearing Association (ASHA)",
+   "type": "Certification",
+   "aka": [
+    "Audiology CCC"
+   ],
+   "blurb": "Certificate of Clinical Competence for audiologists awarded by ASHA., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "asha-ccc-slp",
+   "name": "ASHA CCC-SLP Certification",
+   "short": "CCC-SLP",
+   "category": "healthcare-clinical",
+   "group": "Rehabilitation",
+   "body": "American Speech-Language-Hearing Association (ASHA)",
+   "type": "Certification",
+   "aka": [
+    "Speech-Language Pathology CCC"
+   ],
+   "blurb": "Certificate of Clinical Competence for speech-language pathologists awarded by ASHA."
+  },
+  {
+   "slug": "npte-pta",
+   "name": "National Physical Therapy Exam for PTA",
+   "short": "NPTE-PTA",
+   "category": "healthcare-clinical",
+   "group": "Rehabilitation",
+   "body": "Federation of State Boards of Physical Therapy (FSBPT)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "National examination required for physical therapist assistant licensure in the United States."
+  },
+  {
+   "slug": "npte",
+   "name": "National Physical Therapy Examination",
+   "short": "NPTE",
+   "category": "healthcare-clinical",
+   "group": "Rehabilitation",
+   "body": "Federation of State Boards of Physical Therapy (FSBPT)",
+   "type": "Exam",
+   "aka": [
+    "PT Licensure Exam"
+   ],
+   "blurb": "National examination required for physical therapist licensure across U.S. jurisdictions."
+  },
+  {
+   "slug": "abms-anesthesiology",
+   "name": "American Board of Anesthesiology Certification",
+   "short": "ABA",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Anesthesiology (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification examination administered by the American Board of Anesthesiology for physician anesthesiologists."
+  },
+  {
+   "slug": "abms-colon-rectal-surgery",
+   "name": "American Board of Colon and Rectal Surgery Certification",
+   "short": "ABCRS",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Colon and Rectal Surgery (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification exam for physicians specializing in colon and rectal surgery, administered by ABCRS."
+  },
+  {
+   "slug": "abms-dermatology",
+   "name": "American Board of Dermatology Certification",
+   "short": "ABD",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Dermatology (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification examination administered by the American Board of Dermatology for physician dermatologists."
+  },
+  {
+   "slug": "abms-emergency-medicine",
+   "name": "American Board of Emergency Medicine Certification",
+   "short": "ABEM",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Emergency Medicine (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification exam administered by ABEM for physicians practicing emergency medicine in the United States."
+  },
+  {
+   "slug": "abms-family-medicine",
+   "name": "American Board of Family Medicine Certification",
+   "short": "ABFM",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Family Medicine (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification examination administered by ABFM for physicians specializing in family medicine."
+  },
+  {
+   "slug": "abms-internal-medicine",
+   "name": "American Board of Internal Medicine Certification",
+   "short": "ABIM",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Internal Medicine (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification examination administered by ABIM for physicians specializing in internal medicine."
+  },
+  {
+   "slug": "abms-medical-genetics",
+   "name": "American Board of Medical Genetics and Genomics Certification",
+   "short": "ABMGG",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Medical Genetics and Genomics (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification exam for physicians and geneticists specializing in medical genetics and genomics."
+  },
+  {
+   "slug": "abms-neurosurgery",
+   "name": "American Board of Neurological Surgery Certification",
+   "short": "ABNS",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Neurological Surgery (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification examination administered by ABNS for physician neurological surgeons."
+  },
+  {
+   "slug": "abms-nuclear-medicine",
+   "name": "American Board of Nuclear Medicine Certification",
+   "short": "ABNM",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Nuclear Medicine (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification exam for physicians specializing in nuclear medicine, administered by ABNM."
+  },
+  {
+   "slug": "abms-obgyn",
+   "name": "American Board of Obstetrics and Gynecology Certification",
+   "short": "ABOG",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Obstetrics and Gynecology (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification examination administered by ABOG for physicians in obstetrics and gynecology."
+  },
+  {
+   "slug": "abms-ophthalmology",
+   "name": "American Board of Ophthalmology Certification",
+   "short": "ABO",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Ophthalmology (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification examination administered by the American Board of Ophthalmology for physician ophthalmologists."
+  },
+  {
+   "slug": "abms-orthopaedic-surgery",
+   "name": "American Board of Orthopaedic Surgery Certification",
+   "short": "ABOS",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Orthopaedic Surgery (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification exam for physicians specializing in orthopaedic surgery, administered by ABOS."
+  },
+  {
+   "slug": "abms-otolaryngology",
+   "name": "American Board of Otolaryngology–Head and Neck Surgery Certification",
+   "short": "ABOto",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Otolaryngology–Head and Neck Surgery (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification examination for physician otolaryngologists, administered by ABOto."
+  },
+  {
+   "slug": "abms-pathology",
+   "name": "American Board of Pathology Certification",
+   "short": "ABPath",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Pathology (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification examination administered by ABPath for physicians specializing in anatomical and clinical pathology."
+  },
+  {
+   "slug": "abms-pediatrics",
+   "name": "American Board of Pediatrics Certification",
+   "short": "ABP",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Pediatrics (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification examination administered by the American Board of Pediatrics for physicians in pediatrics."
+  },
+  {
+   "slug": "abms-physical-med-rehab",
+   "name": "American Board of Physical Medicine and Rehabilitation Certification",
+   "short": "ABPMR",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Physical Medicine and Rehabilitation (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification exam for physicians specializing in physical medicine and rehabilitation, administered by ABPMR."
+  },
+  {
+   "slug": "abms-plastic-surgery",
+   "name": "American Board of Plastic Surgery Certification",
+   "short": "ABPS",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Plastic Surgery (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification examination administered by ABPS for physicians specializing in plastic surgery."
+  },
+  {
+   "slug": "abms-preventive-medicine",
+   "name": "American Board of Preventive Medicine Certification",
+   "short": "ABPM",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Preventive Medicine (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification exam for physicians specializing in preventive medicine and public health practice."
+  },
+  {
+   "slug": "abms-neurology-psychiatry",
+   "name": "American Board of Psychiatry and Neurology Certification",
+   "short": "ABPN",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Psychiatry and Neurology (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification exam for physicians specializing in psychiatry, neurology, or both disciplines."
+  },
+  {
+   "slug": "abms-radiology",
+   "name": "American Board of Radiology Certification",
+   "short": "ABR",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Radiology (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification examination administered by the American Board of Radiology for physician radiologists."
+  },
+  {
+   "slug": "abms-surgery",
+   "name": "American Board of Surgery Certification",
+   "short": "ABS",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Surgery (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification examination administered by the American Board of Surgery for physician general surgeons."
+  },
+  {
+   "slug": "abms-thoracic-surgery",
+   "name": "American Board of Thoracic Surgery Certification",
+   "short": "ABTS",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Thoracic Surgery (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification exam for physicians specializing in cardiothoracic surgery, administered by ABTS."
+  },
+  {
+   "slug": "abms-urology",
+   "name": "American Board of Urology Certification",
+   "short": "ABU",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Urology (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification examination administered by the American Board of Urology for physician urologists."
+  },
+  {
+   "slug": "amcb-cnm",
+   "name": "Certified Nurse-Midwife Certification",
+   "short": "CNM",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "American Midwifery Certification Board (AMCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National certification examination for certified nurse-midwives practicing in the United States."
+  },
+  {
+   "slug": "nbcrna-crna",
+   "name": "Certified Registered Nurse Anesthetist Certification",
+   "short": "CRNA",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "National Board of Certification and Recertification for Nurse Anesthetists (NBCRNA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National certification examination for nurse anesthetists credentialed as Certified Registered Nurse Anesthetists."
+  },
+  {
+   "slug": "ncc-whnp",
+   "name": "NCC Women’s Health NP Certification",
+   "short": "WHNP-BC",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "National Certification Corporation (NCC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification exam for nurses specializing in women’s health and obstetric-gynecologic care."
+  },
+  {
+   "slug": "mblex",
+   "name": "Massage and Bodywork Licensing Examination",
+   "short": "MBLEx",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "Federation of State Massage Therapy Boards (FSMTB)",
+   "type": "Exam",
+   "aka": [
+    "Massage Licensure Exam"
+   ],
+   "blurb": "National examination required for massage therapist licensure in most U.S. states."
+  },
+  {
+   "slug": "narm-cpm",
+   "name": "NARM Certified Professional Midwife Examination",
+   "short": "CPM",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "North American Registry of Midwives (NARM)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National certification examination for certified professional midwives in out-of-hospital settings."
+  },
+  {
+   "slug": "nbcot-otr",
+   "name": "NBCOT Occupational Therapist Registered Certification",
+   "short": "OTR",
+   "category": "healthcare-clinical",
+   "group": "Rehabilitation",
+   "body": "National Board for Certification in Occupational Therapy (NBCOT)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National certification examination for entry-level occupational therapists in the United States."
+  }
+ ]
+}

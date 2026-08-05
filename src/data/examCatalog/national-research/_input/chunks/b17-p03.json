@@ -1,0 +1,478 @@
+{
+ "chunkId": "b17-p03",
+ "batch": 17,
+ "part": 3,
+ "categories": [
+  "environment"
+ ],
+ "groups": [
+  "Water, Wastewater & Utilities",
+  "Pesticide, Agriculture & Land",
+  "Environmental Remediation & Building Hazards"
+ ],
+ "bodies": [
+  "National Ground Water Association (NGWA)",
+  "American Society of Agronomy",
+  "State UST Programs under U.S. EPA Energy Policy Act Rules",
+  "National Association of Wastewater Technicians (NAWT)",
+  "American Fisheries Society",
+  "The Wildlife Society",
+  "National Registry of Environmental Professionals (NREP)",
+  "Institute of Inspection, Cleaning and Restoration Certification (IICRC)",
+  "National Organization of Remediators and Mold Inspectors (NORMI)",
+  "National Radon Safety Board (NRSB)",
+  "American Backflow Prevention Association (ABPA)",
+  "Washington State Department of Ecology",
+  "Association of Water Technologies (AWT)",
+  "Ecological Society of America",
+  "Academy of Board Certified Environmental Professionals (ABCEP)",
+  "Society of American Foresters",
+  "Society for Range Management",
+  "Soil Science Society of America",
+  "Society of Wetland Scientists Professional Certification Program",
+  "State Environmental Agencies under U.S. EPA SPCC Rule",
+  "EPA-Approved Asbestos Training Providers",
+  "ASTM International E1527 Practice"
+ ],
+ "examCount": 35,
+ "exams": [
+  {
+   "slug": "ngwa-certified-pump-installer",
+   "name": "NGWA Certified Pump Installer",
+   "short": "CPI",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "National Ground Water Association (NGWA)",
+   "type": "Certification",
+   "aka": [
+    "CPI"
+   ],
+   "blurb": "Voluntary national certification for contractors installing and servicing water well pumps, pitless units and pressure systems."
+  },
+  {
+   "slug": "ngwa-certified-well-driller",
+   "name": "NGWA Certified Well Driller",
+   "short": "CWD",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "National Ground Water Association (NGWA)",
+   "type": "Certification",
+   "aka": [
+    "CWD"
+   ],
+   "blurb": "Voluntary national certification examining drilling methods, well construction standards, grouting and groundwater protection."
+  },
+  {
+   "slug": "ngwa-master-ground-water-contractor",
+   "name": "NGWA Master Ground Water Contractor",
+   "short": "MGWC",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "National Ground Water Association (NGWA)",
+   "type": "Certification",
+   "aka": [
+    "MGWC"
+   ],
+   "blurb": "Advanced NGWA credential requiring both drilling and pump installation certification plus extensive documented field experience."
+  },
+  {
+   "slug": "certified-crop-adviser",
+   "name": "Certified Crop Adviser",
+   "short": "CCA",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "American Society of Agronomy",
+   "type": "Certification",
+   "aka": [
+    "CCA"
+   ],
+   "blurb": "North American certification requiring international and local board exams in nutrient, soil, pest and water management."
+  },
+  {
+   "slug": "certified-crop-adviser-4r-nutrient-management",
+   "name": "Certified Crop Adviser 4R Nutrient Management Specialty",
+   "short": "4R NMS",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "American Society of Agronomy",
+   "type": "Certification",
+   "aka": [
+    "4R Nutrient Management Specialty"
+   ],
+   "blurb": "Specialty credential for Certified Crop Advisers demonstrating expertise in right source, rate, time and place nutrient stewardship."
+  },
+  {
+   "slug": "certified-professional-agronomist",
+   "name": "Certified Professional Agronomist",
+   "short": "CPAg",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "American Society of Agronomy",
+   "type": "Certification",
+   "aka": [
+    "CPAg"
+   ],
+   "blurb": "Certification for degreed agronomists covering crop production, soil fertility, pest management and environmental stewardship."
+  },
+  {
+   "slug": "ust-class-a-operator",
+   "name": "Underground Storage Tank Class A Operator Certification",
+   "short": "UST Class A",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "State UST Programs under U.S. EPA Energy Policy Act Rules",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for operators with primary responsibility for underground storage tank regulatory compliance and system operation."
+  },
+  {
+   "slug": "ust-class-b-operator",
+   "name": "Underground Storage Tank Class B Operator Certification",
+   "short": "UST Class B",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "State UST Programs under U.S. EPA Energy Policy Act Rules",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for operators who implement day-to-day release detection, spill prevention and recordkeeping at UST facilities."
+  },
+  {
+   "slug": "ust-class-c-operator",
+   "name": "Underground Storage Tank Class C Operator Training",
+   "short": "UST Class C",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "State UST Programs under U.S. EPA Energy Policy Act Rules",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Site-level training for staff who respond first to alarms, spills and emergencies at fuelling facilities with underground storage tanks."
+  },
+  {
+   "slug": "nawt-onsite-wastewater-inspector",
+   "name": "NAWT Onsite Wastewater Inspector Certification",
+   "short": "NAWT Inspector",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "National Association of Wastewater Technicians (NAWT)",
+   "type": "Certification",
+   "aka": [
+    "Septic Inspector"
+   ],
+   "blurb": "Certification for inspectors evaluating septic tanks, drainfields and other onsite wastewater systems at property transfer."
+  },
+  {
+   "slug": "nawt-onsite-wastewater-installer",
+   "name": "NAWT Onsite Wastewater Installer Certification",
+   "short": "NAWT Installer",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "National Association of Wastewater Technicians (NAWT)",
+   "type": "Certification",
+   "aka": [
+    "Septic Installer"
+   ],
+   "blurb": "Certification covering site evaluation, tank setting, drainfield construction and start-up of onsite wastewater treatment systems."
+  },
+  {
+   "slug": "associate-fisheries-professional",
+   "name": "Associate Fisheries Professional",
+   "short": "AFP",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "American Fisheries Society",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry-level certification for fisheries graduates who meet academic requirements but have not yet accrued professional experience."
+  },
+  {
+   "slug": "certified-fisheries-professional",
+   "name": "Certified Fisheries Professional",
+   "short": "CFP",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "American Fisheries Society",
+   "type": "Certification",
+   "aka": [
+    "Certified Fisheries Scientist"
+   ],
+   "blurb": "Professional certification recognising fisheries scientists who meet coursework and experience standards in fisheries management."
+  },
+  {
+   "slug": "associate-wildlife-biologist",
+   "name": "Associate Wildlife Biologist",
+   "short": "AWB",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "The Wildlife Society",
+   "type": "Certification",
+   "aka": [
+    "AWB"
+   ],
+   "blurb": "Entry-level certification for wildlife graduates meeting coursework requirements before accruing the experience needed for CWB."
+  },
+  {
+   "slug": "certified-wildlife-biologist",
+   "name": "Certified Wildlife Biologist",
+   "short": "CWB",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "The Wildlife Society",
+   "type": "Certification",
+   "aka": [
+    "CWB"
+   ],
+   "blurb": "Peer-reviewed certification confirming academic coursework and at least five years of professional wildlife biology experience."
+  },
+  {
+   "slug": "nrep-registered-environmental-manager",
+   "name": "Registered Environmental Manager",
+   "short": "REM",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "National Registry of Environmental Professionals (NREP)",
+   "type": "Certification",
+   "aka": [
+    "REM"
+   ],
+   "blurb": "Registry credential for managers of environmental compliance programmes covering air, water, waste and remediation regulations."
+  },
+  {
+   "slug": "nrep-registered-environmental-professional",
+   "name": "Registered Environmental Professional",
+   "short": "REP",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "National Registry of Environmental Professionals (NREP)",
+   "type": "Certification",
+   "aka": [
+    "REP"
+   ],
+   "blurb": "Broad registry credential recognising practitioners working across environmental science, compliance and site assessment fields."
+  },
+  {
+   "slug": "iicrc-applied-microbial-remediation-technician",
+   "name": "IICRC Applied Microbial Remediation Technician",
+   "short": "AMRT",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "Institute of Inspection, Cleaning and Restoration Certification (IICRC)",
+   "type": "Certification",
+   "aka": [
+    "AMRT"
+   ],
+   "blurb": "Certification covering containment, engineering controls and cleaning methods used in mould and sewage remediation projects."
+  },
+  {
+   "slug": "iicrc-water-damage-restoration-technician",
+   "name": "IICRC Water Damage Restoration Technician",
+   "short": "WRT",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "Institute of Inspection, Cleaning and Restoration Certification (IICRC)",
+   "type": "Certification",
+   "aka": [
+    "WRT"
+   ],
+   "blurb": "Certification covering water intrusion categories, psychrometry and structural drying procedures used in restoration work."
+  },
+  {
+   "slug": "normi-certified-mold-assessor",
+   "name": "NORMI Certified Mold Assessor",
+   "short": "NORMI CMA",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "National Organization of Remediators and Mold Inspectors (NORMI)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for inspectors who assess moisture and microbial growth in buildings and prepare independent remediation protocols."
+  },
+  {
+   "slug": "normi-certified-mold-remediator",
+   "name": "NORMI Certified Mold Remediator",
+   "short": "NORMI CMR",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "National Organization of Remediators and Mold Inspectors (NORMI)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for contractors performing mould remediation with containment, negative air and post-remediation verification steps."
+  },
+  {
+   "slug": "nrsb-radon-measurement-specialist",
+   "name": "NRSB Radon Measurement Specialist",
+   "short": "NRSB Measurement",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "National Radon Safety Board (NRSB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Alternative EPA-recognised credential for individuals performing residential and commercial radon measurement services."
+  },
+  {
+   "slug": "nrsb-radon-mitigation-specialist",
+   "name": "NRSB Radon Mitigation Specialist",
+   "short": "NRSB Mitigation",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "National Radon Safety Board (NRSB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Alternative EPA-recognised credential for individuals designing and installing radon reduction systems in existing buildings."
+  },
+  {
+   "slug": "abpa-backflow-prevention-assembly-tester",
+   "name": "ABPA Backflow Prevention Assembly Tester Certification",
+   "short": "ABPA Tester",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "American Backflow Prevention Association (ABPA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Alternative tester certification recognised by many water purveyors for annual testing of backflow prevention assemblies."
+  },
+  {
+   "slug": "certified-erosion-sediment-control-lead",
+   "name": "Certified Erosion and Sediment Control Lead",
+   "short": "CESCL",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Washington State Department of Ecology",
+   "type": "Certification",
+   "aka": [
+    "CESCL"
+   ],
+   "blurb": "Construction stormwater certification for site leads who inspect erosion controls and sample discharges under general permits."
+  },
+  {
+   "slug": "certified-water-technologist",
+   "name": "Certified Water Technologist",
+   "short": "CWT",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Water Technologies (AWT)",
+   "type": "Certification",
+   "aka": [
+    "CWT"
+   ],
+   "blurb": "Certification for industrial water treatment professionals covering boilers, cooling towers, corrosion control and Legionella risk."
+  },
+  {
+   "slug": "certified-ecologist-esa",
+   "name": "Certified Ecologist",
+   "short": "Certified Ecologist",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "Ecological Society of America",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Peer-reviewed professional certification recognising education and experience in applied and academic ecological practice."
+  },
+  {
+   "slug": "certified-environmental-professional-abcep",
+   "name": "Certified Environmental Professional",
+   "short": "CEP",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "Academy of Board Certified Environmental Professionals (ABCEP)",
+   "type": "Certification",
+   "aka": [
+    "CEP"
+   ],
+   "blurb": "Board certification recognising senior practitioners in environmental assessment, planning, documentation and management."
+  },
+  {
+   "slug": "certified-forester-saf",
+   "name": "Certified Forester",
+   "short": "CF",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "Society of American Foresters",
+   "type": "Certification",
+   "aka": [
+    "CF"
+   ],
+   "blurb": "National credential requiring a forestry degree, qualifying experience and an examination on silviculture, measurement and management."
+  },
+  {
+   "slug": "certified-professional-in-rangeland-management",
+   "name": "Certified Professional in Rangeland Management",
+   "short": "CPRM",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "Society for Range Management",
+   "type": "Certification",
+   "aka": [
+    "CPRM"
+   ],
+   "blurb": "Certification for rangeland professionals covering ecological site inventory, grazing management and rangeland improvement practice."
+  },
+  {
+   "slug": "certified-professional-soil-scientist",
+   "name": "Certified Professional Soil Scientist",
+   "short": "CPSS",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "Soil Science Society of America",
+   "type": "Certification",
+   "aka": [
+    "CPSS"
+   ],
+   "blurb": "Certification requiring the Fundamentals of Soil Science exam plus professional practice experience in soil classification and use."
+  },
+  {
+   "slug": "professional-wetland-scientist",
+   "name": "Professional Wetland Scientist",
+   "short": "PWS",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "Society of Wetland Scientists Professional Certification Program",
+   "type": "Certification",
+   "aka": [
+    "PWS"
+   ],
+   "blurb": "Certification for wetland delineators and scientists documenting education and experience in hydrology, soils and wetland vegetation."
+  },
+  {
+   "slug": "ast-operator-training",
+   "name": "Aboveground Storage Tank Operator Training",
+   "short": "AST Operator",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "State Environmental Agencies under U.S. EPA SPCC Rule",
+   "type": "Training",
+   "aka": [
+    "SPCC Training",
+    "AST Operator"
+   ],
+   "blurb": "Training on inspection, spill prevention and recordkeeping duties for personnel responsible for aboveground petroleum storage tanks."
+  },
+  {
+   "slug": "aha-asbestos-air-sampling-niosh-582",
+   "name": "NIOSH 582 Equivalency Asbestos Air Sampling Course",
+   "short": "NIOSH 582",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "EPA-Approved Asbestos Training Providers",
+   "type": "Training",
+   "aka": [
+    "Sampling and Evaluating Airborne Asbestos Dust",
+    "NIOSH 582 Equivalency"
+   ],
+   "blurb": "Course qualifying technicians to collect and analyse airborne asbestos fibre samples using NIOSH 7400 phase-contrast microscopy methods."
+  },
+  {
+   "slug": "phase-one-esa-environmental-professional",
+   "name": "Phase I Environmental Site Assessment Environmental Professional Training",
+   "short": "Phase I ESA",
+   "category": "environment",
+   "group": "Environmental Remediation & Building Hazards",
+   "body": "ASTM International E1527 Practice",
+   "type": "Training",
+   "aka": [
+    "ASTM E1527",
+    "All Appropriate Inquiries"
+   ],
+   "blurb": "Training on All Appropriate Inquiries and ASTM E1527 practice for professionals conducting Phase I environmental site assessments."
+  }
+ ]
+}

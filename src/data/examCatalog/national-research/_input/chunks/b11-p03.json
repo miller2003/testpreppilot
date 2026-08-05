@@ -1,0 +1,371 @@
+{
+ "chunkId": "b11-p03",
+ "batch": 11,
+ "part": 3,
+ "categories": [
+  "behavioral-health"
+ ],
+ "groups": [
+  "Counseling",
+  "Applied Behavior Analysis",
+  "Creative Arts & Expressive Therapy",
+  "Psychology Licensure & Board Certification",
+  "Specialty Clinical Practice",
+  "Addiction & Recovery"
+ ],
+ "bodies": [
+  "Commission on Rehabilitation Counselor Certification",
+  "International Behavior Analysis Organization",
+  "Art Therapy Credentials Board",
+  "Dance/Movement Therapy Certification Board",
+  "North American Drama Therapy Association",
+  "APA Practice Organization",
+  "American Society of Clinical Hypnosis",
+  "National Anger Management Association",
+  "International Board of Credentialing and Continuing Education Standards",
+  "Evergreen Certifications",
+  "Employee Assistance Certification Commission",
+  "National Board of Forensic Evaluators",
+  "Psychiatric Rehabilitation Association",
+  "Mental Health America",
+  "International Gambling Counselor Certification Board",
+  "U.S. Drug Enforcement Administration",
+  "Council for Tobacco Treatment Training Programs",
+  "Certification Board for Music Therapists",
+  "International Federation for Biblio/Poetry Therapy"
+ ],
+ "examCount": 24,
+ "exams": [
+  {
+   "slug": "crc-clinical-supervisor-rehabilitation",
+   "name": "Certified Rehabilitation Counselor Clinical Supervisor",
+   "short": "CRC-CS",
+   "category": "behavioral-health",
+   "group": "Counseling",
+   "body": "Commission on Rehabilitation Counselor Certification",
+   "bodyUrl": "https://www.crccertification.com",
+   "type": "Certification",
+   "aka": [
+    "CRC-CS"
+   ],
+   "blurb": "Supervisory designation for active CRCs who complete additional supervision training and document experience overseeing rehabilitation counselors."
+  },
+  {
+   "slug": "crc-certified-rehabilitation-counselor",
+   "name": "Certified Rehabilitation Counselor Examination",
+   "short": "CRC",
+   "category": "behavioral-health",
+   "group": "Counseling",
+   "body": "Commission on Rehabilitation Counselor Certification",
+   "bodyUrl": "https://www.crccertification.com",
+   "type": "Certification",
+   "aka": [
+    "CRC",
+    "CRCC exam"
+   ],
+   "blurb": "National examination for counselors helping people with disabilities achieve employment and independence, covering assessment, vocational and case services."
+  },
+  {
+   "slug": "ibao-international-behavior-analyst",
+   "name": "International Behavior Analyst",
+   "short": "IBA",
+   "category": "behavioral-health",
+   "group": "Applied Behavior Analysis",
+   "body": "International Behavior Analysis Organization",
+   "type": "Certification",
+   "aka": [
+    "IBA",
+    "IBAO"
+   ],
+   "blurb": "Graduate-level behaviour analysis credential offered internationally as an alternative pathway, with coursework, supervision and an examination."
+  },
+  {
+   "slug": "ibao-international-behavior-technician",
+   "name": "International Behavior Technician",
+   "short": "IBT",
+   "category": "behavioral-health",
+   "group": "Applied Behavior Analysis",
+   "body": "International Behavior Analysis Organization",
+   "type": "Certification",
+   "aka": [
+    "IBT"
+   ],
+   "blurb": "Entry-level technician credential for staff delivering direct behaviour-analytic intervention under supervision, based on training and a competency check."
+  },
+  {
+   "slug": "atcb-board-certified-art-therapist",
+   "name": "Board Certified Art Therapist",
+   "short": "ATR-BC",
+   "category": "behavioral-health",
+   "group": "Creative Arts & Expressive Therapy",
+   "body": "Art Therapy Credentials Board",
+   "bodyUrl": "https://www.atcb.org",
+   "type": "Certification",
+   "aka": [
+    "ATR-BC"
+   ],
+   "blurb": "Board certification for registered art therapists, earned by passing the Art Therapy Credentials Board examination after supervised practice."
+  },
+  {
+   "slug": "atcb-registered-art-therapist",
+   "name": "Registered Art Therapist",
+   "short": "ATR",
+   "category": "behavioral-health",
+   "group": "Creative Arts & Expressive Therapy",
+   "body": "Art Therapy Credentials Board",
+   "bodyUrl": "https://www.atcb.org",
+   "type": "Certification",
+   "aka": [
+    "ATR",
+    "ATR-Provisional"
+   ],
+   "blurb": "Registration credential awarded after a qualifying art therapy master degree and documented postgraduate supervised clinical hours."
+  },
+  {
+   "slug": "adta-board-certified-dance-movement-therapist",
+   "name": "Board Certified Dance/Movement Therapist",
+   "short": "BC-DMT",
+   "category": "behavioral-health",
+   "group": "Creative Arts & Expressive Therapy",
+   "body": "Dance/Movement Therapy Certification Board",
+   "type": "Certification",
+   "aka": [
+    "BC-DMT"
+   ],
+   "blurb": "Advanced dance/movement therapy credential permitting supervision and training of others, requiring documented post-registry clinical practice."
+  },
+  {
+   "slug": "adta-registered-dance-movement-therapist",
+   "name": "Registered Dance/Movement Therapist",
+   "short": "R-DMT",
+   "category": "behavioral-health",
+   "group": "Creative Arts & Expressive Therapy",
+   "body": "Dance/Movement Therapy Certification Board",
+   "type": "Certification",
+   "aka": [
+    "R-DMT"
+   ],
+   "blurb": "Entry credential for dance/movement therapists following an approved graduate programme and supervised clinical internship hours."
+  },
+  {
+   "slug": "nadta-board-certified-trainer-drama-therapy",
+   "name": "Board Certified Trainer in Drama Therapy",
+   "short": "BCT",
+   "category": "behavioral-health",
+   "group": "Creative Arts & Expressive Therapy",
+   "body": "North American Drama Therapy Association",
+   "type": "Certification",
+   "aka": [
+    "BCT"
+   ],
+   "blurb": "Advanced drama therapy designation authorising holders to train and supervise candidates pursuing the registered drama therapist credential."
+  },
+  {
+   "slug": "nadta-registered-drama-therapist",
+   "name": "Registered Drama Therapist",
+   "short": "RDT",
+   "category": "behavioral-health",
+   "group": "Creative Arts & Expressive Therapy",
+   "body": "North American Drama Therapy Association",
+   "type": "Certification",
+   "aka": [
+    "RDT"
+   ],
+   "blurb": "Credential for therapists using theatre processes clinically, awarded after approved graduate training and supervised drama therapy practice."
+  },
+  {
+   "slug": "psychopharmacology-examination-for-psychologists",
+   "name": "Psychopharmacology Examination for Psychologists",
+   "short": "PEP",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "APA Practice Organization",
+   "type": "Exam",
+   "aka": [
+    "PEP",
+    "clinical psychopharmacology exam"
+   ],
+   "blurb": "Examination used by prescriptive-authority jurisdictions to test psychologists on pharmacology, physiology and medication management."
+  },
+  {
+   "slug": "asch-certification-in-clinical-hypnosis",
+   "name": "ASCH Certification in Clinical Hypnosis",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "American Society of Clinical Hypnosis",
+   "type": "Certification",
+   "aka": [
+    "ASCH certification",
+    "clinical hypnosis certification"
+   ],
+   "blurb": "Certification for licensed health professionals who complete approved hypnosis training hours, consultation and documented clinical use."
+  },
+  {
+   "slug": "cams-certified-anger-management-specialist",
+   "name": "Certified Anger Management Specialist",
+   "short": "CAMS",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "National Anger Management Association",
+   "type": "Certification",
+   "aka": [
+    "CAMS-I",
+    "CAMS-II"
+   ],
+   "blurb": "Tiered credential for practitioners delivering anger management programmes, based on approved training, experience and supervision."
+  },
+  {
+   "slug": "ibcces-certified-autism-specialist",
+   "name": "Certified Autism Specialist",
+   "short": "CAS",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "International Board of Credentialing and Continuing Education Standards",
+   "type": "Certification",
+   "aka": [
+    "CAS",
+    "IBCCES CAS"
+   ],
+   "blurb": "Credential for master-level professionals working with autistic people, requiring documented experience, training hours and a competency examination."
+  },
+  {
+   "slug": "ctp-certified-clinical-trauma-professional",
+   "name": "Certified Clinical Trauma Professional",
+   "short": "CCTP",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "Evergreen Certifications",
+   "type": "Certification",
+   "aka": [
+    "CCTP",
+    "CCTP-II",
+    "certified trauma professional"
+   ],
+   "blurb": "Training-based trauma credential for licensed clinicians covering evidence-based treatment of post-traumatic stress and complex trauma."
+  },
+  {
+   "slug": "ceap-certified-employee-assistance-professional",
+   "name": "Certified Employee Assistance Professional",
+   "short": "CEAP",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "Employee Assistance Certification Commission",
+   "type": "Certification",
+   "aka": [
+    "CEAP"
+   ],
+   "blurb": "Credential for workplace behavioural health professionals, tested on assessment, referral, crisis response and organisational consultation."
+  },
+  {
+   "slug": "nbfe-certified-forensic-mental-health-evaluator",
+   "name": "Certified Forensic Mental Health Evaluator",
+   "short": "CFMHE",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "National Board of Forensic Evaluators",
+   "type": "Certification",
+   "aka": [
+    "CFMHE"
+   ],
+   "blurb": "Credential for licensed clinicians who conduct forensic evaluations and testify, requiring forensic training and an examination."
+  },
+  {
+   "slug": "cprp-certified-psychiatric-rehabilitation-practitioner",
+   "name": "Certified Psychiatric Rehabilitation Practitioner",
+   "short": "CPRP",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "Psychiatric Rehabilitation Association",
+   "type": "Certification",
+   "aka": [
+    "CPRP"
+   ],
+   "blurb": "National examination-based credential for staff delivering recovery-oriented psychiatric rehabilitation, supported employment and community services."
+  },
+  {
+   "slug": "mha-national-certified-peer-specialist",
+   "name": "National Certified Peer Specialist",
+   "short": "NCPS",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "Mental Health America",
+   "type": "Certification",
+   "aka": [
+    "NCPS"
+   ],
+   "blurb": "National credential for mental health peer support workers, requiring lived experience, work hours, training and a certification examination."
+  },
+  {
+   "slug": "igccb-gambling-counselor-certification",
+   "name": "International Gambling Counselor Certification",
+   "short": "ICGC-I",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "International Gambling Counselor Certification Board",
+   "type": "Certification",
+   "aka": [
+    "ICGC-I",
+    "ICGC-II",
+    "NCGC"
+   ],
+   "blurb": "Credential for clinicians treating disordered gambling, requiring specialised training hours, supervised practice and a written examination."
+  },
+  {
+   "slug": "mate-act-training",
+   "name": "MATE Act Substance Use Disorder Training",
+   "short": "MATE Act Training",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "U.S. Drug Enforcement Administration",
+   "type": "Training",
+   "aka": [
+    "Medication Access and Training Expansion Act",
+    "DEA eight-hour training"
+   ],
+   "blurb": "Eight hours of training on treating and managing patients with opioid or other substance use disorders, required for most DEA registrants."
+  },
+  {
+   "slug": "national-certified-tobacco-treatment-practitioner",
+   "name": "National Certificate in Tobacco Treatment Practice",
+   "short": "NCTTP",
+   "category": "behavioral-health",
+   "group": "Addiction & Recovery",
+   "body": "Council for Tobacco Treatment Training Programs",
+   "type": "Certification",
+   "aka": [
+    "NCTTP",
+    "Tobacco Treatment Specialist"
+   ],
+   "blurb": "National credential for tobacco treatment specialists, requiring accredited training, documented counselling hours and a knowledge examination."
+  },
+  {
+   "slug": "cbmt-board-certified-music-therapist",
+   "name": "Board Certified Music Therapist",
+   "short": "MT-BC",
+   "category": "behavioral-health",
+   "group": "Creative Arts & Expressive Therapy",
+   "body": "Certification Board for Music Therapists",
+   "bodyUrl": "https://www.cbmt.org",
+   "type": "Certification",
+   "aka": [
+    "MT-BC",
+    "CBMT exam"
+   ],
+   "blurb": "National music therapy credential earned by completing an approved degree and internship then passing the CBMT board certification examination."
+  },
+  {
+   "slug": "ifbpt-certified-poetry-therapist",
+   "name": "Certified Poetry Therapist",
+   "short": "CPT",
+   "category": "behavioral-health",
+   "group": "Creative Arts & Expressive Therapy",
+   "body": "International Federation for Biblio/Poetry Therapy",
+   "type": "Certification",
+   "aka": [
+    "CPT",
+    "CAPF"
+   ],
+   "blurb": "Credential for practitioners using literature and writing therapeutically, requiring mentored training hours and a portfolio review."
+  }
+ ]
+}

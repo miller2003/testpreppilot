@@ -1,0 +1,71 @@
+{
+ "chunkId": "b20-p03",
+ "batch": 20,
+ "part": 3,
+ "categories": [
+  "fitness-recreation"
+ ],
+ "groups": [
+  "Fitness, Sport & Recreation"
+ ],
+ "bodies": [
+  "USA Cycling",
+  "USA Swimming",
+  "USA Track & Field",
+  "United States Concealed Carry Association",
+  "United States Professional Tennis Association"
+ ],
+ "examCount": 5,
+ "exams": [
+  {
+   "slug": "usa-cycling-coach-certification",
+   "name": "USA Cycling Coaching License",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "USA Cycling",
+   "type": "License",
+   "aka": [],
+   "blurb": "Tiered coaching licence programme covering training physiology, race tactics, athlete safety and coaching ethics."
+  },
+  {
+   "slug": "usa-swimming-certified-official",
+   "name": "USA Swimming Certified Official",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "USA Swimming",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Rules testing and on-deck apprenticeship pathway certifying stroke and turn judges, starters and referees for sanctioned meets."
+  },
+  {
+   "slug": "usa-track-and-field-official-certification",
+   "name": "USATF Official Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "USA Track & Field",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Levelled certification for track and field officials based on rules examinations, apprenticeship and meet experience."
+  },
+  {
+   "slug": "usccca-certified-instructor",
+   "name": "USCCA Certified Instructor",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "United States Concealed Carry Association",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Instructor certification covering concealed carry law, defensive shooting fundamentals, range safety and course delivery."
+  },
+  {
+   "slug": "uspta-professional-certification",
+   "name": "USPTA Tennis Professional Certification",
+   "category": "fitness-recreation",
+   "group": "Fitness, Sport & Recreation",
+   "body": "United States Professional Tennis Association",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification pathway rating tennis teaching professionals on stroke demonstration, teaching skill and written rules testing."
+  }
+ ]
+}

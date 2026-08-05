@@ -1,0 +1,517 @@
+{
+ "chunkId": "b34-p01",
+ "batch": 34,
+ "part": 1,
+ "categories": [
+  "technology"
+ ],
+ "groups": [
+  "Enterprise Platforms",
+  "Data, Analytics & AI"
+ ],
+ "bodies": [
+  "Salesforce",
+  "Databricks",
+  "Snowflake",
+  "NVIDIA",
+  "SAP"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "salesforce-agentforce-specialist",
+   "name": "Salesforce Agentforce Specialist",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "Agentforce"
+   ],
+   "blurb": "Newer credential covering Agentforce AI agents, including agent builder, topics, actions and deployment of autonomous CRM assistance."
+  },
+  {
+   "slug": "salesforce-administrator",
+   "name": "Salesforce Certified Administrator",
+   "short": "ADM-201",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "ADM-201"
+   ],
+   "blurb": "Foundational credential validating configuration of Salesforce CRM, security, automation, reports and user management for admin professionals."
+  },
+  {
+   "slug": "salesforce-advanced-administrator",
+   "name": "Salesforce Certified Advanced Administrator",
+   "short": "ADM-211",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "ADM-211"
+   ],
+   "blurb": "Advanced credential covering complex automation, complex security models, auditing and extending Salesforce for experienced administrators."
+  },
+  {
+   "slug": "salesforce-business-analyst",
+   "name": "Salesforce Certified Business Analyst",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "Business Analyst"
+   ],
+   "blurb": "Validates discovery, requirement elicitation and solution design skills for Salesforce implementations working with business stakeholders."
+  },
+  {
+   "slug": "salesforce-cpq-specialist",
+   "name": "Salesforce Certified CPQ Specialist",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "CPQ"
+   ],
+   "blurb": "Confirms configuration of Salesforce CPQ for quotes, pricing, product bundles and order management; note the product is being consolidated."
+  },
+  {
+   "slug": "salesforce-data-cloud-consultant",
+   "name": "Salesforce Certified Data Cloud Consultant",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "Data Cloud"
+   ],
+   "blurb": "Validates unifying customer data with Salesforce Data Cloud, including ingestion, identity resolution, segmentation and activation."
+  },
+  {
+   "slug": "salesforce-experience-cloud-consultant",
+   "name": "Salesforce Certified Experience Cloud Consultant",
+   "short": "CRT-271",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "CRT-271"
+   ],
+   "blurb": "Validates building community and portal experiences with Experience Cloud, including sharing, branding, templates and governance."
+  },
+  {
+   "slug": "salesforce-marketing-cloud-administrator",
+   "name": "Salesforce Certified Marketing Cloud Administrator",
+   "short": "CRT-250",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "CRT-250"
+   ],
+   "blurb": "Confirms administration of Marketing Cloud, covering account configuration, users, permissions, integrations and email send management."
+  },
+  {
+   "slug": "salesforce-platform-app-builder",
+   "name": "Salesforce Certified Platform App Builder",
+   "short": "CRT-403",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "CRT-403"
+   ],
+   "blurb": "Validates building custom applications on the Lightning Platform using declarative configuration, process automation and data modeling."
+  },
+  {
+   "slug": "salesforce-platform-developer-i",
+   "name": "Salesforce Certified Platform Developer I",
+   "short": "CRT-450",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "CRT-450"
+   ],
+   "blurb": "Confirms ability to develop and deploy business logic and UI using Apex, Visualforce and Lightning Component fundamentals on Force.com."
+  },
+  {
+   "slug": "salesforce-platform-developer-ii",
+   "name": "Salesforce Certified Platform Developer II",
+   "short": "CRT-402",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "CRT-402"
+   ],
+   "blurb": "Advanced developer credential covering advanced Apex, Lightning Web Components, integration and performance for complex Salesforce applications."
+  },
+  {
+   "slug": "salesforce-sales-cloud-consultant",
+   "name": "Salesforce Certified Sales Cloud Consultant",
+   "short": "CRT-251",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "CRT-251"
+   ],
+   "blurb": "Validates implementation of Sales Cloud solutions, including lead management, opportunity pipelines, forecasting and sales productivity."
+  },
+  {
+   "slug": "salesforce-service-cloud-consultant",
+   "name": "Salesforce Certified Service Cloud Consultant",
+   "short": "CRT-261",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "CRT-261"
+   ],
+   "blurb": "Confirms design and deployment of Service Cloud for case management, omni-channel routing, knowledge and field service operations."
+  },
+  {
+   "slug": "salesforce-solution-architect",
+   "name": "Salesforce Certified Solution Architect",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "Solution Architect"
+   ],
+   "blurb": "Advanced architect credential covering multi-cloud solution design, integration and alignment across Salesforce products and strategy."
+  },
+  {
+   "slug": "salesforce-marketing-cloud-email-specialist",
+   "name": "Salesforce Marketing Cloud Email Specialist",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Salesforce",
+   "type": "Certification",
+   "aka": [
+    "Email Specialist"
+   ],
+   "blurb": "Validates email marketing skills including content creation, subscriber management, delivery, tracking and Marketing Cloud Studio tools."
+  },
+  {
+   "slug": "databricks-certified-associate-developer-for-apache-spark",
+   "name": "Databricks Certified Associate Developer for Apache Spark",
+   "short": "Spark Developer Associate",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Databricks",
+   "bodyUrl": "https://www.databricks.com/learn/certification",
+   "type": "Certification",
+   "aka": [
+    "Spark Developer Associate"
+   ],
+   "blurb": "Exam on the Apache Spark DataFrame API covering transformations, actions, joins, aggregations, Spark architecture and execution behaviour."
+  },
+  {
+   "slug": "databricks-certified-data-analyst-associate",
+   "name": "Databricks Certified Data Analyst Associate",
+   "short": "Databricks Data Analyst",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Databricks",
+   "bodyUrl": "https://www.databricks.com/learn/certification",
+   "type": "Certification",
+   "aka": [
+    "Databricks Data Analyst Associate"
+   ],
+   "blurb": "Associate exam on Databricks SQL covering queries, dashboards, visualisations, data management and analytics workflows on the lakehouse."
+  },
+  {
+   "slug": "databricks-certified-data-engineer-associate",
+   "name": "Databricks Certified Data Engineer Associate",
+   "short": "Databricks DE Associate",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Databricks",
+   "bodyUrl": "https://www.databricks.com/learn/certification",
+   "type": "Certification",
+   "aka": [
+    "Databricks Data Engineer Associate"
+   ],
+   "blurb": "Associate exam on building data pipelines with the Databricks Lakehouse Platform using Delta Lake, Spark SQL, workflows and Unity Catalog governance."
+  },
+  {
+   "slug": "databricks-certified-data-engineer-professional",
+   "name": "Databricks Certified Data Engineer Professional",
+   "short": "Databricks DE Professional",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Databricks",
+   "bodyUrl": "https://www.databricks.com/learn/certification",
+   "type": "Certification",
+   "aka": [
+    "Databricks Data Engineer Professional"
+   ],
+   "blurb": "Professional exam covering advanced Databricks data modelling, streaming, performance tuning, testing and production pipeline deployment."
+  },
+  {
+   "slug": "databricks-certified-generative-ai-engineer-associate",
+   "name": "Databricks Certified Generative AI Engineer Associate",
+   "short": "Databricks GenAI Engineer",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Databricks",
+   "bodyUrl": "https://www.databricks.com/learn/certification",
+   "type": "Certification",
+   "aka": [
+    "Databricks Generative AI Engineer"
+   ],
+   "blurb": "Associate exam covering retrieval augmented generation, vector search, prompt design, model serving and governance of generative AI on Databricks."
+  },
+  {
+   "slug": "databricks-certified-machine-learning-associate",
+   "name": "Databricks Certified Machine Learning Associate",
+   "short": "Databricks ML Associate",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Databricks",
+   "bodyUrl": "https://www.databricks.com/learn/certification",
+   "type": "Certification",
+   "aka": [
+    "Databricks ML Associate"
+   ],
+   "blurb": "Associate exam on machine learning workflows in Databricks including AutoML, MLflow tracking, feature engineering and model deployment basics."
+  },
+  {
+   "slug": "databricks-certified-machine-learning-professional",
+   "name": "Databricks Certified Machine Learning Professional",
+   "short": "Databricks ML Professional",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Databricks",
+   "bodyUrl": "https://www.databricks.com/learn/certification",
+   "type": "Certification",
+   "aka": [
+    "Databricks ML Professional"
+   ],
+   "blurb": "Professional exam on production machine learning with Databricks covering experiment tracking, model registry, monitoring, drift and deployment patterns."
+  },
+  {
+   "slug": "snowpro-advanced-administrator",
+   "name": "SnowPro Advanced: Administrator Certification",
+   "short": "SnowPro Administrator",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Snowflake",
+   "type": "Certification",
+   "aka": [
+    "ADA-C01"
+   ],
+   "blurb": "Advanced Snowflake exam on account administration, role-based access control, resource monitors, cost management and disaster recovery."
+  },
+  {
+   "slug": "snowpro-advanced-architect",
+   "name": "SnowPro Advanced: Architect Certification",
+   "short": "SnowPro Architect",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Snowflake",
+   "type": "Certification",
+   "aka": [
+    "ARA-C01"
+   ],
+   "blurb": "Advanced Snowflake exam on account and data architecture, sharing, replication, performance design and security architecture at enterprise scale."
+  },
+  {
+   "slug": "snowpro-advanced-data-analyst",
+   "name": "SnowPro Advanced: Data Analyst Certification",
+   "short": "SnowPro Data Analyst",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Snowflake",
+   "type": "Certification",
+   "aka": [
+    "DAA-C01"
+   ],
+   "blurb": "Advanced Snowflake exam covering analytic SQL, data preparation, visualisation integration and interpreting results for business stakeholders."
+  },
+  {
+   "slug": "snowpro-advanced-data-engineer",
+   "name": "SnowPro Advanced: Data Engineer Certification",
+   "short": "SnowPro Data Engineer",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Snowflake",
+   "type": "Certification",
+   "aka": [
+    "DEA-C02"
+   ],
+   "blurb": "Advanced Snowflake exam on data pipelines, Snowpark, streams and tasks, continuous loading, transformation and pipeline performance tuning."
+  },
+  {
+   "slug": "snowpro-advanced-data-scientist",
+   "name": "SnowPro Advanced: Data Scientist Certification",
+   "short": "SnowPro Data Scientist",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Snowflake",
+   "type": "Certification",
+   "aka": [
+    "DSA-C03"
+   ],
+   "blurb": "Advanced Snowflake exam on data science workflows including feature engineering, model development with Snowpark ML and deploying models in Snowflake."
+  },
+  {
+   "slug": "snowpro-associate-platform-certification",
+   "name": "SnowPro Associate: Platform Certification",
+   "short": "SnowPro Associate",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Snowflake",
+   "type": "Certification",
+   "aka": [
+    "SOL-C01"
+   ],
+   "blurb": "Entry-level Snowflake credential covering platform concepts, data cloud fundamentals, basic querying and the Snowflake pricing and access model."
+  },
+  {
+   "slug": "snowpro-core-certification",
+   "name": "SnowPro Core Certification",
+   "short": "SnowPro Core",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Snowflake",
+   "type": "Certification",
+   "aka": [
+    "COF-C02"
+   ],
+   "blurb": "Foundational Snowflake certification covering architecture, virtual warehouses, data loading, performance concepts, security and account management."
+  },
+  {
+   "slug": "nvidia-certified-associate-ai-infrastructure-and-operations",
+   "name": "NVIDIA-Certified Associate: AI Infrastructure and Operations",
+   "short": "NCA-AIIO",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "NVIDIA",
+   "type": "Certification",
+   "aka": [
+    "NCA-AIIO"
+   ],
+   "blurb": "NVIDIA associate certification covering AI data centre hardware, GPU fundamentals, cluster networking, storage and operating AI infrastructure."
+  },
+  {
+   "slug": "nvidia-certified-associate-generative-ai-llms",
+   "name": "NVIDIA-Certified Associate: Generative AI LLMs",
+   "short": "NCA-GENL",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "NVIDIA",
+   "type": "Certification",
+   "aka": [
+    "NCA-GENL"
+   ],
+   "blurb": "NVIDIA associate certification covering large language model fundamentals, prompt engineering, transformer architecture, fine-tuning and deployment."
+  },
+  {
+   "slug": "nvidia-certified-associate-generative-ai-multimodal",
+   "name": "NVIDIA-Certified Associate: Generative AI Multimodal",
+   "short": "NCA-GENM",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "NVIDIA",
+   "type": "Certification",
+   "aka": [
+    "NCA-GENM"
+   ],
+   "blurb": "NVIDIA associate certification on multimodal generative AI covering vision-language models, diffusion models, data preparation and inference workflows."
+  },
+  {
+   "slug": "nvidia-certified-professional-ai-infrastructure",
+   "name": "NVIDIA-Certified Professional: AI Infrastructure",
+   "short": "NCP-AII",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "NVIDIA",
+   "type": "Certification",
+   "aka": [
+    "NCP-AII"
+   ],
+   "blurb": "NVIDIA professional certification on installing, configuring and validating GPU servers, InfiniBand fabrics and storage for AI data centre deployments."
+  },
+  {
+   "slug": "nvidia-certified-professional-ai-operations",
+   "name": "NVIDIA-Certified Professional: AI Operations",
+   "short": "NCP-AIO",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "NVIDIA",
+   "type": "Certification",
+   "aka": [
+    "NCP-AIO"
+   ],
+   "blurb": "NVIDIA professional certification on administering AI clusters including workload orchestration, monitoring, performance tuning and troubleshooting."
+  },
+  {
+   "slug": "sap-s4hana-development-associate",
+   "name": "SAP Certified Associate - Backend Developer - SAP S/4HANA",
+   "short": "C_S4CDK",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "SAP",
+   "type": "Certification",
+   "aka": [
+    "C_S4CDK_2023"
+   ],
+   "blurb": "Confirms ABAP RESTful programming, in-app extensibility and side-by-side extension skills for SAP S/4HANA backend development."
+  },
+  {
+   "slug": "sap-activate-project-manager",
+   "name": "SAP Certified Associate - SAP Activate Project Manager",
+   "short": "C_ACTIVATE",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "SAP",
+   "type": "Certification",
+   "aka": [
+    "C_ACTIVATE22"
+   ],
+   "blurb": "Validates SAP Activate methodology knowledge for leading S/4HANA implementation projects, including agile and guided roadmap phases."
+  },
+  {
+   "slug": "sap-s4hana-financial-accounting",
+   "name": "SAP Certified Associate - SAP S/4HANA Financial Accounting",
+   "short": "C_TS4FI",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "SAP",
+   "type": "Certification",
+   "aka": [
+    "C_TS4FI_2023"
+   ],
+   "blurb": "Validates associate-level configuration and operation of Financial Accounting within SAP S/4HANA for consultants and finance specialists."
+  },
+  {
+   "slug": "sap-s4hana-management-accounting",
+   "name": "SAP Certified Associate - SAP S/4HANA Management Accounting",
+   "short": "C_TS4CO",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "SAP",
+   "type": "Certification",
+   "aka": [
+    "C_TS4CO_2023"
+   ],
+   "blurb": "Confirms associate knowledge of Management Accounting and cost-control processes in SAP S/4HANA for controlling professionals."
+  }
+ ]
+}

@@ -1,0 +1,246 @@
+{
+ "chunkId": "b37-p01",
+ "batch": 37,
+ "part": 1,
+ "categories": [
+  "technology"
+ ],
+ "groups": [
+  "Virtualisation & Infrastructure"
+ ],
+ "bodies": [
+  "Broadcom",
+  "Nutanix",
+  "Citrix",
+  "NetApp",
+  "Dell Technologies",
+  "Veeam Software"
+ ],
+ "examCount": 17,
+ "exams": [
+  {
+   "slug": "vmware-vcap-vcf-administrator",
+   "name": "VMware Certified Advanced Professional - VMware Cloud Foundation Administrator",
+   "short": "VCAP-VCF Administrator",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Broadcom",
+   "type": "Certification",
+   "aka": [
+    "3V0-11.26"
+   ],
+   "blurb": "Advanced VMware credential covering VCF operations, automation, networking and Kubernetes services for experienced private cloud administrators."
+  },
+  {
+   "slug": "vmware-vcdx",
+   "name": "VMware Certified Design Expert",
+   "short": "VCDX",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Broadcom",
+   "type": "Certification",
+   "aka": [
+    "VCDX"
+   ],
+   "blurb": "Highest VMware credential, awarded after submitting a full architecture design and defending it before a panel of existing VCDX holders."
+  },
+  {
+   "slug": "vmware-vcp-data-center-virtualization",
+   "name": "VMware Certified Professional - Data Center Virtualization",
+   "short": "VCP-DCV",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Broadcom",
+   "type": "Certification",
+   "aka": [
+    "VCP-DCV",
+    "2V0-21.23"
+   ],
+   "blurb": "Long-standing vSphere administration certification; Broadcom has moved new candidates toward the VVF and VCF administrator credentials instead."
+  },
+  {
+   "slug": "vmware-vcp-network-virtualization",
+   "name": "VMware Certified Professional - Network Virtualization",
+   "short": "VCP-NV",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Broadcom",
+   "type": "Certification",
+   "aka": [
+    "VCP-NV"
+   ],
+   "blurb": "VMware certification on NSX software-defined networking covering logical switching, routing, micro-segmentation, load balancing and operations."
+  },
+  {
+   "slug": "vmware-vcp-vcf-administrator",
+   "name": "VMware Certified Professional - VMware Cloud Foundation Administrator",
+   "short": "VCP-VCF Administrator",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Broadcom",
+   "type": "Certification",
+   "aka": [
+    "2V0-17.25"
+   ],
+   "blurb": "Flagship Broadcom credential on deploying and supporting private clouds built on VMware Cloud Foundation, including SDDC Manager and workload domains."
+  },
+  {
+   "slug": "vmware-vcp-vcf-architect",
+   "name": "VMware Certified Professional - VMware Cloud Foundation Architect",
+   "short": "VCP-VCF Architect",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Broadcom",
+   "type": "Certification",
+   "aka": [
+    "2V0-13.25"
+   ],
+   "blurb": "Design-focused VCF credential covering manageability, availability, performance, recovery and security decisions for private cloud architectures."
+  },
+  {
+   "slug": "vmware-vcp-vvf-administrator",
+   "name": "VMware Certified Professional - VMware vSphere Foundation Administrator",
+   "short": "VCP-VVF Administrator",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Broadcom",
+   "type": "Certification",
+   "aka": [
+    "2V0-16.25"
+   ],
+   "blurb": "Current successor to VCP-DCV, covering vSphere Foundation 9.0 host and cluster lifecycle, vCenter administration, vSAN storage policy and operations."
+  },
+  {
+   "slug": "vmware-vcta-data-center-virtualization",
+   "name": "VMware Certified Technical Associate - Data Center Virtualization",
+   "short": "VCTA-DCV",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Broadcom",
+   "type": "Certification",
+   "aka": [
+    "VCTA-DCV"
+   ],
+   "blurb": "Entry-level VMware credential covering vSphere concepts, virtual machine operations and basic data centre virtualisation administration tasks."
+  },
+  {
+   "slug": "nutanix-certified-associate",
+   "name": "Nutanix Certified Associate",
+   "short": "NCA",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Nutanix",
+   "type": "Certification",
+   "aka": [
+    "NCA"
+   ],
+   "blurb": "Entry-level Nutanix certification covering hyperconverged infrastructure concepts, Prism management, virtual machine operations and cluster basics."
+  },
+  {
+   "slug": "nutanix-certified-master-multicloud-infrastructure",
+   "name": "Nutanix Certified Master - Multicloud Infrastructure",
+   "short": "NCM-MCI",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Nutanix",
+   "type": "Certification",
+   "aka": [
+    "NCM-MCI"
+   ],
+   "blurb": "Advanced performance-based Nutanix exam requiring candidates to complete live configuration and troubleshooting tasks on a running cluster."
+  },
+  {
+   "slug": "nutanix-certified-professional-multicloud-infrastructure",
+   "name": "Nutanix Certified Professional - Multicloud Infrastructure",
+   "short": "NCP-MCI",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Nutanix",
+   "type": "Certification",
+   "aka": [
+    "NCP-MCI"
+   ],
+   "blurb": "Nutanix professional certification on deploying and managing AHV clusters, storage, networking, data protection and workload migration."
+  },
+  {
+   "slug": "citrix-certified-associate-virtualization",
+   "name": "Citrix Certified Associate - Virtualization",
+   "short": "CCA-V",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Citrix",
+   "type": "Certification",
+   "aka": [
+    "CCA-V"
+   ],
+   "blurb": "Citrix certification on installing, configuring and managing Citrix Virtual Apps and Desktops sites, delivery groups, images and StoreFront."
+  },
+  {
+   "slug": "citrix-certified-professional-virtualization",
+   "name": "Citrix Certified Professional - Virtualization",
+   "short": "CCP-V",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Citrix",
+   "type": "Certification",
+   "aka": [
+    "CCP-V"
+   ],
+   "blurb": "Advanced Citrix certification on scaling, securing and troubleshooting Citrix Virtual Apps and Desktops deployments in enterprise environments."
+  },
+  {
+   "slug": "netapp-certified-data-administrator-ontap",
+   "name": "NetApp Certified Data Administrator, ONTAP",
+   "short": "NCDA",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "NetApp",
+   "type": "Certification",
+   "aka": [
+    "NCDA",
+    "NS0-164"
+   ],
+   "blurb": "NetApp certification covering ONTAP storage administration including volumes, protocols, data protection, efficiency features and performance."
+  },
+  {
+   "slug": "netapp-certified-implementation-engineer-san",
+   "name": "NetApp Certified Implementation Engineer - SAN, ONTAP",
+   "short": "NCIE SAN",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "NetApp",
+   "type": "Certification",
+   "aka": [
+    "NCIE-SAN"
+   ],
+   "blurb": "NetApp implementation certification covering SAN design and deployment on ONTAP with Fibre Channel, iSCSI, NVMe over Fabrics and host integration."
+  },
+  {
+   "slug": "dell-information-storage-and-management-associate",
+   "name": "Dell Technologies Information Storage and Management Associate",
+   "short": "DCA-ISM",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Dell Technologies",
+   "type": "Certification",
+   "aka": [
+    "DEA-1TT5",
+    "ISM"
+   ],
+   "blurb": "Vendor certification covering storage system architecture, SAN and NAS, software-defined storage, backup, replication and storage security concepts."
+  },
+  {
+   "slug": "veeam-certified-engineer",
+   "name": "Veeam Certified Engineer",
+   "short": "VMCE",
+   "category": "technology",
+   "group": "Virtualisation & Infrastructure",
+   "body": "Veeam Software",
+   "type": "Certification",
+   "aka": [
+    "VMCE"
+   ],
+   "blurb": "Veeam certification covering backup and replication architecture, job configuration, restore scenarios, immutability and disaster recovery planning."
+  }
+ ]
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "rank": 1,
+    "slug": "cdl-general-knowledge-test",
+    "name": "CDL General Knowledge Test",
+    "heat": 90,
+    "vol": 500000,
+    "src": "estimate",
+    "family": "CDL",
+    "note": "Taken by essentially every new commercial driver; largest single professional-knowledge exam in the US"
+  },
+  {
+    "rank": 2,
+    "slug": "nclex-rn",
+    "name": "NCLEX-RN",
+    "heat": 89,
+    "vol": 380000,
+    "src": "published",
+    "family": "NCLEX",
+    "note": "NCSBN: 358,998 RN candidates in 2023; ~290k through 3 qtrs 2024 → ~380k/yr"
+  },
+  {
+    "rank": 3,
+    "slug": "cdl-combination-vehicles-knowledge-test",
+    "name": "CDL Combination Vehicles Knowledge Test",
+    "heat": 88,
+    "vol": 350000,
+    "src": "estimate",
+    "family": "CDL",
+    "note": "Most Class A drivers add the combination endorsement"
+  },
+  {
+    "rank": 4,
+    "slug": "pmi-pmp",
+    "name": "Project Management Professional",
+    "heat": 87,
+    "vol": 300000,
+    "src": "published",
+    "family": "PMI",
+    "note": "PMI: 1.68M active PMP certs (2026); China alone 243k candidates in 2023"
+  },
+  {
+    "rank": 5,
+    "slug": "cisco-ccna",
+    "name": "Cisco Certified Network Associate",
+    "heat": 87,
+    "vol": 300000,
+    "src": "estimate",
+    "family": "Cisco",
+    "note": "Top-tier benchmark networking cert; no published annual count, estimated very high"
+  },
+  {
+    "rank": 6,
+    "slug": "nnaap-cna",
+    "name": "NNAAP Nurse Aide Competency Evaluation",
+    "heat": 86,
+    "vol": 250000,
+    "src": "estimate",
+    "family": "CNA",
+    "note": "Nurse aide is one of the highest-volume healthcare entry exams"
+  },
+  {
+    "rank": 7,
+    "slug": "comptia-security-plus",
+    "name": "CompTIA Security+",
+    "heat": 86,
+    "vol": 250000,
+    "src": "published",
+    "family": "CompTIA",
+    "note": "CompTIA: 1M+ Security+ holders (2025), 2.3M exams since 2011, DoD 8140 mandate"
+  },
+  {
+    "rank": 8,
+    "slug": "comptia-a-plus",
+    "name": "CompTIA A+ Certification",
+    "heat": 85,
+    "vol": 200000,
+    "src": "published",
+    "family": "CompTIA",
+    "note": "CompTIA: A+ is the largest entry-level IT cert"
+  },
+  {
+    "rank": 9,
+    "slug": "cdl-air-brakes-knowledge-test",
+    "name": "CDL Air Brakes Knowledge Test",
+    "heat": 85,
+    "vol": 200000,
+    "src": "estimate",
+    "family": "CDL",
+    "note": "Required for the majority of Class A/B vehicles"
+  },
+  {
+    "rank": 10,
+    "slug": "praxis-core-combined-5752",
+    "name": "Praxis Core Academic Skills for Educators: Combined (5752)",
+    "heat": 84,
+    "vol": 180000,
+    "src": "estimate",
+    "family": "Teaching",
+    "note": "Praxis Core is the basic-skills gatekeeper required by many states"
+  },
+  {
+    "rank": 11,
+    "slug": "praxis-elementary-education-multiple-subjects-5001",
+    "name": "Praxis Elementary Education: Multiple Subjects (5001)",
+    "heat": 83,
+    "vol": 150000,
+    "src": "estimate",
+    "family": "Teaching",
+    "note": "Required for elementary licensure in many states"
+  },
+  {
+    "rank": 12,
+    "slug": "series-7",
+    "name": "Series 7 General Securities Representative Exam",
+    "heat": 83,
+    "vol": 150000,
+    "src": "estimate",
+    "family": "FINRA",
+    "note": "FINRA Series 7 — large historical volume"
+  },
+  {
+    "rank": 13,
+    "slug": "aws-certified-solutions-architect-associate",
+    "name": "AWS Certified Solutions Architect - Associate",
+    "heat": 83,
+    "vol": 150000,
+    "src": "estimate",
+    "family": "AWS",
+    "note": "One of the most-taken cloud exams globally"
+  },
+  {
+    "rank": 14,
+    "slug": "comptia-network-plus",
+    "name": "CompTIA Network+",
+    "heat": 83,
+    "vol": 150000,
+    "src": "estimate",
+    "family": "CompTIA",
+    "note": "High-volume CompTIA trilogy member"
+  },
+  {
+    "rank": 15,
+    "slug": "nic-cosmetology-practical",
+    "name": "NIC Cosmetology Practical Examination",
+    "heat": 82,
+    "vol": 120000,
+    "src": "estimate",
+    "family": "Beauty",
+    "note": "Cosmetology practical — same exam as theory via NIC"
+  },
+  {
+    "rank": 16,
+    "slug": "nic-cosmetology-theory",
+    "name": "NIC Cosmetology Theory Examination",
+    "heat": 82,
+    "vol": 120000,
+    "src": "estimate",
+    "family": "Beauty",
+    "note": "Cosmetology — large state-level license exam"
+  },
+  {
+    "rank": 17,
+    "slug": "praxis-plt-grades-k-6-5622",
+    "name": "Praxis Principles of Learning and Teaching: Grades K-6 (5622)",
+    "heat": 82,
+    "vol": 120000,
+    "src": "estimate",
+    "family": "Teaching",
+    "note": "Principles of Learning & Teaching K-6 — widely required"
+  },
+  {
+    "rank": 18,
+    "slug": "series-65",
+    "name": "Series 65 Uniform Investment Adviser Law Exam",
+    "heat": 82,
+    "vol": 120000,
+    "src": "estimate",
+    "family": "FINRA",
+    "note": "FINRA Series 65 — large volume"
+  },
+  {
+    "rank": 19,
+    "slug": "cfa-level-1",
+    "name": "CFA Program Level I Exam",
+    "heat": 82,
+    "vol": 120000,
+    "src": "estimate",
+    "family": "CFA",
+    "note": "CFA L1 — globally ~100k-150k candidates/yr"
+  },
+  {
+    "rank": 20,
+    "slug": "aws-certified-cloud-practitioner",
+    "name": "AWS Certified Cloud Practitioner",
+    "heat": 82,
+    "vol": 120000,
+    "src": "estimate",
+    "family": "AWS",
+    "note": "AWS entry cert; very high global volume"
+  },
+  {
+    "rank": 21,
+    "slug": "itil-4-foundation",
+    "name": "ITIL 4 Foundation",
+    "heat": 82,
+    "vol": 120000,
+    "src": "estimate",
+    "family": "ITIL",
+    "note": "ITIL Foundation is among the most-taken service-management exams worldwide"
+  },
+  {
+    "rank": 22,
+    "slug": "nremt-emt",
+    "name": "NREMT Emergency Medical Technician Certification",
+    "heat": 81,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "EMS",
+    "note": "EMT-B is the largest EMS tier; far more takers than Paramedic"
+  },
+  {
+    "rank": 23,
+    "slug": "nasm-certified-personal-trainer",
+    "name": "NASM Certified Personal Trainer",
+    "heat": 81,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "PersonalTraining",
+    "note": "NASM CPT — largest US personal-training cert"
+  },
+  {
+    "rank": 24,
+    "slug": "scrum-alliance-certified-scrummaster",
+    "name": "Certified ScrumMaster",
+    "heat": 81,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "Agile",
+    "note": "CSM is the flagship agile cert; very high global volume"
+  },
+  {
+    "rank": 25,
+    "slug": "ace-certified-personal-trainer",
+    "name": "ACE Certified Personal Trainer",
+    "heat": 80,
+    "vol": 90000,
+    "src": "estimate",
+    "family": "PersonalTraining",
+    "note": "ACE CPT — major personal-training cert"
+  },
+  {
+    "rank": 26,
+    "slug": "series-66",
+    "name": "Series 66 Uniform Combined State Law Exam",
+    "heat": 80,
+    "vol": 90000,
+    "src": "estimate",
+    "family": "FINRA",
+    "note": "FINRA Series 66 — combined security/IA law, high volume"
+  },
+  {
+    "rank": 27,
+    "slug": "fe-civil",
+    "name": "Fundamentals of Engineering (FE) Civil Exam",
+    "heat": 80,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "Engineering",
+    "note": "FE is the gatekeeper engineering exam; Civil is the largest discipline"
+  },
+  {
+    "rank": 28,
+    "slug": "sie-exam",
+    "name": "Securities Industry Essentials Exam",
+    "heat": 80,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "FINRA",
+    "note": "FINRA Securities Industry Essentials — broad entry exam"
+  },
+  {
+    "rank": 29,
+    "slug": "comptia-cysa-plus",
+    "name": "CompTIA Cybersecurity Analyst (CySA+)",
+    "heat": 80,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "CompTIA",
+    "note": "Mid-tier CompTIA security analyst cert, strong volume"
+  },
+  {
+    "rank": 30,
+    "slug": "ase-t7-truck-hvac",
+    "name": "ASE T7 Medium-Heavy Truck Heating, Ventilation and Air Conditioning Certification Test",
+    "heat": 80,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "Trades-HVAC",
+    "note": "ASE truck HVAC — high-volume auto technician cert"
+  }
+]

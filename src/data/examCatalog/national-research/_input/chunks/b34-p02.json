@@ -1,0 +1,520 @@
+{
+ "chunkId": "b34-p02",
+ "batch": 34,
+ "part": 2,
+ "categories": [
+  "technology"
+ ],
+ "groups": [
+  "Data, Analytics & AI",
+  "Enterprise Platforms"
+ ],
+ "bodies": [
+  "Tableau",
+  "Adobe",
+  "ServiceNow",
+  "Confluent",
+  "Elastic",
+  "MongoDB",
+  "Qlik",
+  "SAS Institute",
+  "Atlassian",
+  "Oracle NetSuite",
+  "Alteryx"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "tableau-certified-architect",
+   "name": "Tableau Certified Architect",
+   "short": "Tableau Architect",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Tableau",
+   "bodyUrl": "https://www.tableau.com/learn/certification",
+   "type": "Certification",
+   "aka": [
+    "Tableau Architect"
+   ],
+   "blurb": "Advanced Tableau credential on deploying, scaling, securing and maintaining Tableau Server and Tableau Cloud environments in the enterprise."
+  },
+  {
+   "slug": "tableau-certified-consultant",
+   "name": "Tableau Certified Consultant",
+   "short": "Tableau Consultant",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Tableau",
+   "bodyUrl": "https://www.tableau.com/learn/certification",
+   "type": "Certification",
+   "aka": [
+    "Tableau Consultant"
+   ],
+   "blurb": "Advanced Tableau credential on solution design, complex calculations, performance optimisation and advising organisations on analytics deployments."
+  },
+  {
+   "slug": "tableau-certified-data-analyst",
+   "name": "Tableau Certified Data Analyst",
+   "short": "Tableau Data Analyst",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Tableau",
+   "bodyUrl": "https://www.tableau.com/learn/certification",
+   "type": "Certification",
+   "aka": [
+    "Tableau Data Analyst"
+   ],
+   "blurb": "Mid-level Tableau certification combining knowledge and hands-on lab tasks on data preparation, analysis, dashboard design and content publishing."
+  },
+  {
+   "slug": "tableau-desktop-specialist",
+   "name": "Tableau Desktop Specialist",
+   "short": "Tableau Specialist",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Tableau",
+   "bodyUrl": "https://www.tableau.com/learn/certification",
+   "type": "Certification",
+   "aka": [
+    "Tableau Desktop Specialist"
+   ],
+   "blurb": "Entry-level Tableau certification covering connecting to data, building basic charts, calculations, dashboards and sharing work; it does not expire."
+  },
+  {
+   "slug": "tableau-server-certified-associate",
+   "name": "Tableau Server Certified Associate",
+   "short": "Tableau Server Associate",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Tableau",
+   "bodyUrl": "https://www.tableau.com/learn/certification",
+   "type": "Certification",
+   "aka": [
+    "Tableau Server Certified Associate"
+   ],
+   "blurb": "Retired Tableau credential on server administration, now replaced by the Certified Architect track but still referenced on many job postings."
+  },
+  {
+   "slug": "adobe-certified-expert-experience-manager",
+   "name": "Adobe Certified Expert - Experience Manager Sites",
+   "short": "ACE",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Adobe",
+   "type": "Certification",
+   "aka": [
+    "ACE AEM"
+   ],
+   "blurb": "Advanced credential for Adobe Experience Manager Sites developers and architects building and managing enterprise web content."
+  },
+  {
+   "slug": "adobe-certified-professional-illustrator",
+   "name": "Adobe Certified Professional - Illustrator",
+   "short": "ACP",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Adobe",
+   "type": "Certification",
+   "aka": [
+    "ACP Illustrator"
+   ],
+   "blurb": "Validates vector design skills in Adobe Illustrator including drawing, typography, color and artwork production for visual creators."
+  },
+  {
+   "slug": "adobe-certified-professional-photoshop",
+   "name": "Adobe Certified Professional - Photoshop",
+   "short": "ACP",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Adobe",
+   "type": "Certification",
+   "aka": [
+    "ACP Photoshop"
+   ],
+   "blurb": "Entry credential confirming creative and technical proficiency in Adobe Photoshop for design, photo editing and digital imaging."
+  },
+  {
+   "slug": "adobe-certified-professional-premiere-pro",
+   "name": "Adobe Certified Professional - Premiere Pro",
+   "short": "ACP",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Adobe",
+   "type": "Certification",
+   "aka": [
+    "ACP Premiere Pro"
+   ],
+   "blurb": "Confirms video editing proficiency in Adobe Premiere Pro including sequence editing, audio, color and export workflows."
+  },
+  {
+   "slug": "adobe-marketo-engage-professional",
+   "name": "Adobe Marketo Engage Professional",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Adobe",
+   "type": "Certification",
+   "aka": [
+    "Marketo"
+   ],
+   "blurb": "Validates marketing automation skills in Marketo Engage including campaign design, lead management, scoring and nurture programs."
+  },
+  {
+   "slug": "servicenow-certified-application-developer",
+   "name": "ServiceNow Certified Application Developer",
+   "short": "CAD",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "ServiceNow",
+   "type": "Certification",
+   "aka": [
+    "CAD"
+   ],
+   "blurb": "Confirms building applications on ServiceNow using tables, scripting, business rules, UI policies and scoped app development practices."
+  },
+  {
+   "slug": "servicenow-cis-itsm",
+   "name": "ServiceNow Certified Implementation Specialist - ITSM",
+   "short": "CIS-ITSM",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "ServiceNow",
+   "type": "Certification",
+   "aka": [
+    "CIS-ITSM"
+   ],
+   "blurb": "Validates implementation of ServiceNow IT Service Management, covering incident, problem, change, request and CMDB best practices."
+  },
+  {
+   "slug": "servicenow-certified-master-architect",
+   "name": "ServiceNow Certified Master Architect",
+   "short": "CMA",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "ServiceNow",
+   "type": "Certification",
+   "aka": [
+    "CMA"
+   ],
+   "blurb": "Elite credential for architects who have achieved CTA plus multiple domain specialties and proven leadership across deployments."
+  },
+  {
+   "slug": "servicenow-certified-system-administrator",
+   "name": "ServiceNow Certified System Administrator",
+   "short": "CSA",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "ServiceNow",
+   "type": "Certification",
+   "aka": [
+    "CSA"
+   ],
+   "blurb": "Entry credential validating administration of the ServiceNow platform, including users, roles, forms, lists, workflows and baseline config."
+  },
+  {
+   "slug": "servicenow-certified-technical-architect",
+   "name": "ServiceNow Certified Technical Architect",
+   "short": "CTA",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "ServiceNow",
+   "type": "Certification",
+   "aka": [
+    "CTA"
+   ],
+   "blurb": "Top-tier architect credential requiring a board review and demonstrating enterprise-scale ServiceNow solution and integration design."
+  },
+  {
+   "slug": "confluent-certified-administrator-for-apache-kafka",
+   "name": "Confluent Certified Administrator for Apache Kafka",
+   "short": "CCAAK",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Confluent",
+   "type": "Certification",
+   "aka": [
+    "CCAAK"
+   ],
+   "blurb": "Confluent certification on operating Kafka clusters covering broker configuration, replication, security, monitoring, scaling and troubleshooting."
+  },
+  {
+   "slug": "confluent-certified-developer-for-apache-flink",
+   "name": "Confluent Certified Developer for Apache Flink",
+   "short": "CCDAF",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Confluent",
+   "type": "Certification",
+   "aka": [
+    "CCDAF"
+   ],
+   "blurb": "Confluent certification on stream processing with Apache Flink, covering Flink SQL, state management, windowing, watermarks and job deployment."
+  },
+  {
+   "slug": "confluent-certified-developer-for-apache-kafka",
+   "name": "Confluent Certified Developer for Apache Kafka",
+   "short": "CCDAK",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Confluent",
+   "type": "Certification",
+   "aka": [
+    "CCDAK"
+   ],
+   "blurb": "Confluent certification for developers building Kafka applications, covering producers, consumers, Kafka Streams, schemas and delivery guarantees."
+  },
+  {
+   "slug": "elastic-certified-analyst",
+   "name": "Elastic Certified Analyst",
+   "short": "Elastic Analyst",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Elastic",
+   "type": "Certification",
+   "aka": [
+    "Elastic Certified Analyst"
+   ],
+   "blurb": "Hands-on Elastic exam on searching and visualising data in Kibana, building dashboards, using Lens and creating alerts from Elasticsearch data."
+  },
+  {
+   "slug": "elastic-certified-engineer",
+   "name": "Elastic Certified Engineer",
+   "short": "Elastic Engineer",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Elastic",
+   "type": "Certification",
+   "aka": [
+    "Elastic Certified Engineer"
+   ],
+   "blurb": "Performance-based Elastic exam on building and managing Elasticsearch clusters, covering indexing, mappings, queries, aggregations and cluster health."
+  },
+  {
+   "slug": "elastic-certified-observability-engineer",
+   "name": "Elastic Certified Observability Engineer",
+   "short": "Elastic Observability",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Elastic",
+   "type": "Certification",
+   "aka": [
+    "Elastic Observability Engineer"
+   ],
+   "blurb": "Performance-based Elastic exam on ingesting logs, metrics and traces, configuring APM, building service maps and setting up observability alerting."
+  },
+  {
+   "slug": "mongodb-associate-data-modeler",
+   "name": "MongoDB Associate Data Modeler",
+   "short": "MongoDB Data Modeler",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "MongoDB",
+   "type": "Certification",
+   "aka": [
+    "MongoDB Associate Data Modeler"
+   ],
+   "blurb": "MongoDB certification on schema design patterns, embedding versus referencing, workload-driven modelling and evolving document schemas."
+  },
+  {
+   "slug": "mongodb-associate-database-administrator",
+   "name": "MongoDB Associate Database Administrator",
+   "short": "MongoDB DBA",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "MongoDB",
+   "type": "Certification",
+   "aka": [
+    "MongoDB Associate DBA"
+   ],
+   "blurb": "MongoDB certification on deploying and operating clusters, covering replication, sharding, backup, security, monitoring and performance tuning."
+  },
+  {
+   "slug": "mongodb-associate-developer",
+   "name": "MongoDB Associate Developer",
+   "short": "MongoDB Developer",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "MongoDB",
+   "type": "Certification",
+   "aka": [
+    "MongoDB Associate Developer"
+   ],
+   "blurb": "MongoDB certification covering CRUD operations, aggregation, indexes, drivers and building applications against MongoDB using its query language."
+  },
+  {
+   "slug": "qlik-sense-business-analyst",
+   "name": "Qlik Sense Business Analyst Certification",
+   "short": "Qlik Business Analyst",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Qlik",
+   "type": "Certification",
+   "aka": [
+    "Qlik Sense Business Analyst"
+   ],
+   "blurb": "Qlik certification on gathering requirements, designing applications and building effective visualisations and dashboards in Qlik Sense."
+  },
+  {
+   "slug": "qlik-sense-data-architect",
+   "name": "Qlik Sense Data Architect Certification",
+   "short": "Qlik Data Architect",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Qlik",
+   "type": "Certification",
+   "aka": [
+    "Qlik Sense Data Architect"
+   ],
+   "blurb": "Qlik certification on data modelling, scripting, connecting sources and transforming and optimising data loads within Qlik Sense applications."
+  },
+  {
+   "slug": "qlik-sense-system-administrator",
+   "name": "Qlik Sense System Administrator Certification",
+   "short": "Qlik System Administrator",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Qlik",
+   "type": "Certification",
+   "aka": [
+    "Qlik Sense System Administrator"
+   ],
+   "blurb": "Qlik certification covering installation, security rules, licensing, node configuration and monitoring of Qlik Sense Enterprise deployments."
+  },
+  {
+   "slug": "sas-certified-data-scientist",
+   "name": "SAS Certified Data Scientist",
+   "short": "SAS Data Scientist",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "SAS Institute",
+   "type": "Certification",
+   "aka": [
+    "SAS Data Scientist"
+   ],
+   "blurb": "Composite SAS credential earned by completing the Big Data and Advanced Analytics certification tracks covering data wrangling and machine learning."
+  },
+  {
+   "slug": "sas-certified-professional-advanced-programming",
+   "name": "SAS Certified Professional: Advanced Programming Using SAS 9.4",
+   "short": "SAS Advanced Programming",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "SAS Institute",
+   "type": "Certification",
+   "aka": [
+    "A00-232"
+   ],
+   "blurb": "SAS certification covering SQL processing, macro programming and advanced DATA step techniques for experienced SAS programmers."
+  },
+  {
+   "slug": "sas-certified-specialist-base-programming",
+   "name": "SAS Certified Specialist: Base Programming Using SAS 9.4",
+   "short": "SAS Base Programming",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "SAS Institute",
+   "type": "Certification",
+   "aka": [
+    "A00-231"
+   ],
+   "blurb": "SAS certification covering DATA step programming, importing and exporting data, combining tables and producing reports with Base SAS."
+  },
+  {
+   "slug": "atlassian-agile-development-jira",
+   "name": "Atlassian Certified - Agile Development with Jira Software",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Atlassian",
+   "type": "Certification",
+   "aka": [
+    "ACP-620"
+   ],
+   "blurb": "Validates applying agile practices and Jira Software boards, sprints, reports and backlog refinement for delivery teams."
+  },
+  {
+   "slug": "atlassian-jira-administrator",
+   "name": "Atlassian Certified Professional - Jira Administrator",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Atlassian",
+   "type": "Certification",
+   "aka": [
+    "ACP-100"
+   ],
+   "blurb": "Confirms administration of Jira Software and Jira Service Management, including schemes, permissions, workflows and project config."
+  },
+  {
+   "slug": "atlassian-system-administrator",
+   "name": "Atlassian Certified Professional - System Administrator",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Atlassian",
+   "type": "Certification",
+   "aka": [
+    "ACP-520"
+   ],
+   "blurb": "Confirms managing Atlassian Cloud organizations including user provisioning, security, guardrails and product administration."
+  },
+  {
+   "slug": "netsuite-certified-administrator",
+   "name": "NetSuite Certified Administrator",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Oracle NetSuite",
+   "type": "Certification",
+   "aka": [
+    "NetSuite Admin"
+   ],
+   "blurb": "Confirms administration of NetSuite including setup, customization, workflows, saved searches and user and role management."
+  },
+  {
+   "slug": "netsuite-erp-consultant",
+   "name": "NetSuite Certified ERP Consultant",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Oracle NetSuite",
+   "type": "Certification",
+   "aka": [
+    "ERP Consultant"
+   ],
+   "blurb": "Validates implementing NetSuite ERP, including financials, order management, inventory and implementation best practices."
+  },
+  {
+   "slug": "netsuite-suitefoundation",
+   "name": "NetSuite Certified SuiteFoundation",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Oracle NetSuite",
+   "type": "Certification",
+   "aka": [
+    "SuiteFoundation"
+   ],
+   "blurb": "Entry credential validating NetSuite ERP basics including navigation, roles, transactions, records and standard business processes."
+  },
+  {
+   "slug": "alteryx-designer-advanced-certification",
+   "name": "Alteryx Designer Advanced Certification",
+   "short": "Alteryx Advanced",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Alteryx",
+   "type": "Certification",
+   "aka": [
+    "Alteryx Designer Advanced"
+   ],
+   "blurb": "Advanced Alteryx exam covering macros, analytic apps, spatial and predictive tools and optimising complex Designer workflows."
+  },
+  {
+   "slug": "alteryx-designer-core-certification",
+   "name": "Alteryx Designer Core Certification",
+   "short": "Alteryx Core",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Alteryx",
+   "type": "Certification",
+   "aka": [
+    "Alteryx Designer Core"
+   ],
+   "blurb": "Foundational Alteryx exam covering data preparation, blending, parsing, joins and reporting tools within Alteryx Designer workflows."
+  }
+ ]
+}

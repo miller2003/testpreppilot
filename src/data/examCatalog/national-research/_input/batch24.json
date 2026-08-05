@@ -1,0 +1,287 @@
+{
+  "batch": "24",
+  "categories": [
+    "healthcare-clinical"
+  ],
+  "groups": [
+    "Dental",
+    "Vision"
+  ],
+  "examCount": 23,
+  "bodyCount": 16,
+  "bodies": [
+    "American Dental Association (ADA)",
+    "American Board of Dental Anesthesiology",
+    "American Board of Dental Public Health",
+    "American Board of Endodontics",
+    "American Board of Oral and Maxillofacial Pathology",
+    "American Board of Oral and Maxillofacial Radiology",
+    "American Board of Oral and Maxillofacial Surgery",
+    "American Board of Oral Medicine",
+    "American Board of Orthodontics",
+    "American Board of Pediatric Dentistry",
+    "American Board of Periodontology",
+    "American Board of Prosthodontics",
+    "Joint Commission on National Dental Examinations (JCNDE), American Dental Association",
+    "American Board of Opticianry (ABO)",
+    "National Contact Lens Examiners (NCLE)",
+    "National Board of Examiners in Optometry (NBEO)"
+  ],
+  "exams": [
+    {
+      "slug": "adat",
+      "name": "Advanced Dental Admission Test",
+      "short": "ADAT",
+      "category": "healthcare-clinical",
+      "group": "Dental",
+      "body": "American Dental Association (ADA)",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Standardized exam for dentists seeking admission to advanced dental education programs in the United States."
+    },
+    {
+      "slug": "ab-dental-anesthesiology",
+      "name": "American Board of Dental Anesthesiology Certification",
+      "short": "ABDA",
+      "category": "healthcare-clinical",
+      "group": "Dental",
+      "body": "American Board of Dental Anesthesiology",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Diplomate examination for dentists specializing in dental anesthesiology and sedation."
+    },
+    {
+      "slug": "ab-public-health-dentistry",
+      "name": "American Board of Dental Public Health Certification",
+      "short": "AABDPH",
+      "category": "healthcare-clinical",
+      "group": "Dental",
+      "body": "American Board of Dental Public Health",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Diplomate examination for dentists specializing in dental public health and community programs."
+    },
+    {
+      "slug": "ab-endodontics",
+      "name": "American Board of Endodontics Certification",
+      "short": "ABE",
+      "category": "healthcare-clinical",
+      "group": "Dental",
+      "body": "American Board of Endodontics",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Diplomate examination for dentists specializing in endodontics and root canal therapy."
+    },
+    {
+      "slug": "ab-oral-pathology",
+      "name": "American Board of Oral and Maxillofacial Pathology Certification",
+      "short": "ABOMP",
+      "category": "healthcare-clinical",
+      "group": "Dental",
+      "body": "American Board of Oral and Maxillofacial Pathology",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Diplomate examination for dentists specializing in oral and maxillofacial pathology."
+    },
+    {
+      "slug": "ab-oral-radiology",
+      "name": "American Board of Oral and Maxillofacial Radiology Certification",
+      "short": "ABOMR",
+      "category": "healthcare-clinical",
+      "group": "Dental",
+      "body": "American Board of Oral and Maxillofacial Radiology",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Diplomate examination for dentists specializing in oral and maxillofacial radiology and imaging."
+    },
+    {
+      "slug": "ab-omfs",
+      "name": "American Board of Oral and Maxillofacial Surgery Certification",
+      "short": "ABOMS",
+      "category": "healthcare-clinical",
+      "group": "Dental",
+      "body": "American Board of Oral and Maxillofacial Surgery",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Diplomate examination for dentists specializing in oral and maxillofacial surgery."
+    },
+    {
+      "slug": "ab-oral-medicine",
+      "name": "American Board of Oral Medicine Certification",
+      "short": "ABOM",
+      "category": "healthcare-clinical",
+      "group": "Dental",
+      "body": "American Board of Oral Medicine",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Diplomate examination for dentists specializing in oral medicine and systemic disease management."
+    },
+    {
+      "slug": "ab-orthodontics",
+      "name": "American Board of Orthodontics Certification",
+      "short": "ABO",
+      "category": "healthcare-clinical",
+      "group": "Dental",
+      "body": "American Board of Orthodontics",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Diplomate examination for dentists specializing in orthodontics and dentofacial orthopedics."
+    },
+    {
+      "slug": "ab-pediatric-dentistry",
+      "name": "American Board of Pediatric Dentistry Certification",
+      "short": "ABPD",
+      "category": "healthcare-clinical",
+      "group": "Dental",
+      "body": "American Board of Pediatric Dentistry",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Diplomate examination for dentists specializing in pediatric and adolescent dental care."
+    },
+    {
+      "slug": "ab-periodontology",
+      "name": "American Board of Periodontology Certification",
+      "short": "ABP",
+      "category": "healthcare-clinical",
+      "group": "Dental",
+      "body": "American Board of Periodontology",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Diplomate examination for dentists specializing in periodontics and implant dentistry."
+    },
+    {
+      "slug": "ab-prosthodontics",
+      "name": "American Board of Prosthodontics Certification",
+      "short": "ABProsth",
+      "category": "healthcare-clinical",
+      "group": "Dental",
+      "body": "American Board of Prosthodontics",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Diplomate examination for dentists specializing in prosthodontics and complex oral rehabilitation."
+    },
+    {
+      "slug": "inbde",
+      "name": "Integrated National Board Dental Examination",
+      "short": "INBDE",
+      "category": "healthcare-clinical",
+      "group": "Dental",
+      "body": "Joint Commission on National Dental Examinations (JCNDE), American Dental Association",
+      "type": "Exam",
+      "aka": [
+        "Dental Board Exam"
+      ],
+      "blurb": "Computer-based licensure exam assessing biomedical, behavioral, and clinical dental sciences for dental graduates."
+    },
+    {
+      "slug": "abo-advanced",
+      "name": "ABO Advanced Certification",
+      "short": "ABO-Adv",
+      "category": "healthcare-clinical",
+      "group": "Vision",
+      "body": "American Board of Opticianry (ABO)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Advanced-level opticianry certification building on the NOCE for experienced dispensing opticians."
+    },
+    {
+      "slug": "abo-master",
+      "name": "ABO Master Certification",
+      "short": "ABO-Master",
+      "category": "healthcare-clinical",
+      "group": "Vision",
+      "body": "American Board of Opticianry (ABO)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Highest-tier opticianry certification recognizing mastery in dispensing and optical practice."
+    },
+    {
+      "slug": "abo-noce",
+      "name": "American Board of Opticianry NOCE",
+      "short": "NOCE",
+      "category": "healthcare-clinical",
+      "group": "Vision",
+      "body": "American Board of Opticianry (ABO)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "National Opticianry Competency Exam certifying dispensing opticians in eyeglass fitting and optics."
+    },
+    {
+      "slug": "ncle-clre",
+      "name": "National Contact Lens Examiners CLRE",
+      "short": "CLRE",
+      "category": "healthcare-clinical",
+      "group": "Vision",
+      "body": "National Contact Lens Examiners (NCLE)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Contact Lens Registry Exam certifying opticians to fit and dispense contact lenses."
+    },
+    {
+      "slug": "nbeo-lspe",
+      "name": "NBEO Laser Surgical Procedure Examination",
+      "short": "LSPE",
+      "category": "healthcare-clinical",
+      "group": "Vision",
+      "body": "National Board of Examiners in Optometry (NBEO)",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Examination certifying optometrists to perform laser surgical procedures where state law permits."
+    },
+    {
+      "slug": "nbeo-part-1-abs",
+      "name": "NBEO Part I: Applied Basic Science",
+      "short": "ABS",
+      "category": "healthcare-clinical",
+      "group": "Vision",
+      "body": "National Board of Examiners in Optometry (NBEO)",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "First part of the optometry licensure sequence assessing basic biomedical and visual science knowledge."
+    },
+    {
+      "slug": "nbeo-part-2-pam",
+      "name": "NBEO Part II: Patient Assessment and Management",
+      "short": "PAM",
+      "category": "healthcare-clinical",
+      "group": "Vision",
+      "body": "National Board of Examiners in Optometry (NBEO)",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Second part of optometry licensure assessing clinical patient assessment and management skills."
+    },
+    {
+      "slug": "nbeo-part-2-tmod",
+      "name": "NBEO Part II: Treatment and Management of Ocular Disease",
+      "short": "TMOD",
+      "category": "healthcare-clinical",
+      "group": "Vision",
+      "body": "National Board of Examiners in Optometry (NBEO)",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Optometry licensure exam focusing on treatment and management of ocular disease."
+    },
+    {
+      "slug": "nbeo-part-3-peps",
+      "name": "NBEO Part III: Clinical Skills",
+      "short": "PEPS",
+      "category": "healthcare-clinical",
+      "group": "Vision",
+      "body": "National Board of Examiners in Optometry (NBEO)",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Patient-centered clinical skills examination for optometry licensure in the United States."
+    },
+    {
+      "slug": "ncle-advanced",
+      "name": "NCLE Advanced Certification",
+      "short": "NCLE-Adv",
+      "category": "healthcare-clinical",
+      "group": "Vision",
+      "body": "National Contact Lens Examiners (NCLE)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Advanced contact lens certification for opticians demonstrating specialized fitting expertise."
+    }
+  ]
+}

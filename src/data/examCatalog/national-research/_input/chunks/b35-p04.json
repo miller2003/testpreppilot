@@ -1,0 +1,224 @@
+{
+ "chunkId": "b35-p04",
+ "batch": 35,
+ "part": 4,
+ "categories": [
+  "technology"
+ ],
+ "groups": [
+  "IT Service Management & Governance",
+  "Programming & Development",
+  "Networking & Wireless"
+ ],
+ "bodies": [
+  "ISACA",
+  "freeCodeCamp",
+  "JS Institute",
+  "Ruby Association",
+  "Unity Technologies",
+  "W3Schools",
+  "SonicWall",
+  "AIIM",
+  "Zend by Perforce"
+ ],
+ "examCount": 15,
+ "exams": [
+  {
+   "slug": "cobit-2019-design-and-implementation",
+   "name": "COBIT 2019 Design and Implementation",
+   "short": "COBIT Design",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "ISACA",
+   "bodyUrl": "https://www.isaca.org/",
+   "type": "Certification",
+   "aka": [
+    "COBIT Design and Implementation"
+   ],
+   "blurb": "Advanced ISACA certificate on tailoring a COBIT governance system to an organisation and running a governance implementation lifecycle."
+  },
+  {
+   "slug": "cobit-2019-foundation",
+   "name": "COBIT 2019 Foundation",
+   "short": "COBIT Foundation",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "ISACA",
+   "bodyUrl": "https://www.isaca.org/",
+   "type": "Certification",
+   "aka": [
+    "COBIT 2019"
+   ],
+   "blurb": "ISACA certificate covering the COBIT governance framework, its principles, governance and management objectives, components and design factors."
+  },
+  {
+   "slug": "freecodecamp-javascript-algorithms-and-data-structures",
+   "name": "freeCodeCamp JavaScript Algorithms and Data Structures Certification",
+   "short": "freeCodeCamp JS",
+   "category": "technology",
+   "group": "Programming & Development",
+   "body": "freeCodeCamp",
+   "type": "Training",
+   "aka": [
+    "freeCodeCamp JavaScript"
+   ],
+   "blurb": "Free project-based certification covering JavaScript fundamentals, algorithm scripting, object-oriented and functional programming techniques."
+  },
+  {
+   "slug": "freecodecamp-responsive-web-design-certification",
+   "name": "freeCodeCamp Responsive Web Design Certification",
+   "short": "freeCodeCamp RWD",
+   "category": "technology",
+   "group": "Programming & Development",
+   "body": "freeCodeCamp",
+   "type": "Training",
+   "aka": [
+    "freeCodeCamp RWD"
+   ],
+   "blurb": "Free project-based certification covering HTML, CSS, flexbox, grid, accessibility and responsive design through five required build projects."
+  },
+  {
+   "slug": "js-institute-jsa",
+   "name": "JSA - Certified Associate JavaScript Programmer",
+   "short": "JSA",
+   "category": "technology",
+   "group": "Programming & Development",
+   "body": "JS Institute",
+   "type": "Certification",
+   "aka": [
+    "JSA-41-01"
+   ],
+   "blurb": "Associate JavaScript Institute exam covering prototypes, classes, closures, asynchronous programming, modules and modern ECMAScript features."
+  },
+  {
+   "slug": "js-institute-jse",
+   "name": "JSE - Certified Entry-Level JavaScript Programmer",
+   "short": "JSE",
+   "category": "technology",
+   "group": "Programming & Development",
+   "body": "JS Institute",
+   "type": "Certification",
+   "aka": [
+    "JSE-40-01"
+   ],
+   "blurb": "Entry-level JavaScript Institute exam covering variables, operators, control flow, functions, errors and basic object and array manipulation."
+  },
+  {
+   "slug": "ruby-association-certified-ruby-programmer-gold",
+   "name": "Ruby Association Certified Ruby Programmer Gold",
+   "short": "Ruby Gold",
+   "category": "technology",
+   "group": "Programming & Development",
+   "body": "Ruby Association",
+   "type": "Certification",
+   "aka": [
+    "Ruby Gold"
+   ],
+   "blurb": "Advanced Ruby certification covering metaprogramming, the object model, threads, standard library internals and library design in Ruby."
+  },
+  {
+   "slug": "ruby-association-certified-ruby-programmer-silver",
+   "name": "Ruby Association Certified Ruby Programmer Silver",
+   "short": "Ruby Silver",
+   "category": "technology",
+   "group": "Programming & Development",
+   "body": "Ruby Association",
+   "type": "Certification",
+   "aka": [
+    "Ruby Silver"
+   ],
+   "blurb": "Entry-level Ruby certification covering syntax, built-in classes, blocks, modules, exception handling and the Ruby object model."
+  },
+  {
+   "slug": "unity-certified-associate-game-developer",
+   "name": "Unity Certified Associate: Game Developer",
+   "short": "Unity Associate",
+   "category": "technology",
+   "group": "Programming & Development",
+   "body": "Unity Technologies",
+   "type": "Certification",
+   "aka": [
+    "Unity Certified Associate"
+   ],
+   "blurb": "Entry-level Unity certification covering the editor, C# scripting, physics, animation, user interface and publishing games with the Unity engine."
+  },
+  {
+   "slug": "unity-certified-professional-programmer",
+   "name": "Unity Certified Professional: Programmer",
+   "short": "Unity Professional",
+   "category": "technology",
+   "group": "Programming & Development",
+   "body": "Unity Technologies",
+   "type": "Certification",
+   "aka": [
+    "Unity Certified Professional Programmer"
+   ],
+   "blurb": "Professional Unity certification for developers with production experience, covering optimisation, architecture, scripting patterns and asset pipelines."
+  },
+  {
+   "slug": "w3schools-javascript-certification",
+   "name": "W3Schools JavaScript Certification",
+   "short": "W3Schools JavaScript",
+   "category": "technology",
+   "group": "Programming & Development",
+   "body": "W3Schools",
+   "type": "Certification",
+   "aka": [
+    "W3Schools JS"
+   ],
+   "blurb": "Online proctored exam from W3Schools covering JavaScript fundamentals, functions, objects, the DOM, events and asynchronous programming."
+  },
+  {
+   "slug": "w3schools-python-certification",
+   "name": "W3Schools Python Certification",
+   "short": "W3Schools Python",
+   "category": "technology",
+   "group": "Programming & Development",
+   "body": "W3Schools",
+   "type": "Certification",
+   "aka": [
+    "W3Schools Python"
+   ],
+   "blurb": "Online exam from W3Schools covering Python syntax, data structures, functions, classes, file handling and standard library basics."
+  },
+  {
+   "slug": "sonicwall-network-security-administrator",
+   "name": "SonicWall Network Security Administrator",
+   "short": "SNSA",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "SonicWall",
+   "type": "Certification",
+   "aka": [
+    "SNSA"
+   ],
+   "blurb": "Vendor certification on configuring and managing SonicWall firewalls including policies, NAT, VPNs, content filtering and threat prevention."
+  },
+  {
+   "slug": "aiim-certified-information-professional",
+   "name": "AIIM Certified Information Professional",
+   "short": "CIP",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "AIIM",
+   "type": "Certification",
+   "aka": [
+    "AIIM CIP"
+   ],
+   "blurb": "Credential covering information governance, content management, records retention, automation and information privacy across the enterprise."
+  },
+  {
+   "slug": "zend-certified-php-engineer",
+   "name": "Zend Certified PHP Engineer",
+   "short": "ZCPE",
+   "category": "technology",
+   "group": "Programming & Development",
+   "body": "Zend by Perforce",
+   "type": "Certification",
+   "aka": [
+    "ZCPE"
+   ],
+   "blurb": "Long-established PHP certification covering language syntax, object-oriented programming, databases, security, web features and error handling."
+  }
+ ]
+}

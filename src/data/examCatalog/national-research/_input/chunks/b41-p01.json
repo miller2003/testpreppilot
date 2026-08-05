@@ -1,0 +1,531 @@
+{
+ "chunkId": "b41-p01",
+ "batch": 41,
+ "part": 1,
+ "categories": [
+  "transportation"
+ ],
+ "groups": [
+  "Commercial Driving & Road",
+  "Logistics & Supply Chain"
+ ],
+ "bodies": [
+  "State Driver Licensing Agencies (AAMVA model curriculum)",
+  "Federal Motor Carrier Safety Administration (registered training providers)",
+  "NCBFAA Educational Institute",
+  "North American Transportation Management Institute",
+  "American Traffic Safety Services Association",
+  "International Municipal Signal Association",
+  "Motorcycle Safety Foundation",
+  "International Air Transport Association",
+  "National Association for Pupil Transportation"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "cdl-air-brakes-knowledge-test",
+   "name": "CDL Air Brakes Knowledge Test",
+   "short": "Air Brakes",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
+   "type": "Exam",
+   "aka": [
+    "Air Brakes Endorsement Test"
+   ],
+   "blurb": "Knowledge test on air brake components, inspection and emergency stopping required to remove the L restriction from a commercial licence."
+  },
+  {
+   "slug": "cdl-basic-vehicle-control-skills-test",
+   "name": "CDL Basic Vehicle Control Skills Test",
+   "short": "Skills Test",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
+   "type": "Exam",
+   "aka": [
+    "Basic Control Skills",
+    "Backing Test"
+   ],
+   "blurb": "Closed-course examination of straight-line backing, offset backing, parallel parking and alley docking manoeuvres for commercial vehicles."
+  },
+  {
+   "slug": "cdl-combination-vehicles-knowledge-test",
+   "name": "CDL Combination Vehicles Knowledge Test",
+   "short": "Combination",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
+   "type": "Exam",
+   "aka": [
+    "Combination Vehicles Test"
+   ],
+   "blurb": "Class A knowledge test covering coupling and uncoupling, trailer air lines, rollover prevention and combination vehicle inspection."
+  },
+  {
+   "slug": "cdl-doubles-triples-knowledge-test",
+   "name": "CDL Doubles and Triples Endorsement Knowledge Test",
+   "short": "T Endorsement",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
+   "type": "Exam",
+   "aka": [
+    "T endorsement",
+    "Doubles/Triples"
+   ],
+   "blurb": "Endorsement test on pulling multiple trailers, converter dollies, crack-the-whip effects and coupling sequence for double and triple combinations."
+  },
+  {
+   "slug": "cdl-general-knowledge-test",
+   "name": "CDL General Knowledge Test",
+   "short": "CDL General",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
+   "type": "Exam",
+   "aka": [
+    "General Knowledge Test"
+   ],
+   "blurb": "Core written test taken by every commercial driver applicant, covering vehicle inspection, safe operating procedures, cargo and hours of service."
+  },
+  {
+   "slug": "cdl-hazmat-endorsement-knowledge-test",
+   "name": "CDL Hazardous Materials Endorsement Knowledge Test",
+   "short": "H Endorsement",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
+   "type": "Exam",
+   "aka": [
+    "H endorsement",
+    "Hazmat CDL Test"
+   ],
+   "blurb": "Endorsement test on placarding, shipping papers, loading rules and emergency response for drivers hauling regulated hazardous materials."
+  },
+  {
+   "slug": "cdl-on-road-driving-skills-test",
+   "name": "CDL On-Road Driving Skills Test",
+   "short": "Road Test",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
+   "type": "Exam",
+   "aka": [
+    "CDL Road Test"
+   ],
+   "blurb": "Examiner-scored drive covering turns, intersections, railway crossings, lane changes and hill operation in a representative commercial vehicle."
+  },
+  {
+   "slug": "cdl-passenger-endorsement-knowledge-test",
+   "name": "CDL Passenger Endorsement Knowledge Test",
+   "short": "P Endorsement",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
+   "type": "Exam",
+   "aka": [
+    "P endorsement"
+   ],
+   "blurb": "Knowledge test on passenger loading, standee lines, emergency exits and bus inspection required to carry 16 or more people."
+  },
+  {
+   "slug": "cdl-pre-trip-vehicle-inspection-test",
+   "name": "CDL Pre-Trip Vehicle Inspection Test",
+   "short": "Pre-Trip",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
+   "type": "Exam",
+   "aka": [
+    "Pre-Trip Inspection"
+   ],
+   "blurb": "Verbal walk-around examination in which the applicant identifies and explains inspection points on engine, brakes, coupling and trailer systems."
+  },
+  {
+   "slug": "cdl-school-bus-endorsement-knowledge-test",
+   "name": "CDL School Bus Endorsement Knowledge Test",
+   "short": "S Endorsement",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
+   "type": "Exam",
+   "aka": [
+    "S endorsement"
+   ],
+   "blurb": "Endorsement test on danger zones, student loading and unloading, railway crossings and evacuation procedures for school bus drivers."
+  },
+  {
+   "slug": "cdl-tank-vehicle-endorsement-knowledge-test",
+   "name": "CDL Tank Vehicle Endorsement Knowledge Test",
+   "short": "N Endorsement",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
+   "type": "Exam",
+   "aka": [
+    "N endorsement",
+    "Tanker Test"
+   ],
+   "blurb": "Endorsement test covering liquid surge, baffled and unbaffled tanks, outage and high centre of gravity handling for tank vehicles."
+  },
+  {
+   "slug": "eldt-class-a-theory-assessment",
+   "name": "Entry-Level Driver Training Class A CDL Theory Assessment",
+   "short": "ELDT Class A",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "Federal Motor Carrier Safety Administration (registered training providers)",
+   "type": "Training",
+   "aka": [
+    "ELDT Class A",
+    "Entry-Level Driver Training"
+   ],
+   "blurb": "Federally mandated theory curriculum and 80 percent assessment that first-time Class A applicants must complete before taking the CDL skills test."
+  },
+  {
+   "slug": "eldt-class-b-theory-assessment",
+   "name": "Entry-Level Driver Training Class B CDL Theory Assessment",
+   "short": "ELDT Class B",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "Federal Motor Carrier Safety Administration (registered training providers)",
+   "type": "Training",
+   "aka": [
+    "ELDT Class B"
+   ],
+   "blurb": "Required theory instruction and assessment covering vehicle systems, safe operating procedures and non-driving activities for Class B applicants."
+  },
+  {
+   "slug": "eldt-class-b-to-class-a-upgrade",
+   "name": "Entry-Level Driver Training Class B to Class A Upgrade Theory Assessment",
+   "short": "ELDT Upgrade",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "Federal Motor Carrier Safety Administration (registered training providers)",
+   "type": "Training",
+   "aka": [
+    "ELDT Upgrade"
+   ],
+   "blurb": "Shortened federal theory curriculum for existing Class B holders upgrading to Class A, focused on combination vehicles and coupling."
+  },
+  {
+   "slug": "eldt-hazmat-endorsement-theory",
+   "name": "Entry-Level Driver Training Hazardous Materials Endorsement Theory Assessment",
+   "short": "ELDT Hazmat",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "Federal Motor Carrier Safety Administration (registered training providers)",
+   "type": "Training",
+   "aka": [
+    "ELDT H endorsement"
+   ],
+   "blurb": "Theory-only federal training requirement covering hazmat regulations and loading rules before a driver may take the H endorsement test."
+  },
+  {
+   "slug": "eldt-passenger-endorsement-theory",
+   "name": "Entry-Level Driver Training Passenger Endorsement Theory Assessment",
+   "short": "ELDT Passenger",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "Federal Motor Carrier Safety Administration (registered training providers)",
+   "type": "Training",
+   "aka": [
+    "ELDT P endorsement"
+   ],
+   "blurb": "Federal theory and behind-the-wheel curriculum required before a driver may obtain a passenger endorsement on a commercial licence."
+  },
+  {
+   "slug": "eldt-school-bus-endorsement-theory",
+   "name": "Entry-Level Driver Training School Bus Endorsement Theory Assessment",
+   "short": "ELDT School Bus",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "Federal Motor Carrier Safety Administration (registered training providers)",
+   "type": "Training",
+   "aka": [
+    "ELDT S endorsement"
+   ],
+   "blurb": "Federally required theory and range training on student management, loading zones and evacuation before the school bus endorsement test."
+  },
+  {
+   "slug": "ncbfaa-certified-customs-specialist",
+   "name": "Certified Customs Specialist",
+   "short": "CCS",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "NCBFAA Educational Institute",
+   "type": "Certification",
+   "aka": [
+    "CCS"
+   ],
+   "blurb": "Open-book certification on US import regulations, entry procedures, classification, valuation and trade agreements for customs professionals."
+  },
+  {
+   "slug": "ncbfaa-certified-export-specialist",
+   "name": "Certified Export Specialist",
+   "short": "CES",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "NCBFAA Educational Institute",
+   "type": "Certification",
+   "aka": [
+    "CES"
+   ],
+   "blurb": "Certification covering the Export Administration Regulations, ITAR, licensing, denied party screening and export documentation."
+  },
+  {
+   "slug": "ncbfaa-master-customs-specialist",
+   "name": "Master Customs Specialist",
+   "short": "MCS",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "NCBFAA Educational Institute",
+   "type": "Certification",
+   "aka": [
+    "MCS"
+   ],
+   "blurb": "Advanced designation for CCS holders covering partner government agency requirements, enforcement actions and complex entry issues."
+  },
+  {
+   "slug": "ncbfaa-master-export-specialist",
+   "name": "Master Export Specialist",
+   "short": "MES",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "NCBFAA Educational Institute",
+   "type": "Certification",
+   "aka": [
+    "MES"
+   ],
+   "blurb": "Advanced export designation building on the CES and covering sanctions, licensing strategy and export enforcement in depth."
+  },
+  {
+   "slug": "natmi-certified-director-of-maintenance",
+   "name": "NATMI Certified Director of Maintenance",
+   "short": "CDM",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "North American Transportation Management Institute",
+   "type": "Certification",
+   "aka": [
+    "CDM"
+   ],
+   "blurb": "Credential for fleet maintenance executives covering preventive maintenance programmes, shop management, budgeting and DOT compliance."
+  },
+  {
+   "slug": "natmi-certified-director-of-safety",
+   "name": "NATMI Certified Director of Safety",
+   "short": "CDS",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "North American Transportation Management Institute",
+   "type": "Certification",
+   "aka": [
+    "CDS"
+   ],
+   "blurb": "Certification for motor carrier safety directors covering FMCSA compliance, driver qualification files, accident investigation and CSA scores."
+  },
+  {
+   "slug": "natmi-certified-safety-supervisor",
+   "name": "NATMI Certified Safety Supervisor",
+   "short": "CSS",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "North American Transportation Management Institute",
+   "type": "Certification",
+   "aka": [
+    "CSS"
+   ],
+   "blurb": "Entry-level trucking safety credential covering hours of service, drug and alcohol testing, cargo securement and driver coaching."
+  },
+  {
+   "slug": "natmi-certified-supervisor-of-maintenance",
+   "name": "NATMI Certified Supervisor of Maintenance",
+   "short": "CSM",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "North American Transportation Management Institute",
+   "type": "Certification",
+   "aka": [
+    "CSM"
+   ],
+   "blurb": "Supervisory credential covering shop workflow, technician management, warranty recovery and vehicle inspection requirements."
+  },
+  {
+   "slug": "atssa-flagger-instructor",
+   "name": "ATSSA Flagger Instructor Certification",
+   "short": "Flagger Instructor",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "American Traffic Safety Services Association",
+   "type": "Certification",
+   "aka": [
+    "ATSSA Flagger Instructor"
+   ],
+   "blurb": "Train-the-trainer certification qualifying holders to teach flagging procedures and work-zone signalling under the MUTCD to road crews."
+  },
+  {
+   "slug": "atssa-traffic-control-supervisor",
+   "name": "ATSSA Traffic Control Supervisor Certification",
+   "short": "TCS",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "American Traffic Safety Services Association",
+   "type": "Certification",
+   "aka": [
+    "TCS",
+    "Traffic Control Supervisor"
+   ],
+   "blurb": "Certification for personnel who plan, inspect and supervise temporary traffic control on highway work zones under MUTCD Part 6."
+  },
+  {
+   "slug": "atssa-traffic-control-technician",
+   "name": "ATSSA Traffic Control Technician Certification",
+   "short": "TCT",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "American Traffic Safety Services Association",
+   "type": "Certification",
+   "aka": [
+    "TCT",
+    "Traffic Control Technician"
+   ],
+   "blurb": "Entry-level work-zone credential covering device placement, taper lengths, channelising devices and flagging under federal MUTCD standards."
+  },
+  {
+   "slug": "imsa-roadway-lighting-technician",
+   "name": "IMSA Roadway Lighting Technician Certification",
+   "short": "IMSA Roadway Lighting",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "International Municipal Signal Association",
+   "type": "Certification",
+   "aka": [
+    "IMSA Roadway Lighting Level I"
+   ],
+   "blurb": "Certification for technicians installing and maintaining street and highway lighting circuits, luminaires, poles and photoelectric controls."
+  },
+  {
+   "slug": "imsa-traffic-signal-technician",
+   "name": "IMSA Traffic Signal Technician Certification",
+   "short": "IMSA Traffic Signal",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "International Municipal Signal Association",
+   "type": "Certification",
+   "aka": [
+    "IMSA Traffic Signal Level I",
+    "Signal Technician"
+   ],
+   "blurb": "Tiered certification covering traffic signal construction, controllers, detection, conflict monitors and field maintenance of intersection equipment."
+  },
+  {
+   "slug": "imsa-work-zone-traffic-control-safety",
+   "name": "IMSA Work Zone Traffic Control Safety Certification",
+   "short": "IMSA Work Zone",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "International Municipal Signal Association",
+   "type": "Certification",
+   "aka": [
+    "Work Zone Traffic Control Safety"
+   ],
+   "blurb": "Certification on temporary traffic control zones, signing, channelising devices and flagger safety for municipal and utility road crews."
+  },
+  {
+   "slug": "msf-advanced-ridercourse",
+   "name": "Motorcycle Safety Foundation Advanced RiderCourse",
+   "short": "MSF ARC",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "Motorcycle Safety Foundation",
+   "type": "Training",
+   "aka": [
+    "ARC",
+    "Advanced RiderCourse"
+   ],
+   "blurb": "One-day course for licensed riders on cornering, braking drills, risk management and machine control using the rider own motorcycle."
+  },
+  {
+   "slug": "msf-basic-ridercourse",
+   "name": "Motorcycle Safety Foundation Basic RiderCourse",
+   "short": "MSF BRC",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "Motorcycle Safety Foundation",
+   "type": "Training",
+   "aka": [
+    "BRC",
+    "Basic RiderCourse"
+   ],
+   "blurb": "Entry-level rider training with classroom and range instruction; completion often waives the state motorcycle skills test for endorsement."
+  },
+  {
+   "slug": "msf-ridercoach-preparation-course",
+   "name": "Motorcycle Safety Foundation RiderCoach Preparation Course",
+   "short": "RCP",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "Motorcycle Safety Foundation",
+   "type": "Certification",
+   "aka": [
+    "RiderCoach Prep",
+    "RCP"
+   ],
+   "blurb": "Instructor certification course preparing candidates to teach MSF curricula, including coaching technique, range management and evaluation."
+  },
+  {
+   "slug": "iata-air-cargo-security-awareness",
+   "name": "IATA Air Cargo Security Awareness Training",
+   "short": "Cargo Security",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "International Air Transport Association",
+   "type": "Training",
+   "aka": [
+    "Air Cargo Security"
+   ],
+   "blurb": "Training on supply chain security, known consignor rules, screening methods and threat recognition for air cargo handling staff."
+  },
+  {
+   "slug": "iata-airport-operations-fundamentals",
+   "name": "IATA Airport Operations Fundamentals",
+   "short": "Airport Operations",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "International Air Transport Association",
+   "type": "Certification",
+   "aka": [
+    "Airport Operations Fundamentals"
+   ],
+   "blurb": "Course and assessment covering airside operations, ground handling, turnaround coordination, capacity planning and airport safety management."
+  },
+  {
+   "slug": "iata-cargo-introductory-course",
+   "name": "IATA Cargo Introductory Course",
+   "short": "IATA Cargo",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "International Air Transport Association",
+   "type": "Certification",
+   "aka": [
+    "Cargo Introductory Course"
+   ],
+   "blurb": "Foundation air cargo qualification covering air waybills, rating, cargo acceptance, handling procedures and IATA regulations."
+  },
+  {
+   "slug": "napt-certified-director-of-pupil-transportation",
+   "name": "NAPT Certified Director of Pupil Transportation",
+   "short": "CDPT",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "National Association for Pupil Transportation",
+   "type": "Certification",
+   "aka": [
+    "CDPT"
+   ],
+   "blurb": "Credential for school transportation directors covering routing, fleet maintenance, special-needs transport, budgeting and driver supervision."
+  }
+ ]
+}

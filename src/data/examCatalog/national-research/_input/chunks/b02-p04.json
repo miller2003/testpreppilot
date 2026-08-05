@@ -1,0 +1,207 @@
+{
+ "chunkId": "b02-p04",
+ "batch": 2,
+ "part": 4,
+ "categories": [
+  "admissions-academic"
+ ],
+ "groups": [
+  "CLEP & Credit by Exam"
+ ],
+ "bodies": [
+  "Prometric"
+ ],
+ "examCount": 19,
+ "exams": [
+  {
+   "slug": "dsst-introduction-to-geology",
+   "name": "DSST Introduction to Geology",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on minerals, rocks, plate tectonics, surface processes and geologic time at introductory level."
+  },
+  {
+   "slug": "dsst-introduction-to-law-enforcement",
+   "name": "DSST Introduction to Law Enforcement",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on police history, organisation, patrol operations, investigations and constitutional limits on policing."
+  },
+  {
+   "slug": "dsst-introduction-to-world-religions",
+   "name": "DSST Introduction to World Religions",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test surveying Hinduism, Buddhism, Judaism, Christianity, Islam and other major religious traditions."
+  },
+  {
+   "slug": "dsst-lifespan-developmental-psychology",
+   "name": "DSST Lifespan Developmental Psychology",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on physical, cognitive and social development from infancy through late adulthood and dying."
+  },
+  {
+   "slug": "dsst-management-information-systems",
+   "name": "DSST Management Information Systems",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Upper-level DANTES subject standardized test on information systems strategy, databases, systems development and IT management."
+  },
+  {
+   "slug": "dsst-math-for-liberal-arts",
+   "name": "DSST Math for Liberal Arts",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test of quantitative reasoning for non-STEM majors, covering sets, logic, probability, statistics and finance."
+  },
+  {
+   "slug": "dsst-money-and-banking",
+   "name": "DSST Money and Banking",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on money, financial markets, commercial banking, the Federal Reserve and monetary policy."
+  },
+  {
+   "slug": "dsst-organizational-behavior",
+   "name": "DSST Organizational Behavior",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on motivation, group dynamics, leadership, communication and organisational culture and change."
+  },
+  {
+   "slug": "dsst-personal-finance",
+   "name": "DSST Personal Finance",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on budgeting, credit, insurance, investing, taxes and retirement planning for individuals."
+  },
+  {
+   "slug": "dsst-principles-of-advanced-english-composition",
+   "name": "DSST Principles of Advanced English Composition",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on rhetorical strategy, research writing, source evaluation and revision beyond first-year composition."
+  },
+  {
+   "slug": "dsst-principles-of-finance",
+   "name": "DSST Principles of Finance",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on time value of money, valuation, capital budgeting, risk and return, and financial markets."
+  },
+  {
+   "slug": "dsst-principles-of-financial-accounting",
+   "name": "DSST Principles of Financial Accounting",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on the accounting cycle, journal entries, adjusting entries and preparation of financial statements."
+  },
+  {
+   "slug": "dsst-principles-of-physical-science-i",
+   "name": "DSST Principles of Physical Science I",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test covering introductory physics and chemistry concepts including motion, energy, matter and waves."
+  },
+  {
+   "slug": "dsst-principles-of-public-speaking",
+   "name": "DSST Principles of Public Speaking",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on audience analysis, speech organisation, evidence, delivery and listening, including a recorded speech."
+  },
+  {
+   "slug": "dsst-principles-of-statistics",
+   "name": "DSST Principles of Statistics",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on descriptive statistics, probability, sampling distributions, hypothesis testing and regression."
+  },
+  {
+   "slug": "dsst-principles-of-supervision",
+   "name": "DSST Principles of Supervision",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on the supervisory role, planning, staffing, motivating employees and managing workplace performance."
+  },
+  {
+   "slug": "dsst-substance-abuse",
+   "name": "DSST Substance Abuse",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on drug classifications, pharmacology, addiction theory, treatment approaches and prevention policy."
+  },
+  {
+   "slug": "dsst-technical-writing",
+   "name": "DSST Technical Writing",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on audience analysis, document design, instructions, reports and the elements of technical style."
+  },
+  {
+   "slug": "dsst-the-civil-war-and-reconstruction",
+   "name": "DSST The Civil War and Reconstruction",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "Prometric",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "DANTES subject standardized test on the causes and course of the American Civil War and the Reconstruction era that followed it."
+  }
+ ]
+}

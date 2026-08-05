@@ -1,0 +1,538 @@
+{
+ "chunkId": "b15-p02",
+ "batch": 15,
+ "part": 2,
+ "categories": [
+  "engineering-design"
+ ],
+ "groups": [
+  "Architecture",
+  "Green Building & Energy",
+  "Manufacturing & Systems Engineering",
+  "Structural & Surveying"
+ ],
+ "bodies": [
+  "National Council of Architectural Registration Boards (NCARB)",
+  "U.S. Green Building Council (USGBC)",
+  "SME (formerly Society of Manufacturing Engineers)",
+  "International Code Council (ICC)",
+  "National Society of Professional Surveyors (NSPS)",
+  "Association for Supply Chain Management (ASCM)",
+  "International Society of Automation (ISA)"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "are-construction-evaluation",
+   "name": "ARE 5.0 Construction & Evaluation (CE)",
+   "short": "CE",
+   "category": "engineering-design",
+   "group": "Architecture",
+   "body": "National Council of Architectural Registration Boards (NCARB)",
+   "bodyUrl": "https://www.ncarb.org",
+   "type": "License",
+   "aka": [
+    "CE"
+   ],
+   "blurb": "ARE 5.0 division testing construction administration, quality control and project evaluation."
+  },
+  {
+   "slug": "are-practice-management",
+   "name": "ARE 5.0 Practice Management (PcM)",
+   "short": "PcM",
+   "category": "engineering-design",
+   "group": "Architecture",
+   "body": "National Council of Architectural Registration Boards (NCARB)",
+   "bodyUrl": "https://www.ncarb.org",
+   "type": "License",
+   "aka": [
+    "PcM"
+   ],
+   "blurb": "ARE 5.0 division testing financial, legal and operational management of an architecture practice."
+  },
+  {
+   "slug": "are-programming-analysis",
+   "name": "ARE 5.0 Programming & Analysis (PA)",
+   "short": "PA",
+   "category": "engineering-design",
+   "group": "Architecture",
+   "body": "National Council of Architectural Registration Boards (NCARB)",
+   "bodyUrl": "https://www.ncarb.org",
+   "type": "License",
+   "aka": [
+    "PA"
+   ],
+   "blurb": "ARE 5.0 division testing programming, site analysis and code research for architectural projects."
+  },
+  {
+   "slug": "are-project-development-documentation",
+   "name": "ARE 5.0 Project Development & Documentation (PDD)",
+   "short": "PDD",
+   "category": "engineering-design",
+   "group": "Architecture",
+   "body": "National Council of Architectural Registration Boards (NCARB)",
+   "bodyUrl": "https://www.ncarb.org",
+   "type": "License",
+   "aka": [
+    "PDD"
+   ],
+   "blurb": "ARE 5.0 division testing detailed design, documentation and building code compliance."
+  },
+  {
+   "slug": "are-project-management",
+   "name": "ARE 5.0 Project Management (PjM)",
+   "short": "PjM",
+   "category": "engineering-design",
+   "group": "Architecture",
+   "body": "National Council of Architectural Registration Boards (NCARB)",
+   "bodyUrl": "https://www.ncarb.org",
+   "type": "License",
+   "aka": [
+    "PjM"
+   ],
+   "blurb": "ARE 5.0 division testing project delivery, contracts and team coordination for architects."
+  },
+  {
+   "slug": "are-project-planning-design",
+   "name": "ARE 5.0 Project Planning & Design (PPD)",
+   "short": "PPD",
+   "category": "engineering-design",
+   "group": "Architecture",
+   "body": "National Council of Architectural Registration Boards (NCARB)",
+   "bodyUrl": "https://www.ncarb.org",
+   "type": "License",
+   "aka": [
+    "PPD"
+   ],
+   "blurb": "ARE 5.0 division testing schematic design and preliminary integration of building systems."
+  },
+  {
+   "slug": "ncarb-certificate",
+   "name": "NCARB Certificate",
+   "short": "NCARB Cert",
+   "category": "engineering-design",
+   "group": "Architecture",
+   "body": "National Council of Architectural Registration Boards (NCARB)",
+   "bodyUrl": "https://www.ncarb.org",
+   "type": "License",
+   "aka": [],
+   "blurb": "Credential enabling architects to license across jurisdictions via reciprocal registration agreements."
+  },
+  {
+   "slug": "leed-ap-bdc",
+   "name": "LEED AP Building Design + Construction",
+   "short": "LEED AP BD+C",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "U.S. Green Building Council (USGBC)",
+   "bodyUrl": "https://www.usgbc.org",
+   "type": "Certification",
+   "aka": [
+    "LEED AP BD+C"
+   ],
+   "blurb": "Specialist credential for professionals leading LEED certification in new building design and construction."
+  },
+  {
+   "slug": "leed-ap-homes",
+   "name": "LEED AP Homes",
+   "short": "LEED AP Homes",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "U.S. Green Building Council (USGBC)",
+   "bodyUrl": "https://www.usgbc.org",
+   "type": "Certification",
+   "aka": [
+    "LEED AP Homes"
+   ],
+   "blurb": "Specialist credential for professionals on LEED certification of single- and multifamily homes."
+  },
+  {
+   "slug": "leed-ap-idc",
+   "name": "LEED AP Interior Design + Construction",
+   "short": "LEED AP ID+C",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "U.S. Green Building Council (USGBC)",
+   "bodyUrl": "https://www.usgbc.org",
+   "type": "Certification",
+   "aka": [
+    "LEED AP ID+C"
+   ],
+   "blurb": "Specialist credential for professionals on LEED certification of commercial interior fit-outs."
+  },
+  {
+   "slug": "leed-ap-nd",
+   "name": "LEED AP Neighborhood Development",
+   "short": "LEED AP ND",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "U.S. Green Building Council (USGBC)",
+   "bodyUrl": "https://www.usgbc.org",
+   "type": "Certification",
+   "aka": [
+    "LEED AP ND"
+   ],
+   "blurb": "Specialist credential for professionals on LEED certification of neighborhood-scale development."
+  },
+  {
+   "slug": "leed-ap-om",
+   "name": "LEED AP Operations + Maintenance",
+   "short": "LEED AP O+M",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "U.S. Green Building Council (USGBC)",
+   "bodyUrl": "https://www.usgbc.org",
+   "type": "Certification",
+   "aka": [
+    "LEED AP O+M"
+   ],
+   "blurb": "Specialist credential for professionals improving operations of existing buildings via LEED O+M."
+  },
+  {
+   "slug": "leed-green-associate",
+   "name": "LEED Green Associate",
+   "short": "LEED GA",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "U.S. Green Building Council (USGBC)",
+   "bodyUrl": "https://www.usgbc.org",
+   "type": "Certification",
+   "aka": [
+    "LEED GA"
+   ],
+   "blurb": "Entry credential demonstrating general knowledge of green building and the LEED rating system."
+  },
+  {
+   "slug": "sme-cmtse",
+   "name": "SME Certified Machine Tool Sales Engineer (CMTSE)",
+   "short": "CMTSE",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "SME (formerly Society of Manufacturing Engineers)",
+   "bodyUrl": "https://www.sme.org",
+   "type": "Certification",
+   "aka": [
+    "CMTSE"
+   ],
+   "blurb": "Credential for sales engineers of machine tools covering product and application knowledge."
+  },
+  {
+   "slug": "sme-cmfge",
+   "name": "SME Certified Manufacturing Engineer (CMfgE)",
+   "short": "CMfgE",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "SME (formerly Society of Manufacturing Engineers)",
+   "bodyUrl": "https://www.sme.org",
+   "type": "Certification",
+   "aka": [
+    "CMfgE"
+   ],
+   "blurb": "Senior credential for manufacturing engineers covering process engineering and systems design."
+  },
+  {
+   "slug": "sme-cmfgt",
+   "name": "SME Certified Manufacturing Technologist (CMfgT)",
+   "short": "CMfgT",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "SME (formerly Society of Manufacturing Engineers)",
+   "bodyUrl": "https://www.sme.org",
+   "type": "Certification",
+   "aka": [
+    "CMfgT"
+   ],
+   "blurb": "Mid-level credential covering manufacturing processes, materials, quality and production technology."
+  },
+  {
+   "slug": "sme-lean-bronze",
+   "name": "SME Lean Certification Bronze",
+   "short": "Lean Bronze",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "SME (formerly Society of Manufacturing Engineers)",
+   "bodyUrl": "https://www.sme.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry lean credential covering waste identification and core lean tools in operations."
+  },
+  {
+   "slug": "sme-lean-gold",
+   "name": "SME Lean Certification Gold",
+   "short": "Lean Gold",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "SME (formerly Society of Manufacturing Engineers)",
+   "bodyUrl": "https://www.sme.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Senior lean credential covering enterprise lean strategy and culture transformation."
+  },
+  {
+   "slug": "sme-lean-silver",
+   "name": "SME Lean Certification Silver",
+   "short": "Lean Silver",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "SME (formerly Society of Manufacturing Engineers)",
+   "bodyUrl": "https://www.sme.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Intermediate lean credential covering value-stream improvement and lean deployment leadership."
+  },
+  {
+   "slug": "icc-concrete-special-inspector",
+   "name": "ICC Concrete Special Inspector",
+   "short": "Concrete SI",
+   "category": "engineering-design",
+   "group": "Structural & Surveying",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies special inspection of concrete placement, reinforcement and strength testing per the IBC."
+  },
+  {
+   "slug": "icc-masonry-special-inspector",
+   "name": "ICC Masonry Special Inspector",
+   "short": "Masonry SI",
+   "category": "engineering-design",
+   "group": "Structural & Surveying",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies special inspection of masonry construction including reinforcement and grout placement."
+  },
+  {
+   "slug": "icc-reinforced-concrete-special-inspector",
+   "name": "ICC Reinforced Concrete Special Inspector",
+   "short": "RC SI",
+   "category": "engineering-design",
+   "group": "Structural & Surveying",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies advanced inspection of reinforced concrete including post-tensioning and prestressed members."
+  },
+  {
+   "slug": "icc-steel-special-inspector",
+   "name": "ICC Steel Special Inspector",
+   "short": "Steel SI",
+   "category": "engineering-design",
+   "group": "Structural & Surveying",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies special inspection of structural steel erection, bolting and welding per the IBC."
+  },
+  {
+   "slug": "icc-structural-welding-special-inspector",
+   "name": "ICC Structural Welding Special Inspector",
+   "short": "Weld SI",
+   "category": "engineering-design",
+   "group": "Structural & Surveying",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies inspection of structural welding and bonded connectors per AWS and IBC requirements."
+  },
+  {
+   "slug": "icc-wood-special-inspector",
+   "name": "ICC Wood Special Inspector",
+   "short": "Wood SI",
+   "category": "engineering-design",
+   "group": "Structural & Surveying",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies special inspection of wood construction including fastening and engineered lumber systems."
+  },
+  {
+   "slug": "nsps-cfeds",
+   "name": "NSPS Certified Federal Surveyor (CFedS)",
+   "short": "CFedS",
+   "category": "engineering-design",
+   "group": "Structural & Surveying",
+   "body": "National Society of Professional Surveyors (NSPS)",
+   "bodyUrl": "https://nsps.us.com",
+   "type": "Certification",
+   "aka": [
+    "CFedS"
+   ],
+   "blurb": "Certifies surveyors to perform boundary surveys on federally owned and tribal trust lands."
+  },
+  {
+   "slug": "nsps-cst-level-1",
+   "name": "NSPS Certified Survey Technician Level I",
+   "short": "CST I",
+   "category": "engineering-design",
+   "group": "Structural & Surveying",
+   "body": "National Society of Professional Surveyors (NSPS)",
+   "bodyUrl": "https://nsps.us.com",
+   "type": "Certification",
+   "aka": [
+    "CST I"
+   ],
+   "blurb": "Entry certification for surveying technicians covering math, field and office surveying fundamentals."
+  },
+  {
+   "slug": "nsps-cst-level-2",
+   "name": "NSPS Certified Survey Technician Level II",
+   "short": "CST II",
+   "category": "engineering-design",
+   "group": "Structural & Surveying",
+   "body": "National Society of Professional Surveyors (NSPS)",
+   "bodyUrl": "https://nsps.us.com",
+   "type": "Certification",
+   "aka": [
+    "CST II"
+   ],
+   "blurb": "Intermediate certification covering boundary, construction and GPS surveying technician skills."
+  },
+  {
+   "slug": "nsps-cst-level-3",
+   "name": "NSPS Certified Survey Technician Level III",
+   "short": "CST III",
+   "category": "engineering-design",
+   "group": "Structural & Surveying",
+   "body": "National Society of Professional Surveyors (NSPS)",
+   "bodyUrl": "https://nsps.us.com",
+   "type": "Certification",
+   "aka": [
+    "CST III"
+   ],
+   "blurb": "Advanced certification covering complex boundary, control and photogrammetry technician work."
+  },
+  {
+   "slug": "nsps-cst-level-4",
+   "name": "NSPS Certified Survey Technician Level IV",
+   "short": "CST IV",
+   "category": "engineering-design",
+   "group": "Structural & Surveying",
+   "body": "National Society of Professional Surveyors (NSPS)",
+   "bodyUrl": "https://nsps.us.com",
+   "type": "Certification",
+   "aka": [
+    "CST IV"
+   ],
+   "blurb": "Senior certification covering survey project management and expert technician responsibilities."
+  },
+  {
+   "slug": "apics-cltd",
+   "name": "ASCM CLTD (Certified in Logistics, Transportation and Distribution)",
+   "short": "CLTD",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "Association for Supply Chain Management (ASCM)",
+   "bodyUrl": "https://www.ascm.org",
+   "type": "Certification",
+   "aka": [
+    "CLTD"
+   ],
+   "blurb": "Credential covering logistics, transportation and distribution network management."
+  },
+  {
+   "slug": "apics-cpim",
+   "name": "ASCM CPIM (Certified in Planning and Inventory Management)",
+   "short": "CPIM",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "Association for Supply Chain Management (ASCM)",
+   "bodyUrl": "https://www.ascm.org",
+   "type": "Certification",
+   "aka": [
+    "CPIM"
+   ],
+   "blurb": "Credential covering production planning, scheduling and inventory management fundamentals."
+  },
+  {
+   "slug": "apics-cscp",
+   "name": "ASCM CSCP (Certified Supply Chain Professional)",
+   "short": "CSCP",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "Association for Supply Chain Management (ASCM)",
+   "bodyUrl": "https://www.ascm.org",
+   "type": "Certification",
+   "aka": [
+    "CSCP"
+   ],
+   "blurb": "Credential covering end-to-end supply chain design, planning and execution."
+  },
+  {
+   "slug": "apics-ctsc",
+   "name": "ASCM CTSC (Certified in Transformation for Supply Chain)",
+   "short": "CTSC",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "Association for Supply Chain Management (ASCM)",
+   "bodyUrl": "https://www.ascm.org",
+   "type": "Certification",
+   "aka": [
+    "CTSC"
+   ],
+   "blurb": "Credential covering supply chain strategy, digital transformation and process redesign."
+  },
+  {
+   "slug": "isa-cap",
+   "name": "ISA Certified Automation Professional (CAP)",
+   "short": "CAP",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "International Society of Automation (ISA)",
+   "bodyUrl": "https://www.isa.org",
+   "type": "Certification",
+   "aka": [
+    "CAP"
+   ],
+   "blurb": "Credential for engineers designing and deploying enterprise automation and control systems."
+  },
+  {
+   "slug": "isa-ccst-level-1",
+   "name": "ISA Certified Control Systems Technician (CCST) Level I",
+   "short": "CCST I",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "International Society of Automation (ISA)",
+   "bodyUrl": "https://www.isa.org",
+   "type": "Certification",
+   "aka": [
+    "CCST I"
+   ],
+   "blurb": "Entry credential for technicians calibrating and maintaining instrumentation and controls."
+  },
+  {
+   "slug": "isa-ccst-level-2",
+   "name": "ISA Certified Control Systems Technician (CCST) Level II",
+   "short": "CCST II",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "International Society of Automation (ISA)",
+   "bodyUrl": "https://www.isa.org",
+   "type": "Certification",
+   "aka": [
+    "CCST II"
+   ],
+   "blurb": "Intermediate credential for technicians troubleshooting and documenting control systems."
+  },
+  {
+   "slug": "isa-ccst-level-3",
+   "name": "ISA Certified Control Systems Technician (CCST) Level III",
+   "short": "CCST III",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "International Society of Automation (ISA)",
+   "bodyUrl": "https://www.isa.org",
+   "type": "Certification",
+   "aka": [
+    "CCST III"
+   ],
+   "blurb": "Senior credential for technicians leading control systems work and mentoring others."
+  }
+ ]
+}

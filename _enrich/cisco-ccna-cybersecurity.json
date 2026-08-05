@@ -1,0 +1,224 @@
+{
+  "slug": "cisco-ccna-cybersecurity",
+  "exam": {
+    "tagline": "Cisco's associate-level cybersecurity credential that proves you can monitor, analyze, and respond to threats in a Security Operations Center.",
+    "description": "The Cisco Certified Network Associate (CCNA) Cybersecurity is delivered via the 200-201 CBROPS (Understanding Cisco Cybersecurity Operations Fundamentals) exam and is Cisco's associate-level security certification, the direct successor to the former CyberOps Associate. It validates the job-ready skills SOC Tier-1 analysts use daily: security concepts, security monitoring, host-based and network intrusion analysis, and incident-handling procedures. Passing it opens roles such as Security Operations Center (SOC) Analyst, Junior Security Analyst, and Threat Analyst. It sits above the entry-level CCST and below the professional CCNP Security in Cisco's cybersecurity pathway, and it requires no formal prerequisite although CCNA-level networking knowledge is helpful.",
+    "quickAnswer": {
+      "summary": "CCNA Cybersecurity (exam 200-201 CBROPS) is Cisco's associate-level cybersecurity certification for Security Operations Center analysts. It is a single 120-minute, ~95-105 question exam costing US$300, delivered by Pearson VUE, and it earns a credential valid for 3 years.",
+      "advantages": [
+        "Recognized, recruiter-searchable Cisco associate credential for SOC roles",
+        "Maps to the NICE Cybersecurity Workforce Framework (Tier-1 analyst tasks)",
+        "Single exam - no core-plus-concentration combination required",
+        "Strong foundation toward CCNP Security and CCIE Security",
+        "Validates hands-on alert, log, and packet-analysis skills, not just theory"
+      ]
+    },
+    "roadmap": [
+      "Confirm no formal prerequisite and review the 200-201 blueprint",
+      "Complete Cisco's CBROPS course or an aligned SOC-analyst study plan",
+      "Practice reading logs, PCAPs, and security alerts in labs",
+      "Schedule the 200-201 exam through Pearson VUE (test center or OnVUE)",
+      "Pass the exam and claim your Cisco digital badge",
+      "Plan CCNP Security (SCOR + concentration) as the next step"
+    ],
+    "prerequisites": "No formal prerequisite. Cisco recommends a basic understanding of networking, Windows/Linux, and security fundamentals equivalent to CCNA-level knowledge; 150+ hours of related instruction is suggested but not required.",
+    "eligibility": "Open to all candidates; anyone may register and sit the 200-201 exam through Pearson VUE.",
+    "examMeta": {
+      "questions": "Approximately 95-105 multiple-choice, multiple-response, drag-and-drop, and scenario-based questions",
+      "time": "120 minutes",
+      "pass": "Cisco does not publish a fixed passing score; results are reported on a scaled 300-1000 range and the statistical cut score typically falls around 750-850. You receive a pass/fail result with a section-level breakdown.",
+      "fee": "US$300 (plus applicable tax; regional pricing may differ). Redeemable with Cisco Learning Credits.",
+      "format": "Proctored, computer-based - Pearson VUE test center or online via OnVUE",
+      "admin": "Pearson VUE"
+    },
+    "topics": [
+      {
+        "name": "Security Concepts",
+        "note": "CIA triad, defense-in-depth, access-control models, CVSS, zero trust, core security terminology.",
+        "weight": "20%"
+      },
+      {
+        "name": "Security Monitoring",
+        "note": "Data types from network/endpoint sources, NetFlow, full packet capture, NGFW/IDS-IPS alerts, and how encryption/tunneling affect visibility.",
+        "weight": "25%"
+      },
+      {
+        "name": "Host-Based Analysis",
+        "note": "Endpoint technologies, Windows/Linux artifacts, log evidence, and interpreting host-based tool output during investigations.",
+        "weight": "20%"
+      },
+      {
+        "name": "Network Intrusion Analysis",
+        "note": "Reading IDS/IPS events, PCAP and protocol headers, mapping intrusion artifacts, extracting IOCs from packet/session data.",
+        "weight": "20%"
+      },
+      {
+        "name": "Security Policies and Procedures",
+        "note": "Incident response per NIST SP 800-61, cyber kill chain and diamond model, SOC metrics, chain-of-custody.",
+        "weight": "15%"
+      }
+    ],
+    "examEssentials": [
+      ["Credential", "Cisco Certified Network Associate (CCNA) Cybersecurity"],
+      ["Exam code", "200-201 CBROPS (Understanding Cisco Cybersecurity Operations Fundamentals)"],
+      ["Level", "Associate (successor to CyberOps Associate)"],
+      ["Duration / Questions", "120 minutes / ~95-105 questions"],
+      ["Exam fee", "US$300"],
+      ["Validity", "3 years"]
+    ],
+    "timeline": [
+      ["Assess baseline & gather materials", "1 week"],
+      ["Study core domains (CBROPS course)", "6-10 weeks"],
+      ["Hands-on labs & practice exams", "2-4 weeks"],
+      ["Schedule & sit the exam", "Exam day"],
+      ["Result & badge issuance", "Within 48 hours"]
+    ],
+    "costBreakdown": {
+      "items": [
+        ["200-201 CBROPS exam fee", "US$300"],
+        ["Official Cisco U. / NetAcad training (optional)", "US$0-$800"],
+        ["Third-party books & practice tests (optional)", "US$30-$100"],
+        ["Retake (if needed)", "US$300"]
+      ],
+      "total": "US$300+ (exam only; training optional)",
+      "footnote": "Cisco Learning Credits can cover the exam fee for eligible individuals/organizations. Fees are exclusive of tax and may vary by region."
+    },
+    "difficulty": "Moderate",
+    "audience": "Aspiring and early-career security operations analysts, SOC Tier-1 analysts, network engineers moving into security, and career changers with basic IT knowledge.",
+    "time": "Approximately 2-4 months of part-time study (about 80-120 hours).",
+    "cost": "US$300 (exam); optional training US$0-$900.",
+    "faqs": [
+      {
+        "q": "What is the difference between CCNA Cybersecurity and the old CyberOps Associate?",
+        "a": "They are the same certification lineage. The 200-201 CBROPS exam now feeds the associate-level Cisco cybersecurity credential (commonly referenced as CCNA Cybersecurity), which replaced the former 'Cisco Certified CyberOps Associate' branding. The exam content and weightings are unchanged."
+      },
+      {
+        "q": "How many questions are on the 200-201 exam and how long do I have?",
+        "a": "The exam is 120 minutes with roughly 95-105 questions, mixing multiple-choice, multiple-response, drag-and-drop, and short scenario items where you interpret logs or packet data. No hands-on simulator is included."
+      },
+      {
+        "q": "What score do I need to pass, and will I see my score?",
+        "a": "Cisco does not publish a fixed passing number. Results use a scaled 300-1000 range and the statistical cut score typically lands near 750-850. You get a pass/fail result on screen plus a section-level performance summary."
+      },
+      {
+        "q": "Do I need to pass a core plus a concentration like CCNP?",
+        "a": "No. Unlike CCNP tracks, the associate cybersecurity credential requires only the single 200-201 CBROPS exam. Pass it and you hold the certification."
+      },
+      {
+        "q": "What jobs can I get with CCNA Cybersecurity?",
+        "a": "Typical roles include SOC Analyst (Tier 1), Junior Security Analyst, Threat Analyst, and Security Operations Technician. It is also a recognized stepping stone toward CCNP Security and CCIE Security."
+      }
+    ],
+    "summaryPoints": [
+      "Single-exam associate cybersecurity certification (200-201 CBROPS), 120 minutes, ~95-105 questions, US$300.",
+      "Five weighted domains - Security Monitoring is the heaviest at 25%; policies/procedures the lightest at 15%.",
+      "No formal prerequisite; maps to NICE framework SOC Tier-1 analyst tasks.",
+      "Valid 3 years; pairs naturally with CCNP Security as the next step."
+    ],
+    "sourceUrl": "https://www.cisco.com/c/dam/global/ja_jp/training-events/training-certifications/exam-topics/200-201-cbrops.pdf",
+    "reviewed": "2026-08",
+    "confidence": "high"
+  },
+  "program": {
+    "body": "Cisco Systems",
+    "about": "Cisco certifications are vendor-specific IT and cybersecurity credentials issued by Cisco Systems and delivered through Pearson VUE. They span four tiers - Entry (CCST), Associate (CCNA / CyberOps), Professional (CCNP), and Expert (CCIE) - and validate hands-on networking and security skills. Passing candidates receive a verifiable digital badge (via Credly) and a certificate; all Cisco certifications are valid for three years. Exams are proctored computer-based tests delivered at Pearson VUE test centers or online via OnVUE (CCST is delivered through Certiport/Pearson VUE).",
+    "registrationSteps": [
+      {
+        "title": "Create a Cisco & testing account",
+        "description": "Set up a free Cisco profile and a Pearson VUE (or Certiport for CCST) candidate profile to schedule and track exams.",
+        "subSteps": [
+          "Register at the Cisco Certification Tracking System",
+          "Create a Pearson VUE / Certiport candidate profile",
+          "Confirm your ID documents meet testing requirements"
+        ],
+        "duration": "~15 minutes"
+      },
+      {
+        "title": "Choose your certification & exam",
+        "description": "Select the target credential and note the exact exam code (e.g., 100-160, 200-201, 350-701 + a concentration).",
+        "subSteps": [
+          "Review the official exam blueprint and topic weights",
+          "Decide self-study, Cisco U., or instructor-led training"
+        ],
+        "duration": "1-2 hours planning"
+      },
+      {
+        "title": "Prepare with official training",
+        "description": "Use Cisco Networking Academy, Cisco U. courses, official labs, and practice tests aligned to the blueprint.",
+        "subSteps": [
+          "Complete the aligned Cisco U. / NetAcad course",
+          "Hands-on labs and practice exams"
+        ],
+        "duration": "Varies (weeks-months)"
+      },
+      {
+        "title": "Schedule the exam via Pearson VUE",
+        "description": "Book a test-center slot or online OnVUE appointment; pay the exam fee (or redeem Cisco Learning Credits).",
+        "subSteps": [
+          "Pick date, time, and location/time zone",
+          "Pay fee (CCST $125; Associate $300; SCOR $400; concentration $300)"
+        ],
+        "duration": "~10 minutes"
+      },
+      {
+        "title": "Take the proctored exam",
+        "description": "Arrive with valid government ID; complete the exam at a Pearson VUE center or via online proctoring.",
+        "subSteps": [
+          "Check in and pass security/room scan (online)",
+          "Complete the timed exam"
+        ],
+        "duration": "50-120 minutes"
+      },
+      {
+        "title": "Get results & digital badge",
+        "description": "Receive a pass/fail result (usually within 48 hours) and, on passing, a Credly digital badge plus certificate; track status in the Certification Tracking System.",
+        "subSteps": [
+          "View section-level score report",
+          "Accept Credly badge and share it"
+        ],
+        "duration": "Within 48 hours"
+      }
+    ],
+    "proctoring": "Delivered by Pearson VUE: at authorized test centers or online via OnVUE remote proctoring (CCST uses the Certiport/Pearson VUE platform). A government-issued photo ID is required; online tests include a room/environment scan.",
+    "retakePolicy": "If you fail, Cisco requires a waiting period of 5 calendar days before you may retake the same exam. Each attempt requires full payment of the exam fee. Cisco does not cap total attempts, but some exams limit attempts within a 12-month window.",
+    "recertification": "All Cisco certifications are valid for 3 years from the date earned. Recertify before expiry by (a) passing a higher-or-equal level qualifying exam, (b) earning Continuing Education (CE) credits through eligible training/activities, or (c) a combination of exam + CE. For associate-level certs 30 CE credits are required; for professional-level 40 CE credits. Certificates can also be extended via the Cisco Continuing Education program.",
+    "scoreReporting": "Results are reported as pass/fail and made available online (Cisco Certification Tracking System) typically within 48 hours. A section-level performance breakdown is provided to help target further study; scaled scores use a 300-1000 range (CCNA/CCNP-style exams).",
+    "refundPolicy": "Exam fees are generally non-refundable once scheduled, but Pearson VUE allows rescheduling or cancellation up to 24-48 hours before the appointment without penalty; no-shows forfeit the fee. CCST/Certiport policies may differ by region.",
+    "providersNote": "Cisco exams are delivered exclusively through Pearson VUE (and Certiport for CCST). Training is available from Cisco U., Cisco Networking Academy, and authorized Cisco Learning Partners; third-party books and labs are widely used but unofficial.",
+    "comparison": {
+      "title": "Cisco cybersecurity certifications compared",
+      "columns": ["Credential", "Level", "Focus", "Exam", "Validity"],
+      "rows": [
+        {
+          "label": "CCST Cybersecurity",
+          "values": ["Foundational / Entry", "Entry-level security concepts & support", "100-160 (1 exam, ~$125)", "3 years"]
+        },
+        {
+          "label": "CCNA Cybersecurity",
+          "values": ["Associate", "SOC analyst: monitoring, intrusion & incident analysis", "200-201 CBROPS (1 exam, $300)", "3 years"]
+        },
+        {
+          "label": "CCNP Cybersecurity",
+          "values": ["Professional", "Professional security core + concentration", "SCOR 350-701 ($400) + 1 concentration ($300)", "3 years"]
+        }
+      ]
+    },
+    "orgFaqs": [
+      {
+        "q": "How long is a Cisco certification valid, and how do I renew it?",
+        "a": "Every Cisco certification is valid for 3 years. You can recertify by passing a qualifying exam at or above the current level, by earning Continuing Education credits, or by combining both before the expiry date."
+      },
+      {
+        "q": "Where do I take Cisco exams and what ID do I need?",
+        "a": "Cisco exams are delivered by Pearson VUE at test centers or online via OnVUE (CCST via Certiport/Pearson VUE). You must present a valid government-issued photo ID; online exams also require a room/environment scan."
+      },
+      {
+        "q": "What happens if I fail a Cisco exam?",
+        "a": "You must wait 5 calendar days before retaking the same exam, and each retake requires paying the full exam fee again. Your score report shows section-level feedback to guide further study."
+      }
+    ],
+    "sourceUrl": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/index.html",
+    "verified": true,
+    "confidence": "high"
+  }
+}

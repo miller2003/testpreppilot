@@ -1,0 +1,791 @@
+{
+  "generatedAt": "2026-08-04T04:26:13.744Z",
+  "totals": {
+    "allExams": 5785,
+    "completeGuides": 8,
+    "stubPages": 5777,
+    "nationalStubs": 3186,
+    "stateStubs": 2599,
+    "researchRecords": 3183
+  },
+  "contentModes": {
+    "national_filled": 3183,
+    "national_placeholder": 3,
+    "national_no_record": [
+      "osha-10-construction",
+      "osha-30-construction",
+      "epa-608-certification"
+    ],
+    "state_researched": 2309,
+    "state_notOffered": 287,
+    "state_placeholder": 3
+  },
+  "quality": {
+    "thinFlagTally": {
+      "noSummary": 0,
+      "shortSummary": 90,
+      "noDescription": 0,
+      "shortDescription": 64,
+      "faqsLT3": 0,
+      "shortFaqs": 103,
+      "noExamMeta": 0,
+      "thinExamMeta": 0,
+      "noTopics": 0,
+      "noRoadmap": 170,
+      "noTagline": 0,
+      "placeholderToken": 13
+    },
+    "thinButPublishable_count": 184,
+    "thinButPublishable_sample": [
+      {
+        "slug": "see-part-2",
+        "summaryLen": 242,
+        "descLen": 430,
+        "faqCount": 4,
+        "faqLen": 389,
+        "emFields": 6,
+        "topics": 3,
+        "token": false
+      },
+      {
+        "slug": "clep-german-language",
+        "summaryLen": 165,
+        "descLen": 339,
+        "faqCount": 4,
+        "faqLen": 362,
+        "emFields": 6,
+        "topics": 5,
+        "token": false
+      },
+      {
+        "slug": "clep-spanish-language",
+        "summaryLen": 166,
+        "descLen": 314,
+        "faqCount": 4,
+        "faqLen": 365,
+        "emFields": 6,
+        "topics": 5,
+        "token": false
+      },
+      {
+        "slug": "accuplacer-esl-reading-skills",
+        "summaryLen": 249,
+        "descLen": 411,
+        "faqCount": 4,
+        "faqLen": 397,
+        "emFields": 6,
+        "topics": 3,
+        "token": false
+      },
+      {
+        "slug": "asvab",
+        "summaryLen": 333,
+        "descLen": 492,
+        "faqCount": 4,
+        "faqLen": 383,
+        "emFields": 6,
+        "topics": 5,
+        "token": false
+      },
+      {
+        "slug": "duet-acuity-insights",
+        "summaryLen": 291,
+        "descLen": 471,
+        "faqCount": 4,
+        "faqLen": 357,
+        "emFields": 6,
+        "topics": 2,
+        "token": false
+      },
+      {
+        "slug": "ecpe-michigan",
+        "summaryLen": 265,
+        "descLen": 407,
+        "faqCount": 4,
+        "faqLen": 377,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "gmat-focus-edition",
+        "summaryLen": 310,
+        "descLen": 457,
+        "faqCount": 4,
+        "faqLen": 399,
+        "emFields": 6,
+        "topics": 3,
+        "token": false
+      },
+      {
+        "slug": "isee-primary-level",
+        "summaryLen": 303,
+        "descLen": 409,
+        "faqCount": 4,
+        "faqLen": 377,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "optometry-admission-test",
+        "summaryLen": 283,
+        "descLen": 463,
+        "faqCount": 4,
+        "faqLen": 388,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "eccouncil-csa",
+        "summaryLen": 215,
+        "descLen": 301,
+        "faqCount": 4,
+        "faqLen": 374,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "eccouncil-ctia",
+        "summaryLen": 189,
+        "descLen": 303,
+        "faqCount": 4,
+        "faqLen": 378,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "eccouncil-ecih",
+        "summaryLen": 200,
+        "descLen": 284,
+        "faqCount": 4,
+        "faqLen": 368,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-gcfa",
+        "summaryLen": 239,
+        "descLen": 289,
+        "faqCount": 4,
+        "faqLen": 393,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-gcfe",
+        "summaryLen": 239,
+        "descLen": 283,
+        "faqCount": 4,
+        "faqLen": 396,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-gcia",
+        "summaryLen": 239,
+        "descLen": 283,
+        "faqCount": 4,
+        "faqLen": 323,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-gcld",
+        "summaryLen": 238,
+        "descLen": 387,
+        "faqCount": 4,
+        "faqLen": 352,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-gcsa",
+        "summaryLen": 238,
+        "descLen": 408,
+        "faqCount": 4,
+        "faqLen": 346,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-gcti",
+        "summaryLen": 239,
+        "descLen": 277,
+        "faqCount": 4,
+        "faqLen": 370,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-gdsa",
+        "summaryLen": 238,
+        "descLen": 316,
+        "faqCount": 4,
+        "faqLen": 353,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-gicsp",
+        "summaryLen": 240,
+        "descLen": 345,
+        "faqCount": 4,
+        "faqLen": 361,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-gmon",
+        "summaryLen": 239,
+        "descLen": 345,
+        "faqCount": 4,
+        "faqLen": 345,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-gosi",
+        "summaryLen": 238,
+        "descLen": 348,
+        "faqCount": 4,
+        "faqLen": 391,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-grem",
+        "summaryLen": 238,
+        "descLen": 300,
+        "faqCount": 4,
+        "faqLen": 347,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-grid",
+        "summaryLen": 238,
+        "descLen": 312,
+        "faqCount": 4,
+        "faqLen": 370,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-gslc",
+        "summaryLen": 239,
+        "descLen": 279,
+        "faqCount": 4,
+        "faqLen": 362,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-gstrt",
+        "summaryLen": 239,
+        "descLen": 288,
+        "faqCount": 4,
+        "faqLen": 362,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-gwapt",
+        "summaryLen": 240,
+        "descLen": 253,
+        "faqCount": 4,
+        "faqLen": 392,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "giac-gweb",
+        "summaryLen": 238,
+        "descLen": 274,
+        "faqCount": 4,
+        "faqLen": 360,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "isaca-aaia",
+        "summaryLen": 260,
+        "descLen": 249,
+        "faqCount": 4,
+        "faqLen": 469,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "isc2-cgrc",
+        "summaryLen": 232,
+        "descLen": 314,
+        "faqCount": 4,
+        "faqLen": 378,
+        "emFields": 6,
+        "topics": 6,
+        "token": false
+      },
+      {
+        "slug": "isc2-cissp-issmp",
+        "summaryLen": 236,
+        "descLen": 279,
+        "faqCount": 4,
+        "faqLen": 372,
+        "emFields": 6,
+        "topics": 6,
+        "token": false
+      },
+      {
+        "slug": "offsec-klcp",
+        "summaryLen": 239,
+        "descLen": 303,
+        "faqCount": 4,
+        "faqLen": 285,
+        "emFields": 6,
+        "topics": 3,
+        "token": false
+      },
+      {
+        "slug": "offsec-oscc-sec",
+        "summaryLen": 221,
+        "descLen": 323,
+        "faqCount": 4,
+        "faqLen": 295,
+        "emFields": 6,
+        "topics": 3,
+        "token": false
+      },
+      {
+        "slug": "offsec-osda",
+        "summaryLen": 253,
+        "descLen": 322,
+        "faqCount": 4,
+        "faqLen": 378,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "offsec-osed",
+        "summaryLen": 253,
+        "descLen": 298,
+        "faqCount": 4,
+        "faqLen": 320,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "offsec-osee",
+        "summaryLen": 279,
+        "descLen": 288,
+        "faqCount": 4,
+        "faqLen": 355,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "offsec-osep",
+        "summaryLen": 253,
+        "descLen": 303,
+        "faqCount": 4,
+        "faqLen": 361,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "offsec-osmr",
+        "summaryLen": 253,
+        "descLen": 322,
+        "faqCount": 4,
+        "faqLen": 324,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      },
+      {
+        "slug": "offsec-oswa",
+        "summaryLen": 253,
+        "descLen": 311,
+        "faqCount": 4,
+        "faqLen": 335,
+        "emFields": 6,
+        "topics": 4,
+        "token": false
+      }
+    ],
+    "placeholderToken_count": 13,
+    "placeholderToken_slugs": [
+      "cisco-ai-technical-practitioner",
+      "cisco-ccde",
+      "cisco-ccna-automation",
+      "cisco-ccna-cybersecurity",
+      "cisco-encc-300-440",
+      "cisco-enarsi-300-410",
+      "cisco-enauto-300-435",
+      "cisco-enna-300-445",
+      "cisco-ensdwi-300-415",
+      "cisco-ensld-300-420",
+      "cisco-sise-300-715",
+      "cisco-sncf-300-710",
+      "cisco-svpn-300-730"
+    ],
+    "duplicateSummary_clusters": 0,
+    "duplicateSummary_top": [],
+    "duplicateBody_clusters": 423,
+    "duplicateBody_top": [
+      {
+        "body": "federal aviation administration",
+        "count": 91,
+        "slugs": [
+          "atsa",
+          "faa-air-traffic-controller",
+          "faa-ama-airframe-knowledge-test",
+          "faa-amg-general-knowledge-test",
+          "faa-amp-powerplant-knowledge-test",
+          "faa-repairman-experimental-aircraft-builder",
+          "faa-repairman-lsa-inspection-rating",
+          "faa-repairman-lsa-maintenance-rating",
+          "faa-iar-inspection-authorization",
+          "faa-rig-parachute-rigger"
+        ]
+      },
+      {
+        "body": "college board",
+        "count": 90,
+        "slugs": [
+          "ap-2d-art-and-design",
+          "ap-3d-art-and-design",
+          "ap-african-american-studies",
+          "ap-art-history",
+          "ap-biology",
+          "ap-calculus-ab",
+          "ap-calculus-bc",
+          "ap-chemistry",
+          "ap-chinese-language-and-culture",
+          "ap-comparative-government-and-politics"
+        ]
+      },
+      {
+        "body": "microsoft",
+        "count": 74,
+        "slugs": [
+          "microsoft-az-900",
+          "microsoft-az-104",
+          "microsoft-az-204",
+          "microsoft-az-305",
+          "microsoft-az-400",
+          "microsoft-az-500",
+          "microsoft-az-700",
+          "microsoft-az-140",
+          "microsoft-az-800",
+          "microsoft-az-801"
+        ]
+      },
+      {
+        "body": "national institute for automotive service excellence (ase)",
+        "count": 55,
+        "slugs": [
+          "ase-a1-engine-repair",
+          "ase-a2-automatic-transmission",
+          "ase-a3-manual-drive-train-axles",
+          "ase-a4-suspension-steering",
+          "ase-a5-brakes",
+          "ase-a6-electrical-electronic-systems",
+          "ase-a7-heating-air-conditioning",
+          "ase-a8-engine-performance",
+          "ase-a9-light-vehicle-diesel-engines",
+          "ase-advanced-level-specialist"
+        ]
+      },
+      {
+        "body": "u.s. coast guard national maritime center",
+        "count": 41,
+        "slugs": [
+          "uscg-able-seaman-endorsement",
+          "stcw-able-seafarer-deck",
+          "stcw-able-seafarer-engine",
+          "uscg-apprentice-mate-steersman-towing",
+          "uscg-assistance-towing-endorsement",
+          "uscg-auxiliary-sail-endorsement",
+          "uscg-chief-engineer-limited",
+          "uscg-chief-mate-endorsement",
+          "uscg-designated-duty-engineer",
+          "uscg-first-class-pilot-endorsement"
+        ]
+      },
+      {
+        "body": "prometric",
+        "count": 40,
+        "slugs": [
+          "dsst-a-history-of-the-vietnam-war",
+          "dsst-art-of-the-western-world",
+          "dsst-astronomy",
+          "dsst-business-ethics-and-society",
+          "dsst-business-mathematics",
+          "dsst-computing-and-information-technology",
+          "dsst-criminal-justice",
+          "dsst-environmental-science",
+          "dsst-ethics-in-america",
+          "dsst-ethics-in-technology"
+        ]
+      },
+      {
+        "body": "osha training institute education centers",
+        "count": 37,
+        "slugs": [
+          "osha-500-construction-trainer",
+          "osha-501-general-industry-trainer",
+          "osha-502-construction-trainer-update",
+          "osha-503-general-industry-trainer-update",
+          "osha-510-construction-standards",
+          "osha-511-general-industry-standards",
+          "osha-521-industrial-hygiene",
+          "osha-2015-hazardous-materials",
+          "osha-2045-machine-guarding",
+          "osha-2055-cranes-in-construction"
+        ]
+      },
+      {
+        "body": "the institutes",
+        "count": 36,
+        "slugs": [
+          "associate-in-claims",
+          "associate-in-claims-management",
+          "senior-professional-public-adjuster",
+          "workers-compensation-claims-administration-certificate",
+          "accredited-adviser-in-insurance",
+          "accredited-adviser-in-insurance-management",
+          "accredited-customer-service-representative",
+          "associate-in-commercial-underwriting",
+          "associate-in-commercial-underwriting-management",
+          "associate-in-fidelity-and-surety-bonding"
+        ]
+      },
+      {
+        "body": "national-interstate council of state boards of cosmetology",
+        "count": 35,
+        "slugs": [
+          "nic-advanced-micropigmentation-theory",
+          "nic-advanced-practice-esthetics-practical",
+          "nic-advanced-practice-esthetics-theory",
+          "nic-barber-practical",
+          "nic-barber-styling-practical",
+          "nic-barber-styling-theory",
+          "nic-barber-theory",
+          "nic-barber-1-no-chemical-practical",
+          "nic-barber-1-no-chemical-theory",
+          "nic-blow-dry-styling-practical"
+        ]
+      },
+      {
+        "body": "national fire protection association",
+        "count": 28,
+        "slugs": [
+          "fire-officer-i",
+          "fire-officer-ii",
+          "fire-officer-iii",
+          "fire-officer-iv",
+          "fire-instructor-i",
+          "fire-instructor-ii",
+          "fire-instructor-iii",
+          "fire-inspector-i",
+          "fire-inspector-ii",
+          "fire-investigator"
+        ]
+      },
+      {
+        "body": "international code council (icc)",
+        "count": 26,
+        "slugs": [
+          "icc-concrete-special-inspector",
+          "icc-masonry-special-inspector",
+          "icc-steel-special-inspector",
+          "icc-wood-special-inspector",
+          "icc-reinforced-concrete-special-inspector",
+          "icc-structural-welding-special-inspector",
+          "icc-residential-building-inspector",
+          "icc-commercial-building-inspector",
+          "icc-building-plans-examiner",
+          "icc-residential-electrical-inspector"
+        ]
+      },
+      {
+        "body": "nccer",
+        "count": 26,
+        "slugs": [
+          "nccer-welding",
+          "nccer-electrician",
+          "nccer-core-curriculum",
+          "nccer-carpenter",
+          "nccer-masonry",
+          "nccer-concrete-finisher",
+          "nccer-pipefitting",
+          "nccer-plumbing",
+          "nccer-hvac",
+          "nccer-electrical"
+        ]
+      },
+      {
+        "body": "giac",
+        "count": 24,
+        "slugs": [
+          "giac-gced",
+          "giac-gcfa",
+          "giac-gcfe",
+          "giac-gcia",
+          "giac-gcih",
+          "giac-gcld",
+          "giac-gcpn",
+          "giac-gcsa",
+          "giac-gcti",
+          "giac-gdsa"
+        ]
+      },
+      {
+        "body": "national council of examiners for engineering and surveying (ncees)",
+        "count": 23,
+        "slugs": [
+          "fe-civil",
+          "fe-mechanical",
+          "fe-electrical-computer",
+          "fe-chemical",
+          "fe-environmental",
+          "fe-industrial-systems",
+          "fe-other-disciplines",
+          "pe-civil",
+          "pe-mechanical",
+          "pe-electrical-computer"
+        ]
+      },
+      {
+        "body": "aapc",
+        "count": 21,
+        "slugs": [
+          "aapc-canpc",
+          "aapc-cascc",
+          "aapc-ccc",
+          "aapc-ccvtc",
+          "aapc-cdeo",
+          "aapc-cedc",
+          "aapc-cfpc",
+          "aapc-cgic",
+          "aapc-cgsc",
+          "aapc-chonc"
+        ]
+      },
+      {
+        "body": "financial industry regulatory authority (finra)",
+        "count": 21,
+        "slugs": [
+          "sie-exam",
+          "series-10",
+          "series-14",
+          "series-16",
+          "series-22",
+          "series-23",
+          "series-24",
+          "series-26",
+          "series-27",
+          "series-28"
+        ]
+      },
+      {
+        "body": "national board for professional teaching standards",
+        "count": 20,
+        "slugs": [
+          "nbpts-art",
+          "nbpts-career-and-technical-education",
+          "nbpts-generalist-early-childhood",
+          "nbpts-english-language-arts",
+          "nbpts-exceptional-needs-specialist",
+          "nbpts-health-education",
+          "nbpts-library-media",
+          "nbpts-literacy-reading-language-arts",
+          "nbpts-mathematics",
+          "nbpts-generalist-middle-childhood"
+        ]
+      },
+      {
+        "body": "national institute for certification in engineering technologies (nicet)",
+        "count": 20,
+        "slugs": [
+          "nicet-fire-alarm-systems-level-1",
+          "nicet-fire-alarm-systems-level-2",
+          "nicet-fire-alarm-systems-level-3",
+          "nicet-fire-alarm-systems-level-4",
+          "nicet-water-based-systems-layout-level-1",
+          "nicet-water-based-systems-layout-level-2",
+          "nicet-water-based-systems-layout-level-3",
+          "nicet-water-based-systems-layout-level-4",
+          "nicet-inspection-testing-fire-alarm-level-1",
+          "nicet-inspection-testing-fire-alarm-level-2"
+        ]
+      },
+      {
+        "body": "comptia",
+        "count": 19,
+        "slugs": [
+          "comptia-a-plus",
+          "comptia-network-plus",
+          "comptia-security-plus",
+          "comptia-linux-plus",
+          "comptia-server-plus",
+          "comptia-cloud-plus",
+          "comptia-cysa-plus",
+          "comptia-pentest-plus",
+          "comptia-securityx",
+          "comptia-project-plus"
+        ]
+      },
+      {
+        "body": "american society for quality",
+        "count": 19,
+        "slugs": [
+          "asq-certified-calibration-technician",
+          "asq-certified-construction-quality-manager",
+          "asq-certified-food-safety-and-quality-auditor",
+          "asq-certified-manager-of-quality",
+          "asq-certified-master-black-belt",
+          "asq-certified-medical-device-auditor",
+          "asq-certified-pharmaceutical-gmp-professional",
+          "asq-certified-quality-auditor",
+          "asq-certified-quality-engineer",
+          "asq-certified-quality-improvement-associate"
+        ]
+      }
+    ]
+  },
+  "integrity": {
+    "orphanRecords_count": 0,
+    "orphanRecords_sample": []
+  },
+  "distCrossCheck": {
+    "examPagesBuilt": 5778,
+    "placeholderPagesInDist": 0
+  }
+}

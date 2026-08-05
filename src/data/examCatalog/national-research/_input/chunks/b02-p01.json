@@ -1,0 +1,437 @@
+{
+ "chunkId": "b02-p01",
+ "batch": 2,
+ "part": 1,
+ "categories": [
+  "admissions-academic"
+ ],
+ "groups": [
+  "CLEP & Credit by Exam",
+  "Advanced Placement"
+ ],
+ "bodies": [
+  "College Board"
+ ],
+ "examCount": 37,
+ "exams": [
+  {
+   "slug": "clep-american-government",
+   "name": "CLEP American Government",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test on US constitutional government, institutions, civil liberties and political behaviour, usually worth three college credits."
+  },
+  {
+   "slug": "clep-american-literature",
+   "name": "CLEP American Literature",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test covering American prose, poetry and drama from the colonial period to the present, usually worth three college credits."
+  },
+  {
+   "slug": "clep-analyzing-and-interpreting-literature",
+   "name": "CLEP Analyzing and Interpreting Literature",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test using passages from American and British literature to assess close reading, interpretation and literary terminology."
+  },
+  {
+   "slug": "clep-biology",
+   "name": "CLEP Biology",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test covering molecular and cellular biology, organismal biology and population biology, commonly worth six college credits."
+  },
+  {
+   "slug": "clep-calculus",
+   "name": "CLEP Calculus",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test weighted about 60 percent limits and differential calculus and 40 percent integral calculus, typically worth four credits."
+  },
+  {
+   "slug": "clep-chemistry",
+   "name": "CLEP Chemistry",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test covering the content of a full year of general chemistry, including stoichiometry, bonding, equilibrium and thermodynamics."
+  },
+  {
+   "slug": "clep-college-algebra",
+   "name": "CLEP College Algebra",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test on algebraic operations, equations, inequalities, functions and their graphs at one-semester college algebra level."
+  },
+  {
+   "slug": "clep-college-composition",
+   "name": "CLEP College Composition",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam writing test combining multiple-choice questions with two essays scored by College Board readers, often worth six credits."
+  },
+  {
+   "slug": "clep-college-composition-modular",
+   "name": "CLEP College Composition Modular",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Multiple-choice version of the CLEP composition exam that lets institutions add their own locally scored essay component if they wish."
+  },
+  {
+   "slug": "clep-college-mathematics",
+   "name": "CLEP College Mathematics",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test of quantitative literacy for non-mathematics majors, covering logic, sets, probability, statistics and financial mathematics."
+  },
+  {
+   "slug": "clep-english-literature",
+   "name": "CLEP English Literature",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test focused on major British authors and works from Beowulf to the twentieth century, usually worth three college credits."
+  },
+  {
+   "slug": "clep-financial-accounting",
+   "name": "CLEP Financial Accounting",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test on the accounting cycle, financial statements, assets, liabilities and equity taught in introductory financial accounting."
+  },
+  {
+   "slug": "clep-french-language",
+   "name": "CLEP French Language",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test of French listening and reading that can award Level 1 or Level 2 credit depending on the score achieved."
+  },
+  {
+   "slug": "clep-german-language",
+   "name": "CLEP German Language",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test of German listening and reading comprehension awarding Level 1 or Level 2 college credit based on the score band reached."
+  },
+  {
+   "slug": "clep-history-of-the-united-states-i",
+   "name": "CLEP History of the United States I: Early Colonization to 1877",
+   "short": "CLEP US History I",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test covering US history from early European colonisation through the Civil War and the end of Reconstruction in 1877."
+  },
+  {
+   "slug": "clep-history-of-the-united-states-ii",
+   "name": "CLEP History of the United States II: 1865 to the Present",
+   "short": "CLEP US History II",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test covering US history from the end of the Civil War through industrialisation, the world wars and the modern era."
+  },
+  {
+   "slug": "clep-human-growth-and-development",
+   "name": "CLEP Human Growth and Development",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test on theories and research in physical, cognitive and social development across the human lifespan."
+  },
+  {
+   "slug": "clep-humanities",
+   "name": "CLEP Humanities",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Broad credit-by-exam test of general knowledge in literature, visual art, music, philosophy and the performing arts from classical to modern times."
+  },
+  {
+   "slug": "clep-information-systems",
+   "name": "CLEP Information Systems",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test on hardware, software, networks, databases, security and the role of information systems in business organisations."
+  },
+  {
+   "slug": "clep-introduction-to-educational-psychology",
+   "name": "CLEP Introduction to Educational Psychology",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test on cognition, child development, teaching methods, motivation and classroom assessment for education majors."
+  },
+  {
+   "slug": "clep-introductory-business-law",
+   "name": "CLEP Introductory Business Law",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test covering contracts, torts, agency, the history and sources of American law and the legal environment of business."
+  },
+  {
+   "slug": "clep-introductory-psychology",
+   "name": "CLEP Introductory Psychology",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test of the facts, concepts and accepted principles taught in a one-semester introductory college psychology course."
+  },
+  {
+   "slug": "clep-introductory-sociology",
+   "name": "CLEP Introductory Sociology",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test covering social institutions, stratification, culture, deviance and sociological research methods and theory."
+  },
+  {
+   "slug": "clep-natural-sciences",
+   "name": "CLEP Natural Sciences",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Survey credit-by-exam test for non-science majors spanning biological and physical sciences, commonly worth six college credits."
+  },
+  {
+   "slug": "clep-precalculus",
+   "name": "CLEP Precalculus",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test of algebraic, exponential, logarithmic and trigonometric functions and their properties, graphs and applications."
+  },
+  {
+   "slug": "clep-principles-of-macroeconomics",
+   "name": "CLEP Principles of Macroeconomics",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test covering aggregate demand and supply, national income accounting, inflation, unemployment and monetary and fiscal policy."
+  },
+  {
+   "slug": "clep-principles-of-management",
+   "name": "CLEP Principles of Management",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test on planning, organising, leading and controlling, human resources and operational aspects of management."
+  },
+  {
+   "slug": "clep-principles-of-marketing",
+   "name": "CLEP Principles of Marketing",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test on consumer and organisational markets, segmentation, marketing strategy and the four elements of the marketing mix."
+  },
+  {
+   "slug": "clep-principles-of-microeconomics",
+   "name": "CLEP Principles of Microeconomics",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test on the economic principles governing individual consumers and firms, market structures, pricing and factor markets."
+  },
+  {
+   "slug": "clep-social-sciences-and-history",
+   "name": "CLEP Social Sciences and History",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Broad credit-by-exam test spanning history, economics, government, geography, sociology, psychology and anthropology, often worth six credits."
+  },
+  {
+   "slug": "clep-spanish-language",
+   "name": "CLEP Spanish Language",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test of Spanish listening and reading comprehension awarding Level 1 or Level 2 college credit based on score."
+  },
+  {
+   "slug": "clep-spanish-with-writing",
+   "name": "CLEP Spanish with Writing",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Extended CLEP Spanish exam that adds scored writing tasks to the listening and reading sections for higher-level language credit."
+  },
+  {
+   "slug": "clep-western-civilization-i",
+   "name": "CLEP Western Civilization I: Ancient Near East to 1648",
+   "short": "CLEP Western Civ I",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test covering the ancient Near East, Greece and Rome, the Middle Ages, the Renaissance and the Reformation up to 1648."
+  },
+  {
+   "slug": "clep-western-civilization-ii",
+   "name": "CLEP Western Civilization II: 1648 to the Present",
+   "short": "CLEP Western Civ II",
+   "category": "admissions-academic",
+   "group": "CLEP & Credit by Exam",
+   "body": "College Board",
+   "bodyUrl": "https://clep.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Credit-by-exam test covering European history from the mid-seventeenth century through the world wars and the post-1945 period."
+  },
+  {
+   "slug": "ap-2d-art-and-design",
+   "name": "AP 2-D Art and Design",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [
+    "AP Studio Art 2-D Design",
+    "AP 2D Art"
+   ],
+   "blurb": "Portfolio-based AP assessment in two-dimensional design where students submit a sustained investigation and selected works instead of a written exam."
+  },
+  {
+   "slug": "ap-3d-art-and-design",
+   "name": "AP 3-D Art and Design",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [
+    "AP Studio Art 3-D Design",
+    "AP 3D Art"
+   ],
+   "blurb": "Portfolio-based AP assessment in three-dimensional design in which students submit sculptural and spatial works rather than sitting a written exam."
+  },
+  {
+   "slug": "ap-african-american-studies",
+   "name": "AP African American Studies",
+   "category": "admissions-academic",
+   "group": "Advanced Placement",
+   "body": "College Board",
+   "bodyUrl": "https://apstudents.collegeboard.org",
+   "type": "Exam",
+   "aka": [
+    "AP AFAM"
+   ],
+   "blurb": "Interdisciplinary AP exam rolled out nationally in 2024 covering African American history, literature, politics and culture from African origins to today."
+  }
+ ]
+}

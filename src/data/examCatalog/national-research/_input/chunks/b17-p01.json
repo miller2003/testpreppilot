@@ -1,0 +1,483 @@
+{
+ "chunkId": "b17-p01",
+ "batch": 17,
+ "part": 1,
+ "categories": [
+  "environment"
+ ],
+ "groups": [
+  "Water, Wastewater & Utilities",
+  "Pesticide, Agriculture & Land"
+ ],
+ "bodies": [
+  "Association of Boards of Certification (Water Professionals International)",
+  "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+  "ASSE International"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "abc-biosolids-land-application-operator",
+   "name": "ABC Biosolids Land Application Operator Certification Exam",
+   "short": "Biosolids Operator",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Standardised exam for operators managing biosolids treatment, transport and land application in compliance with 40 CFR Part 503."
+  },
+  {
+   "slug": "abc-industrial-waste-treatment-operator",
+   "name": "ABC Industrial Waste Treatment Operator Certification Exam",
+   "short": "Industrial Waste",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Standardised exam for operators of industrial pretreatment and waste treatment systems discharging to publicly owned treatment works."
+  },
+  {
+   "slug": "abc-very-small-water-system-operator",
+   "name": "ABC Very Small Water System Operator Certification Exam",
+   "short": "VSWS Operator",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Small Water System Operator"
+   ],
+   "blurb": "Standardised exam for operators of very small public water systems covering disinfection, monitoring and basic distribution duties."
+  },
+  {
+   "slug": "abc-wastewater-collection-operator-class-1",
+   "name": "ABC Wastewater Collection System Operator Certification Exam — Class I",
+   "short": "Collection I",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 1 Collections"
+   ],
+   "blurb": "Entry-level standardised exam on sewer cleaning, lift station operation, confined space safety and overflow response."
+  },
+  {
+   "slug": "abc-wastewater-collection-operator-class-2",
+   "name": "ABC Wastewater Collection System Operator Certification Exam — Class II",
+   "short": "Collection II",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 2 Collections"
+   ],
+   "blurb": "Second-level standardised exam covering pipeline inspection, inflow and infiltration control and pump station maintenance."
+  },
+  {
+   "slug": "abc-wastewater-collection-operator-class-3",
+   "name": "ABC Wastewater Collection System Operator Certification Exam — Class III",
+   "short": "Collection III",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 3 Collections"
+   ],
+   "blurb": "Advanced standardised exam on collection system hydraulics, rehabilitation planning and supervision of maintenance crews."
+  },
+  {
+   "slug": "abc-wastewater-collection-operator-class-4",
+   "name": "ABC Wastewater Collection System Operator Certification Exam — Class IV",
+   "short": "Collection IV",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 4 Collections"
+   ],
+   "blurb": "Highest-level standardised exam for managers of large sewer collection systems and capacity management programmes."
+  },
+  {
+   "slug": "abc-wastewater-treatment-operator-class-1",
+   "name": "ABC Wastewater Treatment Operator Certification Exam — Class I",
+   "short": "Wastewater I",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 1 Wastewater"
+   ],
+   "blurb": "Entry-level standardised exam on preliminary treatment, lagoons, disinfection and routine wastewater laboratory testing."
+  },
+  {
+   "slug": "abc-wastewater-treatment-operator-class-2",
+   "name": "ABC Wastewater Treatment Operator Certification Exam — Class II",
+   "short": "Wastewater II",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 2 Wastewater"
+   ],
+   "blurb": "Second-level standardised exam covering activated sludge process control, clarification and solids handling operations."
+  },
+  {
+   "slug": "abc-wastewater-treatment-operator-class-3",
+   "name": "ABC Wastewater Treatment Operator Certification Exam — Class III",
+   "short": "Wastewater III",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 3 Wastewater"
+   ],
+   "blurb": "Advanced standardised exam on nutrient removal, anaerobic digestion, NPDES permit compliance and process troubleshooting."
+  },
+  {
+   "slug": "abc-wastewater-treatment-operator-class-4",
+   "name": "ABC Wastewater Treatment Operator Certification Exam — Class IV",
+   "short": "Wastewater IV",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 4 Wastewater"
+   ],
+   "blurb": "Highest-level standardised exam for chief operators of large wastewater treatment facilities and advanced treatment processes."
+  },
+  {
+   "slug": "abc-water-distribution-operator-class-1",
+   "name": "ABC Water Distribution Operator Certification Exam — Class I",
+   "short": "Distribution I",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 1 Distribution",
+    "Level 1 Water Distribution"
+   ],
+   "blurb": "Entry-level standardised exam on mains, storage, disinfection residuals and sampling for public water distribution operators."
+  },
+  {
+   "slug": "abc-water-distribution-operator-class-2",
+   "name": "ABC Water Distribution Operator Certification Exam — Class II",
+   "short": "Distribution II",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 2 Distribution"
+   ],
+   "blurb": "Second-level standardised exam covering hydraulics, pumping, cross-connection control and distribution system maintenance."
+  },
+  {
+   "slug": "abc-water-distribution-operator-class-3",
+   "name": "ABC Water Distribution Operator Certification Exam — Class III",
+   "short": "Distribution III",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 3 Distribution"
+   ],
+   "blurb": "Advanced standardised exam covering system modelling, water quality regulations and supervision of distribution operations."
+  },
+  {
+   "slug": "abc-water-distribution-operator-class-4",
+   "name": "ABC Water Distribution Operator Certification Exam — Class IV",
+   "short": "Distribution IV",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 4 Distribution"
+   ],
+   "blurb": "Highest-level standardised exam for managers of large distribution systems, covering planning, budgeting and regulatory compliance."
+  },
+  {
+   "slug": "abc-water-treatment-operator-class-1",
+   "name": "ABC Water Treatment Operator Certification Exam — Class I",
+   "short": "Water Treatment I",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 1 Water Treatment",
+    "Level 1 Water Treatment"
+   ],
+   "blurb": "Entry-level standardised exam on treatment process monitoring, laboratory analysis and drinking water regulation compliance."
+  },
+  {
+   "slug": "abc-water-treatment-operator-class-2",
+   "name": "ABC Water Treatment Operator Certification Exam — Class II",
+   "short": "Water Treatment II",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 2 Water Treatment"
+   ],
+   "blurb": "Second-level standardised exam covering coagulation, filtration, disinfection control and treatment process adjustment."
+  },
+  {
+   "slug": "abc-water-treatment-operator-class-3",
+   "name": "ABC Water Treatment Operator Certification Exam — Class III",
+   "short": "Water Treatment III",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 3 Water Treatment"
+   ],
+   "blurb": "Advanced standardised exam on plant optimisation, membrane and advanced treatment processes and regulatory reporting."
+  },
+  {
+   "slug": "abc-water-treatment-operator-class-4",
+   "name": "ABC Water Treatment Operator Certification Exam — Class IV",
+   "short": "Water Treatment IV",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "Association of Boards of Certification (Water Professionals International)",
+   "type": "Exam",
+   "aka": [
+    "Grade 4 Water Treatment"
+   ],
+   "blurb": "Highest-level standardised exam for chief operators of large surface water treatment plants and complex treatment trains."
+  },
+  {
+   "slug": "commercial-applicator-agricultural-animal",
+   "name": "Commercial Pesticide Applicator — Agricultural Pest Control (Animal)",
+   "short": "Agricultural Animal",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Federal category covering pesticide use on livestock and other animals, including treatment of premises and animal facilities."
+  },
+  {
+   "slug": "commercial-applicator-agricultural-plant",
+   "name": "Commercial Pesticide Applicator — Agricultural Pest Control (Plant)",
+   "short": "Agricultural Plant",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Federal category covering pesticide application to agricultural crops, pastures, orchards and other production plant sites."
+  },
+  {
+   "slug": "commercial-applicator-antimicrobial",
+   "name": "Commercial Pesticide Applicator — Antimicrobial Pest Control",
+   "short": "Antimicrobial",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Category covering restricted use antimicrobial products applied for disinfection and sanitation in industrial and institutional settings."
+  },
+  {
+   "slug": "commercial-applicator-aquatic",
+   "name": "Commercial Pesticide Applicator — Aquatic Pest Control",
+   "short": "Aquatic",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Federal category for applicators treating standing or running water for aquatic weeds, algae and other aquatic pests."
+  },
+  {
+   "slug": "commercial-applicator-demonstration-research",
+   "name": "Commercial Pesticide Applicator — Demonstration and Research Pest Control",
+   "short": "Demonstration & Research",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Category for extension agents and researchers demonstrating pesticide techniques or conducting field trials with restricted use products."
+  },
+  {
+   "slug": "commercial-applicator-forest",
+   "name": "Commercial Pesticide Applicator — Forest Pest Control",
+   "short": "Forest",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Federal category for applicators treating forests, forest nurseries and forest seed-producing areas with restricted use pesticides."
+  },
+  {
+   "slug": "commercial-applicator-fumigation",
+   "name": "Commercial Pesticide Applicator — Fumigation",
+   "short": "Fumigation",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Category covering soil, structural and commodity fumigation, including monitoring, sealing and re-entry requirements for fumigants."
+  },
+  {
+   "slug": "commercial-applicator-ornamental-turf",
+   "name": "Commercial Pesticide Applicator — Ornamental and Turf Pest Control",
+   "short": "Ornamental & Turf",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Federal category for applicators treating ornamental trees, shrubs, flowers and turf in landscape and lawn-care settings."
+  },
+  {
+   "slug": "commercial-applicator-public-health",
+   "name": "Commercial Pesticide Applicator — Public Health Pest Control",
+   "short": "Public Health",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Category for government applicators managing mosquitoes, ticks and other vectors of public health importance."
+  },
+  {
+   "slug": "commercial-applicator-regulatory",
+   "name": "Commercial Pesticide Applicator — Regulatory Pest Control",
+   "short": "Regulatory",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Category for state and federal employees applying pesticides during quarantine, eradication and other regulatory pest programmes."
+  },
+  {
+   "slug": "commercial-applicator-right-of-way",
+   "name": "Commercial Pesticide Applicator — Right-of-Way Pest Control",
+   "short": "Right-of-Way",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Federal category for vegetation management along roadsides, railways, pipelines and electric transmission rights-of-way."
+  },
+  {
+   "slug": "commercial-applicator-seed-treatment",
+   "name": "Commercial Pesticide Applicator — Seed Treatment",
+   "short": "Seed Treatment",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Federal category covering the treatment of seeds with restricted use pesticides, including handling and worker protection controls."
+  },
+  {
+   "slug": "commercial-applicator-structural",
+   "name": "Commercial Pesticide Applicator — Structural Pest Control",
+   "short": "Structural",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [
+    "Industrial, Institutional, Structural and Health Related"
+   ],
+   "blurb": "Category for applicators controlling pests in and around buildings, including termites, rodents and other structural pests."
+  },
+  {
+   "slug": "commercial-applicator-wood-preservation",
+   "name": "Commercial Pesticide Applicator — Wood Preservation",
+   "short": "Wood Preservation",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Category covering pressure and non-pressure treatment of wood products with restricted use preservatives at treating facilities."
+  },
+  {
+   "slug": "pesticide-applicator-core-exam",
+   "name": "Pesticide Applicator Core Certification Exam",
+   "short": "Core Exam",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Exam",
+   "aka": [
+    "National Pesticide Applicator Core Manual"
+   ],
+   "blurb": "Core examination based on the national applicator manual covering labels, personal protection, calibration and environmental hazards."
+  },
+  {
+   "slug": "private-pesticide-applicator-certification",
+   "name": "Private Pesticide Applicator Certification",
+   "short": "Private Applicator",
+   "category": "environment",
+   "group": "Pesticide, Agriculture & Land",
+   "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification allowing farmers and ranchers to buy and apply restricted use pesticides on land they own, rent or manage."
+  },
+  {
+   "slug": "asse-5110-backflow-prevention-assembly-tester",
+   "name": "ASSE 5110 Backflow Prevention Assembly Tester Certification",
+   "short": "ASSE 5110",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "ASSE International",
+   "type": "Certification",
+   "aka": [
+    "Backflow Tester"
+   ],
+   "blurb": "Written and practical certification for technicians field-testing reduced pressure, double check and pressure vacuum breaker assemblies."
+  },
+  {
+   "slug": "asse-5120-backflow-prevention-assembly-repairer",
+   "name": "ASSE 5120 Backflow Prevention Assembly Repairer Certification",
+   "short": "ASSE 5120",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "ASSE International",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for technicians who disassemble, repair and retest backflow prevention assemblies after a failed field test."
+  },
+  {
+   "slug": "cross-connection-control-surveyor",
+   "name": "Cross-Connection Control Surveyor Certification",
+   "short": "CCC Surveyor",
+   "category": "environment",
+   "group": "Water, Wastewater & Utilities",
+   "body": "ASSE International",
+   "type": "Certification",
+   "aka": [
+    "Cross-Connection Control Specialist",
+    "ASSE 5160"
+   ],
+   "blurb": "Certification for personnel surveying premises for cross-connections and specifying the correct backflow protection assemblies."
+  }
+ ]
+}

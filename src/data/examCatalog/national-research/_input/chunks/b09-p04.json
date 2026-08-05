@@ -1,0 +1,430 @@
+{
+ "chunkId": "b09-p04",
+ "batch": 9,
+ "part": 4,
+ "categories": [
+  "aviation-maritime"
+ ],
+ "groups": [
+  "Radio & Communications",
+  "Maritime & USCG",
+  "Aircraft Maintenance"
+ ],
+ "bodies": [
+  "Federal Communications Commission (COLEM administrators)",
+  "American Boat and Yacht Council",
+  "Federal Communications Commission (Volunteer Examiner Coordinators)",
+  "Federal Aviation Administration (Designated Mechanic Examiner)",
+  "National Marine Electronics Association",
+  "National Fire Protection Association Marine Chemist Qualification Board",
+  "National Association of Marine Surveyors",
+  "National Association of State Boating Law Administrators",
+  "Society of Accredited Marine Surveyors",
+  "Transportation Security Administration",
+  "ETA International",
+  "National Business Aviation Association"
+ ],
+ "examCount": 30,
+ "exams": [
+  {
+   "slug": "fcc-element-1-basic-radio-law",
+   "name": "FCC Element 1 Basic Radio Law and Operating Practice",
+   "short": "Element 1",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission (COLEM administrators)",
+   "type": "Exam",
+   "aka": [
+    "Element 1"
+   ],
+   "blurb": "24-question examination on radio law and operating practice that underpins the Marine Radio Operator Permit and other commercial licences."
+  },
+  {
+   "slug": "fcc-element-3-general-radiotelephone",
+   "name": "FCC Element 3 General Radiotelephone",
+   "short": "Element 3",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission (COLEM administrators)",
+   "type": "Exam",
+   "aka": [
+    "Element 3 Commercial"
+   ],
+   "blurb": "76-question technical examination on electronics, antennas and transmitters taken with Element 1 to earn the GROL."
+  },
+  {
+   "slug": "fcc-element-5-radiotelegraph-operating-practice",
+   "name": "FCC Element 5 Radiotelegraph Operating Practice",
+   "short": "Element 5",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission (COLEM administrators)",
+   "type": "Exam",
+   "aka": [
+    "Element 5"
+   ],
+   "blurb": "Written examination on radiotelegraph operating procedures and regulations required toward the Radiotelegraph Operator License."
+  },
+  {
+   "slug": "fcc-element-6-advanced-radiotelegraph",
+   "name": "FCC Element 6 Advanced Radiotelegraph",
+   "short": "Element 6",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission (COLEM administrators)",
+   "type": "Exam",
+   "aka": [
+    "Element 6"
+   ],
+   "blurb": "Technical examination on radiotelegraph equipment, installation and maintenance for the commercial radiotelegraph operator licence."
+  },
+  {
+   "slug": "fcc-element-7-gmdss-radio-operating-practices",
+   "name": "FCC Element 7 GMDSS Radio Operating Practices",
+   "short": "Element 7",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission (COLEM administrators)",
+   "type": "Exam",
+   "aka": [
+    "Element 7"
+   ],
+   "blurb": "76-question examination on distress alerting, digital selective calling, Inmarsat and NAVTEX for the GMDSS operator licence."
+  },
+  {
+   "slug": "fcc-element-7r-restricted-gmdss-operating-practices",
+   "name": "FCC Element 7R Restricted GMDSS Radio Operating Practices",
+   "short": "Element 7R",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission (COLEM administrators)",
+   "type": "Exam",
+   "aka": [
+    "Element 7R"
+   ],
+   "blurb": "Examination covering GMDSS operating practices limited to sea area A1, leading to the restricted GMDSS operator licence."
+  },
+  {
+   "slug": "fcc-element-8-ship-radar-techniques",
+   "name": "FCC Element 8 Ship Radar Techniques",
+   "short": "Element 8",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission (COLEM administrators)",
+   "type": "Exam",
+   "aka": [
+    "Element 8"
+   ],
+   "blurb": "50-question technical examination on radar theory, pulse circuits, magnetrons and alignment required for the radar endorsement."
+  },
+  {
+   "slug": "fcc-element-9-gmdss-radio-maintenance",
+   "name": "FCC Element 9 GMDSS Radio Maintenance Practices and Procedures",
+   "short": "Element 9",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission (COLEM administrators)",
+   "type": "Exam",
+   "aka": [
+    "Element 9"
+   ],
+   "blurb": "50-question examination on at-sea maintenance and repair of GMDSS equipment for the radio maintainer licence."
+  },
+  {
+   "slug": "abyc-diesel-engines-certification",
+   "name": "ABYC Diesel Engines Certification",
+   "short": "ABYC Diesel",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "American Boat and Yacht Council",
+   "type": "Certification",
+   "aka": [
+    "ABYC Diesel Engines"
+   ],
+   "blurb": "Marine technician certification on diesel propulsion installation, fuel systems, cooling, exhaust and troubleshooting to ABYC standards."
+  },
+  {
+   "slug": "abyc-gasoline-engines-certification",
+   "name": "ABYC Gasoline Engines Certification",
+   "short": "ABYC Gasoline",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "American Boat and Yacht Council",
+   "type": "Certification",
+   "aka": [
+    "ABYC Gasoline Engines"
+   ],
+   "blurb": "Certification on inboard and sterndrive gasoline engine service, ignition protection, ventilation and fuel system standards."
+  },
+  {
+   "slug": "abyc-marine-air-conditioning-refrigeration",
+   "name": "ABYC Marine Air Conditioning and Refrigeration Certification",
+   "short": "ABYC A/C",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "American Boat and Yacht Council",
+   "type": "Certification",
+   "aka": [
+    "ABYC Marine A/C and Refrigeration"
+   ],
+   "blurb": "Certification covering marine chilled water and direct expansion systems, seawater cooling, refrigerants and onboard installation practice."
+  },
+  {
+   "slug": "abyc-marine-corrosion-certification",
+   "name": "ABYC Marine Corrosion Certification",
+   "short": "ABYC Corrosion",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "American Boat and Yacht Council",
+   "type": "Certification",
+   "aka": [
+    "ABYC Corrosion"
+   ],
+   "blurb": "Certification on galvanic and stray current corrosion, bonding systems, anodes and cathodic protection surveys for boats."
+  },
+  {
+   "slug": "abyc-marine-electrical-certification",
+   "name": "ABYC Marine Electrical Certification",
+   "short": "ABYC Electrical",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "American Boat and Yacht Council",
+   "type": "Certification",
+   "aka": [
+    "ABYC Marine Electrical"
+   ],
+   "blurb": "Widely held marine technician certification covering AC and DC systems, shore power, bonding and ABYC E-11 wiring standards."
+  },
+  {
+   "slug": "abyc-marine-systems-certification",
+   "name": "ABYC Marine Systems Certification",
+   "short": "ABYC Systems",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "American Boat and Yacht Council",
+   "type": "Certification",
+   "aka": [
+    "ABYC Marine Systems"
+   ],
+   "blurb": "Certification spanning steering, fuel, plumbing, ventilation, LPG and other onboard systems assessed against ABYC standards."
+  },
+  {
+   "slug": "abyc-standards-certification",
+   "name": "ABYC Standards Certification",
+   "short": "ABYC Standards",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "American Boat and Yacht Council",
+   "type": "Certification",
+   "aka": [
+    "ABYC Standards Accreditation"
+   ],
+   "blurb": "Certification demonstrating working knowledge of the full ABYC standards manual and federal boat construction regulations."
+  },
+  {
+   "slug": "fcc-amateur-extra-class-license",
+   "name": "Amateur Extra Class License Exam",
+   "short": "Extra Class",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission (Volunteer Examiner Coordinators)",
+   "type": "License",
+   "aka": [
+    "Element 4",
+    "Amateur Extra"
+   ],
+   "blurb": "50-question examination granting full amateur radio privileges, covering advanced theory, transmission lines and specialised operating rules."
+  },
+  {
+   "slug": "fcc-amateur-general-class-license",
+   "name": "Amateur Radio General Class License Exam",
+   "short": "General Class",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission (Volunteer Examiner Coordinators)",
+   "type": "License",
+   "aka": [
+    "Element 3 Amateur",
+    "General Class"
+   ],
+   "blurb": "35-question examination opening most high-frequency amateur bands, covering propagation, antennas, rules and station operation."
+  },
+  {
+   "slug": "fcc-amateur-technician-class-license",
+   "name": "Amateur Radio Technician Class License Exam",
+   "short": "Technician Class",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission (Volunteer Examiner Coordinators)",
+   "type": "License",
+   "aka": [
+    "Element 2",
+    "Technician Class"
+   ],
+   "blurb": "Entry amateur radio examination of 35 questions on regulations, operating practice and electronics for VHF and UHF privileges."
+  },
+  {
+   "slug": "faa-airframe-oral-and-practical",
+   "name": "Aviation Maintenance Technician Airframe Oral and Practical Test",
+   "short": "Airframe O&P",
+   "category": "aviation-maritime",
+   "group": "Aircraft Maintenance",
+   "body": "Federal Aviation Administration (Designated Mechanic Examiner)",
+   "type": "Exam",
+   "aka": [
+    "Airframe O&P",
+    "Airframe Oral and Practical"
+   ],
+   "blurb": "Examiner-administered oral questioning and hands-on projects covering airframe subject areas required before the airframe rating is issued."
+  },
+  {
+   "slug": "faa-general-oral-and-practical",
+   "name": "Aviation Maintenance Technician General Oral and Practical Test",
+   "short": "General O&P",
+   "category": "aviation-maritime",
+   "group": "Aircraft Maintenance",
+   "body": "Federal Aviation Administration (Designated Mechanic Examiner)",
+   "type": "Exam",
+   "aka": [
+    "General O&P"
+   ],
+   "blurb": "Oral and practical examination on general maintenance subjects that every applicant must pass before receiving an airframe or powerplant rating."
+  },
+  {
+   "slug": "faa-powerplant-oral-and-practical",
+   "name": "Aviation Maintenance Technician Powerplant Oral and Practical Test",
+   "short": "Powerplant O&P",
+   "category": "aviation-maritime",
+   "group": "Aircraft Maintenance",
+   "body": "Federal Aviation Administration (Designated Mechanic Examiner)",
+   "type": "Exam",
+   "aka": [
+    "Powerplant O&P"
+   ],
+   "blurb": "Oral questioning and hands-on engine projects assessed by a designated examiner before the powerplant rating is added to a mechanic certificate."
+  },
+  {
+   "slug": "nmea-2000-network-installer",
+   "name": "NMEA 2000 Network Installer Certification",
+   "short": "NMEA 2000",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "National Marine Electronics Association",
+   "type": "Certification",
+   "aka": [
+    "NMEA 2000 Installer"
+   ],
+   "blurb": "Certification on designing, wiring and troubleshooting NMEA 2000 backbone networks for marine navigation and engine data."
+  },
+  {
+   "slug": "nmea-marine-electronics-installer",
+   "name": "NMEA Marine Electronics Installer Certification",
+   "short": "MEI",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "National Marine Electronics Association",
+   "type": "Certification",
+   "aka": [
+    "MEI",
+    "NMEA Advanced Installer"
+   ],
+   "blurb": "Tiered certification for technicians installing radar, chartplotters, autopilots, VHF and interfaced navigation electronics on vessels."
+  },
+  {
+   "slug": "nfpa-marine-chemist-certification",
+   "name": "Marine Chemist Certification",
+   "short": "Marine Chemist",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "National Fire Protection Association Marine Chemist Qualification Board",
+   "type": "Certification",
+   "aka": [
+    "Certified Marine Chemist"
+   ],
+   "blurb": "Certification allowing a chemist to issue safe-for-workers and safe-for-hot-work certificates on vessels under NFPA 306."
+  },
+  {
+   "slug": "nams-certified-marine-surveyor",
+   "name": "NAMS Certified Marine Surveyor",
+   "short": "NAMS-CMS",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "National Association of Marine Surveyors",
+   "type": "Certification",
+   "aka": [
+    "NAMS-CMS"
+   ],
+   "blurb": "Peer-reviewed surveyor credential requiring documented experience, sample surveys and examination in yachts, cargo or hull and machinery."
+  },
+  {
+   "slug": "nasbla-approved-boating-safety-course",
+   "name": "NASBLA-Approved Boating Safety Course",
+   "short": "Boater Education",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "National Association of State Boating Law Administrators",
+   "type": "Training",
+   "aka": [
+    "Boater Education Card",
+    "Boating Safety Certificate"
+   ],
+   "blurb": "Nationally approved recreational boating course covering navigation rules, required equipment and emergencies, accepted by most states."
+  },
+  {
+   "slug": "sams-accredited-marine-surveyor",
+   "name": "SAMS Accredited Marine Surveyor",
+   "short": "SAMS AMS",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "Society of Accredited Marine Surveyors",
+   "type": "Certification",
+   "aka": [
+    "AMS",
+    "SAMS AMS"
+   ],
+   "blurb": "Accreditation for marine surveyors requiring experience, continuing education and an examination on survey practice and standards."
+  },
+  {
+   "slug": "twic-transportation-worker-identification-credential",
+   "name": "Transportation Worker Identification Credential",
+   "short": "TWIC",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "Transportation Security Administration",
+   "type": "Certification",
+   "aka": [
+    "TWIC Card"
+   ],
+   "blurb": "Biometric identity card required for unescorted access to secure port areas and for all credentialed merchant mariners."
+  },
+  {
+   "slug": "eta-aircraft-electronics-technician",
+   "name": "Aircraft Electronics Technician Certification",
+   "short": "AET",
+   "category": "aviation-maritime",
+   "group": "Aircraft Maintenance",
+   "body": "ETA International",
+   "type": "Certification",
+   "aka": [
+    "AET",
+    "NCATT AET",
+    "Avionics Technician Certification"
+   ],
+   "blurb": "Baseline avionics credential covering aircraft electrical fundamentals, wiring, soldering, EMI control and troubleshooting of onboard electronic systems."
+  },
+  {
+   "slug": "nbaa-certified-aviation-manager",
+   "name": "Certified Aviation Manager",
+   "short": "CAM",
+   "category": "aviation-maritime",
+   "group": "Aircraft Maintenance",
+   "body": "National Business Aviation Association",
+   "type": "Certification",
+   "aka": [
+    "CAM",
+    "NBAA CAM"
+   ],
+   "blurb": "Credential for business aviation leaders covering flight operations, human resources, technical services, facilities and aviation business management."
+  }
+ ]
+}

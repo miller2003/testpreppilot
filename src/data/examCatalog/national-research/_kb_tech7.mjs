@@ -1,0 +1,1335 @@
+// Knowledge base — Technology (data & analytics platforms). Authoring format;
+// gen_national.mjs expands these into schema-conformant batch files. Facts
+// checked against each vendor’s official certification pages and corroborated
+// with aggregators (Aug 2026). Covers Databricks, Snowflake, Tableau, Qlik,
+// SAS Institute and Google data-analytics certificates.
+//
+// Note: Tableau certifications moved to Salesforce Trailhead Academy in July
+// 2025 (the Tableau Server Certified Associate was retired and folded into the
+// Certified Architect track) — that page is written as a RETIRED reference
+// pointing to its successor, per NATIONAL_SCHEMA rule 2. Google entries are
+// Coursera-based professional certificates (Training type), not proctored exams.
+
+// ─────────────────────────────────────────────────────────────────────
+//  PROGRAM DOSSIERS (one per certifying body)
+// ─────────────────────────────────────────────────────────────────────
+
+export const kbBodies = [
+  {
+    id: 'databricks',
+    body: 'Databricks',
+    bodyUrl: 'https://www.databricks.com/learn/certification',
+    about: 'Databricks is the company behind the Lakehouse Platform — a unified analytics, data-engineering and machine-learning environment built on Apache Spark. Its certification program validates practical skill on the platform across data engineering, machine learning, data analysis, generative-AI engineering and Spark development. Every Databricks exam is a 45–59 question multiple-choice test delivered through Pearson VUE (online proctored or at a test center), costs $200, and is valid for two years.',
+    registrationSteps: [
+      { title: 'Create a Databricks account', description: 'Sign up at databricks.com and review the exam catalog and objectives for your target credential.', duration: '5 minutes' },
+      { title: 'Register through Pearson VUE', description: 'Book a slot at a Pearson VUE test center or online-proctored; pay the $200 fee at scheduling.', duration: '10 minutes' },
+      { title: 'Prepare with free resources', description: 'Use Databricks free instructor-led courses, the certification study guides and community-edition hands-on labs.', duration: 'study phase' },
+      { title: 'Sit the exam', description: 'Answer 45–59 multiple-choice questions within 90–120 minutes depending on the level.', duration: 'test day' },
+      { title: 'Maintain', description: 'Each credential is valid two years; recertify by passing the current exam again.', duration: 'per cycle' }
+    ],
+    proctoring: 'Delivered through Pearson VUE at test centers worldwide or via Pearson VUE online proctoring. A government-issued photo ID is required; the exam is closed-book with no outside aids.',
+    retakePolicy: 'If you fail, you must wait 14 days before retaking, and the full $200 fee is charged on every attempt. There is no published lifetime attempt cap.',
+    recertification: 'All Databricks certifications are valid for two years. Recertify by passing the current version of the same exam before it expires.',
+    scoreReporting: 'Databricks uses a scaled score. Associate exams commonly require around 70%; the Data Engineer Associate is published at a 70% pass mark. Results are shown immediately at the end of the exam.',
+    refundPolicy: 'Exam fees are generally non-refundable but may be refunded if cancelled more than 24–48 hours before the appointment through Pearson VUE. Check the booking terms at purchase.',
+    providersNote: 'Databricks publishes free instructor-led courses, exam study guides and a community edition for hands-on practice. Paid instructor-led training and practice exams are optional.',
+    comparison: {
+      title: 'Databricks certification exams (2026)',
+      columns: ['Exam', 'Questions / time', 'List fee'],
+      rows: [
+        { label: 'Data Engineer Associate', values: ['45 / 90 min', '$200'] },
+        { label: 'Data Engineer Professional', values: ['59 / 120 min', '$200'] },
+        { label: 'Machine Learning Associate', values: ['48 / 90 min', '$200'] },
+        { label: 'Machine Learning Professional', values: ['59 / 120 min', '$200'] },
+        { label: 'Data Analyst / GenAI / Spark Dev', values: ['45 / 90 min', '$200'] }
+      ]
+    },
+    orgFaqs: [
+      { q: 'How much do Databricks exams cost?', a: 'Every Databricks certification exam is priced at a flat $200 USD, whether associate or professional level, and is paid at Pearson VUE scheduling.' },
+      { q: 'How long are Databricks certifications valid?', a: 'Each credential is valid for two years. You recertify by passing the current version of the same exam before the expiry date.' },
+      { q: 'What is the retake policy?', a: 'If you fail, you must wait 14 days before retaking and pay the full $200 fee on every attempt.' }
+    ],
+    sourceUrl: 'https://www.databricks.com/learn/certification',
+    confidence: 'high'
+  },
+  {
+    id: 'snowflake',
+    body: 'Snowflake',
+    bodyUrl: 'https://www.snowflake.com/en/learn/training/',
+    about: 'Snowflake is the cloud data platform (the “Data Cloud”) whose certification program ranges from the foundational SnowPro Core through the SnowPro Associate Platform to five Advanced credentials (Architect, Data Engineer, Data Analyst, Data Scientist, Administrator). The Core exam is the prerequisite for every Advanced certification. Fees run $100 (Associate Platform) and $175 (Core), with Advanced exams at $375; all are valid for two years.',
+    registrationSteps: [
+      { title: 'Create a Snowflake account', description: 'Register on the Snowflake University / certification portal and review exam guides.', duration: '5 minutes' },
+      { title: 'Schedule through Pearson VUE', description: 'Book a Core or Advanced exam at a test center or online-proctored; the Associate Platform is taken unproctored online.', duration: '10 minutes' },
+      { title: 'Prepare with free training', description: 'Complete Snowflake’s free on-demand courses, hands-on labs and the exam study guides.', duration: 'study phase' },
+      { title: 'Sit the exam', description: 'Answer 65–100 questions within 85–115 minutes depending on the exam.', duration: 'test day' },
+      { title: 'Maintain', description: 'Each SnowPro credential is valid two years; most Advanced certs require a current Core first.', duration: 'per cycle' }
+    ],
+    proctoring: 'Core and Advanced exams are delivered through Pearson VUE at test centers or online-proctored. The SnowPro Associate Platform (SOL-C01) is an unproctored online exam taken in your own environment.',
+    retakePolicy: 'If you fail a SnowPro exam, you may retake it after a waiting period (typically 14 days for Core/Advanced) and pay the full fee on every attempt.',
+    recertification: 'SnowPro certifications are valid for two years. Advanced credentials require a currently valid Core certification; recertify by passing the current exam or a higher-level exam.',
+    scoreReporting: 'The Core exam uses a scaled score of 750–1,000 to pass. Advanced exams use scaled scoring with pass marks set per exam; results are reported through Pearson VUE and the Snowflake portal.',
+    refundPolicy: 'Exam fees are refundable only if cancelled/rescheduled at least 24–48 hours before the appointment; no-shows forfeit the fee.',
+    providersNote: 'Snowflake provides free on-demand courses, virtual hands-on labs and official exam study guides. Instructor-led training is optional.',
+    comparison: {
+      title: 'SnowPro certification exams (2026)',
+      columns: ['Exam', 'Code', 'Fee'],
+      rows: [
+        { label: 'Core (prereq for Advanced)', values: ['COF-C02', '$175'] },
+        { label: 'Associate Platform', values: ['SOL-C01', '$100'] },
+        { label: 'Advanced Architect', values: ['ARA-C01', '$375'] },
+        { label: 'Advanced Data Engineer', values: ['DEA-C02', '$375'] },
+        { label: 'Advanced Data Analyst / Scientist / Admin', values: ['DAA/ DSA/ ADA', '$375'] }
+      ]
+    },
+    orgFaqs: [
+      { q: 'Is the SnowPro Core exam required for the Advanced exams?', a: 'Yes. A currently valid SnowPro Core certification is the prerequisite for every SnowPro Advanced credential (Architect, Data Engineer, Data Analyst, Data Scientist, Administrator).' },
+      { q: 'How much do SnowPro exams cost?', a: 'The Core is $175, the Associate Platform is $100, and each Advanced exam (Architect, Data Engineer, Data Analyst, Data Scientist, Administrator) is $375.' },
+      { q: 'Is the Core exam changing?', a: 'The COF-C02 Core exam is being retired and replaced by COF-C03. Candidates should check the current code on Snowflake’s certification page before booking.' }
+    ],
+    sourceUrl: 'https://www.snowflake.com/en/learn/training/',
+    confidence: 'high'
+  },
+  {
+    id: 'tableau',
+    body: 'Tableau',
+    bodyUrl: 'https://www.tableau.com/learn/certification',
+    about: 'Tableau is the leading visual-analytics and business-intelligence tool, now delivered through the Salesforce Trailhead Academy (the certification program was consolidated under Trailhead in July 2025). The program spans the entry-level Desktop Specialist / Foundations exam (no expiration, free retake), the hands-on Data Analyst, the Consultant, and the Architect (which absorbed the retired Server Certified Associate). Exam fees run $75–$400 and most credentials are valid for two years.',
+    registrationSteps: [
+      { title: 'Create a Trailhead / Tableau account', description: 'Register on Salesforce Trailhead Academy and locate the Tableau certification catalog.', duration: '5 minutes' },
+      { title: 'Schedule through Pearson VUE', description: 'Book a slot via the Trailhead Academy portal; pay the exam fee at scheduling.', duration: '10 minutes' },
+      { title: 'Prepare with free resources', description: 'Use Tableau Public, free eLearning, and the exam prep guides for your target credential.', duration: 'study phase' },
+      { title: 'Sit the exam', description: 'Complete a multiple-choice and (for most) hands-on lab exam within the allotted time.', duration: 'test day' },
+      { title: 'Maintain', description: 'Most Tableau credentials are valid two years; the Desktop Foundations exam does not expire.', duration: 'per cycle' }
+    ],
+    proctoring: 'Delivered through Pearson VUE at test centers or online proctored, scheduled via the Salesforce Trailhead Academy portal. Hands-on lab components run in a proctored Tableau environment.',
+    retakePolicy: 'If you fail, you may retake after a waiting period and pay the full fee each attempt. The Desktop Specialist / Foundations exam offers a free retake.',
+    recertification: 'Most Tableau certifications are valid for two years and renewed by passing the current exam. The Desktop Foundations (formerly Specialist) exam does not expire.',
+    scoreReporting: 'Tableau reports pass/fail with scaled scoring; the Data Analyst exam requires roughly 65%. Results are delivered through the Trailhead Academy portal.',
+    refundPolicy: 'Cancellations or reschedules inside 48 hours of the appointment forfeit the fee; no-shows are charged in full. The Desktop Foundations exam has a free retake policy.',
+    providersNote: 'Tableau offers free eLearning, Tableau Public for practice, and official exam prep guides. Paid instructor-led training is optional.',
+    comparison: {
+      title: 'Tableau certification exams (2026)',
+      columns: ['Exam', 'Format', 'Fee'],
+      rows: [
+        { label: 'Desktop Specialist / Foundations', values: ['MCQ, no expiry', '$75'] },
+        { label: 'Data Analyst', values: ['MCQ + lab', '$200'] },
+        { label: 'Consultant', values: ['MCQ + lab', '$200'] },
+        { label: 'Architect (incl. server)', values: ['MCQ + lab', '$400'] }
+      ]
+    },
+    orgFaqs: [
+      { q: 'Are Tableau exams still delivered by Tableau directly?', a: 'No. Since July 2025 Tableau certifications are scheduled and delivered through the Salesforce Trailhead Academy portal, though the exams themselves still run on Pearson VUE.' },
+      { q: 'What happened to the Tableau Server Certified Associate?', a: 'The Server Certified Associate was retired and its server-administration scope was folded into the Tableau Certified Architect track. The page remains as a reference pointing to the Architect credential.' },
+      { q: 'Does the Desktop Specialist exam expire?', a: 'The entry-level Desktop Specialist (now branded Desktop Foundations) does not expire and includes a free retake, making it a low-risk first Tableau credential.' }
+    ],
+    sourceUrl: 'https://www.tableau.com/learn/certification',
+    confidence: 'high'
+  },
+  {
+    id: 'qlik',
+    body: 'Qlik',
+    bodyUrl: 'https://www.qlik.com/us/services/training/certification',
+    about: 'Qlik builds the Qlik Sense analytics and data-integration platform. Its role-based certification program validates business-analysis, data-architecture and system-administration skills on Qlik Sense. Each exam is a 50-question multiple-choice test delivered through Pearson VUE, costs $250, and is recommended to be renewed every two years.',
+    registrationSteps: [
+      { title: 'Create a Qlik account', description: 'Register on Qlik’s training portal and review the certification objectives.', duration: '5 minutes' },
+      { title: 'Schedule through Pearson VUE', description: 'Book a Qlik Sense exam at a test center or online-proctored; pay the $250 fee at scheduling.', duration: '10 minutes' },
+      { title: 'Prepare with free resources', description: 'Use Qlik’s free online training, the Qlik Community, and the exam prep guides.', duration: 'study phase' },
+      { title: 'Sit the exam', description: 'Answer 50 multiple-choice questions within roughly two hours.', duration: 'test day' },
+      { title: 'Maintain', description: 'Qlik recommends keeping certifications current; plan to renew every two years.', duration: 'per cycle' }
+    ],
+    proctoring: 'Delivered through Pearson VUE at test centers or via Pearson VUE online proctoring. A government-issued photo ID is required; exams are closed-book.',
+    retakePolicy: 'If you fail, you may retake after a waiting period and pay the full $250 fee on every attempt.',
+    recertification: 'Qlik recommends maintaining current certification; credentials are generally renewed every two years through the current exam.',
+    scoreReporting: 'Qlik uses scaled scoring. The Business Analyst (QSBA) exam is published with a 62% pass mark; other exams use scaled scoring with marks set per exam. Results are reported through Pearson VUE.',
+    refundPolicy: 'Exam fees are refundable only if cancelled/rescheduled at least 24–48 hours before the appointment; no-shows forfeit the fee.',
+    providersNote: 'Qlik provides free online training, the Qlik Community knowledge base, and official exam prep guides. Hands-on practice with Qlik Sense is the primary prep.',
+    comparison: {
+      title: 'Qlik Sense certification exams (2026)',
+      columns: ['Exam', 'Questions / time', 'Fee'],
+      rows: [
+        { label: 'Business Analyst (QSBA)', values: ['50 / 120 min', '$250'] },
+        { label: 'Data Architect', values: ['50 / 120 min', '$250'] },
+        { label: 'System Administrator', values: ['50 / 120 min', '$250'] }
+      ]
+    },
+    orgFaqs: [
+      { q: 'How much do Qlik exams cost?', a: 'Each Qlik Sense certification exam (Business Analyst, Data Architect, System Administrator) is priced at $250 USD and paid at Pearson VUE scheduling.' },
+      { q: 'How are Qlik exams delivered?', a: 'All Qlik Sense exams are 50-question multiple-choice tests delivered through Pearson VUE at test centers or online proctored.' },
+      { q: 'How long are Qlik certifications valid?', a: 'Qlik recommends keeping certifications current and renewing roughly every two years via the current exam.' }
+    ],
+    sourceUrl: 'https://www.qlik.com/us/services/training/certification',
+    confidence: 'high'
+  },
+  {
+    id: 'sas-institute',
+    body: 'SAS Institute',
+    bodyUrl: 'https://www.sas.com/en_us/certification.html',
+    about: 'SAS Institute is the maker of SAS, the long-established analytics, statistics and data-management software used heavily in healthcare, banking and government. Its certification program includes the Specialist: Base Programming (A00-231) and Professional: Advanced Programming (A00-232) exams, plus the composite SAS Certified Data Scientist credential earned by completing the Big Data and Advanced Analytics tracks. Exams cost $180 and are valid for three years.',
+    registrationSteps: [
+      { title: 'Create a SAS account', description: 'Register on the SAS certification site and choose your target credential and exam code.', duration: '5 minutes' },
+      { title: 'Schedule through Pearson VUE', description: 'Book a SAS exam at a test center or online-proctored; pay the $180 fee at scheduling.', duration: '10 minutes' },
+      { title: 'Prepare with training', description: 'Use SAS’ free and paid e-learning, the SAS Studio practice environment, and exam prep guides.', duration: 'study phase' },
+      { title: 'Sit the exam', description: 'Answer 60–65 multiple-choice and short-answer questions within 110 minutes.', duration: 'test day' },
+      { title: 'Maintain', description: 'SAS credentials are valid three years; recertify by passing the current exam or a higher-level one.', duration: 'per cycle' }
+    ],
+    proctoring: 'Delivered through Pearson VUE at test centers or via Pearson VUE online proctoring. A government-issued photo ID is required; exams are closed-book.',
+    retakePolicy: 'If you fail, you may retake after a waiting period and pay the full $180 fee on every attempt.',
+    recertification: 'SAS certifications are valid for three years. Recertify by passing the current version of the exam or advancing to a higher-level SAS credential.',
+    scoreReporting: 'SAS uses a scaled score with a published 70% pass mark for the programming exams. Results are reported through Pearson VUE and the SAS certification portal.',
+    refundPolicy: 'Exam fees are refundable only if cancelled/rescheduled at least 24–48 hours before the appointment; no-shows forfeit the fee.',
+    providersNote: 'SAS offers free and paid e-learning, a cloud-based SAS Studio practice environment, and official exam prep guides. Hands-on practice is strongly recommended.',
+    comparison: {
+      title: 'SAS programming certifications (2026)',
+      columns: ['Exam', 'Code', 'Fee'],
+      rows: [
+        { label: 'Specialist: Base Programming', values: ['A00-231', '$180'] },
+        { label: 'Professional: Advanced Programming', values: ['A00-232', '$180'] },
+        { label: 'Certified Data Scientist', values: ['Composite', 'Varies'] }
+      ]
+    },
+    orgFaqs: [
+      { q: 'How much do SAS exams cost?', a: 'The Base Programming (A00-231) and Advanced Programming (A00-232) exams are each $180 USD. The Certified Data Scientist is a composite credential made up of multiple required exams.' },
+      { q: 'How long are SAS certifications valid?', a: 'SAS credentials are valid for three years and are renewed by passing the current exam or a higher-level SAS certification.' },
+      { q: 'What is the SAS Certified Data Scientist?', a: 'It is a composite credential earned by completing SAS’ Big Data and Advanced Analytics certification tracks (a series of required exams) rather than a single test.' }
+    ],
+    sourceUrl: 'https://www.sas.com/en_us/certification.html',
+    confidence: 'high'
+  },
+  {
+    id: 'google',
+    body: 'Google',
+    bodyUrl: 'https://grow.google/certificates/data-analytics/',
+    about: 'Google’s Career Certificates are industry-recognized professional programs delivered on Coursera, designed to take beginners to job-ready in about six months of part-time study. The Data Analytics and Advanced Data Analytics certificates teach spreadsheets, SQL, R/Python, statistics, visualization and portfolio-based case studies. They are subscription-based (a monthly Coursera fee) rather than single proctored exams, and the certificates do not expire.',
+    registrationSteps: [
+      { title: 'Enroll on Coursera', description: 'Sign up for the Google Career Certificate on Coursera and start the self-paced modules.', duration: '5 minutes' },
+      { title: 'Complete the coursework', description: 'Work through video lessons, graded quizzes and hands-on labs at your own pace.', duration: 'study phase' },
+      { title: 'Build the portfolio', description: 'Complete the capstone case study (Data Analytics) or the regression/ML projects (Advanced).', duration: 'capstone' },
+      { title: 'Earn the certificate', description: 'Finish all modules to receive the shareable Google Career Certificate.', duration: 'completion' }
+    ],
+    proctoring: 'There is no centralized proctored exam. Courses are graded through Coursera quizzes, peer-reviewed assignments and portfolio projects completed in your own environment.',
+    retakePolicy: 'Coursera lets you re-attempt graded items and revisit modules at no extra cost beyond the subscription while enrolled.',
+    recertification: 'Google Career Certificates do not expire and do not require recertification; learners simply keep access to the credential on their profile.',
+    scoreReporting: 'Progress is tracked through Coursera’s course-completion model rather than a single numeric exam score; a certificate is awarded on finishing all required modules.',
+    refundPolicy: 'Coursera offers a 7-day free trial; after that you pay a monthly subscription (around $39–49 USD) until you finish. Financial aid is available for eligible learners.',
+    providersNote: 'Delivered exclusively through Coursera, with free financial aid, downloadable materials, and a shareable certificate linked to LinkedIn.',
+    comparison: {
+      title: 'Google data-analytics certificates (2026)',
+      columns: ['Certificate', 'Focus', 'Delivery'],
+      rows: [
+        { label: 'Data Analytics', values: ['Sheets, SQL, R, Tableau', 'Coursera subscription'] },
+        { label: 'Advanced Data Analytics', values: ['Python, stats, ML', 'Coursera subscription'] }
+      ]
+    },
+    orgFaqs: [
+      { q: 'Do Google Career Certificates require a proctored exam?', a: 'No. They are completed on Coursera through graded quizzes, labs and a portfolio case study rather than a single proctored test. You pay a monthly subscription until you finish.' },
+      { q: 'How long do they take?', a: 'Google estimates about six months of part-time study (~10 hours/week) for the Data Analytics certificate; the Advanced certificate builds on it.' },
+      { q: 'Do they expire?', a: 'Google Career Certificates do not expire and require no recertification.' }
+    ],
+    sourceUrl: 'https://grow.google/certificates/data-analytics/',
+    confidence: 'high'
+  }
+];
+
+// ─────────────────────────────────────────────────────────────────────
+//  EXAM RECORDS (27)
+// ─────────────────────────────────────────────────────────────────────
+
+export const kbExams = [
+  // ── Databricks ──────────────────────────────────────────────────
+  {
+    slug: 'databricks-certified-data-engineer-associate',
+    body: 'Databricks',
+    tagline: 'Build and productionize data pipelines on the Lakehouse',
+    description: 'The Databricks Certified Data Engineer Associate validates that you can build reliable data pipelines on the Databricks Lakehouse Platform using Delta Lake, Spark SQL, workflows and Unity Catalog governance. It covers ingesting, transforming and orchestrating data, plus basic lakehouse architecture and security. There are no prerequisites, and the credential is valid for two years.',
+    quickAnswer: { summary: 'Databricks Data Engineer Associate is a 45-question multiple-choice exam in 90 minutes, $200, scaled pass (around 70%), delivered via Pearson VUE, valid 2 years, no prerequisites.', advantages: ['No prerequisites — open to data newcomers', 'Validates in-demand lakehouse skills', 'Valid 2 years', 'Flat $200 fee'] },
+    prerequisites: 'None — open to anyone with basic SQL and data interest.',
+    eligibility: 'Ideal for data engineers, analysts and platform users starting on Databricks.',
+    examMeta: { questions: '45', time: '90 minutes', pass: 'Scaled (around 70%)', fee: '$200 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'Lakehouse architecture', weight: '', note: 'Delta Lake, medallion layers, Unity Catalog' },
+      { name: 'Data ingestion', weight: '', note: 'Auto Loader, bulk load, external sources' },
+      { name: 'Transformations', weight: '', note: 'Spark SQL, PySpark, Delta operations' },
+      { name: 'Orchestration', weight: '', note: 'Jobs, workflows, task dependencies' },
+      { name: 'Governance & security', weight: '', note: 'Unity Catalog, permissions, masking' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '45'],
+      ['Fee', '$200'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Study with free courses + community edition', duration: '4–8 weeks' }, { stage: 'Pass the associate exam', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$200' }], total: '$200', footnote: 'Free instructor-led courses and community edition cover most objectives.' },
+    difficulty: 'Moderate',
+    audience: 'Aspiring data engineers on Databricks',
+    time: '4–8 weeks',
+    cost: '$200',
+    salaryRange: '$95,000–$135,000',
+    faqs: [
+      { q: 'Do I need prior Databricks experience?', a: 'No. The associate is designed for those newer to the platform, though basic SQL and data concepts help.' },
+      { q: 'How much does it cost?', a: 'The list fee is $200 per attempt, paid at Pearson VUE scheduling.' },
+      { q: 'What is the pass mark?', a: 'Databricks uses scaled scoring; the Data Engineer Associate is published at a 70% pass mark.' },
+      { q: 'How long is it valid?', a: 'Two years. Recertify by passing the current exam before it expires.' }
+    ],
+    summaryPoints: ['Databricks entry data-engineering certification.', '45 questions, 90 minutes, $200, ~70% pass.', 'Covers Delta Lake, Spark SQL, workflows, Unity Catalog.', 'Valid 2 years; no prerequisites.'],
+    relatedSlugs: ['databricks-certified-data-engineer-professional', 'databricks-certified-data-analyst-associate', 'databricks-certified-machine-learning-associate'],
+    sourceUrl: 'https://www.databricks.com/learn/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'databricks-certified-data-engineer-professional',
+    body: 'Databricks',
+    tagline: 'Production-grade data engineering at scale',
+    description: 'The Databricks Certified Data Engineer Professional validates advanced skills in designing, building and deploying production data pipelines on Databricks. It goes well beyond the associate level into performance tuning, complex Delta Lake patterns, testing, CI/CD and production monitoring. It is intended for engineers who already run real pipelines and is valid for two years.',
+    quickAnswer: { summary: 'Databricks Data Engineer Professional is a 59-question multiple-choice exam in 120 minutes, $200, scaled pass, delivered via Pearson VUE, valid 2 years.', advantages: ['Advanced, production-focused', 'Builds on the associate', 'Valid 2 years', 'Same $200 fee as associate'] },
+    prerequisites: 'Strong associate-level Databricks knowledge; no hard exam prerequisite but depth assumes production experience.',
+    eligibility: 'For data engineers operating real Databricks pipelines in production.',
+    examMeta: { questions: '59', time: '120 minutes', pass: 'Scaled', fee: '$200 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'Data modeling', weight: '', note: 'Star/snowflake schemas, slowly changing dimensions' },
+      { name: 'Advanced Delta Lake', weight: '', note: 'Lakehouse Federation, cloning, constraints' },
+      { name: 'Performance & tuning', weight: '', note: 'Caching, Z-order, partitioning, Photon' },
+      { name: 'Testing & CI/CD', weight: '', note: 'Unit tests, deployment automation' },
+      { name: 'Production monitoring', weight: '', note: 'Logging, metrics, error handling' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '59'],
+      ['Time', '120 minutes'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Deep hands-on pipeline work', duration: '8–14 weeks' }, { stage: 'Pass the professional exam', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$200' }], total: '$200', footnote: 'Production experience is the best prep; courses are optional.' },
+    difficulty: 'Hard',
+    audience: 'Senior data engineers',
+    time: '8–14 weeks',
+    cost: '$200',
+    salaryRange: '$120,000–$165,000',
+    faqs: [
+      { q: 'Should I take the associate first?', a: 'There is no hard prerequisite, but the professional assumes the depth covered at associate level, so most candidates progress in order.' },
+      { q: 'How long is the exam?', a: 'The professional exam is 120 minutes with 59 multiple-choice questions, versus 90 minutes for the associate.' },
+      { q: 'What is the fee?', a: 'The list fee is $200 per attempt — the same as the associate.' },
+      { q: 'What topics are emphasized?', a: 'Production data modeling, advanced Delta Lake, performance tuning, testing/CI-CD and monitoring.' }
+    ],
+    summaryPoints: ['Databricks advanced data-engineering certification.', '59 questions, 120 minutes, $200, scaled pass.', 'Covers modeling, tuning, CI/CD, monitoring.', 'Valid 2 years; for production engineers.'],
+    relatedSlugs: ['databricks-certified-data-engineer-associate', 'databricks-certified-machine-learning-professional'],
+    sourceUrl: 'https://www.databricks.com/learn/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'databricks-certified-machine-learning-associate',
+    body: 'Databricks',
+    tagline: 'Operationalize ML on the Lakehouse',
+    description: 'The Databricks Certified Machine Learning Associate validates that you can build and deploy machine-learning workflows on Databricks using AutoML, MLflow tracking, feature engineering and model deployment basics. It is aimed at data scientists and ML engineers who use the platform’s managed ML tooling. The credential is valid for two years.',
+    quickAnswer: { summary: 'Databricks ML Associate is a 48-question multiple-choice exam in 90 minutes, $200, scaled pass, delivered via Pearson VUE, valid 2 years.', advantages: ['Focuses on MLflow & AutoML', 'Valid 2 years', 'Flat $200 fee', 'Bridges data and ML roles'] },
+    prerequisites: 'Familiarity with Python and basic ML concepts; no formal prerequisite.',
+    eligibility: 'For data scientists and ML engineers working on Databricks.',
+    examMeta: { questions: '48', time: '90 minutes', pass: 'Scaled', fee: '$200 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'ML workflows', weight: '', note: 'Experiment design, train/validate/test' },
+      { name: 'AutoML', weight: '', note: 'Automated model selection and tuning' },
+      { name: 'MLflow tracking', weight: '', note: 'Experiments, runs, model registry' },
+      { name: 'Feature engineering', weight: '', note: 'Feature tables, serving' },
+      { name: 'Model deployment', weight: '', note: 'Batch & real-time serving basics' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '48'],
+      ['Fee', '$200'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Hands-on MLflow & AutoML labs', duration: '4–8 weeks' }, { stage: 'Pass the ML associate exam', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$200' }], total: '$200', footnote: 'Free courses and community edition cover most objectives.' },
+    difficulty: 'Moderate',
+    audience: 'Data scientists and ML engineers',
+    time: '4–8 weeks',
+    cost: '$200',
+    salaryRange: '$110,000–$155,000',
+    faqs: [
+      { q: 'Is this exam coding-heavy?', a: 'It is multiple-choice and conceptual; you are tested on MLflow, AutoML and deployment patterns rather than writing code live.' },
+      { q: 'How much does it cost?', a: 'The list fee is $200 per attempt.' },
+      { q: 'What is the pass mark?', a: 'Databricks uses scaled scoring for the ML associate; a strong grasp of MLflow and AutoML is key.' },
+      { q: 'How long is it valid?', a: 'Two years.' }
+    ],
+    summaryPoints: ['Databricks ML associate certification.', '48 questions, 90 minutes, $200, scaled pass.', 'Covers AutoML, MLflow, feature engineering, deployment.', 'Valid 2 years.'],
+    relatedSlugs: ['databricks-certified-machine-learning-professional', 'databricks-certified-data-engineer-associate'],
+    sourceUrl: 'https://www.databricks.com/learn/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'databricks-certified-machine-learning-professional',
+    body: 'Databricks',
+    tagline: 'Production machine learning engineering',
+    description: 'The Databricks Certified Machine Learning Professional validates advanced production-ML skills: experiment tracking at scale, the model registry, monitoring, drift detection and robust deployment patterns on Databricks. It is intended for ML engineers who own models in production and is valid for two years.',
+    quickAnswer: { summary: 'Databricks ML Professional is a 59-question multiple-choice exam in 120 minutes, $200, scaled pass, delivered via Pearson VUE, valid 2 years.', advantages: ['Advanced MLOps focus', 'Builds on the associate', 'Valid 2 years', 'Flat $200 fee'] },
+    prerequisites: 'Strong ML associate knowledge; depth assumes production ML experience.',
+    eligibility: 'For ML engineers operating models in production.',
+    examMeta: { questions: '59', time: '120 minutes', pass: 'Scaled', fee: '$200 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'Experiment tracking', weight: '', note: 'MLflow at scale, comparison' },
+      { name: 'Model registry', weight: '', note: 'Versioning, staging, approvals' },
+      { name: 'Monitoring & drift', weight: '', note: 'Data/Concept drift, alerting' },
+      { name: 'Deployment patterns', weight: '', note: 'Batch, streaming, real-time serving' },
+      { name: 'Governance', weight: '', note: 'Lineage, reproducibility, audit' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '59'],
+      ['Time', '120 minutes'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Production MLOps practice', duration: '8–14 weeks' }, { stage: 'Pass the ML professional exam', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$200' }], total: '$200', footnote: 'Hands-on production experience is the best preparation.' },
+    difficulty: 'Hard',
+    audience: 'Senior ML engineers',
+    time: '8–14 weeks',
+    cost: '$200',
+    salaryRange: '$135,000–$180,000',
+    faqs: [
+      { q: 'How does it differ from the associate?', a: 'The professional adds production MLOps depth: model registry, drift monitoring, deployment patterns and governance.' },
+      { q: 'How long is the exam?', a: '120 minutes with 59 multiple-choice questions.' },
+      { q: 'What is the fee?', a: 'The list fee is $200 per attempt.' },
+      { q: 'What topics are emphasized?', a: 'MLflow at scale, model registry, monitoring/drift, and deployment patterns.' }
+    ],
+    summaryPoints: ['Databricks advanced ML certification.', '59 questions, 120 minutes, $200, scaled pass.', 'Covers MLOps, model registry, drift, deployment.', 'Valid 2 years; for production ML engineers.'],
+    relatedSlugs: ['databricks-certified-machine-learning-associate', 'databricks-certified-data-engineer-professional'],
+    sourceUrl: 'https://www.databricks.com/learn/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'databricks-certified-data-analyst-associate',
+    body: 'Databricks',
+    tagline: 'Query, visualize and analyze on the lakehouse',
+    description: 'The Databricks Certified Data Analyst Associate validates that you can use Databricks SQL to query data, build dashboards and visualizations, manage data objects and perform analytics workflows on the lakehouse. It is aimed at business and data analysts who work directly with Databricks SQL. The credential is valid for two years.',
+    quickAnswer: { summary: 'Databricks Data Analyst Associate is a 45-question multiple-choice exam in 90 minutes, $200, scaled pass, delivered via Pearson VUE, valid 2 years.', advantages: ['SQL-focused', 'No coding prerequisite', 'Valid 2 years', 'Flat $200 fee'] },
+    prerequisites: 'Comfort with SQL and basic analytics; no formal prerequisite.',
+    eligibility: 'For data and business analysts using Databricks SQL.',
+    examMeta: { questions: '45', time: '90 minutes', pass: 'Scaled', fee: '$200 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'SQL querying', weight: '', note: 'Joins, aggregations, window functions' },
+      { name: 'Data management', weight: '', note: 'Views, tables, Unity Catalog objects' },
+      { name: 'Visualization', weight: '', note: 'Dashboards, charts, Lakeview' },
+      { name: 'Analytics workflows', weight: '', note: 'Notebooks, alerts, scheduling' },
+      { name: 'Governance', weight: '', note: 'Permissions, data access' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '45'],
+      ['Fee', '$200'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Practice Databricks SQL & dashboards', duration: '3–6 weeks' }, { stage: 'Pass the data analyst exam', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$200' }], total: '$200', footnote: 'Free SQL courses and community edition cover most objectives.' },
+    difficulty: 'Easy',
+    audience: 'Data and business analysts',
+    time: '3–6 weeks',
+    cost: '$200',
+    salaryRange: '$80,000–$115,000',
+    faqs: [
+      { q: 'Is this exam Python-heavy?', a: 'No. It centers on Databricks SQL, dashboards and analytics workflows rather than programming.' },
+      { q: 'How much does it cost?', a: 'The list fee is $200 per attempt.' },
+      { q: 'What is the pass mark?', a: 'Databricks uses scaled scoring for the data analyst associate.' },
+      { q: 'How long is it valid?', a: 'Two years.' }
+    ],
+    summaryPoints: ['Databricks data-analyst associate certification.', '45 questions, 90 minutes, $200, scaled pass.', 'Covers Databricks SQL, dashboards, analytics.', 'Valid 2 years; SQL-focused.'],
+    relatedSlugs: ['databricks-certified-data-engineer-associate', 'databricks-certified-machine-learning-associate'],
+    sourceUrl: 'https://www.databricks.com/learn/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'databricks-certified-generative-ai-engineer-associate',
+    body: 'Databricks',
+    tagline: 'Build RAG and GenAI apps on Databricks',
+    description: 'The Databricks Certified Generative AI Engineer Associate validates practical skill in building generative-AI applications on Databricks: retrieval augmented generation (RAG), vector search, prompt design, model serving and AI governance. It is aimed at engineers putting LLM-powered features into production and is valid for two years.',
+    quickAnswer: { summary: 'Databricks GenAI Engineer Associate is a 45-question multiple-choice exam in 90 minutes, $200, scaled pass, delivered via Pearson VUE, valid 2 years.', advantages: ['Cutting-edge GenAI skills', 'Covers RAG & vector search', 'Valid 2 years', 'Flat $200 fee'] },
+    prerequisites: 'Familiarity with LLMs and basic Python; no formal prerequisite.',
+    eligibility: 'For engineers building production GenAI/LLM applications.',
+    examMeta: { questions: '45', time: '90 minutes', pass: 'Scaled', fee: '$200 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'Retrieval augmented generation', weight: '', note: 'Chunking, embedding, RAG patterns' },
+      { name: 'Vector search', weight: '', note: 'Indexing, similarity search' },
+      { name: 'Prompt design', weight: '', note: 'Prompt engineering, guardrails' },
+      { name: 'Model serving', weight: '', note: 'Endpoints, batch inference' },
+      { name: 'AI governance', weight: '', note: 'Unity Catalog for AI, evaluation' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '45'],
+      ['Fee', '$200'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Build sample RAG apps', duration: '4–8 weeks' }, { stage: 'Pass the GenAI associate exam', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$200' }], total: '$200', footnote: 'Free GenAI courses and community edition cover most objectives.' },
+    difficulty: 'Moderate',
+    audience: 'GenAI / LLM application engineers',
+    time: '4–8 weeks',
+    cost: '$200',
+    salaryRange: '$130,000–$180,000',
+    faqs: [
+      { q: 'What does this exam cover?', a: 'It focuses on building GenAI applications: RAG, vector search, prompt design, model serving and AI governance on Databricks.' },
+      { q: 'How much does it cost?', a: 'The list fee is $200 per attempt.' },
+      { q: 'Is coding required in the exam?', a: 'It is multiple-choice and conceptual; you are tested on patterns and architecture rather than live coding.' },
+      { q: 'How long is it valid?', a: 'Two years.' }
+    ],
+    summaryPoints: ['Databricks GenAI engineer associate certification.', '45 questions, 90 minutes, $200, scaled pass.', 'Covers RAG, vector search, prompt design, serving.', 'Valid 2 years; GenAI-focused.'],
+    relatedSlugs: ['databricks-certified-machine-learning-associate', 'databricks-certified-machine-learning-professional'],
+    sourceUrl: 'https://www.databricks.com/learn/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'databricks-certified-associate-developer-for-apache-spark',
+    body: 'Databricks',
+    tagline: 'Prove your Apache Spark DataFrame API skills',
+    description: 'The Databricks Certified Associate Developer for Apache Spark validates hands-on skill with the Spark DataFrame API: transformations, actions, joins, aggregations, and an understanding of Spark architecture and execution behavior. It is vendor-neutral in spirit (it tests core Spark, not Databricks-only features) and is valid for two years.',
+    quickAnswer: { summary: 'Spark Developer Associate is a 45-question multiple-choice exam in 90 minutes, $200, scaled pass, delivered via Pearson VUE, valid 2 years.', advantages: ['Vendor-neutral Spark skill', 'Strong for data engineers', 'Valid 2 years', 'Flat $200 fee'] },
+    prerequisites: 'Basic Python or Scala and data familiarity; no formal prerequisite.',
+    eligibility: 'For developers and engineers working with Apache Spark.',
+    examMeta: { questions: '45', time: '90 minutes', pass: 'Scaled', fee: '$200 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'DataFrame API', weight: '', note: 'Read, write, schema inference' },
+      { name: 'Transformations', weight: '', note: 'map, filter, select, withColumn' },
+      { name: 'Actions', weight: '', note: 'collect, count, write, cache' },
+      { name: 'Joins & aggregations', weight: '', note: 'Join types, groupBy, window' },
+      { name: 'Architecture', weight: '', note: 'Jobs, stages, tasks, lazy evaluation' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '45'],
+      ['Fee', '$200'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Practice Spark DataFrame API', duration: '4–8 weeks' }, { stage: 'Pass the Spark developer exam', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$200' }], total: '$200', footnote: 'Free Spark courses and community edition cover most objectives.' },
+    difficulty: 'Moderate',
+    audience: 'Spark developers and data engineers',
+    time: '4–8 weeks',
+    cost: '$200',
+    salaryRange: '$100,000–$145,000',
+    faqs: [
+      { q: 'Does this test Databricks-specific features?', a: 'No. It tests core Apache Spark DataFrame API and architecture, which is broadly applicable beyond Databricks.' },
+      { q: 'How much does it cost?', a: 'The list fee is $200 per attempt.' },
+      { q: 'What language is it in?', a: 'Questions are conceptual and apply to Spark regardless of Python or Scala; the exam is multiple-choice.' },
+      { q: 'How long is it valid?', a: 'Two years.' }
+    ],
+    summaryPoints: ['Databricks Apache Spark developer associate.', '45 questions, 90 minutes, $200, scaled pass.', 'Covers DataFrame API, joins, Spark architecture.', 'Valid 2 years; vendor-neutral Spark.'],
+    relatedSlugs: ['databricks-certified-data-engineer-associate', 'databricks-certified-data-engineer-professional'],
+    sourceUrl: 'https://www.databricks.com/learn/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  // ── Snowflake ──────────────────────────────────────────────────
+  {
+    slug: 'snowpro-core-certification',
+    body: 'Snowflake',
+    tagline: 'The foundational Snowflake Data Cloud exam',
+    description: 'The SnowPro Core Certification (COF-C02) is Snowflake’s foundational exam covering platform architecture, virtual warehouses, data loading, performance concepts, security and account management. It is the prerequisite for every SnowPro Advanced credential. Note: the COF-C02 is being retired and replaced by COF-C03, so confirm the current code before booking. The credential is valid for two years.',
+    quickAnswer: { summary: 'SnowPro Core (COF-C02) is a 100-question multiple-choice exam in 115 minutes, $175, scaled pass (750–1,000), delivered via Pearson VUE, valid 2 years; prerequisite for all Advanced exams.', advantages: ['Gateway to all Advanced SnowPro', 'Valid 2 years', '$175 fee', 'Broad platform foundation'] },
+    prerequisites: 'None, but a working understanding of cloud data concepts is expected.',
+    eligibility: 'For data professionals starting the Snowflake certification path.',
+    examMeta: { questions: '100', time: '115 minutes', pass: 'Scaled (750–1,000)', fee: '$175 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'Architecture', weight: '', note: 'Storage, compute, cloud providers' },
+      { name: 'Virtual warehouses', weight: '', note: 'Sizing, multi-cluster, credits' },
+      { name: 'Data loading', weight: '', note: 'COPY, Snowpipe, stages' },
+      { name: 'Performance', weight: '', note: 'Caching, clustering, pruning' },
+      { name: 'Security & accounts', weight: '', note: 'Roles, network policies, replication' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '100'],
+      ['Fee', '$175'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Complete Snowflake fundamentals training', duration: '4–8 weeks' }, { stage: 'Pass COF-C02 (or COF-C03)', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$175' }], total: '$175', footnote: 'Free on-demand training and labs cover most objectives.' },
+    difficulty: 'Moderate',
+    audience: 'Data professionals new to Snowflake',
+    time: '4–8 weeks',
+    cost: '$175',
+    salaryRange: '$100,000–$140,000',
+    faqs: [
+      { q: 'Is the Core required for Advanced exams?', a: 'Yes. A current SnowPro Core certification is the prerequisite for every SnowPro Advanced credential.' },
+      { q: 'Is COF-C02 being retired?', a: 'The COF-C02 is being retired and replaced by COF-C03. Check the current code on Snowflake’s certification page before booking.' },
+      { q: 'How much does it cost?', a: 'The list fee is $175 per attempt.' },
+      { q: 'What is the pass score?', a: 'The Core uses a scaled score of 750–1,000 to pass.' }
+    ],
+    summaryPoints: ['Snowflake foundational Core exam (COF-C02).', '100 questions, 115 minutes, $175, 750–1,000 scaled.', 'Prerequisite for all Advanced SnowPro exams.', 'Valid 2 years; being replaced by COF-C03.'],
+    relatedSlugs: ['snowpro-advanced-architect', 'snowpro-advanced-data-engineer', 'snowpro-advanced-administrator'],
+    sourceUrl: 'https://www.snowflake.com/en/learn/training/',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'snowpro-associate-platform-certification',
+    body: 'Snowflake',
+    tagline: 'Entry-level, unproctored Snowflake platform exam',
+    description: 'The SnowPro Associate: Platform Certification (SOL-C01) is Snowflake’s entry-level credential covering platform concepts, Data Cloud fundamentals, basic querying and the Snowflake pricing and access model. It is taken unproctored online in your own environment, making it a low-friction starting point. The credential is valid for two years.',
+    quickAnswer: { summary: 'SnowPro Associate Platform (SOL-C01) is a 65-question multiple-choice exam in 85 minutes, $100, scaled pass, taken unproctored online, valid 2 years.', advantages: ['Low-cost entry at $100', 'Unproctored, flexible', 'Valid 2 years', 'Good first Snowflake step'] },
+    prerequisites: 'Basic SQL and cloud familiarity; no formal prerequisite.',
+    eligibility: 'For newcomers to the Snowflake platform.',
+    examMeta: { questions: '65', time: '85 minutes', pass: 'Scaled', fee: '$100 USD', format: 'Multiple choice (unproctored online)', admin: 'Online unproctored (Snowflake)' },
+    topics: [
+      { name: 'Platform concepts', weight: '', note: 'Editions, regions, Data Cloud' },
+      { name: 'Data cloud fundamentals', weight: '', note: 'Sharing, marketplace basics' },
+      { name: 'Basic querying', weight: '', note: 'SQL, views, result caching' },
+      { name: 'Pricing & access', weight: '', note: 'Credits, storage, roles' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Online unproctored'],
+      ['Questions', '65'],
+      ['Fee', '$100'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Study platform fundamentals', duration: '2–5 weeks' }, { stage: 'Take SOL-C01 online', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$100' }], total: '$100', footnote: 'Free on-demand courses cover most objectives.' },
+    difficulty: 'Easy',
+    audience: 'Snowflake newcomers',
+    time: '2–5 weeks',
+    cost: '$100',
+    salaryRange: '',
+    faqs: [
+      { q: 'Is the Associate Platform proctored?', a: 'No. The SOL-C01 is taken unproctored, online in your own environment, which makes scheduling flexible.' },
+      { q: 'How much does it cost?', a: 'The list fee is $100 per attempt — the lowest-cost Snowflake exam.' },
+      { q: 'Does it count toward Advanced prerequisites?', a: 'The Core (COF-C02/C03) is the prerequisite for Advanced exams; the Associate Platform is a separate entry-level credential.' },
+      { q: 'How long is it valid?', a: 'Two years.' }
+    ],
+    summaryPoints: ['Snowflake entry-level platform exam (SOL-C01).', '65 questions, 85 minutes, $100, scaled pass.', 'Unproctored online; platform fundamentals.', 'Valid 2 years; low-cost entry.'],
+    relatedSlugs: ['snowpro-core-certification', 'snowpro-advanced-data-analyst'],
+    sourceUrl: 'https://www.snowflake.com/en/learn/training/',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'snowpro-advanced-architect',
+    body: 'Snowflake',
+    tagline: 'Design enterprise Snowflake architectures',
+    description: 'The SnowPro Advanced: Architect Certification (ARA-C01) validates expert skill in designing Snowflake account and data architectures: data sharing, replication, performance design and security architecture at enterprise scale. It requires a current Core certification and is valid for two years.',
+    quickAnswer: { summary: 'SnowPro Advanced Architect (ARA-C01) is a 65-question multiple-choice exam in 115 minutes, $375, scaled pass, delivered via Pearson VUE, valid 2 years; requires current Core.', advantages: ['Expert architecture credential', 'Valid 2 years', 'Requires Core first', 'High-value skill'] },
+    prerequisites: 'A currently valid SnowPro Core certification.',
+    eligibility: 'For solution architects and senior data engineers.',
+    examMeta: { questions: '65', time: '115 minutes', pass: 'Scaled', fee: '$375 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'Account architecture', weight: '', note: 'Orgs, accounts, governance' },
+      { name: 'Data sharing', weight: '', note: 'Secure shares, listings, replication' },
+      { name: 'Performance design', weight: '', note: 'Warehouse strategy, clustering' },
+      { name: 'Security architecture', weight: '', note: 'RBAC, masking, network rules' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '65'],
+      ['Fee', '$375'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Master Core + design patterns', duration: '8–14 weeks' }, { stage: 'Pass ARA-C01', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$375' }], total: '$375', footnote: 'Requires a current Core certification to sit.' },
+    difficulty: 'Hard',
+    audience: 'Snowflake solution architects',
+    time: '8–14 weeks',
+    cost: '$375',
+    salaryRange: '$140,000–$185,000',
+    faqs: [
+      { q: 'Do I need Core first?', a: 'Yes. A currently valid SnowPro Core certification is required before attempting any Advanced exam, including the Architect.' },
+      { q: 'How much does it cost?', a: 'The list fee is $375 per attempt.' },
+      { q: 'What topics are emphasized?', a: 'Account/data architecture, secure data sharing and replication, performance design, and security architecture.' },
+      { q: 'How long is it valid?', a: 'Two years, like all SnowPro credentials.' }
+    ],
+    summaryPoints: ['Snowflake advanced architect exam (ARA-C01).', '65 questions, 115 minutes, $375, scaled pass.', 'Covers architecture, sharing, security design.', 'Valid 2 years; requires Core.'],
+    relatedSlugs: ['snowpro-core-certification', 'snowpro-advanced-administrator'],
+    sourceUrl: 'https://www.snowflake.com/en/learn/training/',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'snowpro-advanced-data-engineer',
+    body: 'Snowflake',
+    tagline: 'Build advanced Snowflake data pipelines',
+    description: 'The SnowPro Advanced: Data Engineer Certification (DEA-C02) validates expert skill in building Snowflake data pipelines: Snowpark, streams and tasks, continuous loading, transformation and pipeline performance tuning. It requires a current Core certification and is valid for two years.',
+    quickAnswer: { summary: 'SnowPro Advanced Data Engineer (DEA-C02) is a 65-question multiple-choice exam in 115 minutes, $375, scaled pass, delivered via Pearson VUE, valid 2 years; requires current Core.', advantages: ['Advanced pipeline skills', 'Valid 2 years', 'Requires Core first', 'High-demand role'] },
+    prerequisites: 'A currently valid SnowPro Core certification.',
+    eligibility: 'For data engineers specializing in Snowflake.',
+    examMeta: { questions: '65', time: '115 minutes', pass: 'Scaled', fee: '$375 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'Snowpark', weight: '', note: 'DataFrames, stored procedures, UDFs' },
+      { name: 'Streams & tasks', weight: '', note: 'CDC, orchestration' },
+      { name: 'Continuous loading', weight: '', note: 'Snowpipe, Snowpipe Streaming' },
+      { name: 'Transformation', weight: '', note: 'ELT patterns, performance' },
+      { name: 'Pipeline tuning', weight: '', note: 'Warehouse, clustering, cost' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '65'],
+      ['Fee', '$375'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Build real Snowflake pipelines', duration: '8–14 weeks' }, { stage: 'Pass DEA-C02', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$375' }], total: '$375', footnote: 'Requires a current Core certification to sit.' },
+    difficulty: 'Hard',
+    audience: 'Snowflake data engineers',
+    time: '8–14 weeks',
+    cost: '$375',
+    salaryRange: '$130,000–$175,000',
+    faqs: [
+      { q: 'Do I need Core first?', a: 'Yes. A current SnowPro Core certification is the prerequisite for the Advanced Data Engineer exam.' },
+      { q: 'How much does it cost?', a: 'The list fee is $375 per attempt.' },
+      { q: 'What is emphasized?', a: 'Snowpark, streams and tasks, continuous loading, transformation and pipeline performance tuning.' },
+      { q: 'How long is it valid?', a: 'Two years.' }
+    ],
+    summaryPoints: ['Snowflake advanced data engineer exam (DEA-C02).', '65 questions, 115 minutes, $375, scaled pass.', 'Covers Snowpark, streams/tasks, pipelines.', 'Valid 2 years; requires Core.'],
+    relatedSlugs: ['snowpro-core-certification', 'snowpro-advanced-architect'],
+    sourceUrl: 'https://www.snowflake.com/en/learn/training/',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'snowpro-advanced-data-analyst',
+    body: 'Snowflake',
+    tagline: 'Advanced analytics and SQL on Snowflake',
+    description: 'The SnowPro Advanced: Data Analyst Certification (DAA-C01) validates expert analytic SQL, data preparation, visualization integration and the ability to interpret results for business stakeholders on Snowflake. It requires a current Core certification and is valid for two years.',
+    quickAnswer: { summary: 'SnowPro Advanced Data Analyst (DAA-C01) is a 65-question multiple-choice exam in 115 minutes, $375, scaled pass, delivered via Pearson VUE, valid 2 years; requires current Core.', advantages: ['Advanced analytics credential', 'Valid 2 years', 'Requires Core first', 'Business-focused'] },
+    prerequisites: 'A currently valid SnowPro Core certification.',
+    eligibility: 'For data analysts working deeply in Snowflake.',
+    examMeta: { questions: '65', time: '115 minutes', pass: 'Scaled', fee: '$375 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'Analytic SQL', weight: '', note: 'Window functions, CTEs, pivoting' },
+      { name: 'Data preparation', weight: '', note: 'Cleaning, modeling for analysis' },
+      { name: 'Visualization', weight: '', note: 'Integration with BI tools' },
+      { name: 'Stakeholder interpretation', weight: '', note: 'Communicating results' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '65'],
+      ['Fee', '$375'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Deepen analytic SQL practice', duration: '6–12 weeks' }, { stage: 'Pass DAA-C01', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$375' }], total: '$375', footnote: 'Requires a current Core certification to sit.' },
+    difficulty: 'Hard',
+    audience: 'Senior Snowflake data analysts',
+    time: '6–12 weeks',
+    cost: '$375',
+    salaryRange: '$105,000–$150,000',
+    faqs: [
+      { q: 'Do I need Core first?', a: 'Yes. A current SnowPro Core certification is required before the Advanced Data Analyst exam.' },
+      { q: 'How much does it cost?', a: 'The list fee is $375 per attempt.' },
+      { q: 'What is emphasized?', a: 'Advanced analytic SQL, data preparation, BI-tool integration and interpreting results for stakeholders.' },
+      { q: 'How long is it valid?', a: 'Two years.' }
+    ],
+    summaryPoints: ['Snowflake advanced data analyst exam (DAA-C01).', '65 questions, 115 minutes, $375, scaled pass.', 'Covers analytic SQL, viz, interpretation.', 'Valid 2 years; requires Core.'],
+    relatedSlugs: ['snowpro-core-certification', 'snowpro-associate-platform-certification'],
+    sourceUrl: 'https://www.snowflake.com/en/learn/training/',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'snowpro-advanced-data-scientist',
+    body: 'Snowflake',
+    tagline: 'Data science workflows in Snowflake',
+    description: 'The SnowPro Advanced: Data Scientist Certification (DSA-C03) validates expert data-science workflows on Snowflake: feature engineering, model development with Snowpark ML and deploying models inside Snowflake. It requires a current Core certification and is valid for two years.',
+    quickAnswer: { summary: 'SnowPro Advanced Data Scientist (DSA-C03) is a 65-question multiple-choice exam in 115 minutes, $375, scaled pass, delivered via Pearson VUE, valid 2 years; requires current Core.', advantages: ['In-platform ML skill', 'Valid 2 years', 'Requires Core first', 'Cutting-edge'] },
+    prerequisites: 'A currently valid SnowPro Core certification.',
+    eligibility: 'For data scientists using Snowflake for ML.',
+    examMeta: { questions: '65', time: '115 minutes', pass: 'Scaled', fee: '$375 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'Feature engineering', weight: '', note: 'Feature stores, prep' },
+      { name: 'Snowpark ML', weight: '', note: 'Model development, training' },
+      { name: 'Model deployment', weight: '', note: 'UDFs, stored procedures' },
+      { name: 'Evaluation', weight: '', note: 'Metrics, governance' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '65'],
+      ['Fee', '$375'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Practice Snowpark ML', duration: '8–14 weeks' }, { stage: 'Pass DSA-C03', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$375' }], total: '$375', footnote: 'Requires a current Core certification to sit.' },
+    difficulty: 'Hard',
+    audience: 'Snowflake data scientists',
+    time: '8–14 weeks',
+    cost: '$375',
+    salaryRange: '$130,000–$180,000',
+    faqs: [
+      { q: 'Do I need Core first?', a: 'Yes. A current SnowPro Core certification is the prerequisite for the Advanced Data Scientist exam.' },
+      { q: 'How much does it cost?', a: 'The list fee is $375 per attempt.' },
+      { q: 'What is emphasized?', a: 'Feature engineering, model development with Snowpark ML, and deploying models inside Snowflake.' },
+      { q: 'How long is it valid?', a: 'Two years.' }
+    ],
+    summaryPoints: ['Snowflake advanced data scientist exam (DSA-C03).', '65 questions, 115 minutes, $375, scaled pass.', 'Covers Snowpark ML, feature eng, deployment.', 'Valid 2 years; requires Core.'],
+    relatedSlugs: ['snowpro-core-certification', 'snowpro-advanced-data-engineer'],
+    sourceUrl: 'https://www.snowflake.com/en/learn/training/',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'snowpro-advanced-administrator',
+    body: 'Snowflake',
+    tagline: 'Run and govern Snowflake at scale',
+    description: 'The SnowPro Advanced: Administrator Certification (ADA-C01) validates expert skill in Snowflake account administration: role-based access control, resource monitors, cost management and disaster recovery. It requires a current Core certification and is valid for two years.',
+    quickAnswer: { summary: 'SnowPro Advanced Administrator (ADA-C01) is a 65-question multiple-choice exam in 115 minutes, $375, scaled pass, delivered via Pearson VUE, valid 2 years; requires current Core.', advantages: ['Admin/Governance focus', 'Valid 2 years', 'Requires Core first', 'Cost-control skill'] },
+    prerequisites: 'A currently valid SnowPro Core certification.',
+    eligibility: 'For Snowflake administrators and platform owners.',
+    examMeta: { questions: '65', time: '115 minutes', pass: 'Scaled', fee: '$375 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'RBAC', weight: '', note: 'Roles, grants, ownership' },
+      { name: 'Resource monitors', weight: '', note: 'Credit control, alerts' },
+      { name: 'Cost management', weight: '', note: 'Warehouse, storage optimization' },
+      { name: 'Disaster recovery', weight: '', note: 'Replication, failover' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '65'],
+      ['Fee', '$375'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Administer a real account', duration: '6–12 weeks' }, { stage: 'Pass ADA-C01', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$375' }], total: '$375', footnote: 'Requires a current Core certification to sit.' },
+    difficulty: 'Hard',
+    audience: 'Snowflake administrators',
+    time: '6–12 weeks',
+    cost: '$375',
+    salaryRange: '$120,000–$165,000',
+    faqs: [
+      { q: 'Do I need Core first?', a: 'Yes. A current SnowPro Core certification is required before the Advanced Administrator exam.' },
+      { q: 'How much does it cost?', a: 'The list fee is $375 per attempt.' },
+      { q: 'What is emphasized?', a: 'Role-based access control, resource monitors, cost management and disaster recovery.' },
+      { q: 'How long is it valid?', a: 'Two years.' }
+    ],
+    summaryPoints: ['Snowflake advanced administrator exam (ADA-C01).', '65 questions, 115 minutes, $375, scaled pass.', 'Covers RBAC, cost mgmt, DR.', 'Valid 2 years; requires Core.'],
+    relatedSlugs: ['snowpro-core-certification', 'snowpro-advanced-architect'],
+    sourceUrl: 'https://www.snowflake.com/en/learn/training/',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  // ── Tableau ────────────────────────────────────────────────────
+  {
+    slug: 'tableau-desktop-specialist',
+    body: 'Tableau',
+    tagline: 'The approachable entry into Tableau',
+    description: 'The Tableau Desktop Specialist (now branded Desktop Foundations) is Tableau’s entry-level exam covering connecting to data, building basic charts, calculations, dashboards and sharing work. It is a 45-question exam (40 scored + 5 unscored) in 60 minutes, costs $75, requires roughly a 70–75% pass, offers a free retake, and does not expire — making it a low-risk first Tableau credential. Delivery is via the Salesforce Trailhead Academy / Pearson VUE.',
+    quickAnswer: { summary: 'Tableau Desktop Specialist / Foundations is a 45-question (40 scored + 5 unscored) exam in 60 minutes, $75, ~70–75% pass, free retake, no expiration, via Trailhead Academy / Pearson VUE.', advantages: ['No expiration', 'Free retake', 'Low $75 cost', 'Beginner-friendly'] },
+    prerequisites: 'Basic familiarity with Tableau or BI concepts; no formal prerequisite.',
+    eligibility: 'For analysts and students starting with Tableau.',
+    examMeta: { questions: '45 (40 scored + 5 unscored)', time: '60 minutes', pass: '~70–75%', fee: '$75 USD', format: 'Multiple choice', admin: 'Pearson VUE via Trailhead Academy' },
+    topics: [
+      { name: 'Connecting to data', weight: '', note: 'Files, databases, joins' },
+      { name: 'Building charts', weight: '', note: 'Marks, shelves, chart types' },
+      { name: 'Calculations', weight: '', note: 'Calculated fields, basic functions' },
+      { name: 'Dashboards', weight: '', note: 'Layout, actions, filters' },
+      { name: 'Sharing', weight: '', note: 'Tableau Public, Server, Cloud' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE via Trailhead Academy'],
+      ['Questions', '45 (40 scored)'],
+      ['Fee', '$75'],
+      ['Expiration', 'None']
+    ],
+    timeline: [{ stage: 'Practice on Tableau Public', duration: '2–5 weeks' }, { stage: 'Pass the Desktop exam', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$75' }], total: '$75', footnote: 'Free retake; free Tableau Public covers most practice.' },
+    difficulty: 'Easy',
+    audience: 'Tableau beginners and students',
+    time: '2–5 weeks',
+    cost: '$75',
+    salaryRange: '',
+    faqs: [
+      { q: 'Does this exam expire?', a: 'No. The Desktop Specialist (now Desktop Foundations) does not expire, and it includes a free retake.' },
+      { q: 'How much does it cost?', a: 'The list fee is $75 per attempt, with one free retake.' },
+      { q: 'What is the pass mark?', a: 'The exam is reported around a 70–75% pass mark.' },
+      { q: 'How is it delivered now?', a: 'Through the Salesforce Trailhead Academy portal, with the exam run on Pearson VUE.' }
+    ],
+    summaryPoints: ['Tableau entry-level Desktop Specialist/Foundations.', '45 questions, 60 minutes, $75, ~70–75% pass.', 'No expiration; free retake.', 'Beginner-friendly; via Trailhead Academy.'],
+    relatedSlugs: ['tableau-certified-data-analyst', 'tableau-certified-consultant'],
+    sourceUrl: 'https://www.tableau.com/learn/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'tableau-certified-data-analyst',
+    body: 'Tableau',
+    tagline: 'Hands-on analyst certification with a lab',
+    description: 'The Tableau Certified Data Analyst is the mid-level, hands-on Tableau credential combining multiple-choice knowledge with a performance-based lab on data preparation, analysis, dashboard design and content publishing. It is a 60-question-plus-lab exam in 105 minutes, costs $200, requires roughly 65%, and is valid for two years. Delivery is via the Salesforce Trailhead Academy / Pearson VUE.',
+    quickAnswer: { summary: 'Tableau Certified Data Analyst is a 60-question + hands-on lab exam in 105 minutes, $200, ~65% pass, valid 2 years, via Trailhead Academy / Pearson VUE.', advantages: ['Hands-on lab component', 'Valid 2 years', 'Mid-level analyst credential', 'Recognized by employers'] },
+    prerequisites: 'Working Tableau skill; the Desktop Specialist is helpful but not required.',
+    eligibility: 'For analysts who build Tableau dashboards day to day.',
+    examMeta: { questions: '60 + 5 unscored + lab', time: '105 minutes', pass: '~65%', fee: '$200 USD', format: 'Multiple choice + hands-on lab', admin: 'Pearson VUE via Trailhead Academy' },
+    topics: [
+      { name: 'Data preparation', weight: '', note: 'Cleaning, shaping, joins' },
+      { name: 'Analysis', weight: '', note: 'Calculations, LOD, statistics' },
+      { name: 'Dashboard design', weight: '', note: 'Layout, interactivity' },
+      { name: 'Publishing', weight: '', note: 'Server/Cloud, permissions' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE via Trailhead Academy'],
+      ['Questions', '60 + lab'],
+      ['Fee', '$200'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Build real dashboards + lab prep', duration: '4–8 weeks' }, { stage: 'Pass the Data Analyst exam', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$200' }], total: '$200', footnote: 'Free eLearning and Tableau Public help with prep.' },
+    difficulty: 'Moderate',
+    audience: 'Working Tableau analysts',
+    time: '4–8 weeks',
+    cost: '$200',
+    salaryRange: '$75,000–$110,000',
+    faqs: [
+      { q: 'Does it include a hands-on lab?', a: 'Yes. Beyond multiple-choice questions it includes a performance-based lab on data prep, analysis and dashboard design.' },
+      { q: 'How much does it cost?', a: 'The list fee is $200 per attempt.' },
+      { q: 'What is the pass mark?', a: 'The Data Analyst exam is reported around a 65% pass mark.' },
+      { q: 'How long is it valid?', a: 'Two years.' }
+    ],
+    summaryPoints: ['Tableau mid-level Data Analyst certification.', '60 Q + lab, 105 minutes, $200, ~65% pass.', 'Hands-on lab on prep/analysis/dashboards.', 'Valid 2 years; via Trailhead Academy.'],
+    relatedSlugs: ['tableau-desktop-specialist', 'tableau-certified-consultant'],
+    sourceUrl: 'https://www.tableau.com/learn/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'tableau-certified-consultant',
+    body: 'Tableau',
+    tagline: 'Design and optimize Tableau solutions',
+    description: 'The Tableau Certified Consultant is an advanced credential validating solution design, complex calculations, performance optimization and the ability to advise organizations on analytics deployments. It combines multiple-choice questions with a hands-on lab and is valid for two years. Delivery is via the Salesforce Trailhead Academy / Pearson VUE.',
+    quickAnswer: { summary: 'Tableau Certified Consultant is an advanced exam (~50 questions + hands-on lab) in ~90 minutes, $200, scaled pass, valid 2 years, via Trailhead Academy / Pearson VUE.', advantages: ['Advanced solution design', 'Valid 2 years', 'Consulting-focused', 'Builds on Data Analyst'] },
+    prerequisites: 'Strong Tableau skill; the Data Analyst is a natural precursor.',
+    eligibility: 'For consultants and senior analysts designing Tableau deployments.',
+    examMeta: { questions: '~50 + hands-on lab', time: '90 minutes', pass: 'Scaled', fee: '$200 USD', format: 'Multiple choice + hands-on lab', admin: 'Pearson VUE via Trailhead Academy' },
+    topics: [
+      { name: 'Solution design', weight: '', note: 'Requirements, architecture' },
+      { name: 'Complex calculations', weight: '', note: 'LOD, table calcs, sets' },
+      { name: 'Performance', weight: '', note: 'Extracts, optimization' },
+      { name: 'Advisory', weight: '', note: 'Deployment best practices' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE via Trailhead Academy'],
+      ['Questions', '~50 + lab'],
+      ['Fee', '$200'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Lead real Tableau projects', duration: '8–14 weeks' }, { stage: 'Pass the Consultant exam', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$200' }], total: '$200', footnote: 'Real deployment experience is the best prep.' },
+    difficulty: 'Hard',
+    audience: 'Tableau consultants and architects',
+    time: '8–14 weeks',
+    cost: '$200',
+    salaryRange: '$95,000–$140,000',
+    faqs: [
+      { q: 'How does it differ from the Data Analyst?', a: 'The Consultant is advanced and emphasizes solution design, complex calculations and performance optimization rather than day-to-day analysis.' },
+      { q: 'How much does it cost?', a: 'The list fee is $200 per attempt.' },
+      { q: 'Does it have a lab?', a: 'Yes. It includes a hands-on lab component alongside multiple-choice questions.' },
+      { q: 'How long is it valid?', a: 'Two years.' }
+    ],
+    summaryPoints: ['Tableau advanced Consultant certification.', '~50 Q + lab, 90 minutes, $200, scaled pass.', 'Covers design, complex calcs, performance.', 'Valid 2 years; via Trailhead Academy.'],
+    relatedSlugs: ['tableau-certified-data-analyst', 'tableau-certified-architect'],
+    sourceUrl: 'https://www.tableau.com/learn/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'tableau-certified-architect',
+    body: 'Tableau',
+    tagline: 'Deploy, secure and scale Tableau Server/Cloud',
+    description: 'The Tableau Certified Architect is the top Tableau credential, validating the deployment, scaling, security and maintenance of Tableau Server and Tableau Cloud environments in the enterprise. It includes a hands-on lab and is valid for two years. (It absorbed the retired Server Certified Associate scope.) Delivery is via the Salesforce Trailhead Academy / Pearson VUE.',
+    quickAnswer: { summary: 'Tableau Certified Architect is the top Tableau exam (~60 questions + hands-on lab) in ~120 minutes, $400, scaled pass, valid 2 years, via Trailhead Academy / Pearson VUE; covers Server/Cloud administration.', advantages: ['Top Tableau credential', 'Valid 2 years', 'Covers Server/Cloud ops', 'Builds on Consultant'] },
+    prerequisites: 'Deep Tableau Server/Cloud administration experience.',
+    eligibility: 'For platform administrators and enterprise architects.',
+    examMeta: { questions: '~60 + hands-on lab', time: '120 minutes', pass: 'Scaled', fee: '$400 USD', format: 'Multiple choice + hands-on lab', admin: 'Pearson VUE via Trailhead Academy' },
+    topics: [
+      { name: 'Deployment', weight: '', note: 'Server, Cloud, topology' },
+      { name: 'Security', weight: '', note: 'Auth, permissions, TLS' },
+      { name: 'Scaling', weight: '', note: 'Performance, capacity' },
+      { name: 'Maintenance', weight: '', note: 'Upgrades, backups, monitoring' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE via Trailhead Academy'],
+      ['Questions', '~60 + lab'],
+      ['Fee', '$400'],
+      ['Validity', '2 years']
+    ],
+    timeline: [{ stage: 'Administer enterprise Tableau', duration: '10–16 weeks' }, { stage: 'Pass the Architect exam', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$400' }], total: '$400', footnote: 'Fee rose from $250 to $400; enterprise admin experience is essential.' },
+    difficulty: 'Hard',
+    audience: 'Tableau platform administrators',
+    time: '10–16 weeks',
+    cost: '$400',
+    salaryRange: '$110,000–$155,000',
+    faqs: [
+      { q: 'What happened to the Server Certified Associate?', a: 'It was retired and its server-administration scope folded into the Certified Architect track. The Architect is now the server/cloud administration credential.' },
+      { q: 'How much does it cost?', a: 'The list fee is $400 per attempt (it rose from the earlier $250).' },
+      { q: 'Does it include a lab?', a: 'Yes. The Architect includes a hands-on lab on deploying and administering Tableau Server/Cloud.' },
+      { q: 'How long is it valid?', a: 'Two years.' }
+    ],
+    summaryPoints: ['Tableau top Architect certification.', '~60 Q + lab, 120 minutes, $400, scaled pass.', 'Covers Server/Cloud deploy, security, scaling.', 'Valid 2 years; replaces Server Associate.'],
+    relatedSlugs: ['tableau-certified-consultant', 'tableau-server-certified-associate'],
+    sourceUrl: 'https://www.tableau.com/learn/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'tableau-server-certified-associate',
+    body: 'Tableau',
+    tagline: 'Retired — successor is the Tableau Certified Architect',
+    description: 'The Tableau Server Certified Associate was a credential focused on Tableau Server administration. It has been RETIRED by Tableau (the certification program moved to Salesforce Trailhead Academy in July 2025) and its server-administration scope was folded into the Tableau Certified Architect track. This page remains as a reference pointing active candidates to the Architect credential, which now covers deploying, securing and scaling Tableau Server and Tableau Cloud.',
+    quickAnswer: { summary: 'The Tableau Server Certified Associate is RETIRED. Its scope moved into the Tableau Certified Architect track. Active candidates should target the Architect exam (≈$400, valid 2 years) for server/cloud administration skills.', advantages: ['Clear successor path', 'Architect covers server + cloud', 'Still useful on old résumés', 'Reference for job posts'] },
+    prerequisites: 'N/A — retired credential.',
+    eligibility: 'Historical reference; new candidates should pursue the Certified Architect.',
+    examMeta: { questions: '~65 (historical)', time: '90 minutes (historical)', pass: 'Scaled (historical)', fee: '$200 USD (historical)', format: 'Multiple choice', admin: 'Pearson VUE (historical)' },
+    topics: [
+      { name: 'Installation & config', weight: '', note: 'Now covered by Architect' },
+      { name: 'Site administration', weight: '', note: 'Users, groups, projects' },
+      { name: 'Security', weight: '', note: 'Permissions, authentication' },
+      { name: 'Maintenance', weight: '', note: 'Backups, upgrades' }
+    ],
+    examEssentials: [
+      ['Status', 'Retired'],
+      ['Successor', 'Tableau Certified Architect'],
+      ['Server scope', 'Folded into Architect'],
+      ['Note', 'Reference only']
+    ],
+    timeline: [{ stage: 'If you hold it, note it on résumé', duration: 'historical' }, { stage: 'New candidates → Architect', duration: 'current' }],
+    costBreakdown: { items: [{ item: 'Historical fee', fee: '$200' }], total: '$200 (historical)', footnote: 'Retired; the Architect exam is now $400 and covers this scope.' },
+    difficulty: 'Retired',
+    audience: 'Historical reference; new candidates → Architect',
+    time: 'N/A',
+    cost: '$200 (historical)',
+    salaryRange: '',
+    faqs: [
+      { q: 'Can I still take the Server Certified Associate?', a: 'No. It is retired. Tableau consolidated server administration into the Certified Architect track, which now covers Tableau Server and Tableau Cloud.' },
+      { q: 'What should I pursue instead?', a: 'Target the Tableau Certified Architect exam for server/cloud administration skills.' },
+      { q: 'Does holding the old cert still matter?', a: 'It still appears on many older job postings and résumés, so it remains a useful historical reference — but new candidates should earn the Architect.' },
+      { q: 'Why was it retired?', a: 'Tableau moved its certification program to Salesforce Trailhead Academy in July 2025 and streamlined credentials, folding server administration into the Architect role.' }
+    ],
+    summaryPoints: ['Tableau Server Certified Associate is RETIRED.', 'Scope folded into Tableau Certified Architect.', 'New candidates should target the Architect exam.', 'Kept as a reference for legacy job posts.'],
+    relatedSlugs: ['tableau-certified-architect', 'tableau-certified-data-analyst'],
+    sourceUrl: 'https://www.tableau.com/learn/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  // ── Qlik ────────────────────────────────────────────────────────
+  {
+    slug: 'qlik-sense-business-analyst',
+    body: 'Qlik',
+    tagline: 'Turn requirements into Qlik Sense dashboards',
+    description: 'The Qlik Sense Business Analyst certification validates that you can gather requirements, design applications and build effective visualizations and dashboards in Qlik Sense. It is a 50-question multiple-choice exam delivered through Pearson VUE, costs $250, requires a 62% pass mark, and is recommended to be renewed every two years.',
+    quickAnswer: { summary: 'Qlik Sense Business Analyst (QSBA) is a 50-question multiple-choice exam in ~120 minutes, $250, 62% pass, delivered via Pearson VUE, valid ~2 years.', advantages: ['Requirements-to-dashboard skill', 'Valid ~2 years', '$250 fee', 'Business-analyst focus'] },
+    prerequisites: 'Familiarity with Qlik Sense and BI concepts; no formal prerequisite.',
+    eligibility: 'For business analysts building Qlik Sense apps.',
+    examMeta: { questions: '50', time: '120 minutes', pass: '62%', fee: '$250 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'Requirements', weight: '', note: 'Gathering, scoping' },
+      { name: 'Application design', weight: '', note: 'Sheets, objects' },
+      { name: 'Visualizations', weight: '', note: 'Chart types, best practice' },
+      { name: 'Dashboards', weight: '', note: 'Interactivity, storytelling' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '50'],
+      ['Fee', '$250'],
+      ['Pass mark', '62%']
+    ],
+    timeline: [{ stage: 'Build Qlik Sense apps', duration: '4–8 weeks' }, { stage: 'Pass the QSBA exam', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$250' }], total: '$250', footnote: 'Free training and Qlik Community cover most objectives.' },
+    difficulty: 'Moderate',
+    audience: 'Qlik Sense business analysts',
+    time: '4–8 weeks',
+    cost: '$250',
+    salaryRange: '$75,000–$110,000',
+    faqs: [
+      { q: 'What does this exam test?', a: 'It tests gathering requirements, designing Qlik Sense applications and building effective visualizations and dashboards.' },
+      { q: 'How much does it cost?', a: 'The list fee is $250 per attempt.' },
+      { q: 'What is the pass mark?', a: 'The Business Analyst exam has a published 62% pass mark.' },
+      { q: 'How long is it valid?', a: 'Qlik recommends renewing certifications roughly every two years.' }
+    ],
+    summaryPoints: ['Qlik Sense Business Analyst certification (QSBA).', '50 questions, 120 minutes, $250, 62% pass.', 'Covers requirements, design, dashboards.', 'Valid ~2 years; via Pearson VUE.'],
+    relatedSlugs: ['qlik-sense-data-architect', 'qlik-sense-system-administrator'],
+    sourceUrl: 'https://www.qlik.com/us/services/training/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'qlik-sense-data-architect',
+    body: 'Qlik',
+    tagline: 'Model, script and optimize Qlik data',
+    description: 'The Qlik Sense Data Architect certification validates skill in data modeling, scripting, connecting sources and transforming and optimizing data loads within Qlik Sense applications. It is a 50-question multiple-choice exam delivered through Pearson VUE, costs $250, uses scaled scoring, and is recommended to be renewed every two years.',
+    quickAnswer: { summary: 'Qlik Sense Data Architect is a 50-question multiple-choice exam in ~120 minutes, $250, scaled pass, delivered via Pearson VUE, valid ~2 years.', advantages: ['Data modeling & scripting', 'Valid ~2 years', '$250 fee', 'Backend Qlik skill'] },
+    prerequisites: 'Qlik Sense experience; the Business Analyst is a helpful precursor.',
+    eligibility: 'For data architects and developers on Qlik Sense.',
+    examMeta: { questions: '50', time: '120 minutes', pass: 'Scaled', fee: '$250 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'Data modeling', weight: '', note: 'Star schemas, associations' },
+      { name: 'Scripting', weight: '', note: 'Load scripts, transformations' },
+      { name: 'Connecting sources', weight: '', note: 'Connectors, APIs' },
+      { name: 'Optimization', weight: '', note: 'Performance, incremental loads' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '50'],
+      ['Fee', '$250'],
+      ['Validity', '~2 years']
+    ],
+    timeline: [{ stage: 'Practice Qlik scripting', duration: '4–8 weeks' }, { stage: 'Pass the Data Architect exam', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$250' }], total: '$250', footnote: 'Free training and Qlik Community cover most objectives.' },
+    difficulty: 'Moderate',
+    audience: 'Qlik data architects and developers',
+    time: '4–8 weeks',
+    cost: '$250',
+    salaryRange: '$95,000–$135,000',
+    faqs: [
+      { q: 'What does this exam test?', a: 'It tests data modeling, scripting, source connections and optimizing data loads in Qlik Sense.' },
+      { q: 'How much does it cost?', a: 'The list fee is $250 per attempt.' },
+      { q: 'What is the pass mark?', a: 'Qlik uses scaled scoring for this exam; focus on modeling and scripting depth.' },
+      { q: 'How long is it valid?', a: 'Qlik recommends renewing roughly every two years.' }
+    ],
+    summaryPoints: ['Qlik Sense Data Architect certification.', '50 questions, 120 minutes, $250, scaled pass.', 'Covers modeling, scripting, optimization.', 'Valid ~2 years; via Pearson VUE.'],
+    relatedSlugs: ['qlik-sense-business-analyst', 'qlik-sense-system-administrator'],
+    sourceUrl: 'https://www.qlik.com/us/services/training/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'qlik-sense-system-administrator',
+    body: 'Qlik',
+    tagline: 'Install and run Qlik Sense Enterprise',
+    description: 'The Qlik Sense System Administrator certification covers installation, security rules, licensing, node configuration and monitoring of Qlik Sense Enterprise deployments. It is a 50-question multiple-choice exam delivered through Pearson VUE, costs $250, uses scaled scoring, and is recommended to be renewed every two years.',
+    quickAnswer: { summary: 'Qlik Sense System Administrator is a 50-question multiple-choice exam in ~120 minutes, $250, scaled pass, delivered via Pearson VUE, valid ~2 years.', advantages: ['Enterprise admin skill', 'Valid ~2 years', '$250 fee', 'Operations-focused'] },
+    prerequisites: 'Qlik Sense administration experience.',
+    eligibility: 'For system administrators running Qlik Sense Enterprise.',
+    examMeta: { questions: '50', time: '120 minutes', pass: 'Scaled', fee: '$250 USD', format: 'Multiple choice', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'Installation', weight: '', note: 'Nodes, services' },
+      { name: 'Security rules', weight: '', note: 'RBAC, custom rules' },
+      { name: 'Licensing', weight: '', note: 'Tokens, allocation' },
+      { name: 'Monitoring', weight: '', note: 'Operations, logging' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '50'],
+      ['Fee', '$250'],
+      ['Validity', '~2 years']
+    ],
+    timeline: [{ stage: 'Administer a Qlik Sense site', duration: '4–8 weeks' }, { stage: 'Pass the System Administrator exam', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$250' }], total: '$250', footnote: 'Free training and Qlik Community cover most objectives.' },
+    difficulty: 'Moderate',
+    audience: 'Qlik Sense system administrators',
+    time: '4–8 weeks',
+    cost: '$250',
+    salaryRange: '$90,000–$130,000',
+    faqs: [
+      { q: 'What does this exam test?', a: 'It tests installation, security rules, licensing, node configuration and monitoring of Qlik Sense Enterprise.' },
+      { q: 'How much does it cost?', a: 'The list fee is $250 per attempt.' },
+      { q: 'What is the pass mark?', a: 'Qlik uses scaled scoring for this exam.' },
+      { q: 'How long is it valid?', a: 'Qlik recommends renewing roughly every two years.' }
+    ],
+    summaryPoints: ['Qlik Sense System Administrator certification.', '50 questions, 120 minutes, $250, scaled pass.', 'Covers install, security, licensing, monitoring.', 'Valid ~2 years; via Pearson VUE.'],
+    relatedSlugs: ['qlik-sense-data-architect', 'qlik-sense-business-analyst'],
+    sourceUrl: 'https://www.qlik.com/us/services/training/certification',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  // ── SAS Institute ───────────────────────────────────────────────
+  {
+    slug: 'sas-certified-specialist-base-programming',
+    body: 'SAS Institute',
+    tagline: 'Foundational SAS programming (A00-231)',
+    description: 'The SAS Certified Specialist: Base Programming Using SAS 9.4 validates core DATA step programming: importing and exporting data, combining tables, producing reports and basic SAS procedures. It is a 60–65 question exam (multiple choice and short answer) in 110 minutes, costs $180, requires a 70% pass, and is valid for three years.',
+    quickAnswer: { summary: 'SAS Base Programming Specialist (A00-231) is a 60–65 question exam in 110 minutes, $180, 70% pass, delivered via Pearson VUE, valid 3 years.', advantages: ['Foundational SAS skill', 'Valid 3 years', '$180 fee', 'Widely recognized'] },
+    prerequisites: 'No formal prerequisite; basic programming logic helps.',
+    eligibility: 'For programmers and analysts using Base SAS.',
+    examMeta: { questions: '60–65', time: '110 minutes', pass: '70%', fee: '$180 USD', format: 'Multiple choice & short answer', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'DATA step', weight: '', note: 'Reading, writing, variables' },
+      { name: 'Import/export', weight: '', note: 'External files, formats' },
+      { name: 'Combining tables', weight: '', note: 'MERGE, SET, joins' },
+      { name: 'Reporting', weight: '', note: 'PROC PRINT, FREQ, MEANS' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '60–65'],
+      ['Fee', '$180'],
+      ['Validity', '3 years']
+    ],
+    timeline: [{ stage: 'Practice Base SAS programming', duration: '4–8 weeks' }, { stage: 'Pass A00-231', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$180' }], total: '$180', footnote: 'Free and paid e-learning plus SAS Studio practice help.' },
+    difficulty: 'Moderate',
+    audience: 'SAS programmers and analysts',
+    time: '4–8 weeks',
+    cost: '$180',
+    salaryRange: '$70,000–$100,000',
+    faqs: [
+      { q: 'What does this exam cover?', a: 'Core DATA step programming: importing/exporting data, combining tables and producing reports with Base SAS.' },
+      { q: 'How much does it cost?', a: 'The list fee is $180 per attempt.' },
+      { q: 'What is the pass mark?', a: 'SAS uses a scaled score with a published 70% pass mark.' },
+      { q: 'How long is it valid?', a: 'Three years.' }
+    ],
+    summaryPoints: ['SAS Base Programming Specialist (A00-231).', '60–65 questions, 110 minutes, $180, 70% pass.', 'Covers DATA step, I/O, combining, reporting.', 'Valid 3 years; via Pearson VUE.'],
+    relatedSlugs: ['sas-certified-professional-advanced-programming', 'sas-certified-data-scientist'],
+    sourceUrl: 'https://www.sas.com/en_us/certification.html',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'sas-certified-professional-advanced-programming',
+    body: 'SAS Institute',
+    tagline: 'Advanced SAS programming (A00-232)',
+    description: 'The SAS Certified Professional: Advanced Programming Using SAS 9.4 validates expert DATA step techniques, SQL processing and macro programming for experienced SAS programmers. It is a 60–65 question exam in 110 minutes, costs $180, requires a 70% pass, and is valid for three years.',
+    quickAnswer: { summary: 'SAS Advanced Programming Professional (A00-232) is a 60–65 question exam in 110 minutes, $180, 70% pass, delivered via Pearson VUE, valid 3 years.', advantages: ['Advanced SAS skill', 'Builds on Base', 'Valid 3 years', '$180 fee'] },
+    prerequisites: 'Base Programming knowledge; the Specialist is the natural precursor.',
+    eligibility: 'For experienced SAS programmers.',
+    examMeta: { questions: '60–65', time: '110 minutes', pass: '70%', fee: '$180 USD', format: 'Multiple choice & short answer', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'Advanced DATA step', weight: '', note: 'Arrays, hashing, pointers' },
+      { name: 'SQL processing', weight: '', note: 'PROC SQL, joins, subqueries' },
+      { name: 'Macro programming', weight: '', note: 'Macros, variables, debugging' },
+      { name: 'Efficiency', weight: '', note: 'Performance, indexing' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Questions', '60–65'],
+      ['Fee', '$180'],
+      ['Validity', '3 years']
+    ],
+    timeline: [{ stage: 'Deepen macro & SQL skill', duration: '6–12 weeks' }, { stage: 'Pass A00-232', duration: 'test day' }],
+    costBreakdown: { items: [{ item: 'Exam fee', fee: '$180' }], total: '$180', footnote: 'SAS e-learning and SAS Studio practice are recommended.' },
+    difficulty: 'Hard',
+    audience: 'Experienced SAS programmers',
+    time: '6–12 weeks',
+    cost: '$180',
+    salaryRange: '$85,000–$120,000',
+    faqs: [
+      { q: 'How does it differ from Base?', a: 'It adds advanced DATA step techniques, PROC SQL and macro programming for experienced programmers.' },
+      { q: 'How much does it cost?', a: 'The list fee is $180 per attempt.' },
+      { q: 'What is the pass mark?', a: 'SAS uses a scaled score with a published 70% pass mark.' },
+      { q: 'How long is it valid?', a: 'Three years.' }
+    ],
+    summaryPoints: ['SAS Advanced Programming Professional (A00-232).', '60–65 questions, 110 minutes, $180, 70% pass.', 'Covers advanced DATA step, SQL, macros.', 'Valid 3 years; via Pearson VUE.'],
+    relatedSlugs: ['sas-certified-specialist-base-programming', 'sas-certified-data-scientist'],
+    sourceUrl: 'https://www.sas.com/en_us/certification.html',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'sas-certified-data-scientist',
+    body: 'SAS Institute',
+    tagline: 'Composite big-data & advanced-analytics credential',
+    description: 'The SAS Certified Data Scientist is a composite credential earned by completing SAS’ Big Data and Advanced Analytics certification tracks — a series of required exams covering data wrangling, statistics, machine learning and deployment rather than a single test. Component exams cost $180 each and SAS credentials are valid for three years.',
+    quickAnswer: { summary: 'The SAS Certified Data Scientist is a COMPOSITE credential earned by completing SAS’ Big Data + Advanced Analytics exam tracks (multiple required exams, ~$180 each), valid 3 years.', advantages: ['Prestigious composite', 'Covers ML & big data', 'Valid 3 years', 'Builds on SAS programming'] },
+    prerequisites: 'SAS programming and statistics foundation; completion of the required track exams.',
+    eligibility: 'For data scientists using the SAS ecosystem.',
+    examMeta: { questions: 'Composite (multiple exams)', time: 'Varies per component', pass: '70% per component', fee: 'Varies (composite)', format: 'Multiple choice & performance', admin: 'Pearson VUE (online or test center)' },
+    topics: [
+      { name: 'Data wrangling', weight: '', note: 'Big data preparation' },
+      { name: 'Statistics', weight: '', note: 'Modeling foundations' },
+      { name: 'Machine learning', weight: '', note: 'Supervised/unsupervised' },
+      { name: 'Deployment', weight: '', note: 'Operationalizing models' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Pearson VUE (online or test center)'],
+      ['Type', 'Composite credential'],
+      ['Component fee', '$180 each'],
+      ['Validity', '3 years']
+    ],
+    timeline: [{ stage: 'Complete required track exams', duration: '6–12 months' }, { stage: 'Earn composite credential', duration: 'on completion' }],
+    costBreakdown: { items: [{ item: 'Component exams', fee: '$180 each' }], total: 'Varies (composite)', footnote: 'Earned by passing all required Big Data + Advanced Analytics track exams.' },
+    difficulty: 'Hard',
+    audience: 'SAS data scientists',
+    time: '6–12 months',
+    cost: 'Varies (composite)',
+    salaryRange: '$100,000–$145,000',
+    faqs: [
+      { q: 'Is this a single exam?', a: 'No. It is a composite credential earned by completing SAS’ Big Data and Advanced Analytics certification tracks — a series of required exams.' },
+      { q: 'How much does it cost?', a: 'Each component exam is $180; the total depends on how many required exams the track includes.' },
+      { q: 'What does it cover?', a: 'Data wrangling, statistics, machine learning and model deployment in the SAS ecosystem.' },
+      { q: 'How long is it valid?', a: 'SAS credentials are valid for three years.' }
+    ],
+    summaryPoints: ['SAS Certified Data Scientist (composite).', 'Multiple required track exams, ~$180 each.', 'Covers big data, stats, ML, deployment.', 'Valid 3 years; not a single test.'],
+    relatedSlugs: ['sas-certified-professional-advanced-programming', 'sas-certified-specialist-base-programming'],
+    sourceUrl: 'https://www.sas.com/en_us/certification.html',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  // ── Google (Coursera professional certificates) ─────────────────
+  {
+    slug: 'google-data-analytics-professional-certificate',
+    body: 'Google',
+    tagline: 'Job-ready data analytics, beginner to portfolio',
+    description: 'The Google Data Analytics Professional Certificate is a Coursera-based program that takes beginners to job-ready across the data-analysis process: spreadsheets, SQL, R programming, Tableau visualization and a portfolio case study. It is completed through graded courses and a capstone rather than a single proctored exam, costs a monthly Coursera subscription (around $39–49), and the certificate does not expire.',
+    quickAnswer: { summary: 'The Google Data Analytics Professional Certificate is a Coursera program (spreadsheets, SQL, R, Tableau, portfolio) completed via courses + capstone — no single proctored exam; pay a ~$39–49/month subscription until you finish; certificate never expires.', advantages: ['Beginner-friendly', 'Portfolio case study', 'No proctored exam', 'No expiration'] },
+    prerequisites: 'None — designed for beginners with no prior experience.',
+    eligibility: 'For career changers and newcomers to data analytics.',
+    examMeta: { questions: 'N/A (course + portfolio)', time: 'Self-paced (~6 months part-time)', pass: 'Course completion', fee: 'Coursera subscription (~$39–49/month)', format: 'Online courses + portfolio case study', admin: 'Coursera' },
+    topics: [
+      { name: 'Data analysis process', weight: '', note: 'Ask, prepare, process, analyze, share' },
+      { name: 'Spreadsheets & SQL', weight: '', note: 'Cleaning, querying' },
+      { name: 'R programming', weight: '', note: 'Tidyverse, visualization' },
+      { name: 'Tableau', weight: '', note: 'Dashboards, storytelling' },
+      { name: 'Capstone', weight: '', note: 'Portfolio case study' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Coursera'],
+      ['Exam', 'None (portfolio)'],
+      ['Cost', '~$39–49/month'],
+      ['Expiration', 'None']
+    ],
+    timeline: [{ stage: 'Complete self-paced modules', duration: '~6 months' }, { stage: 'Finish capstone → certificate', duration: 'completion' }],
+    costBreakdown: { items: [{ item: 'Coursera subscription', fee: '~$39–49/month until done' }], total: '~$235–295 (6 mo)', footnote: 'Financial aid is available; certificate does not expire.' },
+    difficulty: 'Easy',
+    audience: 'Aspiring data analysts (beginners)',
+    time: '~6 months part-time',
+    cost: '~$39–49/month',
+    salaryRange: '$60,000–$90,000',
+    faqs: [
+      { q: 'Is there a proctored exam?', a: 'No. You complete graded courses, labs and a portfolio case study on Coursera; there is no single supervised exam.' },
+      { q: 'How much does it cost?', a: 'You pay a monthly Coursera subscription (around $39–49 USD) until you finish; financial aid is available.' },
+      { q: 'How long does it take?', a: 'Google estimates about six months at roughly 10 hours per week of part-time study.' },
+      { q: 'Does it expire?', a: 'No. The certificate does not expire and requires no recertification.' }
+    ],
+    summaryPoints: ['Google Data Analytics Professional Certificate (Coursera).', 'Spreadsheets, SQL, R, Tableau, portfolio.', 'No proctored exam; ~$39–49/month.', '~6 months; never expires.'],
+    relatedSlugs: ['google-advanced-data-analytics-certificate', 'tableau-desktop-specialist'],
+    sourceUrl: 'https://grow.google/certificates/data-analytics/',
+    reviewed: '2026-08',
+    confidence: 'high'
+  },
+  {
+    slug: 'google-advanced-data-analytics-certificate',
+    body: 'Google',
+    tagline: 'Statistics, regression and ML for analysts',
+    description: 'The Google Advanced Data Analytics Professional Certificate builds on the foundational program, teaching Python, statistics, regression modeling and machine learning for candidates moving beyond entry-level analytics. Like the Data Analytics certificate, it is completed on Coursera through courses and projects rather than a single proctored exam, costs a monthly subscription (around $39–49), and does not expire.',
+    quickAnswer: { summary: 'The Google Advanced Data Analytics Professional Certificate is a Coursera program (Python, statistics, regression, ML) completed via courses + projects — no single proctored exam; ~$39–49/month subscription; certificate never expires.', advantages: ['Builds on Data Analytics', 'Python + ML focus', 'No proctored exam', 'No expiration'] },
+    prerequisites: 'Basic data-analytics familiarity (the foundational certificate helps but is not required).',
+    eligibility: 'For analysts advancing into modeling and ML.',
+    examMeta: { questions: 'N/A (course + projects)', time: 'Self-paced (~6 months part-time)', pass: 'Course completion', fee: 'Coursera subscription (~$39–49/month)', format: 'Online courses + projects', admin: 'Coursera' },
+    topics: [
+      { name: 'Python', weight: '', note: 'Pandas, NumPy, cleaning' },
+      { name: 'Statistics', weight: '', note: 'Inference, hypothesis testing' },
+      { name: 'Regression', weight: '', note: 'Linear, logistic modeling' },
+      { name: 'Machine learning', weight: '', note: 'Supervised models, evaluation' }
+    ],
+    examEssentials: [
+      ['Delivery', 'Coursera'],
+      ['Exam', 'None (projects)'],
+      ['Cost', '~$39–49/month'],
+      ['Expiration', 'None']
+    ],
+    timeline: [{ stage: 'Complete self-paced modules', duration: '~6 months' }, { stage: 'Finish projects → certificate', duration: 'completion' }],
+    costBreakdown: { items: [{ item: 'Coursera subscription', fee: '~$39–49/month until done' }], total: '~$235–295 (6 mo)', footnote: 'Financial aid is available; certificate does not expire.' },
+    difficulty: 'Moderate',
+    audience: 'Analysts advancing to ML',
+    time: '~6 months part-time',
+    cost: '~$39–49/month',
+    salaryRange: '$80,000–$120,000',
+    faqs: [
+      { q: 'How is it different from the Data Analytics certificate?', a: 'It goes further into Python, statistics, regression modeling and machine learning rather than the entry-level spreadsheets/SQL/Tableau track.' },
+      { q: 'Is there a proctored exam?', a: 'No. Completion is through Coursera courses, labs and projects.' },
+      { q: 'How much does it cost?', a: 'A monthly Coursera subscription (around $39–49 USD) until you finish; financial aid is available.' },
+      { q: 'Does it expire?', a: 'No. The certificate does not expire.' }
+    ],
+    summaryPoints: ['Google Advanced Data Analytics Certificate (Coursera).', 'Python, stats, regression, ML.', 'No proctored exam; ~$39–49/month.', '~6 months; never expires.'],
+    relatedSlugs: ['google-data-analytics-professional-certificate', 'sas-certified-data-scientist'],
+    sourceUrl: 'https://grow.google/certificates/data-analytics/',
+    reviewed: '2026-08',
+    confidence: 'high'
+  }
+];

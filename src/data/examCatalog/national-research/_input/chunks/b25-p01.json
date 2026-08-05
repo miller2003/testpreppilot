@@ -1,0 +1,408 @@
+{
+ "chunkId": "b25-p01",
+ "batch": 25,
+ "part": 1,
+ "categories": [
+  "insurance"
+ ],
+ "groups": [
+  "Insurance Designations",
+  "Claims & Adjusting"
+ ],
+ "bodies": [
+  "The Institutes"
+ ],
+ "examCount": 36,
+ "exams": [
+  {
+   "slug": "accredited-adviser-in-insurance",
+   "name": "Accredited Adviser in Insurance",
+   "short": "AAI",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Agency-focused designation programme covering personal and commercial account development, coverage analysis and agency operations."
+  },
+  {
+   "slug": "accredited-adviser-in-insurance-management",
+   "name": "Accredited Adviser in Insurance-Management",
+   "short": "AAI-M",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Management extension of the agency adviser designation, adding leadership and strategic agency management coursework."
+  },
+  {
+   "slug": "accredited-customer-service-representative",
+   "name": "Accredited Customer Service Representative",
+   "short": "ACSR",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Early-career designation programme for agency service staff covering personal lines, commercial lines and errors and omissions risk."
+  },
+  {
+   "slug": "associate-in-commercial-underwriting",
+   "name": "Associate in Commercial Underwriting",
+   "short": "AU",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme covering commercial underwriting principles, risk selection, pricing and portfolio management technique."
+  },
+  {
+   "slug": "associate-in-commercial-underwriting-management",
+   "name": "Associate in Commercial Underwriting-Management",
+   "short": "AU-M",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "One additional management course beyond the commercial underwriting designation, focused on leading underwriting teams."
+  },
+  {
+   "slug": "associate-in-fidelity-and-surety-bonding",
+   "name": "Associate in Fidelity and Surety Bonding",
+   "short": "AFSB",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme covering contract and commercial surety, fidelity bonds, crime insurance and underwriting of bond risk."
+  },
+  {
+   "slug": "associate-in-information-technology",
+   "name": "Associate in Information Technology",
+   "short": "AIT",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme on aligning insurance operations with information technology, systems, data management and security."
+  },
+  {
+   "slug": "associate-in-insurance",
+   "name": "Associate in Insurance",
+   "short": "AINS",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "bodyUrl": "https://www.theinstitutes.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Foundational designation programme covering insurance principles, policy structure, coverages and operations across lines of business."
+  },
+  {
+   "slug": "associate-in-insurance-accounting-and-finance",
+   "name": "Associate in Insurance Accounting and Finance",
+   "short": "AIAF",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme covering statutory accounting, insurer financial statements, NAIC reporting requirements and solvency measures."
+  },
+  {
+   "slug": "associate-in-insurance-data-analytics",
+   "name": "Associate in Insurance Data Analytics",
+   "short": "AIDA",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme covering data literacy, analytics tools and the use of data across underwriting, claims and distribution."
+  },
+  {
+   "slug": "associate-in-insurance-services",
+   "name": "Associate in Insurance Services",
+   "short": "AIS",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme focused on service quality, customer experience and delivering dynamic insurance services to policyholders."
+  },
+  {
+   "slug": "associate-in-management-institutes",
+   "name": "Associate in Management",
+   "short": "AIM",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme covering team leadership, organisational behaviour and managing strategic threats within insurance firms."
+  },
+  {
+   "slug": "associate-in-marine-insurance-management",
+   "name": "Associate in Marine Insurance Management",
+   "short": "AMIM",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme covering ocean and inland marine insurance, hull, cargo, liability exposures and marine claim practice."
+  },
+  {
+   "slug": "associate-in-national-flood-insurance",
+   "name": "Associate in National Flood Insurance",
+   "short": "ANFI",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme on the National Flood Insurance Program, flood zone rating, policy forms and flood claim handling."
+  },
+  {
+   "slug": "associate-in-personal-insurance",
+   "name": "Associate in Personal Insurance",
+   "short": "API",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme covering personal lines products, underwriting, marketing practice and the personal insurance environment."
+  },
+  {
+   "slug": "associate-in-premium-auditing",
+   "name": "Associate in Premium Auditing",
+   "short": "APA",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme covering premium audit procedures, classification systems, insurance accounting and audit report preparation."
+  },
+  {
+   "slug": "associate-in-regulation-and-compliance",
+   "name": "Associate in Regulation and Compliance",
+   "short": "ARC",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme covering insurance regulation, market conduct examinations and building an insurer compliance function."
+  },
+  {
+   "slug": "associate-in-reinsurance",
+   "name": "Associate in Reinsurance",
+   "short": "ARe",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme covering treaty and facultative reinsurance, pricing, contract wording and reinsurance programme design."
+  },
+  {
+   "slug": "associate-in-risk-management",
+   "name": "Associate in Risk Management",
+   "short": "ARM",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "bodyUrl": "https://www.theinstitutes.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme covering risk identification, analysis, control, financing and monitoring across an organisation."
+  },
+  {
+   "slug": "associate-in-surplus-lines-insurance",
+   "name": "Associate in Surplus Lines Insurance",
+   "short": "ASLI",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme covering the excess and surplus lines market, non-admitted regulation, wholesale broking and unique exposures."
+  },
+  {
+   "slug": "cpcu-designation",
+   "name": "Chartered Property Casualty Underwriter Designation",
+   "short": "CPCU",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "bodyUrl": "https://www.theinstitutes.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme of five core course exams plus a commercial or personal concentration, ethics and matriculation requirements."
+  },
+  {
+   "slug": "cpcu-500",
+   "name": "CPCU 500: Becoming a Leader in Risk Management and Insurance",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Core CPCU course exam on risk essentials, critical thinking, insurance as a risk solution and strategic decision making."
+  },
+  {
+   "slug": "cpcu-520",
+   "name": "CPCU 520: Meeting Challenges Across Insurance Operations",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Core CPCU course exam on the insurance value chain, claims, underwriting, marketing, reinsurance and the actuarial role."
+  },
+  {
+   "slug": "cpcu-530",
+   "name": "CPCU 530: Applying Legal Concepts to Insurance",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Core CPCU course exam on contract and tort law, policy interpretation, property ownership, agency law and dispute resolution."
+  },
+  {
+   "slug": "cpcu-540",
+   "name": "CPCU 540: Contributing to Insurer Financial Performance",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Core CPCU course exam on insurer financial statements, key ratios, investment decisions and strategic capital management."
+  },
+  {
+   "slug": "cpcu-550",
+   "name": "CPCU 550: Maximizing Value with Data and Technology",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Core CPCU course exam on insurance data sources, analytics foundations, risk modelling and the ethics of data use."
+  },
+  {
+   "slug": "cpcu-551",
+   "name": "CPCU 551: Managing Commercial Property Risk",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Commercial concentration exam on building and personal property coverage, business income, inland transit and crime losses."
+  },
+  {
+   "slug": "cpcu-552",
+   "name": "CPCU 552: Managing Commercial Liability Risk",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Commercial concentration exam on general liability, business auto, cyber exposures, workplace risk and liability coverage gaps."
+  },
+  {
+   "slug": "cpcu-555",
+   "name": "CPCU 555: Advancing Personal Insurance Products",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Personal concentration exam on home and personal auto loss exposures, life and health gaps and personal investment strategy."
+  },
+  {
+   "slug": "cpcu-556",
+   "name": "CPCU 556: Building a Competitive Edge in Personal Lines",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Personal concentration exam on personal lines marketing, underwriting strategy, portfolio assessment and expense control."
+  },
+  {
+   "slug": "cpcu-matriculation",
+   "name": "CPCU Matriculation and Ethics Requirement",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Short online requirement covering the CPCU canons of ethics and validation of professional experience before the designation is awarded."
+  },
+  {
+   "slug": "professional-risk-consultant",
+   "name": "Professional Risk Consultant",
+   "short": "PRC",
+   "category": "insurance",
+   "group": "Insurance Designations",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Early-career designation programme preparing producers and consultants to analyse client exposures and recommend risk solutions."
+  },
+  {
+   "slug": "associate-in-claims",
+   "name": "Associate in Claims",
+   "short": "AIC",
+   "category": "insurance",
+   "group": "Claims & Adjusting",
+   "body": "The Institutes",
+   "bodyUrl": "https://www.theinstitutes.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme of course examinations covering property, liability and workers compensation claim handling and negotiation."
+  },
+  {
+   "slug": "associate-in-claims-management",
+   "name": "Associate in Claims-Management",
+   "short": "AIC-M",
+   "category": "insurance",
+   "group": "Claims & Adjusting",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "One additional management course beyond the Associate in Claims, focused on leading claim teams and improving claim outcomes."
+  },
+  {
+   "slug": "senior-professional-public-adjuster",
+   "name": "Senior Professional Public Adjuster",
+   "short": "SPPA",
+   "category": "insurance",
+   "group": "Claims & Adjusting",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National designation programme for public adjusters covering policy analysis, damage estimating, documentation and claim advocacy."
+  },
+  {
+   "slug": "workers-compensation-claims-administration-certificate",
+   "name": "Workers Compensation Claims Administration Certificate",
+   "short": "WCCA",
+   "category": "insurance",
+   "group": "Claims & Adjusting",
+   "body": "The Institutes",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Three-course certificate covering the workers compensation regulatory landscape, claim handling and claim investigation technique."
+  }
+ ]
+}

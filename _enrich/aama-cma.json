@@ -1,0 +1,123 @@
+{
+  "slug": "aama-cma",
+  "exam": {
+    "tagline": "The NCCA-accredited, accredited-program-only medical assistant credential that hospitals ask for by name.",
+    "description": "The Certified Medical Assistant (CMA), awarded by the American Association of Medical Assistants (AAMA), is the most widely recognized medical assisting credential in the U.S. and is accredited by the National Commission for Certifying Agencies (NCCA). It is distinctive because eligibility is restricted to graduates of CAAHEP- or ABHES-accredited programs — there is no work-experience or military route — which is why many hospitals and large health networks specifically prefer it. The exam is a 200-question, computer-based test (160 minutes) delivered at PSI test centers, scored on a 200–800 scale with a passing mark of 405. Once earned, the credential is valid for 60 months and is renewed through continuing education or exam retake. For candidates from accredited programs who want the gold-standard MA credential, the CMA (AAMA) is the one employers name by name.",
+    "quickAnswer": {
+      "summary": "The CMA (AAMA) is a national, NCCA-accredited medical assistant credential from the American Association of Medical Assistants. To earn it you must graduate from a CAAHEP- or ABHES-accredited program and pass a 200-question exam (passing scaled score 405/800) at a PSI test center.",
+      "advantages": [
+        "NCCA-accredited and named specifically by many hospitals and large clinics in their hiring policies",
+        "Recognized in all 50 states; signals graduation from an accredited program",
+        "Longest renewal cycle of the major MA credentials (60 months)",
+        "Immediate pass/fail result on screen, with the official score report in about 24 hours"
+      ]
+    },
+    "roadmap": [
+      "Graduate from a CAAHEP- or ABHES-accredited program",
+      "Apply and pay the $125–$250 exam fee",
+      "Get your eligibility verified by AAMA",
+      "Schedule and pass the 200-question exam at a PSI center",
+      "Maintain the credential with 60 CEUs every 60 months"
+    ],
+    "prerequisites": "A diploma or degree from a medical assisting program accredited by CAAHEP or ABHES. There is no prerequisite exam.",
+    "eligibility": "Eligibility is limited to graduates (or students within 30 days of graduating) of a medical assisting program accredited by CAAHEP or ABHES. AAMA classifies candidates as completing student, recent graduate (within 12 months), or non-recent graduate (more than 12 months ago); documentation requirements differ slightly by category. There is no work-experience, military, or non-accredited-program pathway to sit for the CMA (AAMA).",
+    "examMeta": {
+      "questions": "200 multiple-choice (includes unscored pretest items)",
+      "time": "160 minutes (four 40-minute segments)",
+      "pass": "Scaled score of 405 on a 200–800 scale",
+      "fee": "$125 AAMA student member / recent graduate; $250 all other candidates",
+      "format": "Computer-based, four-option multiple choice",
+      "admin": "American Association of Medical Assistants (AAMA), delivered by PSI"
+    },
+    "topics": [
+      { "name": "General", "note": "Anatomy & physiology, medical terminology, psychology, professionalism, and communication" },
+      { "name": "Administrative", "note": "Appointment scheduling, insurance billing, coding, medical records (EHR/EMR), and HIPAA compliance" },
+      { "name": "Clinical", "note": "Vital signs, pharmacology, specimen collection and phlebotomy, infection control, and patient care" }
+    ],
+    "examEssentials": [
+      ["Credential", "CMA (AAMA) — Certified Medical Assistant"],
+      ["Issuing body", "American Association of Medical Assistants (AAMA)"],
+      ["Eligibility", "Graduate of a CAAHEP- or ABHES-accredited program"],
+      ["Exam length", "200 questions · 160 minutes"],
+      ["Passing score", "Scaled 405 / 800"],
+      ["Testing partner", "PSI Services test centers (U.S.)"],
+      ["Attempts", "Up to 6 per 12-month period"],
+      ["Validity", "60 months (recertify by CEUs or exam)"]
+    ],
+    "timeline": [
+      ["Confirm eligibility", "Before applying"],
+      ["Apply + pay fee", "About 20 minutes"],
+      ["Eligibility verification", "Days to a few weeks"],
+      ["Study", "8–12 weeks typical"],
+      ["Schedule + sit exam", "Year-round"],
+      ["Get results", "Pass/fail on screen; official score in ~24h"]
+    ],
+    "costBreakdown": {
+      "items": [
+        ["Exam fee — AAMA student member / recent graduate", "$125"],
+        ["Exam fee — all other candidates", "$250"],
+        ["Retake (each attempt)", "Full fee again"],
+        ["Recertification by CEU — member / non-member", "$65 / $130"]
+      ],
+      "total": "$125–$250 (exam) plus study materials",
+      "footnote": "Fees are set by AAMA and are non-refundable. Recertification by exam costs the same as a first attempt."
+    },
+    "difficulty": "Moderate",
+    "audience": "Graduates of CAAHEP- or ABHES-accredited medical assisting programs entering clinical or administrative roles.",
+    "time": "8–12 weeks of study (after graduation)",
+    "cost": "$125–$250",
+    "salaryRange": "$38,000–$50,000 (approx. U.S. median wage for medical assistants; BLS)",
+    "faqs": [
+      { "q": "Who is eligible for the CMA (AAMA) exam?", "a": "You must have graduated — or be within 30 days of graduating — from a medical assisting program accredited by CAAHEP or ABHES. Unlike some other MA credentials, AAMA does not offer a work-experience or military pathway; program accreditation is mandatory." },
+      { "q": "How much does the CMA exam cost?", "a": "The fee is $125 for AAMA student members and recent graduates, and $250 for all other candidates. It is non-refundable, and every retake requires paying it again." },
+      { "q": "What is the passing score?", "a": "The exam is scored on a 200–800 scale and the minimum passing scaled score is 405. You see a pass/fail result on screen immediately, with the official score report emailed about 24 hours later." },
+      { "q": "How many times can I take the exam if I fail?", "a": "Up to six attempts are allowed within any 12-month period, and there is no required waiting period between attempts — but each attempt needs a new application and fee." },
+      { "q": "How do I keep the CMA (AAMA) active?", "a": "Recertify every 60 months (5 years) by earning 60 continuing education units (at least 30 from AAMA-approved providers) or by retaking the exam. Recertification by CEU costs $65 for members and $130 for non-members." }
+    ],
+    "summaryPoints": [
+      "The CMA (AAMA) is the only medical assistant credential that requires graduation from a CAAHEP- or ABHES-accredited program — no experience pathway exists.",
+      "The exam is 200 multiple-choice questions in 160 minutes; the passing scaled score is 405 on an 800 scale.",
+      "Testing is in person at PSI centers year-round; remote proctoring is not offered.",
+      "Recertify every 60 months via 60 CEUs (at least 30 AAMA-approved) or by exam retake."
+    ],
+    "sourceUrl": "https://www.aama-ntl.org/certification/",
+    "reviewed": "2026-08",
+    "confidence": "high"
+  },
+  "program": {
+    "body": "American Association of Medical Assistants (AAMA)",
+    "about": "The American Association of Medical Assistants (AAMA) issues the CMA (AAMA) credential — the only medical assistant certification that requires graduation from a CAAHEP- or ABHES-accredited program. AAMA has awarded the CMA since 1963, and the program is accredited by the National Commission for Certifying Agencies (NCCA). Exams are delivered through PSI Services test centers across the United States.",
+    "registrationSteps": [
+      { "title": "Confirm you qualify", "description": "You must be a graduate (or a student within 30 days of graduating) of a medical assisting program accredited by CAAHEP or ABHES. There is no work-experience or military pathway to the CMA (AAMA)." },
+      { "title": "Apply and pay the exam fee", "description": "Create or sign in to your AAMA account, submit the CMA exam application with your program documentation, and pay the fee ($125 for AAMA student members and recent graduates; $250 for all other candidates). The fee is non-refundable.", "duration": "about 20 minutes" },
+      { "title": "Get eligibility verified", "description": "AAMA verifies your graduation documentation, then emails your scheduling authorization. Recent graduates and students are usually cleared quickly; non-recent graduates may need to supply additional proof.", "duration": "a few days to a few weeks" },
+      { "title": "Schedule at a PSI test center", "description": "Once authorized, book a seat at a PSI Services test center. Exams are offered year-round at centers across the U.S.", "note": "Remote or at-home proctoring is not available for the CMA (AAMA)." },
+      { "title": "Take the exam", "description": "The exam is 200 multiple-choice questions delivered in four 40-minute segments (160 minutes of testing). You'll see your pass/fail result on screen immediately after finishing.", "duration": "about 3 hours on site" },
+      { "title": "Receive your credential", "description": "An official score report is emailed about 24 hours after the exam. Once you pass and all requirements are verified, AAMA issues your digital badge and you may use the CMA (AAMA) credential.", "duration": "within a few days of passing" }
+    ],
+    "proctoring": "In-person at PSI Services test centers across the U.S. There is no remote/online proctoring option for the CMA (AAMA). A valid photo ID is required at check-in.",
+    "retakePolicy": "Up to six (6) exam attempts are allowed within any 12-month period. There is no required waiting period between attempts, but each attempt requires a new application and the full exam fee.",
+    "recertification": "Valid for 60 months (5 years). Recertify by earning 60 continuing education units (at least 30 must be AAMA-approved) or by retaking the exam. Recertification by CEU costs $65 for AAMA members and $130 for non-members.",
+    "scoreReporting": "A pass/fail result appears on screen immediately after the exam. The official score report is emailed about 24 hours later and is also posted to your AAMA account.",
+    "refundPolicy": "Exam fees are non-refundable.",
+    "providersNote": "The CMA (AAMA) exam is delivered exclusively through PSI Services LLC; there is no other authorized testing vendor.",
+    "comparison": {
+      "title": "Medical assistant credentials compared",
+      "columns": ["Credential", "Issuing body", "Eligibility", "Exam", "Renewal"],
+      "rows": [
+        { "label": "CMA (AAMA)", "values": ["AAMA", "CAAHEP/ABHES grad only", "200 Q · 160 min · pass 405/800", "60 months (60 CEUs or exam)"] },
+        { "label": "NHA CCMA", "values": ["NHA", "Accredited program OR 1 yr experience", "180 Q · 3 hr", "24 months"] },
+        { "label": "AMT RMA", "values": ["AMT", "Accredited program OR military OR 5 yr exp", "210 Q · 2 hr", "Annual"] },
+        { "label": "NCCT NCMA", "values": ["NCCT", "Program OR 2 yr exp OR military", "150 Q · 3 hr", "24 months"] }
+      ]
+    },
+    "orgFaqs": [
+      { "q": "Is the CMA (AAMA) accepted in all states?", "a": "Yes — the CMA (AAMA) is recognized in all 50 states. A few states have their own scope-of-practice rules for medical assistants, but the credential itself is national." },
+      { "q": "Does AAMA offer a work-experience pathway?", "a": "No. Unlike NHA, AMT, or NCCT, AAMA requires graduation from a CAAHEP- or ABHES-accredited program; on-the-job experience alone does not qualify you to sit for the exam." },
+      { "q": "How long is the CMA valid and how do I renew?", "a": "The credential is valid for 60 months. Renew by earning 60 CEUs (at least 30 AAMA-approved) or by retaking the exam." }
+    ],
+    "sourceUrl": "https://www.aama-ntl.org/certification/",
+    "verified": true,
+    "confidence": "high"
+  }
+}

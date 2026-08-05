@@ -1,0 +1,527 @@
+{
+ "chunkId": "b09-p03",
+ "batch": 9,
+ "part": 3,
+ "categories": [
+  "aviation-maritime"
+ ],
+ "groups": [
+  "Maritime & USCG",
+  "Radio & Communications",
+  "Aircraft Maintenance"
+ ],
+ "bodies": [
+  "U.S. Coast Guard-Approved Training Providers",
+  "Federal Communications Commission",
+  "Federal Aviation Administration",
+  "American Sailing"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "isps-company-security-officer",
+   "name": "Company Security Officer Course",
+   "short": "CSO",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Training",
+   "aka": [
+    "CSO"
+   ],
+   "blurb": "Approved course preparing shoreside personnel to develop and maintain vessel security plans under the ISPS Code and MTSA."
+  },
+  {
+   "slug": "isps-facility-security-officer",
+   "name": "Facility Security Officer Course",
+   "short": "FSO",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Training",
+   "aka": [
+    "FSO"
+   ],
+   "blurb": "Training required for officers responsible for security plans, drills and access control at MTSA-regulated waterfront facilities."
+  },
+  {
+   "slug": "uscg-radar-observer-inland",
+   "name": "Radar Observer (Inland) Certification",
+   "short": "Radar Inland",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Certification",
+   "aka": [
+    "Radar Observer Inland"
+   ],
+   "blurb": "Short course and practical assessment on radar navigation and collision avoidance for inland and river route mariners."
+  },
+  {
+   "slug": "uscg-radar-observer-unlimited",
+   "name": "Radar Observer (Unlimited) Certification",
+   "short": "Radar Unlimited",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Certification",
+   "aka": [
+    "Radar Observer Unlimited"
+   ],
+   "blurb": "Approved course covering radar plotting, relative motion, ARPA principles and collision avoidance for unlimited tonnage service."
+  },
+  {
+   "slug": "stcw-advanced-firefighting",
+   "name": "STCW Advanced Firefighting",
+   "short": "Advanced Firefighting",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Training",
+   "aka": [
+    "AFF"
+   ],
+   "blurb": "Approved course on shipboard fire command, fixed systems, fire investigation and casualty control required for officer endorsements."
+  },
+  {
+   "slug": "stcw-arpa-automatic-radar-plotting-aids",
+   "name": "STCW Automatic Radar Plotting Aids",
+   "short": "ARPA",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Training",
+   "aka": [
+    "ARPA"
+   ],
+   "blurb": "Approved course on ARPA target acquisition, trial manoeuvres, system limitations and errors for officers in charge of a navigational watch."
+  },
+  {
+   "slug": "stcw-basic-training",
+   "name": "STCW Basic Training",
+   "short": "BT",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Training",
+   "aka": [
+    "Basic Safety Training",
+    "BST",
+    "BT"
+   ],
+   "blurb": "Four-module STCW course covering personal survival, basic firefighting, elementary first aid and personal safety and social responsibility."
+  },
+  {
+   "slug": "stcw-bridge-resource-management",
+   "name": "STCW Bridge Resource Management",
+   "short": "BRM",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Training",
+   "aka": [
+    "BRM"
+   ],
+   "blurb": "Approved course on bridge teamwork, situational awareness, communication and error management for watchkeeping deck officers."
+  },
+  {
+   "slug": "stcw-ecdis",
+   "name": "STCW Electronic Chart Display and Information Systems",
+   "short": "ECDIS",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Training",
+   "aka": [
+    "ECDIS"
+   ],
+   "blurb": "Approved course on electronic chart systems, route planning, alarms, sensor inputs and ECDIS limitations for navigating officers."
+  },
+  {
+   "slug": "stcw-leadership-and-managerial-skills",
+   "name": "STCW Leadership and Managerial Skills",
+   "short": "LMS",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Training",
+   "aka": [
+    "Leadership and Managerial Skills"
+   ],
+   "blurb": "Management-level STCW course on shipboard leadership, resource management, decision making and workload assessment."
+  },
+  {
+   "slug": "stcw-leadership-and-teamwork",
+   "name": "STCW Leadership and Teamwork",
+   "short": "LTW",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Training",
+   "aka": [
+    "Leadership and Teamworking Skills"
+   ],
+   "blurb": "Operational-level STCW course on teamwork, task allocation and effective communication aboard vessels for junior officers."
+  },
+  {
+   "slug": "stcw-medical-care-provider",
+   "name": "STCW Medical Care Provider",
+   "short": "Medical Care",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Training",
+   "aka": [
+    "Medical Care Provider"
+   ],
+   "blurb": "Advanced shipboard medical course covering patient assessment, medication administration and radio medical advice for masters and mates."
+  },
+  {
+   "slug": "stcw-medical-first-aid-provider",
+   "name": "STCW Medical First Aid Provider",
+   "short": "Medical First Aid",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Training",
+   "aka": [
+    "Proficiency in Medical First Aid"
+   ],
+   "blurb": "Approved course on immediate care of shipboard casualties including bleeding, burns, fractures, hypothermia and rescue breathing."
+  },
+  {
+   "slug": "stcw-vessel-personnel-designated-security-duties",
+   "name": "Vessel Personnel with Designated Security Duties",
+   "short": "VPDSD",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Training",
+   "aka": [
+    "VPDSD"
+   ],
+   "blurb": "STCW security training for crew assigned security tasks, covering threat recognition, screening, search and security equipment use."
+  },
+  {
+   "slug": "isps-vessel-security-officer",
+   "name": "Vessel Security Officer Course",
+   "short": "VSO",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard-Approved Training Providers",
+   "type": "Training",
+   "aka": [
+    "VSO"
+   ],
+   "blurb": "Approved course for officers responsible for implementing and maintaining the ship security plan under the ISPS Code."
+  },
+  {
+   "slug": "fcc-general-radiotelephone-operator-license",
+   "name": "General Radiotelephone Operator License",
+   "short": "GROL",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission",
+   "type": "License",
+   "aka": [
+    "GROL",
+    "PG License"
+   ],
+   "blurb": "Lifetime commercial licence earned by passing Elements 1 and 3, required to repair and maintain most ship and aircraft radio transmitters."
+  },
+  {
+   "slug": "fcc-gmdss-radio-maintainers-license",
+   "name": "GMDSS Radio Maintainer's License",
+   "short": "GMDSS Maintainer",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission",
+   "type": "License",
+   "aka": [
+    "DM License"
+   ],
+   "blurb": "Licence earned through Elements 1, 3 and 9 authorising at-sea maintenance and repair of Global Maritime Distress and Safety System equipment."
+  },
+  {
+   "slug": "fcc-gmdss-radio-operators-license",
+   "name": "GMDSS Radio Operator's License",
+   "short": "GMDSS Operator",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission",
+   "type": "License",
+   "aka": [
+    "DO License"
+   ],
+   "blurb": "Licence earned through Elements 1 and 7 authorising operation of GMDSS distress and safety communications equipment at sea."
+  },
+  {
+   "slug": "fcc-gmdss-radio-operator-maintainer-license",
+   "name": "GMDSS Radio Operator/Maintainer License",
+   "short": "GMDSS Op/Maintainer",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission",
+   "type": "License",
+   "aka": [
+    "DB License"
+   ],
+   "blurb": "Combined licence covering both GMDSS operating and maintenance privileges, requiring Elements 1, 3, 7 and 9 to be passed."
+  },
+  {
+   "slug": "fcc-marine-radio-operator-permit",
+   "name": "Marine Radio Operator Permit",
+   "short": "MROP",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission",
+   "type": "License",
+   "aka": [
+    "MROP",
+    "MP Permit"
+   ],
+   "blurb": "Permit obtained by passing Element 1, required to operate radiotelephone stations aboard many passenger and commercial vessels."
+  },
+  {
+   "slug": "fcc-radiotelegraph-operator-license",
+   "name": "Radiotelegraph Operator License",
+   "short": "Radiotelegraph",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission",
+   "type": "License",
+   "aka": [
+    "T License"
+   ],
+   "blurb": "Commercial licence requiring Elements 1, 5 and 6 plus Morse code proficiency for operating and maintaining radiotelegraph stations."
+  },
+  {
+   "slug": "fcc-restricted-gmdss-radio-operator-license",
+   "name": "Restricted GMDSS Radio Operator License",
+   "short": "Restricted GMDSS",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission",
+   "type": "License",
+   "aka": [
+    "RG License"
+   ],
+   "blurb": "Licence earned through Elements 1 and 7R for GMDSS operation on vessels trading only within VHF coverage of coast stations."
+  },
+  {
+   "slug": "fcc-restricted-radiotelephone-operator-permit",
+   "name": "Restricted Radiotelephone Operator Permit",
+   "short": "RR Permit",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission",
+   "type": "License",
+   "aka": [
+    "RP License",
+    "Restricted Radiotelephone"
+   ],
+   "blurb": "Lifetime permit issued without examination, commonly required by pilots flying internationally and by operators of certain radio stations."
+  },
+  {
+   "slug": "fcc-restricted-radiotelephone-permit-limited-use",
+   "name": "Restricted Radiotelephone Operator Permit Limited Use",
+   "short": "RL Permit",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission",
+   "type": "License",
+   "aka": [
+    "RL License"
+   ],
+   "blurb": "Permit variant issued to aircraft pilots and other operators who do not qualify for the standard restricted permit."
+  },
+  {
+   "slug": "fcc-ship-radar-endorsement",
+   "name": "Ship Radar Endorsement",
+   "short": "Radar Endorsement",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission",
+   "type": "License",
+   "aka": [
+    "Radar Endorsement"
+   ],
+   "blurb": "Endorsement added to a GROL or radiotelegraph licence by passing Element 8, required to service shipboard radar systems."
+  },
+  {
+   "slug": "fcc-six-months-service-endorsement",
+   "name": "Six Months Service Endorsement",
+   "short": "Six Months Service",
+   "category": "aviation-maritime",
+   "group": "Radio & Communications",
+   "body": "Federal Communications Commission",
+   "type": "License",
+   "aka": [
+    "Six Months Service"
+   ],
+   "blurb": "Endorsement documenting six months of shipboard radio service, needed for certain sole radio operator positions at sea."
+  },
+  {
+   "slug": "faa-ama-airframe-knowledge-test",
+   "name": "Aviation Maintenance Technician Airframe Knowledge Test",
+   "short": "AMA",
+   "category": "aviation-maritime",
+   "group": "Aircraft Maintenance",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "AMA",
+    "A&P Airframe Written"
+   ],
+   "blurb": "100-question FAA written test on airframe structures, systems and inspection required for the airframe rating of a mechanic certificate."
+  },
+  {
+   "slug": "faa-amg-general-knowledge-test",
+   "name": "Aviation Maintenance Technician General Knowledge Test",
+   "short": "AMG",
+   "category": "aviation-maritime",
+   "group": "Aircraft Maintenance",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "AMG",
+    "A&P General Written"
+   ],
+   "blurb": "60-question FAA written test covering basic electricity, weight and balance, materials, maintenance forms and regulations shared by all mechanics."
+  },
+  {
+   "slug": "faa-amp-powerplant-knowledge-test",
+   "name": "Aviation Maintenance Technician Powerplant Knowledge Test",
+   "short": "AMP",
+   "category": "aviation-maritime",
+   "group": "Aircraft Maintenance",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "AMP",
+    "A&P Powerplant Written"
+   ],
+   "blurb": "100-question FAA written test on reciprocating and turbine engines, propellers, fuel and ignition systems for the powerplant rating."
+  },
+  {
+   "slug": "faa-repairman-experimental-aircraft-builder",
+   "name": "FAA Repairman Certificate (Experimental Aircraft Builder)",
+   "short": "Repairman EAB",
+   "category": "aviation-maritime",
+   "group": "Aircraft Maintenance",
+   "body": "Federal Aviation Administration",
+   "type": "Certification",
+   "aka": [
+    "Experimental Amateur-Built Repairman"
+   ],
+   "blurb": "Certificate allowing the primary builder of an amateur-built aircraft to perform the annual condition inspection on that specific airplane."
+  },
+  {
+   "slug": "faa-repairman-lsa-inspection-rating",
+   "name": "FAA Repairman Certificate (Light-Sport Aircraft Inspection Rating)",
+   "short": "LSRI",
+   "category": "aviation-maritime",
+   "group": "Aircraft Maintenance",
+   "body": "Federal Aviation Administration",
+   "type": "Certification",
+   "aka": [
+    "LSA Repairman Inspection",
+    "LSRI"
+   ],
+   "blurb": "Short-course credential permitting owners of special light-sport aircraft to carry out the required annual condition inspection."
+  },
+  {
+   "slug": "faa-repairman-lsa-maintenance-rating",
+   "name": "FAA Repairman Certificate (Light-Sport Aircraft Maintenance Rating)",
+   "short": "LSRM",
+   "category": "aviation-maritime",
+   "group": "Aircraft Maintenance",
+   "body": "Federal Aviation Administration",
+   "type": "Certification",
+   "aka": [
+    "LSA Repairman Maintenance",
+    "LSRM"
+   ],
+   "blurb": "Credential earned through an approved 80 to 120 hour course authorising maintenance and inspection of light-sport aircraft by class."
+  },
+  {
+   "slug": "faa-iar-inspection-authorization",
+   "name": "Inspection Authorization Knowledge Test",
+   "short": "IAR",
+   "category": "aviation-maritime",
+   "group": "Aircraft Maintenance",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "IAR",
+    "IA Written Test"
+   ],
+   "blurb": "50-question test for experienced A&P mechanics seeking Inspection Authorization to approve major repairs and perform annual inspections."
+  },
+  {
+   "slug": "faa-rig-parachute-rigger",
+   "name": "Parachute Rigger Knowledge Test",
+   "short": "RIG",
+   "category": "aviation-maritime",
+   "group": "Aircraft Maintenance",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "RIG"
+   ],
+   "blurb": "FAA written test covering parachute construction, packing, maintenance and record keeping for senior and master parachute rigger certificates."
+  },
+  {
+   "slug": "faa-rmc-parachute-rigger-military-competence",
+   "name": "Parachute Rigger Military Competence Knowledge Test",
+   "short": "RMC",
+   "category": "aviation-maritime",
+   "group": "Aircraft Maintenance",
+   "body": "Federal Aviation Administration",
+   "type": "Exam",
+   "aka": [
+    "RMC"
+   ],
+   "blurb": "Abbreviated 25-question test for military-trained riggers converting service experience into an FAA parachute rigger certificate."
+  },
+  {
+   "slug": "asa-101-basic-keelboat-sailing",
+   "name": "American Sailing 101 Basic Keelboat Sailing",
+   "short": "ASA 101",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "American Sailing",
+   "type": "Certification",
+   "aka": [
+    "ASA 101"
+   ],
+   "blurb": "Entry sailing certification covering points of sail, tacking, gybing, rules of the road and crew overboard recovery on small keelboats."
+  },
+  {
+   "slug": "asa-103-basic-coastal-cruising",
+   "name": "American Sailing 103 Basic Coastal Cruising",
+   "short": "ASA 103",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "American Sailing",
+   "type": "Certification",
+   "aka": [
+    "ASA 103"
+   ],
+   "blurb": "Certification for skippering an auxiliary-powered sailboat of about 25 to 35 feet in moderate coastal conditions by day."
+  },
+  {
+   "slug": "asa-104-bareboat-cruising",
+   "name": "American Sailing 104 Bareboat Cruising",
+   "short": "ASA 104",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "American Sailing",
+   "type": "Certification",
+   "aka": [
+    "ASA 104"
+   ],
+   "blurb": "Certification for chartering and skippering a 30 to 45 foot cruising sailboat, including provisioning, anchoring and systems management."
+  }
+ ]
+}

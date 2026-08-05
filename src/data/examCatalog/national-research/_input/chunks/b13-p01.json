@@ -1,0 +1,422 @@
+{
+ "chunkId": "b13-p01",
+ "batch": 13,
+ "part": 1,
+ "categories": [
+  "education-teaching"
+ ],
+ "groups": [
+  "Praxis Elementary & Early Childhood"
+ ],
+ "bodies": [
+  "ETS"
+ ],
+ "examCount": 30,
+ "exams": [
+  {
+   "slug": "praxis-early-childhood-assessment-5026",
+   "name": "Praxis Early Childhood Assessment (5026)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5026"
+   ],
+   "blurb": "Two-subtest early childhood battery pairing reading, language arts and social studies with mathematics and science content."
+  },
+  {
+   "slug": "praxis-early-childhood-education-5025",
+   "name": "Praxis Early Childhood Education (5025)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5025"
+   ],
+   "blurb": "Long-standing early childhood licensure test covering language and literacy, mathematics, science, social studies, arts and professional practice."
+  },
+  {
+   "slug": "praxis-early-childhood-education-foundational-knowledge-5533",
+   "name": "Praxis Early Childhood Education: Foundational Knowledge (5533)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5533"
+   ],
+   "blurb": "Early childhood test focused on child development, learning environments, family engagement and foundational teaching practice."
+  },
+  {
+   "slug": "praxis-early-childhood-education-foundational-knowledge-and-content-5534",
+   "name": "Praxis Early Childhood Education: Foundational Knowledge and Content (5534)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5534"
+   ],
+   "blurb": "Extended early childhood test adding subject-matter content to the foundational knowledge covered in the shorter 5533 assessment."
+  },
+  {
+   "slug": "praxis-early-childhood-mathematics-and-science-5028",
+   "name": "Praxis Early Childhood: Mathematics and Science (5028)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5028"
+   ],
+   "blurb": "Subtest of the Early Childhood Assessment covering number sense, measurement, life science, physical science and inquiry with young children."
+  },
+  {
+   "slug": "praxis-early-childhood-reading-language-arts-and-social-studies-5027",
+   "name": "Praxis Early Childhood: Reading and Language Arts & Social Studies (5027)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5027"
+   ],
+   "blurb": "Subtest of the Early Childhood Assessment covering emergent literacy, language development and social studies for young learners."
+  },
+  {
+   "slug": "praxis-education-of-young-children-5024",
+   "name": "Praxis Education of Young Children (5024)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5024"
+   ],
+   "blurb": "Test of pedagogy and content for teachers of young children, covering development, curriculum, assessment and professional issues."
+  },
+  {
+   "slug": "praxis-elementary-education-assessment-5006",
+   "name": "Praxis Elementary Education Assessment (5006)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5006",
+    "5007",
+    "5008"
+   ],
+   "blurb": "Two-subtest elementary battery pairing reading, language arts and social studies with mathematics and science content."
+  },
+  {
+   "slug": "praxis-elementary-education-fundamentals-mathematics-8003",
+   "name": "Praxis Elementary Education Fundamentals: Mathematics (8003)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "8003"
+   ],
+   "blurb": "Shorter fundamentals-series mathematics subtest for elementary candidates, focused on core number and operations knowledge."
+  },
+  {
+   "slug": "praxis-elementary-education-fundamentals-reading-and-language-arts-8002",
+   "name": "Praxis Elementary Education Fundamentals: Reading and Language Arts (8002)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "8002"
+   ],
+   "blurb": "Fundamentals-series literacy subtest for elementary candidates covering foundational reading and language arts content."
+  },
+  {
+   "slug": "praxis-elementary-education-fundamentals-science-8005",
+   "name": "Praxis Elementary Education Fundamentals: Science (8005)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "8005"
+   ],
+   "blurb": "Fundamentals-series science subtest for elementary candidates covering life, physical and earth science at the elementary level."
+  },
+  {
+   "slug": "praxis-elementary-education-fundamentals-social-studies-8004",
+   "name": "Praxis Elementary Education Fundamentals: Social Studies (8004)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "8004"
+   ],
+   "blurb": "Fundamentals-series social studies subtest for elementary candidates covering history, geography, civics and economics."
+  },
+  {
+   "slug": "praxis-elementary-education-fundamentals-teaching-reading-8006",
+   "name": "Praxis Elementary Education Fundamentals: Teaching Reading (8006)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "8006"
+   ],
+   "blurb": "Fundamentals-series reading instruction subtest covering phonics, phonemic awareness, fluency, vocabulary and comprehension teaching."
+  },
+  {
+   "slug": "praxis-elementary-education-content-knowledge-5018",
+   "name": "Praxis Elementary Education: Content Knowledge (5018)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5018"
+   ],
+   "blurb": "Single-session elementary content test spanning reading and language arts, mathematics, social studies and science."
+  },
+  {
+   "slug": "praxis-elementary-education-ckt-7811",
+   "name": "Praxis Elementary Education: Content Knowledge for Teaching (7811)",
+   "short": "Elementary CKT",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "7811",
+    "CKT",
+    "Elementary CKT"
+   ],
+   "blurb": "Content knowledge for teaching battery with four subtests, testing the specialised subject knowledge elementary teachers use in classrooms."
+  },
+  {
+   "slug": "praxis-elementary-education-curriculum-instruction-and-assessment-5017",
+   "name": "Praxis Elementary Education: Curriculum, Instruction, and Assessment (5017)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5017"
+   ],
+   "blurb": "Elementary pedagogy test covering instructional planning, delivery, assessment and professional practice across the core subject areas."
+  },
+  {
+   "slug": "praxis-elementary-education-math-specialist-5037",
+   "name": "Praxis Elementary Education: Math Specialist (5037)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5037"
+   ],
+   "blurb": "Test for elementary mathematics specialists and coaches, covering deep content knowledge plus leadership and instructional coaching."
+  },
+  {
+   "slug": "praxis-elementary-education-mathematics-7003",
+   "name": "Praxis Elementary Education: Mathematics (7003)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "7003"
+   ],
+   "blurb": "Mathematics subtest of the 7001 Multiple Subjects battery, covering number, operations, algebraic thinking, geometry and data."
+  },
+  {
+   "slug": "praxis-elementary-education-mathematics-ckt-7813",
+   "name": "Praxis Elementary Education: Mathematics CKT (7813)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "7813"
+   ],
+   "blurb": "Content knowledge for teaching subtest asking candidates to interpret student mathematical thinking, errors and representations."
+  },
+  {
+   "slug": "praxis-elementary-education-mathematics-subtest-5003",
+   "name": "Praxis Elementary Education: Mathematics Subtest (5003)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5003"
+   ],
+   "blurb": "Mathematics subtest of the 5001 Multiple Subjects battery, covering number and operations, algebraic thinking, geometry and data."
+  },
+  {
+   "slug": "praxis-elementary-education-multiple-subjects-5001",
+   "name": "Praxis Elementary Education: Multiple Subjects (5001)",
+   "short": "Praxis 5001",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5001",
+    "5002",
+    "5003",
+    "5004",
+    "5005"
+   ],
+   "blurb": "The most widely required elementary generalist battery, made up of four subtests in reading, mathematics, social studies and science."
+  },
+  {
+   "slug": "praxis-elementary-education-multiple-subjects-7001",
+   "name": "Praxis Elementary Education: Multiple Subjects (7001)",
+   "short": "Praxis 7001",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "7001",
+    "7002",
+    "7003",
+    "7004",
+    "7005"
+   ],
+   "blurb": "Revised elementary generalist battery whose four subtests replace reading with a dedicated teaching reading assessment."
+  },
+  {
+   "slug": "praxis-elementary-education-reading-and-language-arts-ckt-7812",
+   "name": "Praxis Elementary Education: Reading and Language Arts CKT (7812)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "7812"
+   ],
+   "blurb": "Content knowledge for teaching literacy subtest, focused on the specialised language and reading knowledge used in elementary instruction."
+  },
+  {
+   "slug": "praxis-elementary-education-reading-and-language-arts-subtest-5002",
+   "name": "Praxis Elementary Education: Reading and Language Arts Subtest (5002)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5002"
+   ],
+   "blurb": "Literacy subtest of the 5001 battery, covering reading foundations, literature, informational text, writing and language conventions."
+  },
+  {
+   "slug": "praxis-elementary-education-science-7005",
+   "name": "Praxis Elementary Education: Science (7005)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "7005"
+   ],
+   "blurb": "Science subtest of the 7001 Multiple Subjects battery covering earth, life and physical science plus science practices."
+  },
+  {
+   "slug": "praxis-elementary-education-science-ckt-7814",
+   "name": "Praxis Elementary Education: Science CKT (7814)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "7814"
+   ],
+   "blurb": "Content knowledge for teaching science subtest, testing how teachers evaluate models, explanations and student science reasoning."
+  },
+  {
+   "slug": "praxis-elementary-education-science-subtest-5005",
+   "name": "Praxis Elementary Education: Science Subtest (5005)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5005"
+   ],
+   "blurb": "Science subtest of the 5001 battery covering earth and space, life and physical science along with scientific inquiry practices."
+  },
+  {
+   "slug": "praxis-elementary-education-social-studies-7004",
+   "name": "Praxis Elementary Education: Social Studies (7004)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "7004"
+   ],
+   "blurb": "Social studies subtest of the 7001 Multiple Subjects battery covering United States history, world history, government, geography and economics."
+  },
+  {
+   "slug": "praxis-elementary-education-social-studies-ckt-7815",
+   "name": "Praxis Elementary Education: Social Studies CKT (7815)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "7815"
+   ],
+   "blurb": "Content knowledge for teaching social studies subtest, focused on sources, evidence and student reasoning in elementary classrooms."
+  },
+  {
+   "slug": "praxis-elementary-education-social-studies-subtest-5004",
+   "name": "Praxis Elementary Education: Social Studies Subtest (5004)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5004"
+   ],
+   "blurb": "Social studies subtest of the 5001 battery covering United States history, world history, government, geography and economics."
+  }
+ ]
+}

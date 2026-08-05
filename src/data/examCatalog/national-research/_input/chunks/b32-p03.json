@@ -1,0 +1,70 @@
+{
+ "chunkId": "b32-p03",
+ "batch": 32,
+ "part": 3,
+ "categories": [
+  "technology"
+ ],
+ "groups": [
+  "Cybersecurity (Vendor-Neutral)"
+ ],
+ "bodies": [
+  "Cyber AB",
+  "Hack The Box"
+ ],
+ "examCount": 4,
+ "exams": [
+  {
+   "slug": "cmmc-certified-assessor",
+   "name": "CMMC Certified Assessor",
+   "short": "CCA",
+   "category": "technology",
+   "group": "Cybersecurity (Vendor-Neutral)",
+   "body": "Cyber AB",
+   "type": "Certification",
+   "aka": [
+    "CMMC CCA"
+   ],
+   "blurb": "Credential authorising practitioners to conduct CMMC Level 2 assessments of defense contractors handling controlled unclassified information."
+  },
+  {
+   "slug": "cmmc-certified-professional",
+   "name": "CMMC Certified Professional",
+   "short": "CCP",
+   "category": "technology",
+   "group": "Cybersecurity (Vendor-Neutral)",
+   "body": "Cyber AB",
+   "type": "Certification",
+   "aka": [
+    "CCP"
+   ],
+   "blurb": "Credential for practitioners supporting Cybersecurity Maturity Model Certification assessments across the US defense industrial base supply chain."
+  },
+  {
+   "slug": "hackthebox-cdsa",
+   "name": "HTB Certified Defensive Security Analyst",
+   "short": "CDSA",
+   "category": "technology",
+   "group": "Cybersecurity (Vendor-Neutral)",
+   "body": "Hack The Box",
+   "type": "Certification",
+   "aka": [
+    "CDSA"
+   ],
+   "blurb": "Hack The Box blue-team certification requiring hands-on detection, log analysis, threat hunting and an incident report within a simulated SOC."
+  },
+  {
+   "slug": "hackthebox-cpts",
+   "name": "HTB Certified Penetration Testing Specialist",
+   "short": "CPTS",
+   "category": "technology",
+   "group": "Cybersecurity (Vendor-Neutral)",
+   "body": "Hack The Box",
+   "type": "Certification",
+   "aka": [
+    "CPTS"
+   ],
+   "blurb": "Hands-on Hack The Box certification requiring a ten-day practical engagement and a professional penetration testing report against a live network."
+  }
+ ]
+}

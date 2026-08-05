@@ -1,0 +1,114 @@
+{
+  "batch": "16",
+  "categories": [
+    "engineering-design"
+  ],
+  "groups": [
+    "NCEES FE Exams"
+  ],
+  "examCount": 7,
+  "bodyCount": 1,
+  "bodies": [
+    "National Council of Examiners for Engineering and Surveying (NCEES)"
+  ],
+  "exams": [
+    {
+      "slug": "fe-chemical",
+      "name": "Fundamentals of Engineering (FE) Chemical Exam",
+      "short": "FE Chemical",
+      "category": "engineering-design",
+      "group": "NCEES FE Exams",
+      "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+      "bodyUrl": "https://ncees.org",
+      "type": "Exam",
+      "aka": [
+        "FE Chemical"
+      ],
+      "blurb": "First-step licensing exam for chemical engineers covering material and energy balances, thermo and kinetics."
+    },
+    {
+      "slug": "fe-civil",
+      "name": "Fundamentals of Engineering (FE) Civil Exam",
+      "short": "FE Civil",
+      "category": "engineering-design",
+      "group": "NCEES FE Exams",
+      "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+      "bodyUrl": "https://ncees.org",
+      "type": "Exam",
+      "aka": [
+        "FE Civil"
+      ],
+      "blurb": "First-step licensing exam for civil engineers covering math, statics, mechanics, materials and civil topics."
+    },
+    {
+      "slug": "fe-electrical-computer",
+      "name": "Fundamentals of Engineering (FE) Electrical and Computer Exam",
+      "short": "FE Electrical",
+      "category": "engineering-design",
+      "group": "NCEES FE Exams",
+      "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+      "bodyUrl": "https://ncees.org",
+      "type": "Exam",
+      "aka": [
+        "FE Electrical and Computer"
+      ],
+      "blurb": "First-step licensing exam for electrical and computer engineers covering circuits, electronics and digital systems."
+    },
+    {
+      "slug": "fe-environmental",
+      "name": "Fundamentals of Engineering (FE) Environmental Exam",
+      "short": "FE Environmental",
+      "category": "engineering-design",
+      "group": "NCEES FE Exams",
+      "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+      "bodyUrl": "https://ncees.org",
+      "type": "Exam",
+      "aka": [
+        "FE Environmental"
+      ],
+      "blurb": "First-step licensing exam for environmental engineers covering water, air, soil and risk management topics."
+    },
+    {
+      "slug": "fe-industrial-systems",
+      "name": "Fundamentals of Engineering (FE) Industrial and Systems Exam",
+      "short": "FE Industrial",
+      "category": "engineering-design",
+      "group": "NCEES FE Exams",
+      "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+      "bodyUrl": "https://ncees.org",
+      "type": "Exam",
+      "aka": [
+        "FE Industrial and Systems"
+      ],
+      "blurb": "First-step licensing exam for industrial engineers covering analytics, production and systems engineering topics."
+    },
+    {
+      "slug": "fe-mechanical",
+      "name": "Fundamentals of Engineering (FE) Mechanical Exam",
+      "short": "FE Mechanical",
+      "category": "engineering-design",
+      "group": "NCEES FE Exams",
+      "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+      "bodyUrl": "https://ncees.org",
+      "type": "Exam",
+      "aka": [
+        "FE Mechanical"
+      ],
+      "blurb": "First-step licensing exam for mechanical engineers covering statics, dynamics, thermo, fluids and mechanics."
+    },
+    {
+      "slug": "fe-other-disciplines",
+      "name": "Fundamentals of Engineering (FE) Other Disciplines Exam",
+      "short": "FE Other",
+      "category": "engineering-design",
+      "group": "NCEES FE Exams",
+      "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+      "bodyUrl": "https://ncees.org",
+      "type": "Exam",
+      "aka": [
+        "FE Other Disciplines"
+      ],
+      "blurb": "First-step licensing exam for disciplines not covered by a dedicated FE exam, covering broad engineering topics."
+    }
+  ]
+}

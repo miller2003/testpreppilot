@@ -1,0 +1,437 @@
+{
+ "chunkId": "b05-p01",
+ "batch": 5,
+ "part": 1,
+ "categories": [
+  "allied-health"
+ ],
+ "groups": [
+  "Coding and HIM",
+  "Laboratory"
+ ],
+ "bodies": [
+  "AAPC",
+  "American Society for Clinical Pathology Board of Certification (ASCP BOC)"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "aapc-cascc",
+   "name": "AAPC Certified Ambulatory Surgery Center Coder",
+   "short": "CASCC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty coding credential for ambulatory surgery centers., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-canpc",
+   "name": "AAPC Certified Anesthesia and Pain Management Coder",
+   "short": "CANPC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty coding credential for anesthesia and pain management., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-ccc",
+   "name": "AAPC Certified Cardiology Coder",
+   "short": "CCC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty coding credential for cardiology services., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-ccvtc",
+   "name": "AAPC Certified Cardiovascular and Thoracic Coder",
+   "short": "CCVTC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty coding credential for cardiovascular and thoracic surgery., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-cdeo",
+   "name": "AAPC Certified Documentation Expert – Outpatient",
+   "short": "CDEO",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for experts in outpatient clinical documentation improvement., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-cedc",
+   "name": "AAPC Certified Emergency Department Coder",
+   "short": "CEDC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty coding credential for emergency department services., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-cfpc",
+   "name": "AAPC Certified Family Practice Coder",
+   "short": "CFPC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty coding credential for family practice., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-cgic",
+   "name": "AAPC Certified Gastroenterology Coder",
+   "short": "CGIC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty coding credential for gastroenterology., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-cgsc",
+   "name": "AAPC Certified General Surgery Coder",
+   "short": "CGSC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty coding credential for general surgery., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-chonc",
+   "name": "AAPC Certified Hematology and Oncology Coder",
+   "short": "CHONC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty coding credential for hematology and oncology., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-cic",
+   "name": "AAPC Certified Inpatient Coder",
+   "short": "CIC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for coders specializing in hospital inpatient coding., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-circc",
+   "name": "AAPC Certified Interventional Radiology Cardiovascular Coder",
+   "short": "CIRCC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty coding credential for interventional radiology and cardiology., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-cosc",
+   "name": "AAPC Certified Orthopedic Surgery Coder",
+   "short": "COSC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty coding credential for orthopedic surgery., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-coc",
+   "name": "AAPC Certified Outpatient Coder",
+   "short": "COC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for coders specializing in hospital outpatient coding., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-cpedc",
+   "name": "AAPC Certified Pediatrics Coder",
+   "short": "CPEDC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty coding credential for pediatric services., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-cppm",
+   "name": "AAPC Certified Physician Practice Manager",
+   "short": "CPPM",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for managing physician practice operations and revenue., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-cpb",
+   "name": "AAPC Certified Professional Biller",
+   "short": "CPB",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for medical billers managing claims and reimbursement., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-cpc",
+   "name": "AAPC Certified Professional Coder",
+   "short": "CPC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Flagship credential for professional medical coders in outpatient physician settings."
+  },
+  {
+   "slug": "aapc-cpco",
+   "name": "AAPC Certified Professional Compliance Officer",
+   "short": "CPCO",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for compliance officers in healthcare coding and billing., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-cpma",
+   "name": "AAPC Certified Professional Medical Auditor",
+   "short": "CPMA",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for auditing medical coding and documentation compliance., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aapc-crc",
+   "name": "AAPC Certified Risk Adjustment Coder",
+   "short": "CRC",
+   "category": "allied-health",
+   "group": "Coding and HIM",
+   "body": "AAPC",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for coders specializing in risk adjustment and hierarchical coding., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ascp-bb",
+   "name": "ASCP Blood Bank Technologist Certification",
+   "short": "BB",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for technologists in blood banking and transfusion medicine."
+  },
+  {
+   "slug": "ascp-chem",
+   "name": "ASCP Chemistry Technologist Certification",
+   "short": "C",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for technologists in clinical chemistry., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ascp-cg",
+   "name": "ASCP Cytogenetics Technologist Certification",
+   "short": "CG",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for technologists in cytogenetic analysis., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ascp-ct",
+   "name": "ASCP Cytotechnologist Certification",
+   "short": "CT",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for cytotechnologists screening cytology specimens for abnormalities."
+  },
+  {
+   "slug": "ascp-dlm",
+   "name": "ASCP Diplomate in Laboratory Management",
+   "short": "DLM",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for laboratorians in management and operations of lab facilities., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ascp-hematology",
+   "name": "ASCP Hematology Technologist Certification",
+   "short": "H",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for technologists in hematology and coagulation., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ascp-ht",
+   "name": "ASCP Histotechnician Certification",
+   "short": "HT",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for histotechnicians preparing tissue specimens for microscopic examination."
+  },
+  {
+   "slug": "ascp-htl",
+   "name": "ASCP Histotechnologist Certification",
+   "short": "HTL",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced credential for histotechnologists processing and embedding tissues., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ascp-mla",
+   "name": "ASCP Medical Laboratory Assistant Certification",
+   "short": "MLA",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for assistants performing specimen processing and basic lab tasks., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ascp-mls",
+   "name": "ASCP Medical Laboratory Scientist Certification",
+   "short": "MLS",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry-level credential for medical laboratory scientists performing complex testing."
+  },
+  {
+   "slug": "ascp-mlt",
+   "name": "ASCP Medical Laboratory Technician Certification",
+   "short": "MLT",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry-level credential for medical laboratory technicians performing routine testing."
+  },
+  {
+   "slug": "ascp-mb",
+   "name": "ASCP Molecular Biology Certification",
+   "short": "MB",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for technologists in molecular diagnostics., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ascp-pbt",
+   "name": "ASCP Phlebotomy Technician Certification",
+   "short": "PBT",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for phlebotomists trained to collect blood specimens., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ascp-sbb",
+   "name": "ASCP Specialist in Blood Bank Certification",
+   "short": "SBB",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced specialist credential for experts in blood banking and immunohematology."
+  },
+  {
+   "slug": "ascp-sc",
+   "name": "ASCP Specialist in Chemistry Certification",
+   "short": "SC",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced specialist credential for experts in clinical chemistry., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ascp-sh",
+   "name": "ASCP Specialist in Hematology Certification",
+   "short": "SH",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced specialist credential for experts in hematology., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ascp-sm",
+   "name": "ASCP Specialist in Microbiology Certification",
+   "short": "SM",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Society for Clinical Pathology Board of Certification (ASCP BOC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced specialist credential for experts in clinical microbiology., a nationally recognized professional credential in this field."
+  }
+ ]
+}

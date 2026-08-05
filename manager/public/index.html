@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TestPrepPilot · 内容管理器</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --panel:#ffffff; --ink:#1f2430; --muted:#6b7280; --line:#e5e7eb;
+    --brand:#2563eb; --brand-weak:#eff4ff; --green:#16a34a; --green-weak:#e9f7ef;
+    --amber:#d97706; --amber-weak:#fdf3e3; --grey:#6b7280; --grey-weak:#f1f3f5;
+    --red:#dc2626; --red-weak:#fdeaea; --shadow:0 1px 3px rgba(16,24,40,.08),0 1px 2px rgba(16,24,40,.06);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink)}
+  header{position:sticky;top:0;z-index:20;background:var(--panel);border-bottom:1px solid var(--line);padding:12px 18px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+  header h1{font-size:16px;margin:0;font-weight:700}
+  header h1 span{color:var(--brand)}
+  .stats{display:flex;gap:10px;flex-wrap:wrap}
+  .stat{background:var(--grey-weak);border-radius:10px;padding:6px 12px;min-width:74px;text-align:center}
+  .stat b{display:block;font-size:18px;line-height:1.1}
+  .stat small{color:var(--muted);font-size:11px}
+  .stat.live{background:var(--green-weak)} .stat.live b{color:var(--green)}
+  .stat.sched{background:var(--amber-weak)} .stat.sched b{color:var(--amber)}
+  .stat.draft{background:var(--grey-weak)} .stat.draft b{color:var(--grey)}
+  .stat.flag{background:var(--brand-weak)} .stat.flag b{color:var(--brand)}
+  .grow{flex:1}
+  button{font:inherit;cursor:pointer;border:1px solid var(--line);background:#fff;color:var(--ink);padding:7px 12px;border-radius:9px;transition:.12s}
+  button:hover{border-color:var(--brand);color:var(--brand)}
+  button.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+  button.primary:hover{filter:brightness(1.05);color:#fff}
+  button.danger:hover{border-color:var(--red);color:var(--red)}
+  button:disabled{opacity:.5;cursor:not-allowed}
+  .steps{background:var(--brand-weak);border-bottom:1px solid #d6e2ff;padding:9px 18px;color:#1e3a8a;font-size:13px;display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+  .steps b{color:var(--brand)}
+  .toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:12px 18px;background:var(--panel);border-bottom:1px solid var(--line)}
+  input,select{font:inherit;padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink)}
+  input[type=search]{min-width:220px}
+  .bulk{position:sticky;top:157px;z-index:15;display:none;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 18px;background:var(--brand-weak);border-bottom:1px solid #d6e2ff}
+  .bulk.show{display:flex}
+  .bulk .cnt{font-weight:700;color:var(--brand)}
+  .wrap{display:flex;gap:0;align-items:flex-start}
+  .tablewrap{flex:1;overflow:auto;max-height:calc(100vh - 215px)}
+  table{border-collapse:collapse;width:100%;background:#fff}
+  th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+  th{position:sticky;top:0;background:#fafbfc;z-index:5;font-size:12px;color:var(--muted);cursor:pointer;user-select:none}
+  tbody tr:hover{background:#fafcff}
+  tbody tr.sel{background:var(--brand-weak)}
+  .slug{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--muted)}
+  .name{font-weight:600}
+  .badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;font-weight:600;white-space:nowrap}
+  .b-national{background:#eef2ff;color:#4338ca}
+  .b-state{background:#ecfeff;color:#0e7490}
+  .b-flagship{background:#fef3c7;color:#92400e}
+  .s-live{background:var(--green-weak);color:var(--green)}
+  .s-scheduled{background:var(--amber-weak);color:var(--amber)}
+  .s-draft{background:var(--grey-weak);color:var(--grey)}
+  .t-high{background:var(--green-weak);color:var(--green)}
+  .t-mid{background:var(--amber-weak);color:var(--amber)}
+  .t-low{background:var(--grey-weak);color:var(--grey)}
+  .flag{font-size:10px;padding:1px 6px;border-radius:6px;margin-left:4px}
+  .f-low{background:var(--red-weak);color:var(--red)}
+  .f-tmpl{background:var(--amber-weak);color:var(--amber)}
+  .panel{width:460px;flex:none;border-left:1px solid var(--line);background:#fff;height:calc(100vh - 215px);display:none;flex-direction:column}
+  .panel.show{display:flex}
+  .panel .phead{padding:10px 14px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px;font-size:12px;color:var(--muted)}
+  .panel .phead a{color:var(--brand);text-decoration:none}
+  .panel iframe{flex:1;width:100%;border:0;background:#fff}
+  .modal{position:fixed;inset:0;background:rgba(15,23,42,.45);display:none;align-items:center;justify-content:center;z-index:50}
+  .modal.show{display:flex}
+  .modal .box{background:#fff;border-radius:14px;padding:22px;max-width:460px;width:92%;box-shadow:var(--shadow)}
+  .modal h3{margin-top:0}
+  .modal pre{background:#0f172a;color:#e2e8f0;padding:12px;border-radius:8px;overflow:auto;font-size:12px;max-height:200px}
+  .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:10px 16px;border-radius:10px;z-index:60;opacity:0;transition:.25s;pointer-events:none}
+  .toast.show{opacity:1}
+  .hint{color:var(--muted);font-size:12px}
+  .empty{padding:40px;text-align:center;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <h1>TestPrepPilot <span>内容管理器</span></h1>
+  <div class="stats" id="stats"></div>
+  <div class="grow"></div>
+  <button id="autoplan" class="primary">一键排期（全站）</button>
+  <button id="deploy" class="primary">部署上线 ▲</button>
+</header>
+
+<div class="steps">
+  <span>① 在下方<b>筛选 / 搜索</b>你要处理的页面</span>
+  <span>② 勾选后点<b>立即发布</b>（或先排期）</span>
+  <span>③ 点右上角<b>部署上线</b>，推送到网站生效</span>
+  <span class="hint">（点任意一行可预览该页面的完整网页）</span>
+</div>
+
+<div class="toolbar">
+  <input id="q" type="search" placeholder="搜索 slug 或页面名称…" />
+  <select id="scope"><option value="all">全部范围</option><option value="national">国家级</option><option value="state">州级</option><option value="flagship">标杆页</option></select>
+  <select id="category"><option value="all">全部分类</option></select>
+  <select id="status"><option value="all">全部状态</option><option value="live">已发布</option><option value="scheduled">已排期</option><option value="draft">草稿</option></select>
+  <select id="heat"><option value="all">全部热度</option><option value="高">热度：高</option><option value="中">热度：中</option><option value="低">热度：低</option></select>
+  <select id="sort"><option value="slug">排序：slug</option><option value="categoryLabel">排序：分类</option><option value="scope">排序：范围</option><option value="status">排序：状态</option><option value="-demand">排序：市场热度</option><option value="-quality.totalBody">排序：最薄优先</option><option value="-releaseDate">排序：发布日期</option></select>
+  <button id="refresh">刷新</button>
+  <span class="hint" id="shown"></span>
+</div>
+
+<div class="bulk" id="bulk">
+  <span class="cnt" id="bulkcnt">已选 0 项</span>
+  <button id="relnow" class="primary">立即发布</button>
+  <span>排期：<input type="date" id="reldate" /></span>
+  <button id="relsched">排期发布</button>
+  <button id="unrel" class="danger">撤回草稿</button>
+  <button id="previewsel">预览</button>
+  <button id="clear">清空选择</button>
+</div>
+
+<div class="wrap">
+  <div class="tablewrap">
+    <table>
+      <thead><tr>
+        <th style="width:34px"><input type="checkbox" id="checkall" /></th>
+        <th data-sort="slug">Slug</th>
+        <th data-sort="name">页面名称</th>
+        <th data-sort="categoryLabel">分类</th>
+        <th data-sort="scope">范围</th>
+        <th data-sort="status">状态</th>
+        <th data-sort="releaseDate">发布日</th>
+        <th data-sort="demand">热度</th>
+        <th data-sort="quality.totalBody">质量</th>
+      </tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <div class="empty" id="empty" style="display:none">没有符合筛选条件的页面。</div>
+  </div>
+  <aside class="panel" id="panel">
+    <div class="phead">
+      <span id="phead-slug" class="slug"></span>
+      <span class="grow"></span>
+      <a id="phead-open" href="#" target="_blank">新标签打开 ↗</a>
+      <button id="phead-close">关闭</button>
+    </div>
+    <iframe id="previewFrame" sandbox="allow-same-origin"></iframe>
+  </aside>
+</div>
+
+<div class="modal" id="modal"><div class="box" id="modalbox"></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const api = (u, m, b) => fetch(u, {method:m||'GET', headers:{'Content-Type':'application/json'}, body:b?JSON.stringify(b):undefined}).then(r=>r.json());
+const SCOPE = {national:'国家级', state:'州级', flagship:'标杆'};
+const STATUS = {live:'已发布', scheduled:'已排期', draft:'草稿'};
+let ALL = [], selected = new Set(), renderFrom = 0;
+const PAGE = 300;
+
+function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200);}
+function esc(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+
+async function loadStats(){
+  const s = await api('/api/stats');
+  $('#stats').innerHTML =
+    `<div class="stat"><b>${s.total}</b><small>总页数</small></div>`+
+    `<div class="stat live"><b>${s.live}</b><small>已发布</small></div>`+
+    `<div class="stat sched"><b>${s.scheduled}</b><small>已排期</small></div>`+
+    `<div class="stat draft"><b>${s.draft}</b><small>草稿</small></div>`+
+    `<div class="stat flag"><b>${s.flagship}</b><small>标杆页</small></div>`;
+  const sel = $('#category');
+  const cur = sel.value;
+  sel.innerHTML = '<option value="all">全部分类</option>' + Object.keys(s.byCategory).sort().map(c=>`<option value="${esc(c)}">${esc(c)} (${s.byCategory[c]})</option>`).join('');
+  if([...sel.options].some(o=>o.value===cur)) sel.value = cur;
+}
+
+async function load(){
+  const q = $('#q').value.trim();
+  const scope = $('#scope').value, category = $('#category').value, status = $('#status').value, sort = $('#sort').value;
+  const u = `/api/exams?q=${encodeURIComponent(q)}&scope=${scope}&category=${encodeURIComponent(category)}&status=${status}&sort=${sort}`;
+  ALL = (await api(u)).rows;
+  selected = new Set([...selected].filter(s=>ALL.some(r=>r.slug===s)));
+  renderFrom = 0;
+  $('#rows').innerHTML = '';
+  renderMore();
+  $('#empty').style.display = ALL.length ? 'none' : 'block';
+  $('#shown').textContent = `显示 ${Math.min(PAGE,ALL.length)} / 共 ${ALL.length} 页`;
+}
+
+function rowHTML(r){
+  const checked = selected.has(r.slug) ? 'checked' : '';
+  const scopeBadge = r.scope==='national'?'b-national':r.scope==='state'?'b-state':'b-flagship';
+  const statusBadge = 's-'+r.status;
+  let q = '<span class="hint">—</span>';
+  if(r.quality){
+    const f = [];
+    if(r.quality.lowDepth) f.push('<span class="flag f-low">薄</span>');
+    if(r.quality.templated) f.push('<span class="flag f-tmpl">模板</span>');
+    q = `${(r.quality.totalBody||0)}字 ${f.join('')}`;
+  }
+  return `<tr data-slug="${esc(r.slug)}" class="${selected.has(r.slug)?'sel':''}">
+    <td><input type="checkbox" class="ck" ${checked} data-slug="${esc(r.slug)}"></td>
+    <td><div class="slug">${esc(r.slug)}</div></td>
+    <td><div class="name">${esc(r.name||'')}</div></td>
+    <td>${esc(r.categoryLabel||'')}</td>
+    <td><span class="badge ${scopeBadge}">${SCOPE[r.scope]||r.scope}</span></td>
+    <td><span class="badge ${statusBadge}">${STATUS[r.status]||r.status}</span></td>
+    <td class="slug">${esc(r.releaseDate||'—')}</td>
+    <td><span class="badge ${r.demandTier==='高'?'t-high':r.demandTier==='中'?'t-mid':'t-low'}">${r.demandTier}</span> ${r.demand}</td>
+    <td>${q}</td>
+  </tr>`;
+}
+
+function renderMore(){
+  const slice = ALL.slice(renderFrom, renderFrom+PAGE);
+  $('#rows').insertAdjacentHTML('beforeend', slice.map(rowHTML).join(''));
+  renderFrom += slice.length;
+  $('#shown').textContent = `显示 ${Math.min(renderFrom,ALL.length)} / 共 ${ALL.length} 页`;
+}
+
+document.querySelector('.tablewrap').addEventListener('scroll', e=>{
+  const el = e.target;
+  if(el.scrollTop + el.clientHeight > el.scrollHeight - 200 && renderFrom < ALL.length) renderMore();
+});
+
+function openPreview(slug){
+  const p = $('#panel'); p.classList.add('show');
+  $('#phead-slug').textContent = slug;
+  $('#phead-open').href = '/preview/'+encodeURIComponent(slug);
+  $('#previewFrame').src = '/preview/'+encodeURIComponent(slug);
+}
+
+$('#rows').addEventListener('click', e=>{
+  const tr = e.target.closest('tr'); if(!tr) return;
+  if(e.target.classList.contains('ck')){
+    const s = e.target.dataset.slug;
+    if(e.target.checked) selected.add(s); else selected.delete(s);
+    tr.classList.toggle('sel', e.target.checked);
+    updateBulk();
+  } else {
+    openPreview(tr.dataset.slug);
+  }
+});
+
+$('#checkall').addEventListener('change', e=>{
+  const visible = [...document.querySelectorAll('#rows tr')];
+  visible.forEach(tr=>{const s=tr.dataset.slug; if(e.target.checked) selected.add(s); else selected.delete(s); const ck=tr.querySelector('.ck'); if(ck) ck.checked=e.target.checked; tr.classList.toggle('sel',e.target.checked);});
+  updateBulk();
+});
+
+function updateBulk(){
+  const n = selected.size;
+  $('#bulk').classList.toggle('show', n>0);
+  $('#bulkcnt').textContent = '已选 '+n+' 项';
+}
+
+async function mutate(slugs, action, extra){
+  if(!slugs.length){ toast('请先勾选页面'); return; }
+  const b = {slugs, ...extra};
+  const r = await api('/api/'+action, 'POST', b);
+  toast((action==='release'?'已发布':action==='unrelease'?'已撤回':'已排期')+' '+slugs.length+' 页');
+  await loadStats(); await load();
+}
+
+$('#relnow').onclick = ()=> mutate([...selected], 'release', {date: new Date().toISOString().slice(0,10)});
+$('#relsched').onclick = ()=>{ const d=$('#reldate').value; if(!d){toast('请选择日期');return;} mutate([...selected],'release',{date:d}); };
+$('#unrel').onclick = ()=> mutate([...selected], 'unrelease');
+$('#previewsel').onclick = ()=>{ const s=[...selected][0]; if(s) openPreview(s); };
+$('#clear').onclick = ()=>{ selected.clear(); document.querySelectorAll('.ck').forEach(c=>c.checked=false); document.querySelectorAll('#rows tr').forEach(t=>t.classList.remove('sel')); updateBulk(); };
+$('#phead-close').onclick = ()=> $('#panel').classList.remove('show');
+
+$('#autoplan').onclick = async ()=>{
+  const batch = prompt('每天发布几篇？（默认 30）', '30'); if(batch===null) return;
+  const start = prompt('从哪天开始？（格式 YYYY-MM-DD，默认今天）', new Date().toISOString().slice(0,10)); if(start===null) return;
+  const excl = confirm('是否把"无需执照"的页面排除在排期之外？\n（确定 = 排除，它们留作以后再发）');
+  const r = await api('/api/autoplan','POST',{batchSize:+batch, startDate:start, excludeNoLicense:excl});
+  toast(`已排期 ${r.scheduled} 页，约 ${r.daysToComplete} 天发完（到 ${r.endDate}）`);
+  await loadStats(); await load();
+};
+
+$('#deploy').onclick = async ()=>{
+  const box = $('#modalbox');
+  box.innerHTML = `<h3>部署上线 → GitHub / Cloudflare Pages</h3>
+    <p>这一步会把"发布名单"提交并推送到 <code>main</code> 分支，触发器会自动重建网站，<b>只上线已发布的页面</b>。</p>
+    <p><label>提交说明：<br><input id="cmsg" style="width:100%" value="发布批次 ${new Date().toISOString().slice(0,10)}"></label></p>
+    <p><button id="dry">试运行（仅暂存，不推送）</button> <button id="go" class="primary">提交并推送</button> <button id="cancel">取消</button></p>
+    <pre id="out" style="display:none"></pre>`;
+  $('#modal').classList.add('show');
+  $('#cancel').onclick = ()=> $('#modal').classList.remove('show');
+  $('#dry').onclick = async ()=>{ const r = await api('/api/deploy','POST',{dryRun:true,message:$('#cmsg').value}); $('#out').style.display='block'; $('#out').textContent = '已暂存：\n'+r.diff; };
+  $('#go').onclick = async ()=>{
+    const r = await api('/api/deploy','POST',{message:$('#cmsg').value});
+    $('#out').style.display='block';
+    $('#out').textContent = (r.ok?'✅ 已推送成功。\n':'❌ 失败：\n') + (r.commit?.stdout||'') + '\n' + (r.push?.stdout||r.push?.stderr||r.stderr||'');
+    if(r.ok) { toast('已部署上线'); await loadStats(); }
+  };
+};
+
+['q','scope','category','status','heat','sort'].forEach(id=>{
+  const el = $('#'+id);
+  el.addEventListener('change', load);
+  if(id==='q') el.addEventListener('input', ()=>{ clearTimeout(el._t); el._t=setTimeout(load, 250); });
+});
+document.querySelectorAll('th[data-sort]').forEach(th=> th.addEventListener('click', ()=>{
+  const key = th.dataset.sort; const cur = $('#sort').value;
+  $('#sort').value = cur === key ? '-'+key : key; load();
+}));
+$('#refresh').onclick = async ()=>{ await loadStats(); await load(); };
+
+loadStats().then(load);
+</script>
+</body>
+</html>

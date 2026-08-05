@@ -1,0 +1,86 @@
+{
+ "chunkId": "b22-p02",
+ "batch": 22,
+ "part": 2,
+ "categories": [
+  "government-civil-service"
+ ],
+ "groups": [
+  "Federal Hiring & Civil Service"
+ ],
+ "bodies": [
+  "U.S. Office of Personnel Management",
+  "State civil service agencies",
+  "United States Capitol Police",
+  "United States Marshals Service",
+  "U.S. Citizenship and Immigration Services"
+ ],
+ "examCount": 5,
+ "exams": [
+  {
+   "slug": "usahire-assessment",
+   "name": "OPM USA Hire Assessments",
+   "short": "USA Hire",
+   "category": "government-civil-service",
+   "group": "Federal Hiring & Civil Service",
+   "body": "U.S. Office of Personnel Management",
+   "type": "Exam",
+   "aka": [
+    "USA Hire"
+   ],
+   "blurb": "OPM’s online assessment platform delivering structured reasoning and job-simulation tests used across many federal agency hiring announcements."
+  },
+  {
+   "slug": "state-civil-service-exams",
+   "name": "State Civil Service Examinations",
+   "short": "State Civil Service",
+   "category": "government-civil-service",
+   "group": "Federal Hiring & Civil Service",
+   "body": "State civil service agencies",
+   "type": "Exam",
+   "aka": [
+    "State Civil Service"
+   ],
+   "blurb": "The collective merit-system examinations used by U.S. state governments to fill classified public-sector positions through open competition."
+  },
+  {
+   "slug": "federal-capital-police-exam",
+   "name": "U.S. Capitol Police Officer Exam",
+   "short": "USCP Exam",
+   "category": "government-civil-service",
+   "group": "Federal Hiring & Civil Service",
+   "body": "United States Capitol Police",
+   "type": "Exam",
+   "aka": [
+    "USCP Exam"
+   ],
+   "blurb": "A written and physical abilities exam for U.S. Capitol Police officers responsible for protecting Congress and Capitol grounds."
+  },
+  {
+   "slug": "us-marshals-exam",
+   "name": "U.S. Marshals Service Criminal Investigator Exam",
+   "short": "USMS Exam",
+   "category": "government-civil-service",
+   "group": "Federal Hiring & Civil Service",
+   "body": "United States Marshals Service",
+   "type": "Exam",
+   "aka": [
+    "Deputy Marshal Exam"
+   ],
+   "blurb": "A selection exam and assessment for deputy U.S. marshal candidates covering judgment, reasoning and the demands of federal law enforcement."
+  },
+  {
+   "slug": "us-citizenship-immigration-officer-exam",
+   "name": "USCIS Immigration Services Officer Exam",
+   "short": "USCIS Exam",
+   "category": "government-civil-service",
+   "group": "Federal Hiring & Civil Service",
+   "body": "U.S. Citizenship and Immigration Services",
+   "type": "Exam",
+   "aka": [
+    "ISO Exam"
+   ],
+   "blurb": "A USA Hire-based assessment for immigration services officers evaluating reasoning, writing and judgment for adjudicating immigration benefits."
+  }
+ ]
+}

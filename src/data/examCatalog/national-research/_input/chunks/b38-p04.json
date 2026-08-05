@@ -1,0 +1,229 @@
+{
+ "chunkId": "b38-p04",
+ "batch": 38,
+ "part": 4,
+ "categories": [
+  "trades"
+ ],
+ "groups": [
+  "Automotive & Diesel",
+  "HVAC/Refrigeration & Energy"
+ ],
+ "bodies": [
+  "U.S. Environmental Protection Agency approved programmes",
+  "Inter-Industry Conference on Auto Collision Repair (I-CAR)",
+  "ESCO Institute / HVAC Excellence",
+  "State motor vehicle repair licensing agencies",
+  "Association of Energy Engineers (AEE)",
+  "Building Performance Institute (BPI)",
+  "Residential Energy Services Network (RESNET)"
+ ],
+ "examCount": 17,
+ "exams": [
+  {
+   "slug": "epa-609-mvac-certification",
+   "name": "EPA Section 609 Motor Vehicle Air Conditioning Technician Certification",
+   "short": "EPA 609",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "U.S. Environmental Protection Agency approved programmes",
+   "type": "Certification",
+   "aka": [
+    "Section 609"
+   ],
+   "blurb": "Federally required credential for technicians who service motor vehicle air conditioning systems and handle automotive refrigerants."
+  },
+  {
+   "slug": "epa-608-type-1",
+   "name": "EPA Section 608 Type I Certification",
+   "short": "608 Type I",
+   "category": "trades",
+   "group": "HVAC/Refrigeration & Energy",
+   "body": "U.S. Environmental Protection Agency approved programmes",
+   "type": "Certification",
+   "aka": [
+    "EPA 608 Type I"
+   ],
+   "blurb": "Federal credential for servicing small appliances containing regulated refrigerants such as household refrigerators."
+  },
+  {
+   "slug": "epa-608-type-2",
+   "name": "EPA Section 608 Type II Certification",
+   "short": "608 Type II",
+   "category": "trades",
+   "group": "HVAC/Refrigeration & Energy",
+   "body": "U.S. Environmental Protection Agency approved programmes",
+   "type": "Certification",
+   "aka": [
+    "EPA 608 Type II"
+   ],
+   "blurb": "Federal credential for servicing high-pressure HVAC equipment and recovering refrigerant from residential systems."
+  },
+  {
+   "slug": "epa-608-type-3",
+   "name": "EPA Section 608 Type III Certification",
+   "short": "608 Type III",
+   "category": "trades",
+   "group": "HVAC/Refrigeration & Energy",
+   "body": "U.S. Environmental Protection Agency approved programmes",
+   "type": "Certification",
+   "aka": [
+    "EPA 608 Type III"
+   ],
+   "blurb": "Federal credential for servicing low-pressure appliances such as centrifugal chillers using regulated refrigerants."
+  },
+  {
+   "slug": "epa-608-universal",
+   "name": "EPA Section 608 Universal Certification",
+   "short": "608 Universal",
+   "category": "trades",
+   "group": "HVAC/Refrigeration & Energy",
+   "body": "U.S. Environmental Protection Agency approved programmes",
+   "type": "Certification",
+   "aka": [
+    "EPA 608 Universal"
+   ],
+   "blurb": "Federal credential combining Type I, II and III approvals to service any appliance containing regulated refrigerants."
+  },
+  {
+   "slug": "i-car-platinum-recognition",
+   "name": "I-CAR Platinum Individual Recognition",
+   "short": "I-CAR Platinum",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "Inter-Industry Conference on Auto Collision Repair (I-CAR)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Recognition awarded to collision repair professionals who complete ProLevel 3 in a role and maintain annual continuing education."
+  },
+  {
+   "slug": "i-car-prolevel-1",
+   "name": "I-CAR ProLevel 1 Role-Based Training",
+   "short": "ProLevel 1",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "Inter-Industry Conference on Auto Collision Repair (I-CAR)",
+   "type": "Training",
+   "aka": [],
+   "blurb": "First stage of I-CAR role-based collision repair training, covering foundational knowledge for estimators, technicians and refinishers."
+  },
+  {
+   "slug": "i-car-prolevel-2",
+   "name": "I-CAR ProLevel 2 Role-Based Training",
+   "short": "ProLevel 2",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "Inter-Industry Conference on Auto Collision Repair (I-CAR)",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Second stage of I-CAR role-based collision repair training, adding intermediate repair procedures and vehicle technology knowledge."
+  },
+  {
+   "slug": "i-car-prolevel-3",
+   "name": "I-CAR ProLevel 3 Role-Based Training",
+   "short": "ProLevel 3",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "Inter-Industry Conference on Auto Collision Repair (I-CAR)",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Final stage of I-CAR role-based training, completing the knowledge path required for Platinum recognition in a collision repair role."
+  },
+  {
+   "slug": "hvac-excellence-carbon-monoxide",
+   "name": "HVAC Excellence Carbon Monoxide Safety Certification",
+   "short": "CO Safety",
+   "category": "trades",
+   "group": "HVAC/Refrigeration & Energy",
+   "body": "ESCO Institute / HVAC Excellence",
+   "bodyUrl": "https://www.escogroup.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential covering combustion analysis, CO detection and prevention of carbon monoxide hazards."
+  },
+  {
+   "slug": "hvac-excellence-employment-ready",
+   "name": "HVAC Excellence Employment Ready Certification",
+   "short": "HVAC Excellence ER",
+   "category": "trades",
+   "group": "HVAC/Refrigeration & Energy",
+   "body": "ESCO Institute / HVAC Excellence",
+   "bodyUrl": "https://www.escogroup.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry credential verifying foundational HVACR knowledge for students entering the workforce."
+  },
+  {
+   "slug": "hvac-excellence-master-specialist",
+   "name": "HVAC Excellence Master Specialist Certification",
+   "short": "Master Specialist",
+   "category": "trades",
+   "group": "HVAC/Refrigeration & Energy",
+   "body": "ESCO Institute / HVAC Excellence",
+   "bodyUrl": "https://www.escogroup.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced credential in a specific HVACR specialty for technicians with substantial field experience."
+  },
+  {
+   "slug": "hvac-excellence-professional",
+   "name": "HVAC Excellence Professional Technician Certification",
+   "short": "HVAC Excellence Pro",
+   "category": "trades",
+   "group": "HVAC/Refrigeration & Energy",
+   "body": "ESCO Institute / HVAC Excellence",
+   "bodyUrl": "https://www.escogroup.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering core HVACR competencies for working technicians seeking professional recognition."
+  },
+  {
+   "slug": "automotive-service-technician-state-licence",
+   "name": "Automotive Service Technician State Licensing Examination",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "State motor vehicle repair licensing agencies",
+   "type": "License",
+   "aka": [
+    "Auto Mechanic License"
+   ],
+   "blurb": "Umbrella for the small number of states that license motor vehicle repair technicians by specialty area rather than relying on ASE alone."
+  },
+  {
+   "slug": "aee-certified-energy-manager",
+   "name": "Association of Energy Engineers Certified Energy Manager (CEM)",
+   "short": "CEM",
+   "category": "trades",
+   "group": "HVAC/Refrigeration & Energy",
+   "body": "Association of Energy Engineers (AEE)",
+   "bodyUrl": "https://www.aeecenter.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Premier credential for energy professionals managing energy use, audits and efficiency projects in facilities."
+  },
+  {
+   "slug": "bpi-building-analyst",
+   "name": "Building Performance Institute Building Analyst (BPI BA)",
+   "short": "BPI BA",
+   "category": "trades",
+   "group": "HVAC/Refrigeration & Energy",
+   "body": "Building Performance Institute (BPI)",
+   "bodyUrl": "https://www.bpihomeowner.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies whole-house energy assessment, blower-door testing and improvement recommendations for existing homes."
+  },
+  {
+   "slug": "resnet-hers-rater",
+   "name": "RESNET HERS Rater",
+   "short": "HERS Rater",
+   "category": "trades",
+   "group": "HVAC/Refrigeration & Energy",
+   "body": "Residential Energy Services Network (RESNET)",
+   "bodyUrl": "https://www.resnet.us",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies energy rating and modelling of homes, producing the HERS index used in mortgages and energy programmes."
+  }
+ ]
+}

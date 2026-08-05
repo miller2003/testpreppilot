@@ -1,0 +1,1158 @@
+{
+  "batch": "32",
+  "categories": [
+    "technology"
+  ],
+  "groups": [
+    "Cybersecurity (Vendor-Neutral)"
+  ],
+  "examCount": 80,
+  "bodyCount": 11,
+  "bodies": [
+    "International Association of Privacy Professionals",
+    "Security Blue Team",
+    "Cloud Security Alliance",
+    "EC-Council",
+    "ISC2",
+    "ISACA",
+    "Cyber AB",
+    "GIAC",
+    "Hack The Box",
+    "OffSec",
+    "TryHackMe"
+  ],
+  "exams": [
+    {
+      "slug": "iapp-aigp",
+      "name": "Artificial Intelligence Governance Professional",
+      "short": "AIGP",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "International Association of Privacy Professionals",
+      "bodyUrl": "https://iapp.org/",
+      "type": "Certification",
+      "aka": [
+        "AIGP"
+      ],
+      "blurb": "IAPP certification covering AI governance, responsible AI development, the EU AI Act, risk management and AI system lifecycle accountability."
+    },
+    {
+      "slug": "security-blue-team-btl1",
+      "name": "Blue Team Level 1",
+      "short": "BTL1",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "Security Blue Team",
+      "type": "Certification",
+      "aka": [
+        "BTL1"
+      ],
+      "blurb": "Hands-on defensive security certification covering phishing analysis, digital forensics, SIEM, threat intelligence and incident response."
+    },
+    {
+      "slug": "security-blue-team-btl2",
+      "name": "Blue Team Level 2",
+      "short": "BTL2",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "Security Blue Team",
+      "type": "Certification",
+      "aka": [
+        "BTL2"
+      ],
+      "blurb": "Advanced Security Blue Team certification covering malware analysis, threat hunting, advanced SIEM use and enterprise-scale incident response."
+    },
+    {
+      "slug": "csa-ccak",
+      "name": "Certificate of Cloud Auditing Knowledge",
+      "short": "CCAK",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "Cloud Security Alliance",
+      "type": "Certification",
+      "aka": [
+        "CCAK"
+      ],
+      "blurb": "Joint CSA and ISACA credential on auditing cloud environments, covering cloud compliance programmes, control frameworks and continuous assurance."
+    },
+    {
+      "slug": "csa-ccsk",
+      "name": "Certificate of Cloud Security Knowledge",
+      "short": "CCSK",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "Cloud Security Alliance",
+      "type": "Certification",
+      "aka": [
+        "CCSK"
+      ],
+      "blurb": "Vendor-neutral cloud security certificate based on the CSA Security Guidance and Cloud Controls Matrix, covering governance and technical controls."
+    },
+    {
+      "slug": "eccouncil-cciso",
+      "name": "Certified Chief Information Security Officer",
+      "short": "CCISO",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "EC-Council",
+      "bodyUrl": "https://www.eccouncil.org/",
+      "type": "Certification",
+      "aka": [
+        "CCISO"
+      ],
+      "blurb": "Executive EC-Council certification covering governance, controls and audit, programme management, core competencies and strategic security planning."
+    },
+    {
+      "slug": "isc2-ccsp",
+      "name": "Certified Cloud Security Professional",
+      "short": "CCSP",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISC2",
+      "bodyUrl": "https://www.isc2.org/",
+      "type": "Certification",
+      "aka": [
+        "CCSP"
+      ],
+      "blurb": "Advanced ISC2 cloud security certification covering architecture, data security, platform security, operations and legal and compliance risk."
+    },
+    {
+      "slug": "isaca-cdpse",
+      "name": "Certified Data Privacy Solutions Engineer",
+      "short": "CDPSE",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISACA",
+      "bodyUrl": "https://www.isaca.org/",
+      "type": "Certification",
+      "aka": [
+        "CDPSE"
+      ],
+      "blurb": "ISACA technical privacy certification covering privacy governance, privacy architecture and the data lifecycle for engineers implementing controls."
+    },
+    {
+      "slug": "eccouncil-ceh",
+      "name": "Certified Ethical Hacker",
+      "short": "CEH",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "EC-Council",
+      "bodyUrl": "https://www.eccouncil.org/",
+      "type": "Certification",
+      "aka": [
+        "CEH",
+        "312-50"
+      ],
+      "blurb": "Widely recognised EC-Council multiple-choice exam covering reconnaissance, scanning, exploitation, malware, web attacks and cloud hacking techniques."
+    },
+    {
+      "slug": "eccouncil-ceh-practical",
+      "name": "Certified Ethical Hacker (Practical)",
+      "short": "CEH Practical",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "EC-Council",
+      "bodyUrl": "https://www.eccouncil.org/",
+      "type": "Certification",
+      "aka": [
+        "CEH Practical",
+        "CEH Master"
+      ],
+      "blurb": "Six-hour hands-on EC-Council exam requiring candidates to compromise live targets; passing both CEH exams earns the CEH Master designation."
+    },
+    {
+      "slug": "isaca-crisc",
+      "name": "Certified in Risk and Information Systems Control",
+      "short": "CRISC",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISACA",
+      "bodyUrl": "https://www.isaca.org/",
+      "type": "Certification",
+      "aka": [
+        "CRISC"
+      ],
+      "blurb": "ISACA certification on enterprise IT risk identification, assessment, response and control monitoring and reporting for risk practitioners."
+    },
+    {
+      "slug": "isaca-cgeit",
+      "name": "Certified in the Governance of Enterprise IT",
+      "short": "CGEIT",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISACA",
+      "bodyUrl": "https://www.isaca.org/",
+      "type": "Certification",
+      "aka": [
+        "CGEIT"
+      ],
+      "blurb": "ISACA credential for executives responsible for IT governance frameworks, strategic alignment, benefits realisation and resource optimisation."
+    },
+    {
+      "slug": "iapp-cipm",
+      "name": "Certified Information Privacy Manager",
+      "short": "CIPM",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "International Association of Privacy Professionals",
+      "bodyUrl": "https://iapp.org/",
+      "type": "Certification",
+      "aka": [
+        "CIPM"
+      ],
+      "blurb": "IAPP certification on operationalising privacy, covering programme governance, privacy assessments, policy frameworks, metrics and breach response."
+    },
+    {
+      "slug": "iapp-cipp-e",
+      "name": "Certified Information Privacy Professional/Europe",
+      "short": "CIPP/E",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "International Association of Privacy Professionals",
+      "bodyUrl": "https://iapp.org/",
+      "type": "Certification",
+      "aka": [
+        "CIPP/E"
+      ],
+      "blurb": "IAPP certification on European data protection law, focused on the GDPR, lawful bases, data subject rights and international transfer mechanisms."
+    },
+    {
+      "slug": "iapp-cipp-us",
+      "name": "Certified Information Privacy Professional/United States",
+      "short": "CIPP/US",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "International Association of Privacy Professionals",
+      "bodyUrl": "https://iapp.org/",
+      "type": "Certification",
+      "aka": [
+        "CIPP/US"
+      ],
+      "blurb": "IAPP certification on US privacy law covering federal and state regimes, sectoral rules, private-sector obligations and government access to data."
+    },
+    {
+      "slug": "iapp-cipt",
+      "name": "Certified Information Privacy Technologist",
+      "short": "CIPT",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "International Association of Privacy Professionals",
+      "bodyUrl": "https://iapp.org/",
+      "type": "Certification",
+      "aka": [
+        "CIPT"
+      ],
+      "blurb": "IAPP technical privacy certification covering privacy by design, privacy engineering techniques, de-identification and privacy risk in IT systems."
+    },
+    {
+      "slug": "isaca-cism",
+      "name": "Certified Information Security Manager",
+      "short": "CISM",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISACA",
+      "bodyUrl": "https://www.isaca.org/",
+      "type": "Certification",
+      "aka": [
+        "CISM"
+      ],
+      "blurb": "ISACA management certification covering information security governance, risk management, programme development and incident management."
+    },
+    {
+      "slug": "isaca-cisa",
+      "name": "Certified Information Systems Auditor",
+      "short": "CISA",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISACA",
+      "bodyUrl": "https://www.isaca.org/",
+      "type": "Certification",
+      "aka": [
+        "CISA"
+      ],
+      "blurb": "Long-established ISACA credential for IT auditors covering audit process, governance, acquisition, operations and protection of information assets."
+    },
+    {
+      "slug": "isc2-cissp",
+      "name": "Certified Information Systems Security Professional",
+      "short": "CISSP",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISC2",
+      "bodyUrl": "https://www.isc2.org/",
+      "type": "Certification",
+      "aka": [
+        "CISSP"
+      ],
+      "blurb": "Flagship ISC2 credential covering eight security domains and requiring five years of paid experience; widely required for senior security roles."
+    },
+    {
+      "slug": "eccouncil-cnd",
+      "name": "Certified Network Defender",
+      "short": "CND",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "EC-Council",
+      "bodyUrl": "https://www.eccouncil.org/",
+      "type": "Certification",
+      "aka": [
+        "CND",
+        "312-38"
+      ],
+      "blurb": "EC-Council blue-team certification covering network defence controls, perimeter security, endpoint protection, monitoring and threat response."
+    },
+    {
+      "slug": "eccouncil-cpent",
+      "name": "Certified Penetration Testing Professional",
+      "short": "CPENT",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "EC-Council",
+      "bodyUrl": "https://www.eccouncil.org/",
+      "type": "Certification",
+      "aka": [
+        "CPENT"
+      ],
+      "blurb": "Fully hands-on EC-Council penetration testing exam in a live cyber range covering pivoting, IoT, OT, binary exploitation and Active Directory attacks."
+    },
+    {
+      "slug": "isc2-csslp",
+      "name": "Certified Secure Software Lifecycle Professional",
+      "short": "CSSLP",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISC2",
+      "bodyUrl": "https://www.isc2.org/",
+      "type": "Certification",
+      "aka": [
+        "CSSLP"
+      ],
+      "blurb": "ISC2 certification on embedding security through the software development lifecycle, from requirements and design to testing, deployment and disposal."
+    },
+    {
+      "slug": "eccouncil-csa",
+      "name": "Certified SOC Analyst",
+      "short": "CSA",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "EC-Council",
+      "bodyUrl": "https://www.eccouncil.org/",
+      "type": "Certification",
+      "aka": [
+        "EC-Council CSA"
+      ],
+      "blurb": "EC-Council entry-level SOC certification covering security operations processes, SIEM administration, log analysis and incident triage workflows."
+    },
+    {
+      "slug": "eccouncil-ctia",
+      "name": "Certified Threat Intelligence Analyst",
+      "short": "CTIA",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "EC-Council",
+      "bodyUrl": "https://www.eccouncil.org/",
+      "type": "Certification",
+      "aka": [
+        "CTIA"
+      ],
+      "blurb": "EC-Council certification covering the threat intelligence lifecycle, data collection, analysis techniques, attribution and intelligence reporting."
+    },
+    {
+      "slug": "isc2-cissp-issap",
+      "name": "CISSP Information Systems Security Architecture Professional",
+      "short": "CISSP-ISSAP",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISC2",
+      "bodyUrl": "https://www.isc2.org/",
+      "type": "Certification",
+      "aka": [
+        "ISSAP"
+      ],
+      "blurb": "CISSP concentration for security architects covering identity architecture, secure design, infrastructure security and architecture governance."
+    },
+    {
+      "slug": "isc2-cissp-issep",
+      "name": "CISSP Information Systems Security Engineering Professional",
+      "short": "CISSP-ISSEP",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISC2",
+      "bodyUrl": "https://www.isc2.org/",
+      "type": "Certification",
+      "aka": [
+        "ISSEP"
+      ],
+      "blurb": "CISSP concentration on systems security engineering, developed with the NSA, covering secure lifecycle, risk management and technical management."
+    },
+    {
+      "slug": "isc2-cissp-issmp",
+      "name": "CISSP Information Systems Security Management Professional",
+      "short": "CISSP-ISSMP",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISC2",
+      "bodyUrl": "https://www.isc2.org/",
+      "type": "Certification",
+      "aka": [
+        "ISSMP"
+      ],
+      "blurb": "CISSP concentration for security managers covering programme leadership, risk, threat intelligence, contingency planning and law and ethics."
+    },
+    {
+      "slug": "cmmc-certified-assessor",
+      "name": "CMMC Certified Assessor",
+      "short": "CCA",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "Cyber AB",
+      "type": "Certification",
+      "aka": [
+        "CMMC CCA"
+      ],
+      "blurb": "Credential authorising practitioners to conduct CMMC Level 2 assessments of defense contractors handling controlled unclassified information."
+    },
+    {
+      "slug": "cmmc-certified-professional",
+      "name": "CMMC Certified Professional",
+      "short": "CCP",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "Cyber AB",
+      "type": "Certification",
+      "aka": [
+        "CCP"
+      ],
+      "blurb": "Credential for practitioners supporting Cybersecurity Maturity Model Certification assessments across the US defense industrial base supply chain."
+    },
+    {
+      "slug": "eccouncil-chfi",
+      "name": "Computer Hacking Forensic Investigator",
+      "short": "CHFI",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "EC-Council",
+      "bodyUrl": "https://www.eccouncil.org/",
+      "type": "Certification",
+      "aka": [
+        "CHFI",
+        "312-49"
+      ],
+      "blurb": "EC-Council digital forensics certification covering evidence handling, disk and memory forensics, network and cloud forensics and expert reporting."
+    },
+    {
+      "slug": "eccouncil-ecih",
+      "name": "EC-Council Certified Incident Handler",
+      "short": "ECIH",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "EC-Council",
+      "bodyUrl": "https://www.eccouncil.org/",
+      "type": "Certification",
+      "aka": [
+        "ECIH",
+        "212-89"
+      ],
+      "blurb": "EC-Council certification on incident handling and response covering preparation, detection, containment, eradication, recovery and lessons learned."
+    },
+    {
+      "slug": "giac-gced",
+      "name": "GIAC Certified Enterprise Defender",
+      "short": "GCED",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GCED"
+      ],
+      "blurb": "GIAC certification building on GSEC covering defensive infrastructure, packet analysis, penetration testing concepts and incident response practice."
+    },
+    {
+      "slug": "giac-gcfa",
+      "name": "GIAC Certified Forensic Analyst",
+      "short": "GCFA",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GCFA"
+      ],
+      "blurb": "Advanced GIAC digital forensics and incident response certification covering memory forensics, timeline analysis and detecting advanced adversaries."
+    },
+    {
+      "slug": "giac-gcfe",
+      "name": "GIAC Certified Forensic Examiner",
+      "short": "GCFE",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GCFE"
+      ],
+      "blurb": "GIAC certification on Windows forensic examination covering registry, browser and cloud artefacts, file system analysis and evidence reporting."
+    },
+    {
+      "slug": "giac-gcih",
+      "name": "GIAC Certified Incident Handler",
+      "short": "GCIH",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GCIH"
+      ],
+      "blurb": "GIAC certification on incident handling and common attack techniques, covering detection, containment and eradication of intrusions."
+    },
+    {
+      "slug": "giac-gcia",
+      "name": "GIAC Certified Intrusion Analyst",
+      "short": "GCIA",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GCIA"
+      ],
+      "blurb": "GIAC certification on network traffic analysis, packet dissection, intrusion detection signatures and monitoring of enterprise network telemetry."
+    },
+    {
+      "slug": "giac-gweb",
+      "name": "GIAC Certified Web Application Defender",
+      "short": "GWEB",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GWEB"
+      ],
+      "blurb": "GIAC certification for developers and defenders on secure web application design, input handling, authentication, and mitigating OWASP style flaws."
+    },
+    {
+      "slug": "giac-gcpn",
+      "name": "GIAC Cloud Penetration Tester",
+      "short": "GCPN",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GCPN"
+      ],
+      "blurb": "GIAC certification covering penetration testing of cloud environments including cloud identity attacks, containers, serverless and CI/CD pipelines."
+    },
+    {
+      "slug": "giac-gcsa",
+      "name": "GIAC Cloud Security Automation",
+      "short": "GCSA",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GCSA"
+      ],
+      "blurb": "GIAC certification on DevSecOps and cloud security automation covering pipeline security, configuration as code and continuous compliance."
+    },
+    {
+      "slug": "giac-gcld",
+      "name": "GIAC Cloud Security Essentials",
+      "short": "GCLD",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GCLD"
+      ],
+      "blurb": "GIAC certification covering multi-cloud security fundamentals across AWS and Azure including identity, storage, networking and logging controls."
+    },
+    {
+      "slug": "giac-gmon",
+      "name": "GIAC Continuous Monitoring Certification",
+      "short": "GMON",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GMON"
+      ],
+      "blurb": "GIAC certification on continuous security monitoring, defensible network architecture and detecting adversary activity across the attack lifecycle."
+    },
+    {
+      "slug": "giac-gcti",
+      "name": "GIAC Cyber Threat Intelligence",
+      "short": "GCTI",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GCTI"
+      ],
+      "blurb": "GIAC certification covering strategic, operational and tactical threat intelligence, analytic tradecraft, attribution and campaign analysis."
+    },
+    {
+      "slug": "giac-gdsa",
+      "name": "GIAC Defensible Security Architecture",
+      "short": "GDSA",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GDSA"
+      ],
+      "blurb": "GIAC certification on designing defensible network and endpoint architecture, segmentation, zero trust principles and layered detection."
+    },
+    {
+      "slug": "giac-gxpn",
+      "name": "GIAC Exploit Researcher and Advanced Penetration Tester",
+      "short": "GXPN",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GXPN"
+      ],
+      "blurb": "Advanced GIAC certification covering exploit development, fuzzing, network manipulation, cryptographic weaknesses and advanced red-team tradecraft."
+    },
+    {
+      "slug": "giac-gnfa",
+      "name": "GIAC Network Forensic Analyst",
+      "short": "GNFA",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GNFA"
+      ],
+      "blurb": "GIAC certification on network forensics covering protocol analysis, flow data, encryption handling, wireless investigations and log correlation."
+    },
+    {
+      "slug": "giac-gosi",
+      "name": "GIAC Open Source Intelligence",
+      "short": "GOSI",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GOSI"
+      ],
+      "blurb": "GIAC certification on open source intelligence gathering, covering data collection methodology, sock puppets, imagery analysis and OSINT reporting."
+    },
+    {
+      "slug": "giac-gpen",
+      "name": "GIAC Penetration Tester",
+      "short": "GPEN",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GPEN"
+      ],
+      "blurb": "GIAC penetration testing certification covering scoping and planning, reconnaissance, exploitation, password attacks and Azure and domain attacks."
+    },
+    {
+      "slug": "giac-grid",
+      "name": "GIAC Response and Industrial Defense",
+      "short": "GRID",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GRID"
+      ],
+      "blurb": "GIAC certification on industrial control system incident response and active defence for operational technology and critical infrastructure networks."
+    },
+    {
+      "slug": "giac-grem",
+      "name": "GIAC Reverse Engineering Malware",
+      "short": "GREM",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GREM"
+      ],
+      "blurb": "GIAC certification on malware analysis covering behavioural analysis, static and dynamic code review, unpacking and analysing malicious documents."
+    },
+    {
+      "slug": "giac-gsec",
+      "name": "GIAC Security Essentials",
+      "short": "GSEC",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GSEC"
+      ],
+      "blurb": "Broad GIAC certification covering defensible network architecture, cryptography, incident handling, cloud and Windows and Linux security basics."
+    },
+    {
+      "slug": "giac-gslc",
+      "name": "GIAC Security Leadership Certification",
+      "short": "GSLC",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GSLC"
+      ],
+      "blurb": "GIAC management certification covering security programme leadership, governance, risk, vendor management and technical concepts for managers."
+    },
+    {
+      "slug": "giac-gstrt",
+      "name": "GIAC Strategic Planning, Policy and Leadership",
+      "short": "GSTRT",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GSTRT"
+      ],
+      "blurb": "GIAC certification for security leaders on strategic planning, business case development, policy writing and building security programmes."
+    },
+    {
+      "slug": "giac-gsna",
+      "name": "GIAC Systems and Network Auditor",
+      "short": "GSNA",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GSNA"
+      ],
+      "blurb": "GIAC technical audit certification covering risk-based audit planning, testing network and system controls and validating security configurations."
+    },
+    {
+      "slug": "giac-gwapt",
+      "name": "GIAC Web Application Penetration Tester",
+      "short": "GWAPT",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GWAPT"
+      ],
+      "blurb": "GIAC certification focused on web application penetration testing including injection, session flaws, client-side attacks and testing methodology."
+    },
+    {
+      "slug": "giac-gicsp",
+      "name": "Global Industrial Cyber Security Professional",
+      "short": "GICSP",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "GIAC",
+      "bodyUrl": "https://www.giac.org/",
+      "type": "Certification",
+      "aka": [
+        "GICSP"
+      ],
+      "blurb": "GIAC certification bridging IT, engineering and cybersecurity for professionals securing industrial control systems and SCADA environments."
+    },
+    {
+      "slug": "isc2-cgrc",
+      "name": "Governance, Risk and Compliance Certification",
+      "short": "CGRC",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISC2",
+      "bodyUrl": "https://www.isc2.org/",
+      "type": "Certification",
+      "aka": [
+        "CGRC",
+        "CAP"
+      ],
+      "blurb": "ISC2 credential on authorising information systems under frameworks such as NIST RMF; renamed from Certified Authorization Professional in 2023."
+    },
+    {
+      "slug": "hackthebox-cdsa",
+      "name": "HTB Certified Defensive Security Analyst",
+      "short": "CDSA",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "Hack The Box",
+      "type": "Certification",
+      "aka": [
+        "CDSA"
+      ],
+      "blurb": "Hack The Box blue-team certification requiring hands-on detection, log analysis, threat hunting and an incident report within a simulated SOC."
+    },
+    {
+      "slug": "hackthebox-cpts",
+      "name": "HTB Certified Penetration Testing Specialist",
+      "short": "CPTS",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "Hack The Box",
+      "type": "Certification",
+      "aka": [
+        "CPTS"
+      ],
+      "blurb": "Hands-on Hack The Box certification requiring a ten-day practical engagement and a professional penetration testing report against a live network."
+    },
+    {
+      "slug": "isaca-aaia",
+      "name": "ISACA Advanced in AI Audit",
+      "short": "AAIA",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISACA",
+      "bodyUrl": "https://www.isaca.org/",
+      "type": "Certification",
+      "aka": [
+        "AAIA"
+      ],
+      "blurb": "ISACA credential for experienced auditors covering artificial intelligence governance, AI risk, model assurance and auditing AI-enabled systems."
+    },
+    {
+      "slug": "isaca-aaism",
+      "name": "ISACA Advanced in AI Security Management",
+      "short": "AAISM",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISACA",
+      "bodyUrl": "https://www.isaca.org/",
+      "type": "Certification",
+      "aka": [
+        "AAISM"
+      ],
+      "blurb": "ISACA certification for security managers covering AI governance, AI risk management, and securing and monitoring AI systems in the enterprise."
+    },
+    {
+      "slug": "isaca-cet",
+      "name": "ISACA Certified in Emerging Technology",
+      "short": "CET",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISACA",
+      "bodyUrl": "https://www.isaca.org/",
+      "type": "Certification",
+      "aka": [
+        "CET"
+      ],
+      "blurb": "Stackable ISACA credential awarded for completing certificates in cloud fundamentals, blockchain, artificial intelligence and internet of things."
+    },
+    {
+      "slug": "isaca-csx-p",
+      "name": "ISACA Cybersecurity Practitioner Certification",
+      "short": "CSX-P",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISACA",
+      "bodyUrl": "https://www.isaca.org/",
+      "type": "Certification",
+      "aka": [
+        "CSX-P"
+      ],
+      "blurb": "Performance-based ISACA exam conducted in a live virtual environment covering identification, protection, detection, response and recovery tasks."
+    },
+    {
+      "slug": "isc2-certified-in-cybersecurity",
+      "name": "ISC2 Certified in Cybersecurity",
+      "short": "CC",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISC2",
+      "bodyUrl": "https://www.isc2.org/",
+      "type": "Certification",
+      "aka": [
+        "ISC2 CC"
+      ],
+      "blurb": "Entry-level ISC2 certification covering security principles, business continuity, access control, network security and security operations basics."
+    },
+    {
+      "slug": "offsec-klcp",
+      "name": "Kali Linux Certified Professional",
+      "short": "KLCP",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "OffSec",
+      "bodyUrl": "https://www.offsec.com/",
+      "type": "Certification",
+      "aka": [
+        "KLCP",
+        "PEN-103"
+      ],
+      "blurb": "Foundational OffSec exam based on the Kali Linux Revealed course covering Kali installation, configuration, packaging, customisation and deployment."
+    },
+    {
+      "slug": "eccouncil-lpt-master",
+      "name": "Licensed Penetration Tester (Master)",
+      "short": "LPT Master",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "EC-Council",
+      "bodyUrl": "https://www.eccouncil.org/",
+      "type": "Certification",
+      "aka": [
+        "LPT"
+      ],
+      "blurb": "EC-Council master designation awarded to candidates who score 90 percent or above on the CPENT practical penetration testing range exam."
+    },
+    {
+      "slug": "offsec-osai",
+      "name": "OffSec AI Red Teamer",
+      "short": "OSAI",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "OffSec",
+      "bodyUrl": "https://www.offsec.com/",
+      "type": "Certification",
+      "aka": [
+        "OSAI",
+        "AI-300"
+      ],
+      "blurb": "OffSec certification from the AI-300 course covering adversarial testing of AI systems including prompt injection and model and pipeline attacks."
+    },
+    {
+      "slug": "offsec-oscp",
+      "name": "OffSec Certified Professional",
+      "short": "OSCP",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "OffSec",
+      "bodyUrl": "https://www.offsec.com/",
+      "type": "Certification",
+      "aka": [
+        "OSCP",
+        "OSCP+",
+        "PEN-200"
+      ],
+      "blurb": "Benchmark 24-hour hands-on penetration testing exam from the PEN-200 course; OSCP+ is the renewable version introduced by OffSec in 2024."
+    },
+    {
+      "slug": "offsec-oscc-sec",
+      "name": "OffSec CyberCore Certified",
+      "short": "OSCC-SEC",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "OffSec",
+      "bodyUrl": "https://www.offsec.com/",
+      "type": "Certification",
+      "aka": [
+        "OSCC-SEC",
+        "SEC-100"
+      ],
+      "blurb": "Foundational OffSec certification from the CyberCore Security Essentials course covering networking, operating systems, scripting and security basics."
+    },
+    {
+      "slug": "offsec-osda",
+      "name": "OffSec Defense Analyst",
+      "short": "OSDA",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "OffSec",
+      "bodyUrl": "https://www.offsec.com/",
+      "type": "Certification",
+      "aka": [
+        "OSDA",
+        "SOC-200"
+      ],
+      "blurb": "Blue-team OffSec practical exam from SOC-200 on detecting and analysing attacks against Windows and Linux estates using SIEM telemetry."
+    },
+    {
+      "slug": "offsec-osep",
+      "name": "OffSec Experienced Penetration Tester",
+      "short": "OSEP",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "OffSec",
+      "bodyUrl": "https://www.offsec.com/",
+      "type": "Certification",
+      "aka": [
+        "OSEP",
+        "PEN-300"
+      ],
+      "blurb": "Advanced OffSec practical exam from PEN-300 covering antivirus and EDR evasion, advanced Active Directory attacks and breaching modern defences."
+    },
+    {
+      "slug": "offsec-osed",
+      "name": "OffSec Exploit Developer",
+      "short": "OSED",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "OffSec",
+      "bodyUrl": "https://www.offsec.com/",
+      "type": "Certification",
+      "aka": [
+        "OSED",
+        "EXP-301"
+      ],
+      "blurb": "OffSec practical exam from EXP-301 covering Windows user-mode exploit development, reverse engineering, shellcode and bypassing memory protections."
+    },
+    {
+      "slug": "offsec-osee",
+      "name": "OffSec Exploitation Expert",
+      "short": "OSEE",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "OffSec",
+      "bodyUrl": "https://www.offsec.com/",
+      "type": "Certification",
+      "aka": [
+        "OSEE",
+        "EXP-401"
+      ],
+      "blurb": "OffSec most advanced credential, from the EXP-401 Advanced Windows Exploitation course, covering kernel exploitation and modern mitigation bypasses."
+    },
+    {
+      "slug": "offsec-osir",
+      "name": "OffSec Incident Responder",
+      "short": "OSIR",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "OffSec",
+      "bodyUrl": "https://www.offsec.com/",
+      "type": "Certification",
+      "aka": [
+        "OSIR",
+        "IR-200"
+      ],
+      "blurb": "OffSec practical certification from the IR-200 course covering incident response process, evidence collection, containment and post-incident analysis."
+    },
+    {
+      "slug": "offsec-osmr",
+      "name": "OffSec macOS Researcher",
+      "short": "OSMR",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "OffSec",
+      "bodyUrl": "https://www.offsec.com/",
+      "type": "Certification",
+      "aka": [
+        "OSMR",
+        "EXP-312"
+      ],
+      "blurb": "OffSec practical exam from EXP-312 covering macOS control bypasses, Gatekeeper and TCC evasion, and macOS-specific vulnerability research."
+    },
+    {
+      "slug": "offsec-osth",
+      "name": "OffSec Threat Hunter",
+      "short": "OSTH",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "OffSec",
+      "bodyUrl": "https://www.offsec.com/",
+      "type": "Certification",
+      "aka": [
+        "OSTH",
+        "TH-200"
+      ],
+      "blurb": "OffSec hands-on certification from the TH-200 course covering hypothesis-driven threat hunting, telemetry analysis and adversary behaviour detection."
+    },
+    {
+      "slug": "offsec-oswa",
+      "name": "OffSec Web Assessor",
+      "short": "OSWA",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "OffSec",
+      "bodyUrl": "https://www.offsec.com/",
+      "type": "Certification",
+      "aka": [
+        "OSWA",
+        "WEB-200"
+      ],
+      "blurb": "Hands-on OffSec exam from the WEB-200 course covering black-box web application assessment, injection, access control and authentication flaws."
+    },
+    {
+      "slug": "offsec-oswe",
+      "name": "OffSec Web Expert",
+      "short": "OSWE",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "OffSec",
+      "bodyUrl": "https://www.offsec.com/",
+      "type": "Certification",
+      "aka": [
+        "OSWE",
+        "WEB-300"
+      ],
+      "blurb": "Advanced OffSec practical exam from WEB-300 on white-box web exploitation, source code review and chaining vulnerabilities into working exploits."
+    },
+    {
+      "slug": "offsec-oswp",
+      "name": "OffSec Wireless Professional",
+      "short": "OSWP",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "OffSec",
+      "bodyUrl": "https://www.offsec.com/",
+      "type": "Certification",
+      "aka": [
+        "OSWP",
+        "PEN-210"
+      ],
+      "blurb": "OffSec practical wireless security exam from PEN-210 covering WPA and WPA2 attacks, rogue access points and wireless reconnaissance techniques."
+    },
+    {
+      "slug": "isc2-sscp",
+      "name": "Systems Security Certified Practitioner",
+      "short": "SSCP",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "ISC2",
+      "bodyUrl": "https://www.isc2.org/",
+      "type": "Certification",
+      "aka": [
+        "SSCP"
+      ],
+      "blurb": "ISC2 practitioner certification for hands-on security administrators covering access controls, monitoring, incident response, cryptography and networks."
+    },
+    {
+      "slug": "tryhackme-sal1",
+      "name": "TryHackMe Security Analyst Level 1",
+      "short": "SAL1",
+      "category": "technology",
+      "group": "Cybersecurity (Vendor-Neutral)",
+      "body": "TryHackMe",
+      "type": "Certification",
+      "aka": [
+        "SAL1"
+      ],
+      "blurb": "Practical entry-level TryHackMe certification testing SOC analyst skills including triage, log review, network analysis and phishing investigation."
+    }
+  ]
+}

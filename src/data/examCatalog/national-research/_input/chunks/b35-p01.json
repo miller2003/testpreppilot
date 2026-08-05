@@ -1,0 +1,445 @@
+{
+ "chunkId": "b35-p01",
+ "batch": 35,
+ "part": 1,
+ "categories": [
+  "technology"
+ ],
+ "groups": [
+  "Cisco"
+ ],
+ "bodies": [
+  "Cisco Systems"
+ ],
+ "examCount": 31,
+ "exams": [
+  {
+   "slug": "cisco-enauto-300-435",
+   "name": "Automating Cisco Enterprise Solutions (ENAUTO)",
+   "short": "ENAUTO",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Exam",
+   "aka": [
+    "300-435",
+    "ENAUTO"
+   ],
+   "blurb": "CCNP Enterprise concentration exam on programming and automating Cisco enterprise networks with Python, REST APIs, Ansible and controller platforms."
+  },
+  {
+   "slug": "cisco-ai-technical-practitioner",
+   "name": "Cisco AI Technical Practitioner",
+   "short": "AITECH",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "810-110",
+    "AITECH"
+   ],
+   "blurb": "Cisco credential covering artificial intelligence fundamentals, data readiness, model deployment and AI infrastructure considerations for technical teams."
+  },
+  {
+   "slug": "cisco-ccde",
+   "name": "Cisco Certified Design Expert",
+   "short": "CCDE",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "400-007",
+    "CCDE Practical"
+   ],
+   "blurb": "Expert-level network design credential requiring a written exam plus an eight-hour scenario-based practical covering business-driven architecture decisions."
+  },
+  {
+   "slug": "cisco-ccie-automation",
+   "name": "Cisco Certified Internetwork Expert Automation",
+   "short": "CCIE Automation",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-901 AUTOCOR",
+    "CCIE DevNet Expert"
+   ],
+   "blurb": "Expert track, formerly branded DevNet Expert, combining the AUTOCOR written exam with a hands-on lab on network automation systems and platform APIs."
+  },
+  {
+   "slug": "cisco-ccie-collaboration",
+   "name": "Cisco Certified Internetwork Expert Collaboration",
+   "short": "CCIE Collaboration",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-801 CLCOR",
+    "CCIE Collaboration Lab"
+   ],
+   "blurb": "Expert certification requiring the CLCOR written exam and an eight-hour lab on Cisco unified communications, video and Webex collaboration deployments."
+  },
+  {
+   "slug": "cisco-ccie-data-center",
+   "name": "Cisco Certified Internetwork Expert Data Center",
+   "short": "CCIE Data Center",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-601 DCCOR",
+    "CCIE Data Center Lab"
+   ],
+   "blurb": "Expert credential combining the DCCOR written exam with a lab on Nexus switching, ACI fabrics, UCS compute, storage networking and data centre automation."
+  },
+  {
+   "slug": "cisco-ccie-enterprise-infrastructure",
+   "name": "Cisco Certified Internetwork Expert Enterprise Infrastructure",
+   "short": "CCIE EI",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-401 ENCOR",
+    "CCIE Enterprise Infrastructure Lab"
+   ],
+   "blurb": "The best known Cisco expert track, pairing the ENCOR written exam with an eight-hour lab on enterprise routing, switching, SD-WAN and automation."
+  },
+  {
+   "slug": "cisco-ccie-enterprise-wireless",
+   "name": "Cisco Certified Internetwork Expert Enterprise Wireless",
+   "short": "CCIE Wireless",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-401 ENCOR",
+    "CCIE Enterprise Wireless Lab"
+   ],
+   "blurb": "Expert wireless track requiring the ENCOR written exam plus a lab covering wireless design, deployment, security and troubleshooting at enterprise scale."
+  },
+  {
+   "slug": "cisco-ccie-security",
+   "name": "Cisco Certified Internetwork Expert Security",
+   "short": "CCIE Security",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-701 SCOR",
+    "CCIE Security Lab"
+   ],
+   "blurb": "Expert security credential requiring the SCOR written exam and a lab on firewalls, secure access, VPNs, identity services and network threat defence."
+  },
+  {
+   "slug": "cisco-ccie-service-provider",
+   "name": "Cisco Certified Internetwork Expert Service Provider",
+   "short": "CCIE SP",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-501 SPCOR",
+    "CCIE Service Provider Lab"
+   ],
+   "blurb": "Expert track for carrier networks, pairing the SPCOR written exam with a lab on MPLS, segment routing, BGP scale and service provider automation."
+  },
+  {
+   "slug": "cisco-ccna",
+   "name": "Cisco Certified Network Associate",
+   "short": "CCNA",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "200-301"
+   ],
+   "blurb": "Cisco associate networking certification covering IP connectivity, switching, wireless, security fundamentals and automation; refreshed with AI content in 2026."
+  },
+  {
+   "slug": "cisco-ccna-automation",
+   "name": "Cisco Certified Network Associate Automation",
+   "short": "CCNA Automation",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "200-901",
+    "DEVASC",
+    "Cisco Certified DevNet Associate"
+   ],
+   "blurb": "Associate exam on APIs, Python, version control and infrastructure automation using Cisco platforms; previously branded Cisco Certified DevNet Associate."
+  },
+  {
+   "slug": "cisco-ccna-cybersecurity",
+   "name": "Cisco Certified Network Associate Cybersecurity",
+   "short": "CCNA Cybersecurity",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "200-201",
+    "CBROPS",
+    "Cisco Certified CyberOps Associate"
+   ],
+   "blurb": "Security operations centre associate exam on monitoring, intrusion analysis and incident handling, formerly branded Cisco Certified CyberOps Associate."
+  },
+  {
+   "slug": "cisco-ccnp-automation",
+   "name": "Cisco Certified Network Professional Automation",
+   "short": "CCNP Automation",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-901 AUTOCOR",
+    "DEVCOR",
+    "Cisco Certified DevNet Professional"
+   ],
+   "blurb": "Professional track on designing and operating network automation systems, formerly the Cisco Certified DevNet Professional built around the DEVCOR core."
+  },
+  {
+   "slug": "cisco-ccnp-collaboration",
+   "name": "Cisco Certified Network Professional Collaboration",
+   "short": "CCNP Collaboration",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-801 CLCOR"
+   ],
+   "blurb": "Professional certification requiring the CLCOR core exam plus a concentration on call control, hybrid cloud collaboration or cloud customer experience."
+  },
+  {
+   "slug": "cisco-ccnp-cybersecurity",
+   "name": "Cisco Certified Network Professional Cybersecurity",
+   "short": "CCNP Cybersecurity",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-201 CBRCOR",
+    "Cisco Certified CyberOps Professional"
+   ],
+   "blurb": "Professional security operations track, formerly CyberOps Professional, combining the CBRCOR core with forensics or threat hunting concentration exams."
+  },
+  {
+   "slug": "cisco-ccnp-data-center",
+   "name": "Cisco Certified Network Professional Data Center",
+   "short": "CCNP Data Center",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-601 DCCOR"
+   ],
+   "blurb": "Professional track requiring the DCCOR core exam plus a concentration in data centre design, troubleshooting, ACI, storage networking or AI infrastructure."
+  },
+  {
+   "slug": "cisco-ccnp-enterprise",
+   "name": "Cisco Certified Network Professional Enterprise",
+   "short": "CCNP Enterprise",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-401 ENCOR"
+   ],
+   "blurb": "Cisco professional certification earned by passing the ENCOR core exam plus one enterprise concentration such as ENARSI, ENSDWI, ENSLD or ENAUTO."
+  },
+  {
+   "slug": "cisco-ccnp-security",
+   "name": "Cisco Certified Network Professional Security",
+   "short": "CCNP Security",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-701 SCOR"
+   ],
+   "blurb": "Professional security certification requiring the SCOR core exam plus a concentration in firewall, identity services, email, web or VPN technologies."
+  },
+  {
+   "slug": "cisco-ccnp-service-provider",
+   "name": "Cisco Certified Network Professional Service Provider",
+   "short": "CCNP Service Provider",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-501 SPCOR"
+   ],
+   "blurb": "Professional certification for carrier and ISP engineers, built on the SPCOR core exam plus a concentration in advanced routing, VPN services or automation."
+  },
+  {
+   "slug": "cisco-ccnp-wireless",
+   "name": "Cisco Certified Network Professional Wireless",
+   "short": "CCNP Wireless",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "350-101 WLCOR"
+   ],
+   "blurb": "Professional wireless track relaunched by Cisco in 2026 around the WLCOR core exam, covering wireless design, deployment, security and assurance."
+  },
+  {
+   "slug": "cisco-ccst-cybersecurity",
+   "name": "Cisco Certified Support Technician Cybersecurity",
+   "short": "CCST Cybersecurity",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "CCST Cybersecurity"
+   ],
+   "blurb": "Entry-level Cisco credential covering security principles, network security concepts, endpoint protection, vulnerability assessment and incident handling."
+  },
+  {
+   "slug": "cisco-ccst-networking",
+   "name": "Cisco Certified Support Technician Networking",
+   "short": "CCST Networking",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Certification",
+   "aka": [
+    "CCST Networking"
+   ],
+   "blurb": "Entry-level Cisco certification covering networking basics, addressing, cabling, endpoints, diagnostics and infrastructure for early-career technicians."
+  },
+  {
+   "slug": "cisco-encc-300-440",
+   "name": "Designing and Implementing Cloud Connectivity (ENCC)",
+   "short": "ENCC",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Exam",
+   "aka": [
+    "300-440",
+    "ENCC"
+   ],
+   "blurb": "CCNP Enterprise concentration exam covering hybrid cloud connectivity, cloud-native routing, SD-WAN cloud onramp and secure interconnect design."
+  },
+  {
+   "slug": "cisco-enna-300-445",
+   "name": "Designing and Implementing Enterprise Network Assurance (ENNA)",
+   "short": "ENNA",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Exam",
+   "aka": [
+    "300-445",
+    "ENNA"
+   ],
+   "blurb": "CCNP Enterprise concentration exam on network assurance, telemetry, ThousandEyes monitoring and data-driven troubleshooting of enterprise networks."
+  },
+  {
+   "slug": "cisco-ensld-300-420",
+   "name": "Designing Cisco Enterprise Networks (ENSLD)",
+   "short": "ENSLD",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Exam",
+   "aka": [
+    "300-420",
+    "ENSLD"
+   ],
+   "blurb": "CCNP Enterprise concentration exam on campus, WAN and services design methodology, including redundancy, addressing and SD-Access architecture."
+  },
+  {
+   "slug": "cisco-sise-300-715",
+   "name": "Implementing and Configuring Cisco Identity Services Engine (SISE)",
+   "short": "SISE",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Exam",
+   "aka": [
+    "300-715",
+    "SISE"
+   ],
+   "blurb": "CCNP Security concentration exam covering Cisco ISE deployment, 802.1X authentication, profiling, guest access, BYOD and posture assessment."
+  },
+  {
+   "slug": "cisco-ensdwi-300-415",
+   "name": "Implementing Cisco Catalyst SD-WAN Solutions (ENSDWI)",
+   "short": "ENSDWI",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Exam",
+   "aka": [
+    "300-415",
+    "ENSDWI"
+   ],
+   "blurb": "CCNP Enterprise concentration exam covering Cisco Catalyst SD-WAN architecture, controller deployment, policies, security and migration."
+  },
+  {
+   "slug": "cisco-enarsi-300-410",
+   "name": "Implementing Cisco Enterprise Advanced Routing and Services (ENARSI)",
+   "short": "ENARSI",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Exam",
+   "aka": [
+    "300-410",
+    "ENARSI"
+   ],
+   "blurb": "The most popular CCNP Enterprise concentration exam, covering advanced BGP, OSPF, EIGRP, VRF, MPLS and infrastructure services troubleshooting."
+  },
+  {
+   "slug": "cisco-svpn-300-730",
+   "name": "Implementing Secure Solutions with Virtual Private Networks (SVPN)",
+   "short": "SVPN",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Exam",
+   "aka": [
+    "300-730",
+    "SVPN"
+   ],
+   "blurb": "CCNP Security concentration exam covering site-to-site and remote-access VPN design with IPsec, DMVPN, FlexVPN and secure remote connectivity."
+  },
+  {
+   "slug": "cisco-sncf-300-710",
+   "name": "Securing Networks with Cisco Firepower (SNCF)",
+   "short": "SNCF",
+   "category": "technology",
+   "group": "Cisco",
+   "body": "Cisco Systems",
+   "type": "Exam",
+   "aka": [
+    "300-710",
+    "SNCF"
+   ],
+   "blurb": "CCNP Security concentration exam on Cisco Secure Firewall and Firepower deployment, policy configuration, intrusion prevention and malware defence."
+  }
+ ]
+}

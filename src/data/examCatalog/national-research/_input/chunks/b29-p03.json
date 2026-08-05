@@ -1,0 +1,332 @@
+{
+ "chunkId": "b29-p03",
+ "batch": 29,
+ "part": 3,
+ "categories": [
+  "project-business"
+ ],
+ "groups": [
+  "Marketing, Sales & Communications",
+  "Supply Chain & Operations",
+  "Business Analysis & Data",
+  "Real Estate Adjacent Business",
+  "Quality, Lean & Six Sigma"
+ ],
+ "bodies": [
+  "HubSpot Academy",
+  "Institute for Supply Management",
+  "American Purchasing Society",
+  "International Requirements Engineering Board",
+  "Community Association Managers International Certification Board",
+  "Real Estate Business Institute",
+  "Residential Real Estate Council",
+  "Society of Industrial and Office Realtors",
+  "Exemplar Global",
+  "Council for Six Sigma Certification",
+  "Association of Fundraising Professionals",
+  "American Society of Association Executives",
+  "Digital Marketing Institute",
+  "CFRE International",
+  "Emblaze",
+  "Nonprofit Leadership Alliance",
+  "Google",
+  "Online Marketing Certified Professionals",
+  "Manufacturing Skill Standards Council",
+  "INFORMS",
+  "Business Architecture Guild",
+  "Institute of Management Consultants USA",
+  "Project Management Institute"
+ ],
+ "examCount": 27,
+ "exams": [
+  {
+   "slug": "hubspot-content-marketing-certification",
+   "name": "HubSpot Content Marketing Certification",
+   "category": "project-business",
+   "group": "Marketing, Sales & Communications",
+   "body": "HubSpot Academy",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Free course and assessment covering content strategy, topic clusters, repurposing, promotion and performance analysis."
+  },
+  {
+   "slug": "hubspot-inbound-marketing-certification",
+   "name": "HubSpot Inbound Marketing Certification",
+   "category": "project-business",
+   "group": "Marketing, Sales & Communications",
+   "body": "HubSpot Academy",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Course and assessment covering the inbound methodology, buyer personas, lead nurturing and conversion optimisation."
+  },
+  {
+   "slug": "ism-cpsd",
+   "name": "Certified Professional in Supplier Diversity",
+   "short": "CPSD",
+   "category": "project-business",
+   "group": "Supply Chain & Operations",
+   "body": "Institute for Supply Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering supplier diversity programme design, certification bodies, spend reporting and inclusive sourcing."
+  },
+  {
+   "slug": "ism-cpsm",
+   "name": "Certified Professional in Supply Management",
+   "short": "CPSM",
+   "category": "project-business",
+   "group": "Supply Chain & Operations",
+   "body": "Institute for Supply Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Three-examination credential covering supply management core, integrated logistics and leadership in procurement functions."
+  },
+  {
+   "slug": "american-purchasing-society-certified-professional-purchasing-manager",
+   "name": "Certified Professional Purchasing Manager",
+   "short": "CPPM",
+   "category": "project-business",
+   "group": "Supply Chain & Operations",
+   "body": "American Purchasing Society",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced purchasing credential for managers covering department leadership, policy, cost reduction and supplier strategy."
+  },
+  {
+   "slug": "american-purchasing-society-certified-purchasing-professional",
+   "name": "Certified Purchasing Professional",
+   "short": "CPP",
+   "category": "project-business",
+   "group": "Supply Chain & Operations",
+   "body": "American Purchasing Society",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination and experience credential covering purchasing procedures, negotiation, contract law and supplier evaluation."
+  },
+  {
+   "slug": "ireb-cpre-advanced-level",
+   "name": "IREB Certified Professional for Requirements Engineering – Advanced Level",
+   "category": "project-business",
+   "group": "Business Analysis & Data",
+   "body": "International Requirements Engineering Board",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced modules in elicitation, requirements modelling and requirements management for experienced practitioners."
+  },
+  {
+   "slug": "ireb-cpre-foundation-level",
+   "name": "IREB Certified Professional for Requirements Engineering – Foundation Level",
+   "short": "CPRE-FL",
+   "category": "project-business",
+   "group": "Business Analysis & Data",
+   "body": "International Requirements Engineering Board",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Foundation examination covering requirements elicitation, documentation, validation and management terminology and practice."
+  },
+  {
+   "slug": "camicb-certified-manager-of-community-associations",
+   "name": "Certified Manager of Community Associations",
+   "short": "CMCA",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "Community Association Managers International Certification Board",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Accredited examination covering governance documents, budgets, reserves, meetings and contractor management for HOA managers."
+  },
+  {
+   "slug": "nar-certified-real-estate-brokerage-manager",
+   "name": "Certified Real Estate Brokerage Manager",
+   "short": "CRB",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "Real Estate Business Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation for brokerage owners and managers covering recruiting, retention, financial management and office strategy."
+  },
+  {
+   "slug": "nar-certified-residential-specialist",
+   "name": "Certified Residential Specialist",
+   "short": "CRS",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "Residential Real Estate Council",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced residential designation requiring education plus documented transaction volume or production over a period."
+  },
+  {
+   "slug": "sior-designation",
+   "name": "Society of Industrial and Office Realtors Designation",
+   "short": "SIOR",
+   "category": "project-business",
+   "group": "Real Estate Adjacent Business",
+   "body": "Society of Industrial and Office Realtors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Elite industrial and office brokerage designation requiring qualifying production, ethics coursework and peer sponsorship."
+  },
+  {
+   "slug": "exemplar-global-iso-9001-lead-auditor",
+   "name": "ISO 9001 Lead Auditor Certification",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "Exemplar Global",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for auditors leading quality management system audits against ISO 9001 using ISO 19011 audit principles."
+  },
+  {
+   "slug": "csscouncil-lean-six-sigma-master-black-belt",
+   "name": "Lean Six Sigma Master Black Belt Certification",
+   "category": "project-business",
+   "group": "Quality, Lean & Six Sigma",
+   "body": "Council for Six Sigma Certification",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Accreditation-body credential requiring advanced examination plus documented deployment leadership and mentoring of belts."
+  },
+  {
+   "slug": "advanced-certified-fund-raising-executive",
+   "name": "Advanced Certified Fund Raising Executive",
+   "short": "ACFRE",
+   "category": "project-business",
+   "group": "Marketing, Sales & Communications",
+   "body": "Association of Fundraising Professionals",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Senior fundraising credential requiring a portfolio, written examination and oral peer review of leadership competence."
+  },
+  {
+   "slug": "certified-association-executive",
+   "name": "Certified Association Executive",
+   "short": "CAE",
+   "category": "project-business",
+   "group": "Marketing, Sales & Communications",
+   "body": "American Society of Association Executives",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination for association professionals covering governance, membership, finance, advocacy and strategic leadership."
+  },
+  {
+   "slug": "certified-digital-marketing-professional",
+   "name": "Certified Digital Marketing Professional",
+   "category": "project-business",
+   "group": "Marketing, Sales & Communications",
+   "body": "Digital Marketing Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Modular programme and examination covering search, social, display, email, analytics and digital marketing strategy."
+  },
+  {
+   "slug": "certified-fund-raising-executive",
+   "name": "Certified Fund Raising Executive",
+   "short": "CFRE",
+   "category": "project-business",
+   "group": "Marketing, Sales & Communications",
+   "body": "CFRE International",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination-based credential covering donor relations, securing the gift, volunteer involvement, ethics and accountability."
+  },
+  {
+   "slug": "certified-inside-sales-professional",
+   "name": "Certified Inside Sales Professional",
+   "short": "CISP",
+   "category": "project-business",
+   "group": "Marketing, Sales & Communications",
+   "body": "Emblaze",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for virtual and inside sellers covering prospecting cadence, discovery calls, objection handling and closing."
+  },
+  {
+   "slug": "certified-nonprofit-professional",
+   "name": "Certified Nonprofit Professional",
+   "short": "CNP",
+   "category": "project-business",
+   "group": "Marketing, Sales & Communications",
+   "body": "Nonprofit Leadership Alliance",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Campus-based credential combining coursework, an internship and competency assessment in nonprofit management practice."
+  },
+  {
+   "slug": "google-analytics-certification",
+   "name": "Google Analytics Certification",
+   "category": "project-business",
+   "group": "Marketing, Sales & Communications",
+   "body": "Google",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Skillshop assessment covering property setup, event tracking, reports, audiences and attribution in Google Analytics 4."
+  },
+  {
+   "slug": "omcp-digital-marketing-certification",
+   "name": "OMCP Digital Marketing Certification",
+   "category": "project-business",
+   "group": "Marketing, Sales & Communications",
+   "body": "Online Marketing Certified Professionals",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Vendor-neutral examinations in search, social, content, conversion and analytics based on published industry standards."
+  },
+  {
+   "slug": "mssc-certified-production-technician",
+   "name": "MSSC Certified Production Technician",
+   "short": "CPT",
+   "category": "project-business",
+   "group": "Supply Chain & Operations",
+   "body": "Manufacturing Skill Standards Council",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Modular credential covering safety, quality practices, manufacturing processes and maintenance awareness for plant workers."
+  },
+  {
+   "slug": "informs-certified-analytics-professional",
+   "name": "Certified Analytics Professional",
+   "short": "CAP",
+   "category": "project-business",
+   "group": "Business Analysis & Data",
+   "body": "INFORMS",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Vendor-neutral analytics credential covering the end-to-end analytics process from business problem to model lifecycle."
+  },
+  {
+   "slug": "business-architecture-guild-certified-business-architect",
+   "name": "Certified Business Architect",
+   "short": "CBA",
+   "category": "project-business",
+   "group": "Business Analysis & Data",
+   "body": "Business Architecture Guild",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination covering capability maps, value streams, information mapping and business architecture governance practice."
+  },
+  {
+   "slug": "imc-certified-management-consultant",
+   "name": "Certified Management Consultant",
+   "short": "CMC",
+   "category": "project-business",
+   "group": "Business Analysis & Data",
+   "body": "Institute of Management Consultants USA",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential requiring client references, an ethics examination and an oral review of consulting competence and results."
+  },
+  {
+   "slug": "pmi-professional-in-business-analysis",
+   "name": "PMI Professional in Business Analysis",
+   "short": "PMI-PBA",
+   "category": "project-business",
+   "group": "Business Analysis & Data",
+   "body": "Project Management Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering needs assessment, planning, analysis, traceability and solution evaluation on projects and programmes."
+  }
+ ]
+}

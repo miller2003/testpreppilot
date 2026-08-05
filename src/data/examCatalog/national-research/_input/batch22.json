@@ -1,0 +1,621 @@
+{
+  "batch": "22",
+  "categories": [
+    "government-civil-service"
+  ],
+  "groups": [
+    "Federal Hiring & Civil Service"
+  ],
+  "examCount": 43,
+  "bodyCount": 28,
+  "bodies": [
+    "Federal Aviation Administration",
+    "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+    "U.S. Border Patrol",
+    "U.S. Customs and Border Protection",
+    "National Contract Management Association",
+    "State Certified Public Manager programs",
+    "Drug Enforcement Administration",
+    "Defense Acquisition University",
+    "U.S. Department of State Diplomatic Security Service",
+    "Federal Acquisition Institute",
+    "Federal Bureau of Investigation",
+    "Transportation Security Administration Federal Air Marshal Service",
+    "Department of Homeland Security Federal Protective Service",
+    "U.S. Department of State",
+    "U.S. Immigration and Customs Enforcement",
+    "International City/County Management Association",
+    "Internal Revenue Service Criminal Investigation",
+    "New Jersey Civil Service Commission",
+    "NIGP: The Institute for Public Procurement",
+    "NYC Department of Citywide Administrative Services",
+    "U.S. Office of Personnel Management",
+    "U.S. Secret Service",
+    "State civil service agencies",
+    "Transportation Security Administration",
+    "United States Capitol Police",
+    "United States Marshals Service",
+    "U.S. Citizenship and Immigration Services",
+    "United States Postal Service"
+  ],
+  "exams": [
+    {
+      "slug": "atsa",
+      "name": "Air Traffic Skills Assessment",
+      "short": "AT-SA",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Federal Aviation Administration",
+      "type": "Exam",
+      "aka": [
+        "ATSA",
+        "Air Traffic Controller Exam"
+      ],
+      "blurb": "The FAA’s computer-based skills test for air traffic controller applicants measuring memory, spatial awareness and decision-making under stress."
+    },
+    {
+      "slug": "atf-special-agent-exam",
+      "name": "ATF Special Agent Entrance Exam",
+      "short": "ATF SA Exam",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+      "type": "Exam",
+      "aka": [
+        "ATF Entrance Exam"
+      ],
+      "blurb": "A written and physical assessment battery for ATF special agent candidates covering reasoning, judgment and tactical fitness."
+    },
+    {
+      "slug": "border-patrol-alt",
+      "name": "Border Patrol Agent Artificial Language Test",
+      "short": "BPA-ALT",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "U.S. Border Patrol",
+      "type": "Exam",
+      "aka": [
+        "BPA-ALT",
+        "Artificial Language Test"
+      ],
+      "blurb": "A structured artificial-language test measuring an applicant’s ability to learn a new language for Border Patrol Agent hiring."
+    },
+    {
+      "slug": "cbp-officer-entrance-exam",
+      "name": "CBP Officer Entrance Examination",
+      "short": "CBPO Exam",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "U.S. Customs and Border Protection",
+      "type": "Exam",
+      "aka": [
+        "CBPO Entrance Exam"
+      ],
+      "blurb": "A multiple-choice entrance exam assessing logical reasoning, arithmetic reasoning and writing for U.S. Customs and Border Protection officer applicants."
+    },
+    {
+      "slug": "cbp-spanish-language-test",
+      "name": "CBP Spanish Language Proficiency Test",
+      "short": "Spanish Test",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "U.S. Customs and Border Protection",
+      "type": "Exam",
+      "aka": [
+        "Spanish Language Proficiency"
+      ],
+      "blurb": "A language proficiency evaluation required for certain border patrol and customs positions needing Spanish communication with the public."
+    },
+    {
+      "slug": "cccm",
+      "name": "Certified Commercial Contracts Manager",
+      "short": "CCCM",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "National Contract Management Association",
+      "bodyUrl": "https://www.ncmahq.org/",
+      "type": "Certification",
+      "aka": [
+        "CCCM"
+      ],
+      "blurb": "An NCMA certification focused on commercial contracting principles, negotiation and risk for non-federal business agreements."
+    },
+    {
+      "slug": "cfcm",
+      "name": "Certified Federal Contracts Manager",
+      "short": "CFCM",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "National Contract Management Association",
+      "bodyUrl": "https://www.ncmahq.org/",
+      "type": "Certification",
+      "aka": [
+        "CFCM"
+      ],
+      "blurb": "An NCMA certification for contracts professionals working on federal agreements covering FAR, acquisition planning and administration."
+    },
+    {
+      "slug": "cpcm",
+      "name": "Certified Professional Contracts Manager",
+      "short": "CPCM",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "National Contract Management Association",
+      "bodyUrl": "https://www.ncmahq.org/",
+      "type": "Certification",
+      "aka": [
+        "CPCM"
+      ],
+      "blurb": "NCMA’s broadest contracts certification covering the full spectrum of commercial and government contract management competencies."
+    },
+    {
+      "slug": "certified-public-manager",
+      "name": "Certified Public Manager",
+      "short": "CPM",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "State Certified Public Manager programs",
+      "type": "Certification",
+      "aka": [
+        "CPM"
+      ],
+      "blurb": "A public-sector management credential offered through state university programs for supervisors and managers in government agencies."
+    },
+    {
+      "slug": "dea-special-agent-exam",
+      "name": "DEA Special Agent Test",
+      "short": "DEA SA Test",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Drug Enforcement Administration",
+      "type": "Exam",
+      "aka": [
+        "DEA Test"
+      ],
+      "blurb": "A multi-stage selection exam for DEA special agents evaluating logical reasoning, writing and judgment under the federal hiring process."
+    },
+    {
+      "slug": "dawia",
+      "name": "Defense Acquisition Workforce Improvement Act Certification",
+      "short": "DAWIA",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Defense Acquisition University",
+      "bodyUrl": "https://www.dau.edu/",
+      "type": "Certification",
+      "aka": [
+        "DAWIA"
+      ],
+      "blurb": "The Department of Defense certification framework requiring acquisition professionals to meet education, training and experience standards."
+    },
+    {
+      "slug": "diplomatic-security-service-exam",
+      "name": "Diplomatic Security Service Agent Exam",
+      "short": "DSS Exam",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "U.S. Department of State Diplomatic Security Service",
+      "type": "Exam",
+      "aka": [
+        "DSS Agent Exam"
+      ],
+      "blurb": "A rigorous selection exam and assessment for Diplomatic Security Service special agents protecting diplomatic missions and personnel abroad."
+    },
+    {
+      "slug": "faa-air-traffic-controller",
+      "name": "FAA Air Traffic Controller Selection",
+      "short": "ATC",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Federal Aviation Administration",
+      "type": "Exam",
+      "aka": [
+        "FAA ATC"
+      ],
+      "blurb": "The full FAA hiring pathway for air traffic controllers combining the AT-SA, medical and training academy qualification for facility placement."
+    },
+    {
+      "slug": "fac-c",
+      "name": "FAC-C Federal Acquisition Certification",
+      "short": "FAC-C",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Federal Acquisition Institute",
+      "bodyUrl": "https://www.fai.gov/",
+      "type": "Certification",
+      "aka": [
+        "FAC-C"
+      ],
+      "blurb": "The federal certification for contracting professionals, consolidated into a single Professional tier covering acquisition lifecycle competencies."
+    },
+    {
+      "slug": "fac-cor",
+      "name": "FAC-COR Contracting Officer Representative",
+      "short": "FAC-COR",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Federal Acquisition Institute",
+      "bodyUrl": "https://www.fai.gov/",
+      "type": "Certification",
+      "aka": [
+        "FAC-COR"
+      ],
+      "blurb": "A federal certification for contracting officer’s representatives who oversee contractor performance and government contract administration."
+    },
+    {
+      "slug": "fac-ppm",
+      "name": "FAC-P/PM Program and Project Management",
+      "short": "FAC-P/PM",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Federal Acquisition Institute",
+      "bodyUrl": "https://www.fai.gov/",
+      "type": "Certification",
+      "aka": [
+        "FAC-P/PM"
+      ],
+      "blurb": "A federal certification for program and project managers in acquisition roles covering planning, risk and performance management."
+    },
+    {
+      "slug": "fbi-sa-phase-1",
+      "name": "FBI Special Agent Phase I Test",
+      "short": "SASS Phase I",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Federal Bureau of Investigation",
+      "type": "Exam",
+      "aka": [
+        "Phase I",
+        "SASS"
+      ],
+      "blurb": "The first testing stage for FBI special agent applicants, a computer-based exam of logic, judgment and situational reasoning plus a writing sample."
+    },
+    {
+      "slug": "fbi-sa-phase-2",
+      "name": "FBI Special Agent Phase II Test",
+      "short": "SASS Phase II",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Federal Bureau of Investigation",
+      "type": "Exam",
+      "aka": [
+        "Phase II"
+      ],
+      "blurb": "The second stage for FBI special agent candidates consisting of a structured interview and panel assessment of judgment and communication skills."
+    },
+    {
+      "slug": "federal-air-marshal-exam",
+      "name": "Federal Air Marshal Entrance Exam",
+      "short": "FAM Exam",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Transportation Security Administration Federal Air Marshal Service",
+      "type": "Exam",
+      "aka": [
+        "FAM Exam"
+      ],
+      "blurb": "A selection exam and assessment for federal air marshals evaluating judgment, firearms aptitude and situational decision-making."
+    },
+    {
+      "slug": "federal-protective-service-officer",
+      "name": "Federal Protective Service Officer Exam",
+      "short": "FPS Exam",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Department of Homeland Security Federal Protective Service",
+      "type": "Exam",
+      "aka": [
+        "FPS Officer Exam"
+      ],
+      "blurb": "An entrance exam and fitness assessment for Federal Protective Service officers guarding federal buildings and properties."
+    },
+    {
+      "slug": "fsot-qep",
+      "name": "Foreign Service Officer Qualifying Evaluation Panel",
+      "short": "QEP",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "U.S. Department of State",
+      "type": "Exam",
+      "aka": [
+        "QEP"
+      ],
+      "blurb": "The written narrative and resume review stage of the Foreign Service selection process that follows a passing FSOT score."
+    },
+    {
+      "slug": "fsot",
+      "name": "Foreign Service Officer Test",
+      "short": "FSOT",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "U.S. Department of State",
+      "type": "Exam",
+      "aka": [
+        "FSOT"
+      ],
+      "blurb": "A three-hour multiple-choice exam on U.S. and world history, government, economics and English expression for Foreign Service Officer candidacy."
+    },
+    {
+      "slug": "ice-officer-exam",
+      "name": "ICE Officer Entrance Exam",
+      "short": "ICE Exam",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "U.S. Immigration and Customs Enforcement",
+      "type": "Exam",
+      "aka": [
+        "ICE Deportation Officer Exam"
+      ],
+      "blurb": "An entrance and assessment battery for ICE deportation and immigration officers evaluating reasoning, judgment and situational response."
+    },
+    {
+      "slug": "icma-credentialed-manager",
+      "name": "ICMA Credentialed Manager",
+      "short": "ICMA-CM",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "International City/County Management Association",
+      "bodyUrl": "https://icma.org/",
+      "type": "Certification",
+      "aka": [
+        "ICMA-CM"
+      ],
+      "blurb": "A professional credential for local-government managers demonstrating education, experience and a commitment to the ICMA Code of Ethics."
+    },
+    {
+      "slug": "irs-ci-special-agent-exam",
+      "name": "IRS Criminal Investigation Special Agent Exam",
+      "short": "IRS CI Exam",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Internal Revenue Service Criminal Investigation",
+      "type": "Exam",
+      "aka": [
+        "IRS CI Exam"
+      ],
+      "blurb": "A federal selection exam for IRS criminal investigation special agents emphasizing analytical, accounting and investigative reasoning skills."
+    },
+    {
+      "slug": "nj-civil-service-exam",
+      "name": "New Jersey Civil Service Exam",
+      "short": "NJ CSC",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "New Jersey Civil Service Commission",
+      "type": "Exam",
+      "aka": [
+        "NJ Civil Service Exam"
+      ],
+      "blurb": "Merit-based competitive examinations administered by the New Jersey Civil Service Commission for state and local government positions."
+    },
+    {
+      "slug": "nigp-cppb",
+      "name": "NIGP Certified Professional Public Buyer",
+      "short": "CPPB",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "NIGP: The Institute for Public Procurement",
+      "bodyUrl": "https://www.nigp.org/",
+      "type": "Certification",
+      "aka": [
+        "CPPB"
+      ],
+      "blurb": "A mid-level NIGP certification validating the knowledge and skills of public buyers managing solicitation and award processes."
+    },
+    {
+      "slug": "nigp-cpp",
+      "name": "NIGP Certified Professional Public Procurement",
+      "short": "CPP",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "NIGP: The Institute for Public Procurement",
+      "bodyUrl": "https://www.nigp.org/",
+      "type": "Certification",
+      "aka": [
+        "CPP"
+      ],
+      "blurb": "The highest NIGP certification for procurement professionals covering strategic sourcing, contract management and public procurement leadership."
+    },
+    {
+      "slug": "nigp-cppo",
+      "name": "NIGP Certified Public Procurement Officer",
+      "short": "CPPO",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "NIGP: The Institute for Public Procurement",
+      "bodyUrl": "https://www.nigp.org/",
+      "type": "Certification",
+      "aka": [
+        "CPPO"
+      ],
+      "blurb": "A senior NIGP certification for procurement officers demonstrating mastery of public procurement strategy, ethics and organizational leadership."
+    },
+    {
+      "slug": "nyc-dcas-exam",
+      "name": "NYC DCAS Civil Service Exam",
+      "short": "DCAS Exam",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "NYC Department of Citywide Administrative Services",
+      "type": "Exam",
+      "aka": [
+        "NYC Civil Service Exam"
+      ],
+      "blurb": "The umbrella of New York City civil service examinations administered by DCAS for municipal jobs from clerical to public safety titles."
+    },
+    {
+      "slug": "usahire-assessment",
+      "name": "OPM USA Hire Assessments",
+      "short": "USA Hire",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "U.S. Office of Personnel Management",
+      "type": "Exam",
+      "aka": [
+        "USA Hire"
+      ],
+      "blurb": "OPM’s online assessment platform delivering structured reasoning and job-simulation tests used across many federal agency hiring announcements."
+    },
+    {
+      "slug": "secret-service-entrance-exam",
+      "name": "Secret Service Special Agent Entrance Exam",
+      "short": "SSAEE",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "U.S. Secret Service",
+      "type": "Exam",
+      "aka": [
+        "SSAEE"
+      ],
+      "blurb": "The written entrance exam for Secret Service special agent applicants assessing reasoning, judgment and communication skills."
+    },
+    {
+      "slug": "secret-service-uniformed-division-exam",
+      "name": "Secret Service Uniformed Division Exam",
+      "short": "UD Exam",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "U.S. Secret Service",
+      "type": "Exam",
+      "aka": [
+        "Uniformed Division Officer Exam"
+      ],
+      "blurb": "A written and physical abilities exam for applicants to the Secret Service Uniformed Division protecting federal facilities and dignitaries."
+    },
+    {
+      "slug": "state-civil-service-exams",
+      "name": "State Civil Service Examinations",
+      "short": "State Civil Service",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "State civil service agencies",
+      "type": "Exam",
+      "aka": [
+        "State Civil Service"
+      ],
+      "blurb": "The collective merit-system examinations used by U.S. state governments to fill classified public-sector positions through open competition."
+    },
+    {
+      "slug": "tsa-cbt",
+      "name": "TSA Computer Based Test",
+      "short": "TSA CBT",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Transportation Security Administration",
+      "type": "Exam",
+      "aka": [
+        "TSA CBT"
+      ],
+      "blurb": "A computer-based aptitude test for TSA officer applicants measuring object recognition, spatial reasoning and situational judgment."
+    },
+    {
+      "slug": "tsa-ort",
+      "name": "TSA Object Recognition Test",
+      "short": "ORT",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "Transportation Security Administration",
+      "type": "Exam",
+      "aka": [
+        "X-ray ORT"
+      ],
+      "blurb": "A scored X-ray image test requiring candidates to identify prohibited items and threats in baggage during TSA officer screening."
+    },
+    {
+      "slug": "federal-capital-police-exam",
+      "name": "U.S. Capitol Police Officer Exam",
+      "short": "USCP Exam",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "United States Capitol Police",
+      "type": "Exam",
+      "aka": [
+        "USCP Exam"
+      ],
+      "blurb": "A written and physical abilities exam for U.S. Capitol Police officers responsible for protecting Congress and Capitol grounds."
+    },
+    {
+      "slug": "us-marshals-exam",
+      "name": "U.S. Marshals Service Criminal Investigator Exam",
+      "short": "USMS Exam",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "United States Marshals Service",
+      "type": "Exam",
+      "aka": [
+        "Deputy Marshal Exam"
+      ],
+      "blurb": "A selection exam and assessment for deputy U.S. marshal candidates covering judgment, reasoning and the demands of federal law enforcement."
+    },
+    {
+      "slug": "us-citizenship-immigration-officer-exam",
+      "name": "USCIS Immigration Services Officer Exam",
+      "short": "USCIS Exam",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "U.S. Citizenship and Immigration Services",
+      "type": "Exam",
+      "aka": [
+        "ISO Exam"
+      ],
+      "blurb": "A USA Hire-based assessment for immigration services officers evaluating reasoning, writing and judgment for adjudicating immigration benefits."
+    },
+    {
+      "slug": "usps-vea-474",
+      "name": "USPS Virtual Entry Assessment 474",
+      "short": "VEA 474",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "United States Postal Service",
+      "bodyUrl": "https://about.usps.com/careers/",
+      "type": "Exam",
+      "aka": [
+        "VEA 474"
+      ],
+      "blurb": "A USPS pre-employment assessment for mail handler and distribution roles measuring work scenarios, personality and situational judgment."
+    },
+    {
+      "slug": "usps-vea-475",
+      "name": "USPS Virtual Entry Assessment 475",
+      "short": "VEA 475",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "United States Postal Service",
+      "bodyUrl": "https://about.usps.com/careers/",
+      "type": "Exam",
+      "aka": [
+        "VEA 475"
+      ],
+      "blurb": "A USPS pre-employment assessment for mail processing clerk roles evaluating detail accuracy, personality and situational judgment."
+    },
+    {
+      "slug": "usps-vea-476",
+      "name": "USPS Virtual Entry Assessment 476",
+      "short": "VEA 476",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "United States Postal Service",
+      "bodyUrl": "https://about.usps.com/careers/",
+      "type": "Exam",
+      "aka": [
+        "VEA 476"
+      ],
+      "blurb": "A USPS pre-employment assessment for mail processing and distribution roles measuring clerical speed, accuracy and judgment."
+    },
+    {
+      "slug": "usps-vea-477",
+      "name": "USPS Virtual Entry Assessment 477",
+      "short": "VEA 477",
+      "category": "government-civil-service",
+      "group": "Federal Hiring & Civil Service",
+      "body": "United States Postal Service",
+      "bodyUrl": "https://about.usps.com/careers/",
+      "type": "Exam",
+      "aka": [
+        "VEA 477",
+        "City Carrier Assessment"
+      ],
+      "blurb": "A USPS pre-employment assessment for city carrier roles evaluating address checking, personality and situational judgment traits."
+    }
+  ]
+}

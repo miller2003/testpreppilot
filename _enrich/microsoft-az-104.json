@@ -1,0 +1,128 @@
+{
+  "slug": "microsoft-az-104",
+  "exam": {
+    "tagline": "The core Azure operations certification that proves you can actually run an Azure environment day to day.",
+    "description": "Microsoft Certified: Azure Administrator Associate (AZ-104) is the flagship associate credential for IT professionals who implement, manage, and monitor a Microsoft Azure environment. It covers identities and governance, storage, compute, virtual networking, and monitoring and backup — the backbone of nearly every Azure deployment. Azure administrators usually work as part of a larger cloud team and coordinate with networking, security, database, application-development, and DevOps roles. Candidates should be comfortable with operating systems, networking, servers, and virtualization, and have hands-on experience with PowerShell, the Azure CLI, the Azure portal, ARM templates or Bicep, and Microsoft Entra ID. AZ-104 is the most in-demand Azure operations certification and the natural next step after AZ-900; it also serves as the associate prerequisite for the Azure Solutions Architect Expert (AZ-305).",
+    "quickAnswer": {
+      "summary": "AZ-104 is the Azure Administrator Associate exam. It costs $165, runs about 120 minutes, and requires a scaled score of 700/1000. Expect 40–60 questions plus hands-on lab tasks in a live Azure environment. Microsoft recommends six months of Azure administration experience, and the cert renews yearly with a free assessment.",
+      "advantages": [
+        "Validates the most-requested Azure operations skill set",
+        "Includes real hands-on lab tasks, not just theory",
+        "Unlocks the Expert path as the AZ-305 prerequisite",
+        "Maps directly to Azure administrator and cloud-ops job roles",
+        "Renews for free every 12 months via Microsoft Learn"
+      ]
+    },
+    "roadmap": [
+      "Build 6 months of hands-on Azure admin experience",
+      "Work the free AZ-104 Microsoft Learn paths",
+      "Practice in a real or sandbox Azure subscription",
+      "Schedule the $165 exam via Pearson VUE",
+      "Pass with 700/1000 and renew yearly for free"
+    ],
+    "prerequisites": "Microsoft recommends at least six months of hands-on Azure administration experience. There is no mandatory prerequisite exam, but AZ-900 is the suggested starting point and familiarity with PowerShell, Azure CLI, and Entra ID is expected.",
+    "eligibility": "Open to all. Anyone may register and sit AZ-104; Microsoft recommends relevant experience but does not restrict eligibility.",
+    "examMeta": {
+      "questions": "40–60 (includes hands-on lab tasks and unscored items)",
+      "time": "120 minutes",
+      "pass": "700 / 1000 (scaled)",
+      "fee": "$165 USD",
+      "format": "Computer-based, multiple-choice, case studies, and live lab tasks",
+      "admin": "Pearson VUE"
+    },
+    "topics": [
+      { "name": "Manage Azure identities and governance", "note": "Microsoft Entra ID users and groups, RBAC, Azure Policy, management groups, subscriptions, tags, and cost management.", "weight": "20–25%" },
+      { "name": "Implement and manage storage", "note": "Storage accounts, blob tiers and lifecycle, Azure Files and File Sync, SAS tokens, and AzCopy.", "weight": "15–20%" },
+      { "name": "Deploy and manage Azure compute resources", "note": "Virtual machines, scale sets, App Service, container instances, AKS basics, and ARM/Bicep deployments.", "weight": "20–25%" },
+      { "name": "Implement and manage virtual networking", "note": "VNets and subnets, NSGs and ASGs, DNS, load balancing, VPN gateway, peering, and private endpoints.", "weight": "15–20%" },
+      { "name": "Monitor and maintain Azure resources", "note": "Azure Monitor, Log Analytics, alerts, backup, and Azure Site Recovery.", "weight": "10–15%" }
+    ],
+    "examEssentials": [
+      ["Credential", "Microsoft Certified: Azure Administrator Associate"],
+      ["Exam code", "AZ-104"],
+      ["Level", "Associate (intermediate)"],
+      ["Exam length", "40–60 questions · 120 minutes"],
+      ["Passing score", "700 / 1000"],
+      ["Exam fee", "$165 USD"],
+      ["Delivery", "Pearson VUE test center or online proctoring"],
+      ["Validity", "12 months (free annual renewal)"]
+    ],
+    "timeline": [
+      ["Hands-on practice", "6–10 weeks typical"],
+      ["Take practice assessment", "2–3 hours"],
+      ["Schedule and sit exam", "Year-round"],
+      ["Get results", "Pass/fail on screen; report in ~24h"]
+    ],
+    "costBreakdown": {
+      "items": [
+        ["Exam fee", "$165"],
+        ["Official Microsoft Learn study material", "$0 (free)"],
+        ["Optional instructor-led course (AZ-104T00)", "$0–$600+"],
+        ["Practice-test subscriptions", "$15–$99"],
+        ["Retake (if needed)", "$165 again"]
+      ],
+      "total": "$165+ (exam only; official study material is free)",
+      "footnote": "Fees are set by Microsoft and billed in local currency; regional taxes may apply. Academic pricing is lower where available."
+    },
+    "difficulty": "Moderate",
+    "audience": "Azure administrators, cloud operators, and IT pros managing Azure infrastructure.",
+    "time": "2–3 months of study",
+    "cost": "$165+",
+    "faqs": [
+      { "q": "Is AZ-104 enough for a cloud job on its own?", "a": "It qualifies you for administrator and cloud-operations roles. Many engineers later pair it with AZ-305 (architect) or AZ-500 (security) to broaden their profile." },
+      { "q": "Does AZ-104 include labs?", "a": "Yes. Many Azure exams, including AZ-104, include live lab tasks where you perform actions in a real Azure environment, so hands-on practice is essential." },
+      { "q": "How long should I study for AZ-104?", "a": "Most candidates need 6–10 weeks of part-time study with real lab work. Plan extra time if you are new to PowerShell, Azure CLI, or networking." },
+      { "q": "How much does AZ-104 cost and does it expire?", "a": "The exam fee is $165 USD. The certification is valid for 12 months and renews for free through an online assessment on Microsoft Learn." },
+      { "q": "Do I need AZ-900 first?", "a": "Not formally, but AZ-900 is the recommended on-ramp if you are new to Azure. AZ-104 assumes general Azure familiarity." }
+    ],
+    "summaryPoints": [
+      "AZ-104 is the core Azure Administrator Associate exam covering identities, storage, compute, networking, and monitoring.",
+      "Expect 40–60 questions plus live lab tasks in about 120 minutes; the passing scaled score is 700/1000.",
+      "Microsoft's published weights are identities/governance 20–25%, storage 15–20%, compute 20–25%, networking 15–20%, and monitoring 10–15%.",
+      "It costs $165 and renews for free every 12 months; it is the associate prerequisite for AZ-305."
+    ],
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+    "reviewed": "2026-08",
+    "confidence": "high"
+  },
+  "program": {
+    "body": "Microsoft",
+    "about": "Microsoft Certifications are role-based, fundamentals, and specialty credentials that validate cloud, AI, security, and developer skills on Microsoft Azure and related platforms. Exams are authored by Microsoft and delivered through Pearson VUE (and Certiport for academic scheduling of Fundamentals exams). Preparation is built around free, official Microsoft Learn training paths and instructor-led courses, and most role-based and specialty credentials must be renewed every 12 months via a free online assessment on Microsoft Learn. Badges are issued through Microsoft's certification profile and Credly.",
+    "registrationSteps": [
+      { "title": "Prepare with Microsoft Learn", "description": "Work through the free official self-paced learning paths and, optionally, instructor-led courses for your exam. Microsoft Learn is the primary, no-cost study source and maps directly to the exam skills outline.", "duration": "1–10 weeks depending on exam and experience" },
+      { "title": "Schedule through Pearson VUE", "description": "Sign in with a personal Microsoft account (MSA) and schedule the exam on the Pearson VUE portal. Choose an in-person test center or online proctoring (OnVUE). Students and educators can use Certiport for Fundamentals exams.", "duration": "about 15 minutes", "note": "Microsoft recommends a personal MSA account; a work or school account can lose exam records if you leave the organization." },
+      { "title": "Take the exam", "description": "Arrive at the test center or launch the online proctoring session. Exams are computer-based and may include multiple-choice, drag-and-drop, case studies, and performance-based lab tasks in a live environment.", "duration": "45–120 minutes depending on the exam" },
+      { "title": "Receive results and badge", "description": "You see a pass/fail result on screen immediately. A detailed score report is emailed within about 24 hours and posted to your Microsoft certification profile. On passing, your digital badge is issued via Credly.", "duration": "score at end; badge within a few days" },
+      { "title": "Renew annually", "description": "Most Microsoft role-based, specialty, and fundamentals certifications expire after 12 months. Renew for free by passing a shorter online renewal assessment on Microsoft Learn before the expiry date — no need to retake the full exam.", "duration": "about 45 minutes, once a year" }
+    ],
+    "proctoring": "Delivered by Pearson VUE. You can sit the exam at a Pearson VUE test center or take it online through OnVUE remote proctoring; the fee is the same for both. Online proctoring requires a quiet, private space, a working webcam, and a system check beforehand.",
+    "retakePolicy": "If you do not pass, you may retake the exam after 24 hours. A second failed attempt requires a 14-day waiting period, and any further attempts also require a 14-day wait between them, up to a maximum of five attempts in a 12-month period.",
+    "recertification": "Microsoft role-based, specialty, and fundamentals certifications are valid for 12 months from the date earned. Renew at no cost by passing the shorter online renewal assessment on Microsoft Learn before the credential expires. Retired certifications cannot be renewed and must be re-earned through the active successor if one exists.",
+    "scoreReporting": "A pass/fail result is shown immediately after the exam. The official score report is emailed within about 24 hours and is also available in your Microsoft certification profile, with section-level feedback on how you performed.",
+    "refundPolicy": "Exam fees are generally non-refundable once a seat is purchased, but you can cancel or reschedule through Pearson VUE at no charge if you do so at least 24–48 hours before the appointment (exact window varies by region).",
+    "providersNote": "Microsoft certification exams are delivered exclusively through Pearson VUE (and Certiport for academic or student Fundamentals scheduling). No other provider is authorized to administer these exams.",
+    "comparison": {
+      "title": "Microsoft Azure / AI certifications compared",
+      "columns": ["Credential", "Level", "Focus", "Exam fee", "Validity"],
+      "rows": [
+        { "label": "AZ-900 Azure Fundamentals", "values": ["Fundamentals", "Cloud concepts", "$99", "1 year"] },
+        { "label": "AI-900 Azure AI Fundamentals", "values": ["Fundamentals", "AI concepts", "$99", "1 year (retired Jun 30 2026)"] },
+        { "label": "AI-901 Azure AI Fundamentals", "values": ["Fundamentals", "AI + Microsoft Foundry", "$99", "1 year"] },
+        { "label": "AZ-104 Azure Administrator", "values": ["Associate", "Administer Azure", "$165", "1 year"] },
+        { "label": "AZ-204 Azure Developer", "values": ["Associate", "Build cloud apps", "$165", "1 year (retired 2026)"] },
+        { "label": "AZ-500 Azure Security Engineer", "values": ["Associate", "Security operations", "$165", "1 year (retires Aug 31 2026)"] },
+        { "label": "AZ-700 Azure Network Engineer", "values": ["Associate", "Networking", "$165", "1 year"] },
+        { "label": "AZ-140 Azure Virtual Desktop", "values": ["Specialty", "Virtual desktop (AVD)", "$165", "1 year"] },
+        { "label": "AZ-305 Azure Solutions Architect", "values": ["Expert", "Solution design", "$165", "1 year"] }
+      ]
+    },
+    "orgFaqs": [
+      { "q": "Can I take a Microsoft exam online from home?", "a": "Yes. Exams are delivered by Pearson VUE with two options: an in-person test center or OnVUE online proctoring from a private space with a webcam. The fee is identical for both." },
+      { "q": "Do Microsoft certifications expire?", "a": "Most role-based, specialty, and fundamentals certifications are valid for 12 months. You renew for free by passing a shorter online assessment on Microsoft Learn before the expiry date." },
+      { "q": "What happens if my certification is retired?", "a": "You keep the credential until its current expiry date, but you can no longer earn or renew it. Microsoft typically points candidates to the active successor exam or certification." }
+    ],
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/",
+    "verified": true,
+    "confidence": "high"
+  }
+}

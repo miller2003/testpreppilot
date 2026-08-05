@@ -1,0 +1,1692 @@
+{
+  "batch": "35",
+  "categories": [
+    "technology"
+  ],
+  "groups": [
+    "Networking & Wireless",
+    "Cisco",
+    "IT Service Management & Governance",
+    "Programming & Development"
+  ],
+  "examCount": 122,
+  "bodyCount": 26,
+  "bodies": [
+    "BICSI",
+    "CWNP",
+    "Check Point Software Technologies",
+    "F5",
+    "Fortinet",
+    "Hewlett Packard Enterprise",
+    "Juniper Networks",
+    "Palo Alto Networks",
+    "SonicWall",
+    "Cisco Systems",
+    "AIIM",
+    "The Open Group",
+    "ISACA",
+    "HDI",
+    "PECB",
+    "PeopleCert",
+    "Certified Internet Web Professionals",
+    "C++ Institute",
+    "freeCodeCamp",
+    "JS Institute",
+    "Oracle",
+    "Python Institute",
+    "Ruby Association",
+    "Unity Technologies",
+    "W3Schools",
+    "Zend by Perforce"
+  ],
+  "exams": [
+    {
+      "slug": "bicsi-installer-1",
+      "name": "BICSI Installer 1",
+      "short": "INST1",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "BICSI",
+      "bodyUrl": "https://www.bicsi.org/",
+      "type": "Certification",
+      "aka": [
+        "INST1"
+      ],
+      "blurb": "Entry-level BICSI credential for structured cabling installers covering safety, hand tools, cable pulling, termination and basic testing procedures."
+    },
+    {
+      "slug": "bicsi-installer-2",
+      "name": "BICSI Installer 2",
+      "short": "INSTC",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "BICSI",
+      "bodyUrl": "https://www.bicsi.org/",
+      "type": "Certification",
+      "aka": [
+        "INSTC",
+        "INSTF"
+      ],
+      "blurb": "BICSI credential offered in copper and optical fibre tracks, covering advanced installation, termination, testing and cabling standards compliance."
+    },
+    {
+      "slug": "bicsi-technician",
+      "name": "BICSI Technician",
+      "short": "TECH",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "BICSI",
+      "bodyUrl": "https://www.bicsi.org/",
+      "type": "Certification",
+      "aka": [
+        "BICSI TECH"
+      ],
+      "blurb": "BICSI credential for lead installers covering project planning, team supervision, advanced troubleshooting and retrofitting cabling infrastructure."
+    },
+    {
+      "slug": "cwnp-cwap",
+      "name": "Certified Wireless Analysis Professional",
+      "short": "CWAP",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "CWNP",
+      "bodyUrl": "https://www.cwnp.com/",
+      "type": "Certification",
+      "aka": [
+        "CWAP-404"
+      ],
+      "blurb": "CWNP certification on protocol analysis, spectrum analysis, frame exchanges and advanced troubleshooting of 802.11 wireless networks."
+    },
+    {
+      "slug": "cwnp-cwdp",
+      "name": "Certified Wireless Design Professional",
+      "short": "CWDP",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "CWNP",
+      "bodyUrl": "https://www.cwnp.com/",
+      "type": "Certification",
+      "aka": [
+        "CWDP-305"
+      ],
+      "blurb": "CWNP certification on WLAN design covering requirements gathering, predictive and validation surveys, capacity planning and vertical market design."
+    },
+    {
+      "slug": "cwnp-cwisa",
+      "name": "Certified Wireless IoT Solutions Administrator",
+      "short": "CWISA",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "CWNP",
+      "bodyUrl": "https://www.cwnp.com/",
+      "type": "Certification",
+      "aka": [
+        "CWISA-103"
+      ],
+      "blurb": "CWNP certification covering wireless internet of things technologies beyond Wi-Fi, including Bluetooth, LoRaWAN, cellular and industrial protocols."
+    },
+    {
+      "slug": "cwnp-cwna",
+      "name": "Certified Wireless Network Administrator",
+      "short": "CWNA",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "CWNP",
+      "bodyUrl": "https://www.cwnp.com/",
+      "type": "Certification",
+      "aka": [
+        "CWNA-109"
+      ],
+      "blurb": "Vendor-neutral wireless networking certification covering radio frequency fundamentals, 802.11 standards, site surveys, security and troubleshooting."
+    },
+    {
+      "slug": "cwnp-cwne",
+      "name": "Certified Wireless Network Expert",
+      "short": "CWNE",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "CWNP",
+      "bodyUrl": "https://www.cwnp.com/",
+      "type": "Certification",
+      "aka": [
+        "CWNE"
+      ],
+      "blurb": "Top CWNP credential awarded by application review after earning CWNA, CWSP, CWDP and CWAP plus documented enterprise wireless experience."
+    },
+    {
+      "slug": "cwnp-cwsp",
+      "name": "Certified Wireless Security Professional",
+      "short": "CWSP",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "CWNP",
+      "bodyUrl": "https://www.cwnp.com/",
+      "type": "Certification",
+      "aka": [
+        "CWSP-208"
+      ],
+      "blurb": "Vendor-neutral certification on wireless security covering 802.1X, EAP methods, WPA3, intrusion prevention and secure WLAN design and auditing."
+    },
+    {
+      "slug": "cwnp-cwt",
+      "name": "Certified Wireless Technician",
+      "short": "CWT",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "CWNP",
+      "bodyUrl": "https://www.cwnp.com/",
+      "type": "Certification",
+      "aka": [
+        "CWT-101"
+      ],
+      "blurb": "Entry-level CWNP certification for wireless installers covering access point mounting, configuration, basic troubleshooting and site documentation."
+    },
+    {
+      "slug": "check-point-ccsa",
+      "name": "Check Point Certified Security Administrator",
+      "short": "CCSA",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Check Point Software Technologies",
+      "type": "Certification",
+      "aka": [
+        "CCSA",
+        "156-215"
+      ],
+      "blurb": "Administrator certification on Check Point security gateways and management servers, covering policy, NAT, identity awareness, logging and monitoring."
+    },
+    {
+      "slug": "check-point-ccse",
+      "name": "Check Point Certified Security Expert",
+      "short": "CCSE",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Check Point Software Technologies",
+      "type": "Certification",
+      "aka": [
+        "CCSE",
+        "156-315"
+      ],
+      "blurb": "Expert-level Check Point certification covering advanced policy management, clustering, VPN troubleshooting, acceleration and upgrade procedures."
+    },
+    {
+      "slug": "bicsi-dcdc",
+      "name": "Data Center Design Consultant",
+      "short": "DCDC",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "BICSI",
+      "bodyUrl": "https://www.bicsi.org/",
+      "type": "Certification",
+      "aka": [
+        "DCDC"
+      ],
+      "blurb": "BICSI credential for data centre designers covering site selection, power, cooling, cabling topology, redundancy tiers and facility standards."
+    },
+    {
+      "slug": "f5-certified-administrator-big-ip",
+      "name": "F5 Certified BIG-IP Administrator",
+      "short": "F5-CA",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "F5",
+      "type": "Certification",
+      "aka": [
+        "F5 101",
+        "F5 201"
+      ],
+      "blurb": "F5 credential earned by passing the 101 Application Delivery Fundamentals and 201 TMOS Administration exams covering BIG-IP operation and support."
+    },
+    {
+      "slug": "f5-certified-technology-specialist-ltm",
+      "name": "F5 Certified Technology Specialist, Local Traffic Manager",
+      "short": "F5-CTS LTM",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "F5",
+      "type": "Certification",
+      "aka": [
+        "F5 301a",
+        "F5 301b"
+      ],
+      "blurb": "F5 specialist credential requiring the 301a and 301b exams on architecting, maintaining and troubleshooting BIG-IP Local Traffic Manager deployments."
+    },
+    {
+      "slug": "fortinet-certified-associate-cybersecurity",
+      "name": "Fortinet Certified Associate in Cybersecurity",
+      "short": "FCA",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Fortinet",
+      "type": "Certification",
+      "aka": [
+        "FCA"
+      ],
+      "blurb": "Entry-level Fortinet certification covering threat landscape awareness, security fundamentals and an introduction to the Fortinet Security Fabric."
+    },
+    {
+      "slug": "fortinet-certified-expert",
+      "name": "Fortinet Certified Expert",
+      "short": "FCX",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Fortinet",
+      "type": "Certification",
+      "aka": [
+        "FCX"
+      ],
+      "blurb": "Top Fortinet credential requiring a hands-on lab exam on designing and troubleshooting complex enterprise Fortinet security deployments."
+    },
+    {
+      "slug": "fortinet-certified-professional-network-security",
+      "name": "Fortinet Certified Professional in Network Security",
+      "short": "FCP",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Fortinet",
+      "type": "Certification",
+      "aka": [
+        "FCP"
+      ],
+      "blurb": "Professional Fortinet certification on FortiGate administration, security profiles, SD-WAN, VPNs and integration across the Security Fabric."
+    },
+    {
+      "slug": "fortinet-certified-solution-specialist",
+      "name": "Fortinet Certified Solution Specialist",
+      "short": "FCSS",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Fortinet",
+      "type": "Certification",
+      "aka": [
+        "FCSS"
+      ],
+      "blurb": "Advanced Fortinet certification with tracks in network security, security operations, public cloud security and secure access service edge."
+    },
+    {
+      "slug": "aruba-certified-networking-associate",
+      "name": "HPE Aruba Networking Certified Associate - Campus Access",
+      "short": "ACA Campus Access",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Hewlett Packard Enterprise",
+      "type": "Certification",
+      "aka": [
+        "ACA",
+        "HPE6-A85"
+      ],
+      "blurb": "Associate certification covering Aruba campus switching and wireless deployment, WLAN configuration, Layer 2 and 3 services and basic security."
+    },
+    {
+      "slug": "aruba-certified-networking-expert",
+      "name": "HPE Aruba Networking Certified Expert - Campus Access",
+      "short": "ACX Campus Access",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Hewlett Packard Enterprise",
+      "type": "Certification",
+      "aka": [
+        "ACX"
+      ],
+      "blurb": "Expert-level Aruba credential requiring a hands-on lab exam on designing, deploying and troubleshooting complex campus wired and wireless networks."
+    },
+    {
+      "slug": "aruba-certified-networking-professional",
+      "name": "HPE Aruba Networking Certified Professional - Campus Access",
+      "short": "ACP Campus Access",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Hewlett Packard Enterprise",
+      "type": "Certification",
+      "aka": [
+        "ACP",
+        "HPE6-A86"
+      ],
+      "blurb": "Professional certification covering advanced Aruba campus design, redundancy, AOS-CX features, roaming, tunnelled nodes and network optimisation."
+    },
+    {
+      "slug": "juniper-jncia-cloud",
+      "name": "Juniper Networks Certified Associate - Cloud",
+      "short": "JNCIA-Cloud",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Juniper Networks",
+      "type": "Certification",
+      "aka": [
+        "JN0-214"
+      ],
+      "blurb": "Associate Juniper certification covering cloud architectures, virtualisation, software-defined networking, containers and Juniper cloud products."
+    },
+    {
+      "slug": "juniper-jncia-devops",
+      "name": "Juniper Networks Certified Associate - DevOps",
+      "short": "JNCIA-DevOps",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Juniper Networks",
+      "type": "Certification",
+      "aka": [
+        "JN0-223"
+      ],
+      "blurb": "Associate Juniper certification covering network automation with Python, PyEZ, REST APIs, Ansible and Junos automation frameworks."
+    },
+    {
+      "slug": "juniper-jncia-junos",
+      "name": "Juniper Networks Certified Associate - Junos",
+      "short": "JNCIA-Junos",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Juniper Networks",
+      "type": "Certification",
+      "aka": [
+        "JN0-105"
+      ],
+      "blurb": "Entry-level Juniper certification covering the Junos operating system, configuration basics, routing fundamentals and device monitoring."
+    },
+    {
+      "slug": "juniper-jncia-security",
+      "name": "Juniper Networks Certified Associate - Security",
+      "short": "JNCIA-SEC",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Juniper Networks",
+      "type": "Certification",
+      "aka": [
+        "JN0-232"
+      ],
+      "blurb": "Associate Juniper security certification covering SRX Series firewall basics, security zones, policies, NAT and unified threat management."
+    },
+    {
+      "slug": "juniper-jncie-enterprise",
+      "name": "Juniper Networks Certified Expert - Enterprise Routing and Switching",
+      "short": "JNCIE-ENT",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Juniper Networks",
+      "type": "Certification",
+      "aka": [
+        "JNCIE-ENT"
+      ],
+      "blurb": "Expert-level Juniper lab exam requiring candidates to build and troubleshoot a complex enterprise network within a timed hands-on environment."
+    },
+    {
+      "slug": "juniper-jncip-enterprise-routing-and-switching",
+      "name": "Juniper Networks Certified Professional - Enterprise Routing and Switching",
+      "short": "JNCIP-ENT",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Juniper Networks",
+      "type": "Certification",
+      "aka": [
+        "JN0-664"
+      ],
+      "blurb": "Professional-level Juniper exam covering advanced routing policy, BGP scaling, multicast, EVPN-VXLAN and enterprise network troubleshooting."
+    },
+    {
+      "slug": "juniper-jncis-enterprise-routing-and-switching",
+      "name": "Juniper Networks Certified Specialist - Enterprise Routing and Switching",
+      "short": "JNCIS-ENT",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Juniper Networks",
+      "type": "Certification",
+      "aka": [
+        "JN0-351"
+      ],
+      "blurb": "Specialist-level Juniper exam covering OSPF, IS-IS, BGP, spanning tree, layer two security and enterprise switching on Junos devices."
+    },
+    {
+      "slug": "juniper-jncis-security",
+      "name": "Juniper Networks Certified Specialist - Security",
+      "short": "JNCIS-SEC",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Juniper Networks",
+      "type": "Certification",
+      "aka": [
+        "JN0-335"
+      ],
+      "blurb": "Specialist Juniper security exam covering advanced SRX policy, IPsec VPNs, application security, Juniper ATP and security troubleshooting."
+    },
+    {
+      "slug": "juniper-jncis-service-provider",
+      "name": "Juniper Networks Certified Specialist - Service Provider Routing and Switching",
+      "short": "JNCIS-SP",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Juniper Networks",
+      "type": "Certification",
+      "aka": [
+        "JN0-363"
+      ],
+      "blurb": "Specialist Juniper exam for carrier networks covering IS-IS, OSPF, BGP, MPLS fundamentals and service provider switching on Junos platforms."
+    },
+    {
+      "slug": "palo-alto-pccet",
+      "name": "Palo Alto Networks Certified Cybersecurity Entry-level Technician",
+      "short": "PCCET",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Palo Alto Networks",
+      "type": "Certification",
+      "aka": [
+        "PCCET"
+      ],
+      "blurb": "Entry-level Palo Alto certification covering cybersecurity fundamentals, network security concepts, cloud security and security operations basics."
+    },
+    {
+      "slug": "palo-alto-pcdra",
+      "name": "Palo Alto Networks Certified Detection and Remediation Analyst",
+      "short": "PCDRA",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Palo Alto Networks",
+      "type": "Certification",
+      "aka": [
+        "PCDRA"
+      ],
+      "blurb": "Certification for SOC analysts using Cortex XDR, covering threat detection, investigation, endpoint protection policy and incident remediation."
+    },
+    {
+      "slug": "palo-alto-pcnsa",
+      "name": "Palo Alto Networks Certified Network Security Administrator",
+      "short": "PCNSA",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Palo Alto Networks",
+      "type": "Certification",
+      "aka": [
+        "PCNSA"
+      ],
+      "blurb": "Administrator certification on configuring and managing Palo Alto next-generation firewalls including security policy, App-ID, User-ID and logging."
+    },
+    {
+      "slug": "palo-alto-pcnse",
+      "name": "Palo Alto Networks Certified Network Security Engineer",
+      "short": "PCNSE",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Palo Alto Networks",
+      "type": "Certification",
+      "aka": [
+        "PCNSE"
+      ],
+      "blurb": "Engineer-level certification on designing, deploying and troubleshooting Palo Alto firewall estates, Panorama, high availability and advanced features."
+    },
+    {
+      "slug": "palo-alto-pcsfe",
+      "name": "Palo Alto Networks Certified Software Firewall Engineer",
+      "short": "PCSFE",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "Palo Alto Networks",
+      "type": "Certification",
+      "aka": [
+        "PCSFE"
+      ],
+      "blurb": "Certification on deploying VM-Series, CN-Series and cloud next-generation firewalls across public cloud, virtualised and Kubernetes environments."
+    },
+    {
+      "slug": "bicsi-rcdd",
+      "name": "Registered Communications Distribution Designer",
+      "short": "RCDD",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "BICSI",
+      "bodyUrl": "https://www.bicsi.org/",
+      "type": "Certification",
+      "aka": [
+        "RCDD"
+      ],
+      "blurb": "Senior BICSI design credential covering telecommunications distribution design, pathways, spaces, grounding, codes and standards for buildings."
+    },
+    {
+      "slug": "sonicwall-network-security-administrator",
+      "name": "SonicWall Network Security Administrator",
+      "short": "SNSA",
+      "category": "technology",
+      "group": "Networking & Wireless",
+      "body": "SonicWall",
+      "type": "Certification",
+      "aka": [
+        "SNSA"
+      ],
+      "blurb": "Vendor certification on configuring and managing SonicWall firewalls including policies, NAT, VPNs, content filtering and threat prevention."
+    },
+    {
+      "slug": "cisco-enauto-300-435",
+      "name": "Automating Cisco Enterprise Solutions (ENAUTO)",
+      "short": "ENAUTO",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Exam",
+      "aka": [
+        "300-435",
+        "ENAUTO"
+      ],
+      "blurb": "CCNP Enterprise concentration exam on programming and automating Cisco enterprise networks with Python, REST APIs, Ansible and controller platforms."
+    },
+    {
+      "slug": "cisco-ai-technical-practitioner",
+      "name": "Cisco AI Technical Practitioner",
+      "short": "AITECH",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "810-110",
+        "AITECH"
+      ],
+      "blurb": "Cisco credential covering artificial intelligence fundamentals, data readiness, model deployment and AI infrastructure considerations for technical teams."
+    },
+    {
+      "slug": "cisco-ccde",
+      "name": "Cisco Certified Design Expert",
+      "short": "CCDE",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "400-007",
+        "CCDE Practical"
+      ],
+      "blurb": "Expert-level network design credential requiring a written exam plus an eight-hour scenario-based practical covering business-driven architecture decisions."
+    },
+    {
+      "slug": "cisco-ccie-automation",
+      "name": "Cisco Certified Internetwork Expert Automation",
+      "short": "CCIE Automation",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-901 AUTOCOR",
+        "CCIE DevNet Expert"
+      ],
+      "blurb": "Expert track, formerly branded DevNet Expert, combining the AUTOCOR written exam with a hands-on lab on network automation systems and platform APIs."
+    },
+    {
+      "slug": "cisco-ccie-collaboration",
+      "name": "Cisco Certified Internetwork Expert Collaboration",
+      "short": "CCIE Collaboration",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-801 CLCOR",
+        "CCIE Collaboration Lab"
+      ],
+      "blurb": "Expert certification requiring the CLCOR written exam and an eight-hour lab on Cisco unified communications, video and Webex collaboration deployments."
+    },
+    {
+      "slug": "cisco-ccie-data-center",
+      "name": "Cisco Certified Internetwork Expert Data Center",
+      "short": "CCIE Data Center",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-601 DCCOR",
+        "CCIE Data Center Lab"
+      ],
+      "blurb": "Expert credential combining the DCCOR written exam with a lab on Nexus switching, ACI fabrics, UCS compute, storage networking and data centre automation."
+    },
+    {
+      "slug": "cisco-ccie-enterprise-infrastructure",
+      "name": "Cisco Certified Internetwork Expert Enterprise Infrastructure",
+      "short": "CCIE EI",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-401 ENCOR",
+        "CCIE Enterprise Infrastructure Lab"
+      ],
+      "blurb": "The best known Cisco expert track, pairing the ENCOR written exam with an eight-hour lab on enterprise routing, switching, SD-WAN and automation."
+    },
+    {
+      "slug": "cisco-ccie-enterprise-wireless",
+      "name": "Cisco Certified Internetwork Expert Enterprise Wireless",
+      "short": "CCIE Wireless",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-401 ENCOR",
+        "CCIE Enterprise Wireless Lab"
+      ],
+      "blurb": "Expert wireless track requiring the ENCOR written exam plus a lab covering wireless design, deployment, security and troubleshooting at enterprise scale."
+    },
+    {
+      "slug": "cisco-ccie-security",
+      "name": "Cisco Certified Internetwork Expert Security",
+      "short": "CCIE Security",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-701 SCOR",
+        "CCIE Security Lab"
+      ],
+      "blurb": "Expert security credential requiring the SCOR written exam and a lab on firewalls, secure access, VPNs, identity services and network threat defence."
+    },
+    {
+      "slug": "cisco-ccie-service-provider",
+      "name": "Cisco Certified Internetwork Expert Service Provider",
+      "short": "CCIE SP",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-501 SPCOR",
+        "CCIE Service Provider Lab"
+      ],
+      "blurb": "Expert track for carrier networks, pairing the SPCOR written exam with a lab on MPLS, segment routing, BGP scale and service provider automation."
+    },
+    {
+      "slug": "cisco-ccna",
+      "name": "Cisco Certified Network Associate",
+      "short": "CCNA",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "200-301"
+      ],
+      "blurb": "Cisco associate networking certification covering IP connectivity, switching, wireless, security fundamentals and automation; refreshed with AI content in 2026."
+    },
+    {
+      "slug": "cisco-ccna-automation",
+      "name": "Cisco Certified Network Associate Automation",
+      "short": "CCNA Automation",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "200-901",
+        "DEVASC",
+        "Cisco Certified DevNet Associate"
+      ],
+      "blurb": "Associate exam on APIs, Python, version control and infrastructure automation using Cisco platforms; previously branded Cisco Certified DevNet Associate."
+    },
+    {
+      "slug": "cisco-ccna-cybersecurity",
+      "name": "Cisco Certified Network Associate Cybersecurity",
+      "short": "CCNA Cybersecurity",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "200-201",
+        "CBROPS",
+        "Cisco Certified CyberOps Associate"
+      ],
+      "blurb": "Security operations centre associate exam on monitoring, intrusion analysis and incident handling, formerly branded Cisco Certified CyberOps Associate."
+    },
+    {
+      "slug": "cisco-ccnp-automation",
+      "name": "Cisco Certified Network Professional Automation",
+      "short": "CCNP Automation",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-901 AUTOCOR",
+        "DEVCOR",
+        "Cisco Certified DevNet Professional"
+      ],
+      "blurb": "Professional track on designing and operating network automation systems, formerly the Cisco Certified DevNet Professional built around the DEVCOR core."
+    },
+    {
+      "slug": "cisco-ccnp-collaboration",
+      "name": "Cisco Certified Network Professional Collaboration",
+      "short": "CCNP Collaboration",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-801 CLCOR"
+      ],
+      "blurb": "Professional certification requiring the CLCOR core exam plus a concentration on call control, hybrid cloud collaboration or cloud customer experience."
+    },
+    {
+      "slug": "cisco-ccnp-cybersecurity",
+      "name": "Cisco Certified Network Professional Cybersecurity",
+      "short": "CCNP Cybersecurity",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-201 CBRCOR",
+        "Cisco Certified CyberOps Professional"
+      ],
+      "blurb": "Professional security operations track, formerly CyberOps Professional, combining the CBRCOR core with forensics or threat hunting concentration exams."
+    },
+    {
+      "slug": "cisco-ccnp-data-center",
+      "name": "Cisco Certified Network Professional Data Center",
+      "short": "CCNP Data Center",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-601 DCCOR"
+      ],
+      "blurb": "Professional track requiring the DCCOR core exam plus a concentration in data centre design, troubleshooting, ACI, storage networking or AI infrastructure."
+    },
+    {
+      "slug": "cisco-ccnp-enterprise",
+      "name": "Cisco Certified Network Professional Enterprise",
+      "short": "CCNP Enterprise",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-401 ENCOR"
+      ],
+      "blurb": "Cisco professional certification earned by passing the ENCOR core exam plus one enterprise concentration such as ENARSI, ENSDWI, ENSLD or ENAUTO."
+    },
+    {
+      "slug": "cisco-ccnp-security",
+      "name": "Cisco Certified Network Professional Security",
+      "short": "CCNP Security",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-701 SCOR"
+      ],
+      "blurb": "Professional security certification requiring the SCOR core exam plus a concentration in firewall, identity services, email, web or VPN technologies."
+    },
+    {
+      "slug": "cisco-ccnp-service-provider",
+      "name": "Cisco Certified Network Professional Service Provider",
+      "short": "CCNP Service Provider",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-501 SPCOR"
+      ],
+      "blurb": "Professional certification for carrier and ISP engineers, built on the SPCOR core exam plus a concentration in advanced routing, VPN services or automation."
+    },
+    {
+      "slug": "cisco-ccnp-wireless",
+      "name": "Cisco Certified Network Professional Wireless",
+      "short": "CCNP Wireless",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "350-101 WLCOR"
+      ],
+      "blurb": "Professional wireless track relaunched by Cisco in 2026 around the WLCOR core exam, covering wireless design, deployment, security and assurance."
+    },
+    {
+      "slug": "cisco-ccst-cybersecurity",
+      "name": "Cisco Certified Support Technician Cybersecurity",
+      "short": "CCST Cybersecurity",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "CCST Cybersecurity"
+      ],
+      "blurb": "Entry-level Cisco credential covering security principles, network security concepts, endpoint protection, vulnerability assessment and incident handling."
+    },
+    {
+      "slug": "cisco-ccst-networking",
+      "name": "Cisco Certified Support Technician Networking",
+      "short": "CCST Networking",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Certification",
+      "aka": [
+        "CCST Networking"
+      ],
+      "blurb": "Entry-level Cisco certification covering networking basics, addressing, cabling, endpoints, diagnostics and infrastructure for early-career technicians."
+    },
+    {
+      "slug": "cisco-encc-300-440",
+      "name": "Designing and Implementing Cloud Connectivity (ENCC)",
+      "short": "ENCC",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Exam",
+      "aka": [
+        "300-440",
+        "ENCC"
+      ],
+      "blurb": "CCNP Enterprise concentration exam covering hybrid cloud connectivity, cloud-native routing, SD-WAN cloud onramp and secure interconnect design."
+    },
+    {
+      "slug": "cisco-enna-300-445",
+      "name": "Designing and Implementing Enterprise Network Assurance (ENNA)",
+      "short": "ENNA",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Exam",
+      "aka": [
+        "300-445",
+        "ENNA"
+      ],
+      "blurb": "CCNP Enterprise concentration exam on network assurance, telemetry, ThousandEyes monitoring and data-driven troubleshooting of enterprise networks."
+    },
+    {
+      "slug": "cisco-ensld-300-420",
+      "name": "Designing Cisco Enterprise Networks (ENSLD)",
+      "short": "ENSLD",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Exam",
+      "aka": [
+        "300-420",
+        "ENSLD"
+      ],
+      "blurb": "CCNP Enterprise concentration exam on campus, WAN and services design methodology, including redundancy, addressing and SD-Access architecture."
+    },
+    {
+      "slug": "cisco-sise-300-715",
+      "name": "Implementing and Configuring Cisco Identity Services Engine (SISE)",
+      "short": "SISE",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Exam",
+      "aka": [
+        "300-715",
+        "SISE"
+      ],
+      "blurb": "CCNP Security concentration exam covering Cisco ISE deployment, 802.1X authentication, profiling, guest access, BYOD and posture assessment."
+    },
+    {
+      "slug": "cisco-ensdwi-300-415",
+      "name": "Implementing Cisco Catalyst SD-WAN Solutions (ENSDWI)",
+      "short": "ENSDWI",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Exam",
+      "aka": [
+        "300-415",
+        "ENSDWI"
+      ],
+      "blurb": "CCNP Enterprise concentration exam covering Cisco Catalyst SD-WAN architecture, controller deployment, policies, security and migration."
+    },
+    {
+      "slug": "cisco-enarsi-300-410",
+      "name": "Implementing Cisco Enterprise Advanced Routing and Services (ENARSI)",
+      "short": "ENARSI",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Exam",
+      "aka": [
+        "300-410",
+        "ENARSI"
+      ],
+      "blurb": "The most popular CCNP Enterprise concentration exam, covering advanced BGP, OSPF, EIGRP, VRF, MPLS and infrastructure services troubleshooting."
+    },
+    {
+      "slug": "cisco-svpn-300-730",
+      "name": "Implementing Secure Solutions with Virtual Private Networks (SVPN)",
+      "short": "SVPN",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Exam",
+      "aka": [
+        "300-730",
+        "SVPN"
+      ],
+      "blurb": "CCNP Security concentration exam covering site-to-site and remote-access VPN design with IPsec, DMVPN, FlexVPN and secure remote connectivity."
+    },
+    {
+      "slug": "cisco-sncf-300-710",
+      "name": "Securing Networks with Cisco Firepower (SNCF)",
+      "short": "SNCF",
+      "category": "technology",
+      "group": "Cisco",
+      "body": "Cisco Systems",
+      "type": "Exam",
+      "aka": [
+        "300-710",
+        "SNCF"
+      ],
+      "blurb": "CCNP Security concentration exam on Cisco Secure Firewall and Firepower deployment, policy configuration, intrusion prevention and malware defence."
+    },
+    {
+      "slug": "aiim-certified-information-professional",
+      "name": "AIIM Certified Information Professional",
+      "short": "CIP",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "AIIM",
+      "type": "Certification",
+      "aka": [
+        "AIIM CIP"
+      ],
+      "blurb": "Credential covering information governance, content management, records retention, automation and information privacy across the enterprise."
+    },
+    {
+      "slug": "archimate-3-foundation",
+      "name": "ArchiMate 3 Foundation",
+      "short": "ArchiMate Part 1",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "The Open Group",
+      "bodyUrl": "https://www.opengroup.org/",
+      "type": "Certification",
+      "aka": [
+        "ArchiMate 3 Part 1"
+      ],
+      "blurb": "Open Group certification covering the ArchiMate modelling language, its layers, elements, relationships and viewpoints for enterprise architecture."
+    },
+    {
+      "slug": "archimate-3-practitioner",
+      "name": "ArchiMate 3 Practitioner",
+      "short": "ArchiMate Part 2",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "The Open Group",
+      "bodyUrl": "https://www.opengroup.org/",
+      "type": "Certification",
+      "aka": [
+        "ArchiMate 3 Part 2"
+      ],
+      "blurb": "Scenario-based Open Group exam on applying ArchiMate viewpoints, motivation and implementation extensions to model real architecture problems."
+    },
+    {
+      "slug": "cobit-2019-design-and-implementation",
+      "name": "COBIT 2019 Design and Implementation",
+      "short": "COBIT Design",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "ISACA",
+      "bodyUrl": "https://www.isaca.org/",
+      "type": "Certification",
+      "aka": [
+        "COBIT Design and Implementation"
+      ],
+      "blurb": "Advanced ISACA certificate on tailoring a COBIT governance system to an organisation and running a governance implementation lifecycle."
+    },
+    {
+      "slug": "cobit-2019-foundation",
+      "name": "COBIT 2019 Foundation",
+      "short": "COBIT Foundation",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "ISACA",
+      "bodyUrl": "https://www.isaca.org/",
+      "type": "Certification",
+      "aka": [
+        "COBIT 2019"
+      ],
+      "blurb": "ISACA certificate covering the COBIT governance framework, its principles, governance and management objectives, components and design factors."
+    },
+    {
+      "slug": "hdi-customer-service-representative",
+      "name": "HDI Customer Service Representative",
+      "short": "HDI-CSR",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "HDI",
+      "type": "Certification",
+      "aka": [
+        "HDI-CSR"
+      ],
+      "blurb": "Entry-level HDI certification on customer service fundamentals, communication skills, problem solving and handling difficult support interactions."
+    },
+    {
+      "slug": "hdi-desktop-advanced-support-technician",
+      "name": "HDI Desktop Advanced Support Technician",
+      "short": "HDI-DAST",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "HDI",
+      "type": "Certification",
+      "aka": [
+        "HDI-DAST",
+        "HDI-DAN"
+      ],
+      "blurb": "HDI certification for desktop and field support staff covering onsite troubleshooting, asset handling, escalation and customer interaction skills."
+    },
+    {
+      "slug": "hdi-support-center-analyst",
+      "name": "HDI Support Center Analyst",
+      "short": "HDI-SCA",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "HDI",
+      "type": "Certification",
+      "aka": [
+        "HDI-SCA"
+      ],
+      "blurb": "Service desk certification covering incident handling, customer service skills, communication techniques and support centre processes and metrics."
+    },
+    {
+      "slug": "hdi-support-center-manager",
+      "name": "HDI Support Center Manager",
+      "short": "HDI-SCM",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "HDI",
+      "type": "Certification",
+      "aka": [
+        "HDI-SCM"
+      ],
+      "blurb": "HDI management certification covering support strategy, service level agreements, budgeting, staffing, metrics and continuous service improvement."
+    },
+    {
+      "slug": "hdi-support-center-team-lead",
+      "name": "HDI Support Center Team Lead",
+      "short": "HDI-SCTL",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "HDI",
+      "type": "Certification",
+      "aka": [
+        "HDI-SCTL"
+      ],
+      "blurb": "HDI certification for support team leaders covering coaching, workflow management, performance monitoring, quality assurance and team communication."
+    },
+    {
+      "slug": "iso-27001-lead-auditor",
+      "name": "ISO/IEC 27001 Lead Auditor",
+      "short": "ISO 27001 Lead Auditor",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PECB",
+      "type": "Certification",
+      "aka": [
+        "ISO 27001 LA"
+      ],
+      "blurb": "Credential for professionals leading information security management system audits against ISO/IEC 27001, covering audit planning and reporting."
+    },
+    {
+      "slug": "iso-27001-lead-implementer",
+      "name": "ISO/IEC 27001 Lead Implementer",
+      "short": "ISO 27001 Lead Implementer",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PECB",
+      "type": "Certification",
+      "aka": [
+        "ISO 27001 LI"
+      ],
+      "blurb": "Credential for professionals establishing and operating an ISO/IEC 27001 information security management system including risk treatment and controls."
+    },
+    {
+      "slug": "iso-42001-lead-auditor",
+      "name": "ISO/IEC 42001 Lead Auditor",
+      "short": "ISO 42001 Lead Auditor",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PECB",
+      "type": "Certification",
+      "aka": [
+        "ISO 42001 LA"
+      ],
+      "blurb": "Credential for auditing artificial intelligence management systems against ISO/IEC 42001, covering AI governance, risk and impact assessment."
+    },
+    {
+      "slug": "itil-4-foundation",
+      "name": "ITIL 4 Foundation",
+      "short": "ITIL 4 Foundation",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PeopleCert",
+      "type": "Certification",
+      "aka": [
+        "ITIL Foundation"
+      ],
+      "blurb": "Entry-level IT service management certification covering the ITIL 4 service value system, guiding principles, four dimensions and key practices."
+    },
+    {
+      "slug": "itil-4-leader-digital-and-it-strategy",
+      "name": "ITIL 4 Leader: Digital and IT Strategy",
+      "short": "ITIL DITS",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PeopleCert",
+      "type": "Certification",
+      "aka": [
+        "ITIL DITS"
+      ],
+      "blurb": "Strategic Leader module covering digital strategy, disruption response, operating model design and aligning IT strategy with business direction."
+    },
+    {
+      "slug": "itil-4-managing-professional",
+      "name": "ITIL 4 Managing Professional",
+      "short": "ITIL MP",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PeopleCert",
+      "type": "Certification",
+      "aka": [
+        "ITIL MP"
+      ],
+      "blurb": "Designation awarded after completing the CDS, DSV, HVIT and DPI modules, aimed at practitioners running IT-enabled products and services."
+    },
+    {
+      "slug": "itil-4-master",
+      "name": "ITIL 4 Master",
+      "short": "ITIL Master",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PeopleCert",
+      "type": "Certification",
+      "aka": [
+        "ITIL Master"
+      ],
+      "blurb": "Highest ITIL designation, awarded through submission and defence of real-world evidence rather than a written exam, after Managing Professional."
+    },
+    {
+      "slug": "itil-4-specialist-collaborate-assure-and-improve",
+      "name": "ITIL 4 Specialist: Collaborate, Assure and Improve",
+      "short": "ITIL CAI",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PeopleCert",
+      "type": "Certification",
+      "aka": [
+        "ITIL CAI"
+      ],
+      "blurb": "ITIL 4 Practice Manager module covering relationship, supplier, service level, continual improvement and information security management practices."
+    },
+    {
+      "slug": "itil-4-specialist-create-deliver-and-support",
+      "name": "ITIL 4 Specialist: Create, Deliver and Support",
+      "short": "ITIL CDS",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PeopleCert",
+      "type": "Certification",
+      "aka": [
+        "ITIL CDS"
+      ],
+      "blurb": "Managing Professional module covering the design, development and operation of service value streams, team culture, tooling and workflow management."
+    },
+    {
+      "slug": "itil-4-specialist-drive-stakeholder-value",
+      "name": "ITIL 4 Specialist: Drive Stakeholder Value",
+      "short": "ITIL DSV",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PeopleCert",
+      "type": "Certification",
+      "aka": [
+        "ITIL DSV"
+      ],
+      "blurb": "Managing Professional module on customer journeys, service relationships, demand shaping, service level management and stakeholder engagement."
+    },
+    {
+      "slug": "itil-4-specialist-high-velocity-it",
+      "name": "ITIL 4 Specialist: High-velocity IT",
+      "short": "ITIL HVIT",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PeopleCert",
+      "type": "Certification",
+      "aka": [
+        "ITIL HVIT"
+      ],
+      "blurb": "Managing Professional module on digital product delivery, lean and agile ways of working, automation and resilient high-velocity operating models."
+    },
+    {
+      "slug": "itil-4-specialist-monitor-support-and-fulfil",
+      "name": "ITIL 4 Specialist: Monitor, Support and Fulfil",
+      "short": "ITIL MSF",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PeopleCert",
+      "type": "Certification",
+      "aka": [
+        "ITIL MSF"
+      ],
+      "blurb": "ITIL 4 Practice Manager module bundling the incident, problem, service desk, service request and monitoring and event management practices."
+    },
+    {
+      "slug": "itil-4-specialist-plan-implement-and-control",
+      "name": "ITIL 4 Specialist: Plan, Implement and Control",
+      "short": "ITIL PIC",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PeopleCert",
+      "type": "Certification",
+      "aka": [
+        "ITIL PIC"
+      ],
+      "blurb": "ITIL 4 Practice Manager module covering change enablement, release, deployment, IT asset, service configuration and deployment management practices."
+    },
+    {
+      "slug": "itil-4-strategic-leader",
+      "name": "ITIL 4 Strategic Leader",
+      "short": "ITIL SL",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PeopleCert",
+      "type": "Certification",
+      "aka": [
+        "ITIL SL"
+      ],
+      "blurb": "Designation awarded after completing Direct, Plan and Improve plus Digital and IT Strategy, aimed at leaders shaping digital service strategy."
+    },
+    {
+      "slug": "itil-4-strategist-direct-plan-and-improve",
+      "name": "ITIL 4 Strategist: Direct, Plan and Improve",
+      "short": "ITIL DPI",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "PeopleCert",
+      "type": "Certification",
+      "aka": [
+        "ITIL DPI"
+      ],
+      "blurb": "Universal ITIL 4 module required for both Managing Professional and Strategic Leader, covering governance, planning, measurement and improvement."
+    },
+    {
+      "slug": "togaf-enterprise-architecture-foundation",
+      "name": "TOGAF Enterprise Architecture Foundation",
+      "short": "TOGAF Part 1",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "The Open Group",
+      "bodyUrl": "https://www.opengroup.org/",
+      "type": "Certification",
+      "aka": [
+        "TOGAF 10 Part 1",
+        "OG0-101"
+      ],
+      "blurb": "Part 1 examination of The Open Group TOGAF Standard, covering enterprise architecture terminology, the ADM cycle, governance and content framework."
+    },
+    {
+      "slug": "togaf-enterprise-architecture-practitioner",
+      "name": "TOGAF Enterprise Architecture Practitioner",
+      "short": "TOGAF Part 2",
+      "category": "technology",
+      "group": "IT Service Management & Governance",
+      "body": "The Open Group",
+      "bodyUrl": "https://www.opengroup.org/",
+      "type": "Certification",
+      "aka": [
+        "TOGAF 10 Part 2",
+        "OG0-102"
+      ],
+      "blurb": "Scenario-based Part 2 examination requiring candidates to apply the TOGAF ADM, stakeholder management and architecture techniques to case studies."
+    },
+    {
+      "slug": "ciw-advanced-html5-and-css3-specialist",
+      "name": "CIW Advanced HTML5 and CSS3 Specialist",
+      "short": "CIW HTML5",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Certified Internet Web Professionals",
+      "type": "Certification",
+      "aka": [
+        "1D0-720"
+      ],
+      "blurb": "CIW certification covering semantic HTML5 markup, responsive CSS3 layout, forms, media elements, accessibility and cross-browser development."
+    },
+    {
+      "slug": "ciw-javascript-specialist",
+      "name": "CIW JavaScript Specialist",
+      "short": "CIW JavaScript",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Certified Internet Web Professionals",
+      "type": "Certification",
+      "aka": [
+        "1D0-735"
+      ],
+      "blurb": "CIW certification covering JavaScript syntax, the document object model, event handling, form validation, AJAX and client-side scripting practice."
+    },
+    {
+      "slug": "ciw-web-foundations-associate",
+      "name": "CIW Web Foundations Associate",
+      "short": "CIW Web Foundations",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Certified Internet Web Professionals",
+      "type": "Certification",
+      "aka": [
+        "1D0-61A"
+      ],
+      "blurb": "Entry-level CIW certification covering internet fundamentals, web browsers, networking basics and introductory web page authoring concepts."
+    },
+    {
+      "slug": "cpp-institute-cla",
+      "name": "CLA - C Programming Language Certified Associate",
+      "short": "CLA",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "C++ Institute",
+      "type": "Certification",
+      "aka": [
+        "CLA-11-03"
+      ],
+      "blurb": "Associate exam on the C programming language covering pointers, arrays, structures, memory management, the preprocessor and standard library use."
+    },
+    {
+      "slug": "cpp-institute-cpa",
+      "name": "CPA - C++ Certified Associate Programmer",
+      "short": "CPA",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "C++ Institute",
+      "type": "Certification",
+      "aka": [
+        "CPA-21-02"
+      ],
+      "blurb": "Associate C++ Institute exam covering C++ syntax, data types, control structures, functions, classes, inheritance and basic exception handling."
+    },
+    {
+      "slug": "cpp-institute-cpp",
+      "name": "CPP - C++ Certified Professional Programmer",
+      "short": "CPP",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "C++ Institute",
+      "type": "Certification",
+      "aka": [
+        "CPP-22-02"
+      ],
+      "blurb": "Professional C++ Institute exam covering templates, the standard template library, smart pointers, move semantics and advanced object-oriented design."
+    },
+    {
+      "slug": "freecodecamp-javascript-algorithms-and-data-structures",
+      "name": "freeCodeCamp JavaScript Algorithms and Data Structures Certification",
+      "short": "freeCodeCamp JS",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "freeCodeCamp",
+      "type": "Training",
+      "aka": [
+        "freeCodeCamp JavaScript"
+      ],
+      "blurb": "Free project-based certification covering JavaScript fundamentals, algorithm scripting, object-oriented and functional programming techniques."
+    },
+    {
+      "slug": "freecodecamp-responsive-web-design-certification",
+      "name": "freeCodeCamp Responsive Web Design Certification",
+      "short": "freeCodeCamp RWD",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "freeCodeCamp",
+      "type": "Training",
+      "aka": [
+        "freeCodeCamp RWD"
+      ],
+      "blurb": "Free project-based certification covering HTML, CSS, flexbox, grid, accessibility and responsive design through five required build projects."
+    },
+    {
+      "slug": "js-institute-jsa",
+      "name": "JSA - Certified Associate JavaScript Programmer",
+      "short": "JSA",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "JS Institute",
+      "type": "Certification",
+      "aka": [
+        "JSA-41-01"
+      ],
+      "blurb": "Associate JavaScript Institute exam covering prototypes, classes, closures, asynchronous programming, modules and modern ECMAScript features."
+    },
+    {
+      "slug": "js-institute-jse",
+      "name": "JSE - Certified Entry-Level JavaScript Programmer",
+      "short": "JSE",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "JS Institute",
+      "type": "Certification",
+      "aka": [
+        "JSE-40-01"
+      ],
+      "blurb": "Entry-level JavaScript Institute exam covering variables, operators, control flow, functions, errors and basic object and array manipulation."
+    },
+    {
+      "slug": "oracle-java-foundations",
+      "name": "Oracle Certified Foundations Associate: Java",
+      "short": "Java Foundations",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Oracle",
+      "bodyUrl": "https://education.oracle.com/",
+      "type": "Certification",
+      "aka": [
+        "1Z0-811"
+      ],
+      "blurb": "Entry-level Oracle exam covering Java basics such as data types, control flow, arrays, methods, classes and object-oriented programming concepts."
+    },
+    {
+      "slug": "oracle-java-se-11-developer",
+      "name": "Oracle Certified Professional: Java SE 11 Developer",
+      "short": "Java SE 11",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Oracle",
+      "bodyUrl": "https://education.oracle.com/",
+      "type": "Certification",
+      "aka": [
+        "1Z0-819"
+      ],
+      "blurb": "Oracle professional Java SE 11 exam covering core language features, modules, streams, concurrency and secure coding; superseded by later versions."
+    },
+    {
+      "slug": "oracle-java-se-17-developer",
+      "name": "Oracle Certified Professional: Java SE 17 Developer",
+      "short": "Java SE 17",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Oracle",
+      "bodyUrl": "https://education.oracle.com/",
+      "type": "Certification",
+      "aka": [
+        "1Z0-829"
+      ],
+      "blurb": "Oracle professional exam covering Java SE 17 language features, generics, collections, streams, concurrency, modules and exception handling."
+    },
+    {
+      "slug": "oracle-java-se-21-developer",
+      "name": "Oracle Certified Professional: Java SE 21 Developer",
+      "short": "Java SE 21",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Oracle",
+      "bodyUrl": "https://education.oracle.com/",
+      "type": "Certification",
+      "aka": [
+        "1Z0-830"
+      ],
+      "blurb": "Oracle professional exam on Java SE 21 covering records, sealed classes, pattern matching, virtual threads, streams and the module system."
+    },
+    {
+      "slug": "python-institute-pcap",
+      "name": "PCAP - Certified Associate in Python Programming",
+      "short": "PCAP",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Python Institute",
+      "bodyUrl": "https://pythoninstitute.org/",
+      "type": "Certification",
+      "aka": [
+        "PCAP-31-03"
+      ],
+      "blurb": "Associate Python Institute exam covering modules, packages, exceptions, strings, object-oriented programming, generators and file processing."
+    },
+    {
+      "slug": "python-institute-pced",
+      "name": "PCED - Certified Entry-Level Data Analyst with Python",
+      "short": "PCED",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Python Institute",
+      "bodyUrl": "https://pythoninstitute.org/",
+      "type": "Certification",
+      "aka": [
+        "PCED-30-01"
+      ],
+      "blurb": "Python Institute exam covering data acquisition, cleaning, analysis and visualisation in Python for people entering data analyst roles."
+    },
+    {
+      "slug": "python-institute-pcep",
+      "name": "PCEP - Certified Entry-Level Python Programmer",
+      "short": "PCEP",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Python Institute",
+      "bodyUrl": "https://pythoninstitute.org/",
+      "type": "Certification",
+      "aka": [
+        "PCEP-30-02"
+      ],
+      "blurb": "Entry-level Python Institute exam covering syntax, data types, control flow, functions, lists and basic error handling in Python."
+    },
+    {
+      "slug": "python-institute-pcpp1",
+      "name": "PCPP1 - Certified Professional in Python Programming 1",
+      "short": "PCPP1",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Python Institute",
+      "bodyUrl": "https://pythoninstitute.org/",
+      "type": "Certification",
+      "aka": [
+        "PCPP-32-101"
+      ],
+      "blurb": "Professional Python exam covering advanced object-oriented programming, GUI development with tkinter, file formats, network programming and testing."
+    },
+    {
+      "slug": "python-institute-pcpp2",
+      "name": "PCPP2 - Certified Professional in Python Programming 2",
+      "short": "PCPP2",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Python Institute",
+      "bodyUrl": "https://pythoninstitute.org/",
+      "type": "Certification",
+      "aka": [
+        "PCPP-32-201"
+      ],
+      "blurb": "Advanced Python Institute exam covering design patterns, interprocess communication, Python-SQL databases, client-server work and testing principles."
+    },
+    {
+      "slug": "ruby-association-certified-ruby-programmer-gold",
+      "name": "Ruby Association Certified Ruby Programmer Gold",
+      "short": "Ruby Gold",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Ruby Association",
+      "type": "Certification",
+      "aka": [
+        "Ruby Gold"
+      ],
+      "blurb": "Advanced Ruby certification covering metaprogramming, the object model, threads, standard library internals and library design in Ruby."
+    },
+    {
+      "slug": "ruby-association-certified-ruby-programmer-silver",
+      "name": "Ruby Association Certified Ruby Programmer Silver",
+      "short": "Ruby Silver",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Ruby Association",
+      "type": "Certification",
+      "aka": [
+        "Ruby Silver"
+      ],
+      "blurb": "Entry-level Ruby certification covering syntax, built-in classes, blocks, modules, exception handling and the Ruby object model."
+    },
+    {
+      "slug": "unity-certified-associate-game-developer",
+      "name": "Unity Certified Associate: Game Developer",
+      "short": "Unity Associate",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Unity Technologies",
+      "type": "Certification",
+      "aka": [
+        "Unity Certified Associate"
+      ],
+      "blurb": "Entry-level Unity certification covering the editor, C# scripting, physics, animation, user interface and publishing games with the Unity engine."
+    },
+    {
+      "slug": "unity-certified-professional-programmer",
+      "name": "Unity Certified Professional: Programmer",
+      "short": "Unity Professional",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Unity Technologies",
+      "type": "Certification",
+      "aka": [
+        "Unity Certified Professional Programmer"
+      ],
+      "blurb": "Professional Unity certification for developers with production experience, covering optimisation, architecture, scripting patterns and asset pipelines."
+    },
+    {
+      "slug": "w3schools-javascript-certification",
+      "name": "W3Schools JavaScript Certification",
+      "short": "W3Schools JavaScript",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "W3Schools",
+      "type": "Certification",
+      "aka": [
+        "W3Schools JS"
+      ],
+      "blurb": "Online proctored exam from W3Schools covering JavaScript fundamentals, functions, objects, the DOM, events and asynchronous programming."
+    },
+    {
+      "slug": "w3schools-python-certification",
+      "name": "W3Schools Python Certification",
+      "short": "W3Schools Python",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "W3Schools",
+      "type": "Certification",
+      "aka": [
+        "W3Schools Python"
+      ],
+      "blurb": "Online exam from W3Schools covering Python syntax, data structures, functions, classes, file handling and standard library basics."
+    },
+    {
+      "slug": "zend-certified-php-engineer",
+      "name": "Zend Certified PHP Engineer",
+      "short": "ZCPE",
+      "category": "technology",
+      "group": "Programming & Development",
+      "body": "Zend by Perforce",
+      "type": "Certification",
+      "aka": [
+        "ZCPE"
+      ],
+      "blurb": "Long-established PHP certification covering language syntax, object-oriented programming, databases, security, web features and error handling."
+    }
+  ]
+}

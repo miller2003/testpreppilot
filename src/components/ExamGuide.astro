@@ -4,6 +4,9 @@ import ProviderTable from './ProviderTable.astro';
 import AffiliateBox from './AffiliateBox.astro';
 import FAQAccordion from './FAQAccordion.astro';
 import InlineDisclosure from './InlineDisclosure.astro';
+import DepthSections from './DepthSections.astro';
+import AuthorByline from './AuthorByline.astro';
+import { depthFor, depthSections } from '../data/examCatalog/examDepth.mjs';
 
 interface Props {
   credential: any;
@@ -14,6 +17,11 @@ interface Props {
 }
 
 const { credential, ex, breadcrumbs = [], stateInfo = null, stateData = null } = Astro.props;
+
+// Shared depth layer (the eight P0 sections + named author). State pages keep the
+// national credential's depth out of it — the data is exam-specific, not state-specific.
+const depth = stateInfo ? null : depthFor(credential.slug);
+const depthNav = depthSections(depth);
 
 const isState = !!stateInfo;
 const title = credential.name;
@@ -63,6 +71,7 @@ if (credential.quickAnswer) nav.push({ id: 'quick-answer', label: 'Quick Answer'
 if (roadmap.length) nav.push({ id: 'path', label: 'The Path' });
 nav.push({ id: 'requirements', label: 'Requirements' });
 if (ex || credential.examDetails) nav.push({ id: 'exam', label: 'The Exam' });
+nav.push(...depthNav);
 if (credential.providers?.length) nav.push({ id: 'providers', label: 'Providers' });
 if ((credential.registrationSteps?.length || credential.steps?.length)) nav.push({ id: 'route', label: 'Your Route' });
 if (credential.timeline?.length) nav.push({ id: 'timeline', label: 'Timeline' });
@@ -85,6 +94,7 @@ const hasAffiliate = topProvider?.affiliateUrl;
     <p class="eyebrow">{isState ? `${stateInfo.name} • ${credential.category}` : `${credential.category} • ${credential.type}`}</p>
     <h1>{title}</h1>
     <p class="lede">{lede}</p>
+    <AuthorByline author={depth?.author} lastReviewed={depth?.lastReviewed} placement="hero" />
 
     {factStrip && factStrip.length > 0 && (
       <div class="eg-factstrip">
@@ -259,6 +269,10 @@ const hasAffiliate = topProvider?.affiliateUrl;
       </section>
     )}
 
+    {/* DEEP-DIVE SECTIONS (shared depth layer: salary, pass rates, study plan,
+        strategies, resources, mistakes, question types, exam day) */}
+    {depth && <DepthSections depth={depth} variant="eg" />}
+
     {/* PROVIDERS */}
     {credential.providers?.length > 0 && (
       <section id="providers" class="eg-section">
@@ -392,7 +406,13 @@ const hasAffiliate = topProvider?.affiliateUrl;
       {credential.sourceUrl && (
         <a href={credential.sourceUrl} target="_blank" rel="noopener noreferrer" class="eg-sourcelink">View official requirements source &rarr;</a>
       )}
-      <p class="eg-reviewed">Last reviewed: {credential.reviewed || 'Recently'}</p>
+      <p class="eg-reviewed">Last reviewed: {depth?.lastReviewed || credential.reviewed || 'Recently'}</p>
+      <AuthorByline
+        author={depth?.author}
+        reviewedBy={depth?.reviewedBy}
+        lastReviewed={depth?.lastReviewed}
+        placement="footer"
+      />
     </section>
   </main>
 </div>

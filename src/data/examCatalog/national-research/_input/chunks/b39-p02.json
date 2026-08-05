@@ -1,0 +1,532 @@
+{
+ "chunkId": "b39-p02",
+ "batch": 39,
+ "part": 2,
+ "categories": [
+  "trades"
+ ],
+ "groups": [
+  "Building Codes & Inspection",
+  "Elevator/Locksmith & Specialty Trades",
+  "Welding & Metal"
+ ],
+ "bodies": [
+  "International Code Council (ICC)",
+  "American Concrete Institute (ACI)",
+  "AMPP (formerly NACE International)",
+  "Associated Locksmiths of America (ALOA)"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "icc-accessibility-inspector-plans-examiner",
+   "name": "ICC Accessibility Inspector/Plans Examiner",
+   "short": "ICC A117.1",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies inspection and plan review for accessibility compliance under the ICC A117.1 standard and the ADA."
+  },
+  {
+   "slug": "icc-building-plans-examiner",
+   "name": "ICC Building Plans Examiner (B3)",
+   "short": "B3",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "B3"
+   ],
+   "blurb": "Certifies review of construction documents for code compliance before permits are issued under the IBC."
+  },
+  {
+   "slug": "icc-certified-building-official",
+   "name": "ICC Certified Building Official (CBO)",
+   "short": "CBO",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "CBO"
+   ],
+   "blurb": "Senior credential for officials responsible for overall code administration and enforcement in a jurisdiction."
+  },
+  {
+   "slug": "icc-combination-residential-inspector",
+   "name": "ICC Combination Residential Inspector (R2)",
+   "short": "R2",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "R2"
+   ],
+   "blurb": "Certifies combined building, mechanical, plumbing and electrical inspection of one- and two-family dwellings."
+  },
+  {
+   "slug": "icc-commercial-building-inspector",
+   "name": "ICC Commercial Building Inspector (B2)",
+   "short": "B2",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "B2"
+   ],
+   "blurb": "Certifies inspection of commercial and multifamily buildings for compliance with the International Building Code."
+  },
+  {
+   "slug": "icc-commercial-electrical-inspector",
+   "name": "ICC Commercial Electrical Inspector (E2)",
+   "short": "E2",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "E2"
+   ],
+   "blurb": "Certifies inspection of commercial electrical systems for compliance with the IBC and National Electrical Code."
+  },
+  {
+   "slug": "icc-commercial-mechanical-inspector",
+   "name": "ICC Commercial Mechanical Inspector (M2)",
+   "short": "M2",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "M2"
+   ],
+   "blurb": "Certifies inspection of commercial HVAC and mechanical systems for compliance with the International Mechanical Code."
+  },
+  {
+   "slug": "icc-commercial-plumbing-inspector",
+   "name": "ICC Commercial Plumbing Inspector (P2)",
+   "short": "P2",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "P2"
+   ],
+   "blurb": "Certifies inspection of commercial plumbing systems for compliance with the International Plumbing Code."
+  },
+  {
+   "slug": "icc-electrical-plans-examiner",
+   "name": "ICC Electrical Plans Examiner (E3)",
+   "short": "E3",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "E3"
+   ],
+   "blurb": "Certifies plan review of electrical drawings against the National Electrical Code and applicable building codes."
+  },
+  {
+   "slug": "icc-energy-conservation-inspector",
+   "name": "ICC Energy Conservation Inspector/Plans Examiner",
+   "short": "IECC",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies inspection and plan review of building envelopes and systems for compliance with the Energy Conservation Code."
+  },
+  {
+   "slug": "icc-existing-building-inspector",
+   "name": "ICC Existing Building Inspector",
+   "short": "IEBC",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies evaluation and code compliance of alterations, repairs and change of occupancy in existing buildings under the IEBC."
+  },
+  {
+   "slug": "icc-fire-inspector-2",
+   "name": "ICC Fire Inspector II (F2)",
+   "short": "F2",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "F2"
+   ],
+   "blurb": "Certifies conduct of fire inspections, hazard correction and code enforcement under the International Fire Code."
+  },
+  {
+   "slug": "icc-green-building-inspector",
+   "name": "ICC Green Building Inspector/Plans Examiner",
+   "short": "ICC CG",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies inspection and plan review of sustainable construction under the International Green Construction Code (IgCC)."
+  },
+  {
+   "slug": "icc-master-code-professional",
+   "name": "ICC Master Code Professional (MCP)",
+   "short": "MCP",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "MCP"
+   ],
+   "blurb": "Highest ICC credential recognising broad mastery across multiple code disciplines and inspection certifications."
+  },
+  {
+   "slug": "icc-permit-technician",
+   "name": "ICC Permit Technician",
+   "short": "ICC PT",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies administrative staff who issue permits, review submittals and manage code-related records for a jurisdiction."
+  },
+  {
+   "slug": "icc-property-maintenance-housing-inspector",
+   "name": "ICC Property Maintenance and Housing Inspector (H2)",
+   "short": "H2",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "H2"
+   ],
+   "blurb": "Certifies inspection of existing structures for safety, sanitation and maintenance under the Property Maintenance Code."
+  },
+  {
+   "slug": "icc-residential-building-inspector",
+   "name": "ICC Residential Building Inspector (B1)",
+   "short": "B1",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "B1"
+   ],
+   "blurb": "Certifies inspection of one- and two-family dwellings and townhouses for compliance with the International Residential Code."
+  },
+  {
+   "slug": "icc-residential-electrical-inspector",
+   "name": "ICC Residential Electrical Inspector (E1)",
+   "short": "E1",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "E1"
+   ],
+   "blurb": "Certifies inspection of electrical installations in dwellings for compliance with the IRC and National Electrical Code."
+  },
+  {
+   "slug": "icc-residential-mechanical-inspector",
+   "name": "ICC Residential Mechanical Inspector (M1)",
+   "short": "M1",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "M1"
+   ],
+   "blurb": "Certifies inspection of HVAC and mechanical systems in dwellings for compliance with the International Residential Code."
+  },
+  {
+   "slug": "icc-residential-plumbing-inspector",
+   "name": "ICC Residential Plumbing Inspector (P1)",
+   "short": "P1",
+   "category": "trades",
+   "group": "Building Codes & Inspection",
+   "body": "International Code Council (ICC)",
+   "bodyUrl": "https://www.iccsafe.org",
+   "type": "Certification",
+   "aka": [
+    "P1"
+   ],
+   "blurb": "Certifies inspection of plumbing systems in dwellings for compliance with the International Residential Code."
+  },
+  {
+   "slug": "aci-concrete-construction-special-inspector",
+   "name": "ACI Concrete Construction Special Inspector",
+   "short": "ACI CSI",
+   "category": "trades",
+   "group": "Elevator/Locksmith & Specialty Trades",
+   "body": "American Concrete Institute (ACI)",
+   "bodyUrl": "https://www.concrete.org",
+   "type": "Certification",
+   "aka": [
+    "ACI CSI"
+   ],
+   "blurb": "Certifies inspection of concrete construction including pre-placement, sampling and field-cured testing."
+  },
+  {
+   "slug": "aci-concrete-field-testing-grade-1",
+   "name": "ACI Concrete Field Testing Technician Grade I",
+   "short": "ACI Grade I",
+   "category": "trades",
+   "group": "Elevator/Locksmith & Specialty Trades",
+   "body": "American Concrete Institute (ACI)",
+   "bodyUrl": "https://www.concrete.org",
+   "type": "Certification",
+   "aka": [
+    "ACI Grade I"
+   ],
+   "blurb": "Certifies field testing of fresh concrete: slump, temperature, air content, density and compressive cylinders."
+  },
+  {
+   "slug": "aci-concrete-field-testing-grade-2",
+   "name": "ACI Concrete Field Testing Technician Grade II",
+   "short": "ACI Grade II",
+   "category": "trades",
+   "group": "Elevator/Locksmith & Specialty Trades",
+   "body": "American Concrete Institute (ACI)",
+   "bodyUrl": "https://www.concrete.org",
+   "type": "Certification",
+   "aka": [
+    "ACI Grade II"
+   ],
+   "blurb": "Advanced field testing covering additional methods, aggregates and strength test specimens for concrete."
+  },
+  {
+   "slug": "aci-concrete-strength-testing-technician",
+   "name": "ACI Concrete Strength Testing Technician",
+   "short": "ACI ST",
+   "category": "trades",
+   "group": "Elevator/Locksmith & Specialty Trades",
+   "body": "American Concrete Institute (ACI)",
+   "bodyUrl": "https://www.concrete.org",
+   "type": "Certification",
+   "aka": [
+    "ACI ST"
+   ],
+   "blurb": "Certifies capping, preparing and breaking cylinders to determine compressive strength of hardened concrete."
+  },
+  {
+   "slug": "aci-flatwork-finisher",
+   "name": "ACI Flatwork Finisher Certification",
+   "short": "ACI Flatwork",
+   "category": "trades",
+   "group": "Elevator/Locksmith & Specialty Trades",
+   "body": "American Concrete Institute (ACI)",
+   "bodyUrl": "https://www.concrete.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies finishing of slabs, walks and floors including screeding, floating, troweling and jointing."
+  },
+  {
+   "slug": "aci-pervious-concrete",
+   "name": "ACI Pervious Concrete Certification",
+   "short": "ACI Pervious",
+   "category": "trades",
+   "group": "Elevator/Locksmith & Specialty Trades",
+   "body": "American Concrete Institute (ACI)",
+   "bodyUrl": "https://www.concrete.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies mixing, placing and finishing of pervious concrete used for stormwater management pavements."
+  },
+  {
+   "slug": "aci-post-tensioning-field-personnel",
+   "name": "ACI Post-Tensioning Field Personnel",
+   "short": "ACI PT",
+   "category": "trades",
+   "group": "Elevator/Locksmith & Specialty Trades",
+   "body": "American Concrete Institute (ACI)",
+   "bodyUrl": "https://www.concrete.org",
+   "type": "Certification",
+   "aka": [
+    "ACI PT"
+   ],
+   "blurb": "Certifies installation, stressing and grouting of post-tensioning tendons in reinforced concrete structures."
+  },
+  {
+   "slug": "aci-shotcrete-nozzleman",
+   "name": "ACI Shotcrete Nozzleman",
+   "short": "ACI Shotcrete",
+   "category": "trades",
+   "group": "Elevator/Locksmith & Specialty Trades",
+   "body": "American Concrete Institute (ACI)",
+   "bodyUrl": "https://www.concrete.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certifies nozzle operation and placement of wet- or dry-mix shotcrete for structural and repair work."
+  },
+  {
+   "slug": "ampp-cathodic-protection-level-1",
+   "name": "AMPP Cathodic Protection Level 1",
+   "short": "CP Level 1",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "AMPP (formerly NACE International)",
+   "type": "Certification",
+   "aka": [
+    "NACE CP 1"
+   ],
+   "blurb": "Entry credential on corrosion control and cathodic protection testing for underground and submerged metallic structures."
+  },
+  {
+   "slug": "ampp-cathodic-protection-level-2",
+   "name": "AMPP Cathodic Protection Level 2",
+   "short": "CP Level 2",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "AMPP (formerly NACE International)",
+   "type": "Certification",
+   "aka": [
+    "NACE CP 2"
+   ],
+   "blurb": "Intermediate credential covering design, installation and troubleshooting of cathodic protection systems in the field."
+  },
+  {
+   "slug": "ampp-cip-level-1",
+   "name": "AMPP Coating Inspector Program Level 1",
+   "short": "CIP Level 1",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "AMPP (formerly NACE International)",
+   "type": "Certification",
+   "aka": [
+    "NACE CIP 1"
+   ],
+   "blurb": "Entry coating inspection credential covering surface preparation, application and inspection of protective coatings on structures."
+  },
+  {
+   "slug": "ampp-cip-level-2",
+   "name": "AMPP Coating Inspector Program Level 2",
+   "short": "CIP Level 2",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "AMPP (formerly NACE International)",
+   "type": "Certification",
+   "aka": [
+    "NACE CIP 2"
+   ],
+   "blurb": "Intermediate coating inspection credential adding specification review, advanced test methods and coating failure analysis."
+  },
+  {
+   "slug": "ampp-cip-level-3",
+   "name": "AMPP Coating Inspector Program Level 3",
+   "short": "CIP Level 3",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "AMPP (formerly NACE International)",
+   "type": "Certification",
+   "aka": [
+    "NACE CIP 3"
+   ],
+   "blurb": "Senior coating inspector credential covering programme management, standards and peer review for major projects."
+  },
+  {
+   "slug": "ampp-protective-coatings-specialist",
+   "name": "AMPP Protective Coatings Specialist (PCS)",
+   "short": "PCS",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "AMPP (formerly NACE International)",
+   "type": "Certification",
+   "aka": [
+    "PCS"
+   ],
+   "blurb": "Credential recognising advanced technical knowledge of protective coatings, corrosion and specification for senior specialists."
+  },
+  {
+   "slug": "aloa-certified-master-locksmith",
+   "name": "ALOA Certified Master Locksmith (CML)",
+   "short": "CML",
+   "category": "trades",
+   "group": "Elevator/Locksmith & Specialty Trades",
+   "body": "Associated Locksmiths of America (ALOA)",
+   "bodyUrl": "https://www.aloa.org",
+   "type": "Certification",
+   "aka": [
+    "CML"
+   ],
+   "blurb": "Highest locksmith credential covering complex master key systems, high-security locks and forensic locksmithing."
+  },
+  {
+   "slug": "aloa-certified-professional-locksmith",
+   "name": "ALOA Certified Professional Locksmith (CPL)",
+   "short": "CPL",
+   "category": "trades",
+   "group": "Elevator/Locksmith & Specialty Trades",
+   "body": "Associated Locksmiths of America (ALOA)",
+   "bodyUrl": "https://www.aloa.org",
+   "type": "Certification",
+   "aka": [
+    "CPL"
+   ],
+   "blurb": "Mid-level locksmith credential covering advanced locking devices, master keying and access control fundamentals."
+  },
+  {
+   "slug": "aloa-certified-professional-safe-technician",
+   "name": "ALOA Certified Professional Safe Technician (CPS)",
+   "short": "CPS",
+   "category": "trades",
+   "group": "Elevator/Locksmith & Specialty Trades",
+   "body": "Associated Locksmiths of America (ALOA)",
+   "bodyUrl": "https://www.aloa.org",
+   "type": "Certification",
+   "aka": [
+    "CPS"
+   ],
+   "blurb": "Specialty credential covering safe manipulation, drilling, combination changing and vault service."
+  },
+  {
+   "slug": "aloa-certified-registered-locksmith",
+   "name": "ALOA Certified Registered Locksmith (CRL)",
+   "short": "CRL",
+   "category": "trades",
+   "group": "Elevator/Locksmith & Specialty Trades",
+   "body": "Associated Locksmiths of America (ALOA)",
+   "bodyUrl": "https://www.aloa.org",
+   "type": "Certification",
+   "aka": [
+    "CRL"
+   ],
+   "blurb": "Foundational locksmith credential covering key duplication, lock picking, installation and basic security hardware."
+  }
+ ]
+}

@@ -1,0 +1,849 @@
+{
+  "batch": "26",
+  "categories": [
+    "legal"
+  ],
+  "groups": [
+    "Court Reporting & Transcription",
+    "Paralegal & Legal Support",
+    "Bar Exam Components",
+    "Compliance & Investigations",
+    "Patent & IP"
+  ],
+  "examCount": 57,
+  "bodyCount": 26,
+  "bodies": [
+    "American Association of Electronic Reporters and Transcribers",
+    "Association for Healthcare Documentation Integrity",
+    "Independent scopist training programs",
+    "National Court Reporters Association",
+    "National Verbatim Reporters Association",
+    "Association of Accredited Legal Professionals",
+    "Association of Certified E-Discovery Specialists",
+    "National Association of Legal Investigators",
+    "Association of Legal Administrators",
+    "American Association of Legal Nurse Consultants",
+    "National Notary Association",
+    "National Association of Legal Assistants",
+    "NALS, the association for legal professionals",
+    "National Federation of Paralegal Associations",
+    "State Bar of California",
+    "Committee on Bar Admissions (Louisiana Supreme Court)",
+    "National Conference of Bar Examiners",
+    "New York State Board of Law Examiners",
+    "Society of Corporate Compliance and Ethics",
+    "Association of Government Accountants",
+    "HIPAA certification providers",
+    "Health Care Compliance Association",
+    "American Bankers Association",
+    "Licensing Executives Society International",
+    "Certified Patent Valuation Analyst Program",
+    "United States Patent and Trademark Office"
+  ],
+  "exams": [
+    {
+      "slug": "aaert-cdr",
+      "name": "AAERT Certified Deposition Reporter",
+      "short": "CDR",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "American Association of Electronic Reporters and Transcribers",
+      "bodyUrl": "https://www.aaert.org/",
+      "type": "Certification",
+      "aka": [
+        "CDR"
+      ],
+      "blurb": "A certification for professionals who record and transcribe depositions using digital or stenographic methods in legal discovery settings."
+    },
+    {
+      "slug": "aaert-cer",
+      "name": "AAERT Certified Electronic Recorder",
+      "short": "CER",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "American Association of Electronic Reporters and Transcribers",
+      "bodyUrl": "https://www.aaert.org/",
+      "type": "Certification",
+      "aka": [
+        "CER"
+      ],
+      "blurb": "A certification for digital recording monitors who operate audio equipment and manage the electronic capture of legal proceedings."
+    },
+    {
+      "slug": "aaert-cet",
+      "name": "AAERT Certified Electronic Transcriber",
+      "short": "CET",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "American Association of Electronic Reporters and Transcribers",
+      "bodyUrl": "https://www.aaert.org/",
+      "type": "Certification",
+      "aka": [
+        "CET"
+      ],
+      "blurb": "A credential for transcribers who convert digitally recorded proceedings into certified written transcripts meeting court reporting standards."
+    },
+    {
+      "slug": "ahdi-chds",
+      "name": "AHDI Certified Healthcare Documentation Specialist",
+      "short": "CHDS",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "Association for Healthcare Documentation Integrity",
+      "bodyUrl": "https://www.ahdionline.org/",
+      "type": "Certification",
+      "aka": [
+        "CHDS"
+      ],
+      "blurb": "An advanced medical documentation credential requiring the RHDS plus experience and demonstrating expertise across complex healthcare specialties."
+    },
+    {
+      "slug": "ahdi-rhds",
+      "name": "AHDI Registered Healthcare Documentation Specialist",
+      "short": "RHDS",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "Association for Healthcare Documentation Integrity",
+      "bodyUrl": "https://www.ahdionline.org/",
+      "type": "Certification",
+      "aka": [
+        "RHDS"
+      ],
+      "blurb": "An entry-level credential for medical transcriptionists who convert provider dictation into accurate healthcare documentation from home or clinic."
+    },
+    {
+      "slug": "certified-scopist",
+      "name": "Certified Scopist",
+      "short": "Scopist",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "Independent scopist training programs",
+      "type": "Certification",
+      "aka": [
+        "Scopist"
+      ],
+      "blurb": "A professional who edits and proofreads the untranslated notes of court reporters, requiring training in reporting software and legal terminology."
+    },
+    {
+      "slug": "ncrea-cbc",
+      "name": "NCRA Certified Broadcast Captioner",
+      "short": "CBC",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "National Court Reporters Association",
+      "bodyUrl": "https://www.ncra.org/",
+      "type": "Certification",
+      "aka": [
+        "CBC"
+      ],
+      "blurb": "A certification for captioners who provide live broadcast captions for television and web programming under strict accuracy and speed standards."
+    },
+    {
+      "slug": "ncrea-ccp",
+      "name": "NCRA Certified CART Provider",
+      "short": "CCP",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "National Court Reporters Association",
+      "bodyUrl": "https://www.ncra.org/",
+      "type": "Certification",
+      "aka": [
+        "CCP"
+      ],
+      "blurb": "A credential for reporters delivering Communication Access Realtime Translation services in classrooms, meetings and public accommodations."
+    },
+    {
+      "slug": "ncrea-clvs",
+      "name": "NCRA Certified Legal Video Specialist",
+      "short": "CLVS",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "National Court Reporters Association",
+      "bodyUrl": "https://www.ncra.org/",
+      "type": "Certification",
+      "aka": [
+        "CLVS"
+      ],
+      "blurb": "A certification for court reporters who record, log and produce synchronized legal videography for depositions and courtroom proceedings."
+    },
+    {
+      "slug": "ncrea-cmrs",
+      "name": "NCRA Certified Media Realtime Specialist",
+      "short": "CMRS",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "National Court Reporters Association",
+      "bodyUrl": "https://www.ncra.org/",
+      "type": "Certification",
+      "aka": [
+        "CMRS"
+      ],
+      "blurb": "An advanced NCRA credential for captioners specializing in fast-paced media and sports broadcast realtime transcription environments."
+    },
+    {
+      "slug": "ncrea-crc",
+      "name": "NCRA Certified Realtime Captioner",
+      "short": "CRC",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "National Court Reporters Association",
+      "bodyUrl": "https://www.ncra.org/",
+      "type": "Certification",
+      "aka": [
+        "CRC"
+      ],
+      "blurb": "A credential for providers who deliverCommunication Access Realtime Translation (CART) captioning for deaf and hard-of-hearing audiences."
+    },
+    {
+      "slug": "ncrea-cri",
+      "name": "NCRA Certified Realtime Instructor",
+      "short": "CRI",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "National Court Reporters Association",
+      "bodyUrl": "https://www.ncra.org/",
+      "type": "Certification",
+      "aka": [
+        "CRI"
+      ],
+      "blurb": "A certification for experienced reporters who teach realtime theory and technology to students in court reporting and captioning programs."
+    },
+    {
+      "slug": "ncrea-crr",
+      "name": "NCRA Certified Realtime Reporter",
+      "short": "CRR",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "National Court Reporters Association",
+      "bodyUrl": "https://www.ncra.org/",
+      "type": "Certification",
+      "aka": [
+        "CRR"
+      ],
+      "blurb": "A certification demonstrating the ability to produce accurate, instantaneous realtime translation of proceedings for live display and accessibility."
+    },
+    {
+      "slug": "ncrea-rdr",
+      "name": "NCRA Registered Diplomate Reporter",
+      "short": "RDR",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "National Court Reporters Association",
+      "bodyUrl": "https://www.ncra.org/",
+      "type": "Certification",
+      "aka": [
+        "RDR"
+      ],
+      "blurb": "NCRA’s highest reporter credential requiring the RMR plus a demanding realtime skills test and an advanced written knowledge examination."
+    },
+    {
+      "slug": "ncrea-rmr",
+      "name": "NCRA Registered Merit Reporter",
+      "short": "RMR",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "National Court Reporters Association",
+      "bodyUrl": "https://www.ncra.org/",
+      "type": "Certification",
+      "aka": [
+        "RMR"
+      ],
+      "blurb": "An advanced NCRA certification for reporters who have held the RPR and pass a higher-speed skills test and merit-level written examination."
+    },
+    {
+      "slug": "ncrea-rpr",
+      "name": "NCRA Registered Professional Reporter",
+      "short": "RPR",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "National Court Reporters Association",
+      "bodyUrl": "https://www.ncra.org/",
+      "type": "Certification",
+      "aka": [
+        "RPR"
+      ],
+      "blurb": "The entry-level NCRA certification requiring a skills test and written exam that validates realtime and traditional stenographic court reporting."
+    },
+    {
+      "slug": "ncrea-rsr",
+      "name": "NCRA Registered Skilled Reporter",
+      "short": "RSR",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "National Court Reporters Association",
+      "bodyUrl": "https://www.ncra.org/",
+      "type": "Certification",
+      "aka": [
+        "RSR"
+      ],
+      "blurb": "A skills-based NCRA certificate validating proficiency in capturing the spoken record for government and educational reporting settings."
+    },
+    {
+      "slug": "nvra-cm",
+      "name": "NVRA Certified Monitor",
+      "short": "CM",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "National Verbatim Reporters Association",
+      "bodyUrl": "https://www.verbatimreporters.org/",
+      "type": "Certification",
+      "aka": [
+        "CM"
+      ],
+      "blurb": "A credential for voice writers who monitor and verify realtime voice translation output for accuracy during official reporting assignments."
+    },
+    {
+      "slug": "nvra-cvr",
+      "name": "NVRA Certified Voice Reporter",
+      "short": "CVR",
+      "category": "legal",
+      "group": "Court Reporting & Transcription",
+      "body": "National Verbatim Reporters Association",
+      "bodyUrl": "https://www.verbatimreporters.org/",
+      "type": "Certification",
+      "aka": [
+        "CVR"
+      ],
+      "blurb": "A certification for voice writers who use mask-and-voice methodology to create the official record of courts and other proceedings."
+    },
+    {
+      "slug": "aapi-accredited-legal-professional",
+      "name": "AAPI Accredited Legal Professional",
+      "short": "ALP",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "Association of Accredited Legal Professionals",
+      "type": "Certification",
+      "aka": [
+        "Accredited Legal Professional"
+      ],
+      "blurb": "A specialized accreditation for legal support professionals emphasizing compliance, document management and procedures within legal operations."
+    },
+    {
+      "slug": "ceds",
+      "name": "Certified E-Discovery Specialist",
+      "short": "CEDS",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "Association of Certified E-Discovery Specialists",
+      "bodyUrl": "https://www.aceds.org/",
+      "type": "Certification",
+      "aka": [
+        "CEDS"
+      ],
+      "blurb": "A credential validating expertise in the legal hold, collection, processing and review of electronically stored information in litigation."
+    },
+    {
+      "slug": "certified-legal-investigator",
+      "name": "Certified Legal Investigator",
+      "short": "CLI",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "National Association of Legal Investigators",
+      "bodyUrl": "https://www.nali.org/",
+      "type": "Certification",
+      "aka": [
+        "CLI"
+      ],
+      "blurb": "An advanced credential for professional investigators demonstrating proficiency in evidence gathering, surveillance and courtroom testimony."
+    },
+    {
+      "slug": "clm",
+      "name": "Certified Legal Manager",
+      "short": "CLM",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "Association of Legal Administrators",
+      "bodyUrl": "https://www.alanet.org/",
+      "type": "Certification",
+      "aka": [
+        "CLM"
+      ],
+      "blurb": "A credential for law firm and legal department administrators covering finance, human resources, operations and legal industry ethics."
+    },
+    {
+      "slug": "clnc",
+      "name": "Certified Legal Nurse Consultant",
+      "short": "CLNC",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "American Association of Legal Nurse Consultants",
+      "bodyUrl": "https://www.aalnc.org/",
+      "type": "Certification",
+      "aka": [
+        "CLNC"
+      ],
+      "blurb": "A certification for registered nurses who analyze medical records and provide expert consultation on healthcare-related legal cases."
+    },
+    {
+      "slug": "notary-signing-agent",
+      "name": "Certified Notary Signing Agent",
+      "short": "NSA",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "National Notary Association",
+      "bodyUrl": "https://www.nationalnotary.org/",
+      "type": "Certification",
+      "aka": [
+        "NSA",
+        "Signing Agent"
+      ],
+      "blurb": "A Notary Public certification specializing in properly executing and witnessing mortgage and real estate loan document signings."
+    },
+    {
+      "slug": "nala-advanced-paralegal",
+      "name": "NALA Advanced Paralegal Certification",
+      "short": "ACP",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "National Association of Legal Assistants",
+      "bodyUrl": "https://www.nala.org/",
+      "type": "Certification",
+      "aka": [
+        "ACP",
+        "Advanced Paralegal Certification"
+      ],
+      "blurb": "A post-certification program offering concentrated specialty certificates in subjects such as bankruptcy, discovery and intellectual property."
+    },
+    {
+      "slug": "nala-cp",
+      "name": "NALA Certified Paralegal",
+      "short": "CP",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "National Association of Legal Assistants",
+      "bodyUrl": "https://www.nala.org/",
+      "type": "Certification",
+      "aka": [
+        "CP",
+        "Certified Paralegal"
+      ],
+      "blurb": "NALA’s flagship credential earned by passing a two-day exam covering federal law, procedural knowledge and an area of practice specialty."
+    },
+    {
+      "slug": "nals-alp",
+      "name": "NALS Accredited Legal Professional",
+      "short": "ALP",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "NALS, the association for legal professionals",
+      "bodyUrl": "https://www.nals.org/",
+      "type": "Certification",
+      "aka": [
+        "ALP"
+      ],
+      "blurb": "A foundational credential testing knowledge of legal terminology, procedures and office skills for legal support staff and entry-level paralegals."
+    },
+    {
+      "slug": "nals-als",
+      "name": "NALS Accredited Legal Secretary",
+      "short": "ALS",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "NALS, the association for legal professionals",
+      "bodyUrl": "https://www.nals.org/",
+      "type": "Certification",
+      "aka": [
+        "ALS"
+      ],
+      "blurb": "A NALS credential for legal secretaries covering office technology, transcription, filing and legal terminology within a law office environment."
+    },
+    {
+      "slug": "nals-clp",
+      "name": "NALS Certified Legal Professional",
+      "short": "CLP",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "NALS, the association for legal professionals",
+      "bodyUrl": "https://www.nals.org/",
+      "type": "Certification",
+      "aka": [
+        "CLP"
+      ],
+      "blurb": "A NALS certification building on the ALP that validates advanced legal knowledge; exam availability has alternated with the PP offering over time."
+    },
+    {
+      "slug": "nals-pls-cls",
+      "name": "NALS Professional Legal Secretary",
+      "short": "PLS-CLS",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "NALS, the association for legal professionals",
+      "bodyUrl": "https://www.nals.org/",
+      "type": "Certification",
+      "aka": [
+        "PLS-CLS",
+        "Certified Legal Secretary"
+      ],
+      "blurb": "A legacy NALS designation for experienced legal secretaries that has largely been consolidated into the ALP and CLP credential framework."
+    },
+    {
+      "slug": "nals-pp",
+      "name": "NALS Professional Paralegal",
+      "short": "PP",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "NALS, the association for legal professionals",
+      "bodyUrl": "https://www.nals.org/",
+      "type": "Certification",
+      "aka": [
+        "PP"
+      ],
+      "blurb": "An advanced NALS credential examining substantive law and paralegal ethics; the exam pathway has been periodically paused between testing cycles."
+    },
+    {
+      "slug": "nfpa-pace",
+      "name": "NFPA Paralegal Advanced Competency Exam",
+      "short": "PACE",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "National Federation of Paralegal Associations",
+      "bodyUrl": "https://www.paralegals.org/",
+      "type": "Certification",
+      "aka": [
+        "PACE",
+        "Registered Paralegal",
+        "RP"
+      ],
+      "blurb": "A two-tier exam leading to the Registered Paralegal (RP) designation for experienced paralegals demonstrating advanced competency and ethics."
+    },
+    {
+      "slug": "nfpa-pcce",
+      "name": "NFPA Paralegal CORE Competency Exam",
+      "short": "PCCE",
+      "category": "legal",
+      "group": "Paralegal & Legal Support",
+      "body": "National Federation of Paralegal Associations",
+      "bodyUrl": "https://www.paralegals.org/",
+      "type": "Certification",
+      "aka": [
+        "PCCE",
+        "Certified Paralegal",
+        "CRP"
+      ],
+      "blurb": "An entry-level exam granting the Certified Paralegal (CRP) designation for candidates with less than two years of substantive paralegal experience."
+    },
+    {
+      "slug": "california-bar-exam",
+      "name": "California Bar Exam",
+      "short": "Cal Bar",
+      "category": "legal",
+      "group": "Bar Exam Components",
+      "body": "State Bar of California",
+      "bodyUrl": "https://www.calbar.ca.gov/",
+      "type": "Exam",
+      "aka": [
+        "Cal Bar Exam"
+      ],
+      "blurb": "California’s jurisdiction-specific two-day bar exam combining state essays, performance tests and the Multistate Bar Examination for state licensure."
+    },
+    {
+      "slug": "louisiana-bar-exam",
+      "name": "Louisiana Bar Exam",
+      "short": "LA Bar",
+      "category": "legal",
+      "group": "Bar Exam Components",
+      "body": "Committee on Bar Admissions (Louisiana Supreme Court)",
+      "bodyUrl": "https://www.lasc.org/",
+      "type": "Exam",
+      "aka": [
+        "Louisiana State Bar Exam"
+      ],
+      "blurb": "Louisiana’s civil-law jurisdiction exam using state-written essays and multiple-choice questions rather than the MBE for admission to practice."
+    },
+    {
+      "slug": "mbe",
+      "name": "Multistate Bar Examination",
+      "short": "MBE",
+      "category": "legal",
+      "group": "Bar Exam Components",
+      "body": "National Conference of Bar Examiners",
+      "bodyUrl": "https://www.ncbex.org/",
+      "type": "Exam",
+      "aka": [
+        "MBE"
+      ],
+      "blurb": "A six-hour, 200-question multiple-choice test covering constitutional law, contracts, criminal law, evidence, property and torts administered as part of the UBE."
+    },
+    {
+      "slug": "mee",
+      "name": "Multistate Essay Examination",
+      "short": "MEE",
+      "category": "legal",
+      "group": "Bar Exam Components",
+      "body": "National Conference of Bar Examiners",
+      "bodyUrl": "https://www.ncbex.org/",
+      "type": "Exam",
+      "aka": [
+        "MEE"
+      ],
+      "blurb": "A three-hour essay test of six questions assessing the ability to analyze legal issues across common law and statutory subjects within the Uniform Bar Exam."
+    },
+    {
+      "slug": "mpt",
+      "name": "Multistate Performance Test",
+      "short": "MPT",
+      "category": "legal",
+      "group": "Bar Exam Components",
+      "body": "National Conference of Bar Examiners",
+      "bodyUrl": "https://www.ncbex.org/",
+      "type": "Exam",
+      "aka": [
+        "MPT"
+      ],
+      "blurb": "A three-hour skills test using two file-and-library tasks that evaluates practical lawyering abilities such as drafting and legal analysis under time pressure."
+    },
+    {
+      "slug": "mpre",
+      "name": "Multistate Professional Responsibility Examination",
+      "short": "MPRE",
+      "category": "legal",
+      "group": "Bar Exam Components",
+      "body": "National Conference of Bar Examiners",
+      "bodyUrl": "https://www.ncbex.org/",
+      "type": "Exam",
+      "aka": [
+        "MPRE",
+        "Multistate Professional Responsibility"
+      ],
+      "blurb": "A two-hour, 60-question multiple-choice exam on legal ethics and professional conduct required for admission to the bar in most U.S. jurisdictions."
+    },
+    {
+      "slug": "nylc",
+      "name": "New York Law Course",
+      "short": "NYLC",
+      "category": "legal",
+      "group": "Bar Exam Components",
+      "body": "New York State Board of Law Examiners",
+      "bodyUrl": "https://www.nybarexam.org/",
+      "type": "Training",
+      "aka": [
+        "NYLC"
+      ],
+      "blurb": "A free online course of approximately 15 hours covering New York practice and procedure that candidates must complete before taking the NYLE."
+    },
+    {
+      "slug": "nyle",
+      "name": "New York Law Exam",
+      "short": "NYLE",
+      "category": "legal",
+      "group": "Bar Exam Components",
+      "body": "New York State Board of Law Examiners",
+      "bodyUrl": "https://www.nybarexam.org/",
+      "type": "Exam",
+      "aka": [
+        "NYLE"
+      ],
+      "blurb": "A 50-question open-book multiple-choice test of New York-specific law that candidates must pass in addition to the UBE for New York bar admission."
+    },
+    {
+      "slug": "nextgen-bar-exam",
+      "name": "NextGen Bar Exam",
+      "short": "NextGen Bar",
+      "category": "legal",
+      "group": "Bar Exam Components",
+      "body": "National Conference of Bar Examiners",
+      "bodyUrl": "https://www.ncbex.org/",
+      "type": "Exam",
+      "aka": [
+        "NextGen UBE"
+      ],
+      "blurb": "The NCBE’s restructured bar exam launching in July 2026, replacing the traditional UBE with integrated skills and knowledge tasks across core legal subjects."
+    },
+    {
+      "slug": "uniform-bar-exam",
+      "name": "Uniform Bar Exam",
+      "short": "UBE",
+      "category": "legal",
+      "group": "Bar Exam Components",
+      "body": "National Conference of Bar Examiners",
+      "bodyUrl": "https://www.ncbex.org/",
+      "type": "Exam",
+      "aka": [
+        "UBE"
+      ],
+      "blurb": "A portable two-day bar exam composed of the MBE, MEE and MPT that participating jurisdictions use and score on a common 400-point scale."
+    },
+    {
+      "slug": "ccep",
+      "name": "Certified Compliance & Ethics Professional",
+      "short": "CCEP",
+      "category": "legal",
+      "group": "Compliance & Investigations",
+      "body": "Society of Corporate Compliance and Ethics",
+      "bodyUrl": "https://www.corporatecompliance.org/",
+      "type": "Certification",
+      "aka": [
+        "CCEP"
+      ],
+      "blurb": "A credential for compliance officers covering program design, risk assessment, investigation and ethics within organizational compliance functions."
+    },
+    {
+      "slug": "ccep-international",
+      "name": "Certified Compliance & Ethics Professional - International",
+      "short": "CCEP-I",
+      "category": "legal",
+      "group": "Compliance & Investigations",
+      "body": "Society of Corporate Compliance and Ethics",
+      "bodyUrl": "https://www.corporatecompliance.org/",
+      "type": "Certification",
+      "aka": [
+        "CCEP-I"
+      ],
+      "blurb": "An international variant of the CCEP focusing on anti-corruption, cross-border regulations and multinational compliance program requirements."
+    },
+    {
+      "slug": "certified-government-financial-manager",
+      "name": "Certified Government Financial Manager",
+      "short": "CGFM",
+      "category": "legal",
+      "group": "Compliance & Investigations",
+      "body": "Association of Government Accountants",
+      "bodyUrl": "https://www.agacgfm.org/",
+      "type": "Certification",
+      "aka": [
+        "CGFM"
+      ],
+      "blurb": "A credential for public-sector financial professionals covering governmental accounting, auditing and financial reporting and control standards."
+    },
+    {
+      "slug": "certified-hipaa-professional",
+      "name": "Certified HIPAA Professional",
+      "short": "CHP",
+      "category": "legal",
+      "group": "Compliance & Investigations",
+      "body": "HIPAA certification providers",
+      "type": "Certification",
+      "aka": [
+        "CHP"
+      ],
+      "blurb": "A certification demonstrating working knowledge of the Health Insurance Portability and Accountability Act privacy and security rule requirements."
+    },
+    {
+      "slug": "chc",
+      "name": "Certified in Healthcare Compliance",
+      "short": "CHC",
+      "category": "legal",
+      "group": "Compliance & Investigations",
+      "body": "Health Care Compliance Association",
+      "bodyUrl": "https://www.hcca-info.org/",
+      "type": "Certification",
+      "aka": [
+        "CHC"
+      ],
+      "blurb": "A credential for healthcare compliance professionals addressing fraud, waste, abuse, privacy and regulatory requirements across provider settings."
+    },
+    {
+      "slug": "chpc",
+      "name": "Certified in Healthcare Privacy Compliance",
+      "short": "CHPC",
+      "category": "legal",
+      "group": "Compliance & Investigations",
+      "body": "Health Care Compliance Association",
+      "bodyUrl": "https://www.hcca-info.org/",
+      "type": "Certification",
+      "aka": [
+        "CHPC"
+      ],
+      "blurb": "A specialization validating expertise in HIPAA, state privacy laws and the management of protected health information in healthcare organizations."
+    },
+    {
+      "slug": "chrc",
+      "name": "Certified in Healthcare Research Compliance",
+      "short": "CHRC",
+      "category": "legal",
+      "group": "Compliance & Investigations",
+      "body": "Health Care Compliance Association",
+      "bodyUrl": "https://www.hcca-info.org/",
+      "type": "Certification",
+      "aka": [
+        "CHRC"
+      ],
+      "blurb": "A credential covering compliance with human-subjects research rules, IRB oversight, clinical trial regulations and federal research funding requirements."
+    },
+    {
+      "slug": "certified-regulatory-compliance-manager",
+      "name": "Certified Regulatory Compliance Manager",
+      "short": "CRCM",
+      "category": "legal",
+      "group": "Compliance & Investigations",
+      "body": "American Bankers Association",
+      "bodyUrl": "https://www.aba.com/",
+      "type": "Certification",
+      "aka": [
+        "CRCM"
+      ],
+      "blurb": "A banking credential for compliance managers demonstrating knowledge of consumer regulations, risk management and examination readiness."
+    },
+    {
+      "slug": "clp-certified-licensing-professional",
+      "name": "Certified Licensing Professional",
+      "short": "CLP",
+      "category": "legal",
+      "group": "Patent & IP",
+      "body": "Licensing Executives Society International",
+      "bodyUrl": "https://www.lesi.org/",
+      "type": "Certification",
+      "aka": [
+        "CLP"
+      ],
+      "blurb": "A credential for professionals who negotiate and manage intellectual property licenses, covering valuation, deal structuring and IP strategy."
+    },
+    {
+      "slug": "cpva",
+      "name": "Certified Patent Valuation Analyst",
+      "short": "CPVA",
+      "category": "legal",
+      "group": "Patent & IP",
+      "body": "Certified Patent Valuation Analyst Program",
+      "type": "Certification",
+      "aka": [
+        "CPVA"
+      ],
+      "blurb": "A specialization certifying expertise in quantifying the financial value of patent portfolios for transactions, licensing and litigation support."
+    },
+    {
+      "slug": "patent-agent-vs-attorney",
+      "name": "Patent Agent Qualification",
+      "short": "Patent Agent",
+      "category": "legal",
+      "group": "Patent & IP",
+      "body": "United States Patent and Trademark Office",
+      "bodyUrl": "https://www.uspto.gov/",
+      "type": "License",
+      "aka": [
+        "Registered Patent Agent"
+      ],
+      "blurb": "A registration distinction: patent agents pass the USPTO exam and prosecute patents, while patent attorneys additionally hold a law degree and bar license."
+    },
+    {
+      "slug": "design-patent-practitioner-exam",
+      "name": "USPTO Design Patent Practitioner Examination",
+      "short": "Design Patent Bar",
+      "category": "legal",
+      "group": "Patent & IP",
+      "body": "United States Patent and Trademark Office",
+      "bodyUrl": "https://www.uspto.gov/",
+      "type": "Exam",
+      "aka": [
+        "Design Patent Practitioner"
+      ],
+      "blurb": "A specialized exam introduced in 2024 allowing qualified designers to practice before the USPTO solely in design patent matters."
+    },
+    {
+      "slug": "uspto-registration-exam",
+      "name": "USPTO Registration Examination",
+      "short": "Patent Bar",
+      "category": "legal",
+      "group": "Patent & IP",
+      "body": "United States Patent and Trademark Office",
+      "bodyUrl": "https://www.uspto.gov/",
+      "type": "Exam",
+      "aka": [
+        "Patent Bar",
+        "Registration Exam"
+      ],
+      "blurb": "A 100-question multiple-choice exam on patent law and procedure that science and engineering graduates must pass to register as patent practitioners."
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+ "chunkId": "b14-p03",
+ "batch": 14,
+ "part": 3,
+ "categories": [
+  "education-teaching"
+ ],
+ "groups": [
+  "Early Childhood, Paraeducator & Instructional Support"
+ ],
+ "bodies": [
+  "Council for Professional Recognition",
+  "American Montessori Society",
+  "Association Montessori Internationale",
+  "National Early Childhood Program Accreditation",
+  "American Institute of Certified Educational Planners",
+  "Substitute Teaching Division, Utah State University"
+ ],
+ "examCount": 10,
+ "exams": [
+  {
+   "slug": "cda-family-child-care",
+   "name": "Child Development Associate — Family Child Care",
+   "short": "CDA Family Child Care",
+   "category": "education-teaching",
+   "group": "Early Childhood, Paraeducator & Instructional Support",
+   "body": "Council for Professional Recognition",
+   "bodyUrl": "https://www.cdacouncil.org",
+   "type": "Certification",
+   "aka": [
+    "Family Child Care CDA"
+   ],
+   "blurb": "CDA setting for educators running home-based child care, assessed through a portfolio, verification visit and the CDA exam."
+  },
+  {
+   "slug": "cda-home-visitor",
+   "name": "Child Development Associate — Home Visitor",
+   "short": "CDA Home Visitor",
+   "category": "education-teaching",
+   "group": "Early Childhood, Paraeducator & Instructional Support",
+   "body": "Council for Professional Recognition",
+   "bodyUrl": "https://www.cdacouncil.org",
+   "type": "Certification",
+   "aka": [
+    "Home Visitor CDA"
+   ],
+   "blurb": "CDA setting for staff who support child development through visits to family homes rather than in a centre-based classroom."
+  },
+  {
+   "slug": "cda-infant-toddler",
+   "name": "Child Development Associate — Infant-Toddler",
+   "short": "CDA Infant-Toddler",
+   "category": "education-teaching",
+   "group": "Early Childhood, Paraeducator & Instructional Support",
+   "body": "Council for Professional Recognition",
+   "bodyUrl": "https://www.cdacouncil.org",
+   "type": "Certification",
+   "aka": [
+    "Infant-Toddler CDA"
+   ],
+   "blurb": "National early childhood credential for educators of children from birth to three, requiring 120 training hours and a verification visit."
+  },
+  {
+   "slug": "cda-preschool",
+   "name": "Child Development Associate — Preschool",
+   "short": "CDA Preschool",
+   "category": "education-teaching",
+   "group": "Early Childhood, Paraeducator & Instructional Support",
+   "body": "Council for Professional Recognition",
+   "bodyUrl": "https://www.cdacouncil.org",
+   "type": "Certification",
+   "aka": [
+    "Preschool CDA"
+   ],
+   "blurb": "Most common CDA setting, for educators of children aged three to five, assessed by portfolio, observation and a 65-item examination."
+  },
+  {
+   "slug": "cda-bilingual-specialization",
+   "name": "Child Development Associate Bilingual Specialization",
+   "short": "CDA Bilingual",
+   "category": "education-teaching",
+   "group": "Early Childhood, Paraeducator & Instructional Support",
+   "body": "Council for Professional Recognition",
+   "bodyUrl": "https://www.cdacouncil.org",
+   "type": "Certification",
+   "aka": [
+    "Bilingual CDA"
+   ],
+   "blurb": "Add-on specialisation to the Child Development Associate credential for educators delivering programmes in two languages."
+  },
+  {
+   "slug": "montessori-ams-teacher-credential",
+   "name": "American Montessori Society Teacher Credential",
+   "short": "AMS Credential",
+   "category": "education-teaching",
+   "group": "Early Childhood, Paraeducator & Instructional Support",
+   "body": "American Montessori Society",
+   "type": "Certification",
+   "aka": [
+    "AMS Montessori credential",
+    "MACTE accredited Montessori"
+   ],
+   "blurb": "Montessori credential spanning infant-toddler through secondary levels, requiring academic coursework and a supervised practicum year."
+  },
+  {
+   "slug": "montessori-ami-diploma",
+   "name": "Association Montessori Internationale Teaching Diploma",
+   "short": "AMI Diploma",
+   "category": "education-teaching",
+   "group": "Early Childhood, Paraeducator & Instructional Support",
+   "body": "Association Montessori Internationale",
+   "type": "Certification",
+   "aka": [
+    "AMI Montessori diploma"
+   ],
+   "blurb": "Montessori teaching diploma offered at assistants-to-infancy, primary, elementary and adolescent levels through AMI training centres."
+  },
+  {
+   "slug": "certified-childcare-professional",
+   "name": "Certified Childcare Professional",
+   "short": "CCP",
+   "category": "education-teaching",
+   "group": "Early Childhood, Paraeducator & Instructional Support",
+   "body": "National Early Childhood Program Accreditation",
+   "type": "Certification",
+   "aka": [
+    "CCP"
+   ],
+   "blurb": "Alternative national early childhood credential based on training hours, a professional portfolio and an observed classroom assessment."
+  },
+  {
+   "slug": "certified-educational-planner",
+   "name": "Certified Educational Planner",
+   "short": "CEP",
+   "category": "education-teaching",
+   "group": "Early Childhood, Paraeducator & Instructional Support",
+   "body": "American Institute of Certified Educational Planners",
+   "type": "Certification",
+   "aka": [
+    "CEP"
+   ],
+   "blurb": "Credential for independent educational consultants advising on school and college placement, requiring experience, references and an examination."
+  },
+  {
+   "slug": "stedi-substitute-teacher-certification",
+   "name": "STEDI Substitute Teacher Training and SubSkills Test",
+   "short": "STEDI SubSkills",
+   "category": "education-teaching",
+   "group": "Early Childhood, Paraeducator & Instructional Support",
+   "body": "Substitute Teaching Division, Utah State University",
+   "type": "Training",
+   "aka": [
+    "SubSkills Test",
+    "substitute teacher certification"
+   ],
+   "blurb": "Widely used national substitute teacher training programme ending in the SubSkills competency test, adopted by many districts."
+  }
+ ]
+}

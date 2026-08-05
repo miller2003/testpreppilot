@@ -1,0 +1,76 @@
+{
+ "chunkId": "b06-p03",
+ "batch": 6,
+ "part": 3,
+ "categories": [
+  "allied-health"
+ ],
+ "groups": [
+  "Surgical and Sterile Processing",
+  "Medical Office",
+  "Nursing Support"
+ ],
+ "bodies": [
+  "National Board of Surgical Technology and Surgical Assisting (NBSTSA)",
+  "American Medical Technologists (AMT)",
+  "National Nurse Aide Assessment Program (NNAAP) / Pearson VUE"
+ ],
+ "examCount": 5,
+ "exams": [
+  {
+   "slug": "nbstsa-csfa",
+   "name": "NBSTSA Certified Surgical First Assistant",
+   "short": "CSFA",
+   "category": "allied-health",
+   "group": "Surgical and Sterile Processing",
+   "body": "National Board of Surgical Technology and Surgical Assisting (NBSTSA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced credential for surgical first assistants in the operating room., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nbstsa-cst",
+   "name": "NBSTSA Certified Surgical Technologist",
+   "short": "CST",
+   "category": "allied-health",
+   "group": "Surgical and Sterile Processing",
+   "body": "National Board of Surgical Technology and Surgical Assisting (NBSTSA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for surgical technologists assisting in the operating room., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "amt-cmas",
+   "name": "AMT Certified Medical Administrative Specialist",
+   "short": "CMAS",
+   "category": "allied-health",
+   "group": "Medical Office",
+   "body": "American Medical Technologists (AMT)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for medical administrative specialists certified through AMT., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "amt-rma",
+   "name": "AMT Registered Medical Assistant",
+   "short": "RMA",
+   "category": "allied-health",
+   "group": "Medical Office",
+   "body": "American Medical Technologists (AMT)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for medical assistants registered through American Medical Technologists."
+  },
+  {
+   "slug": "nnaap-cna",
+   "name": "NNAAP Nurse Aide Competency Evaluation",
+   "short": "CNA",
+   "category": "allied-health",
+   "group": "Nursing Support",
+   "body": "National Nurse Aide Assessment Program (NNAAP) / Pearson VUE",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National nurse aide competency exam used by many states for CNA certification., a nationally recognized professional credential in this field."
+  }
+ ]
+}

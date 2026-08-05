@@ -1,0 +1,318 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+import { buildDirectory, catalogStats, examCategories, jurisdictions } from '../data/examCatalog/index.mjs';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Exams', href: '/exams' }
+];
+
+const directory = buildDirectory();
+
+// Map a category color id to a CSS variable that exists in tokens.css.
+const accentVar = (c: string) =>
+  c === 'emerald' ? 'var(--accent-mint)'
+  : c === 'ink' ? 'var(--ink)'
+  : `var(--accent-${c})`;
+
+const stats = catalogStats;
+const canonicalUrl = new URL('/exams', Astro.site || 'https://testpreppilot.com').toString();
+---
+
+<BaseLayout
+  title="Every U.S. Exam, License & Certification — TestPrepPilot Directory"
+  description="The most comprehensive directory of U.S. exams, licenses and certifications — across every profession, every state, and every level. Browse 5,000+ credential paths."
+  canonical={canonicalUrl}
+>
+  <div class="container | animate-on-scroll">
+    <BreadcrumbNav items={breadcrumbItems} />
+
+    <header class="exams-hero">
+      <p class="eyebrow">THE COMPLETE EXAM DIRECTORY</p>
+      <h1>Every U.S. exam, license &amp; certification — <em>in one place.</em></h1>
+      <p class="lede">
+        From the bar exam to a boiler operator license, we are mapping every credential path in the country.
+        Search by name, filter by profession, or jump straight to your state.
+      </p>
+
+      <div class="stat-row">
+        <div class="stat">
+          <span class="stat-num">{stats.total.toLocaleString()}</span>
+          <span class="stat-label">Exams &amp; credentials</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">{stats.categories}</span>
+          <span class="stat-label">Profession categories</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">{stats.jurisdictions}</span>
+          <span class="stat-label">States &amp; territories</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">{stats.complete}</span>
+          <span class="stat-label">Full guides live</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="exams-layout">
+      <aside class="exams-sidebar">
+        <p class="sidebar-title">Browse by profession</p>
+        <nav class="cat-nav" id="cat-nav">
+          <button class="cat-pill is-active" data-cat="">All exams</button>
+          {directory.map((cat) => (
+            <button class="cat-pill" data-cat={cat.id} style={`--accent:${accentVar(cat.color)}`}>
+              <span class="cat-glyph">{cat.icon}</span>
+              <span class="cat-name">{cat.name}</span>
+              <span class="cat-count">{cat.total.toLocaleString()}</span>
+            </button>
+          ))}
+        </nav>
+      </aside>
+
+      <main class="exams-main">
+        <div class="exams-toolbar">
+          <div class="search-wrap">
+            <svg class="search-ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path fill="none" stroke="currentColor" stroke-width="2" d="M21 21l-4.3-4.3M11 19a8 8 0 1 1 0-16 8 8 0 0 1 0 16z" />
+            </svg>
+            <input
+              id="exam-search"
+              type="search"
+              placeholder="Search 5,000+ exams by name…"
+              autocomplete="off"
+              aria-label="Search exams"
+            />
+          </div>
+          <select id="state-filter" aria-label="Filter by state">
+            <option value="">All states</option>
+            {jurisdictions.map((s) => (
+              <option value={s.code}>{s.name}</option>
+            ))}
+          </select>
+        </div>
+
+        <p class="results-count" id="results-count"></p>
+
+        <div class="exams-results" id="exams-results">
+          {directory.map((cat) => (
+            <section class="cat-section" id={cat.id} data-cat={cat.id} style={`--accent:${accentVar(cat.color)}`}>
+              <header class="cat-head">
+                <span class="cat-icon">{cat.icon}</span>
+                <div>
+                  <h2>{cat.name}</h2>
+                  <p class="cat-desc">{cat.description}</p>
+                </div>
+                <span class="cat-total">{cat.total.toLocaleString()}</span>
+              </header>
+
+              <div class="cat-groups">
+                {cat.groups.map((grp) => (
+                  <div class="grp" data-group>
+                    <h3 class="grp-title">{grp.name}</h3>
+                    <ul class="exam-grid">
+                      {grp.exams.map((exam) => (
+                        <li
+                          class="exam-card"
+                          data-name={exam.name.toLowerCase()}
+                          data-cat={exam.category}
+                          data-state={exam.stateCode || ''}
+                        >
+                          <a href={exam.href} class="exam-link">
+                            <span class="exam-top"></span>
+                            <span class="exam-type">{exam.type}</span>
+                            <h4 class="exam-name">{exam.name}</h4>
+                            <p class="exam-meta">
+                              {exam.stateName ? `${exam.stateName} · ` : ''}{exam.group}
+                            </p>
+                            {exam.status === 'complete' && <span class="exam-badge">Full guide</span>}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
+
+          <div class="empty-state" id="empty-state" hidden>
+            <p>No exams match your filters yet.</p>
+            <button class="reset-btn" id="reset-btn">Clear filters</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</BaseLayout>
+
+<script is:inline>
+  document.addEventListener('astro:page-load', () => {
+    const search = document.getElementById('exam-search');
+    const stateFilter = document.getElementById('state-filter');
+    const catNav = document.getElementById('cat-nav');
+    const sections = Array.from(document.querySelectorAll('.cat-section'));
+    const cards = Array.from(document.querySelectorAll('.exam-card'));
+    const countEl = document.getElementById('results-count');
+    const emptyEl = document.getElementById('empty-state');
+    const resetBtn = document.getElementById('reset-btn');
+
+    if (!search || !sections.length) return;
+
+    let activeCat = '';
+    let query = '';
+    let state = '';
+
+    function apply() {
+      let visible = 0;
+      for (const card of cards) {
+        const name = card.dataset.name || '';
+        const cat = card.dataset.cat || '';
+        const st = card.dataset.state || '';
+        const matchCat = activeCat === '' || cat === activeCat;
+        const matchState = state === '' || st === state;
+        const matchQuery = query === '' || name.includes(query);
+        const show = matchCat && matchState && matchQuery;
+        card.hidden = !show;
+        if (show) visible++;
+      }
+
+      // Hide empty groups and sections.
+      for (const sec of sections) {
+        let secVisible = 0;
+        const groups = sec.querySelectorAll('[data-group]');
+        groups.forEach((g) => {
+          const gc = g.querySelectorAll('.exam-card');
+          let gv = 0;
+          gc.forEach((c) => { if (!c.hidden) gv++; });
+          g.hidden = gv === 0;
+          secVisible += gv;
+        });
+        sec.hidden = secVisible === 0;
+      }
+
+      if (emptyEl) emptyEl.hidden = visible !== 0;
+      if (countEl) {
+        countEl.textContent = visible === cards.length
+          ? `Showing all ${cards.length.toLocaleString()} exams`
+          : `${visible.toLocaleString()} exam${visible === 1 ? '' : 's'} match your filters`;
+      }
+    }
+
+    search.addEventListener('input', () => { query = search.value.trim().toLowerCase(); apply(); });
+    if (stateFilter) stateFilter.addEventListener('change', () => { state = stateFilter.value; apply(); });
+
+    if (catNav) {
+      catNav.addEventListener('click', (e) => {
+        const btn = (e.target).closest('.cat-pill');
+        if (!btn) return;
+        const val = btn.getAttribute('data-cat') || '';
+        activeCat = activeCat === val ? '' : val;
+        catNav.querySelectorAll('.cat-pill').forEach((b) => b.classList.toggle('is-active', b.getAttribute('data-cat') === activeCat));
+        apply();
+        if (activeCat) {
+          const target = document.getElementById(activeCat);
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+
+    if (resetBtn) resetBtn.addEventListener('click', () => {
+      activeCat = ''; query = ''; state = '';
+      search.value = ''; if (stateFilter) stateFilter.value = '';
+      catNav.querySelectorAll('.cat-pill').forEach((b) => b.classList.toggle('is-active', b.getAttribute('data-cat') === ''));
+      apply();
+    });
+
+    apply();
+  });
+</script>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+  /* Hero */
+  .exams-hero { padding: 0 0 2rem; border-bottom: 1px solid var(--line); }
+  .exams-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.75rem; margin: 0 0 0.75rem; font-weight: 700; }
+  .exams-hero h1 { font-family: var(--font-heading); font-size: clamp(2.2rem, 4.5vw, 3.8rem); margin: 0 0 1rem; font-weight: 700; line-height: 1.08; }
+  .exams-hero h1 em { font-style: italic; color: var(--primary); }
+  .exams-hero .lede { font-family: var(--font-body); font-size: 1.15rem; color: var(--muted); max-width: 760px; line-height: 1.6; margin: 0 0 2rem; }
+
+  .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .stat { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem 1.5rem; }
+  .stat-num { display: block; font-family: var(--font-heading); font-size: 2.4rem; font-weight: 700; color: var(--ink); line-height: 1; }
+  .stat-label { display: block; font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-top: 0.5rem; }
+
+  /* Layout */
+  .exams-layout { display: grid; grid-template-columns: 270px 1fr; gap: 2.5rem; padding: 2.5rem 0 4rem; }
+
+  /* Sidebar */
+  .exams-sidebar { position: relative; }
+  .sidebar-title { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 0.75rem; }
+  .cat-nav { display: flex; flex-direction: column; gap: 0.35rem; position: sticky; top: 110px; max-height: calc(100vh - 140px); overflow-y: auto; padding-right: 0.5rem; }
+  .cat-pill {
+    display: flex; align-items: center; gap: 0.6rem; width: 100%; text-align: left;
+    padding: 0.6rem 0.85rem; border: 1px solid transparent; border-radius: var(--radius);
+    background: transparent; color: var(--muted); cursor: pointer; transition: all var(--transition);
+    font-family: var(--font-body); font-size: 0.98rem;
+  }
+  .cat-pill:hover { background: var(--cream); color: var(--ink); }
+  .cat-pill.is-active { background: var(--primary-light); border-color: var(--primary); color: var(--ink); font-weight: 600; }
+  .cat-glyph { width: 1.4rem; text-align: center; color: var(--accent); font-size: 1rem; flex: 0 0 auto; }
+  .cat-name { flex: 1; line-height: 1.2; }
+  .cat-count { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
+
+  /* Toolbar */
+  .exams-toolbar { display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; }
+  .search-wrap { position: relative; flex: 1; min-width: 260px; }
+  .search-ico { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--muted); }
+  #exam-search { width: 100%; padding: 0.85rem 1rem 0.85rem 2.75rem; border: 1px solid var(--line); border-radius: var(--radius); font-family: var(--font-body); font-size: 1rem; background: var(--paper); color: var(--ink); transition: border-color var(--transition); }
+  #exam-search:focus { outline: none; border-color: var(--primary); }
+  #state-filter { padding: 0.85rem 1rem; border: 1px solid var(--line); border-radius: var(--radius); font-family: var(--font-body); font-size: 0.95rem; background: var(--paper); color: var(--ink); cursor: pointer; }
+  .results-count { font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 0 0 1.5rem; }
+
+  /* Category sections */
+  .cat-section { scroll-margin-top: 70px; padding: 1.5rem 0; border-top: 1px solid var(--line); }
+  .cat-section:first-of-type { border-top: none; }
+  .cat-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }
+  .cat-icon { width: 48px; height: 48px; flex: 0 0 auto; display: flex; align-items: center; justify-content: center; border-radius: var(--radius); background: var(--primary-light); color: var(--accent); font-size: 1.4rem; border: 1px solid var(--line); }
+  .cat-head h2 { font-family: var(--font-heading); font-size: clamp(1.6rem, 2.5vw, 2.2rem); margin: 0; line-height: 1.1; }
+  .cat-desc { font-family: var(--font-body); font-size: 0.92rem; color: var(--muted); margin: 0.25rem 0 0; max-width: 640px; line-height: 1.45; }
+  .cat-total { margin-left: auto; font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted); background: var(--cream); padding: 0.4rem 0.8rem; border-radius: 999px; white-space: nowrap; }
+
+  .grp { margin-bottom: 1.5rem; }
+  .grp-title { font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 0.85rem; padding-bottom: 0.45rem; border-bottom: 1px dashed var(--line); }
+
+  /* Exam grid + cards */
+  .exam-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .exam-card { display: flex; }
+  .exam-link {
+    display: flex; flex-direction: column; width: 100%; padding: 1.1rem 1.25rem; background: var(--paper);
+    border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; color: var(--ink);
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition); position: relative; overflow: hidden;
+  }
+  .exam-top { position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform var(--transition); }
+  .exam-link:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); border-color: transparent; text-decoration: none; }
+  .exam-link:hover .exam-top { transform: scaleX(1); }
+  .exam-type { font-family: var(--font-mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 0.45rem; }
+  .exam-name { font-size: 1.08rem; margin: 0 0 0.4rem; font-family: var(--font-body); font-weight: 600; line-height: 1.3; }
+  .exam-meta { font-size: 0.84rem; color: var(--muted); margin: 0; line-height: 1.4; }
+  .exam-badge { align-self: flex-start; margin-top: 0.7rem; font-family: var(--font-mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary); background: var(--primary-light); border: 1px solid var(--primary); padding: 0.2rem 0.6rem; border-radius: 999px; }
+
+  .empty-state { text-align: center; padding: 4rem 2rem; background: var(--cream); border-radius: var(--radius); border: 1px solid var(--line); }
+  .empty-state p { font-size: 1.2rem; font-family: var(--font-heading); color: var(--ink); margin-bottom: 1.25rem; }
+  .reset-btn { padding: 0.7rem 1.4rem; border: 1px solid var(--primary); background: var(--primary); color: #fff; border-radius: var(--radius); font-family: var(--font-body); font-size: 0.95rem; cursor: pointer; transition: background var(--transition); }
+  .reset-btn:hover { background: var(--ink); border-color: var(--ink); }
+
+  @media (max-width: 980px) {
+    .exams-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+    .cat-nav { flex-direction: row; flex-wrap: wrap; position: static; max-height: none; }
+    .cat-pill { width: auto; }
+    .stat-row { grid-template-columns: repeat(2, 1fr); }
+    .exam-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  }
+  @media (max-width: 560px) {
+    .stat-row { grid-template-columns: 1fr; }
+  }
+</style>

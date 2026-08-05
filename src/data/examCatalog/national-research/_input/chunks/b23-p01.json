@@ -1,0 +1,441 @@
+{
+ "chunkId": "b23-p01",
+ "batch": 23,
+ "part": 1,
+ "categories": [
+  "healthcare-clinical"
+ ],
+ "groups": [
+  "Osteopathic Medicine",
+  "Pharmacy",
+  "Nursing",
+  "Physician"
+ ],
+ "bodies": [
+  "American Osteopathic Association, Bureau of Osteopathic Specialists",
+  "Board of Pharmacy Specialties (BPS)",
+  "American Association of Nurse Practitioners Certification Board (AANPCB)",
+  "American Board of Allergy and Immunology (ABMS member board)"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "aoa-anesthesiology",
+   "name": "AOA Board of Anesthesiology Certification",
+   "short": "AOBaI",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in anesthesiology."
+  },
+  {
+   "slug": "aoa-emergency-medicine",
+   "name": "AOA Board of Emergency Medicine Certification",
+   "short": "AOBEM",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in emergency medicine."
+  },
+  {
+   "slug": "aoa-family-practice",
+   "name": "AOA Board of Family Practice Certification",
+   "short": "AOBFP",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in family practice."
+  },
+  {
+   "slug": "aoa-internal-medicine",
+   "name": "AOA Board of Internal Medicine Certification",
+   "short": "AOBIM",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in internal medicine."
+  },
+  {
+   "slug": "aoa-neurological-surgery",
+   "name": "AOA Board of Neurological Surgery Certification",
+   "short": "AOBNS",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in neurological surgery."
+  },
+  {
+   "slug": "aoa-neurology-psychiatry",
+   "name": "AOA Board of Neurology and Psychiatry Certification",
+   "short": "AOBNP",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in neurology and psychiatry."
+  },
+  {
+   "slug": "aoa-obgyn",
+   "name": "AOA Board of Obstetrics and Gynecology Certification",
+   "short": "AOBOG",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in obstetrics and gynecology."
+  },
+  {
+   "slug": "aoa-ophthalmology",
+   "name": "AOA Board of Ophthalmology Certification",
+   "short": "AOBO",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in ophthalmology."
+  },
+  {
+   "slug": "aoa-orthopedic-surgery",
+   "name": "AOA Board of Orthopedic Surgery Certification",
+   "short": "AOBOS",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in orthopedic surgery."
+  },
+  {
+   "slug": "aoa-otolaryngology",
+   "name": "AOA Board of Otolaryngology Certification",
+   "short": "AOBOO",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in otolaryngology."
+  },
+  {
+   "slug": "aoa-pathology",
+   "name": "AOA Board of Pathology Certification",
+   "short": "AOBPath",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in pathology."
+  },
+  {
+   "slug": "aoa-pediatrics",
+   "name": "AOA Board of Pediatrics Certification",
+   "short": "AOBPed",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in pediatrics."
+  },
+  {
+   "slug": "aoa-physical-med-rehab",
+   "name": "AOA Board of Physical Medicine and Rehabilitation Certification",
+   "short": "AOCPMR",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in physical medicine and rehabilitation."
+  },
+  {
+   "slug": "aoa-preventive-medicine",
+   "name": "AOA Board of Preventive Medicine Certification",
+   "short": "AOBPM",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in preventive medicine."
+  },
+  {
+   "slug": "aoa-radiology",
+   "name": "AOA Board of Radiology Certification",
+   "short": "AOBR",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in diagnostic radiology."
+  },
+  {
+   "slug": "aoa-surgery",
+   "name": "AOA Board of Surgery Certification",
+   "short": "AOBS",
+   "category": "healthcare-clinical",
+   "group": "Osteopathic Medicine",
+   "body": "American Osteopathic Association, Bureau of Osteopathic Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Osteopathic board certification examination for DO physicians specializing in general surgery."
+  },
+  {
+   "slug": "bps-ambulatory-care",
+   "name": "BPS Ambulatory Care Pharmacy Specialist",
+   "short": "BCACP",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in ambulatory and primary care patient management."
+  },
+  {
+   "slug": "bps-cardiology",
+   "name": "BPS Cardiology Pharmacy Specialist",
+   "short": "BCCP",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in cardiovascular and cardiology pharmacotherapy."
+  },
+  {
+   "slug": "bps-critical-care",
+   "name": "BPS Critical Care Pharmacy Specialist",
+   "short": "BCCCP",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in critical and intensive care medicine."
+  },
+  {
+   "slug": "bps-emergency-medicine",
+   "name": "BPS Emergency Medicine Pharmacy Specialist",
+   "short": "BCEMP",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in emergency medicine pharmacotherapy."
+  },
+  {
+   "slug": "bps-geriatric",
+   "name": "BPS Geriatric Pharmacy Specialist",
+   "short": "BCGP",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in care of older adults and geriatric pharmacotherapy."
+  },
+  {
+   "slug": "bps-infectious-disease",
+   "name": "BPS Infectious Diseases Pharmacy Specialist",
+   "short": "BCIDP",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in infectious diseases and antimicrobial stewardship."
+  },
+  {
+   "slug": "bps-nuclear",
+   "name": "BPS Nuclear Pharmacy Specialist",
+   "short": "BCNP",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in nuclear pharmacy and radiopharmaceuticals."
+  },
+  {
+   "slug": "bps-nutrition-support",
+   "name": "BPS Nutrition Support Pharmacy Specialist",
+   "short": "BCNSP",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in nutrition support therapy and pharmacotherapy."
+  },
+  {
+   "slug": "bps-oncology",
+   "name": "BPS Oncology Pharmacy Specialist",
+   "short": "BCOP",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in oncology and hematology-oncology pharmacotherapy."
+  },
+  {
+   "slug": "bps-pain-management",
+   "name": "BPS Pain Management Pharmacy Specialist",
+   "short": "BCPMP",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in pain management and related pharmacotherapy."
+  },
+  {
+   "slug": "bps-pediatric",
+   "name": "BPS Pediatric Pharmacy Specialist",
+   "short": "BCPPS",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in pediatric pharmacotherapy and medication safety."
+  },
+  {
+   "slug": "bps-pharmacotherapy",
+   "name": "BPS Pharmacotherapy Specialist Certification",
+   "short": "BCPS",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in pharmacotherapy, the largest BPS specialty."
+  },
+  {
+   "slug": "bps-psychiatric",
+   "name": "BPS Psychiatric Pharmacy Specialist",
+   "short": "BCPP",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in psychiatric and neurologic pharmacotherapy."
+  },
+  {
+   "slug": "bps-sterile-compounding",
+   "name": "BPS Sterile Compounding Pharmacy Specialist",
+   "short": "BCSCP",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in sterile compounding and related quality standards."
+  },
+  {
+   "slug": "bps-transplant",
+   "name": "BPS Transplant Pharmacy Specialist",
+   "short": "BCTXP",
+   "category": "healthcare-clinical",
+   "group": "Pharmacy",
+   "body": "Board of Pharmacy Specialties (BPS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board certification for pharmacists specializing in solid organ and stem cell transplant pharmacotherapy."
+  },
+  {
+   "slug": "aanp-agacnp",
+   "name": "AANP Adult-Gerontology Acute Care NP Certification",
+   "short": "AGACNP",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "American Association of Nurse Practitioners Certification Board (AANPCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification exam for nurse practitioners focused on adult and geriatric acute care populations."
+  },
+  {
+   "slug": "aanp-agpcnp",
+   "name": "AANP Adult-Gerontology Primary Care NP Certification",
+   "short": "AGPCNP",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "American Association of Nurse Practitioners Certification Board (AANPCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification exam for nurse practitioners focused on adult and geriatric primary care populations."
+  },
+  {
+   "slug": "aanp-enp",
+   "name": "AANP Emergency NP Certification",
+   "short": "ENP",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "American Association of Nurse Practitioners Certification Board (AANPCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification exam for nurse practitioners specializing in emergency and acute episodic care."
+  },
+  {
+   "slug": "aanp-fnp",
+   "name": "AANP Family Nurse Practitioner Certification",
+   "short": "FNP",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "American Association of Nurse Practitioners Certification Board (AANPCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National certification examination for nurse practitioners seeking family nurse practitioner credentialing."
+  },
+  {
+   "slug": "aanp-pmhnp",
+   "name": "AANP Psychiatric-Mental Health NP Certification",
+   "short": "PMHNP",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "American Association of Nurse Practitioners Certification Board (AANPCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification exam for nurse practitioners specializing in psychiatric and mental health care."
+  },
+  {
+   "slug": "aanp-whnp",
+   "name": "AANP Women’s Health NP Certification",
+   "short": "WHNP",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "American Association of Nurse Practitioners Certification Board (AANPCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification exam for nurse practitioners specializing in women’s health care across the lifespan."
+  },
+  {
+   "slug": "abms-allergy-immunology",
+   "name": "American Board of Allergy and Immunology Certification",
+   "short": "ABAI",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "American Board of Allergy and Immunology (ABMS member board)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Initial board certification exam for physicians specializing in allergy and immunology, administered by ABAI."
+  }
+ ]
+}

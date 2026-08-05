@@ -1,0 +1,500 @@
+{
+ "chunkId": "b42-p01",
+ "batch": 42,
+ "part": 1,
+ "categories": [
+  "workplace-safety"
+ ],
+ "groups": [
+  "OSHA Outreach & Trainer",
+  "Safety Professional Certifications"
+ ],
+ "bodies": [
+  "OSHA Training Institute Education Centers"
+ ],
+ "examCount": 37,
+ "exams": [
+  {
+   "slug": "osha-2015-hazardous-materials",
+   "name": "OSHA 2015 Hazardous Materials",
+   "short": "OSHA 2015",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 2015"
+   ],
+   "blurb": "Course covering OSHA hazardous materials standards including flammable liquids, spray finishing, dip tanks and welding hazards."
+  },
+  {
+   "slug": "osha-2045-machine-guarding",
+   "name": "OSHA 2045 Machinery and Machine Guarding Standards",
+   "short": "OSHA 2045",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 2045"
+   ],
+   "blurb": "Course on Subpart O machine guarding requirements, point-of-operation safeguards and lockout of hazardous energy during servicing."
+  },
+  {
+   "slug": "osha-2055-cranes-in-construction",
+   "name": "OSHA 2055 Cranes in Construction",
+   "short": "OSHA 2055",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 2055"
+   ],
+   "blurb": "Course on 29 CFR 1926 Subpart CC crane requirements including assembly, operator qualification, signalling and power-line safety."
+  },
+  {
+   "slug": "osha-2225-respiratory-protection",
+   "name": "OSHA 2225 Respiratory Protection",
+   "short": "OSHA 2225",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 2225"
+   ],
+   "blurb": "Course on building a written respiratory protection programme, respirator selection, fit testing and medical evaluation."
+  },
+  {
+   "slug": "osha-2255-principles-of-ergonomics",
+   "name": "OSHA 2255 Principles of Ergonomics",
+   "short": "OSHA 2255",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 2255"
+   ],
+   "blurb": "Course on recognising musculoskeletal risk factors and applying engineering and administrative controls to reduce workplace strain."
+  },
+  {
+   "slug": "osha-2264-confined-space-entry",
+   "name": "OSHA 2264 Permit-Required Confined Space Entry",
+   "short": "OSHA 2264",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 2264"
+   ],
+   "blurb": "Course covering permit space programmes, atmospheric testing instruments, ventilation and non-entry rescue techniques."
+  },
+  {
+   "slug": "osha-3015-excavation-trenching",
+   "name": "OSHA 3015 Excavation, Trenching and Soil Mechanics",
+   "short": "OSHA 3015",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 3015"
+   ],
+   "blurb": "Course on soil classification, sloping, shoring and shielding systems used to protect workers in excavations and trenches."
+  },
+  {
+   "slug": "osha-3085-principles-of-scaffolding",
+   "name": "OSHA 3085 Principles of Scaffolding",
+   "short": "OSHA 3085",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 3085"
+   ],
+   "blurb": "Course covering scaffold types, load capacities, erection and dismantling procedures and Subpart L inspection requirements."
+  },
+  {
+   "slug": "osha-3095-electrical-standards",
+   "name": "OSHA 3095 Electrical Standards",
+   "short": "OSHA 3095",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 3095"
+   ],
+   "blurb": "Course on OSHA electrical standards, hazard analysis, grounding, wiring methods and safety-related work practices."
+  },
+  {
+   "slug": "osha-3115-fall-protection",
+   "name": "OSHA 3115 Fall Protection",
+   "short": "OSHA 3115",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 3115"
+   ],
+   "blurb": "Course on fall hazard recognition, guardrail and net systems, personal fall arrest components and rescue planning."
+  },
+  {
+   "slug": "osha-500-construction-trainer",
+   "name": "OSHA 500 Trainer Course in Occupational Safety and Health Standards for the Construction Industry",
+   "short": "OSHA 500",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 500",
+    "Construction Trainer Course"
+   ],
+   "blurb": "Authorisation course allowing safety professionals to deliver 10-hour and 30-hour construction Outreach classes and issue DOL cards."
+  },
+  {
+   "slug": "osha-501-general-industry-trainer",
+   "name": "OSHA 501 Trainer Course in Occupational Safety and Health Standards for General Industry",
+   "short": "OSHA 501",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 501"
+   ],
+   "blurb": "Authorisation course allowing safety professionals to deliver 10-hour and 30-hour general industry Outreach classes and issue DOL cards."
+  },
+  {
+   "slug": "osha-502-construction-trainer-update",
+   "name": "OSHA 502 Update for Construction Industry Outreach Trainers",
+   "short": "OSHA 502",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 502"
+   ],
+   "blurb": "Four-yearly update course required for authorised construction Outreach trainers to maintain their trainer status."
+  },
+  {
+   "slug": "osha-503-general-industry-trainer-update",
+   "name": "OSHA 503 Update for General Industry Outreach Trainers",
+   "short": "OSHA 503",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 503"
+   ],
+   "blurb": "Four-yearly update course required for authorised general industry Outreach trainers to maintain their trainer status."
+  },
+  {
+   "slug": "osha-510-construction-standards",
+   "name": "OSHA 510 Occupational Safety and Health Standards for the Construction Industry",
+   "short": "OSHA 510",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 510"
+   ],
+   "blurb": "Prerequisite course covering 29 CFR 1926 construction standards for candidates preparing to take the OSHA 500 trainer course."
+  },
+  {
+   "slug": "osha-511-general-industry-standards",
+   "name": "OSHA 511 Occupational Safety and Health Standards for General Industry",
+   "short": "OSHA 511",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 511"
+   ],
+   "blurb": "Prerequisite course covering 29 CFR 1910 general industry standards for candidates preparing to take the OSHA 501 trainer course."
+  },
+  {
+   "slug": "osha-521-industrial-hygiene",
+   "name": "OSHA 521 Guide to Industrial Hygiene",
+   "short": "OSHA 521",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 521"
+   ],
+   "blurb": "Course on industrial hygiene principles, sampling instrumentation, noise, ventilation and chemical exposure evaluation."
+  },
+  {
+   "slug": "osha-5400-maritime-trainer",
+   "name": "OSHA 5400 Trainer Course in Occupational Safety and Health Standards for the Maritime Industry",
+   "short": "OSHA 5400",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 5400"
+   ],
+   "blurb": "Authorisation course allowing instructors to deliver 10-hour and 30-hour maritime Outreach classes and issue DOL completion cards."
+  },
+  {
+   "slug": "osha-5402-maritime-trainer-update",
+   "name": "OSHA 5402 Update for Maritime Industry Outreach Trainers",
+   "short": "OSHA 5402",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 5402"
+   ],
+   "blurb": "Four-yearly update course required for authorised maritime Outreach trainers to retain trainer authorisation."
+  },
+  {
+   "slug": "osha-5410-maritime-standards",
+   "name": "OSHA 5410 Occupational Safety and Health Standards for the Maritime Industry",
+   "short": "OSHA 5410",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 5410"
+   ],
+   "blurb": "Prerequisite course covering shipyard, marine terminal and longshoring standards for candidates entering the OSHA 5400 trainer course."
+  },
+  {
+   "slug": "osha-5600-disaster-site-worker-trainer",
+   "name": "OSHA 5600 Disaster Site Worker Trainer Course",
+   "short": "OSHA 5600",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 5600"
+   ],
+   "blurb": "Authorisation course for instructors delivering the Disaster Site Worker Outreach programme to skilled support personnel."
+  },
+  {
+   "slug": "osha-5602-disaster-site-worker-trainer-update",
+   "name": "OSHA 5602 Update for Disaster Site Worker Trainers",
+   "short": "OSHA 5602",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 5602"
+   ],
+   "blurb": "Update course required at four-year intervals for authorised Disaster Site Worker Outreach trainers."
+  },
+  {
+   "slug": "osha-5810-oil-and-gas-hazards",
+   "name": "OSHA 5810 Hazard Recognition and Standards for On-Shore Oil and Gas Exploration and Production",
+   "short": "OSHA 5810",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 5810"
+   ],
+   "blurb": "Course covering drilling, well servicing and production hazards along with the OSHA standards that apply to upstream oil and gas sites."
+  },
+  {
+   "slug": "osha-6005-collateral-duty-federal-agencies",
+   "name": "OSHA 6005 Collateral Duty Course for Other Federal Agencies",
+   "short": "OSHA 6005",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 6005"
+   ],
+   "blurb": "Course preparing federal collateral-duty safety personnel to conduct workplace inspections under Executive Order 12196."
+  },
+  {
+   "slug": "osha-7000-safe-patient-handling",
+   "name": "OSHA 7000 Training Guidelines for Safe Patient Handling",
+   "short": "OSHA 7000",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 7000"
+   ],
+   "blurb": "Short course on ergonomic risks in patient handling and the lift equipment and programmes that reduce caregiver injuries."
+  },
+  {
+   "slug": "osha-7115-lockout-tagout",
+   "name": "OSHA 7115 Lockout/Tagout",
+   "short": "OSHA 7115",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 7115"
+   ],
+   "blurb": "Short course on developing energy control procedures, applying lockout devices and auditing hazardous energy control programmes."
+  },
+  {
+   "slug": "osha-7200-bloodborne-pathogens",
+   "name": "OSHA 7200 Bloodborne Pathogens Exposure Control for Healthcare Facilities",
+   "short": "OSHA 7200",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 7200"
+   ],
+   "blurb": "Short course on writing exposure control plans and selecting engineering controls for healthcare bloodborne pathogen hazards."
+  },
+  {
+   "slug": "osha-7215-silica",
+   "name": "OSHA 7215 Silica in Construction, Maritime and General Industries",
+   "short": "OSHA 7215",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 7215"
+   ],
+   "blurb": "Short course on the respirable crystalline silica standards, exposure assessment and control methods across three industry sectors."
+  },
+  {
+   "slug": "osha-7300-confined-space-standard",
+   "name": "OSHA 7300 Understanding OSHA's Permit-Required Confined Space Standard",
+   "short": "OSHA 7300",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 7300"
+   ],
+   "blurb": "Short course explaining permit space identification, entry permits, attendant duties and rescue requirements under 1910.146."
+  },
+  {
+   "slug": "osha-7405-fall-hazard-awareness",
+   "name": "OSHA 7405 Fall Hazard Awareness for the Construction Industry",
+   "short": "OSHA 7405",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 7405"
+   ],
+   "blurb": "Short course on common construction fall hazards and the guardrail, net and personal arrest solutions that prevent them."
+  },
+  {
+   "slug": "osha-7500-safety-health-management",
+   "name": "OSHA 7500 Introduction to Safety and Health Management",
+   "short": "OSHA 7500",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 7500"
+   ],
+   "blurb": "Short course introducing management leadership, worker participation, hazard identification and programme evaluation elements."
+  },
+  {
+   "slug": "osha-7505-incident-investigation",
+   "name": "OSHA 7505 Introduction to Incident (Accident) Investigation",
+   "short": "OSHA 7505",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 7505"
+   ],
+   "blurb": "Short course on evidence collection, witness interviewing and root cause analysis techniques for workplace incident investigations."
+  },
+  {
+   "slug": "osha-7510-osha-for-small-business",
+   "name": "OSHA 7510 Introduction to OSHA for Small Business",
+   "short": "OSHA 7510",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 7510"
+   ],
+   "blurb": "Short course orienting small employers to OSHA standards, inspection procedures, consultation services and compliance resources."
+  },
+  {
+   "slug": "osha-7600-disaster-site-worker",
+   "name": "OSHA 7600 Disaster Site Worker Course",
+   "short": "OSHA 7600",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "Disaster Site Worker 15-Hour"
+   ],
+   "blurb": "Fifteen-hour Outreach course preparing skilled support personnel for the hazards and respiratory protection needs of disaster response sites."
+  },
+  {
+   "slug": "osha-7605-disaster-site-worker-refresher",
+   "name": "OSHA 7605 Disaster Site Worker Refresher Course",
+   "short": "OSHA 7605",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "Disaster Site Worker Refresher"
+   ],
+   "blurb": "Shorter refresher of the Disaster Site Worker Outreach programme for personnel maintaining disaster response qualifications."
+  },
+  {
+   "slug": "osha-7845-recordkeeping-rule",
+   "name": "OSHA 7845 Recordkeeping Rule Seminar",
+   "short": "OSHA 7845",
+   "category": "workplace-safety",
+   "group": "OSHA Outreach & Trainer",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Training",
+   "aka": [
+    "OSHA 7845"
+   ],
+   "blurb": "Seminar on 29 CFR 1904 injury and illness recordkeeping, the OSHA 300 log, reporting triggers and electronic submission rules."
+  },
+  {
+   "slug": "certified-safety-and-health-official",
+   "name": "Certified Safety and Health Official",
+   "short": "CSHO",
+   "category": "workplace-safety",
+   "group": "Safety Professional Certifications",
+   "body": "OSHA Training Institute Education Centers",
+   "type": "Certification",
+   "aka": [
+    "CSHO"
+   ],
+   "blurb": "Certificate awarded by OTI Education Centers after a defined series of OSHA numbered courses in construction or general industry."
+  }
+ ]
+}

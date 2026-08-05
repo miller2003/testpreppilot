@@ -1,0 +1,541 @@
+{
+ "chunkId": "b15-p01",
+ "batch": 15,
+ "part": 1,
+ "categories": [
+  "engineering-design"
+ ],
+ "groups": [
+  "NCEES PE Exams",
+  "Structural & Surveying",
+  "Manufacturing & Systems Engineering",
+  "Green Building & Energy"
+ ],
+ "bodies": [
+  "National Council of Examiners for Engineering and Surveying (NCEES)",
+  "American Society for Quality (ASQ)",
+  "Association of Energy Engineers (AEE)",
+  "Urban Green Council"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "pe-agricultural-biological",
+   "name": "Principles and Practice of Engineering (PE) Agricultural and Biological Exam",
+   "short": "PE Ag/Bio",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Agricultural and Biological"
+   ],
+   "blurb": "Second-step licensing exam covering agricultural and biological engineering systems and processing design."
+  },
+  {
+   "slug": "pe-architectural",
+   "name": "Principles and Practice of Engineering (PE) Architectural Exam",
+   "short": "PE Arch",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Architectural"
+   ],
+   "blurb": "Second-step licensing exam covering building systems, structural, mechanical and electrical architectural engineering."
+  },
+  {
+   "slug": "pe-chemical",
+   "name": "Principles and Practice of Engineering (PE) Chemical Exam",
+   "short": "PE Chemical",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Chemical"
+   ],
+   "blurb": "Second-step licensing exam for chemical engineers covering process design, thermo and plant operations."
+  },
+  {
+   "slug": "pe-civil",
+   "name": "Principles and Practice of Engineering (PE) Civil Exam",
+   "short": "PE Civil",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Civil"
+   ],
+   "blurb": "Second-step licensing exam for civil engineers covering breadth and depth in civil engineering disciplines."
+  },
+  {
+   "slug": "pe-control-systems",
+   "name": "Principles and Practice of Engineering (PE) Control Systems Exam",
+   "short": "PE Controls",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Control Systems"
+   ],
+   "blurb": "Second-step licensing exam covering control theory, instrumentation and automation system design."
+  },
+  {
+   "slug": "pe-electrical-computer",
+   "name": "Principles and Practice of Engineering (PE) Electrical and Computer Exam",
+   "short": "PE Electrical",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Electrical and Computer"
+   ],
+   "blurb": "Second-step licensing exam for electrical and computer engineers covering power, electronics and controls."
+  },
+  {
+   "slug": "pe-environmental",
+   "name": "Principles and Practice of Engineering (PE) Environmental Exam",
+   "short": "PE Environmental",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Environmental"
+   ],
+   "blurb": "Second-step licensing exam for environmental engineers covering water, air and remediation design."
+  },
+  {
+   "slug": "pe-fire-protection",
+   "name": "Principles and Practice of Engineering (PE) Fire Protection Exam",
+   "short": "PE Fire",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Fire Protection"
+   ],
+   "blurb": "Second-step licensing exam covering fire suppression, detection and life-safety system design."
+  },
+  {
+   "slug": "pe-industrial-systems",
+   "name": "Principles and Practice of Engineering (PE) Industrial and Systems Exam",
+   "short": "PE Industrial",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Industrial and Systems"
+   ],
+   "blurb": "Second-step licensing exam covering industrial engineering, operations and systems optimization."
+  },
+  {
+   "slug": "pe-mechanical",
+   "name": "Principles and Practice of Engineering (PE) Mechanical Exam",
+   "short": "PE Mechanical",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Mechanical"
+   ],
+   "blurb": "Second-step licensing exam for mechanical engineers covering mechanical systems, HVAC and machine design."
+  },
+  {
+   "slug": "pe-metallurgical-materials",
+   "name": "Principles and Practice of Engineering (PE) Metallurgical and Materials Exam",
+   "short": "PE Metallurgical",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Metallurgical and Materials"
+   ],
+   "blurb": "Second-step licensing exam covering metals processing, materials selection and failure analysis."
+  },
+  {
+   "slug": "pe-mining-mineral",
+   "name": "Principles and Practice of Engineering (PE) Mining and Mineral Processing Exam",
+   "short": "PE Mining",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Mining and Mineral"
+   ],
+   "blurb": "Second-step licensing exam covering mine design, mineral processing and health and safety engineering."
+  },
+  {
+   "slug": "pe-naval-architecture",
+   "name": "Principles and Practice of Engineering (PE) Naval Architecture and Marine Exam",
+   "short": "PE Naval",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Naval Architecture"
+   ],
+   "blurb": "Second-step licensing exam covering ship design, hydrostatics and marine structural engineering."
+  },
+  {
+   "slug": "pe-nuclear",
+   "name": "Principles and Practice of Engineering (PE) Nuclear Exam",
+   "short": "PE Nuclear",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Nuclear"
+   ],
+   "blurb": "Second-step licensing exam covering nuclear plant systems, radiation and reactor safety engineering."
+  },
+  {
+   "slug": "pe-petroleum",
+   "name": "Principles and Practice of Engineering (PE) Petroleum Exam",
+   "short": "PE Petroleum",
+   "category": "engineering-design",
+   "group": "NCEES PE Exams",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "Exam",
+   "aka": [
+    "PE Petroleum"
+   ],
+   "blurb": "Second-step licensing exam covering drilling, production and reservoir engineering for oil and gas."
+  },
+  {
+   "slug": "se-structural-engineering",
+   "name": "Structural Engineering (SE) Exam",
+   "short": "SE",
+   "category": "engineering-design",
+   "group": "Structural & Surveying",
+   "body": "National Council of Examiners for Engineering and Surveying (NCEES)",
+   "bodyUrl": "https://ncees.org",
+   "type": "License",
+   "aka": [
+    "SE"
+   ],
+   "blurb": "Advanced licensure exam for structural engineers covering vertical and lateral building system design."
+  },
+  {
+   "slug": "asq-cmqoe",
+   "name": "ASQ Certified Manager of Quality/Organizational Excellence (CMQ/OE)",
+   "short": "CMQ/OE",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "American Society for Quality (ASQ)",
+   "bodyUrl": "https://asq.org",
+   "type": "Certification",
+   "aka": [
+    "CMQ/OE"
+   ],
+   "blurb": "Senior credential for leading quality strategy, management and organizational excellence."
+  },
+  {
+   "slug": "asq-cqa",
+   "name": "ASQ Certified Quality Auditor (CQA)",
+   "short": "CQA",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "American Society for Quality (ASQ)",
+   "bodyUrl": "https://asq.org",
+   "type": "Certification",
+   "aka": [
+    "CQA"
+   ],
+   "blurb": "Credential covering audit principles, processes and quality system assessment."
+  },
+  {
+   "slug": "asq-cqe",
+   "name": "ASQ Certified Quality Engineer (CQE)",
+   "short": "CQE",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "American Society for Quality (ASQ)",
+   "bodyUrl": "https://asq.org",
+   "type": "Certification",
+   "aka": [
+    "CQE"
+   ],
+   "blurb": "Credential covering quality principles, statistical methods and product and process control."
+  },
+  {
+   "slug": "asq-cqia",
+   "name": "ASQ Certified Quality Improvement Associate (CQIA)",
+   "short": "CQIA",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "American Society for Quality (ASQ)",
+   "bodyUrl": "https://asq.org",
+   "type": "Certification",
+   "aka": [
+    "CQIA"
+   ],
+   "blurb": "Entry credential covering basic quality tools and continuous improvement fundamentals."
+  },
+  {
+   "slug": "asq-cqt",
+   "name": "ASQ Certified Quality Technician (CQT)",
+   "short": "CQT",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "American Society for Quality (ASQ)",
+   "bodyUrl": "https://asq.org",
+   "type": "Certification",
+   "aka": [
+    "CQT"
+   ],
+   "blurb": "Credential for technicians performing calibration, inspection and testing in quality roles."
+  },
+  {
+   "slug": "asq-cre",
+   "name": "ASQ Certified Reliability Engineer (CRE)",
+   "short": "CRE",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "American Society for Quality (ASQ)",
+   "bodyUrl": "https://asq.org",
+   "type": "Certification",
+   "aka": [
+    "CRE"
+   ],
+   "blurb": "Credential covering reliability principles, prediction and failure modes analysis."
+  },
+  {
+   "slug": "asq-cssbb",
+   "name": "ASQ Certified Six Sigma Black Belt (CSSBB)",
+   "short": "CSSBB",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "American Society for Quality (ASQ)",
+   "bodyUrl": "https://asq.org",
+   "type": "Certification",
+   "aka": [
+    "CSSBB"
+   ],
+   "blurb": "Credential for leading Six Sigma projects and applying advanced DMAIC methodology."
+  },
+  {
+   "slug": "asq-cssgb",
+   "name": "ASQ Certified Six Sigma Green Belt (CSSGB)",
+   "short": "CSSGB",
+   "category": "engineering-design",
+   "group": "Manufacturing & Systems Engineering",
+   "body": "American Society for Quality (ASQ)",
+   "bodyUrl": "https://asq.org",
+   "type": "Certification",
+   "aka": [
+    "CSSGB"
+   ],
+   "blurb": "Credential for supporting Six Sigma projects using DMAIC and basic statistical tools."
+  },
+  {
+   "slug": "aee-beap",
+   "name": "AEE Building Energy Assessment Professional (BEAP)",
+   "short": "BEAP",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Association of Energy Engineers (AEE)",
+   "bodyUrl": "https://www.aeecenter.org",
+   "type": "Certification",
+   "aka": [
+    "BEAP"
+   ],
+   "blurb": "Credential for conducting whole-building energy assessments and recommending efficiency measures."
+  },
+  {
+   "slug": "aee-bemp",
+   "name": "AEE Building Energy Modeling Professional (BEMP)",
+   "short": "BEMP",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Association of Energy Engineers (AEE)",
+   "bodyUrl": "https://www.aeecenter.org",
+   "type": "Certification",
+   "aka": [
+    "BEMP"
+   ],
+   "blurb": "Credential for developing and analysing building energy models for design and retrofit."
+  },
+  {
+   "slug": "aee-cbcp",
+   "name": "AEE Certified Building Commissioning Professional (CBCP)",
+   "short": "CBCP",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Association of Energy Engineers (AEE)",
+   "bodyUrl": "https://www.aeecenter.org",
+   "type": "Certification",
+   "aka": [
+    "CBCP"
+   ],
+   "blurb": "Credential for commissioning new and existing buildings to verify performance and systems."
+  },
+  {
+   "slug": "aee-cep",
+   "name": "AEE Certified Energy Procurement Professional (CEP)",
+   "short": "CEP",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Association of Energy Engineers (AEE)",
+   "bodyUrl": "https://www.aeecenter.org",
+   "type": "Certification",
+   "aka": [
+    "CEP"
+   ],
+   "blurb": "Credential for procuring energy, managing supply contracts and mitigating price risk."
+  },
+  {
+   "slug": "aee-cmvp",
+   "name": "AEE Certified Measurement & Verification Professional (CMVP)",
+   "short": "CMVP",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Association of Energy Engineers (AEE)",
+   "bodyUrl": "https://www.aeecenter.org",
+   "type": "Certification",
+   "aka": [
+    "CMVP"
+   ],
+   "blurb": "Credential for planning and conducting M&V of energy savings per the IPMVP standard."
+  },
+  {
+   "slug": "aee-eep",
+   "name": "AEE Energy Efficiency Practitioner (EEP)",
+   "short": "EEP",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Association of Energy Engineers (AEE)",
+   "bodyUrl": "https://www.aeecenter.org",
+   "type": "Certification",
+   "aka": [
+    "EEP"
+   ],
+   "blurb": "Credential covering energy efficiency fundamentals, auditing and program implementation."
+  },
+  {
+   "slug": "aee-rep",
+   "name": "AEE Renewable Energy Professional (REP)",
+   "short": "REP",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Association of Energy Engineers (AEE)",
+   "bodyUrl": "https://www.aeecenter.org",
+   "type": "Certification",
+   "aka": [
+    "REP"
+   ],
+   "blurb": "Credential covering renewable energy technologies, feasibility and project implementation."
+  },
+  {
+   "slug": "gpro-carpentry",
+   "name": "GPRO Carpentry",
+   "short": "GPRO Carp",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Urban Green Council",
+   "bodyUrl": "https://www.urbangreencouncil.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Trades-specific training on sustainable carpentry and interior finishes installation."
+  },
+  {
+   "slug": "gpro-electrical",
+   "name": "GPRO Electrical",
+   "short": "GPRO Elec",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Urban Green Council",
+   "bodyUrl": "https://www.urbangreencouncil.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Trades-specific training on green electrical and lighting installation practices."
+  },
+  {
+   "slug": "gpro-exterior",
+   "name": "GPRO Exterior Building Envelope",
+   "short": "GPRO Ext",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Urban Green Council",
+   "bodyUrl": "https://www.urbangreencouncil.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Trades-specific training on green exterior envelope, insulation and air-sealing practices."
+  },
+  {
+   "slug": "gpro-fundamentals",
+   "name": "GPRO Fundamentals of Building Green",
+   "short": "GPRO Fund",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Urban Green Council",
+   "bodyUrl": "https://www.urbangreencouncil.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Foundational green building training for construction and operations professionals."
+  },
+  {
+   "slug": "gpro-mechanical",
+   "name": "GPRO Mechanical",
+   "short": "GPRO Mech",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Urban Green Council",
+   "bodyUrl": "https://www.urbangreencouncil.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Trades-specific training on green mechanical, HVAC and controls installation practices."
+  },
+  {
+   "slug": "gpro-operations",
+   "name": "GPRO Operations + Maintenance",
+   "short": "GPRO O+M",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Urban Green Council",
+   "bodyUrl": "https://www.urbangreencouncil.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Training on operating and maintaining buildings to sustain green performance."
+  },
+  {
+   "slug": "gpro-plumbing",
+   "name": "GPRO Plumbing",
+   "short": "GPRO Plumb",
+   "category": "engineering-design",
+   "group": "Green Building & Energy",
+   "body": "Urban Green Council",
+   "bodyUrl": "https://www.urbangreencouncil.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Trades-specific training on green plumbing and water-efficiency installation practices."
+  }
+ ]
+}

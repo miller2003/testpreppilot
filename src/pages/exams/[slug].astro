@@ -1,0 +1,1207 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
+import DepthSections from '../../components/DepthSections.astro';
+import AuthorByline from '../../components/AuthorByline.astro';
+import { depthFor, depthSections } from '../../data/examCatalog/examDepth.mjs';
+import {
+  allExams,
+  getExamDetail,
+  getExamsByCategory,
+  categoryById
+} from '../../data/examCatalog/index.mjs';
+
+export function getStaticPaths() {
+  return allExams
+    .filter((e) => e.status === 'stub')
+    .map((exam) => ({ params: { slug: exam.slug }, props: { exam } }));
+}
+
+const { exam } = Astro.props;
+const detail = getExamDetail(exam.slug) || { dossier: null, compact: null, peers: [], memberStates: [] };
+const { dossier, compact, compactNote, peers, memberStates, offeringCount } = detail;
+const { record = null, program = null, siblings = [], relatedResolved = [] } = detail;
+
+const cat = categoryById[exam.category];
+const accentVar =
+  cat?.color === 'emerald' ? 'var(--accent-mint)'
+  : cat?.color === 'ink' ? 'var(--ink)'
+  : `var(--accent-${cat?.color})`;
+
+const isState = !!exam.stateCode;
+const scopeLabel = isState ? `${exam.stateName} (${exam.stateCode})` : 'National / Multi-state';
+
+// Four page modes:
+//   'researched'  → state dossier, this jurisdiction issues the credential
+//   'not-offered' → state dossier, this jurisdiction does NOT issue it (honest page)
+//   'national'    → researched national credential (rich, gold-standard layout)
+//   'placeholder' → nothing researched yet
+const mode = dossier
+  ? exam.offered === false
+    ? 'not-offered'
+    : 'researched'
+  : record
+    ? 'national'
+    : 'placeholder';
+
+const facts = exam.facts || null;
+
+// Only pages with verified substance are indexable. A national record has to
+// carry a real body of content before we let search engines at it — a thin
+// stub competing for a high-volume query does more harm than no page at all.
+const indexable = mode !== 'placeholder';
+
+// ── national-mode view models ───────────────────────────────────────
+const meta = record?.examMeta || null;
+const topics = record?.topics || [];
+const essentials = record?.examEssentials || [];
+const costs = record?.costBreakdown || null;
+const natTimeline = record?.timeline || [];
+const natFaqs = [...(record?.faqs || []), ...(program?.orgFaqs || [])];
+const regSteps = program?.registrationSteps || [];
+
+// Body-level policies only worth a section if at least one is populated.
+const policies = program
+  ? [
+      ['Proctoring & delivery', program.proctoring],
+      ['Retake policy', program.retakePolicy],
+      ['Score reporting', program.scoreReporting],
+      ['Recertification', program.recertification],
+      ['Refunds & rescheduling', program.refundPolicy]
+    ].filter(([, v]) => v)
+  : [];
+
+const natComparison = program?.comparison || null;
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Exams', href: '/exams' },
+  { label: cat?.name || 'Exams', href: `/exams#${exam.category}` },
+  { label: exam.name, href: `/exams/${exam.slug}` }
+];
+
+const related = getExamsByCategory(exam.category)
+  .filter((e) => e.slug !== exam.slug && e.status === 'stub' && e.stateCode === exam.stateCode)
+  .slice(0, 8);
+
+const peerSample = peers.slice(0, 24);
+
+const buildingBlocks = [
+  { t: 'Eligibility & Requirements', d: 'Education, experience and prerequisites you need before you can sit.' },
+  { t: 'The Exam in Detail', d: 'Question counts, time limits, pass marks, format and content outline.' },
+  { t: 'Costs & Timeline', d: 'Fees, study windows and how long the whole path typically takes.' },
+  { t: 'Approved Providers', d: 'Vetted prep schools and how their affiliate offers compare.' },
+  { t: 'Your Step-by-Step Route', d: 'A plain-English walk through from today to licensed.' },
+  { t: 'FAQ', d: 'The questions real candidates ask, answered from primary sources.' }
+];
+
+function clampMeta(text) {
+  const s = String(text || '').replace(/\s+/g, ' ').trim();
+  if (s.length <= 158) return s;
+  const cut = s.slice(0, 155);
+  return `${cut.slice(0, cut.lastIndexOf(' '))}…`;
+}
+
+const metaDescription =
+  mode === 'not-offered'
+    ? `${exam.stateName} does not issue a state-level ${dossier.name.toLowerCase()}. Here is what applies instead, plus the ${offeringCount} states that do license it.`
+    : mode === 'researched'
+      ? `${exam.name}: requirements, exam format, fees and timeline. Issued by ${facts?.agency || dossier.defaultAgency}.`
+      : mode === 'national'
+        ? clampMeta(
+            record.quickAnswer?.summary ||
+              `${exam.name}: format, fees, topic weights, eligibility and how to register.`
+          )
+        : exam.blurb;
+
+const canonicalUrl = new URL(`/exams/${exam.slug}`, Astro.site || 'https://testpreppilot.com').toString();
+
+const schemaFaqs =
+  mode === 'researched' ? dossier?.faqs || [] : mode === 'national' ? natFaqs : [];
+
+const faqSchema = schemaFaqs.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: schemaFaqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a }
+      }))
+    }
+  : null;
+
+// Shared depth layer — the eight deep-dive sections plus the named reviewer.
+// Only national pages carry it; state dossiers and placeholders are unaffected.
+const depth = mode === 'national' ? depthFor(exam.slug) : null;
+const depthNav = depthSections(depth);
+
+// A national credential is a real-world certification, so describe it as one
+// rather than leaving search engines to infer it from an FAQ block alone.
+const credentialSchema =
+  mode === 'national'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'EducationalOccupationalCredential',
+        name: exam.name,
+        description: record.description || exam.blurb,
+        url: canonicalUrl,
+        credentialCategory: exam.type,
+        ...(program?.body || exam.body
+          ? {
+              recognizedBy: {
+                '@type': 'Organization',
+                name: program?.body || exam.body,
+                ...(program?.bodyUrl || exam.bodyUrl ? { url: program?.bodyUrl || exam.bodyUrl } : {})
+              }
+            }
+          : {}),
+        ...(record.prerequisites ? { competencyRequired: record.prerequisites } : {})
+      }
+    : null;
+---
+
+<BaseLayout
+  title={`${exam.name} — Requirements, Exam & Costs`}
+  description={metaDescription}
+  canonical={canonicalUrl}
+  noindex={!indexable}
+>
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  {credentialSchema && <script type="application/ld+json" set:html={JSON.stringify(credentialSchema)} />}
+
+  <header class="eg-hero" style={`--accent:${accentVar}`}>
+    <div class="container">
+      <BreadcrumbNav items={breadcrumbItems} />
+      <p class="eyebrow">{cat?.name || exam.category} • {exam.type}</p>
+      <h1>{exam.name}</h1>
+      <p class="lede">{exam.blurb}</p>
+      <AuthorByline author={depth?.author} lastReviewed={depth?.lastReviewed} placement="hero" />
+
+      {mode === 'researched' && (
+        <div class="eg-badges">
+          <span class="eg-badge eg-badge-ok">Verified against official sources</span>
+          {facts?.compactMember && compact && (
+            <span class="eg-badge eg-badge-compact">{compact.name} member</span>
+          )}
+          {facts?.confidence === 'medium' && (
+            <span class="eg-badge eg-badge-warn">Fees may change — confirm with the board</span>
+          )}
+        </div>
+      )}
+      {mode === 'not-offered' && (
+        <div class="eg-badges">
+          <span class="eg-badge eg-badge-none">No state-level license in {exam.stateName}</span>
+        </div>
+      )}
+      {mode === 'national' && (
+        <div class="eg-badges">
+          <span class="eg-badge eg-badge-ok">Verified against {program?.body || exam.body} sources</span>
+          {record.difficulty && <span class="eg-badge eg-badge-plain">{record.difficulty}</span>}
+          {record.confidence === 'medium' && (
+            <span class="eg-badge eg-badge-warn">Fees change — confirm before you book</span>
+          )}
+        </div>
+      )}
+
+      {mode === 'national' ? (
+        <div class="eg-factstrip">
+          <div class="eg-fact">
+            <span class="label">Awarded by</span>
+            <span class="value">{program?.body || exam.body || '—'}</span>
+          </div>
+          <div class="eg-fact">
+            <span class="label">Exam fee</span>
+            <span class="value">{meta?.fee || record.cost || '—'}</span>
+          </div>
+          <div class="eg-fact">
+            <span class="label">Length</span>
+            <span class="value">{meta?.time || '—'}</span>
+          </div>
+          <div class="eg-fact">
+            <span class="label">Pass mark</span>
+            <span class="value">{meta?.pass || '—'}</span>
+          </div>
+        </div>
+      ) : (
+        <div class="eg-factstrip">
+          <div class="eg-fact">
+            <span class="label">{mode === 'not-offered' ? 'Status' : 'Issuing agency'}</span>
+            <span class="value">
+              {mode === 'not-offered' ? 'Not state-licensed' : facts?.agency || dossier?.defaultAgency || exam.body || '—'}
+            </span>
+          </div>
+          <div class="eg-fact">
+            <span class="label">Credential type</span>
+            <span class="value">{exam.type}</span>
+          </div>
+          <div class="eg-fact">
+            <span class="label">Scope</span>
+            <span class="value">{scopeLabel}</span>
+          </div>
+          {mode === 'researched' && facts?.fee ? (
+            <div class="eg-fact">
+              <span class="label">State fees</span>
+              <span class="value">{facts.fee}</span>
+            </div>
+          ) : (
+            <div class="eg-fact">
+              <span class="label">Profession</span>
+              <span class="value">{cat?.name}</span>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  </header>
+
+  <div class="container two-column-content">
+    <aside class="sidebar">
+      <div class="sticky-nav">
+        <h3>On this page</h3>
+        <nav>
+          <ul>
+            {mode === 'national' && record.quickAnswer && <li><a href="#quick">Quick answer</a></li>}
+            <li><a href="#overview">Overview</a></li>
+            {mode === 'not-offered' && <li><a href="#instead">What applies instead</a></li>}
+            {(mode === 'researched' || (mode === 'national' && (record.prerequisites || record.eligibility))) && (
+              <li><a href="#eligibility">Eligibility</a></li>
+            )}
+            {(mode === 'researched' || (mode === 'national' && meta)) && <li><a href="#exam">The exam</a></li>}
+            {mode === 'national' && topics.length > 0 && <li><a href="#topics">What is tested</a></li>}
+            {(mode === 'researched' || (mode === 'national' && (costs || natTimeline.length))) && (
+              <li><a href="#costs">Costs & timeline</a></li>
+            )}
+            {mode === 'researched' && <li><a href="#route">Step-by-step</a></li>}
+            {mode === 'national' && regSteps.length > 0 && <li><a href="#register">How to register</a></li>}
+            {mode === 'national' && policies.length > 0 && <li><a href="#policies">Rules & renewal</a></li>}
+            {mode === 'national' && natComparison && <li><a href="#compare">How it compares</a></li>}
+            {depthNav.map((d) => <li><a href={`#${d.id}`}>{d.label}</a></li>)}
+            {mode === 'placeholder' && <li><a href="#building">What we're building</a></li>}
+            {compact && <li><a href="#reciprocity">Cross-state validity</a></li>}
+            <li><a href="#facts">At a glance</a></li>
+            {mode === 'researched' && dossier?.faqs?.length > 0 && <li><a href="#faq">FAQ</a></li>}
+            {mode === 'national' && natFaqs.length > 0 && <li><a href="#faq">FAQ</a></li>}
+            {mode === 'national' && siblings.length > 0 && <li><a href="#ladder">Others from this body</a></li>}
+            {peerSample.length > 0 && <li><a href="#otherstates">Other states</a></li>}
+            <li><a href="#sources">Sources</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="main-article">
+      {/* ── NATIONAL: quick answer ──────────────────────────── */}
+      {mode === 'national' && record.quickAnswer && (
+        <section id="quick" class="eg-section eg-quickblock">
+          <p class="eg-kicker">The short version</p>
+          <h2>Quick answer</h2>
+          <p class="eg-quicksummary">{record.quickAnswer.summary}</p>
+          {record.quickAnswer.advantages.length > 0 && (
+            <ul class="eg-advantages">
+              {record.quickAnswer.advantages.map((a) => (
+                <li>{a}</li>
+              ))}
+            </ul>
+          )}
+        </section>
+      )}
+
+      {/* ── OVERVIEW ─────────────────────────────────────────── */}
+      <section id="overview" class="eg-section">
+        <p class="eg-kicker">What is it?</p>
+        <h2>Overview</h2>
+
+        {mode === 'national' && (
+          <>
+            {record.tagline && <p class="eg-tagline">{record.tagline}</p>}
+            <p class="eg-lead">{record.description}</p>
+            {program?.about && (
+              <div class="eg-callout">
+                <strong>About {program.body}:</strong> {program.about}
+              </div>
+            )}
+            {record.roadmap.length > 0 && (
+              <>
+                <h4 class="eg-subhead">The path in brief</h4>
+                <ol class="eg-roadmap">
+                  {record.roadmap.map((r) => (
+                    <li>{r}</li>
+                  ))}
+                </ol>
+              </>
+            )}
+          </>
+        )}
+
+        {mode === 'placeholder' && (
+          <>
+            <p class="eg-tagline">{exam.blurb}</p>
+            <div class="eg-callout eg-progress">
+              <strong>Full guide in progress.</strong> Our editorial team is researching the official requirements for
+              this credential right now. Every section below will be filled with verified, source-linked detail.
+              Meanwhile, <a href="/exams">browse the full directory</a>.
+            </div>
+          </>
+        )}
+
+        {mode === 'not-offered' && (
+          <>
+            <p class="eg-tagline">
+              {exam.stateName} does not issue a state-level {dossier.name.toLowerCase()}.
+            </p>
+            <div class="eg-callout eg-callout-none">
+              <strong>Straight answer:</strong> there is no {exam.stateName} state licensing board that issues this
+              credential. Of the 51 US jurisdictions, <strong>{offeringCount}</strong> license it at state level and{' '}
+              <strong>{51 - offeringCount}</strong> do not. That does not always mean the work is unregulated —
+              read the next section before you assume you need nothing.
+            </div>
+            <p class="eg-body">{dossier.overview}</p>
+          </>
+        )}
+
+        {mode === 'researched' && (
+          <>
+            <p class="eg-body">{dossier.overview}</p>
+            {facts?.stateNote && (
+              <div class="eg-callout eg-callout-state">
+                <strong>{exam.stateName} specifics:</strong> {facts.stateNote}
+              </div>
+            )}
+          </>
+        )}
+      </section>
+
+      {/* ── NOT OFFERED: what applies instead ───────────────── */}
+      {mode === 'not-offered' && (
+        <section id="instead" class="eg-section eg-section-cream">
+          <p class="eg-kicker">Your options</p>
+          <h2>What applies in {exam.stateName} instead</h2>
+          <ul class="eg-checklist">
+            <li>
+              <strong>Check city and county rules first.</strong> Where a state declines to license, the requirement
+              often moves down to municipal level — a business licence, a bond, or a local permit.
+            </li>
+            <li>
+              <strong>Voluntary certification still carries weight.</strong> Clients, insurers and franchisors
+              frequently ask for the national credential even when {exam.stateName} law does not.
+            </li>
+            <li>
+              <strong>You may need it to work across the border.</strong> If you take work in one of the{' '}
+              {offeringCount} licensing states, their rules apply to you — not {exam.stateName}'s.
+            </li>
+            {compact && (
+              <li>
+                <strong>Portability:</strong> {compactNote}
+              </li>
+            )}
+          </ul>
+          <p class="eg-body">{dossier.eligibility}</p>
+        </section>
+      )}
+
+      {/* ── RESEARCHED: eligibility ─────────────────────────── */}
+      {mode === 'researched' && (
+        <section id="eligibility" class="eg-section eg-section-cream">
+          <p class="eg-kicker">Can you sit?</p>
+          <h2>Eligibility & prerequisites</h2>
+          <p class="eg-body">{dossier.eligibility}</p>
+          <div class="eg-splitcards">
+            <div class="eg-minicard">
+              <h4>Prerequisites</h4>
+              <p>{dossier.prerequisites}</p>
+            </div>
+            <div class="eg-minicard">
+              <h4>Required education</h4>
+              <p><strong>{dossier.education.hours}</strong></p>
+              <p>{dossier.education.note}</p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── RESEARCHED: the exam ────────────────────────────── */}
+      {mode === 'researched' && (
+        <section id="exam" class="eg-section">
+          <p class="eg-kicker">The test itself</p>
+          <h2>The exam in detail</h2>
+          <div class="eg-tablewrap">
+            <table class="eg-table">
+              <tbody>
+                <tr><th scope="row">Administered by</th><td>{dossier.exam.admin}</td></tr>
+                <tr><th scope="row">Questions</th><td>{dossier.exam.questions}</td></tr>
+                <tr><th scope="row">Time limit</th><td>{dossier.exam.time}</td></tr>
+                <tr><th scope="row">Pass mark</th><td>{dossier.exam.pass}</td></tr>
+                <tr><th scope="row">Exam fee</th><td>{dossier.exam.fee}</td></tr>
+                <tr><th scope="row">Format</th><td>{dossier.exam.format}</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+
+      {/* ── RESEARCHED: costs & timeline ────────────────────── */}
+      {mode === 'researched' && (
+        <section id="costs" class="eg-section eg-section-cream">
+          <p class="eg-kicker">Money & time</p>
+          <h2>What it costs and how long it takes</h2>
+          <div class="eg-twocol">
+            <div>
+              <h4 class="eg-subhead">Cost breakdown</h4>
+              <div class="eg-tablewrap">
+                <table class="eg-table eg-table-tight">
+                  <tbody>
+                    {dossier.costBreakdown.items.map((c) => (
+                      <tr><th scope="row">{c.item}</th><td>{c.fee}</td></tr>
+                    ))}
+                    <tr class="eg-total"><th scope="row">Typical total</th><td>{dossier.costBreakdown.total}</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              {facts?.fee && (
+                <p class="eg-note">
+                  {exam.stateName} state fees specifically: <strong>{facts.fee}</strong>
+                </p>
+              )}
+            </div>
+            <div>
+              <h4 class="eg-subhead">Timeline</h4>
+              <ol class="eg-timeline">
+                {dossier.timeline.map((t) => (
+                  <li>
+                    <span class="eg-tl-stage">{t.stage}</span>
+                    <span class="eg-tl-dur">{t.duration}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── RESEARCHED: step-by-step route ──────────────────── */}
+      {mode === 'researched' && (
+        <section id="route" class="eg-section">
+          <p class="eg-kicker">The path</p>
+          <h2>Your step-by-step route in {exam.stateName}</h2>
+          <ol class="eg-steps">
+            {dossier.route.map((s, i) => (
+              <li>
+                <span class="eg-step-num">{i + 1}</span>
+                <div>
+                  <h4>{s.title}</h4>
+                  <p>{s.description}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+          <div class="eg-callout">
+            <strong>Finding an approved provider:</strong> {dossier.providersNote}
+          </div>
+        </section>
+      )}
+
+      {/* ── NATIONAL: eligibility ───────────────────────────── */}
+      {mode === 'national' && (record.prerequisites || record.eligibility) && (
+        <section id="eligibility" class="eg-section">
+          <p class="eg-kicker">Before you book</p>
+          <h2>Who can sit this exam</h2>
+          {record.eligibility && <p class="eg-lead">{record.eligibility}</p>}
+          {record.prerequisites && (
+            <div class="eg-callout">
+              <strong>Prerequisites:</strong> {record.prerequisites}
+            </div>
+          )}
+          {record.audience && (
+            <p class="eg-note"><strong>Who it is for:</strong> {record.audience}</p>
+          )}
+        </section>
+      )}
+
+      {/* ── NATIONAL: the exam ──────────────────────────────── */}
+      {mode === 'national' && meta && (
+        <section id="exam" class="eg-section">
+          <p class="eg-kicker">The test itself</p>
+          <h2>The exam in detail</h2>
+          <div class="eg-tablewrap">
+            <table class="eg-table">
+              <tbody>
+                {meta.admin && <tr><th scope="row">Administered by</th><td>{meta.admin}</td></tr>}
+                {meta.questions && <tr><th scope="row">Questions</th><td>{meta.questions}</td></tr>}
+                {meta.time && <tr><th scope="row">Time limit</th><td>{meta.time}</td></tr>}
+                {meta.pass && <tr><th scope="row">Pass mark</th><td>{meta.pass}</td></tr>}
+                {meta.fee && <tr><th scope="row">Exam fee</th><td>{meta.fee}</td></tr>}
+                {meta.format && <tr><th scope="row">Format</th><td>{meta.format}</td></tr>}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+
+      {/* ── NATIONAL: topic weights ─────────────────────────── */}
+      {mode === 'national' && topics.length > 0 && (
+        <section id="topics" class="eg-section eg-section-cream">
+          <p class="eg-kicker">Content outline</p>
+          <h2>What is tested, and how heavily</h2>
+          <p class="eg-lead">
+            Weightings come from the official exam outline. Study time is best allocated in roughly
+            these proportions rather than evenly across domains.
+          </p>
+          <ul class="eg-topics">
+            {topics.map((t) => (
+              <li>
+                <div class="eg-topic-head">
+                  <span class="eg-topic-name">{t.name}</span>
+                  {t.weight && <span class="eg-topic-weight">{t.weight}</span>}
+                </div>
+                {t.weight && /^\d/.test(t.weight) && (
+                  <div class="eg-topic-bar">
+                    <span style={`width:${Math.min(100, parseFloat(t.weight))}%`}></span>
+                  </div>
+                )}
+                {t.note && <p class="eg-topic-note">{t.note}</p>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* ── NATIONAL: costs & timeline ──────────────────────── */}
+      {mode === 'national' && (costs || natTimeline.length > 0) && (
+        <section id="costs" class="eg-section">
+          <p class="eg-kicker">Money & time</p>
+          <h2>What it costs and how long it takes</h2>
+          <div class="eg-twocol">
+            {costs && (
+              <div>
+                <h4 class="eg-subhead">Cost breakdown</h4>
+                <div class="eg-tablewrap">
+                  <table class="eg-table eg-table-tight">
+                    <tbody>
+                      {costs.items.map((c) => (
+                        <tr><th scope="row">{c.item}</th><td>{c.fee}</td></tr>
+                      ))}
+                      {costs.total && (
+                        <tr class="eg-total"><th scope="row">Typical total</th><td>{costs.total}</td></tr>
+                      )}
+                    </tbody>
+                  </table>
+                </div>
+                {costs.footnote && <p class="eg-note">{costs.footnote}</p>}
+              </div>
+            )}
+            {natTimeline.length > 0 && (
+              <div>
+                <h4 class="eg-subhead">Timeline</h4>
+                <ol class="eg-timeline">
+                  {natTimeline.map((t) => (
+                    <li>
+                      <span class="eg-tl-stage">{t.stage}</span>
+                      <span class="eg-tl-dur">{t.duration}</span>
+                    </li>
+                  ))}
+                </ol>
+                {record.time && <p class="eg-note"><strong>Typical prep:</strong> {record.time}</p>}
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
+      {/* ── NATIONAL: registration ──────────────────────────── */}
+      {mode === 'national' && regSteps.length > 0 && (
+        <section id="register" class="eg-section eg-section-cream">
+          <p class="eg-kicker">The path</p>
+          <h2>How to register, step by step</h2>
+          <ol class="eg-steps">
+            {regSteps.map((s, i) => (
+              <li>
+                <span class="eg-step-num">{i + 1}</span>
+                <div>
+                  <h4>{s.title}{s.duration && <span class="eg-step-dur">{s.duration}</span>}</h4>
+                  {s.description && <p>{s.description}</p>}
+                  {s.subSteps.length > 0 && (
+                    <ul class="eg-substeps">
+                      {s.subSteps.map((ss) => <li>{ss}</li>)}
+                    </ul>
+                  )}
+                  {s.note && <p class="eg-step-note">{s.note}</p>}
+                </div>
+              </li>
+            ))}
+          </ol>
+          {program?.providersNote && (
+            <div class="eg-callout">
+              <strong>Preparing for it:</strong> {program.providersNote}
+            </div>
+          )}
+        </section>
+      )}
+
+      {/* ── NATIONAL: policies ──────────────────────────────── */}
+      {mode === 'national' && policies.length > 0 && (
+        <section id="policies" class="eg-section">
+          <p class="eg-kicker">The fine print</p>
+          <h2>Rules, retakes and renewal</h2>
+          <dl class="eg-policies">
+            {policies.map(([label, value]) => (
+              <div class="eg-policy">
+                <dt>{label}</dt>
+                <dd>{value}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
+
+      {/* ── NATIONAL: comparison ────────────────────────────── */}
+      {mode === 'national' && natComparison && (
+        <section id="compare" class="eg-section eg-section-cream">
+          <p class="eg-kicker">Context</p>
+          <h2>{natComparison.title}</h2>
+          <div class="eg-tablewrap">
+            <table class="eg-table eg-table-compare">
+              {natComparison.columns.length > 0 && (
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    {natComparison.columns.map((c) => <th scope="col">{c}</th>)}
+                  </tr>
+                </thead>
+              )}
+              <tbody>
+                {natComparison.rows.map((r) => (
+                  <tr>
+                    <th scope="row">{r.label}</th>
+                    {r.values.map((v) => <td>{v}</td>)}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {natComparison.footnote && (
+            <p class="eg-table-footnote">{natComparison.footnote}</p>
+          )}
+        </section>
+      )}
+
+      {/* ── NATIONAL: deep-dive sections (shared depth layer) ─
+           salary, pass rates, study plan, strategies, resources,
+           mistakes, question types, exam day ─────────────────── */}
+      {depth && <DepthSections depth={depth} variant="eg" />}
+
+      {/* ── PLACEHOLDER: what we're building ────────────────── */}
+      {mode === 'placeholder' && (
+        <section id="building" class="eg-section eg-section-cream">
+          <p class="eg-kicker">The plan</p>
+          <h2>What this guide will cover</h2>
+          <p class="eg-lead">
+            Every TestPrepPilot guide follows the same rigorous structure. Here is what we are building for
+            <em>{exam.name}</em>:
+          </p>
+          <div class="building-grid">
+            {buildingBlocks.map((b) => (
+              <div class="building-card">
+                <span class="building-dot"></span>
+                <h4>{b.t}</h4>
+                <p>{b.d}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── RECIPROCITY / COMPACT ───────────────────────────── */}
+      {compact && (
+        <section id="reciprocity" class="eg-section eg-section-cream">
+          <p class="eg-kicker">One licence, many states?</p>
+          <h2>Cross-state validity</h2>
+          <div class={`eg-compact-status ${facts?.compactMember ? 'is-member' : 'not-member'}`}>
+            <span class="eg-compact-dot"></span>
+            <div>
+              <strong>
+                {facts?.compactMember
+                  ? `${exam.stateName} participates in the ${compact.name}.`
+                  : `${exam.stateName} does not currently participate in the ${compact.name}.`}
+              </strong>
+              <p>{compactNote || compact.note}</p>
+            </div>
+          </div>
+          {memberStates.length > 0 && (
+            <>
+              <h4 class="eg-subhead">Participating jurisdictions ({memberStates.length})</h4>
+              <p class="eg-statelist">
+                {memberStates.map((s) => s.name).join(' · ')}
+              </p>
+            </>
+          )}
+          <p class="eg-note">
+            Compact membership changes as legislatures act. Always confirm current status with{' '}
+            <a href={compact.url} target="_blank" rel="noopener noreferrer">{compact.name}</a> before relying on it.
+          </p>
+        </section>
+      )}
+
+      {/* ── AT A GLANCE ─────────────────────────────────────── */}
+      <section id="facts" class="eg-section">
+        <p class="eg-kicker">Reference</p>
+        <h2>At a glance</h2>
+        <div class="eg-tablewrap">
+          <table class="eg-table">
+            <tbody>
+              <tr><th scope="row">Credential</th><td>{exam.name}</td></tr>
+              {exam.short && <tr><th scope="row">Abbreviation</th><td>{exam.short}</td></tr>}
+              <tr><th scope="row">Type</th><td>{exam.type}</td></tr>
+              <tr><th scope="row">Profession</th><td>{cat?.name}</td></tr>
+              {exam.group && <tr><th scope="row">Specialty</th><td>{exam.group}</td></tr>}
+              {mode === 'national' ? (
+                <>
+                  <tr><th scope="row">Awarded by</th><td>{program?.body || exam.body || '—'}</td></tr>
+                  {record.difficulty && <tr><th scope="row">Difficulty</th><td>{record.difficulty}</td></tr>}
+                  {record.time && <tr><th scope="row">Typical prep time</th><td>{record.time}</td></tr>}
+                  {record.cost && <tr><th scope="row">All-in cost</th><td>{record.cost}</td></tr>}
+                  {record.salaryRange && <tr><th scope="row">Typical salary range</th><td>{record.salaryRange}</td></tr>}
+                  {essentials.map(([label, value]) => (
+                    <tr><th scope="row">{label || 'Detail'}</th><td>{value}</td></tr>
+                  ))}
+                </>
+              ) : (
+                <tr>
+                  <th scope="row">State-licensed here?</th>
+                  <td>
+                    {mode === 'not-offered'
+                      ? `No — ${exam.stateName} issues no such licence`
+                      : mode === 'researched'
+                        ? `Yes — ${facts.agency}`
+                        : '—'}
+                  </td>
+                </tr>
+              )}
+              {mode === 'researched' && facts?.fee && (
+                <tr><th scope="row">State fees</th><td>{facts.fee}</td></tr>
+              )}
+              {dossier && (
+                <tr>
+                  <th scope="row">Jurisdictions licensing it</th>
+                  <td>{offeringCount} of 51</td>
+                </tr>
+              )}
+              <tr><th scope="row">Scope</th><td>{scopeLabel}</td></tr>
+              {isState && <tr><th scope="row">Region</th><td>{exam.region}</td></tr>}
+              {exam.aka && exam.aka.length > 0 && (
+                <tr><th scope="row">Also known as</th><td>{exam.aka.join(', ')}</td></tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* ── FAQ ─────────────────────────────────────────────── */}
+      {mode === 'researched' && dossier?.faqs?.length > 0 && (
+        <section id="faq" class="eg-section eg-section-cream">
+          <p class="eg-kicker">Real questions</p>
+          <h2>Frequently asked</h2>
+          <div class="eg-faqs">
+            {dossier.faqs.map((f) => (
+              <details class="eg-faq">
+                <summary>{f.q}</summary>
+                <p>{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── NATIONAL: FAQ ───────────────────────────────────── */}
+      {mode === 'national' && natFaqs.length > 0 && (
+        <section id="faq" class="eg-section eg-section-cream">
+          <p class="eg-kicker">Real questions</p>
+          <h2>Frequently asked</h2>
+          <div class="eg-faqs">
+            {natFaqs.map((f) => (
+              <details class="eg-faq">
+                <summary>{f.q}</summary>
+                <p>{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── NATIONAL: summary ───────────────────────────────── */}
+      {mode === 'national' && record.summaryPoints.length > 0 && (
+        <section id="summary" class="eg-section">
+          <p class="eg-kicker">In short</p>
+          <h2>The bottom line</h2>
+          <ul class="eg-summary">
+            {record.summaryPoints.map((s) => <li>{s}</li>)}
+          </ul>
+        </section>
+      )}
+
+      {/* ── NATIONAL: same-body ladder ──────────────────────── */}
+      {mode === 'national' && siblings.length > 0 && (
+        <section id="ladder" class="eg-section eg-section-cream">
+          <p class="eg-kicker">Same awarding body</p>
+          <h2>Other {program?.body || exam.body} credentials</h2>
+          <div class="eg-statechips">
+            {siblings.map((s) => (
+              <a href={s.href} class="eg-statechip">{s.short || s.name}</a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── NATIONAL: hand-picked related ───────────────────── */}
+      {mode === 'national' && relatedResolved.length > 0 && (
+        <section id="alternatives" class="eg-section">
+          <p class="eg-kicker">Worth comparing</p>
+          <h2>Often considered alongside this</h2>
+          <ul class="related-list">
+            {relatedResolved.map((r) => (
+              <li>
+                <a href={r.href}>
+                  <span class="related-name">{r.name}</span>
+                  <span class="related-meta">{r.body || r.type}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* ── OTHER STATES ────────────────────────────────────── */}
+      {peerSample.length > 0 && (
+        <section id="otherstates" class="eg-section">
+          <p class="eg-kicker">Same credential elsewhere</p>
+          <h2>{dossier.name} in other states</h2>
+          <p class="eg-lead">
+            Requirements, fees and issuing agencies differ in every jurisdiction. Pick a state to see its rules.
+          </p>
+          <div class="eg-statechips">
+            {peerSample.map((p) => (
+              <a href={p.href} class="eg-statechip">{p.stateName}</a>
+            ))}
+          </div>
+          {peers.length > peerSample.length && (
+            <p class="eg-note">
+              <a href={`/exams#${exam.category}`}>See all {peers.length} states &rarr;</a>
+            </p>
+          )}
+        </section>
+      )}
+
+      {/* ── RELATED ─────────────────────────────────────────── */}
+      {related.length > 0 && (
+        <section id="related" class="eg-section eg-section-cream">
+          <p class="eg-kicker">Keep exploring</p>
+          <h2>Other {cat?.name} credentials{isState ? ` in ${exam.stateName}` : ''}</h2>
+          <ul class="related-list">
+            {related.map((r) => (
+              <li>
+                <a href={r.href}>
+                  <span class="related-name">{r.name}</span>
+                  <span class="related-meta">{r.type}{r.stateName ? ` · ${r.stateName}` : ''}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* ── SOURCES ─────────────────────────────────────────── */}
+      <section id="sources" class="eg-section">
+        <p class="eg-kicker">Trust</p>
+        <h2>Sources</h2>
+        {dossier ? (
+          <>
+            <p class="eg-lead">
+              This page is built from primary regulatory sources. Rules and fees change — verify with the
+              issuing body before you pay for anything.
+            </p>
+            <ul class="eg-sources">
+              {facts?.agencyUrl && (
+                <li>
+                  <a href={facts.agencyUrl} target="_blank" rel="noopener noreferrer">
+                    {facts.agency || dossier.defaultAgency}
+                  </a>
+                  <span class="eg-src-tag">Issuing agency</span>
+                </li>
+              )}
+              {dossier.sourceUrl && dossier.sourceUrl !== facts?.agencyUrl && (
+                <li>
+                  <a href={dossier.sourceUrl} target="_blank" rel="noopener noreferrer">
+                    National reference for {dossier.name}
+                  </a>
+                  <span class="eg-src-tag">Standards body</span>
+                </li>
+              )}
+              {compact && (
+                <li>
+                  <a href={compact.url} target="_blank" rel="noopener noreferrer">{compact.name}</a>
+                  <span class="eg-src-tag">Reciprocity</span>
+                </li>
+              )}
+            </ul>
+            <p class="eg-reviewed">
+              Research confidence: <strong>{dossier.confidence}</strong> · Last compiled {new Date().getFullYear()}
+            </p>
+          </>
+        ) : mode === 'national' ? (
+          <>
+            <p class="eg-lead">
+              Everything above is taken from the awarding body's own published material. Fees, question
+              counts and domain weights are revised regularly — check the official page before you pay.
+            </p>
+            <ul class="eg-sources">
+              {(program?.bodyUrl || exam.bodyUrl) && (
+                <li>
+                  <a href={program?.bodyUrl || exam.bodyUrl} target="_blank" rel="noopener noreferrer">
+                    {program?.body || exam.body}
+                  </a>
+                  <span class="eg-src-tag">Awarding body</span>
+                </li>
+              )}
+              {record.sourceUrl && record.sourceUrl !== (program?.bodyUrl || exam.bodyUrl) && (
+                <li>
+                  <a href={record.sourceUrl} target="_blank" rel="noopener noreferrer">
+                    Official {exam.name} exam page
+                  </a>
+                  <span class="eg-src-tag">Exam page</span>
+                </li>
+              )}
+              {program?.sourceUrl &&
+                program.sourceUrl !== record.sourceUrl &&
+                program.sourceUrl !== program.bodyUrl && (
+                  <li>
+                    <a href={program.sourceUrl} target="_blank" rel="noopener noreferrer">
+                      {program.body} certification programme
+                    </a>
+                    <span class="eg-src-tag">Programme rules</span>
+                  </li>
+                )}
+            </ul>
+            <p class="eg-reviewed">
+              Research confidence: <strong>{record.confidence}</strong> · Last reviewed{' '}
+              {depth?.lastReviewed || record.reviewed}
+            </p>
+            <AuthorByline
+              author={depth?.author}
+              reviewedBy={depth?.reviewedBy}
+              lastReviewed={depth?.lastReviewed}
+              placement="footer"
+            />
+          </>
+        ) : (
+          <>
+            <p class="eg-lead">
+              We believe in showing our work. Once published, this guide will link directly to the official
+              regulatory body and primary requirements.
+            </p>
+            {exam.bodyUrl && (
+              <a href={exam.bodyUrl} target="_blank" rel="noopener noreferrer" class="eg-sourcelink">
+                Visit {exam.body} &rarr;
+              </a>
+            )}
+            <p class="eg-reviewed">Placeholder created: {new Date().getFullYear()}</p>
+          </>
+        )}
+      </section>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+  /* Hero */
+  .eg-hero { padding: 3rem 0 2.75rem; border-bottom: 1px solid var(--line); }
+  .eg-hero .eyebrow { color: var(--accent); font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem; }
+  .eg-hero h1 { font-family: var(--font-heading); font-weight: 700; font-size: clamp(2.6rem, 5.5vw, 3.8rem); line-height: 1.15; margin: 0 0 1.25rem; }
+  .eg-hero .lede { font-size: 1.25rem; color: var(--muted); max-width: 760px; line-height: 1.7; margin: 0; }
+
+  .eg-badges { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.5rem; }
+  .eg-badge { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.4rem 0.8rem; border-radius: 999px; border: 1px solid var(--line); background: var(--paper); color: var(--muted); }
+  .eg-badge-ok { border-color: var(--accent-mint, #10b981); color: #0b7a5b; background: #ecfdf5; }
+  .eg-badge-compact { border-color: #6366f1; color: #4338ca; background: #eef2ff; }
+  .eg-badge-warn { border-color: #f59e0b; color: #92400e; background: #fffbeb; }
+  .eg-badge-none { border-color: #94a3b8; color: #475569; background: #f1f5f9; }
+
+  .eg-factstrip { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-top: 2rem; }
+  .eg-fact { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.35rem; transition: transform var(--transition), box-shadow var(--transition); }
+  .eg-fact:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+  .eg-fact .label { display: block; font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  .eg-fact .value { display: block; font-family: var(--font-heading); font-size: 1.15rem; font-weight: 600; margin-top: 0.35rem; color: var(--ink); line-height: 1.35; }
+
+  /* Two-column */
+  .two-column-content { display: grid; grid-template-columns: 230px 1fr; gap: 3.5rem; padding-top: 3rem; padding-bottom: 4rem; }
+  .sidebar { position: relative; }
+  .sticky-nav { position: sticky; top: 2rem; }
+  .sticky-nav h3 { font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--line); color: var(--ink); }
+  .sticky-nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.55rem; }
+  .sticky-nav a { color: var(--muted); text-decoration: none; transition: color var(--transition); font-size: 0.9rem; }
+  .sticky-nav a:hover { color: var(--primary); }
+
+  /* Sections */
+  .eg-section { padding: 2.75rem 0; border-top: 1px solid var(--line); }
+  .eg-section-cream { background: var(--cream); border-radius: var(--radius-lg); border-top: none; margin: 1.5rem 0; padding: 2.75rem 2.5rem; }
+  .eg-kicker { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); font-weight: 700; margin: 0 0 0.5rem; }
+  .eg-section h2 { font-family: var(--font-heading); font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.2; margin: 0 0 1.25rem; }
+  .eg-lead { color: var(--muted); line-height: 1.75; margin: 0 0 1.5rem; font-size: 1.05rem; }
+  .eg-lead em { color: var(--ink); font-style: italic; }
+  .eg-body { color: var(--ink); line-height: 1.8; font-size: 1.05rem; margin: 0 0 1.4rem; }
+  .eg-tagline { font-style: italic; font-family: var(--font-heading); font-size: 1.4rem; line-height: 1.4; color: var(--ink); margin: 0 0 1.75rem; }
+  .eg-subhead { font-family: var(--font-heading); font-size: 1.15rem; margin: 1.75rem 0 0.85rem; }
+  .eg-note { font-size: 0.92rem; color: var(--muted); line-height: 1.6; margin-top: 1rem; }
+  .eg-note a { color: var(--primary); font-weight: 600; }
+
+  .eg-callout { border-left: 4px solid var(--primary); background: var(--cream); padding: 1.1rem 1.5rem; border-radius: var(--radius); line-height: 1.7; margin: 1.25rem 0; }
+  .eg-callout a { color: var(--primary); font-weight: 600; }
+  .eg-progress { border-left-color: var(--accent); }
+  .eg-callout-state { border-left-color: var(--accent); background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--accent); }
+  .eg-callout-none { border-left-color: #94a3b8; background: #f8fafc; }
+
+  /* Checklist */
+  .eg-checklist { list-style: none; padding: 0; margin: 0 0 1.5rem; display: flex; flex-direction: column; gap: 0.9rem; }
+  .eg-checklist li { position: relative; padding-left: 1.75rem; line-height: 1.7; }
+  .eg-checklist li::before { content: '→'; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+
+  /* Mini cards */
+  .eg-splitcards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 1.25rem; }
+  .eg-minicard { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.35rem 1.5rem; }
+  .eg-minicard h4 { font-family: var(--font-heading); font-size: 1.1rem; margin: 0 0 0.6rem; }
+  .eg-minicard p { color: var(--muted); line-height: 1.65; margin: 0 0 0.5rem; font-size: 0.95rem; }
+  .eg-minicard p:last-child { margin-bottom: 0; }
+  .eg-minicard strong { color: var(--ink); }
+
+  /* Tables */
+  .eg-tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
+  .eg-table { width: 100%; border-collapse: collapse; }
+  .eg-table th, .eg-table td { padding: 0.95rem 1.2rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .eg-table tbody th { font-weight: 600; width: 34%; background: var(--cream); }
+  .eg-table tbody tr:last-child th, .eg-table tbody tr:last-child td { border-bottom: none; }
+  .eg-table-tight th, .eg-table-tight td { padding: 0.7rem 1rem; font-size: 0.94rem; }
+  .eg-total th, .eg-total td { font-weight: 700; background: var(--cream); }
+
+  .eg-twocol { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: start; }
+  .eg-twocol .eg-subhead:first-child { margin-top: 0; }
+
+  /* Timeline */
+  .eg-timeline { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--line); }
+  .eg-timeline li { position: relative; padding: 0 0 1.15rem 1.35rem; }
+  .eg-timeline li::before { content: ''; position: absolute; left: -6px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+  .eg-tl-stage { display: block; font-weight: 600; color: var(--ink); }
+  .eg-tl-dur { display: block; font-family: var(--font-mono); font-size: 0.82rem; color: var(--muted); margin-top: 0.15rem; }
+
+  /* Steps */
+  .eg-steps { list-style: none; padding: 0; margin: 0 0 1.5rem; counter-reset: step; }
+  .eg-steps li { display: flex; gap: 1.1rem; padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
+  .eg-steps li:last-child { border-bottom: none; }
+  .eg-step-num { flex: 0 0 auto; width: 32px; height: 32px; border-radius: 50%; background: var(--primary); color: #fff; display: grid; place-items: center; font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; }
+  .eg-steps h4 { font-family: var(--font-heading); font-size: 1.15rem; margin: 0.25rem 0 0.45rem; }
+  .eg-steps p { color: var(--muted); line-height: 1.7; margin: 0; }
+
+  /* Compact status */
+  .eg-compact-status { display: flex; gap: 1rem; align-items: flex-start; padding: 1.25rem 1.5rem; border-radius: var(--radius); border: 1px solid var(--line); background: var(--paper); }
+  .eg-compact-status.is-member { border-color: #a5b4fc; background: #eef2ff; }
+  .eg-compact-status.not-member { border-color: var(--line); background: var(--paper); }
+  .eg-compact-dot { flex: 0 0 auto; width: 12px; height: 12px; border-radius: 50%; margin-top: 0.45rem; background: #94a3b8; }
+  .is-member .eg-compact-dot { background: #4f46e5; }
+  .eg-compact-status p { margin: 0.5rem 0 0; color: var(--muted); line-height: 1.7; }
+  .eg-statelist { color: var(--muted); line-height: 1.9; font-size: 0.95rem; margin: 0; }
+
+  /* FAQ */
+  .eg-faqs { display: flex; flex-direction: column; gap: 0.65rem; }
+  .eg-faq { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.35rem; }
+  .eg-faq summary { cursor: pointer; font-weight: 600; font-family: var(--font-heading); font-size: 1.05rem; list-style: none; }
+  .eg-faq summary::-webkit-details-marker { display: none; }
+  .eg-faq summary::after { content: '+'; float: right; color: var(--primary); font-weight: 700; }
+  .eg-faq[open] summary::after { content: '−'; }
+  .eg-faq p { color: var(--muted); line-height: 1.75; margin: 0.85rem 0 0; }
+
+  /* State chips */
+  .eg-statechips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .eg-statechip { display: inline-block; padding: 0.45rem 0.9rem; background: var(--paper); border: 1px solid var(--line); border-radius: 999px; text-decoration: none; color: var(--ink); font-size: 0.9rem; transition: all var(--transition); }
+  .eg-statechip:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-2px); }
+
+  /* Sources */
+  .eg-sources { list-style: none; padding: 0; margin: 0 0 1rem; display: flex; flex-direction: column; gap: 0.65rem; }
+  .eg-sources li { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 0.85rem 1.15rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+  .eg-sources a { color: var(--primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; word-break: break-word; }
+  .eg-src-tag { flex: 0 0 auto; font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+
+  /* Building blocks */
+  .building-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; margin-top: 0.5rem; }
+  .building-card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.3rem 1.5rem; }
+  .building-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); margin-bottom: 0.85rem; }
+  .building-card h4 { font-family: var(--font-heading); font-size: 1.2rem; margin: 0 0 0.5rem; }
+  .building-card p { color: var(--muted); font-size: 0.92rem; line-height: 1.5; margin: 0; }
+
+  /* Related */
+  .related-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.85rem; }
+  .related-list a { display: flex; flex-direction: column; gap: 0.25rem; padding: 1rem 1.25rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; color: var(--ink); transition: transform var(--transition), box-shadow var(--transition); }
+  .related-list a:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); border-color: transparent; }
+  .related-name { font-weight: 600; font-family: var(--font-body); }
+  .related-meta { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+
+  .eg-sourcelink { color: var(--primary); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+  .eg-reviewed { font-family: var(--font-mono); font-size: 0.82rem; color: var(--muted); opacity: 0.8; margin-top: 1rem; }
+
+  /* ───────── National: quick answer ───────── */
+  .eg-quickblock { border-left: 4px solid var(--primary); padding-left: 1.5rem; }
+  .eg-quicksummary { font-size: 1.13rem; line-height: 1.75; color: var(--ink); margin: 0 0 1.25rem; }
+  .eg-advantages { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.75rem; }
+  .eg-advantages li { position: relative; padding: 0.85rem 1.1rem 0.85rem 2.4rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); font-size: 0.95rem; line-height: 1.6; }
+  .eg-advantages li::before { content: '✓'; position: absolute; left: 1rem; top: 0.85rem; color: var(--accent-mint, #10b981); font-weight: 700; }
+
+  /* ───────── National: roadmap ───────── */
+  .eg-roadmap { list-style: none; counter-reset: rm; padding: 0; margin: 0 0 0.5rem; display: flex; flex-direction: column; gap: 0.7rem; }
+  .eg-roadmap li { counter-increment: rm; position: relative; padding-left: 2.5rem; line-height: 1.7; }
+  .eg-roadmap li::before { content: counter(rm); position: absolute; left: 0; top: 0.1rem; width: 1.65rem; height: 1.65rem; display: grid; place-items: center; border-radius: 50%; background: var(--primary); color: #fff; font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; }
+
+  /* ───────── National: topics & weights ───────── */
+  .eg-topics { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.15rem; }
+  .eg-topics > li { padding: 1.05rem 1.25rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+  .eg-topic-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+  .eg-topic-name { font-weight: 600; line-height: 1.45; }
+  .eg-topic-weight { flex: 0 0 auto; font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700; color: var(--primary); }
+  .eg-topic-bar { margin-top: 0.6rem; height: 6px; border-radius: 999px; background: var(--line); overflow: hidden; }
+  .eg-topic-bar > span { display: block; height: 100%; border-radius: 999px; background: var(--primary); }
+  .eg-topic-note { margin: 0.6rem 0 0; font-size: 0.89rem; line-height: 1.6; color: var(--muted); }
+
+  /* ───────── National: registration extras ───────── */
+  .eg-step-dur { margin-left: 0.65rem; font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; color: var(--muted); white-space: nowrap; }
+  .eg-substeps { list-style: none; padding: 0; margin: 0.7rem 0 0; display: flex; flex-direction: column; gap: 0.4rem; }
+  .eg-substeps li { position: relative; padding-left: 1.1rem; font-size: 0.92rem; line-height: 1.6; color: var(--muted); }
+  .eg-substeps li::before { content: ''; position: absolute; left: 0; top: 0.62rem; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+  .eg-step-note { margin: 0.75rem 0 0; padding: 0.6rem 0.9rem; border-left: 3px solid var(--accent); background: rgba(0, 0, 0, 0.025); border-radius: 0 6px 6px 0; font-size: 0.88rem; line-height: 1.6; color: var(--muted); }
+
+  /* ───────── National: policies ───────── */
+  .eg-policies { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.9rem; }
+  .eg-policy { padding: 1.05rem 1.25rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+  .eg-policy dt { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--primary); font-weight: 700; margin-bottom: 0.45rem; }
+  .eg-policy dd { margin: 0; font-size: 0.93rem; line-height: 1.65; color: var(--ink); }
+
+  /* ───────── National: comparison table ───────── */
+  .eg-table-compare th[scope='row'] { width: 22%; min-width: 150px; }
+  .eg-table-compare thead th { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .eg-table-compare td { font-size: 0.92rem; line-height: 1.6; }
+  .eg-table-footnote { margin: 0.85rem 0 0; font-size: 0.83rem; line-height: 1.65; color: var(--muted); }
+
+  /* ───────── National: bottom line ───────── */
+  .eg-summary { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.85rem; }
+  .eg-summary li { position: relative; padding-left: 1.8rem; line-height: 1.75; font-size: 1rem; }
+  .eg-summary li::before { content: '▪'; position: absolute; left: 0.25rem; top: -0.05rem; color: var(--accent); font-size: 1.1rem; }
+
+  .eg-badge-plain { border-color: var(--line); color: var(--muted); background: var(--paper); }
+
+  @media (max-width: 900px) {
+    .two-column-content { grid-template-columns: 1fr; gap: 1rem; }
+    .sticky-nav { display: none; }
+    .eg-section-cream { padding: 2rem 1.25rem; }
+    .eg-twocol { grid-template-columns: 1fr; }
+    .eg-quickblock { padding-left: 1rem; }
+    .eg-advantages, .eg-policies { grid-template-columns: 1fr; }
+    .eg-topic-head { flex-direction: column; gap: 0.25rem; }
+  }
+</style>

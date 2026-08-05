@@ -1,0 +1,451 @@
+{
+ "chunkId": "b19-p01",
+ "batch": 19,
+ "part": 1,
+ "categories": [
+  "finance-securities"
+ ],
+ "groups": [
+  "Investment & Portfolio Management",
+  "Corporate & Specialty Finance"
+ ],
+ "bodies": [
+  "CFA Institute",
+  "Professional Risk Managers International Association (PRMIA)",
+  "CMT Association",
+  "Global Association of Risk Professionals (GARP)",
+  "Association of Chartered Certified Accountants (ACCA)",
+  "Certified Equity Professional Institute, Santa Clara University",
+  "World Commerce and Contracting (WorldCC)",
+  "Chartered Alternative Investment Analyst Association",
+  "Corporate Finance Institute (CFI)",
+  "CQF Institute",
+  "FDP Institute, an affiliate of the CAIA Association",
+  "Association for Financial Professionals (AFP)",
+  "Institute of Business and Finance (IBF)",
+  "Alliance of Merger and Acquisition Advisors (AM&AA)",
+  "AICPA & CIMA",
+  "Government Finance Officers Association (GFOA)",
+  "National Investor Relations Institute (NIRI)",
+  "M&A Source"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "certificate-in-esg-investing",
+   "name": "Certificate in ESG Investing",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "CFA Institute",
+   "bodyUrl": "https://www.cfainstitute.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Single-exam certificate covering environmental, social and governance factors, engagement and ESG integration in portfolio construction."
+  },
+  {
+   "slug": "cipm-exam",
+   "name": "Certificate in Investment Performance Measurement",
+   "short": "CIPM",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "CFA Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Two-level programme on return calculation, performance attribution, risk-adjusted measures, manager selection and GIPS standards."
+  },
+  {
+   "slug": "cfa-level-1",
+   "name": "CFA Program Level I Exam",
+   "short": "CFA Level I",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "CFA Institute",
+   "bodyUrl": "https://www.cfainstitute.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "First CFA paper testing investment tools, ethics, quantitative methods, economics, financial reporting and asset class basics."
+  },
+  {
+   "slug": "cfa-level-2",
+   "name": "CFA Program Level II Exam",
+   "short": "CFA Level II",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "CFA Institute",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Second CFA paper of item-set vignettes focused on asset valuation across equity, fixed income, derivatives and alternatives."
+  },
+  {
+   "slug": "cfa-level-3",
+   "name": "CFA Program Level III Exam",
+   "short": "CFA Level III",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "CFA Institute",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Final CFA paper combining constructed response and item sets on portfolio management, wealth planning and specialised pathways."
+  },
+  {
+   "slug": "cfa-institute-climate-risk-certificate",
+   "name": "Climate Risk, Valuation and Investing Certificate",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "CFA Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Self-paced certificate with a final assessment on climate science, transition risk, scenario analysis and valuation implications."
+  },
+  {
+   "slug": "cfa-institute-private-markets-certificate",
+   "name": "Private Markets and Alternative Investments Certificate",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "CFA Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certificate programme covering private equity, private debt, real assets and infrastructure, with structure, valuation and due diligence."
+  },
+  {
+   "slug": "prmia-associate-prm",
+   "name": "Associate Professional Risk Manager Certificate",
+   "short": "Associate PRM",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "Professional Risk Managers International Association (PRMIA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Foundation certificate on risk management concepts, governance and financial instruments for non-specialists supporting risk teams."
+  },
+  {
+   "slug": "prmia-operational-risk-manager",
+   "name": "Operational Risk Manager Certificate",
+   "short": "ORM",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "Professional Risk Managers International Association (PRMIA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certificate examination covering operational risk frameworks, loss data, scenario analysis, controls and regulatory expectations."
+  },
+  {
+   "slug": "prmia-prm-designation",
+   "name": "Professional Risk Manager Designation Exams",
+   "short": "PRM",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "Professional Risk Managers International Association (PRMIA)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Multi-exam designation covering risk theory, mathematical foundations, risk management practice and professional conduct standards."
+  },
+  {
+   "slug": "cmt-level-1",
+   "name": "CMT Level I Exam",
+   "short": "CMT I",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "CMT Association",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "First technical analysis paper covering chart construction, trend analysis, indicators, market breadth and ethical standards."
+  },
+  {
+   "slug": "cmt-level-2",
+   "name": "CMT Level II Exam",
+   "short": "CMT II",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "CMT Association",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Second technical analysis paper applying theory to pattern recognition, intermarket analysis, cycles and quantitative techniques."
+  },
+  {
+   "slug": "cmt-level-3",
+   "name": "CMT Level III Exam",
+   "short": "CMT III",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "CMT Association",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Final technical analysis paper using constructed response questions on integrating analysis into portfolio and risk decisions."
+  },
+  {
+   "slug": "frm-part-1",
+   "name": "Financial Risk Manager Exam Part I",
+   "short": "FRM Part I",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "Global Association of Risk Professionals (GARP)",
+   "bodyUrl": "https://www.garp.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "First risk management paper covering foundations of risk, quantitative analysis, financial markets and valuation and risk models."
+  },
+  {
+   "slug": "frm-part-2",
+   "name": "Financial Risk Manager Exam Part II",
+   "short": "FRM Part II",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "Global Association of Risk Professionals (GARP)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Second risk management paper covering market, credit, operational, liquidity and investment risk plus current financial issues."
+  },
+  {
+   "slug": "garp-scr-certificate",
+   "name": "Sustainability and Climate Risk Certificate",
+   "short": "SCR",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "Global Association of Risk Professionals (GARP)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Single-exam certificate covering climate science, the energy transition, disclosure frameworks and climate risk measurement."
+  },
+  {
+   "slug": "acca-applied-knowledge",
+   "name": "ACCA Applied Knowledge Exams",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "Association of Chartered Certified Accountants (ACCA)",
+   "type": "Exam",
+   "aka": [
+    "Business and Technology",
+    "Management Accounting",
+    "Financial Accounting"
+   ],
+   "blurb": "First ACCA level with three papers on business and technology, management accounting and financial accounting fundamentals."
+  },
+  {
+   "slug": "acca-applied-skills",
+   "name": "ACCA Applied Skills Exams",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "Association of Chartered Certified Accountants (ACCA)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Second ACCA level with six papers spanning corporate law, performance management, taxation, reporting, audit and financial management."
+  },
+  {
+   "slug": "acca-strategic-professional",
+   "name": "ACCA Strategic Professional Exams",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "Association of Chartered Certified Accountants (ACCA)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Final ACCA level combining two essential papers with two options covering advanced audit, taxation, reporting and financial management."
+  },
+  {
+   "slug": "certified-equity-professional-level-1",
+   "name": "Certified Equity Professional Level 1",
+   "short": "CEP Level 1",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "Certified Equity Professional Institute, Santa Clara University",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "First level of the equity compensation credential covering plan types, accounting, taxation and securities law fundamentals."
+  },
+  {
+   "slug": "certified-equity-professional-level-2",
+   "name": "Certified Equity Professional Level 2",
+   "short": "CEP Level 2",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "Certified Equity Professional Institute, Santa Clara University",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Second level of the equity compensation credential, deepening accounting, tax and regulatory treatment of share-based awards."
+  },
+  {
+   "slug": "certified-equity-professional-level-3",
+   "name": "Certified Equity Professional Level 3",
+   "short": "CEP Level 3",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "Certified Equity Professional Institute, Santa Clara University",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Final level of the equity compensation credential covering complex global plans, corporate transactions and advanced compliance."
+  },
+  {
+   "slug": "worldcc-contract-management-advanced-practitioner",
+   "name": "WorldCC Contract and Commercial Management Advanced Practitioner",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "World Commerce and Contracting (WorldCC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Highest tier of the commercial contracting certification, assessed by case study on negotiation strategy and complex deal governance."
+  },
+  {
+   "slug": "worldcc-contract-management-associate",
+   "name": "WorldCC Contract and Commercial Management Associate",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "World Commerce and Contracting (WorldCC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry certification covering the contracting lifecycle, commercial terms, risk allocation and supplier relationship fundamentals."
+  },
+  {
+   "slug": "worldcc-contract-management-practitioner",
+   "name": "WorldCC Contract and Commercial Management Practitioner",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "World Commerce and Contracting (WorldCC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Second tier certification covering contract drafting, negotiation planning, performance management and commercial risk analysis."
+  },
+  {
+   "slug": "caia-level-1",
+   "name": "CAIA Level I Exam",
+   "short": "CAIA I",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "Chartered Alternative Investment Analyst Association",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "First alternative investments paper covering professional standards, real assets, hedge funds, private equity and structured products."
+  },
+  {
+   "slug": "caia-level-2",
+   "name": "CAIA Level II Exam",
+   "short": "CAIA II",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "Chartered Alternative Investment Analyst Association",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Second alternative investments paper covering asset allocation, risk management, manager selection and essay-based current topics."
+  },
+  {
+   "slug": "cfi-cmsa",
+   "name": "Capital Markets and Securities Analyst Certification",
+   "short": "CMSA",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "Corporate Finance Institute (CFI)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Online certification covering fixed income, derivatives, trading strategies, portfolio construction and capital markets mechanics."
+  },
+  {
+   "slug": "cfi-fmva",
+   "name": "Financial Modeling and Valuation Analyst Certification",
+   "short": "FMVA",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "Corporate Finance Institute (CFI)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Online certification covering three-statement modelling, DCF valuation, budgeting, Excel technique and presentation of financial analysis."
+  },
+  {
+   "slug": "cqf-certificate",
+   "name": "Certificate in Quantitative Finance",
+   "short": "CQF",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "CQF Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Part-time programme with assignments and a final project covering derivatives pricing, quantitative risk and machine learning in finance."
+  },
+  {
+   "slug": "fdp-charter",
+   "name": "Financial Data Professional Exam",
+   "short": "FDP",
+   "category": "finance-securities",
+   "group": "Investment & Portfolio Management",
+   "body": "FDP Institute, an affiliate of the CAIA Association",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Single examination on data science for investment management, covering machine learning, big data and model interpretation."
+  },
+  {
+   "slug": "afp-fpac",
+   "name": "Certified Corporate FP&A Professional",
+   "short": "FPAC",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "Association for Financial Professionals (AFP)",
+   "bodyUrl": "https://www.afponline.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Two-part certification covering financial planning and analysis tools, forecasting, modelling, business partnering and decision support."
+  },
+  {
+   "slug": "ibf-certified-fund-specialist",
+   "name": "Certified Fund Specialist",
+   "short": "CFS",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "Institute of Business and Finance (IBF)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation programme on mutual funds, exchange traded funds and closed-end funds, including selection, taxation and portfolio use."
+  },
+  {
+   "slug": "certified-merger-and-acquisition-advisor",
+   "name": "Certified Merger and Acquisition Advisor",
+   "short": "CM&AA",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "Alliance of Merger and Acquisition Advisors (AM&AA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Middle-market deal credential covering valuation, deal structuring, due diligence, tax and transaction process management."
+  },
+  {
+   "slug": "cima-certificate-business-accounting",
+   "name": "CIMA Certificate in Business Accounting",
+   "short": "Cert BA",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "AICPA & CIMA",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Entry qualification with four objective tests in management accounting, financial accounting, business economics and business law."
+  },
+  {
+   "slug": "gfoa-cpfo-adjacent-debt-management",
+   "name": "GFOA Certified Public Finance Officer Debt Management Exam",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "Government Finance Officers Association (GFOA)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Component examination of the public finance officer programme covering municipal debt issuance, structuring, disclosure and administration."
+  },
+  {
+   "slug": "niri-investor-relations-charter",
+   "name": "Investor Relations Charter",
+   "short": "IRC",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "National Investor Relations Institute (NIRI)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification examination covering securities disclosure, capital markets, corporate governance and investor communication strategy."
+  },
+  {
+   "slug": "ma-source-mami",
+   "name": "Merger and Acquisition Master Intermediary",
+   "short": "M&AMI",
+   "category": "finance-securities",
+   "group": "Corporate & Specialty Finance",
+   "body": "M&A Source",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Designation for lower middle-market intermediaries requiring completed transactions, advanced coursework and a written examination."
+  }
+ ]
+}

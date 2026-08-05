@@ -1,0 +1,52 @@
+{
+ "chunkId": "b01-p02",
+ "batch": 1,
+ "part": 2,
+ "categories": [
+  "accounting"
+ ],
+ "groups": [
+  "Accounting & Audit"
+ ],
+ "bodies": [
+  "National Association of Certified Public Bookkeepers (NACPB)",
+  "Government Finance Officers Association (GFOA)",
+  "AICPA & CIMA"
+ ],
+ "examCount": 3,
+ "exams": [
+  {
+   "slug": "nacpb-cpb",
+   "name": "Certified Public Bookkeeper Licence Exam",
+   "short": "CPB",
+   "category": "accounting",
+   "group": "Accounting & Audit",
+   "body": "National Association of Certified Public Bookkeepers (NACPB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Bookkeeping licence examination covering accounting fundamentals, payroll, QuickBooks and bookkeeping ethics for small-business practice."
+  },
+  {
+   "slug": "cpfo-exams",
+   "name": "Certified Public Finance Officer Examinations",
+   "short": "CPFO",
+   "category": "accounting",
+   "group": "Accounting & Audit",
+   "body": "Government Finance Officers Association (GFOA)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination series covering government accounting, budgeting, debt management, treasury, procurement and retirement administration."
+  },
+  {
+   "slug": "cgma-finance-leadership-exam",
+   "name": "CGMA Finance Leadership Program Case Study Exams",
+   "short": "CGMA FLP",
+   "category": "accounting",
+   "group": "Accounting & Audit",
+   "body": "AICPA & CIMA",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Digital learning pathway with operational, management and strategic case study exams leading to the CGMA management accounting designation."
+  }
+ ]
+}

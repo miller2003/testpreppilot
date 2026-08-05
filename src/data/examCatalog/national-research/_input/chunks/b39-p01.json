@@ -1,0 +1,553 @@
+{
+ "chunkId": "b39-p01",
+ "batch": 39,
+ "part": 1,
+ "categories": [
+  "trades"
+ ],
+ "groups": [
+  "Electrical/Solar & Low Voltage",
+  "Fire Protection & Life Safety Systems",
+  "Welding & Metal"
+ ],
+ "bodies": [
+  "National Institute for Certification in Engineering Technologies (NICET)",
+  "American Welding Society (AWS)",
+  "North American Board of Certified Energy Practitioners (NABCEP)"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "nicet-site-security-integration-level-1",
+   "name": "NICET Site Security Integration (SSI) Level I",
+   "short": "SSI Level I",
+   "category": "trades",
+   "group": "Electrical/Solar & Low Voltage",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "SSI Level I"
+   ],
+   "blurb": "New 2026 certification covering installation and integration of electronic security systems such as access control and CCTV."
+  },
+  {
+   "slug": "nicet-site-security-integration-level-2",
+   "name": "NICET Site Security Integration (SSI) Level II",
+   "short": "SSI Level II",
+   "category": "trades",
+   "group": "Electrical/Solar & Low Voltage",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "SSI Level II"
+   ],
+   "blurb": "Advanced 2026 certification covering design, commissioning and troubleshooting of integrated electronic security systems."
+  },
+  {
+   "slug": "nicet-voice-data-video-level-1",
+   "name": "NICET Voice Data Video (VDV) Level I",
+   "short": "VDV Level I",
+   "category": "trades",
+   "group": "Electrical/Solar & Low Voltage",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "VDV Level I"
+   ],
+   "blurb": "Entry certification covering low-voltage cabling, pathways and basic installation of voice, data and video systems."
+  },
+  {
+   "slug": "nicet-voice-data-video-level-2",
+   "name": "NICET Voice Data Video (VDV) Level II",
+   "short": "VDV Level II",
+   "category": "trades",
+   "group": "Electrical/Solar & Low Voltage",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "VDV Level II"
+   ],
+   "blurb": "Intermediate certification covering design support, testing and troubleshooting of structured cabling systems."
+  },
+  {
+   "slug": "nicet-voice-data-video-level-3",
+   "name": "NICET Voice Data Video (VDV) Level III",
+   "short": "VDV Level III",
+   "category": "trades",
+   "group": "Electrical/Solar & Low Voltage",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "VDV Level III"
+   ],
+   "blurb": "Advanced certification covering system design, project management and code compliance for VDV systems."
+  },
+  {
+   "slug": "nicet-voice-data-video-level-4",
+   "name": "NICET Voice Data Video (VDV) Level IV",
+   "short": "VDV Level IV",
+   "category": "trades",
+   "group": "Electrical/Solar & Low Voltage",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "VDV Level IV"
+   ],
+   "blurb": "Senior certification covering engineered VDV design, standards and oversight of large communications projects."
+  },
+  {
+   "slug": "nicet-fire-alarm-systems-level-1",
+   "name": "NICET Fire Alarm Systems Level I",
+   "short": "FAS Level I",
+   "category": "trades",
+   "group": "Fire Protection & Life Safety Systems",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "FAS Level I"
+   ],
+   "blurb": "Entry certification covering basic fire alarm system components, inspection and documentation for junior technicians."
+  },
+  {
+   "slug": "nicet-fire-alarm-systems-level-2",
+   "name": "NICET Fire Alarm Systems Level II",
+   "short": "FAS Level II",
+   "category": "trades",
+   "group": "Fire Protection & Life Safety Systems",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "FAS Level II"
+   ],
+   "blurb": "Intermediate certification covering system layout, installation, testing and code requirements for fire alarm systems."
+  },
+  {
+   "slug": "nicet-fire-alarm-systems-level-3",
+   "name": "NICET Fire Alarm Systems Level III",
+   "short": "FAS Level III",
+   "category": "trades",
+   "group": "Fire Protection & Life Safety Systems",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "FAS Level III"
+   ],
+   "blurb": "Advanced certification covering engineering analysis, system design and complex fire alarm project management."
+  },
+  {
+   "slug": "nicet-fire-alarm-systems-level-4",
+   "name": "NICET Fire Alarm Systems Level IV",
+   "short": "FAS Level IV",
+   "category": "trades",
+   "group": "Fire Protection & Life Safety Systems",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "FAS Level IV"
+   ],
+   "blurb": "Senior certification covering fire alarm engineering, code interpretation and oversight of large engineered systems."
+  },
+  {
+   "slug": "nicet-inspection-testing-fire-alarm-level-1",
+   "name": "NICET Inspection and Testing of Fire Alarm Systems Level I",
+   "short": "ITFAS Level I",
+   "category": "trades",
+   "group": "Fire Protection & Life Safety Systems",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "ITFAS Level I"
+   ],
+   "blurb": "Certifies inspection, testing and maintenance of installed fire alarm systems and documentation of results."
+  },
+  {
+   "slug": "nicet-inspection-testing-fire-alarm-level-2",
+   "name": "NICET Inspection and Testing of Fire Alarm Systems Level II",
+   "short": "ITFAS Level II",
+   "category": "trades",
+   "group": "Fire Protection & Life Safety Systems",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "ITFAS Level II"
+   ],
+   "blurb": "Advanced certification covering complex fire alarm system ITM, troubleshooting and code-compliant reporting."
+  },
+  {
+   "slug": "nicet-inspection-testing-water-based-level-1",
+   "name": "NICET Inspection and Testing of Water-Based Systems Level I",
+   "short": "ITWBS Level I",
+   "category": "trades",
+   "group": "Fire Protection & Life Safety Systems",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "ITWBS Level I"
+   ],
+   "blurb": "Certifies inspection and testing of sprinkler and water-based systems for proper operation and code compliance."
+  },
+  {
+   "slug": "nicet-inspection-testing-water-based-level-2",
+   "name": "NICET Inspection and Testing of Water-Based Systems Level II",
+   "short": "ITWBS Level II",
+   "category": "trades",
+   "group": "Fire Protection & Life Safety Systems",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "ITWBS Level II"
+   ],
+   "blurb": "Advanced certification covering complex water-based system ITM, flow testing and deficiency correction."
+  },
+  {
+   "slug": "nicet-special-hazards-suppression-level-1",
+   "name": "NICET Special Hazards Suppression Systems Level I",
+   "short": "SHS Level I",
+   "category": "trades",
+   "group": "Fire Protection & Life Safety Systems",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "SHS Level I"
+   ],
+   "blurb": "Entry certification covering installation and testing of gaseous, foam and other special suppression systems."
+  },
+  {
+   "slug": "nicet-special-hazards-suppression-level-2",
+   "name": "NICET Special Hazards Suppression Systems Level II",
+   "short": "SHS Level II",
+   "category": "trades",
+   "group": "Fire Protection & Life Safety Systems",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "SHS Level II"
+   ],
+   "blurb": "Advanced certification covering design, commissioning and ITM of special hazard fire suppression systems."
+  },
+  {
+   "slug": "nicet-water-based-systems-layout-level-1",
+   "name": "NICET Water-Based Systems Layout Level I",
+   "short": "WBSL Level I",
+   "category": "trades",
+   "group": "Fire Protection & Life Safety Systems",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "WBSL Level I"
+   ],
+   "blurb": "Entry certification covering basics of sprinkler system layout, hydraulics and related reference standards."
+  },
+  {
+   "slug": "nicet-water-based-systems-layout-level-2",
+   "name": "NICET Water-Based Systems Layout Level II",
+   "short": "WBSL Level II",
+   "category": "trades",
+   "group": "Fire Protection & Life Safety Systems",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "WBSL Level II"
+   ],
+   "blurb": "Intermediate certification covering detailed sprinkler system calculations, drawings and code compliance."
+  },
+  {
+   "slug": "nicet-water-based-systems-layout-level-3",
+   "name": "NICET Water-Based Systems Layout Level III",
+   "short": "WBSL Level III",
+   "category": "trades",
+   "group": "Fire Protection & Life Safety Systems",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "WBSL Level III"
+   ],
+   "blurb": "Advanced certification covering complex water-based layout, special hazards and engineering review."
+  },
+  {
+   "slug": "nicet-water-based-systems-layout-level-4",
+   "name": "NICET Water-Based Systems Layout Level IV",
+   "short": "WBSL Level IV",
+   "category": "trades",
+   "group": "Fire Protection & Life Safety Systems",
+   "body": "National Institute for Certification in Engineering Technologies (NICET)",
+   "bodyUrl": "https://www.nicet.org",
+   "type": "Certification",
+   "aka": [
+    "WBSL Level IV"
+   ],
+   "blurb": "Senior certification covering engineered fire protection design, standards and project oversight."
+  },
+  {
+   "slug": "aws-certified-associate-welding-inspector",
+   "name": "AWS Certified Associate Welding Inspector (CAWI)",
+   "short": "CAWI",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "American Welding Society (AWS)",
+   "bodyUrl": "https://www.aws.org",
+   "type": "Certification",
+   "aka": [
+    "CAWI"
+   ],
+   "blurb": "Entry-level inspection credential for those not yet eligible for the CWI, covering basic welding inspection fundamentals."
+  },
+  {
+   "slug": "aws-certified-welder",
+   "name": "AWS Certified Welder Program",
+   "short": "CW",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "American Welding Society (AWS)",
+   "bodyUrl": "https://www.aws.org",
+   "type": "Certification",
+   "aka": [
+    "CW"
+   ],
+   "blurb": "Performance qualification testing welders to a specific code and procedure, with results logged in the AWS national database."
+  },
+  {
+   "slug": "aws-certified-welding-educator",
+   "name": "AWS Certified Welding Educator (CWE)",
+   "short": "CWE",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "American Welding Society (AWS)",
+   "bodyUrl": "https://www.aws.org",
+   "type": "Certification",
+   "aka": [
+    "CWE"
+   ],
+   "blurb": "Credential for instructors who teach welding, verifying knowledge of welding theory, practice and AWS education standards."
+  },
+  {
+   "slug": "aws-certified-welding-engineer",
+   "name": "AWS Certified Welding Engineer (CWEng)",
+   "short": "CWEng",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "American Welding Society (AWS)",
+   "bodyUrl": "https://www.aws.org",
+   "type": "Certification",
+   "aka": [
+    "CWEng"
+   ],
+   "blurb": "Advanced engineering credential covering weld design, metallurgy, procedure qualification and failure analysis of structures."
+  },
+  {
+   "slug": "aws-certified-welding-inspector",
+   "name": "AWS Certified Welding Inspector (CWI)",
+   "short": "CWI",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "American Welding Society (AWS)",
+   "bodyUrl": "https://www.aws.org",
+   "type": "Certification",
+   "aka": [
+    "CWI"
+   ],
+   "blurb": "Widely recognised inspection credential covering welding processes, codes, procedures, discontinuities and weld testing."
+  },
+  {
+   "slug": "aws-certified-welding-sales-representative",
+   "name": "AWS Certified Welding Sales Representative (CWSR)",
+   "short": "CWSR",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "American Welding Society (AWS)",
+   "bodyUrl": "https://www.aws.org",
+   "type": "Certification",
+   "aka": [
+    "CWSR"
+   ],
+   "blurb": "Credential for sales staff covering welding consumables, equipment, codes and matching products to fabrication needs."
+  },
+  {
+   "slug": "aws-certified-welding-supervisor",
+   "name": "AWS Certified Welding Supervisor (CWS)",
+   "short": "CWS",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "American Welding Society (AWS)",
+   "bodyUrl": "https://www.aws.org",
+   "type": "Certification",
+   "aka": [
+    "CWS"
+   ],
+   "blurb": "Management credential covering welding production planning, quality control, costing and supervision of welding personnel."
+  },
+  {
+   "slug": "aws-d11-structural-steel-code-endorsement",
+   "name": "AWS D1.1 Structural Steel Code Endorsement",
+   "short": "D1.1",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "American Welding Society (AWS)",
+   "bodyUrl": "https://www.aws.org",
+   "type": "Certification",
+   "aka": [
+    "D1.1"
+   ],
+   "blurb": "Optional CWI add-on testing knowledge of the AWS D1.1 structural steel welding code for building and bridge fabrication."
+  },
+  {
+   "slug": "aws-radiographic-interpreter",
+   "name": "AWS Radiographic Interpreter (RI)",
+   "short": "RI",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "American Welding Society (AWS)",
+   "bodyUrl": "https://www.aws.org",
+   "type": "Certification",
+   "aka": [
+    "RI"
+   ],
+   "blurb": "Credential covering interpretation of radiographic film and digital images of welds to locate and classify discontinuities."
+  },
+  {
+   "slug": "aws-senior-certified-welding-inspector",
+   "name": "AWS Senior Certified Welding Inspector (SCWI)",
+   "short": "SCWI",
+   "category": "trades",
+   "group": "Welding & Metal",
+   "body": "American Welding Society (AWS)",
+   "bodyUrl": "https://www.aws.org",
+   "type": "Certification",
+   "aka": [
+    "SCWI"
+   ],
+   "blurb": "Advanced credential for CWIs with extra experience, qualifying holders to supervise inspections and certify procedures."
+  },
+  {
+   "slug": "nabcep-battery-storage",
+   "name": "NABCEP Battery Storage Installation Professional",
+   "short": "BSIP",
+   "category": "trades",
+   "group": "Electrical/Solar & Low Voltage",
+   "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+   "bodyUrl": "https://www.nabcep.org",
+   "type": "Certification",
+   "aka": [
+    "BSIP"
+   ],
+   "blurb": "Credential covering design and installation of energy storage systems paired with PV or standalone storage."
+  },
+  {
+   "slug": "nabcep-pv-commissioning-maintenance",
+   "name": "NABCEP PV Commissioning and Maintenance Specialist",
+   "short": "PVCMS",
+   "category": "trades",
+   "group": "Electrical/Solar & Low Voltage",
+   "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+   "bodyUrl": "https://www.nabcep.org",
+   "type": "Certification",
+   "aka": [
+    "PVCMS"
+   ],
+   "blurb": "Credential covering inspection, testing, commissioning and O&M of installed photovoltaic systems."
+  },
+  {
+   "slug": "nabcep-pv-design-specialist",
+   "name": "NABCEP PV Design Specialist",
+   "short": "PVDS",
+   "category": "trades",
+   "group": "Electrical/Solar & Low Voltage",
+   "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+   "bodyUrl": "https://www.nabcep.org",
+   "type": "Certification",
+   "aka": [
+    "PVDS"
+   ],
+   "blurb": "Credential covering electrical and mechanical design of PV systems and interpretation of the National Electrical Code."
+  },
+  {
+   "slug": "nabcep-pv-installation-professional",
+   "name": "NABCEP PV Installation Professional",
+   "short": "PVIP",
+   "category": "trades",
+   "group": "Electrical/Solar & Low Voltage",
+   "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+   "bodyUrl": "https://www.nabcep.org",
+   "type": "Certification",
+   "aka": [
+    "PVIP"
+   ],
+   "blurb": "Top photovoltaic credential covering design, installation and commissioning of grid-direct and battery-based PV systems."
+  },
+  {
+   "slug": "nabcep-pv-installer-specialist",
+   "name": "NABCEP PV Installer Specialist",
+   "short": "PVIS",
+   "category": "trades",
+   "group": "Electrical/Solar & Low Voltage",
+   "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+   "bodyUrl": "https://www.nabcep.org",
+   "type": "Certification",
+   "aka": [
+    "PVIS"
+   ],
+   "blurb": "Entry-to-mid credential for technicians performing hands-on PV installation under a certified professional."
+  },
+  {
+   "slug": "nabcep-pv-system-inspector",
+   "name": "NABCEP PV System Inspector",
+   "short": "PVSI",
+   "category": "trades",
+   "group": "Electrical/Solar & Low Voltage",
+   "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+   "bodyUrl": "https://www.nabcep.org",
+   "type": "Certification",
+   "aka": [
+    "PVSI"
+   ],
+   "blurb": "Credential for inspectors and authorities having jurisdiction to evaluate PV system code compliance."
+  },
+  {
+   "slug": "nabcep-pv-technical-sales",
+   "name": "NABCEP PV Technical Sales",
+   "short": "PVTS",
+   "category": "trades",
+   "group": "Electrical/Solar & Low Voltage",
+   "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+   "bodyUrl": "https://www.nabcep.org",
+   "type": "Certification",
+   "aka": [
+    "PVTS"
+   ],
+   "blurb": "Credential covering site assessment, system sizing and customer proposals for solar photovoltaic sales."
+  },
+  {
+   "slug": "nabcep-solar-heating-installer",
+   "name": "NABCEP Solar Heating Installer",
+   "short": "SHIP",
+   "category": "trades",
+   "group": "Electrical/Solar & Low Voltage",
+   "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+   "bodyUrl": "https://www.nabcep.org",
+   "type": "Certification",
+   "aka": [
+    "SHIP"
+   ],
+   "blurb": "Credential covering design and installation of solar thermal water and space heating systems."
+  }
+ ]
+}

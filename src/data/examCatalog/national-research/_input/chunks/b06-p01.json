@@ -1,0 +1,430 @@
+{
+ "chunkId": "b06-p01",
+ "batch": 6,
+ "part": 1,
+ "categories": [
+  "allied-health"
+ ],
+ "groups": [
+  "Pharmacy Support",
+  "Respiratory Care",
+  "Cardiovascular",
+  "EMS"
+ ],
+ "bodies": [
+  "Pharmacy Technician Certification Board (PTCB)",
+  "National Board for Respiratory Care (NBRC)",
+  "Cardiovascular Credentialing International (CCI)",
+  "Board of Certification for Emergency Nursing (BCEN)"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "ptcb-cpht-adv",
+   "name": "PTCB Advanced Certified Pharmacy Technician",
+   "short": "CPhT-Adv",
+   "category": "allied-health",
+   "group": "Pharmacy Support",
+   "body": "Pharmacy Technician Certification Board (PTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced credential recognizing experienced, certified pharmacy technicians., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ptcb-billing",
+   "name": "PTCB Billing and Reimbursement Assessment",
+   "category": "allied-health",
+   "group": "Pharmacy Support",
+   "body": "Pharmacy Technician Certification Board (PTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Knowledge assessment for pharmacy technicians in billing and reimbursement., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ptcb-cpht",
+   "name": "PTCB Certified Pharmacy Technician",
+   "short": "CPhT",
+   "category": "allied-health",
+   "group": "Pharmacy Support",
+   "body": "Pharmacy Technician Certification Board (PTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National entry-level credential for pharmacy technicians in the United States., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ptcb-cspt",
+   "name": "PTCB Certified Sterile Product Technician",
+   "short": "CSPT",
+   "category": "allied-health",
+   "group": "Pharmacy Support",
+   "body": "Pharmacy Technician Certification Board (PTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for technicians preparing sterile compounded products., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ptcb-controlled-substances",
+   "name": "PTCB Controlled Substances Diversion Prevention Assessment",
+   "category": "allied-health",
+   "group": "Pharmacy Support",
+   "body": "Pharmacy Technician Certification Board (PTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Knowledge assessment on preventing controlled substance diversion., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ptcb-hazardous-drug",
+   "name": "PTCB Hazardous Drug Management Assessment",
+   "category": "allied-health",
+   "group": "Pharmacy Support",
+   "body": "Pharmacy Technician Certification Board (PTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Knowledge assessment for safe handling of hazardous drugs., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ptcb-immunization",
+   "name": "PTCB Immunization Delivery Assessment",
+   "category": "allied-health",
+   "group": "Pharmacy Support",
+   "body": "Pharmacy Technician Certification Board (PTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Knowledge assessment for technicians involved in vaccine administration., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ptcb-med-history",
+   "name": "PTCB Medication History Assessment",
+   "category": "allied-health",
+   "group": "Pharmacy Support",
+   "body": "Pharmacy Technician Certification Board (PTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Knowledge assessment for technicians collecting medication histories., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ptcb-mtm",
+   "name": "PTCB Medication Therapy Management Assessment",
+   "category": "allied-health",
+   "group": "Pharmacy Support",
+   "body": "Pharmacy Technician Certification Board (PTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Knowledge assessment for technicians supporting medication therapy management., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ptcb-nonsterile-compounding",
+   "name": "PTCB Nonsterile Compounding Assessment",
+   "category": "allied-health",
+   "group": "Pharmacy Support",
+   "body": "Pharmacy Technician Certification Board (PTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Knowledge assessment for technicians performing nonsterile compounding., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ptcb-poct",
+   "name": "PTCB Point-of-Care Testing Assessment",
+   "category": "allied-health",
+   "group": "Pharmacy Support",
+   "body": "Pharmacy Technician Certification Board (PTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Knowledge assessment for technicians performing point-of-care testing., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ptcb-regulatory",
+   "name": "PTCB Regulatory Compliance Assessment",
+   "category": "allied-health",
+   "group": "Pharmacy Support",
+   "body": "Pharmacy Technician Certification Board (PTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Knowledge assessment for pharmacy regulatory compliance topics., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ptcb-supply-chain",
+   "name": "PTCB Supply Chain and Inventory Management Assessment",
+   "category": "allied-health",
+   "group": "Pharmacy Support",
+   "body": "Pharmacy Technician Certification Board (PTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Knowledge assessment for pharmacy inventory and supply chain tasks., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ptcb-tpv",
+   "name": "PTCB Technician Product Verification Assessment",
+   "category": "allied-health",
+   "group": "Pharmacy Support",
+   "body": "Pharmacy Technician Certification Board (PTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Knowledge assessment for technicians verifying dispensed medications., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nbrc-accs",
+   "name": "NBRC Adult Critical Care Specialist",
+   "short": "ACCS",
+   "category": "allied-health",
+   "group": "Respiratory Care",
+   "body": "National Board for Respiratory Care (NBRC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for respiratory therapists in adult critical care., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nbrc-cpft",
+   "name": "NBRC Certified Pulmonary Function Technologist",
+   "short": "CPFT",
+   "category": "allied-health",
+   "group": "Respiratory Care",
+   "body": "National Board for Respiratory Care (NBRC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for technologists performing pulmonary function testing., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nbrc-crt",
+   "name": "NBRC Certified Respiratory Therapist",
+   "short": "CRT",
+   "category": "allied-health",
+   "group": "Respiratory Care",
+   "body": "National Board for Respiratory Care (NBRC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry-level credential for respiratory therapists based on the TMC examination., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nbrc-cse",
+   "name": "NBRC Clinical Simulation Examination",
+   "short": "CSE",
+   "category": "allied-health",
+   "group": "Respiratory Care",
+   "body": "National Board for Respiratory Care (NBRC)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Simulation-based exam required to advance from CRT to RRT status., a standardized national examination required for this credential."
+  },
+  {
+   "slug": "nbrc-nps",
+   "name": "NBRC Neonatal/Pediatric Specialist",
+   "short": "NPS",
+   "category": "allied-health",
+   "group": "Respiratory Care",
+   "body": "National Board for Respiratory Care (NBRC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for respiratory therapists in neonatal and pediatric care., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nbrc-rpft",
+   "name": "NBRC Registered Pulmonary Function Technologist",
+   "short": "RPFT",
+   "category": "allied-health",
+   "group": "Respiratory Care",
+   "body": "National Board for Respiratory Care (NBRC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced credential for technologists in complex pulmonary function testing., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nbrc-rrt",
+   "name": "NBRC Registered Respiratory Therapist",
+   "short": "RRT",
+   "category": "allied-health",
+   "group": "Respiratory Care",
+   "body": "National Board for Respiratory Care (NBRC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced credential for respiratory therapists who pass the TMC and CSE., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nbrc-rte",
+   "name": "NBRC Registered Respiratory Therapist Entry",
+   "short": "RTE",
+   "category": "allied-health",
+   "group": "Respiratory Care",
+   "body": "National Board for Respiratory Care (NBRC)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Emerging entry-level respiratory therapist examination planned to replace the TMC in 2027."
+  },
+  {
+   "slug": "nbrc-sds",
+   "name": "NBRC Sleep Disorders Specialist",
+   "short": "SDS",
+   "category": "allied-health",
+   "group": "Respiratory Care",
+   "body": "National Board for Respiratory Care (NBRC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for respiratory therapists in sleep medicine and testing., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nbrc-tmc",
+   "name": "NBRC Therapist Multiple-Choice Examination",
+   "short": "TMC",
+   "category": "allied-health",
+   "group": "Respiratory Care",
+   "body": "National Board for Respiratory Care (NBRC)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Examination that determines eligibility for the CRT and RRT credentials., a standardized national examination required for this credential."
+  },
+  {
+   "slug": "cci-acs",
+   "name": "CCI Advanced Cardiac Sonographer",
+   "short": "ACS",
+   "category": "allied-health",
+   "group": "Cardiovascular",
+   "body": "Cardiovascular Credentialing International (CCI)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced credential for experienced cardiac sonographers in complex echocardiography."
+  },
+  {
+   "slug": "cci-crat",
+   "name": "CCI Cardiac Rhythm Analysis Technician",
+   "short": "CRAT",
+   "category": "allied-health",
+   "group": "Cardiovascular",
+   "body": "Cardiovascular Credentialing International (CCI)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for technicians analyzing cardiac rhythm and monitoring strips., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "cci-cct",
+   "name": "CCI Certified Cardiographic Technician",
+   "short": "CCT",
+   "category": "allied-health",
+   "group": "Cardiovascular",
+   "body": "Cardiovascular Credentialing International (CCI)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for technicians performing electrocardiographic and noninvasive cardiovascular testing."
+  },
+  {
+   "slug": "cci-rcs",
+   "name": "CCI Registered Cardiac Sonographer",
+   "short": "RCS",
+   "category": "allied-health",
+   "group": "Cardiovascular",
+   "body": "Cardiovascular Credentialing International (CCI)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for sonographers performing adult echocardiography., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "cci-rcis",
+   "name": "CCI Registered Cardiovascular Invasive Specialist",
+   "short": "RCIS",
+   "category": "allied-health",
+   "group": "Cardiovascular",
+   "body": "Cardiovascular Credentialing International (CCI)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for technologists assisting in invasive cardiac catheterization procedures."
+  },
+  {
+   "slug": "cci-rces",
+   "name": "CCI Registered Cardiovascular Invasive Specialist – Electrophysiology",
+   "short": "RCES",
+   "category": "allied-health",
+   "group": "Cardiovascular",
+   "body": "Cardiovascular Credentialing International (CCI)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for technologists assisting in cardiac electrophysiology studies., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "cci-rccs",
+   "name": "CCI Registered Congenital Cardiac Sonographer",
+   "short": "RCCS",
+   "category": "allied-health",
+   "group": "Cardiovascular",
+   "body": "Cardiovascular Credentialing International (CCI)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for sonographers specializing in congenital heart disease imaging., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "cci-rphs",
+   "name": "CCI Registered Phlebology Sonographer",
+   "short": "RPhS",
+   "category": "allied-health",
+   "group": "Cardiovascular",
+   "body": "Cardiovascular Credentialing International (CCI)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for sonographers specializing in venous and phlebology ultrasound., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "cci-rvs",
+   "name": "CCI Registered Vascular Specialist",
+   "short": "RVS",
+   "category": "allied-health",
+   "group": "Cardiovascular",
+   "body": "Cardiovascular Credentialing International (CCI)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for technologists performing vascular ultrasound and physiologic testing."
+  },
+  {
+   "slug": "bcen-cen",
+   "name": "BCEN Certified Emergency Nurse",
+   "short": "CEN",
+   "category": "allied-health",
+   "group": "EMS",
+   "body": "Board of Certification for Emergency Nursing (BCEN)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Core emergency nursing credential for registered nurses in emergency care., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "bcen-cfrn",
+   "name": "BCEN Certified Flight Registered Nurse",
+   "short": "CFRN",
+   "category": "allied-health",
+   "group": "EMS",
+   "body": "Board of Certification for Emergency Nursing (BCEN)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for nurses providing flight and air medical care., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "bcen-cpen",
+   "name": "BCEN Certified Pediatric Emergency Nurse",
+   "short": "CPEN",
+   "category": "allied-health",
+   "group": "EMS",
+   "body": "Board of Certification for Emergency Nursing (BCEN)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for nurses in pediatric emergency care., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "bcen-ctr-n",
+   "name": "BCEN Certified Transport Registered Nurse",
+   "short": "CTRN",
+   "category": "allied-health",
+   "group": "EMS",
+   "body": "Board of Certification for Emergency Nursing (BCEN)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for nurses in ground and air medical transport., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "bcen-tcrn",
+   "name": "BCEN Trauma Certified Registered Nurse",
+   "short": "TCRN",
+   "category": "allied-health",
+   "group": "EMS",
+   "body": "Board of Certification for Emergency Nursing (BCEN)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential for nurses caring for trauma patients., a nationally recognized professional credential in this field."
+  }
+ ]
+}

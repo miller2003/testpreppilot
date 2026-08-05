@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ExamGuide from '../../components/ExamGuide.astro';
 import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import RelatedPaths from '../../components/RelatedPaths.astro';
 import { credentials, getRelatedCredentials } from '../../data/credentials';
 import examEditorial from '../../data/examEditorial.mjs';
@@ -40,6 +41,7 @@ const schemaData = {
   description={credential.tagline || `Everything you need to know about getting your ${credential.name}.`}
 >
   <SchemaMarkup type="Course" data={schemaData} />
+  <BreadcrumbSchema items={breadcrumbItems} />
   <ExamGuide credential={credential} ex={ex} breadcrumbs={breadcrumbItems} />
 
   {relatedCredentials && relatedCredentials.length > 0 && (

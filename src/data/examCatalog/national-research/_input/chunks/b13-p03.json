@@ -1,0 +1,523 @@
+{
+ "chunkId": "b13-p03",
+ "batch": 13,
+ "part": 3,
+ "categories": [
+  "education-teaching"
+ ],
+ "groups": [
+  "National Teaching Credentials & Performance Assessments",
+  "TESOL, Language & Education Technology"
+ ],
+ "bodies": [
+  "National Board for Professional Teaching Standards",
+  "Evaluation Systems, Pearson",
+  "American Council on the Teaching of Foreign Languages",
+  "Google for Education",
+  "Cambridge Assessment English",
+  "Microsoft"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "nbpts-art",
+   "name": "National Board Certification — Art",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT Art"
+   ],
+   "blurb": "National Board certificate area for visual arts teachers, available at early and middle childhood and early adolescence through young adulthood."
+  },
+  {
+   "slug": "nbpts-career-and-technical-education",
+   "name": "National Board Certification — Career and Technical Education",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT CTE"
+   ],
+   "blurb": "National Board certificate area for teachers of career, technical and workforce preparation subjects in secondary schools."
+  },
+  {
+   "slug": "nbpts-generalist-early-childhood",
+   "name": "National Board Certification — Early Childhood Generalist",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT Early Childhood Generalist"
+   ],
+   "blurb": "National Board certificate area for teachers of children aged three to eight, covering all core subjects in early childhood classrooms."
+  },
+  {
+   "slug": "nbpts-english-language-arts",
+   "name": "National Board Certification — English Language Arts",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT English Language Arts"
+   ],
+   "blurb": "National Board certificate area for English teachers at early adolescence and adolescence through young adulthood levels."
+  },
+  {
+   "slug": "nbpts-exceptional-needs-specialist",
+   "name": "National Board Certification — Exceptional Needs Specialist",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT Exceptional Needs"
+   ],
+   "blurb": "National Board certificate area for special educators, with concentrations spanning mild to severe disabilities and sensory impairments."
+  },
+  {
+   "slug": "nbpts-health-education",
+   "name": "National Board Certification — Health Education",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT Health Education"
+   ],
+   "blurb": "National Board certificate area for health educators, covering health literacy, risk reduction and skills-based instruction."
+  },
+  {
+   "slug": "nbpts-library-media",
+   "name": "National Board Certification — Library Media",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT Library Media"
+   ],
+   "blurb": "National Board certificate area for school librarians, covering information literacy instruction, collection development and collaboration."
+  },
+  {
+   "slug": "nbpts-literacy-reading-language-arts",
+   "name": "National Board Certification — Literacy: Reading-Language Arts",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT Literacy"
+   ],
+   "blurb": "National Board certificate area for literacy teachers of children aged three to twelve, focused on reading and language arts instruction."
+  },
+  {
+   "slug": "nbpts-mathematics",
+   "name": "National Board Certification — Mathematics",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT Mathematics"
+   ],
+   "blurb": "National Board certificate area for mathematics teachers at early adolescence and adolescence through young adulthood levels."
+  },
+  {
+   "slug": "nbpts-generalist-middle-childhood",
+   "name": "National Board Certification — Middle Childhood Generalist",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT Middle Childhood Generalist"
+   ],
+   "blurb": "National Board certificate area for teachers of students aged seven to twelve across the elementary curriculum."
+  },
+  {
+   "slug": "nbpts-music",
+   "name": "National Board Certification — Music",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT Music"
+   ],
+   "blurb": "National Board certificate area for music educators teaching general, choral and instrumental music across school levels."
+  },
+  {
+   "slug": "nbpts-physical-education",
+   "name": "National Board Certification — Physical Education",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT Physical Education"
+   ],
+   "blurb": "National Board certificate area for physical education teachers, covering movement competence, fitness and lifelong activity."
+  },
+  {
+   "slug": "nbpts-school-counseling",
+   "name": "National Board Certification — School Counseling",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT School Counseling"
+   ],
+   "blurb": "National Board certificate area for school counselors, covering comprehensive counseling programmes and student support systems."
+  },
+  {
+   "slug": "nbpts-science",
+   "name": "National Board Certification — Science",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT Science"
+   ],
+   "blurb": "National Board certificate area for science teachers, with pathways in biology, chemistry, physics and earth science content."
+  },
+  {
+   "slug": "nbpts-social-studies-history",
+   "name": "National Board Certification — Social Studies-History",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT Social Studies"
+   ],
+   "blurb": "National Board certificate area for history and social studies teachers at early adolescence and young adulthood levels."
+  },
+  {
+   "slug": "nbpts-world-languages",
+   "name": "National Board Certification — World Languages",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Certification",
+   "aka": [
+    "NBCT World Languages"
+   ],
+   "blurb": "National Board certificate area for world language teachers, assessing target-language proficiency and communicative instruction."
+  },
+  {
+   "slug": "nbpts-component-1-content-knowledge",
+   "name": "National Board Certification Component 1: Content Knowledge",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Exam",
+   "aka": [
+    "NBPTS Component 1"
+   ],
+   "blurb": "Computer-based assessment of subject-area content knowledge combining selected-response items with constructed-response exercises."
+  },
+  {
+   "slug": "nbpts-component-2-differentiation-in-instruction",
+   "name": "National Board Certification Component 2: Differentiation in Instruction",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Exam",
+   "aka": [
+    "NBPTS Component 2"
+   ],
+   "blurb": "Portfolio entry showing how a teacher differentiates instruction, with student work samples and written analysis of learning growth."
+  },
+  {
+   "slug": "nbpts-component-3-teaching-practice-and-learning-environment",
+   "name": "National Board Certification Component 3: Teaching Practice and Learning Environment",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Exam",
+   "aka": [
+    "NBPTS Component 3"
+   ],
+   "blurb": "Video-based portfolio entry documenting classroom interaction, questioning and the learning environment across two recorded lessons."
+  },
+  {
+   "slug": "nbpts-component-4-effective-and-reflective-practitioner",
+   "name": "National Board Certification Component 4: Effective and Reflective Practitioner",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "National Board for Professional Teaching Standards",
+   "bodyUrl": "https://www.nbpts.org",
+   "type": "Exam",
+   "aka": [
+    "NBPTS Component 4"
+   ],
+   "blurb": "Portfolio entry on using assessment data, professional learning and family collaboration to improve student outcomes over time."
+  },
+  {
+   "slug": "edtpa-essentials",
+   "name": "edTPA Essentials",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "Evaluation Systems, Pearson",
+   "bodyUrl": "https://www.edtpa.com",
+   "type": "Exam",
+   "aka": [
+    "edTPA redesign"
+   ],
+   "blurb": "Streamlined two-task redesign of edTPA launching in 2026, with six rubrics per task and greater flexibility in submission timing."
+  },
+  {
+   "slug": "edtpa",
+   "name": "edTPA Teacher Performance Assessment",
+   "short": "edTPA",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "Evaluation Systems, Pearson",
+   "bodyUrl": "https://www.edtpa.com",
+   "type": "Exam",
+   "aka": [
+    "edTPA portfolio"
+   ],
+   "blurb": "Portfolio-based performance assessment of planning, instruction and assessment, submitted with video evidence during student teaching."
+  },
+  {
+   "slug": "foundations-of-reading-assessment",
+   "name": "Foundations of Reading Assessment",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "Evaluation Systems, Pearson",
+   "type": "Exam",
+   "aka": [
+    "Foundations of Reading",
+    "FoRT"
+   ],
+   "blurb": "Reading science licensure test adopted by many states, covering phonological awareness, phonics, fluency, vocabulary and comprehension."
+  },
+  {
+   "slug": "nes-assessment-of-professional-knowledge",
+   "name": "National Evaluation Series Assessment of Professional Knowledge",
+   "short": "NES APK",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "Evaluation Systems, Pearson",
+   "type": "Exam",
+   "aka": [
+    "NES APK",
+    "NES Professional Knowledge"
+   ],
+   "blurb": "NES pedagogy test offered at elementary and secondary levels, covering learners, instruction, assessment and professional responsibilities."
+  },
+  {
+   "slug": "nes-essential-academic-skills",
+   "name": "National Evaluation Series Essential Academic Skills",
+   "short": "NES EAS",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "Evaluation Systems, Pearson",
+   "type": "Exam",
+   "aka": [
+    "NES EAS",
+    "NES basic skills"
+   ],
+   "blurb": "Basic skills battery in reading, writing and mathematics used by several states as an admission or licensure requirement for teachers."
+  },
+  {
+   "slug": "nes-subject-assessments",
+   "name": "National Evaluation Series Subject Assessments",
+   "short": "NES Subject Tests",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "Evaluation Systems, Pearson",
+   "type": "Exam",
+   "aka": [
+    "NES content tests"
+   ],
+   "blurb": "Bank of national content-area tests for teacher licensure that states may adopt individually in place of building custom assessments."
+  },
+  {
+   "slug": "actfl-listening-proficiency-test",
+   "name": "ACTFL Listening Proficiency Test",
+   "short": "LPT",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "American Council on the Teaching of Foreign Languages",
+   "bodyUrl": "https://www.actfl.org",
+   "type": "Exam",
+   "aka": [
+    "ACTFL LPT"
+   ],
+   "blurb": "Computer-delivered assessment rating listening comprehension against the ACTFL proficiency scale for teachers and programme candidates."
+  },
+  {
+   "slug": "actfl-oral-proficiency-interview",
+   "name": "ACTFL Oral Proficiency Interview",
+   "short": "OPI",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "American Council on the Teaching of Foreign Languages",
+   "bodyUrl": "https://www.actfl.org",
+   "type": "Exam",
+   "aka": [
+    "ACTFL OPI"
+   ],
+   "blurb": "Live interview rating speaking ability on the ACTFL scale, required by many states for world language teacher licensure."
+  },
+  {
+   "slug": "actfl-oral-proficiency-interview-computer",
+   "name": "ACTFL Oral Proficiency Interview by Computer",
+   "short": "OPIc",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "American Council on the Teaching of Foreign Languages",
+   "bodyUrl": "https://www.actfl.org",
+   "type": "Exam",
+   "aka": [
+    "ACTFL OPIc"
+   ],
+   "blurb": "Computer-delivered speaking assessment rated on the ACTFL scale, offering a scheduled alternative to the live interview format."
+  },
+  {
+   "slug": "actfl-reading-proficiency-test",
+   "name": "ACTFL Reading Proficiency Test",
+   "short": "RPT",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "American Council on the Teaching of Foreign Languages",
+   "bodyUrl": "https://www.actfl.org",
+   "type": "Exam",
+   "aka": [
+    "ACTFL RPT"
+   ],
+   "blurb": "Computer-delivered assessment rating reading comprehension in a target language against the ACTFL proficiency guidelines."
+  },
+  {
+   "slug": "actfl-writing-proficiency-test",
+   "name": "ACTFL Writing Proficiency Test",
+   "short": "WPT",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "American Council on the Teaching of Foreign Languages",
+   "bodyUrl": "https://www.actfl.org",
+   "type": "Exam",
+   "aka": [
+    "ACTFL WPT"
+   ],
+   "blurb": "Written proficiency assessment rated on the ACTFL scale, paired with the OPI for many world language licensure requirements."
+  },
+  {
+   "slug": "google-certified-educator-level-1",
+   "name": "Google Certified Educator Level 1",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "Google for Education",
+   "type": "Certification",
+   "aka": [
+    "GCE Level 1"
+   ],
+   "blurb": "Entry certification covering the use of Google Workspace for Education tools such as Classroom, Docs, Drive and Meet in teaching."
+  },
+  {
+   "slug": "google-certified-educator-level-2",
+   "name": "Google Certified Educator Level 2",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "Google for Education",
+   "type": "Certification",
+   "aka": [
+    "GCE Level 2"
+   ],
+   "blurb": "Advanced certification on integrating Google tools for differentiation, data analysis, multimedia projects and student collaboration."
+  },
+  {
+   "slug": "google-certified-trainer",
+   "name": "Google Certified Trainer",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "Google for Education",
+   "type": "Certification",
+   "aka": [
+    "GCT"
+   ],
+   "blurb": "Credential for educators who deliver professional development on Google tools, requiring Level 2 certification and a trainer assessment."
+  },
+  {
+   "slug": "celta-certificate-in-teaching-english",
+   "name": "Certificate in Teaching English to Speakers of Other Languages",
+   "short": "CELTA",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "Cambridge Assessment English",
+   "type": "Certification",
+   "aka": [
+    "CELTA"
+   ],
+   "blurb": "Initial English teaching qualification combining input sessions with assessed teaching practice, recognised by employers worldwide."
+  },
+  {
+   "slug": "delta-diploma-in-teaching-english",
+   "name": "Diploma in Teaching English to Speakers of Other Languages",
+   "short": "DELTA",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "Cambridge Assessment English",
+   "type": "Certification",
+   "aka": [
+    "DELTA"
+   ],
+   "blurb": "Advanced English teaching qualification with three modules covering theory examination, professional practice and an extended assignment."
+  },
+  {
+   "slug": "microsoft-certified-educator",
+   "name": "Microsoft Certified Educator",
+   "short": "MCE",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "Microsoft",
+   "type": "Certification",
+   "aka": [
+    "MCE"
+   ],
+   "blurb": "Certification validating an educator ability to design technology-rich learning experiences using the ICT competency framework."
+  },
+  {
+   "slug": "microsoft-innovative-educator",
+   "name": "Microsoft Innovative Educator",
+   "short": "MIE",
+   "category": "education-teaching",
+   "group": "TESOL, Language & Education Technology",
+   "body": "Microsoft",
+   "type": "Training",
+   "aka": [
+    "MIE",
+    "MIE Expert"
+   ],
+   "blurb": "Recognition programme for teachers who complete Microsoft Learn education courses and apply the tools in classroom practice."
+  }
+ ]
+}

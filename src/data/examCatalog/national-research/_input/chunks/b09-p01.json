@@ -1,0 +1,300 @@
+{
+ "chunkId": "b09-p01",
+ "batch": 9,
+ "part": 1,
+ "categories": [
+  "aviation-maritime"
+ ],
+ "groups": [
+  "Maritime & USCG"
+ ],
+ "bodies": [
+  "U.S. Coast Guard National Maritime Center"
+ ],
+ "examCount": 21,
+ "exams": [
+  {
+   "slug": "stcw-able-seafarer-deck",
+   "name": "Able Seafarer-Deck Endorsement",
+   "short": "AS-D",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Able Seafarer Deck",
+    "STCW II/5"
+   ],
+   "blurb": "STCW deck rating under Regulation II/5 requiring assessed competencies in navigation watch support, mooring and cargo handling."
+  },
+  {
+   "slug": "stcw-able-seafarer-engine",
+   "name": "Able Seafarer-Engine Endorsement",
+   "short": "AS-E",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Able Seafarer Engine",
+    "STCW III/5"
+   ],
+   "blurb": "STCW engine rating under Regulation III/5 covering watchkeeping support, machinery operation and engine room maintenance tasks."
+  },
+  {
+   "slug": "uscg-able-seaman-endorsement",
+   "name": "Able Seaman Endorsement",
+   "short": "AB",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "AB Unlimited",
+    "AB Special",
+    "Able Bodied Seaman"
+   ],
+   "blurb": "Deck rating issued in grades from Special to Unlimited, requiring sea service plus an examination in seamanship and safety."
+  },
+  {
+   "slug": "uscg-apprentice-mate-steersman-towing",
+   "name": "Apprentice Mate (Steersman) of Towing Vessels",
+   "short": "Apprentice Mate",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Steersman"
+   ],
+   "blurb": "Entry towing endorsement requiring 30 days of deck service and an examination before a mariner may begin supervised wheelhouse training."
+  },
+  {
+   "slug": "uscg-assistance-towing-endorsement",
+   "name": "Assistance Towing Endorsement",
+   "short": "Assistance Towing",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Commercial Assistance Towing"
+   ],
+   "blurb": "Optional endorsement added to an OUPV or Master licence allowing the holder to tow disabled recreational vessels for hire."
+  },
+  {
+   "slug": "uscg-auxiliary-sail-endorsement",
+   "name": "Auxiliary Sail Endorsement",
+   "short": "Sail Endorsement",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Sail/Auxiliary Sail"
+   ],
+   "blurb": "Endorsement permitting a licensed operator to work on sail or auxiliary sail vessels after qualifying sea service and an exam module."
+  },
+  {
+   "slug": "uscg-chief-engineer-limited",
+   "name": "Chief Engineer (Limited) Endorsement",
+   "short": "Chief Engineer Limited",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Chief Engineer Limited-Oceans"
+   ],
+   "blurb": "Engineering licence for chief engineers on vessels of limited horsepower and tonnage, tested on motor and steam plant operation."
+  },
+  {
+   "slug": "uscg-chief-mate-endorsement",
+   "name": "Chief Mate Endorsement",
+   "short": "Chief Mate",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Chief Mate Unlimited"
+   ],
+   "blurb": "Senior deck licence for vessels of any gross tons, requiring management-level STCW training plus extensive Coast Guard examination modules."
+  },
+  {
+   "slug": "uscg-designated-duty-engineer",
+   "name": "Designated Duty Engineer Endorsement",
+   "short": "DDE",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "DDE 1000",
+    "DDE 4000",
+    "DDE Unlimited"
+   ],
+   "blurb": "Engineering licence for sole-engineer vessels, issued in horsepower tiers and requiring exams on diesel plants, electrical and auxiliary systems."
+  },
+  {
+   "slug": "uscg-first-class-pilot-endorsement",
+   "name": "First Class Pilot Endorsement",
+   "short": "First Class Pilot",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Federal Pilotage"
+   ],
+   "blurb": "Route-specific federal pilotage endorsement earned by round trips over the route and a chart examination drawn from memory."
+  },
+  {
+   "slug": "uscg-lifeboatman-endorsement",
+   "name": "Lifeboatman Endorsement",
+   "short": "Lifeboatman",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Proficiency in Survival Craft",
+    "PSC"
+   ],
+   "blurb": "Rating endorsement requiring practical assessment in launching and handling survival craft, matched by the STCW proficiency in survival craft."
+  },
+  {
+   "slug": "uscg-master-of-towing-vessels",
+   "name": "Master of Towing Vessels",
+   "short": "Master Towing",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Towing Master"
+   ],
+   "blurb": "Licence to command towing vessels on a specified route, earned through a towing officer assessment record and Coast Guard examination."
+  },
+  {
+   "slug": "uscg-master-1600-gross-tons",
+   "name": "Master of Vessels 1600 Gross Tons",
+   "short": "Master 1600",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "1600 Ton Master"
+   ],
+   "blurb": "Deck licence for oceans, near coastal or inland service on vessels up to 1600 gross tons, requiring multi-module Coast Guard examinations."
+  },
+  {
+   "slug": "uscg-master-500-gross-tons",
+   "name": "Master of Vessels 500 Gross Tons",
+   "short": "Master 500",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "500 Ton Master"
+   ],
+   "blurb": "Mid-tier deck licence for vessels up to 500 gross tons covering navigation, stability, cargo handling and rules of the road."
+  },
+  {
+   "slug": "uscg-master-any-gross-tons",
+   "name": "Master of Vessels Any Gross Tons",
+   "short": "Master Unlimited",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Unlimited Master",
+    "Master Oceans Any Gross Tons"
+   ],
+   "blurb": "Highest deck licence authorising command of vessels of unlimited tonnage on oceans, subject to management-level STCW and extensive exams."
+  },
+  {
+   "slug": "uscg-master-less-than-100-grt",
+   "name": "Master of Vessels Less Than 100 GRT",
+   "short": "Master 100 Ton",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "100 Ton Captain",
+    "Master 100 GRT"
+   ],
+   "blurb": "Widely held captain licence for inspected passenger vessels under 100 gross tons, tested on deck general, deck safety, rules and chart plot."
+  },
+  {
+   "slug": "uscg-master-less-than-200-grt",
+   "name": "Master of Vessels Less Than 200 GRT",
+   "short": "Master 200 Ton",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "200 Ton Master"
+   ],
+   "blurb": "Deck licence for vessels under 200 gross tons requiring additional sea service and examination beyond the 100 ton master level."
+  },
+  {
+   "slug": "uscg-master-less-than-25-grt",
+   "name": "Master of Vessels Less Than 25 GRT",
+   "short": "Master 25 Ton",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "25 Ton Master"
+   ],
+   "blurb": "Entry master licence assigned when a mariner qualifying sea service is on vessels of very small tonnage under 46 CFR 11.422."
+  },
+  {
+   "slug": "uscg-master-less-than-50-grt",
+   "name": "Master of Vessels Less Than 50 GRT",
+   "short": "Master 50 Ton",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "50 Ton Master"
+   ],
+   "blurb": "Master licence tier assigned from documented tonnage history, authorising command of inspected vessels under 50 gross tons."
+  },
+  {
+   "slug": "uscg-mate-of-towing-vessels",
+   "name": "Mate (Pilot) of Towing Vessels",
+   "short": "Mate Towing",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Towing Mate",
+    "Pilot of Towing Vessels"
+   ],
+   "blurb": "Wheelhouse licence permitting a mariner to stand a navigation watch aboard towing vessels after completing assessed towing competencies."
+  },
+  {
+   "slug": "uscg-mate-less-than-200-grt",
+   "name": "Mate of Vessels Less Than 200 GRT",
+   "short": "Mate 200 Ton",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Mate 200 GRT"
+   ],
+   "blurb": "Deck licence authorising watchkeeping as mate on inspected vessels under 200 gross tons on inland or near coastal routes."
+  }
+ ]
+}

@@ -1,0 +1,475 @@
+{
+  "batch": "40",
+  "categories": [
+    "trades"
+  ],
+  "groups": [
+    "Nondestructive Testing & Inspection",
+    "Heavy Equipment/Crane & Rigging",
+    "HVAC & Refrigeration"
+  ],
+  "examCount": 33,
+  "bodyCount": 7,
+  "bodies": [
+    "American Petroleum Institute (API)",
+    "American Society for Nondestructive Testing (ASNT)",
+    "International Organisation for Standardisation (ISO)",
+    "Aerospace Industries Association (AIA)",
+    "American Concrete Pumping Association (ACPA)",
+    "International Powered Access Federation (IPAF) / ANSI",
+    "National Commission for the Certification of Crane Operators (NCCCO)"
+  ],
+  "exams": [
+    {
+      "slug": "api-510-pressure-vessel-inspector",
+      "name": "API 510 Pressure Vessel Inspector",
+      "short": "API 510",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Petroleum Institute (API)",
+      "bodyUrl": "https://www.api.org",
+      "type": "Certification",
+      "aka": [
+        "API 510"
+      ],
+      "blurb": "Certifies inspectors of in-service pressure vessels in refineries and chemical plants under API inspection codes."
+    },
+    {
+      "slug": "api-570-piping-inspector",
+      "name": "API 570 Piping Inspector",
+      "short": "API 570",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Petroleum Institute (API)",
+      "bodyUrl": "https://www.api.org",
+      "type": "Certification",
+      "aka": [
+        "API 570"
+      ],
+      "blurb": "Certifies inspectors of in-service process piping systems, covering inspection, repair and remaining-life assessment."
+    },
+    {
+      "slug": "api-653-tank-inspector",
+      "name": "API 653 Aboveground Storage Tank Inspector",
+      "short": "API 653",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Petroleum Institute (API)",
+      "bodyUrl": "https://www.api.org",
+      "type": "Certification",
+      "aka": [
+        "API 653"
+      ],
+      "blurb": "Certifies inspectors of in-service aboveground storage tanks, covering bottom, shell, roof and foundation inspection."
+    },
+    {
+      "slug": "asnt-accp-level-2",
+      "name": "ASNT ACCP Professional Level II",
+      "short": "ACCP II",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Society for Nondestructive Testing (ASNT)",
+      "bodyUrl": "https://www.asnt.org",
+      "type": "Certification",
+      "aka": [
+        "ACCP II"
+      ],
+      "blurb": "Personnel qualification under the ASNT Central Certification Programme for independent, portable NDT certification at Level II."
+    },
+    {
+      "slug": "asnt-accp-level-3",
+      "name": "ASNT ACCP Professional Level III",
+      "short": "ACCP III",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Society for Nondestructive Testing (ASNT)",
+      "bodyUrl": "https://www.asnt.org",
+      "type": "Certification",
+      "aka": [
+        "ACCP III"
+      ],
+      "blurb": "Top-tier independent NDT certification under the ASNT Central Certification Programme covering method and programme management."
+    },
+    {
+      "slug": "asnt-eddy-current-testing",
+      "name": "ASNT Eddy Current Testing (ET)",
+      "short": "ET",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Society for Nondestructive Testing (ASNT)",
+      "bodyUrl": "https://www.asnt.org",
+      "type": "Certification",
+      "aka": [
+        "ET"
+      ],
+      "blurb": "Method-specific certification in electromagnetic testing for surface and near-surface crack detection on conductive materials."
+    },
+    {
+      "slug": "asnt-irrsp",
+      "name": "ASNT Industrial Radiography Radiation Safety Personnel (IRRSP)",
+      "short": "IRRSP",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Society for Nondestructive Testing (ASNT)",
+      "bodyUrl": "https://www.asnt.org",
+      "type": "Certification",
+      "aka": [
+        "IRRSP"
+      ],
+      "blurb": "Certifies radiation safety knowledge for personnel operating industrial radiographic equipment and handling sealed sources."
+    },
+    {
+      "slug": "asnt-liquid-penetrant-testing",
+      "name": "ASNT Liquid Penetrant Testing (PT)",
+      "short": "PT",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Society for Nondestructive Testing (ASNT)",
+      "bodyUrl": "https://www.asnt.org",
+      "type": "Certification",
+      "aka": [
+        "PT"
+      ],
+      "blurb": "Method-specific certification in liquid penetrant inspection for locating surface-breaking flaws on non-porous materials."
+    },
+    {
+      "slug": "asnt-magnetic-particle-testing",
+      "name": "ASNT Magnetic Particle Testing (MT)",
+      "short": "MT",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Society for Nondestructive Testing (ASNT)",
+      "bodyUrl": "https://www.asnt.org",
+      "type": "Certification",
+      "aka": [
+        "MT"
+      ],
+      "blurb": "Method-specific certification in magnetic particle inspection for detecting surface and near-surface flaws in ferrous parts."
+    },
+    {
+      "slug": "asnt-ndt-level-1",
+      "name": "ASNT NDT Level I",
+      "short": "NDT Level I",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Society for Nondestructive Testing (ASNT)",
+      "bodyUrl": "https://www.asnt.org",
+      "type": "Certification",
+      "aka": [
+        "NDT Level I"
+      ],
+      "blurb": "Qualifies technicians to perform specific NDT tests under supervision and record results per documented procedures."
+    },
+    {
+      "slug": "asnt-ndt-level-2",
+      "name": "ASNT NDT Level II",
+      "short": "NDT Level II",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Society for Nondestructive Testing (ASNT)",
+      "bodyUrl": "https://www.asnt.org",
+      "type": "Certification",
+      "aka": [
+        "NDT Level II"
+      ],
+      "blurb": "Qualifies technicians to set up and conduct tests, interpret codes and supervise Level I personnel within certified methods."
+    },
+    {
+      "slug": "asnt-ndt-level-3",
+      "name": "ASNT NDT Level III",
+      "short": "NDT Level III",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Society for Nondestructive Testing (ASNT)",
+      "bodyUrl": "https://www.asnt.org",
+      "type": "Certification",
+      "aka": [
+        "NDT Level III"
+      ],
+      "blurb": "Senior credential qualifying holders to establish NDT techniques, interpret standards and direct full inspection programmes."
+    },
+    {
+      "slug": "asnt-radiographic-testing",
+      "name": "ASNT Radiographic Testing (RT)",
+      "short": "RT",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Society for Nondestructive Testing (ASNT)",
+      "bodyUrl": "https://www.asnt.org",
+      "type": "Certification",
+      "aka": [
+        "RT"
+      ],
+      "blurb": "Method-specific certification in radiographic inspection using X-ray or gamma sources to image internal weld and casting flaws."
+    },
+    {
+      "slug": "asnt-ultrasonic-testing",
+      "name": "ASNT Ultrasonic Testing (UT)",
+      "short": "UT",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Society for Nondestructive Testing (ASNT)",
+      "bodyUrl": "https://www.asnt.org",
+      "type": "Certification",
+      "aka": [
+        "UT"
+      ],
+      "blurb": "Method-specific certification in ultrasonic inspection for thickness measurement and flaw detection using high-frequency sound."
+    },
+    {
+      "slug": "asnt-visual-testing",
+      "name": "ASNT Visual Testing (VT)",
+      "short": "VT",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "American Society for Nondestructive Testing (ASNT)",
+      "bodyUrl": "https://www.asnt.org",
+      "type": "Certification",
+      "aka": [
+        "VT"
+      ],
+      "blurb": "Method-specific certification in visual inspection, the most common NDT method for weld, casting and component evaluation."
+    },
+    {
+      "slug": "iso-9712-ndt",
+      "name": "ISO 9712 NDT Personnel Certification",
+      "short": "ISO 9712",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "International Organisation for Standardisation (ISO)",
+      "bodyUrl": "https://www.iso.org",
+      "type": "Certification",
+      "aka": [
+        "ISO 9712"
+      ],
+      "blurb": "International standard for qualifying and certifying NDT personnel across methods, used by accredited bodies worldwide."
+    },
+    {
+      "slug": "nas-410-ndt",
+      "name": "NAS 410 NDT Personnel Approval",
+      "short": "NAS 410",
+      "category": "trades",
+      "group": "Nondestructive Testing & Inspection",
+      "body": "Aerospace Industries Association (AIA)",
+      "type": "Certification",
+      "aka": [
+        "NAS 410"
+      ],
+      "blurb": "Aerospace NDT personnel approval standard used by defence and aviation primes to qualify inspection personnel."
+    },
+    {
+      "slug": "acpa-concrete-pump-operator",
+      "name": "ACPA Certified Concrete Pump Operator",
+      "short": "ACPA Pump",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "American Concrete Pumping Association (ACPA)",
+      "bodyUrl": "https://www.concretepumpers.com",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies operators of boom and line concrete pumps in safe setup, placing and cleanup of pumped concrete."
+    },
+    {
+      "slug": "aerial-lift-mewp-operator",
+      "name": "Aerial Lift / MEWP Operator",
+      "short": "MEWP",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "International Powered Access Federation (IPAF) / ANSI",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies safe operation of scissor and boom lifts (MEWPs) under ANSI A92 and employer training standards."
+    },
+    {
+      "slug": "nccco-articulating-crane-operator",
+      "name": "NCCCO Articulating Crane Operator (AC)",
+      "short": "CCO Articulating",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "National Commission for the Certification of Crane Operators (NCCCO)",
+      "bodyUrl": "https://www.nccco.org",
+      "type": "Certification",
+      "aka": [
+        "AC"
+      ],
+      "blurb": "Certifies operators of knuckle-boom articulating cranes mounted on service and delivery trucks."
+    },
+    {
+      "slug": "nccco-crane-inspector",
+      "name": "NCCCO Crane Inspector (MCI/TCI/OCI)",
+      "short": "CCO Inspector",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "National Commission for the Certification of Crane Operators (NCCCO)",
+      "bodyUrl": "https://www.nccco.org",
+      "type": "Certification",
+      "aka": [
+        "MCI",
+        "TCI",
+        "OCI"
+      ],
+      "blurb": "Certifies inspectors of mobile, tower and overhead cranes for structural and mechanical compliance."
+    },
+    {
+      "slug": "nccco-digger-derrick-operator",
+      "name": "NCCCO Digger Derrick Operator (DD)",
+      "short": "CCO Digger Derrick",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "National Commission for the Certification of Crane Operators (NCCCO)",
+      "bodyUrl": "https://www.nccco.org",
+      "type": "Certification",
+      "aka": [
+        "DD"
+      ],
+      "blurb": "Certifies operators of digger derricks used for pole setting and material handling by utility crews."
+    },
+    {
+      "slug": "nccco-lattice-boom-crane-operator",
+      "name": "NCCCO Lattice Boom Crane Operator (LBC/LBT)",
+      "short": "CCO Lattice",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "National Commission for the Certification of Crane Operators (NCCCO)",
+      "bodyUrl": "https://www.nccco.org",
+      "type": "Certification",
+      "aka": [
+        "LBC",
+        "LBT"
+      ],
+      "blurb": "Certifies operators of lattice boom crawlers and truck cranes for heavy lift and infrastructure work."
+    },
+    {
+      "slug": "nccco-lift-director",
+      "name": "NCCCO Lift Director (MLD/TLD)",
+      "short": "CCO Lift Director",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "National Commission for the Certification of Crane Operators (NCCCO)",
+      "bodyUrl": "https://www.nccco.org",
+      "type": "Certification",
+      "aka": [
+        "MLD",
+        "TLD"
+      ],
+      "blurb": "Certifies planning and supervision of critical lifts, including engineering and on-site coordination."
+    },
+    {
+      "slug": "nccco-mobile-crane-operator",
+      "name": "NCCCO Mobile Crane Operator (TLL/TSS)",
+      "short": "CCO Mobile",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "National Commission for the Certification of Crane Operators (NCCCO)",
+      "bodyUrl": "https://www.nccco.org",
+      "type": "Certification",
+      "aka": [
+        "TLL",
+        "TSS"
+      ],
+      "blurb": "Certifies operators of lattice and telescopic boom trucks and crawlers through written and practical exams."
+    },
+    {
+      "slug": "nccco-overhead-crane-operator",
+      "name": "NCCCO Overhead Crane Operator (OC)",
+      "short": "CCO Overhead",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "National Commission for the Certification of Crane Operators (NCCCO)",
+      "bodyUrl": "https://www.nccco.org",
+      "type": "Certification",
+      "aka": [
+        "OC"
+      ],
+      "blurb": "Certifies operators of bridge and gantry overhead cranes in factories, yards and shipping facilities."
+    },
+    {
+      "slug": "nccco-rigger-level-1",
+      "name": "NCCCO Rigger Level I",
+      "short": "Rigger I",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "National Commission for the Certification of Crane Operators (NCCCO)",
+      "bodyUrl": "https://www.nccco.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies basic rigging of loads using hitch selection, slings and hardware under a qualified signalperson."
+    },
+    {
+      "slug": "nccco-rigger-level-2",
+      "name": "NCCCO Rigger Level II",
+      "short": "Rigger II",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "National Commission for the Certification of Crane Operators (NCCCO)",
+      "bodyUrl": "https://www.nccco.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies advanced rigging including critical lift planning, load calculations and supervision of rigging crews."
+    },
+    {
+      "slug": "nccco-service-truck-crane-operator",
+      "name": "NCCCO Service Truck Crane Operator (STC)",
+      "short": "CCO Service Truck",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "National Commission for the Certification of Crane Operators (NCCCO)",
+      "bodyUrl": "https://www.nccco.org",
+      "type": "Certification",
+      "aka": [
+        "STC"
+      ],
+      "blurb": "Certifies operators of small service truck cranes for field repair and light lifting duties."
+    },
+    {
+      "slug": "nccco-signalperson",
+      "name": "NCCCO Signalperson",
+      "short": "Signalperson",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "National Commission for the Certification of Crane Operators (NCCCO)",
+      "bodyUrl": "https://www.nccco.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies crane signalpersons in hand and voice signals directing lifts under OSHA crane standards."
+    },
+    {
+      "slug": "nccco-telehandler-operator",
+      "name": "NCCCO Telehandler Operator (TH)",
+      "short": "CCO Telehandler",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "National Commission for the Certification of Crane Operators (NCCCO)",
+      "bodyUrl": "https://www.nccco.org",
+      "type": "Certification",
+      "aka": [
+        "TH"
+      ],
+      "blurb": "Certifies operators of variable reach forklifts (telehandlers) for material placement on job sites."
+    },
+    {
+      "slug": "nccco-tower-crane-operator",
+      "name": "NCCCO Tower Crane Operator (TWR)",
+      "short": "CCO Tower",
+      "category": "trades",
+      "group": "Heavy Equipment/Crane & Rigging",
+      "body": "National Commission for the Certification of Crane Operators (NCCCO)",
+      "bodyUrl": "https://www.nccco.org",
+      "type": "Certification",
+      "aka": [
+        "TWR"
+      ],
+      "blurb": "Certifies operators of tower cranes used in high-rise and vertical construction through written and practical tests."
+    },
+    {
+      "slug": "epa-608-certification",
+      "name": "EPA Section 608 Technician Certification",
+      "short": "EPA 608",
+      "category": "trades",
+      "group": "HVAC & Refrigeration",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Federally mandated certification for anyone who maintains, services or disposes of equipment containing regulated refrigerants."
+    }
+  ]
+}

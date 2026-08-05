@@ -1,0 +1,25 @@
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "C:\\Users\\samja\\Desktop\\testpreppilot-v2"
+Source:       "dist"
+Output:       "dist\\pagefind"
+
+[Walking source directory]
+Found 5855 files matching **/*.{html}
+
+[Parsing files]
+Did not find a data-pagefind-body element on the site.
+↳ Indexing all <body> elements on the site.
+
+[Reading languages]
+Discovered 1 language: en
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 5854 pages
+  Indexed 20062 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 39881.917 seconds

@@ -1,0 +1,1161 @@
+{
+ "target": 30,
+ "hardMax": 38,
+ "chunkCount": 110,
+ "totalExams": 3186,
+ "chunks": [
+  {
+   "chunkId": "b01-p01",
+   "batch": 1,
+   "examCount": 38,
+   "bodies": 14,
+   "groups": [
+    "Accounting & Audit",
+    "Tax Practice",
+    "Public Accounting"
+   ]
+  },
+  {
+   "chunkId": "b01-p02",
+   "batch": 1,
+   "examCount": 3,
+   "bodies": 3,
+   "groups": [
+    "Accounting & Audit"
+   ]
+  },
+  {
+   "chunkId": "b02-p01",
+   "batch": 2,
+   "examCount": 37,
+   "bodies": 1,
+   "groups": [
+    "CLEP & Credit by Exam",
+    "Advanced Placement"
+   ]
+  },
+  {
+   "chunkId": "b02-p02",
+   "batch": 2,
+   "examCount": 37,
+   "bodies": 1,
+   "groups": [
+    "Advanced Placement"
+   ]
+  },
+  {
+   "chunkId": "b02-p03",
+   "batch": 2,
+   "examCount": 20,
+   "bodies": 1,
+   "groups": [
+    "CLEP & Credit by Exam"
+   ]
+  },
+  {
+   "chunkId": "b02-p04",
+   "batch": 2,
+   "examCount": 19,
+   "bodies": 1,
+   "groups": [
+    "CLEP & Credit by Exam"
+   ]
+  },
+  {
+   "chunkId": "b02-p05",
+   "batch": 2,
+   "examCount": 4,
+   "bodies": 4,
+   "groups": [
+    "CLEP & Credit by Exam"
+   ]
+  },
+  {
+   "chunkId": "b03-p01",
+   "batch": 3,
+   "examCount": 38,
+   "bodies": 4,
+   "groups": [
+    "Graduate & Professional Admissions",
+    "English Proficiency",
+    "International Baccalaureate",
+    "College Placement"
+   ]
+  },
+  {
+   "chunkId": "b03-p02",
+   "batch": 3,
+   "examCount": 38,
+   "bodies": 12,
+   "groups": [
+    "K-12 Private School Admissions",
+    "Graduate & Professional Admissions",
+    "English Proficiency",
+    "Standardized State & National Assessments",
+    "Military & Aptitude"
+   ]
+  },
+  {
+   "chunkId": "b03-p03",
+   "batch": 3,
+   "examCount": 30,
+   "bodies": 25,
+   "groups": [
+    "Military & Aptitude",
+    "Standardized State & National Assessments",
+    "K-12 Private School Admissions",
+    "Graduate & Professional Admissions",
+    "English Proficiency",
+    "College Placement"
+   ]
+  },
+  {
+   "chunkId": "b04-p01",
+   "batch": 4,
+   "examCount": 15,
+   "bodies": 7,
+   "groups": [
+    "College Admissions",
+    "High School Equivalency"
+   ]
+  },
+  {
+   "chunkId": "b05-p01",
+   "batch": 5,
+   "examCount": 38,
+   "bodies": 2,
+   "groups": [
+    "Coding and HIM",
+    "Laboratory"
+   ]
+  },
+  {
+   "chunkId": "b05-p02",
+   "batch": 5,
+   "examCount": 38,
+   "bodies": 5,
+   "groups": [
+    "Medical Imaging",
+    "Specialized Allied Health",
+    "Coding and HIM"
+   ]
+  },
+  {
+   "chunkId": "b05-p03",
+   "batch": 5,
+   "examCount": 28,
+   "bodies": 12,
+   "groups": [
+    "Medical Imaging",
+    "Specialized Allied Health",
+    "Laboratory"
+   ]
+  },
+  {
+   "chunkId": "b06-p01",
+   "batch": 6,
+   "examCount": 38,
+   "bodies": 4,
+   "groups": [
+    "Pharmacy Support",
+    "Respiratory Care",
+    "Cardiovascular",
+    "EMS"
+   ]
+  },
+  {
+   "chunkId": "b06-p02",
+   "batch": 6,
+   "examCount": 38,
+   "bodies": 8,
+   "groups": [
+    "Dental Support",
+    "EMS",
+    "Pharmacy Support",
+    "Medical Office",
+    "Nursing Support",
+    "Surgical and Sterile Processing"
+   ]
+  },
+  {
+   "chunkId": "b06-p03",
+   "batch": 6,
+   "examCount": 5,
+   "bodies": 3,
+   "groups": [
+    "Surgical and Sterile Processing",
+    "Medical Office",
+    "Nursing Support"
+   ]
+  },
+  {
+   "chunkId": "b07-p01",
+   "batch": 7,
+   "examCount": 25,
+   "bodies": 19,
+   "groups": [
+    "Animal & Veterinary Support"
+   ]
+  },
+  {
+   "chunkId": "b08-p01",
+   "batch": 8,
+   "examCount": 27,
+   "bodies": 1,
+   "groups": [
+    "FAA Airman Knowledge Tests"
+   ]
+  },
+  {
+   "chunkId": "b08-p02",
+   "batch": 8,
+   "examCount": 27,
+   "bodies": 1,
+   "groups": [
+    "FAA Airman Knowledge Tests"
+   ]
+  },
+  {
+   "chunkId": "b08-p03",
+   "batch": 8,
+   "examCount": 26,
+   "bodies": 1,
+   "groups": [
+    "FAA Airman Knowledge Tests"
+   ]
+  },
+  {
+   "chunkId": "b08-p04",
+   "batch": 8,
+   "examCount": 4,
+   "bodies": 3,
+   "groups": [
+    "FAA Airman Knowledge Tests"
+   ]
+  },
+  {
+   "chunkId": "b09-p01",
+   "batch": 9,
+   "examCount": 21,
+   "bodies": 1,
+   "groups": [
+    "Maritime & USCG"
+   ]
+  },
+  {
+   "chunkId": "b09-p02",
+   "batch": 9,
+   "examCount": 20,
+   "bodies": 1,
+   "groups": [
+    "Maritime & USCG"
+   ]
+  },
+  {
+   "chunkId": "b09-p03",
+   "batch": 9,
+   "examCount": 38,
+   "bodies": 4,
+   "groups": [
+    "Maritime & USCG",
+    "Radio & Communications",
+    "Aircraft Maintenance"
+   ]
+  },
+  {
+   "chunkId": "b09-p04",
+   "batch": 9,
+   "examCount": 30,
+   "bodies": 12,
+   "groups": [
+    "Radio & Communications",
+    "Maritime & USCG",
+    "Aircraft Maintenance"
+   ]
+  },
+  {
+   "chunkId": "b10-p01",
+   "batch": 10,
+   "examCount": 35,
+   "bodies": 1,
+   "groups": [
+    "Cosmetology & Barbering"
+   ]
+  },
+  {
+   "chunkId": "b10-p02",
+   "batch": 10,
+   "examCount": 17,
+   "bodies": 16,
+   "groups": [
+    "Spa, Massage & Wellness",
+    "Cosmetology & Barbering"
+   ]
+  },
+  {
+   "chunkId": "b11-p01",
+   "batch": 11,
+   "examCount": 38,
+   "bodies": 4,
+   "groups": [
+    "Psychology Licensure & Board Certification",
+    "Social Work",
+    "Addiction & Recovery"
+   ]
+  },
+  {
+   "chunkId": "b11-p02",
+   "batch": 11,
+   "examCount": 38,
+   "bodies": 12,
+   "groups": [
+    "Counseling",
+    "Social Work",
+    "Psychology Licensure & Board Certification",
+    "Applied Behavior Analysis",
+    "Specialty Clinical Practice"
+   ]
+  },
+  {
+   "chunkId": "b11-p03",
+   "batch": 11,
+   "examCount": 24,
+   "bodies": 19,
+   "groups": [
+    "Counseling",
+    "Applied Behavior Analysis",
+    "Creative Arts & Expressive Therapy",
+    "Psychology Licensure & Board Certification",
+    "Specialty Clinical Practice",
+    "Addiction & Recovery"
+   ]
+  },
+  {
+   "chunkId": "b12-p01",
+   "batch": 12,
+   "examCount": 8,
+   "bodies": 7,
+   "groups": [
+    "School & Child Behavioral Health",
+    "Marriage & Family Therapy"
+   ]
+  },
+  {
+   "chunkId": "b13-p01",
+   "batch": 13,
+   "examCount": 30,
+   "bodies": 1,
+   "groups": [
+    "Praxis Elementary & Early Childhood"
+   ]
+  },
+  {
+   "chunkId": "b13-p02",
+   "batch": 13,
+   "examCount": 30,
+   "bodies": 1,
+   "groups": [
+    "Praxis Elementary & Early Childhood",
+    "National Teaching Credentials & Performance Assessments",
+    "Praxis Humanities & Social Studies"
+   ]
+  },
+  {
+   "chunkId": "b13-p03",
+   "batch": 13,
+   "examCount": 38,
+   "bodies": 6,
+   "groups": [
+    "National Teaching Credentials & Performance Assessments",
+    "TESOL, Language & Education Technology"
+   ]
+  },
+  {
+   "chunkId": "b13-p04",
+   "batch": 13,
+   "examCount": 3,
+   "bodies": 3,
+   "groups": [
+    "TESOL, Language & Education Technology"
+   ]
+  },
+  {
+   "chunkId": "b14-p01",
+   "batch": 14,
+   "examCount": 35,
+   "bodies": 1,
+   "groups": [
+    "Early Childhood, Paraeducator & Instructional Support",
+    "Praxis Special Education",
+    "Praxis Career, Technical & Physical Education",
+    "Praxis Mathematics & Science",
+    "Praxis School Services & Leadership"
+   ]
+  },
+  {
+   "chunkId": "b14-p02",
+   "batch": 14,
+   "examCount": 35,
+   "bodies": 1,
+   "groups": [
+    "Praxis School Services & Leadership",
+    "Praxis Pedagogy & Middle School",
+    "Praxis World Languages",
+    "Praxis Core & Basic Skills"
+   ]
+  },
+  {
+   "chunkId": "b14-p03",
+   "batch": 14,
+   "examCount": 10,
+   "bodies": 6,
+   "groups": [
+    "Early Childhood, Paraeducator & Instructional Support"
+   ]
+  },
+  {
+   "chunkId": "b15-p01",
+   "batch": 15,
+   "examCount": 38,
+   "bodies": 4,
+   "groups": [
+    "NCEES PE Exams",
+    "Structural & Surveying",
+    "Manufacturing & Systems Engineering",
+    "Green Building & Energy"
+   ]
+  },
+  {
+   "chunkId": "b15-p02",
+   "batch": 15,
+   "examCount": 38,
+   "bodies": 7,
+   "groups": [
+    "Architecture",
+    "Green Building & Energy",
+    "Manufacturing & Systems Engineering",
+    "Structural & Surveying"
+   ]
+  },
+  {
+   "chunkId": "b15-p03",
+   "batch": 15,
+   "examCount": 27,
+   "bodies": 13,
+   "groups": [
+    "Architecture",
+    "Green Building & Energy",
+    "Manufacturing & Systems Engineering"
+   ]
+  },
+  {
+   "chunkId": "b16-p01",
+   "batch": 16,
+   "examCount": 7,
+   "bodies": 1,
+   "groups": [
+    "NCEES FE Exams"
+   ]
+  },
+  {
+   "chunkId": "b17-p01",
+   "batch": 17,
+   "examCount": 38,
+   "bodies": 3,
+   "groups": [
+    "Water, Wastewater & Utilities",
+    "Pesticide, Agriculture & Land"
+   ]
+  },
+  {
+   "chunkId": "b17-p02",
+   "batch": 17,
+   "examCount": 38,
+   "bodies": 7,
+   "groups": [
+    "Environmental Remediation & Building Hazards",
+    "Pesticide, Agriculture & Land",
+    "Water, Wastewater & Utilities"
+   ]
+  },
+  {
+   "chunkId": "b17-p03",
+   "batch": 17,
+   "examCount": 35,
+   "bodies": 22,
+   "groups": [
+    "Water, Wastewater & Utilities",
+    "Pesticide, Agriculture & Land",
+    "Environmental Remediation & Building Hazards"
+   ]
+  },
+  {
+   "chunkId": "b18-p01",
+   "batch": 18,
+   "examCount": 38,
+   "bodies": 3,
+   "groups": [
+    "FINRA & Securities Licensing",
+    "Banking & Lending",
+    "Financial Planning & Advice"
+   ]
+  },
+  {
+   "chunkId": "b18-p02",
+   "batch": 18,
+   "examCount": 38,
+   "bodies": 9,
+   "groups": [
+    "Banking & Lending",
+    "Financial Planning & Advice",
+    "FINRA & Securities Licensing"
+   ]
+  },
+  {
+   "chunkId": "b18-p03",
+   "batch": 18,
+   "examCount": 24,
+   "bodies": 17,
+   "groups": [
+    "FINRA & Securities Licensing",
+    "Financial Planning & Advice",
+    "Banking & Lending"
+   ]
+  },
+  {
+   "chunkId": "b19-p01",
+   "batch": 19,
+   "examCount": 38,
+   "bodies": 18,
+   "groups": [
+    "Investment & Portfolio Management",
+    "Corporate & Specialty Finance"
+   ]
+  },
+  {
+   "chunkId": "b20-p01",
+   "batch": 20,
+   "examCount": 38,
+   "bodies": 9,
+   "groups": [
+    "Fitness, Sport & Recreation"
+   ]
+  },
+  {
+   "chunkId": "b20-p02",
+   "batch": 20,
+   "examCount": 38,
+   "bodies": 26,
+   "groups": [
+    "Fitness, Sport & Recreation"
+   ]
+  },
+  {
+   "chunkId": "b20-p03",
+   "batch": 20,
+   "examCount": 5,
+   "bodies": 5,
+   "groups": [
+    "Fitness, Sport & Recreation"
+   ]
+  },
+  {
+   "chunkId": "b21-p01",
+   "batch": 21,
+   "examCount": 38,
+   "bodies": 5,
+   "groups": [
+    "Food Safety & Culinary",
+    "Hospitality & Events"
+   ]
+  },
+  {
+   "chunkId": "b21-p02",
+   "batch": 21,
+   "examCount": 38,
+   "bodies": 27,
+   "groups": [
+    "Food Safety & Culinary",
+    "Hospitality & Events"
+   ]
+  },
+  {
+   "chunkId": "b21-p03",
+   "batch": 21,
+   "examCount": 6,
+   "bodies": 6,
+   "groups": [
+    "Hospitality & Events"
+   ]
+  },
+  {
+   "chunkId": "b22-p01",
+   "batch": 22,
+   "examCount": 38,
+   "bodies": 23,
+   "groups": [
+    "Federal Hiring & Civil Service"
+   ]
+  },
+  {
+   "chunkId": "b22-p02",
+   "batch": 22,
+   "examCount": 5,
+   "bodies": 5,
+   "groups": [
+    "Federal Hiring & Civil Service"
+   ]
+  },
+  {
+   "chunkId": "b23-p01",
+   "batch": 23,
+   "examCount": 38,
+   "bodies": 4,
+   "groups": [
+    "Osteopathic Medicine",
+    "Pharmacy",
+    "Nursing",
+    "Physician"
+   ]
+  },
+  {
+   "chunkId": "b23-p02",
+   "batch": 23,
+   "examCount": 38,
+   "bodies": 10,
+   "groups": [
+    "Rehabilitation",
+    "Other Clinicians",
+    "Nursing",
+    "Physician"
+   ]
+  },
+  {
+   "chunkId": "b23-p03",
+   "batch": 23,
+   "examCount": 37,
+   "bodies": 33,
+   "groups": [
+    "Other Clinicians",
+    "Pharmacy",
+    "Rehabilitation",
+    "Physician",
+    "Nursing"
+   ]
+  },
+  {
+   "chunkId": "b24-p01",
+   "batch": 24,
+   "examCount": 23,
+   "bodies": 16,
+   "groups": [
+    "Vision",
+    "Dental"
+   ]
+  },
+  {
+   "chunkId": "b25-p01",
+   "batch": 25,
+   "examCount": 36,
+   "bodies": 1,
+   "groups": [
+    "Insurance Designations",
+    "Claims & Adjusting"
+   ]
+  },
+  {
+   "chunkId": "b25-p02",
+   "batch": 25,
+   "examCount": 38,
+   "bodies": 4,
+   "groups": [
+    "Actuarial",
+    "Risk & Compliance",
+    "Claims & Adjusting",
+    "Life & Health Designations"
+   ]
+  },
+  {
+   "chunkId": "b25-p03",
+   "batch": 25,
+   "examCount": 38,
+   "bodies": 14,
+   "groups": [
+    "Risk & Compliance",
+    "Life & Health Designations",
+    "Claims & Adjusting",
+    "Actuarial"
+   ]
+  },
+  {
+   "chunkId": "b25-p04",
+   "batch": 25,
+   "examCount": 2,
+   "bodies": 2,
+   "groups": [
+    "Risk & Compliance"
+   ]
+  },
+  {
+   "chunkId": "b26-p01",
+   "batch": 26,
+   "examCount": 38,
+   "bodies": 10,
+   "groups": [
+    "Court Reporting & Transcription",
+    "Bar Exam Components",
+    "Paralegal & Legal Support",
+    "Compliance & Investigations",
+    "Patent & IP"
+   ]
+  },
+  {
+   "chunkId": "b26-p02",
+   "batch": 26,
+   "examCount": 19,
+   "bodies": 16,
+   "groups": [
+    "Paralegal & Legal Support",
+    "Bar Exam Components",
+    "Compliance & Investigations",
+    "Patent & IP"
+   ]
+  },
+  {
+   "chunkId": "b27-p01",
+   "batch": 27,
+   "examCount": 38,
+   "bodies": 28,
+   "groups": [
+    "Funeral, Personal & Community Services"
+   ]
+  },
+  {
+   "chunkId": "b28-p01",
+   "batch": 28,
+   "examCount": 38,
+   "bodies": 3,
+   "groups": [
+    "Agile & Product",
+    "Project & Program Management"
+   ]
+  },
+  {
+   "chunkId": "b28-p02",
+   "batch": 28,
+   "examCount": 38,
+   "bodies": 4,
+   "groups": [
+    "Project & Program Management",
+    "Agile & Product",
+    "Human Resources"
+   ]
+  },
+  {
+   "chunkId": "b28-p03",
+   "batch": 28,
+   "examCount": 38,
+   "bodies": 11,
+   "groups": [
+    "Agile & Product",
+    "Project & Program Management",
+    "Human Resources"
+   ]
+  },
+  {
+   "chunkId": "b28-p04",
+   "batch": 28,
+   "examCount": 9,
+   "bodies": 7,
+   "groups": [
+    "Human Resources",
+    "Agile & Product",
+    "Project & Program Management"
+   ]
+  },
+  {
+   "chunkId": "b29-p01",
+   "batch": 29,
+   "examCount": 38,
+   "bodies": 4,
+   "groups": [
+    "Quality, Lean & Six Sigma",
+    "Real Estate Adjacent Business",
+    "Supply Chain & Operations"
+   ]
+  },
+  {
+   "chunkId": "b29-p02",
+   "batch": 29,
+   "examCount": 38,
+   "bodies": 12,
+   "groups": [
+    "Business Analysis & Data",
+    "Real Estate Adjacent Business",
+    "Quality, Lean & Six Sigma",
+    "Marketing, Sales & Communications",
+    "Supply Chain & Operations"
+   ]
+  },
+  {
+   "chunkId": "b29-p03",
+   "batch": 29,
+   "examCount": 27,
+   "bodies": 23,
+   "groups": [
+    "Marketing, Sales & Communications",
+    "Supply Chain & Operations",
+    "Business Analysis & Data",
+    "Real Estate Adjacent Business",
+    "Quality, Lean & Six Sigma"
+   ]
+  },
+  {
+   "chunkId": "b30-p01",
+   "batch": 30,
+   "examCount": 38,
+   "bodies": 3,
+   "groups": [
+    "Firefighter",
+    "Emergency Management & Dispatch",
+    "Law Enforcement Entrance"
+   ]
+  },
+  {
+   "chunkId": "b30-p02",
+   "batch": 30,
+   "examCount": 38,
+   "bodies": 17,
+   "groups": [
+    "Firefighter",
+    "Military Occupational & Federal Safety",
+    "Law Enforcement Entrance",
+    "Emergency Management & Dispatch",
+    "Corrections & Security-adjacent Public Safety"
+   ]
+  },
+  {
+   "chunkId": "b30-p03",
+   "batch": 30,
+   "examCount": 19,
+   "bodies": 19,
+   "groups": [
+    "Law Enforcement Entrance",
+    "Emergency Management & Dispatch",
+    "Corrections & Security-adjacent Public Safety",
+    "Military Occupational & Federal Safety"
+   ]
+  },
+  {
+   "chunkId": "b31-p01",
+   "batch": 31,
+   "examCount": 23,
+   "bodies": 14,
+   "groups": [
+    "Security & Investigation"
+   ]
+  },
+  {
+   "chunkId": "b32-p01",
+   "batch": 32,
+   "examCount": 38,
+   "bodies": 2,
+   "groups": [
+    "Cybersecurity (Vendor-Neutral)"
+   ]
+  },
+  {
+   "chunkId": "b32-p02",
+   "batch": 32,
+   "examCount": 38,
+   "bodies": 7,
+   "groups": [
+    "Cybersecurity (Vendor-Neutral)"
+   ]
+  },
+  {
+   "chunkId": "b32-p03",
+   "batch": 32,
+   "examCount": 4,
+   "bodies": 2,
+   "groups": [
+    "Cybersecurity (Vendor-Neutral)"
+   ]
+  },
+  {
+   "chunkId": "b33-p01",
+   "batch": 33,
+   "examCount": 36,
+   "bodies": 1,
+   "groups": [
+    "Microsoft"
+   ]
+  },
+  {
+   "chunkId": "b33-p02",
+   "batch": 33,
+   "examCount": 36,
+   "bodies": 1,
+   "groups": [
+    "Microsoft"
+   ]
+  },
+  {
+   "chunkId": "b33-p03",
+   "batch": 33,
+   "examCount": 5,
+   "bodies": 1,
+   "groups": [
+    "Microsoft"
+   ]
+  },
+  {
+   "chunkId": "b34-p01",
+   "batch": 34,
+   "examCount": 38,
+   "bodies": 5,
+   "groups": [
+    "Enterprise Platforms",
+    "Data, Analytics & AI"
+   ]
+  },
+  {
+   "chunkId": "b34-p02",
+   "batch": 34,
+   "examCount": 38,
+   "bodies": 11,
+   "groups": [
+    "Data, Analytics & AI",
+    "Enterprise Platforms"
+   ]
+  },
+  {
+   "chunkId": "b34-p03",
+   "batch": 34,
+   "examCount": 23,
+   "bodies": 14,
+   "groups": [
+    "Enterprise Platforms",
+    "Data, Analytics & AI"
+   ]
+  },
+  {
+   "chunkId": "b35-p01",
+   "batch": 35,
+   "examCount": 31,
+   "bodies": 1,
+   "groups": [
+    "Cisco"
+   ]
+  },
+  {
+   "chunkId": "b35-p02",
+   "batch": 35,
+   "examCount": 38,
+   "bodies": 5,
+   "groups": [
+    "IT Service Management & Governance",
+    "Networking & Wireless"
+   ]
+  },
+  {
+   "chunkId": "b35-p03",
+   "batch": 35,
+   "examCount": 38,
+   "bodies": 11,
+   "groups": [
+    "IT Service Management & Governance",
+    "Programming & Development",
+    "Networking & Wireless"
+   ]
+  },
+  {
+   "chunkId": "b35-p04",
+   "batch": 35,
+   "examCount": 15,
+   "bodies": 9,
+   "groups": [
+    "IT Service Management & Governance",
+    "Programming & Development",
+    "Networking & Wireless"
+   ]
+  },
+  {
+   "chunkId": "b36-p01",
+   "batch": 36,
+   "examCount": 38,
+   "bodies": 3,
+   "groups": [
+    "CompTIA",
+    "Google Cloud & Google",
+    "Cloud Native & DevOps"
+   ]
+  },
+  {
+   "chunkId": "b36-p02",
+   "batch": 36,
+   "examCount": 38,
+   "bodies": 4,
+   "groups": [
+    "Amazon Web Services",
+    "Cloud Native & DevOps",
+    "Linux, Unix & Open Source"
+   ]
+  },
+  {
+   "chunkId": "b36-p03",
+   "batch": 36,
+   "examCount": 29,
+   "bodies": 8,
+   "groups": [
+    "Linux, Unix & Open Source",
+    "Google Cloud & Google",
+    "Cloud Native & DevOps"
+   ]
+  },
+  {
+   "chunkId": "b37-p01",
+   "batch": 37,
+   "examCount": 17,
+   "bodies": 6,
+   "groups": [
+    "Virtualisation & Infrastructure"
+   ]
+  },
+  {
+   "chunkId": "b38-p01",
+   "batch": 38,
+   "examCount": 28,
+   "bodies": 1,
+   "groups": [
+    "Automotive & Diesel"
+   ]
+  },
+  {
+   "chunkId": "b38-p02",
+   "batch": 38,
+   "examCount": 27,
+   "bodies": 1,
+   "groups": [
+    "Automotive & Diesel"
+   ]
+  },
+  {
+   "chunkId": "b38-p03",
+   "batch": 38,
+   "examCount": 38,
+   "bodies": 2,
+   "groups": [
+    "NCCER & Craft Training",
+    "HVAC/Refrigeration & Energy"
+   ]
+  },
+  {
+   "chunkId": "b38-p04",
+   "batch": 38,
+   "examCount": 17,
+   "bodies": 7,
+   "groups": [
+    "Automotive & Diesel",
+    "HVAC/Refrigeration & Energy"
+   ]
+  },
+  {
+   "chunkId": "b39-p01",
+   "batch": 39,
+   "examCount": 38,
+   "bodies": 3,
+   "groups": [
+    "Electrical/Solar & Low Voltage",
+    "Fire Protection & Life Safety Systems",
+    "Welding & Metal"
+   ]
+  },
+  {
+   "chunkId": "b39-p02",
+   "batch": 39,
+   "examCount": 38,
+   "bodies": 4,
+   "groups": [
+    "Building Codes & Inspection",
+    "Elevator/Locksmith & Specialty Trades",
+    "Welding & Metal"
+   ]
+  },
+  {
+   "chunkId": "b39-p03",
+   "batch": 39,
+   "examCount": 27,
+   "bodies": 16,
+   "groups": [
+    "Electrical/Solar & Low Voltage",
+    "Fire Protection & Life Safety Systems",
+    "Elevator/Locksmith & Specialty Trades",
+    "Welding & Metal"
+   ]
+  },
+  {
+   "chunkId": "b40-p01",
+   "batch": 40,
+   "examCount": 33,
+   "bodies": 7,
+   "groups": [
+    "Heavy Equipment/Crane & Rigging",
+    "Nondestructive Testing & Inspection",
+    "HVAC & Refrigeration"
+   ]
+  },
+  {
+   "chunkId": "b41-p01",
+   "batch": 41,
+   "examCount": 38,
+   "bodies": 9,
+   "groups": [
+    "Commercial Driving & Road",
+    "Logistics & Supply Chain"
+   ]
+  },
+  {
+   "chunkId": "b41-p02",
+   "batch": 41,
+   "examCount": 26,
+   "bodies": 21,
+   "groups": [
+    "Commercial Driving & Road",
+    "Logistics & Supply Chain",
+    "Rail & Transit"
+   ]
+  },
+  {
+   "chunkId": "b42-p01",
+   "batch": 42,
+   "examCount": 37,
+   "bodies": 1,
+   "groups": [
+    "OSHA Outreach & Trainer",
+    "Safety Professional Certifications"
+   ]
+  },
+  {
+   "chunkId": "b42-p02",
+   "batch": 42,
+   "examCount": 38,
+   "bodies": 10,
+   "groups": [
+    "Safety Professional Certifications",
+    "OSHA Outreach & Trainer",
+    "Hazardous Materials & Emergency Response"
+   ]
+  },
+  {
+   "chunkId": "b42-p03",
+   "batch": 42,
+   "examCount": 24,
+   "bodies": 24,
+   "groups": [
+    "Safety Professional Certifications",
+    "Hazardous Materials & Emergency Response"
+   ]
+  }
+ ]
+}

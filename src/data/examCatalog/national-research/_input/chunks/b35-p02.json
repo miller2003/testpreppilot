@@ -1,0 +1,529 @@
+{
+ "chunkId": "b35-p02",
+ "batch": 35,
+ "part": 2,
+ "categories": [
+  "technology"
+ ],
+ "groups": [
+  "IT Service Management & Governance",
+  "Networking & Wireless"
+ ],
+ "bodies": [
+  "PeopleCert",
+  "Juniper Networks",
+  "CWNP",
+  "BICSI",
+  "Palo Alto Networks"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "itil-4-foundation",
+   "name": "ITIL 4 Foundation",
+   "short": "ITIL 4 Foundation",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [
+    "ITIL Foundation"
+   ],
+   "blurb": "Entry-level IT service management certification covering the ITIL 4 service value system, guiding principles, four dimensions and key practices."
+  },
+  {
+   "slug": "itil-4-leader-digital-and-it-strategy",
+   "name": "ITIL 4 Leader: Digital and IT Strategy",
+   "short": "ITIL DITS",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [
+    "ITIL DITS"
+   ],
+   "blurb": "Strategic Leader module covering digital strategy, disruption response, operating model design and aligning IT strategy with business direction."
+  },
+  {
+   "slug": "itil-4-managing-professional",
+   "name": "ITIL 4 Managing Professional",
+   "short": "ITIL MP",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [
+    "ITIL MP"
+   ],
+   "blurb": "Designation awarded after completing the CDS, DSV, HVIT and DPI modules, aimed at practitioners running IT-enabled products and services."
+  },
+  {
+   "slug": "itil-4-master",
+   "name": "ITIL 4 Master",
+   "short": "ITIL Master",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [
+    "ITIL Master"
+   ],
+   "blurb": "Highest ITIL designation, awarded through submission and defence of real-world evidence rather than a written exam, after Managing Professional."
+  },
+  {
+   "slug": "itil-4-specialist-collaborate-assure-and-improve",
+   "name": "ITIL 4 Specialist: Collaborate, Assure and Improve",
+   "short": "ITIL CAI",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [
+    "ITIL CAI"
+   ],
+   "blurb": "ITIL 4 Practice Manager module covering relationship, supplier, service level, continual improvement and information security management practices."
+  },
+  {
+   "slug": "itil-4-specialist-create-deliver-and-support",
+   "name": "ITIL 4 Specialist: Create, Deliver and Support",
+   "short": "ITIL CDS",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [
+    "ITIL CDS"
+   ],
+   "blurb": "Managing Professional module covering the design, development and operation of service value streams, team culture, tooling and workflow management."
+  },
+  {
+   "slug": "itil-4-specialist-drive-stakeholder-value",
+   "name": "ITIL 4 Specialist: Drive Stakeholder Value",
+   "short": "ITIL DSV",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [
+    "ITIL DSV"
+   ],
+   "blurb": "Managing Professional module on customer journeys, service relationships, demand shaping, service level management and stakeholder engagement."
+  },
+  {
+   "slug": "itil-4-specialist-high-velocity-it",
+   "name": "ITIL 4 Specialist: High-velocity IT",
+   "short": "ITIL HVIT",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [
+    "ITIL HVIT"
+   ],
+   "blurb": "Managing Professional module on digital product delivery, lean and agile ways of working, automation and resilient high-velocity operating models."
+  },
+  {
+   "slug": "itil-4-specialist-monitor-support-and-fulfil",
+   "name": "ITIL 4 Specialist: Monitor, Support and Fulfil",
+   "short": "ITIL MSF",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [
+    "ITIL MSF"
+   ],
+   "blurb": "ITIL 4 Practice Manager module bundling the incident, problem, service desk, service request and monitoring and event management practices."
+  },
+  {
+   "slug": "itil-4-specialist-plan-implement-and-control",
+   "name": "ITIL 4 Specialist: Plan, Implement and Control",
+   "short": "ITIL PIC",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [
+    "ITIL PIC"
+   ],
+   "blurb": "ITIL 4 Practice Manager module covering change enablement, release, deployment, IT asset, service configuration and deployment management practices."
+  },
+  {
+   "slug": "itil-4-strategic-leader",
+   "name": "ITIL 4 Strategic Leader",
+   "short": "ITIL SL",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [
+    "ITIL SL"
+   ],
+   "blurb": "Designation awarded after completing Direct, Plan and Improve plus Digital and IT Strategy, aimed at leaders shaping digital service strategy."
+  },
+  {
+   "slug": "itil-4-strategist-direct-plan-and-improve",
+   "name": "ITIL 4 Strategist: Direct, Plan and Improve",
+   "short": "ITIL DPI",
+   "category": "technology",
+   "group": "IT Service Management & Governance",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [
+    "ITIL DPI"
+   ],
+   "blurb": "Universal ITIL 4 module required for both Managing Professional and Strategic Leader, covering governance, planning, measurement and improvement."
+  },
+  {
+   "slug": "juniper-jncia-cloud",
+   "name": "Juniper Networks Certified Associate - Cloud",
+   "short": "JNCIA-Cloud",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "Juniper Networks",
+   "type": "Certification",
+   "aka": [
+    "JN0-214"
+   ],
+   "blurb": "Associate Juniper certification covering cloud architectures, virtualisation, software-defined networking, containers and Juniper cloud products."
+  },
+  {
+   "slug": "juniper-jncia-devops",
+   "name": "Juniper Networks Certified Associate - DevOps",
+   "short": "JNCIA-DevOps",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "Juniper Networks",
+   "type": "Certification",
+   "aka": [
+    "JN0-223"
+   ],
+   "blurb": "Associate Juniper certification covering network automation with Python, PyEZ, REST APIs, Ansible and Junos automation frameworks."
+  },
+  {
+   "slug": "juniper-jncia-junos",
+   "name": "Juniper Networks Certified Associate - Junos",
+   "short": "JNCIA-Junos",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "Juniper Networks",
+   "type": "Certification",
+   "aka": [
+    "JN0-105"
+   ],
+   "blurb": "Entry-level Juniper certification covering the Junos operating system, configuration basics, routing fundamentals and device monitoring."
+  },
+  {
+   "slug": "juniper-jncia-security",
+   "name": "Juniper Networks Certified Associate - Security",
+   "short": "JNCIA-SEC",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "Juniper Networks",
+   "type": "Certification",
+   "aka": [
+    "JN0-232"
+   ],
+   "blurb": "Associate Juniper security certification covering SRX Series firewall basics, security zones, policies, NAT and unified threat management."
+  },
+  {
+   "slug": "juniper-jncie-enterprise",
+   "name": "Juniper Networks Certified Expert - Enterprise Routing and Switching",
+   "short": "JNCIE-ENT",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "Juniper Networks",
+   "type": "Certification",
+   "aka": [
+    "JNCIE-ENT"
+   ],
+   "blurb": "Expert-level Juniper lab exam requiring candidates to build and troubleshoot a complex enterprise network within a timed hands-on environment."
+  },
+  {
+   "slug": "juniper-jncip-enterprise-routing-and-switching",
+   "name": "Juniper Networks Certified Professional - Enterprise Routing and Switching",
+   "short": "JNCIP-ENT",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "Juniper Networks",
+   "type": "Certification",
+   "aka": [
+    "JN0-664"
+   ],
+   "blurb": "Professional-level Juniper exam covering advanced routing policy, BGP scaling, multicast, EVPN-VXLAN and enterprise network troubleshooting."
+  },
+  {
+   "slug": "juniper-jncis-enterprise-routing-and-switching",
+   "name": "Juniper Networks Certified Specialist - Enterprise Routing and Switching",
+   "short": "JNCIS-ENT",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "Juniper Networks",
+   "type": "Certification",
+   "aka": [
+    "JN0-351"
+   ],
+   "blurb": "Specialist-level Juniper exam covering OSPF, IS-IS, BGP, spanning tree, layer two security and enterprise switching on Junos devices."
+  },
+  {
+   "slug": "juniper-jncis-security",
+   "name": "Juniper Networks Certified Specialist - Security",
+   "short": "JNCIS-SEC",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "Juniper Networks",
+   "type": "Certification",
+   "aka": [
+    "JN0-335"
+   ],
+   "blurb": "Specialist Juniper security exam covering advanced SRX policy, IPsec VPNs, application security, Juniper ATP and security troubleshooting."
+  },
+  {
+   "slug": "juniper-jncis-service-provider",
+   "name": "Juniper Networks Certified Specialist - Service Provider Routing and Switching",
+   "short": "JNCIS-SP",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "Juniper Networks",
+   "type": "Certification",
+   "aka": [
+    "JN0-363"
+   ],
+   "blurb": "Specialist Juniper exam for carrier networks covering IS-IS, OSPF, BGP, MPLS fundamentals and service provider switching on Junos platforms."
+  },
+  {
+   "slug": "cwnp-cwap",
+   "name": "Certified Wireless Analysis Professional",
+   "short": "CWAP",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "CWNP",
+   "bodyUrl": "https://www.cwnp.com/",
+   "type": "Certification",
+   "aka": [
+    "CWAP-404"
+   ],
+   "blurb": "CWNP certification on protocol analysis, spectrum analysis, frame exchanges and advanced troubleshooting of 802.11 wireless networks."
+  },
+  {
+   "slug": "cwnp-cwdp",
+   "name": "Certified Wireless Design Professional",
+   "short": "CWDP",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "CWNP",
+   "bodyUrl": "https://www.cwnp.com/",
+   "type": "Certification",
+   "aka": [
+    "CWDP-305"
+   ],
+   "blurb": "CWNP certification on WLAN design covering requirements gathering, predictive and validation surveys, capacity planning and vertical market design."
+  },
+  {
+   "slug": "cwnp-cwisa",
+   "name": "Certified Wireless IoT Solutions Administrator",
+   "short": "CWISA",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "CWNP",
+   "bodyUrl": "https://www.cwnp.com/",
+   "type": "Certification",
+   "aka": [
+    "CWISA-103"
+   ],
+   "blurb": "CWNP certification covering wireless internet of things technologies beyond Wi-Fi, including Bluetooth, LoRaWAN, cellular and industrial protocols."
+  },
+  {
+   "slug": "cwnp-cwna",
+   "name": "Certified Wireless Network Administrator",
+   "short": "CWNA",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "CWNP",
+   "bodyUrl": "https://www.cwnp.com/",
+   "type": "Certification",
+   "aka": [
+    "CWNA-109"
+   ],
+   "blurb": "Vendor-neutral wireless networking certification covering radio frequency fundamentals, 802.11 standards, site surveys, security and troubleshooting."
+  },
+  {
+   "slug": "cwnp-cwne",
+   "name": "Certified Wireless Network Expert",
+   "short": "CWNE",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "CWNP",
+   "bodyUrl": "https://www.cwnp.com/",
+   "type": "Certification",
+   "aka": [
+    "CWNE"
+   ],
+   "blurb": "Top CWNP credential awarded by application review after earning CWNA, CWSP, CWDP and CWAP plus documented enterprise wireless experience."
+  },
+  {
+   "slug": "cwnp-cwsp",
+   "name": "Certified Wireless Security Professional",
+   "short": "CWSP",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "CWNP",
+   "bodyUrl": "https://www.cwnp.com/",
+   "type": "Certification",
+   "aka": [
+    "CWSP-208"
+   ],
+   "blurb": "Vendor-neutral certification on wireless security covering 802.1X, EAP methods, WPA3, intrusion prevention and secure WLAN design and auditing."
+  },
+  {
+   "slug": "cwnp-cwt",
+   "name": "Certified Wireless Technician",
+   "short": "CWT",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "CWNP",
+   "bodyUrl": "https://www.cwnp.com/",
+   "type": "Certification",
+   "aka": [
+    "CWT-101"
+   ],
+   "blurb": "Entry-level CWNP certification for wireless installers covering access point mounting, configuration, basic troubleshooting and site documentation."
+  },
+  {
+   "slug": "bicsi-installer-1",
+   "name": "BICSI Installer 1",
+   "short": "INST1",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "BICSI",
+   "bodyUrl": "https://www.bicsi.org/",
+   "type": "Certification",
+   "aka": [
+    "INST1"
+   ],
+   "blurb": "Entry-level BICSI credential for structured cabling installers covering safety, hand tools, cable pulling, termination and basic testing procedures."
+  },
+  {
+   "slug": "bicsi-installer-2",
+   "name": "BICSI Installer 2",
+   "short": "INSTC",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "BICSI",
+   "bodyUrl": "https://www.bicsi.org/",
+   "type": "Certification",
+   "aka": [
+    "INSTC",
+    "INSTF"
+   ],
+   "blurb": "BICSI credential offered in copper and optical fibre tracks, covering advanced installation, termination, testing and cabling standards compliance."
+  },
+  {
+   "slug": "bicsi-technician",
+   "name": "BICSI Technician",
+   "short": "TECH",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "BICSI",
+   "bodyUrl": "https://www.bicsi.org/",
+   "type": "Certification",
+   "aka": [
+    "BICSI TECH"
+   ],
+   "blurb": "BICSI credential for lead installers covering project planning, team supervision, advanced troubleshooting and retrofitting cabling infrastructure."
+  },
+  {
+   "slug": "bicsi-dcdc",
+   "name": "Data Center Design Consultant",
+   "short": "DCDC",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "BICSI",
+   "bodyUrl": "https://www.bicsi.org/",
+   "type": "Certification",
+   "aka": [
+    "DCDC"
+   ],
+   "blurb": "BICSI credential for data centre designers covering site selection, power, cooling, cabling topology, redundancy tiers and facility standards."
+  },
+  {
+   "slug": "bicsi-rcdd",
+   "name": "Registered Communications Distribution Designer",
+   "short": "RCDD",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "BICSI",
+   "bodyUrl": "https://www.bicsi.org/",
+   "type": "Certification",
+   "aka": [
+    "RCDD"
+   ],
+   "blurb": "Senior BICSI design credential covering telecommunications distribution design, pathways, spaces, grounding, codes and standards for buildings."
+  },
+  {
+   "slug": "palo-alto-pccet",
+   "name": "Palo Alto Networks Certified Cybersecurity Entry-level Technician",
+   "short": "PCCET",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "Palo Alto Networks",
+   "type": "Certification",
+   "aka": [
+    "PCCET"
+   ],
+   "blurb": "Entry-level Palo Alto certification covering cybersecurity fundamentals, network security concepts, cloud security and security operations basics."
+  },
+  {
+   "slug": "palo-alto-pcdra",
+   "name": "Palo Alto Networks Certified Detection and Remediation Analyst",
+   "short": "PCDRA",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "Palo Alto Networks",
+   "type": "Certification",
+   "aka": [
+    "PCDRA"
+   ],
+   "blurb": "Certification for SOC analysts using Cortex XDR, covering threat detection, investigation, endpoint protection policy and incident remediation."
+  },
+  {
+   "slug": "palo-alto-pcnsa",
+   "name": "Palo Alto Networks Certified Network Security Administrator",
+   "short": "PCNSA",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "Palo Alto Networks",
+   "type": "Certification",
+   "aka": [
+    "PCNSA"
+   ],
+   "blurb": "Administrator certification on configuring and managing Palo Alto next-generation firewalls including security policy, App-ID, User-ID and logging."
+  },
+  {
+   "slug": "palo-alto-pcnse",
+   "name": "Palo Alto Networks Certified Network Security Engineer",
+   "short": "PCNSE",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "Palo Alto Networks",
+   "type": "Certification",
+   "aka": [
+    "PCNSE"
+   ],
+   "blurb": "Engineer-level certification on designing, deploying and troubleshooting Palo Alto firewall estates, Panorama, high availability and advanced features."
+  },
+  {
+   "slug": "palo-alto-pcsfe",
+   "name": "Palo Alto Networks Certified Software Firewall Engineer",
+   "short": "PCSFE",
+   "category": "technology",
+   "group": "Networking & Wireless",
+   "body": "Palo Alto Networks",
+   "type": "Certification",
+   "aka": [
+    "PCSFE"
+   ],
+   "blurb": "Certification on deploying VM-Series, CN-Series and cloud next-generation firewalls across public cloud, virtualised and Kubernetes environments."
+  }
+ ]
+}

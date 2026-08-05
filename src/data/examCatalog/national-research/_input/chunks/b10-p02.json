@@ -1,0 +1,212 @@
+{
+ "chunkId": "b10-p02",
+ "batch": 10,
+ "part": 2,
+ "categories": [
+  "beauty-wellness"
+ ],
+ "groups": [
+  "Spa, Massage & Wellness",
+  "Cosmetology & Barbering"
+ ],
+ "bodies": [
+  "National Ayurvedic Medical Association Certification Board",
+  "American Academy of Micropigmentation",
+  "Alliance of Professional Tattooists",
+  "Society of Permanent Cosmetic Professionals",
+  "World Trichology Society",
+  "Prov, Inc.",
+  "PSI Services",
+  "American Reflexology Certification Board",
+  "National Certification Board for Therapeutic Massage & Bodywork",
+  "Board for Certification of Nutrition Specialists",
+  "Spencer Institute",
+  "National Wellness Institute",
+  "International Association of Yoga Therapists",
+  "National Association of Nutrition Professionals",
+  "National Board for Health & Wellness Coaching",
+  "Aromatherapy Registration Council"
+ ],
+ "examCount": 17,
+ "exams": [
+  {
+   "slug": "certified-ayurvedic-health-counselor",
+   "name": "Certified Ayurvedic Health Counselor",
+   "short": "AHC",
+   "category": "beauty-wellness",
+   "group": "Spa, Massage & Wellness",
+   "body": "National Ayurvedic Medical Association Certification Board",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry-level Ayurvedic credential examination covering diet, lifestyle counselling, doshas and preventive health practice."
+  },
+  {
+   "slug": "certified-ayurvedic-practitioner",
+   "name": "Certified Ayurvedic Practitioner",
+   "short": "AP",
+   "category": "beauty-wellness",
+   "group": "Spa, Massage & Wellness",
+   "body": "National Ayurvedic Medical Association Certification Board",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination for Ayurvedic practitioners covering assessment, herbal formulation, panchakarma principles and client management."
+  },
+  {
+   "slug": "aam-board-certification-micropigmentation",
+   "name": "AAM Board Certification in Micropigmentation",
+   "category": "beauty-wellness",
+   "group": "Cosmetology & Barbering",
+   "body": "American Academy of Micropigmentation",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Written and practical board certification for permanent makeup and micropigmentation practitioners including medical tattoo work."
+  },
+  {
+   "slug": "apt-bloodborne-pathogens-body-art",
+   "name": "Bloodborne Pathogens Training for Body Artists",
+   "category": "beauty-wellness",
+   "group": "Cosmetology & Barbering",
+   "body": "Alliance of Professional Tattooists",
+   "type": "Training",
+   "aka": [],
+   "blurb": "OSHA-aligned course on bloodborne pathogen exposure control, sterilisation and cross-contamination prevention for tattoo and piercing artists."
+  },
+  {
+   "slug": "certified-permanent-cosmetics-professional",
+   "name": "Certified Permanent Cosmetics Professional",
+   "short": "CPCP",
+   "category": "beauty-wellness",
+   "group": "Cosmetology & Barbering",
+   "body": "Society of Permanent Cosmetic Professionals",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination covering colour theory, skin anatomy, sterilisation and device handling for permanent cosmetic makeup artists."
+  },
+  {
+   "slug": "certified-trichologist-wts",
+   "name": "Certified Trichologist",
+   "category": "beauty-wellness",
+   "group": "Cosmetology & Barbering",
+   "body": "World Trichology Society",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Programme and examination in hair and scalp science, diagnosis of hair loss disorders and non-medical treatment protocols."
+  },
+  {
+   "slug": "prov-cosmetology-examination-administration",
+   "name": "Prov Cosmetology Licensing Examination",
+   "category": "beauty-wellness",
+   "group": "Cosmetology & Barbering",
+   "body": "Prov, Inc.",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Test administration channel delivering NIC theory and remote practical beauty licensure examinations for many state boards."
+  },
+  {
+   "slug": "psi-cosmetology-examination",
+   "name": "PSI Cosmetology Licensing Examination",
+   "category": "beauty-wellness",
+   "group": "Cosmetology & Barbering",
+   "body": "PSI Services",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Umbrella testing programme delivering NIC and state-authored cosmetology, barbering and esthetics licensure examinations."
+  },
+  {
+   "slug": "arcb-certified-reflexologist",
+   "name": "ARCB Certified Reflexologist",
+   "category": "beauty-wellness",
+   "group": "Spa, Massage & Wellness",
+   "body": "American Reflexology Certification Board",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National examination and documentation review covering foot reflexology theory, technique, anatomy and professional practice."
+  },
+  {
+   "slug": "bctmb",
+   "name": "Board Certification in Therapeutic Massage and Bodywork",
+   "short": "BCTMB",
+   "category": "beauty-wellness",
+   "group": "Spa, Massage & Wellness",
+   "body": "National Certification Board for Therapeutic Massage & Bodywork",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced voluntary credential above state licensure, requiring extra education, a background check and a board certification examination."
+  },
+  {
+   "slug": "certified-nutrition-specialist",
+   "name": "Certified Nutrition Specialist",
+   "short": "CNS",
+   "category": "beauty-wellness",
+   "group": "Spa, Massage & Wellness",
+   "body": "Board for Certification of Nutrition Specialists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Graduate-level advanced nutrition credential requiring supervised practice hours and a examination in personalised clinical nutrition."
+  },
+  {
+   "slug": "certified-sleep-science-coach",
+   "name": "Certified Sleep Science Coach",
+   "category": "beauty-wellness",
+   "group": "Spa, Massage & Wellness",
+   "body": "Spencer Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Online programme and assessment on sleep physiology, circadian rhythm, sleep hygiene coaching and behaviour change strategies."
+  },
+  {
+   "slug": "nwi-certified-wellness-practitioner",
+   "name": "Certified Wellness Practitioner",
+   "short": "CWP",
+   "category": "beauty-wellness",
+   "group": "Spa, Massage & Wellness",
+   "body": "National Wellness Institute",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for wellness programme professionals covering multidimensional wellness models, planning, evaluation and ethics."
+  },
+  {
+   "slug": "c-iayt-certified-yoga-therapist",
+   "name": "Certified Yoga Therapist",
+   "short": "C-IAYT",
+   "category": "beauty-wellness",
+   "group": "Spa, Massage & Wellness",
+   "body": "International Association of Yoga Therapists",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for graduates of accredited yoga therapy programmes applying yoga practices to specific health conditions and populations."
+  },
+  {
+   "slug": "nanp-board-exam-holistic-nutrition",
+   "name": "NANP Board Exam in Holistic Nutrition",
+   "category": "beauty-wellness",
+   "group": "Spa, Massage & Wellness",
+   "body": "National Association of Nutrition Professionals",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Board examination for holistic nutrition professionals covering whole-food nutrition, biochemistry, client education and scope of practice."
+  },
+  {
+   "slug": "nbc-hwc",
+   "name": "National Board Certified Health & Wellness Coach",
+   "short": "NBC-HWC",
+   "category": "beauty-wellness",
+   "group": "Spa, Massage & Wellness",
+   "body": "National Board for Health & Wellness Coaching",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Board examination delivered with the NBME covering coaching structure, health behaviour change theory and ethical practice."
+  },
+  {
+   "slug": "registered-aromatherapist-arc",
+   "name": "Registered Aromatherapist Examination",
+   "short": "RA",
+   "category": "beauty-wellness",
+   "group": "Spa, Massage & Wellness",
+   "body": "Aromatherapy Registration Council",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "National examination on essential oil chemistry, botany, safety and therapeutic application for practising aromatherapists."
+  }
+ ]
+}

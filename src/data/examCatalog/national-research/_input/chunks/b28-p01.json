@@ -1,0 +1,438 @@
+{
+ "chunkId": "b28-p01",
+ "batch": 28,
+ "part": 1,
+ "categories": [
+  "project-business"
+ ],
+ "groups": [
+  "Agile & Product",
+  "Project & Program Management"
+ ],
+ "bodies": [
+  "Scaled Agile, Inc.",
+  "Scrum.org",
+  "AACE International"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "safe-advanced-practice-consultant",
+   "name": "Advanced SAFe Practice Consultant",
+   "short": "ASPC",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Expert credential for experienced practice consultants driving sustained enterprise transformation and delivery improvement."
+  },
+  {
+   "slug": "safe-advanced-scrum-master",
+   "name": "SAFe Advanced Scrum Master",
+   "short": "SASM",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for experienced Scrum Masters covering cross-team facilitation, flow improvement and agile release train events."
+  },
+  {
+   "slug": "safe-agile-product-manager",
+   "name": "SAFe Agile Product Manager",
+   "short": "APM",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering design thinking, market research, product strategy and solution roadmaps in a SAFe portfolio."
+  },
+  {
+   "slug": "safe-agile-software-engineer",
+   "name": "SAFe Agile Software Engineer",
+   "short": "ASE",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering test-driven and behaviour-driven development, agile architecture and built-in quality practices."
+  },
+  {
+   "slug": "safe-agilist",
+   "name": "SAFe Agilist",
+   "short": "SA",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry SAFe credential from the Leading SAFe course, covering lean-agile leadership, PI planning and business agility."
+  },
+  {
+   "slug": "safe-architect",
+   "name": "SAFe Architect",
+   "short": "ARCH",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for system, solution and enterprise architects aligning architecture with continuous delivery across trains."
+  },
+  {
+   "slug": "safe-devops-practitioner",
+   "name": "SAFe DevOps Practitioner",
+   "short": "SDP",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering the CALMR approach, value stream mapping and building an end-to-end continuous delivery pipeline."
+  },
+  {
+   "slug": "safe-hardware-agilist",
+   "name": "SAFe Hardware Agilist",
+   "short": "SHWA",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification applying lean-agile practices to hardware design, supplier alignment, risk and cyber-physical development."
+  },
+  {
+   "slug": "safe-hardware-practitioner",
+   "name": "SAFe Hardware Practitioner",
+   "short": "SHWP",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Team-level certification for mechanical, electrical and systems engineers working within agile release trains."
+  },
+  {
+   "slug": "safe-lean-portfolio-management",
+   "name": "SAFe Lean Portfolio Management",
+   "short": "LPM",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering strategy and investment funding, lean budgets, portfolio kanban and lean governance practices."
+  },
+  {
+   "slug": "safe-practice-consultant",
+   "name": "SAFe Practice Consultant",
+   "short": "SPC",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential from the Implementing SAFe course, licensing holders to launch agile release trains and teach selected courses."
+  },
+  {
+   "slug": "safe-practice-consultant-trainer",
+   "name": "SAFe Practice Consultant-Trainer",
+   "short": "SPCT",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Top SAFe credential earned through a rigorous candidacy programme, authorising holders to train practice consultants."
+  },
+  {
+   "slug": "safe-practitioner",
+   "name": "SAFe Practitioner",
+   "short": "SP",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Team-member credential from SAFe for Teams, covering iteration execution, PI planning participation and cross-team work."
+  },
+  {
+   "slug": "safe-product-owner-product-manager",
+   "name": "SAFe Product Owner/Product Manager",
+   "short": "POPM",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering epics, features and stories, backlog prioritisation and delivering value through PI planning cycles."
+  },
+  {
+   "slug": "safe-release-train-engineer",
+   "name": "SAFe Release Train Engineer",
+   "short": "RTE",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for agile release train facilitators covering PI planning, inspect and adapt events and flow coaching."
+  },
+  {
+   "slug": "safe-scrum-master",
+   "name": "SAFe Scrum Master",
+   "short": "SSM",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scaled Agile, Inc.",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering the Scrum Master role in a scaled environment, including ART events and servant leadership."
+  },
+  {
+   "slug": "scrum-org-pal-ebm",
+   "name": "Professional Agile Leadership – Evidence-Based Management",
+   "short": "PAL-EBM",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Assessment covering the Evidence-Based Management framework, value measures and goal setting for organisational improvement."
+  },
+  {
+   "slug": "scrum-org-pal-i",
+   "name": "Professional Agile Leadership I",
+   "short": "PAL I",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Assessment for managers on how leaders create conditions for agility, remove impediments and support empirical delivery."
+  },
+  {
+   "slug": "scrum-org-ppdv",
+   "name": "Professional Product Discovery and Validation",
+   "short": "PPDV",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Assessment covering discovery techniques, experiment design and validation practices used to shape product decisions."
+  },
+  {
+   "slug": "scrum-org-psd",
+   "name": "Professional Scrum Developer",
+   "short": "PSD",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Assessment validating developer accountabilities in Scrum alongside modern agile and DevOps engineering practices."
+  },
+  {
+   "slug": "scrum-org-psf-skills",
+   "name": "Professional Scrum Facilitation Skills",
+   "short": "PSF",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Skills assessment covering facilitation principles and techniques that help teams reach shared, actionable outcomes."
+  },
+  {
+   "slug": "scrum-org-psm-i",
+   "name": "Professional Scrum Master I",
+   "short": "PSM I",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Eighty-question timed assessment of Scrum Guide knowledge requiring an 85 percent score, with no training prerequisite."
+  },
+  {
+   "slug": "scrum-org-psm-ii",
+   "name": "Professional Scrum Master II",
+   "short": "PSM II",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced assessment testing application of Scrum Master accountabilities in ambiguous real-world team situations."
+  },
+  {
+   "slug": "scrum-org-psm-iii",
+   "name": "Professional Scrum Master III",
+   "short": "PSM III",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Distinguished-level assessment with essay responses on coaching, facilitation and organisational change as a Scrum Master."
+  },
+  {
+   "slug": "scrum-org-pspbm-skills",
+   "name": "Professional Scrum Product Backlog Management Skills",
+   "short": "PSPBM",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Skills assessment on capturing needs, refining items, managing stakeholder expectations and keeping a backlog transparent."
+  },
+  {
+   "slug": "scrum-org-pspo-i",
+   "name": "Professional Scrum Product Owner I",
+   "short": "PSPO I",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Assessment of fundamental Product Owner knowledge including value maximisation, backlog management and stakeholder work."
+  },
+  {
+   "slug": "scrum-org-pspo-ii",
+   "name": "Professional Scrum Product Owner II",
+   "short": "PSPO II",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced assessment covering product vision, release planning, business strategy and evidence-based value decisions."
+  },
+  {
+   "slug": "scrum-org-pspo-iii",
+   "name": "Professional Scrum Product Owner III",
+   "short": "PSPO III",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Distinguished-level assessment using essay answers on product ownership, vision and stakeholder engagement in complex settings."
+  },
+  {
+   "slug": "scrum-org-psk-i",
+   "name": "Professional Scrum with Kanban I",
+   "short": "PSK I",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Assessment on applying Kanban flow practices and metrics inside Scrum without changing the Scrum framework itself."
+  },
+  {
+   "slug": "scrum-org-psu-i",
+   "name": "Professional Scrum with User Experience I",
+   "short": "PSU I",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Assessment covering how Scrum teams integrate modern user experience practices, research and iterative design work."
+  },
+  {
+   "slug": "scrum-org-sps",
+   "name": "Scaled Professional Scrum",
+   "short": "SPS",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Scrum.org",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Assessment of scaling fundamentals and the Nexus framework for coordinating multiple Scrum teams on one product."
+  },
+  {
+   "slug": "aace-certified-cost-professional",
+   "name": "AACE Certified Cost Professional",
+   "short": "CCP",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "AACE International",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Senior credential in total cost management covering estimating, cost control, planning, economics and a technical paper."
+  },
+  {
+   "slug": "aace-certified-cost-technician",
+   "name": "AACE Certified Cost Technician",
+   "short": "CCT",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "AACE International",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry credential covering cost estimating fundamentals, project control basics, economic analysis and cost terminology."
+  },
+  {
+   "slug": "aace-certified-estimating-professional",
+   "name": "AACE Certified Estimating Professional",
+   "short": "CEP",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "AACE International",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for cost estimators covering estimate classes, quantity take-off, pricing, risk allowances and estimate review."
+  },
+  {
+   "slug": "aace-certified-scheduling-technician",
+   "name": "AACE Certified Scheduling Technician",
+   "short": "CST",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "AACE International",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry scheduling credential covering network logic, critical path analysis, resource loading and progress measurement."
+  },
+  {
+   "slug": "aace-decision-and-risk-management-professional",
+   "name": "AACE Decision and Risk Management Professional",
+   "short": "DRMP",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "AACE International",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential covering quantitative risk analysis, decision frameworks, contingency setting and risk register governance."
+  },
+  {
+   "slug": "aace-earned-value-professional",
+   "name": "AACE Earned Value Professional",
+   "short": "EVP",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "AACE International",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential covering earned value management system design, performance measurement baselines, variance analysis and reporting."
+  },
+  {
+   "slug": "aace-planning-and-scheduling-professional",
+   "name": "AACE Planning and Scheduling Professional",
+   "short": "PSP",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "AACE International",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for schedulers covering schedule development, resource planning, progress analysis and delay assessment."
+  }
+ ]
+}

@@ -1,0 +1,1337 @@
+{
+  "batch": "02",
+  "categories": [
+    "admissions-academic"
+  ],
+  "groups": [
+    "CLEP & Credit by Exam",
+    "Advanced Placement"
+  ],
+  "examCount": 117,
+  "bodyCount": 6,
+  "bodies": [
+    "Cambridge International Education",
+    "College Board",
+    "Prometric",
+    "Modern States Education Alliance",
+    "Thomas Edison State University",
+    "Excelsior University"
+  ],
+  "exams": [
+    {
+      "slug": "cambridge-international-as-a-level",
+      "name": "Cambridge International AS and A Level Examinations",
+      "short": "Cambridge A Level",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Cambridge International Education",
+      "type": "Exam",
+      "aka": [
+        "CAIE",
+        "Cambridge Advanced"
+      ],
+      "blurb": "Subject-by-subject Cambridge qualifications taken in some US high schools and accepted by many American universities for admission and course credit."
+    },
+    {
+      "slug": "clep-american-government",
+      "name": "CLEP American Government",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test on US constitutional government, institutions, civil liberties and political behaviour, usually worth three college credits."
+    },
+    {
+      "slug": "clep-american-literature",
+      "name": "CLEP American Literature",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test covering American prose, poetry and drama from the colonial period to the present, usually worth three college credits."
+    },
+    {
+      "slug": "clep-analyzing-and-interpreting-literature",
+      "name": "CLEP Analyzing and Interpreting Literature",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test using passages from American and British literature to assess close reading, interpretation and literary terminology."
+    },
+    {
+      "slug": "clep-biology",
+      "name": "CLEP Biology",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test covering molecular and cellular biology, organismal biology and population biology, commonly worth six college credits."
+    },
+    {
+      "slug": "clep-calculus",
+      "name": "CLEP Calculus",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test weighted about 60 percent limits and differential calculus and 40 percent integral calculus, typically worth four credits."
+    },
+    {
+      "slug": "clep-chemistry",
+      "name": "CLEP Chemistry",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test covering the content of a full year of general chemistry, including stoichiometry, bonding, equilibrium and thermodynamics."
+    },
+    {
+      "slug": "clep-college-algebra",
+      "name": "CLEP College Algebra",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test on algebraic operations, equations, inequalities, functions and their graphs at one-semester college algebra level."
+    },
+    {
+      "slug": "clep-college-composition",
+      "name": "CLEP College Composition",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam writing test combining multiple-choice questions with two essays scored by College Board readers, often worth six credits."
+    },
+    {
+      "slug": "clep-college-composition-modular",
+      "name": "CLEP College Composition Modular",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Multiple-choice version of the CLEP composition exam that lets institutions add their own locally scored essay component if they wish."
+    },
+    {
+      "slug": "clep-college-mathematics",
+      "name": "CLEP College Mathematics",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test of quantitative literacy for non-mathematics majors, covering logic, sets, probability, statistics and financial mathematics."
+    },
+    {
+      "slug": "clep-english-literature",
+      "name": "CLEP English Literature",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test focused on major British authors and works from Beowulf to the twentieth century, usually worth three college credits."
+    },
+    {
+      "slug": "clep-financial-accounting",
+      "name": "CLEP Financial Accounting",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test on the accounting cycle, financial statements, assets, liabilities and equity taught in introductory financial accounting."
+    },
+    {
+      "slug": "clep-french-language",
+      "name": "CLEP French Language",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test of French listening and reading that can award Level 1 or Level 2 credit depending on the score achieved."
+    },
+    {
+      "slug": "clep-german-language",
+      "name": "CLEP German Language",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test of German listening and reading comprehension awarding Level 1 or Level 2 college credit based on the score band reached."
+    },
+    {
+      "slug": "clep-history-of-the-united-states-i",
+      "name": "CLEP History of the United States I: Early Colonization to 1877",
+      "short": "CLEP US History I",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test covering US history from early European colonisation through the Civil War and the end of Reconstruction in 1877."
+    },
+    {
+      "slug": "clep-history-of-the-united-states-ii",
+      "name": "CLEP History of the United States II: 1865 to the Present",
+      "short": "CLEP US History II",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test covering US history from the end of the Civil War through industrialisation, the world wars and the modern era."
+    },
+    {
+      "slug": "clep-human-growth-and-development",
+      "name": "CLEP Human Growth and Development",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test on theories and research in physical, cognitive and social development across the human lifespan."
+    },
+    {
+      "slug": "clep-humanities",
+      "name": "CLEP Humanities",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Broad credit-by-exam test of general knowledge in literature, visual art, music, philosophy and the performing arts from classical to modern times."
+    },
+    {
+      "slug": "clep-information-systems",
+      "name": "CLEP Information Systems",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test on hardware, software, networks, databases, security and the role of information systems in business organisations."
+    },
+    {
+      "slug": "clep-introduction-to-educational-psychology",
+      "name": "CLEP Introduction to Educational Psychology",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test on cognition, child development, teaching methods, motivation and classroom assessment for education majors."
+    },
+    {
+      "slug": "clep-introductory-business-law",
+      "name": "CLEP Introductory Business Law",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test covering contracts, torts, agency, the history and sources of American law and the legal environment of business."
+    },
+    {
+      "slug": "clep-introductory-psychology",
+      "name": "CLEP Introductory Psychology",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test of the facts, concepts and accepted principles taught in a one-semester introductory college psychology course."
+    },
+    {
+      "slug": "clep-introductory-sociology",
+      "name": "CLEP Introductory Sociology",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test covering social institutions, stratification, culture, deviance and sociological research methods and theory."
+    },
+    {
+      "slug": "clep-natural-sciences",
+      "name": "CLEP Natural Sciences",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Survey credit-by-exam test for non-science majors spanning biological and physical sciences, commonly worth six college credits."
+    },
+    {
+      "slug": "clep-precalculus",
+      "name": "CLEP Precalculus",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test of algebraic, exponential, logarithmic and trigonometric functions and their properties, graphs and applications."
+    },
+    {
+      "slug": "clep-principles-of-macroeconomics",
+      "name": "CLEP Principles of Macroeconomics",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test covering aggregate demand and supply, national income accounting, inflation, unemployment and monetary and fiscal policy."
+    },
+    {
+      "slug": "clep-principles-of-management",
+      "name": "CLEP Principles of Management",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test on planning, organising, leading and controlling, human resources and operational aspects of management."
+    },
+    {
+      "slug": "clep-principles-of-marketing",
+      "name": "CLEP Principles of Marketing",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test on consumer and organisational markets, segmentation, marketing strategy and the four elements of the marketing mix."
+    },
+    {
+      "slug": "clep-principles-of-microeconomics",
+      "name": "CLEP Principles of Microeconomics",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test on the economic principles governing individual consumers and firms, market structures, pricing and factor markets."
+    },
+    {
+      "slug": "clep-social-sciences-and-history",
+      "name": "CLEP Social Sciences and History",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Broad credit-by-exam test spanning history, economics, government, geography, sociology, psychology and anthropology, often worth six credits."
+    },
+    {
+      "slug": "clep-spanish-language",
+      "name": "CLEP Spanish Language",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test of Spanish listening and reading comprehension awarding Level 1 or Level 2 college credit based on score."
+    },
+    {
+      "slug": "clep-spanish-with-writing",
+      "name": "CLEP Spanish with Writing",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Extended CLEP Spanish exam that adds scored writing tasks to the listening and reading sections for higher-level language credit."
+    },
+    {
+      "slug": "clep-western-civilization-i",
+      "name": "CLEP Western Civilization I: Ancient Near East to 1648",
+      "short": "CLEP Western Civ I",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test covering the ancient Near East, Greece and Rome, the Middle Ages, the Renaissance and the Reformation up to 1648."
+    },
+    {
+      "slug": "clep-western-civilization-ii",
+      "name": "CLEP Western Civilization II: 1648 to the Present",
+      "short": "CLEP Western Civ II",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "College Board",
+      "bodyUrl": "https://clep.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-exam test covering European history from the mid-seventeenth century through the world wars and the post-1945 period."
+    },
+    {
+      "slug": "dsst-a-history-of-the-vietnam-war",
+      "name": "DSST A History of the Vietnam War",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test covering the origins, escalation, conduct and aftermath of the Vietnam War, normally worth three credits."
+    },
+    {
+      "slug": "dsst-art-of-the-western-world",
+      "name": "DSST Art of the Western World",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test surveying Western art and architecture from classical Greece through twentieth-century movements."
+    },
+    {
+      "slug": "dsst-astronomy",
+      "name": "DSST Astronomy",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on the solar system, stellar evolution, galaxies and cosmology at introductory college level."
+    },
+    {
+      "slug": "dsst-business-ethics-and-society",
+      "name": "DSST Business Ethics and Society",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on ethical theory, corporate social responsibility, governance and stakeholder issues in business."
+    },
+    {
+      "slug": "dsst-business-mathematics",
+      "name": "DSST Business Mathematics",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on applied business calculations including interest, discounts, depreciation, payroll and financial ratios."
+    },
+    {
+      "slug": "dsst-computing-and-information-technology",
+      "name": "DSST Computing and Information Technology",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [
+        "DSST Introduction to Computing"
+      ],
+      "blurb": "DANTES subject standardized test covering computer hardware, software, networking, databases and information technology fundamentals."
+    },
+    {
+      "slug": "dsst-criminal-justice",
+      "name": "DSST Criminal Justice",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test covering policing, courts, corrections and the structure of the American criminal justice system."
+    },
+    {
+      "slug": "dsst-environmental-science",
+      "name": "DSST Environmental Science",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [
+        "Environment and Humanity: The Race to Save the Planet"
+      ],
+      "blurb": "DANTES subject standardized test on ecosystems, resource use, pollution, energy and environmental policy, formerly titled Environment and Humanity."
+    },
+    {
+      "slug": "dsst-ethics-in-america",
+      "name": "DSST Ethics in America",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on major ethical traditions and their application to contemporary moral problems in American life."
+    },
+    {
+      "slug": "dsst-ethics-in-technology",
+      "name": "DSST Ethics in Technology",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on privacy, intellectual property, computer crime and professional responsibility in technology work."
+    },
+    {
+      "slug": "dsst-foundations-of-education",
+      "name": "DSST Foundations of Education",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on the history, philosophy, organisation and legal framework of American schooling."
+    },
+    {
+      "slug": "dsst-fundamentals-of-college-algebra",
+      "name": "DSST Fundamentals of College Algebra",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on linear and quadratic equations, inequalities, functions, exponents and logarithms."
+    },
+    {
+      "slug": "dsst-fundamentals-of-counseling",
+      "name": "DSST Fundamentals of Counseling",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on counselling theories, the helping relationship, assessment and professional ethics."
+    },
+    {
+      "slug": "dsst-fundamentals-of-cybersecurity",
+      "name": "DSST Fundamentals of Cybersecurity",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on threats, cryptography, network defence, risk management and security governance concepts."
+    },
+    {
+      "slug": "dsst-general-anthropology",
+      "name": "DSST General Anthropology",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test covering physical anthropology, archaeology, linguistics and cultural anthropology as four subfields."
+    },
+    {
+      "slug": "dsst-health-and-human-development",
+      "name": "DSST Health and Human Development",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [
+        "Here is to Your Health"
+      ],
+      "blurb": "DANTES subject standardized test on nutrition, fitness, disease prevention, mental health and substance use across the lifespan."
+    },
+    {
+      "slug": "dsst-history-of-the-soviet-union",
+      "name": "DSST History of the Soviet Union",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [
+        "Rise and Fall of the Soviet Union"
+      ],
+      "blurb": "DANTES subject standardized test covering Russian revolution, Stalinism, the Cold War and the collapse of the Soviet state in 1991."
+    },
+    {
+      "slug": "dsst-human-resource-management",
+      "name": "DSST Human Resource Management",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on recruitment, selection, training, compensation, labour relations and employment law."
+    },
+    {
+      "slug": "dsst-introduction-to-business",
+      "name": "DSST Introduction to Business",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test surveying business forms, management, marketing, finance and the economic environment of firms."
+    },
+    {
+      "slug": "dsst-introduction-to-geography",
+      "name": "DSST Introduction to Geography",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [
+        "Human/Cultural Geography"
+      ],
+      "blurb": "DANTES subject standardized test on population, culture, settlement, economic activity and regional geography, formerly Human Cultural Geography."
+    },
+    {
+      "slug": "dsst-introduction-to-geology",
+      "name": "DSST Introduction to Geology",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on minerals, rocks, plate tectonics, surface processes and geologic time at introductory level."
+    },
+    {
+      "slug": "dsst-introduction-to-law-enforcement",
+      "name": "DSST Introduction to Law Enforcement",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on police history, organisation, patrol operations, investigations and constitutional limits on policing."
+    },
+    {
+      "slug": "dsst-introduction-to-world-religions",
+      "name": "DSST Introduction to World Religions",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test surveying Hinduism, Buddhism, Judaism, Christianity, Islam and other major religious traditions."
+    },
+    {
+      "slug": "dsst-lifespan-developmental-psychology",
+      "name": "DSST Lifespan Developmental Psychology",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on physical, cognitive and social development from infancy through late adulthood and dying."
+    },
+    {
+      "slug": "dsst-management-information-systems",
+      "name": "DSST Management Information Systems",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Upper-level DANTES subject standardized test on information systems strategy, databases, systems development and IT management."
+    },
+    {
+      "slug": "dsst-math-for-liberal-arts",
+      "name": "DSST Math for Liberal Arts",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test of quantitative reasoning for non-STEM majors, covering sets, logic, probability, statistics and finance."
+    },
+    {
+      "slug": "dsst-money-and-banking",
+      "name": "DSST Money and Banking",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on money, financial markets, commercial banking, the Federal Reserve and monetary policy."
+    },
+    {
+      "slug": "dsst-organizational-behavior",
+      "name": "DSST Organizational Behavior",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on motivation, group dynamics, leadership, communication and organisational culture and change."
+    },
+    {
+      "slug": "dsst-personal-finance",
+      "name": "DSST Personal Finance",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on budgeting, credit, insurance, investing, taxes and retirement planning for individuals."
+    },
+    {
+      "slug": "dsst-principles-of-advanced-english-composition",
+      "name": "DSST Principles of Advanced English Composition",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on rhetorical strategy, research writing, source evaluation and revision beyond first-year composition."
+    },
+    {
+      "slug": "dsst-principles-of-finance",
+      "name": "DSST Principles of Finance",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on time value of money, valuation, capital budgeting, risk and return, and financial markets."
+    },
+    {
+      "slug": "dsst-principles-of-financial-accounting",
+      "name": "DSST Principles of Financial Accounting",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on the accounting cycle, journal entries, adjusting entries and preparation of financial statements."
+    },
+    {
+      "slug": "dsst-principles-of-physical-science-i",
+      "name": "DSST Principles of Physical Science I",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test covering introductory physics and chemistry concepts including motion, energy, matter and waves."
+    },
+    {
+      "slug": "dsst-principles-of-public-speaking",
+      "name": "DSST Principles of Public Speaking",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on audience analysis, speech organisation, evidence, delivery and listening, including a recorded speech."
+    },
+    {
+      "slug": "dsst-principles-of-statistics",
+      "name": "DSST Principles of Statistics",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on descriptive statistics, probability, sampling distributions, hypothesis testing and regression."
+    },
+    {
+      "slug": "dsst-principles-of-supervision",
+      "name": "DSST Principles of Supervision",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on the supervisory role, planning, staffing, motivating employees and managing workplace performance."
+    },
+    {
+      "slug": "dsst-substance-abuse",
+      "name": "DSST Substance Abuse",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on drug classifications, pharmacology, addiction theory, treatment approaches and prevention policy."
+    },
+    {
+      "slug": "dsst-technical-writing",
+      "name": "DSST Technical Writing",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on audience analysis, document design, instructions, reports and the elements of technical style."
+    },
+    {
+      "slug": "dsst-the-civil-war-and-reconstruction",
+      "name": "DSST The Civil War and Reconstruction",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Prometric",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "DANTES subject standardized test on the causes and course of the American Civil War and the Reconstruction era that followed it."
+    },
+    {
+      "slug": "modern-states-freshman-year-for-free",
+      "name": "Modern States Freshman Year for Free",
+      "short": "Modern States",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Modern States Education Alliance",
+      "bodyUrl": "https://modernstates.org",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Free online course programme that prepares learners for CLEP exams and issues vouchers covering the CLEP exam fee after course completion."
+    },
+    {
+      "slug": "tecep-thomas-edison-credit-by-exam",
+      "name": "TECEP Thomas Edison State University Credit by Exam",
+      "short": "TECEP",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Thomas Edison State University",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Credit-by-examination program offering subject tests in business, humanities and applied fields that award Thomas Edison State University credit."
+    },
+    {
+      "slug": "uexcel-excelsior-college-examinations",
+      "name": "UExcel and Excelsior College Examinations",
+      "short": "UExcel",
+      "category": "admissions-academic",
+      "group": "CLEP & Credit by Exam",
+      "body": "Excelsior University",
+      "bodyUrl": "https://www.excelsior.edu",
+      "type": "Exam",
+      "aka": [
+        "Regents College Examinations",
+        "Excelsior College Examinations",
+        "ECE"
+      ],
+      "blurb": "Credit-by-exam program discontinued after 21 August 2022; previously earned UExcel credits can still be transferred to accepting institutions."
+    },
+    {
+      "slug": "ap-2d-art-and-design",
+      "name": "AP 2-D Art and Design",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [
+        "AP Studio Art 2-D Design",
+        "AP 2D Art"
+      ],
+      "blurb": "Portfolio-based AP assessment in two-dimensional design where students submit a sustained investigation and selected works instead of a written exam."
+    },
+    {
+      "slug": "ap-3d-art-and-design",
+      "name": "AP 3-D Art and Design",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [
+        "AP Studio Art 3-D Design",
+        "AP 3D Art"
+      ],
+      "blurb": "Portfolio-based AP assessment in three-dimensional design in which students submit sculptural and spatial works rather than sitting a written exam."
+    },
+    {
+      "slug": "ap-african-american-studies",
+      "name": "AP African American Studies",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [
+        "AP AFAM"
+      ],
+      "blurb": "Interdisciplinary AP exam rolled out nationally in 2024 covering African American history, literature, politics and culture from African origins to today."
+    },
+    {
+      "slug": "ap-art-history",
+      "name": "AP Art History",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam built around 250 required works of art from global cultures, testing visual analysis, contextual knowledge and comparative essay writing."
+    },
+    {
+      "slug": "ap-biology",
+      "name": "AP Biology",
+      "short": "AP Bio",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "College-level AP exam covering cellular processes, genetics, evolution, ecology and experimental design, scored 1 to 5 for possible college credit."
+    },
+    {
+      "slug": "ap-calculus-ab",
+      "name": "AP Calculus AB",
+      "short": "Calc AB",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam equivalent to a first-semester college calculus course, covering limits, derivatives, integrals and the fundamental theorem of calculus."
+    },
+    {
+      "slug": "ap-calculus-bc",
+      "name": "AP Calculus BC",
+      "short": "Calc BC",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Extended AP calculus exam covering all Calculus AB topics plus parametric, polar and vector functions, sequences and series, with an AB subscore."
+    },
+    {
+      "slug": "ap-chemistry",
+      "name": "AP Chemistry",
+      "short": "AP Chem",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam equivalent to first-year college chemistry, covering atomic structure, bonding, kinetics, thermodynamics, equilibrium and acid-base reactions."
+    },
+    {
+      "slug": "ap-chinese-language-and-culture",
+      "name": "AP Chinese Language and Culture",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [
+        "AP Mandarin"
+      ],
+      "blurb": "Computer-delivered AP exam assessing Mandarin listening, reading, speaking and writing at roughly the fourth-semester college level."
+    },
+    {
+      "slug": "ap-comparative-government-and-politics",
+      "name": "AP Comparative Government and Politics",
+      "short": "AP Comp Gov",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Fully digital AP exam comparing the political systems of China, Iran, Mexico, Nigeria, Russia and the United Kingdom through six core course countries."
+    },
+    {
+      "slug": "ap-computer-science-a",
+      "name": "AP Computer Science A",
+      "short": "AP CSA",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam in object-oriented programming taught in Java, covering data types, control structures, classes, arrays, recursion and algorithm analysis."
+    },
+    {
+      "slug": "ap-computer-science-principles",
+      "name": "AP Computer Science Principles",
+      "short": "AP CSP",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Broad AP computing exam combining an end-of-course digital test with the Create performance task submitted through the AP Digital Portfolio."
+    },
+    {
+      "slug": "ap-drawing",
+      "name": "AP Drawing",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [
+        "AP Studio Art Drawing"
+      ],
+      "blurb": "Portfolio-based AP assessment in drawing and mark-making where students submit a sustained investigation plus selected works for external scoring."
+    },
+    {
+      "slug": "ap-english-language-and-composition",
+      "name": "AP English Language and Composition",
+      "short": "AP Lang",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Fully digital AP exam in rhetorical analysis, argument and synthesis writing, widely accepted as first-year college composition credit."
+    },
+    {
+      "slug": "ap-english-literature-and-composition",
+      "name": "AP English Literature and Composition",
+      "short": "AP Lit",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Fully digital AP exam on close reading of poetry, prose fiction and drama, with three free-response essays including a literary argument."
+    },
+    {
+      "slug": "ap-environmental-science",
+      "name": "AP Environmental Science",
+      "short": "APES",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Interdisciplinary AP exam covering ecosystems, biodiversity, populations, energy resources, pollution and global change from a scientific perspective."
+    },
+    {
+      "slug": "ap-european-history",
+      "name": "AP European History",
+      "short": "AP Euro",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam covering European history from about 1450 to the present, including a document-based question and a long essay on historical reasoning."
+    },
+    {
+      "slug": "ap-french-language-and-culture",
+      "name": "AP French Language and Culture",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam assessing French interpretive, interpersonal and presentational communication with recorded speaking tasks at intermediate-high proficiency."
+    },
+    {
+      "slug": "ap-german-language-and-culture",
+      "name": "AP German Language and Culture",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam assessing German listening, reading, speaking and writing through authentic materials and recorded responses across six themed units."
+    },
+    {
+      "slug": "ap-human-geography",
+      "name": "AP Human Geography",
+      "short": "AP HuG",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Introductory AP exam on population, migration, culture, political geography, agriculture, urbanisation and economic development patterns."
+    },
+    {
+      "slug": "ap-italian-language-and-culture",
+      "name": "AP Italian Language and Culture",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam measuring Italian proficiency across listening, reading, speaking and writing, including recorded conversation and cultural comparison tasks."
+    },
+    {
+      "slug": "ap-japanese-language-and-culture",
+      "name": "AP Japanese Language and Culture",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Computer-delivered AP exam testing Japanese listening, reading, speaking and writing, including kanji recognition and typed character input."
+    },
+    {
+      "slug": "ap-latin",
+      "name": "AP Latin",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [
+        "AP Latin: Vergil and Caesar"
+      ],
+      "blurb": "AP exam requiring translation and analysis of set passages from the Aeneid of Vergil and the Gallic War of Caesar, plus sight reading."
+    },
+    {
+      "slug": "ap-macroeconomics",
+      "name": "AP Macroeconomics",
+      "short": "AP Macro",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam covering national income, inflation, unemployment, fiscal and monetary policy, and international trade at introductory college level."
+    },
+    {
+      "slug": "ap-microeconomics",
+      "name": "AP Microeconomics",
+      "short": "AP Micro",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam covering supply and demand, elasticity, production costs, market structures, factor markets and market failure at college introductory level."
+    },
+    {
+      "slug": "ap-music-theory",
+      "name": "AP Music Theory",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam combining written harmony and analysis with aural skills, melodic and harmonic dictation, and recorded sight-singing performance tasks."
+    },
+    {
+      "slug": "ap-physics-1-algebra-based",
+      "name": "AP Physics 1: Algebra-Based",
+      "short": "AP Physics 1",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Algebra-based AP exam covering kinematics, forces, energy, momentum, torque, simple harmonic motion and fluids for a first college physics course."
+    },
+    {
+      "slug": "ap-physics-2-algebra-based",
+      "name": "AP Physics 2: Algebra-Based",
+      "short": "AP Physics 2",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Algebra-based AP exam covering thermodynamics, electricity and magnetism, optics, and modern physics as a second-semester college course."
+    },
+    {
+      "slug": "ap-physics-c-electricity-and-magnetism",
+      "name": "AP Physics C: Electricity and Magnetism",
+      "short": "AP Physics C E&M",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Calculus-based AP exam covering electrostatics, conductors and capacitors, circuits, magnetic fields and electromagnetic induction."
+    },
+    {
+      "slug": "ap-physics-c-mechanics",
+      "name": "AP Physics C: Mechanics",
+      "short": "AP Physics C Mech",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Calculus-based AP exam covering kinematics, Newtonian mechanics, work and energy, momentum, rotation, oscillations and gravitation."
+    },
+    {
+      "slug": "ap-precalculus",
+      "name": "AP Precalculus",
+      "short": "AP Precalc",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP course and exam launched in 2023 covering polynomial, rational, exponential, logarithmic, trigonometric and polar functions and modelling."
+    },
+    {
+      "slug": "ap-psychology",
+      "name": "AP Psychology",
+      "short": "AP Psych",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Fully digital AP exam covering biological bases of behaviour, cognition, development, social psychology, mental health and research methods."
+    },
+    {
+      "slug": "ap-research",
+      "name": "AP Research",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [
+        "AP Capstone Research"
+      ],
+      "blurb": "Second AP Capstone course assessed entirely by a 4000-5000 word academic paper, presentation and oral defence rather than a timed written exam."
+    },
+    {
+      "slug": "ap-seminar",
+      "name": "AP Seminar",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [
+        "AP Capstone Seminar"
+      ],
+      "blurb": "First AP Capstone course scored from team and individual research performance tasks plus a written end-of-course exam on source analysis."
+    },
+    {
+      "slug": "ap-spanish-language-and-culture",
+      "name": "AP Spanish Language and Culture",
+      "short": "AP Spanish Lang",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Most-taken AP world language exam, assessing Spanish listening, reading, writing and recorded speaking at intermediate-high proficiency."
+    },
+    {
+      "slug": "ap-spanish-literature-and-culture",
+      "name": "AP Spanish Literature and Culture",
+      "short": "AP Spanish Lit",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam on a required reading list of Peninsular, Latin American and US Hispanic literature, with analysis and essays written in Spanish."
+    },
+    {
+      "slug": "ap-statistics",
+      "name": "AP Statistics",
+      "short": "AP Stats",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam covering exploratory data analysis, sampling and experimental design, probability and statistical inference, requiring a graphing calculator."
+    },
+    {
+      "slug": "ap-united-states-government-and-politics",
+      "name": "AP United States Government and Politics",
+      "short": "AP Gov",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam on US constitutional foundations, branches of government, civil liberties, political behaviour and required Supreme Court cases."
+    },
+    {
+      "slug": "ap-united-states-history",
+      "name": "AP United States History",
+      "short": "APUSH",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Fully digital AP exam covering US history from 1491 to the present with a document-based question and long essay testing historical reasoning."
+    },
+    {
+      "slug": "ap-world-history-modern",
+      "name": "AP World History: Modern",
+      "short": "AP World",
+      "category": "admissions-academic",
+      "group": "Advanced Placement",
+      "body": "College Board",
+      "bodyUrl": "https://apstudents.collegeboard.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "AP exam covering global history from about 1200 CE to the present, emphasising comparison, causation, continuity and change across regions."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+ "chunkId": "b21-p03",
+ "batch": 21,
+ "part": 3,
+ "categories": [
+  "food-hospitality"
+ ],
+ "groups": [
+  "Hospitality & Events"
+ ],
+ "bodies": [
+  "International Association of Exhibitions and Events",
+  "Meeting Professionals International",
+  "International Live Events Association",
+  "Certified Wedding Planner Society",
+  "PCMA",
+  "International Air Transport Association"
+ ],
+ "examCount": 6,
+ "exams": [
+  {
+   "slug": "iaee-certified-in-exhibition-management",
+   "name": "Certified in Exhibition Management",
+   "short": "CEM",
+   "category": "food-hospitality",
+   "group": "Hospitality & Events",
+   "body": "International Association of Exhibitions and Events",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Modular programme and examinations covering exhibition operations, floor plan design, exhibitor sales and event marketing."
+  },
+  {
+   "slug": "certified-meeting-management-mpi",
+   "name": "Certified Meeting Management",
+   "short": "CMM",
+   "category": "food-hospitality",
+   "group": "Hospitality & Events",
+   "body": "Meeting Professionals International",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Senior credential for meeting executives covering strategic meetings management, business acumen and organisational leadership."
+  },
+  {
+   "slug": "certified-special-events-professional",
+   "name": "Certified Special Events Professional",
+   "short": "CSEP",
+   "category": "food-hospitality",
+   "group": "Hospitality & Events",
+   "body": "International Live Events Association",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for live event producers covering design, production, budgeting, risk management and client relationship practice."
+  },
+  {
+   "slug": "certified-wedding-planner-cwps",
+   "name": "Certified Wedding Planner",
+   "short": "CWP",
+   "category": "food-hospitality",
+   "group": "Hospitality & Events",
+   "body": "Certified Wedding Planner Society",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Training and assessment covering wedding design, vendor contracts, timelines, budgets and day-of coordination practice."
+  },
+  {
+   "slug": "digital-event-strategist",
+   "name": "Digital Event Strategist",
+   "short": "DES",
+   "category": "food-hospitality",
+   "group": "Hospitality & Events",
+   "body": "PCMA",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential covering the design, production and measurement of virtual and hybrid events for meeting professionals."
+  },
+  {
+   "slug": "iata-foundation-travel-tourism",
+   "name": "IATA Foundation in Travel and Tourism Diploma",
+   "category": "food-hospitality",
+   "group": "Hospitality & Events",
+   "body": "International Air Transport Association",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry diploma with examinations covering geography, air fares, ticketing procedures and customer service for travel agents."
+  }
+ ]
+}

@@ -1,0 +1,3224 @@
+// AUTO-GENERATED skeleton exam records for Academic Admissions (generic, low/medium confidence).
+// Excludes RESEARCH_BODIES. Emit with: KB_FILTER=admissions-academic node gen_national.mjs
+
+export const kbExams = [
+  {
+    "slug": "cambridge-international-as-a-level",
+    "body": "Cambridge International Education",
+    "tagline": "Cambridge International AS and A Level Examinations — Academic Admissions credential from Cambridge International Education",
+    "description": "Subject-by-subject Cambridge qualifications taken in some US high schools and accepted by many American universities for admission and course credit. Offered by Cambridge International Education, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "Cambridge International AS and A Level Examinations is a professional credential administered by Cambridge International Education. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Cambridge International Education",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Cambridge International Education"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "Cambridge International AS and A Level Examinations"
+      ],
+      [
+        "Awarding body",
+        "Cambridge International Education"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the Cambridge International AS and A Level Examinations exam?",
+        "a": "Register through Cambridge International Education's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Cambridge International Education's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Cambridge International Education's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "Cambridge International AS and A Level Examinations is awarded by Cambridge International Education.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "low"
+  },
+  {
+    "slug": "dsst-introduction-to-geology",
+    "body": "Prometric",
+    "tagline": "DSST Introduction to Geology — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on minerals, rocks, plate tectonics, surface processes and geologic time at introductory level. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Introduction to Geology is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Introduction to Geology"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Introduction to Geology exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Introduction to Geology is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-introduction-to-law-enforcement",
+    "body": "Prometric",
+    "tagline": "DSST Introduction to Law Enforcement — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on police history, organisation, patrol operations, investigations and constitutional limits on policing. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Introduction to Law Enforcement is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Introduction to Law Enforcement"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Introduction to Law Enforcement exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Introduction to Law Enforcement is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-introduction-to-world-religions",
+    "body": "Prometric",
+    "tagline": "DSST Introduction to World Religions — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test surveying Hinduism, Buddhism, Judaism, Christianity, Islam and other major religious traditions. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Introduction to World Religions is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Introduction to World Religions"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Introduction to World Religions exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Introduction to World Religions is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-lifespan-developmental-psychology",
+    "body": "Prometric",
+    "tagline": "DSST Lifespan Developmental Psychology — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on physical, cognitive and social development from infancy through late adulthood and dying. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Lifespan Developmental Psychology is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Lifespan Developmental Psychology"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Lifespan Developmental Psychology exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Lifespan Developmental Psychology is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-management-information-systems",
+    "body": "Prometric",
+    "tagline": "DSST Management Information Systems — Academic Admissions credential from Prometric",
+    "description": "Upper-level DANTES subject standardized test on information systems strategy, databases, systems development and IT management. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Management Information Systems is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Management Information Systems"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Management Information Systems exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Management Information Systems is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-math-for-liberal-arts",
+    "body": "Prometric",
+    "tagline": "DSST Math for Liberal Arts — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test of quantitative reasoning for non-STEM majors, covering sets, logic, probability, statistics and finance. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Math for Liberal Arts is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Math for Liberal Arts"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Math for Liberal Arts exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Math for Liberal Arts is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-money-and-banking",
+    "body": "Prometric",
+    "tagline": "DSST Money and Banking — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on money, financial markets, commercial banking, the Federal Reserve and monetary policy. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Money and Banking is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Money and Banking"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Money and Banking exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Money and Banking is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-organizational-behavior",
+    "body": "Prometric",
+    "tagline": "DSST Organizational Behavior — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on motivation, group dynamics, leadership, communication and organisational culture and change. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Organizational Behavior is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Organizational Behavior"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Organizational Behavior exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Organizational Behavior is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-personal-finance",
+    "body": "Prometric",
+    "tagline": "DSST Personal Finance — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on budgeting, credit, insurance, investing, taxes and retirement planning for individuals. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Personal Finance is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Personal Finance"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Personal Finance exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Personal Finance is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-principles-of-advanced-english-composition",
+    "body": "Prometric",
+    "tagline": "DSST Principles of Advanced English Composition — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on rhetorical strategy, research writing, source evaluation and revision beyond first-year composition. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Principles of Advanced English Composition is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Principles of Advanced English Composition"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Principles of Advanced English Composition exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Principles of Advanced English Composition is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-principles-of-finance",
+    "body": "Prometric",
+    "tagline": "DSST Principles of Finance — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on time value of money, valuation, capital budgeting, risk and return, and financial markets. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Principles of Finance is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Principles of Finance"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Principles of Finance exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Principles of Finance is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-principles-of-financial-accounting",
+    "body": "Prometric",
+    "tagline": "DSST Principles of Financial Accounting — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on the accounting cycle, journal entries, adjusting entries and preparation of financial statements. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Principles of Financial Accounting is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Principles of Financial Accounting"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Principles of Financial Accounting exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Principles of Financial Accounting is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-principles-of-physical-science-i",
+    "body": "Prometric",
+    "tagline": "DSST Principles of Physical Science I — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test covering introductory physics and chemistry concepts including motion, energy, matter and waves. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Principles of Physical Science I is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Principles of Physical Science I"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Principles of Physical Science I exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Principles of Physical Science I is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-principles-of-public-speaking",
+    "body": "Prometric",
+    "tagline": "DSST Principles of Public Speaking — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on audience analysis, speech organisation, evidence, delivery and listening, including a recorded speech. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Principles of Public Speaking is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Principles of Public Speaking"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Principles of Public Speaking exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Principles of Public Speaking is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-principles-of-statistics",
+    "body": "Prometric",
+    "tagline": "DSST Principles of Statistics — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on descriptive statistics, probability, sampling distributions, hypothesis testing and regression. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Principles of Statistics is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Principles of Statistics"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Principles of Statistics exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Principles of Statistics is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-principles-of-supervision",
+    "body": "Prometric",
+    "tagline": "DSST Principles of Supervision — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on the supervisory role, planning, staffing, motivating employees and managing workplace performance. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Principles of Supervision is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Principles of Supervision"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Principles of Supervision exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Principles of Supervision is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-substance-abuse",
+    "body": "Prometric",
+    "tagline": "DSST Substance Abuse — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on drug classifications, pharmacology, addiction theory, treatment approaches and prevention policy. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Substance Abuse is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Substance Abuse"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Substance Abuse exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Substance Abuse is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-technical-writing",
+    "body": "Prometric",
+    "tagline": "DSST Technical Writing — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on audience analysis, document design, instructions, reports and the elements of technical style. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST Technical Writing is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST Technical Writing"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST Technical Writing exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST Technical Writing is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "dsst-the-civil-war-and-reconstruction",
+    "body": "Prometric",
+    "tagline": "DSST The Civil War and Reconstruction — Academic Admissions credential from Prometric",
+    "description": "DANTES subject standardized test on the causes and course of the American Civil War and the Reconstruction era that followed it. Offered by Prometric, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "DSST The Civil War and Reconstruction is a professional credential administered by Prometric. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Prometric",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Prometric"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "DSST The Civil War and Reconstruction"
+      ],
+      [
+        "Awarding body",
+        "Prometric"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the DSST The Civil War and Reconstruction exam?",
+        "a": "Register through Prometric's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Prometric's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Prometric's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "DSST The Civil War and Reconstruction is awarded by Prometric.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [
+      "dsst-a-history-of-the-vietnam-war",
+      "dsst-art-of-the-western-world",
+      "dsst-astronomy",
+      "dsst-business-ethics-and-society",
+      "dsst-business-mathematics"
+    ],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "slug": "modern-states-freshman-year-for-free",
+    "body": "Modern States Education Alliance",
+    "tagline": "Modern States Freshman Year for Free — Academic Admissions credential from Modern States Education Alliance",
+    "description": "Free online course programme that prepares learners for CLEP exams and issues vouchers covering the CLEP exam fee after course completion. Offered by Modern States Education Alliance, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "Modern States Freshman Year for Free is a professional credential administered by Modern States Education Alliance. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Modern States Education Alliance",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Modern States Education Alliance"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "Modern States Freshman Year for Free"
+      ],
+      [
+        "Awarding body",
+        "Modern States Education Alliance"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the Modern States Freshman Year for Free exam?",
+        "a": "Register through Modern States Education Alliance's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Modern States Education Alliance's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Modern States Education Alliance's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "Modern States Freshman Year for Free is awarded by Modern States Education Alliance.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "low"
+  },
+  {
+    "slug": "tecep-thomas-edison-credit-by-exam",
+    "body": "Thomas Edison State University",
+    "tagline": "TECEP Thomas Edison State University Credit by Exam — Academic Admissions credential from Thomas Edison State University",
+    "description": "Credit-by-examination program offering subject tests in business, humanities and applied fields that award Thomas Edison State University credit. Offered by Thomas Edison State University, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "TECEP Thomas Edison State University Credit by Exam is a professional credential administered by Thomas Edison State University. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Thomas Edison State University",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Thomas Edison State University"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "TECEP Thomas Edison State University Credit by Exam"
+      ],
+      [
+        "Awarding body",
+        "Thomas Edison State University"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the TECEP Thomas Edison State University Credit by Exam exam?",
+        "a": "Register through Thomas Edison State University's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Thomas Edison State University's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Thomas Edison State University's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "TECEP Thomas Edison State University Credit by Exam is awarded by Thomas Edison State University.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "low"
+  },
+  {
+    "slug": "uexcel-excelsior-college-examinations",
+    "body": "Excelsior University",
+    "tagline": "UExcel and Excelsior College Examinations — Academic Admissions credential from Excelsior University",
+    "description": "Credit-by-exam program discontinued after 21 August 2022; previously earned UExcel credits can still be transferred to accepting institutions. Offered by Excelsior University, it is designed for candidates who need to demonstrate verified competence in the Academic Admissions field. The credential is commonly used for career entry, advancement, regulatory compliance, or employer requirements. Candidates should review the official handbook for eligibility, exam format, and scoring before registering.",
+    "quickAnswer": {
+      "summary": "UExcel and Excelsior College Examinations is a professional credential administered by Excelsior University. It validates job-ready knowledge and skills in the Academic Admissions field and is used for career entry, advancement, or compliance.",
+      "advantages": [
+        "Recognized credential from Excelsior University",
+        "Demonstrates verified competence in Academic Admissions",
+        "Supports career advancement and may satisfy licensing or employer requirements"
+      ]
+    },
+    "roadmap": [
+      "Confirm you meet any eligibility or prerequisites",
+      "Review the official handbook and study materials",
+      "Register and pay through the awarding body or authorized provider",
+      "Schedule and take the exam (test center or online proctoring)",
+      "Receive your score and, if passed, your credential"
+    ],
+    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
+    "examMeta": {
+      "questions": "Varies by exam — see the official handbook",
+      "time": "Varies by exam",
+      "pass": "Passing score set by the awarding body; see the official score report",
+      "fee": "Varies by location and currency — confirm on the official registration page",
+      "format": "Proctored, computer-based (test center or online remote proctoring)",
+      "admin": "Excelsior University"
+    },
+    "topics": [
+      {
+        "name": "Subject proficiency",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Test-taking strategy",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Academic readiness",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      },
+      {
+        "name": "Application process",
+        "note": "Topic area tested on the exam; see the official blueprint for the detailed breakdown."
+      }
+    ],
+    "examEssentials": [
+      [
+        "Credential",
+        "UExcel and Excelsior College Examinations"
+      ],
+      [
+        "Awarding body",
+        "Excelsior University"
+      ],
+      [
+        "Exam format",
+        "Proctored, computer-based"
+      ],
+      [
+        "Validity",
+        "Varies by credential (commonly 2–3 years)"
+      ],
+      [
+        "Languages",
+        "Varies — see awarding body"
+      ]
+    ],
+    "timeline": [
+      [
+        "Confirm eligibility",
+        "Review requirements on the official site"
+      ],
+      [
+        "Register",
+        "Create an account and pay the fee"
+      ],
+      [
+        "Schedule",
+        "Pick a date at a test center or online"
+      ],
+      [
+        "Take exam",
+        "Complete assigned sections within the time limit"
+      ],
+      [
+        "Results",
+        "Score released per the body’s timeline"
+      ]
+    ],
+    "costBreakdown": {
+      "items": [
+        [
+          "Exam registration",
+          "Varies — confirm with the certifying body"
+        ]
+      ],
+      "total": "Varies",
+      "footnote": "Fees change; verify the current amount on the official registration page before scheduling."
+    },
+    "difficulty": "Academic",
+    "audience": "Professionals and candidates seeking to validate Academic Admissions competence.",
+    "time": "Varies",
+    "cost": "Varies",
+    "faqs": [
+      {
+        "q": "How do I register for the UExcel and Excelsior College Examinations exam?",
+        "a": "Register through Excelsior University's official portal or an authorized test provider (e.g., Pearson VUE or Prometric where applicable). Create an account, select the exam, pay the fee, and schedule a date."
+      },
+      {
+        "q": "How much does the exam cost?",
+        "a": "Fees vary by location and currency. Confirm the current fee on the official registration page before scheduling."
+      },
+      {
+        "q": "How long is the credential valid, and how do I renew?",
+        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Excelsior University's policy."
+      },
+      {
+        "q": "What if I do not pass?",
+        "a": "Most bodies allow retakes after a waiting period and payment of the full or partial fee. Check Excelsior University's retake policy before rescheduling."
+      }
+    ],
+    "summaryPoints": [
+      "UExcel and Excelsior College Examinations is awarded by Excelsior University.",
+      "Validates job-ready competence in Academic Admissions.",
+      "Registration is through the awarding body or an authorized test provider.",
+      "Renewal and retake policies vary — confirm before scheduling."
+    ],
+    "relatedSlugs": [],
+    "sourceUrl": null,
+    "reviewed": "2026-08",
+    "confidence": "low"
+  }
+];

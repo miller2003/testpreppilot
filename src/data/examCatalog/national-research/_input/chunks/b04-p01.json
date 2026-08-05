@@ -1,0 +1,211 @@
+{
+ "chunkId": "b04-p01",
+ "batch": 4,
+ "part": 1,
+ "categories": [
+  "admissions-academic"
+ ],
+ "groups": [
+  "College Admissions",
+  "High School Equivalency"
+ ],
+ "bodies": [
+  "College Board",
+  "ACT, Inc.",
+  "Classic Learning Initiatives",
+  "GED Testing Service",
+  "ETS",
+  "CASAS",
+  "Data Recognition Corporation"
+ ],
+ "examCount": 15,
+ "exams": [
+  {
+   "slug": "psat-10",
+   "name": "PSAT 10",
+   "category": "admissions-academic",
+   "group": "College Admissions",
+   "body": "College Board",
+   "bodyUrl": "https://satsuite.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Spring-administered digital practice test for tenth graders that uses the same content and scale as the SAT but confers no scholarship entry."
+  },
+  {
+   "slug": "psat-8-9",
+   "name": "PSAT 8/9",
+   "category": "admissions-academic",
+   "group": "College Admissions",
+   "body": "College Board",
+   "bodyUrl": "https://satsuite.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Entry point of the digital SAT Suite for eighth and ninth graders, establishing a baseline in reading, writing and mathematics."
+  },
+  {
+   "slug": "psat-nmsqt",
+   "name": "PSAT/NMSQT",
+   "category": "admissions-academic",
+   "group": "College Admissions",
+   "body": "College Board",
+   "bodyUrl": "https://satsuite.collegeboard.org",
+   "type": "Exam",
+   "aka": [
+    "Preliminary SAT",
+    "National Merit Scholarship Qualifying Test"
+   ],
+   "blurb": "Digital practice SAT taken in October that also serves as the qualifying test for National Merit Scholarship Program recognition."
+  },
+  {
+   "slug": "sat-exam",
+   "name": "SAT",
+   "short": "SAT",
+   "category": "admissions-academic",
+   "group": "College Admissions",
+   "body": "College Board",
+   "bodyUrl": "https://satsuite.collegeboard.org",
+   "type": "Exam",
+   "aka": [
+    "Digital SAT",
+    "Scholastic Assessment Test"
+   ],
+   "blurb": "Adaptive digital college admissions test scored 400 to 1600 across Reading and Writing and Math sections, taken in about two hours."
+  },
+  {
+   "slug": "sat-subject-tests",
+   "name": "SAT Subject Tests",
+   "category": "admissions-academic",
+   "group": "College Admissions",
+   "body": "College Board",
+   "type": "Exam",
+   "aka": [
+    "SAT II",
+    "Achievement Tests"
+   ],
+   "blurb": "Hour-long single-subject admissions tests that College Board discontinued in January 2021; no scores are issued or accepted today."
+  },
+  {
+   "slug": "act-test",
+   "name": "ACT",
+   "short": "ACT",
+   "category": "admissions-academic",
+   "group": "College Admissions",
+   "body": "ACT, Inc.",
+   "bodyUrl": "https://www.act.org",
+   "type": "Exam",
+   "aka": [
+    "American College Test",
+    "Enhanced ACT"
+   ],
+   "blurb": "National college admissions test scored 1 to 36 with English, math and reading sections plus optional science and writing components."
+  },
+  {
+   "slug": "preact",
+   "name": "PreACT",
+   "category": "admissions-academic",
+   "group": "College Admissions",
+   "body": "ACT, Inc.",
+   "bodyUrl": "https://www.act.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Practice assessment for tenth graders that predicts a future ACT score using shorter English, math, reading and science sections."
+  },
+  {
+   "slug": "preact-8-9",
+   "name": "PreACT 8/9",
+   "category": "admissions-academic",
+   "group": "College Admissions",
+   "body": "ACT, Inc.",
+   "bodyUrl": "https://www.act.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Early-high-school assessment for eighth and ninth graders that reports on the ACT score scale to guide course planning and readiness."
+  },
+  {
+   "slug": "clt-classic-learning-test",
+   "name": "Classic Learning Test",
+   "short": "CLT",
+   "category": "admissions-academic",
+   "group": "College Admissions",
+   "body": "Classic Learning Initiatives",
+   "bodyUrl": "https://www.cltexam.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Online college admissions test built around classical texts, accepted by more than 250 US colleges and by several states for scholarships."
+  },
+  {
+   "slug": "clt10",
+   "name": "CLT10",
+   "category": "admissions-academic",
+   "group": "College Admissions",
+   "body": "Classic Learning Initiatives",
+   "bodyUrl": "https://www.cltexam.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Practice and scholarship-qualifying Classic Learning Test for ninth and tenth graders preparing for the full CLT admissions exam."
+  },
+  {
+   "slug": "clt8",
+   "name": "CLT8",
+   "category": "admissions-academic",
+   "group": "College Admissions",
+   "body": "Classic Learning Initiatives",
+   "bodyUrl": "https://www.cltexam.com",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Diagnostic Classic Learning Test for students in grades seven and eight that benchmarks verbal reasoning, grammar and quantitative skills."
+  },
+  {
+   "slug": "ged-test",
+   "name": "GED Test",
+   "short": "GED",
+   "category": "admissions-academic",
+   "group": "High School Equivalency",
+   "body": "GED Testing Service",
+   "bodyUrl": "https://ged.com",
+   "type": "Exam",
+   "aka": [
+    "General Educational Development"
+   ],
+   "blurb": "Four-subject high school equivalency exam in reasoning through language arts, mathematics, science and social studies used in most states."
+  },
+  {
+   "slug": "hiset-exam",
+   "name": "HiSET Exam",
+   "short": "HiSET",
+   "category": "admissions-academic",
+   "group": "High School Equivalency",
+   "body": "ETS",
+   "bodyUrl": "https://hiset.org",
+   "type": "Exam",
+   "aka": [
+    "High School Equivalency Test"
+   ],
+   "blurb": "Five-subtest high school equivalency exam offered on computer and paper in many states as an alternative to the GED test."
+  },
+  {
+   "slug": "national-external-diploma-program",
+   "name": "National External Diploma Program",
+   "short": "NEDP",
+   "category": "admissions-academic",
+   "group": "High School Equivalency",
+   "body": "CASAS",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Portfolio and competency-based route to a high school diploma for adults, assessed through applied performance tasks rather than a timed test."
+  },
+  {
+   "slug": "tasc-test",
+   "name": "TASC Test",
+   "short": "TASC",
+   "category": "admissions-academic",
+   "group": "High School Equivalency",
+   "body": "Data Recognition Corporation",
+   "type": "Exam",
+   "aka": [
+    "Test Assessing Secondary Completion"
+   ],
+   "blurb": "High school equivalency exam discontinued in 2022; former TASC states such as New York and Indiana now use the GED or HiSET instead."
+  }
+ ]
+}

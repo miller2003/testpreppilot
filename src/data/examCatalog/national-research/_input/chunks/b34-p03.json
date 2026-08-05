@@ -1,0 +1,323 @@
+{
+ "chunkId": "b34-p03",
+ "batch": 34,
+ "part": 3,
+ "categories": [
+  "technology"
+ ],
+ "groups": [
+  "Enterprise Platforms",
+  "Data, Analytics & AI"
+ ],
+ "bodies": [
+  "Oracle",
+  "INFORMS",
+  "Cloudera",
+  "IBM",
+  "Neo4j",
+  "Epic Systems",
+  "HubSpot",
+  "Workday",
+  "Astronomer",
+  "DAMA International",
+  "dbt Labs",
+  "Google",
+  "Oracle Cerner",
+  "Shopify"
+ ],
+ "examCount": 23,
+ "exams": [
+  {
+   "slug": "oracle-oci-architect-associate",
+   "name": "Oracle Cloud Infrastructure Architect Associate",
+   "short": "1Z0-1072",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Oracle",
+   "type": "Certification",
+   "aka": [
+    "1Z0-1072-23"
+   ],
+   "blurb": "Validates designing OCI infrastructure including compute, networking, storage, databases and identity for resilient cloud solutions."
+  },
+  {
+   "slug": "oracle-oci-foundations-associate",
+   "name": "Oracle Cloud Infrastructure Foundations Associate",
+   "short": "1Z0-1085",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Oracle",
+   "type": "Certification",
+   "aka": [
+    "1Z0-1085-23"
+   ],
+   "blurb": "Introductory credential covering OCI core services, networking, storage, compute, pricing and security for cloud practitioners."
+  },
+  {
+   "slug": "oracle-database-administrator-professional",
+   "name": "Oracle Database Administration Certified Professional",
+   "short": "1Z0-083",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Oracle",
+   "type": "Certification",
+   "aka": [
+    "1Z0-083"
+   ],
+   "blurb": "Validates administration of Oracle Database including multitenant, backup, recovery, performance and instance configuration tasks."
+  },
+  {
+   "slug": "informs-associate-certified-analytics-professional",
+   "name": "Associate Certified Analytics Professional",
+   "short": "aCAP",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "INFORMS",
+   "type": "Certification",
+   "aka": [
+    "aCAP"
+   ],
+   "blurb": "Entry-level INFORMS analytics credential for candidates with a degree but limited experience, covering the same analytics process domains as CAP."
+  },
+  {
+   "slug": "certified-analytics-professional",
+   "name": "Certified Analytics Professional",
+   "short": "CAP",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "INFORMS",
+   "type": "Certification",
+   "aka": [
+    "CAP"
+   ],
+   "blurb": "Vendor-neutral INFORMS credential covering the end-to-end analytics process from business problem framing through modelling to deployment and lifecycle."
+  },
+  {
+   "slug": "cloudera-cdp-generalist",
+   "name": "Cloudera CDP Generalist Certification",
+   "short": "CDP Generalist",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Cloudera",
+   "type": "Certification",
+   "aka": [
+    "CDP-0011"
+   ],
+   "blurb": "Cloudera exam covering the Cloudera Data Platform across public and private cloud, including data hub, warehouse, machine learning and governance."
+  },
+  {
+   "slug": "cloudera-ccp-data-engineer",
+   "name": "Cloudera Certified Professional Data Engineer",
+   "short": "CCP Data Engineer",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Cloudera",
+   "type": "Certification",
+   "aka": [
+    "CCP Data Engineer",
+    "DE575"
+   ],
+   "blurb": "Retired hands-on Cloudera exam requiring candidates to ingest, transform and analyse data on a live Hadoop cluster; still widely referenced by employers."
+  },
+  {
+   "slug": "ibm-ai-engineering-professional-certificate",
+   "name": "IBM AI Engineering Professional Certificate",
+   "short": "IBM AI Engineering",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "IBM",
+   "type": "Training",
+   "aka": [
+    "IBM AI Engineering"
+   ],
+   "blurb": "Multi-course online programme covering machine learning, deep learning with Keras and PyTorch, computer vision and deploying models to production."
+  },
+  {
+   "slug": "ibm-data-science-professional-certificate",
+   "name": "IBM Data Science Professional Certificate",
+   "short": "IBM Data Science",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "IBM",
+   "type": "Training",
+   "aka": [
+    "IBM Data Science Certificate"
+   ],
+   "blurb": "Multi-course online programme covering Python, SQL, data analysis, visualisation and machine learning with hands-on capstone projects."
+  },
+  {
+   "slug": "neo4j-certified-professional",
+   "name": "Neo4j Certified Professional",
+   "short": "Neo4j Professional",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Neo4j",
+   "type": "Certification",
+   "aka": [
+    "Neo4j Certified Professional"
+   ],
+   "blurb": "Free Neo4j certification covering property graph modelling, the Cypher query language, indexes, constraints and Neo4j database administration."
+  },
+  {
+   "slug": "neo4j-graph-data-science-certification",
+   "name": "Neo4j Graph Data Science Certification",
+   "short": "Neo4j GDS",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Neo4j",
+   "type": "Certification",
+   "aka": [
+    "Neo4j GDS Certification"
+   ],
+   "blurb": "Neo4j certification covering graph algorithms, graph projections, centrality and community detection and machine learning pipelines on graphs."
+  },
+  {
+   "slug": "epic-ambulatory-analyst",
+   "name": "Epic Ambulatory Analyst Certification",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Epic Systems",
+   "type": "Certification",
+   "aka": [
+    "Ambulatory"
+   ],
+   "blurb": "Healthcare IT credential for configuring Epic Ambulatory outpatient EHR workflows, scheduling and clinical documentation."
+  },
+  {
+   "slug": "epic-beaker-analyst",
+   "name": "Epic Beaker Analyst Certification",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Epic Systems",
+   "type": "Certification",
+   "aka": [
+    "Beaker"
+   ],
+   "blurb": "Role-based lab information system credential earned through Epic employment covering Beaker build, orders and results workflow."
+  },
+  {
+   "slug": "hubspot-inbound-certification",
+   "name": "HubSpot Inbound Certification",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "HubSpot",
+   "type": "Certification",
+   "aka": [
+    "Inbound"
+   ],
+   "blurb": "Free foundational credential covering inbound methodology, content, social, SEO and nurturing for marketing and sales professionals."
+  },
+  {
+   "slug": "hubspot-marketing-software-certification",
+   "name": "HubSpot Marketing Software Certification",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "HubSpot",
+   "type": "Certification",
+   "aka": [
+    "Marketing Hub"
+   ],
+   "blurb": "Validates using HubSpot Marketing Hub for email, automation, forms, landing pages and analytics in inbound campaigns."
+  },
+  {
+   "slug": "workday-pro-hcm",
+   "name": "Workday Pro Certification - HCM",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Workday",
+   "type": "Certification",
+   "aka": [
+    "Workday Pro"
+   ],
+   "blurb": "Role-based credential for implementing and configuring Workday Human Capital Management, earned through partner or customer programs."
+  },
+  {
+   "slug": "workday-pro-integrations",
+   "name": "Workday Pro Certification - Integrations",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Workday",
+   "type": "Certification",
+   "aka": [
+    "Workday Pro"
+   ],
+   "blurb": "Validates building Workday integrations using EIB, Workday Studio and web services for enterprise HR and finance data flows."
+  },
+  {
+   "slug": "astronomer-apache-airflow-fundamentals",
+   "name": "Astronomer Certification: Apache Airflow Fundamentals",
+   "short": "Airflow Fundamentals",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Astronomer",
+   "type": "Certification",
+   "aka": [
+    "Airflow Fundamentals"
+   ],
+   "blurb": "Certification on Apache Airflow covering DAG authoring, operators, scheduling, task dependencies, the Airflow UI and core architecture concepts."
+  },
+  {
+   "slug": "dama-certified-data-management-professional",
+   "name": "Certified Data Management Professional",
+   "short": "CDMP",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "DAMA International",
+   "type": "Certification",
+   "aka": [
+    "CDMP"
+   ],
+   "blurb": "DAMA International credential based on the DMBOK covering data governance, quality, modelling, metadata, master data and data architecture."
+  },
+  {
+   "slug": "dbt-analytics-engineering-certification",
+   "name": "dbt Analytics Engineering Certification",
+   "short": "dbt Certification",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "dbt Labs",
+   "type": "Certification",
+   "aka": [
+    "dbt Analytics Engineering"
+   ],
+   "blurb": "Certification from dbt Labs covering modelling, testing, documentation, sources, snapshots and deployment of analytics code with dbt."
+  },
+  {
+   "slug": "tensorflow-developer-certificate",
+   "name": "TensorFlow Developer Certificate",
+   "short": "TensorFlow Developer",
+   "category": "technology",
+   "group": "Data, Analytics & AI",
+   "body": "Google",
+   "type": "Certification",
+   "aka": [
+    "TF Developer Certificate"
+   ],
+   "blurb": "Coding exam on building neural networks with TensorFlow for image, text and time-series tasks; Google retired the programme but it remains widely searched."
+  },
+  {
+   "slug": "oracle-cerner-millennia",
+   "name": "Oracle Cerner Millennium Certification",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Oracle Cerner",
+   "type": "Certification",
+   "aka": [
+    "Millennium"
+   ],
+   "blurb": "Healthcare IT credential covering Cerner Millennium EHR modules, including PowerChart and registration, for clinical system analysts."
+  },
+  {
+   "slug": "shopify-partner-foundations",
+   "name": "Shopify Partner Foundations Certification",
+   "category": "technology",
+   "group": "Enterprise Platforms",
+   "body": "Shopify",
+   "type": "Certification",
+   "aka": [
+    "Shopify Foundations"
+   ],
+   "blurb": "Confirms commerce fundamentals and Shopify platform knowledge for partners building and supporting online storefronts."
+  }
+ ]
+}

@@ -1,0 +1,453 @@
+{
+ "chunkId": "b23-p02",
+ "batch": 23,
+ "part": 2,
+ "categories": [
+  "healthcare-clinical"
+ ],
+ "groups": [
+  "Rehabilitation",
+  "Other Clinicians",
+  "Nursing",
+  "Physician"
+ ],
+ "bodies": [
+  "American Board of Physical Therapy Specialties (ABPTS)",
+  "National Certification Commission for Acupuncture and Oriental Medicine (NCCAOM)",
+  "American Nurses Credentialing Center (ANCC)",
+  "National Board of Chiropractic Examiners (NBCE)",
+  "National Board of Osteopathic Medical Examiners (NBOME)",
+  "National Board of Medical Examiners (NBME) and Federation of State Medical Boards (FSMB)",
+  "Pediatric Nursing Certification Board (PNCB)",
+  "National Board of Podiatric Medical Examiners (NBPME)",
+  "National Council of State Boards of Nursing (NCSBN)",
+  "North American Board of Naturopathic Examiners (NABNE)"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "abpts-ccs",
+   "name": "ABPTS Cardiovascular and Pulmonary Clinical Specialist",
+   "short": "CCS",
+   "category": "healthcare-clinical",
+   "group": "Rehabilitation",
+   "body": "American Board of Physical Therapy Specialties (ABPTS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty certification for physical therapists focusing on cardiovascular and pulmonary care."
+  },
+  {
+   "slug": "abpts-ecs",
+   "name": "ABPTS Clinical Electrophysiology Clinical Specialist",
+   "short": "ECS",
+   "category": "healthcare-clinical",
+   "group": "Rehabilitation",
+   "body": "American Board of Physical Therapy Specialties (ABPTS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty certification for physical therapists in clinical electrophysiology and electrophysiologic testing."
+  },
+  {
+   "slug": "abpts-gcs",
+   "name": "ABPTS Geriatric Clinical Specialist",
+   "short": "GCS",
+   "category": "healthcare-clinical",
+   "group": "Rehabilitation",
+   "body": "American Board of Physical Therapy Specialties (ABPTS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty certification for physical therapists focusing on geriatric care., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "abpts-ncs",
+   "name": "ABPTS Neurologic Clinical Specialist",
+   "short": "NCS",
+   "category": "healthcare-clinical",
+   "group": "Rehabilitation",
+   "body": "American Board of Physical Therapy Specialties (ABPTS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty certification for physical therapists focusing on neurologic rehabilitation."
+  },
+  {
+   "slug": "abpts-oncs",
+   "name": "ABPTS Oncology Clinical Specialist",
+   "short": "OnCS",
+   "category": "healthcare-clinical",
+   "group": "Rehabilitation",
+   "body": "American Board of Physical Therapy Specialties (ABPTS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty certification for physical therapists focusing on oncology rehabilitation."
+  },
+  {
+   "slug": "abpts-ocs",
+   "name": "ABPTS Orthopaedic Clinical Specialist",
+   "short": "OCS",
+   "category": "healthcare-clinical",
+   "group": "Rehabilitation",
+   "body": "American Board of Physical Therapy Specialties (ABPTS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty certification for physical therapists focusing on orthopaedic practice."
+  },
+  {
+   "slug": "abpts-pcs",
+   "name": "ABPTS Pediatric Clinical Specialist",
+   "short": "PCS",
+   "category": "healthcare-clinical",
+   "group": "Rehabilitation",
+   "body": "American Board of Physical Therapy Specialties (ABPTS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty certification for physical therapists focusing on pediatric care., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "abpts-scs",
+   "name": "ABPTS Sports Clinical Specialist",
+   "short": "SCS",
+   "category": "healthcare-clinical",
+   "group": "Rehabilitation",
+   "body": "American Board of Physical Therapy Specialties (ABPTS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty certification for physical therapists focusing on sports physical therapy."
+  },
+  {
+   "slug": "abpts-wcs",
+   "name": "ABPTS Women’s Health Clinical Specialist",
+   "short": "WCS",
+   "category": "healthcare-clinical",
+   "group": "Rehabilitation",
+   "body": "American Board of Physical Therapy Specialties (ABPTS)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty certification for physical therapists focusing on women’s health conditions."
+  },
+  {
+   "slug": "nccaom-biomedicine",
+   "name": "NCCAOM Biomedicine Module",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "National Certification Commission for Acupuncture and Oriental Medicine (NCCAOM)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Component exam assessing biomedical science knowledge for acupuncture and Oriental medicine candidates."
+  },
+  {
+   "slug": "nccaom-acupuncture",
+   "name": "NCCAOM Diplomate in Acupuncture",
+   "short": "Dipl. Ac.",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "National Certification Commission for Acupuncture and Oriental Medicine (NCCAOM)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National certification for acupuncture practitioners in the United States., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nccaom-herbology",
+   "name": "NCCAOM Diplomate in Chinese Herbology",
+   "short": "Dipl. CH",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "National Certification Commission for Acupuncture and Oriental Medicine (NCCAOM)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National certification for practitioners of Chinese herbal medicine., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nccaom-oriental-medicine",
+   "name": "NCCAOM Diplomate in Oriental Medicine",
+   "short": "Dipl. O.M.",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "National Certification Commission for Acupuncture and Oriental Medicine (NCCAOM)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National certification combining acupuncture and Chinese herbology practice., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nccaom-fom",
+   "name": "NCCAOM Foundations of Oriental Medicine Module",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "National Certification Commission for Acupuncture and Oriental Medicine (NCCAOM)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Component exam assessing foundational knowledge of Oriental medicine theory and practice."
+  },
+  {
+   "slug": "ancc-agacnp",
+   "name": "ANCC Adult-Gerontology Acute Care NP Certification",
+   "short": "AGACNP-BC",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "American Nurses Credentialing Center (ANCC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification exam for adult-gerontology acute care nurse practitioners, administered by ANCC."
+  },
+  {
+   "slug": "ancc-agpcnp",
+   "name": "ANCC Adult-Gerontology Primary Care NP Certification",
+   "short": "AGPCNP-BC",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "American Nurses Credentialing Center (ANCC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification exam for adult-gerontology primary care nurse practitioners, administered by ANCC."
+  },
+  {
+   "slug": "ancc-fnp",
+   "name": "ANCC Family Nurse Practitioner Certification",
+   "short": "FNP-BC",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "American Nurses Credentialing Center (ANCC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National certification exam for family nurse practitioners credentialed through the American Nurses Credentialing Center."
+  },
+  {
+   "slug": "ancc-pmhnp",
+   "name": "ANCC Psychiatric-Mental Health NP Certification",
+   "short": "PMHNP-BC",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "American Nurses Credentialing Center (ANCC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification exam for psychiatric-mental health nurse practitioners, administered by ANCC."
+  },
+  {
+   "slug": "nbce-part-1",
+   "name": "NBCE Part I: Basic Sciences",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "National Board of Chiropractic Examiners (NBCE)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "First chiropractic licensure exam covering basic biomedical sciences and anatomy."
+  },
+  {
+   "slug": "nbce-part-2",
+   "name": "NBCE Part II: Clinical Sciences",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "National Board of Chiropractic Examiners (NBCE)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Chiropractic licensure exam assessing clinical sciences and diagnostic principles."
+  },
+  {
+   "slug": "nbce-part-3",
+   "name": "NBCE Part III: Clinical Competency",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "National Board of Chiropractic Examiners (NBCE)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Chiropractic licensure exam assessing clinical case management and competency., a standardized national examination required for this credential."
+  },
+  {
+   "slug": "nbce-part-4",
+   "name": "NBCE Part IV: Practical Examination",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "National Board of Chiropractic Examiners (NBCE)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Practical chiropractic licensure exam assessing hands-on adjusting and diagnostic techniques."
+  },
+  {
+   "slug": "comlex-level-1",
+   "name": "COMLEX-USA Level 1",
+   "short": "Level 1",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "National Board of Osteopathic Medical Examiners (NBOME)",
+   "type": "Exam",
+   "aka": [
+    "COMLEX Level 1"
+   ],
+   "blurb": "First osteopathic licensing exam covering basic biomedical sciences with emphasis on osteopathic principles and practice."
+  },
+  {
+   "slug": "comlex-level-2-ce",
+   "name": "COMLEX-USA Level 2-CE",
+   "short": "Level 2-CE",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "National Board of Osteopathic Medical Examiners (NBOME)",
+   "type": "Exam",
+   "aka": [
+    "COMLEX Level 2 Cognitive Evaluation"
+   ],
+   "blurb": "Osteopathic licensing exam assessing clinical decision-making and biomedical knowledge for patient evaluation and management."
+  },
+  {
+   "slug": "comlex-level-3",
+   "name": "COMLEX-USA Level 3",
+   "short": "Level 3",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "National Board of Osteopathic Medical Examiners (NBOME)",
+   "type": "Exam",
+   "aka": [
+    "COMLEX Level 3"
+   ],
+   "blurb": "Final osteopathic licensing exam evaluating the ability to deliver independent, comprehensive patient care as a generalist."
+  },
+  {
+   "slug": "usmle-step-1",
+   "name": "USMLE Step 1",
+   "short": "Step 1",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "National Board of Medical Examiners (NBME) and Federation of State Medical Boards (FSMB)",
+   "type": "Exam",
+   "aka": [
+    "United States Medical Licensing Examination Step 1"
+   ],
+   "blurb": "Computer-based exam assessing basic biomedical and clinical science knowledge required for medical licensure in the United States."
+  },
+  {
+   "slug": "usmle-step-2-ck",
+   "name": "USMLE Step 2 Clinical Knowledge",
+   "short": "Step 2 CK",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "National Board of Medical Examiners (NBME) and Federation of State Medical Boards (FSMB)",
+   "type": "Exam",
+   "aka": [
+    "United States Medical Licensing Examination Step 2 CK"
+   ],
+   "blurb": "Computer-based exam measuring medical knowledge and clinical reasoning applied to patient-centered care for licensure."
+  },
+  {
+   "slug": "usmle-step-3",
+   "name": "USMLE Step 3",
+   "short": "Step 3",
+   "category": "healthcare-clinical",
+   "group": "Physician",
+   "body": "National Board of Medical Examiners (NBME) and Federation of State Medical Boards (FSMB)",
+   "type": "Exam",
+   "aka": [
+    "United States Medical Licensing Examination Step 3"
+   ],
+   "blurb": "Final licensure exam assessing independent patient management and the ability to practice unsupervised general medicine."
+  },
+  {
+   "slug": "pncb-nnp",
+   "name": "PNCB Neonatal NP Certification",
+   "short": "NNP-BC",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "Pediatric Nursing Certification Board (PNCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification exam for neonatal nurse practitioners caring for newborn and premature infants."
+  },
+  {
+   "slug": "pncb-cpnp-ac",
+   "name": "PNCB Pediatric NP Certification – Acute Care",
+   "short": "CPNP-AC",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "Pediatric Nursing Certification Board (PNCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification exam for pediatric nurse practitioners in acute and critical care settings."
+  },
+  {
+   "slug": "pncb-cpnp-pc",
+   "name": "PNCB Pediatric NP Certification – Primary Care",
+   "short": "CPNP-PC",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "Pediatric Nursing Certification Board (PNCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification exam for pediatric nurse practitioners in primary care settings., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nbpme-part-1",
+   "name": "NBPME Part I: Podiatric Medicine",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "National Board of Podiatric Medical Examiners (NBPME)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "First podiatry licensure exam covering basic and clinical podiatric medical sciences."
+  },
+  {
+   "slug": "nbpme-part-2",
+   "name": "NBPME Part II: Podiatric Medicine",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "National Board of Podiatric Medical Examiners (NBPME)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Second podiatry licensure exam assessing clinical podiatric medicine knowledge., a standardized national examination required for this credential."
+  },
+  {
+   "slug": "nbpme-part-3",
+   "name": "NBPME Part III: Clinical Skills",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "National Board of Podiatric Medical Examiners (NBPME)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Podiatry licensure exam assessing clinical skills and patient management (ABLE)."
+  },
+  {
+   "slug": "nclex-pn",
+   "name": "NCLEX-PN",
+   "short": "NCLEX-PN",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "National Council of State Boards of Nursing (NCSBN)",
+   "type": "License",
+   "aka": [
+    "Practical Nurse Licensure Exam",
+    "LPN Exam"
+   ],
+   "blurb": "Computer-adaptive examination required for licensed practical or vocational nurse licensure in the United States."
+  },
+  {
+   "slug": "nclex-rn",
+   "name": "NCLEX-RN",
+   "short": "NCLEX-RN",
+   "category": "healthcare-clinical",
+   "group": "Nursing",
+   "body": "National Council of State Boards of Nursing (NCSBN)",
+   "type": "License",
+   "aka": [
+    "Registered Nurse Licensure Exam"
+   ],
+   "blurb": "Computer-adaptive examination required for registered nurse licensure across all U.S. state and territorial boards of nursing."
+  },
+  {
+   "slug": "nplex-part-1",
+   "name": "NPLEX Part I: Biomedical Science",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "North American Board of Naturopathic Examiners (NABNE)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "First naturopathic physician licensure exam covering biomedical and basic science."
+  },
+  {
+   "slug": "nplex-part-2",
+   "name": "NPLEX Part II: Clinical Sciences",
+   "category": "healthcare-clinical",
+   "group": "Other Clinicians",
+   "body": "North American Board of Naturopathic Examiners (NABNE)",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Second naturopathic physician licensure exam assessing clinical sciences and diagnosis."
+  }
+ ]
+}

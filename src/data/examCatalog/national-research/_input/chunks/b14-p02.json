@@ -1,0 +1,493 @@
+{
+ "chunkId": "b14-p02",
+ "batch": 14,
+ "part": 2,
+ "categories": [
+  "education-teaching"
+ ],
+ "groups": [
+  "Praxis School Services & Leadership",
+  "Praxis Pedagogy & Middle School",
+  "Praxis World Languages",
+  "Praxis Core & Basic Skills"
+ ],
+ "bodies": [
+  "ETS"
+ ],
+ "examCount": 35,
+ "exams": [
+  {
+   "slug": "praxis-audiology-5343",
+   "name": "Praxis Audiology (5343)",
+   "category": "education-teaching",
+   "group": "Praxis School Services & Leadership",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5343"
+   ],
+   "blurb": "National audiology examination used for state licensure and the ASHA Certificate of Clinical Competence in audiology."
+  },
+  {
+   "slug": "praxis-educational-leadership-administration-and-supervision-5412",
+   "name": "Praxis Educational Leadership: Administration and Supervision (5412)",
+   "category": "education-teaching",
+   "group": "Praxis School Services & Leadership",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5412"
+   ],
+   "blurb": "Principal licensure test covering vision, instructional leadership, school culture, management, ethics and community engagement."
+  },
+  {
+   "slug": "praxis-school-counselor-5422",
+   "name": "Praxis Professional School Counselor (5422)",
+   "category": "education-teaching",
+   "group": "Praxis School Services & Leadership",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5422"
+   ],
+   "blurb": "Licensure test for school counselors covering counseling, consultation, programme delivery, data use and professional practice."
+  },
+  {
+   "slug": "praxis-reading-specialist-5302",
+   "name": "Praxis Reading Specialist (5302)",
+   "category": "education-teaching",
+   "group": "Praxis School Services & Leadership",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5302"
+   ],
+   "blurb": "Test for reading specialists and literacy coaches, covering assessment, intervention, curriculum leadership and professional learning."
+  },
+  {
+   "slug": "praxis-school-librarian-5312",
+   "name": "Praxis School Librarian (5312)",
+   "category": "education-teaching",
+   "group": "Praxis School Services & Leadership",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5312",
+    "Library Media Specialist"
+   ],
+   "blurb": "Licensure test for school librarians covering collection development, information literacy instruction, technology and programme administration."
+  },
+  {
+   "slug": "praxis-school-psychologist-5403",
+   "name": "Praxis School Psychologist (5403)",
+   "category": "education-teaching",
+   "group": "Praxis School Services & Leadership",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5403"
+   ],
+   "blurb": "National school psychology test required for the NCSP credential and for certification in many states, aligned to NASP practice domains."
+  },
+  {
+   "slug": "praxis-speech-language-pathology-5331",
+   "name": "Praxis Speech-Language Pathology (5331)",
+   "category": "education-teaching",
+   "group": "Praxis School Services & Leadership",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5331"
+   ],
+   "blurb": "National examination used for state licensure and the ASHA Certificate of Clinical Competence in speech-language pathology."
+  },
+  {
+   "slug": "praxis-school-leaders-licensure-assessment-6990",
+   "name": "School Leaders Licensure Assessment (6990)",
+   "short": "SLLA",
+   "category": "education-teaching",
+   "group": "Praxis School Services & Leadership",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "SLLA",
+    "6990"
+   ],
+   "blurb": "Principal licensure assessment based on national leadership standards, combining selected-response items with constructed-response scenarios."
+  },
+  {
+   "slug": "praxis-school-superintendent-assessment-6991",
+   "name": "School Superintendent Assessment (6991)",
+   "short": "SSA",
+   "category": "education-teaching",
+   "group": "Praxis School Services & Leadership",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "SSA",
+    "6991"
+   ],
+   "blurb": "District leadership assessment for aspiring superintendents, covering governance, finance, human capital and system-wide instructional leadership."
+  },
+  {
+   "slug": "praxis-middle-school-english-language-arts-5047",
+   "name": "Praxis Middle School English Language Arts (5047)",
+   "category": "education-teaching",
+   "group": "Praxis Pedagogy & Middle School",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5047"
+   ],
+   "blurb": "Middle grades English test covering reading, literature, writing, language and the teaching of literacy to young adolescents."
+  },
+  {
+   "slug": "praxis-middle-school-mathematics-5164",
+   "name": "Praxis Middle School Mathematics (5164)",
+   "category": "education-teaching",
+   "group": "Praxis Pedagogy & Middle School",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5164"
+   ],
+   "blurb": "Middle grades mathematics licensure test covering ratios, expressions, equations, geometry, statistics and probability."
+  },
+  {
+   "slug": "praxis-middle-school-science-5442",
+   "name": "Praxis Middle School Science (5442)",
+   "category": "education-teaching",
+   "group": "Praxis Pedagogy & Middle School",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5442"
+   ],
+   "blurb": "Middle grades science licensure test covering life, physical and earth science along with science practices and safety."
+  },
+  {
+   "slug": "praxis-middle-school-social-studies-5089",
+   "name": "Praxis Middle School Social Studies (5089)",
+   "category": "education-teaching",
+   "group": "Praxis Pedagogy & Middle School",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5089",
+    "5589"
+   ],
+   "blurb": "Middle grades social studies test covering United States and world history, government, geography, economics and social science methods."
+  },
+  {
+   "slug": "praxis-plt-early-childhood-5621",
+   "name": "Praxis Principles of Learning and Teaching: Early Childhood (5621)",
+   "short": "PLT Early Childhood",
+   "category": "education-teaching",
+   "group": "Praxis Pedagogy & Middle School",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5621"
+   ],
+   "blurb": "Pedagogy test for early childhood candidates combining case studies with questions on development, instruction and assessment."
+  },
+  {
+   "slug": "praxis-plt-grades-5-9-5623",
+   "name": "Praxis Principles of Learning and Teaching: Grades 5-9 (5623)",
+   "short": "PLT 5-9",
+   "category": "education-teaching",
+   "group": "Praxis Pedagogy & Middle School",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5623"
+   ],
+   "blurb": "Middle grades pedagogy test covering adolescent development, instructional planning, assessment and professional responsibilities."
+  },
+  {
+   "slug": "praxis-plt-grades-7-12-5624",
+   "name": "Praxis Principles of Learning and Teaching: Grades 7-12 (5624)",
+   "short": "PLT 7-12",
+   "category": "education-teaching",
+   "group": "Praxis Pedagogy & Middle School",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5624"
+   ],
+   "blurb": "Secondary pedagogy test combining case histories with questions on learners, instruction, assessment and professional practice."
+  },
+  {
+   "slug": "praxis-plt-grades-k-6-5622",
+   "name": "Praxis Principles of Learning and Teaching: Grades K-6 (5622)",
+   "short": "PLT K-6",
+   "category": "education-teaching",
+   "group": "Praxis Pedagogy & Middle School",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5622"
+   ],
+   "blurb": "Elementary pedagogy test covering child development, instructional strategies, assessment and communication with families."
+  },
+  {
+   "slug": "praxis-plt-prek-12-5625",
+   "name": "Praxis Principles of Learning and Teaching: PreK-12 (5625)",
+   "short": "PLT PreK-12",
+   "category": "education-teaching",
+   "group": "Praxis Pedagogy & Middle School",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5625"
+   ],
+   "blurb": "All-grades pedagogy test for candidates whose licence spans preschool through grade twelve, such as art, music and world languages."
+  },
+  {
+   "slug": "praxis-chinese-mandarin-world-language-5665",
+   "name": "Praxis Chinese (Mandarin): World Language (5665)",
+   "category": "education-teaching",
+   "group": "Praxis World Languages",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5665"
+   ],
+   "blurb": "Mandarin teacher licensure test assessing interpretive listening and reading plus presentational speaking and writing tasks."
+  },
+  {
+   "slug": "praxis-english-to-speakers-of-other-languages-5362",
+   "name": "Praxis English to Speakers of Other Languages (5362)",
+   "short": "Praxis ESOL",
+   "category": "education-teaching",
+   "group": "Praxis World Languages",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5362",
+    "ESOL"
+   ],
+   "blurb": "ESOL licensure test covering language acquisition, linguistics, instructional planning, assessment and cultural and professional issues."
+  },
+  {
+   "slug": "praxis-french-world-language-5174",
+   "name": "Praxis French: World Language (5174)",
+   "category": "education-teaching",
+   "group": "Praxis World Languages",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5174"
+   ],
+   "blurb": "French teacher licensure test assessing interpretive listening and reading plus recorded speaking and written presentational tasks."
+  },
+  {
+   "slug": "praxis-german-world-language-5183",
+   "name": "Praxis German: World Language (5183)",
+   "category": "education-teaching",
+   "group": "Praxis World Languages",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5183"
+   ],
+   "blurb": "German teacher licensure test assessing interpretive listening and reading plus presentational speaking and writing performance."
+  },
+  {
+   "slug": "praxis-japanese-world-language-5661",
+   "name": "Praxis Japanese: World Language (5661)",
+   "category": "education-teaching",
+   "group": "Praxis World Languages",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5661"
+   ],
+   "blurb": "Japanese teacher licensure test assessing interpretive listening and reading alongside presentational speaking and writing tasks."
+  },
+  {
+   "slug": "praxis-latin-5601",
+   "name": "Praxis Latin (5601)",
+   "category": "education-teaching",
+   "group": "Praxis World Languages",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5601"
+   ],
+   "blurb": "Latin teacher licensure test covering reading comprehension of classical texts, grammar, Roman culture and language pedagogy."
+  },
+  {
+   "slug": "praxis-russian-world-language-5671",
+   "name": "Praxis Russian: World Language (5671)",
+   "category": "education-teaching",
+   "group": "Praxis World Languages",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5671"
+   ],
+   "blurb": "Russian teacher licensure test assessing interpretive listening and reading plus presentational speaking and writing performance."
+  },
+  {
+   "slug": "praxis-spanish-world-language-5195",
+   "name": "Praxis Spanish: World Language (5195)",
+   "category": "education-teaching",
+   "group": "Praxis World Languages",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5195"
+   ],
+   "blurb": "The most widely taken Praxis world language test, assessing interpretive, presentational speaking and writing skills in Spanish."
+  },
+  {
+   "slug": "praxis-world-languages-pedagogy-5841",
+   "name": "Praxis World Languages Pedagogy (5841)",
+   "category": "education-teaching",
+   "group": "Praxis World Languages",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5841"
+   ],
+   "blurb": "Language-neutral pedagogy test on communicative instruction, assessment, culture integration and technology in world language classrooms."
+  },
+  {
+   "slug": "praxis-communication-and-literacy-combined-5753",
+   "name": "Praxis Communication and Literacy Combined (5753)",
+   "category": "education-teaching",
+   "group": "Praxis Core & Basic Skills",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5753"
+   ],
+   "blurb": "Combined literacy screening test made up of the reading and writing subtests, used by states requiring a communication skills measure."
+  },
+  {
+   "slug": "praxis-communication-and-literacy-reading-5714",
+   "name": "Praxis Communication and Literacy: Reading (5714)",
+   "category": "education-teaching",
+   "group": "Praxis Core & Basic Skills",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5714"
+   ],
+   "blurb": "Reading comprehension subtest of the Praxis communication and literacy battery for prospective educators."
+  },
+  {
+   "slug": "praxis-communication-and-literacy-writing-5724",
+   "name": "Praxis Communication and Literacy: Writing (5724)",
+   "category": "education-teaching",
+   "group": "Praxis Core & Basic Skills",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5724"
+   ],
+   "blurb": "Writing subtest of the Praxis communication and literacy battery, combining usage questions with two written essay tasks."
+  },
+  {
+   "slug": "praxis-core-combined-5752",
+   "name": "Praxis Core Academic Skills for Educators: Combined (5752)",
+   "short": "Praxis Core Combined",
+   "category": "education-teaching",
+   "group": "Praxis Core & Basic Skills",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5752",
+    "Praxis Core"
+   ],
+   "blurb": "Single sitting combining the reading, writing and mathematics Core subtests, the usual entry requirement for teacher preparation programmes."
+  },
+  {
+   "slug": "praxis-core-mathematics-5733",
+   "name": "Praxis Core Academic Skills for Educators: Mathematics (5733)",
+   "short": "Praxis Core Math",
+   "category": "education-teaching",
+   "group": "Praxis Core & Basic Skills",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5733"
+   ],
+   "blurb": "Basic mathematics skills test covering number, algebra, geometry, statistics and probability at the level expected of entering teachers."
+  },
+  {
+   "slug": "praxis-core-reading-5713",
+   "name": "Praxis Core Academic Skills for Educators: Reading (5713)",
+   "short": "Praxis Core Reading",
+   "category": "education-teaching",
+   "group": "Praxis Core & Basic Skills",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5713"
+   ],
+   "blurb": "Reading skills test for prospective teachers, measuring key ideas, craft and structure, and integration of knowledge across passages."
+  },
+  {
+   "slug": "praxis-core-writing-5723",
+   "name": "Praxis Core Academic Skills for Educators: Writing (5723)",
+   "short": "Praxis Core Writing",
+   "category": "education-teaching",
+   "group": "Praxis Core & Basic Skills",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5723"
+   ],
+   "blurb": "Writing skills test combining grammar and usage questions with argumentative and source-based essay tasks for entering teachers."
+  },
+  {
+   "slug": "praxis-fundamental-subjects-content-knowledge-5511",
+   "name": "Praxis Fundamental Subjects: Content Knowledge (5511)",
+   "category": "education-teaching",
+   "group": "Praxis Core & Basic Skills",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5511"
+   ],
+   "blurb": "Broad content test across English, mathematics, science and social studies, often used to add or verify multi-subject teaching authority."
+  }
+ ]
+}

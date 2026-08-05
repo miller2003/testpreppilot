@@ -1,0 +1,479 @@
+{
+ "chunkId": "b03-p01",
+ "batch": 3,
+ "part": 1,
+ "categories": [
+  "admissions-academic"
+ ],
+ "groups": [
+  "Graduate & Professional Admissions",
+  "English Proficiency",
+  "International Baccalaureate",
+  "College Placement"
+ ],
+ "bodies": [
+  "ETS",
+  "International Baccalaureate Organization",
+  "College Board",
+  "Association of American Medical Colleges"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "gre-biology-subject-test",
+   "name": "GRE Biology Subject Test",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "ETS",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Graduate subject test in biology that ETS discontinued in 2021 along with the Literature in English test; it is no longer administered."
+  },
+  {
+   "slug": "gre-chemistry-subject-test",
+   "name": "GRE Chemistry Subject Test",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "ETS",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Graduate subject test in chemistry discontinued by ETS after the April 2023 administration and no longer available to new test takers."
+  },
+  {
+   "slug": "gre-general-test",
+   "name": "GRE General Test",
+   "short": "GRE",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Graduate admissions test of just under two hours measuring verbal reasoning, quantitative reasoning and analytical writing."
+  },
+  {
+   "slug": "gre-literature-in-english-subject-test",
+   "name": "GRE Literature in English Subject Test",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "ETS",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Graduate subject test in English literature retired by ETS in 2021; English doctoral programs now rely on writing samples instead."
+  },
+  {
+   "slug": "gre-mathematics-subject-test",
+   "name": "GRE Mathematics Subject Test",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Computer-delivered subject test of about sixty-six questions on calculus, algebra and additional topics for mathematics graduate applicants."
+  },
+  {
+   "slug": "gre-physics-subject-test",
+   "name": "GRE Physics Subject Test",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Two-hour subject test covering classical mechanics, electromagnetism, quantum mechanics, thermodynamics and specialised physics topics."
+  },
+  {
+   "slug": "gre-psychology-subject-test",
+   "name": "GRE Psychology Subject Test",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Two-hour subject test of about 144 questions spanning biological, cognitive, social, developmental and clinical areas of psychology."
+  },
+  {
+   "slug": "toefl-essentials",
+   "name": "TOEFL Essentials Test",
+   "category": "admissions-academic",
+   "group": "English Proficiency",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Shorter adaptive ETS English test of about ninety minutes mixing academic and general tasks, accepted by a narrower set of institutions than the iBT."
+  },
+  {
+   "slug": "toefl-ibt",
+   "name": "TOEFL iBT",
+   "category": "admissions-academic",
+   "group": "English Proficiency",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "Test of English as a Foreign Language"
+   ],
+   "blurb": "Internet-based academic English test scored 0 to 120 across reading, listening, speaking and writing and accepted by most US universities."
+  },
+  {
+   "slug": "toefl-itp",
+   "name": "TOEFL ITP",
+   "category": "admissions-academic",
+   "group": "English Proficiency",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "TOEFL Institutional Testing Program"
+   ],
+   "blurb": "Institutional paper and digital English test used internally for placement and progress monitoring rather than for university admission."
+  },
+  {
+   "slug": "toefl-junior",
+   "name": "TOEFL Junior Tests",
+   "category": "admissions-academic",
+   "group": "English Proficiency",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "English proficiency tests for students aged eleven and older, used by secondary schools for placement and by some US boarding schools."
+  },
+  {
+   "slug": "toeic-listening-and-reading",
+   "name": "TOEIC Listening and Reading Test",
+   "category": "admissions-academic",
+   "group": "English Proficiency",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Workplace English test scored 10 to 990 that measures listening and reading ability in everyday business and professional settings."
+  },
+  {
+   "slug": "toeic-speaking-and-writing",
+   "name": "TOEIC Speaking and Writing Tests",
+   "category": "admissions-academic",
+   "group": "English Proficiency",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Companion TOEIC assessments measuring spoken and written business English through recorded responses and written tasks."
+  },
+  {
+   "slug": "ib-career-related-programme",
+   "name": "IB Career-related Programme",
+   "short": "IB CP",
+   "category": "admissions-academic",
+   "group": "International Baccalaureate",
+   "body": "International Baccalaureate Organization",
+   "bodyUrl": "https://www.ibo.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "IB framework for students aged sixteen to nineteen combining Diploma Programme courses with career-related study and a reflective core."
+  },
+  {
+   "slug": "ib-creativity-activity-service",
+   "name": "IB Creativity, Activity, Service",
+   "short": "CAS",
+   "category": "admissions-academic",
+   "group": "International Baccalaureate",
+   "body": "International Baccalaureate Organization",
+   "bodyUrl": "https://www.ibo.org",
+   "type": "Training",
+   "aka": [],
+   "blurb": "Mandatory ungraded Diploma Programme core component requiring a portfolio of creativity, physical activity and service experiences."
+  },
+  {
+   "slug": "ib-diploma-programme",
+   "name": "IB Diploma Programme",
+   "short": "IB DP",
+   "category": "admissions-academic",
+   "group": "International Baccalaureate",
+   "body": "International Baccalaureate Organization",
+   "bodyUrl": "https://www.ibo.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Two-year pre-university qualification scored out of 45 points from six subjects plus the core, widely accepted for US college credit."
+  },
+  {
+   "slug": "ib-extended-essay",
+   "name": "IB Extended Essay",
+   "short": "EE",
+   "category": "admissions-academic",
+   "group": "International Baccalaureate",
+   "body": "International Baccalaureate Organization",
+   "bodyUrl": "https://www.ibo.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Externally assessed 4000-word independent research paper that, with Theory of Knowledge, contributes up to three bonus Diploma points."
+  },
+  {
+   "slug": "ib-group-1-studies-in-language-and-literature",
+   "name": "IB Group 1: Studies in Language and Literature",
+   "category": "admissions-academic",
+   "group": "International Baccalaureate",
+   "body": "International Baccalaureate Organization",
+   "bodyUrl": "https://www.ibo.org",
+   "type": "Exam",
+   "aka": [
+    "Language A Literature",
+    "Language A Language and Literature"
+   ],
+   "blurb": "Diploma Programme subject group covering Language A literature and language courses in a candidate best language at standard or higher level."
+  },
+  {
+   "slug": "ib-group-2-language-acquisition",
+   "name": "IB Group 2: Language Acquisition",
+   "category": "admissions-academic",
+   "group": "International Baccalaureate",
+   "body": "International Baccalaureate Organization",
+   "bodyUrl": "https://www.ibo.org",
+   "type": "Exam",
+   "aka": [
+    "Language B",
+    "Language ab initio",
+    "Classical languages"
+   ],
+   "blurb": "Diploma Programme subject group covering Language B, ab initio and classical language courses for additional-language study."
+  },
+  {
+   "slug": "ib-group-3-individuals-and-societies",
+   "name": "IB Group 3: Individuals and Societies",
+   "category": "admissions-academic",
+   "group": "International Baccalaureate",
+   "body": "International Baccalaureate Organization",
+   "bodyUrl": "https://www.ibo.org",
+   "type": "Exam",
+   "aka": [
+    "IB History",
+    "IB Economics",
+    "IB Psychology",
+    "IB Digital Society"
+   ],
+   "blurb": "Diploma Programme humanities group including history, economics, geography, psychology, global politics, philosophy and digital society."
+  },
+  {
+   "slug": "ib-group-4-sciences",
+   "name": "IB Group 4: Sciences",
+   "category": "admissions-academic",
+   "group": "International Baccalaureate",
+   "body": "International Baccalaureate Organization",
+   "bodyUrl": "https://www.ibo.org",
+   "type": "Exam",
+   "aka": [
+    "IB Biology",
+    "IB Chemistry",
+    "IB Physics",
+    "IB Computer Science"
+   ],
+   "blurb": "Diploma Programme experimental sciences group covering biology, chemistry, physics, computer science, design technology and sport science."
+  },
+  {
+   "slug": "ib-group-5-mathematics",
+   "name": "IB Group 5: Mathematics",
+   "category": "admissions-academic",
+   "group": "International Baccalaureate",
+   "body": "International Baccalaureate Organization",
+   "bodyUrl": "https://www.ibo.org",
+   "type": "Exam",
+   "aka": [
+    "Mathematics Analysis and Approaches",
+    "Mathematics Applications and Interpretation"
+   ],
+   "blurb": "Diploma Programme mathematics group split into Analysis and Approaches and Applications and Interpretation, each at standard or higher level."
+  },
+  {
+   "slug": "ib-group-6-the-arts",
+   "name": "IB Group 6: The Arts",
+   "category": "admissions-academic",
+   "group": "International Baccalaureate",
+   "body": "International Baccalaureate Organization",
+   "bodyUrl": "https://www.ibo.org",
+   "type": "Exam",
+   "aka": [
+    "IB Visual Arts",
+    "IB Music",
+    "IB Theatre",
+    "IB Film",
+    "IB Dance"
+   ],
+   "blurb": "Diploma Programme arts group covering visual arts, music, theatre, film and dance, which students may replace with a second subject elsewhere."
+  },
+  {
+   "slug": "ib-middle-years-programme-eassessment",
+   "name": "IB Middle Years Programme eAssessment",
+   "short": "MYP eAssessment",
+   "category": "admissions-academic",
+   "group": "International Baccalaureate",
+   "body": "International Baccalaureate Organization",
+   "bodyUrl": "https://www.ibo.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "On-screen examinations and ePortfolios leading to the IB MYP Certificate for students in the final year of the Middle Years Programme."
+  },
+  {
+   "slug": "ib-theory-of-knowledge",
+   "name": "IB Theory of Knowledge",
+   "short": "TOK",
+   "category": "admissions-academic",
+   "group": "International Baccalaureate",
+   "body": "International Baccalaureate Organization",
+   "bodyUrl": "https://www.ibo.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Diploma Programme core course assessed by a 1600-word essay on a prescribed title and an exhibition of three real-world objects."
+  },
+  {
+   "slug": "accuplacer-advanced-algebra-and-functions",
+   "name": "ACCUPLACER Advanced Algebra and Functions",
+   "short": "AAF",
+   "category": "admissions-academic",
+   "group": "College Placement",
+   "body": "College Board",
+   "bodyUrl": "https://accuplacer.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Computer-adaptive placement test for STEM-track students covering quadratics, functions, radicals, logarithms and trigonometry."
+  },
+  {
+   "slug": "accuplacer-arithmetic",
+   "name": "ACCUPLACER Arithmetic",
+   "category": "admissions-academic",
+   "group": "College Placement",
+   "body": "College Board",
+   "bodyUrl": "https://accuplacer.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Computer-adaptive placement test on whole numbers, fractions, decimals, percentages and comparisons of values in different formats."
+  },
+  {
+   "slug": "accuplacer-esl-language-use",
+   "name": "ACCUPLACER ESL Language Use",
+   "category": "admissions-academic",
+   "group": "College Placement",
+   "body": "College Board",
+   "bodyUrl": "https://accuplacer.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Placement test for English learners measuring command of English grammar and correct sentence construction in an academic context."
+  },
+  {
+   "slug": "accuplacer-esl-listening",
+   "name": "ACCUPLACER ESL Listening",
+   "category": "admissions-academic",
+   "group": "College Placement",
+   "body": "College Board",
+   "bodyUrl": "https://accuplacer.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Placement test for English learners measuring comprehension of spoken English in lectures, conversations and everyday settings."
+  },
+  {
+   "slug": "accuplacer-esl-reading-skills",
+   "name": "ACCUPLACER ESL Reading Skills",
+   "category": "admissions-academic",
+   "group": "College Placement",
+   "body": "College Board",
+   "bodyUrl": "https://accuplacer.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Placement test for English learners measuring comprehension of short English passages, main ideas and inference from context."
+  },
+  {
+   "slug": "accuplacer-esl-sentence-meaning",
+   "name": "ACCUPLACER ESL Sentence Meaning",
+   "category": "admissions-academic",
+   "group": "College Placement",
+   "body": "College Board",
+   "bodyUrl": "https://accuplacer.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Placement test for English learners measuring understanding of vocabulary and meaning within single and paired English sentences."
+  },
+  {
+   "slug": "accuplacer-quantitative-reasoning-algebra-statistics",
+   "name": "ACCUPLACER Quantitative Reasoning, Algebra, and Statistics",
+   "short": "QAS",
+   "category": "admissions-academic",
+   "group": "College Placement",
+   "body": "College Board",
+   "bodyUrl": "https://accuplacer.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Computer-adaptive placement test for non-STEM tracks covering rational numbers, ratios, linear equations, probability and statistics."
+  },
+  {
+   "slug": "accuplacer-reading",
+   "name": "ACCUPLACER Reading",
+   "category": "admissions-academic",
+   "group": "College Placement",
+   "body": "College Board",
+   "bodyUrl": "https://accuplacer.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Computer-adaptive college placement test measuring comprehension, rhetoric, synthesis and vocabulary across single and paired passages."
+  },
+  {
+   "slug": "accuplacer-writeplacer",
+   "name": "ACCUPLACER WritePlacer",
+   "category": "admissions-academic",
+   "group": "College Placement",
+   "body": "College Board",
+   "bodyUrl": "https://accuplacer.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Essay component of ACCUPLACER scored on purpose, organisation, development, sentence variety, mechanics and critical thinking."
+  },
+  {
+   "slug": "accuplacer-writeplacer-esl",
+   "name": "ACCUPLACER WritePlacer ESL",
+   "category": "admissions-academic",
+   "group": "College Placement",
+   "body": "College Board",
+   "bodyUrl": "https://accuplacer.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Essay component for English learners used with the ACCUPLACER ESL battery to place students into language or credit-bearing courses."
+  },
+  {
+   "slug": "accuplacer-writing",
+   "name": "ACCUPLACER Writing",
+   "category": "admissions-academic",
+   "group": "College Placement",
+   "body": "College Board",
+   "bodyUrl": "https://accuplacer.collegeboard.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Computer-adaptive placement test on revising and editing multiparagraph text for expression of ideas and standard English conventions."
+  },
+  {
+   "slug": "aamc-preview",
+   "name": "AAMC PREview Professional Readiness Exam",
+   "short": "PREview",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "Association of American Medical Colleges",
+   "bodyUrl": "https://www.aamc.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Situational judgment test used by participating medical schools to assess how applicants respond to pre-professional competency scenarios."
+  },
+  {
+   "slug": "mcat-exam",
+   "name": "Medical College Admission Test",
+   "short": "MCAT",
+   "category": "admissions-academic",
+   "group": "Graduate & Professional Admissions",
+   "body": "Association of American Medical Colleges",
+   "bodyUrl": "https://www.aamc.org",
+   "type": "Exam",
+   "aka": [],
+   "blurb": "Seven-and-a-half-hour medical school admissions exam scored 472 to 528 across four sections covering sciences and critical analysis."
+  }
+ ]
+}

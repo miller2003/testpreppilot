@@ -1,0 +1,556 @@
+{
+ "chunkId": "b36-p01",
+ "batch": 36,
+ "part": 1,
+ "categories": [
+  "technology"
+ ],
+ "groups": [
+  "CompTIA",
+  "Google Cloud & Google",
+  "Cloud Native & DevOps"
+ ],
+ "bodies": [
+  "CompTIA",
+  "Google Cloud",
+  "GitLab"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "comptia-a-plus",
+   "name": "CompTIA A+ Certification",
+   "short": "A+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "220-1201",
+    "220-1202"
+   ],
+   "blurb": "Entry-level IT support credential earned by passing two core exams on hardware, operating systems, networking, security and troubleshooting procedures."
+  },
+  {
+   "slug": "comptia-ai-essentials",
+   "name": "CompTIA AI Essentials",
+   "short": "AI Essentials",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Training",
+   "aka": [
+    "CompTIA Prompting Essentials"
+   ],
+   "blurb": "Self-paced CompTIA course on artificial intelligence literacy, prompt writing and responsible AI use for business professionals rather than engineers."
+  },
+  {
+   "slug": "comptia-cloud-essentials-plus",
+   "name": "CompTIA Cloud Essentials+",
+   "short": "Cloud Essentials+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "CLO-002"
+   ],
+   "blurb": "Business-focused CompTIA certification covering cloud principles, vendor selection, financial analysis, governance and cloud migration decision making."
+  },
+  {
+   "slug": "comptia-cloud-plus",
+   "name": "CompTIA Cloud+",
+   "short": "Cloud+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "CV0-004"
+   ],
+   "blurb": "Vendor-neutral certification on deploying and operating cloud infrastructure, covering architecture, security, deployment, operations and troubleshooting."
+  },
+  {
+   "slug": "comptia-cloudnetx",
+   "name": "CompTIA CloudNetX",
+   "short": "CloudNetX",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "CNX-001"
+   ],
+   "blurb": "Expert-level Xpert Series certification for network and cloud architects designing secure, scalable hybrid network and system architectures."
+  },
+  {
+   "slug": "comptia-cysa-plus",
+   "name": "CompTIA Cybersecurity Analyst (CySA+)",
+   "short": "CySA+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "CS0-003"
+   ],
+   "blurb": "Intermediate security analyst certification covering threat detection, behavioural analytics, vulnerability management and incident response processes."
+  },
+  {
+   "slug": "comptia-data-plus",
+   "name": "CompTIA Data+",
+   "short": "Data+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "DA0-001"
+   ],
+   "blurb": "Early-career data analytics certification covering data concepts, mining, statistical analysis, visualisation and data governance for business decisions."
+  },
+  {
+   "slug": "comptia-datasys-plus",
+   "name": "CompTIA DataSys+",
+   "short": "DataSys+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "DS0-001"
+   ],
+   "blurb": "Database administration certification covering deployment, management, security, scripting, backup and recovery of relational database systems."
+  },
+  {
+   "slug": "comptia-datax",
+   "name": "CompTIA DataX",
+   "short": "DataX",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "DY0-001"
+   ],
+   "blurb": "Expert-level Xpert Series data science certification covering mathematics, modelling, machine learning operations and communicating results to leaders."
+  },
+  {
+   "slug": "comptia-it-fundamentals",
+   "name": "CompTIA IT Fundamentals (ITF+)",
+   "short": "ITF+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "FC0-U61"
+   ],
+   "blurb": "Pre-career CompTIA certification covering IT concepts, infrastructure, applications, software development and database basics; superseded by Tech+."
+  },
+  {
+   "slug": "comptia-linux-plus",
+   "name": "CompTIA Linux+",
+   "short": "Linux+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "XK0-006",
+    "XK0-005"
+   ],
+   "blurb": "Vendor-neutral Linux administration certification covering system management, scripting, containers, security and troubleshooting on Linux servers."
+  },
+  {
+   "slug": "comptia-network-plus",
+   "name": "CompTIA Network+",
+   "short": "Network+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "N10-009"
+   ],
+   "blurb": "Core networking certification covering network topologies, addressing, routing and switching, wireless, network security and troubleshooting methods."
+  },
+  {
+   "slug": "comptia-pentest-plus",
+   "name": "CompTIA PenTest+",
+   "short": "PenTest+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "PT0-003",
+    "PT0-002"
+   ],
+   "blurb": "Intermediate penetration testing certification covering scoping, reconnaissance, exploitation, post-exploitation, reporting and vulnerability management."
+  },
+  {
+   "slug": "comptia-project-plus",
+   "name": "CompTIA Project+",
+   "short": "Project+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "PK0-005"
+   ],
+   "blurb": "Entry-level project management certification aimed at IT staff, covering project lifecycle, communication, change control, tools and documentation."
+  },
+  {
+   "slug": "comptia-secai-plus",
+   "name": "CompTIA SecAI+",
+   "short": "SecAI+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "CY0-001"
+   ],
+   "blurb": "CompTIA certification launched in 2025 covering the security of artificial intelligence systems and the practical use of AI within security operations."
+  },
+  {
+   "slug": "comptia-security-plus",
+   "name": "CompTIA Security+",
+   "short": "Security+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "SY0-701"
+   ],
+   "blurb": "Baseline cybersecurity certification covering threats, architecture, implementation, operations and governance; approved for US DoD 8140 workforce roles."
+  },
+  {
+   "slug": "comptia-securityx",
+   "name": "CompTIA SecurityX",
+   "short": "SecurityX",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "CAS-005",
+    "CASP+",
+    "CompTIA Advanced Security Practitioner"
+   ],
+   "blurb": "Expert Xpert Series certification for security architects, renamed from CASP+ with the CAS-005 exam version; existing CASP+ holders received SecurityX."
+  },
+  {
+   "slug": "comptia-server-plus",
+   "name": "CompTIA Server+",
+   "short": "Server+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "SK0-005"
+   ],
+   "blurb": "Server administration certification covering hardware, virtualisation, storage, security, disaster recovery and troubleshooting in data centre settings."
+  },
+  {
+   "slug": "comptia-tech-plus",
+   "name": "CompTIA Tech+",
+   "short": "Tech+",
+   "category": "technology",
+   "group": "CompTIA",
+   "body": "CompTIA",
+   "bodyUrl": "https://www.comptia.org/",
+   "type": "Certification",
+   "aka": [
+    "FC0-U71"
+   ],
+   "blurb": "Foundational CompTIA certification that replaced ITF+, covering IT concepts, infrastructure, software development, databases, security and AI basics."
+  },
+  {
+   "slug": "google-associate-google-workspace-administrator",
+   "name": "Associate Google Workspace Administrator",
+   "short": "Workspace Administrator",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Associate Google Workspace Administrator"
+   ],
+   "blurb": "Associate certification on managing Google Workspace users, groups, devices, security policies, data controls and service configuration."
+  },
+  {
+   "slug": "google-apigee-certified-api-engineer",
+   "name": "Google Cloud Apigee Certified API Engineer",
+   "short": "Apigee API Engineer",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Apigee API Engineer"
+   ],
+   "blurb": "Google Cloud certification on designing, building, securing and operating API programmes and proxies using the Apigee API management platform."
+  },
+  {
+   "slug": "google-associate-cloud-engineer",
+   "name": "Google Cloud Associate Cloud Engineer",
+   "short": "ACE",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Associate Cloud Engineer"
+   ],
+   "blurb": "Associate certification on deploying applications, monitoring operations and managing Google Cloud projects, IAM, compute, storage and networking."
+  },
+  {
+   "slug": "google-associate-data-practitioner",
+   "name": "Google Cloud Associate Data Practitioner",
+   "short": "ADP",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Associate Data Practitioner"
+   ],
+   "blurb": "Associate certification on data ingestion, transformation, pipeline management, analysis and visualisation using BigQuery and related Google services."
+  },
+  {
+   "slug": "google-cloud-digital-leader",
+   "name": "Google Cloud Digital Leader",
+   "short": "Cloud Digital Leader",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "CDL"
+   ],
+   "blurb": "Foundational Google Cloud exam on cloud concepts, digital transformation, data and AI innovation, infrastructure modernisation and security basics."
+  },
+  {
+   "slug": "google-cloud-generative-ai-leader",
+   "name": "Google Cloud Generative AI Leader",
+   "short": "Generative AI Leader",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Gen AI Leader"
+   ],
+   "blurb": "Business-focused Google Cloud certification on generative AI fundamentals, Gemini and Vertex AI offerings, prompt techniques and adoption strategy."
+  },
+  {
+   "slug": "google-professional-cloud-architect",
+   "name": "Google Cloud Professional Cloud Architect",
+   "short": "PCA",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Professional Cloud Architect"
+   ],
+   "blurb": "Professional certification on designing secure, scalable and cost-effective Google Cloud solutions, including case-study based architecture decisions."
+  },
+  {
+   "slug": "google-professional-cloud-database-engineer",
+   "name": "Google Cloud Professional Cloud Database Engineer",
+   "short": "PCDE",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Professional Cloud Database Engineer"
+   ],
+   "blurb": "Professional certification on designing, migrating and operating Google Cloud databases including Cloud SQL, Spanner, Bigtable and AlloyDB."
+  },
+  {
+   "slug": "google-professional-cloud-developer",
+   "name": "Google Cloud Professional Cloud Developer",
+   "short": "PCD",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Professional Cloud Developer"
+   ],
+   "blurb": "Professional certification on building scalable applications with Cloud Run, GKE, Cloud Functions, managed services and Google Cloud APIs."
+  },
+  {
+   "slug": "google-professional-cloud-devops-engineer",
+   "name": "Google Cloud Professional Cloud DevOps Engineer",
+   "short": "PCDOE",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Professional Cloud DevOps Engineer"
+   ],
+   "blurb": "Professional certification on CI/CD pipelines, site reliability engineering practice, service monitoring, incident response and performance optimisation."
+  },
+  {
+   "slug": "google-professional-cloud-network-engineer",
+   "name": "Google Cloud Professional Cloud Network Engineer",
+   "short": "PCNE",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Professional Cloud Network Engineer"
+   ],
+   "blurb": "Professional certification on Google Cloud VPC design, hybrid interconnect, load balancing, DNS, network security and troubleshooting."
+  },
+  {
+   "slug": "google-professional-cloud-security-engineer",
+   "name": "Google Cloud Professional Cloud Security Engineer",
+   "short": "PCSE",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Professional Cloud Security Engineer"
+   ],
+   "blurb": "Professional certification on securing Google Cloud workloads including IAM, org policy, data protection, network security and compliance controls."
+  },
+  {
+   "slug": "google-professional-data-engineer",
+   "name": "Google Cloud Professional Data Engineer",
+   "short": "PDE",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Professional Data Engineer"
+   ],
+   "blurb": "Professional certification on designing data processing systems with BigQuery, Dataflow, Pub/Sub and Dataproc plus operationalising machine learning."
+  },
+  {
+   "slug": "google-professional-machine-learning-engineer",
+   "name": "Google Cloud Professional Machine Learning Engineer",
+   "short": "PMLE",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Professional Machine Learning Engineer"
+   ],
+   "blurb": "Professional certification on designing, building and productionising machine learning models with Vertex AI, including MLOps and responsible AI."
+  },
+  {
+   "slug": "google-professional-security-operations-engineer",
+   "name": "Google Cloud Professional Security Operations Engineer",
+   "short": "PSOE",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Professional Security Operations Engineer"
+   ],
+   "blurb": "Google Cloud certification on running security operations with Google Security Operations, covering detection engineering, threat hunting and response."
+  },
+  {
+   "slug": "google-professional-chromeos-administrator",
+   "name": "Professional ChromeOS Administrator",
+   "short": "ChromeOS Administrator",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "ChromeOS Administrator"
+   ],
+   "blurb": "Google certification on deploying and managing ChromeOS devices at scale, covering enrolment, policies, security and troubleshooting in the enterprise."
+  },
+  {
+   "slug": "google-professional-google-workspace-administrator",
+   "name": "Professional Google Workspace Administrator",
+   "short": "Professional Workspace Admin",
+   "category": "technology",
+   "group": "Google Cloud & Google",
+   "body": "Google Cloud",
+   "bodyUrl": "https://cloud.google.com/certification",
+   "type": "Certification",
+   "aka": [
+    "Professional Google Workspace Administrator"
+   ],
+   "blurb": "Retired at the end of 2024 and replaced by the associate-level Workspace Administrator exam, it covered Workspace configuration and security."
+  },
+  {
+   "slug": "gitlab-certified-ci-cd-associate",
+   "name": "GitLab Certified CI/CD Associate",
+   "short": "GitLab CI/CD Associate",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "GitLab",
+   "type": "Certification",
+   "aka": [
+    "GitLab CI/CD"
+   ],
+   "blurb": "Hands-on GitLab credential covering pipeline configuration, runners, jobs, artefacts, environments and continuous integration workflows in GitLab."
+  },
+  {
+   "slug": "gitlab-certified-git-associate",
+   "name": "GitLab Certified Git Associate",
+   "short": "GitLab Git Associate",
+   "category": "technology",
+   "group": "Cloud Native & DevOps",
+   "body": "GitLab",
+   "type": "Certification",
+   "aka": [
+    "GitLab Git"
+   ],
+   "blurb": "Entry-level GitLab credential validating Git fundamentals such as branching, merging, rebasing, conflict resolution and remote repository workflows."
+  }
+ ]
+}

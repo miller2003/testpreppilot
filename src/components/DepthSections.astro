@@ -1,0 +1,485 @@
+---
+/**
+ * DepthSections — the eight P0 sections identified by the competitor gap analysis,
+ * rendered from the shared depth layer (src/data/examCatalog/examDepth.mjs).
+ *
+ * Used by BOTH page pipelines:
+ *   /exams/<slug>  → src/pages/exams/[slug].astro
+ *   /paths/<slug>  → src/components/ExamGuide.astro
+ *
+ * Every section is individually guarded — a partially-filled depth record renders
+ * only the parts that have real content. No depth record at all → renders nothing.
+ */
+interface Props {
+  depth: any;
+  /** 'eg' matches ExamGuide's section classes; 'nat' matches the national page. */
+  variant?: 'eg' | 'nat';
+}
+const { depth, variant = 'eg' } = Astro.props;
+
+const isEg = variant === 'eg';
+const sec = isEg ? 'eg-section' : 'nat-section';
+const secAlt = isEg ? 'eg-section eg-section-cream' : 'nat-section';
+const kicker = isEg ? 'eg-kicker' : 'nat-kicker';
+const lead = isEg ? 'eg-lead' : 'nat-lead';
+const tablewrap = isEg ? 'eg-tablewrap' : 'nat-tablewrap';
+const table = isEg ? 'eg-table' : 'nat-table';
+
+const has = (v: any) => v !== undefined && v !== null && String(v).trim() !== '';
+const list = (a: any) => (Array.isArray(a) ? a.filter((x: any) => (typeof x === 'string' ? x.trim() : x)) : []);
+
+const salary = depth?.salaryOutlook;
+const pass = depth?.passRate;
+const plan = depth?.studyPlan;
+const strat = depth?.prepStrategies;
+const res = depth?.resourceComparison;
+const mist = depth?.commonMistakes;
+const qt = depth?.questionTypes;
+const day = depth?.examDay;
+
+const salaryRows = list(salary?.rows).filter((r: any) => has(r?.label) && has(r?.value));
+const passRows = list(pass?.rows).filter((r: any) => has(r?.label) && has(r?.value));
+const planWeeks = list(plan?.weeks).filter((w: any) => has(w?.label) || has(w?.focus));
+const planVariants = list(plan?.variants).filter((v: any) => has(v?.label) && has(v?.detail));
+const stratItems = list(strat?.items).filter((i: any) => has(i?.title) && has(i?.detail));
+const resRows = list(res?.rows).filter((r: any) => has(r?.label));
+const mistItems = list(mist?.items).filter((i: any) => has(i?.mistake));
+const qtTypes = list(qt?.types).filter((t: any) => has(t?.name));
+const qtSamples = list(qt?.samples).filter((s: any) => has(s?.prompt));
+const dayBring = list(day?.bring).filter(has);
+const dayLeave = list(day?.leave).filter(has);
+const dayTimeline = list(day?.timeline).filter((t: any) => has(t?.time) || has(t?.detail));
+const dayRules = list(day?.rules).filter(has);
+
+const showSalary = !!salary && (has(salary.summary) || salaryRows.length > 0);
+const showPass = !!pass && (has(pass.summary) || passRows.length > 0 || has(pass.caveat));
+const showPlan = planWeeks.length > 0;
+const showStrat = stratItems.length > 0;
+const showRes = resRows.length > 0;
+const showMist = mistItems.length > 0;
+const showQt = qtTypes.length > 0 || qtSamples.length > 0;
+const showDay = !!day && (dayBring.length > 0 || dayTimeline.length > 0 || has(day.summary));
+---
+
+{/* ---------- P0-1  SALARY & CAREER OUTLOOK ---------- */}
+{showSalary && (
+  <section id="salary" class={sec}>
+    <p class={kicker}>What it pays</p>
+    <h2>Salary &amp; Career Outlook</h2>
+    {has(salary.headline) && <p class="dp-headline">{salary.headline}</p>}
+    {has(salary.summary) && <p class={lead}>{salary.summary}</p>}
+
+    {salaryRows.length > 0 && (
+      <div class={tablewrap}>
+        <table class={table}>
+          <thead><tr><th>Measure</th><th>Figure</th><th>Source / note</th></tr></thead>
+          <tbody>
+            {salaryRows.map((r: any) => (
+              <tr>
+                <th scope="row">{r.label}</th>
+                <td class="dp-num">{r.value}</td>
+                <td class="dp-note">{r.note || '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )}
+
+    {has(salary.growth) && (
+      <p class="dp-callout"><strong>Job growth.</strong> {salary.growth}</p>
+    )}
+    {has(salary.source?.url) && (
+      <p class="dp-source">
+        Source: <a href={salary.source.url} target="_blank" rel="noopener noreferrer">{salary.source.label || salary.source.url}</a>
+      </p>
+    )}
+  </section>
+)}
+
+{/* ---------- P0-2  PASS RATES ---------- */}
+{showPass && (
+  <section id="pass-rate" class={secAlt}>
+    <p class={kicker}>Your odds</p>
+    <h2>Pass Rates</h2>
+    {has(pass.headline) && <p class="dp-headline">{pass.headline}</p>}
+    {has(pass.summary) && <p class={lead}>{pass.summary}</p>}
+
+    {passRows.length > 0 && (
+      <div class={tablewrap}>
+        <table class={table}>
+          <thead><tr><th>Cohort</th><th>Pass rate</th><th>Source / note</th></tr></thead>
+          <tbody>
+            {passRows.map((r: any) => (
+              <tr>
+                <th scope="row">{r.label}</th>
+                <td class="dp-num">{r.value}</td>
+                <td class="dp-note">{r.note || '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )}
+
+    {has(pass.caveat) && <p class="dp-callout dp-callout-warn"><strong>Read this before quoting the number.</strong> {pass.caveat}</p>}
+    {has(pass.source?.url) && (
+      <p class="dp-source">
+        Source: <a href={pass.source.url} target="_blank" rel="noopener noreferrer">{pass.source.label || pass.source.url}</a>
+      </p>
+    )}
+  </section>
+)}
+
+{/* ---------- P0-3  STUDY PLAN ---------- */}
+{showPlan && (
+  <section id="study-plan" class={sec}>
+    <p class={kicker}>Your schedule</p>
+    <h2>Study Plan</h2>
+    {has(plan.totalHours) && <p class="dp-headline">{plan.totalHours} of focused study</p>}
+    {has(plan.summary) && <p class={lead}>{plan.summary}</p>}
+
+    <ol class="dp-plan">
+      {planWeeks.map((w: any) => (
+        <li class="dp-plan-block">
+          <div class="dp-plan-head">
+            <span class="dp-plan-label">{w.label}</span>
+            {has(w.hours) && <span class="dp-pill">{w.hours}</span>}
+          </div>
+          {has(w.focus) && <p class="dp-plan-focus">{w.focus}</p>}
+          {list(w.tasks).length > 0 && (
+            <ul class="dp-tasks">
+              {list(w.tasks).map((t: string) => <li>{t}</li>)}
+            </ul>
+          )}
+        </li>
+      ))}
+    </ol>
+
+    {planVariants.length > 0 && (
+      <div class="dp-variants">
+        <h3 class="dp-subhead">Adjusting the pace</h3>
+        {planVariants.map((v: any) => (
+          <p class="dp-variant"><strong>{v.label}.</strong> {v.detail}</p>
+        ))}
+      </div>
+    )}
+  </section>
+)}
+
+{/* ---------- P0-4  PREP STRATEGIES ---------- */}
+{showStrat && (
+  <section id="strategies" class={secAlt}>
+    <p class={kicker}>How to study</p>
+    <h2>Prep Strategies That Actually Work</h2>
+    {has(strat.summary) && <p class={lead}>{strat.summary}</p>}
+    <div class="dp-cards">
+      {stratItems.map((i: any) => (
+        <div class="dp-card">
+          <h3>{i.title}</h3>
+          <p>{i.detail}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+)}
+
+{/* ---------- P0-5  STUDY RESOURCE COMPARISON ---------- */}
+{showRes && (
+  <section id="resources" class={sec}>
+    <p class={kicker}>What to buy</p>
+    <h2>Study Resources Compared</h2>
+    {has(res.summary) && <p class={lead}>{res.summary}</p>}
+    <div class={tablewrap}>
+      <table class={table}>
+        <thead>
+          <tr>{list(res.columns).map((c: string) => <th>{c}</th>)}</tr>
+        </thead>
+        <tbody>
+          {resRows.map((r: any) => (
+            <tr>
+              <th scope="row">{r.label}</th>
+              {list(r.values).map((v: string) => <td>{v}</td>)}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    {has(res.footnote) && <p class="dp-source">{res.footnote}</p>}
+  </section>
+)}
+
+{/* ---------- P0-6  COMMON MISTAKES ---------- */}
+{showMist && (
+  <section id="mistakes" class={secAlt}>
+    <p class={kicker}>Avoid these</p>
+    <h2>Common Mistakes</h2>
+    {has(mist.summary) && <p class={lead}>{mist.summary}</p>}
+    <div class="dp-mistakes">
+      {mistItems.map((i: any) => (
+        <div class="dp-mistake">
+          <p class="dp-mistake-x"><span class="dp-mark dp-mark-x">✕</span> {i.mistake}</p>
+          {has(i.fix) && <p class="dp-mistake-fix"><span class="dp-mark dp-mark-ok">✓</span> {i.fix}</p>}
+        </div>
+      ))}
+    </div>
+  </section>
+)}
+
+{/* ---------- P0-7  QUESTION TYPES & SAMPLES ---------- */}
+{showQt && (
+  <section id="question-types" class={sec}>
+    <p class={kicker}>What you'll face</p>
+    <h2>Question Types &amp; Worked Examples</h2>
+    {has(qt.summary) && <p class={lead}>{qt.summary}</p>}
+
+    {qtTypes.length > 0 && (
+      <div class="dp-qtypes">
+        {qtTypes.map((t: any) => (
+          <div class="dp-qtype">
+            <div class="dp-qtype-head">
+              <span class="dp-qtype-name">{t.name}</span>
+              {has(t.share) && <span class="dp-pill">{t.share}</span>}
+            </div>
+            {has(t.detail) && <p>{t.detail}</p>}
+          </div>
+        ))}
+      </div>
+    )}
+
+    {qtSamples.length > 0 && (
+      <div class="dp-samples">
+        <h3 class="dp-subhead">Try these</h3>
+        {qtSamples.map((s: any, i: number) => (
+          <details class="dp-sample">
+            <summary>
+              <span class="dp-sample-num">Q{i + 1}</span>
+              <span class="dp-sample-prompt">{s.prompt}</span>
+            </summary>
+            <div class="dp-sample-body">
+              {list(s.options).length > 0 && (
+                <ul class="dp-options">
+                  {list(s.options).map((o: string) => <li>{o}</li>)}
+                </ul>
+              )}
+              {has(s.answer) && <p class="dp-answer"><strong>Answer:</strong> {s.answer}</p>}
+              {has(s.explanation) && <p class="dp-explain">{s.explanation}</p>}
+            </div>
+          </details>
+        ))}
+      </div>
+    )}
+
+    {has(qt.note) && <p class="dp-source">{qt.note}</p>}
+  </section>
+)}
+
+{/* ---------- P0-8  EXAM DAY ---------- */}
+{showDay && (
+  <section id="exam-day" class={secAlt}>
+    <p class={kicker}>The big day</p>
+    <h2>Exam Day Guide</h2>
+    {has(day.summary) && <p class={lead}>{day.summary}</p>}
+
+    {(dayBring.length > 0 || dayLeave.length > 0) && (
+      <div class="dp-bringleave">
+        {dayBring.length > 0 && (
+          <div class="dp-bring">
+            <h3>Bring</h3>
+            <ul>{dayBring.map((b: string) => <li>{b}</li>)}</ul>
+          </div>
+        )}
+        {dayLeave.length > 0 && (
+          <div class="dp-leave">
+            <h3>Leave at home</h3>
+            <ul>{dayLeave.map((b: string) => <li>{b}</li>)}</ul>
+          </div>
+        )}
+      </div>
+    )}
+
+    {dayTimeline.length > 0 && (
+      <div class="dp-daytimeline">
+        <h3 class="dp-subhead">How the day runs</h3>
+        {dayTimeline.map((t: any) => (
+          <div class="dp-dayrow">
+            <span class="dp-daytime">{t.time}</span>
+            <span class="dp-daydetail">{t.detail}</span>
+          </div>
+        ))}
+      </div>
+    )}
+
+    {dayRules.length > 0 && (
+      <div class="dp-rules">
+        <h3 class="dp-subhead">Rules in the room</h3>
+        <ul>{dayRules.map((r: string) => <li>{r}</li>)}</ul>
+      </div>
+    )}
+
+    {has(day.afterwards) && <p class="dp-callout"><strong>Afterwards.</strong> {day.afterwards}</p>}
+  </section>
+)}
+
+<style>
+  .dp-headline {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--ink, #1a1a1a);
+    margin: 0 0 0.5rem;
+    line-height: 1.3;
+  }
+  .dp-num { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
+  .dp-note { font-size: 0.875rem; color: var(--muted, #666); }
+  .dp-source {
+    font-size: 0.85rem;
+    color: var(--muted, #666);
+    margin-top: 0.75rem;
+  }
+  .dp-source a { color: inherit; text-decoration: underline; }
+  .dp-callout {
+    margin: 1rem 0 0;
+    padding: 0.9rem 1.1rem;
+    border-left: 3px solid var(--accent, #c2703d);
+    background: rgba(194, 112, 61, 0.07);
+    border-radius: 0 6px 6px 0;
+  }
+  .dp-callout-warn {
+    border-left-color: #b8860b;
+    background: rgba(184, 134, 11, 0.08);
+  }
+  .dp-subhead {
+    font-size: 1.05rem;
+    margin: 1.75rem 0 0.75rem;
+    letter-spacing: 0.01em;
+  }
+  .dp-pill {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.06);
+    color: var(--muted, #555);
+    white-space: nowrap;
+  }
+
+  /* Study plan */
+  .dp-plan { list-style: none; margin: 1.25rem 0 0; padding: 0; display: grid; gap: 0.85rem; }
+  .dp-plan-block {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 8px;
+    padding: 1rem 1.15rem;
+    background: #fff;
+  }
+  .dp-plan-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .dp-plan-label { font-weight: 700; }
+  .dp-plan-focus { margin: 0.4rem 0 0; color: var(--muted, #555); }
+  .dp-tasks { margin: 0.6rem 0 0; padding-left: 1.15rem; }
+  .dp-tasks li { margin: 0.25rem 0; }
+  .dp-variants { margin-top: 1.25rem; }
+  .dp-variant { margin: 0.4rem 0; }
+
+  /* Strategy cards */
+  .dp-cards { display: grid; gap: 0.85rem; margin-top: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .dp-card {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 8px;
+    padding: 1rem 1.15rem;
+    background: #fff;
+  }
+  .dp-card h3 { margin: 0 0 0.45rem; font-size: 1rem; }
+  .dp-card p { margin: 0; color: var(--muted, #555); }
+
+  /* Mistakes */
+  .dp-mistakes { display: grid; gap: 0.75rem; margin-top: 1.25rem; }
+  .dp-mistake {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 8px;
+    padding: 0.9rem 1.1rem;
+    background: #fff;
+  }
+  .dp-mistake p { margin: 0; }
+  .dp-mistake-fix { margin-top: 0.4rem !important; color: var(--muted, #555); }
+  .dp-mark { font-weight: 700; margin-right: 0.35rem; }
+  .dp-mark-x { color: #b3261e; }
+  .dp-mark-ok { color: #1e7d43; }
+
+  /* Question types */
+  .dp-qtypes { display: grid; gap: 0.75rem; margin-top: 1.25rem; }
+  .dp-qtype {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 8px;
+    padding: 0.9rem 1.1rem;
+    background: #fff;
+  }
+  .dp-qtype-head { display: flex; align-items: center; gap: 0.6rem; }
+  .dp-qtype-name { font-weight: 700; }
+  .dp-qtype p { margin: 0.4rem 0 0; color: var(--muted, #555); }
+
+  .dp-samples { margin-top: 1.5rem; }
+  .dp-sample {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 8px;
+    margin-bottom: 0.6rem;
+    background: #fff;
+    overflow: hidden;
+  }
+  .dp-sample > summary {
+    cursor: pointer;
+    padding: 0.9rem 1.1rem;
+    display: flex;
+    gap: 0.7rem;
+    align-items: flex-start;
+    font-weight: 500;
+    list-style: none;
+  }
+  .dp-sample > summary::-webkit-details-marker { display: none; }
+  .dp-sample-num {
+    flex: 0 0 auto;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: var(--accent, #c2703d);
+    padding-top: 0.1rem;
+  }
+  .dp-sample[open] > summary { border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+  .dp-sample-body { padding: 0.9rem 1.1rem; }
+  .dp-options { list-style: none; margin: 0 0 0.75rem; padding: 0; }
+  .dp-options li { padding: 0.25rem 0; }
+  .dp-answer { margin: 0 0 0.4rem; }
+  .dp-explain { margin: 0; color: var(--muted, #555); }
+
+  /* Exam day */
+  .dp-bringleave { display: grid; gap: 1rem; margin-top: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .dp-bring, .dp-leave {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 8px;
+    padding: 1rem 1.15rem;
+    background: #fff;
+  }
+  .dp-bring { border-left: 3px solid #1e7d43; }
+  .dp-leave { border-left: 3px solid #b3261e; }
+  .dp-bring h3, .dp-leave h3 { margin: 0 0 0.5rem; font-size: 0.95rem; }
+  .dp-bring ul, .dp-leave ul { margin: 0; padding-left: 1.15rem; }
+  .dp-bring li, .dp-leave li { margin: 0.25rem 0; }
+
+  .dp-daytimeline { margin-top: 1.5rem; }
+  .dp-dayrow {
+    display: grid;
+    grid-template-columns: minmax(110px, 160px) 1fr;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  }
+  .dp-dayrow:last-child { border-bottom: none; }
+  .dp-daytime { font-weight: 600; font-size: 0.9rem; }
+  .dp-daydetail { color: var(--muted, #555); }
+  .dp-rules { margin-top: 1.25rem; }
+  .dp-rules ul { margin: 0; padding-left: 1.15rem; }
+  .dp-rules li { margin: 0.3rem 0; }
+
+  @media (max-width: 640px) {
+    .dp-dayrow { grid-template-columns: 1fr; gap: 0.2rem; }
+    .dp-plan-head { flex-direction: column; align-items: flex-start; gap: 0.35rem; }
+  }
+</style>

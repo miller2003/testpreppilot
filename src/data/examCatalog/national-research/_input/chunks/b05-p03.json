@@ -1,0 +1,338 @@
+{
+ "chunkId": "b05-p03",
+ "batch": 5,
+ "part": 3,
+ "categories": [
+  "allied-health"
+ ],
+ "groups": [
+  "Medical Imaging",
+  "Specialized Allied Health",
+  "Laboratory"
+ ],
+ "bodies": [
+  "Nuclear Medicine Technology Certification Board (NMTCB)",
+  "American Board for Certification in Orthotics, Prosthetics and Pedorthics (ABC)",
+  "American Medical Technologists (AMT)",
+  "American Association of Bioanalysts (AAB)",
+  "Board of Nephrology Examiners Nursing and Technology (BONENT)",
+  "Commission on Dietetic Registration (CDR)",
+  "Nephrology Nursing Certification Commission (NNCC)",
+  "American Board of Cardiovascular Perfusion (ABPCT)",
+  "Board of Certification (BOC) for the Athletic Trainer",
+  "Board of Registered Polysomnographic Technologists (BRPT)",
+  "Nutrition Support Certification Board (NBNSC)",
+  "National Certification Board for Therapeutic Massage and Bodywork (NCBTMB)"
+ ],
+ "examCount": 28,
+ "exams": [
+  {
+   "slug": "nmtcb-cnmt",
+   "name": "NMTCB Certified Nuclear Medicine Technologist",
+   "short": "CNMT",
+   "category": "allied-health",
+   "group": "Medical Imaging",
+   "body": "Nuclear Medicine Technology Certification Board (NMTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry-level certification for nuclear medicine technologists in the United States."
+  },
+  {
+   "slug": "nmtcb-ct",
+   "name": "NMTCB CT Specialty Certification",
+   "short": "CT",
+   "category": "allied-health",
+   "group": "Medical Imaging",
+   "body": "Nuclear Medicine Technology Certification Board (NMTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty certification for nuclear medicine technologists performing computed tomography."
+  },
+  {
+   "slug": "nmtcb-nct",
+   "name": "NMTCB Nuclear Cardiology Technologist Certification",
+   "short": "NCT",
+   "category": "allied-health",
+   "group": "Medical Imaging",
+   "body": "Nuclear Medicine Technology Certification Board (NMTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty certification for technologists performing nuclear cardiology procedures."
+  },
+  {
+   "slug": "nmtcb-nmaa",
+   "name": "NMTCB Nuclear Medicine Advanced Associate Certification",
+   "short": "NMAA",
+   "category": "allied-health",
+   "group": "Medical Imaging",
+   "body": "Nuclear Medicine Technology Certification Board (NMTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced associate credential for nuclear medicine professionals beyond the technologist level."
+  },
+  {
+   "slug": "nmtcb-pet",
+   "name": "NMTCB PET Specialty Certification",
+   "short": "PET",
+   "category": "allied-health",
+   "group": "Medical Imaging",
+   "body": "Nuclear Medicine Technology Certification Board (NMTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty certification for technologists performing positron emission tomography imaging."
+  },
+  {
+   "slug": "nmtcb-rs",
+   "name": "NMTCB Radiologic Safety Certification",
+   "short": "RS",
+   "category": "allied-health",
+   "group": "Medical Imaging",
+   "body": "Nuclear Medicine Technology Certification Board (NMTCB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty certification covering radiation safety in nuclear medicine practice., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "abc-co",
+   "name": "ABC Certified Orthotist",
+   "short": "CO",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "American Board for Certification in Orthotics, Prosthetics and Pedorthics (ABC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for practitioners who design and fit orthoses., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "abc-cped",
+   "name": "ABC Certified Pedorthist",
+   "short": "CPed",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "American Board for Certification in Orthotics, Prosthetics and Pedorthics (ABC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for practitioners specializing in footwear and pedorthics., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "abc-cp",
+   "name": "ABC Certified Prosthetist",
+   "short": "CP",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "American Board for Certification in Orthotics, Prosthetics and Pedorthics (ABC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for practitioners who design and fit prostheses., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "abc-cpo",
+   "name": "ABC Certified Prosthetist-Orthotist",
+   "short": "CPO",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "American Board for Certification in Orthotics, Prosthetics and Pedorthics (ABC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for practitioners certified in both prosthetics and orthotics., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "amt-ht",
+   "name": "AMT Histotechnician Certification",
+   "short": "HT",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Medical Technologists (AMT)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for histotechnicians preparing tissue samples for analysis., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "amt-mlt",
+   "name": "AMT Medical Laboratory Technician Certification",
+   "short": "MLT",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Medical Technologists (AMT)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for medical laboratory technicians performing routine assays., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "amt-mt",
+   "name": "AMT Medical Technologist Certification",
+   "short": "MT",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Medical Technologists (AMT)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for medical technologists performing and interpreting lab testing., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "amt-rpt",
+   "name": "AMT Registered Phlebotomy Technician Certification",
+   "short": "RPT",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Medical Technologists (AMT)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for phlebotomists certified through American Medical Technologists., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aab-mls",
+   "name": "AAB Clinical Laboratory Scientist Certification",
+   "short": "CLS",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Association of Bioanalysts (AAB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for clinical laboratory scientists offered through the AAB certification program."
+  },
+  {
+   "slug": "aab-mla",
+   "name": "AAB Medical Laboratory Assistant Certification",
+   "short": "MLA",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Association of Bioanalysts (AAB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for medical laboratory assistants through the AAB program., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "aab-phlebotomy",
+   "name": "AAB Phlebotomy Certification",
+   "short": "PBT",
+   "category": "allied-health",
+   "group": "Laboratory",
+   "body": "American Association of Bioanalysts (AAB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for phlebotomists certified through the AAB program., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "bonent-ccht",
+   "name": "BONENT Certified Clinical Hemodialysis Technician",
+   "short": "CCHT",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "Board of Nephrology Examiners Nursing and Technology (BONENT)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Clinical-level credential for experienced hemodialysis technicians., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "bonent-cht",
+   "name": "BONENT Certified Hemodialysis Technician",
+   "short": "CHT",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "Board of Nephrology Examiners Nursing and Technology (BONENT)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for hemodialysis technicians in nephrology care., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "cdr-ndtr",
+   "name": "CDR Nutrition and Dietetics Technician, Registered",
+   "short": "NDTR",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "Commission on Dietetic Registration (CDR)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for nutrition and dietetics technicians supporting RDNs., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "cdr-rdn",
+   "name": "CDR Registered Dietitian Nutritionist",
+   "short": "RDN",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "Commission on Dietetic Registration (CDR)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National credential for registered dietitian nutritionists in the United States."
+  },
+  {
+   "slug": "nncc-cdn",
+   "name": "NNCC Certified Dialysis Nurse",
+   "short": "CDN",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "Nephrology Nursing Certification Commission (NNCC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for nurses specializing in dialysis patient care., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nncc-cnn",
+   "name": "NNCC Certified Nephrology Nurse",
+   "short": "CNN",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "Nephrology Nursing Certification Commission (NNCC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for nurses specializing in nephrology and kidney care., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "abpct-cbp",
+   "name": "ABPCT Certified Clinical Perfusionist",
+   "short": "CCP",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "American Board of Cardiovascular Perfusion (ABPCT)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for clinical perfusionists operating heart-lung bypass., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "boc-atc",
+   "name": "BOC Athletic Trainer Certification",
+   "short": "ATC",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "Board of Certification (BOC) for the Athletic Trainer",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "National credential for certified athletic trainers in the United States., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "brpt-rpsgt",
+   "name": "BRPT Registered Polysomnographic Technician",
+   "short": "RPSGT",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "Board of Registered Polysomnographic Technologists (BRPT)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for technologists performing sleep disorder testing., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "nbnasc-cnsc",
+   "name": "CNSC Certified Nutrition Support Clinician",
+   "short": "CNSC",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "Nutrition Support Certification Board (NBNSC)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Credential for clinicians specializing in nutrition support therapy., a nationally recognized professional credential in this field."
+  },
+  {
+   "slug": "ncbtmb-bctmb",
+   "name": "NCBTMB Board Certification in Therapeutic Massage and Bodywork",
+   "short": "BCTMB",
+   "category": "allied-health",
+   "group": "Specialized Allied Health",
+   "body": "National Certification Board for Therapeutic Massage and Bodywork (NCBTMB)",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Advanced board certification for experienced massage and bodywork therapists., a nationally recognized professional credential in this field."
+  }
+ ]
+}

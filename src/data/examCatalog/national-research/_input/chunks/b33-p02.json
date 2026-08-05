@@ -1,0 +1,521 @@
+{
+ "chunkId": "b33-p02",
+ "batch": 33,
+ "part": 2,
+ "categories": [
+  "technology"
+ ],
+ "groups": [
+  "Microsoft"
+ ],
+ "bodies": [
+  "Microsoft"
+ ],
+ "examCount": 36,
+ "exams": [
+  {
+   "slug": "microsoft-mb-230",
+   "name": "Microsoft Certified: Dynamics 365 Customer Service Functional Consultant Associate",
+   "short": "MB-230",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MB-230"
+   ],
+   "blurb": "Associate exam on Dynamics 365 Customer Service covering cases, queues, entitlements, service level agreements, knowledge and omnichannel routing."
+  },
+  {
+   "slug": "microsoft-mb-240",
+   "name": "Microsoft Certified: Dynamics 365 Field Service Functional Consultant Associate",
+   "short": "MB-240",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Exam",
+   "aka": [
+    "MB-240"
+   ],
+   "blurb": "Associate exam on work orders, scheduling, inventory and mobile field service in Dynamics 365; Microsoft retired it in June 2026 with no replacement."
+  },
+  {
+   "slug": "microsoft-mb-500",
+   "name": "Microsoft Certified: Dynamics 365 Finance and Operations Apps Developer Associate",
+   "short": "MB-500",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MB-500"
+   ],
+   "blurb": "Associate developer exam on extending Dynamics 365 finance and operations apps with X++, data entities, integrations and lifecycle services."
+  },
+  {
+   "slug": "microsoft-mb-700",
+   "name": "Microsoft Certified: Dynamics 365 Finance and Operations Apps Solution Architect Expert",
+   "short": "MB-700",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MB-700"
+   ],
+   "blurb": "Expert exam on architecting Dynamics 365 finance and operations implementations covering solution design, integration, data migration and governance."
+  },
+  {
+   "slug": "microsoft-mb-310",
+   "name": "Microsoft Certified: Dynamics 365 Finance Functional Consultant Associate",
+   "short": "MB-310",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MB-310"
+   ],
+   "blurb": "Associate exam on Dynamics 365 Finance covering general ledger, accounts payable and receivable, budgeting, fixed assets and financial reporting."
+  },
+  {
+   "slug": "microsoft-mb-910",
+   "name": "Microsoft Certified: Dynamics 365 Fundamentals (CRM)",
+   "short": "MB-910",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Exam",
+   "aka": [
+    "MB-910"
+   ],
+   "blurb": "Fundamentals exam on Dynamics 365 customer engagement apps; Microsoft retired it on 31 December 2025 though it remains a common search term."
+  },
+  {
+   "slug": "microsoft-mb-920",
+   "name": "Microsoft Certified: Dynamics 365 Fundamentals (ERP)",
+   "short": "MB-920",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Exam",
+   "aka": [
+    "MB-920"
+   ],
+   "blurb": "Fundamentals exam on Dynamics 365 finance and operations apps; Microsoft retired it on 31 December 2025 alongside the CRM fundamentals exam."
+  },
+  {
+   "slug": "microsoft-ab-210",
+   "name": "Microsoft Certified: Dynamics 365 Sales AI Consultant Associate",
+   "short": "AB-210",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AB-210"
+   ],
+   "blurb": "Associate certification on designing AI-powered sales solutions across the lead-to-cash lifecycle using Copilot and Dynamics 365 Sales agents."
+  },
+  {
+   "slug": "microsoft-mb-210",
+   "name": "Microsoft Certified: Dynamics 365 Sales Functional Consultant Associate",
+   "short": "MB-210",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MB-210"
+   ],
+   "blurb": "Associate exam on configuring Dynamics 365 Sales including leads, opportunities, quotes, forecasting, sales insights and sales process automation."
+  },
+  {
+   "slug": "microsoft-mb-330",
+   "name": "Microsoft Certified: Dynamics 365 Supply Chain Management Functional Consultant Associate",
+   "short": "MB-330",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MB-330"
+   ],
+   "blurb": "Associate exam on Dynamics 365 Supply Chain Management covering product information, inventory, procurement, sales, warehouse and transportation."
+  },
+  {
+   "slug": "microsoft-dp-600",
+   "name": "Microsoft Certified: Fabric Analytics Engineer Associate",
+   "short": "DP-600",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "DP-600"
+   ],
+   "blurb": "Associate exam on designing and building analytics assets in Microsoft Fabric, covering lakehouses, semantic models, DAX and workspace governance."
+  },
+  {
+   "slug": "microsoft-dp-700",
+   "name": "Microsoft Certified: Fabric Data Engineer Associate",
+   "short": "DP-700",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "DP-700"
+   ],
+   "blurb": "Associate exam on ingesting, transforming and monitoring data in Microsoft Fabric using pipelines, notebooks, eventstreams and Spark."
+  },
+  {
+   "slug": "microsoft-sc-300",
+   "name": "Microsoft Certified: Identity and Access Administrator Associate",
+   "short": "SC-300",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "SC-300"
+   ],
+   "blurb": "Associate exam on Microsoft Entra ID covering authentication, conditional access, application access, identity governance and privileged access."
+  },
+  {
+   "slug": "microsoft-sc-400",
+   "name": "Microsoft Certified: Information Protection and Compliance Administrator Associate",
+   "short": "SC-400",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Exam",
+   "aka": [
+    "SC-400"
+   ],
+   "blurb": "Retired in May 2025 and replaced by SC-401, this exam covered Microsoft Purview information protection, data loss prevention and retention."
+  },
+  {
+   "slug": "microsoft-sc-401",
+   "name": "Microsoft Certified: Information Security Administrator Associate",
+   "short": "SC-401",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "SC-401"
+   ],
+   "blurb": "Associate exam replacing SC-400, covering Microsoft Purview data security, information protection, data loss prevention and insider risk management."
+  },
+  {
+   "slug": "microsoft-ab-410",
+   "name": "Microsoft Certified: Intelligent Applications Builder Associate",
+   "short": "AB-410",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AB-410"
+   ],
+   "blurb": "Associate certification for Power Platform makers building AI-first applications that combine apps, agents, automation and models."
+  },
+  {
+   "slug": "microsoft-ai-300",
+   "name": "Microsoft Certified: Machine Learning Operations Engineer Associate",
+   "short": "AI-300",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AI-300"
+   ],
+   "blurb": "MLOps certification that replaced the Azure Data Scientist track, covering deploying, monitoring and optimising machine learning and generative AI."
+  },
+  {
+   "slug": "microsoft-ai-500",
+   "name": "Microsoft Certified: Multi-Agent AI Solutions Expert",
+   "short": "AI-500",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AI-500"
+   ],
+   "blurb": "Expert-level Microsoft certification announced for 2026 covering the design and operation of multi-agent artificial intelligence solutions."
+  },
+  {
+   "slug": "microsoft-pl-500",
+   "name": "Microsoft Certified: Power Automate RPA Developer Associate",
+   "short": "PL-500",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "PL-500"
+   ],
+   "blurb": "Associate exam on robotic process automation with Power Automate desktop flows, covering automation design, deployment and exception handling."
+  },
+  {
+   "slug": "microsoft-pl-300",
+   "name": "Microsoft Certified: Power BI Data Analyst Associate",
+   "short": "PL-300",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "PL-300"
+   ],
+   "blurb": "Associate exam on preparing, modelling, visualising and analysing data in Power BI, including DAX measures and workspace deployment and security."
+  },
+  {
+   "slug": "microsoft-pl-400",
+   "name": "Microsoft Certified: Power Platform Developer Associate",
+   "short": "PL-400",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "PL-400"
+   ],
+   "blurb": "Associate exam on extending Power Platform with plug-ins, custom connectors, Power Apps component framework controls and Dataverse integrations."
+  },
+  {
+   "slug": "microsoft-pl-200",
+   "name": "Microsoft Certified: Power Platform Functional Consultant Associate",
+   "short": "PL-200",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "PL-200"
+   ],
+   "blurb": "Associate exam on configuring Dataverse, building apps and flows, managing security roles and integrating Power Platform with business processes."
+  },
+  {
+   "slug": "microsoft-pl-900",
+   "name": "Microsoft Certified: Power Platform Fundamentals",
+   "short": "PL-900",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "PL-900"
+   ],
+   "blurb": "Fundamentals exam covering Power Apps, Power Automate, Power BI, Power Pages, Dataverse and connectors for business application makers."
+  },
+  {
+   "slug": "microsoft-pl-600",
+   "name": "Microsoft Certified: Power Platform Solution Architect Expert",
+   "short": "PL-600",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "PL-600"
+   ],
+   "blurb": "Expert exam on leading Power Platform implementations covering requirements analysis, solution architecture, data modelling and integration design."
+  },
+  {
+   "slug": "microsoft-sc-200",
+   "name": "Microsoft Certified: Security Operations Analyst Associate",
+   "short": "SC-200",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "SC-200"
+   ],
+   "blurb": "Associate exam on threat detection and response using Microsoft Defender XDR, Microsoft Sentinel, KQL hunting queries and automation playbooks."
+  },
+  {
+   "slug": "microsoft-sc-900",
+   "name": "Microsoft Certified: Security, Compliance and Identity Fundamentals",
+   "short": "SC-900",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "SC-900"
+   ],
+   "blurb": "Fundamentals exam covering security, compliance and identity concepts plus Microsoft Entra, Defender and Purview capabilities at a high level."
+  },
+  {
+   "slug": "microsoft-dp-800",
+   "name": "Microsoft Certified: SQL AI Developer Associate",
+   "short": "DP-800",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "DP-800"
+   ],
+   "blurb": "Certification introduced in 2026 for developers building AI-augmented database applications with modern governance and DevOps practices."
+  },
+  {
+   "slug": "microsoft-az-802",
+   "name": "Microsoft Certified: Windows Server Administrator Associate",
+   "short": "AZ-802",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "AZ-802"
+   ],
+   "blurb": "Single 2026 exam consolidating AZ-800 and AZ-801, covering Windows Server identity, storage, compute, security and hybrid Azure integration."
+  },
+  {
+   "slug": "microsoft-office-specialist-associate-bundle",
+   "name": "Microsoft Office Specialist: Associate",
+   "short": "MOS Associate",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MOS Associate"
+   ],
+   "blurb": "Composite Microsoft credential awarded for passing the Word, Excel and PowerPoint associate exams plus one additional Office Specialist exam."
+  },
+  {
+   "slug": "microsoft-office-specialist-excel-associate",
+   "name": "Microsoft Office Specialist: Excel Associate",
+   "short": "MOS Excel",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MO-210"
+   ],
+   "blurb": "Performance-based Microsoft Office Specialist exam on workbook management, formatting, formulas, tables and charts in Microsoft Excel."
+  },
+  {
+   "slug": "microsoft-office-specialist-excel-expert",
+   "name": "Microsoft Office Specialist: Excel Expert",
+   "short": "MOS Excel Expert",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MO-211"
+   ],
+   "blurb": "Expert-level Office Specialist exam covering advanced Excel formulas, data validation, PivotTables, macros and workbook collaboration options."
+  },
+  {
+   "slug": "microsoft-office-specialist-expert-bundle",
+   "name": "Microsoft Office Specialist: Expert",
+   "short": "MOS Expert",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MOS Expert"
+   ],
+   "blurb": "Composite Microsoft credential awarded for passing the Word Expert and Excel Expert exams plus a further qualifying Office Specialist exam."
+  },
+  {
+   "slug": "microsoft-office-specialist-outlook-associate",
+   "name": "Microsoft Office Specialist: Outlook Associate",
+   "short": "MOS Outlook",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MO-400"
+   ],
+   "blurb": "Office Specialist exam covering Outlook message management, calendars, contacts, tasks, rules and mailbox configuration and organisation."
+  },
+  {
+   "slug": "microsoft-office-specialist-powerpoint-associate",
+   "name": "Microsoft Office Specialist: PowerPoint Associate",
+   "short": "MOS PowerPoint",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MO-310"
+   ],
+   "blurb": "Performance-based Office Specialist exam covering slide management, text and shapes, tables and charts, transitions and presentation delivery."
+  },
+  {
+   "slug": "microsoft-office-specialist-word-associate",
+   "name": "Microsoft Office Specialist: Word Associate",
+   "short": "MOS Word",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MO-110"
+   ],
+   "blurb": "Performance-based Office Specialist exam covering document creation, formatting, tables, references, graphics and collaboration in Microsoft Word."
+  },
+  {
+   "slug": "microsoft-office-specialist-word-expert",
+   "name": "Microsoft Office Specialist: Word Expert",
+   "short": "MOS Word Expert",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "Microsoft",
+   "bodyUrl": "https://learn.microsoft.com/en-us/credentials/",
+   "type": "Certification",
+   "aka": [
+    "MO-111"
+   ],
+   "blurb": "Expert-level Office Specialist exam covering advanced Word features such as styles, templates, mail merge, forms and document review workflows."
+  }
+ ]
+}

@@ -1,0 +1,288 @@
+{
+ "chunkId": "b09-p02",
+ "batch": 9,
+ "part": 2,
+ "categories": [
+  "aviation-maritime"
+ ],
+ "groups": [
+  "Maritime & USCG"
+ ],
+ "bodies": [
+  "U.S. Coast Guard National Maritime Center"
+ ],
+ "examCount": 20,
+ "exams": [
+  {
+   "slug": "uscg-merchant-mariner-credential",
+   "name": "Merchant Mariner Credential",
+   "short": "MMC",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "MMC",
+    "Merchant Mariner's Document"
+   ],
+   "blurb": "Single credential book that consolidates all officer, rating and STCW endorsements a United States mariner holds."
+  },
+  {
+   "slug": "uscg-merchant-mariner-medical-certificate",
+   "name": "Merchant Mariner Medical Certificate",
+   "short": "Medical Certificate",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "Certification",
+   "aka": [
+    "CG-719K"
+   ],
+   "blurb": "Medical and physical fitness certificate required alongside the merchant mariner credential, based on the CG-719K examination."
+  },
+  {
+   "slug": "uscg-oupv-operator-uninspected-passenger-vessels",
+   "name": "Operator of Uninspected Passenger Vessels",
+   "short": "OUPV",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Six-Pack License",
+    "OUPV",
+    "Six Pack Captain"
+   ],
+   "blurb": "Entry captain licence allowing carriage of up to six paying passengers on uninspected vessels for inland, Great Lakes or near coastal routes."
+  },
+  {
+   "slug": "uscg-ordinary-seaman-endorsement",
+   "name": "Ordinary Seaman Endorsement",
+   "short": "OS",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "OS"
+   ],
+   "blurb": "Entry-level deck rating requiring no sea service, used as the starting endorsement for new mariners joining a vessel crew."
+  },
+  {
+   "slug": "uscg-qmed-qualified-member-engine-department",
+   "name": "Qualified Member of the Engine Department",
+   "short": "QMED",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "QMED",
+    "Oiler",
+    "Junior Engineer"
+   ],
+   "blurb": "Engine rating covering oiler, fireman-watertender, junior engineer and refrigerating engineer roles, earned by sea service and examination."
+  },
+  {
+   "slug": "stcw-rating-forming-part-of-navigational-watch",
+   "name": "Rating Forming Part of a Navigational Watch",
+   "short": "RFPNW",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "RFPNW",
+    "STCW II/4"
+   ],
+   "blurb": "STCW deck rating requiring assessed steering, lookout and watchkeeping competencies for service on seagoing vessels."
+  },
+  {
+   "slug": "stcw-rating-forming-part-of-engineering-watch",
+   "name": "Rating Forming Part of an Engineering Watch",
+   "short": "RFPEW",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "RFPEW",
+    "STCW III/4"
+   ],
+   "blurb": "STCW engine rating certifying competence to keep an engine room watch under the direction of a licensed engineer officer."
+  },
+  {
+   "slug": "uscg-second-mate-endorsement",
+   "name": "Second Mate Endorsement",
+   "short": "Second Mate",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Second Mate Unlimited"
+   ],
+   "blurb": "Unlimited-tonnage deck licence above third mate, requiring additional sea service and Coast Guard examination modules."
+  },
+  {
+   "slug": "uscg-ships-cook-endorsement",
+   "name": "Ship's Cook Endorsement",
+   "short": "Ship's Cook",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Ships Cook",
+    "STCW III/7 Cook"
+   ],
+   "blurb": "Steward department endorsement requiring approved food safety training and sea service before a mariner may serve as ship cook."
+  },
+  {
+   "slug": "uscg-tankerman-assistant",
+   "name": "Tankerman-Assistant Endorsement",
+   "short": "Tankerman-Assistant",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Tankerman Assistant"
+   ],
+   "blurb": "Endorsement allowing a mariner to assist in cargo transfers of oil or hazardous liquids under the supervision of a person in charge."
+  },
+  {
+   "slug": "uscg-tankerman-engineer",
+   "name": "Tankerman-Engineer Endorsement",
+   "short": "Tankerman-Engineer",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Tankerman Engineer"
+   ],
+   "blurb": "Endorsement for licensed engineers supervising transfer of fuel oil and bunkering operations aboard tank vessels."
+  },
+  {
+   "slug": "uscg-tankerman-pic-barge",
+   "name": "Tankerman-PIC (Barge) Endorsement",
+   "short": "Tankerman-PIC Barge",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Tankerman PIC Barge"
+   ],
+   "blurb": "Restricted tankerman endorsement covering cargo transfers on tank barges rather than self-propelled tank vessels."
+  },
+  {
+   "slug": "uscg-tankerman-pic",
+   "name": "Tankerman-PIC Endorsement",
+   "short": "Tankerman-PIC",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Person in Charge",
+    "Tankerman PIC DL"
+   ],
+   "blurb": "Endorsement authorising a mariner to act as person in charge of transferring dangerous liquid or liquefied gas cargo."
+  },
+  {
+   "slug": "uscg-third-assistant-engineer",
+   "name": "Third Assistant Engineer Endorsement",
+   "short": "Third A/E",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "3 A/E Unlimited"
+   ],
+   "blurb": "Entry unlimited engineering officer licence requiring extensive Coast Guard examinations in motor, steam, gas turbine and electrical plants."
+  },
+  {
+   "slug": "uscg-third-mate-endorsement",
+   "name": "Third Mate Endorsement",
+   "short": "Third Mate",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "License",
+   "aka": [
+    "Third Mate Unlimited",
+    "3 M Oceans"
+   ],
+   "blurb": "Entry unlimited deck officer licence for oceans service, examined across navigation, stability, cargo, safety and rules of the road."
+  },
+  {
+   "slug": "uscg-chart-plot-exam-module",
+   "name": "USCG Chart Plot Exam Module",
+   "short": "Chart Plot",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "Exam",
+   "aka": [
+    "Chart Navigation Module"
+   ],
+   "blurb": "Ten-question plotting module requiring 90 percent to pass, covering fixes, set and drift, courses to steer and estimated times of arrival."
+  },
+  {
+   "slug": "uscg-deck-general-exam-module",
+   "name": "USCG Deck General Exam Module",
+   "short": "Deck General",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "Exam",
+   "aka": [
+    "Deck General Module"
+   ],
+   "blurb": "Examination module on seamanship, marlinespike, ship construction, stability and deck operations for master level credentials."
+  },
+  {
+   "slug": "uscg-deck-safety-exam-module",
+   "name": "USCG Deck Safety Exam Module",
+   "short": "Deck Safety",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "Exam",
+   "aka": [
+    "Deck Safety Module"
+   ],
+   "blurb": "Examination module covering firefighting, damage control, lifesaving equipment, pollution regulations and emergency procedures."
+  },
+  {
+   "slug": "uscg-navigation-general-exam-module",
+   "name": "USCG Navigation General Exam Module",
+   "short": "Navigation General",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "Exam",
+   "aka": [
+    "Nav General Module"
+   ],
+   "blurb": "Fifty-question module on aids to navigation, tides and currents, compass error, weather and publications, requiring 90 percent to pass."
+  },
+  {
+   "slug": "uscg-rules-of-the-road-exam-module",
+   "name": "USCG Rules of the Road Exam Module",
+   "short": "Rules of the Road",
+   "category": "aviation-maritime",
+   "group": "Maritime & USCG",
+   "body": "U.S. Coast Guard National Maritime Center",
+   "type": "Exam",
+   "aka": [
+    "COLREGS Exam",
+    "Rules Module"
+   ],
+   "blurb": "Module on International and Inland navigation rules, lights, shapes and sound signals requiring a 90 percent passing score."
+  }
+ ]
+}

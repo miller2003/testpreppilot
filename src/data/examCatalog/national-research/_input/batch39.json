@@ -1,0 +1,1442 @@
+{
+  "batch": "39",
+  "categories": [
+    "trades"
+  ],
+  "groups": [
+    "Electrical/Solar & Low Voltage",
+    "Elevator/Locksmith & Specialty Trades",
+    "Welding & Metal",
+    "Building Codes & Inspection",
+    "Fire Protection & Life Safety Systems"
+  ],
+  "examCount": 103,
+  "bodyCount": 23,
+  "bodies": [
+    "BICSI",
+    "Electronics Technicians Association International (ETA)",
+    "International Society of Certified Electronics Technicians (ISCET)",
+    "North American Board of Certified Energy Practitioners (NABCEP)",
+    "NCCER",
+    "National Institute for Certification in Engineering Technologies (NICET)",
+    "American Concrete Institute (ACI)",
+    "Associated Locksmiths of America (ALOA)",
+    "International Certified Flooring Installers Association (CFI)",
+    "Ceramic Tile Education Foundation (CTEF)",
+    "National Association of Elevator Contractors (NAEC)",
+    "National Glass Association (NGA)",
+    "National Roofing Contractors Association (NRCA)",
+    "National Elevator Industry (NEI) / NAESA International",
+    "Scaffold & Access Industry Association (SAIA)",
+    "AMPP (formerly NACE International)",
+    "American Petroleum Institute (API)",
+    "American Society of Mechanical Engineers (ASME)",
+    "American Welding Society (AWS)",
+    "Robotic Industries Association (RIA)",
+    "National Institute for Metalworking Skills (NIMS)",
+    "International Code Council (ICC)",
+    "National Fire Protection Association (NFPA)"
+  ],
+  "exams": [
+    {
+      "slug": "bicsi-installer-technician",
+      "name": "BICSI Installer 2 and Technician (INSTC/TECH)",
+      "short": "BICSI INSTC",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "BICSI",
+      "bodyUrl": "https://www.bicsi.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Credentials covering installation, termination and testing of copper and fiber cabling pathways and spaces."
+    },
+    {
+      "slug": "eta-associate-electronics-technician",
+      "name": "ETA Associate Electronics Technician (CETa)",
+      "short": "CETa",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "Electronics Technicians Association International (ETA)",
+      "bodyUrl": "https://www.eta-i.org",
+      "type": "Certification",
+      "aka": [
+        "CETa"
+      ],
+      "blurb": "Foundational electronics credential covering basic DC/AC theory, test equipment and safety for entry technicians."
+    },
+    {
+      "slug": "eta-certified-electronics-technician",
+      "name": "ETA Certified Electronics Technician (CET)",
+      "short": "CET",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "Electronics Technicians Association International (ETA)",
+      "bodyUrl": "https://www.eta-i.org",
+      "type": "Certification",
+      "aka": [
+        "CET"
+      ],
+      "blurb": "Mid-level credential covering communications, digital and analog electronics for consumer and industrial service."
+    },
+    {
+      "slug": "eta-lineworker",
+      "name": "ETA Certified Journeyman Lineman",
+      "short": "CJL",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "Electronics Technicians Association International (ETA)",
+      "bodyUrl": "https://www.eta-i.org",
+      "type": "Certification",
+      "aka": [
+        "CJL"
+      ],
+      "blurb": "Credential covering electrical distribution, climbing, safety and switching for overhead and underground power line workers."
+    },
+    {
+      "slug": "eta-fiber-optics-technician",
+      "name": "ETA Fiber Optics Installer/Technician",
+      "short": "FOI",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "Electronics Technicians Association International (ETA)",
+      "bodyUrl": "https://www.eta-i.org",
+      "type": "Certification",
+      "aka": [
+        "FOI"
+      ],
+      "blurb": "Credential covering splicing, termination and testing of fiber optic cable for communications and data networks."
+    },
+    {
+      "slug": "eta-photovoltaic-installer",
+      "name": "ETA Renewable Energy Photovoltaic Installer",
+      "short": "PVI",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "Electronics Technicians Association International (ETA)",
+      "bodyUrl": "https://www.eta-i.org",
+      "type": "Certification",
+      "aka": [
+        "PVI"
+      ],
+      "blurb": "Credential covering safe installation and commissioning of residential and small commercial photovoltaic systems."
+    },
+    {
+      "slug": "iscet-certified-electronics-technician",
+      "name": "ISCET Certified Electronics Technician",
+      "short": "ISCET CET",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "International Society of Certified Electronics Technicians (ISCET)",
+      "bodyUrl": "https://www.iscet.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Credential covering consumer electronics, communications and industrial electronic service and troubleshooting."
+    },
+    {
+      "slug": "nabcep-battery-storage",
+      "name": "NABCEP Battery Storage Installation Professional",
+      "short": "BSIP",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+      "bodyUrl": "https://www.nabcep.org",
+      "type": "Certification",
+      "aka": [
+        "BSIP"
+      ],
+      "blurb": "Credential covering design and installation of energy storage systems paired with PV or standalone storage."
+    },
+    {
+      "slug": "nabcep-pv-commissioning-maintenance",
+      "name": "NABCEP PV Commissioning and Maintenance Specialist",
+      "short": "PVCMS",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+      "bodyUrl": "https://www.nabcep.org",
+      "type": "Certification",
+      "aka": [
+        "PVCMS"
+      ],
+      "blurb": "Credential covering inspection, testing, commissioning and O&M of installed photovoltaic systems."
+    },
+    {
+      "slug": "nabcep-pv-design-specialist",
+      "name": "NABCEP PV Design Specialist",
+      "short": "PVDS",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+      "bodyUrl": "https://www.nabcep.org",
+      "type": "Certification",
+      "aka": [
+        "PVDS"
+      ],
+      "blurb": "Credential covering electrical and mechanical design of PV systems and interpretation of the National Electrical Code."
+    },
+    {
+      "slug": "nabcep-pv-installation-professional",
+      "name": "NABCEP PV Installation Professional",
+      "short": "PVIP",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+      "bodyUrl": "https://www.nabcep.org",
+      "type": "Certification",
+      "aka": [
+        "PVIP"
+      ],
+      "blurb": "Top photovoltaic credential covering design, installation and commissioning of grid-direct and battery-based PV systems."
+    },
+    {
+      "slug": "nabcep-pv-installer-specialist",
+      "name": "NABCEP PV Installer Specialist",
+      "short": "PVIS",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+      "bodyUrl": "https://www.nabcep.org",
+      "type": "Certification",
+      "aka": [
+        "PVIS"
+      ],
+      "blurb": "Entry-to-mid credential for technicians performing hands-on PV installation under a certified professional."
+    },
+    {
+      "slug": "nabcep-pv-system-inspector",
+      "name": "NABCEP PV System Inspector",
+      "short": "PVSI",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+      "bodyUrl": "https://www.nabcep.org",
+      "type": "Certification",
+      "aka": [
+        "PVSI"
+      ],
+      "blurb": "Credential for inspectors and authorities having jurisdiction to evaluate PV system code compliance."
+    },
+    {
+      "slug": "nabcep-pv-technical-sales",
+      "name": "NABCEP PV Technical Sales",
+      "short": "PVTS",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+      "bodyUrl": "https://www.nabcep.org",
+      "type": "Certification",
+      "aka": [
+        "PVTS"
+      ],
+      "blurb": "Credential covering site assessment, system sizing and customer proposals for solar photovoltaic sales."
+    },
+    {
+      "slug": "nabcep-solar-heating-installer",
+      "name": "NABCEP Solar Heating Installer",
+      "short": "SHIP",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "North American Board of Certified Energy Practitioners (NABCEP)",
+      "bodyUrl": "https://www.nabcep.org",
+      "type": "Certification",
+      "aka": [
+        "SHIP"
+      ],
+      "blurb": "Credential covering design and installation of solar thermal water and space heating systems."
+    },
+    {
+      "slug": "nccer-electrician",
+      "name": "NCCER Electrician Certification",
+      "short": "NCCER Electrician",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Module-based apprenticeship training in electrical theory, wiring, motors and the National Electrical Code."
+    },
+    {
+      "slug": "nicet-site-security-integration-level-1",
+      "name": "NICET Site Security Integration (SSI) Level I",
+      "short": "SSI Level I",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "SSI Level I"
+      ],
+      "blurb": "New 2026 certification covering installation and integration of electronic security systems such as access control and CCTV."
+    },
+    {
+      "slug": "nicet-site-security-integration-level-2",
+      "name": "NICET Site Security Integration (SSI) Level II",
+      "short": "SSI Level II",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "SSI Level II"
+      ],
+      "blurb": "Advanced 2026 certification covering design, commissioning and troubleshooting of integrated electronic security systems."
+    },
+    {
+      "slug": "nicet-voice-data-video-level-1",
+      "name": "NICET Voice Data Video (VDV) Level I",
+      "short": "VDV Level I",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "VDV Level I"
+      ],
+      "blurb": "Entry certification covering low-voltage cabling, pathways and basic installation of voice, data and video systems."
+    },
+    {
+      "slug": "nicet-voice-data-video-level-2",
+      "name": "NICET Voice Data Video (VDV) Level II",
+      "short": "VDV Level II",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "VDV Level II"
+      ],
+      "blurb": "Intermediate certification covering design support, testing and troubleshooting of structured cabling systems."
+    },
+    {
+      "slug": "nicet-voice-data-video-level-3",
+      "name": "NICET Voice Data Video (VDV) Level III",
+      "short": "VDV Level III",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "VDV Level III"
+      ],
+      "blurb": "Advanced certification covering system design, project management and code compliance for VDV systems."
+    },
+    {
+      "slug": "nicet-voice-data-video-level-4",
+      "name": "NICET Voice Data Video (VDV) Level IV",
+      "short": "VDV Level IV",
+      "category": "trades",
+      "group": "Electrical/Solar & Low Voltage",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "VDV Level IV"
+      ],
+      "blurb": "Senior certification covering engineered VDV design, standards and oversight of large communications projects."
+    },
+    {
+      "slug": "aci-concrete-construction-special-inspector",
+      "name": "ACI Concrete Construction Special Inspector",
+      "short": "ACI CSI",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "American Concrete Institute (ACI)",
+      "bodyUrl": "https://www.concrete.org",
+      "type": "Certification",
+      "aka": [
+        "ACI CSI"
+      ],
+      "blurb": "Certifies inspection of concrete construction including pre-placement, sampling and field-cured testing."
+    },
+    {
+      "slug": "aci-concrete-field-testing-grade-1",
+      "name": "ACI Concrete Field Testing Technician Grade I",
+      "short": "ACI Grade I",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "American Concrete Institute (ACI)",
+      "bodyUrl": "https://www.concrete.org",
+      "type": "Certification",
+      "aka": [
+        "ACI Grade I"
+      ],
+      "blurb": "Certifies field testing of fresh concrete: slump, temperature, air content, density and compressive cylinders."
+    },
+    {
+      "slug": "aci-concrete-field-testing-grade-2",
+      "name": "ACI Concrete Field Testing Technician Grade II",
+      "short": "ACI Grade II",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "American Concrete Institute (ACI)",
+      "bodyUrl": "https://www.concrete.org",
+      "type": "Certification",
+      "aka": [
+        "ACI Grade II"
+      ],
+      "blurb": "Advanced field testing covering additional methods, aggregates and strength test specimens for concrete."
+    },
+    {
+      "slug": "aci-concrete-strength-testing-technician",
+      "name": "ACI Concrete Strength Testing Technician",
+      "short": "ACI ST",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "American Concrete Institute (ACI)",
+      "bodyUrl": "https://www.concrete.org",
+      "type": "Certification",
+      "aka": [
+        "ACI ST"
+      ],
+      "blurb": "Certifies capping, preparing and breaking cylinders to determine compressive strength of hardened concrete."
+    },
+    {
+      "slug": "aci-flatwork-finisher",
+      "name": "ACI Flatwork Finisher Certification",
+      "short": "ACI Flatwork",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "American Concrete Institute (ACI)",
+      "bodyUrl": "https://www.concrete.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies finishing of slabs, walks and floors including screeding, floating, troweling and jointing."
+    },
+    {
+      "slug": "aci-pervious-concrete",
+      "name": "ACI Pervious Concrete Certification",
+      "short": "ACI Pervious",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "American Concrete Institute (ACI)",
+      "bodyUrl": "https://www.concrete.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies mixing, placing and finishing of pervious concrete used for stormwater management pavements."
+    },
+    {
+      "slug": "aci-post-tensioning-field-personnel",
+      "name": "ACI Post-Tensioning Field Personnel",
+      "short": "ACI PT",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "American Concrete Institute (ACI)",
+      "bodyUrl": "https://www.concrete.org",
+      "type": "Certification",
+      "aka": [
+        "ACI PT"
+      ],
+      "blurb": "Certifies installation, stressing and grouting of post-tensioning tendons in reinforced concrete structures."
+    },
+    {
+      "slug": "aci-shotcrete-nozzleman",
+      "name": "ACI Shotcrete Nozzleman",
+      "short": "ACI Shotcrete",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "American Concrete Institute (ACI)",
+      "bodyUrl": "https://www.concrete.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies nozzle operation and placement of wet- or dry-mix shotcrete for structural and repair work."
+    },
+    {
+      "slug": "aloa-certified-master-locksmith",
+      "name": "ALOA Certified Master Locksmith (CML)",
+      "short": "CML",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "Associated Locksmiths of America (ALOA)",
+      "bodyUrl": "https://www.aloa.org",
+      "type": "Certification",
+      "aka": [
+        "CML"
+      ],
+      "blurb": "Highest locksmith credential covering complex master key systems, high-security locks and forensic locksmithing."
+    },
+    {
+      "slug": "aloa-certified-professional-locksmith",
+      "name": "ALOA Certified Professional Locksmith (CPL)",
+      "short": "CPL",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "Associated Locksmiths of America (ALOA)",
+      "bodyUrl": "https://www.aloa.org",
+      "type": "Certification",
+      "aka": [
+        "CPL"
+      ],
+      "blurb": "Mid-level locksmith credential covering advanced locking devices, master keying and access control fundamentals."
+    },
+    {
+      "slug": "aloa-certified-professional-safe-technician",
+      "name": "ALOA Certified Professional Safe Technician (CPS)",
+      "short": "CPS",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "Associated Locksmiths of America (ALOA)",
+      "bodyUrl": "https://www.aloa.org",
+      "type": "Certification",
+      "aka": [
+        "CPS"
+      ],
+      "blurb": "Specialty credential covering safe manipulation, drilling, combination changing and vault service."
+    },
+    {
+      "slug": "aloa-certified-registered-locksmith",
+      "name": "ALOA Certified Registered Locksmith (CRL)",
+      "short": "CRL",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "Associated Locksmiths of America (ALOA)",
+      "bodyUrl": "https://www.aloa.org",
+      "type": "Certification",
+      "aka": [
+        "CRL"
+      ],
+      "blurb": "Foundational locksmith credential covering key duplication, lock picking, installation and basic security hardware."
+    },
+    {
+      "slug": "cfi-certified-flooring-installer",
+      "name": "Certified Flooring Installers (CFI)",
+      "short": "CFI",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "International Certified Flooring Installers Association (CFI)",
+      "bodyUrl": "https://cfiinstallers.org",
+      "type": "Certification",
+      "aka": [
+        "CFI"
+      ],
+      "blurb": "Certifies installers of carpet, hardwood, laminate and resilient flooring through hands-on performance testing."
+    },
+    {
+      "slug": "ctef-certified-tile-installer",
+      "name": "Certified Tile Installer (CTI)",
+      "short": "CTI",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "Ceramic Tile Education Foundation (CTEF)",
+      "bodyUrl": "https://www.ctef.org",
+      "type": "Certification",
+      "aka": [
+        "CTI"
+      ],
+      "blurb": "Hands-on credential verifying proper ceramic and stone tile installation, substrate prep and waterproofing."
+    },
+    {
+      "slug": "naec-certified-accessibility-technician",
+      "name": "NAEC Certified Accessibility Technician (CAT)",
+      "short": "NAEC CAT",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "National Association of Elevator Contractors (NAEC)",
+      "bodyUrl": "https://www.naec.org",
+      "type": "Certification",
+      "aka": [
+        "CAT"
+      ],
+      "blurb": "Certifies technicians servicing vertical platform and wheelchair lifts for accessibility compliance."
+    },
+    {
+      "slug": "naec-certified-elevator-technician",
+      "name": "NAEC Certified Elevator Technician (CET)",
+      "short": "NAEC CET",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "National Association of Elevator Contractors (NAEC)",
+      "bodyUrl": "https://www.naec.org",
+      "type": "Certification",
+      "aka": [
+        "CET"
+      ],
+      "blurb": "Certifies elevator and escalator maintenance technicians across electrical, hydraulic and traction systems."
+    },
+    {
+      "slug": "nga-certified-glass-technician",
+      "name": "National Glass Association Certified Glass Technician (CGT)",
+      "short": "NGA CGT",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "National Glass Association (NGA)",
+      "bodyUrl": "https://www.glass.org",
+      "type": "Certification",
+      "aka": [
+        "CGT"
+      ],
+      "blurb": "Certifies glaziers in fabrication, installation and sealing of architectural glass and storefront systems."
+    },
+    {
+      "slug": "nrca-procert-roofing",
+      "name": "NRCA ProCert Roof System Installer",
+      "short": "NRCA ProCert",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "National Roofing Contractors Association (NRCA)",
+      "bodyUrl": "https://www.nrca.net",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies installers of specific roof systems including asphalt, thermoplastic and modified bitumen membranes."
+    },
+    {
+      "slug": "qei-elevator-inspector-1",
+      "name": "QEI Qualified Elevator Inspector Level 1 (Elevators)",
+      "short": "QEI-1",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "National Elevator Industry (NEI) / NAESA International",
+      "type": "Certification",
+      "aka": [
+        "QEI-1"
+      ],
+      "blurb": "Certifies inspectors of elevators for jurisdictions enforcing ASME A17.1 and A17.2 safety codes."
+    },
+    {
+      "slug": "qei-escalator-inspector-2",
+      "name": "QEI Qualified Inspector Level 2 (Escalators/Moving Walks)",
+      "short": "QEI-2",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "National Elevator Industry (NEI) / NAESA International",
+      "type": "Certification",
+      "aka": [
+        "QEI-2"
+      ],
+      "blurb": "Certifies inspectors of escalators and moving walks for compliance with ASME A17.1 and A17.2."
+    },
+    {
+      "slug": "qei-lift-inspector-3",
+      "name": "QEI Qualified Inspector Level 3 (Material/Wheelchair Lifts)",
+      "short": "QEI-3",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "National Elevator Industry (NEI) / NAESA International",
+      "type": "Certification",
+      "aka": [
+        "QEI-3"
+      ],
+      "blurb": "Certifies inspectors of material and wheelchair lifts for compliance with ASME A18.1 safety standards."
+    },
+    {
+      "slug": "saia-scaffold-competent-person",
+      "name": "SAIA Scaffold Competent Person / Supervisor (SST)",
+      "short": "SAIA SST",
+      "category": "trades",
+      "group": "Elevator/Locksmith & Specialty Trades",
+      "body": "Scaffold & Access Industry Association (SAIA)",
+      "bodyUrl": "https://www.saiaonline.org",
+      "type": "Certification",
+      "aka": [
+        "SST"
+      ],
+      "blurb": "Certifies competent persons and supervisors for scaffold erection, inspection and fall protection compliance."
+    },
+    {
+      "slug": "ampp-cathodic-protection-level-1",
+      "name": "AMPP Cathodic Protection Level 1",
+      "short": "CP Level 1",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "AMPP (formerly NACE International)",
+      "type": "Certification",
+      "aka": [
+        "NACE CP 1"
+      ],
+      "blurb": "Entry credential on corrosion control and cathodic protection testing for underground and submerged metallic structures."
+    },
+    {
+      "slug": "ampp-cathodic-protection-level-2",
+      "name": "AMPP Cathodic Protection Level 2",
+      "short": "CP Level 2",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "AMPP (formerly NACE International)",
+      "type": "Certification",
+      "aka": [
+        "NACE CP 2"
+      ],
+      "blurb": "Intermediate credential covering design, installation and troubleshooting of cathodic protection systems in the field."
+    },
+    {
+      "slug": "ampp-cip-level-1",
+      "name": "AMPP Coating Inspector Program Level 1",
+      "short": "CIP Level 1",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "AMPP (formerly NACE International)",
+      "type": "Certification",
+      "aka": [
+        "NACE CIP 1"
+      ],
+      "blurb": "Entry coating inspection credential covering surface preparation, application and inspection of protective coatings on structures."
+    },
+    {
+      "slug": "ampp-cip-level-2",
+      "name": "AMPP Coating Inspector Program Level 2",
+      "short": "CIP Level 2",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "AMPP (formerly NACE International)",
+      "type": "Certification",
+      "aka": [
+        "NACE CIP 2"
+      ],
+      "blurb": "Intermediate coating inspection credential adding specification review, advanced test methods and coating failure analysis."
+    },
+    {
+      "slug": "ampp-cip-level-3",
+      "name": "AMPP Coating Inspector Program Level 3",
+      "short": "CIP Level 3",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "AMPP (formerly NACE International)",
+      "type": "Certification",
+      "aka": [
+        "NACE CIP 3"
+      ],
+      "blurb": "Senior coating inspector credential covering programme management, standards and peer review for major projects."
+    },
+    {
+      "slug": "ampp-protective-coatings-specialist",
+      "name": "AMPP Protective Coatings Specialist (PCS)",
+      "short": "PCS",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "AMPP (formerly NACE International)",
+      "type": "Certification",
+      "aka": [
+        "PCS"
+      ],
+      "blurb": "Credential recognising advanced technical knowledge of protective coatings, corrosion and specification for senior specialists."
+    },
+    {
+      "slug": "api-1104-pipeline-welder",
+      "name": "API 1104 Pipeline Welder Qualification",
+      "short": "API 1104",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "American Petroleum Institute (API)",
+      "bodyUrl": "https://www.api.org",
+      "type": "Certification",
+      "aka": [
+        "API 1104"
+      ],
+      "blurb": "Qualification to weld transmission pipelines per API 1104, covering procedure, visual inspection and destructive testing."
+    },
+    {
+      "slug": "asme-section-ix-welder-qualification",
+      "name": "ASME Section IX Welder and Procedure Qualification",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "American Society of Mechanical Engineers (ASME)",
+      "bodyUrl": "https://www.asme.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Qualification under the ASME Boiler and Pressure Vessel Code covering welder performance and welding procedure specs."
+    },
+    {
+      "slug": "aws-certified-associate-welding-inspector",
+      "name": "AWS Certified Associate Welding Inspector (CAWI)",
+      "short": "CAWI",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "American Welding Society (AWS)",
+      "bodyUrl": "https://www.aws.org",
+      "type": "Certification",
+      "aka": [
+        "CAWI"
+      ],
+      "blurb": "Entry-level inspection credential for those not yet eligible for the CWI, covering basic welding inspection fundamentals."
+    },
+    {
+      "slug": "aws-certified-welder",
+      "name": "AWS Certified Welder Program",
+      "short": "CW",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "American Welding Society (AWS)",
+      "bodyUrl": "https://www.aws.org",
+      "type": "Certification",
+      "aka": [
+        "CW"
+      ],
+      "blurb": "Performance qualification testing welders to a specific code and procedure, with results logged in the AWS national database."
+    },
+    {
+      "slug": "aws-certified-welding-educator",
+      "name": "AWS Certified Welding Educator (CWE)",
+      "short": "CWE",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "American Welding Society (AWS)",
+      "bodyUrl": "https://www.aws.org",
+      "type": "Certification",
+      "aka": [
+        "CWE"
+      ],
+      "blurb": "Credential for instructors who teach welding, verifying knowledge of welding theory, practice and AWS education standards."
+    },
+    {
+      "slug": "aws-certified-welding-engineer",
+      "name": "AWS Certified Welding Engineer (CWEng)",
+      "short": "CWEng",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "American Welding Society (AWS)",
+      "bodyUrl": "https://www.aws.org",
+      "type": "Certification",
+      "aka": [
+        "CWEng"
+      ],
+      "blurb": "Advanced engineering credential covering weld design, metallurgy, procedure qualification and failure analysis of structures."
+    },
+    {
+      "slug": "aws-certified-welding-inspector",
+      "name": "AWS Certified Welding Inspector (CWI)",
+      "short": "CWI",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "American Welding Society (AWS)",
+      "bodyUrl": "https://www.aws.org",
+      "type": "Certification",
+      "aka": [
+        "CWI"
+      ],
+      "blurb": "Widely recognised inspection credential covering welding processes, codes, procedures, discontinuities and weld testing."
+    },
+    {
+      "slug": "aws-certified-welding-sales-representative",
+      "name": "AWS Certified Welding Sales Representative (CWSR)",
+      "short": "CWSR",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "American Welding Society (AWS)",
+      "bodyUrl": "https://www.aws.org",
+      "type": "Certification",
+      "aka": [
+        "CWSR"
+      ],
+      "blurb": "Credential for sales staff covering welding consumables, equipment, codes and matching products to fabrication needs."
+    },
+    {
+      "slug": "aws-certified-welding-supervisor",
+      "name": "AWS Certified Welding Supervisor (CWS)",
+      "short": "CWS",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "American Welding Society (AWS)",
+      "bodyUrl": "https://www.aws.org",
+      "type": "Certification",
+      "aka": [
+        "CWS"
+      ],
+      "blurb": "Management credential covering welding production planning, quality control, costing and supervision of welding personnel."
+    },
+    {
+      "slug": "aws-d11-structural-steel-code-endorsement",
+      "name": "AWS D1.1 Structural Steel Code Endorsement",
+      "short": "D1.1",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "American Welding Society (AWS)",
+      "bodyUrl": "https://www.aws.org",
+      "type": "Certification",
+      "aka": [
+        "D1.1"
+      ],
+      "blurb": "Optional CWI add-on testing knowledge of the AWS D1.1 structural steel welding code for building and bridge fabrication."
+    },
+    {
+      "slug": "aws-radiographic-interpreter",
+      "name": "AWS Radiographic Interpreter (RI)",
+      "short": "RI",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "American Welding Society (AWS)",
+      "bodyUrl": "https://www.aws.org",
+      "type": "Certification",
+      "aka": [
+        "RI"
+      ],
+      "blurb": "Credential covering interpretation of radiographic film and digital images of welds to locate and classify discontinuities."
+    },
+    {
+      "slug": "aws-senior-certified-welding-inspector",
+      "name": "AWS Senior Certified Welding Inspector (SCWI)",
+      "short": "SCWI",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "American Welding Society (AWS)",
+      "bodyUrl": "https://www.aws.org",
+      "type": "Certification",
+      "aka": [
+        "SCWI"
+      ],
+      "blurb": "Advanced credential for CWIs with extra experience, qualifying holders to supervise inspections and certify procedures."
+    },
+    {
+      "slug": "certified-robotic-arc-welding",
+      "name": "Certified Robotic Arc Welding (CRAW)",
+      "short": "CRAW",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "Robotic Industries Association (RIA)",
+      "bodyUrl": "https://www.robotics.org",
+      "type": "Certification",
+      "aka": [
+        "CRAW"
+      ],
+      "blurb": "Credential verifying a technician can set up, operate and troubleshoot robotic arc welding cells in automated fabrication."
+    },
+    {
+      "slug": "nccer-welding",
+      "name": "NCCER Welding Certification",
+      "short": "NCCER Welding",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Module-based craft training in SMAW, GMAW, FCAW and GTAW culminating in a verifiable welding credential and transcript."
+    },
+    {
+      "slug": "nims-welding-credentials",
+      "name": "NIMS Welding Credentials",
+      "short": "NIMS Welding",
+      "category": "trades",
+      "group": "Welding & Metal",
+      "body": "National Institute for Metalworking Skills (NIMS)",
+      "bodyUrl": "https://www.nims-skills.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Job-skill credentials in welding, cutting and thermal joining aligned to national metalworking standards for manufacturing."
+    },
+    {
+      "slug": "icc-accessibility-inspector-plans-examiner",
+      "name": "ICC Accessibility Inspector/Plans Examiner",
+      "short": "ICC A117.1",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies inspection and plan review for accessibility compliance under the ICC A117.1 standard and the ADA."
+    },
+    {
+      "slug": "icc-building-plans-examiner",
+      "name": "ICC Building Plans Examiner (B3)",
+      "short": "B3",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "B3"
+      ],
+      "blurb": "Certifies review of construction documents for code compliance before permits are issued under the IBC."
+    },
+    {
+      "slug": "icc-certified-building-official",
+      "name": "ICC Certified Building Official (CBO)",
+      "short": "CBO",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "CBO"
+      ],
+      "blurb": "Senior credential for officials responsible for overall code administration and enforcement in a jurisdiction."
+    },
+    {
+      "slug": "icc-combination-residential-inspector",
+      "name": "ICC Combination Residential Inspector (R2)",
+      "short": "R2",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "R2"
+      ],
+      "blurb": "Certifies combined building, mechanical, plumbing and electrical inspection of one- and two-family dwellings."
+    },
+    {
+      "slug": "icc-commercial-building-inspector",
+      "name": "ICC Commercial Building Inspector (B2)",
+      "short": "B2",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "B2"
+      ],
+      "blurb": "Certifies inspection of commercial and multifamily buildings for compliance with the International Building Code."
+    },
+    {
+      "slug": "icc-commercial-electrical-inspector",
+      "name": "ICC Commercial Electrical Inspector (E2)",
+      "short": "E2",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "E2"
+      ],
+      "blurb": "Certifies inspection of commercial electrical systems for compliance with the IBC and National Electrical Code."
+    },
+    {
+      "slug": "icc-commercial-mechanical-inspector",
+      "name": "ICC Commercial Mechanical Inspector (M2)",
+      "short": "M2",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "M2"
+      ],
+      "blurb": "Certifies inspection of commercial HVAC and mechanical systems for compliance with the International Mechanical Code."
+    },
+    {
+      "slug": "icc-commercial-plumbing-inspector",
+      "name": "ICC Commercial Plumbing Inspector (P2)",
+      "short": "P2",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "P2"
+      ],
+      "blurb": "Certifies inspection of commercial plumbing systems for compliance with the International Plumbing Code."
+    },
+    {
+      "slug": "icc-electrical-plans-examiner",
+      "name": "ICC Electrical Plans Examiner (E3)",
+      "short": "E3",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "E3"
+      ],
+      "blurb": "Certifies plan review of electrical drawings against the National Electrical Code and applicable building codes."
+    },
+    {
+      "slug": "icc-energy-conservation-inspector",
+      "name": "ICC Energy Conservation Inspector/Plans Examiner",
+      "short": "IECC",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies inspection and plan review of building envelopes and systems for compliance with the Energy Conservation Code."
+    },
+    {
+      "slug": "icc-existing-building-inspector",
+      "name": "ICC Existing Building Inspector",
+      "short": "IEBC",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies evaluation and code compliance of alterations, repairs and change of occupancy in existing buildings under the IEBC."
+    },
+    {
+      "slug": "icc-fire-inspector-2",
+      "name": "ICC Fire Inspector II (F2)",
+      "short": "F2",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "F2"
+      ],
+      "blurb": "Certifies conduct of fire inspections, hazard correction and code enforcement under the International Fire Code."
+    },
+    {
+      "slug": "icc-green-building-inspector",
+      "name": "ICC Green Building Inspector/Plans Examiner",
+      "short": "ICC CG",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies inspection and plan review of sustainable construction under the International Green Construction Code (IgCC)."
+    },
+    {
+      "slug": "icc-master-code-professional",
+      "name": "ICC Master Code Professional (MCP)",
+      "short": "MCP",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "MCP"
+      ],
+      "blurb": "Highest ICC credential recognising broad mastery across multiple code disciplines and inspection certifications."
+    },
+    {
+      "slug": "icc-permit-technician",
+      "name": "ICC Permit Technician",
+      "short": "ICC PT",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies administrative staff who issue permits, review submittals and manage code-related records for a jurisdiction."
+    },
+    {
+      "slug": "icc-property-maintenance-housing-inspector",
+      "name": "ICC Property Maintenance and Housing Inspector (H2)",
+      "short": "H2",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "H2"
+      ],
+      "blurb": "Certifies inspection of existing structures for safety, sanitation and maintenance under the Property Maintenance Code."
+    },
+    {
+      "slug": "icc-residential-building-inspector",
+      "name": "ICC Residential Building Inspector (B1)",
+      "short": "B1",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "B1"
+      ],
+      "blurb": "Certifies inspection of one- and two-family dwellings and townhouses for compliance with the International Residential Code."
+    },
+    {
+      "slug": "icc-residential-electrical-inspector",
+      "name": "ICC Residential Electrical Inspector (E1)",
+      "short": "E1",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "E1"
+      ],
+      "blurb": "Certifies inspection of electrical installations in dwellings for compliance with the IRC and National Electrical Code."
+    },
+    {
+      "slug": "icc-residential-mechanical-inspector",
+      "name": "ICC Residential Mechanical Inspector (M1)",
+      "short": "M1",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "M1"
+      ],
+      "blurb": "Certifies inspection of HVAC and mechanical systems in dwellings for compliance with the International Residential Code."
+    },
+    {
+      "slug": "icc-residential-plumbing-inspector",
+      "name": "ICC Residential Plumbing Inspector (P1)",
+      "short": "P1",
+      "category": "trades",
+      "group": "Building Codes & Inspection",
+      "body": "International Code Council (ICC)",
+      "bodyUrl": "https://www.iccsafe.org",
+      "type": "Certification",
+      "aka": [
+        "P1"
+      ],
+      "blurb": "Certifies inspection of plumbing systems in dwellings for compliance with the International Residential Code."
+    },
+    {
+      "slug": "nfpa-certified-fire-inspector-1",
+      "name": "NFPA Certified Fire Inspector I (CFI-I)",
+      "short": "CFI-I",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Fire Protection Association (NFPA)",
+      "bodyUrl": "https://www.nfpa.org",
+      "type": "Certification",
+      "aka": [
+        "CFI-I"
+      ],
+      "blurb": "Certifies conduct of fire inspections, hazard identification and code enforcement per NFPA 1031."
+    },
+    {
+      "slug": "nfpa-certified-fire-plan-examiner",
+      "name": "NFPA Certified Fire Plan Examiner (CFPE)",
+      "short": "CFPE",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Fire Protection Association (NFPA)",
+      "bodyUrl": "https://www.nfpa.org",
+      "type": "Certification",
+      "aka": [
+        "CFPE"
+      ],
+      "blurb": "Certifies review of fire protection drawings and specifications for code compliance before construction approval."
+    },
+    {
+      "slug": "nfpa-certified-fire-protection-specialist",
+      "name": "NFPA Certified Fire Protection Specialist (CFPS)",
+      "short": "CFPS",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Fire Protection Association (NFPA)",
+      "bodyUrl": "https://www.nfpa.org",
+      "type": "Certification",
+      "aka": [
+        "CFPS"
+      ],
+      "blurb": "Global credential covering fire prevention, protection technology, codes and risk analysis for fire protection professionals."
+    },
+    {
+      "slug": "nfpa-certified-water-based-systems-professional",
+      "name": "NFPA Certified Water-Based Systems Professional (CWBSP)",
+      "short": "CWBSP",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Fire Protection Association (NFPA)",
+      "bodyUrl": "https://www.nfpa.org",
+      "type": "Certification",
+      "aka": [
+        "CWBSP"
+      ],
+      "blurb": "Certifies design and analysis of automatic sprinkler and water-based fire protection systems per NFPA 13, 20 and 25."
+    },
+    {
+      "slug": "nicet-fire-alarm-systems-level-1",
+      "name": "NICET Fire Alarm Systems Level I",
+      "short": "FAS Level I",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "FAS Level I"
+      ],
+      "blurb": "Entry certification covering basic fire alarm system components, inspection and documentation for junior technicians."
+    },
+    {
+      "slug": "nicet-fire-alarm-systems-level-2",
+      "name": "NICET Fire Alarm Systems Level II",
+      "short": "FAS Level II",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "FAS Level II"
+      ],
+      "blurb": "Intermediate certification covering system layout, installation, testing and code requirements for fire alarm systems."
+    },
+    {
+      "slug": "nicet-fire-alarm-systems-level-3",
+      "name": "NICET Fire Alarm Systems Level III",
+      "short": "FAS Level III",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "FAS Level III"
+      ],
+      "blurb": "Advanced certification covering engineering analysis, system design and complex fire alarm project management."
+    },
+    {
+      "slug": "nicet-fire-alarm-systems-level-4",
+      "name": "NICET Fire Alarm Systems Level IV",
+      "short": "FAS Level IV",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "FAS Level IV"
+      ],
+      "blurb": "Senior certification covering fire alarm engineering, code interpretation and oversight of large engineered systems."
+    },
+    {
+      "slug": "nicet-inspection-testing-fire-alarm-level-1",
+      "name": "NICET Inspection and Testing of Fire Alarm Systems Level I",
+      "short": "ITFAS Level I",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "ITFAS Level I"
+      ],
+      "blurb": "Certifies inspection, testing and maintenance of installed fire alarm systems and documentation of results."
+    },
+    {
+      "slug": "nicet-inspection-testing-fire-alarm-level-2",
+      "name": "NICET Inspection and Testing of Fire Alarm Systems Level II",
+      "short": "ITFAS Level II",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "ITFAS Level II"
+      ],
+      "blurb": "Advanced certification covering complex fire alarm system ITM, troubleshooting and code-compliant reporting."
+    },
+    {
+      "slug": "nicet-inspection-testing-water-based-level-1",
+      "name": "NICET Inspection and Testing of Water-Based Systems Level I",
+      "short": "ITWBS Level I",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "ITWBS Level I"
+      ],
+      "blurb": "Certifies inspection and testing of sprinkler and water-based systems for proper operation and code compliance."
+    },
+    {
+      "slug": "nicet-inspection-testing-water-based-level-2",
+      "name": "NICET Inspection and Testing of Water-Based Systems Level II",
+      "short": "ITWBS Level II",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "ITWBS Level II"
+      ],
+      "blurb": "Advanced certification covering complex water-based system ITM, flow testing and deficiency correction."
+    },
+    {
+      "slug": "nicet-special-hazards-suppression-level-1",
+      "name": "NICET Special Hazards Suppression Systems Level I",
+      "short": "SHS Level I",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "SHS Level I"
+      ],
+      "blurb": "Entry certification covering installation and testing of gaseous, foam and other special suppression systems."
+    },
+    {
+      "slug": "nicet-special-hazards-suppression-level-2",
+      "name": "NICET Special Hazards Suppression Systems Level II",
+      "short": "SHS Level II",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "SHS Level II"
+      ],
+      "blurb": "Advanced certification covering design, commissioning and ITM of special hazard fire suppression systems."
+    },
+    {
+      "slug": "nicet-water-based-systems-layout-level-1",
+      "name": "NICET Water-Based Systems Layout Level I",
+      "short": "WBSL Level I",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "WBSL Level I"
+      ],
+      "blurb": "Entry certification covering basics of sprinkler system layout, hydraulics and related reference standards."
+    },
+    {
+      "slug": "nicet-water-based-systems-layout-level-2",
+      "name": "NICET Water-Based Systems Layout Level II",
+      "short": "WBSL Level II",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "WBSL Level II"
+      ],
+      "blurb": "Intermediate certification covering detailed sprinkler system calculations, drawings and code compliance."
+    },
+    {
+      "slug": "nicet-water-based-systems-layout-level-3",
+      "name": "NICET Water-Based Systems Layout Level III",
+      "short": "WBSL Level III",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "WBSL Level III"
+      ],
+      "blurb": "Advanced certification covering complex water-based layout, special hazards and engineering review."
+    },
+    {
+      "slug": "nicet-water-based-systems-layout-level-4",
+      "name": "NICET Water-Based Systems Layout Level IV",
+      "short": "WBSL Level IV",
+      "category": "trades",
+      "group": "Fire Protection & Life Safety Systems",
+      "body": "National Institute for Certification in Engineering Technologies (NICET)",
+      "bodyUrl": "https://www.nicet.org",
+      "type": "Certification",
+      "aka": [
+        "WBSL Level IV"
+      ],
+      "blurb": "Senior certification covering engineered fire protection design, standards and project oversight."
+    }
+  ]
+}

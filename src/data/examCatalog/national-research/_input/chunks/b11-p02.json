@@ -1,0 +1,564 @@
+{
+ "chunkId": "b11-p02",
+ "batch": 11,
+ "part": 2,
+ "categories": [
+  "behavioral-health"
+ ],
+ "groups": [
+  "Counseling",
+  "Social Work",
+  "Psychology Licensure & Board Certification",
+  "Applied Behavior Analysis",
+  "Specialty Clinical Practice"
+ ],
+ "bodies": [
+  "National Board for Certified Counselors",
+  "Association of Social Work Boards",
+  "Association of State and Provincial Psychology Boards",
+  "Center for Credentialing & Education",
+  "Behavior Analyst Certification Board",
+  "American Association of Sexuality Educators, Counselors and Therapists",
+  "Qualified Applied Behavior Analysis Credentialing Board",
+  "American Board of Clinical Neuropsychology",
+  "Biofeedback Certification International Alliance",
+  "Association for Death Education and Counseling",
+  "EMDR International Association",
+  "National Register of Health Service Psychologists"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "ccmhc-certified-clinical-mental-health-counselor",
+   "name": "Certified Clinical Mental Health Counselor",
+   "short": "CCMHC",
+   "category": "behavioral-health",
+   "group": "Counseling",
+   "body": "National Board for Certified Counselors",
+   "bodyUrl": "https://www.nbcc.org",
+   "type": "Certification",
+   "aka": [
+    "CCMHC"
+   ],
+   "blurb": "NBCC speciality credential layered on the NCC, requiring clinical coursework, supervised hours and a taped work sample or clinical examination."
+  },
+  {
+   "slug": "ncc-national-certified-counselor",
+   "name": "National Certified Counselor",
+   "short": "NCC",
+   "category": "behavioral-health",
+   "group": "Counseling",
+   "body": "National Board for Certified Counselors",
+   "bodyUrl": "https://www.nbcc.org",
+   "type": "Certification",
+   "aka": [
+    "NCC"
+   ],
+   "blurb": "Voluntary national counseling credential awarded after graduate study, supervised experience and a passing score on the NCE or NCMHCE."
+  },
+  {
+   "slug": "ncsc-national-certified-school-counselor",
+   "name": "National Certified School Counselor",
+   "short": "NCSC",
+   "category": "behavioral-health",
+   "group": "Counseling",
+   "body": "National Board for Certified Counselors",
+   "bodyUrl": "https://www.nbcc.org",
+   "type": "Certification",
+   "aka": [
+    "NCSC"
+   ],
+   "blurb": "School counseling speciality credential for National Certified Counselors working in K-12 settings, requiring supervised school experience."
+  },
+  {
+   "slug": "ncmhce-national-clinical-mental-health-counseling-examination",
+   "name": "National Clinical Mental Health Counseling Examination",
+   "short": "NCMHCE",
+   "category": "behavioral-health",
+   "group": "Counseling",
+   "body": "National Board for Certified Counselors",
+   "bodyUrl": "https://www.nbcc.org",
+   "type": "Exam",
+   "aka": [
+    "NCMHCE"
+   ],
+   "blurb": "Case-based clinical examination used for mental health counselor licensure, assessing diagnosis, treatment planning and clinical decision making."
+  },
+  {
+   "slug": "nce-national-counselor-examination",
+   "name": "National Counselor Examination for Licensure and Certification",
+   "short": "NCE",
+   "category": "behavioral-health",
+   "group": "Counseling",
+   "body": "National Board for Certified Counselors",
+   "bodyUrl": "https://www.nbcc.org",
+   "type": "Exam",
+   "aka": [
+    "NCE"
+   ],
+   "blurb": "Multiple-choice licensure examination testing counseling theory, human growth, assessment, groups, career development, research and ethics."
+  },
+  {
+   "slug": "nbcc-master-addictions-counselor",
+   "name": "NBCC Master Addictions Counselor",
+   "short": "MAC (NBCC)",
+   "category": "behavioral-health",
+   "group": "Counseling",
+   "body": "National Board for Certified Counselors",
+   "bodyUrl": "https://www.nbcc.org",
+   "type": "Certification",
+   "aka": [
+    "MAC",
+    "NBCC MAC"
+   ],
+   "blurb": "Addictions speciality credential for National Certified Counselors, requiring addiction coursework, supervised hours and the examination for MAC."
+  },
+  {
+   "slug": "aswb-advanced-generalist-examination",
+   "name": "ASWB Advanced Generalist Examination",
+   "short": "ASWB Advanced Generalist",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "Association of Social Work Boards",
+   "bodyUrl": "https://www.aswb.org",
+   "type": "Exam",
+   "aka": [
+    "Advanced Generalist exam"
+   ],
+   "blurb": "Licensure examination for master-level social workers in advanced non-clinical practice, covering macro practice, supervision and programme evaluation."
+  },
+  {
+   "slug": "aswb-associate-examination",
+   "name": "ASWB Associate Examination",
+   "short": "ASWB Associate",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "Association of Social Work Boards",
+   "bodyUrl": "https://www.aswb.org",
+   "type": "Exam",
+   "aka": [
+    "Associate exam"
+   ],
+   "blurb": "Entry ASWB examination used by a small number of jurisdictions for associate-level social work roles below the bachelor category."
+  },
+  {
+   "slug": "aswb-bachelors-examination",
+   "name": "ASWB Bachelors Examination",
+   "short": "ASWB Bachelors",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "Association of Social Work Boards",
+   "bodyUrl": "https://www.aswb.org",
+   "type": "Exam",
+   "aka": [
+    "Bachelors exam",
+    "LBSW exam"
+   ],
+   "blurb": "Entry licensure examination for BSW graduates covering human development, assessment, intervention and professional values and ethics."
+  },
+  {
+   "slug": "aswb-clinical-examination",
+   "name": "ASWB Clinical Examination",
+   "short": "ASWB Clinical",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "Association of Social Work Boards",
+   "bodyUrl": "https://www.aswb.org",
+   "type": "Exam",
+   "aka": [
+    "Clinical exam",
+    "LCSW exam"
+   ],
+   "blurb": "Examination required for clinical social work licensure, focused on diagnosis, psychotherapy, treatment planning and clinical ethics."
+  },
+  {
+   "slug": "aswb-masters-examination",
+   "name": "ASWB Masters Examination",
+   "short": "ASWB Masters",
+   "category": "behavioral-health",
+   "group": "Social Work",
+   "body": "Association of Social Work Boards",
+   "bodyUrl": "https://www.aswb.org",
+   "type": "Exam",
+   "aka": [
+    "Masters exam",
+    "LMSW exam"
+   ],
+   "blurb": "Licensure examination for MSW graduates covering assessment, intervention planning, service delivery and professional relationships and ethics."
+  },
+  {
+   "slug": "asppb-certificate-of-professional-qualification",
+   "name": "Certificate of Professional Qualification in Psychology",
+   "short": "CPQ",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "Association of State and Provincial Psychology Boards",
+   "bodyUrl": "https://www.asppb.net",
+   "type": "Certification",
+   "aka": [
+    "CPQ"
+   ],
+   "blurb": "Mobility credential banking a psychologist credentials so participating jurisdictions can grant licensure without a full re-review."
+  },
+  {
+   "slug": "eppp-part-1-knowledge",
+   "name": "Examination for Professional Practice in Psychology Part 1 (Knowledge)",
+   "short": "EPPP Part 1",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "Association of State and Provincial Psychology Boards",
+   "bodyUrl": "https://www.asppb.net",
+   "type": "Exam",
+   "aka": [
+    "EPPP",
+    "EPPP Part 1"
+   ],
+   "blurb": "Standardised 225-item licensure examination covering biological bases, assessment, treatment, research methods and professional ethics."
+  },
+  {
+   "slug": "eppp-part-2-skills",
+   "name": "Examination for Professional Practice in Psychology Part 2 (Skills)",
+   "short": "EPPP Part 2",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "Association of State and Provincial Psychology Boards",
+   "bodyUrl": "https://www.asppb.net",
+   "type": "Exam",
+   "aka": [
+    "EPPP Part 2",
+    "EPPP Skills"
+   ],
+   "blurb": "Competency-based companion examination measuring applied psychological skills, adopted by a growing number of licensing jurisdictions."
+  },
+  {
+   "slug": "asppb-interjurisdictional-practice-certificate",
+   "name": "Interjurisdictional Practice Certificate",
+   "short": "IPC",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "Association of State and Provincial Psychology Boards",
+   "bodyUrl": "https://www.asppb.net",
+   "type": "Certification",
+   "aka": [
+    "IPC",
+    "PSYPACT IPC"
+   ],
+   "blurb": "PSYPACT credential allowing qualified psychologists to provide telepsychology across participating states under the compact."
+  },
+  {
+   "slug": "acs-approved-clinical-supervisor",
+   "name": "Approved Clinical Supervisor",
+   "short": "ACS",
+   "category": "behavioral-health",
+   "group": "Counseling",
+   "body": "Center for Credentialing & Education",
+   "type": "Certification",
+   "aka": [
+    "ACS"
+   ],
+   "blurb": "National credential for counselors who supervise, requiring graduate supervision coursework, supervised practice hours and endorsement of competence."
+  },
+  {
+   "slug": "bc-tmh-board-certified-telemental-health-provider",
+   "name": "Board Certified TeleMental Health Provider",
+   "short": "BC-TMH",
+   "category": "behavioral-health",
+   "group": "Counseling",
+   "body": "Center for Credentialing & Education",
+   "type": "Certification",
+   "aka": [
+    "BC-TMH"
+   ],
+   "blurb": "Credential for licensed clinicians delivering therapy by video and phone, covering technology, law, ethics and remote crisis management."
+  },
+  {
+   "slug": "dcc-distance-credentialed-counselor",
+   "name": "Distance Credentialed Counselor",
+   "short": "DCC",
+   "category": "behavioral-health",
+   "group": "Counseling",
+   "body": "Center for Credentialing & Education",
+   "type": "Certification",
+   "aka": [
+    "DCC"
+   ],
+   "blurb": "Training-based credential preparing licensed counselors to deliver distance services safely, covering screening, ethics, technology and documentation."
+  },
+  {
+   "slug": "gcdf-global-career-development-facilitator",
+   "name": "Global Career Development Facilitator",
+   "short": "GCDF",
+   "category": "behavioral-health",
+   "group": "Counseling",
+   "body": "Center for Credentialing & Education",
+   "type": "Certification",
+   "aka": [
+    "GCDF"
+   ],
+   "blurb": "Credential for career support practitioners covering assessment, labour market information, programme management and helping skills."
+  },
+  {
+   "slug": "bcaba-board-certified-assistant-behavior-analyst",
+   "name": "Board Certified Assistant Behavior Analyst",
+   "short": "BCaBA",
+   "category": "behavioral-health",
+   "group": "Applied Behavior Analysis",
+   "body": "Behavior Analyst Certification Board",
+   "bodyUrl": "https://www.bacb.com",
+   "type": "Certification",
+   "aka": [
+    "BCaBA"
+   ],
+   "blurb": "Undergraduate-level ABA credential for practitioners who deliver behaviour-analytic services under the supervision of a BCBA."
+  },
+  {
+   "slug": "bcba-board-certified-behavior-analyst",
+   "name": "Board Certified Behavior Analyst",
+   "short": "BCBA",
+   "category": "behavioral-health",
+   "group": "Applied Behavior Analysis",
+   "body": "Behavior Analyst Certification Board",
+   "bodyUrl": "https://www.bacb.com",
+   "type": "Certification",
+   "aka": [
+    "BCBA"
+   ],
+   "blurb": "Graduate-level certification for behaviour analysts, requiring accredited coursework, supervised fieldwork and a 185-question examination."
+  },
+  {
+   "slug": "bcba-d-doctoral-designation",
+   "name": "Board Certified Behavior Analyst — Doctoral",
+   "short": "BCBA-D",
+   "category": "behavioral-health",
+   "group": "Applied Behavior Analysis",
+   "body": "Behavior Analyst Certification Board",
+   "bodyUrl": "https://www.bacb.com",
+   "type": "Certification",
+   "aka": [
+    "BCBA-D"
+   ],
+   "blurb": "Doctoral designation added to an active BCBA certification for analysts holding a qualifying doctorate in behaviour analysis or a related field."
+  },
+  {
+   "slug": "rbt-registered-behavior-technician",
+   "name": "Registered Behavior Technician",
+   "short": "RBT",
+   "category": "behavioral-health",
+   "group": "Applied Behavior Analysis",
+   "body": "Behavior Analyst Certification Board",
+   "bodyUrl": "https://www.bacb.com",
+   "type": "Certification",
+   "aka": [
+    "RBT"
+   ],
+   "blurb": "Paraprofessional ABA credential requiring forty hours of training, a competency assessment and an eighty-five question multiple-choice examination."
+  },
+  {
+   "slug": "aasect-certified-sex-therapist",
+   "name": "AASECT Certified Sex Therapist",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "American Association of Sexuality Educators, Counselors and Therapists",
+   "bodyUrl": "https://www.aasect.org",
+   "type": "Certification",
+   "aka": [
+    "AASECT sex therapist"
+   ],
+   "blurb": "Certification for licensed psychotherapists completing sexuality coursework, a sexual attitude reassessment and supervised sex therapy hours."
+  },
+  {
+   "slug": "aasect-certified-sexuality-counselor",
+   "name": "AASECT Certified Sexuality Counselor",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "American Association of Sexuality Educators, Counselors and Therapists",
+   "bodyUrl": "https://www.aasect.org",
+   "type": "Certification",
+   "aka": [
+    "AASECT sexuality counselor"
+   ],
+   "blurb": "Credential for practitioners providing short-term sexuality counselling, requiring core sexuality training and supervised counselling experience."
+  },
+  {
+   "slug": "aasect-certified-sexuality-educator",
+   "name": "AASECT Certified Sexuality Educator",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "American Association of Sexuality Educators, Counselors and Therapists",
+   "bodyUrl": "https://www.aasect.org",
+   "type": "Certification",
+   "aka": [
+    "AASECT sexuality educator"
+   ],
+   "blurb": "Credential for professionals delivering sexuality education programmes, requiring sexuality coursework, teaching hours and supervision."
+  },
+  {
+   "slug": "qaba-applied-behavior-analysis-technician",
+   "name": "Applied Behavior Analysis Technician",
+   "short": "ABAT",
+   "category": "behavioral-health",
+   "group": "Applied Behavior Analysis",
+   "body": "Qualified Applied Behavior Analysis Credentialing Board",
+   "type": "Certification",
+   "aka": [
+    "ABAT",
+    "QABA ABAT"
+   ],
+   "blurb": "QABA entry credential for paraprofessionals implementing behaviour plans, requiring forty hours of training and a proctored examination."
+  },
+  {
+   "slug": "qaba-qualified-autism-services-practitioner-supervisor",
+   "name": "Qualified Autism Services Practitioner-Supervisor",
+   "short": "QASP-S",
+   "category": "behavioral-health",
+   "group": "Applied Behavior Analysis",
+   "body": "Qualified Applied Behavior Analysis Credentialing Board",
+   "type": "Certification",
+   "aka": [
+    "QASP-S"
+   ],
+   "blurb": "Mid-tier QABA credential for bachelor-level practitioners who supervise technicians and implement autism intervention programmes."
+  },
+  {
+   "slug": "qaba-qualified-behavior-analyst",
+   "name": "Qualified Behavior Analyst",
+   "short": "QBA",
+   "category": "behavioral-health",
+   "group": "Applied Behavior Analysis",
+   "body": "Qualified Applied Behavior Analysis Credentialing Board",
+   "type": "Certification",
+   "aka": [
+    "QBA",
+    "QABA QBA"
+   ],
+   "blurb": "Master-level QABA credential focused on autism and developmental disability services, covering assessment, programme design and supervision."
+  },
+  {
+   "slug": "abpp-clinical-neuropsychology",
+   "name": "ABPP Board Certification in Clinical Neuropsychology",
+   "short": "ABCN",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Clinical Neuropsychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "ABCN",
+    "ABPP-CN"
+   ],
+   "blurb": "Rigorous ABPP speciality board with a written examination, practice samples and oral defence in brain-behaviour assessment and rehabilitation."
+  },
+  {
+   "slug": "abpp-pediatric-neuropsychology",
+   "name": "ABPP Subspecialty Certification in Pediatric Neuropsychology",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "American Board of Clinical Neuropsychology",
+   "bodyUrl": "https://abpp.org",
+   "type": "Certification",
+   "aka": [
+    "Pediatric Neuropsychology subspecialty"
+   ],
+   "blurb": "Subspecialty credential open to board certified clinical neuropsychologists who demonstrate advanced competence with children and adolescents."
+  },
+  {
+   "slug": "bcia-board-certification-in-biofeedback",
+   "name": "BCIA Board Certification in Biofeedback",
+   "short": "BCB",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "Biofeedback Certification International Alliance",
+   "bodyUrl": "https://www.bcia.org",
+   "type": "Certification",
+   "aka": [
+    "BCB",
+    "BCIA biofeedback"
+   ],
+   "blurb": "Certification requiring didactic education, anatomy coursework, mentored practice and an examination in general biofeedback practice."
+  },
+  {
+   "slug": "bcia-board-certification-in-neurofeedback",
+   "name": "BCIA Board Certification in Neurofeedback",
+   "short": "BCN",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "Biofeedback Certification International Alliance",
+   "bodyUrl": "https://www.bcia.org",
+   "type": "Certification",
+   "aka": [
+    "BCN",
+    "EEG biofeedback certification"
+   ],
+   "blurb": "Certification in EEG biofeedback covering neuroanatomy, instrumentation, assessment and treatment planning, plus mentored clinical hours."
+  },
+  {
+   "slug": "thanatology-certification-in-thanatology",
+   "name": "Certification in Thanatology: Death, Dying and Bereavement",
+   "short": "CT",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "Association for Death Education and Counseling",
+   "type": "Certification",
+   "aka": [
+    "CT",
+    "ADEC thanatology certification"
+   ],
+   "blurb": "Examination-based credential for grief and bereavement practitioners covering dying, loss, mourning, assessment and intervention."
+  },
+  {
+   "slug": "thanatology-fellow-in-thanatology",
+   "name": "Fellow in Thanatology: Death, Dying and Bereavement",
+   "short": "FT",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "Association for Death Education and Counseling",
+   "type": "Certification",
+   "aka": [
+    "FT",
+    "ADEC fellow"
+   ],
+   "blurb": "Advanced ADEC designation for certified thanatologists who document additional professional practice, education and contribution to the field."
+  },
+  {
+   "slug": "emdria-approved-basic-training",
+   "name": "EMDRIA Approved EMDR Basic Training",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "EMDR International Association",
+   "bodyUrl": "https://www.emdria.org",
+   "type": "Training",
+   "aka": [
+    "EMDR basic training"
+   ],
+   "blurb": "Approved training of at least fifty hours combining instruction, supervised practicum and consultation, and the prerequisite for EMDR certification."
+  },
+  {
+   "slug": "emdria-certified-therapist",
+   "name": "EMDRIA Certified Therapist in EMDR Therapy",
+   "category": "behavioral-health",
+   "group": "Specialty Clinical Practice",
+   "body": "EMDR International Association",
+   "bodyUrl": "https://www.emdria.org",
+   "type": "Certification",
+   "aka": [
+    "EMDR certification",
+    "EMDRIA certified"
+   ],
+   "blurb": "Certification requiring completed EMDR basic training, fifty EMDR sessions with clients and twenty hours of consultation with an approved consultant."
+  },
+  {
+   "slug": "national-register-health-service-psychologist",
+   "name": "National Register Health Service Psychologist",
+   "short": "HSP",
+   "category": "behavioral-health",
+   "group": "Psychology Licensure & Board Certification",
+   "body": "National Register of Health Service Psychologists",
+   "type": "Certification",
+   "aka": [
+    "HSP",
+    "National Register credential"
+   ],
+   "blurb": "Credentialing bank verifying doctoral education, internship and supervised experience for licensed psychologists providing health services."
+  }
+ ]
+}

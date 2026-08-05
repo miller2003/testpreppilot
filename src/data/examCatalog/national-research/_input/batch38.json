@@ -1,0 +1,1437 @@
+{
+  "batch": "38",
+  "categories": [
+    "trades"
+  ],
+  "groups": [
+    "Automotive & Diesel",
+    "HVAC/Refrigeration & Energy",
+    "NCCER & Craft Training"
+  ],
+  "examCount": 110,
+  "bodyCount": 10,
+  "bodies": [
+    "National Institute for Automotive Service Excellence (ASE)",
+    "State motor vehicle repair licensing agencies",
+    "U.S. Environmental Protection Agency approved programmes",
+    "Inter-Industry Conference on Auto Collision Repair (I-CAR)",
+    "Association of Energy Engineers (AEE)",
+    "Building Performance Institute (BPI)",
+    "ESCO Institute / HVAC Excellence",
+    "North American Technician Excellence (NATE)",
+    "Residential Energy Services Network (RESNET)",
+    "NCCER"
+  ],
+  "exams": [
+    {
+      "slug": "ase-a1-engine-repair",
+      "name": "ASE A1 Engine Repair Certification Test",
+      "short": "ASE A1",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "A1"
+      ],
+      "blurb": "Automobile series test covering diagnosis and repair of engine mechanical, lubrication, cooling and fuel systems on cars and light trucks."
+    },
+    {
+      "slug": "ase-a2-automatic-transmission",
+      "name": "ASE A2 Automatic Transmission/Transaxle Certification Test",
+      "short": "ASE A2",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "A2"
+      ],
+      "blurb": "Automobile series test on diagnosis, in-vehicle service and overhaul of automatic transmissions and transaxles, including electronic controls."
+    },
+    {
+      "slug": "ase-a3-manual-drive-train-axles",
+      "name": "ASE A3 Manual Drive Train and Axles Certification Test",
+      "short": "ASE A3",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "A3"
+      ],
+      "blurb": "Automobile series test covering clutches, manual transmissions, transaxles, drive shafts, differentials and four-wheel drive components."
+    },
+    {
+      "slug": "ase-a4-suspension-steering",
+      "name": "ASE A4 Suspension and Steering Certification Test",
+      "short": "ASE A4",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "A4"
+      ],
+      "blurb": "Automobile series test on steering systems, suspension components, wheel alignment, wheels and tyres for cars and light trucks."
+    },
+    {
+      "slug": "ase-a5-brakes",
+      "name": "ASE A5 Brakes Certification Test",
+      "short": "ASE A5",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "A5"
+      ],
+      "blurb": "Automobile series test covering hydraulic, power assist, disc, drum, parking brake, antilock and traction control brake systems."
+    },
+    {
+      "slug": "ase-a6-electrical-electronic-systems",
+      "name": "ASE A6 Electrical/Electronic Systems Certification Test",
+      "short": "ASE A6",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "A6"
+      ],
+      "blurb": "Automobile series test on battery, starting, charging, lighting, instrumentation, accessory and network communication diagnosis."
+    },
+    {
+      "slug": "ase-a7-heating-air-conditioning",
+      "name": "ASE A7 Heating and Air Conditioning Certification Test",
+      "short": "ASE A7",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "A7"
+      ],
+      "blurb": "Automobile series test covering refrigeration system diagnosis, heating and engine cooling, operating controls and refrigerant recovery."
+    },
+    {
+      "slug": "ase-a8-engine-performance",
+      "name": "ASE A8 Engine Performance Certification Test",
+      "short": "ASE A8",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "A8"
+      ],
+      "blurb": "Automobile series test on driveability diagnosis, ignition, fuel, air induction, emission control and computerised engine controls."
+    },
+    {
+      "slug": "ase-a9-light-vehicle-diesel-engines",
+      "name": "ASE A9 Light Vehicle Diesel Engines Certification Test",
+      "short": "ASE A9",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "A9"
+      ],
+      "blurb": "Automobile series test covering diesel engine diagnosis and repair in light-duty pickups and vans, including fuel and emission systems."
+    },
+    {
+      "slug": "ase-advanced-level-specialist",
+      "name": "ASE Advanced Level Specialist Certification",
+      "short": "ASE L Series",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "L Series",
+        "Advanced Level"
+      ],
+      "blurb": "Umbrella for the ASE L-series advanced diagnostic tests, which require three years of experience and a composite vehicle reference booklet."
+    },
+    {
+      "slug": "ase-b2-painting-refinishing",
+      "name": "ASE B2 Painting and Refinishing Certification Test",
+      "short": "ASE B2",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "B2"
+      ],
+      "blurb": "Collision repair series test on surface preparation, spray gun operation, paint mixing, application and finish defect correction."
+    },
+    {
+      "slug": "ase-b3-non-structural-damage-repair",
+      "name": "ASE B3 Non-Structural Analysis and Damage Repair Certification Test",
+      "short": "ASE B3",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "B3"
+      ],
+      "blurb": "Collision repair series test covering outer body panel repair, metal finishing, plastic repair, welding and corrosion protection."
+    },
+    {
+      "slug": "ase-b4-structural-damage-repair",
+      "name": "ASE B4 Structural Analysis and Damage Repair Certification Test",
+      "short": "ASE B4",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "B4"
+      ],
+      "blurb": "Collision repair series test on frame and unibody measurement, straightening, sectioning and structural component replacement."
+    },
+    {
+      "slug": "ase-b5-mechanical-electrical-components",
+      "name": "ASE B5 Mechanical and Electrical Components Certification Test",
+      "short": "ASE B5",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "B5"
+      ],
+      "blurb": "Collision repair series test covering suspension, steering, brakes, electrical, restraint and cooling components affected by collisions."
+    },
+    {
+      "slug": "ase-b6-damage-analysis-estimating",
+      "name": "ASE B6 Damage Analysis and Estimating Certification Test",
+      "short": "ASE B6",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "B6"
+      ],
+      "blurb": "Collision estimator test on damage analysis, repair versus replace decisions, estimating systems and customer and insurer communication."
+    },
+    {
+      "slug": "ase-c1-service-consultant",
+      "name": "ASE C1 Automobile Service Consultant Certification Test",
+      "short": "ASE C1",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "C1"
+      ],
+      "blurb": "Test for service writers and advisors covering vehicle systems knowledge, customer relations, sales skills and shop workflow management."
+    },
+    {
+      "slug": "ase-e1-truck-equipment-installation",
+      "name": "ASE E1 Truck Equipment Installation and Repair Certification Test",
+      "short": "ASE E1",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "E1"
+      ],
+      "blurb": "Truck equipment series test on mounting bodies, frames, hydraulics and weight distribution when upfitting commercial truck chassis."
+    },
+    {
+      "slug": "ase-e2-truck-electrical-installation",
+      "name": "ASE E2 Electrical/Electronic Systems Installation and Repair Certification Test",
+      "short": "ASE E2",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "E2"
+      ],
+      "blurb": "Truck equipment series test covering wiring, circuit protection, lighting and electronic accessory installation on commercial truck bodies."
+    },
+    {
+      "slug": "ase-e3-auxiliary-power-systems",
+      "name": "ASE E3 Auxiliary Power Systems Installation and Repair Certification Test",
+      "short": "ASE E3",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "E3"
+      ],
+      "blurb": "Truck equipment series test on installing and servicing power take-off, hydraulic pumps, generators and other auxiliary power systems."
+    },
+    {
+      "slug": "ase-entry-level-student-certification",
+      "name": "ASE Entry-Level Certification Tests",
+      "short": "ASE Entry-Level",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "ASE Student Certification"
+      ],
+      "blurb": "Student-level tests in automobile, collision and medium-heavy truck areas for career and technical education programme graduates."
+    },
+    {
+      "slug": "ase-f1-alternate-fuels-cng",
+      "name": "ASE F1 Alternate Fuels Compressed Natural Gas Vehicle Certification Test",
+      "short": "ASE F1",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "F1"
+      ],
+      "blurb": "Test covering diagnosis, service and repair of compressed natural gas fuel systems, cylinders and engine controls on light vehicles."
+    },
+    {
+      "slug": "ase-g1-maintenance-light-repair",
+      "name": "ASE G1 Auto Maintenance and Light Repair Certification Test",
+      "short": "ASE G1",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "G1"
+      ],
+      "blurb": "Entry test on the most common maintenance and light repair tasks, requiring one year of experience and available by remote proctoring."
+    },
+    {
+      "slug": "ase-h1-transit-bus-cng-engines",
+      "name": "ASE H1 Transit Bus Compressed Natural Gas Engines Certification Test",
+      "short": "ASE H1",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "H1"
+      ],
+      "blurb": "Transit bus series test on compressed natural gas engine diagnosis, fuel storage systems, emissions and related safety procedures."
+    },
+    {
+      "slug": "ase-h2-transit-bus-diesel-engines",
+      "name": "ASE H2 Transit Bus Diesel Engines Certification Test",
+      "short": "ASE H2",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "H2"
+      ],
+      "blurb": "Transit bus series test covering diesel engine diagnosis, fuel injection, air induction, exhaust aftertreatment and cooling systems."
+    },
+    {
+      "slug": "ase-h3-transit-bus-drive-train",
+      "name": "ASE H3 Transit Bus Drive Train Certification Test",
+      "short": "ASE H3",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "H3"
+      ],
+      "blurb": "Transit bus series test on automatic transmissions, driveline components, differentials and axle service for heavy transit vehicles."
+    },
+    {
+      "slug": "ase-h4-transit-bus-brakes",
+      "name": "ASE H4 Transit Bus Brakes Certification Test",
+      "short": "ASE H4",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "H4"
+      ],
+      "blurb": "Transit bus series test covering air and hydraulic brake systems, antilock controls, foundation brakes and parking brake service."
+    },
+    {
+      "slug": "ase-h5-transit-bus-suspension-steering",
+      "name": "ASE H5 Transit Bus Suspension and Steering Certification Test",
+      "short": "ASE H5",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "H5"
+      ],
+      "blurb": "Transit bus series test on air suspension, steering gears, kneeling systems, alignment and wheel and tyre service for buses."
+    },
+    {
+      "slug": "ase-h6-transit-bus-electrical",
+      "name": "ASE H6 Transit Bus Electrical/Electronic Systems Certification Test",
+      "short": "ASE H6",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "H6"
+      ],
+      "blurb": "Transit bus series test covering batteries, charging, starting, lighting, multiplexed networks and accessory electrical diagnosis."
+    },
+    {
+      "slug": "ase-h7-transit-bus-hvac",
+      "name": "ASE H7 Transit Bus Heating, Ventilation and Air Conditioning Certification Test",
+      "short": "ASE H7",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "H7"
+      ],
+      "blurb": "Transit bus series test on bus climate control, refrigeration circuits, heating loops, controls and refrigerant handling procedures."
+    },
+    {
+      "slug": "ase-h8-transit-bus-preventive-maintenance",
+      "name": "ASE H8 Transit Bus Preventive Maintenance and Inspection Certification Test",
+      "short": "ASE H8",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "H8"
+      ],
+      "blurb": "Transit bus series test covering scheduled inspection routines, fluid and filter service, road testing and defect documentation."
+    },
+    {
+      "slug": "ase-l1-advanced-engine-performance",
+      "name": "ASE L1 Advanced Engine Performance Specialist Certification Test",
+      "short": "ASE L1",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "L1"
+      ],
+      "blurb": "Advanced test on sophisticated driveability and emissions diagnosis, using a composite vehicle reference booklet during the exam."
+    },
+    {
+      "slug": "ase-l2-electronic-diesel-diagnosis",
+      "name": "ASE L2 Electronic Diesel Engine Diagnosis Specialist Certification Test",
+      "short": "ASE L2",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "L2"
+      ],
+      "blurb": "Advanced test on diagnosing electronically controlled diesel engine performance faults in medium- and heavy-duty trucks and buses."
+    },
+    {
+      "slug": "ase-l3-hybrid-electric-vehicle",
+      "name": "ASE L3 Light Duty Hybrid/Electric Vehicle Specialist Certification Test",
+      "short": "ASE L3",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "L3"
+      ],
+      "blurb": "Advanced test on high-voltage safety, battery packs, electric drive units and regenerative braking in hybrid and electric vehicles."
+    },
+    {
+      "slug": "ase-l4-adas-specialist",
+      "name": "ASE L4 Advanced Driver Assistance Systems Specialist Certification Test",
+      "short": "ASE L4",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "L4",
+        "ADAS"
+      ],
+      "blurb": "Advanced test covering diagnosis, service and calibration of radar, camera and ultrasonic driver assistance systems on light vehicles."
+    },
+    {
+      "slug": "ase-military-tactical-wheeled-vehicle",
+      "name": "ASE Military Tactical Wheeled Vehicle Certification Tests",
+      "short": "ASE MIL",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "MIL1-MIL8"
+      ],
+      "blurb": "Eight-test series covering diagnosis, service and repair of the drivetrain, brake, electrical and hydraulic systems of tactical wheeled vehicles."
+    },
+    {
+      "slug": "ase-p1-medium-heavy-truck-parts",
+      "name": "ASE P1 Medium-Heavy Truck Parts Specialist Certification Test",
+      "short": "ASE P1",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "P1"
+      ],
+      "blurb": "Parts specialist test on truck part identification, cataloguing, inventory control and counter sales for medium and heavy trucks."
+    },
+    {
+      "slug": "ase-p2-automobile-parts-specialist",
+      "name": "ASE P2 Automobile Parts Specialist Certification Test",
+      "short": "ASE P2",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "P2"
+      ],
+      "blurb": "Parts specialist test covering automotive part identification, catalogue use, inventory management and customer counter service."
+    },
+    {
+      "slug": "ase-s1-school-bus-body-systems",
+      "name": "ASE S1 School Bus Body Systems and Special Equipment Certification Test",
+      "short": "ASE S1",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "S1"
+      ],
+      "blurb": "School bus series test on body components, entrance doors, wheelchair lifts, warning systems and other special pupil transport equipment."
+    },
+    {
+      "slug": "ase-s2-school-bus-diesel-engines",
+      "name": "ASE S2 School Bus Diesel Engines Certification Test",
+      "short": "ASE S2",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "S2"
+      ],
+      "blurb": "School bus series test covering diesel engine diagnosis, fuel and air systems, aftertreatment and cooling on Type A to D buses."
+    },
+    {
+      "slug": "ase-s3-school-bus-drive-train",
+      "name": "ASE S3 School Bus Drive Train Certification Test",
+      "short": "ASE S3",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "S3"
+      ],
+      "blurb": "School bus series test on transmissions, driveshafts, differentials and axle assemblies used in pupil transportation vehicles."
+    },
+    {
+      "slug": "ase-s4-school-bus-brakes",
+      "name": "ASE S4 School Bus Brakes Certification Test",
+      "short": "ASE S4",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "S4"
+      ],
+      "blurb": "School bus series test covering air and hydraulic brake diagnosis, antilock systems, foundation brakes and parking brake service."
+    },
+    {
+      "slug": "ase-s5-school-bus-suspension-steering",
+      "name": "ASE S5 School Bus Suspension and Steering Certification Test",
+      "short": "ASE S5",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "S5"
+      ],
+      "blurb": "School bus series test on steering gears, suspension components, frame inspection, alignment and wheel and tyre servicing."
+    },
+    {
+      "slug": "ase-s6-school-bus-electrical",
+      "name": "ASE S6 School Bus Electrical/Electronic Systems Certification Test",
+      "short": "ASE S6",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "S6"
+      ],
+      "blurb": "School bus series test covering batteries, charging and starting circuits, lighting, gauges and student safety warning electronics."
+    },
+    {
+      "slug": "ase-s7-school-bus-air-conditioning",
+      "name": "ASE S7 School Bus Air Conditioning Systems and Controls Certification Test",
+      "short": "ASE S7",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "S7"
+      ],
+      "blurb": "School bus series test on refrigeration circuits, heating systems, controls and refrigerant recovery, not required for master status."
+    },
+    {
+      "slug": "ase-t1-truck-gasoline-engines",
+      "name": "ASE T1 Medium-Heavy Truck Gasoline Engines Certification Test",
+      "short": "ASE T1",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "T1"
+      ],
+      "blurb": "Medium-heavy truck series test on gasoline engine diagnosis and repair, not required for Master Medium-Heavy Truck Technician status."
+    },
+    {
+      "slug": "ase-t2-truck-diesel-engines",
+      "name": "ASE T2 Medium-Heavy Truck Diesel Engines Certification Test",
+      "short": "ASE T2",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "T2"
+      ],
+      "blurb": "Medium-heavy truck series test covering diesel engine mechanical repair, fuel systems, air induction, exhaust and cooling diagnosis."
+    },
+    {
+      "slug": "ase-t3-truck-drive-train",
+      "name": "ASE T3 Medium-Heavy Truck Drive Train Certification Test",
+      "short": "ASE T3",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "T3"
+      ],
+      "blurb": "Medium-heavy truck series test on clutches, manual and automated transmissions, driveshafts, carriers and drive axle assemblies."
+    },
+    {
+      "slug": "ase-t4-truck-brakes",
+      "name": "ASE T4 Medium-Heavy Truck Brakes Certification Test",
+      "short": "ASE T4",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "T4"
+      ],
+      "blurb": "Medium-heavy truck series test covering air brake systems, compressors, valves, drum and disc foundation brakes and antilock controls."
+    },
+    {
+      "slug": "ase-t5-truck-suspension-steering",
+      "name": "ASE T5 Medium-Heavy Truck Suspension and Steering Certification Test",
+      "short": "ASE T5",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "T5"
+      ],
+      "blurb": "Medium-heavy truck series test on steering linkage, power steering, suspension, frame, alignment and wheel end service."
+    },
+    {
+      "slug": "ase-t6-truck-electrical",
+      "name": "ASE T6 Medium-Heavy Truck Electrical/Electronic Systems Certification Test",
+      "short": "ASE T6",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "T6"
+      ],
+      "blurb": "Medium-heavy truck series test covering batteries, charging, cranking, lighting, instrumentation and vehicle data bus diagnosis."
+    },
+    {
+      "slug": "ase-t7-truck-hvac",
+      "name": "ASE T7 Medium-Heavy Truck Heating, Ventilation and Air Conditioning Certification Test",
+      "short": "ASE T7",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "T7"
+      ],
+      "blurb": "Medium-heavy truck series test on cab climate control diagnosis, refrigeration components, heating systems and refrigerant recovery."
+    },
+    {
+      "slug": "ase-t8-truck-preventive-maintenance",
+      "name": "ASE T8 Medium-Heavy Truck Preventive Maintenance Inspection Certification Test",
+      "short": "ASE T8",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "T8",
+        "PMI"
+      ],
+      "blurb": "Medium-heavy truck series test covering federal inspection requirements, scheduled servicing and defect reporting for commercial fleets."
+    },
+    {
+      "slug": "ase-x1-exhaust-systems",
+      "name": "ASE X1 Undercar Specialist Exhaust Systems Certification Test",
+      "short": "ASE X1",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "X1"
+      ],
+      "blurb": "Undercar specialist test on exhaust system inspection, pipe fabrication, catalytic converters and emissions legality requirements."
+    },
+    {
+      "slug": "ase-xev-level-1-electrical-safety",
+      "name": "ASE xEV Level 1 Electrical Safety Awareness Certification",
+      "short": "xEV Level 1",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "xEV1"
+      ],
+      "blurb": "High-voltage safety awareness credential for anyone working around electrified vehicles in dealerships, shops and towing operations."
+    },
+    {
+      "slug": "ase-xev-level-2-technician-safety",
+      "name": "ASE xEV Level 2 Technician Electrical Safety Certification",
+      "short": "xEV Level 2",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "National Institute for Automotive Service Excellence (ASE)",
+      "bodyUrl": "https://www.ase.com",
+      "type": "Certification",
+      "aka": [
+        "xEV2"
+      ],
+      "blurb": "Technician-level credential on de-energising, verifying and safely servicing high-voltage systems in hybrid and battery electric vehicles."
+    },
+    {
+      "slug": "automotive-service-technician-state-licence",
+      "name": "Automotive Service Technician State Licensing Examination",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "State motor vehicle repair licensing agencies",
+      "type": "License",
+      "aka": [
+        "Auto Mechanic License"
+      ],
+      "blurb": "Umbrella for the small number of states that license motor vehicle repair technicians by specialty area rather than relying on ASE alone."
+    },
+    {
+      "slug": "epa-609-mvac-certification",
+      "name": "EPA Section 609 Motor Vehicle Air Conditioning Technician Certification",
+      "short": "EPA 609",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "U.S. Environmental Protection Agency approved programmes",
+      "type": "Certification",
+      "aka": [
+        "Section 609"
+      ],
+      "blurb": "Federally required credential for technicians who service motor vehicle air conditioning systems and handle automotive refrigerants."
+    },
+    {
+      "slug": "i-car-platinum-recognition",
+      "name": "I-CAR Platinum Individual Recognition",
+      "short": "I-CAR Platinum",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "Inter-Industry Conference on Auto Collision Repair (I-CAR)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Recognition awarded to collision repair professionals who complete ProLevel 3 in a role and maintain annual continuing education."
+    },
+    {
+      "slug": "i-car-prolevel-1",
+      "name": "I-CAR ProLevel 1 Role-Based Training",
+      "short": "ProLevel 1",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "Inter-Industry Conference on Auto Collision Repair (I-CAR)",
+      "type": "Training",
+      "aka": [],
+      "blurb": "First stage of I-CAR role-based collision repair training, covering foundational knowledge for estimators, technicians and refinishers."
+    },
+    {
+      "slug": "i-car-prolevel-2",
+      "name": "I-CAR ProLevel 2 Role-Based Training",
+      "short": "ProLevel 2",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "Inter-Industry Conference on Auto Collision Repair (I-CAR)",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Second stage of I-CAR role-based collision repair training, adding intermediate repair procedures and vehicle technology knowledge."
+    },
+    {
+      "slug": "i-car-prolevel-3",
+      "name": "I-CAR ProLevel 3 Role-Based Training",
+      "short": "ProLevel 3",
+      "category": "trades",
+      "group": "Automotive & Diesel",
+      "body": "Inter-Industry Conference on Auto Collision Repair (I-CAR)",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Final stage of I-CAR role-based training, completing the knowledge path required for Platinum recognition in a collision repair role."
+    },
+    {
+      "slug": "aee-certified-energy-manager",
+      "name": "Association of Energy Engineers Certified Energy Manager (CEM)",
+      "short": "CEM",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "Association of Energy Engineers (AEE)",
+      "bodyUrl": "https://www.aeecenter.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Premier credential for energy professionals managing energy use, audits and efficiency projects in facilities."
+    },
+    {
+      "slug": "bpi-building-analyst",
+      "name": "Building Performance Institute Building Analyst (BPI BA)",
+      "short": "BPI BA",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "Building Performance Institute (BPI)",
+      "bodyUrl": "https://www.bpihomeowner.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies whole-house energy assessment, blower-door testing and improvement recommendations for existing homes."
+    },
+    {
+      "slug": "epa-608-type-1",
+      "name": "EPA Section 608 Type I Certification",
+      "short": "608 Type I",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "U.S. Environmental Protection Agency approved programmes",
+      "type": "Certification",
+      "aka": [
+        "EPA 608 Type I"
+      ],
+      "blurb": "Federal credential for servicing small appliances containing regulated refrigerants such as household refrigerators."
+    },
+    {
+      "slug": "epa-608-type-2",
+      "name": "EPA Section 608 Type II Certification",
+      "short": "608 Type II",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "U.S. Environmental Protection Agency approved programmes",
+      "type": "Certification",
+      "aka": [
+        "EPA 608 Type II"
+      ],
+      "blurb": "Federal credential for servicing high-pressure HVAC equipment and recovering refrigerant from residential systems."
+    },
+    {
+      "slug": "epa-608-type-3",
+      "name": "EPA Section 608 Type III Certification",
+      "short": "608 Type III",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "U.S. Environmental Protection Agency approved programmes",
+      "type": "Certification",
+      "aka": [
+        "EPA 608 Type III"
+      ],
+      "blurb": "Federal credential for servicing low-pressure appliances such as centrifugal chillers using regulated refrigerants."
+    },
+    {
+      "slug": "epa-608-universal",
+      "name": "EPA Section 608 Universal Certification",
+      "short": "608 Universal",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "U.S. Environmental Protection Agency approved programmes",
+      "type": "Certification",
+      "aka": [
+        "EPA 608 Universal"
+      ],
+      "blurb": "Federal credential combining Type I, II and III approvals to service any appliance containing regulated refrigerants."
+    },
+    {
+      "slug": "hvac-excellence-carbon-monoxide",
+      "name": "HVAC Excellence Carbon Monoxide Safety Certification",
+      "short": "CO Safety",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "ESCO Institute / HVAC Excellence",
+      "bodyUrl": "https://www.escogroup.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Specialty credential covering combustion analysis, CO detection and prevention of carbon monoxide hazards."
+    },
+    {
+      "slug": "hvac-excellence-employment-ready",
+      "name": "HVAC Excellence Employment Ready Certification",
+      "short": "HVAC Excellence ER",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "ESCO Institute / HVAC Excellence",
+      "bodyUrl": "https://www.escogroup.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Entry credential verifying foundational HVACR knowledge for students entering the workforce."
+    },
+    {
+      "slug": "hvac-excellence-master-specialist",
+      "name": "HVAC Excellence Master Specialist Certification",
+      "short": "Master Specialist",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "ESCO Institute / HVAC Excellence",
+      "bodyUrl": "https://www.escogroup.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Advanced credential in a specific HVACR specialty for technicians with substantial field experience."
+    },
+    {
+      "slug": "hvac-excellence-professional",
+      "name": "HVAC Excellence Professional Technician Certification",
+      "short": "HVAC Excellence Pro",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "ESCO Institute / HVAC Excellence",
+      "bodyUrl": "https://www.escogroup.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certification covering core HVACR competencies for working technicians seeking professional recognition."
+    },
+    {
+      "slug": "nate-air-conditioning",
+      "name": "NATE Air Conditioning Certification",
+      "short": "NATE AC",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "North American Technician Excellence (NATE)",
+      "bodyUrl": "https://www.natefutures.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Specialty certification covering diagnosis, service and installation of central air conditioning systems."
+    },
+    {
+      "slug": "nate-air-distribution",
+      "name": "NATE Air Distribution Certification",
+      "short": "NATE AD",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "North American Technician Excellence (NATE)",
+      "bodyUrl": "https://www.natefutures.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Specialty certification covering duct design, airflow, balancing and static pressure in HVAC air distribution systems."
+    },
+    {
+      "slug": "nate-heat-pumps-air-source",
+      "name": "NATE Air Source Heat Pumps Certification",
+      "short": "NATE HP",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "North American Technician Excellence (NATE)",
+      "bodyUrl": "https://www.natefutures.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Specialty certification covering installation and service of air source heat pump heating and cooling systems."
+    },
+    {
+      "slug": "nate-commercial-refrigeration",
+      "name": "NATE Commercial Refrigeration Certification",
+      "short": "NATE CR",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "North American Technician Excellence (NATE)",
+      "bodyUrl": "https://www.natefutures.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Specialty certification covering supermarket and commercial refrigeration equipment, racks and controls."
+    },
+    {
+      "slug": "nate-core",
+      "name": "NATE Core Exam",
+      "short": "NATE Core",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "North American Technician Excellence (NATE)",
+      "bodyUrl": "https://www.natefutures.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Foundational exam on safety, tools, measurements and basic refrigeration required before NATE specialty certifications."
+    },
+    {
+      "slug": "nate-gas-furnaces",
+      "name": "NATE Gas Furnaces Certification",
+      "short": "NATE GF",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "North American Technician Excellence (NATE)",
+      "bodyUrl": "https://www.natefutures.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Specialty certification covering gas furnace combustion, ventilation, controls and safety for service technicians."
+    },
+    {
+      "slug": "nate-hvac-efficiency-analyst",
+      "name": "NATE HVAC Efficiency Analyst",
+      "short": "NATE EA",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "North American Technician Excellence (NATE)",
+      "bodyUrl": "https://www.natefutures.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Senior certification covering whole-system performance testing, diagnostics and energy efficiency improvements."
+    },
+    {
+      "slug": "nate-hvac-support-technician",
+      "name": "NATE HVAC Support Technician",
+      "short": "NATE ST",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "North American Technician Excellence (NATE)",
+      "bodyUrl": "https://www.natefutures.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Entry certification for helpers and assistants covering basic HVACR theory, safety and system familiarity."
+    },
+    {
+      "slug": "nate-hydronics-gas",
+      "name": "NATE Hydronics Gas Certification",
+      "short": "NATE HG",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "North American Technician Excellence (NATE)",
+      "bodyUrl": "https://www.natefutures.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Specialty certification covering gas-fired hydronic heating systems, boilers and circulating water loops."
+    },
+    {
+      "slug": "nate-hydronics-oil",
+      "name": "NATE Hydronics Oil Certification",
+      "short": "NATE HO",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "North American Technician Excellence (NATE)",
+      "bodyUrl": "https://www.natefutures.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Specialty certification covering oil-fired hydronic boilers and water-based heating distribution systems."
+    },
+    {
+      "slug": "nate-installation-professional",
+      "name": "NATE Installation Professional",
+      "short": "NATE Install",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "North American Technician Excellence (NATE)",
+      "bodyUrl": "https://www.natefutures.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certification covering proper installation practices, startup and commissioning of residential HVAC equipment."
+    },
+    {
+      "slug": "nate-light-commercial-refrigeration",
+      "name": "NATE Light Commercial Refrigeration Certification",
+      "short": "NATE LCR",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "North American Technician Excellence (NATE)",
+      "bodyUrl": "https://www.natefutures.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Specialty certification covering small commercial refrigeration such as reach-in units and walk-in coolers."
+    },
+    {
+      "slug": "nate-oil-furnaces",
+      "name": "NATE Oil Furnaces Certification",
+      "short": "NATE OF",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "North American Technician Excellence (NATE)",
+      "bodyUrl": "https://www.natefutures.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Specialty certification covering oil-fired furnace burners, controls, maintenance and combustion safety."
+    },
+    {
+      "slug": "nate-service-professional",
+      "name": "NATE Service Professional",
+      "short": "NATE Service",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "North American Technician Excellence (NATE)",
+      "bodyUrl": "https://www.natefutures.org",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certification covering diagnostic and repair skills across HVAC systems for experienced field technicians."
+    },
+    {
+      "slug": "resnet-hers-rater",
+      "name": "RESNET HERS Rater",
+      "short": "HERS Rater",
+      "category": "trades",
+      "group": "HVAC/Refrigeration & Energy",
+      "body": "Residential Energy Services Network (RESNET)",
+      "bodyUrl": "https://www.resnet.us",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Certifies energy rating and modelling of homes, producing the HERS index used in mortgages and energy programmes."
+    },
+    {
+      "slug": "nccer-building-maintenance",
+      "name": "NCCER Building Maintenance",
+      "short": "NCCER Maint",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in maintaining electrical, plumbing, HVAC and structural elements of existing facilities."
+    },
+    {
+      "slug": "nccer-carpenter",
+      "name": "NCCER Carpenter",
+      "short": "NCCER Carpentry",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in framing, finishing, concrete forms and layout for residential and commercial carpentry."
+    },
+    {
+      "slug": "nccer-concrete-finisher",
+      "name": "NCCER Concrete Finisher",
+      "short": "NCCER Concrete",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in placing, finishing, jointing and curing concrete flatwork and structures."
+    },
+    {
+      "slug": "nccer-core-curriculum",
+      "name": "NCCER Core Curriculum",
+      "short": "NCCER Core",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Introductory craft training covering safety, tools, blueprints, math and communication for all NCCER craft pathways."
+    },
+    {
+      "slug": "nccer-crane-operator",
+      "name": "NCCER Crane Operator",
+      "short": "NCCER Crane",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in crane setup, load charts, rigging and signalling for mobile crane operation."
+    },
+    {
+      "slug": "nccer-drywall",
+      "name": "NCCER Drywall Applications",
+      "short": "NCCER Drywall",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in hanging, finishing and repairing gypsum wallboard for interior construction."
+    },
+    {
+      "slug": "nccer-electrical",
+      "name": "NCCER Electrical",
+      "short": "NCCER Electrician",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in circuits, conduits, motors and the National Electrical Code for construction electricians."
+    },
+    {
+      "slug": "nccer-glazing",
+      "name": "NCCER Glazing",
+      "short": "NCCER Glazier",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in measuring, cutting and installing glass and framing for commercial storefronts."
+    },
+    {
+      "slug": "nccer-heavy-equipment-operator",
+      "name": "NCCER Heavy Equipment Operator",
+      "short": "NCCER HEO",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in safe operation of excavators, dozers, loaders and grade work for site construction."
+    },
+    {
+      "slug": "nccer-hvac",
+      "name": "NCCER HVAC",
+      "short": "NCCER HVAC",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in heating, ventilation, refrigeration and air conditioning installation and service."
+    },
+    {
+      "slug": "nccer-industrial-maintenance",
+      "name": "NCCER Industrial Maintenance",
+      "short": "NCCER IM",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in maintaining mechanical, electrical and fluid power systems in industrial facilities."
+    },
+    {
+      "slug": "nccer-millwright",
+      "name": "NCCER Industrial Millwright",
+      "short": "NCCER Millwright",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in installing, aligning and maintaining industrial machinery, motors and conveyors."
+    },
+    {
+      "slug": "nccer-instrument-fitting",
+      "name": "NCCER Instrument Fitting",
+      "short": "NCCER I+F",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in installing and calibrating process instrumentation and tubing for industrial plants."
+    },
+    {
+      "slug": "nccer-insulation",
+      "name": "NCCER Insulation",
+      "short": "NCCER Insulator",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in thermal and acoustical insulation, vapour barriers and firestopping for mechanical systems."
+    },
+    {
+      "slug": "nccer-lineworker",
+      "name": "NCCER Lineworker",
+      "short": "NCCER Line",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in pole climbing, electrical distribution, safety and operation of power line equipment."
+    },
+    {
+      "slug": "nccer-masonry",
+      "name": "NCCER Masonry",
+      "short": "NCCER Mason",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in brick, block and stone laying, mortar and bond patterns for structural and veneer masonry."
+    },
+    {
+      "slug": "nccer-painting",
+      "name": "NCCER Painting and Coating Application",
+      "short": "NCCER Painting",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in surface preparation, coatings, spray and brush application for architectural finishes."
+    },
+    {
+      "slug": "nccer-pipefitting",
+      "name": "NCCER Pipefitting",
+      "short": "NCCER Pipefitter",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in fabricating, installing and rigging high-pressure piping for industrial and commercial systems."
+    },
+    {
+      "slug": "nccer-plumbing",
+      "name": "NCCER Plumbing",
+      "short": "NCCER Plumbing",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in water supply, drainage, fixtures and code-compliant installation of plumbing systems."
+    },
+    {
+      "slug": "nccer-reinforcing-ironwork",
+      "name": "NCCER Reinforcing Ironwork",
+      "short": "NCCER Iron",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in placing, tying and inspecting reinforcing steel and post-tensioning for concrete structures."
+    },
+    {
+      "slug": "nccer-roofing",
+      "name": "NCCER Roofing",
+      "short": "NCCER Roof",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in steep and low-slope roofing, membranes, flashing and water-proofing systems."
+    },
+    {
+      "slug": "nccer-scaffolding",
+      "name": "NCCER Scaffolding",
+      "short": "NCCER Scaffold",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in erecting, inspecting and dismantling supported and suspended scaffold systems."
+    },
+    {
+      "slug": "nccer-sheet-metal",
+      "name": "NCCER Sheet Metal",
+      "short": "NCCER Sheet Metal",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in fabricating, forming and installing ductwork and architectural sheet metal."
+    },
+    {
+      "slug": "nccer-sprinkler-fitting",
+      "name": "NCCER Sprinkler Fitting",
+      "short": "NCCER Sprinkler",
+      "category": "trades",
+      "group": "NCCER & Craft Training",
+      "body": "NCCER",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Craft training in installing and testing fire sprinkler and standpipe systems per NFPA standards."
+    }
+  ]
+}

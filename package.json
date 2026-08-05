@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "astro build; pagefind --site dist",
     "preview": "astro preview",
-    "format": "prettier --write \"src/**/*.{astro,css,ts,js}\""
+    "format": "prettier --write \"src/**/*.{astro,css,ts,js}\"",
+    "manage": "node manager/server.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",

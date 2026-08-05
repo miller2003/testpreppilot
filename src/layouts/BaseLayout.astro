@@ -11,9 +11,10 @@ interface Props {
   canonical?: string;
   ogImage?: string;
   schema?: object;
+  noindex?: boolean;
 }
 
-const { title, description, canonical, ogImage, schema } = Astro.props;
+const { title, description, canonical, ogImage, schema, noindex } = Astro.props;
 
 const defaultSchema = {
   "@context": "https://schema.org",
@@ -28,14 +29,14 @@ const schemaData = schema || defaultSchema;
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <SEOHead title={title} description={description} canonical={canonical} ogImage={ogImage} />
+    <SEOHead title={title} description={description} canonical={canonical} ogImage={ogImage} noindex={noindex} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script type="application/ld+json" set:html={JSON.stringify(schemaData, null, 2)} is:inline />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <ClientRouter />
   </head>
-  <body>
+  <body data-pagefind-ignore={noindex ? '' : undefined}>
     <Header />
     <main>
       <slot />

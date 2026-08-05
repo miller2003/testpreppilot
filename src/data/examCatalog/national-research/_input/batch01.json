@@ -1,0 +1,492 @@
+{
+  "batch": "01",
+  "categories": [
+    "accounting"
+  ],
+  "groups": [
+    "Accounting & Audit",
+    "Tax Practice",
+    "Public Accounting"
+  ],
+  "examCount": 41,
+  "bodyCount": 17,
+  "bodies": [
+    "Accreditation Council for Accountancy and Taxation (ACAT)",
+    "American Institute of CPAs (AICPA)",
+    "American Society of Appraisers (ASA)",
+    "Internal Revenue Service (IRS)",
+    "American Institute of Professional Bookkeepers (AIPB)",
+    "American Society of Military Comptrollers (ASMC)",
+    "Association of Certified Fraud Examiners (ACFE)",
+    "Institute of Internal Auditors (IIA)",
+    "Association of Government Accountants (AGA)",
+    "PayrollOrg",
+    "National Association of Certified Public Bookkeepers (NACPB)",
+    "Government Finance Officers Association (GFOA)",
+    "National Association of Certified Valuators and Analysts (NACVA)",
+    "AICPA & CIMA",
+    "Institute of Management Accountants (IMA)",
+    "AICPA & NASBA",
+    "Intuit"
+  ],
+  "exams": [
+    {
+      "slug": "acat-aba-credential",
+      "name": "Accredited Business Accountant/Advisor",
+      "short": "ABA",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Accreditation Council for Accountancy and Taxation (ACAT)",
+      "type": "Certification",
+      "aka": [
+        "Comprehensive Examination for Accreditation in Accountancy"
+      ],
+      "blurb": "Two-part accreditation examination covering financial accounting, reporting, taxation and business law for small-business practitioners."
+    },
+    {
+      "slug": "aicpa-abv",
+      "name": "Accredited in Business Valuation Credential",
+      "short": "ABV",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "American Institute of CPAs (AICPA)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Valuation specialty credential examination covering engagement acceptance, valuation approaches, discounts and reporting standards."
+    },
+    {
+      "slug": "asa-accredited-member-valuation",
+      "name": "Accredited Member Business Valuation Designation",
+      "short": "AM",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "American Society of Appraisers (ASA)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "First-tier business valuation designation requiring principles of valuation coursework, examinations and two years of experience."
+    },
+    {
+      "slug": "asa-business-valuation",
+      "name": "Accredited Senior Appraiser in Business Valuation",
+      "short": "ASA (BV)",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "American Society of Appraisers (ASA)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Senior business valuation designation requiring valuation examinations, a submitted report review and five years of full-time practice."
+    },
+    {
+      "slug": "acat-ata",
+      "name": "Accredited Tax Advisor",
+      "short": "ATA",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Accreditation Council for Accountancy and Taxation (ACAT)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Credential for practitioners handling sophisticated tax planning, covering retirement, estate, business and multi-year tax strategy."
+    },
+    {
+      "slug": "acat-atp",
+      "name": "Accredited Tax Preparer",
+      "short": "ATP",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Accreditation Council for Accountancy and Taxation (ACAT)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Entry-level tax accreditation examination covering individual return preparation, deductions, credits and preparer ethics."
+    },
+    {
+      "slug": "irs-afsp-record-of-completion",
+      "name": "Annual Filing Season Program Record of Completion",
+      "short": "AFSP",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Internal Revenue Service (IRS)",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Voluntary annual programme for unenrolled preparers requiring continuing education and a six-hour federal tax refresher course and test."
+    },
+    {
+      "slug": "aipb-certified-bookkeeper",
+      "name": "Certified Bookkeeper",
+      "short": "CB",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "American Institute of Professional Bookkeepers (AIPB)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Four-part national bookkeeping certification covering adjusting entries, error correction, payroll, depreciation and inventory."
+    },
+    {
+      "slug": "cdfm-exams",
+      "name": "Certified Defense Financial Manager Examinations",
+      "short": "CDFM",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "American Society of Military Comptrollers (ASMC)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Three-module certification covering defence resource management, budget and cost analysis, and accounting and finance for DoD comptrollers."
+    },
+    {
+      "slug": "cfe-exam",
+      "name": "Certified Fraud Examiner Exam",
+      "short": "CFE",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Association of Certified Fraud Examiners (ACFE)",
+      "bodyUrl": "https://www.acfe.com",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Four-section examination on financial transactions and fraud schemes, law, investigation techniques and fraud prevention and deterrence."
+    },
+    {
+      "slug": "cgap-exam",
+      "name": "Certified Government Auditing Professional",
+      "short": "CGAP",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Institute of Internal Auditors (IIA)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Specialty certification for public-sector internal auditors covering government audit standards, performance auditing and accountability."
+    },
+    {
+      "slug": "cgfm-exams",
+      "name": "Certified Government Financial Manager Examinations",
+      "short": "CGFM",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Association of Government Accountants (AGA)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Three-examination programme covering the governmental environment, government accounting and reporting, and financial management and control."
+    },
+    {
+      "slug": "ceiv-credential",
+      "name": "Certified in Entity and Intangible Valuations Credential",
+      "short": "CEIV",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "American Institute of CPAs (AICPA)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Fair value credential for valuing entities and intangible assets in financial reporting, with mandatory performance framework compliance."
+    },
+    {
+      "slug": "aicpa-cff",
+      "name": "Certified in Financial Forensics Credential",
+      "short": "CFF",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "American Institute of CPAs (AICPA)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Forensic accounting specialty credential covering fraud prevention, investigation techniques, damages calculation and expert testimony."
+    },
+    {
+      "slug": "cia-part-1",
+      "name": "Certified Internal Auditor Part 1: Essentials of Internal Auditing",
+      "short": "CIA Part 1",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Institute of Internal Auditors (IIA)",
+      "bodyUrl": "https://www.theiia.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "First CIA paper covering internal audit mandate, independence, objectivity, proficiency, governance, risk management and fraud risks."
+    },
+    {
+      "slug": "cia-part-2",
+      "name": "Certified Internal Auditor Part 2: Practice of Internal Auditing",
+      "short": "CIA Part 2",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Institute of Internal Auditors (IIA)",
+      "bodyUrl": "https://www.theiia.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Second CIA paper covering engagement planning, fieldwork supervision, working papers, communication of results and follow-up."
+    },
+    {
+      "slug": "cia-part-3",
+      "name": "Certified Internal Auditor Part 3: Business Knowledge for Internal Auditing",
+      "short": "CIA Part 3",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Institute of Internal Auditors (IIA)",
+      "bodyUrl": "https://www.theiia.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Third CIA paper covering business acumen, information security, IT controls, financial management and data analytics."
+    },
+    {
+      "slug": "cpp-payroll",
+      "name": "Certified Payroll Professional",
+      "short": "CPP",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "PayrollOrg",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Senior payroll certification covering wage and hour law, taxation, benefits, payroll systems, accounting and management practice."
+    },
+    {
+      "slug": "nacpb-cpb",
+      "name": "Certified Public Bookkeeper Licence Exam",
+      "short": "CPB",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "National Association of Certified Public Bookkeepers (NACPB)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Bookkeeping licence examination covering accounting fundamentals, payroll, QuickBooks and bookkeeping ethics for small-business practice."
+    },
+    {
+      "slug": "cpfo-exams",
+      "name": "Certified Public Finance Officer Examinations",
+      "short": "CPFO",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Government Finance Officers Association (GFOA)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Examination series covering government accounting, budgeting, debt management, treasury, procurement and retirement administration."
+    },
+    {
+      "slug": "nacva-cva",
+      "name": "Certified Valuation Analyst Exam",
+      "short": "CVA",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "National Association of Certified Valuators and Analysts (NACVA)",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Business valuation certification requiring a proctored examination plus a case study or sanitised valuation report submission."
+    },
+    {
+      "slug": "cgma-finance-leadership-exam",
+      "name": "CGMA Finance Leadership Program Case Study Exams",
+      "short": "CGMA FLP",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "AICPA & CIMA",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Digital learning pathway with operational, management and strategic case study exams leading to the CGMA management accounting designation."
+    },
+    {
+      "slug": "cma-part-1",
+      "name": "CMA Part 1: Financial Planning, Performance and Analytics",
+      "short": "CMA Part 1",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Institute of Management Accountants (IMA)",
+      "bodyUrl": "https://www.imanet.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "First CMA paper covering external reporting, planning and budgeting, performance management, cost management and internal controls."
+    },
+    {
+      "slug": "cma-part-2",
+      "name": "CMA Part 2: Strategic Financial Management",
+      "short": "CMA Part 2",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Institute of Management Accountants (IMA)",
+      "bodyUrl": "https://www.imanet.org",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Second CMA paper covering financial statement analysis, corporate finance, decision analysis, risk management and professional ethics."
+    },
+    {
+      "slug": "cpa-exam-aud",
+      "name": "CPA Exam Auditing and Attestation Section",
+      "short": "AUD",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "AICPA & NASBA",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Core CPA Examination section covering ethics, audit engagement planning, evidence gathering, internal control and attestation reporting."
+    },
+    {
+      "slug": "cpa-exam-bar",
+      "name": "CPA Exam Business Analysis and Reporting Discipline",
+      "short": "BAR",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "AICPA & NASBA",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "CPA discipline section on advanced financial reporting, data analysis, managerial accounting and state and local government accounting."
+    },
+    {
+      "slug": "cpa-exam-far",
+      "name": "CPA Exam Financial Accounting and Reporting Section",
+      "short": "FAR",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "AICPA & NASBA",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Core CPA Examination section covering the financial reporting framework, financial statement accounts and select transactions."
+    },
+    {
+      "slug": "cpa-exam-isc",
+      "name": "CPA Exam Information Systems and Controls Discipline",
+      "short": "ISC",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "AICPA & NASBA",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "CPA discipline section on IT governance, information systems, security, confidentiality and system and organisation control engagements."
+    },
+    {
+      "slug": "cpa-exam-tcp",
+      "name": "CPA Exam Tax Compliance and Planning Discipline",
+      "short": "TCP",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "AICPA & NASBA",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "CPA discipline section on advanced individual and entity tax compliance, personal financial planning and entity planning transactions."
+    },
+    {
+      "slug": "cpa-exam-reg",
+      "name": "CPA Exam Taxation and Regulation Section",
+      "short": "REG",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "AICPA & NASBA",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Core CPA Examination section covering federal taxation of individuals and entities, business law and professional responsibilities."
+    },
+    {
+      "slug": "fpc-payroll",
+      "name": "Fundamental Payroll Certification",
+      "short": "FPC",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "PayrollOrg",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Entry-level payroll credential covering core payroll concepts, compliance, calculations and payroll systems with no experience requirement."
+    },
+    {
+      "slug": "intuit-academy-tax",
+      "name": "Intuit Academy Tax Exam",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Intuit",
+      "type": "Training",
+      "aka": [
+        "Intuit Academy Tax Level 1",
+        "Intuit Academy Tax Level 2"
+      ],
+      "blurb": "Free training and assessment pathway in individual tax preparation used as a hiring route into remote seasonal tax preparer roles."
+    },
+    {
+      "slug": "irs-certifying-acceptance-agent",
+      "name": "IRS Certifying Acceptance Agent Training",
+      "short": "CAA",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Internal Revenue Service (IRS)",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Mandatory forensic document and ITIN training for agents authorised to certify identity documents for taxpayer identification applications."
+    },
+    {
+      "slug": "nacva-maff",
+      "name": "Master Analyst in Financial Forensics Exam",
+      "short": "MAFF",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "National Association of Certified Valuators and Analysts (NACVA)",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Financial forensics credential with a core examination plus a specialty track such as commercial damages or bankruptcy and insolvency."
+    },
+    {
+      "slug": "aicpa-pfs",
+      "name": "Personal Financial Specialist Credential",
+      "short": "PFS",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "American Institute of CPAs (AICPA)",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Personal financial planning credential for CPAs, covering retirement, estate, insurance, investment and tax planning integration."
+    },
+    {
+      "slug": "quickbooks-certified-proadvisor",
+      "name": "QuickBooks Online Certified ProAdvisor Exam",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Intuit",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Product certification testing QuickBooks Online setup, banking, reporting and client management for bookkeepers and accounting firms."
+    },
+    {
+      "slug": "see-part-1",
+      "name": "Special Enrollment Examination Part 1: Individuals",
+      "short": "SEE Part 1",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Internal Revenue Service (IRS)",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "First enrolled agent paper covering individual taxpayer preliminary work, income, deductions, credits, specialised returns and advising."
+    },
+    {
+      "slug": "see-part-2",
+      "name": "Special Enrollment Examination Part 2: Businesses",
+      "short": "SEE Part 2",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Internal Revenue Service (IRS)",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Second enrolled agent paper covering business entities, business financial information, and specialised returns for trusts and estates."
+    },
+    {
+      "slug": "see-part-3",
+      "name": "Special Enrollment Examination Part 3: Representation, Practices and Procedures",
+      "short": "SEE Part 3",
+      "category": "accounting",
+      "group": "Accounting & Audit",
+      "body": "Internal Revenue Service (IRS)",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Third enrolled agent paper covering practitioner requirements, representation before the IRS, filing procedures and Circular 230 ethics."
+    },
+    {
+      "slug": "enrolled-agent",
+      "name": "Enrolled Agent (Special Enrollment Examination)",
+      "short": "EA",
+      "category": "accounting",
+      "group": "Tax Practice",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "The IRS credential granting unlimited representation rights, earned by passing all three parts of the Special Enrollment Examination."
+    },
+    {
+      "slug": "cpa-exam",
+      "name": "Uniform CPA Examination",
+      "short": "CPA",
+      "category": "accounting",
+      "group": "Public Accounting",
+      "type": "Exam",
+      "aka": [],
+      "blurb": "Three Core sections plus one Discipline section under CPA Evolution, taken alongside the 150-credit-hour education requirement."
+    }
+  ]
+}

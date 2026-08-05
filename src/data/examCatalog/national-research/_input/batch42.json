@@ -1,0 +1,1326 @@
+{
+  "batch": "42",
+  "categories": [
+    "workplace-safety"
+  ],
+  "groups": [
+    "OSHA Outreach & Trainer",
+    "Safety Professional Certifications",
+    "Hazardous Materials & Emergency Response"
+  ],
+  "examCount": 99,
+  "bodyCount": 35,
+  "bodies": [
+    "Occupational Safety and Health Administration (OSHA)",
+    "OSHA Training Institute Education Centers",
+    "Board of Certification in Professional Ergonomics (BCPE)",
+    "Institute for Safety and Health Management (ISHM)",
+    "Board of Certified Safety Professionals (BCSP)",
+    "Institute of Hazardous Materials Management (IHMM)",
+    "National Association of Fire Investigators (NAFI)",
+    "American Board of Industrial Hygiene (ABIH)",
+    "Alliance Safety Council",
+    "National Association of Safety Professionals (NASP)",
+    "Utility Safety and Ops Leadership Network (USOLN)",
+    "Exemplar Global and IRCA-Accredited Training Providers",
+    "National Examination Board in Occupational Safety and Health (NEBOSH)",
+    "Employers under OSHA 29 CFR 1926.453 and ANSI A92 Standards",
+    "Employers under OSHA 29 CFR 1910.1030",
+    "Pipeline and Hazardous Materials Safety Administration (PHMSA)",
+    "Employers under OSHA 29 CFR 1926 Subpart P",
+    "Employers under OSHA 29 CFR 1926 Subpart M",
+    "Employers under OSHA 29 CFR 1910.1200",
+    "Employers under OSHA 29 CFR 1910.120(q)",
+    "Employers under OSHA 29 CFR 1910.120(q) and NFPA 470",
+    "Employers under OSHA 29 CFR 1910.120",
+    "ANSI/ASSP Z390.1 Accepted Practices for H2S Training Programs",
+    "International Air Transport Association (IATA)",
+    "International Maritime Organization (IMDG Code)",
+    "Employers under OSHA 29 CFR 1926.62 and 1910.1025",
+    "Employers under OSHA 29 CFR 1910.147",
+    "National Fire Protection Association (NFPA)",
+    "Employers under OSHA 29 CFR 1910.146 and 1926 Subpart AA",
+    "Employers under OSHA 29 CFR 1910.178",
+    "Employers under OSHA 29 CFR 1910.119",
+    "U.S. Environmental Protection Agency (40 CFR Part 262)",
+    "Employers under OSHA 29 CFR 1926.1153 and 1910.1053",
+    "Employers under OSHA 29 CFR 1910.134",
+    "Employers under OSHA 29 CFR 1926 Subpart L"
+  ],
+  "exams": [
+    {
+      "slug": "osha-10-construction",
+      "name": "OSHA 10-Hour Construction",
+      "short": "OSHA 10",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Ten-hour entry-level outreach course covering the Focus Four hazards, required on many construction sites and by several states."
+    },
+    {
+      "slug": "osha-10-general-industry",
+      "name": "OSHA 10-Hour General Industry Outreach Training",
+      "short": "OSHA 10 GI",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "Occupational Safety and Health Administration (OSHA)",
+      "bodyUrl": "https://www.osha.gov/training/outreach",
+      "type": "Training",
+      "aka": [
+        "OSHA 10 General Industry",
+        "1910 Outreach"
+      ],
+      "blurb": "Ten-hour Outreach Training Program course on 29 CFR 1910 hazards, worker rights and abatement, ending in a DOL completion card."
+    },
+    {
+      "slug": "osha-10-maritime",
+      "name": "OSHA 10-Hour Maritime Industry Outreach Training",
+      "short": "OSHA 10 Maritime",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "Occupational Safety and Health Administration (OSHA)",
+      "bodyUrl": "https://www.osha.gov/training/outreach",
+      "type": "Training",
+      "aka": [
+        "Shipyard Outreach",
+        "Marine Terminals Outreach"
+      ],
+      "blurb": "Ten-hour Outreach course for shipyard, marine terminal and longshoring workers covering hazards under 29 CFR Parts 1915, 1917 and 1918."
+    },
+    {
+      "slug": "osha-2015-hazardous-materials",
+      "name": "OSHA 2015 Hazardous Materials",
+      "short": "OSHA 2015",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 2015"
+      ],
+      "blurb": "Course covering OSHA hazardous materials standards including flammable liquids, spray finishing, dip tanks and welding hazards."
+    },
+    {
+      "slug": "osha-2045-machine-guarding",
+      "name": "OSHA 2045 Machinery and Machine Guarding Standards",
+      "short": "OSHA 2045",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 2045"
+      ],
+      "blurb": "Course on Subpart O machine guarding requirements, point-of-operation safeguards and lockout of hazardous energy during servicing."
+    },
+    {
+      "slug": "osha-2055-cranes-in-construction",
+      "name": "OSHA 2055 Cranes in Construction",
+      "short": "OSHA 2055",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 2055"
+      ],
+      "blurb": "Course on 29 CFR 1926 Subpart CC crane requirements including assembly, operator qualification, signalling and power-line safety."
+    },
+    {
+      "slug": "osha-2225-respiratory-protection",
+      "name": "OSHA 2225 Respiratory Protection",
+      "short": "OSHA 2225",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 2225"
+      ],
+      "blurb": "Course on building a written respiratory protection programme, respirator selection, fit testing and medical evaluation."
+    },
+    {
+      "slug": "osha-2255-principles-of-ergonomics",
+      "name": "OSHA 2255 Principles of Ergonomics",
+      "short": "OSHA 2255",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 2255"
+      ],
+      "blurb": "Course on recognising musculoskeletal risk factors and applying engineering and administrative controls to reduce workplace strain."
+    },
+    {
+      "slug": "osha-2264-confined-space-entry",
+      "name": "OSHA 2264 Permit-Required Confined Space Entry",
+      "short": "OSHA 2264",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 2264"
+      ],
+      "blurb": "Course covering permit space programmes, atmospheric testing instruments, ventilation and non-entry rescue techniques."
+    },
+    {
+      "slug": "osha-30-construction",
+      "name": "OSHA 30-Hour Construction",
+      "short": "OSHA 30",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Supervisor-level outreach training covering hazard recognition, OSHA standards and site safety management responsibilities."
+    },
+    {
+      "slug": "osha-30-general-industry",
+      "name": "OSHA 30-Hour General Industry Outreach Training",
+      "short": "OSHA 30 GI",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "Occupational Safety and Health Administration (OSHA)",
+      "bodyUrl": "https://www.osha.gov/training/outreach",
+      "type": "Training",
+      "aka": [
+        "OSHA 30 General Industry"
+      ],
+      "blurb": "Thirty-hour Outreach course for supervisors and safety staff covering general industry standards, programme management and recordkeeping."
+    },
+    {
+      "slug": "osha-30-maritime",
+      "name": "OSHA 30-Hour Maritime Industry Outreach Training",
+      "short": "OSHA 30 Maritime",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "Occupational Safety and Health Administration (OSHA)",
+      "bodyUrl": "https://www.osha.gov/training/outreach",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Thirty-hour Outreach course for maritime supervisors covering shipyard employment, marine terminals and longshoring safety standards."
+    },
+    {
+      "slug": "osha-3015-excavation-trenching",
+      "name": "OSHA 3015 Excavation, Trenching and Soil Mechanics",
+      "short": "OSHA 3015",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 3015"
+      ],
+      "blurb": "Course on soil classification, sloping, shoring and shielding systems used to protect workers in excavations and trenches."
+    },
+    {
+      "slug": "osha-3085-principles-of-scaffolding",
+      "name": "OSHA 3085 Principles of Scaffolding",
+      "short": "OSHA 3085",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 3085"
+      ],
+      "blurb": "Course covering scaffold types, load capacities, erection and dismantling procedures and Subpart L inspection requirements."
+    },
+    {
+      "slug": "osha-3095-electrical-standards",
+      "name": "OSHA 3095 Electrical Standards",
+      "short": "OSHA 3095",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 3095"
+      ],
+      "blurb": "Course on OSHA electrical standards, hazard analysis, grounding, wiring methods and safety-related work practices."
+    },
+    {
+      "slug": "osha-3115-fall-protection",
+      "name": "OSHA 3115 Fall Protection",
+      "short": "OSHA 3115",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 3115"
+      ],
+      "blurb": "Course on fall hazard recognition, guardrail and net systems, personal fall arrest components and rescue planning."
+    },
+    {
+      "slug": "osha-500-construction-trainer",
+      "name": "OSHA 500 Trainer Course in Occupational Safety and Health Standards for the Construction Industry",
+      "short": "OSHA 500",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 500",
+        "Construction Trainer Course"
+      ],
+      "blurb": "Authorisation course allowing safety professionals to deliver 10-hour and 30-hour construction Outreach classes and issue DOL cards."
+    },
+    {
+      "slug": "osha-501-general-industry-trainer",
+      "name": "OSHA 501 Trainer Course in Occupational Safety and Health Standards for General Industry",
+      "short": "OSHA 501",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 501"
+      ],
+      "blurb": "Authorisation course allowing safety professionals to deliver 10-hour and 30-hour general industry Outreach classes and issue DOL cards."
+    },
+    {
+      "slug": "osha-502-construction-trainer-update",
+      "name": "OSHA 502 Update for Construction Industry Outreach Trainers",
+      "short": "OSHA 502",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 502"
+      ],
+      "blurb": "Four-yearly update course required for authorised construction Outreach trainers to maintain their trainer status."
+    },
+    {
+      "slug": "osha-503-general-industry-trainer-update",
+      "name": "OSHA 503 Update for General Industry Outreach Trainers",
+      "short": "OSHA 503",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 503"
+      ],
+      "blurb": "Four-yearly update course required for authorised general industry Outreach trainers to maintain their trainer status."
+    },
+    {
+      "slug": "osha-510-construction-standards",
+      "name": "OSHA 510 Occupational Safety and Health Standards for the Construction Industry",
+      "short": "OSHA 510",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 510"
+      ],
+      "blurb": "Prerequisite course covering 29 CFR 1926 construction standards for candidates preparing to take the OSHA 500 trainer course."
+    },
+    {
+      "slug": "osha-511-general-industry-standards",
+      "name": "OSHA 511 Occupational Safety and Health Standards for General Industry",
+      "short": "OSHA 511",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 511"
+      ],
+      "blurb": "Prerequisite course covering 29 CFR 1910 general industry standards for candidates preparing to take the OSHA 501 trainer course."
+    },
+    {
+      "slug": "osha-521-industrial-hygiene",
+      "name": "OSHA 521 Guide to Industrial Hygiene",
+      "short": "OSHA 521",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 521"
+      ],
+      "blurb": "Course on industrial hygiene principles, sampling instrumentation, noise, ventilation and chemical exposure evaluation."
+    },
+    {
+      "slug": "osha-5400-maritime-trainer",
+      "name": "OSHA 5400 Trainer Course in Occupational Safety and Health Standards for the Maritime Industry",
+      "short": "OSHA 5400",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 5400"
+      ],
+      "blurb": "Authorisation course allowing instructors to deliver 10-hour and 30-hour maritime Outreach classes and issue DOL completion cards."
+    },
+    {
+      "slug": "osha-5402-maritime-trainer-update",
+      "name": "OSHA 5402 Update for Maritime Industry Outreach Trainers",
+      "short": "OSHA 5402",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 5402"
+      ],
+      "blurb": "Four-yearly update course required for authorised maritime Outreach trainers to retain trainer authorisation."
+    },
+    {
+      "slug": "osha-5410-maritime-standards",
+      "name": "OSHA 5410 Occupational Safety and Health Standards for the Maritime Industry",
+      "short": "OSHA 5410",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 5410"
+      ],
+      "blurb": "Prerequisite course covering shipyard, marine terminal and longshoring standards for candidates entering the OSHA 5400 trainer course."
+    },
+    {
+      "slug": "osha-5600-disaster-site-worker-trainer",
+      "name": "OSHA 5600 Disaster Site Worker Trainer Course",
+      "short": "OSHA 5600",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 5600"
+      ],
+      "blurb": "Authorisation course for instructors delivering the Disaster Site Worker Outreach programme to skilled support personnel."
+    },
+    {
+      "slug": "osha-5602-disaster-site-worker-trainer-update",
+      "name": "OSHA 5602 Update for Disaster Site Worker Trainers",
+      "short": "OSHA 5602",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 5602"
+      ],
+      "blurb": "Update course required at four-year intervals for authorised Disaster Site Worker Outreach trainers."
+    },
+    {
+      "slug": "osha-5810-oil-and-gas-hazards",
+      "name": "OSHA 5810 Hazard Recognition and Standards for On-Shore Oil and Gas Exploration and Production",
+      "short": "OSHA 5810",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 5810"
+      ],
+      "blurb": "Course covering drilling, well servicing and production hazards along with the OSHA standards that apply to upstream oil and gas sites."
+    },
+    {
+      "slug": "osha-6005-collateral-duty-federal-agencies",
+      "name": "OSHA 6005 Collateral Duty Course for Other Federal Agencies",
+      "short": "OSHA 6005",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 6005"
+      ],
+      "blurb": "Course preparing federal collateral-duty safety personnel to conduct workplace inspections under Executive Order 12196."
+    },
+    {
+      "slug": "osha-7000-safe-patient-handling",
+      "name": "OSHA 7000 Training Guidelines for Safe Patient Handling",
+      "short": "OSHA 7000",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 7000"
+      ],
+      "blurb": "Short course on ergonomic risks in patient handling and the lift equipment and programmes that reduce caregiver injuries."
+    },
+    {
+      "slug": "osha-7115-lockout-tagout",
+      "name": "OSHA 7115 Lockout/Tagout",
+      "short": "OSHA 7115",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 7115"
+      ],
+      "blurb": "Short course on developing energy control procedures, applying lockout devices and auditing hazardous energy control programmes."
+    },
+    {
+      "slug": "osha-7200-bloodborne-pathogens",
+      "name": "OSHA 7200 Bloodborne Pathogens Exposure Control for Healthcare Facilities",
+      "short": "OSHA 7200",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 7200"
+      ],
+      "blurb": "Short course on writing exposure control plans and selecting engineering controls for healthcare bloodborne pathogen hazards."
+    },
+    {
+      "slug": "osha-7215-silica",
+      "name": "OSHA 7215 Silica in Construction, Maritime and General Industries",
+      "short": "OSHA 7215",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 7215"
+      ],
+      "blurb": "Short course on the respirable crystalline silica standards, exposure assessment and control methods across three industry sectors."
+    },
+    {
+      "slug": "osha-7300-confined-space-standard",
+      "name": "OSHA 7300 Understanding OSHA's Permit-Required Confined Space Standard",
+      "short": "OSHA 7300",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 7300"
+      ],
+      "blurb": "Short course explaining permit space identification, entry permits, attendant duties and rescue requirements under 1910.146."
+    },
+    {
+      "slug": "osha-7405-fall-hazard-awareness",
+      "name": "OSHA 7405 Fall Hazard Awareness for the Construction Industry",
+      "short": "OSHA 7405",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 7405"
+      ],
+      "blurb": "Short course on common construction fall hazards and the guardrail, net and personal arrest solutions that prevent them."
+    },
+    {
+      "slug": "osha-7500-safety-health-management",
+      "name": "OSHA 7500 Introduction to Safety and Health Management",
+      "short": "OSHA 7500",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 7500"
+      ],
+      "blurb": "Short course introducing management leadership, worker participation, hazard identification and programme evaluation elements."
+    },
+    {
+      "slug": "osha-7505-incident-investigation",
+      "name": "OSHA 7505 Introduction to Incident (Accident) Investigation",
+      "short": "OSHA 7505",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 7505"
+      ],
+      "blurb": "Short course on evidence collection, witness interviewing and root cause analysis techniques for workplace incident investigations."
+    },
+    {
+      "slug": "osha-7510-osha-for-small-business",
+      "name": "OSHA 7510 Introduction to OSHA for Small Business",
+      "short": "OSHA 7510",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 7510"
+      ],
+      "blurb": "Short course orienting small employers to OSHA standards, inspection procedures, consultation services and compliance resources."
+    },
+    {
+      "slug": "osha-7600-disaster-site-worker",
+      "name": "OSHA 7600 Disaster Site Worker Course",
+      "short": "OSHA 7600",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "Disaster Site Worker 15-Hour"
+      ],
+      "blurb": "Fifteen-hour Outreach course preparing skilled support personnel for the hazards and respiratory protection needs of disaster response sites."
+    },
+    {
+      "slug": "osha-7605-disaster-site-worker-refresher",
+      "name": "OSHA 7605 Disaster Site Worker Refresher Course",
+      "short": "OSHA 7605",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "Disaster Site Worker Refresher"
+      ],
+      "blurb": "Shorter refresher of the Disaster Site Worker Outreach programme for personnel maintaining disaster response qualifications."
+    },
+    {
+      "slug": "osha-7845-recordkeeping-rule",
+      "name": "OSHA 7845 Recordkeeping Rule Seminar",
+      "short": "OSHA 7845",
+      "category": "workplace-safety",
+      "group": "OSHA Outreach & Trainer",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Training",
+      "aka": [
+        "OSHA 7845"
+      ],
+      "blurb": "Seminar on 29 CFR 1904 injury and illness recordkeeping, the OSHA 300 log, reporting triggers and electronic submission rules."
+    },
+    {
+      "slug": "associate-ergonomics-professional",
+      "name": "Associate Ergonomics Professional",
+      "short": "AEP",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Board of Certification in Professional Ergonomics (BCPE)",
+      "type": "Certification",
+      "aka": [
+        "AEP"
+      ],
+      "blurb": "Interim BCPE credential for ergonomics graduates who have passed the written examination but not yet completed practice requirements."
+    },
+    {
+      "slug": "associate-safety-and-health-manager",
+      "name": "Associate Safety and Health Manager",
+      "short": "ASHM",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Institute for Safety and Health Management (ISHM)",
+      "type": "Certification",
+      "aka": [
+        "ASHM"
+      ],
+      "blurb": "Entry-level ISHM credential for early-career practitioners moving toward full safety and health management certification."
+    },
+    {
+      "slug": "associate-safety-professional",
+      "name": "Associate Safety Professional",
+      "short": "ASP",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Board of Certified Safety Professionals (BCSP)",
+      "bodyUrl": "https://www.bcsp.org",
+      "type": "Certification",
+      "aka": [
+        "ASP"
+      ],
+      "blurb": "Five-hour examination on safety fundamentals that also satisfies the credential prerequisite for the Certified Safety Professional."
+    },
+    {
+      "slug": "certified-dangerous-goods-professional",
+      "name": "Certified Dangerous Goods Professional",
+      "short": "CDGP",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Institute of Hazardous Materials Management (IHMM)",
+      "type": "Certification",
+      "aka": [
+        "CDGP"
+      ],
+      "blurb": "Certification for professionals managing multimodal dangerous goods shipping compliance under DOT, IATA, IMDG and TDG rules."
+    },
+    {
+      "slug": "certified-environmental-safety-and-health-trainer",
+      "name": "Certified Environmental, Safety and Health Trainer",
+      "short": "CET",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Board of Certified Safety Professionals (BCSP)",
+      "bodyUrl": "https://www.bcsp.org",
+      "type": "Certification",
+      "aka": [
+        "CET"
+      ],
+      "blurb": "BCSP certification for professionals who design and deliver environmental, safety and health training programmes to workers."
+    },
+    {
+      "slug": "certified-ergonomics-associate",
+      "name": "Certified Ergonomics Associate",
+      "short": "CEA",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Board of Certification in Professional Ergonomics (BCPE)",
+      "type": "Certification",
+      "aka": [
+        "CEA"
+      ],
+      "blurb": "Technician-level ergonomics certification for practitioners applying established ergonomic methods and workplace assessment tools."
+    },
+    {
+      "slug": "certified-fire-and-explosion-investigator",
+      "name": "Certified Fire and Explosion Investigator",
+      "short": "CFEI",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "National Association of Fire Investigators (NAFI)",
+      "type": "Certification",
+      "aka": [
+        "CFEI"
+      ],
+      "blurb": "Certification examining origin and cause methodology from NFPA 921 for investigators of fire and explosion incidents."
+    },
+    {
+      "slug": "certified-hazardous-materials-manager",
+      "name": "Certified Hazardous Materials Manager",
+      "short": "CHMM",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Institute of Hazardous Materials Management (IHMM)",
+      "type": "Certification",
+      "aka": [
+        "CHMM"
+      ],
+      "blurb": "Senior certification covering hazardous waste regulation, risk assessment, emergency planning and environmental management systems."
+    },
+    {
+      "slug": "certified-hazardous-materials-practitioner",
+      "name": "Certified Hazardous Materials Practitioner",
+      "short": "CHMP",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Institute of Hazardous Materials Management (IHMM)",
+      "type": "Certification",
+      "aka": [
+        "CHMP"
+      ],
+      "blurb": "Practitioner-level hazardous materials certification for staff implementing waste handling, storage and compliance procedures."
+    },
+    {
+      "slug": "certified-human-factors-professional",
+      "name": "Certified Human Factors Professional",
+      "short": "CHFP",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Board of Certification in Professional Ergonomics (BCPE)",
+      "type": "Certification",
+      "aka": [
+        "CHFP"
+      ],
+      "blurb": "BCPE certification for practitioners applying human factors research to system, interface and equipment design."
+    },
+    {
+      "slug": "certified-industrial-hygienist",
+      "name": "Certified Industrial Hygienist",
+      "short": "CIH",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "American Board of Industrial Hygiene (ABIH)",
+      "type": "Certification",
+      "aka": [
+        "CIH"
+      ],
+      "blurb": "Leading industrial hygiene certification examining exposure assessment, toxicology, ventilation, noise and control strategies."
+    },
+    {
+      "slug": "certified-instructional-trainer",
+      "name": "Certified Instructional Trainer",
+      "short": "CIT",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Board of Certified Safety Professionals (BCSP)",
+      "bodyUrl": "https://www.bcsp.org",
+      "type": "Certification",
+      "aka": [
+        "CIT"
+      ],
+      "blurb": "BCSP credential for trainers demonstrating instructional design and delivery skills across safety and technical subject matter."
+    },
+    {
+      "slug": "certified-occupational-safety-manager",
+      "name": "Certified Occupational Safety Manager",
+      "short": "COSM",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Alliance Safety Council",
+      "type": "Certification",
+      "aka": [
+        "COSM"
+      ],
+      "blurb": "Management-level safety certification covering programme development, leadership, regulatory compliance and performance measurement."
+    },
+    {
+      "slug": "certified-occupational-safety-specialist",
+      "name": "Certified Occupational Safety Specialist",
+      "short": "COSS",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Alliance Safety Council",
+      "type": "Certification",
+      "aka": [
+        "COSS"
+      ],
+      "blurb": "Multi-day course and examination on OSHA general industry and construction standards for site-level safety specialists."
+    },
+    {
+      "slug": "certified-professional-ergonomist",
+      "name": "Certified Professional Ergonomist",
+      "short": "CPE",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Board of Certification in Professional Ergonomics (BCPE)",
+      "type": "Certification",
+      "aka": [
+        "CPE"
+      ],
+      "blurb": "Senior BCPE certification for ergonomists with graduate education and documented practice in workplace and product design."
+    },
+    {
+      "slug": "certified-safety-and-health-manager",
+      "name": "Certified Safety and Health Manager",
+      "short": "CSHM",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Institute for Safety and Health Management (ISHM)",
+      "type": "Certification",
+      "aka": [
+        "CSHM"
+      ],
+      "blurb": "Certification for safety managers covering programme leadership, risk assessment, regulatory compliance and business integration."
+    },
+    {
+      "slug": "certified-safety-and-health-official",
+      "name": "Certified Safety and Health Official",
+      "short": "CSHO",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "OSHA Training Institute Education Centers",
+      "type": "Certification",
+      "aka": [
+        "CSHO"
+      ],
+      "blurb": "Certificate awarded by OTI Education Centers after a defined series of OSHA numbered courses in construction or general industry."
+    },
+    {
+      "slug": "certified-safety-director-nasp",
+      "name": "Certified Safety Director",
+      "short": "CSD",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "National Association of Safety Professionals (NASP)",
+      "type": "Certification",
+      "aka": [
+        "CSD"
+      ],
+      "blurb": "Certification for directors accountable for corporate safety strategy, budgeting, auditing and regulatory relationships."
+    },
+    {
+      "slug": "certified-safety-management-practitioner",
+      "name": "Certified Safety Management Practitioner",
+      "short": "CSMP",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Institute for Safety and Health Management (ISHM)",
+      "type": "Certification",
+      "aka": [
+        "CSMP"
+      ],
+      "blurb": "ISHM credential for practitioners applying safety management systems at operational level without full manager responsibilities."
+    },
+    {
+      "slug": "certified-safety-manager-nasp",
+      "name": "Certified Safety Manager",
+      "short": "CSM",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "National Association of Safety Professionals (NASP)",
+      "type": "Certification",
+      "aka": [
+        "CSM"
+      ],
+      "blurb": "Certification covering OSHA compliance, hazard analysis and safety programme administration for workplace safety managers."
+    },
+    {
+      "slug": "certified-safety-professional",
+      "name": "Certified Safety Professional",
+      "short": "CSP",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Board of Certified Safety Professionals (BCSP)",
+      "bodyUrl": "https://www.bcsp.org",
+      "type": "Certification",
+      "aka": [
+        "CSP"
+      ],
+      "blurb": "Flagship BCSP certification requiring a degree, four years of professional safety experience and a five and a half hour examination."
+    },
+    {
+      "slug": "certified-utility-safety-professional",
+      "name": "Certified Utility Safety Professional",
+      "short": "CUSP",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Utility Safety and Ops Leadership Network (USOLN)",
+      "type": "Certification",
+      "aka": [
+        "CUSP"
+      ],
+      "blurb": "Certification for safety professionals in electric utility work covering OSHA 1910.269, grounding, clearances and incident investigation."
+    },
+    {
+      "slug": "construction-health-and-safety-technician",
+      "name": "Construction Health and Safety Technician",
+      "short": "CHST",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Board of Certified Safety Professionals (BCSP)",
+      "bodyUrl": "https://www.bcsp.org",
+      "type": "Certification",
+      "aka": [
+        "CHST"
+      ],
+      "blurb": "BCSP certification for construction site safety specialists with three years of qualifying jobsite safety experience."
+    },
+    {
+      "slug": "graduate-safety-practitioner",
+      "name": "Graduate Safety Practitioner",
+      "short": "GSP",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Board of Certified Safety Professionals (BCSP)",
+      "bodyUrl": "https://www.bcsp.org",
+      "type": "Certification",
+      "aka": [
+        "GSP"
+      ],
+      "blurb": "Designation awarded to graduates of BCSP-qualified academic programmes, waiving the ASP requirement on the path to the CSP."
+    },
+    {
+      "slug": "iso-45001-lead-auditor",
+      "name": "ISO 45001 Occupational Health and Safety Lead Auditor",
+      "short": "ISO 45001 LA",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Exemplar Global and IRCA-Accredited Training Providers",
+      "type": "Certification",
+      "aka": [
+        "OHSMS Lead Auditor"
+      ],
+      "blurb": "Five-day accredited course and examination qualifying auditors to lead occupational health and safety management system audits."
+    },
+    {
+      "slug": "nebosh-international-general-certificate",
+      "name": "NEBOSH International General Certificate in Occupational Health and Safety",
+      "short": "NEBOSH IGC",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "National Examination Board in Occupational Safety and Health (NEBOSH)",
+      "type": "Certification",
+      "aka": [
+        "IGC",
+        "NEBOSH IGC"
+      ],
+      "blurb": "Widely recognised entry qualification in occupational safety management, accepted by BCSP as a credential toward the CSP."
+    },
+    {
+      "slug": "occupational-hygiene-and-safety-technician",
+      "name": "Occupational Hygiene and Safety Technician",
+      "short": "OHST",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Board of Certified Safety Professionals (BCSP)",
+      "bodyUrl": "https://www.bcsp.org",
+      "type": "Certification",
+      "aka": [
+        "OHST"
+      ],
+      "blurb": "BCSP technician certification for staff performing industrial hygiene sampling and occupational safety duties in the field."
+    },
+    {
+      "slug": "safety-management-specialist",
+      "name": "Safety Management Specialist",
+      "short": "SMS",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Board of Certified Safety Professionals (BCSP)",
+      "bodyUrl": "https://www.bcsp.org",
+      "type": "Certification",
+      "aka": [
+        "SMS"
+      ],
+      "blurb": "BCSP certification for experienced managers whose duties include directing safety programmes, people and budgets."
+    },
+    {
+      "slug": "safety-trained-supervisor",
+      "name": "Safety Trained Supervisor",
+      "short": "STS",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Board of Certified Safety Professionals (BCSP)",
+      "bodyUrl": "https://www.bcsp.org",
+      "type": "Certification",
+      "aka": [
+        "STS"
+      ],
+      "blurb": "Two-hour BCSP examination for supervisors and crew leaders whose primary job is not safety but who influence workplace conditions."
+    },
+    {
+      "slug": "safety-trained-supervisor-construction",
+      "name": "Safety Trained Supervisor Construction",
+      "short": "STSC",
+      "category": "workplace-safety",
+      "group": "Safety Professional Certifications",
+      "body": "Board of Certified Safety Professionals (BCSP)",
+      "bodyUrl": "https://www.bcsp.org",
+      "type": "Certification",
+      "aka": [
+        "STSC"
+      ],
+      "blurb": "Construction-focused BCSP supervisory certification covering jobsite hazard control, toolbox talks and crew safety leadership."
+    },
+    {
+      "slug": "aerial-lift-operator-certification",
+      "name": "Aerial Lift and MEWP Operator Certification",
+      "short": "Aerial Lift",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1926.453 and ANSI A92 Standards",
+      "type": "Certification",
+      "aka": [
+        "Scissor Lift",
+        "Boom Lift",
+        "MEWP Operator"
+      ],
+      "blurb": "Operator qualification covering mobile elevating work platform inspection, fall protection and safe positioning under ANSI A92 standards."
+    },
+    {
+      "slug": "bloodborne-pathogens-training",
+      "name": "Bloodborne Pathogens Awareness Training",
+      "short": "BBP",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1910.1030",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Annual training on exposure control plans, universal precautions and post-exposure procedures required for at-risk employees."
+    },
+    {
+      "slug": "dot-49-cfr-hazmat-regulations-training",
+      "name": "DOT 49 CFR Hazardous Materials Regulations Function-Specific Training",
+      "short": "49 CFR HMR",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Pipeline and Hazardous Materials Safety Administration (PHMSA)",
+      "type": "Training",
+      "aka": [
+        "HMR Training"
+      ],
+      "blurb": "Function-specific instruction on classification, packaging, marking, labelling, placarding and shipping papers under 49 CFR Parts 171-180."
+    },
+    {
+      "slug": "dot-hazmat-employee-training",
+      "name": "DOT Hazmat Employee Training",
+      "short": "Hazmat Employee",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Pipeline and Hazardous Materials Safety Administration (PHMSA)",
+      "type": "Training",
+      "aka": [
+        "49 CFR 172 Subpart H"
+      ],
+      "blurb": "Recurrent training required every three years for anyone who prepares, handles or transports hazardous materials in commerce."
+    },
+    {
+      "slug": "excavation-competent-person",
+      "name": "Excavation and Trenching Competent Person Training",
+      "short": "Excavation CP",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1926 Subpart P",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Competent person training on soil classification, protective systems, access and daily inspection of excavations and trenches."
+    },
+    {
+      "slug": "fall-protection-competent-person",
+      "name": "Fall Protection Competent Person Training",
+      "short": "Fall Protection CP",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1926 Subpart M",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Competent person training on fall hazard identification, anchorage selection, harness inspection and rescue planning at height."
+    },
+    {
+      "slug": "hazard-communication-ghs-training",
+      "name": "Hazard Communication and GHS Training",
+      "short": "HazCom",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1910.1200",
+      "type": "Training",
+      "aka": [
+        "Right to Know",
+        "GHS Training"
+      ],
+      "blurb": "Training on GHS labels, pictograms and safety data sheets required for every employee exposed to hazardous chemicals at work."
+    },
+    {
+      "slug": "hazmat-first-responder-awareness",
+      "name": "Hazardous Materials First Responder Awareness Level Training",
+      "short": "FRA",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1910.120(q)",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Awareness-level training for personnel likely to discover a hazardous substance release and required to notify emergency responders."
+    },
+    {
+      "slug": "hazmat-first-responder-operations",
+      "name": "Hazardous Materials First Responder Operations Level Training",
+      "short": "FRO",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1910.120(q)",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Eight-hour operations-level training for responders taking defensive action to contain a hazardous substance release from a safe distance."
+    },
+    {
+      "slug": "hazmat-technician-training",
+      "name": "Hazardous Materials Technician Level Training",
+      "short": "Hazmat Technician",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1910.120(q) and NFPA 470",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Twenty-four hour minimum training for responders who take offensive action to plug, patch or stop a hazardous materials release."
+    },
+    {
+      "slug": "hazwoper-24-hour",
+      "name": "HAZWOPER 24-Hour Training",
+      "short": "HAZWOPER 24",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1910.120",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Training for occasional site workers and visitors unlikely to be exposed above permissible limits on hazardous waste sites."
+    },
+    {
+      "slug": "hazwoper-40-hour",
+      "name": "HAZWOPER 40-Hour Training",
+      "short": "HAZWOPER 40",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1910.120",
+      "type": "Training",
+      "aka": [
+        "Hazardous Waste Operations and Emergency Response"
+      ],
+      "blurb": "Initial training required for general site workers on uncontrolled hazardous waste sites, plus three days of supervised field experience."
+    },
+    {
+      "slug": "hazwoper-8-hour-refresher",
+      "name": "HAZWOPER 8-Hour Annual Refresher",
+      "short": "HAZWOPER Refresher",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1910.120",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Annual refresher required to keep HAZWOPER 24-hour or 40-hour site worker training current for hazardous waste operations."
+    },
+    {
+      "slug": "hazwoper-8-hour-supervisor",
+      "name": "HAZWOPER 8-Hour Supervisor Training",
+      "short": "HAZWOPER Supervisor",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1910.120",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Supplemental training for on-site managers covering health and safety plans, monitoring programmes and spill containment oversight."
+    },
+    {
+      "slug": "h2s-awareness-training",
+      "name": "Hydrogen Sulfide (H2S) Awareness Training",
+      "short": "H2S Awareness",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "ANSI/ASSP Z390.1 Accepted Practices for H2S Training Programs",
+      "type": "Training",
+      "aka": [
+        "H2S Alive",
+        "Hydrogen Sulphide Safety"
+      ],
+      "blurb": "Training for oil, gas and wastewater workers on hydrogen sulfide properties, detection, respiratory protection and rescue procedures."
+    },
+    {
+      "slug": "iata-dangerous-goods-regulations-training",
+      "name": "IATA Dangerous Goods Regulations Training",
+      "short": "IATA DGR",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "International Air Transport Association (IATA)",
+      "type": "Training",
+      "aka": [
+        "DGR",
+        "Air Shipping Dangerous Goods"
+      ],
+      "blurb": "Category-based training required every 24 months for shippers and freight staff preparing dangerous goods for carriage by air."
+    },
+    {
+      "slug": "imdg-code-training",
+      "name": "IMDG Code Dangerous Goods Training",
+      "short": "IMDG",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "International Maritime Organization (IMDG Code)",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Training on classification, packing, segregation and documentation for shipping dangerous goods by sea under the IMDG Code."
+    },
+    {
+      "slug": "lead-awareness-training",
+      "name": "Lead Awareness Training",
+      "short": "Lead Awareness",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1926.62 and 1910.1025",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Awareness training on lead exposure routes, permissible exposure limits, hygiene facilities and medical surveillance requirements."
+    },
+    {
+      "slug": "lockout-tagout-authorized-employee",
+      "name": "Lockout/Tagout Authorized Employee Training",
+      "short": "LOTO",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1910.147",
+      "type": "Training",
+      "aka": [
+        "Control of Hazardous Energy"
+      ],
+      "blurb": "Training for authorised employees on energy-isolating devices, machine-specific procedures and periodic inspection of energy control."
+    },
+    {
+      "slug": "nfpa-70e-electrical-safety-training",
+      "name": "NFPA 70E Electrical Safety in the Workplace Training",
+      "short": "NFPA 70E",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "National Fire Protection Association (NFPA)",
+      "type": "Training",
+      "aka": [
+        "Arc Flash Training"
+      ],
+      "blurb": "Qualified person training on arc flash boundaries, incident energy analysis, PPE categories and energised work permits."
+    },
+    {
+      "slug": "confined-space-entry-training",
+      "name": "Permit-Required Confined Space Entry Training",
+      "short": "Confined Space",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1910.146 and 1926 Subpart AA",
+      "type": "Training",
+      "aka": [
+        "Entrant Attendant Supervisor Training"
+      ],
+      "blurb": "Training for entrants, attendants and entry supervisors covering atmospheric testing, permits, ventilation and rescue arrangements."
+    },
+    {
+      "slug": "forklift-operator-certification",
+      "name": "Powered Industrial Truck (Forklift) Operator Certification",
+      "short": "Forklift",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1910.178",
+      "type": "Certification",
+      "aka": [
+        "Forklift Certification",
+        "PIT Operator"
+      ],
+      "blurb": "Formal instruction, practical evaluation and three-yearly re-evaluation required before an employee may operate a powered industrial truck."
+    },
+    {
+      "slug": "process-safety-management-training",
+      "name": "Process Safety Management Training",
+      "short": "PSM",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1910.119",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Training on the fourteen PSM elements including process hazard analysis, mechanical integrity and management of change."
+    },
+    {
+      "slug": "rcra-hazardous-waste-training",
+      "name": "RCRA Hazardous Waste Generator Training",
+      "short": "RCRA",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "U.S. Environmental Protection Agency (40 CFR Part 262)",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Annual training for large-quantity generator personnel on waste determination, accumulation, manifesting and contingency planning."
+    },
+    {
+      "slug": "silica-competent-person",
+      "name": "Respirable Crystalline Silica Competent Person Training",
+      "short": "Silica CP",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1926.1153 and 1910.1053",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Competent person training on Table 1 control methods, exposure assessment and written exposure control plans for silica dust."
+    },
+    {
+      "slug": "respirator-fit-test-administrator",
+      "name": "Respirator Fit Test Administrator Training",
+      "short": "Fit Test",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1910.134",
+      "type": "Training",
+      "aka": [
+        "Qualitative Fit Test",
+        "Quantitative Fit Test"
+      ],
+      "blurb": "Training for personnel administering qualitative and quantitative respirator fit tests and managing written respiratory protection programmes."
+    },
+    {
+      "slug": "scaffold-competent-person",
+      "name": "Scaffold Competent Person Training",
+      "short": "Scaffold CP",
+      "category": "workplace-safety",
+      "group": "Hazardous Materials & Emergency Response",
+      "body": "Employers under OSHA 29 CFR 1926 Subpart L",
+      "type": "Training",
+      "aka": [],
+      "blurb": "Competent person training on scaffold erection, capacity, fall protection and pre-shift inspection of supported and suspended scaffolds."
+    }
+  ]
+}

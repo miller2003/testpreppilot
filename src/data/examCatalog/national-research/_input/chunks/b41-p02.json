@@ -1,0 +1,385 @@
+{
+ "chunkId": "b41-p02",
+ "batch": 41,
+ "part": 2,
+ "categories": [
+  "transportation"
+ ],
+ "groups": [
+  "Commercial Driving & Road",
+  "Logistics & Supply Chain",
+  "Rail & Transit"
+ ],
+ "bodies": [
+  "NAFA Fleet Management Association",
+  "Manufacturing Skill Standards Council",
+  "Federal Railroad Administration (railroad training programmes)",
+  "Federal Railroad Administration (certifying railroads)",
+  "Federal Railroad Administration (railroad qualification programmes)",
+  "Federal Motor Carrier Safety Administration",
+  "National Safety Council",
+  "Towing and Recovery Association of America",
+  "Transportation Security Administration",
+  "WreckMaster",
+  "NASBITE International",
+  "Transportation Intermediaries Association",
+  "National Private Truck Council",
+  "NCBFAA Educational Institute with the National Association of Foreign-Trade Zones",
+  "U.S. Customs and Border Protection",
+  "Export Compliance Training Institute",
+  "FIATA with the NCBFAA Educational Institute",
+  "Federal Railroad Administration",
+  "National Transit Institute",
+  "Federal Transit Administration",
+  "Transportation Safety Institute"
+ ],
+ "examCount": 26,
+ "exams": [
+  {
+   "slug": "nafa-certified-automotive-fleet-manager",
+   "name": "Certified Automotive Fleet Manager",
+   "short": "CAFM",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "NAFA Fleet Management Association",
+   "type": "Certification",
+   "aka": [
+    "CAFM"
+   ],
+   "blurb": "Fleet management credential earned by passing eight discipline examinations spanning asset, financial, information, maintenance and risk management."
+  },
+  {
+   "slug": "nafa-certified-automotive-fleet-specialist",
+   "name": "Certified Automotive Fleet Specialist",
+   "short": "CAFS",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "NAFA Fleet Management Association",
+   "type": "Certification",
+   "aka": [
+    "CAFS"
+   ],
+   "blurb": "Intermediate fleet credential awarded after completing four of the eight CAFM discipline examinations covering core fleet operations topics."
+  },
+  {
+   "slug": "mssc-certified-logistics-associate",
+   "name": "Certified Logistics Associate",
+   "short": "CLA",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "Manufacturing Skill Standards Council",
+   "type": "Certification",
+   "aka": [
+    "MSSC CLA"
+   ],
+   "blurb": "Foundational supply chain credential covering the logistics environment, safety, quality, teamwork and workplace computer systems."
+  },
+  {
+   "slug": "mssc-certified-logistics-technician",
+   "name": "Certified Logistics Technician",
+   "short": "CLT",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "Manufacturing Skill Standards Council",
+   "type": "Certification",
+   "aka": [
+    "MSSC CLT"
+   ],
+   "blurb": "Mid-level warehouse credential on receiving, storage, order processing, packaging, inventory control, dispatch and tracking operations."
+  },
+  {
+   "slug": "fra-blue-signal-protection-training",
+   "name": "FRA Blue Signal Protection Training",
+   "short": "Blue Signal",
+   "category": "transportation",
+   "group": "Rail & Transit",
+   "body": "Federal Railroad Administration (railroad training programmes)",
+   "type": "Training",
+   "aka": [
+    "49 CFR Part 218"
+   ],
+   "blurb": "Training under 49 CFR Part 218 on blue signal display and removal protecting workers servicing rolling equipment."
+  },
+  {
+   "slug": "fra-roadway-worker-protection-training",
+   "name": "FRA Roadway Worker Protection Training",
+   "short": "RWP",
+   "category": "transportation",
+   "group": "Rail & Transit",
+   "body": "Federal Railroad Administration (railroad training programmes)",
+   "type": "Training",
+   "aka": [
+    "49 CFR Part 214",
+    "RWP"
+   ],
+   "blurb": "Annual training under Part 214 on on-track safety, working limits, train approach warning and job briefings for roadway workers."
+  },
+  {
+   "slug": "fra-conductor-certification",
+   "name": "FRA Conductor Certification",
+   "short": "Conductor Certification",
+   "category": "transportation",
+   "group": "Rail & Transit",
+   "body": "Federal Railroad Administration (certifying railroads)",
+   "type": "Certification",
+   "aka": [
+    "49 CFR Part 242",
+    "Certified Conductor"
+   ],
+   "blurb": "Federally required certification of freight and passenger conductors covering rules knowledge, skills testing and monitoring under Part 242."
+  },
+  {
+   "slug": "fra-locomotive-engineer-certification",
+   "name": "FRA Locomotive Engineer Certification",
+   "short": "Engineer Certification",
+   "category": "transportation",
+   "group": "Rail & Transit",
+   "body": "Federal Railroad Administration (certifying railroads)",
+   "type": "Certification",
+   "aka": [
+    "49 CFR Part 240",
+    "Certified Locomotive Engineer"
+   ],
+   "blurb": "Certification required to operate a locomotive, involving written examination, skills performance testing and periodic operational monitoring."
+  },
+  {
+   "slug": "fra-track-inspector-qualification",
+   "name": "FRA Track Inspector Qualification",
+   "short": "Track Inspector",
+   "category": "transportation",
+   "group": "Rail & Transit",
+   "body": "Federal Railroad Administration (railroad qualification programmes)",
+   "type": "Certification",
+   "aka": [
+    "49 CFR Part 213 Inspector"
+   ],
+   "blurb": "Qualification under the Track Safety Standards allowing an individual to inspect track, classify defects and authorise remedial action."
+  },
+  {
+   "slug": "rail-roadway-worker-in-charge-qualification",
+   "name": "Roadway Worker in Charge Qualification",
+   "short": "RWIC",
+   "category": "transportation",
+   "group": "Rail & Transit",
+   "body": "Federal Railroad Administration (railroad qualification programmes)",
+   "type": "Certification",
+   "aka": [
+    "RWIC",
+    "Employee in Charge"
+   ],
+   "blurb": "Qualification allowing a worker to establish and control on-track working limits and conduct job briefings for a roadway work group."
+  },
+  {
+   "slug": "nrcme-medical-examiner-certification-test",
+   "name": "National Registry of Certified Medical Examiners Certification Test",
+   "short": "NRCME",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "Federal Motor Carrier Safety Administration",
+   "type": "Exam",
+   "aka": [
+    "NRCME Exam",
+    "DOT Medical Examiner Test"
+   ],
+   "blurb": "Federal test qualifying clinicians to perform commercial driver physicals and issue medical examiner certificates under FMCSA standards."
+  },
+  {
+   "slug": "nsc-defensive-driving-course",
+   "name": "National Safety Council Defensive Driving Course",
+   "short": "NSC DDC",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "National Safety Council",
+   "type": "Training",
+   "aka": [
+    "DDC",
+    "Defensive Driving Course"
+   ],
+   "blurb": "Nationally recognised driver improvement course teaching collision avoidance, space management and hazard recognition for fleet and personal drivers."
+  },
+  {
+   "slug": "traa-national-driver-certification-program",
+   "name": "TRAA National Driver Certification Program",
+   "short": "TRAA Towing",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "Towing and Recovery Association of America",
+   "type": "Certification",
+   "aka": [
+    "National Driver Certification Program"
+   ],
+   "blurb": "Three-level towing certification covering light-duty, medium/heavy-duty and recovery operations with written and practical evaluations."
+  },
+  {
+   "slug": "tsa-hazmat-endorsement-threat-assessment",
+   "name": "TSA Hazardous Materials Endorsement Threat Assessment",
+   "short": "HME",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "Transportation Security Administration",
+   "type": "Certification",
+   "aka": [
+    "HME Security Threat Assessment"
+   ],
+   "blurb": "Federal fingerprint-based background check every commercial driver must clear before a state may issue a hazardous materials endorsement."
+  },
+  {
+   "slug": "wreckmaster-towing-and-recovery-certification",
+   "name": "WreckMaster Towing and Recovery Certification",
+   "short": "WreckMaster",
+   "category": "transportation",
+   "group": "Commercial Driving & Road",
+   "body": "WreckMaster",
+   "type": "Certification",
+   "aka": [
+    "WreckMaster Level 2/3",
+    "WreckMaster Level 6/7"
+   ],
+   "blurb": "Graded towing and recovery certification covering rigging, winching, load calculation and rollover recovery for light through heavy-duty operators."
+  },
+  {
+   "slug": "nasbite-certified-global-business-professional",
+   "name": "Certified Global Business Professional",
+   "short": "CGBP",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "NASBITE International",
+   "type": "Certification",
+   "aka": [
+    "CGBP"
+   ],
+   "blurb": "Exam-based credential covering global business management, market research, supply chain management and trade finance."
+  },
+  {
+   "slug": "tia-certified-transportation-broker",
+   "name": "Certified Transportation Broker",
+   "short": "CTB",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "Transportation Intermediaries Association",
+   "type": "Certification",
+   "aka": [
+    "CTB"
+   ],
+   "blurb": "Examination for freight brokers covering broker-carrier agreements, liability, claims, credit management and federal brokerage regulation."
+  },
+  {
+   "slug": "nptc-certified-transportation-professional",
+   "name": "Certified Transportation Professional",
+   "short": "CTP",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "National Private Truck Council",
+   "type": "Certification",
+   "aka": [
+    "CTP"
+   ],
+   "blurb": "Four-part examination for private fleet managers spanning equipment, operations, finance and human resource management."
+  },
+  {
+   "slug": "ncbfaa-certified-zone-specialist",
+   "name": "Certified Zone Specialist",
+   "short": "CZS",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "NCBFAA Educational Institute with the National Association of Foreign-Trade Zones",
+   "type": "Certification",
+   "aka": [
+    "CZS"
+   ],
+   "blurb": "Certification on United States Foreign-Trade Zone operations, admission procedures, inventory control and zone compliance requirements."
+  },
+  {
+   "slug": "cbp-customs-broker-license-examination",
+   "name": "Customs Broker License Examination",
+   "short": "CBLE",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "U.S. Customs and Border Protection",
+   "type": "License",
+   "aka": [
+    "Customs Broker Exam",
+    "LCB Exam"
+   ],
+   "blurb": "Federal 80-question open-book examination held twice a year that applicants must pass to become a licensed customs broker."
+  },
+  {
+   "slug": "ecti-export-compliance-professional",
+   "name": "Export Compliance Professional Certification",
+   "short": "ECoP",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "Export Compliance Training Institute",
+   "type": "Certification",
+   "aka": [
+    "ECoP"
+   ],
+   "blurb": "Specialist certification in EAR or ITAR export controls, licensing, classification and enforcement for trade compliance staff."
+  },
+  {
+   "slug": "fiata-diploma-freight-forwarding",
+   "name": "FIATA Diploma in Freight Forwarding",
+   "short": "FIATA Diploma",
+   "category": "transportation",
+   "group": "Logistics & Supply Chain",
+   "body": "FIATA with the NCBFAA Educational Institute",
+   "type": "Certification",
+   "aka": [
+    "FIATA Diploma"
+   ],
+   "blurb": "Internationally recognised freight forwarding diploma covering multimodal transport, documentation, insurance and incoterms."
+  },
+  {
+   "slug": "fra-part-243-employee-training-qualification",
+   "name": "FRA Part 243 Safety-Related Railroad Employee Training",
+   "short": "Part 243",
+   "category": "transportation",
+   "group": "Rail & Transit",
+   "body": "Federal Railroad Administration",
+   "type": "Training",
+   "aka": [
+    "49 CFR Part 243"
+   ],
+   "blurb": "Federal rule requiring railroads and contractors to qualify safety-related employees through approved training programmes and testing."
+  },
+  {
+   "slug": "nti-roadway-worker-protection-training",
+   "name": "National Transit Institute Roadway Worker Protection Training",
+   "short": "NTI RWP",
+   "category": "transportation",
+   "group": "Rail & Transit",
+   "body": "National Transit Institute",
+   "type": "Training",
+   "aka": [
+    "NTI RWP"
+   ],
+   "blurb": "Rail transit training on right-of-way access, protection methods and hazard recognition for wayside workers and contractors."
+  },
+  {
+   "slug": "fta-public-transportation-safety-certification-training",
+   "name": "Public Transportation Safety Certification Training Program",
+   "short": "PTSCTP",
+   "category": "transportation",
+   "group": "Rail & Transit",
+   "body": "Federal Transit Administration",
+   "type": "Certification",
+   "aka": [
+    "PTSCTP"
+   ],
+   "blurb": "Federally mandated curriculum for state safety oversight staff and rail transit agency personnel with safety oversight responsibilities."
+  },
+  {
+   "slug": "tsi-transit-safety-and-security-program",
+   "name": "Transit Safety and Security Program Certificate",
+   "short": "TSSP",
+   "category": "transportation",
+   "group": "Rail & Transit",
+   "body": "Transportation Safety Institute",
+   "type": "Certification",
+   "aka": [
+    "TSSP"
+   ],
+   "blurb": "USDOT certificate programme for transit safety professionals covering system safety, security planning, emergency management and audits."
+  }
+ ]
+}

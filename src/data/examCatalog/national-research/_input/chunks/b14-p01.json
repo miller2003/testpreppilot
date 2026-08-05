@@ -1,0 +1,482 @@
+{
+ "chunkId": "b14-p01",
+ "batch": 14,
+ "part": 1,
+ "categories": [
+  "education-teaching"
+ ],
+ "groups": [
+  "Early Childhood, Paraeducator & Instructional Support",
+  "Praxis Special Education",
+  "Praxis Career, Technical & Physical Education",
+  "Praxis Mathematics & Science",
+  "Praxis School Services & Leadership"
+ ],
+ "bodies": [
+  "ETS"
+ ],
+ "examCount": 35,
+ "exams": [
+  {
+   "slug": "ets-parapro-assessment",
+   "name": "ParaPro Assessment",
+   "short": "ParaPro",
+   "category": "education-teaching",
+   "group": "Early Childhood, Paraeducator & Instructional Support",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "ParaPro",
+    "paraprofessional assessment"
+   ],
+   "blurb": "Assessment of reading, writing and mathematics skills and their classroom application, used to qualify paraprofessionals under federal rules."
+  },
+  {
+   "slug": "praxis-parapathways-mathematics-5759",
+   "name": "Praxis ParaPathways: Mathematics (5759)",
+   "short": "ParaPathways Math",
+   "category": "education-teaching",
+   "group": "Early Childhood, Paraeducator & Instructional Support",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5759"
+   ],
+   "blurb": "Praxis mathematics test designed as an accessible entry route into educator preparation for paraeducators and career changers."
+  },
+  {
+   "slug": "praxis-parapathways-reading-and-writing-5758",
+   "name": "Praxis ParaPathways: Reading and Writing (5758)",
+   "short": "ParaPathways Reading & Writing",
+   "category": "education-teaching",
+   "group": "Early Childhood, Paraeducator & Instructional Support",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5758"
+   ],
+   "blurb": "Praxis literacy test offering an alternative basic-skills route for paraeducators entering teacher preparation programmes."
+  },
+  {
+   "slug": "praxis-braille-proficiency-0633",
+   "name": "Praxis Braille Proficiency (0633)",
+   "category": "education-teaching",
+   "group": "Praxis Special Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "0633"
+   ],
+   "blurb": "Paper-delivered test of literary braille reading and transcription for teachers of students with visual impairments."
+  },
+  {
+   "slug": "praxis-gifted-education-5358",
+   "name": "Praxis Gifted Education (5358)",
+   "category": "education-teaching",
+   "group": "Praxis Special Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5358"
+   ],
+   "blurb": "Endorsement test covering identification, curriculum differentiation, social-emotional needs and programme models for gifted learners."
+  },
+  {
+   "slug": "praxis-special-education-early-childhood-early-intervention-5692",
+   "name": "Praxis Special Education: Early Childhood/Early Intervention (5692)",
+   "category": "education-teaching",
+   "group": "Praxis Special Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5692"
+   ],
+   "blurb": "Test for early intervention specialists covering developmental assessment, family-centred services and individualised family service plans."
+  },
+  {
+   "slug": "praxis-special-education-deaf-and-hard-of-hearing-5272",
+   "name": "Praxis Special Education: Education of Deaf and Hard of Hearing Students (5272)",
+   "category": "education-teaching",
+   "group": "Praxis Special Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5272"
+   ],
+   "blurb": "Test for teachers of deaf and hard of hearing students, covering audiology basics, communication modes, literacy and assistive technology."
+  },
+  {
+   "slug": "praxis-special-education-foundational-knowledge-5355",
+   "name": "Praxis Special Education: Foundational Knowledge (5355)",
+   "category": "education-teaching",
+   "group": "Praxis Special Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5355",
+    "Core Knowledge and Applications"
+   ],
+   "blurb": "Core special education licensure test covering development, assessment, instruction, behaviour support and federal disability law."
+  },
+  {
+   "slug": "praxis-special-education-severe-to-profound-5547",
+   "name": "Praxis Special Education: Severe to Profound (5547)",
+   "category": "education-teaching",
+   "group": "Praxis Special Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5547"
+   ],
+   "blurb": "Test for teachers of students with severe and profound disabilities, covering communication systems, life skills and health care needs."
+  },
+  {
+   "slug": "praxis-special-education-teaching-speech-to-students-with-language-impairments-5881",
+   "name": "Praxis Special Education: Teaching Speech to Students with Language Impairments (5881)",
+   "category": "education-teaching",
+   "group": "Praxis Special Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5881"
+   ],
+   "blurb": "Test for school-based speech and language educators covering articulation, language disorders, assessment and classroom collaboration."
+  },
+  {
+   "slug": "praxis-special-education-teaching-students-with-behavioral-disorders-5372",
+   "name": "Praxis Special Education: Teaching Students with Behavioral Disorders and Emotional Disturbances (5372)",
+   "category": "education-teaching",
+   "group": "Praxis Special Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5372"
+   ],
+   "blurb": "Test covering functional behaviour assessment, positive behaviour supports and instruction for students with emotional and behavioural needs."
+  },
+  {
+   "slug": "praxis-special-education-intellectual-disabilities-5322",
+   "name": "Praxis Special Education: Teaching Students with Intellectual Disabilities (5322)",
+   "category": "education-teaching",
+   "group": "Praxis Special Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5322"
+   ],
+   "blurb": "Test covering functional curriculum, adaptive skills, transition planning and instruction for students with intellectual disabilities."
+  },
+  {
+   "slug": "praxis-special-education-learning-disabilities-5383",
+   "name": "Praxis Special Education: Teaching Students with Learning Disabilities (5383)",
+   "category": "education-teaching",
+   "group": "Praxis Special Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5383"
+   ],
+   "blurb": "Test covering identification, specialised instruction and accommodation strategies for students with specific learning disabilities."
+  },
+  {
+   "slug": "praxis-special-education-visual-impairments-5282",
+   "name": "Praxis Special Education: Teaching Students with Visual Impairments (5282)",
+   "category": "education-teaching",
+   "group": "Praxis Special Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5282"
+   ],
+   "blurb": "Test for teachers of students with visual impairments, covering braille literacy, orientation and mobility and the expanded core curriculum."
+  },
+  {
+   "slug": "praxis-agriculture-5701",
+   "name": "Praxis Agriculture (5701)",
+   "category": "education-teaching",
+   "group": "Praxis Career, Technical & Physical Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5701"
+   ],
+   "blurb": "Content test for agricultural education teachers, covering plant and animal science, agribusiness, mechanics and programme management."
+  },
+  {
+   "slug": "praxis-business-education-content-knowledge-5101",
+   "name": "Praxis Business Education: Content Knowledge (5101)",
+   "category": "education-teaching",
+   "group": "Praxis Career, Technical & Physical Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5101"
+   ],
+   "blurb": "Content test for business education teachers covering accounting, economics, management, business law and information technology."
+  },
+  {
+   "slug": "praxis-family-and-consumer-sciences-5123",
+   "name": "Praxis Family and Consumer Sciences (5123)",
+   "category": "education-teaching",
+   "group": "Praxis Career, Technical & Physical Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5123"
+   ],
+   "blurb": "Current family and consumer sciences licensure test covering nutrition, human development, textiles, housing and resource management."
+  },
+  {
+   "slug": "praxis-health-and-physical-education-content-knowledge-5857",
+   "name": "Praxis Health and Physical Education: Content Knowledge (5857)",
+   "category": "education-teaching",
+   "group": "Praxis Career, Technical & Physical Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5857"
+   ],
+   "blurb": "Combined content test for candidates seeking licensure to teach both health education and physical education."
+  },
+  {
+   "slug": "praxis-health-education-5551",
+   "name": "Praxis Health Education (5551)",
+   "category": "education-teaching",
+   "group": "Praxis Career, Technical & Physical Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5551"
+   ],
+   "blurb": "Content test for health education teachers covering wellness, disease prevention, substance use, mental health and curriculum planning."
+  },
+  {
+   "slug": "praxis-health-occupations-5052",
+   "name": "Praxis Health Occupations (5052)",
+   "category": "education-teaching",
+   "group": "Praxis Career, Technical & Physical Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5052"
+   ],
+   "blurb": "Content test for teachers of secondary health science and health career pathway programmes in career and technical education."
+  },
+  {
+   "slug": "praxis-marketing-education-5561",
+   "name": "Praxis Marketing Education (5561)",
+   "category": "education-teaching",
+   "group": "Praxis Career, Technical & Physical Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5561"
+   ],
+   "blurb": "Content test for marketing education teachers, covering marketing functions, entrepreneurship, selling, promotion and work-based learning."
+  },
+  {
+   "slug": "praxis-physical-education-content-and-design-5095",
+   "name": "Praxis Physical Education: Content and Design (5095)",
+   "category": "education-teaching",
+   "group": "Praxis Career, Technical & Physical Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5095"
+   ],
+   "blurb": "Physical education test combining content questions with constructed-response tasks on lesson design, assessment and programme planning."
+  },
+  {
+   "slug": "praxis-physical-education-content-knowledge-5091",
+   "name": "Praxis Physical Education: Content Knowledge (5091)",
+   "category": "education-teaching",
+   "group": "Praxis Career, Technical & Physical Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5091"
+   ],
+   "blurb": "Content test for physical education teachers covering movement skills, fitness, motor development, safety and instructional strategies."
+  },
+  {
+   "slug": "praxis-technology-and-engineering-education-5053",
+   "name": "Praxis Technology and Engineering Education (5053)",
+   "category": "education-teaching",
+   "group": "Praxis Career, Technical & Physical Education",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5053"
+   ],
+   "blurb": "Current technology education licensure test covering design processes, manufacturing, energy, transportation and engineering practices."
+  },
+  {
+   "slug": "praxis-algebra-i-5162",
+   "name": "Praxis Algebra I (5162)",
+   "category": "education-teaching",
+   "group": "Praxis Mathematics & Science",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5162"
+   ],
+   "blurb": "Focused mathematics test for teachers whose licence is limited to Algebra I, covering expressions, equations, functions and modelling."
+  },
+  {
+   "slug": "praxis-biology-5236",
+   "name": "Praxis Biology: Content Knowledge (5236)",
+   "category": "education-teaching",
+   "group": "Praxis Mathematics & Science",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5236"
+   ],
+   "blurb": "Secondary biology licensure test covering cells, genetics, evolution, organisms, ecology, and scientific inquiry and laboratory safety."
+  },
+  {
+   "slug": "praxis-chemistry-5246",
+   "name": "Praxis Chemistry: Content Knowledge (5246)",
+   "category": "education-teaching",
+   "group": "Praxis Mathematics & Science",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5246"
+   ],
+   "blurb": "Secondary chemistry licensure test covering atomic structure, bonding, reactions, thermodynamics, solutions and laboratory practice."
+  },
+  {
+   "slug": "praxis-computer-science-5652",
+   "name": "Praxis Computer Science (5652)",
+   "category": "education-teaching",
+   "group": "Praxis Mathematics & Science",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5652"
+   ],
+   "blurb": "Content test for computer science teachers covering programming, algorithms, data structures, computing systems and digital citizenship."
+  },
+  {
+   "slug": "praxis-earth-and-space-sciences-5572",
+   "name": "Praxis Earth and Space Sciences: Content Knowledge (5572)",
+   "category": "education-teaching",
+   "group": "Praxis Mathematics & Science",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5572"
+   ],
+   "blurb": "Licensure test covering geology, meteorology, oceanography, astronomy and earth systems for secondary earth science teachers."
+  },
+  {
+   "slug": "praxis-general-science-5436",
+   "name": "Praxis General Science: Content Knowledge (5436)",
+   "category": "education-teaching",
+   "group": "Praxis Mathematics & Science",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5436"
+   ],
+   "blurb": "Broad science licensure test spanning physics, chemistry, biology and earth science plus scientific methodology and safety."
+  },
+  {
+   "slug": "praxis-geometry-5163",
+   "name": "Praxis Geometry (5163)",
+   "category": "education-teaching",
+   "group": "Praxis Mathematics & Science",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5163"
+   ],
+   "blurb": "Focused mathematics test on congruence, similarity, trigonometry, circles, measurement and geometric proof for geometry teachers."
+  },
+  {
+   "slug": "praxis-mathematics-5165",
+   "name": "Praxis Mathematics: Content Knowledge (5165)",
+   "category": "education-teaching",
+   "group": "Praxis Mathematics & Science",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5165"
+   ],
+   "blurb": "Secondary mathematics licensure test covering number, algebra, functions, calculus, geometry, probability and statistics."
+  },
+  {
+   "slug": "praxis-physical-science-5485",
+   "name": "Praxis Physical Science: Content Knowledge (5485)",
+   "category": "education-teaching",
+   "group": "Praxis Mathematics & Science",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5485"
+   ],
+   "blurb": "Combined physics and chemistry licensure test for candidates teaching general physical science at the secondary level."
+  },
+  {
+   "slug": "praxis-physics-5266",
+   "name": "Praxis Physics: Content Knowledge (5266)",
+   "category": "education-teaching",
+   "group": "Praxis Mathematics & Science",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5266"
+   ],
+   "blurb": "Current secondary physics licensure test covering mechanics, electricity and magnetism, waves, thermodynamics and modern physics."
+  },
+  {
+   "slug": "ets-performance-assessment-for-school-leaders",
+   "name": "Performance Assessment for School Leaders",
+   "short": "PASL",
+   "category": "education-teaching",
+   "group": "Praxis School Services & Leadership",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "PASL"
+   ],
+   "blurb": "Portfolio-based leadership assessment in which aspiring principals document problem solving, teacher support and data-driven decisions."
+  }
+ ]
+}

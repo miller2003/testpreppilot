@@ -1,0 +1,82 @@
+{
+ "chunkId": "b33-p03",
+ "batch": 33,
+ "part": 3,
+ "categories": [
+  "technology"
+ ],
+ "groups": [
+  "Microsoft"
+ ],
+ "bodies": [
+  "GitHub"
+ ],
+ "examCount": 5,
+ "exams": [
+  {
+   "slug": "microsoft-gh-200",
+   "name": "GitHub Actions",
+   "short": "GH-200",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "GitHub",
+   "type": "Certification",
+   "aka": [
+    "GH-200"
+   ],
+   "blurb": "GitHub certification on automating workflows with GitHub Actions, covering workflow syntax, runners, secrets, reusable workflows and deployments."
+  },
+  {
+   "slug": "microsoft-gh-100",
+   "name": "GitHub Administration",
+   "short": "GH-100",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "GitHub",
+   "type": "Certification",
+   "aka": [
+    "GH-100"
+   ],
+   "blurb": "GitHub certification on administering organisations and enterprises, covering authentication, policies, licensing, migrations and repository governance."
+  },
+  {
+   "slug": "microsoft-gh-500",
+   "name": "GitHub Advanced Security",
+   "short": "GH-500",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "GitHub",
+   "type": "Certification",
+   "aka": [
+    "GH-500"
+   ],
+   "blurb": "GitHub certification covering code scanning with CodeQL, secret scanning, dependency review and integrating security into developer workflows."
+  },
+  {
+   "slug": "microsoft-gh-300",
+   "name": "GitHub Copilot",
+   "short": "GH-300",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "GitHub",
+   "type": "Certification",
+   "aka": [
+    "GH-300"
+   ],
+   "blurb": "GitHub certification on using and administering GitHub Copilot, covering prompt techniques, developer workflows, privacy and responsible AI use."
+  },
+  {
+   "slug": "microsoft-gh-900",
+   "name": "GitHub Foundations",
+   "short": "GH-900",
+   "category": "technology",
+   "group": "Microsoft",
+   "body": "GitHub",
+   "type": "Certification",
+   "aka": [
+    "GH-900"
+   ],
+   "blurb": "Entry-level GitHub certification covering repositories, branching, pull requests, GitHub Flow, issues, projects and collaboration fundamentals."
+  }
+ ]
+}

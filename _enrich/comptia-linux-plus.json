@@ -1,0 +1,205 @@
+{
+  "slug": "comptia-linux-plus",
+  "exam": {
+    "tagline": "Prove you can actually run Linux — vendor-neutral, performance-based, and built for modern cloud and DevOps roles.",
+    "description": "CompTIA Linux+ (exam XK0-005) is a vendor-neutral certification that validates real-world Linux system administration across on-premises and cloud server environments. It covers system management, security hardening, scripting, containerization, automation, and troubleshooting — the daily work of a Linux administrator rather than distribution-specific trivia. Because it is distribution-agnostic, the skills transfer across Ubuntu, Red Hat, Debian, SUSE, and the major clouds. It is frequently paired with CompTIA's A+, Network+, and Security+ or used as a stepping stone toward cloud, DevOps, and cybersecurity careers, and it is approved for DoD 8140 (formerly 8570) IAT Level II roles.",
+    "quickAnswer": {
+      "summary": "Linux+ (XK0-005) is a single, performance-based exam proving job-ready Linux administration: you configure, secure, script, containerize, and troubleshoot Linux systems both on-prem and in the cloud.",
+      "advantages": [
+        "Vendor-neutral — skills transfer across every major Linux distribution and cloud",
+        "Performance-based questions (PBQs) prove hands-on command-line ability, not just memorization",
+        "Maps directly to junior Linux / cloud / DevOps support engineer job roles",
+        "ANSI-accredited to ISO/IEC 17024 and approved for DoD 8140 (IAT Level II) positions",
+        "Renews in 3 years and stacks toward other CompTIA certifications"
+      ]
+    },
+    "roadmap": [
+      "Confirm 12 months of hands-on Linux experience (or study to close the gap)",
+      "Buy the XK0-005 exam voucher from the CompTIA store",
+      "Build a free lab with VirtualBox/VMware or a cloud instance",
+      "Study the four weighted domains and practice PBQs daily",
+      "Schedule and pass the 90-minute Pearson VUE exam",
+      "Earn CEUs in CertCentral to keep the cert active for 3 years"
+    ],
+    "prerequisites": "CompTIA recommends at least 12 months of hands-on experience administering Linux servers, plus foundational knowledge equivalent to A+, Network+, and Server+. There is no formal eligibility requirement, but the exam assumes junior administrator-level practice.",
+    "eligibility": "Open to all candidates 18+ (minors may test with parental consent per Pearson VUE policy). No mandatory prerequisite certification is required to sit the exam.",
+    "examMeta": {
+      "questions": "Maximum of 90 (mix of multiple-choice and performance-based)",
+      "time": "90 minutes",
+      "pass": "720 (on a scale of 100–900) — CompTIA publishes a numeric passing score for Linux+",
+      "fee": "$369 USD (standard exam voucher)",
+      "format": "Multiple-choice and performance-based questions (PBQs)",
+      "admin": "Pearson VUE (test center or online OnVUE proctoring)"
+    },
+    "topics": [
+      {
+        "name": "System Management",
+        "note": "Linux fundamentals, FHS, boot process (BIOS/UEFI, GRUB2), package management (apt, dnf/yum, rpm), file permissions, storage/LVM, systemd, users/groups, networking, and kernel/process/service management.",
+        "weight": "32%"
+      },
+      {
+        "name": "Security",
+        "note": "File/directory permissions (SUID/SGID/sticky bit), SELinux and AppArmor, PAM, user and group security, SSH hardening, firewalls (iptables, firewalld, ufw), encryption, and PKI basics.",
+        "weight": "21%"
+      },
+      {
+        "name": "Scripting, Containers, and Automation",
+        "note": "Bash scripting (variables, conditionals, loops, functions, exit codes), regex with grep/sed/awk, Git, Docker/Podman containers, orchestration concepts, and Ansible/Infrastructure-as-Code basics.",
+        "weight": "19%"
+      },
+      {
+        "name": "Troubleshooting",
+        "note": "Diagnosing CPU/memory/disk issues (top, vmstat, iostat, free, df/du), network troubleshooting (ip, ss, tcpdump), log analysis (journalctl, /var/log), and boot/hardware recovery.",
+        "weight": "28%"
+      }
+    ],
+    "examEssentials": [
+      ["Exam code", "XK0-005"],
+      ["Questions", "Maximum 90 (multiple-choice + performance-based)"],
+      ["Duration", "90 minutes"],
+      ["Passing score", "720 (scale 100–900)"],
+      ["Delivery", "Pearson VUE (center or online)"],
+      ["Validity", "3 years, renewable via CE"]
+    ],
+    "timeline": [
+      ["Register & buy voucher", "1–2 days"],
+      ["Build a home lab (VM or cloud)", "1–2 weeks"],
+      ["Study domains & practice PBQs", "6–10 weeks"],
+      ["Sit XK0-005", "1 day (90 min)"],
+      ["Receive score & e-certificate", "Immediate–a few days"]
+    ],
+    "costBreakdown": {
+      "items": [
+        ["Exam voucher (XK0-005)", "$369 USD"],
+        ["Exam + retake bundle (optional)", "Priced separately by CompTIA"],
+        ["CertMaster training/labs (optional)", "Priced separately by CompTIA"]
+      ],
+      "total": "$369 USD (exam only; bundles and training billed separately)",
+      "footnote": "CompTIA often sells an exam+retake bundle and CertMaster Learn/Practice/Labs separately. Academic and volume voucher pricing may differ by region."
+    },
+    "difficulty": "Moderate",
+    "audience": "Junior Linux administrators, cloud/DevOps support engineers, systems administrators, and IT/security pros adding Linux skills.",
+    "time": "2–4 months of part-time study (faster with the recommended 12 months of experience)",
+    "cost": "$369+ USD (exam; optional training/bundles extra)",
+    "faqs": [
+      {
+        "q": "Is Linux+ the same as LPIC or RHCSA?",
+        "a": "No. Linux+ is CompTIA's vendor-neutral, single-exam credential (XK0-005) that maps to ANSI/ISO 17024. LPIC-1 (Linux Professional Institute) requires two exams and is also vendor-neutral, while Red Hat RHCSA is a single performance-only, Red Hat-specific exam. They overlap in topic areas but are distinct credentials with different renewal terms."
+      },
+      {
+        "q": "Does CompTIA publish a passing score for Linux+?",
+        "a": "Yes. The official XK0-005 exam objectives state a passing score of 720 on a scale of 100–900. Results are reported as pass/fail on screen, with a detailed score report available in your CompTIA and Pearson VUE accounts."
+      },
+      {
+        "q": "How long is Linux+ valid and how do I renew it?",
+        "a": "Linux+ is valid for three years from the date of certification. You renew it by earning 50 Continuing Education (CE) credits through CompTIA CertCentral, by earning a higher-level CompTIA certification, or by retaking the exam. There is no separate annual fee while active."
+      },
+      {
+        "q": "Is Linux+ good for cloud and DevOps careers?",
+        "a": "Yes. XK0-005 explicitly covers scripting, Git, Docker/Podman containers, and Ansible/automation, which are foundational for cloud and DevOps roles. It is positioned as a junior cloud/DevOps support engineer credential and pairs well with cloud provider certifications."
+      },
+      {
+        "q": "Can I take Linux+ online instead of at a test center?",
+        "a": "Yes. Linux+ is delivered exclusively through Pearson VUE, which offers both physical test centers and online proctoring via OnVUE. Online testing requires a quiet, private room, a webcam, and a stable internet connection that passes the system check."
+      }
+    ],
+    "summaryPoints": [
+      "Linux+ (XK0-005) is a vendor-neutral, performance-based Linux administration exam — 90 minutes, up to 90 questions, pass mark 720/900.",
+      "Four weighted domains: System Management 32%, Troubleshooting 28%, Security 21%, Scripting/Containers/Automation 19%.",
+      "Standard exam voucher is $369 USD; the cert is valid 3 years and renewed via 50 CEUs in CertCentral.",
+      "Ideal for junior Linux/cloud/DevOps roles and DoD 8140 IAT Level II; complements A+, Network+, Security+, and cloud certs."
+    ],
+    "sourceUrl": "https://www.comptia.org/certifications/linux",
+    "reviewed": "2026-08",
+    "confidence": "high"
+  },
+  "program": {
+    "body": "CompTIA",
+    "about": "CompTIA (the Computing Technology Industry Association) is a leading vendor-neutral IT certification body. Its Linux+ certification is delivered worldwide through Pearson VUE, either at a physical test center or via online proctoring (OnVUE). Linux+ is ANSI-accredited to ISO/IEC 17024 and approved for U.S. Department of Defense DoD 8140 (formerly 8570) IAT Level II roles. CompTIA also sells official self-paced training (CertMaster Learn, CertMaster Practice, CertMaster Labs) and exam voucher bundles, and manages renewal through its CertCentral portal.",
+    "registrationSteps": [
+      {
+        "title": "Create your accounts",
+        "description": "Set up a free CompTIA account and a Pearson VUE account. Your CompTIA account is where the certification and CEUs are tracked; Pearson VUE handles scheduling and delivery.",
+        "duration": "10 minutes",
+        "note": "Use a consistent email so your exam result links to your CompTIA record."
+      },
+      {
+        "title": "Purchase an exam voucher",
+        "description": "Buy the XK0-005 voucher from the CompTIA store (standard $369 USD). Optionally choose an exam+retake bundle or add CertMaster training.",
+        "subSteps": [
+          "Select Linux+ (XK0-005) in the CompTIA store",
+          "Choose voucher only, exam+retake bundle, or bundle with training",
+          "Save the voucher code from your CompTIA account"
+        ],
+        "duration": "1 day"
+      },
+      {
+        "title": "Schedule your exam",
+        "description": "Go to Pearson VUE, enter your voucher code, and book a date. Choose a nearby test center or online proctoring (OnVUE).",
+        "subSteps": [
+          "Pick test center or OnVUE online",
+          "Run the OnVUE system check if testing at home",
+          "Confirm date, time, and time zone"
+        ],
+        "duration": "15 minutes"
+      },
+      {
+        "title": "Prepare your ID and environment",
+        "description": "Bring a government-issued photo ID to a center. For online testing, prepare a quiet private room, clear your desk, and have your webcam ready for the check-in scan.",
+        "note": "Accepted ID rules follow Pearson VUE policy (typically passport or driver's license matching your account name).",
+        "duration": "Test-day prep"
+      },
+      {
+        "title": "Take the exam",
+        "description": "Complete up to 90 questions in 90 minutes, including multiple-choice and performance-based items. You see a pass/fail result on screen immediately after finishing.",
+        "duration": "90 minutes"
+      },
+      {
+        "title": "Claim and maintain your certification",
+        "description": "Your certification appears in CompTIA CertCentral. Log in to download the e-certificate and start tracking the 50 CEUs needed to renew within 3 years.",
+        "duration": "A few days"
+      }
+    ],
+    "proctoring": "Delivered by Pearson VUE with two options: an in-person proctored test center, or online proctoring via OnVUE with a live remote proctor (requires webcam, stable internet, and a private room).",
+    "retakePolicy": "If you do not pass, you may retake XK0-005 after a 14-day waiting period. Each attempt requires a new exam voucher; there is no limit on the number of retakes. CompTIA's standard candidate agreement governs retake rules.",
+    "recertification": "Linux+ is valid for 3 years from the certification date. Renew by earning 50 Continuing Education (CE) credits and paying the CE fee through CompTIA CertCentral, by earning a higher-level CompTIA certification, or by passing the current XK0-005 exam again.",
+    "scoreReporting": "A pass/fail result is shown on screen immediately after the exam. A detailed score report by domain is available in your Pearson VUE account and mirrored in your CompTIA CertCentral record.",
+    "refundPolicy": "Exam vouchers are generally non-refundable but may be transferable or have a defined expiry; optional CertMaster training may be refundable within a limited window per CompTIA's terms. Review voucher terms at purchase.",
+    "providersNote": "Linux+ is offered exclusively through Pearson VUE worldwide (test centers and online OnVUE). CompTIA does not deliver the exam through other testing providers.",
+    "comparison": {
+      "title": "Linux certifications compared",
+      "columns": ["Credential", "Vendor", "Level", "Exam", "Validity"],
+      "rows": [
+        {
+          "label": "CompTIA Linux+",
+          "values": ["CompTIA", "Vendor-neutral", "Intermediate", "1 exam (XK0-005)", "3 years"]
+        },
+        {
+          "label": "LPIC-1",
+          "values": ["Linux Professional Institute", "Vendor-neutral", "Entry", "2 exams (101 + 102)", "5 years"]
+        },
+        {
+          "label": "Red Hat RHCSA",
+          "values": ["Red Hat", "Vendor-specific", "Entry", "1 exam (performance lab)", "3 years"]
+        }
+      ]
+    },
+    "orgFaqs": [
+      {
+        "q": "Who issues the Linux+ certification?",
+        "a": "CompTIA (the Computing Technology Industry Association), a vendor-neutral certifying body. The exam is delivered through Pearson VUE and the credential is ANSI-accredited to ISO/IEC 17024."
+      },
+      {
+        "q": "How do I renew a CompTIA certification?",
+        "a": "Through CompTIA CertCentral: accumulate the required Continuing Education (CE) credits (50 for Linux+) and pay the CE fee, earn a higher CompTIA cert, or retake the current exam. Most CompTIA certs follow the 3-year renewal cycle."
+      },
+      {
+        "q": "Are CompTIA exam vouchers refundable?",
+        "a": "Vouchers are typically non-refundable but may be transferable and carry an expiry date. Optional training products may have a limited refund window. Always review the terms shown at purchase in the CompTIA store."
+      }
+    ],
+    "sourceUrl": "https://www.comptia.org/certifications/linux",
+    "verified": true,
+    "confidence": "high"
+  }
+}

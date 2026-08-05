@@ -1,0 +1,397 @@
+{
+ "chunkId": "b38-p02",
+ "batch": 38,
+ "part": 2,
+ "categories": [
+  "trades"
+ ],
+ "groups": [
+  "Automotive & Diesel"
+ ],
+ "bodies": [
+  "National Institute for Automotive Service Excellence (ASE)"
+ ],
+ "examCount": 27,
+ "exams": [
+  {
+   "slug": "ase-h7-transit-bus-hvac",
+   "name": "ASE H7 Transit Bus Heating, Ventilation and Air Conditioning Certification Test",
+   "short": "ASE H7",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "H7"
+   ],
+   "blurb": "Transit bus series test on bus climate control, refrigeration circuits, heating loops, controls and refrigerant handling procedures."
+  },
+  {
+   "slug": "ase-h8-transit-bus-preventive-maintenance",
+   "name": "ASE H8 Transit Bus Preventive Maintenance and Inspection Certification Test",
+   "short": "ASE H8",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "H8"
+   ],
+   "blurb": "Transit bus series test covering scheduled inspection routines, fluid and filter service, road testing and defect documentation."
+  },
+  {
+   "slug": "ase-l1-advanced-engine-performance",
+   "name": "ASE L1 Advanced Engine Performance Specialist Certification Test",
+   "short": "ASE L1",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "L1"
+   ],
+   "blurb": "Advanced test on sophisticated driveability and emissions diagnosis, using a composite vehicle reference booklet during the exam."
+  },
+  {
+   "slug": "ase-l2-electronic-diesel-diagnosis",
+   "name": "ASE L2 Electronic Diesel Engine Diagnosis Specialist Certification Test",
+   "short": "ASE L2",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "L2"
+   ],
+   "blurb": "Advanced test on diagnosing electronically controlled diesel engine performance faults in medium- and heavy-duty trucks and buses."
+  },
+  {
+   "slug": "ase-l3-hybrid-electric-vehicle",
+   "name": "ASE L3 Light Duty Hybrid/Electric Vehicle Specialist Certification Test",
+   "short": "ASE L3",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "L3"
+   ],
+   "blurb": "Advanced test on high-voltage safety, battery packs, electric drive units and regenerative braking in hybrid and electric vehicles."
+  },
+  {
+   "slug": "ase-l4-adas-specialist",
+   "name": "ASE L4 Advanced Driver Assistance Systems Specialist Certification Test",
+   "short": "ASE L4",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "L4",
+    "ADAS"
+   ],
+   "blurb": "Advanced test covering diagnosis, service and calibration of radar, camera and ultrasonic driver assistance systems on light vehicles."
+  },
+  {
+   "slug": "ase-military-tactical-wheeled-vehicle",
+   "name": "ASE Military Tactical Wheeled Vehicle Certification Tests",
+   "short": "ASE MIL",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "MIL1-MIL8"
+   ],
+   "blurb": "Eight-test series covering diagnosis, service and repair of the drivetrain, brake, electrical and hydraulic systems of tactical wheeled vehicles."
+  },
+  {
+   "slug": "ase-p1-medium-heavy-truck-parts",
+   "name": "ASE P1 Medium-Heavy Truck Parts Specialist Certification Test",
+   "short": "ASE P1",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "P1"
+   ],
+   "blurb": "Parts specialist test on truck part identification, cataloguing, inventory control and counter sales for medium and heavy trucks."
+  },
+  {
+   "slug": "ase-p2-automobile-parts-specialist",
+   "name": "ASE P2 Automobile Parts Specialist Certification Test",
+   "short": "ASE P2",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "P2"
+   ],
+   "blurb": "Parts specialist test covering automotive part identification, catalogue use, inventory management and customer counter service."
+  },
+  {
+   "slug": "ase-s1-school-bus-body-systems",
+   "name": "ASE S1 School Bus Body Systems and Special Equipment Certification Test",
+   "short": "ASE S1",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "S1"
+   ],
+   "blurb": "School bus series test on body components, entrance doors, wheelchair lifts, warning systems and other special pupil transport equipment."
+  },
+  {
+   "slug": "ase-s2-school-bus-diesel-engines",
+   "name": "ASE S2 School Bus Diesel Engines Certification Test",
+   "short": "ASE S2",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "S2"
+   ],
+   "blurb": "School bus series test covering diesel engine diagnosis, fuel and air systems, aftertreatment and cooling on Type A to D buses."
+  },
+  {
+   "slug": "ase-s3-school-bus-drive-train",
+   "name": "ASE S3 School Bus Drive Train Certification Test",
+   "short": "ASE S3",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "S3"
+   ],
+   "blurb": "School bus series test on transmissions, driveshafts, differentials and axle assemblies used in pupil transportation vehicles."
+  },
+  {
+   "slug": "ase-s4-school-bus-brakes",
+   "name": "ASE S4 School Bus Brakes Certification Test",
+   "short": "ASE S4",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "S4"
+   ],
+   "blurb": "School bus series test covering air and hydraulic brake diagnosis, antilock systems, foundation brakes and parking brake service."
+  },
+  {
+   "slug": "ase-s5-school-bus-suspension-steering",
+   "name": "ASE S5 School Bus Suspension and Steering Certification Test",
+   "short": "ASE S5",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "S5"
+   ],
+   "blurb": "School bus series test on steering gears, suspension components, frame inspection, alignment and wheel and tyre servicing."
+  },
+  {
+   "slug": "ase-s6-school-bus-electrical",
+   "name": "ASE S6 School Bus Electrical/Electronic Systems Certification Test",
+   "short": "ASE S6",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "S6"
+   ],
+   "blurb": "School bus series test covering batteries, charging and starting circuits, lighting, gauges and student safety warning electronics."
+  },
+  {
+   "slug": "ase-s7-school-bus-air-conditioning",
+   "name": "ASE S7 School Bus Air Conditioning Systems and Controls Certification Test",
+   "short": "ASE S7",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "S7"
+   ],
+   "blurb": "School bus series test on refrigeration circuits, heating systems, controls and refrigerant recovery, not required for master status."
+  },
+  {
+   "slug": "ase-t1-truck-gasoline-engines",
+   "name": "ASE T1 Medium-Heavy Truck Gasoline Engines Certification Test",
+   "short": "ASE T1",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "T1"
+   ],
+   "blurb": "Medium-heavy truck series test on gasoline engine diagnosis and repair, not required for Master Medium-Heavy Truck Technician status."
+  },
+  {
+   "slug": "ase-t2-truck-diesel-engines",
+   "name": "ASE T2 Medium-Heavy Truck Diesel Engines Certification Test",
+   "short": "ASE T2",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "T2"
+   ],
+   "blurb": "Medium-heavy truck series test covering diesel engine mechanical repair, fuel systems, air induction, exhaust and cooling diagnosis."
+  },
+  {
+   "slug": "ase-t3-truck-drive-train",
+   "name": "ASE T3 Medium-Heavy Truck Drive Train Certification Test",
+   "short": "ASE T3",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "T3"
+   ],
+   "blurb": "Medium-heavy truck series test on clutches, manual and automated transmissions, driveshafts, carriers and drive axle assemblies."
+  },
+  {
+   "slug": "ase-t4-truck-brakes",
+   "name": "ASE T4 Medium-Heavy Truck Brakes Certification Test",
+   "short": "ASE T4",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "T4"
+   ],
+   "blurb": "Medium-heavy truck series test covering air brake systems, compressors, valves, drum and disc foundation brakes and antilock controls."
+  },
+  {
+   "slug": "ase-t5-truck-suspension-steering",
+   "name": "ASE T5 Medium-Heavy Truck Suspension and Steering Certification Test",
+   "short": "ASE T5",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "T5"
+   ],
+   "blurb": "Medium-heavy truck series test on steering linkage, power steering, suspension, frame, alignment and wheel end service."
+  },
+  {
+   "slug": "ase-t6-truck-electrical",
+   "name": "ASE T6 Medium-Heavy Truck Electrical/Electronic Systems Certification Test",
+   "short": "ASE T6",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "T6"
+   ],
+   "blurb": "Medium-heavy truck series test covering batteries, charging, cranking, lighting, instrumentation and vehicle data bus diagnosis."
+  },
+  {
+   "slug": "ase-t7-truck-hvac",
+   "name": "ASE T7 Medium-Heavy Truck Heating, Ventilation and Air Conditioning Certification Test",
+   "short": "ASE T7",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "T7"
+   ],
+   "blurb": "Medium-heavy truck series test on cab climate control diagnosis, refrigeration components, heating systems and refrigerant recovery."
+  },
+  {
+   "slug": "ase-t8-truck-preventive-maintenance",
+   "name": "ASE T8 Medium-Heavy Truck Preventive Maintenance Inspection Certification Test",
+   "short": "ASE T8",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "T8",
+    "PMI"
+   ],
+   "blurb": "Medium-heavy truck series test covering federal inspection requirements, scheduled servicing and defect reporting for commercial fleets."
+  },
+  {
+   "slug": "ase-x1-exhaust-systems",
+   "name": "ASE X1 Undercar Specialist Exhaust Systems Certification Test",
+   "short": "ASE X1",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "X1"
+   ],
+   "blurb": "Undercar specialist test on exhaust system inspection, pipe fabrication, catalytic converters and emissions legality requirements."
+  },
+  {
+   "slug": "ase-xev-level-1-electrical-safety",
+   "name": "ASE xEV Level 1 Electrical Safety Awareness Certification",
+   "short": "xEV Level 1",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "xEV1"
+   ],
+   "blurb": "High-voltage safety awareness credential for anyone working around electrified vehicles in dealerships, shops and towing operations."
+  },
+  {
+   "slug": "ase-xev-level-2-technician-safety",
+   "name": "ASE xEV Level 2 Technician Electrical Safety Certification",
+   "short": "xEV Level 2",
+   "category": "trades",
+   "group": "Automotive & Diesel",
+   "body": "National Institute for Automotive Service Excellence (ASE)",
+   "bodyUrl": "https://www.ase.com",
+   "type": "Certification",
+   "aka": [
+    "xEV2"
+   ],
+   "blurb": "Technician-level credential on de-energising, verifying and safely servicing high-voltage systems in hybrid and battery electric vehicles."
+  }
+ ]
+}

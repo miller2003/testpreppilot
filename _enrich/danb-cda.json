@@ -1,0 +1,122 @@
+{
+  "slug": "danb-cda",
+  "exam": {
+    "tagline": "The NCCA-accredited national dental assistant credential — three component exams (GC, RHS, ICE) that employers and 39 state boards recognize by name.",
+    "description": "The DANB Certified Dental Assistant (CDA) is the only nationally recognized dental assisting certification in the United States, earned by passing three computer-based component exams: General Chairside Assisting (GC), Radiation Health & Safety (RHS), and Infection Control (ICE). Candidates qualify through one of three pathways that pair a CODA-accredited education or 3,500 hours of work experience with current hands-on CPR/BLS/ACLS from a DANB-accepted provider. Employers and 39 state dental boards use the CDA to verify competency for expanded functions such as radiography and restorative assisting, and certified assistants typically earn more than their non-certified peers. It sits at the center of the dental assisting ladder: RHS and ICE can also be earned alone, and the CDA is the gateway to specialty DANB certificates such as COA, CPFDA, and CRFDA.",
+    "quickAnswer": {
+      "summary": "The DANB CDA is the flagship U.S. dental assisting certification, earned by passing three component exams (GC, RHS, ICE) totaling 245 questions in 195 minutes, with a scaled passing score of 400 (100–900 scale) on each component.",
+      "advantages": [
+        "Only nationally recognized dental assistant certification in the U.S.; accepted or required in 39 states, DC, the U.S. Air Force, and the VA",
+        "Validates the full chairside + radiography + infection-control skill set employers screen for",
+        "Unlocks expanded functions (radiography, restorative assisting) that many states restrict to certified assistants",
+        "Portable across states and a stepping stone to specialty DANB certificates (COA, CPFDA, CRFDA)",
+        "Typically associated with higher pay than non-certified dental assistant roles"
+      ]
+    },
+    "roadmap": [
+      "Confirm your eligibility pathway (CODA program, work experience, or dental degree)",
+      "Secure current hands-on CPR/BLS/ACLS from a DANB-accepted provider",
+      "Submit the CDA application and pay the $450 fee through danb.org",
+      "Schedule your 60-day testing window with Pearson VUE (test center or online)",
+      "Pass all three components (GC, RHS, ICE) within the window",
+      "Maintain annually with 12 CDE credits and current CPR"
+    ],
+    "prerequisites": "Current hands-on CPR, BLS, or ACLS certification from a DANB-accepted provider is required for all CDA/GC pathways. RHS and ICE may be taken alone with no eligibility prerequisite.",
+    "eligibility": "DANB offers three eligibility pathways, and every one requires current hands-on CPR/BLS/ACLS from a DANB-accepted provider. Pathway I: graduate of a CODA-accredited dental assisting or dental hygiene program. Pathway II: high school diploma or equivalent plus at least 3,500 hours of approved dental assisting work experience (verified by a supervising dentist) within the past four years. Pathway III: former DANB CDA status, enrollment in or graduation from a CODA-accredited DDS/DMD program, graduation from a dental degree program outside the U.S./Canada, or completion of an approved post-baccalaureate dental program. Note: the RHS and ICE component exams may also be taken independently with no eligibility prerequisites.",
+    "examMeta": {
+      "questions": "245 multiple-choice (95 GC + 75 RHS + 75 ICE)",
+      "time": "195 minutes (3 hr 15 min) — 75 min GC, 60 min RHS, 60 min ICE",
+      "pass": "Scaled score of 400 on a 100–900 scale for each component (computer-adaptive)",
+      "fee": "$450 for the full CDA (includes a $75 nonrefundable application fee); single component $270; two-component bundle $375. Active military $425.",
+      "format": "Computer-based, computer-adaptive testing (CAT) at Pearson VUE test centers or live remote online proctoring",
+      "admin": "Dental Assisting National Board (DANB)"
+    },
+    "topics": [
+      { "name": "General Chairside Assisting (GC)", "note": "95 questions, 75 min. Domains: Evaluation (17%), Patient Management & Administration (17%), Chairside Dentistry (50%), Dental Materials (16%)." },
+      { "name": "Radiation Health & Safety (RHS)", "note": "75 questions, 60 min. Domains: Purpose & Technique (50%), Radiation Safety (25%), Infection Prevention & Control (25%)." },
+      { "name": "Infection Control (ICE)", "note": "75 questions, 60 min. Domains: Prevention of Disease Transmission (20%), Prevention of Cross-contamination (34%), Process Instruments & Devices (26%), Occupational Safety & Administration Protocols (20%)." }
+    ],
+    "examEssentials": [
+      ["Credential", "DANB Certified Dental Assistant (CDA)"],
+      ["Component exams", "GC + RHS + ICE (245 questions, 195 min)"],
+      ["Passing standard", "Scaled 400 / 900 per component (CAT)"],
+      ["Eligibility", "CODA program, 3,500 hrs experience, or dental degree + CPR"],
+      ["Renewal", "Annually: 12 CDE credits + current CPR"],
+      ["Recognition", "Accepted/required in 39 states, DC, U.S. Air Force, VA"]
+    ],
+    "timeline": [
+      ["Confirm eligibility", "1–4 weeks (gather transcripts/experience)"],
+      ["Apply & pay", "Same day online"],
+      ["Schedule (60-day window)", "Within 60 days of approval"],
+      ["Take exam", "~3 hr 15 min"],
+      ["Official score", "~1 week in DANB account"]
+    ],
+    "costBreakdown": {
+      "items": [
+        ["Full CDA exam (GC + RHS + ICE)", "$450"],
+        ["Single component (GC, RHS, or ICE)", "$270"],
+        ["Two-component bundle", "$375"],
+        ["Active military (full CDA)", "$425"]
+      ],
+      "total": "$450 full CDA (includes $75 nonrefundable application fee)",
+      "footnote": "All fees include a $75 nonrefundable application fee. A $40 fee is retained by DANB if you cancel after your exam is authorized, and rescheduling within 30 days of the appointment may incur a PSI vendor fee. Verify current fees on danb.org before applying."
+    },
+    "difficulty": "Moderate",
+    "audience": "Aspiring and current dental assistants seeking the nationally recognized credential for chairside, radiography, and infection-control duties.",
+    "time": "A few weeks to several months of prep; exam itself 195 minutes",
+    "cost": "$270–$450 depending on components taken",
+    "salaryRange": "$44,000–$55,000 (approx. U.S. median wage for dental assistants; BLS)",
+    "faqs": [
+      { "q": "What are the eligibility pathways for the DANB CDA exam?", "a": "DANB offers three pathways, each requiring current hands-on CPR/BLS/ACLS from a DANB-accepted provider. Pathway I is graduation from a CODA-accredited dental assisting or dental hygiene program. Pathway II is a high school diploma or equivalent plus at least 3,500 hours of approved dental assisting work experience within the past four years. Pathway III covers former CDAs, CODA-accredited DDS/DMD students or graduates, foreign dental degree graduates, or approved post-baccalaureate dental program completers." },
+      { "q": "How much does the CDA exam cost?", "a": "The full CDA (all three components: GC, RHS, ICE) is $450 as of 2026, which includes a $75 nonrefundable application fee. A single component is $270 and a two-component bundle is $375. Active military candidates pay $425 for the full exam. A $40 fee is retained if you cancel after authorization." },
+      { "q": "What is the passing score?", "a": "Each component exam is scored on a 100–900 scale, and you must reach a scaled score of 400 on each component to pass. The exam uses computer-adaptive testing, and you must pass all three components (GC, RHS, ICE) to earn the CDA. You receive a preliminary result at the test center and the official score in your DANB account about a week later." },
+      { "q": "How do I renew the CDA, and how long is it valid?", "a": "The CDA is valid for one year and renews annually. Each year you must complete 12 Continuing Dental Education (CDE) credits (at least 2 in infection control and 1 covering bloodborne pathogens, with a maximum of 3 non-clinical credits), maintain current DANB-accepted CPR, and pay the renewal fee. CDE credits can carry over for up to two years, and DANB may audit renewal documentation." },
+      { "q": "What if I fail a component?", "a": "There is no limit on retakes of a failed exam. You must submit a new application and pay the full exam fee again for each attempt. Some state dental boards require additional education after repeated failures, so check your state's rules if you are retaking for state authorization." }
+    ],
+    "summaryPoints": [
+      "The DANB CDA is the only nationally recognized U.S. dental assistant certification, combining GC, RHS, and ICE (245 questions, 195 minutes).",
+      "Pass each component at a scaled 400/900; fee is $450 for the full exam (2026), with single-component and military pricing available.",
+      "Three eligibility pathways require CPR plus a CODA education, 3,500 hours of experience, or a dental degree.",
+      "Renew annually with 12 CDE credits and current CPR; accepted or required in 39 states plus the U.S. Air Force and VA."
+    ],
+    "sourceUrl": "https://www.danb.org/Become-Certified/Exams-and-Certifications/CDA.aspx",
+    "reviewed": "2026-08",
+    "confidence": "high"
+  },
+  "program": {
+    "body": "Dental Assisting National Board (DANB)",
+    "about": "The Dental Assisting National Board (DANB) is the nationally recognized, nonprofit certifying body for dental assistants in the United States. DANB's exams and certifications are accredited by the National Commission for Certifying Agencies (NCCA) and are recognized or required by 39 states, the District of Columbia, the U.S. Air Force, and the Department of Veterans Affairs.",
+    "registrationSteps": [
+      { "title": "Confirm your eligibility pathway", "description": "Review DANB's three CDA pathways (CODA program graduate, 3,500 hours work experience, or dental degree) and secure current hands-on CPR/BLS/ACLS from a DANB-accepted provider.", "duration": "1–4 weeks" },
+      { "title": "Create your DANB account and apply", "description": "Complete the online CDA application on danb.org, uploading proof of education/experience and CPR certification. Incomplete applications are the most common cause of delay.", "note": "The $75 application fee is nonrefundable and included in your exam fee." },
+      { "title": "Pay the exam fee", "description": "Pay $450 for the full CDA (GC+RHS+ICE), or choose a single-component ($270) or two-component bundle ($375). Active military pay $425.", "duration": "Same day" },
+      { "title": "Schedule your exam with Pearson VUE", "description": "After approval, you receive a Test Admission Notice with a link to schedule at a Pearson VUE test center or via live remote online proctoring. You have a 60-day testing window from approval.", "duration": "Within 60 days" },
+      { "title": "Take the exam and get your score", "description": "Arrive with your admission notice and government photo ID. You see a preliminary result immediately; the official scaled score posts to your DANB account about one week later.", "duration": "~3 hr 15 min" },
+      { "title": "Maintain your credential", "description": "Keep CPR current and earn 12 CDE credits annually (at least 2 in infection control and 1 in bloodborne pathogens) to renew each year.", "duration": "Ongoing annually" }
+    ],
+    "proctoring": "Computer-based, computer-adaptive testing delivered at Pearson VUE test centers (in person) or through live remote online proctoring that monitors you by webcam and microphone. Candidates choose the method at scheduling.",
+    "retakePolicy": "There is no limit on retakes of a failed exam. You must submit a new application and pay the full exam fee again for each attempt. A few state dental boards require additional education after repeated failures — check your state board if retaking for state authorization. A passed exam generally cannot be retaken except in unusual cases (contact DANB).",
+    "recertification": "The CDA renews every year. Annually complete 12 CDE credits (at least 2 in infection control and 1 in bloodborne pathogens; maximum 3 non-clinical), maintain current DANB-accepted hands-on CPR/BLS/ACLS, answer background questions, and pay the renewal fee. CDE credits carry over for up to two years; DANB may randomly audit documentation.",
+    "scoreReporting": "A preliminary result appears on screen immediately after the exam (not official). The official scaled score (100–900; pass = 400 per component) is posted to your DANB online account about one week after testing, and a score report is available there.",
+    "refundPolicy": "The $75 application fee portion is nonrefundable. If you cancel after your exam is authorized, DANB retains a $40 fee. Rescheduling within 30 days of your appointment may incur a PSI vendor fee. If you miss the 60-day testing window, your application and fees are forfeited and you must reapply.",
+    "providersNote": "Exams are administered by DANB through its testing vendor Pearson VUE, which operates test centers in every U.S. state and territory and provides remote online proctoring.",
+    "comparison": {
+      "title": "How the DANB CDA compares to other dental assistant credentials",
+      "columns": ["Credential", "Administered by", "Scope", "Typical requirement"],
+      "rows": [
+        { "label": "CDA (Certified Dental Assistant)", "values": ["DANB", "Full credential: chairside + radiography + infection control", "Pass GC + RHS + ICE (245 Q, 195 min)"] },
+        { "label": "NELDA (National Entry Level Dental Assistant)", "values": ["DANB", "Entry-level: anatomy + RHS + ICE; no chairside", "Pass three entry-level components"] },
+        { "label": "RHS / ICE (standalone)", "values": ["DANB", "Single competency (radiography or infection control only)", "One component exam; no eligibility gate"] },
+        { "label": "State RDA license", "values": ["State dental board", "State-specific expanded duties", "Varies by state; often builds on DANB components"] }
+      ]
+    },
+    "orgFaqs": [
+      { "q": "How do I register for a DANB credential?", "a": "Create an account at danb.org, choose your exam, confirm eligibility, pay the fee, and schedule through the Pearson VUE link in your approval email within the 60-day window." },
+      { "q": "How do I renew my DANB CDA?", "a": "Renew annually in your DANB account by attesting to 12 CDE credits, current CPR, and background questions, and paying the renewal fee. Keep CDE and CPR documentation for two years in case of audit." },
+      { "q": "Are DANB exams recognized by states?", "a": "Yes — DANB certifications are recognized or required in 39 states, the District of Columbia, the U.S. Air Force, and the VA, though specific duties and titles vary by state law." }
+    ],
+    "sourceUrl": "https://www.danb.org/Become-Certified/Exams-and-Certifications/CDA.aspx",
+    "verified": true,
+    "confidence": "high"
+  }
+}

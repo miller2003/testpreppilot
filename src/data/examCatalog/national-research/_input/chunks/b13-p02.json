@@ -1,0 +1,415 @@
+{
+ "chunkId": "b13-p02",
+ "batch": 13,
+ "part": 2,
+ "categories": [
+  "education-teaching"
+ ],
+ "groups": [
+  "Praxis Elementary & Early Childhood",
+  "National Teaching Credentials & Performance Assessments",
+  "Praxis Humanities & Social Studies"
+ ],
+ "bodies": [
+  "ETS"
+ ],
+ "examCount": 30,
+ "exams": [
+  {
+   "slug": "praxis-elementary-education-teaching-reading-7002",
+   "name": "Praxis Elementary Education: Teaching Reading (7002)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "7002"
+   ],
+   "blurb": "Reading instruction subtest of the 7001 battery, aligned to the science of reading and required in several states for elementary licensure."
+  },
+  {
+   "slug": "praxis-elementary-education-three-subject-bundle-5901",
+   "name": "Praxis Elementary Education: Three Subject Bundle (5901)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5901",
+    "5903",
+    "5904",
+    "5905"
+   ],
+   "blurb": "Bundle of mathematics, social studies and science subtests for candidates who have already met the reading requirement separately."
+  },
+  {
+   "slug": "praxis-interdisciplinary-early-childhood-education-5023",
+   "name": "Praxis Interdisciplinary Early Childhood Education (5023)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5023"
+   ],
+   "blurb": "Test for teachers of young children with and without disabilities from birth through primary grades, spanning intervention and family services."
+  },
+  {
+   "slug": "praxis-pre-kindergarten-education-5531",
+   "name": "Praxis Pre-Kindergarten Education (5531)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5531"
+   ],
+   "blurb": "Licensure test for pre-kindergarten teachers covering child development, play-based learning, assessment and family partnership."
+  },
+  {
+   "slug": "praxis-stem-for-the-elementary-grades-5036",
+   "name": "Praxis STEM for the Elementary Grades (5036)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5036"
+   ],
+   "blurb": "Test for elementary STEM endorsement covering integrated science, technology, engineering and mathematics instruction."
+  },
+  {
+   "slug": "praxis-teaching-reading-elementary-5205",
+   "name": "Praxis Teaching Reading: Elementary (5205)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5205"
+   ],
+   "blurb": "Standalone reading instruction test for kindergarten through grade six teachers, covering foundational skills, comprehension and assessment."
+  },
+  {
+   "slug": "praxis-teaching-reading-k-12-5206",
+   "name": "Praxis Teaching Reading: K-12 (5206)",
+   "category": "education-teaching",
+   "group": "Praxis Elementary & Early Childhood",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5206"
+   ],
+   "blurb": "Reading instruction test spanning kindergarten through grade twelve, including adolescent literacy and disciplinary reading."
+  },
+  {
+   "slug": "ets-major-field-test",
+   "name": "ETS Major Field Test",
+   "short": "MFT",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "Major Field Tests",
+    "MFT"
+   ],
+   "blurb": "Outcomes assessments measuring undergraduate and graduate mastery of a discipline, used by programmes for accreditation and benchmarking."
+  },
+  {
+   "slug": "praxis-proethica",
+   "name": "ProEthica Professional Ethics for Educators",
+   "short": "ProEthica",
+   "category": "education-teaching",
+   "group": "National Teaching Credentials & Performance Assessments",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Training",
+   "aka": [
+    "ProEthica"
+   ],
+   "blurb": "Online ethics training and assessment for educators, covering professional conduct, boundaries and decision making in schools."
+  },
+  {
+   "slug": "praxis-art-content-and-analysis-5135",
+   "name": "Praxis Art: Content and Analysis (5135)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5135"
+   ],
+   "blurb": "Visual art licensure test combining content questions with constructed-response analysis of artworks and instructional scenarios."
+  },
+  {
+   "slug": "praxis-art-content-knowledge-5134",
+   "name": "Praxis Art: Content Knowledge (5134)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5134"
+   ],
+   "blurb": "Selected-response visual art test covering art history, criticism, aesthetics, media, techniques and studio production."
+  },
+  {
+   "slug": "praxis-citizenship-education-content-knowledge-5087",
+   "name": "Praxis Citizenship Education: Content Knowledge (5087)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5087"
+   ],
+   "blurb": "Content test covering civics, government, history and economics for teachers of citizenship education courses."
+  },
+  {
+   "slug": "praxis-economics-5911",
+   "name": "Praxis Economics (5911)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5911"
+   ],
+   "blurb": "Content test for economics teachers covering microeconomics, macroeconomics, international trade and personal finance."
+  },
+  {
+   "slug": "praxis-english-language-arts-content-and-analysis-5039",
+   "name": "Praxis English Language Arts: Content and Analysis (5039)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5039"
+   ],
+   "blurb": "English licensure test adding constructed-response literary and rhetorical analysis to the selected-response content knowledge questions."
+  },
+  {
+   "slug": "praxis-english-language-arts-content-knowledge-5038",
+   "name": "Praxis English Language Arts: Content Knowledge (5038)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5038"
+   ],
+   "blurb": "Secondary English content test covering reading of literature and informational texts, language use, writing, speaking and listening."
+  },
+  {
+   "slug": "praxis-geography-5921",
+   "name": "Praxis Geography (5921)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5921"
+   ],
+   "blurb": "Content test for geography teachers covering physical and human geography, regions, spatial analysis and geographic tools."
+  },
+  {
+   "slug": "praxis-government-political-science-5931",
+   "name": "Praxis Government/Political Science (5931)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5931"
+   ],
+   "blurb": "Content test covering United States government, comparative politics, international relations and political theory for civics teachers."
+  },
+  {
+   "slug": "praxis-journalism-5224",
+   "name": "Praxis Journalism (5224)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5224"
+   ],
+   "blurb": "Content test for journalism teachers and advisers, covering reporting, editing, media law, ethics and student publication management."
+  },
+  {
+   "slug": "praxis-music-content-and-instruction-5114",
+   "name": "Praxis Music: Content and Instruction (5114)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5114"
+   ],
+   "blurb": "Music licensure test pairing content questions with constructed-response tasks on rehearsal planning and instructional decisions."
+  },
+  {
+   "slug": "praxis-music-content-knowledge-5113",
+   "name": "Praxis Music: Content Knowledge (5113)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5113"
+   ],
+   "blurb": "Core music education test covering theory, history, performance, listening analysis and music pedagogy for school music teachers."
+  },
+  {
+   "slug": "praxis-music-instrumental-and-general-knowledge-5115",
+   "name": "Praxis Music: Instrumental and General Knowledge (5115)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5115"
+   ],
+   "blurb": "Music test emphasising instrumental teaching, ensemble direction and general music content for band and orchestra candidates."
+  },
+  {
+   "slug": "praxis-music-vocal-and-general-knowledge-5116",
+   "name": "Praxis Music: Vocal and General Knowledge (5116)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5116"
+   ],
+   "blurb": "Music test emphasising choral and vocal teaching alongside general music content for candidates seeking vocal music licensure."
+  },
+  {
+   "slug": "praxis-psychology-5391",
+   "name": "Praxis Psychology (5391)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5391"
+   ],
+   "blurb": "Content test for high school psychology teachers covering biological bases, learning, development, disorders and research methods."
+  },
+  {
+   "slug": "praxis-social-studies-5581",
+   "name": "Praxis Social Studies (5581)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5581"
+   ],
+   "blurb": "Current secondary social studies licensure test that replaced Content Knowledge 5081, covering history, civics, geography and economics."
+  },
+  {
+   "slug": "praxis-social-studies-content-and-interpretation-5086",
+   "name": "Praxis Social Studies: Content and Interpretation (5086)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5086"
+   ],
+   "blurb": "Social studies test adding constructed-response source interpretation and argumentation to selected-response content questions."
+  },
+  {
+   "slug": "praxis-sociology-5952",
+   "name": "Praxis Sociology (5952)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5952"
+   ],
+   "blurb": "Content test for sociology teachers covering culture, socialisation, social institutions, stratification and research methods."
+  },
+  {
+   "slug": "praxis-speech-and-theatre-5222",
+   "name": "Praxis Speech and Theatre (5222)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5222"
+   ],
+   "blurb": "Combined content test for candidates licensed to teach both speech communication and theatre arts in secondary schools."
+  },
+  {
+   "slug": "praxis-speech-communication-content-knowledge-5221",
+   "name": "Praxis Speech Communication: Content Knowledge (5221)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5221"
+   ],
+   "blurb": "Content test covering rhetoric, public speaking, interpersonal and group communication, media literacy and forensics coaching."
+  },
+  {
+   "slug": "praxis-theatre-5641",
+   "name": "Praxis Theatre (5641)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5641"
+   ],
+   "blurb": "Theatre licensure test covering acting, directing, design, technical theatre, dramatic literature and theatre history."
+  },
+  {
+   "slug": "praxis-world-and-us-history-content-knowledge-5941",
+   "name": "Praxis World and U.S. History: Content Knowledge (5941)",
+   "category": "education-teaching",
+   "group": "Praxis Humanities & Social Studies",
+   "body": "ETS",
+   "bodyUrl": "https://www.ets.org",
+   "type": "Exam",
+   "aka": [
+    "5941"
+   ],
+   "blurb": "History licensure test covering world history from ancient to modern periods alongside United States history and historical methods."
+  }
+ ]
+}

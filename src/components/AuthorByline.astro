@@ -1,0 +1,133 @@
+---
+/**
+ * AuthorByline — editorial accountability block (the E-E-A-T signal the gap
+ * analysis flagged as missing site-wide).
+ *
+ * We attribute to a named editorial desk rather than an individual byline.
+ * That is a deliberate choice: we will not invent a person. The schema markup
+ * is therefore `Organization`, which is what is actually true, and the block
+ * leads with the things a reader can verify — the review date, the research
+ * method, and the primary sources cited in each section.
+ *
+ * `placement="hero"`   compact one-liner under the page title.
+ * `placement="footer"` fuller methodology card at the end of the article.
+ *
+ * Renders nothing when no desk name is supplied.
+ */
+interface Props {
+  author?: { name?: string; title?: string; bio?: string; url?: string } | null;
+  /** How the figures on the page were checked. Free text, no personal names. */
+  reviewedBy?: string;
+  lastReviewed?: string;
+  placement?: 'hero' | 'footer';
+}
+const { author, reviewedBy, lastReviewed, placement = 'hero' } = Astro.props;
+
+const name = author?.name?.trim();
+const desk = author?.title?.trim();
+
+// '2026-08' → 'August 2026'
+function prettyDate(v?: string) {
+  if (!v) return '';
+  const m = /^(\d{4})-(\d{2})$/.exec(v.trim());
+  if (!m) return v;
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const idx = parseInt(m[2], 10) - 1;
+  return months[idx] ? `${months[idx]} ${m[1]}` : v;
+}
+const reviewedPretty = prettyDate(lastReviewed);
+---
+
+{name && placement === 'hero' && (
+  <p class="ab-hero" itemscope itemtype="https://schema.org/Organization">
+    <span class="ab-mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 6 9 17l-5-5" />
+      </svg>
+    </span>
+    <span class="ab-hero-text">
+      Researched and maintained by
+      {author.url
+        ? <a href={author.url} itemprop="url"><span itemprop="name">{name}</span></a>
+        : <span itemprop="name">{name}</span>}
+      {desk && <span class="ab-role">{desk}</span>}
+      {reviewedPretty && <span class="ab-date"> · Figures last verified {reviewedPretty}</span>}
+    </span>
+  </p>
+)}
+
+{name && placement === 'footer' && (
+  <section id="author" class="ab-card" itemscope itemtype="https://schema.org/Organization">
+    <div class="ab-body">
+      <p class="ab-eyebrow">How this guide is maintained</p>
+      <h3 class="ab-name">
+        {author.url
+          ? <a href={author.url} itemprop="url"><span itemprop="name">{name}</span></a>
+          : <span itemprop="name">{name}</span>}
+      </h3>
+      {desk && <p class="ab-title">{desk}</p>}
+      {author.bio && <p class="ab-bio" itemprop="description">{author.bio}</p>}
+      <p class="ab-meta">
+        {reviewedBy && <span>{reviewedBy} </span>}
+        {reviewedPretty && (
+          <span>
+            Every fee, score and deadline on this page was checked against the primary
+            sources cited above in {reviewedPretty}. Exam boards change these without
+            notice — confirm anything you are about to pay for on the official site.
+          </span>
+        )}
+      </p>
+    </div>
+  </section>
+)}
+
+<style>
+  .ab-hero {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.9rem 0 0;
+    font-size: 0.88rem;
+    color: var(--muted, #5a5a5a);
+    flex-wrap: wrap;
+  }
+  .ab-hero a { color: inherit; font-weight: 600; text-decoration: underline; }
+  .ab-hero-text > span + span { margin-left: 0.1rem; }
+  .ab-role::before { content: ' · '; }
+  .ab-date { opacity: 0.85; }
+
+  .ab-mark {
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--accent, #c2703d);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ab-card {
+    margin: 2rem 0 0;
+    padding: 1.25rem 1.35rem;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-left: 3px solid var(--accent, #c2703d);
+    border-radius: 10px;
+    background: #fff;
+  }
+  .ab-eyebrow {
+    margin: 0 0 0.2rem;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted, #777);
+    font-weight: 600;
+  }
+  .ab-name { margin: 0 0 0.15rem; font-size: 1.05rem; }
+  .ab-name a { color: inherit; text-decoration: underline; }
+  .ab-title { margin: 0 0 0.5rem; font-size: 0.88rem; color: var(--muted, #666); }
+  .ab-bio { margin: 0; color: var(--muted, #555); }
+  .ab-meta { margin: 0.6rem 0 0; font-size: 0.82rem; color: var(--muted, #777); line-height: 1.65; }
+  .ab-body { min-width: 0; }
+</style>

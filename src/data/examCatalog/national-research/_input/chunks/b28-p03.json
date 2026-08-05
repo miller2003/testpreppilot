@@ -1,0 +1,433 @@
+{
+ "chunkId": "b28-p03",
+ "batch": 28,
+ "part": 3,
+ "categories": [
+  "project-business"
+ ],
+ "groups": [
+  "Agile & Product",
+  "Project & Program Management",
+  "Human Resources"
+ ],
+ "bodies": [
+  "ICAgile",
+  "PeopleCert",
+  "Society for Human Resource Management",
+  "International Project Management Association",
+  "International Foundation of Employee Benefit Plans",
+  "Association of International Product Marketing and Management",
+  "Kanban University",
+  "American Institute of Constructors",
+  "Construction Management Association of America",
+  "Association for Talent Development",
+  "Institute for Diversity Certification"
+ ],
+ "examCount": 38,
+ "exams": [
+  {
+   "slug": "icagile-expert-agile-coaching",
+   "name": "ICAgile Certified Expert – Agile Coaching",
+   "short": "ICE-AC",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "ICAgile",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Expert-level assessment of demonstrated agile coaching competence through evidence submission and panel evaluation."
+  },
+  {
+   "slug": "icagile-agile-coaching",
+   "name": "ICAgile Certified Professional – Agile Coaching",
+   "short": "ICP-ACC",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "ICAgile",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Learning-outcome certification covering coaching stance, mentoring, professional coaching skills and team development."
+  },
+  {
+   "slug": "icagile-agile-fundamentals",
+   "name": "ICAgile Certified Professional – Agile Fundamentals",
+   "short": "ICP",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "ICAgile",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Foundation certification covering agile mindset, values, principles and common delivery practices across frameworks."
+  },
+  {
+   "slug": "icagile-agile-product-ownership",
+   "name": "ICAgile Certified Professional – Agile Product Ownership",
+   "short": "ICP-APO",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "ICAgile",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering product vision, customer discovery, backlog strategy, roadmapping and value-based prioritisation."
+  },
+  {
+   "slug": "icagile-agile-programming",
+   "name": "ICAgile Certified Professional – Agile Programming",
+   "short": "ICP-PRG",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "ICAgile",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering test-driven development, refactoring, continuous integration and collaborative technical practices."
+  },
+  {
+   "slug": "icagile-agile-team-facilitation",
+   "name": "ICAgile Certified Professional – Agile Team Facilitation",
+   "short": "ICP-ATF",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "ICAgile",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification covering facilitation stance, meeting design, conflict handling and collaborative decision-making for agile teams."
+  },
+  {
+   "slug": "msp-foundation",
+   "name": "MSP Foundation",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Foundation examination on Managing Successful Programmes principles, themes and the programme lifecycle processes."
+  },
+  {
+   "slug": "msp-practitioner",
+   "name": "MSP Practitioner",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Scenario-based examination applying Managing Successful Programmes guidance to realistic transformation programme contexts."
+  },
+  {
+   "slug": "prince2-agile-foundation",
+   "name": "PRINCE2 Agile Foundation",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination covering how PRINCE2 governance combines with agile delivery concepts, behaviours and common frameworks."
+  },
+  {
+   "slug": "prince2-agile-practitioner",
+   "name": "PRINCE2 Agile Practitioner",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Scenario examination on tailoring PRINCE2 to agile environments using fixed and flex tolerances and the Agilometer."
+  },
+  {
+   "slug": "prince2-foundation",
+   "name": "PRINCE2 Foundation",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry examination on PRINCE2 principles, practices and processes for controlled project environments."
+  },
+  {
+   "slug": "prince2-practitioner",
+   "name": "PRINCE2 Practitioner",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "PeopleCert",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Objective-testing examination on applying and tailoring PRINCE2 to a described project scenario and its constraints."
+  },
+  {
+   "slug": "shrm-cp",
+   "name": "SHRM Certified Professional",
+   "short": "SHRM-CP",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "Society for Human Resource Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Competency and knowledge examination for operational HR professionals, using situational judgement plus knowledge items."
+  },
+  {
+   "slug": "shrm-inclusive-workplace-culture-specialty",
+   "name": "SHRM Inclusive Workplace Culture Specialty Credential",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "Society for Human Resource Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential covering inclusive culture strategy, equitable practice design and measurement of workplace inclusion."
+  },
+  {
+   "slug": "shrm-people-analytics-specialty",
+   "name": "SHRM People Analytics Specialty Credential",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "Society for Human Resource Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential covering HR metrics, data quality, analysis techniques and communicating workforce insights to leaders."
+  },
+  {
+   "slug": "shrm-scp",
+   "name": "SHRM Senior Certified Professional",
+   "short": "SHRM-SCP",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "Society for Human Resource Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Senior competency-based HR examination focused on strategy, organisational leadership and enterprise people decisions."
+  },
+  {
+   "slug": "shrm-talent-acquisition-specialty",
+   "name": "SHRM Talent Acquisition Specialty Credential",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "Society for Human Resource Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential covering sourcing, selection, employer branding and legally sound hiring processes for recruiters."
+  },
+  {
+   "slug": "shrm-workplace-investigations-specialty",
+   "name": "SHRM Workplace Investigations Specialty Credential",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "Society for Human Resource Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Specialty credential covering complaint intake, interviewing, evidence handling and documenting workplace investigation findings."
+  },
+  {
+   "slug": "ipma-level-a",
+   "name": "IPMA Level A Certified Projects Director",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "International Project Management Association",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Highest IPMA competence level for directors managing portfolios or complex programmes, assessed by report and interview."
+  },
+  {
+   "slug": "ipma-level-b",
+   "name": "IPMA Level B Certified Senior Project Manager",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "International Project Management Association",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Competence-based certification for managers of complex projects, assessed through examination, report and interview."
+  },
+  {
+   "slug": "ipma-level-c",
+   "name": "IPMA Level C Certified Project Manager",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "International Project Management Association",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Certification for managers of moderately complex projects, combining written examination with competence evidence review."
+  },
+  {
+   "slug": "ipma-level-d",
+   "name": "IPMA Level D Certified Project Management Associate",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "International Project Management Association",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Knowledge-based entry certification covering project management competence elements defined in the IPMA competence baseline."
+  },
+  {
+   "slug": "certified-employee-benefit-specialist",
+   "name": "Certified Employee Benefit Specialist",
+   "short": "CEBS",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "International Foundation of Employee Benefit Plans",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Multi-course designation with the Wharton School covering group benefits, retirement plans and benefits management."
+  },
+  {
+   "slug": "compensation-management-specialist",
+   "name": "Compensation Management Specialist",
+   "short": "CMS",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "International Foundation of Employee Benefit Plans",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "CEBS-series designation covering compensation strategy, pay administration and total rewards programme evaluation."
+  },
+  {
+   "slug": "group-benefits-associate",
+   "name": "Group Benefits Associate",
+   "short": "GBA",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "International Foundation of Employee Benefit Plans",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "CEBS-series designation focused on group health, disability and welfare plan design, funding and regulation."
+  },
+  {
+   "slug": "retirement-plans-associate",
+   "name": "Retirement Plans Associate",
+   "short": "RPA",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "International Foundation of Employee Benefit Plans",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "CEBS-series designation covering defined benefit and defined contribution plan design, funding and fiduciary responsibility."
+  },
+  {
+   "slug": "aipmm-certified-product-manager",
+   "name": "AIPMM Certified Product Manager",
+   "short": "CPM",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Association of International Product Marketing and Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination covering the product lifecycle from concept and business case through launch, growth and end-of-life planning."
+  },
+  {
+   "slug": "aipmm-certified-product-marketing-manager",
+   "name": "AIPMM Certified Product Marketing Manager",
+   "short": "CPMM",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Association of International Product Marketing and Management",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Examination covering positioning, segmentation, launch planning, sales enablement and go-to-market execution for products."
+  },
+  {
+   "slug": "kanban-management-professional",
+   "name": "Kanban Management Professional",
+   "short": "KMP",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Kanban University",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Two-course credential covering Kanban systems design, flow metrics, service delivery and evolutionary change management."
+  },
+  {
+   "slug": "team-kanban-practitioner",
+   "name": "Team Kanban Practitioner",
+   "short": "TKP",
+   "category": "project-business",
+   "group": "Agile & Product",
+   "body": "Kanban University",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Introductory Kanban credential covering board design, work in progress limits, visualisation and pull-based workflow."
+  },
+  {
+   "slug": "aic-certified-associate-constructor",
+   "name": "Certified Associate Constructor",
+   "short": "CAC",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "American Institute of Constructors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Entry construction management examination covering estimating, scheduling, contracts, safety and project administration."
+  },
+  {
+   "slug": "aic-certified-professional-constructor",
+   "name": "Certified Professional Constructor",
+   "short": "CPC",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "American Institute of Constructors",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Experienced-level construction management examination covering project control, risk, claims, finance and leadership."
+  },
+  {
+   "slug": "cmaa-certified-construction-manager",
+   "name": "Certified Construction Manager",
+   "short": "CCM",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Construction Management Association of America",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Accredited credential requiring experience review and an examination on programme, cost, time, quality and contract management."
+  },
+  {
+   "slug": "cmaa-construction-manager-in-training",
+   "name": "Construction Manager-in-Training",
+   "short": "CMIT",
+   "category": "project-business",
+   "group": "Project & Program Management",
+   "body": "Construction Management Association of America",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Early-career programme with an examination and structured experience logging on the path toward CCM certification."
+  },
+  {
+   "slug": "atd-associate-professional-talent-development",
+   "name": "Associate Professional in Talent Development",
+   "short": "APTD",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "Association for Talent Development",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Early-career credential requiring three years of experience and an examination on foundational talent development capabilities."
+  },
+  {
+   "slug": "atd-certified-professional-talent-development",
+   "name": "Certified Professional in Talent Development",
+   "short": "CPTD",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "Association for Talent Development",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Strategic credential, formerly the CPLP, requiring five years of experience and an application-based capability examination."
+  },
+  {
+   "slug": "certified-diversity-executive",
+   "name": "Certified Diversity Executive",
+   "short": "CDE",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "Institute for Diversity Certification",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Executive credential covering diversity strategy, organisational change, metrics and enterprise inclusion governance."
+  },
+  {
+   "slug": "certified-diversity-professional",
+   "name": "Certified Diversity Professional",
+   "short": "CDP",
+   "category": "project-business",
+   "group": "Human Resources",
+   "body": "Institute for Diversity Certification",
+   "type": "Certification",
+   "aka": [],
+   "blurb": "Practitioner credential covering inclusion programme design, bias mitigation, employee resource groups and measurement."
+  }
+ ]
+}

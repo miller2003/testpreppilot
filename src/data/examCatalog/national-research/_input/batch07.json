@@ -1,0 +1,307 @@
+{
+  "batch": "07",
+  "categories": [
+    "animal-agriculture"
+  ],
+  "groups": [
+    "Animal & Veterinary Support"
+  ],
+  "examCount": 25,
+  "bodyCount": 19,
+  "bodies": [
+    "American Farrier's Association",
+    "National Cattlemen’s Beef Association",
+    "The Association for Animal Welfare Advancement",
+    "Certification Council for Professional Dog Trainers",
+    "Equissage",
+    "National Cat Groomers Institute of America",
+    "American Registry of Professional Animal Scientists",
+    "Veterinary Hospital Managers Association",
+    "International Wildlife Rehabilitation Council",
+    "Eastern Apicultural Society",
+    "International Association of Animal Behavior Consultants",
+    "Karen Pryor Academy",
+    "National Association of Landscape Professionals",
+    "National Animal Care & Control Association",
+    "National Dog Groomers Association of America",
+    "National Association of Veterinary Technicians in America",
+    "International Council for Veterinary Assessment",
+    "American Association of Veterinary State Boards",
+    "NAVTA Committee on Veterinary Technician Specialties"
+  ],
+  "exams": [
+    {
+      "slug": "afa-certified-farrier",
+      "name": "AFA Certified Farrier",
+      "short": "CF",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "American Farrier's Association",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Mid-level farrier credential combining a written examination with forging and live horse shoeing practical tests."
+    },
+    {
+      "slug": "afa-certified-journeyman-farrier",
+      "name": "AFA Certified Journeyman Farrier",
+      "short": "CJF",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "American Farrier's Association",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Advanced farrier credential requiring written testing plus demanding forging and shoeing modules judged against national standards."
+    },
+    {
+      "slug": "afa-therapeutic-endorsement",
+      "name": "AFA Therapeutic Endorsement",
+      "short": "TE",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "American Farrier's Association",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Specialty endorsement for Certified Journeyman Farriers demonstrating therapeutic and corrective shoeing skill for lame or diseased hooves."
+    },
+    {
+      "slug": "beef-quality-assurance-certification",
+      "name": "Beef Quality Assurance Certification",
+      "short": "BQA",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "National Cattlemen’s Beef Association",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "National producer training and assessment covering cattle handling, animal health products, records and food safety on beef operations."
+    },
+    {
+      "slug": "certified-animal-welfare-administrator",
+      "name": "Certified Animal Welfare Administrator",
+      "short": "CAWA",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "The Association for Animal Welfare Advancement",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Examination for leaders of animal shelters and welfare organisations covering governance, finance, operations and community programmes."
+    },
+    {
+      "slug": "ccpdt-cbcc-ka",
+      "name": "Certified Behavior Consultant Canine – Knowledge Assessed",
+      "short": "CBCC-KA",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "Certification Council for Professional Dog Trainers",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Examination for canine behaviour consultants covering aggression, fear, separation issues, assessment and behaviour change protocols."
+    },
+    {
+      "slug": "certified-equine-massage-therapist",
+      "name": "Certified Equine Massage Therapist",
+      "short": "CEMT",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "Equissage",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Training and practical assessment in equine sports massage covering anatomy, palpation, stroke technique and contraindications."
+    },
+    {
+      "slug": "certified-feline-master-groomer",
+      "name": "Certified Feline Master Groomer",
+      "short": "CFMG",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "National Cat Groomers Institute of America",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Written and hands-on testing in cat-specific grooming including handling, bathing, dematting, lion trims and skin condition recognition."
+    },
+    {
+      "slug": "certified-professional-animal-scientist",
+      "name": "Certified Professional Animal Scientist",
+      "short": "PAS",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "American Registry of Professional Animal Scientists",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Species-focused examination for animal scientists working in nutrition, management and production across livestock and companion animals."
+    },
+    {
+      "slug": "ccpdt-cpdt-ksa",
+      "name": "Certified Professional Dog Trainer – Knowledge and Skills Assessed",
+      "short": "CPDT-KSA",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "Certification Council for Professional Dog Trainers",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Video-based skills assessment for CPDT-KA holders demonstrating hands-on training of loose-leash walking, recall and stay behaviours."
+    },
+    {
+      "slug": "ccpdt-cpdt-ka",
+      "name": "Certified Professional Dog Trainer – Knowledge Assessed",
+      "short": "CPDT-KA",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "Certification Council for Professional Dog Trainers",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Multiple-choice examination on learning theory, instruction, husbandry and ethology for dog trainers with documented training hours."
+    },
+    {
+      "slug": "certified-veterinary-practice-manager",
+      "name": "Certified Veterinary Practice Manager",
+      "short": "CVPM",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "Veterinary Hospital Managers Association",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Examination in veterinary practice finance, human resources, law, marketing and organisational management for hospital administrators."
+    },
+    {
+      "slug": "iwrc-certified-wildlife-rehabilitator",
+      "name": "Certified Wildlife Rehabilitator",
+      "short": "CWR",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "International Wildlife Rehabilitation Council",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Examination covering intake, nutrition, housing, zoonoses and release criteria for people rehabilitating native wild animals."
+    },
+    {
+      "slug": "eas-master-beekeeper",
+      "name": "EAS Master Beekeeper Certification",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "Eastern Apicultural Society",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Four-part written, oral, practical and laboratory examination covering colony management, bee biology, disease and public outreach."
+    },
+    {
+      "slug": "iaabc-certified-dog-behavior-consultant",
+      "name": "IAABC Certified Dog Behavior Consultant",
+      "short": "CDBC",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "International Association of Animal Behavior Consultants",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Case-study and examination pathway for consultants resolving complex canine behaviour problems using science-based intervention plans."
+    },
+    {
+      "slug": "karen-pryor-academy-certified-training-partner",
+      "name": "Karen Pryor Academy Certified Training Partner",
+      "short": "KPA CTP",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "Karen Pryor Academy",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Assessed professional programme in clicker training and positive reinforcement teaching for dog trainers and behaviour professionals."
+    },
+    {
+      "slug": "landscape-industry-certified-horticultural-technician",
+      "name": "Landscape Industry Certified Horticultural Technician",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "National Association of Landscape Professionals",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Written and hands-on testing of plant identification, installation, maintenance, irrigation and safety for horticultural technicians."
+    },
+    {
+      "slug": "certified-animal-control-officer-level-1",
+      "name": "NACA Certified Animal Control Officer Level 1",
+      "short": "ACO Level 1",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "National Animal Care & Control Association",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Entry training and examination for animal control officers covering law, safe capture, investigations and field documentation."
+    },
+    {
+      "slug": "certified-animal-control-officer-level-2",
+      "name": "NACA Certified Animal Control Officer Level 2",
+      "short": "ACO Level 2",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "National Animal Care & Control Association",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Second-tier animal control training covering cruelty investigation, evidence handling, courtroom testimony and dangerous animal response."
+    },
+    {
+      "slug": "certified-animal-control-officer-level-3",
+      "name": "NACA Certified Animal Control Officer Level 3",
+      "short": "ACO Level 3",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "National Animal Care & Control Association",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Advanced animal control curriculum on supervision, complex cruelty cases, disaster response and agency management practices."
+    },
+    {
+      "slug": "ndgaa-national-certified-master-groomer",
+      "name": "National Certified Master Groomer",
+      "short": "NCMG",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "National Dog Groomers Association of America",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Written and practical testing across sporting, non-sporting, terrier and long-coated breed groups for professional dog groomers."
+    },
+    {
+      "slug": "navta-approved-veterinary-assistant",
+      "name": "NAVTA Approved Veterinary Assistant",
+      "short": "AVA",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "National Association of Veterinary Technicians in America",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "National assistant credential earned through an approved programme and examination covering restraint, nursing care and clinic operations."
+    },
+    {
+      "slug": "navle",
+      "name": "North American Veterinary Licensing Examination",
+      "short": "NAVLE",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "International Council for Veterinary Assessment",
+      "type": "License",
+      "aka": [],
+      "blurb": "Required licensing examination for veterinarians in the United States and Canada, testing entry-level clinical competence across species."
+    },
+    {
+      "slug": "vtne",
+      "name": "Veterinary Technician National Examination",
+      "short": "VTNE",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "American Association of Veterinary State Boards",
+      "type": "License",
+      "aka": [],
+      "blurb": "Credentialing examination for veterinary technicians covering pharmacy, anaesthesia, dentistry, laboratory procedures and nursing."
+    },
+    {
+      "slug": "veterinary-technician-specialist",
+      "name": "Veterinary Technician Specialist",
+      "short": "VTS",
+      "category": "animal-agriculture",
+      "group": "Animal & Veterinary Support",
+      "body": "NAVTA Committee on Veterinary Technician Specialties",
+      "type": "Certification",
+      "aka": [],
+      "blurb": "Advanced credentials awarded by recognised academies in areas such as anaesthesia, emergency, dentistry, behaviour and internal medicine."
+    }
+  ]
+}
