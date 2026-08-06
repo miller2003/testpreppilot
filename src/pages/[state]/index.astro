@@ -5,6 +5,9 @@ import { getCredentialsByState } from '../../data/credentials';
 import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import CredentialCard from '../../components/CredentialCard.astro';
+import StateDirectory from '../../components/StateDirectory.astro';
+import { getExamsByState, examCategories } from '../../data/examCatalog/index.mjs';
+import { stateTitle, clampDesc } from '../../lib/seoTitle';
 
 export function getStaticPaths() {
   return states.map(state => ({
@@ -14,54 +17,204 @@ export function getStaticPaths() {
 }
 
 const { stateInfo } = Astro.props;
-const stateCredentials = getCredentialsByState(stateInfo.slug);
+
+// FIX: was passing stateInfo.slug ("california") into a function that does
+// stateCode.toUpperCase() and compares against 'CA' — never matched, so every
+// state page rendered the identical set of national credentials.
+const stateCredentials = getCredentialsByState(stateInfo.code);
+
+// State-specific exams from the catalog (the real differentiator).
+const stateExamList = getExamsByState(stateInfo.code);
+
+// Group state exams by category so each state page has a genuine structure.
+const catName = new Map(examCategories.map((c: any) => [c.id, c.name]));
+const groupedExams = [...stateExamList.reduce((m: Map<string, any[]>, e: any) => {
+  const k = e.category || 'other';
+  if (!m.has(k)) m.set(k, []);
+  m.get(k)!.push(e);
+  return m;
+}, new Map()).entries()]
+  .map(([id, exams]) => ({
+    id,
+    name: catName.get(id) || id,
+    exams: exams.sort((a: any, b: any) => a.name.localeCompare(b.name)),
+  }))
+  .sort((a, b) => b.exams.length - a.exams.length || a.name.localeCompare(b.name));
+
+const regionPeers = states.filter(s => s.region === stateInfo.region && s.slug !== stateInfo.slug);
+const hasStateExams = stateExamList.length > 0;
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: stateInfo.name, href: `/${stateInfo.slug}` }
 ];
+
+// Differentiated intro copy — varies by how much state-level coverage exists.
+const lede = hasStateExams
+  ? `${stateInfo.name} issues ${stateExamList.length} credentials through its own boards and examinations, separate from any national certification. Below is every ${stateInfo.name}-issued licence and exam we track, grouped by field, plus the national credentials that are recognised in ${stateInfo.name}.`
+  : `Credentials recognised in ${stateInfo.name} are issued nationally rather than by a ${stateInfo.name}-specific examination board. That means the same exam and the same passing standard apply whether you sit it in ${stateInfo.capital} or anywhere else in the ${stateInfo.region}.`;
+
+const totalCount = stateExamList.length + stateCredentials.length;
+const pageTitle = stateTitle(stateInfo.name, stateExamList.length);
+const pageDesc = clampDesc(hasStateExams
+  ? `All ${stateExamList.length} ${stateInfo.name}-issued licences and exams plus nationally recognised credentials — requirements, costs and steps, verified against official ${stateInfo.name} board sources.`
+  : `Which professional credentials are recognised in ${stateInfo.name}, who issues them, and what the exam and renewal requirements are. Verified against official sources.`);
 ---
 
-<BaseLayout 
-  title={`Professional Licenses & Certifications in ${stateInfo.name} — TestPrepPilot`}
-  description={`Find official requirements and verified guides for professional pathways in ${stateInfo.name}.`}
+<BaseLayout
+  title={pageTitle}
+  description={pageDesc}
+  ogImage="/og-state.png"
 >
   <BreadcrumbSchema items={breadcrumbItems} />
+
+  {/* ItemList schema — makes the state hub eligible for list-style rich results */}
+  {hasStateExams && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": `${stateInfo.name} professional credentials`,
+      "description": `Credentials issued by ${stateInfo.name} state boards`,
+      "numberOfItems": stateExamList.length,
+      "itemListElement": stateExamList.slice(0, 50).map((e: any, i: number) => ({
+        "@type": "ListItem",
+        "position": i + 1,
+        "url": `https://testpreppilot.com/exams/${e.slug}`,
+        "name": e.name
+      }))
+    })} />
+  )}
+
   <div class="container | animate-on-scroll">
     <BreadcrumbNav items={breadcrumbItems} />
-    
+
     <header class="state-hero">
       <h1>Professional Licenses & Certifications in <em>{stateInfo.name}</em></h1>
-      <p class="lede">Every state has its own specific rules and regulatory boards. Browse verified credential requirements specific to {stateInfo.name}.</p>
+      <p class="lede">{lede}</p>
+      <dl class="state-facts">
+        <div><dt>State code</dt><dd>{stateInfo.code}</dd></div>
+        <div><dt>Capital</dt><dd>{stateInfo.capital}</dd></div>
+        <div><dt>Region</dt><dd>{stateInfo.region}</dd></div>
+        <div><dt>Credentials tracked</dt><dd>{totalCount}</dd></div>
+      </dl>
     </header>
 
     <main class="state-content">
-      {stateCredentials.length > 0 ? (
-        <div class="credential-grid">
-          {stateCredentials.map(cred => (
-            <CredentialCard credential={cred} stateInfo={stateInfo} />
+      {hasStateExams && (
+        <section class="state-exams">
+          <h2 class="section-h2">{stateInfo.name}-issued credentials</h2>
+          <p class="section-note">
+            These are examined and issued by {stateInfo.name} boards. A licence earned in
+            another state does not automatically transfer unless a reciprocity agreement
+            or interstate compact covers it.
+          </p>
+          {groupedExams.map(group => (
+            <div class="exam-group">
+              <h3 class="group-h3">{group.name} <span class="group-count">{group.exams.length}</span></h3>
+              <ul class="exam-list">
+                {group.exams.map((e: any) => (
+                  <li>
+                    <a href={`/exams/${e.slug}`}>
+                      <span class="exam-name">{e.name}</span>
+                      {e.blurb && <span class="exam-blurb">{e.blurb}</span>}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </div>
-      ) : (
+        </section>
+      )}
+
+      {stateCredentials.length > 0 && (
+        <section class="national-creds">
+          <h2 class="section-h2">
+            {hasStateExams ? `National credentials recognised in ${stateInfo.name}` : `Credentials recognised in ${stateInfo.name}`}
+          </h2>
+          <p class="section-note">
+            Issued by national bodies. The exam and the passing standard are identical in every
+            state — only the employer, board registration or continuing-education rules may differ.
+          </p>
+          <div class="credential-grid">
+            {stateCredentials.map(cred => (
+              <CredentialCard credential={cred} stateInfo={stateInfo} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {!hasStateExams && stateCredentials.length === 0 && (
         <div class="empty-state">
           <h2>Coming soon to {stateInfo.name}</h2>
           <p>We're actively building guides for this state. Check back soon or browse all our pathways globally.</p>
           <a href="/explore" class="btn btn-primary">Browse all pathways</a>
         </div>
       )}
+
+      <section class="region-peers">
+        <h2 class="section-h2">Nearby states in the {stateInfo.region}</h2>
+        <p class="section-note">
+          Reciprocity is most commonly negotiated between neighbouring states, so if you expect
+          to work across a state line these are the boards worth checking first.
+        </p>
+        <ul class="peer-list">
+          {regionPeers.map(s => (
+            <li><a href={`/${s.slug}`}>{s.name} requirements</a></li>
+          ))}
+        </ul>
+      </section>
     </main>
+
+    <section class="all-states">
+      <h2 class="all-states-title">Explore requirements in other states</h2>
+      <StateDirectory heading="" showHeading={false} excludeSlug={stateInfo.slug} />
+    </section>
   </div>
 </BaseLayout>
 
 <style>
   .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-  .state-hero { padding: 4rem 0; border-bottom: 2px solid var(--ink); margin-bottom: 3rem; text-align: center; }
+  .state-hero { padding: 4rem 0 3rem; border-bottom: 2px solid var(--ink); margin-bottom: 3rem; text-align: center; }
   .state-hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
-  .state-hero .lede { font-size: 1.25rem; max-width: 700px; margin: 0 auto; color: #444; }
-  
-  .credential-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
-  
+  .state-hero .lede { font-size: 1.15rem; max-width: 760px; margin: 0 auto; color: var(--muted); line-height: 1.7; }
+
+  .state-facts { display: flex; flex-wrap: wrap; justify-content: center; gap: 2.5rem; margin: 2.5rem auto 0; padding: 0; max-width: 760px; }
+  .state-facts > div { text-align: center; }
+  .state-facts dt { font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: .35rem; }
+  .state-facts dd { margin: 0; font-family: var(--font-heading); font-size: 1.4rem; color: var(--ink); }
+
+  .section-h2 { font-family: var(--font-heading); font-size: clamp(1.7rem, 2.6vw, 2.3rem); margin: 0 0 .75rem; }
+  .section-note { color: var(--muted); max-width: 720px; margin: 0 0 2rem; line-height: 1.7; }
+
+  .state-exams { margin-bottom: 4rem; }
+  .exam-group { margin-bottom: 2.5rem; }
+  .group-h3 { font-family: var(--font-heading); font-size: 1.25rem; margin: 0 0 1rem; padding-bottom: .5rem; border-bottom: 1px solid var(--line); display: flex; align-items: baseline; gap: .6rem; }
+  .group-count { font-family: var(--font-body); font-size: .75rem; color: var(--muted); font-weight: 400; }
+
+  .exam-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: .5rem 2rem; }
+  .exam-list li { margin: 0; }
+  .exam-list a { display: block; padding: .7rem .85rem; border-radius: 4px; text-decoration: none; color: inherit; transition: background .15s ease; }
+  .exam-list a:hover { background: var(--cream); }
+  .exam-name { display: block; font-weight: 600; color: var(--ink); margin-bottom: .15rem; }
+  .exam-blurb { display: block; font-size: .82rem; color: var(--muted); line-height: 1.5; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+
+  .national-creds { margin-bottom: 4rem; }
+  .credential-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; }
+
+  .region-peers { margin-bottom: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--line); }
+  .peer-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .5rem 1.75rem; }
+  .peer-list a { color: var(--primary); text-decoration: none; font-size: .95rem; }
+  .peer-list a:hover { text-decoration: underline; }
+
   .empty-state { text-align: center; padding: 5rem 2rem; background: var(--cream); border-radius: 4px; max-width: 600px; margin: 0 auto 4rem auto; }
   .empty-state h2 { font-size: 2rem; margin-bottom: 1rem; }
   .empty-state p { margin-bottom: 2rem; color: #555; }
+
+  .all-states { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem 4rem; border-top: 1px solid var(--line); }
+  .all-states-title { font-family: var(--font-heading); font-size: clamp(1.6rem, 2.5vw, 2.2rem); margin: 0 0 2rem; }
+
+  @media (max-width: 600px) {
+    .state-hero h1 { font-size: 2.2rem; }
+    .state-facts { gap: 1.5rem; }
+  }
 </style>

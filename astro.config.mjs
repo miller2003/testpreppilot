@@ -3,7 +3,51 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://testpreppilot.com',
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      // Was bare <loc> only across 628 URLs — no lastmod, no priority, no
+      // changefreq, so Google had no signal about which pages matter or when
+      // they changed. Priority is now tiered by the page's role in the graph.
+      changefreq: 'weekly',
+      lastmod: new Date(),
+      // /affiliate-disclosure is canonicalised to /disclosure (they had the same
+      // <title> and the same purpose). A canonicalised URL must not be submitted
+      // for indexing, or the sitemap contradicts the canonical tag.
+      filter: (page) => !/\/affiliate-disclosure\/?$/.test(page),
+      serialize(item) {
+        const url = new URL(item.url);
+        const p = url.pathname.replace(/\/$/, '') || '/';
+
+        // Legal / boilerplate: keep indexable but signal low importance.
+        if (/^\/(privacy|disclosure|editorial-policy)$/.test(p)) {
+          item.priority = 0.2;
+          item.changefreq = 'yearly';
+          return item;
+        }
+        // Root + primary hubs
+        if (p === '/') { item.priority = 1.0; item.changefreq = 'daily'; return item; }
+        if (p === '/exams' || p === '/states' || p === '/explore') {
+          item.priority = 0.9; item.changefreq = 'daily'; return item;
+        }
+        // Category hubs
+        if (p.startsWith('/categories/')) { item.priority = 0.8; item.changefreq = 'weekly'; return item; }
+        // Exam detail — the money pages
+        if (p.startsWith('/exams/')) { item.priority = 0.8; item.changefreq = 'weekly'; return item; }
+        // Long-form pathway guides
+        if (p.startsWith('/paths/')) { item.priority = 0.7; item.changefreq = 'monthly'; return item; }
+        // State × credential
+        if (p.split('/').filter(Boolean).length === 2) { item.priority = 0.7; item.changefreq = 'monthly'; return item; }
+        // Trust pages
+        if (/^\/(about|how-it-works|reviews|guides)$/.test(p)) {
+          item.priority = 0.5; item.changefreq = 'monthly'; return item;
+        }
+        // State hubs
+        item.priority = 0.6;
+        item.changefreq = 'weekly';
+        return item;
+      },
+    }),
+  ],
   compressHTML: true,
   prefetch: true,
   build: {

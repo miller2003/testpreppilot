@@ -1,8 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
+import { examTitle } from '../../lib/seoTitle';
 import DepthSections from '../../components/DepthSections.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
+import RelatedExams from '../../components/RelatedExams.astro';
 import { depthFor, depthSections } from '../../data/examCatalog/examDepth.mjs';
 import {
   allExams,
@@ -76,13 +78,15 @@ const natComparison = program?.comparison || null;
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: 'Exams', href: '/exams' },
-  { label: cat?.name || 'Exams', href: `/exams#${exam.category}` },
+  { label: cat?.name || 'Exams', href: `/categories/${exam.category}` },
   { label: exam.name, href: `/exams/${exam.slug}` }
 ];
 
-const related = getExamsByCategory(exam.category)
-  .filter((e) => e.slug !== exam.slug && e.status === 'stub' && e.stateCode === exam.stateCode)
-  .slice(0, 8);
+// Superseded by <RelatedExams />. The old rule was
+//   same category AND same stateCode, .slice(0, 8)
+// which (a) returned nothing for national exams in thin categories — hence the
+// 61 pages stuck at 2-3 inbound links — and (b) always handed the links to the
+// same first 8 rows, so the tail of each category never received any.
 
 const peerSample = peers.slice(0, 24);
 
@@ -102,17 +106,19 @@ function clampMeta(text) {
   return `${cut.slice(0, cut.lastIndexOf(' '))}…`;
 }
 
-const metaDescription =
+// Every branch is clamped, not just the national one. 65 pages were shipping
+// descriptions over 160 characters (max 290), so Google rewrote or truncated
+// them and the intended keyword tail never rendered in the SERP.
+const metaDescription = clampMeta(
   mode === 'not-offered'
     ? `${exam.stateName} does not issue a state-level ${dossier.name.toLowerCase()}. Here is what applies instead, plus the ${offeringCount} states that do license it.`
     : mode === 'researched'
       ? `${exam.name}: requirements, exam format, fees and timeline. Issued by ${facts?.agency || dossier.defaultAgency}.`
       : mode === 'national'
-        ? clampMeta(
-            record.quickAnswer?.summary ||
-              `${exam.name}: format, fees, topic weights, eligibility and how to register.`
-          )
-        : exam.blurb;
+        ? record.quickAnswer?.summary ||
+          `${exam.name}: format, fees, topic weights, eligibility and how to register.`
+        : exam.blurb
+);
 
 const canonicalUrl = new URL(`/exams/${exam.slug}`, Astro.site || 'https://testpreppilot.com').toString();
 
@@ -162,9 +168,11 @@ const credentialSchema =
 ---
 
 <BaseLayout
-  title={`${exam.name} — Requirements, Exam & Costs`}
+  title={examTitle(exam.name)}
   description={metaDescription}
   canonical={canonicalUrl}
+  ogImage="/og-exam.png"
+  dateModified={depth?.lastReviewed || record?.reviewed || undefined}
   noindex={!indexable}
 >
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
@@ -885,29 +893,14 @@ const credentialSchema =
           </div>
           {peers.length > peerSample.length && (
             <p class="eg-note">
-              <a href={`/exams#${exam.category}`}>See all {peers.length} states &rarr;</a>
+              <a href={`/categories/${exam.category}`}>See all {peers.length} states &rarr;</a>
             </p>
           )}
         </section>
       )}
 
       {/* ── RELATED ─────────────────────────────────────────── */}
-      {related.length > 0 && (
-        <section id="related" class="eg-section eg-section-cream">
-          <p class="eg-kicker">Keep exploring</p>
-          <h2>Other {cat?.name} credentials{isState ? ` in ${exam.stateName}` : ''}</h2>
-          <ul class="related-list">
-            {related.map((r) => (
-              <li>
-                <a href={r.href}>
-                  <span class="related-name">{r.name}</span>
-                  <span class="related-meta">{r.type}{r.stateName ? ` · ${r.stateName}` : ''}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      <RelatedExams exam={exam} />
 
       {/* ── SOURCES ─────────────────────────────────────────── */}
       <section id="sources" class="eg-section">

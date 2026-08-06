@@ -5,7 +5,9 @@ import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import RelatedPaths from '../../components/RelatedPaths.astro';
 import { credentials, getRelatedCredentials } from '../../data/credentials';
+import { getStateByCode } from '../../data/states';
 import examEditorial from '../../data/examEditorial.mjs';
+import { credTitle, clampDesc } from '../../lib/seoTitle';
 
 export function getStaticPaths() {
   return credentials.map(credential => ({
@@ -17,6 +19,14 @@ export function getStaticPaths() {
 const { credential } = Astro.props;
 const ex = examEditorial[credential.slug] || null;
 const relatedCredentials = getRelatedCredentials(credential.slug);
+
+// State-specific versions of this credential. Without this link the
+// /<state>/<credential> pages sat at exactly 1 inbound link and 0.026%
+// PageRank — reachable only from their own state hub.
+const stateVersions = Object.keys(credential.stateSpecificData || {})
+  .map((code) => getStateByCode(code))
+  .filter(Boolean)
+  .sort((a: any, b: any) => a.name.localeCompare(b.name));
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
@@ -37,12 +47,34 @@ const schemaData = {
 ---
 
 <BaseLayout
-  title={`${credential.name} Requirements & Guide — TestPrepPilot`}
-  description={credential.tagline || `Everything you need to know about getting your ${credential.name}.`}
+  title={credTitle(credential.name)}
+  description={clampDesc(`${credential.tagline ? credential.tagline + ' ' : ''}${credential.name}: requirements, exam format, fees and eligibility, with official registration steps.`)}
 >
   <SchemaMarkup type="Course" data={schemaData} />
   <BreadcrumbSchema items={breadcrumbItems} />
   <ExamGuide credential={credential} ex={ex} breadcrumbs={breadcrumbItems} />
+
+  {stateVersions.length > 0 && (
+    <section class="state-versions">
+      <div class="container">
+        <h2>{credential.name} by state</h2>
+        <p class="sv-lede">
+          Requirements differ by state board. Open the state guide for exact hour
+          requirements, fees and the licensing agency you file with.
+        </p>
+        <ul class="sv-grid">
+          {stateVersions.map((s: any) => (
+            <li>
+              <a href={`/${s.slug}/${credential.slug}`}>
+                <span class="sv-code">{s.code}</span>
+                <span class="sv-name">{credential.name} in {s.name}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
 
   {relatedCredentials && relatedCredentials.length > 0 && (
     <section class="related-section bg-cream">
@@ -57,4 +89,16 @@ const schemaData = {
   .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
   .bg-cream { background-color: var(--cream); }
   .related-section { padding: 3rem 0; }
+
+  .state-versions { padding: 2.5rem 0; border-top: 1px solid rgba(0, 0, 0, 0.08); }
+  .state-versions h2 { font-size: 1.5rem; margin: 0 0 0.5rem; }
+  .sv-lede { margin: 0 0 1.25rem; opacity: 0.75; max-width: 60ch; }
+  .sv-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+  .sv-grid a { display: flex; align-items: center; gap: 0.6rem; padding: 0.7rem 0.9rem;
+    border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px; text-decoration: none; }
+  .sv-grid a:hover { border-color: currentColor; }
+  .sv-code { font-weight: 700; font-size: 0.75rem; letter-spacing: 0.06em;
+    padding: 0.15rem 0.4rem; border-radius: 4px; background: rgba(0, 0, 0, 0.06); }
+  .sv-name { font-size: 0.95rem; }
 </style>

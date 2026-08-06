@@ -1,0 +1,98 @@
+---
+// Purpose: stop the legal / trust pages from being PageRank sinks.
+//
+// Measured before this component existed: 10 static pages (about, privacy,
+// disclosure, editorial-policy, guides, reviews, explore, how-it-works, ...)
+// absorbed 32.9% of internal PageRank because every one of the 629 pages links
+// to them from the footer — but they only emitted ~1.9 in-body links each, so
+// the equity went in and never came back out. Per-page they were carrying 61×
+// the weight of an actual exam page.
+//
+// Rather than nofollow-ing them (which burns the equity outright), this turns
+// them into pass-through nodes that route weight into the category hubs.
+import { buildDirectory } from '../data/examCatalog/index.mjs';
+
+interface Props {
+  heading?: string;
+  intro?: string;
+  limit?: number;
+}
+
+const {
+  heading = 'Browse credentials by field',
+  intro = 'Every guide on this site sits under one of these fields. Each hub lists the full set of exams and licences we track, with requirements, costs and formats verified against official sources.',
+  limit = 25,
+} = Astro.props;
+
+const cats = buildDirectory()
+  .sort((a: any, b: any) => b.total - a.total)
+  .slice(0, limit);
+
+const totalExams = cats.reduce((a: number, c: any) => a + c.total, 0);
+---
+<section class="topic-hubs">
+  <h2 class="hubs-title">{heading}</h2>
+  <p class="hubs-intro">{intro}</p>
+  <ul class="hubs-grid">
+    {cats.map((c: any) => (
+      <li>
+        <a href={`/categories/${c.id}`}>
+          <span class="hub-name">{c.name}</span>
+          <span class="hub-count">{c.total}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+  <p class="hubs-foot">
+    <a href="/exams">Full A–Z directory of all {totalExams} exams</a>
+    <span class="sep">·</span>
+    <a href="/states">Requirements by state</a>
+  </p>
+</section>
+
+<style>
+  .topic-hubs {
+    max-width: 1100px;
+    margin: 4rem auto 0;
+    padding: 3rem 2rem 1rem;
+    border-top: 1px solid var(--line);
+  }
+  .hubs-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+    margin: 0 0 .75rem;
+  }
+  .hubs-intro {
+    color: var(--muted);
+    max-width: 720px;
+    margin: 0 0 2rem;
+    line-height: 1.7;
+  }
+  .hubs-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: .35rem 1.5rem;
+  }
+  .hubs-grid li { margin: 0; }
+  .hubs-grid a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: .5rem .65rem;
+    border-radius: 3px;
+    text-decoration: none;
+    color: var(--ink);
+    font-size: .94rem;
+    transition: background .15s ease;
+  }
+  .hubs-grid a:hover { background: var(--cream); }
+  .hub-count { color: var(--muted); font-size: .78rem; font-variant-numeric: tabular-nums; }
+  .hubs-foot { margin: 2rem 0 0; font-size: .9rem; }
+  .hubs-foot a { color: var(--primary); text-decoration: none; }
+  .hubs-foot a:hover { text-decoration: underline; }
+  .sep { color: var(--muted); margin: 0 .6rem; }
+</style>

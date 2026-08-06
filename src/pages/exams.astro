@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+import StateDirectory from '../components/StateDirectory.astro';
 import { buildDirectory, catalogStats, examCategories, jurisdictions } from '../data/examCatalog/index.mjs';
 
 const breadcrumbItems = [
@@ -22,7 +23,7 @@ const canonicalUrl = new URL('/exams', Astro.site || 'https://testpreppilot.com'
 
 <BaseLayout
   title="Every U.S. Exam, License & Certification — TestPrepPilot Directory"
-  description="The most comprehensive directory of U.S. exams, licenses and certifications — across every profession, every state, and every level. Browse 5,000+ credential paths."
+  description="The most comprehensive directory of U.S. exams, licenses and certifications across every profession, state and level. Browse 5,000+ credential paths."
   canonical={canonicalUrl}
 >
   <div class="container | animate-on-scroll">
@@ -144,6 +145,17 @@ const canonicalUrl = new URL('/exams', Astro.site || 'https://testpreppilot.com'
         </div>
       </main>
     </div>
+
+    <section class="states-block">
+      <div class="section-header">
+        <h2>Or browse by state</h2>
+        <a href="/states" class="view-all">All states &rarr;</a>
+      </div>
+      <p class="states-intro">
+        Requirements and issuing boards change from state to state. See verified pathways for your location.
+      </p>
+      <StateDirectory heading="" showHeading={false} />
+    </section>
   </div>
 </BaseLayout>
 
@@ -163,6 +175,14 @@ const canonicalUrl = new URL('/exams', Astro.site || 'https://testpreppilot.com'
     let activeCat = '';
     let query = '';
     let state = '';
+
+    // Honour ?q= from the WebSite SearchAction (sitelinks search box).
+    const params = new URLSearchParams(window.location.search);
+    const qParam = params.get('q');
+    if (qParam) {
+      search.value = qParam;
+      query = qParam.trim().toLowerCase();
+    }
 
     function apply() {
       let visible = 0;
@@ -301,6 +321,10 @@ const canonicalUrl = new URL('/exams', Astro.site || 'https://testpreppilot.com'
   .exam-badge { align-self: flex-start; margin-top: 0.7rem; font-family: var(--font-mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary); background: var(--primary-light); border: 1px solid var(--primary); padding: 0.2rem 0.6rem; border-radius: 999px; }
 
   .empty-state { text-align: center; padding: 4rem 2rem; background: var(--cream); border-radius: var(--radius); border: 1px solid var(--line); }
+
+  /* State block */
+  .states-block { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem 5rem; border-top: 1px solid var(--line); }
+  .states-intro { color: var(--muted); max-width: 720px; line-height: 1.7; margin: 0 0 2.5rem; font-size: 1.1rem; }
   .empty-state p { font-size: 1.2rem; font-family: var(--font-heading); color: var(--ink); margin-bottom: 1.25rem; }
   .reset-btn { padding: 0.7rem 1.4rem; border: 1px solid var(--primary); background: var(--primary); color: #fff; border-radius: var(--radius); font-family: var(--font-body); font-size: 0.95rem; cursor: pointer; transition: background var(--transition); }
   .reset-btn:hover { background: var(--ink); border-color: var(--ink); }

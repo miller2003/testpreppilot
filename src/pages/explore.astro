@@ -4,6 +4,7 @@ import { credentials } from '../data/credentials';
 import { categories } from '../data/categories';
 import BreadcrumbNav from '../components/BreadcrumbNav.astro';
 import SearchUI from '../components/SearchUI.astro';
+import TopicHubs from '../components/TopicHubs.astro';
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
@@ -73,6 +74,8 @@ const canonicalUrl = new URL('/explore', Astro.site || 'https://testpreppilot.co
       </main>
     </div>
   </div>
+
+  <TopicHubs />
 </BaseLayout>
 
 <script is:inline>

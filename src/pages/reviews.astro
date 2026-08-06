@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+import TopicHubs from '../components/TopicHubs.astro';
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
@@ -67,6 +68,8 @@ const reviews = [
       ))}
     </main>
   </div>
+
+  <TopicHubs />
 </BaseLayout>
 
 <style>

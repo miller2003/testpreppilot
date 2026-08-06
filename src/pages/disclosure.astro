@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+import TopicHubs from '../components/TopicHubs.astro';
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
@@ -9,8 +10,8 @@ const breadcrumbItems = [
 ---
 
 <BaseLayout 
-  title="Affiliate Disclosure — TestPrepPilot"
-  description="How we fund our research while maintaining our integrity."
+  title="Affiliate Disclosure — How TestPrepPilot Is Funded"
+  description="How TestPrepPilot earns affiliate commission, why it never changes our recommendations, and how we label paid links."
 >
   <div class="container | animate-on-scroll">
     <BreadcrumbNav items={breadcrumbItems} />
@@ -33,8 +34,31 @@ const breadcrumbItems = [
         <p>These relationships <strong>do not influence</strong> our editorial content, our analysis of requirements, or our core recommendations. We often list and recommend providers with whom we have no financial relationship simply because they offer the best path for a specific credential.</p>
         <p>Whenever an affiliate link is present near a specific recommendation, we include an inline disclosure so you are fully informed.</p>
       </section>
+
+      <section>
+        <h2>What counts as an affiliate link</h2>
+        <p>Some outbound links to training providers, prep-course publishers and exam-booking platforms are affiliate links. If you click one and buy something, TestPrepPilot may receive a commission at absolutely no additional cost to you. Links to state licensing boards, federal agencies and official candidate handbooks are never affiliate links — those are cited as primary sources.</p>
+      </section>
+
+      <section>
+        <h2>Why we use them</h2>
+        <p>Running an ad-free research platform costs money: hosting, data collection, and the editorial time needed to read state statutes and candidate handbooks line by line. Affiliate commission is what keeps every roadmap, requirement table and cost breakdown on this site free to read, with no paywall and no email gate.</p>
+        <p>A provider cannot pay to alter a review, change a ranking, or secure a recommendation. We routinely list providers we earn nothing from when they are the better route for a specific credential.</p>
+      </section>
+
+      <section>
+        <h2>Related policies</h2>
+        <p>
+          For how we research and fact-check, see our
+          <a href="/editorial-policy">editorial policy</a>. For how we handle your data, see our
+          <a href="/privacy">privacy policy</a>. For how the recommendation engine works, see
+          <a href="/how-it-works">how it works</a>.
+        </p>
+      </section>
     </main>
   </div>
+
+  <TopicHubs />
 </BaseLayout>
 
 <style>

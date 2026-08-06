@@ -1,7 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+import TopicHubs from '../components/TopicHubs.astro';
 
+/**
+ * Consolidated into /disclosure. Both URLs carried the identical <title> and
+ * the identical purpose; /disclosure holds the internal-link equity (649
+ * inbound vs 1), so it wins the canonical. This URL is also excluded from the
+ * sitemap in astro.config.mjs — a canonicalised page must never be submitted
+ * for indexing, or the sitemap contradicts the canonical tag.
+ */
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: 'Affiliate Disclosure', href: '/affiliate-disclosure' }
@@ -11,6 +19,7 @@ const breadcrumbItems = [
 <BaseLayout 
   title="Affiliate Disclosure — TestPrepPilot"
   description="How we fund TestPrepPilot while maintaining our editorial independence."
+  canonical="https://testpreppilot.com/disclosure"
 >
   <div class="container">
     <BreadcrumbNav items={breadcrumbItems} />
@@ -37,6 +46,8 @@ const breadcrumbItems = [
       <p>If you have any questions regarding our affiliate relationships or how we fund our operations, please feel free to contact us.</p>
     </main>
   </div>
+
+  <TopicHubs />
 </BaseLayout>
 
 <style>

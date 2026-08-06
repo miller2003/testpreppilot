@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+import TopicHubs from '../components/TopicHubs.astro';
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
@@ -10,7 +11,7 @@ const breadcrumbItems = [
 
 <BaseLayout 
   title="Editorial Policy — TestPrepPilot"
-  description="Our standards for accuracy and honesty."
+  description="Our editorial standards for accuracy, honesty and how we research and vet every exam and license requirement before publishing."
 >
   <div class="container | animate-on-scroll">
     <BreadcrumbNav items={breadcrumbItems} />
@@ -34,6 +35,8 @@ const breadcrumbItems = [
       </section>
     </main>
   </div>
+
+  <TopicHubs />
 </BaseLayout>
 
 <style>
