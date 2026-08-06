@@ -259,13 +259,15 @@ const canonicalUrl = new URL('/exams', Astro.site || 'https://testpreppilot.com'
   .exams-hero h1 em { font-style: italic; color: var(--primary); }
   .exams-hero .lede { font-family: var(--font-body); font-size: 1.15rem; color: var(--muted); max-width: 760px; line-height: 1.6; margin: 0 0 2rem; }
 
-  .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); gap: 1rem; }
   .stat { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem 1.5rem; }
   .stat-num { display: block; font-family: var(--font-heading); font-size: 2.4rem; font-weight: 700; color: var(--ink); line-height: 1; }
   .stat-label { display: block; font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-top: 0.5rem; }
 
   /* Layout */
-  .exams-layout { display: grid; grid-template-columns: 270px 1fr; gap: 2.5rem; padding: 2.5rem 0 4rem; }
+  /* Sidebar shrinks with the viewport instead of holding 270px hostage
+     while the content column collapses. */
+  .exams-layout { display: grid; grid-template-columns: clamp(200px, 21vw, 270px) 1fr; gap: var(--space-gap); padding: 2.5rem 0 4rem; }
 
   /* Sidebar */
   .exams-sidebar { position: relative; }
@@ -285,7 +287,7 @@ const canonicalUrl = new URL('/exams', Astro.site || 'https://testpreppilot.com'
 
   /* Toolbar */
   .exams-toolbar { display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; }
-  .search-wrap { position: relative; flex: 1; min-width: 260px; }
+  .search-wrap { position: relative; flex: 1 1 260px; min-width: min(260px, 100%); }
   .search-ico { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--muted); }
   #exam-search { width: 100%; padding: 0.85rem 1rem 0.85rem 2.75rem; border: 1px solid var(--line); border-radius: var(--radius); font-family: var(--font-body); font-size: 1rem; background: var(--paper); color: var(--ink); transition: border-color var(--transition); }
   #exam-search:focus { outline: none; border-color: var(--primary); }
@@ -305,7 +307,7 @@ const canonicalUrl = new URL('/exams', Astro.site || 'https://testpreppilot.com'
   .grp-title { font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 0.85rem; padding-bottom: 0.45rem; border-bottom: 1px dashed var(--line); }
 
   /* Exam grid + cards */
-  .exam-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .exam-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 235px), 1fr)); gap: 1rem; }
   .exam-card { display: flex; }
   .exam-link {
     display: flex; flex-direction: column; width: 100%; padding: 1.1rem 1.25rem; background: var(--paper);
@@ -323,20 +325,51 @@ const canonicalUrl = new URL('/exams', Astro.site || 'https://testpreppilot.com'
   .empty-state { text-align: center; padding: 4rem 2rem; background: var(--cream); border-radius: var(--radius); border: 1px solid var(--line); }
 
   /* State block */
-  .states-block { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem 5rem; border-top: 1px solid var(--line); }
-  .states-intro { color: var(--muted); max-width: 720px; line-height: 1.7; margin: 0 0 2.5rem; font-size: 1.1rem; }
+  .states-block { max-width: 1200px; margin: 0 auto; padding: var(--space-section) var(--wrap-pad); border-top: 1px solid var(--line); }
+  .states-intro { color: var(--muted); max-width: 68ch; line-height: 1.7; margin: 0 0 2.5rem; font-size: var(--fs-prose); }
   .empty-state p { font-size: 1.2rem; font-family: var(--font-heading); color: var(--ink); margin-bottom: 1.25rem; }
   .reset-btn { padding: 0.7rem 1.4rem; border: 1px solid var(--primary); background: var(--primary); color: #fff; border-radius: var(--radius); font-family: var(--font-body); font-size: 0.95rem; cursor: pointer; transition: background var(--transition); }
   .reset-btn:hover { background: var(--ink); border-color: var(--ink); }
 
   @media (max-width: 980px) {
     .exams-layout { grid-template-columns: 1fr; gap: 1.5rem; }
-    .cat-nav { flex-direction: row; flex-wrap: wrap; position: static; max-height: none; }
-    .cat-pill { width: auto; }
-    .stat-row { grid-template-columns: repeat(2, 1fr); }
-    .exam-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+    /* Category nav becomes a horizontal, swipeable rail */
+    .cat-nav {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      position: static;
+      max-height: none;
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x proximity;
+      scrollbar-width: none;
+      padding-right: 0;
+      padding-bottom: 0.35rem;
+      gap: 0.5rem;
+    }
+    .cat-nav::-webkit-scrollbar { display: none; }
+    .cat-pill {
+      width: auto;
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      border-color: var(--line);
+      white-space: nowrap;
+      min-height: var(--tap-min);
+    }
   }
-  @media (max-width: 560px) {
-    .stat-row { grid-template-columns: 1fr; }
+
+  @media (max-width: 700px) {
+    .exams-hero { padding-bottom: 1.25rem; }
+    .exams-hero .lede { font-size: var(--fs-prose); margin-bottom: 1.5rem; }
+    .exams-layout { padding: 1.5rem 0 2.5rem; }
+    .stat { padding: 0.9rem 1rem; }
+    .stat-num { font-size: 1.9rem; }
+    .cat-head { gap: 0.75rem; flex-wrap: wrap; }
+    .cat-icon { width: 40px; height: 40px; font-size: 1.15rem; }
+    .cat-total { margin-left: 0; }
+    /* 16px minimum prevents iOS Safari from zooming in on focus */
+    #exam-search, #state-filter { font-size: 1rem; }
+    #state-filter { width: 100%; }
+    .empty-state { padding: 2.5rem 1.25rem; }
   }
 </style>

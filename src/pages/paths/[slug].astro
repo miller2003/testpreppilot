@@ -94,7 +94,7 @@ const schemaData = {
   .state-versions h2 { font-size: 1.5rem; margin: 0 0 0.5rem; }
   .sv-lede { margin: 0 0 1.25rem; opacity: 0.75; max-width: 60ch; }
   .sv-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
   .sv-grid a { display: flex; align-items: center; gap: 0.6rem; padding: 0.7rem 0.9rem;
     border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px; text-decoration: none; }
   .sv-grid a:hover { border-color: currentColor; }

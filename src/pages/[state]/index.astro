@@ -191,7 +191,7 @@ const pageDesc = clampDesc(hasStateExams
   .group-h3 { font-family: var(--font-heading); font-size: 1.25rem; margin: 0 0 1rem; padding-bottom: .5rem; border-bottom: 1px solid var(--line); display: flex; align-items: baseline; gap: .6rem; }
   .group-count { font-family: var(--font-body); font-size: .75rem; color: var(--muted); font-weight: 400; }
 
-  .exam-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: .5rem 2rem; }
+  .exam-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: .5rem 2rem; }
   .exam-list li { margin: 0; }
   .exam-list a { display: block; padding: .7rem .85rem; border-radius: 4px; text-decoration: none; color: inherit; transition: background .15s ease; }
   .exam-list a:hover { background: var(--cream); }
@@ -199,7 +199,7 @@ const pageDesc = clampDesc(hasStateExams
   .exam-blurb { display: block; font-size: .82rem; color: var(--muted); line-height: 1.5; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 
   .national-creds { margin-bottom: 4rem; }
-  .credential-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; }
+  .credential-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 2rem; }
 
   .region-peers { margin-bottom: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--line); }
   .peer-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .5rem 1.75rem; }

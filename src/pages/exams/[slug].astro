@@ -1020,14 +1020,14 @@ const credentialSchema =
   .eg-badge-warn { border-color: #f59e0b; color: #92400e; background: #fffbeb; }
   .eg-badge-none { border-color: #94a3b8; color: #475569; background: #f1f5f9; }
 
-  .eg-factstrip { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-top: 2rem; }
+  .eg-factstrip { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); gap: 1rem; margin-top: 2rem; }
   .eg-fact { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.35rem; transition: transform var(--transition), box-shadow var(--transition); }
   .eg-fact:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
   .eg-fact .label { display: block; font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
   .eg-fact .value { display: block; font-family: var(--font-heading); font-size: 1.15rem; font-weight: 600; margin-top: 0.35rem; color: var(--ink); line-height: 1.35; }
 
   /* Two-column */
-  .two-column-content { display: grid; grid-template-columns: 230px 1fr; gap: 3.5rem; padding-top: 3rem; padding-bottom: 4rem; }
+  .two-column-content { display: grid; grid-template-columns: clamp(180px, 19vw, 230px) 1fr; gap: clamp(1.5rem, 3.4vw, 3.5rem); padding-top: var(--space-section); padding-bottom: var(--space-section); }
   .sidebar { position: relative; }
   .sticky-nav { position: sticky; top: 2rem; }
   .sticky-nav h3 { font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--line); color: var(--ink); }
@@ -1060,7 +1060,7 @@ const credentialSchema =
   .eg-checklist li::before { content: '→'; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
 
   /* Mini cards */
-  .eg-splitcards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 1.25rem; }
+  .eg-splitcards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 1rem; margin-top: 1.25rem; }
   .eg-minicard { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.35rem 1.5rem; }
   .eg-minicard h4 { font-family: var(--font-heading); font-size: 1.1rem; margin: 0 0 0.6rem; }
   .eg-minicard p { color: var(--muted); line-height: 1.65; margin: 0 0 0.5rem; font-size: 0.95rem; }
@@ -1124,14 +1124,14 @@ const credentialSchema =
   .eg-src-tag { flex: 0 0 auto; font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
 
   /* Building blocks */
-  .building-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; margin-top: 0.5rem; }
+  .building-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 1rem; margin-top: 0.5rem; }
   .building-card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.3rem 1.5rem; }
   .building-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); margin-bottom: 0.85rem; }
   .building-card h4 { font-family: var(--font-heading); font-size: 1.2rem; margin: 0 0 0.5rem; }
   .building-card p { color: var(--muted); font-size: 0.92rem; line-height: 1.5; margin: 0; }
 
   /* Related */
-  .related-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.85rem; }
+  .related-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 0.85rem; }
   .related-list a { display: flex; flex-direction: column; gap: 0.25rem; padding: 1rem 1.25rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; color: var(--ink); transition: transform var(--transition), box-shadow var(--transition); }
   .related-list a:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); border-color: transparent; }
   .related-name { font-weight: 600; font-family: var(--font-body); }
@@ -1143,7 +1143,7 @@ const credentialSchema =
   /* ───────── National: quick answer ───────── */
   .eg-quickblock { border-left: 4px solid var(--primary); padding-left: 1.5rem; }
   .eg-quicksummary { font-size: 1.13rem; line-height: 1.75; color: var(--ink); margin: 0 0 1.25rem; }
-  .eg-advantages { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.75rem; }
+  .eg-advantages { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 0.75rem; }
   .eg-advantages li { position: relative; padding: 0.85rem 1.1rem 0.85rem 2.4rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); font-size: 0.95rem; line-height: 1.6; }
   .eg-advantages li::before { content: '✓'; position: absolute; left: 1rem; top: 0.85rem; color: var(--accent-mint, #10b981); font-weight: 700; }
 
@@ -1170,7 +1170,7 @@ const credentialSchema =
   .eg-step-note { margin: 0.75rem 0 0; padding: 0.6rem 0.9rem; border-left: 3px solid var(--accent); background: rgba(0, 0, 0, 0.025); border-radius: 0 6px 6px 0; font-size: 0.88rem; line-height: 1.6; color: var(--muted); }
 
   /* ───────── National: policies ───────── */
-  .eg-policies { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.9rem; }
+  .eg-policies { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 0.9rem; }
   .eg-policy { padding: 1.05rem 1.25rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
   .eg-policy dt { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--primary); font-weight: 700; margin-bottom: 0.45rem; }
   .eg-policy dd { margin: 0; font-size: 0.93rem; line-height: 1.65; color: var(--ink); }
@@ -1196,5 +1196,16 @@ const credentialSchema =
     .eg-quickblock { padding-left: 1rem; }
     .eg-advantages, .eg-policies { grid-template-columns: 1fr; }
     .eg-topic-head { flex-direction: column; gap: 0.25rem; }
+  }
+
+  /* Phone: tighten the long-form reading experience */
+  @media (max-width: 640px) {
+    .eg-section-cream { padding: 1.5rem 1rem; }
+    .eg-factstrip { grid-template-columns: repeat(auto-fit, minmax(min(100%, 130px), 1fr)); gap: 0.75rem; }
+    .eg-route li { grid-template-columns: 1fr; gap: 0.6rem; padding: 1.25rem; }
+    .eg-essentials .row { padding: 0.85rem 1rem; }
+    .eg-summary li { padding-left: 1.4rem; font-size: 0.98rem; }
+    /* Long official URLs must not widen the page */
+    .eg-sources a { word-break: break-word; }
   }
 </style>

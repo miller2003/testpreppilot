@@ -137,7 +137,7 @@ const description = clampDesc(`Every ${category.name.toLowerCase()} credential w
   .group-h2 { font-family: var(--font-heading); font-size: clamp(1.4rem, 2.4vw, 1.9rem); margin: 0 0 1.25rem; padding-bottom: .6rem; border-bottom: 1px solid var(--line); display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
   .group-count { font-family: var(--font-body); font-size: .78rem; color: var(--muted); font-weight: 400; letter-spacing: .04em; }
 
-  .exam-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: .4rem 2rem; }
+  .exam-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: .4rem 2rem; }
   .exam-list li { margin: 0; }
   .exam-list a { display: block; padding: .8rem .9rem; border-radius: 4px; text-decoration: none; color: inherit; transition: background .15s ease; }
   .exam-list a:hover { background: var(--cream); }
@@ -154,7 +154,7 @@ const description = clampDesc(`Every ${category.name.toLowerCase()} credential w
   .state-links a:hover { text-decoration: underline; }
 
   .sibling-cats { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--line); }
-  .cat-links { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .4rem 1.5rem; }
+  .cat-links { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: .4rem 1.5rem; }
   .cat-links a { display: flex; justify-content: space-between; gap: 1rem; padding: .45rem .6rem; border-radius: 3px; text-decoration: none; color: var(--ink); font-size: .93rem; }
   .cat-links a:hover { background: var(--cream); }
   .cat-links span { color: var(--muted); font-size: .8rem; }

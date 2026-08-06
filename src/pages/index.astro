@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { credentials } from '../data/credentials';
 import PathFinder from '../components/PathFinder.astro';
 import CredentialCard from '../components/CredentialCard.astro';
+import StateDirectory from '../components/StateDirectory.astro';
 
 const featuredCredentials = credentials.slice(0, 4);
 ---
@@ -52,6 +53,17 @@ const featuredCredentials = credentials.slice(0, 4);
         <CredentialCard credential={cred} />
       ))}
     </div>
+  </section>
+
+  <section class="states-section | container | animate-on-scroll">
+    <div class="section-header">
+      <h2>Find your state's requirements</h2>
+      <a href="/states" class="view-all">All states &rarr;</a>
+    </div>
+    <p class="states-intro">
+      Licensing boards differ in every state. Jump straight to verified credential pathways for your location.
+    </p>
+    <StateDirectory heading="" showHeading={false} />
   </section>
 
   <section class="trust-band | bg-ink color-paper | animate-on-scroll">
@@ -134,17 +146,40 @@ const featuredCredentials = credentials.slice(0, 4);
 
 <style>
   /* Local component styles for layout structure. Relying on global CSS for visual design. */
-  .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-5) max(var(--wrap-pad), env(safe-area-inset-left));
+  }
   .bg-cream { background-color: var(--cream); }
   .bg-ink { background-color: var(--ink); color: var(--paper); }
   .bg-primary { background-color: var(--primary); }
   .color-paper { color: var(--paper); }
   .color-ink { color: var(--ink); }
   
-  .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; min-height: 80vh; padding-top: 4rem; }
-  .hero-content h1 { font-size: 4rem; line-height: 1.1; margin-bottom: 1.5rem; }
-  .cta-group { display: flex; gap: 1rem; align-items: center; margin: 2rem 0; }
-  
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-gap-lg);
+    align-items: center;
+    min-height: 80vh;
+    padding-top: var(--space-section);
+  }
+  .hero-content h1 {
+    font-size: var(--fs-hero);
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    margin-bottom: 1.5rem;
+    text-wrap: balance;
+  }
+  .hero-content .lede {
+    font-size: var(--fs-prose);
+    color: var(--muted);
+    max-width: 46ch;
+    text-wrap: pretty;
+  }
+  .cta-group { display: flex; gap: 1rem; align-items: center; margin: 2rem 0; flex-wrap: wrap; }
+
   /* Enhanced Hero Art */
   .hero-art { position: relative; width: 100%; height: 500px; display: flex; justify-content: center; align-items: center; }
   .hero-gradient-blob {
@@ -185,17 +220,45 @@ const featuredCredentials = credentials.slice(0, 4);
     100% { transform: scale(1.2); opacity: 0.6; }
   }
 
-  .pathfinder-section { padding: 4rem 0; }
-  .featured-section { padding: 6rem 0; }
-  .section-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem; }
-  .credential-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-  
-  .trust-band { padding: 6rem 0; }
-  .trust-layout { display: grid; grid-template-columns: auto 1fr; gap: 4rem; align-items: center; }
-  .trust-stat { font-size: 8rem; font-family: var(--font-serif); line-height: 1; }
-  
-  .how-it-works-section { padding: 8rem 0; }
-  .two-column-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+  .pathfinder-section { padding: var(--space-section) 0; }
+  .featured-section { padding: var(--space-section) 0; }
+  .states-section { padding: var(--space-section) 0; border-top: 1px solid var(--line); }
+  .states-intro { color: var(--muted); max-width: 68ch; line-height: 1.7; margin: 0 0 2.5rem; font-size: var(--fs-prose); }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  .section-header h2 { font-size: var(--fs-h2); line-height: 1.2; margin: 0; }
+  .view-all { white-space: nowrap; }
+  .credential-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+    gap: var(--space-gap);
+  }
+
+  .trust-band { padding: var(--space-section) 0; }
+  .trust-layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-gap-lg);
+    align-items: center;
+  }
+  .trust-stat { font-size: var(--fs-display); font-family: var(--font-serif); line-height: 1; }
+  .trust-content h2 { font-size: var(--fs-h2); line-height: 1.25; text-wrap: balance; }
+
+  .how-it-works-section { padding: var(--space-section-lg) 0; }
+  .two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-gap-lg);
+    align-items: center;
+  }
+  .content-column h2 { font-size: var(--fs-h2); line-height: 1.25; }
+  .step-list h3 { font-size: var(--fs-h3); }
   .step-list { list-style: none; padding: 0; counter-reset: step; }
   .step-list li { position: relative; padding-left: 3rem; margin-bottom: 2rem; }
   .step-list li::before { counter-increment: step; content: "0" counter(step); position: absolute; left: 0; top: 0; font-family: var(--font-mono); font-size: 1.25rem; font-weight: bold; color: var(--primary); }
@@ -203,8 +266,66 @@ const featuredCredentials = credentials.slice(0, 4);
   .grid-pattern { width: 80%; height: 80%; background-image: radial-gradient(var(--ink) 1px, transparent 1px); background-size: 20px 20px; opacity: 0.2; position: relative; }
   .stamp { position: absolute; top: -1rem; left: -1rem; background: var(--primary); color: var(--paper); padding: 0.5rem 1rem; font-family: var(--font-mono); font-size: 0.875rem; font-weight: bold; transform: rotate(-5deg); z-index: 10; opacity: 1 !important; }
   
-  .newsletter-section { padding: 3rem 0; text-align: center; }
-  .newsletter-form { display: flex; gap: 1rem; justify-content: center; max-width: 500px; margin: 2rem auto; }
-  .newsletter-form input { flex: 1; padding: 1rem; border: 2px solid var(--ink); font-family: var(--font-body); }
-  .newsletter-form button { padding: 1rem 2rem; font-weight: bold; border: 2px solid var(--ink); cursor: pointer; }
+  .newsletter-section { padding: var(--space-section) 0; text-align: center; }
+  .newsletter-content h2 { font-size: var(--fs-h2); line-height: 1.25; text-wrap: balance; }
+  .newsletter-form { display: flex; gap: 1rem; justify-content: center; max-width: 500px; margin: 2rem auto; flex-wrap: wrap; }
+  .newsletter-form input {
+    flex: 1 1 240px;
+    min-width: 0;
+    padding: 1rem;
+    border: 2px solid var(--ink);
+    font-family: var(--font-body);
+    font-size: 1rem; /* >=16px stops iOS Safari auto-zoom on focus */
+  }
+  .newsletter-form button {
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border: 2px solid var(--ink);
+    cursor: pointer;
+    min-height: var(--tap-min);
+  }
+
+  /* ---------------- Responsive ---------------- */
+
+  /* Tablet / narrow desktop: two-column blocks stop being readable well
+     before the phone breakpoint, so collapse them early. */
+  @media (max-width: 1024px) {
+    .hero { gap: var(--space-gap); }
+    .hero-art { height: 400px; }
+    .trust-layout { gap: var(--space-gap); }
+  }
+
+  @media (max-width: 860px) {
+    .hero {
+      grid-template-columns: 1fr;
+      min-height: 0;
+      padding-top: var(--space-5);
+      text-align: left;
+    }
+    /* Decorative floating cards overlap badly once the column narrows;
+       they carry no information (aria-hidden) so they step aside. */
+    .hero-art { display: none; }
+    .hero-content .lede { max-width: none; }
+
+    .trust-layout {
+      grid-template-columns: 1fr;
+      gap: var(--space-4);
+      text-align: left;
+    }
+
+    .two-column-layout { grid-template-columns: 1fr; }
+    /* Lead with the words, not the decorative panel */
+    .visual-column { order: 2; min-height: 220px; }
+    .content-column { order: 1; }
+  }
+
+  @media (max-width: 560px) {
+    .cta-group { gap: 0.75rem; margin: 1.5rem 0; }
+    .cta-group > .button { flex: 1 1 100%; }
+    .newsletter-form { flex-direction: column; margin: 1.5rem auto; }
+    .newsletter-form input,
+    .newsletter-form button { width: 100%; }
+    .step-list li { padding-left: 2.5rem; margin-bottom: 1.5rem; }
+    .visual-column { min-height: 170px; }
+  }
 </style>

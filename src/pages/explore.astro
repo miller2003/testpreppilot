@@ -142,7 +142,7 @@ const canonicalUrl = new URL('/explore', Astro.site || 'https://testpreppilot.co
   .explore-hero .lede { font-family: var(--font-body); font-size: 1.1rem; color: var(--muted); max-width: 750px; line-height: 1.5; margin: 0; }
   
   /* Layout */
-  .directory-layout { display: grid; grid-template-columns: 240px 1fr; gap: 2rem; padding-bottom: 4rem; }
+  .directory-layout { display: grid; grid-template-columns: clamp(180px, 19vw, 240px) 1fr; gap: var(--space-gap); padding-bottom: var(--space-section); }
   
   /* Sidebar Nav */
   .filter-sidebar { position: relative; }
@@ -163,8 +163,8 @@ const canonicalUrl = new URL('/explore', Astro.site || 'https://testpreppilot.co
   .section-header h2 { font-family: var(--font-heading); font-size: 1.4rem; margin: 0 0 0.15rem 0; color: var(--ink); font-weight: 600; line-height: 1.2; }
   .section-header p { font-family: var(--font-body); font-size: 0.85rem; color: var(--muted); margin: 0; line-height: 1.4; }
   
-  /* Directory Grid (Strict 3 Columns) */
-  .directory-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  /* Directory grid — reflows continuously rather than snapping at 900px */
+  .directory-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 225px), 1fr)); gap: 1rem; }
   
   /* Credential Card */
   .directory-item { display: flex; }
@@ -184,11 +184,44 @@ const canonicalUrl = new URL('/explore', Astro.site || 'https://testpreppilot.co
   .empty-state p { font-size: 1.25rem; font-family: var(--font-heading); color: var(--ink); margin-bottom: 1.5rem; }
   
   @media (max-width: 900px) {
-    .directory-layout { grid-template-columns: 1fr; gap: 2rem; }
-    .filter-nav { flex-direction: row; flex-wrap: wrap; position: static; border-right: none; padding-right: 0; border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
-    .filter-nav a { border-right: none; border-bottom: 2px solid transparent; margin-right: 0; margin-bottom: -1rem; padding: 0.5rem 1rem; }
-    .filter-nav a.active { border-right-color: transparent; border-bottom-color: var(--primary); }
-    .page-hero { padding: 3rem 0; margin-bottom: 2rem; }
-    .directory-list { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+    .directory-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+    /* Sidebar becomes a swipeable rail instead of a wrapping pile of links */
+    .filter-nav {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      position: static;
+      border-right: none;
+      padding-right: 0;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 0;
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x proximity;
+      scrollbar-width: none;
+      gap: 0.25rem;
+    }
+    .filter-nav::-webkit-scrollbar { display: none; }
+    .filter-nav a {
+      border-right: none;
+      border-bottom: 2px solid transparent;
+      margin-right: 0;
+      margin-bottom: 0;
+      padding: 0.6rem 1rem;
+      white-space: nowrap;
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      min-height: var(--tap-min);
+      display: flex;
+      align-items: center;
+    }
+    .filter-nav a.active { border-right-color: transparent; border-bottom-color: var(--primary); font-size: 1.05rem; }
+    .page-hero { padding: var(--space-section) 0; margin-bottom: 1.5rem; }
+  }
+
+  @media (max-width: 700px) {
+    .explore-hero .lede { font-size: var(--fs-prose); }
+    .search-bar input { min-width: min(250px, 100%); font-size: 1rem; }
+    .empty-state { padding: 2.5rem 1.25rem; }
+    .section-header h2 { font-size: var(--fs-h3); }
   }
 </style>

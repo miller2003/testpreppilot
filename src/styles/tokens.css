@@ -27,6 +27,19 @@
   --font-heading: 'Cormorant Garamond', 'Times New Roman', serif;
   --font-mono: 'Lora', Georgia, serif;
 
+  /* Fluid Typography — scales continuously with viewport.
+     Prevents both the "giant text on phones" problem and the
+     "nothing changes while dragging the window" problem. */
+  --fs-hero:  clamp(2.15rem, 1.30rem + 3.9vw, 4rem);
+  --fs-h1:    clamp(1.85rem, 1.28rem + 2.6vw, 3rem);
+  --fs-h2:    clamp(1.45rem, 1.13rem + 1.5vw, 2.15rem);
+  --fs-h3:    clamp(1.15rem, 1.02rem + 0.6vw, 1.4rem);
+  --fs-body:  clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
+  --fs-prose: clamp(1.02rem, 0.97rem + 0.24vw, 1.125rem);
+  --fs-small: clamp(0.82rem, 0.79rem + 0.12vw, 0.875rem);
+  /* Oversized display numerals (e.g. trust stat) */
+  --fs-display: clamp(3.5rem, 1.60rem + 8.4vw, 8rem);
+
   /* Spacing Scale */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -35,6 +48,17 @@
   --space-5: 2rem;
   --space-6: 3rem;
   --space-8: 4rem;
+
+  /* Fluid spacing — section rhythm that compresses on small screens */
+  --space-section: clamp(2.75rem, 1.60rem + 5.2vw, 6rem);
+  --space-section-lg: clamp(3.25rem, 1.55rem + 7.7vw, 8rem);
+  --space-gap: clamp(1.25rem, 0.80rem + 2.0vw, 2.5rem);
+  --space-gap-lg: clamp(1.75rem, 0.85rem + 4.1vw, 4rem);
+
+  /* Layout */
+  --wrap-max: 1240px;
+  --wrap-pad: clamp(1rem, 0.65rem + 1.6vw, 1.5rem);
+  --tap-min: 44px; /* WCAG 2.5.8 minimum touch target */
 
   /* Misc */
   --radius: 12px;

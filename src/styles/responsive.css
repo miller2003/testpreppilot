@@ -1,0 +1,257 @@
+/* ==========================================================================
+   Responsive & Touch Corrections
+   Global, cross-cutting fixes that would otherwise need patching per page.
+   Loaded last so it can correct earlier declarations.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Horizontal overflow containment
+   A single wide element (long slug, table, pre) used to push the whole page
+   sideways on phones, producing the classic "everything is slightly zoomed
+   out and scrolls left-right" feel.
+   -------------------------------------------------------------------------- */
+html {
+  overflow-x: hidden;
+  /* Prevent iOS from inflating text in landscape */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: clip;
+  min-width: 0;
+}
+
+/* Long unbroken strings (URLs, exam codes) must wrap rather than expand */
+p, li, dd, dt, td, th, h1, h2, h3, h4, summary, blockquote, figcaption {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Grid/flex children default to min-width:auto, which lets content force
+   the track wider than the container. This is the #1 cause of overflow. */
+main :where(section, article, div, li, ul, ol) {
+  min-width: 0;
+}
+
+img, svg, video, canvas, iframe, table {
+  max-width: 100%;
+}
+
+img, svg, video, canvas {
+  height: auto;
+}
+
+/* --------------------------------------------------------------------------
+   2. Safe-area support (notched phones)
+   -------------------------------------------------------------------------- */
+.wrap,
+.header-container,
+.footer-container,
+.footer-bottom {
+  padding-left: max(var(--wrap-pad), env(safe-area-inset-left));
+  padding-right: max(var(--wrap-pad), env(safe-area-inset-right));
+}
+
+.wrap {
+  max-width: var(--wrap-max);
+  margin-inline: auto;
+}
+
+/* --------------------------------------------------------------------------
+   3. Touch feedback & tap targets
+   -------------------------------------------------------------------------- */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a, button, summary, label, input, select, textarea {
+  touch-action: manipulation;
+}
+
+/* Interactive controls meet the 44px minimum on touch devices */
+@media (pointer: coarse) {
+  .button,
+  .button-small,
+  .faq-accordion summary,
+  .mobile-nav a,
+  .theme-toggle,
+  button {
+    min-height: var(--tap-min);
+  }
+
+  .button-small {
+    padding-block: var(--space-3);
+  }
+
+  /* Dense link lists need vertical breathing room to be tappable */
+  .footer-column li {
+    margin-bottom: var(--space-3);
+  }
+
+  .footer-column a,
+  .breadcrumb-nav a {
+    display: inline-block;
+    padding-block: 0.35rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. Hover isolation
+   Every hover rule in this codebase was unconditional, so on touch devices
+   the lifted/shadowed state latched after a tap and stayed until the next
+   tap elsewhere. Restrict motion-on-hover to real pointers.
+   -------------------------------------------------------------------------- */
+@media (hover: none) {
+  a:hover,
+  button:hover,
+  label:hover,
+  [class*="card"]:hover,
+  [class*="-card"]:hover,
+  .credential-card:hover,
+  .choice:hover,
+  .directory-item:hover {
+    transform: none !important;
+  }
+
+  .credential-card:hover {
+    box-shadow: var(--shadow-sm) !important;
+    border-color: var(--line) !important;
+  }
+
+  .card-arrow,
+  .credential-card:hover .card-arrow {
+    transform: none !important;
+  }
+}
+
+/* Give touch users an immediate press state instead */
+@media (hover: none) {
+  a:active,
+  button:active,
+  .button:active,
+  .credential-card:active {
+    opacity: 0.72;
+    transition: opacity 0.08s ease;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. Fluid type application
+   Applies the clamp() scale from tokens.css to shared elements so text
+   scales continuously instead of jumping at breakpoints.
+   -------------------------------------------------------------------------- */
+body {
+  font-size: var(--fs-body);
+}
+
+.page-hero h1 {
+  font-size: var(--fs-h1);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.prose {
+  font-size: var(--fs-prose);
+}
+
+.prose h2 { font-size: var(--fs-h2); line-height: 1.2; }
+.prose h3 { font-size: var(--fs-h3); line-height: 1.3; }
+
+.faq-accordion summary {
+  font-size: var(--fs-h3);
+  gap: var(--space-3);
+}
+
+.brand {
+  font-size: clamp(1.35rem, 1.05rem + 1.1vw, 1.85rem);
+}
+
+/* --------------------------------------------------------------------------
+   6. Generic grid de-compression
+   Fixed column counts squeezed content between 700–1100px. Any grid using
+   the shared helpers now reflows continuously.
+   -------------------------------------------------------------------------- */
+.grid { gap: var(--space-gap); }
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.grid-4 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); }
+
+/* --------------------------------------------------------------------------
+   7. Component-level small screen corrections
+   -------------------------------------------------------------------------- */
+@media (max-width: 760px) {
+  .newsletter {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .fact-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+  }
+
+  .affiliate-box {
+    padding: var(--space-3);
+  }
+
+  .article {
+    padding: var(--space-5) 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7b. Small-phone gutter & padding tightening
+   Pages use a flat 2rem side padding. On a 360px phone that leaves only
+   ~296px of content and oversized card padding wastes precious space.
+   -------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  .container,
+  .re-inner,
+  .topic-hubs,
+  .all-states {
+    padding-left: max(var(--wrap-pad), env(safe-area-inset-left));
+    padding-right: max(var(--wrap-pad), env(safe-area-inset-right));
+  }
+
+  /* Oversized card padding that crowded content on phones */
+  .review-card { padding: 1.5rem; }
+  .grid-article .article-link { padding: 1.5rem; }
+}
+
+/* Horizontal filter strips: hide scrollbar, add snap, hint at overflow */
+.filter-row {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  scroll-padding-inline: var(--wrap-pad);
+}
+
+.filter-row::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-row > * {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+}
+
+/* Tables that must stay tabular get an inertial scroll container */
+.eg-tablewrap {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+/* --------------------------------------------------------------------------
+   8. Focus visibility (keyboard users)
+   -------------------------------------------------------------------------- */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}

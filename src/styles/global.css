@@ -6,3 +6,5 @@
 @import './components.css';
 @import './pages.css';
 @import './animations.css';
+/* Must stay last: corrects declarations from the files above. */
+@import './responsive.css';

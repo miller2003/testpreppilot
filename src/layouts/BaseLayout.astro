@@ -12,28 +12,102 @@ interface Props {
   ogImage?: string;
   schema?: object;
   noindex?: boolean;
+  dateModified?: string;
+  datePublished?: string;
 }
 
-const { title, description, canonical, ogImage, schema, noindex } = Astro.props;
+const { title, description, canonical, ogImage, schema, noindex, dateModified, datePublished } = Astro.props;
+
+// Site-wide baseline last-updated stamp. Individual pages override with their
+// own verified date (e.g. an exam guide's lastReviewed) via the prop.
+const SITE_UPDATED = '2026-08-06';
+const siteUrl = Astro.site || 'https://testpreppilot.com';
+const pageUrl = new URL(Astro.url.pathname, siteUrl).toString();
+const finalOgImage = ogImage || '/og-image.png';
+const finalDateModified = dateModified || SITE_UPDATED;
+const finalDatePublished = datePublished || SITE_UPDATED;
 
 const defaultSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://testpreppilot.com/#organization",
   "name": "TestPrepPilot",
   "url": "https://testpreppilot.com",
-  "logo": "https://testpreppilot.com/logo.png"
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://testpreppilot.com/logo.png",
+    "width": 512,
+    "height": 512
+  },
+  "image": "https://testpreppilot.com/og-image.png"
 };
 
 const schemaData = schema || defaultSchema;
+
+const webSiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://testpreppilot.com/#website",
+  "url": "https://testpreppilot.com",
+  "name": "TestPrepPilot",
+  "publisher": { "@id": "https://testpreppilot.com/#organization" },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://testpreppilot.com/exams?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+};
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${pageUrl}#webpage`,
+  "url": pageUrl,
+  "name": title,
+  "isPartOf": { "@id": "https://testpreppilot.com/#website" },
+  "inLanguage": "en-US",
+  "datePublished": finalDatePublished,
+  "dateModified": finalDateModified
+};
 ---
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <SEOHead title={title} description={description} canonical={canonical} ogImage={ogImage} noindex={noindex} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <SEOHead title={title} description={description} canonical={canonical} ogImage={finalOgImage} noindex={noindex} />
+    <link rel="alternate" type="application/rss+xml" title="TestPrepPilot" href="/rss.xml" />
     <script type="application/ld+json" set:html={JSON.stringify(schemaData, null, 2)} is:inline />
+    <script type="application/ld+json" set:html={JSON.stringify(webSiteSchema)} is:inline />
+    <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} is:inline />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {/* Resolve theme before first paint so dark-mode users never see a
+        white flash, and keep the mobile browser chrome in sync. */}
+    <script is:inline>
+      (function () {
+        var stored = null;
+        try { stored = localStorage.getItem('theme'); } catch (e) {}
+        var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        else document.documentElement.removeAttribute('data-theme');
+        try { localStorage.setItem('theme', theme); } catch (e) {}
+
+        window.__syncThemeColor = function () {
+          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', dark ? '#0b0c0d' : '#f8f7f3');
+        };
+        if (document.readyState !== 'loading') window.__syncThemeColor();
+        else document.addEventListener('DOMContentLoaded', window.__syncThemeColor);
+        document.addEventListener('astro:after-swap', function () {
+          var t = localStorage.getItem('theme');
+          if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+          else document.documentElement.removeAttribute('data-theme');
+          window.__syncThemeColor();
+        });
+      })();
+    </script>
     <ClientRouter />
   </head>
   <body data-pagefind-ignore={noindex ? '' : undefined}>

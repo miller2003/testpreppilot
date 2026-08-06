@@ -58,7 +58,7 @@ const { groups, category } = relatedExams(exam, { perBucket });
     padding: 0;
     display: grid;
     gap: 0.45rem;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   }
   .re-list a {
     display: flex;

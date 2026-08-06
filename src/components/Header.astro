@@ -17,18 +17,22 @@ import ThemeToggle from './ThemeToggle.astro';
     </nav>
 
     <div class="mobile-menu-wrapper">
-      <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle-input" aria-label="Toggle mobile menu" />
-      <label for="mobile-menu-toggle" class="mobile-menu-toggle">
+      <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle-input" aria-controls="mobile-nav" />
+      <label for="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu">
         <span></span>
         <span></span>
         <span></span>
       </label>
-      <nav class="mobile-nav" aria-label="Mobile Navigation">
+      <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
         <a href="/how-it-works">How it works</a>
         <a href="/reviews">Reviews</a>
         <a href="/guides">Guides</a>
         <a href="/about">About</a>
         <a href="/exams" class="button button-small">Exams</a>
+        <div class="mobile-nav-theme">
+          <span>Appearance</span>
+          <ThemeToggle />
+        </div>
       </nav>
     </div>
   </div>

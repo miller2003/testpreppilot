@@ -73,7 +73,7 @@ const totalExams = cats.reduce((a: number, c: any) => a + c.total, 0);
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
     gap: .35rem 1.5rem;
   }
   .hubs-grid li { margin: 0; }
