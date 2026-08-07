@@ -1207,5 +1207,9 @@ const credentialSchema =
     .eg-summary li { padding-left: 1.4rem; font-size: 0.98rem; }
     /* Long official URLs must not widen the page */
     .eg-sources a { word-break: break-word; }
+
+    /* Step-duration labels use nowrap by default; let them wrap on phones so
+       they cannot push the row wider than the viewport. */
+    .eg-step-dur { white-space: normal; }
   }
 </style>
