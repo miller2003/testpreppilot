@@ -28,30 +28,11 @@ p, li, dd, dt, td, th, h1, h2, h3, h4, summary, blockquote, figcaption {
   word-break: normal;
 }
 
-/* Inline flow elements that may hold long unbreakable tokens (official
-   registration URLs, exam codes, ids). `overflow-wrap: anywhere` shrinks the
-   element's min-content size, so a flex/grid track can collapse on a 360px
-   phone instead of being forced wider than the viewport. `word-break:
-   break-word` is the visual fallback that actually breaks the rendered line. */
-main a,
-main span,
-main code,
-main pre {
-  overflow-wrap: anywhere;
-  word-break: break-word;
-}
-
-/* Grid/flex children default to min-width:auto, which lets content force the
-   track wider than the container — the #1 cause of horizontal overflow on
-   phones (the "right half of the page is cut off" symptom). The list must be
-   exhaustive: a classed item (e.g. a flex <a>, a <span>, or the exam page's
-   <main class="main-article">) keeps min-width:auto unless we zero it here.
-   The :where() list only reaches DESCENDANTS of <main>, so the exam-page grid
-   item and its siblings are zeroed explicitly below. */
-main :where(section, article, div, li, ul, ol, p, a, span, dl, dt, dd, blockquote, figure, table, td, th, code, pre),
-.two-column-content,
-.two-column-content > *,
-main.main-article {
+/* Base min-width reset — kept global AND desktop-safe. It only touches the
+   common block-level flex/grid children, exactly as in the prior release, so
+   the PC layout is never altered by mobile work. The exam-page-specific and
+   inline-element resets live in the <=900px block further down. */
+main :where(section, article, div, li, ul, ol) {
   min-width: 0;
 }
 
@@ -59,15 +40,51 @@ img, svg, video, canvas, iframe, table {
   max-width: 100%;
 }
 
-/* A <pre> (rare on these pages) must scroll internally, never widen the page */
-main pre {
-  max-width: 100%;
-  overflow-x: auto;
-  white-space: pre-wrap;
-}
-
 img, svg, video, canvas {
   height: auto;
+}
+
+/* --------------------------------------------------------------------------
+   MOBILE-ONLY overflow hardening  (<= 900px)
+   The exam two-column grid collapses to a single 1fr track at <=900px. At that
+   point long unbreakable tokens (official registration URLs, exam codes) and
+   the grid item itself can force that single track past the viewport, and the
+   body's overflow-x:clip hides the overflow — the "right half cut off"
+   symptom. These resets fix it.
+
+   They are DELIBERATELY scoped to <=900px so the desktop layout (>=901px) is
+   byte-for-byte identical to the previous release and is never touched by any
+   mobile-side change. (overflow-x:clip on body remains the always-on safety
+   net for both regimes.)
+   -------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  /* `overflow-wrap: anywhere` shrinks the element's min-content, letting a
+     flex/grid track collapse on a 360px phone instead of overflowing.
+     `word-break: break-word` is the visual fallback that breaks the line. */
+  main a,
+  main span,
+  main code,
+  main pre {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* Extend the min-width:0 reset to inline elements and to the exam-page grid
+     item + its siblings. The :where() list only reaches DESCENDANTS of <main>,
+     so the grid item is zeroed explicitly. */
+  main :where(p, a, span, dl, dt, dd, blockquote, figure, table, td, th, code, pre),
+  .two-column-content,
+  .two-column-content > *,
+  main.main-article {
+    min-width: 0;
+  }
+
+  /* A <pre> (rare on these pages) must scroll internally, never widen the page */
+  main pre {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre-wrap;
+  }
 }
 
 /* --------------------------------------------------------------------------
