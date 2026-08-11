@@ -2,56 +2,115 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../components/BreadcrumbNav.astro';
 import TopicHubs from '../components/TopicHubs.astro';
+import { TRUST_PAGES } from '../data/editorial';
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' }
+  { label: 'About', href: TRUST_PAGES.about }
 ];
 ---
 
-<BaseLayout 
-  title="About Us — TestPrepPilot"
-  description="Learn about the team behind TestPrepPilot and our mission to clarify career advancement."
+<BaseLayout
+  title="About TestPrepPilot — The Editorial Desk Behind the Roadmaps"
+  description="Who runs TestPrepPilot, why we exist, and the editorial standards that keep every license and certification guide independently researched and expert-verified."
 >
   <div class="container">
     <BreadcrumbNav items={breadcrumbItems} />
-    
+
     <header class="editorial-hero">
       <p class="eyebrow">OUR MISSION</p>
       <h1>Clarity in an industry of <em>confusion.</em></h1>
-      <p class="lede">We believe that advancing your career shouldn't require a law degree to understand the prerequisites.</p>
+      <p class="lede">
+        We exist so that advancing your career never requires a law degree to understand the
+        prerequisites. TestPrepPilot is an independent research desk that maps the real path to
+        U.S. licenses and certifications — verified against primary sources, checked by people
+        who hold the credential.
+      </p>
     </header>
 
     <main class="about-content">
       <section class="prose-section">
-        <h2>The Problem We're Solving</h2>
-        <p>If you've ever tried to figure out exactly what it takes to become a licensed professional in your state, you know the frustration. Between outdated government websites, conflicting third-party blogs, and exam prep companies trying to sell you expensive courses, finding a single, reliable source of truth is nearly impossible.</p>
-        <p>TestPrepPilot was built to fix this.</p>
+        <h2>The problem we set out to solve</h2>
+        <p>
+          If you've ever tried to figure out exactly what it takes to become a licensed
+          professional in your state, you know the frustration. Between outdated government
+          websites, conflicting third-party blogs, and exam-prep companies trying to sell you
+          expensive courses, finding a single, reliable source of truth is nearly impossible.
+        </p>
+        <p>
+          So we built one. TestPrepPilot is the source of truth we wished existed: a calm,
+          plain-English map of what each credential actually requires, who issues it, what it
+          costs, and how long it takes — maintained by people whose only incentive is accuracy.
+        </p>
       </section>
 
       <section class="prose-section">
-        <h2>Our Approach</h2>
-        <p>We are a team of researchers, educators, and industry professionals dedicated to mapping out the optimal path for every major certification and license. We don't just aggregate links; we manually read the official statutes, candidate handbooks, and testing board requirements.</p>
-        <p>Then, we distill that bureaucratic legalese into elegant, sequential roadmaps that tell you exactly what to do, in what order, and how much it will cost.</p>
+        <h2>Who's behind the desk</h2>
+        <p>
+          We're a small editorial team of researchers, educators, and industry professionals —
+          not a content farm and not a prep vendor. We read the official statutes, candidate
+          handbooks, and testing-board requirements line by line, then distill that bureaucratic
+          legalese into a sequential roadmap you can actually act on.
+        </p>
+        <p>
+          We don't aggregate links and call it research, and we don't let a course provider tell
+          us what the requirements are. Where a guide covers a licensed field, it's also confirmed
+          by a professional who holds that exact credential. You can meet them on our
+          <a href={TRUST_PAGES.reviewers}>Review Network</a> page.
+        </p>
       </section>
 
       <div class="editorial-divider"></div>
 
       <section class="team-section">
-        <p class="eyebrow">EDITORIAL STANDARDS</p>
-        <h2>Independent & Objective</h2>
-        <p class="team-lede">We maintain strict editorial independence. While we may earn affiliate commissions if you purchase a prep course through our links, our recommendations are always based on rigorous, objective analysis of the course's quality, syllabus coverage, and student outcomes.</p>
-        
+        <p class="eyebrow">WHAT WE STAND FOR</p>
+        <h2>Four commitments we don't bend</h2>
+        <p class="team-lede">
+          These aren't marketing slogans. They're the rules that govern every page we publish —
+          and the reason our recommendations don't shift when a provider pays.
+        </p>
+
         <div class="values-grid">
           <div class="value-item">
-            <h3>Verified Data</h3>
-            <p>Every requirement listed on our site is cited and verified against official state or national board documentation.</p>
+            <h3>Verified data</h3>
+            <p>Every requirement we list is cited and checked against official state or national board documentation — never paraphrased from another blog.</p>
           </div>
           <div class="value-item">
-            <h3>No Fluff</h3>
-            <p>We respect your time. Our guides are designed to be scanned, understood, and acted upon immediately.</p>
+            <h3>Expert-reviewed</h3>
+            <p>Guides in licensed fields are confirmed by a professional who holds that credential and can be verified. Real people, never invented names.</p>
+          </div>
+          <div class="value-item">
+            <h3>Independent</h3>
+            <p>Affiliate revenue funds our research but never touches a fact, a ranking, or a recommendation. A provider cannot buy a better outcome here.</p>
+          </div>
+          <div class="value-item">
+            <h3>No fluff</h3>
+            <p>We respect your time. Our guides are built to be scanned, understood, and acted on immediately — no gated "download the full guide," no upsells.</p>
           </div>
         </div>
+      </section>
+
+      <section class="prose-section review-callout">
+        <h2>Reviewed by people who actually hold the license</h2>
+        <p>
+          Anyone can rewrite a handbook. What makes a guide trustworthy is a second pair of eyes
+          from someone who has done the thing. Where we can, each guide is reviewed for accuracy
+          by a licensed expert in that exact field — a real, checkable person, never an invented
+          name. They confirm the eligibility, exam format, fees and timeline; they don't
+          "endorse" a provider. That separation is the whole point.
+        </p>
+        <p class="rc-link"><a href={TRUST_PAGES.reviewers}>See how our review network works &rarr;</a></p>
+      </section>
+
+      <section class="cta">
+        <h2>How we're held accountable</h2>
+        <p class="cta-links">
+          <a href={TRUST_PAGES.methodology}>Our research methodology</a>
+          <a href={TRUST_PAGES.reviewers}>Review network</a>
+          <a href={TRUST_PAGES.editorialPolicy}>Editorial policy</a>
+          <a href={TRUST_PAGES.disclosure}>How we're funded</a>
+          <a href={TRUST_PAGES.contact}>Contact the desk</a>
+        </p>
       </section>
     </main>
   </div>
@@ -61,22 +120,29 @@ const breadcrumbItems = [
 
 <style>
   .container { max-width: 900px; margin: 0 auto; padding: 0 2rem; }
-  
+
   /* Hero Section */
   .editorial-hero { padding: 5rem 0 4rem; border-bottom: 1px solid var(--line); margin-bottom: 4rem; text-align: center; }
   .editorial-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 1.5rem; font-weight: 700; }
   .editorial-hero h1 { font-family: var(--font-heading); font-size: clamp(3rem, 5vw, 4.5rem); margin: 0 0 1.5rem; font-weight: 700; line-height: 1.1; color: var(--ink); }
-  .editorial-hero .lede { font-family: var(--font-body); font-size: 1.35rem; color: var(--muted); max-width: 750px; margin: 0 auto; line-height: 1.7; }
-  
+  .editorial-hero .lede { font-family: var(--font-body); font-size: 1.35rem; color: var(--muted); max-width: 760px; margin: 0 auto; line-height: 1.7; }
+
   /* Content Sections */
   .about-content { padding-bottom: 8rem; }
-  
+
   .prose-section { margin-bottom: 4rem; }
   .prose-section h2 { font-family: var(--font-heading); font-size: 2.5rem; margin: 0 0 1.5rem 0; line-height: 1.2; }
   .prose-section p { font-family: var(--font-body); font-size: 1.25rem; color: var(--ink); line-height: 1.8; margin: 0 0 1.5rem 0; }
-  
+  .prose-section a { color: var(--primary); font-weight: 600; text-underline-offset: 3px; }
+
+  .review-callout { padding: 1.75rem 2rem; background: var(--cream); border-left: 4px solid var(--primary); border-radius: var(--radius); }
+  .review-callout h2 { font-size: 2rem; margin-bottom: 1rem; }
+  .review-callout p { font-size: 1.15rem; }
+  .rc-link { margin-bottom: 0 !important; }
+  .rc-link a { font-weight: 700; }
+
   .editorial-divider { height: 1px; background: var(--line); width: 100px; margin: 5rem auto; }
-  
+
   .team-section { text-align: center; }
   .team-section .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 1rem; font-weight: 700; }
   .team-section h2 { font-family: var(--font-heading); font-size: var(--fs-h1); line-height: 1.15; margin: 0 0 1.5rem 0; }
@@ -87,7 +153,15 @@ const breadcrumbItems = [
   .value-item h3 { font-family: var(--font-heading); font-size: var(--fs-h3); margin: 0 0 1rem 0; }
   .value-item p { font-family: var(--font-body); font-size: var(--fs-prose); color: var(--muted); line-height: 1.6; margin: 0; }
 
+  /* CTA */
+  .cta { border-top: 1px solid var(--line); padding-top: 3rem; text-align: center; }
+  .cta h2 { font-family: var(--font-heading); font-size: var(--fs-h2); margin: 0 0 1.5rem; }
+  .cta-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
+  .cta-links a { display: inline-block; padding: 0.6rem 1.1rem; border: 1px solid var(--line); border-radius: 999px; background: var(--cream); text-decoration: none; font-family: var(--font-body); font-size: 0.95rem; color: var(--ink); }
+  .cta-links a:hover { border-color: var(--primary); }
+
   @media (max-width: 768px) {
     .editorial-divider { margin: 3rem auto; }
+    .prose-section h2 { font-size: 2rem; }
   }
 </style>

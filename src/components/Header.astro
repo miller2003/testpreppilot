@@ -1,17 +1,48 @@
 ---
 import ThemeToggle from './ThemeToggle.astro';
+
+// The "About" cluster gathers every trust / company page in one place so the
+// top bar stays uncluttered and the four overlapping "who we are / how we
+// research" pages are no longer scattered across the nav and footer.
+const aboutLinks = [
+  { label: 'About the desk', href: '/about', desc: 'Who we are & our mission' },
+  { label: 'Our methodology', href: '/methodology', desc: 'How every guide is researched' },
+  { label: 'Review network', href: '/reviewers', desc: 'Licensed experts who verify' },
+  { label: 'Editorial policy', href: '/editorial-policy', desc: 'Our standards & corrections' },
+  { label: 'Affiliate disclosure', href: '/disclosure', desc: 'How we are funded' },
+];
 ---
 <header class="header">
   <div class="header-container">
-    <a href="/" class="brand" aria-label="TestPrepPilot Home">
-      TestPrepPilot
-    </a>
+    <a href="/" class="brand" aria-label="TestPrepPilot Home">TestPrepPilot</a>
 
     <nav class="desktop-nav" aria-label="Main Navigation">
+      <a href="/guides">Guides</a>
       <a href="/how-it-works">How it works</a>
       <a href="/reviews">Reviews</a>
-      <a href="/guides">Guides</a>
-      <a href="/about">About</a>
+
+      <div class="nav-item">
+        <button
+          type="button"
+          class="dropdown-toggle"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="about-menu"
+        >
+          About
+          <span class="caret" aria-hidden="true"></span>
+        </button>
+        <div class="dropdown-panel" id="about-menu" role="menu">
+          {aboutLinks.map((l) => (
+            <a href={l.href} role="menuitem" class="dropdown-link">
+              <span class="dl-label">{l.label}</span>
+              <span class="dl-desc">{l.desc}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <a href="/contact">Contact</a>
       <ThemeToggle />
       <a href="/exams" class="button button-small">Exams</a>
     </nav>
@@ -24,10 +55,16 @@ import ThemeToggle from './ThemeToggle.astro';
         <span></span>
       </label>
       <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
+        <a href="/guides">Guides</a>
         <a href="/how-it-works">How it works</a>
         <a href="/reviews">Reviews</a>
-        <a href="/guides">Guides</a>
-        <a href="/about">About</a>
+        <a href="/about" class="mobile-parent">About</a>
+        <div class="mobile-sub">
+          {aboutLinks.map((l) => (
+            <a href={l.href}>{l.label}</a>
+          ))}
+        </div>
+        <a href="/contact">Contact</a>
         <a href="/exams" class="button button-small">Exams</a>
         <div class="mobile-nav-theme">
           <span>Appearance</span>
@@ -37,3 +74,56 @@ import ThemeToggle from './ThemeToggle.astro';
     </div>
   </div>
 </header>
+
+<script is:inline>
+  // Keep the desktop "About" dropdown keyboard-accessible: open on focus,
+  // close on Escape or blur. Pure CSS handles hover; this covers focus/keys.
+  (function () {
+    document.addEventListener('astro:page-load', function () {
+      var toggle = document.querySelector('.desktop-nav .dropdown-toggle');
+      var navItem = document.querySelector('.desktop-nav .nav-item');
+      if (!toggle || !navItem) return;
+
+      function setOpen(open) {
+        navItem.classList.toggle('is-open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
+
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        setOpen(!navItem.classList.contains('is-open'));
+      });
+      toggle.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') { setOpen(false); toggle.blur(); }
+      });
+      navItem.addEventListener('focusout', function (e) {
+        if (!navItem.contains(e.relatedTarget)) setOpen(false);
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    });
+  })();
+
+  // Offset in-page anchors so the sticky header never covers the section heading.
+  // Measured at runtime so it stays correct if the header height changes.
+  (function () {
+    function setScrollOffset() {
+      var header = document.querySelector('.header');
+      if (!header) return;
+      // header height + a small breathing room below it
+      var offset = header.offsetHeight + 12;
+      document.documentElement.style.setProperty('--scroll-offset', offset + 'px');
+    }
+
+    function init() { setScrollOffset(); }
+
+    document.addEventListener('astro:page-load', init);
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+    window.addEventListener('resize', setScrollOffset);
+  })();
+</script>

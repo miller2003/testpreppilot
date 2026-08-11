@@ -1,3 +1,4 @@
+// Research-backed exam records for batch file batch161.mjs.
 export const programs = [
   {
     "body": "ETA International",
@@ -297,6 +298,7 @@ export const programs = [
     "confidence": "low"
   }
 ];
+
 export const exams = [
   {
     "slug": "eta-aircraft-electronics-technician",
@@ -2124,13 +2126,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Valid CDL, TSA security threat assessment approval",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "~30 questions",
+      "time": "~30 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$86.50 TSA fee plus state fee",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "State Driver Licensing Agencies (AAMVA model curriculum)"
     },
@@ -2167,7 +2169,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "H endorsement valid with the CDL; TSA approval typically 5 years"
       ],
       [
         "Languages",
@@ -2208,8 +2210,8 @@ export const exams = [
     },
     "difficulty": "Regulated / Specialized",
     "audience": "Professionals and candidates seeking to validate Transportation, Aviation & Maritime competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "10-15 hours of study plus TSA background check processing",
+    "cost": "~$50-$100 (TSA fee plus state test fee)",
     "faqs": [
       {
         "q": "How do I register for the CDL Hazardous Materials Endorsement Knowledge Test exam?",
@@ -2243,7 +2245,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$42,000-$70,000 (53-3032 median $57,440)"
   },
   {
     "slug": "cdl-on-road-driving-skills-test",
@@ -2265,13 +2268,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Valid CDL permit (CLP), knowledge tests passed, medical card",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "Skills test (vehicle inspection + basic controls + road driving)",
+      "time": "Typically 1-2 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "State-dependent",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "State Driver Licensing Agencies (AAMVA model curriculum)"
     },
@@ -2308,7 +2311,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Passing completes the CDL; renewal per state cycle (typically 5-8 years)"
       ],
       [
         "Languages",
@@ -2349,8 +2352,8 @@ export const exams = [
     },
     "difficulty": "Regulated / Specialized",
     "audience": "Professionals and candidates seeking to validate Transportation, Aviation & Maritime competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "20-40 hours of skills practice after passing the knowledge tests",
+    "cost": "State-dependent (typically $50-$200 for the road test)",
     "faqs": [
       {
         "q": "How do I register for the CDL On-Road Driving Skills Test exam?",
@@ -2384,7 +2387,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$42,000-$70,000 (53-3032 median $57,440)"
   },
   {
     "slug": "cdl-passenger-endorsement-knowledge-test",
@@ -2406,13 +2410,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Valid CDL permit (CLP)",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "~20-30 questions",
+      "time": "~20-30 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "State-dependent",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "State Driver Licensing Agencies (AAMVA model curriculum)"
     },
@@ -2449,7 +2453,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "P endorsement valid with the CDL"
       ],
       [
         "Languages",
@@ -2490,8 +2494,8 @@ export const exams = [
     },
     "difficulty": "Regulated / Specialized",
     "audience": "Professionals and candidates seeking to validate Transportation, Aviation & Maritime competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "5-10 hours of study",
+    "cost": "~$10-$50 (state test fee)",
     "faqs": [
       {
         "q": "How do I register for the CDL Passenger Endorsement Knowledge Test exam?",
@@ -2525,7 +2529,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$42,000-$70,000 (53-3032) or $48,000-$75,000 (bus drivers)"
   },
   {
     "slug": "cdl-pre-trip-vehicle-inspection-test",
@@ -2547,13 +2552,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Valid CDL permit (CLP), knowledge tests passed",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "~80-100 inspection items",
+      "time": "~30-45 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "State-dependent",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "State Driver Licensing Agencies (AAMVA model curriculum)"
     },
@@ -2590,7 +2595,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Passing counts toward the CDL skills test"
       ],
       [
         "Languages",
@@ -2631,8 +2636,8 @@ export const exams = [
     },
     "difficulty": "Regulated / Specialized",
     "audience": "Professionals and candidates seeking to validate Transportation, Aviation & Maritime competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "5-10 hours of dedicated inspection practice",
+    "cost": "State-dependent (included in the skills-test fee)",
     "faqs": [
       {
         "q": "How do I register for the CDL Pre-Trip Vehicle Inspection Test exam?",
@@ -2666,7 +2671,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$42,000-$70,000 (53-3032 median $57,440)"
   },
   {
     "slug": "cdl-school-bus-endorsement-knowledge-test",
@@ -2688,13 +2694,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Valid CDL permit (CLP); P endorsement typically required",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "~20 questions beyond the P endorsement",
+      "time": "~20-30 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "State-dependent",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "State Driver Licensing Agencies (AAMVA model curriculum)"
     },
@@ -2731,7 +2737,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "S endorsement valid with the CDL"
       ],
       [
         "Languages",
@@ -2772,8 +2778,8 @@ export const exams = [
     },
     "difficulty": "Regulated / Specialized",
     "audience": "Professionals and candidates seeking to validate Transportation, Aviation & Maritime competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "5-10 hours of study",
+    "cost": "~$10-$50 (state test fee)",
     "faqs": [
       {
         "q": "How do I register for the CDL School Bus Endorsement Knowledge Test exam?",
@@ -2807,7 +2813,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$42,000-$70,000 (53-3032) or $48,000-$75,000 (bus drivers)"
   },
   {
     "slug": "cdl-tank-vehicle-endorsement-knowledge-test",
@@ -4366,13 +4373,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "None — open to all",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "Written exam (provider-set)",
+      "time": "1-2 day course",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "$200-400",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "International Municipal Signal Association"
     },
@@ -4409,7 +4416,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Typically 3 years, then renewal"
       ],
       [
         "Languages",
@@ -4450,8 +4457,8 @@ export const exams = [
     },
     "difficulty": "Regulated / Specialized",
     "audience": "Professionals and candidates seeking to validate Transportation, Aviation & Maritime competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "8-12 hours",
+    "cost": "$200-400",
     "faqs": [
       {
         "q": "How do I register for the IMSA Work Zone Traffic Control Safety Certification exam?",
@@ -4482,7 +4489,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$46,730 median, construction laborers (BLS May 2024)",
+    "examEssentials[3][1]": "Typically 3 years, then renewal"
   },
   {
     "slug": "msf-advanced-ridercourse",
@@ -4623,4 +4632,5 @@ export const exams = [
     "confidence": "low"
   }
 ];
+
 export default { programs, exams };

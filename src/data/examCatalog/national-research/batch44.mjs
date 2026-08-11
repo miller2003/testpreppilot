@@ -236,6 +236,7 @@ export const programs = [
     "confidence": "high"
   }
 ];
+
 export const exams = [
   {
     "slug": "microsoft-az-801",
@@ -660,10 +661,10 @@ export const exams = [
         "Renews yearly"
       ]
     },
-    "prerequisites": "C# or Python and Azure basics recommended.",
+    "prerequisites": "None (Azure AI experience recommended)",
     "examMeta": {
-      "questions": "40–60",
-      "time": "120 minutes",
+      "questions": "40-60 questions",
+      "time": "150 minutes",
       "pass": "700 of 1000",
       "fee": "$165",
       "format": "Multiple-choice + labs",
@@ -759,7 +760,8 @@ export const exams = [
     ],
     "sourceUrl": "https://learn.microsoft.com/credentials/certifications/azure-ai-engineer-associate/",
     "reviewed": "2026-08",
-    "confidence": "high"
+    "confidence": "high",
+    "examEssentials[3][1]": "Valid 12 months, then renewal assessment"
   },
   {
     "slug": "microsoft-ai-300",
@@ -1895,10 +1897,10 @@ export const exams = [
         "Renews yearly"
       ]
     },
-    "prerequisites": "Security operations basics recommended.",
+    "prerequisites": "None (security operations experience recommended)",
     "examMeta": {
-      "questions": "40–60",
-      "time": "120 minutes",
+      "questions": "40-60 questions",
+      "time": "150 minutes",
       "pass": "700 of 1000",
       "fee": "$165",
       "format": "Multiple-choice + labs",
@@ -1990,7 +1992,8 @@ export const exams = [
     ],
     "sourceUrl": "https://learn.microsoft.com/credentials/certifications/security-operations-analyst/",
     "reviewed": "2026-08",
-    "confidence": "high"
+    "confidence": "high",
+    "examEssentials[3][1]": "Valid 12 months, then renewal assessment"
   },
   {
     "slug": "microsoft-sc-300",
@@ -2345,10 +2348,10 @@ export const exams = [
         "Renews yearly"
       ]
     },
-    "prerequisites": "An M365 associate cert (MD-102 or MS-700) is required to earn the expert credential.",
+    "prerequisites": "None (Microsoft 365 experience recommended)",
     "examMeta": {
-      "questions": "40–60",
-      "time": "120 minutes",
+      "questions": "40-60 questions",
+      "time": "150 minutes",
       "pass": "700 of 1000",
       "fee": "$165",
       "format": "Multiple-choice + labs",
@@ -2444,7 +2447,8 @@ export const exams = [
     ],
     "sourceUrl": "https://learn.microsoft.com/credentials/certifications/microsoft-365-administrator-expert/",
     "reviewed": "2026-08",
-    "confidence": "high"
+    "confidence": "high",
+    "examEssentials[3][1]": "Valid 12 months, then renewal assessment"
   },
   {
     "slug": "microsoft-md-102",
@@ -2573,10 +2577,10 @@ export const exams = [
         "Renews yearly"
       ]
     },
-    "prerequisites": "M365 administration experience recommended.",
+    "prerequisites": "None (Teams admin experience recommended)",
     "examMeta": {
-      "questions": "40–60",
-      "time": "120 minutes",
+      "questions": "40-60 questions",
+      "time": "150 minutes",
       "pass": "700 of 1000",
       "fee": "$165",
       "format": "Multiple-choice + labs",
@@ -2668,7 +2672,8 @@ export const exams = [
     ],
     "sourceUrl": "https://learn.microsoft.com/credentials/certifications/teams-administrator-associate/",
     "reviewed": "2026-08",
-    "confidence": "high"
+    "confidence": "high",
+    "examEssentials[3][1]": "Valid 12 months, then renewal assessment"
   },
   {
     "slug": "microsoft-ms-721",
@@ -4289,13 +4294,13 @@ export const exams = [
         "Builds on Data Engineer"
       ]
     },
-    "prerequisites": "Google recommends 3+ years industry experience including 1+ year designing/managing ML on GCP, plus Python and ML fundamentals.",
-    "eligibility": "Open to anyone aged 18 or older with ML experience.",
+    "prerequisites": "None (recommended experience per the exam guide)",
+    "eligibility": "None (recommended 3+ years industry experience)",
     "examMeta": {
-      "questions": "50–60",
-      "time": "2 hours",
+      "questions": "50-60",
+      "time": "~2 hours",
       "pass": "Pass/Fail",
-      "fee": "$200",
+      "fee": "~$200",
       "format": "Multiple choice and multiple select",
       "admin": "Online proctored or testing center"
     },
@@ -4375,7 +4380,7 @@ export const exams = [
       },
       {
         "q": "Do I need to be a Python expert?",
-        "a": "Comfort with Python and ML concepts is expected, but the exam is scenario-based on GCP services rather than a coding test. Hands-on Vertex AI practice is the best prep."
+        "a": "The Professional ML Engineer exam is scenario-based on Vertex AI and MLOps; the exam guide targets practitioners with 3+ years of experience including a year of production ML."
       },
       {
         "q": "Does it expire?",
@@ -4395,7 +4400,8 @@ export const exams = [
     ],
     "sourceUrl": "https://cloud.google.com/learn/certification/guides/machine-learning-engineer",
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "examEssentials[3][1]": "2 years (Google Cloud recertification)"
   },
   {
     "slug": "google-professional-security-operations-engineer",
@@ -4886,4 +4892,5 @@ export const exams = [
     "confidence": "medium"
   }
 ];
+
 export default { programs, exams };

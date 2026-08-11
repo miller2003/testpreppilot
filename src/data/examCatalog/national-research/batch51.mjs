@@ -1,3 +1,4 @@
+// Research-backed exam records for batch file batch51.mjs.
 export const programs = [
   {
     "body": "National Board for Respiratory Care (NBRC)",
@@ -404,6 +405,7 @@ export const programs = [
     "confidence": "low"
   }
 ];
+
 export const exams = [
   {
     "slug": "nbrc-sds",
@@ -1829,13 +1831,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Completion of an accredited phlebotomy training program (or the equivalent experience documented per AAB's eligibility rules).",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "Confirm the current question count in the AAB candidate handbook (computer-based multiple-choice)",
+      "time": "Confirm the current time limit in the AAB candidate handbook",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "AAB exam fee (modest; confirm the current fee on the AAB site)",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "American Association of Bioanalysts (AAB)"
     },
@@ -1872,7 +1874,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "AAB certification requires periodic renewal per AAB policy (continuing education and/or re-examination)."
       ],
       [
         "Languages",
@@ -1913,8 +1915,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "Computer-based exam (approximately 2 hours)",
+    "cost": "~$100-$150",
     "faqs": [
       {
         "q": "How do I register for the AAB Phlebotomy Certification exam?",
@@ -1926,7 +1928,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see American Association of Bioanalysts (AAB)'s policy."
+        "a": "AAB phlebotomy certification is renewed periodically per AAB's published policy — typically with continuing education and/or re-examination; confirm the current renewal requirements and fee in the AAB candidate handbook."
       },
       {
         "q": "What if I do not pass?",
@@ -1945,7 +1947,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$34,000-$57,000"
   },
   {
     "slug": "nnaap-cna",
@@ -2103,11 +2106,11 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Completion of an approved training program or equivalent experience.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "100 scored",
+      "time": "1 hour 50 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Varies by location and currency — confirm on the official registration page",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
@@ -2146,7 +2149,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "2 years — renew with CE credits or a retake."
       ],
       [
         "Languages",
@@ -2187,8 +2190,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "1 hour 50 minutes (100 scored questions)",
+    "cost": "~$117-$160",
     "faqs": [
       {
         "q": "How do I register for the NHA Patient Care Technician Certification exam?",
@@ -2200,7 +2203,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see National Healthcareer Association (NHA)'s policy."
+        "a": "The CPCT/A is valid for 2 years and renews with continuing education credits or by retaking; NHA audits renewals."
       },
       {
         "q": "What if I do not pass?",
@@ -2222,7 +2225,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$29,000-$49,000"
   },
   {
     "slug": "ncct-pt",
@@ -2688,13 +2692,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Accredited MA program or work pathway",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "200 questions",
+      "time": "~3 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$135-165",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "American Medical Technologists (AMT)"
     },
@@ -2731,7 +2735,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Renewable with continuing education"
       ],
       [
         "Languages",
@@ -2772,8 +2776,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "60-100 hours",
+    "cost": "~$135-165 exam",
     "faqs": [
       {
         "q": "How do I register for the AMT Registered Medical Assistant exam?",
@@ -2807,7 +2811,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$44,200 median, medical assistants (BLS May 2024)",
+    "examEssentials[3][1]": "Renewable with continuing education"
   },
   {
     "slug": "nha-ccma",
@@ -2829,13 +2835,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "High-school diploma; NHA eligibility",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "~180 questions (150 scored + 30 pretest)",
+      "time": "180 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$155",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "National Healthcareer Association (NHA)"
     },
@@ -2872,7 +2878,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Valid 2 years (renewal with CEUs)"
       ],
       [
         "Languages",
@@ -2913,8 +2919,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "40-60 hours over 4-6 weeks",
+    "cost": "~$155 (NHA exam fee, verify current)",
     "faqs": [
       {
         "q": "How do I register for the NHA Certified Clinical Medical Assistant exam?",
@@ -2948,7 +2954,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$33,000-$55,000 (31-9092 median $44,200)"
   },
   {
     "slug": "nha-cmaa",
@@ -3111,13 +3118,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "High-school diploma; NHA eligibility",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "100 questions",
+      "time": "2 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "$117",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "National Healthcareer Association (NHA)"
     },
@@ -3154,7 +3161,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Valid 2 years (renewal with CEUs)"
       ],
       [
         "Languages",
@@ -3195,8 +3202,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "40-60 hours over 4-6 weeks",
+    "cost": "$117 (exam fee)",
     "faqs": [
       {
         "q": "How do I register for the NHA Certified Electronic Health Records Specialist exam?",
@@ -3230,7 +3237,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$35,000-$60,000 (29-2072 median $50,250)"
   },
   {
     "slug": "ncct-ncma",
@@ -3252,13 +3260,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "NCCT eligibility (training or experience)",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "~150 questions (125 scored + 25 pretest)",
+      "time": "3 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$119",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "National Center for Competency Testing (NCCT)"
     },
@@ -3295,7 +3303,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Annual renewal with 12 CEUs"
       ],
       [
         "Languages",
@@ -3336,8 +3344,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "40-60 hours over 4-6 weeks",
+    "cost": "~$119 (NCCT exam fee)",
     "faqs": [
       {
         "q": "How do I register for the NCCT National Certified Medical Assistant exam?",
@@ -3368,7 +3376,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$33,000-$55,000 (31-9092 median $44,200)"
   },
   {
     "slug": "ncct-ts",
@@ -3669,13 +3678,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "A high school diploma or equivalent (AHIMA recommends six months of coding experience or an approved coding program, but neither is mandatory).",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "105 (90 scored + 15 unscored pretest items)",
+      "time": "2 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "$199 AHIMA member / $299 non-member",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "American Health Information Management Association (AHIMA)"
     },
@@ -3712,7 +3721,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "2 years — renew with continuing education credits (CEUs) per AHIMA's recertification cycle."
       ],
       [
         "Languages",
@@ -3753,8 +3762,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "2 hours (100 questions)",
+    "cost": "~$199-$299 depending on membership",
     "faqs": [
       {
         "q": "How do I register for the AHIMA Certified Coding Associate exam?",
@@ -3766,7 +3775,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see American Health Information Management Association (AHIMA)'s policy."
+        "a": "The CCA is valid for 2 years and is renewed by earning the required continuing education credits (CEUs) and paying the renewal fee per AHIMA's recertification cycle; check the AHIMA site for the current requirements."
       },
       {
         "q": "What if I do not pass?",
@@ -3788,7 +3797,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$35,000-$60,000"
   },
   {
     "slug": "ahima-ccs",
@@ -3810,13 +3820,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Coding experience and knowledge of ICD-10/CPT",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "97 questions (incl. 2 medical scenarios)",
+      "time": "4 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "$299",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "American Health Information Management Association (AHIMA)"
     },
@@ -3853,7 +3863,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "CEU cycle renewal (2 years)"
       ],
       [
         "Languages",
@@ -3894,8 +3904,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "100-140 hours over 8-12 weeks",
+    "cost": "$299 (exam fee)",
     "faqs": [
       {
         "q": "How do I register for the AHIMA Certified Coding Specialist exam?",
@@ -3929,7 +3939,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$40,000-$75,000 (29-2072 median $50,250)"
   },
   {
     "slug": "ahima-ccs-p",
@@ -4092,13 +4103,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Associate degree from an accredited HIM program",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "150 questions (130 scored)",
+      "time": "3.5 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "$229/$299",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "American Health Information Management Association (AHIMA)"
     },
@@ -4135,7 +4146,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "CEU cycle renewal (2 years)"
       ],
       [
         "Languages",
@@ -4176,8 +4187,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "80-120 hours over 6-10 weeks",
+    "cost": "$229 member / $299 non-member (exam fee)",
     "faqs": [
       {
         "q": "How do I register for the AHIMA Registered Health Information Technician exam?",
@@ -4211,7 +4222,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$35,000-$70,000 (29-2072 median $50,250)"
   },
   {
     "slug": "ahima-rhia",
@@ -4797,13 +4809,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "EMR course completion",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "90-110 questions (adaptive)",
+      "time": "1 hour 15 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$125 registration",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "National Registry of Emergency Medical Technicians (NREMT)"
     },
@@ -4840,7 +4852,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "State-dependent; NREMT certification requires renewal"
       ],
       [
         "Languages",
@@ -4881,8 +4893,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "40-60 course hours + review",
+    "cost": "~$125 registration",
     "faqs": [
       {
         "q": "How do I register for the NREMT Emergency Medical Responder Certification exam?",
@@ -4914,7 +4926,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$46,350 median, EMTs & paramedics (BLS May 2024)",
+    "examEssentials[3][1]": "State-dependent; NREMT certification requires renewal"
   },
   {
     "slug": "nremt-emt",
@@ -5076,11 +5090,11 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Completion of an accredited AEMT program and the clinical requirements.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "~100-110 (adaptive)",
+      "time": "Up to 2 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Varies by location and currency — confirm on the official registration page",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
@@ -5119,7 +5133,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "2 years — renew with continuing education or the recertification exam."
       ],
       [
         "Languages",
@@ -5160,8 +5174,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "Up to 2 hours (computer-adaptive)",
+    "cost": "~$140-$150 + psychomotor fee",
     "faqs": [
       {
         "q": "How do I register for the NREMT Advanced Emergency Medical Technician Certification exam?",
@@ -5173,7 +5187,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see National Registry of Emergency Medical Technicians (NREMT)'s policy."
+        "a": "NREMT AEMT certification is valid for 2 years and renews through the National Continued Competency Program or the recertification exam; state licensure runs alongside."
       },
       {
         "q": "What if I do not pass?",
@@ -5193,7 +5207,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$31,000-$65,000"
   },
   {
     "slug": "nremt-paramedic",
@@ -5215,13 +5230,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Completion of an accredited paramedic education program and successful completion of the psychomotor exam; state licensing runs alongside.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "Computer-adaptive, variable per candidate (within NREMT's published range)",
+      "time": "Variable per candidate (computer-adaptive)",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "Confirm the current NREMT exam fee in the candidate handbook (higher than the EMT-level fee)",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "National Registry of Emergency Medical Technicians (NREMT)"
     },
@@ -5258,7 +5273,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "2 years — renew through the National Continued Competency Program (continuing education) or by retaking the exam."
       ],
       [
         "Languages",
@@ -5299,8 +5314,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "Up to 2.5 hours (adaptive, ~80-150 questions)",
+    "cost": "~$140-$150 (cognitive) plus psychomotor fee",
     "faqs": [
       {
         "q": "How do I register for the NREMT Paramedic Certification exam?",
@@ -5312,7 +5327,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see National Registry of Emergency Medical Technicians (NREMT)'s policy."
+        "a": "NREMT paramedic certification is valid for 2 years and is renewed by completing the National Continued Competency Program (continuing education) or by passing the cognitive recertification exam; state licensing runs alongside the NREMT cycle."
       },
       {
         "q": "What if I do not pass?",
@@ -5332,7 +5347,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$35,000-$65,000"
   },
   {
     "slug": "ibsc-fp-c",
@@ -6040,4 +6056,5 @@ export const exams = [
     "confidence": "low"
   }
 ];
+
 export default { programs, exams };

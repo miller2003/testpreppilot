@@ -77,6 +77,10 @@ const reviewedPretty = prettyDate(lastReviewed);
           </span>
         )}
       </p>
+      <p class="ab-links">
+        <a href="/methodology">How we verify &rarr;</a>
+        <a href="/reviewers">Meet our reviewers &rarr;</a>
+      </p>
     </div>
   </section>
 )}
@@ -129,5 +133,8 @@ const reviewedPretty = prettyDate(lastReviewed);
   .ab-title { margin: 0 0 0.5rem; font-size: 0.88rem; color: var(--muted, #666); }
   .ab-bio { margin: 0; color: var(--muted, #555); }
   .ab-meta { margin: 0.6rem 0 0; font-size: 0.82rem; color: var(--muted, #777); line-height: 1.65; }
+  .ab-links { margin: 0.5rem 0 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .ab-links a { font-size: 0.8rem; font-weight: 600; color: var(--accent, #c2703d); text-decoration: none; }
+  .ab-links a:hover { text-decoration: underline; text-underline-offset: 3px; }
   .ab-body { min-width: 0; }
 </style>

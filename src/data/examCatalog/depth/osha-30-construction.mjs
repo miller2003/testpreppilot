@@ -91,7 +91,7 @@ const data = {
 
   // P0-7  Question types & worked examples
   questionTypes: {
-    summary: 'There is no single proctored OSHA 30 exam. Assessment is per-module quizzes (commonly ~70% to pass, with retries) plus a final cumulative check. Questions are scenario-based multiple choice drawn from the 30-hour curriculum, with明显高于 the 10-hour version an emphasis on supervisory duties, the Focus Four, and Managing Safety and Health.',
+    summary: 'There is no single proctored OSHA 30 exam. Assessment is per-module quizzes (commonly ~70% to pass, with retries) plus a final cumulative check. Questions are scenario-based multiple choice drawn from the 30-hour curriculum, with an emphasis on supervisory duties, the Focus Four, and Managing Safety and Health — a depth considerably higher than the 10-hour version.',
     types: [
       { name: 'Module quiz (multiple choice)', share: '~75% of graded items', detail: 'One quiz per topic (Intro OSHA, Managing Safety and Health, each Focus Four hazard, PPE, Health Hazards, Stairways & Ladders, electives). Usually 5–10 questions; ~70% to advance, retries allowed.' },
       { name: 'Final assessment', share: '~25%', detail: 'A brief cumulative multiple-choice check over the full 30 hours; commonly ~70% to pass. Passing releases the completion certificate and triggers the DOL card request.' }

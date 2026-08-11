@@ -1,4 +1,6 @@
+// Research-backed exam records for batch file batch187.mjs.
 export const programs = [];
+
 export const exams = [
   {
     "slug": "microsoft-certified-educator",
@@ -20,13 +22,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
-    "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
+    "prerequisites": "None",
+    "eligibility": "None (educators)",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "40-60 (verify current)",
+      "time": "~45-60 min",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e.g., AZ-900) are $99 USD. Priced per attempt in USD, billed in local currency; regional tax may apply.",
+      "fee": "$50-$150",
       "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring. Price is the same either way.",
       "admin": "Pearson VUE"
     },
@@ -104,7 +106,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Education & Teaching competence with a Microsoft credential.",
-    "time": "Varies",
+    "time": "~45-60 min (verify current)",
     "cost": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e",
     "faqs": [
       {
@@ -117,7 +119,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Free online renewal assessment on Microsoft Learn (role-based and specialty certs renew this way; effectively no recurring fee)."
+        "a": "The MCE exam is scenario-based against the UNESCO ICT Competency Framework and passes at 700/1000; delivery varies by region."
       },
       {
         "q": "What is the retake policy?",
@@ -139,7 +141,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$45,000-$80,000 (K-12 teachers)",
+    "examEssentials[3][1]": "2-3 years (verify current; re-certification required)"
   },
   {
     "slug": "microsoft-innovative-educator",
@@ -1313,13 +1317,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
-    "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
+    "prerequisites": "None",
+    "eligibility": "None",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "40-60",
+      "time": "~45 min",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e.g., AZ-900) are $99 USD. Priced per attempt in USD, billed in local currency; regional tax may apply.",
+      "fee": "~$99",
       "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring. Price is the same either way.",
       "admin": "Pearson VUE"
     },
@@ -1397,7 +1401,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Microsoft credential.",
-    "time": "Varies",
+    "time": "~45 min (40-60 questions)",
     "cost": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e",
     "faqs": [
       {
@@ -1410,7 +1414,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Free online renewal assessment on Microsoft Learn (role-based and specialty certs renew this way; effectively no recurring fee)."
+        "a": "PL-900 is a fundamentals exam passing at 700/1000; it covers the Power Platform components (Power Apps, Automate, BI, Copilot Studio, Dataverse)."
       },
       {
         "q": "What is the retake policy?",
@@ -1432,7 +1436,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$55,000-$100,000 (business and IT roles)",
+    "examEssentials[3][1]": "1 year (free Microsoft Learn renewal)"
   },
   {
     "slug": "microsoft-pl-200",
@@ -1454,11 +1460,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "PL-900 or equivalent Power Platform experience recommended",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "40-60 questions",
+      "time": "150 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e.g., AZ-900) are $99 USD. Priced per attempt in USD, billed in local currency; regional tax may apply.",
       "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring. Price is the same either way.",
@@ -1538,7 +1544,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Microsoft credential.",
-    "time": "Varies",
+    "time": "60-90 hours over 6-8 weeks",
     "cost": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e",
     "faqs": [
       {
@@ -1573,7 +1579,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$70,000-$130,000 (15-1252 median $132,270)"
   },
   {
     "slug": "microsoft-pl-300",
@@ -1595,13 +1602,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
-    "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
+    "prerequisites": "None (Power BI experience recommended)",
+    "eligibility": "None",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "40-60",
+      "time": "~100 min",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e.g., AZ-900) are $99 USD. Priced per attempt in USD, billed in local currency; regional tax may apply.",
+      "fee": "~$165",
       "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring. Price is the same either way.",
       "admin": "Pearson VUE"
     },
@@ -1679,7 +1686,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Microsoft credential.",
-    "time": "Varies",
+    "time": "~100 minutes (40-60 questions)",
     "cost": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e",
     "faqs": [
       {
@@ -1692,7 +1699,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Free online renewal assessment on Microsoft Learn (role-based and specialty certs renew this way; effectively no recurring fee)."
+        "a": "PL-300 passes at 700/1000; the exam is performance-based in Power BI and covers data preparation, modeling/DAX, visualization, and deployment."
       },
       {
         "q": "What is the retake policy?",
@@ -1714,7 +1721,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$70,000-$130,000 (data analytics roles)",
+    "examEssentials[3][1]": "1 year (free Microsoft Learn renewal)"
   },
   {
     "slug": "microsoft-pl-400",
@@ -3851,13 +3860,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "None",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "40-60 questions",
+      "time": "~60 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e.g., AZ-900) are $99 USD. Priced per attempt in USD, billed in local currency; regional tax may apply.",
+      "fee": "$99",
       "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring. Price is the same either way.",
       "admin": "Pearson VUE"
     },
@@ -3894,7 +3903,7 @@ export const exams = [
       ],
       [
         "Delivery",
-        "Proctored, computer-based — Pearson VUE test center or online remote proctoring. Price is the same either way."
+        "Valid 12 months, then renewal assessment"
       ],
       [
         "Validity",
@@ -3935,7 +3944,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Microsoft credential.",
-    "time": "Varies",
+    "time": "20-40 hours",
     "cost": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e",
     "faqs": [
       {
@@ -3970,7 +3979,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$61,550 median, computer support (BLS May 2024)",
+    "examEssentials[3][1]": "Valid 12 months, then renewal assessment"
   },
   {
     "slug": "microsoft-mb-920",
@@ -4979,13 +4990,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
-    "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
+    "prerequisites": "None",
+    "eligibility": "None",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "25-35 tasks across projects",
+      "time": "~50 min",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e.g., AZ-900) are $99 USD. Priced per attempt in USD, billed in local currency; regional tax may apply.",
+      "fee": "~$100",
       "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring. Price is the same either way.",
       "admin": "Pearson VUE"
     },
@@ -5063,7 +5074,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Microsoft credential.",
-    "time": "Varies",
+    "time": "50 minutes (performance-based)",
     "cost": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e",
     "faqs": [
       {
@@ -5076,7 +5087,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Free online renewal assessment on Microsoft Learn (role-based and specialty certs renew this way; effectively no recurring fee)."
+        "a": "The MO-200 exam is performance-based in Excel and passes at 700/1000; the six objective groups are the published blueprint."
       },
       {
         "q": "What is the retake policy?",
@@ -5098,7 +5109,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$35,000-$65,000 (office and support roles)",
+    "examEssentials[3][1]": "No expiry"
   },
   {
     "slug": "microsoft-office-specialist-excel-expert",
@@ -5120,11 +5133,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "MOS Excel Associate recommended",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "Project-based (~50-60 tasks)",
+      "time": "50 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e.g., AZ-900) are $99 USD. Priced per attempt in USD, billed in local currency; regional tax may apply.",
       "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring. Price is the same either way.",
@@ -5204,7 +5217,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Microsoft credential.",
-    "time": "Varies",
+    "time": "30-50 hours over 3-5 weeks",
     "cost": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e",
     "faqs": [
       {
@@ -5239,7 +5252,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$38,000-$70,000 (15-1231 median $61,550)"
   },
   {
     "slug": "microsoft-office-specialist-word-associate",
@@ -5261,13 +5275,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
-    "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
+    "prerequisites": "None",
+    "eligibility": "None",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "25-35 tasks across projects",
+      "time": "~50 min",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e.g., AZ-900) are $99 USD. Priced per attempt in USD, billed in local currency; regional tax may apply.",
+      "fee": "~$100",
       "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring. Price is the same either way.",
       "admin": "Pearson VUE"
     },
@@ -5345,7 +5359,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Microsoft credential.",
-    "time": "Varies",
+    "time": "50 minutes (performance-based)",
     "cost": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e",
     "faqs": [
       {
@@ -5358,7 +5372,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Free online renewal assessment on Microsoft Learn (role-based and specialty certs renew this way; effectively no recurring fee)."
+        "a": "The MO-100 exam is performance-based in Word and passes at 700/1000; the five objective groups are the published blueprint."
       },
       {
         "q": "What is the retake policy?",
@@ -5380,7 +5394,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$35,000-$65,000 (office and support roles)",
+    "examEssentials[3][1]": "No expiry"
   },
   {
     "slug": "microsoft-office-specialist-word-expert",
@@ -5402,11 +5418,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "MOS Word Associate recommended",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "Project-based (~50-60 tasks)",
+      "time": "50 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e.g., AZ-900) are $99 USD. Priced per attempt in USD, billed in local currency; regional tax may apply.",
       "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring. Price is the same either way.",
@@ -5486,7 +5502,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Microsoft credential.",
-    "time": "Varies",
+    "time": "30-50 hours over 3-5 weeks",
     "cost": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e",
     "faqs": [
       {
@@ -5521,7 +5537,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$38,000-$70,000 (15-1231 median $61,550)"
   },
   {
     "slug": "microsoft-office-specialist-powerpoint-associate",
@@ -5543,11 +5560,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "None",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "Project-based (~50-60 tasks)",
+      "time": "50 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e.g., AZ-900) are $99 USD. Priced per attempt in USD, billed in local currency; regional tax may apply.",
       "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring. Price is the same either way.",
@@ -5627,7 +5644,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Microsoft credential.",
-    "time": "Varies",
+    "time": "20-40 hours over 3-4 weeks",
     "cost": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e",
     "faqs": [
       {
@@ -5662,7 +5679,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$38,000-$70,000 (15-1231 median $61,550)"
   }
 ];
+
 export default { programs, exams };

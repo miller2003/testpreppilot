@@ -1,0 +1,125 @@
+const data = {
+  author: {
+    name: 'TestPrepPilot Editorial Desk',
+    title: 'Alcohol responsibility & hospitality certifications desk',
+    bio: 'Texas TABC facts in this guide come from the Texas Alcoholic Beverage Commission seller-server training program and TABC-approved provider pages, including the course length, the 25-question exam, the 70 percent passing standard, the two-year validity and the database reporting rule; the TABC publishes no pass rates, which we state plainly. Salary figures come from the BLS occupational series named by SOC code (May 2024).',
+    url: '/editorial-policy'
+  },
+  reviewedBy: 'Verified the Texas TABC seller-server training requirements, exam format and validity against TABC and approved-provider pages; verified BLS bartender wage data. Reviewed 2026-08.',
+  lastReviewed: '2026-08',
+  salaryOutlook: {
+    headline: 'Bartenders earned a May 2024 BLS median of $33,530, and TABC certification is the industry-standard gate for alcohol-serving roles across Texas',
+    summary: 'Texas TABC seller-server certification is the training credential that Texas employers use to staff alcohol-serving roles, and for many permit categories it is effectively a requirement of the job: the Texas Alcoholic Beverage Commission approves seller-server education providers, many employers require certification as a condition of hire, and the training is reported into the TABC database that licensees and regulators check. The BLS occupation this credential gates is Bartenders, which the BLS Occupational Outlook Handbook reports at a May 2024 median annual wage of $33,530 for SOC 35-3011 (about $16.12 per hour, a figure that understates cash compensation because tips are a large share of bartender earnings), with 756,700 jobs nationwide and roughly 129,600 openings projected per year over 2024-2034. BLS projects 6 percent employment growth for bartenders from 2024 to 2034, faster than the average for all occupations. The structural point for workers is that TABC certification is cheap (online courses typically run $10-$20, with in-person classes $45-$60), quick (online courses take about two hours), and valid for two years, so it functions as a standard onboarding credential rather than a paid resume line; the same credential is relevant to waiters, hosts, bouncers and catering staff who touch alcohol service. Texas law does not require every server to hold a certificate in the way California\u2019s RBS law does - the requirement attaches to specific permit conditions and to employer policy - but the practical effect is that most Texas hospitality jobs list TABC certification as a condition of employment. The wage story follows the occupation, not the certificate: BLS classifies by job duty, so the certification removes a hiring barrier and the earnings follow the serving, bartending and management roles. For a candidate asking whether TABC certification pays, the honest answer is that it is the near-universal precondition for alcohol-serving employment in Texas, and the wages above are the range for the occupations it gates.',
+    rows: [
+      { label: 'Median annual wage, bartenders', value: '$33,530', note: 'BLS OOH, SOC 35-3011, May 2024 (tips understated)' },
+      { label: 'Employment, 2024', value: '756,700 jobs', note: 'BLS OOH Quick Facts, 2024' },
+      { label: 'Projected annual openings', value: '~129,600 per year', note: 'BLS OOH 2024-2034, mostly replacement demand' },
+      { label: 'Projected growth', value: '+6% (2024-2034)', note: 'Faster than the average for all occupations' }
+    ],
+    growth: 'BLS projects 6 percent employment growth for bartenders (2024-2034), faster than average, with roughly 129,600 openings per year driven mostly by replacement demand.',
+    source: { label: 'BLS Occupational Outlook Handbook - Bartenders', url: 'https://www.bls.gov/ooh/food-preparation-and-serving/bartenders.htm' }
+  },
+  passRate: {
+    headline: 'The TABC publishes no pass rates for seller-server training  -  the published structure is a course of about two hours ending in a 25-question exam at a 70 percent passing standard, valid for two years.',
+    summary: 'The direct answer on pass rates is that the Texas Alcoholic Beverage Commission does not publish cohort pass-rate statistics for seller-server training, so any percentage circulating online is a private estimate rather than an official figure, and we do not restate one here. What is published and stable is the regulatory structure: seller-server training must be completed through a TABC-approved education provider, the standard online course runs about two hours at the candidate\u2019s own pace, and the final exam is 25 multiple-choice questions with a 70 percent passing standard, meaning at least 18 correct answers, with most providers allowing retake attempts before the course must be repurchased. The course content covers the laws that govern selling and serving alcohol in Texas: laws about minors and alcohol sales, recognizing intoxication and refusing service, checking and validating identification documents, blood alcohol content and the Texas Dram Shop Act and civil liability, plus the permit types and the rules for private clubs, alcohol to-go and delivery. The certificate is valid for two years from the date of completion, and renewal requires taking a new approved course because there is no separate test-out or refresher-only path; the provider reports the training record to the TABC database, typically within 7 to 14 business days, and employers and regulators verify the certificate through the TABC inquiry page. The practical read on difficulty: the exam rewards completing the course and reviewing the age-verification, intoxication-recognition and liability content, and the 70 percent bar with retakes means candidates who work the course pass reliably. Because the TABC publishes no pass rate, the honest summary is that the structure is public, the cut is 18 of 25 at most providers, and the preparation target is the course content rather than any pass-rate number; candidates should also verify the provider is on the current TABC-approved list before purchasing.',
+    source: { label: 'Texas Alcoholic Beverage Commission - Seller-Server Training', url: 'https://www.tabc.texas.gov/education/seller-server-training/' },
+    caveat: 'The TABC publishes no pass rates for seller-server training. Approved courses typically require 70 percent (18 of 25) on the final exam, and certificates are valid for two years.'
+  },
+  studyPlan: {
+    summary: 'A realistic Texas TABC study plan is 2-3 hours in one or two sessions, because the approved online course runs about two hours and the final exam of 25 questions at a 70 percent bar rewards completing the course and reviewing the responsible-service rules rather than extended study. The course content is organized into the core seller-server topics: the responsibilities of a seller-server, Texas laws on minors and alcohol sales, checking and validating IDs including recognizing fake IDs, observing customers and recognizing signs of intoxication, blood alcohol content and the effects of alcohol, the Texas Dram Shop Act and civil liability, and the rules for alcohol to-go, delivery, private clubs and other permit types. A realistic plan: session one (60-90 minutes) works through the course modules with the materials open and takes notes on the ID-checking, intoxication and liability content; session two (30-45 minutes) takes the 25-question final exam and reviews any missed items; if a retake is needed, session three (15-30 minutes) reviews the specific topics behind the missed questions and retakes, since most approved providers allow retakes at no extra cost. Because the exam is drawn from the course content, the failure mode is not difficulty but rushing: candidates who skip the ID-verification and intoxication-recognition sections tend to miss the largest cluster of items. The single most important content to master is the age-verification and intoxication-recognition material, because checking IDs and refusing service recur across the exam, and the Texas-specific rules - including the 21-year-old minimum age and the minor-in-possession rules - matter for the legal scenario items. The certificate is valid for two years and the provider reports the record to the TABC database, so candidates should confirm the provider is on the TABC-approved list and set a renewal reminder. For candidates who also need food-handler training, some TABC providers bundle the two credentials, which is a common onboarding package in Texas hospitality jobs.',
+    totalHours: '2-3 hours (one to two sessions)',
+    weeks: [
+      { label: 'Session 1', focus: 'Course modules', tasks: ['Work through the TABC-approved course modules', 'Note the ID-checking, intoxication and liability content'], hours: 1.5 },
+      { label: 'Session 2', focus: 'Final exam', tasks: ['Take the 25-question final exam', 'Review missed items against the course materials'], hours: 0.75 },
+      { label: 'Session 3 (if needed)', focus: 'Retake', tasks: ['Review the missed topics', 'Retake to 70% or better'], hours: 0.5 }
+    ],
+    variants: [
+      { label: 'Experienced servers', detail: 'Budget the lower end; the course review plus one focused pass over the ID and intoxication material is usually enough.' },
+      { label: 'Bilingual delivery', detail: 'Many approved providers offer the course in English and Spanish; take it in the language you read most fluently.' }
+    ]
+  },
+  prepStrategies: {
+    summary: 'The most effective strategies for the Texas TABC certification are about completing an approved course and mastering the responsible-service rules that the 25-question exam rewards. Strategy one: verify the provider is on the current TABC-approved list before purchasing, because only approved courses are reported to the TABC database and satisfy employer requirements. Strategy two: complete the full course rather than jumping to the exam, because the exam is drawn from the course content and the modules cover the exact Texas laws, penalties and procedures the items test. Strategy three: master the age-verification material - how to check a Texas ID, recognize fake IDs, and refuse service to minors - because these items recur across the exam and are the most commonly missed cluster. Strategy four: learn the intoxication-recognition rules, including the signs of intoxication and when to refuse service under the Texas Dram Shop Act, because the exam tests the scenario application and the civil-liability consequences. Strategy five: know the Texas-specific numbers and rules, including the 21-year-old minimum age, blood alcohol content and the rules for alcohol to-go and delivery, because state-specific items are what separate prepared candidates from unprepared ones. Strategy six: take the exam soon after finishing the course while the rules are fresh, use the retake allowance if the first attempt falls short, and download and store the certificate immediately because the provider reports the record to the TABC database within about 7 to 14 business days. Finally, confirm the employer\u2019s requirements before buying, because some employers cover the cost or require a specific provider, and note the certificate\u2019s two-year validity so renewal is planned rather than reactive.',
+    items: [
+      { title: 'Verify the provider is TABC-approved', detail: 'Only approved courses are reported to the TABC database and satisfy employers.' },
+      { title: 'Complete the full course', detail: 'The exam is drawn from the course content; the modules cover the exact Texas laws.' },
+      { title: 'Master age verification', detail: 'Checking Texas IDs, recognizing fake IDs and refusing service to minors recur across the exam.' },
+      { title: 'Learn the intoxication and liability rules', detail: 'Recognizing intoxication and the Dram Shop liability scenarios are core content.' },
+      { title: 'Plan the two-year renewal', detail: 'Certificates are valid for two years; renewal requires a new approved course.' }
+    ]
+  },
+  resourceComparison: {
+    summary: 'The Texas TABC resource market is defined by the TABC-approved provider list, because only approved providers can deliver training that satisfies the requirement, and the provider\u2019s course includes the training, the 25-question final exam and the certificate, typically priced between $10 and $20 for online delivery. The official TABC list of approved education providers is the authority candidates must use to verify a provider, because a course from any other source does not satisfy the employer requirement even if it covers the same content; approved online providers include the major national alcohol-training companies, and in-person classes run $45-$60. Some providers bundle TABC seller-server training with Texas food-handler training for a combined hospitality onboarding package, which is a common and cost-effective purchase for new restaurant and bar staff. Third-party quiz sites and free practice tests ($0-$15) exist and can help rehearse the question style, but they cannot issue the certificate and some carry outdated Texas rules, so candidates should verify disputed answers against the course materials. The printed study guides some providers sell ($10-$20) are optional companions to the online course and are not required. The honest ranking: a TABC-approved provider\u2019s course, optionally a bundled food-handler course, and free practice quizzes - nothing else is needed, and some employers cover the cost as part of onboarding. The footnote that anchors the comparison: prices below are list prices as of mid-2026 and change frequently, and we rank nothing by commission; candidates should confirm the provider\u2019s TABC approval on the official list before enrolling, and remember the certificate is valid for two years with a new course required at renewal.',
+    columns: ['Resource', 'Price', 'Format', 'Best for'],
+    rows: [
+      { label: 'TABC-approved provider course (official path)', values: ['$10-20', 'Online or in-person', 'The required training, exam and certificate'], note: '' },
+      { label: 'In-person classes', values: ['$45-60', 'Classroom', 'Candidates who prefer classroom delivery'], note: '' },
+      { label: 'Bundled TABC + food-handler package', values: ['$15-40', 'Online', 'New hospitality staff who need both credentials'], note: '' },
+      { label: 'Free practice quizzes', values: ['Free-$15', 'Online', 'Question-style rehearsal; cannot issue the certificate'], note: '' },
+      { label: 'Provider printed study guide', values: ['$10-20', 'Print', 'Optional companion to the course'], note: '' }
+    ],
+    footnote: 'List prices as of mid-2026 and change frequently; we rank nothing by commission. Only TABC-approved providers can satisfy the seller-server requirement; certificates are valid for two years.'
+  },
+  commonMistakes: {
+    summary: 'The most common mistakes on the Texas TABC certification process come from provider selection and from memorizing instead of applying the responsible-service rules. Mistake one: taking a course from a provider that is not on the TABC-approved list, which produces a certificate that does not satisfy the employer requirement and wastes the money; candidates should verify approval before purchasing. Mistake two: jumping straight to the final exam without completing the course, which fails because the exam is drawn from the course content and the module material covers the exact Texas laws and procedures the items test. Mistake three: memorizing the definitions instead of the scenarios, because the exam tests the application - what to do when an ID looks fake, when to refuse service to an intoxicated customer, and the Dram Shop liability consequences - not just the vocabulary. Mistake four: missing the Texas-specific rules, such as the 21-year-old minimum age, the minor-in-possession rules and the alcohol to-go and delivery rules, which are the items that separate prepared candidates from unprepared ones. Mistake five: assuming the certificate never expires; the certificate is valid for two years, renewal requires a new approved course, and an expired certificate fails the same employer check the original satisfied, so candidates should set a renewal reminder. Mistake six: assuming certification is optional for every role, when many Texas employers and specific permit conditions require it as a condition of hire; candidates should confirm the employer\u2019s requirement before spending time and money. Finally, candidates who forget to download and store the certificate lose track of the record, even though the provider reports it to the TABC database for verification.',
+    items: [
+      { mistake: 'Using a non-approved provider', fix: 'Confirm the provider is on the TABC approved list before buying; only approved courses satisfy employers.' },
+      { mistake: 'Skipping the course modules', fix: 'The exam is drawn from the course content; work the modules before testing.' },
+      { mistake: 'Memorizing instead of applying', fix: 'Practice the scenarios: fake IDs, refusing intoxicated customers, liability.' },
+      { mistake: 'Missing the Texas-specific rules', fix: 'Know the 21-year-old minimum age, minor rules and to-go/delivery rules.' },
+      { mistake: 'Assuming the certificate never expires', fix: 'Track the two-year validity; renewal requires a new approved course.' }
+    ]
+  },
+  questionTypes: {
+    summary: 'The Texas TABC seller-server final exam typically consists of 25 multiple-choice questions with a 70 percent passing standard (18 correct), delivered at the end of a TABC-approved course of about two hours; most providers display results immediately and allow retakes, and the certificate is valid for two years with the training record reported to the TABC database. Items are drawn from the course\u2019s core topics: the responsibilities of a seller-server, Texas laws on minors and alcohol sales, checking and validating identification, recognizing intoxication and refusing service, blood alcohol content, the Texas Dram Shop Act and civil liability, and the rules for private clubs, alcohol to-go and delivery. Most items are either direct knowledge questions (what is the minimum age) or scenario questions (what should the server do when a customer appears intoxicated). Because the exam is drawn from the course content and the passing bar is 70 percent with retake attempts at most providers, the task is completing the course and reviewing the ID-verification and intoxication-recognition clusters rather than memorizing a broad body of law; candidates who skip those clusters tend to miss the largest share of items, because the scenario questions all hinge on the responsible-service rules and the Texas Dram Shop consequences. The 70 percent bar (18 of 25) means a candidate can miss up to 7 items and still pass, but the recurring scenario items require applying the rules, not guessing, and the provider reports the passing record to the TABC database for employer verification. Samples below are editor-written illustrations of the published course content, not live exam items.',
+    types: [
+      { name: 'Laws on minors and alcohol sales', share: 'Core cluster', detail: 'Minimum age, minor-in-possession rules, checking IDs.' },
+      { name: 'Intoxication recognition and refusal', share: 'Core cluster', detail: 'Signs of intoxication, refusing service, the Dram Shop Act.' },
+      { name: 'ID verification', share: 'Core cluster', detail: 'Valid Texas IDs, fake IDs, when to decline a sale.' },
+      { name: 'Permits and liability', share: 'Core cluster', detail: 'Permit types, private clubs, to-go/delivery rules, civil liability.' }
+    ],
+    samples: [
+      {
+        prompt: 'A customer appears intoxicated and orders another drink. What should the seller-server do?',
+        options: ['A. Serve the drink but watch the customer', 'B. Refuse service and follow the establishment\u2019s policy', 'C. Serve a smaller drink', 'D. Ask another server to serve the drink'],
+        answer: 'B',
+        explanation: 'Selling to an obviously intoxicated customer is illegal and creates civil liability under the Texas Dram Shop Act. The seller-server should refuse service and follow the establishment\u2019s policy for intervening with the customer.'
+      },
+      {
+        prompt: 'A customer presents a Texas driver license that feels unusually thick and shows no holographic image. What should the seller-server do?',
+        options: ['A. Accept the ID if the birth date looks correct', 'B. Decline the sale and follow the establishment\u2019s fake-ID procedure', 'C. Accept the ID because the customer looks old enough', 'D. Serve the customer without an ID'],
+        answer: 'B',
+        explanation: 'An ID that lacks the expected security features, such as a holographic image, or feels unusually thick, is a red flag for a fake ID. The seller-server should decline the sale and follow the establishment\u2019s procedure for handling suspected false identification.'
+      },
+      {
+        prompt: 'Under Texas law, what is the minimum age to purchase alcoholic beverages?',
+        options: ['A. 18', 'B. 19', 'C. 21', 'D. 20'],
+        answer: 'C',
+        explanation: 'The minimum age to purchase alcoholic beverages in Texas is 21. This is the most-tested age on the seller-server exam, along with the rules for checking IDs and refusing sales to minors.'
+      }
+    ],
+    note: 'Samples are editor-written illustrations of the published course content, not live exam items.'
+  },
+  examDay: {
+    summary: 'The Texas TABC certification has no physical test center in the typical online format: the course and exam are completed through a TABC-approved provider, online at any time on any device with an internet connection, with no proctor, no appointment and no deadline beyond the provider\u2019s enrollment window. Candidates enroll with an approved provider, complete the training modules (about two hours), and then take the 25-question final exam, needing 70 percent (18 correct) to pass; results appear immediately, and most providers allow retakes at no extra cost. After passing, the certificate is issued immediately as a downloadable PDF, the provider reports the training record to the TABC database within about 7 to 14 business days, and employers and regulators verify the certificate through the TABC inquiry page. The certificate is valid for two years from the date of completion. Candidates should confirm their employer accepts the provider they chose, confirm the provider is on the current TABC-approved list, and ask whether the employer covers the cost, because many Texas hospitality employers pay for training as part of onboarding and some require a specific provider. The certificate is a condition of hire at many establishments, so new hires should complete it before the first shift rather than after. Afterwards, the natural next step for staff who also handle food is the Texas food-handler certificate, which some providers bundle with TABC training, and for career growth the food protection manager certification opens management roles; the TABC certificate itself must be renewed every two years with a new approved course.',
+    bring: ['A TABC-approved provider\u2019s course purchase', 'Stable internet connection (for online delivery)', 'About two hours of uninterrupted time', 'Employer requirements and cost confirmation'],
+    leave: ['Proctoring or an appointment - there is none in the typical online format', 'Special software beyond a browser', 'Deadlines - the course is self-paced within the enrollment window'],
+    timeline: [
+      { time: 'Step 1', detail: 'Confirm the provider is on the TABC approved list and enroll in the course.' },
+      { time: 'Step 2', detail: 'Work through the training modules (about 1.5-2 hours).' },
+      { time: 'Step 3', detail: 'Take the 25-question final exam; 70% (18/25) passes.' },
+      { time: 'Step 4', detail: 'Retake if needed; download the certificate valid for two years.' },
+      { time: 'Step 5', detail: 'Confirm the TABC database record; plan the two-year renewal.' }
+    ],
+    rules: [
+      'The course and exam must come from a TABC-approved provider; online delivery requires no proctor.',
+      'The final exam is 25 questions with a 70 percent passing standard at most providers.',
+      'The certificate is valid for two years and the training record is reported to the TABC database.',
+      'Many employers require TABC certification as a condition of hire.',
+      'Renewal requires taking a new approved course every two years.'
+    ],
+    afterwards: 'Download and store the certificate and confirm the TABC database record; set a renewal reminder for the two-year validity window, and consider the food-handler and food-protection-manager credentials for hospitality career growth.'
+  }
+};
+
+export default data;

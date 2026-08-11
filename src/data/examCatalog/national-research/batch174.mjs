@@ -1,3 +1,4 @@
+// Research-backed exam records for batch file batch174.mjs.
 export const programs = [
   {
     "body": "Project Management Institute",
@@ -99,6 +100,7 @@ export const programs = [
     "confidence": "medium"
   }
 ];
+
 export const exams = [
   {
     "slug": "pmi-construction-professional",
@@ -1107,11 +1109,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "2,000 hours of general project experience, 1,500 hours of agile project experience in the last 5 years, and 21 contact hours of agile education.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "120 (100 scored + 20 unscored pretest items)",
+      "time": "3 hours (180 minutes)",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "PMP: $405 USD (PMI member) / $555 (non-member). Other PMI exams vary (e.g., CAPM ~$225–$300). Confirm the current fee on PMI.org at booking.",
       "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring.",
@@ -1191,7 +1193,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Project & Business competence with a Project Management Institute credential.",
-    "time": "Varies",
+    "time": "3 hours (120 questions)",
     "cost": "PMP: $405 USD (PMI member) / $555 (non-member)",
     "faqs": [
       {
@@ -1226,7 +1228,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$70,000-$130,000"
   },
   {
     "slug": "pmi-certified-sustainable-project-professional",
@@ -1389,11 +1392,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "None required, though Salesforce experience is strongly recommended.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "60 scored",
+      "time": "105 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000. Retake ~50% of exam fee. Plus local tax.",
       "format": "Proctored, computer-based — online or at a test center via Webassessor.",
@@ -1473,7 +1476,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Salesforce credential.",
-    "time": "Varies",
+    "time": "105 minutes (60 scored questions)",
     "cost": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000",
     "faqs": [
       {
@@ -1508,7 +1511,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$84,000-$209,000 (adjacent platform series)"
   },
   {
     "slug": "salesforce-advanced-administrator",
@@ -1530,11 +1534,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Salesforce Administrator credential required",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "60 questions",
+      "time": "105 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000. Retake ~50% of exam fee. Plus local tax.",
       "format": "Proctored, computer-based — online or at a test center via Webassessor.",
@@ -1614,7 +1618,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Salesforce credential.",
-    "time": "Varies",
+    "time": "50-70 hours over 5-7 weeks",
     "cost": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000",
     "faqs": [
       {
@@ -1649,7 +1653,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$70,000-$130,000 (15-1252 median $132,270)"
   },
   {
     "slug": "salesforce-platform-app-builder",
@@ -1671,13 +1676,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "None (Trailhead learning recommended)",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "60 questions",
+      "time": "105 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000. Retake ~50% of exam fee. Plus local tax.",
+      "fee": "$200",
       "format": "Proctored, computer-based — online or at a test center via Webassessor.",
       "admin": "Webassessor (Pearson VUE)"
     },
@@ -1714,7 +1719,7 @@ export const exams = [
       ],
       [
         "Delivery",
-        "Proctored, computer-based — online or at a test center via Webassessor."
+        "Maintained with release-based maintenance exams"
       ],
       [
         "Validity",
@@ -1755,7 +1760,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Salesforce credential.",
-    "time": "Varies",
+    "time": "60-100 hours",
     "cost": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000",
     "faqs": [
       {
@@ -1790,7 +1795,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$132,270 median, software developers (BLS May 2024)",
+    "examEssentials[3][1]": "Maintained with release-based maintenance exams"
   },
   {
     "slug": "salesforce-platform-developer-i",
@@ -1812,13 +1819,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Complete required Trailhead superbadges",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "60 questions",
+      "time": "105 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000. Retake ~50% of exam fee. Plus local tax.",
+      "fee": "$200",
       "format": "Proctored, computer-based — online or at a test center via Webassessor.",
       "admin": "Webassessor (Pearson VUE)"
     },
@@ -1855,7 +1862,7 @@ export const exams = [
       ],
       [
         "Delivery",
-        "Proctored, computer-based — online or at a test center via Webassessor."
+        "Maintained with release-based maintenance exams"
       ],
       [
         "Validity",
@@ -1896,7 +1903,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Salesforce credential.",
-    "time": "Varies",
+    "time": "80-150 hours",
     "cost": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000",
     "faqs": [
       {
@@ -1931,7 +1938,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$132,270 median, software developers (BLS May 2024)",
+    "examEssentials[3][1]": "Maintained with release-based maintenance exams"
   },
   {
     "slug": "salesforce-platform-developer-ii",
@@ -1953,11 +1962,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Platform Developer I required",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "60 questions",
+      "time": "120 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000. Retake ~50% of exam fee. Plus local tax.",
       "format": "Proctored, computer-based — online or at a test center via Webassessor.",
@@ -2037,7 +2046,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Salesforce credential.",
-    "time": "Varies",
+    "time": "80-120 hours over 8-12 weeks",
     "cost": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000",
     "faqs": [
       {
@@ -2072,7 +2081,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$90,000-$160,000 (15-1252 median $132,270)"
   },
   {
     "slug": "salesforce-sales-cloud-consultant",
@@ -2094,11 +2104,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Administrator or Sales Cloud experience recommended",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "60 questions",
+      "time": "105 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000. Retake ~50% of exam fee. Plus local tax.",
       "format": "Proctored, computer-based — online or at a test center via Webassessor.",
@@ -2178,7 +2188,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Salesforce credential.",
-    "time": "Varies",
+    "time": "50-70 hours over 5-7 weeks",
     "cost": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000",
     "faqs": [
       {
@@ -2213,7 +2223,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$80,000-$140,000 (15-1252 median $132,270)"
   },
   {
     "slug": "salesforce-service-cloud-consultant",
@@ -2235,11 +2246,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Administrator or Service Cloud experience recommended",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "60 questions",
+      "time": "105 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000. Retake ~50% of exam fee. Plus local tax.",
       "format": "Proctored, computer-based — online or at a test center via Webassessor.",
@@ -2319,7 +2330,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Salesforce credential.",
-    "time": "Varies",
+    "time": "50-70 hours over 5-7 weeks",
     "cost": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000",
     "faqs": [
       {
@@ -2354,7 +2365,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$80,000-$140,000 (15-1252 median $132,270)"
   },
   {
     "slug": "salesforce-experience-cloud-consultant",
@@ -3222,11 +3234,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "None (Administrator credential helpful)",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "60 questions",
+      "time": "110 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000. Retake ~50% of exam fee. Plus local tax.",
       "format": "Proctored, computer-based — online or at a test center via Webassessor.",
@@ -3306,7 +3318,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a Salesforce credential.",
-    "time": "Varies",
+    "time": "50-70 hours over 5-7 weeks",
     "cost": "Foundations $75 USD; Accredited Professional $100–150; Core (Administrator/Developer/Consultant) $200; Tableau $250; Architect $400; Certified Technical Architect (CTA) $6,000",
     "faqs": [
       {
@@ -3341,7 +3353,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$70,000-$130,000 (15-1252 median $132,270)"
   },
   {
     "slug": "salesforce-solution-architect",
@@ -4350,11 +4363,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "None — the PSM I assessment has no prerequisites; you may sit it without any course.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "80 (all scored)",
+      "time": "60 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "PSM I / PSPO I / PSD I / PAL I / PSK I: $200 USD; PSM II / PSPO II / SPS: $250; PSM III / PSPO III: $500. Per-attempt password; passwords never expire.",
       "format": "Online, open-book assessment using a password; taken remotely at your convenience.",
@@ -4434,7 +4447,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Project & Business competence with a Scrum.org credential.",
-    "time": "Varies",
+    "time": "60 minutes (80 questions)",
     "cost": "PSM I / PSPO I / PSD I / PAL I / PSK I: $200 USD; PSM II / PSPO II / SPS: $250; PSM III / PSPO III: $500",
     "faqs": [
       {
@@ -4469,7 +4482,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$70,000-$130,000"
   },
   {
     "slug": "scrum-org-psm-ii",
@@ -4914,11 +4928,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "None — the PSPO I assessment has no prerequisites; you may sit it without any course.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "80 (all scored)",
+      "time": "60 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "PSM I / PSPO I / PSD I / PAL I / PSK I: $200 USD; PSM II / PSPO II / SPS: $250; PSM III / PSPO III: $500. Per-attempt password; passwords never expire.",
       "format": "Online, open-book assessment using a password; taken remotely at your convenience.",
@@ -4998,7 +5012,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Project & Business competence with a Scrum.org credential.",
-    "time": "Varies",
+    "time": "60 minutes (80 questions)",
     "cost": "PSM I / PSPO I / PSD I / PAL I / PSK I: $200 USD; PSM II / PSPO II / SPS: $250; PSM III / PSPO III: $500",
     "faqs": [
       {
@@ -5033,7 +5047,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$70,000-$130,000"
   },
   {
     "slug": "scrum-org-pspo-ii",
@@ -5600,4 +5615,5 @@ export const exams = [
     "confidence": "medium"
   }
 ];
+
 export default { programs, exams };

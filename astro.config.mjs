@@ -13,7 +13,9 @@ export default defineConfig({
       // /affiliate-disclosure is canonicalised to /disclosure (they had the same
       // <title> and the same purpose). A canonicalised URL must not be submitted
       // for indexing, or the sitemap contradicts the canonical tag.
-      filter: (page) => !/\/affiliate-disclosure\/?$/.test(page),
+      // /privacy-policy is a noindex redirect to /privacy — same reasoning.
+      filter: (page) =>
+        !/\/affiliate-disclosure\/?$/.test(page) && !/\/privacy-policy\/?$/.test(page),
       serialize(item) {
         const url = new URL(item.url);
         const p = url.pathname.replace(/\/$/, '') || '/';

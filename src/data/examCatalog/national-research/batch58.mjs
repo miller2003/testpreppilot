@@ -165,6 +165,7 @@ export const programs = [
     "confidence": "low"
   }
 ];
+
 export const exams = [
   {
     "slug": "nic-body-piercing-practical",
@@ -1316,13 +1317,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Accredited esthetics program hours",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "~100 questions",
+      "time": "State-set",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "$50-150 per part",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "National-Interstate Council of State Boards of Cosmetology"
     },
@@ -1359,7 +1360,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "State licence renews per state schedule"
       ],
       [
         "Languages",
@@ -1400,8 +1401,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "20-30 hours",
+    "cost": "$50-150 per exam part",
     "faqs": [
       {
         "q": "How do I register for the NIC Esthetics Theory Examination exam?",
@@ -1435,7 +1436,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$41,560 median, skincare specialists (BLS May 2024)",
+    "examEssentials[3][1]": "State licence renews per state schedule"
   },
   {
     "slug": "nic-eyelash-eyebrow-practical",
@@ -2585,13 +2588,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Accredited nail technology program hours",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "~90-100 questions",
+      "time": "State-set",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "$50-150 per part",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "National-Interstate Council of State Boards of Cosmetology"
     },
@@ -2628,7 +2631,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "State licence renews per state schedule"
       ],
       [
         "Languages",
@@ -2669,8 +2672,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "15-25 hours",
+    "cost": "$50-150 per exam part",
     "faqs": [
       {
         "q": "How do I register for the NIC Nail Technology Theory Examination exam?",
@@ -2704,7 +2707,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$34,660 median, manicurists (BLS May 2024)",
+    "examEssentials[3][1]": "State licence renews per state schedule"
   },
   {
     "slug": "nic-national-manager-theory",
@@ -4093,4 +4098,5 @@ export const exams = [
     "confidence": "low"
   }
 ];
+
 export default { programs, exams };

@@ -1,0 +1,252 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+import TopicHubs from '../components/TopicHubs.astro';
+import { TRUST_PAGES } from '../data/editorial';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Methodology', href: TRUST_PAGES.methodology }
+];
+---
+
+<BaseLayout
+  title="Our Research Methodology — How TestPrepPilot Verifies Every Requirement"
+  description="How TestPrepPilot researches, verifies and maintains every license and certification guide — primary sources, our review pipeline, last-reviewed dates, and editorial independence."
+>
+  <div class="container">
+    <BreadcrumbNav items={breadcrumbItems} />
+
+    <header class="page-hero">
+      <p class="eyebrow">RESEARCH METHODOLOGY</p>
+      <h1>We show our work, <em>source by source.</em></h1>
+      <p class="lede">
+        Every requirement, fee and deadline on this site is traced back to a primary
+        regulatory document. This page explains exactly how a guide is built, how it is
+        checked, and what happens when a rule changes.
+      </p>
+    </header>
+
+    <main class="prose">
+      <section>
+        <h2>The one rule that governs everything</h2>
+        <p>
+          We cite primary sources. A "primary source" is the body that actually makes or
+          enforces the rule: a state licensing board, a federal agency, an exam vendor's
+          own candidate handbook, or the statute behind a credential. We read those
+          documents directly. We do <strong>not</strong> build pages by paraphrasing other
+          blogs, and we do not let a prep-course company tell us what the requirements are.
+        </p>
+        <p>
+          Where a figure cannot be confirmed from a primary source, we say so. You will see
+          confidence labels on our pages ("verified", "confirm with the board") rather than
+          a false sense of certainty.
+        </p>
+      </section>
+
+      <section>
+        <h2>How a guide is built</h2>
+        <p>
+          Each credential page moves through the same pipeline. Nothing is published until it
+          has cleared every step.
+        </p>
+        <ol class="pipeline">
+          <li>
+            <span class="step-num">1</span>
+            <div>
+              <h4>Scope the credential</h4>
+              <p>
+                Identify the exact issuing authority and jurisdiction — a state board, a
+                federal agency, or a private certifying body — and the precise name and
+                abbreviation of the credential.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <div>
+              <h4>Read the primary sources</h4>
+              <p>
+                Pull the statute, administrative code, candidate handbook and fee schedule.
+                For state credentials we read the board's own site; for national credentials
+                we read the awarding body's published materials.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <div>
+              <h4>Extract the facts that matter</h4>
+              <p>
+                Eligibility, education hours, exam format, question counts, pass marks, fees,
+                timelines and renewal rules — each captured with its source attached.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">4</span>
+            <div>
+              <h4>Structure into a roadmap</h4>
+              <p>
+                Turn the legalese into a plain-English, sequential path: what to do, in what
+                order, and what it costs — so a first-time candidate can act on it.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">5</span>
+            <div>
+              <h4>Expert review</h4>
+              <p>
+                Before publication, the draft is checked by a licensed professional in that
+                field where one is available. See our
+                <a href={TRUST_PAGES.reviewers}>Review Network</a>.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">6</span>
+            <div>
+              <h4>Publish with a "last reviewed" date</h4>
+              <p>
+                Every substantive page carries the month it was last verified against its
+                sources, so you can see how fresh the information is.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">7</span>
+            <div>
+              <h4>Monitor for change</h4>
+              <p>
+                Boards revise fees and rules constantly. We re-check high-traffic pages on a
+                rolling schedule and update the "last reviewed" stamp when we do.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>How we verify — and what "last reviewed" means</h2>
+        <p>
+          Each page shows a <strong>last reviewed</strong> date. That date is the month we
+          last confirmed the page's figures against its primary sources — not the date the
+          page was first written. When we re-verify, we update the stamp.
+        </p>
+        <p>We also flag confidence explicitly:</p>
+        <ul class="confidence">
+          <li>
+            <strong class="ok">Verified</strong> — confirmed against a current primary source
+            at the last-reviewed date.
+          </li>
+          <li>
+            <strong class="warn">Confirm with the board</strong> — the figure is current to
+            our knowledge but changes frequently (fees especially), so we ask you to confirm
+            before you pay.
+          </li>
+          <li>
+            <strong class="none">Not yet verified</strong> — a page still being researched; we
+            label it as in-progress rather than presenting guesses as fact.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Independence from affiliate revenue</h2>
+        <p>
+          TestPrepPilot participates in affiliate programs to fund its research (see our
+          <a href={TRUST_PAGES.disclosure}>Affiliate Disclosure</a>). That relationship never
+          touches the facts. The requirements, exam format and costs on a page are researched
+          from primary sources first; provider recommendations are made separately, on the
+          merits, and we routinely list providers we earn nothing from when they are the
+          better route.
+        </p>
+        <p>
+          No provider can pay to alter a requirement, change a ranking, or secure a
+          recommendation. Where an affiliate link appears next to a recommendation, it is
+          labelled inline.
+        </p>
+      </section>
+
+      <section>
+        <h2>Corrections & updates</h2>
+        <p>
+          Rules change and we make mistakes like anyone else. When we find an error — or a
+          reader reports one — we correct the page and refresh its last-reviewed date. If a
+          correction is substantive, we note what changed. You can report anything that looks
+          off via our <a href={TRUST_PAGES.contact}>contact page</a>; we read every one.
+        </p>
+      </section>
+
+      <section>
+        <h2>What we will not do</h2>
+        <ul class="dont">
+          <li>We will not hide a total cost or timeline to make a path look easier.</li>
+          <li>We will not alter a fact to flatter a provider we earn commission from.</li>
+          <li>
+            We will not present unverified information as confirmed, or invent an expert
+            reviewer.
+          </li>
+          <li>We will not accept guest posts disguised as independent research.</li>
+        </ul>
+      </section>
+
+      <section class="cta">
+        <h2>Read the related policies</h2>
+        <p class="cta-links">
+          <a href={TRUST_PAGES.editorialPolicy}>Editorial Policy</a>
+          <a href={TRUST_PAGES.reviewers}>Our Review Network</a>
+          <a href={TRUST_PAGES.disclosure}>Affiliate Disclosure</a>
+          <a href={TRUST_PAGES.about}>About the Desk</a>
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <TopicHubs />
+</BaseLayout>
+
+<style>
+  .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
+
+  .page-hero { padding: 4.5rem 0 3rem; border-bottom: 2px solid var(--ink); margin-bottom: 3.5rem; }
+  .page-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin: 0 0 1.25rem; font-weight: 700; }
+  .page-hero h1 { font-family: var(--font-heading); font-size: var(--fs-h1); line-height: 1.12; margin: 0 0 1.5rem; }
+  .page-hero .lede { font-family: var(--font-body); font-size: var(--fs-prose); color: var(--muted); line-height: 1.75; }
+
+  .prose section { margin-bottom: 3rem; scroll-margin-top: 6rem; }
+  .prose h2 { font-family: var(--font-heading); font-size: var(--fs-h2); margin: 0 0 1.1rem; line-height: 1.2; }
+  .prose p { font-family: var(--font-body); font-size: var(--fs-prose); line-height: 1.8; margin: 0 0 1.35rem; color: var(--ink); }
+  .prose a { color: var(--primary); font-weight: 600; text-underline-offset: 3px; }
+  .prose strong { color: var(--ink); }
+
+  /* Pipeline */
+  .pipeline { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.25rem; }
+  .pipeline li { display: flex; gap: 1.1rem; align-items: flex-start; padding: 1.1rem 1.25rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+  .step-num { flex: 0 0 auto; width: 34px; height: 34px; border-radius: 50%; background: var(--primary); color: #fff; display: grid; place-items: center; font-family: var(--font-mono); font-size: 0.9rem; font-weight: 700; }
+  .pipeline h4 { font-family: var(--font-heading); font-size: var(--fs-h3); margin: 0 0 0.4rem; }
+  .pipeline p { margin: 0; font-size: 1rem; line-height: 1.65; color: var(--muted); }
+
+  /* Confidence */
+  .confidence { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+  .confidence li { padding: 0.85rem 1.15rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); font-size: 1rem; line-height: 1.6; color: var(--muted); }
+  .confidence strong { margin-right: 0.5rem; }
+  .confidence .ok { color: #0b7a5b; }
+  .confidence .warn { color: #92400e; }
+  .confidence .none { color: #475569; }
+
+  /* Don't list */
+  .dont { padding-left: 1.25rem; }
+  .dont li { font-size: 1rem; line-height: 1.7; margin-bottom: 0.75rem; color: var(--ink); }
+
+  /* CTA */
+  .cta { border-top: 1px solid var(--line); padding-top: 2.5rem; }
+  .cta-links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .cta-links a { display: inline-block; padding: 0.6rem 1.1rem; border: 1px solid var(--line); border-radius: 999px; background: var(--cream); text-decoration: none; font-family: var(--font-body); font-size: 0.95rem; }
+  .cta-links a:hover { border-color: var(--primary); }
+
+  @media (max-width: 640px) {
+    .pipeline li { flex-direction: column; gap: 0.6rem; }
+  }
+</style>

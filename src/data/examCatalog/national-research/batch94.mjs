@@ -1,3 +1,4 @@
+// Research-backed exam records for batch file batch94.mjs.
 export const programs = [
   {
     "body": "Financial Industry Regulatory Authority (FINRA)",
@@ -99,6 +100,7 @@ export const programs = [
     "confidence": "low"
   }
 ];
+
 export const exams = [
   {
     "slug": "series-65",
@@ -540,11 +542,11 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Sponsorship by a FINRA member firm (Form U4 filing) in most cases.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "75 scored",
+      "time": "5 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Varies by location and currency — confirm on the official registration page",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
@@ -583,7 +585,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "The licence renews annually via Form U4 while registered."
       ],
       [
         "Languages",
@@ -624,8 +626,8 @@ export const exams = [
     },
     "difficulty": "Regulated",
     "audience": "Professionals and candidates seeking to validate Finance & Securities competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "5 hours (75 scored questions)",
+    "cost": "~$295",
     "faqs": [
       {
         "q": "How do I register for the Series 79 Investment Banking Representative Exam exam?",
@@ -637,7 +639,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Financial Industry Regulatory Authority (FINRA)'s policy."
+        "a": "Series 79 registration renews annually through the Form U4 process while you are associated with a member firm; the exam result serves the initial registration."
       },
       {
         "q": "What if I do not pass?",
@@ -659,7 +661,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$62,000-$181,000"
   },
   {
     "slug": "series-82",
@@ -1104,13 +1107,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "FINRA member firm sponsorship",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "55 questions",
+      "time": "90 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$100-130",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "Financial Industry Regulatory Authority (FINRA)"
     },
@@ -1147,7 +1150,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Valid while registered with a FINRA member firm"
       ],
       [
         "Languages",
@@ -1188,8 +1191,8 @@ export const exams = [
     },
     "difficulty": "Regulated",
     "audience": "Professionals and candidates seeking to validate Finance & Securities competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "40-70 hours",
+    "cost": "~$100-130 exam",
     "faqs": [
       {
         "q": "How do I register for the Series 9 General Securities Sales Supervisor Exam, Options Module exam?",
@@ -1223,7 +1226,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$78,140 median, securities sales agents (BLS May 2024)",
+    "examEssentials[3][1]": "Valid while registered with a FINRA member firm"
   },
   {
     "slug": "series-99",
@@ -1245,13 +1250,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Firm sponsorship required; SIE prerequisite",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "100 questions",
+      "time": "2h30m",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$150-$200",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "Financial Industry Regulatory Authority (FINRA)"
     },
@@ -1288,7 +1293,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Registration maintained by the sponsoring firm"
       ],
       [
         "Languages",
@@ -1329,8 +1334,8 @@ export const exams = [
     },
     "difficulty": "Regulated",
     "audience": "Professionals and candidates seeking to validate Finance & Securities competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "60-80 hours over 5-8 weeks",
+    "cost": "~$150-$200 (FINRA exam fee)",
     "faqs": [
       {
         "q": "How do I register for the Series 99 Operations Professional Exam exam?",
@@ -1364,7 +1369,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$50,000-$110,000 (41-3031 median $78,140)"
   },
   {
     "slug": "accredited-financial-counselor",
@@ -1641,4 +1647,5 @@ export const exams = [
     "confidence": "low"
   }
 ];
+
 export default { programs, exams };

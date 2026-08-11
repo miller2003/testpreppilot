@@ -1,0 +1,190 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+import TopicHubs from '../components/TopicHubs.astro';
+import { TRUST_PAGES } from '../data/editorial';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Contact', href: TRUST_PAGES.contact }
+];
+
+const CONTACT_EMAIL = 'contact@testpreppilot.com';
+---
+
+<BaseLayout
+  title="Contact TestPrepPilot — Report Errors, Suggest Credentials, Join Our Reviewers"
+  description="Contact the TestPrepPilot editorial desk. Report an error, suggest a credential we should cover, or apply to our licensed-expert review network."
+>
+  <div class="container">
+    <BreadcrumbNav items={breadcrumbItems} />
+
+    <header class="page-hero">
+      <p class="eyebrow">CONTACT</p>
+      <h1>We read every <em>message.</em></h1>
+      <p class="lede">
+        TestPrepPilot is researched and maintained by a real editorial desk. Whether you
+        spotted a mistake, want a credential covered, or are a licensed professional who'd
+        like to review our work, this is the fastest way to reach us.
+      </p>
+    </header>
+
+    <main class="contact-grid">
+      <section class="form-col">
+        <h2>Send a message</h2>
+        <!--
+          Functional with zero backend: the script below assembles a mailto: link
+          from the fields and opens the visitor's email client. To upgrade to a
+          server-side form, set `action` to your Formspree/Getform endpoint and add
+          `method="POST"` — no other changes needed.
+        -->
+        <form id="contact-form" class="contact-form" action={`mailto:${CONTACT_EMAIL}`} method="post" enctype="text/plain">
+          <label class="field">
+            <span>Your name</span>
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label class="field">
+            <span>Topic</span>
+            <select name="topic">
+              <option value="Report an error">Report an error on a guide</option>
+              <option value="Suggest a credential">Suggest a credential to cover</option>
+              <option value="Join the review network">Join the licensed-expert review network</option>
+              <option value="Partnership / Press">Partnership or press</option>
+              <option value="Something else">Something else</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Message</span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <button type="submit" class="submit">Send message</button>
+          <p class="form-note">
+            Opens in your email app. Prefer to write directly? Email
+            <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+          </p>
+        </form>
+      </section>
+
+      <aside class="info-col">
+        <div class="info-card">
+          <h3>Editorial desk</h3>
+          <p>
+            Reach the researchers who maintain the guides. We aim to reply to error reports
+            and review-network applications within a few business days.
+          </p>
+          <p class="email-row">
+            <span class="email-label">Email</span>
+            <a href={`mailto:${CONTACT_EMAIL}`} class="email-link">{CONTACT_EMAIL}</a>
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Report an error</h3>
+          <p>
+            Rules and fees change constantly. If something on a page looks out of date, tell
+            us the page and what you found — we verify against the primary source and update
+            the "last reviewed" date.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Are you a licensed professional?</h3>
+          <p>
+            We build our review network from verifiable, licensed experts. If you hold an
+            active license in a field we cover and want to review guides in it, we'd love to
+            hear from you. Learn how it works on our
+            <a href={TRUST_PAGES.reviewers}> Review Network</a> page.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Before you write</h3>
+          <p>
+            Many questions are already answered on our
+            <a href={TRUST_PAGES.methodology}> methodology</a>,
+            <a href={TRUST_PAGES.editorialPolicy}> editorial policy</a>, and
+            <a href={TRUST_PAGES.disclosure}> disclosure</a> pages.
+          </p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <TopicHubs />
+</BaseLayout>
+
+<script is:inline>
+  // Assemble a mailto: from the form fields so the contact page works with no
+  // backend. If `action` has been pointed at a real endpoint, this is skipped.
+  (function () {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    var action = form.getAttribute('action') || '';
+    if (action.indexOf('mailto:') !== 0) return; // real endpoint → let it submit
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      var name = (data.get('name') || '').toString().trim();
+      var email = (data.get('email') || '').toString().trim();
+      var topic = (data.get('topic') || '').toString().trim();
+      var message = (data.get('message') || '').toString().trim();
+      var subject = encodeURIComponent('[TestPrepPilot] ' + topic + (name ? ' — ' + name : ''));
+      var body = encodeURIComponent(
+        'Name: ' + name + '\nEmail: ' + email + '\nTopic: ' + topic + '\n\n' + message
+      );
+      window.location.href = 'mailto:' + action.slice(7) + '?subject=' + subject + '&body=' + body;
+    });
+  })();
+</script>
+
+<style>
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+
+  .page-hero { padding: 4.5rem 0 3rem; border-bottom: 2px solid var(--ink); margin-bottom: 3.5rem; }
+  .page-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin: 0 0 1.25rem; font-weight: 700; }
+  .page-hero h1 { font-family: var(--font-heading); font-size: var(--fs-h1); line-height: 1.12; margin: 0 0 1.5rem; }
+  .page-hero .lede { font-family: var(--font-body); font-size: var(--fs-prose); color: var(--muted); line-height: 1.75; max-width: 64ch; }
+
+  .contact-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(2rem, 4vw, 4rem); padding-bottom: 6rem; align-items: start; }
+
+  .form-col h2 { font-family: var(--font-heading); font-size: var(--fs-h2); margin: 0 0 1.5rem; }
+  .contact-form { display: flex; flex-direction: column; gap: 1.1rem; }
+  .field { display: flex; flex-direction: column; gap: 0.45rem; }
+  .field > span { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); font-weight: 700; }
+  .field input, .field select, .field textarea {
+    font-family: var(--font-body); font-size: 1rem; color: var(--ink);
+    padding: 0.8rem 1rem; border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--paper); width: 100%; transition: border-color var(--transition);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--primary); }
+  .field textarea { resize: vertical; }
+
+  .submit {
+    align-self: flex-start; font-family: var(--font-mono); font-size: 0.85rem;
+    text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700;
+    color: #fff; background: var(--primary); border: none; border-radius: 999px;
+    padding: 0.85rem 2rem; cursor: pointer; transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .submit:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+  .form-note { font-size: 0.9rem; color: var(--muted); line-height: 1.6; margin: 0.25rem 0 0; }
+  .form-note a { color: var(--primary); font-weight: 600; }
+
+  .info-col { display: flex; flex-direction: column; gap: 1.1rem; position: sticky; top: 2rem; }
+  .info-card { padding: 1.4rem 1.6rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+  .info-card h3 { font-family: var(--font-heading); font-size: var(--fs-h3); margin: 0 0 0.6rem; }
+  .info-card p { font-size: 0.98rem; line-height: 1.65; color: var(--muted); margin: 0; }
+  .info-card a { color: var(--primary); font-weight: 600; text-underline-offset: 3px; }
+  .email-row { margin-top: 0.9rem; display: flex; flex-direction: column; gap: 0.2rem; }
+  .email-label { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); font-weight: 700; }
+  .email-link { font-family: var(--font-body); font-weight: 700; color: var(--ink); font-size: 1.05rem; word-break: break-word; }
+
+  @media (max-width: 860px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .info-col { position: static; }
+  }
+</style>

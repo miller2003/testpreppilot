@@ -3787,11 +3787,11 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Successful completion of the Leading SAFe course.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "45",
+      "time": "90 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Varies by location and currency — confirm on the official registration page",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
@@ -3830,7 +3830,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Confirm the current validity policy on the Scaled Agile site."
       ],
       [
         "Languages",
@@ -3871,8 +3871,8 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Project & Business competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "90 minutes (45 questions)",
+    "cost": "~$100 (often included in the course)",
     "faqs": [
       {
         "q": "How do I register for the SAFe Agilist exam?",
@@ -3884,7 +3884,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Scaled Agile, Inc.'s policy."
+        "a": "SAFe Agilist validity follows Scaled Agile's current policy, which has changed across framework releases; confirm the renewal rules on the Scaled Agile site."
       },
       {
         "q": "What if I do not pass?",
@@ -3906,7 +3906,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$60,000-$170,000"
   },
   {
     "slug": "safe-architect",
@@ -5479,13 +5480,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Successful completion of the SAFe Scrum Master course — the course is part of the certification path.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "45 (all scored)",
+      "time": "90 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "$100 exam (included with the SSM course)",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "Scaled Agile, Inc."
     },
@@ -5522,7 +5523,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "1 year — renew through the SAFe community platform."
       ],
       [
         "Languages",
@@ -5563,8 +5564,8 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Project & Business competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "90 minutes (45 questions)",
+    "cost": "~$100 (often included in the course)",
     "faqs": [
       {
         "q": "How do I register for the SAFe Scrum Master exam?",
@@ -5576,7 +5577,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Scaled Agile, Inc.'s policy."
+        "a": "The SSM certification is valid for 1 year and is renewed through the SAFe community platform before the expiry; the renewal is managed on the Scaled Agile site, not through an exam retake."
       },
       {
         "q": "What if I do not pass?",
@@ -5598,7 +5599,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$75,000-$130,000"
   },
   {
     "slug": "team-kanban-practitioner",

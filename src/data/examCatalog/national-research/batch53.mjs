@@ -1,3 +1,4 @@
+// Research-backed exam records for batch file batch53.mjs.
 export const programs = [
   {
     "body": "Board of Certification for Emergency Nursing (BCEN)",
@@ -268,6 +269,7 @@ export const programs = [
     "confidence": "low"
   }
 ];
+
 export const exams = [
   {
     "slug": "bcen-cen",
@@ -289,13 +291,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Active RN license and clinical experience recommended",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "175 questions (150 scored + 25 pretest)",
+      "time": "3 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$380",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "Board of Certification for Emergency Nursing (BCEN)"
     },
@@ -332,7 +334,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Valid 4 years (renewal with 100 CEUs)"
       ],
       [
         "Languages",
@@ -373,8 +375,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "60-90 hours over 6-10 weeks",
+    "cost": "~$380 non-member / ~$285 ENA member",
     "faqs": [
       {
         "q": "How do I register for the BCEN Certified Emergency Nurse exam?",
@@ -407,7 +409,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$66,000-$110,000 (29-1141 RN median ~$93,600)"
   },
   {
     "slug": "bcen-cfrn",
@@ -989,11 +992,11 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Meet one PTCB eligibility route — such as a recognised education program or equivalent experience.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "90",
+      "time": "2 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Varies by location and currency — confirm on the official registration page",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
@@ -1032,7 +1035,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "2 years — renew with 20 CE hours (including 1 law hour) or a retake."
       ],
       [
         "Languages",
@@ -1073,8 +1076,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "2 hours (90 questions)",
+    "cost": "~$129",
     "faqs": [
       {
         "q": "How do I register for the PTCB Certified Pharmacy Technician exam?",
@@ -1086,7 +1089,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Pharmacy Technician Certification Board (PTCB)'s policy."
+        "a": "The CPhT is valid for 2 years and renews with 20 continuing education hours (including at least 1 hour of pharmacy law) or by retaking the exam."
       },
       {
         "q": "What if I do not pass?",
@@ -1108,7 +1111,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$32,000-$53,000"
   },
   {
     "slug": "ptcb-cspt",
@@ -3829,11 +3833,11 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Completion of a dental-assisting education or the DANB-approved experience path.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "100",
+      "time": "75 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Varies by location and currency — confirm on the official registration page",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
@@ -3872,7 +3876,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "DANB certifications renew on a cycle with continuing education."
       ],
       [
         "Languages",
@@ -3913,8 +3917,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "75 minutes (100 questions)",
+    "cost": "~$145-$185",
     "faqs": [
       {
         "q": "How do I register for the DANB Radiation Health and Safety Exam exam?",
@@ -3926,7 +3930,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Dental Assisting National Board (DANB)'s policy."
+        "a": "DANB credentials such as the RHS component renew on the DANB cycle with continuing education; the RHS also counts toward the CDA."
       },
       {
         "q": "What if I do not pass?",
@@ -3948,7 +3952,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$34,000-$61,000"
   },
   {
     "slug": "danb-ice",
@@ -3970,11 +3975,11 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Completion of a dental-assisting education or the DANB-approved experience path.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "100",
+      "time": "75 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Varies by location and currency — confirm on the official registration page",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
@@ -4013,7 +4018,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "DANB certifications renew on a cycle with continuing education."
       ],
       [
         "Languages",
@@ -4054,8 +4059,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "75 minutes (100 questions)",
+    "cost": "~$145-$185",
     "faqs": [
       {
         "q": "How do I register for the DANB Infection Control Exam exam?",
@@ -4067,7 +4072,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Dental Assisting National Board (DANB)'s policy."
+        "a": "DANB credentials such as the ICE component renew on the DANB cycle with continuing education; the ICE also counts toward the CDA."
       },
       {
         "q": "What if I do not pass?",
@@ -4089,7 +4094,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$34,000-$61,000"
   },
   {
     "slug": "danb-gc",
@@ -4111,13 +4117,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "None (dental assisting background recommended)",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "90 questions",
+      "time": "90 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$90",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "Dental Assisting National Board (DANB)"
     },
@@ -4154,7 +4160,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Valid 1 year, then renewal with CEUs"
       ],
       [
         "Languages",
@@ -4195,8 +4201,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "15-30 hours",
+    "cost": "~$90 exam",
     "faqs": [
       {
         "q": "How do I register for the DANB General Chairside Exam exam?",
@@ -4230,7 +4236,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$47,300 median, dental assistants (BLS May 2024)",
+    "examEssentials[3][1]": "Valid 1 year, then renewal with CEUs"
   },
   {
     "slug": "nbstsa-cst",
@@ -4252,13 +4260,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "CAAHEP/ABHES surgical tech program or military route",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "175 questions (150 scored)",
+      "time": "4 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "$190",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "National Board of Surgical Technology and Surgical Assisting (NBSTSA)"
     },
@@ -4295,7 +4303,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Renewal with 60 CEUs every 4 years"
       ],
       [
         "Languages",
@@ -4336,8 +4344,8 @@ export const exams = [
     },
     "difficulty": "Applied",
     "audience": "Professionals and candidates seeking to validate Allied Health competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "80-120 hours over 8-12 weeks",
+    "cost": "$190 (exam fee)",
     "faqs": [
       {
         "q": "How do I register for the NBSTSA Certified Surgical Technologist exam?",
@@ -4367,7 +4375,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$48,000-$78,000 (29-2055 median $62,830)"
   },
   {
     "slug": "nbstsa-csfa",
@@ -5339,4 +5348,5 @@ export const exams = [
     "confidence": "low"
   }
 ];
+
 export default { programs, exams };

@@ -268,7 +268,7 @@ export default [
       time: 'Varies',
       pass: 'Course/exam pass per state standard',
       fee: 'Included in license fee where applicable',
-      format: 'Training-course assessment;少数 states written exam'
+      format: 'Training-course assessment; a minority of states written exam'
     },
     education: {
       hours: 'Unarmed training commonly 8–40 hours (e.g., CA 8hr+32hr; TX Level II 4hr; NV none before card; GA 24hr)',

@@ -1100,13 +1100,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Passage of the CFA Level I exam, enrolment in the CFA Program, and a valid passport.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "88 (item-set vignette questions, two sessions)",
+      "time": "4 hours 24 minutes (two sessions of 2h12m)",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$990 early registration / ~$1,290 standard (pricing depends on the registration window)",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "CFA Institute"
     },
@@ -1143,7 +1143,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "CFA exam results are valid for up to 7 years to complete the remaining levels; the CFA charter itself does not expire."
       ],
       [
         "Languages",
@@ -1184,8 +1184,8 @@ export const exams = [
     },
     "difficulty": "Regulated",
     "audience": "Professionals and candidates seeking to validate Finance & Securities competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "4.4 hours (two sessions; 88 items)",
+    "cost": "~$1,000-$1,600 by registration window",
     "faqs": [
       {
         "q": "How do I register for the CFA Program Level II Exam exam?",
@@ -1197,7 +1197,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see CFA Institute's policy."
+        "a": "CFA exam results do not expire once earned, but you must complete the remaining levels within 7 years of your first exam to earn the charter; the CFA charter itself does not expire and has no renewal fee."
       },
       {
         "q": "What if I do not pass?",
@@ -1219,7 +1219,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$75,000-$150,000"
   },
   {
     "slug": "cfa-level-3",
@@ -1241,13 +1242,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Passage of the CFA Level II exam, enrolment in the CFA Program, and a valid passport.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "Item sets plus constructed-response (essay) items across two sessions",
+      "time": "4 hours 24 minutes (two sessions of 2h12m)",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$990 early registration / ~$1,290 standard (pricing depends on the registration window)",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "CFA Institute"
     },
@@ -1284,7 +1285,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "CFA exam results are valid for up to 7 years to complete the program; the CFA charter itself does not expire."
       ],
       [
         "Languages",
@@ -1325,8 +1326,8 @@ export const exams = [
     },
     "difficulty": "Regulated",
     "audience": "Professionals and candidates seeking to validate Finance & Securities competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "4.4 hours (two sessions; ~44 items incl. constructed response)",
+    "cost": "~$1,000-$1,600 by registration window",
     "faqs": [
       {
         "q": "How do I register for the CFA Program Level III Exam exam?",
@@ -1338,7 +1339,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see CFA Institute's policy."
+        "a": "A passing Level III result completes the exam program; you then satisfy the work-experience and membership requirements to earn the charter. The charter does not expire, and exam results are subject to the program's rolling completion limits."
       },
       {
         "q": "What if I do not pass?",
@@ -1360,7 +1361,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$75,000-$150,000"
   },
   {
     "slug": "cipm-exam",

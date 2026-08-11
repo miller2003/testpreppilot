@@ -2,35 +2,111 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../components/BreadcrumbNav.astro';
 import TopicHubs from '../components/TopicHubs.astro';
+import { TRUST_PAGES } from '../data/editorial';
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
-  { label: 'Privacy', href: '/privacy' }
+  { label: 'Privacy', href: TRUST_PAGES.privacy }
 ];
 ---
 
-<BaseLayout 
+<BaseLayout
   title="Privacy Policy — TestPrepPilot"
-  description="How TestPrepPilot collects, uses and protects your data, plus the choices you have over your information."
+  description="How TestPrepPilot collects, uses, protects and shares your data, plus the choices you have over your information."
 >
   <div class="container | animate-on-scroll">
     <BreadcrumbNav items={breadcrumbItems} />
-    
+
     <header class="page-hero">
       <p class="eyebrow">PRIVACY</p>
       <h1>Your information <em>is not the product.</em></h1>
-      <p class="lede">A straightforward summary of our privacy practices.</p>
+      <p class="lede">A plain-English summary of our privacy practices, last reviewed August 2026.</p>
     </header>
 
     <main class="prose">
       <section>
-        <h2>Data collection</h2>
-        <p>We collect basic, anonymized analytics to understand which credentials are most sought after and how we can improve the site's navigation. If you choose to sign up for our newsletter, we securely store your email address solely for that purpose.</p>
+        <h2>What we collect</h2>
+        <p>
+          We collect only what we need to run and improve the site. This falls into two
+          buckets:
+        </p>
+        <ul>
+          <li>
+            <strong>Anonymous analytics.</strong> Aggregated, non-identifying data about
+            which credentials are searched and how pages are used, so we can decide what to
+            research next and where navigation is confusing.
+          </li>
+          <li>
+            <strong>Contact details you give us.</strong> If you email us or use the contact
+            form, we receive the name and email address you provide, used solely to reply.
+          </li>
+        </ul>
+        <p>We do not require an account to use TestPrepPilot, and we do not build user profiles for advertising.</p>
       </section>
-      
+
       <section>
-        <h2>User choices</h2>
-        <p>You will not be tracked across the internet by aggressive ad networks through our site. We do not sell your personal data to third parties. If you wish to unsubscribe from any communications, you can do so immediately via the link in our emails.</p>
+        <h2>Cookies & analytics</h2>
+        <p>
+          We use a minimal set of cookies for essential site functionality (such as remembering
+          your light/dark theme preference) and privacy-respecting analytics. We do
+          <strong>not</strong> run aggressive third-party ad-tracking networks on this site.
+        </p>
+      </section>
+
+      <section>
+        <h2>Affiliate links</h2>
+        <p>
+          Some links to training providers and exam-booking platforms are affiliate links.
+          Clicking one and making a purchase may set a cookie placed by that provider or its
+          affiliate network so the referral can be attributed. That is standard to affiliate
+          programs and is governed by the provider's own privacy practices. We never receive
+          your payment details. See our <a href={TRUST_PAGES.disclosure}>Affiliate Disclosure</a>
+          for how this funds the site.
+        </p>
+      </section>
+
+      <section>
+        <h2>How we use and share data</h2>
+        <p>
+          We use your information to operate the site, respond to messages, and understand what
+          to improve. We do <strong>not</strong> sell your personal data to third parties. We
+          share data only with processors we use to run the site (such as an email or analytics
+          provider), under terms that limit them to providing that service.
+        </p>
+      </section>
+
+      <section>
+        <h2>Your choices</h2>
+        <ul>
+          <li>You can clear or block cookies in your browser at any time.</li>
+          <li>
+            If you receive email from us and want to stop, use the unsubscribe link in the
+            message — it takes effect immediately.
+          </li>
+          <li>
+            To request deletion of information you have sent us, email
+            <a href={`mailto:contact@testpreppilot.com`}>contact@testpreppilot.com</a> and
+            we will remove it.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>
+          TestPrepPilot is intended for adults researching professional credentials. We do not
+          knowingly collect personal information from children under 13.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes & contact</h2>
+        <p>
+          If we change this policy, we will update the date above. Questions about your data
+          can be sent to
+          <a href={`mailto:contact@testpreppilot.com`}>contact@testpreppilot.com</a> or
+          through our <a href={TRUST_PAGES.contact}>contact page</a>.
+        </p>
       </section>
     </main>
   </div>
@@ -40,12 +116,16 @@ const breadcrumbItems = [
 
 <style>
   .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
-  
+
   .page-hero { padding: 4rem 0; border-bottom: 2px solid var(--ink); margin-bottom: 4rem; }
-  .page-hero h1 { font-size: 3.5rem; margin: 1rem 0; }
-  .page-hero .lede { font-size: 1.25rem; color: #444; }
-  
+  .page-hero h1 { font-family: var(--font-heading); font-size: var(--fs-h1); margin: 1rem 0; }
+  .page-hero .lede { font-family: var(--font-body); font-size: 1.25rem; color: var(--muted); }
+
   .prose section { margin-bottom: 3rem; }
-  .prose h2 { font-size: 2rem; margin-bottom: 1rem; }
-  .prose p { font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--ink); }
+  .prose h2 { font-family: var(--font-heading); font-size: var(--fs-h2); margin-bottom: 1rem; }
+  .prose p { font-family: var(--font-body); font-size: var(--fs-prose); line-height: 1.8; margin-bottom: 1.5rem; color: var(--ink); }
+  .prose ul { padding-left: 1.25rem; margin-bottom: 1.5rem; }
+  .prose li { font-family: var(--font-body); font-size: var(--fs-prose); line-height: 1.75; margin-bottom: 0.75rem; color: var(--ink); }
+  .prose a { color: var(--primary); font-weight: 600; text-underline-offset: 3px; }
+  .prose strong { color: var(--ink); }
 </style>

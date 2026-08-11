@@ -1,0 +1,180 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../components/BreadcrumbNav.astro';
+import TopicHubs from '../components/TopicHubs.astro';
+import { TRUST_PAGES, REVIEW_DOMAINS } from '../data/editorial';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Review Network', href: TRUST_PAGES.reviewers }
+];
+---
+
+<BaseLayout
+  title="Our Review Network — Licensed Experts Who Verify TestPrepPilot Guides"
+  description="How TestPrepPilot uses verifiable, licensed professionals to review credential guides for accuracy — our vetting process, the fields we cover, and how to join."
+>
+  <div class="container">
+    <BreadcrumbNav items={breadcrumbItems} />
+
+    <header class="page-hero">
+      <p class="eyebrow">REVIEW NETWORK</p>
+      <h1>Every guide is checked by <em>someone who knows.</em></h1>
+      <p class="lede">
+        Requirements for a license or certification are too consequential to be verified by a
+        generalist alone. Where we can, each guide is reviewed by a licensed professional in
+        that exact field — a real person, with a real, verifiable credential.
+      </p>
+    </header>
+
+    <main class="prose">
+      <section>
+        <h2>Why a review network</h2>
+        <p>
+          We research every page from primary sources first (see our
+          <a href={TRUST_PAGES.methodology}> methodology</a>). But a statute and a candidate's
+          real-world experience do not always tell the same story. A licensed reviewer catches
+          the things only a practitioner would notice: which prerequisite is actually
+          enforced, which fee is routinely waived, which step quietly takes three months.
+          That second layer of scrutiny is what makes a guide trustworthy.
+        </p>
+      </section>
+
+      <section>
+        <h2>How a reviewer is vetted</h2>
+        <ol class="process">
+          <li>
+            <h4>Active license, verified</h4>
+            <p>
+              A reviewer must hold a current, active license or certification in the field
+              they review. We check it against the relevant state board or certifying body's
+              public lookup before any guide carries their name.
+            </p>
+          </li>
+          <li>
+            <h4>Conflict-of-interest check</h4>
+            <p>
+              Reviewers may not review a page for a provider they are employed by or have a
+              financial stake in. Independence is the whole point.
+            </p>
+          </li>
+          <li>
+            <h4>Scope is accuracy only</h4>
+            <p>
+              A reviewer confirms the facts — eligibility, steps, fees, timelines. They do
+              <strong>not</strong> "endorse" a provider or the site. The attribution says
+              exactly what was reviewed.
+            </p>
+          </li>
+          <li>
+            <h4>Named and linked</h4>
+            <p>
+              Reviewed guides name the reviewer, their credential and a way to verify it. No
+              anonymous sign-off, and — importantly — no invented reviewers. Every name on
+              this site is a real, checkable person.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Fields we cover</h2>
+        <p>
+          We recruit reviewers across the credential families this site maps. If your field is
+          below and you hold an active license, we'd like to hear from you.
+        </p>
+        <div class="domains">
+          {REVIEW_DOMAINS.map((d) => (
+            <div class="domain">
+              <h4>{d.field}</h4>
+              <p>{d.note}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2>How a reviewer is attributed</h2>
+        <p>
+          When a guide is reviewed, its footer names the reviewer in this format. The example
+          below shows the structure — the names are placeholders, not real reviewers:
+        </p>
+        <div class="attribution-example">
+          <p class="ae-eyebrow">Reviewed for accuracy by</p>
+          <p class="ae-name">[Full Name], [Credential] · [State]</p>
+          <p class="ae-verify">
+            Verify: <span class="ae-placeholder">[public license lookup or professional profile]</span>
+          </p>
+          <p class="ae-scope">
+            Scope of review: eligibility, exam format, fees and timeline were confirmed
+            against primary sources. This is an accuracy review, not an endorsement.
+          </p>
+        </div>
+      </section>
+
+      <section class="cta">
+        <h2>Join the network</h2>
+        <p>
+          The network is growing field by field. If you are a licensed professional who'd like
+          to review guides in your area of expertise, reach out through our
+          <a href={TRUST_PAGES.contact}> contact page</a> and select "Join the licensed-expert
+          review network." We verify your license, then match you to guides in your field.
+        </p>
+        <p class="cta-links">
+          <a href={TRUST_PAGES.contact}>Apply to review</a>
+          <a href={TRUST_PAGES.methodology}>How we research</a>
+          <a href={TRUST_PAGES.editorialPolicy}>Editorial policy</a>
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <TopicHubs />
+</BaseLayout>
+
+<style>
+  .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
+
+  .page-hero { padding: 4.5rem 0 3rem; border-bottom: 2px solid var(--ink); margin-bottom: 3.5rem; }
+  .page-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin: 0 0 1.25rem; font-weight: 700; }
+  .page-hero h1 { font-family: var(--font-heading); font-size: var(--fs-h1); line-height: 1.12; margin: 0 0 1.5rem; }
+  .page-hero .lede { font-family: var(--font-body); font-size: var(--fs-prose); color: var(--muted); line-height: 1.75; }
+
+  .prose section { margin-bottom: 3rem; scroll-margin-top: 6rem; }
+  .prose h2 { font-family: var(--font-heading); font-size: var(--fs-h2); margin: 0 0 1.1rem; line-height: 1.2; }
+  .prose p { font-family: var(--font-body); font-size: var(--fs-prose); line-height: 1.8; margin: 0 0 1.35rem; color: var(--ink); }
+  .prose a { color: var(--primary); font-weight: 600; text-underline-offset: 3px; }
+  .prose strong { color: var(--ink); }
+
+  /* Process */
+  .process { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.25rem; counter-reset: step; }
+  .process li { position: relative; padding: 1.1rem 1.25rem 1.1rem 3.5rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); counter-increment: step; }
+  .process li::before { content: counter(step); position: absolute; left: 1.1rem; top: 1.1rem; width: 1.8rem; height: 1.8rem; display: grid; place-items: center; border-radius: 50%; background: var(--primary); color: #fff; font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; }
+  .process h4 { font-family: var(--font-heading); font-size: var(--fs-h3); margin: 0 0 0.4rem; }
+  .process p { margin: 0; font-size: 1rem; line-height: 1.65; color: var(--muted); }
+
+  /* Domains */
+  .domains { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 1rem; }
+  .domain { padding: 1.25rem 1.4rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+  .domain h4 { font-family: var(--font-heading); font-size: 1.15rem; margin: 0 0 0.4rem; }
+  .domain p { margin: 0; font-size: 0.92rem; line-height: 1.55; color: var(--muted); }
+
+  /* Attribution example */
+  .attribution-example { padding: 1.4rem 1.6rem; background: var(--cream); border-left: 4px solid var(--primary); border-radius: var(--radius); }
+  .ae-eyebrow { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; margin: 0 0 0.4rem !important; }
+  .ae-name { font-family: var(--font-heading); font-size: 1.3rem; font-weight: 600; margin: 0 0 0.5rem !important; color: var(--ink); }
+  .ae-verify { font-size: 0.95rem; margin: 0 0 0.6rem !important; color: var(--muted); }
+  .ae-placeholder { font-style: italic; }
+  .ae-verify a { color: var(--primary); font-weight: 600; }
+  .ae-scope { font-size: 0.92rem; line-height: 1.6; margin: 0 !important; color: var(--muted); }
+
+  /* CTA */
+  .cta { border-top: 1px solid var(--line); padding-top: 2.5rem; }
+  .cta-links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
+  .cta-links a { display: inline-block; padding: 0.6rem 1.1rem; border: 1px solid var(--line); border-radius: 999px; background: var(--cream); text-decoration: none; font-family: var(--font-body); font-size: 0.95rem; }
+  .cta-links a:hover { border-color: var(--primary); }
+
+  @media (max-width: 640px) {
+    .domains { grid-template-columns: 1fr; }
+  }
+</style>

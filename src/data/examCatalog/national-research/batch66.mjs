@@ -1,3 +1,4 @@
+// Research-backed exam records for batch file batch66.mjs.
 export const programs = [
   {
     "body": "Leave No Trace Center for Outdoor Ethics",
@@ -240,6 +241,7 @@ export const programs = [
     "confidence": "low"
   }
 ];
+
 export const exams = [
   {
     "slug": "leave-no-trace-master-educator",
@@ -1133,13 +1135,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "NASM CPT recommended",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "100 questions",
+      "time": "120 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$499",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "National Academy of Sports Medicine"
     },
@@ -1176,7 +1178,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Valid 2 years (renewal with CEUs)"
       ],
       [
         "Languages",
@@ -1217,8 +1219,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "50-70 hours over 5-7 weeks",
+    "cost": "~$499 (exam fee, tier-dependent)",
     "faqs": [
       {
         "q": "How do I register for the NASM Performance Enhancement Specialist exam?",
@@ -1252,7 +1254,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$25,000-$65,000 (39-9031 median $46,180)"
   },
   {
     "slug": "nasm-weight-loss-specialist",
@@ -1666,4 +1669,5 @@ export const exams = [
     "confidence": "low"
   }
 ];
+
 export default { programs, exams };

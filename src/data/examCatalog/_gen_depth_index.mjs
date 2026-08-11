@@ -7,7 +7,7 @@ import { dirname, join } from 'node:path';
 const here = dirname(fileURLToPath(import.meta.url));
 const depthDir = join(here, 'depth');
 
-const files = readdirSync(depthDir).filter(f => f.endsWith('.mjs') && f !== 'index.mjs');
+const files = readdirSync(depthDir).filter(f => f.endsWith('.mjs') && f !== 'index.mjs' && !f.startsWith('_'));
 files.sort();
 
 const imports = files.map((f, i) => `import d${i} from './${f}';`).join('\n');

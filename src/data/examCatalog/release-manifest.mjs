@@ -10,7 +10,6 @@ export const releases = {
   "ase-t7-truck-hvac": "2026-08-04",
   "aws-certified-cloud-practitioner": "2026-08-04",
   "aws-certified-solutions-architect-associate": "2026-08-04",
-  "california-real-estate-license": "2026-08-04",
   "cdl-air-brakes-knowledge-test": "2026-08-04",
   "cdl-combination-vehicles-knowledge-test": "2026-08-04",
   "cdl-general-knowledge-test": "2026-08-04",
@@ -59,7 +58,7 @@ export const releases = {
 export function isReleased(slug, now = new Date()) {
   const d = releases[slug];
   if (!d) return false;
-  return new Date(d + "T00:00:00Z") <= now;
+  return new Date(d + 'T00:00:00Z') <= now;
 }
 
 export default releases;

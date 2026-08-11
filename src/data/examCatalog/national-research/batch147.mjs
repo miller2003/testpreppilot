@@ -4882,12 +4882,12 @@ export const exams = [
     ],
     "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
-    "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
-      "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
-      "format": "Proctored, computer-based (test center or online remote proctoring)",
+        "examMeta": {
+      "questions": "~60 multiple-choice questions",
+      "time": "Up to 3 hours",
+      "pass": "~45/60 (~75%) — HubSpot publishes no pass rates",
+      "fee": "Free",
+      "format": "Online exam through your HubSpot Academy account (no test center, no proctoring)",
       "admin": "HubSpot"
     },
     "topics": [

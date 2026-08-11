@@ -1,0 +1,19 @@
+---
+// Legacy/defensive URL. The canonical privacy policy lives at /privacy.
+// This page exists only so any old or external link to /privacy-policy still
+// resolves instead of 404ing. It is not indexed and points to the real page.
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const target = '/privacy';
+---
+
+<BaseLayout title="Privacy Policy — TestPrepPilot" description="TestPrepPilot privacy policy." canonical={target} noindex={true} />
+
+<meta http-equiv="refresh" content={`0; url=${target}`} />
+
+<main style="max-width:640px;margin:8rem auto;text-align:center;font-family:var(--font-body);padding:0 2rem;">
+  <h1 style="font-family:var(--font-heading);font-size:2rem;margin-bottom:1rem;">Redirecting to our Privacy Policy…</h1>
+  <p style="color:var(--muted);">
+    If you are not redirected, <a href={target} style="color:var(--primary);font-weight:600;">click here to read our privacy policy</a>.
+  </p>
+</main>

@@ -1,0 +1,125 @@
+const data = {
+  author: {
+    name: 'TestPrepPilot Editorial Desk',
+    title: 'Food safety & hospitality certifications desk',
+    bio: 'California food-handler facts in this guide come from the California Health and Safety Code (SB 602/SB 603 law) and county health-department guidance, including the ANSI-accredited course requirement, the 70 percent passing standard, the three-year validity and the employer reimbursement rule; no pass-rate statistics are published, which we state plainly. Salary figures come from the BLS occupational series named by SOC code (May 2024).',
+    url: '/editorial-policy'
+  },
+  reviewedBy: 'Verified the California Food Handler Card law, course and exam requirements and the employer-cost rule against the Health and Safety Code and county health-department pages; verified BLS food-service wage data. Reviewed 2026-08.',
+  lastReviewed: '2026-08',
+  salaryOutlook: {
+    headline: 'The California Food Handler Card is an entry-level employment gate: fast food and counter workers earned a $27,010 median in May 2024 (BLS)',
+    summary: 'The California Food Handler Card is an entry-level training credential that proves a foodservice employee understands basic food safety - proper handwashing, safe food temperatures, avoiding cross-contamination, and personal hygiene - and it is required by California law for most foodservice employees within 30 days of hire. It is not a job license for a specific occupation, so there is no single BLS SOC code attached to it; what it does is satisfy the state-mandated food-safety training requirement imposed on front-line foodservice staff across California. The salary story belongs to the occupations that require it. BLS reported that fast food and counter workers (SOC 35-3023), the largest foodservice occupation, earned a median of $27,010 in May 2024, while waiters and waitresses (35-3031) earned about $28,080 and restaurant cooks (35-2014) about $32,390; these are wage-and-salary figures that include tip-based roles where cash compensation is understated. The structural point for workers is that the card is cheap (state law requires at least one course option priced at $15 or less), quick (the course is designed to be completed in about two and a half hours), and widely required, so it functions as a hireability signal at the entry level; for employers it is a compliance tool, and since January 1, 2024 California employers are required to reimburse the cost of the training. The upgrade path matters more than the card itself: the Food Protection Manager certification, which California recognizes for managers, opens the food-service-manager occupation, and food service managers (35-2021) earned a $65,310 median in May 2024 per BLS. BLS classifies workers by job duty, not certificates, so no credential maps to a specific wage; the card removes a hiring barrier, and the wage follows the job.',
+    rows: [
+      { label: 'Fast food and counter workers median, May 2024', value: '$27,010', note: 'BLS OEWS, SOC 35-3023' },
+      { label: 'Waiters and waitresses median, May 2024', value: '~$28,080', note: 'BLS OEWS, SOC 35-3031 (tips understated)' },
+      { label: 'Cooks, restaurant median, May 2024', value: '~$32,390', note: 'BLS OEWS, SOC 35-2014' },
+      { label: 'Food service managers median, May 2024', value: '$65,310', note: 'BLS OEWS, SOC 35-2021' }
+    ],
+    growth: 'Foodservice employment is projected to grow about 6 percent from 2024 to 2034, with large replacement demand in entry roles.',
+    source: { label: 'BLS Occupational Outlook Handbook - Food and Beverage Serving and Related Workers', url: 'https://www.bls.gov/ooh/food-preparation-and-serving/food-and-beverage-serving-and-related-workers.htm' }
+  },
+  passRate: {
+    headline: 'California law requires a 70 percent passing score on a food-handler exam of at least 40 questions, and no pass-rate statistics are published for the state program.',
+    summary: 'The direct answer on pass rates is that no state agency publishes cohort pass-rate statistics for the California Food Handler Card exam, so any percentage circulating online is a private estimate rather than an official figure, and we do not restate one here. What is published and stable is the statutory structure: under California Health and Safety Code section 113948, the food-handler training course and examination must be offered by an American National Standards Institute (ANSI) accredited training provider that meets the ASTM E2659-09 standard for certificate programs, the course must be designed to be completed within approximately two and a half hours, the examination must consist of at least 40 questions on the required subject matter, and a minimum score of 70 percent is required to pass. The required subject matter covers foodborne illness, time and temperature control for safe food handling, personal hygiene, food contamination prevention, cleaning and sanitation, safe kitchen processes, and allergen handling including the major food allergens added to the required elements in 2021. The course and exam may be delivered trainer-led, online, or in a combination, and the statute explicitly does not require a proctor for online delivery, which makes the exam a training-certification assessment rather than a proctored licensure examination. The card is issued upon passing, is valid for three years from the date of issuance regardless of employer changes, and belongs to the employee, who can carry it to another employer while it is valid. The practical read on difficulty: the content is a finite set of food-safety rules, the passing bar is 70 percent, and candidates who complete the course and review the missed items pass reliably, so completion is the realistic bar and the card is a compliance credential whose value is in satisfying the legal requirement rather than in competitive scoring. Because no pass rate is published, the honest summary is that the statutory structure is public, the cut is 70 percent on at least 40 questions, and candidates should study the course materials to that standard.',
+    source: { label: 'California Health and Safety Code, Section 113948', url: 'https://california.public.law/codes/health_and_safety_code_section_113948' },
+    caveat: 'No pass-rate statistics are published for the California Food Handler Card. The statutory requirement is 70 percent on an exam of at least 40 questions from an ANSI-ASTM accredited provider.'
+  },
+  studyPlan: {
+    summary: 'The California Food Handler Card course is short and self-paced, so a study plan is measured in hours rather than weeks: a realistic plan is 1.5 to 3 hours in one or two sessions, because the course is designed to be completed in about two and a half hours and ends with an exam of at least 40 questions at a 70 percent passing bar. The course content is organized into core food-safety topics: personal hygiene and handwashing, the temperature danger zone (41 degrees F to 135 degrees F) and proper hot and cold holding, cooking and reheating temperatures, cross-contamination and separation of foods, cleaning and sanitizing, safe receiving and storage, and allergen handling including the major food allergens. A realistic plan: session one (45-75 minutes) works through the course modules with the official course materials open and takes notes on the temperature charts and the cross-contamination rules; session two (30-45 minutes) takes the exam and reviews any missed items; if a retake is needed, session three (20-30 minutes) reviews the specific topics behind the missed questions and retakes. Because the exam is a training-certification assessment drawn from the course content, the failure mode is not difficulty but rushing: candidates who skip the temperature charts and the allergen and cross-contamination sections tend to miss the largest cluster of items. The single most important thing to memorize is the temperature danger zone and the key cooking temperatures (poultry 165 degrees F, ground meats 155 degrees F, whole meats 145 degrees F, and hot holding at 135 degrees F or above), because these appear repeatedly across items. California employers must reimburse the cost of the training under the rule that took effect January 1, 2024, so candidates should confirm with their employer before paying out of pocket, and the card itself is valid for three years and belongs to the employee. For candidates who plan to move up, the Food Protection Manager certification is the separate, more rigorous credential that California recognizes for manager positions.',
+    totalHours: '1.5-3 hours (one to two sessions)',
+    weeks: [
+      { label: 'Session 1', focus: 'Course modules', tasks: ['Work through the ANSI-accredited course modules', 'Note the temperature charts, allergen and cross-contamination rules'], hours: 1.25 },
+      { label: 'Session 2', focus: 'Exam', tasks: ['Take the exam of at least 40 questions', 'Review missed items against the course materials'], hours: 0.75 },
+      { label: 'Session 3 (if needed)', focus: 'Retake', tasks: ['Review the missed topics', 'Retake to 70% or better'], hours: 0.5 }
+    ],
+    variants: [
+      { label: 'Bilingual delivery', detail: 'Approved providers offer the course in multiple languages; take it in the language you read most fluently.' },
+      { label: 'Manager upgrade', detail: 'The Food Protection Manager certification is the separate credential California recognizes for managers.' }
+    ]
+  },
+  prepStrategies: {
+    summary: 'The most effective strategies for the California Food Handler Card exam are about memorizing a small set of rules and applying them consistently. Strategy one: memorize the temperature danger zone (41 degrees F to 135 degrees F) and the four critical cooking temperatures (165 degrees F for poultry and stuffed items, 155 degrees F for ground meats, 145 degrees F for whole muscle meats and fish, 135 degrees F for hot holding) because temperature items are the largest and most predictable cluster on the exam. Strategy two: understand cross-contamination in practice - separate cutting boards for raw and ready-to-eat foods, store raw meat below ready-to-eat food in the refrigerator, wash hands after touching raw meat - because scenario items test the application, not just the definition. Strategy three: master the handwashing rule (wash for at least 20 seconds with warm water and soap, before handling food, after using the restroom, after touching raw foods) since hygiene items recur across the exam. Strategy four: learn the difference between cleaning (removing soil) and sanitizing (reducing pathogens), a distinction the exam tests directly. Strategy five: know the allergen rules, because California added the major food allergens to the required training elements in 2021 and allergen items appear on current exams. Strategy six: take the exam soon after finishing the course while the rules are fresh; the content is small enough that same-day testing is the efficient path, and retakes are available if the first attempt falls short of the 70 percent bar. Finally, confirm the employer reimbursement rule before paying: since January 1, 2024 California employers are required to cover the cost of the training and exam, so the card may cost the employee nothing out of pocket.',
+    items: [
+      { title: 'Memorize the temperature rules', detail: 'Danger zone 41-135 degrees F and the four cooking temperatures are the exam\u2019s core.' },
+      { title: 'Apply cross-contamination rules', detail: 'Scenario items test separation, storage order and handwashing.' },
+      { title: 'Know cleaning vs sanitizing', detail: 'The exam distinguishes removing soil from reducing pathogens.' },
+      { title: 'Cover the allergen items', detail: 'California added the major food allergens to the required training in 2021.' },
+      { title: 'Confirm employer reimbursement', detail: 'Since January 1, 2024 California employers must cover the training cost.' }
+    ]
+  },
+  resourceComparison: {
+    summary: 'The California Food Handler Card resource market is simple because state law defines the path: the card can only be issued by an ANSI-ASTM accredited training provider, and the provider\u2019s course includes the training, the exam of at least 40 questions and the card itself, priced around $15 or less for the low-cost option that state law requires to exist. The official provider list is maintained by ANSI, and candidates should confirm the provider is on the current accredited list before purchasing, because only accredited providers can issue a valid card. Popular accredited providers include the major national food-safety training companies, and their California-specific courses cost roughly $7-$15; the state statute requires at least one course option priced at no more than $15 so the card stays accessible. The printed California Food Handler study materials that some providers sell ($10-$20) are optional companions to the online course and are not required. Third-party quiz sites and free practice tests ($0-$10) exist and can help rehearse the question style, but they are not accredited programs and cannot issue the card, and some carry outdated temperature values that conflict with the current FDA food code, which is a real risk because the exam is drawn from the accredited provider\u2019s course. The honest ranking: the accredited provider\u2019s course, optionally the provider\u2019s printed guide, and free practice quizzes - nothing else is needed, and since January 1, 2024 the employer must reimburse the cost. The footnote that anchors the comparison: prices below are list prices as of mid-2026 and change frequently, and we rank nothing by commission; candidates should also remember that Riverside, San Bernardino and San Diego counties operate their own local card programs with separate requirements.',
+    columns: ['Resource', 'Price', 'Format', 'Best for'],
+    rows: [
+      { label: 'ANSI-accredited provider course (official path)', values: ['~$7-15', 'Online or trainer-led', 'The required training, exam and card'], note: '' },
+      { label: 'Provider printed study guide', values: ['$10-20', 'Print', 'Optional companion to the course'], note: '' },
+      { label: 'Free practice quizzes', values: ['Free', 'Online', 'Question-style rehearsal; cannot issue the card'], note: '' },
+      { label: 'Food Protection Manager certification', values: ['~$100-150', 'Proctored exam', 'The manager-level credential California recognizes'], note: '' }
+    ],
+    footnote: 'List prices as of mid-2026 and change frequently; we rank nothing by commission. State law requires at least one course option priced at $15 or less, and California employers must reimburse the cost since January 1, 2024.'
+  },
+  commonMistakes: {
+    summary: 'The most common mistakes on the California Food Handler Card exam are about memorizing the wrong details or misapplying the rules. Mistake one: taking a course from a provider that is not on the ANSI-accredited list, which produces a card that does not satisfy the California law and wastes the money; candidates should verify accreditation before purchasing. Mistake two: confusing cleaning with sanitizing; the exam tests the distinction directly, and many candidates answer clean items as if cleaning removed pathogens. Mistake three: misremembering the hot-holding temperature (135 degrees F) or the cold-holding temperature (41 degrees F), which are the two most-tested numbers; getting the danger zone wrong cascades into several items. Mistake four: treating cross-contamination as a definition instead of a scenario; the exam presents situations (raw chicken stored above ready-to-eat food, one cutting board for everything) and tests whether the candidate can spot the risk. Mistake five: skipping the allergen content, which California added to the required training elements in 2021 and which current exams test. Mistake six: assuming the card never expires; the card is valid for three years from issuance, and an expired card fails the same compliance check the original satisfied, so candidates should set a renewal reminder. Finally, candidates who forget the employer reimbursement rule pay for training the employer must cover, and candidates in Riverside, San Bernardino or San Diego counties may need the local card instead of the state card, since those counties operate their own programs and do not accept the state card in their jurisdictions. Candidates who read the provider\u2019s terms before buying and track the three-year validity avoid every one of these traps.',
+    items: [
+      { mistake: 'Using a non-accredited provider', fix: 'Confirm the provider is on the ANSI accredited list before buying; only accredited courses issue valid cards.' },
+      { mistake: 'Confusing clean and sanitize', fix: 'Cleaning removes soil; sanitizing reduces pathogens.' },
+      { mistake: 'Misremembering key temperatures', fix: 'Hot hold 135 degrees F, cold hold 41 degrees F, danger zone 41-135 degrees F.' },
+      { mistake: 'Memorizing instead of applying', fix: 'Practice the scenario items on cross-contamination and allergen handling.' },
+      { mistake: 'Assuming the card never expires', fix: 'Track the three-year validity window and set a renewal reminder.' }
+    ]
+  },
+  questionTypes: {
+    summary: 'The California Food Handler Card exam consists of at least 40 multiple-choice questions with a passing score of 70 percent, delivered at the end of an ANSI-ASTM accredited training course that is designed to be completed in about two and a half hours; the exam may be trainer-led, online, or a combination, and the statute does not require a proctor for online delivery. Items are drawn from the course\u2019s core topics: foodborne illness, time and temperature control (the danger zone of 41-135 degrees F and the cooking and holding temperatures), personal hygiene (handwashing and illness exclusion), food contamination prevention and cross-contamination, cleaning and sanitizing, safe kitchen processes, and allergen handling including the major food allergens. Most items are either direct knowledge questions (what temperature) or scenario questions (what should the employee do next), and the temperature and cross-contamination clusters carry the largest share. The exam is delivered through the provider\u2019s platform at the end of the course, results are available immediately, and candidates who fall short can review the course material and retake, because the statute does not require a proctor for online delivery and the assessment functions as a training check rather than a competitive gate. The passing bar of 70 percent on at least 40 questions means a candidate can miss up to 30 percent of the items and still pass, which makes the exam accessible to anyone who completes the course, but it also means the temperature values and the cleaning-versus-sanitizing distinction must be learned rather than guessed, because the recurring scenario items all hinge on those specifics. Samples below are editor-written illustrations of the published course content, not live exam items.',
+    types: [
+      { name: 'Temperature control', share: 'Largest cluster', detail: 'Danger zone, cooking, hot/cold holding, cooling.' },
+      { name: 'Personal hygiene', share: 'Core cluster', detail: 'Handwashing, illness exclusion, glove use.' },
+      { name: 'Cross-contamination', share: 'Core cluster', detail: 'Separation, storage order, cleaning between tasks.' },
+      { name: 'Cleaning and sanitizing', share: 'Core cluster', detail: 'Clean vs sanitize, sanitizer use, cloths.' },
+      { name: 'Allergen handling', share: 'Required content', detail: 'The major food allergens and avoidance of allergen cross-contact.' }
+    ],
+    samples: [
+      {
+        prompt: 'A food handler has been slicing raw chicken on a cutting board. Before using the same board to slice lettuce, the handler must do what first?',
+        options: ['A. Wipe the board with a damp cloth', 'B. Wash, rinse and sanitize the board', 'C. Turn the board over', 'D. Spray the board with water'],
+        answer: 'B',
+        explanation: 'After raw meat contact, a cutting board must be washed, rinsed and sanitized before use with ready-to-eat food to prevent cross-contamination. Wiping or turning the board does not remove the contamination risk.'
+      },
+      {
+        prompt: 'What is the temperature danger zone within which food must not be held for more than 4 hours cumulatively?',
+        options: ['A. 32 degrees F to 100 degrees F', 'B. 41 degrees F to 135 degrees F', 'C. 50 degrees F to 150 degrees F', 'D. 60 degrees F to 140 degrees F'],
+        answer: 'B',
+        explanation: 'The FDA-based food code danger zone is 41 degrees F to 135 degrees F, the range in which pathogens grow rapidly. This is the single most-tested number on the exam.'
+      },
+      {
+        prompt: 'A food handler reports vomiting and diarrhea that began this morning. What should the manager do?',
+        options: ['A. Assign the handler to dishwashing only', 'B. Exclude the handler from work per illness policy', 'C. Ask the handler to wear a mask', 'D. Have the handler work in the back office'],
+        answer: 'B',
+        explanation: 'Food handlers with vomiting and diarrhea symptoms must be excluded from work to prevent foodborne illness spread; the exclusion period follows the jurisdiction\u2019s policy and the handler must be symptom-free for the required time before returning.'
+      }
+    ],
+    note: 'Samples are editor-written illustrations of the published course content, not live exam items.'
+  },
+  examDay: {
+    summary: 'The California Food Handler Card exam has no physical test center: the course and exam are completed through an ANSI-accredited training provider, online at any time or in a trainer-led class, on any device with an internet connection, and there is no proctor, no appointment and no deadline for the typical online format. Candidates enroll with an approved provider, complete the training modules (designed to be finished in about two and a half hours), and then take the exam of at least 40 questions, needing 70 percent to pass; most candidates finish the whole process in a single sitting of about two hours. After passing, the provider issues the card, valid for three years from the date of issuance, and the card belongs to the employee, who can carry it to another California employer while it is valid; the employer must keep a copy on file. Candidates should confirm their employer accepts the state card (Riverside, San Bernardino and San Diego counties operate their own local programs), confirm the provider is on the ANSI accredited list, and confirm the employer reimbursement rule, because since January 1, 2024 California employers must cover the cost of the training and exam. The card is required within 30 days of hire for most foodservice employees, so new hires should complete it promptly rather than waiting. Afterwards, the natural next step for career growth is the Food Protection Manager certification, the separate, proctored credential that California recognizes for manager positions; it opens the food-service-manager occupation and the higher wage range that occupation carries.',
+    bring: ['An ANSI-accredited provider\u2019s course purchase', 'Stable internet connection (for online delivery)', 'About two hours of uninterrupted time', 'Employer requirements and reimbursement confirmation'],
+    leave: ['Proctoring or an appointment - there is none in the typical online format', 'Special software beyond a browser', 'Deadlines - the course is self-paced within the enrollment window'],
+    timeline: [
+      { time: 'Step 1', detail: 'Confirm the provider is on the ANSI accredited list and enroll in the California-specific course.' },
+      { time: 'Step 2', detail: 'Work through the training modules (about 1-2 hours).' },
+      { time: 'Step 3', detail: 'Take the exam of at least 40 questions; 70% passes.' },
+      { time: 'Step 4', detail: 'Retake if needed; receive the card valid for three years.' },
+      { time: 'Step 5', detail: 'Give the employer a copy and confirm reimbursement; plan the manager-certification upgrade if relevant.' }
+    ],
+    rules: [
+      'The course and exam are delivered by ANSI-ASTM accredited providers; online delivery requires no proctor.',
+      'The exam has at least 40 questions and requires a 70 percent passing score.',
+      'The card is valid for three years and belongs to the employee.',
+      'The card is required within 30 days of hire for most foodservice employees.',
+      'California employers must reimburse the training cost since January 1, 2024.'
+    ],
+    afterwards: 'Provide the employer a copy of the card and confirm reimbursement of the cost; set a renewal reminder for the three-year validity window, and consider the Food Protection Manager certification for manager roles.'
+  }
+};
+
+export default data;

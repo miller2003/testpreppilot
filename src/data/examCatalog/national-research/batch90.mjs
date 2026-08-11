@@ -1,3 +1,4 @@
+// Research-backed exam records for batch file batch90.mjs.
 export const programs = [
   {
     "body": "AICPA & CIMA",
@@ -528,6 +529,7 @@ export const programs = [
     "confidence": "low"
   }
 ];
+
 export const exams = [
   {
     "slug": "cgma-finance-leadership-exam",
@@ -3926,13 +3928,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "None — open to mortgage professionals",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "Course exams (3)",
+      "time": "Varies by course (3 course exams)",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$1,000-$1,500",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "Mortgage Bankers Association (MBA)"
     },
@@ -3969,7 +3971,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Renewal with continuing education"
       ],
       [
         "Languages",
@@ -4010,8 +4012,8 @@ export const exams = [
     },
     "difficulty": "Regulated",
     "audience": "Professionals and candidates seeking to validate Finance & Securities competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "60-80 hours over 6-8 weeks (3 courses)",
+    "cost": "~$1,000-$1,500 (course + exam)",
     "faqs": [
       {
         "q": "How do I register for the Accredited Mortgage Professional Designation exam?",
@@ -4042,7 +4044,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$50,000-$100,000 (13-2072 median $74,180)"
   },
   {
     "slug": "mba-certified-mortgage-banker",
@@ -5442,11 +5445,11 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Pre-licensure education, the national test, the state test, a credit report and a criminal background check.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "140 (136 scored)",
+      "time": "190 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Varies by location and currency — confirm on the official registration page",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
@@ -5485,7 +5488,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "The test score is valid per the NMLS rules; the MLO licence renews annually."
       ],
       [
         "Languages",
@@ -5526,8 +5529,8 @@ export const exams = [
     },
     "difficulty": "Regulated",
     "audience": "Professionals and candidates seeking to validate Finance & Securities competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "190 minutes (140 questions, 136 scored)",
+    "cost": "~$110 + state fees",
     "faqs": [
       {
         "q": "How do I register for the SAFE Mortgage Loan Originator National Test with Uniform State Content exam?",
@@ -5539,7 +5542,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Nationwide Multistate Licensing System (NMLS)'s policy."
+        "a": "The SAFE national test score is valid for the period the NMLS rules specify; the MLO licence itself renews annually with continuing education."
       },
       {
         "q": "What if I do not pass?",
@@ -5555,7 +5558,9 @@ export const exams = [
     "relatedSlugs": [],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$41,000-$160,000"
   }
 ];
+
 export default { programs, exams };

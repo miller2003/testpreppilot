@@ -1,3 +1,4 @@
+// Research-backed exam records for batch file batch65.mjs.
 export const programs = [
   {
     "body": "American College of Sports Medicine",
@@ -439,6 +440,7 @@ export const programs = [
     "confidence": "low"
   }
 ];
+
 export const exams = [
   {
     "slug": "acsm-certified-clinical-exercise-physiologist",
@@ -1024,13 +1026,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Be at least 18 years old, hold a high school diploma or equivalent, and hold a current adult CPR/AED certification with a live skills component.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "135 (120 scored + 15 unscored pretest items)",
+      "time": "150 minutes (2.5 hours)",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$199 exam-only; package pricing varies (member discounts apply)",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "American College of Sports Medicine"
     },
@@ -1067,7 +1069,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "3 years — renew with continuing education credits (CECs) or by retaking the exam."
       ],
       [
         "Languages",
@@ -1108,8 +1110,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "150 minutes (135 questions)",
+    "cost": "~$349-$399 (exam-only pricing)",
     "faqs": [
       {
         "q": "How do I register for the ACSM Certified Personal Trainer exam?",
@@ -1121,7 +1123,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see American College of Sports Medicine's policy."
+        "a": "ACSM CPT certification is valid for 3 years and is renewed by earning the required continuing education credits (CECs) and paying the renewal fee, or by retaking the current exam; check the ACSM certification site for the current renewal policy."
       },
       {
         "q": "What if I do not pass?",
@@ -1143,7 +1145,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$30,000-$65,000"
   },
   {
     "slug": "ace-certified-group-fitness-instructor",
@@ -1165,13 +1168,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "None (CPR required to certify)",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "125 questions",
+      "time": "3 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "$400-500 package",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "American Council on Exercise"
     },
@@ -1208,7 +1211,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Valid 2 years, then renewal with CEUs"
       ],
       [
         "Languages",
@@ -1249,8 +1252,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "40-60 hours",
+    "cost": "$400-500 package",
     "faqs": [
       {
         "q": "How do I register for the ACE Group Fitness Instructor Certification exam?",
@@ -1282,7 +1285,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$46,180 median, fitness trainers (BLS May 2024)",
+    "examEssentials[3][1]": "Valid 2 years, then renewal with CEUs"
   },
   {
     "slug": "ace-certified-personal-trainer",
@@ -1905,13 +1910,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "None (18+ and high-school diploma typical)",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "~120 questions",
+      "time": "2 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$200-$400",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "Athletics and Fitness Association of America"
     },
@@ -1948,7 +1953,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Valid 2 years (renewal with CEUs)"
       ],
       [
         "Languages",
@@ -1989,8 +1994,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "40-60 hours over 4-6 weeks",
+    "cost": "~$200-$400 (exam fee, tier-dependent)",
     "faqs": [
       {
         "q": "How do I register for the AFAA Group Fitness Instructor Certification exam?",
@@ -2020,7 +2025,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$25,000-$60,000 (39-9031 median $46,180)"
   },
   {
     "slug": "amga-alpine-guide",
@@ -2598,13 +2604,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Valid Red Cross Lifeguarding certification",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "Written + teaching demonstrations",
+      "time": "2-3 days",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$300-$500",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "American Red Cross"
     },
@@ -2641,7 +2647,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Certification valid 2 years (renewal)"
       ],
       [
         "Languages",
@@ -2682,8 +2688,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "Course-based (typically 2-3 days)",
+    "cost": "~$300-$500 (course fee)",
     "faqs": [
       {
         "q": "How do I register for the American Red Cross Lifeguarding Instructor Certification exam?",
@@ -2714,7 +2720,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$25,000-$50,000 (33-9092 median $33,720)"
   },
   {
     "slug": "american-red-cross-lifeguarding",
@@ -2736,13 +2743,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Pass the pre-course swim skills evaluation",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "40-50 questions",
+      "time": "2-3 day course",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "$250-350",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "American Red Cross"
     },
@@ -2779,7 +2786,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Valid 2 years, then recertification"
       ],
       [
         "Languages",
@@ -2820,8 +2827,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "25-30 hours + swim conditioning",
+    "cost": "$250-350",
     "faqs": [
       {
         "q": "How do I register for the American Red Cross Lifeguarding Certification exam?",
@@ -2852,7 +2859,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$33,720 median, lifeguards (BLS May 2024)",
+    "examEssentials[3][1]": "Valid 2 years, then recertification"
   },
   {
     "slug": "american-red-cross-water-safety-instructor",
@@ -3147,13 +3156,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Foundations reading",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "40 questions",
+      "time": "End of 2-day seminar",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$1,000",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "CrossFit, Inc."
     },
@@ -3190,7 +3199,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Renewable annually"
       ],
       [
         "Languages",
@@ -3231,8 +3240,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "16 seminar hours + pre-reading",
+    "cost": "~$1,000",
     "faqs": [
       {
         "q": "How do I register for the CrossFit Level 1 Trainer Certificate exam?",
@@ -3264,7 +3273,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$46,180 median, fitness trainers (BLS May 2024)",
+    "examEssentials[3][1]": "Renewable annually"
   },
   {
     "slug": "crossfit-level-2-trainer",
@@ -4108,13 +4119,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Be at least 18 years old, hold a high school diploma or equivalent, and hold a current CPR/AED certification.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "200 (all scored, open-book online exam)",
+      "time": "Up to 4 hours (self-scheduled online)",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$399-$799 depending on the package (exam included in course bundles)",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "International Sports Sciences Association"
     },
@@ -4151,7 +4162,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "2 years — renew with 20 continuing education units (CEUs) or by retaking the exam."
       ],
       [
         "Languages",
@@ -4192,8 +4203,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "180 minutes (200 questions)",
+    "cost": "~$500-$1,000 depending on tier and promotions",
     "faqs": [
       {
         "q": "How do I register for the ISSA Certified Personal Trainer exam?",
@@ -4205,7 +4216,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see International Sports Sciences Association's policy."
+        "a": "ISSA CPT certification is valid for 2 years and is renewed by earning 20 continuing education units (CEUs) and paying the renewal fee, or by retaking the current exam; check the ISSA site for the current renewal policy."
       },
       {
         "q": "What if I do not pass?",
@@ -4225,7 +4236,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$30,000-$65,000"
   },
   {
     "slug": "issa-elite-trainer",
@@ -4645,4 +4657,5 @@ export const exams = [
     "confidence": "low"
   }
 ];
+
 export default { programs, exams };

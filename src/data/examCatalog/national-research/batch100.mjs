@@ -1071,13 +1071,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Graduation from an approved practical/vocational nursing education program and an Authorization to Test (ATT) from your state board of nursing.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "85-205 (computer-adaptive, variable per candidate)",
+      "time": "Up to 5 hours (variable by candidate)",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$200 (NCSBN) plus state board and processing fees",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "National Council of State Boards of Nursing (NCSBN)"
     },
@@ -1114,7 +1114,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "The LPN/LVN licence renews per your state board of nursing (commonly every 2 years); the NCLEX-PN result itself has no expiry once passed."
       ],
       [
         "Languages",
@@ -1155,8 +1155,8 @@ export const exams = [
     },
     "difficulty": "Advanced",
     "audience": "Professionals and candidates seeking to validate Healthcare (Clinical) competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "Up to 5 hours (computer-adaptive, variable per candidate)",
+    "cost": "~$200 (NCSBN) plus state board fees",
     "faqs": [
       {
         "q": "How do I register for the NCLEX-PN exam?",
@@ -1168,7 +1168,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see National Council of State Boards of Nursing (NCSBN)'s policy."
+        "a": "The NCLEX-PN result itself never expires once you pass, but the LPN/LVN licence you earn from it must be renewed on your state board of nursing's cycle (commonly every 2 years, with continuing-education or practice requirements)."
       },
       {
         "q": "What if I do not pass?",
@@ -1186,7 +1186,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$45,000-$75,000"
   }
 ];
 export default { programs, exams };

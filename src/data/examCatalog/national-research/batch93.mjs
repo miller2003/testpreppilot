@@ -1,3 +1,4 @@
+// Research-backed exam records for batch file batch93.mjs.
 export const programs = [
   {
     "body": "Certified Equity Professional Institute, Santa Clara University",
@@ -363,6 +364,7 @@ export const programs = [
     "confidence": "low"
   }
 ];
+
 export const exams = [
   {
     "slug": "certified-equity-professional-level-1",
@@ -2873,13 +2875,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Firm sponsorship required; SIE and representative-level exams",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "150 questions",
+      "time": "3h45m",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$250-$300",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "Financial Industry Regulatory Authority (FINRA)"
     },
@@ -2916,7 +2918,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Registration maintained by the sponsoring firm"
       ],
       [
         "Languages",
@@ -2957,8 +2959,8 @@ export const exams = [
     },
     "difficulty": "Regulated",
     "audience": "Professionals and candidates seeking to validate Finance & Securities competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "100-140 hours over 8-12 weeks",
+    "cost": "~$250-$300 (FINRA exam fee)",
     "faqs": [
       {
         "q": "How do I register for the Series 24 General Securities Principal Exam exam?",
@@ -2992,7 +2994,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$55,000-$120,000 (41-3031 median $78,140)"
   },
   {
     "slug": "series-26",
@@ -4278,13 +4281,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Firm sponsorship required; SIE prerequisite",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "110 questions",
+      "time": "3h25m",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$150-$200",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "Financial Industry Regulatory Authority (FINRA)"
     },
@@ -4321,7 +4324,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Registration maintained by the sponsoring firm"
       ],
       [
         "Languages",
@@ -4362,8 +4365,8 @@ export const exams = [
     },
     "difficulty": "Regulated",
     "audience": "Professionals and candidates seeking to validate Finance & Securities competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "80-100 hours over 6-10 weeks",
+    "cost": "~$150-$200 (FINRA exam fee)",
     "faqs": [
       {
         "q": "How do I register for the Series 4 Registered Options Principal Exam exam?",
@@ -4397,7 +4400,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$55,000-$120,000 (41-3031 median $78,140)"
   },
   {
     "slug": "series-50",
@@ -5260,13 +5264,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Passage of the SIE (co-requisite) and employment/sponsorship by a FINRA member firm (Form U4 filing).",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "55 (50 scored + 5 unscored pretest items)",
+      "time": "90 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$75-$100 (set by FINRA; firms may add administration fees)",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "Financial Industry Regulatory Authority (FINRA)"
     },
@@ -5303,7 +5307,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Results are valid for registration while you are associated with a sponsoring firm; the licence renews annually via Form U4."
       ],
       [
         "Languages",
@@ -5344,8 +5348,8 @@ export const exams = [
     },
     "difficulty": "Regulated",
     "audience": "Professionals and candidates seeking to validate Finance & Securities competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "90 minutes (55 questions)",
+    "cost": "~$100 (confirm at registration)",
     "faqs": [
       {
         "q": "How do I register for the Series 6 Investment Company and Variable Contracts Products Representative Exam exam?",
@@ -5357,7 +5361,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see Financial Industry Regulatory Authority (FINRA)'s policy."
+        "a": "Series 6 results are used while you are registered with a sponsoring firm; the licence renews annually through the Form U4 process, and after the first year you must complete FINRA's Regulatory Element continuing-education requirement each year by December 31."
       },
       {
         "q": "What if I do not pass?",
@@ -5379,7 +5383,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$45,000-$120,000"
   },
   {
     "slug": "series-63",
@@ -5401,13 +5406,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "No separate prerequisites — the Series 63 is typically taken alongside a qualification exam (e.g., Series 6 or 7) and requires sponsorship/registration through a member firm.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "65 (60 scored + 5 unscored pretest items)",
+      "time": "75 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$147 (set by FINRA)",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "North American Securities Administrators Association (NASAA)"
     },
@@ -5444,7 +5449,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "The licence renews while you remain registered with a sponsoring firm; some states have continuing-education requirements."
       ],
       [
         "Languages",
@@ -5485,8 +5490,8 @@ export const exams = [
     },
     "difficulty": "Regulated",
     "audience": "Professionals and candidates seeking to validate Finance & Securities competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "75 minutes (65 questions)",
+    "cost": "$147",
     "faqs": [
       {
         "q": "How do I register for the Series 63 Uniform Securities Agent State Law Exam exam?",
@@ -5498,7 +5503,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see North American Securities Administrators Association (NASAA)'s policy."
+        "a": "Series 63 registration renews while you remain associated with a sponsoring firm; most states do not require a separate CE cycle for the 63, but you should confirm your state's specific requirements, since state rules vary."
       },
       {
         "q": "What if I do not pass?",
@@ -5517,7 +5522,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$45,000-$120,000"
   }
 ];
+
 export default { programs, exams };

@@ -1,3 +1,4 @@
+// Research-backed exam records for batch file batch81.mjs.
 export const programs = [
   {
     "body": "ETS",
@@ -33,6 +34,7 @@ export const programs = [
     "confidence": "medium"
   }
 ];
+
 export const exams = [
   {
     "slug": "praxis-proethica",
@@ -759,13 +761,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Teacher-education program enrollment typical",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "~120 questions (verify current)",
+      "time": "~2 hours (verify current)",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$130",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "ETS"
     },
@@ -802,7 +804,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "State-set passing score; validity varies by state"
       ],
       [
         "Languages",
@@ -843,8 +845,8 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Education & Teaching competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "40-60 hours over 4-6 weeks",
+    "cost": "~$130 (ETS fee)",
     "faqs": [
       {
         "q": "How do I register for the Praxis Health Education (5551) exam?",
@@ -878,7 +880,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$40,000-$85,000 (25-2031 median $64,580)"
   },
   {
     "slug": "praxis-health-occupations-5052",
@@ -1605,11 +1608,11 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "State or program requirement for licensure; ETS sets no prerequisites.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "Two subtests: reading and writing",
+      "time": "Two subtests in one sitting",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Varies by location and currency — confirm on the official registration page",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
@@ -1648,7 +1651,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Praxis scores are valid for 10 years."
       ],
       [
         "Languages",
@@ -1689,8 +1692,8 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Education & Teaching competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "Two subtests in one sitting",
+    "cost": "~$130-$156",
     "faqs": [
       {
         "q": "How do I register for the Praxis Communication and Literacy Combined (5753) exam?",
@@ -1702,7 +1705,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see ETS's policy."
+        "a": "Praxis scores are valid for 10 years, subject to your state's acceptance window; each subtest has its own passing line."
       },
       {
         "q": "What if I do not pass?",
@@ -1724,7 +1727,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$44,000-$104,000"
   },
   {
     "slug": "praxis-communication-and-literacy-reading-5714",
@@ -2875,13 +2879,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "State licensure eligibility",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "120 questions",
+      "time": "2 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$130-160",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "ETS"
     },
@@ -2918,7 +2922,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Score used for state licensure; no expiry on the score"
       ],
       [
         "Languages",
@@ -2959,8 +2963,8 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Education & Teaching competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "40-70 hours",
+    "cost": "~$130-160 exam",
     "faqs": [
       {
         "q": "How do I register for the Praxis Early Childhood Education (5025) exam?",
@@ -2994,7 +2998,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$37,120 median, preschool teachers (BLS May 2024)",
+    "examEssentials[3][1]": "Score used for state licensure; no expiry on the score"
   },
   {
     "slug": "praxis-early-childhood-education-foundational-knowledge-5533",
@@ -4567,13 +4573,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Required by your state or teacher-preparation program for elementary licensure; ETS itself sets no prerequisites.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "130 (110 selected-response + 20 selected-response case-study items)",
+      "time": "2 hours 30 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$156 (confirm the current fee at ets.org/praxis)",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "ETS"
     },
@@ -4610,7 +4616,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Praxis scores are valid for 10 years."
       ],
       [
         "Languages",
@@ -4651,8 +4657,8 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Education & Teaching competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "2.5 hours (130 questions)",
+    "cost": "~$156 (confirm at ets.org/praxis)",
     "faqs": [
       {
         "q": "How do I register for the Praxis Elementary Education: Content Knowledge (5018) exam?",
@@ -4664,7 +4670,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see ETS's policy."
+        "a": "Praxis scores are valid for 10 years, subject to your state's acceptance window; because the passing score is set by each state, your state education agency is the authority on both the cut score and the validity period."
       },
       {
         "q": "What if I do not pass?",
@@ -4686,7 +4692,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$45,000-$80,000"
   },
   {
     "slug": "praxis-elementary-education-ckt-7811",
@@ -5677,4 +5684,5 @@ export const exams = [
     "examEssentials[3][1]": "Praxis scores are valid for 10 years."
   }
 ];
+
 export default { programs, exams };

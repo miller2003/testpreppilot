@@ -87,7 +87,7 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
       "questions": "Varies by exam — see the official exam guide",
@@ -228,7 +228,7 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
       "questions": "Varies by exam — see the official exam guide",
@@ -369,7 +369,7 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
       "questions": "Varies by exam — see the official exam guide",
@@ -510,7 +510,7 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
       "questions": "Varies by exam — see the official exam guide",
@@ -651,11 +651,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "None — the Foundation has no prerequisites.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "60",
+      "time": "60 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "ITIL 4 Foundation ~$425 USD (US direct); region-tiered $235–$425. Advanced modules require accredited training (no exam-only fee). PRINCE2 Foundation ~$700. Confirm live pricing on PeopleCert.",
       "format": "Online proctored exam (PeopleCert remote proctoring); some modules via accredited training organizations.",
@@ -735,7 +735,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Project & Business competence with a PeopleCert credential.",
-    "time": "Varies",
+    "time": "60 minutes (60 questions)",
     "cost": "ITIL 4 Foundation ~$425 USD (US direct); region-tiered $235–$425",
     "faqs": [
       {
@@ -770,7 +770,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$60,000-$170,000"
   },
   {
     "slug": "prince2-practitioner",
@@ -792,13 +793,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
-    "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
+    "prerequisites": "Valid PRINCE2 Foundation",
+    "eligibility": "PRINCE2 Foundation certificate required",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "68 (55% passing, 38/68)",
+      "time": "150 min",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "ITIL 4 Foundation ~$425 USD (US direct); region-tiered $235–$425. Advanced modules require accredited training (no exam-only fee). PRINCE2 Foundation ~$700. Confirm live pricing on PeopleCert.",
+      "fee": "~$300-$500",
       "format": "Online proctored exam (PeopleCert remote proctoring); some modules via accredited training organizations.",
       "admin": "PeopleCert (online proctored)"
     },
@@ -876,7 +877,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Project & Business competence with a PeopleCert credential.",
-    "time": "Varies",
+    "time": "150 min (68 questions)",
     "cost": "ITIL 4 Foundation ~$425 USD (US direct); region-tiered $235–$425",
     "faqs": [
       {
@@ -889,7 +890,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Maintain via PeopleCert Plus (CPD) subscription (~$129/yr) or by retaking / passing a higher module before expiry. Valid 3 years."
+        "a": "The Practitioner exam is open-book (the official manual is permitted) and scenario-based, passing at 55% (38 of 68)."
       },
       {
         "q": "What is the retake policy?",
@@ -911,7 +912,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$75,000-$130,000 (project management specialists)",
+    "examEssentials[3][1]": "3 years (re-registration exam or CPD)"
   },
   {
     "slug": "itil-4-foundation",
@@ -1074,13 +1077,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
-    "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
+    "prerequisites": "Valid ITIL 4 Foundation",
+    "eligibility": "ITIL 4 Foundation required",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "40 (65% passing, 26/40)",
+      "time": "90 min",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "ITIL 4 Foundation ~$425 USD (US direct); region-tiered $235–$425. Advanced modules require accredited training (no exam-only fee). PRINCE2 Foundation ~$700. Confirm live pricing on PeopleCert.",
+      "fee": "~$300-$500",
       "format": "Online proctored exam (PeopleCert remote proctoring); some modules via accredited training organizations.",
       "admin": "PeopleCert (online proctored)"
     },
@@ -1158,7 +1161,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a PeopleCert credential.",
-    "time": "Varies",
+    "time": "90 min (40 questions)",
     "cost": "ITIL 4 Foundation ~$425 USD (US direct); region-tiered $235–$425",
     "faqs": [
       {
@@ -1171,7 +1174,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Maintain via PeopleCert Plus (CPD) subscription (~$129/yr) or by retaking / passing a higher module before expiry. Valid 3 years."
+        "a": "The CDS exam is closed-book and scenario-based, passing at 65% (26 of 40); it is one of the ITIL 4 Managing Professional modules."
       },
       {
         "q": "What is the retake policy?",
@@ -1193,7 +1196,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$60,000-$110,000 (IT operations roles)",
+    "examEssentials[3][1]": "3 years (verify current renewal)"
   },
   {
     "slug": "itil-4-specialist-drive-stakeholder-value",
@@ -1215,13 +1220,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
-    "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
+    "prerequisites": "Valid ITIL 4 Foundation",
+    "eligibility": "ITIL 4 Foundation required",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "40 (65% passing, 26/40)",
+      "time": "90 min",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "ITIL 4 Foundation ~$425 USD (US direct); region-tiered $235–$425. Advanced modules require accredited training (no exam-only fee). PRINCE2 Foundation ~$700. Confirm live pricing on PeopleCert.",
+      "fee": "~$300-$500",
       "format": "Online proctored exam (PeopleCert remote proctoring); some modules via accredited training organizations.",
       "admin": "PeopleCert (online proctored)"
     },
@@ -1299,7 +1304,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a PeopleCert credential.",
-    "time": "Varies",
+    "time": "90 min (40 questions)",
     "cost": "ITIL 4 Foundation ~$425 USD (US direct); region-tiered $235–$425",
     "faqs": [
       {
@@ -1312,7 +1317,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Maintain via PeopleCert Plus (CPD) subscription (~$129/yr) or by retaking / passing a higher module before expiry. Valid 3 years."
+        "a": "The DSV exam is closed-book and scenario-based, passing at 65% (26 of 40); it covers the customer journey and stakeholder practices."
       },
       {
         "q": "What is the retake policy?",
@@ -1334,7 +1339,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$60,000-$110,000 (IT service roles)",
+    "examEssentials[3][1]": "3 years (verify current renewal)"
   },
   {
     "slug": "itil-4-specialist-high-velocity-it",
@@ -1356,13 +1363,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
-    "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
-      "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "ITIL 4 Foundation ~$425 USD (US direct); region-tiered $235–$425. Advanced modules require accredited training (no exam-only fee). PRINCE2 Foundation ~$700. Confirm live pricing on PeopleCert.",
+        "examMeta": {
+      "questions": "40 multiple-choice questions",
+      "time": "90 minutes (113 minutes for non-English speakers)",
+      "pass": "28/40 (70%) — PeopleCert publishes no pass rates",
+      "fee": "~$495 exam voucher (US); accredited training required for higher-level modules (ATO course ~$500-1,500 or PeopleCert Official eLearning)",
       "format": "Online proctored exam (PeopleCert remote proctoring); some modules via accredited training organizations.",
       "admin": "PeopleCert (online proctored)"
     },
@@ -1497,13 +1504,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
-    "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
-      "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "ITIL 4 Foundation ~$425 USD (US direct); region-tiered $235–$425. Advanced modules require accredited training (no exam-only fee). PRINCE2 Foundation ~$700. Confirm live pricing on PeopleCert.",
+        "examMeta": {
+      "questions": "40 multiple-choice questions",
+      "time": "90 minutes",
+      "pass": "28/40 (70%) — PeopleCert publishes no pass rates",
+      "fee": "~$495 exam voucher or ~$649 exam bundle (voucher + eBook, US); accredited training required for higher-level modules (ATO course ~$500-1,500 or PeopleCert Official eLearning)",
       "format": "Online proctored exam (PeopleCert remote proctoring); some modules via accredited training organizations.",
       "admin": "PeopleCert (online proctored)"
     },
@@ -1638,13 +1645,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
-    "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
-      "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "ITIL 4 Foundation ~$425 USD (US direct); region-tiered $235–$425. Advanced modules require accredited training (no exam-only fee). PRINCE2 Foundation ~$700. Confirm live pricing on PeopleCert.",
+        "examMeta": {
+      "questions": "40 multiple-choice questions",
+      "time": "90 minutes (113 minutes for non-English speakers)",
+      "pass": "28/40 (70%) — PeopleCert publishes no pass rates",
+      "fee": "~$495 exam voucher (US); accredited training required for higher-level modules (ATO course ~$500-1,500 or PeopleCert Official eLearning)",
       "format": "Online proctored exam (PeopleCert remote proctoring); some modules via accredited training organizations.",
       "admin": "PeopleCert (online proctored)"
     },
@@ -1779,13 +1786,13 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
-    "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
+    "prerequisites": "Valid ITIL 4 Foundation",
+    "eligibility": "ITIL 4 Foundation required",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "40 (65% passing, 26/40)",
+      "time": "90 min",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "ITIL 4 Foundation ~$425 USD (US direct); region-tiered $235–$425. Advanced modules require accredited training (no exam-only fee). PRINCE2 Foundation ~$700. Confirm live pricing on PeopleCert.",
+      "fee": "~$300-$500",
       "format": "Online proctored exam (PeopleCert remote proctoring); some modules via accredited training organizations.",
       "admin": "PeopleCert (online proctored)"
     },
@@ -1863,7 +1870,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Technology competence with a PeopleCert credential.",
-    "time": "Varies",
+    "time": "90 min (40 questions)",
     "cost": "ITIL 4 Foundation ~$425 USD (US direct); region-tiered $235–$425",
     "faqs": [
       {
@@ -1876,7 +1883,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Maintain via PeopleCert Plus (CPD) subscription (~$129/yr) or by retaking / passing a higher module before expiry. Valid 3 years."
+        "a": "The MSF exam is closed-book and scenario-based, passing at 65% (26 of 40); it covers monitoring, incidents, problems and service requests."
       },
       {
         "q": "What is the retake policy?",
@@ -1898,7 +1905,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$60,000-$110,000 (IT operations roles)",
+    "examEssentials[3][1]": "3 years (verify current renewal)"
   },
   {
     "slug": "itil-4-specialist-plan-implement-and-control",
@@ -1920,7 +1929,7 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
       "questions": "Varies by exam — see the official exam guide",
@@ -2061,7 +2070,7 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
       "questions": "Varies by exam — see the official exam guide",
@@ -2202,7 +2211,7 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
       "questions": "Varies by exam — see the official exam guide",
@@ -2343,7 +2352,7 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
       "questions": "Varies by exam — see the official exam guide",
@@ -2484,7 +2493,7 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
       "questions": "Varies by exam — see the official exam guide",
@@ -2625,7 +2634,7 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
       "questions": "Varies by exam — see the official exam guide",
@@ -2766,7 +2775,7 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
       "questions": "Varies by exam — see the official exam guide",
@@ -2907,7 +2916,7 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
       "questions": "Varies by exam — see the official exam guide",
@@ -3048,11 +3057,11 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "23 hours of project-management education (or a secondary degree for the education-free eligibility path).",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
+      "questions": "150 (135 scored + 15 unscored pretest items)",
+      "time": "3 hours (180 minutes)",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "PMP: $405 USD (PMI member) / $555 (non-member). Other PMI exams vary (e.g., CAPM ~$225–$300). Confirm the current fee on PMI.org at booking.",
       "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring.",
@@ -3132,7 +3141,7 @@ export const exams = [
     },
     "difficulty": "Mixed",
     "audience": "Professionals and candidates seeking to validate Project & Business competence with a Project Management Institute credential.",
-    "time": "Varies",
+    "time": "3 hours (150 questions)",
     "cost": "PMP: $405 USD (PMI member) / $555 (non-member)",
     "faqs": [
       {
@@ -3167,7 +3176,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$60,000-$120,000"
   },
   {
     "slug": "pmi-citizen-developer-practitioner",
@@ -3189,7 +3199,7 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
       "questions": "Varies by exam — see the official exam guide",
@@ -3330,7 +3340,7 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "Valid ITIL 4 Foundation certificate required before taking the higher-level modules.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
     "examMeta": {
       "questions": "Varies by exam — see the official exam guide",

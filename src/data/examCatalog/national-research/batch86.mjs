@@ -1141,13 +1141,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Passage of the FE exam (or equivalent licensure path accepted by your state) and the education and experience requirements of your state engineering licensure board.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "80 (all scored, breadth + depth modules)",
+      "time": "8 hours (two sessions of 4 hours)",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$400 (set by NCEES; state surcharges may apply)",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "National Council of Examiners for Engineering and Surveying (NCEES)"
     },
@@ -1184,7 +1184,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "PE licences renew per your state board (commonly every 1-2 years, with continuing-education hours); the PE exam result does not expire once passed."
       ],
       [
         "Languages",
@@ -1225,8 +1225,8 @@ export const exams = [
     },
     "difficulty": "Advanced",
     "audience": "Professionals and candidates seeking to validate Engineering & Design competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "8 hours (two sessions of 4 hours; 80 questions)",
+    "cost": "~$375-$400 (NCEES) plus state application fees",
     "faqs": [
       {
         "q": "How do I register for the Principles and Practice of Engineering (PE) Civil Exam exam?",
@@ -1238,7 +1238,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see National Council of Examiners for Engineering and Surveying (NCEES)'s policy."
+        "a": "A passing PE exam result does not expire, but the PE licence you earn from it must be renewed on your state licensing board's cycle (commonly every 1-2 years with continuing-education requirements), and the licence is valid only in the states that license you."
       },
       {
         "q": "What if I do not pass?",
@@ -1260,7 +1260,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$75,000-$130,000"
   },
   {
     "slug": "pe-mechanical",

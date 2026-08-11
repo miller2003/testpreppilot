@@ -24,15 +24,15 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "None — open to all candidates; no experience or prior certification required for the Office Specialist exams.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
-    "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
-      "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e.g., AZ-900) are $99 USD. Priced per attempt in USD, billed in local currency; regional tax may apply.",
-      "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring. Price is the same either way.",
-      "admin": "Pearson VUE"
+        "examMeta": {
+      "questions": "Performance-based — roughly 30-40 tasks across projects in the Outlook application (no fixed question count)",
+      "time": "~50 minutes",
+      "pass": "700/1000 (Microsoft publishes no pass rates)",
+      "fee": "~$100 per exam (schools and workforce programs often offer discounted or free vouchers)",
+      "format": "Performance-based — candidates complete tasks in the actual Outlook application; delivered by Certiport at authorized testing centers or online with proctoring",
+      "admin": "Certiport"
     },
     "topics": [
       {
@@ -165,15 +165,15 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "None — open to all candidates; no experience or prior certification required for the Office Specialist exams.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
-    "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
-      "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e.g., AZ-900) are $99 USD. Priced per attempt in USD, billed in local currency; regional tax may apply.",
-      "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring. Price is the same either way.",
-      "admin": "Pearson VUE"
+        "examMeta": {
+      "questions": "Three performance-based exams (e.g., Word, Excel, PowerPoint, Outlook), each with multiple projects of tasks",
+      "time": "~50 minutes per exam",
+      "pass": "700/1000 on each exam (Microsoft publishes no pass rates)",
+      "fee": "~$100 per exam (~$300 total for the three required exams; vouchers often reduce this)",
+      "format": "Performance-based — candidates complete tasks in the actual application; delivered by Certiport at authorized testing centers or online with proctoring",
+      "admin": "Certiport"
     },
     "topics": [
       {
@@ -306,15 +306,15 @@ export const exams = [
       "Take the exam (test center, online proctoring, or assessment)",
       "Receive results and your credential if passed"
     ],
-    "prerequisites": "Varies by exam — see the awarding body. Some require experience or a prior certification.",
+    "prerequisites": "None — open to all candidates; no experience or prior certification required for the Office Specialist exams.",
     "eligibility": "Eligibility varies; many exams are open to all, while others require coursework, experience, or sponsorship.",
-    "examMeta": {
-      "questions": "Varies by exam — see the official exam guide",
-      "time": "Varies by exam",
-      "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "$165 USD for most Associate/Expert role-based exams; Fundamentals-tier exams (e.g., AZ-900) are $99 USD. Priced per attempt in USD, billed in local currency; regional tax may apply.",
-      "format": "Proctored, computer-based — Pearson VUE test center or online remote proctoring. Price is the same either way.",
-      "admin": "Pearson VUE"
+        "examMeta": {
+      "questions": "Two performance-based Expert exams (e.g., Word Expert, Excel Expert, Access Expert) plus the Associate prerequisite, each with multiple projects of advanced tasks",
+      "time": "~50 minutes per exam",
+      "pass": "700/1000 on each exam (Microsoft publishes no pass rates)",
+      "fee": "~$100 per Expert exam (~$200 total for the two Expert exams, plus the Associate prerequisite exams; vouchers often reduce this)",
+      "format": "Performance-based — candidates complete tasks in the actual application; delivered by Certiport at authorized testing centers or online with proctoring",
+      "admin": "Certiport"
     },
     "topics": [
       {

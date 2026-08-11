@@ -2,103 +2,122 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../components/BreadcrumbNav.astro';
 import TopicHubs from '../components/TopicHubs.astro';
+import { guideArticles } from '../data/guides';
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: 'Guides', href: '/guides' }
 ];
 
-const articles = [
+// Themed collections link only to REAL pages on the site — no placeholder URLs.
+const collections = [
   {
-    title: "How to Build a Realistic Study Schedule While Working Full-Time",
-    tagline: "Time-blocking strategies and psychological framing to ensure you actually study when you say you will.",
-    category: "Study Strategy",
-    date: "Oct 12, 2024",
-    readTime: "6 min read",
-    featured: true
+    title: 'Choose your credential',
+    blurb: 'Find the license or certification that fits your goal and your state.',
+    links: [
+      { label: 'Browse all exams', href: '/exams' },
+      { label: 'Explore by field', href: '/explore' },
+      { label: 'Browse by state', href: '/states' },
+    ],
   },
   {
-    title: "The 3 Biggest Mistakes People Make on the Real Estate Exam",
-    tagline: "Don't fall into these common traps that cost candidates hundreds of dollars in retake fees.",
-    category: "Exam Tactics",
-    date: "Sep 28, 2024",
-    readTime: "4 min read",
-    featured: false
+    title: 'Plan and pass your study',
+    blurb: 'Evidence-based study systems and exam-day routines that survive a full-time job.',
+    links: [
+      { label: 'Study plan while working full-time', href: '/guides/study-plan-working-full-time' },
+      { label: 'Beat test anxiety on exam day', href: '/guides/beat-test-anxiety-exam-day' },
+      { label: 'How TestPrepPilot works', href: '/how-it-works' },
+    ],
   },
   {
-    title: "Is the CPA Worth It in 2025? A Salary Analysis",
-    tagline: "Breaking down the ROI of the CPA vs Enrolled Agent based on location and firm size.",
-    category: "Career Planning",
-    date: "Sep 15, 2024",
-    readTime: "8 min read",
-    featured: false
+    title: 'Move a license across states',
+    blurb: 'What reciprocity really means, and the traps that derail a relocation.',
+    links: [
+      { label: 'License reciprocity explained', href: '/guides/license-reciprocity-across-state-lines' },
+      { label: 'Requirements by state', href: '/states' },
+    ],
   },
   {
-    title: "Understanding Reciprocity: Moving Your License Across State Lines",
-    tagline: "A comprehensive guide to transferring your professional credentials when you relocate.",
-    category: "Regulation",
-    date: "Aug 30, 2024",
-    readTime: "5 min read",
-    featured: false
+    title: 'Our standards & how we research',
+    blurb: 'Why our roadmaps are independently researched and expert-verified.',
+    links: [
+      { label: 'Research methodology', href: '/methodology' },
+      { label: 'Review network', href: '/reviewers' },
+      { label: 'Editorial policy', href: '/editorial-policy' },
+      { label: 'How we are funded', href: '/disclosure' },
+    ],
   },
-  {
-    title: "Handling Test Anxiety: A Cognitive Behavioral Approach",
-    tagline: "Science-backed methods to keep your heart rate down and your focus sharp during the exam.",
-    category: "Mindset",
-    date: "Aug 14, 2024",
-    readTime: "7 min read",
-    featured: false
-  }
 ];
-
-const featuredArticle = articles.find(a => a.featured);
-const gridArticles = articles.filter(a => !a.featured);
 ---
 
-<BaseLayout 
-  title="Study Guides & Articles — TestPrepPilot"
-  description="Read our latest strategies, analyses, and guides to help you navigate your certification journey."
+<BaseLayout
+  title="Guides & Resources — TestPrepPilot"
+  description="Practical, independently researched guides to choosing a credential, planning your study, moving a license across states, and walking into exam day prepared."
 >
   <div class="container">
     <BreadcrumbNav items={breadcrumbItems} />
-    
+
     <header class="editorial-hero">
-      <p class="eyebrow">GUIDES & ANALYSIS</p>
+      <p class="eyebrow">GUIDES & RESOURCES</p>
       <h1>Intelligence for your <em>career trajectory.</em></h1>
-      <p class="lede">Study strategies, industry analyses, and regulatory breakdowns from our editorial team.</p>
+      <p class="lede">
+        Practical, plain-English guides to choosing a credential, studying around a full-time
+        job, moving a license across state lines, and walking into exam day prepared.
+      </p>
     </header>
 
     <main class="guides-layout">
-      {featuredArticle && (
-        <section class="featured-article">
-          <a href="#" class="article-link">
-            <div class="article-meta">
-              <span class="category">{featuredArticle.category}</span>
-              <span class="date">{featuredArticle.date}</span>
-            </div>
-            <h2>{featuredArticle.title}</h2>
-            <p>{featuredArticle.tagline}</p>
-            <div class="read-more">Read Full Guide &rarr;</div>
-          </a>
-        </section>
-      )}
+      <section class="featured">
+        <div class="section-head">
+          <h2>Featured guides</h2>
+          <p>Written by our editorial desk, kept current against primary sources.</p>
+        </div>
 
-      <section class="articles-grid">
-        {gridArticles.map(article => (
-          <article class="grid-article">
-            <a href="#" class="article-link">
-              <div class="article-meta">
-                <span class="category">{article.category}</span>
-              </div>
-              <h3>{article.title}</h3>
-              <p>{article.tagline}</p>
-              <div class="date-read">
-                <span>{article.date}</span>
-                <span>{article.readTime}</span>
-              </div>
-            </a>
-          </article>
-        ))}
+        <div class="articles-grid">
+          {guideArticles.map((article) => (
+            <article class="grid-article">
+              <a href={`/guides/${article.slug}`} class="article-link">
+                <div class="article-meta">
+                  <span class="category">{article.category}</span>
+                  <span class="read">{article.readTime}</span>
+                </div>
+                <h3>{article.title}</h3>
+                <p>{article.description}</p>
+                <div class="date-read">
+                  <span>Updated {article.dateDisplay}</span>
+                  <span class="read-more">Read guide &rarr;</span>
+                </div>
+              </a>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="collections">
+        <div class="section-head">
+          <h2>Find what you need</h2>
+          <p>Every link below goes to a real page on this site.</p>
+        </div>
+
+        <div class="collections-grid">
+          {collections.map((col) => (
+            <div class="collection-card">
+              <h3>{col.title}</h3>
+              <p>{col.blurb}</p>
+              <ul>
+                {col.links.map((l) => (
+                  <li><a href={l.href}>{l.label} &rarr;</a></li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <h2>Ready to find your exam?</h2>
+        <p>Start from your goal — we'll show you the exact requirements.</p>
+        <a href="/exams" class="button">Browse all exams</a>
       </section>
     </main>
   </div>
@@ -108,78 +127,26 @@ const gridArticles = articles.filter(a => !a.featured);
 
 <style>
   .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-  
+
   /* Hero Section */
   .editorial-hero { padding: 5rem 0 3rem; border-bottom: 1px solid var(--line); margin-bottom: 4rem; }
   .editorial-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 1.5rem; font-weight: 700; }
   .editorial-hero h1 { font-family: var(--font-heading); font-size: clamp(3rem, 5vw, 4.5rem); margin: 0 0 1.5rem; font-weight: 700; line-height: 1.1; color: var(--ink); }
-  .editorial-hero .lede { font-family: var(--font-body); font-size: 1.35rem; color: var(--muted); max-width: 750px; line-height: 1.7; margin: 0; }
-  
+  .editorial-hero .lede { font-family: var(--font-body); font-size: 1.35rem; color: var(--muted); max-width: 760px; line-height: 1.7; margin: 0; }
+
   /* Layout */
-  .guides-layout { display: flex; flex-direction: column; gap: 4rem; padding-bottom: 8rem; }
-  
-  /* Featured Article */
-  .featured-article .article-link {
-    display: block;
-    background: var(--paper);
-    padding: 4rem;
-    border: 1px solid var(--line);
-    text-decoration: none;
-    color: var(--ink);
-    border-radius: var(--radius);
-    transition: all var(--transition);
-  }
-  
-  .featured-article .article-link:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-5px);
-    border-color: var(--primary);
-  }
-  
-  .featured-article .article-meta {
-    display: flex;
-    gap: 1.5rem;
-    font-family: var(--font-mono);
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 2rem;
-  }
-  
-  .featured-article .category { color: var(--primary); font-weight: 700; }
-  .featured-article .date { color: var(--muted); }
-  
-  .featured-article h2 {
-    font-family: var(--font-heading);
-    font-size: 3.5rem;
-    line-height: 1.1;
-    margin: 0 0 1.5rem 0;
-  }
-  
-  .featured-article p {
-    font-family: var(--font-body);
-    font-size: 1.5rem;
-    color: var(--muted);
-    max-width: 800px;
-    line-height: 1.6;
-    margin: 0 0 3rem 0;
-  }
-  
-  .featured-article .read-more {
-    font-family: var(--font-mono);
-    font-weight: 700;
-    color: var(--primary);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-  
-  /* Grid Articles */
+  .guides-layout { display: flex; flex-direction: column; gap: 5rem; padding-bottom: 8rem; }
+
+  .section-head { margin-bottom: 2.5rem; }
+  .section-head h2 { font-family: var(--font-heading); font-size: var(--fs-h1); margin: 0 0 0.5rem; color: var(--ink); line-height: 1.15; }
+  .section-head p { font-family: var(--font-body); font-size: var(--fs-prose); color: var(--muted); margin: 0; }
+
+  /* Featured Articles */
   .articles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
     gap: 3rem;
   }
-  
   .grid-article .article-link {
     display: flex;
     flex-direction: column;
@@ -191,30 +158,67 @@ const gridArticles = articles.filter(a => !a.featured);
     border-radius: var(--radius);
     transition: all var(--transition);
   }
-  
   .grid-article .article-link:hover {
     box-shadow: var(--shadow-sm);
     transform: translateY(-4px);
     border-color: var(--ink);
   }
-  
-  .grid-article .article-meta { margin-bottom: 1.25rem; font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); font-weight: 700; }
-  .grid-article h3 { font-family: var(--font-heading); font-size: 2rem; line-height: 1.2; margin: 0 0 1rem 0; }
+  .grid-article .article-meta { display: flex; justify-content: space-between; margin-bottom: 1.25rem; font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; }
+  .grid-article .category { color: var(--primary); font-weight: 700; }
+  .grid-article .read { color: var(--muted); }
+  .grid-article h3 { font-family: var(--font-heading); font-size: 2rem; line-height: 1.2; margin: 0 0 1rem 0; color: var(--ink); }
   .grid-article p { font-family: var(--font-body); font-size: 1.1rem; color: var(--muted); line-height: 1.6; margin: 0 0 2rem 0; flex-grow: 1; }
-  
   .grid-article .date-read {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: var(--font-mono);
     font-size: 0.85rem;
     color: var(--muted);
     padding-top: 1.5rem;
     border-top: 1px solid var(--line);
   }
-  
+  .grid-article .read-more { color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* Collections */
+  .collections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+    gap: 2rem;
+  }
+  .collection-card {
+    padding: 2rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    transition: all var(--transition);
+  }
+  .collection-card:hover { box-shadow: var(--shadow-sm); border-color: var(--primary); }
+  .collection-card h3 { font-family: var(--font-heading); font-size: var(--fs-h3); margin: 0 0 0.6rem; color: var(--ink); }
+  .collection-card p { font-family: var(--font-body); font-size: 1rem; color: var(--muted); line-height: 1.6; margin: 0 0 1.25rem; }
+  .collection-card ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.6rem; }
+  .collection-card a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: color var(--transition);
+  }
+  .collection-card a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+
+  /* CTA */
+  .cta-band {
+    text-align: center;
+    background: var(--cream);
+    border-radius: var(--radius-lg);
+    padding: clamp(2.5rem, 1rem + 4vw, 4rem);
+  }
+  .cta-band h2 { font-family: var(--font-heading); font-size: var(--fs-h1); margin: 0 0 0.75rem; color: var(--ink); line-height: 1.15; }
+  .cta-band p { font-family: var(--font-body); font-size: var(--fs-prose); color: var(--muted); margin: 0 0 1.75rem; }
+
   @media (max-width: 768px) {
-    .featured-article .article-link { padding: 2.5rem; }
-    .featured-article h2 { font-size: 2.5rem; }
-    .featured-article p { font-size: 1.25rem; }
+    .grid-article .article-link { padding: 2rem; }
+    .grid-article h3 { font-size: 1.75rem; }
   }
 </style>

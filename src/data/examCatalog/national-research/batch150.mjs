@@ -2119,11 +2119,11 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "None — the safety certification is open to technicians.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "45",
+      "time": "60 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Varies by location and currency — confirm on the official registration page",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
@@ -2162,7 +2162,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "5 years — renew by recertification exam."
       ],
       [
         "Languages",
@@ -2203,8 +2203,8 @@ export const exams = [
     },
     "difficulty": "Hands-on / Applied",
     "audience": "Professionals and candidates seeking to validate Trades & Construction competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "60 minutes (45 questions)",
+    "cost": "~$55-$65",
     "faqs": [
       {
         "q": "How do I register for the ASE xEV Level 1 Electrical Safety Awareness Certification exam?",
@@ -2216,7 +2216,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see National Institute for Automotive Service Excellence (ASE)'s policy."
+        "a": "The ASE xEV Level 1 certification is valid for 5 years and is renewed by passing the current recertification exam."
       },
       {
         "q": "What if I do not pass?",
@@ -2238,7 +2238,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$33,000-$85,000"
   },
   {
     "slug": "ase-xev-level-2-technician-safety",
@@ -2536,11 +2537,11 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "None — the certification is earned by passing the Section 609 test.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "25",
+      "time": "60 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Varies by location and currency — confirm on the official registration page",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
@@ -2579,7 +2580,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Valid for life."
       ],
       [
         "Languages",
@@ -2620,8 +2621,8 @@ export const exams = [
     },
     "difficulty": "Hands-on / Applied",
     "audience": "Professionals and candidates seeking to validate Trades & Construction competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "60 minutes (25 questions)",
+    "cost": "~$20-$50",
     "faqs": [
       {
         "q": "How do I register for the EPA Section 609 Motor Vehicle Air Conditioning Technician Certification exam?",
@@ -2633,7 +2634,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see U.S. Environmental Protection Agency approved programmes's policy."
+        "a": "The Section 609 certification is valid for life and does not expire."
       },
       {
         "q": "What if I do not pass?",
@@ -2654,7 +2655,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$33,000-$85,000"
   },
   {
     "slug": "i-car-platinum-recognition",
@@ -4360,13 +4362,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "You must be a working welder with the ability to weld to a procedure (WPS); no written prerequisite exam — the program is performance-based.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "Performance test — no written exam; weld test coupons per the chosen WPS",
+      "time": "Performance testing session (facility-set)",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "Set by the AWS Accredited Testing Facility (typically a few hundred dollars for testing)",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "American Welding Society (AWS)"
     },
@@ -4403,7 +4405,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "6 months — renewed by retesting before expiry."
       ],
       [
         "Languages",
@@ -4444,8 +4446,8 @@ export const exams = [
     },
     "difficulty": "Hands-on / Applied",
     "audience": "Professionals and candidates seeking to validate Trades & Construction competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "Performance test — varies by positions and facility",
+    "cost": "~$100-$300 per session (varies by facility)",
     "faqs": [
       {
         "q": "How do I register for the AWS Certified Welder Program exam?",
@@ -4457,7 +4459,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see American Welding Society (AWS)'s policy."
+        "a": "AWS Certified Welder certification is valid for 6 months and is renewed by retesting before the expiry date; the certification is specific to the process, position and material you qualified in, so renewal must match your qualification."
       },
       {
         "q": "What if I do not pass?",
@@ -4479,7 +4481,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$38,000-$70,000"
   },
   {
     "slug": "aws-d11-structural-steel-code-endorsement",
@@ -4781,13 +4784,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Enrolment in an NCCER-accredited welding training program (sponsored by a school, employer or union); no prior certification required.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "Module-based written exams plus hands-on performance assessments",
+      "time": "Varies by module and assessment",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "Set by the training sponsor/accredited assessment centre",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "NCCER"
     },
@@ -4824,7 +4827,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "NCCER certifications do not expire; employer and code-specific welding qualifications are separate and follow their own rules."
       ],
       [
         "Languages",
@@ -4865,8 +4868,8 @@ export const exams = [
     },
     "difficulty": "Hands-on / Applied",
     "audience": "Professionals and candidates seeking to validate Trades & Construction competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "Per-module: 10-15 hours study plus lab practice",
+    "cost": "~$30-$100 per module (varies by testing centre)",
     "faqs": [
       {
         "q": "How do I register for the NCCER Welding Certification exam?",
@@ -4878,7 +4881,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see NCCER's policy."
+        "a": "NCCER training credentials do not expire, but the actual welding qualifications employers and codes require (e.g., AWS Certified Welder or in-house WPQ approvals) are separate credentials with their own validity and renewal rules."
       },
       {
         "q": "What if I do not pass?",
@@ -4900,7 +4903,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "medium"
+    "confidence": "medium",
+    "salaryRange": "$38,000-$70,000"
   },
   {
     "slug": "ampp-cip-level-1",

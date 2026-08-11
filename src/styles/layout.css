@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-offset, 4.5rem);
+}
+
 .wrap {
   max-width: 1240px;
   margin: 0 auto;
@@ -53,6 +58,116 @@
 
 .desktop-nav a:not(.button):hover {
   color: var(--primary);
+}
+
+/* Dropdown (About cluster) — pure CSS on hover, JS-assist on focus/keyboard */
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 500;
+  color: var(--ink);
+  transition: color var(--transition);
+}
+.dropdown-toggle:hover,
+.nav-item.is-open .dropdown-toggle {
+  color: var(--primary);
+}
+
+.caret {
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  margin-top: -3px;
+  transition: transform var(--transition);
+}
+.nav-item:hover .caret,
+.nav-item.is-open .caret {
+  transform: rotate(225deg);
+  margin-top: 2px;
+}
+
+.dropdown-panel {
+  position: absolute;
+  top: calc(100% + 0.85rem);
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  min-width: 264px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+  z-index: var(--z-nav);
+}
+/* Invisible bridge so the pointer can travel from toggle to panel */
+.dropdown-panel::before {
+  content: "";
+  position: absolute;
+  top: -0.9rem;
+  left: 0;
+  right: 0;
+  height: 0.9rem;
+}
+.nav-item:hover .dropdown-panel,
+.nav-item:focus-within .dropdown-panel,
+.nav-item.is-open .dropdown-panel {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  text-decoration: none;
+  color: var(--ink);
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  transition: background-color var(--transition), color var(--transition);
+}
+.dropdown-link:hover {
+  background: var(--cream);
+  color: var(--primary);
+}
+.dropdown-link .dl-label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+.dropdown-link .dl-desc {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+.dropdown-link:hover .dl-desc {
+  color: var(--primary);
+  opacity: 0.85;
 }
 
 .footer {
@@ -229,6 +344,28 @@
   .mobile-nav a.button {
     margin-top: var(--space-3);
     width: 100%;
+  }
+
+  /* About cluster in the mobile sheet: parent link + nested sub-links */
+  .mobile-nav .mobile-parent {
+    font-weight: 700;
+  }
+  .mobile-nav .mobile-sub {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  .mobile-nav .mobile-sub a {
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    min-height: calc(var(--tap-min) - 8px);
+    padding: 0.4rem 0;
+    border-bottom: none;
+  }
+  .mobile-nav .mobile-sub a:last-child {
+    border-bottom: 1px solid var(--line);
   }
 
   /* Hamburger morphs into a close icon so state is obvious */

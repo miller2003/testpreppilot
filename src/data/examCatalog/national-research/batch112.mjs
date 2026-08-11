@@ -2787,12 +2787,12 @@ export const exams = [
     ],
     "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
-    "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
-      "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
-      "format": "Proctored, computer-based (test center or online remote proctoring)",
+        "examMeta": {
+      "questions": "Scenario-based assessment — no traditional question count (job preview, work-situation items, accuracy items, and personal-style sections)",
+      "time": "~30-45 minutes (no strict time limit; must be completed within 72 hours of invitation)",
+      "pass": "70% passing score (USPS publishes no cohort pass rates)",
+      "fee": "Free — no registration fee; the exam is included in the USPS application",
+      "format": "Online, self-administered on your own device (computer, laptop, tablet, or smartphone)",
       "admin": "United States Postal Service"
     },
     "topics": [
@@ -2926,12 +2926,12 @@ export const exams = [
     ],
     "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
-    "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
-      "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
-      "format": "Proctored, computer-based (test center or online remote proctoring)",
+        "examMeta": {
+      "questions": "Scenario-based assessment — no traditional question count (job preview, work-situation items, accuracy items, and personal-style sections)",
+      "time": "~30-45 minutes (no strict time limit; must be completed within 72 hours of invitation)",
+      "pass": "70% passing score (USPS publishes no cohort pass rates)",
+      "fee": "Free — no registration fee; the exam is included in the USPS application",
+      "format": "Online, self-administered on your own device (computer, laptop, tablet, or smartphone)",
       "admin": "United States Postal Service"
     },
     "topics": [
@@ -3065,12 +3065,12 @@ export const exams = [
     ],
     "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
-    "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
-      "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
-      "format": "Proctored, computer-based (test center or online remote proctoring)",
+        "examMeta": {
+      "questions": "Scenario-based assessment — no traditional question count (job preview, work-situation items, accuracy items, and personal-style sections)",
+      "time": "~30-45 minutes (no strict time limit; must be completed within 72 hours of invitation)",
+      "pass": "70% passing score (USPS publishes no cohort pass rates)",
+      "fee": "Free — no registration fee; the exam is included in the USPS application",
+      "format": "Online, self-administered on your own device (computer, laptop, tablet, or smartphone)",
       "admin": "United States Postal Service"
     },
     "topics": [
@@ -3204,12 +3204,12 @@ export const exams = [
     ],
     "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
-    "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
-      "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
-      "format": "Proctored, computer-based (test center or online remote proctoring)",
+        "examMeta": {
+      "questions": "Scenario-based assessment — no traditional question count (job preview, work-situation items, accuracy items, and personal-style sections)",
+      "time": "~30-45 minutes (no strict time limit; must be completed within 72 hours of invitation)",
+      "pass": "70% passing score (USPS publishes no cohort pass rates)",
+      "fee": "Free — no registration fee; the exam is included in the USPS application",
+      "format": "Online, self-administered on your own device (computer, laptop, tablet, or smartphone)",
       "admin": "United States Postal Service"
     },
     "topics": [

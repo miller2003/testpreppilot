@@ -1,3 +1,4 @@
+// Research-backed exam records for batch file batch61.mjs.
 export const programs = [
   {
     "body": "Association of Nutrition & Foodservice Professionals",
@@ -532,6 +533,7 @@ export const programs = [
     "confidence": "low"
   }
 ];
+
 export const exams = [
   {
     "slug": "certified-dietary-manager-cfpp",
@@ -856,13 +858,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "None",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "60 questions",
+      "time": "~60 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$75",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "Cicerone Certification Program"
     },
@@ -899,7 +901,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Valid 5 years, then recertification"
       ],
       [
         "Languages",
@@ -940,8 +942,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "4-8 hours",
+    "cost": "~$75 exam",
     "faqs": [
       {
         "q": "How do I register for the Certified Beer Server exam?",
@@ -973,7 +975,9 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$29,820 median, bartenders (BLS May 2024)",
+    "examEssentials[3][1]": "Valid 5 years, then recertification"
   },
   {
     "slug": "cicerone-certified-cicerone",
@@ -995,13 +999,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Certified Beer Server recommended; hands-on beer knowledge required",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "~60 questions + tasting + service",
+      "time": "~4 hours total",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$495-$695",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "Cicerone Certification Program"
     },
@@ -1038,7 +1042,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Certified Cicerone requires recertification every 5 years"
       ],
       [
         "Languages",
@@ -1079,8 +1083,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "80-120 hours over 10-14 weeks",
+    "cost": "~$495-$695 (exam + study materials)",
     "faqs": [
       {
         "q": "How do I register for the Certified Cicerone exam?",
@@ -1112,7 +1116,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$24,000-$50,000 (35-3011 median $29,820)"
   },
   {
     "slug": "cicerone-master-cicerone",
@@ -1551,13 +1556,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "None — open to all",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "~70 MC + service component",
+      "time": "~1.5 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$395",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "Court of Master Sommeliers, Americas"
     },
@@ -1594,7 +1599,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "CMS certification is permanent"
       ],
       [
         "Languages",
@@ -1635,8 +1640,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "20-30 hours (1-day course + exam)",
+    "cost": "~$395 (course + exam)",
     "faqs": [
       {
         "q": "How do I register for the Introductory Sommelier Course and Examination exam?",
@@ -1668,7 +1673,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$30,000-$80,000 (35-3031 median $65,310 for managers)"
   },
   {
     "slug": "cms-master-sommelier-diploma",
@@ -2783,13 +2789,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "None — open to all; age requirements vary by state",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "~40-70 questions",
+      "time": "1-2 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "~$10-$20",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "360training"
     },
@@ -2826,7 +2832,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Valid 1-3 years depending on state (renewal required)"
       ],
       [
         "Languages",
@@ -2867,8 +2873,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "2-4 hours (state-dependent course)",
+    "cost": "~$10-$20 (course fee)",
     "faqs": [
       {
         "q": "How do I register for the Learn2Serve Alcohol Seller-Server Training exam?",
@@ -2898,7 +2904,8 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$24,000-$45,000 (35-3011 median $29,820)"
   },
   {
     "slug": "learn2serve-food-protection-manager",
@@ -3057,11 +3064,11 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "Food-safety work experience is strongly recommended.",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "125",
+      "time": "3 hours",
       "pass": "Passing score set by the awarding body; see the official score report",
       "fee": "Varies by location and currency — confirm on the official registration page",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
@@ -3100,7 +3107,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "2 years — renew with continuing education."
       ],
       [
         "Languages",
@@ -3141,8 +3148,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "3 hours (125 questions)",
+    "cost": "~$350-$500",
     "faqs": [
       {
         "q": "How do I register for the Certified Professional – Food Safety exam?",
@@ -3154,7 +3161,7 @@ export const exams = [
       },
       {
         "q": "How long is the credential valid, and how do I renew?",
-        "a": "Validity varies by credential (commonly 2–3 years). Renewal usually requires continuing education or a recertification exam — see National Environmental Health Association's policy."
+        "a": "The CP-FS is valid for 2 years and renews with continuing education credits; NEHA audits renewals."
       },
       {
         "q": "What if I do not pass?",
@@ -3170,7 +3177,8 @@ export const exams = [
     "relatedSlugs": [],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$41,000-$112,000"
   },
   {
     "slug": "nrfsp-food-protection-manager",
@@ -3462,13 +3470,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "None (module-based progression)",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "Written + practical per module",
+      "time": "1-3 days per module",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "$150-400 per module",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "Specialty Coffee Association"
     },
@@ -3505,7 +3513,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "No expiry on module certificates"
       ],
       [
         "Languages",
@@ -3546,8 +3554,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "1-3 course days per module",
+    "cost": "$150-400 per module",
     "faqs": [
       {
         "q": "How do I register for the SCA Coffee Skills Program Professional Diploma exam?",
@@ -3575,7 +3583,9 @@ export const exams = [
     "relatedSlugs": [],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$27,010 median, counter workers (BLS May 2024)",
+    "examEssentials[3][1]": "No expiry on module certificates"
   },
   {
     "slug": "servsafe-alcohol-advanced",
@@ -3597,13 +3607,13 @@ export const exams = [
       "Schedule and take the exam (test center or online proctoring)",
       "Receive your score and, if passed, your credential"
     ],
-    "prerequisites": "Varies by credential — see the awarding body. Some require education, experience, or a prior certification.",
+    "prerequisites": "None",
     "eligibility": "Eligibility varies; many credentials are open to all, while others require coursework, work experience, or sponsorship.",
     "examMeta": {
-      "questions": "Varies by exam — see the official handbook",
-      "time": "Varies by exam",
+      "questions": "40 questions",
+      "time": "60 minutes",
       "pass": "Passing score set by the awarding body; see the official score report",
-      "fee": "Varies by location and currency — confirm on the official registration page",
+      "fee": "$15-30",
       "format": "Proctored, computer-based (test center or online remote proctoring)",
       "admin": "National Restaurant Association"
     },
@@ -3640,7 +3650,7 @@ export const exams = [
       ],
       [
         "Validity",
-        "Varies by credential (commonly 2–3 years)"
+        "Valid 3 years, then renewal"
       ],
       [
         "Languages",
@@ -3681,8 +3691,8 @@ export const exams = [
     },
     "difficulty": "Entry to Applied",
     "audience": "Professionals and candidates seeking to validate Beauty, Food, Security & Recreation competence.",
-    "time": "Varies",
-    "cost": "Varies",
+    "time": "4-6 hours",
+    "cost": "$15-30",
     "faqs": [
       {
         "q": "How do I register for the ServSafe Alcohol Advanced Certification exam?",
@@ -3716,7 +3726,10 @@ export const exams = [
     ],
     "sourceUrl": null,
     "reviewed": "2026-08",
-    "confidence": "low"
+    "confidence": "low",
+    "salaryRange": "$29,820 median, bartenders (BLS May 2024)",
+    "examEssentials[3][1]": "Valid 3 years, then renewal"
   }
 ];
+
 export default { programs, exams };

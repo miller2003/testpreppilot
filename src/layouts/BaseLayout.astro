@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SEOHead from '../components/SEOHead.astro';
+import { organizationSchema } from '../data/editorial';
 import { ClientRouter } from 'astro:transitions';
 
 interface Props {
@@ -27,20 +28,7 @@ const finalOgImage = ogImage || '/og-image.png';
 const finalDateModified = dateModified || SITE_UPDATED;
 const finalDatePublished = datePublished || SITE_UPDATED;
 
-const defaultSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://testpreppilot.com/#organization",
-  "name": "TestPrepPilot",
-  "url": "https://testpreppilot.com",
-  "logo": {
-    "@type": "ImageObject",
-    "url": "https://testpreppilot.com/logo.png",
-    "width": 512,
-    "height": 512
-  },
-  "image": "https://testpreppilot.com/og-image.png"
-};
+const defaultSchema = organizationSchema();
 
 const schemaData = schema || defaultSchema;
 
@@ -69,6 +57,8 @@ const webPageSchema = {
   "name": title,
   "isPartOf": { "@id": "https://testpreppilot.com/#website" },
   "inLanguage": "en-US",
+  "author": { "@id": "https://testpreppilot.com/#organization" },
+  "publisher": { "@id": "https://testpreppilot.com/#organization" },
   "datePublished": finalDatePublished,
   "dateModified": finalDateModified
 };
