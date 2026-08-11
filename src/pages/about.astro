@@ -2,104 +2,318 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../components/BreadcrumbNav.astro';
 import TopicHubs from '../components/TopicHubs.astro';
-import { TRUST_PAGES } from '../data/editorial';
+import { TRUST_PAGES, SITE, organizationSchema } from '../data/editorial';
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: 'About', href: TRUST_PAGES.about }
 ];
+
+const pageUrl = `${SITE}/about`;
+const dateModified = '2026-08-11';
+
+// Plain-text FAQ answers for structured data. The rendered answers below carry
+// the same facts plus internal links; schema.org wants the text only.
+const faqSchemaItems = [
+  {
+    q: 'Who writes the guides on TestPrepPilot?',
+    a: 'Every guide is written and maintained by the TestPrepPilot Editorial Desk — a small research team, not a content farm or a prep-course vendor. We byline the desk rather than inventing individual personas. When a licensed professional reviews a guide, that person is named on the page with a verifiable credential.'
+  },
+  {
+    q: 'Are the guides reviewed by real experts?',
+    a: 'Where a guide covers a licensed field and a reviewer is attached, it is checked for accuracy by a professional who holds that exact credential — a real person whose license can be verified publicly. Where no reviewer is attached yet, the page says so and relies on the desk’s primary-source research pipeline alone. We never invent a reviewer.'
+  },
+  {
+    q: 'How does TestPrepPilot make money?',
+    a: 'Through affiliate commissions from some exam-prep providers, disclosed on every page where a link appears. Providers cannot pay to alter a requirement, change a ranking, or secure a recommendation, and we routinely list providers we earn nothing from when they are the better route.'
+  },
+  {
+    q: 'How current is the information?',
+    a: 'Every substantive page carries a “last reviewed” stamp showing the month its figures were re-verified against primary sources. High-traffic pages are re-checked on a rolling schedule, and anything that changes frequently, such as fees, is labelled so you confirm it with the board before you pay.'
+  },
+  {
+    q: 'How do I report an error or suggest a credential?',
+    a: 'Through the contact page. Choose “Report an error on a guide” or “Suggest a credential to cover.” Every report is read by the desk; substantive corrections are made on the page and noted.'
+  }
+];
+
+const { '@context': _orgContext, ...orgNode } = organizationSchema();
+
+const aboutSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    orgNode,
+    {
+      '@type': 'AboutPage',
+      '@id': `${pageUrl}#about`,
+      url: pageUrl,
+      name: 'About TestPrepPilot — the editorial desk behind the roadmaps',
+      description:
+        'Who runs TestPrepPilot, the standards the desk publishes under, and how ' +
+        'every guide is researched, verified and reviewed.',
+      isPartOf: { '@id': `${SITE}/#website` },
+      about: { '@id': `${SITE}/#organization` },
+      mainEntity: { '@id': `${SITE}/#organization` },
+      inLanguage: 'en-US',
+      dateModified
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${pageUrl}#faq`,
+      mainEntity: faqSchemaItems.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a }
+      }))
+    }
+  ]
+};
 ---
 
 <BaseLayout
-  title="About TestPrepPilot — The Editorial Desk Behind the Roadmaps"
-  description="Who runs TestPrepPilot, why we exist, and the editorial standards that keep every license and certification guide independently researched and expert-verified."
+  title="About TestPrepPilot — The Editorial Desk Behind 600+ Exam Guides"
+  description="Meet the independent editorial desk behind TestPrepPilot — 600+ U.S. credential guides verified against primary sources, checked by licensed professionals, and never pay-to-rank."
+  schema={aboutSchema}
+  dateModified={dateModified}
 >
   <div class="container">
     <BreadcrumbNav items={breadcrumbItems} />
 
-    <header class="editorial-hero">
-      <p class="eyebrow">OUR MISSION</p>
+    <header class="page-hero">
+      <p class="eyebrow">ABOUT THE DESK</p>
       <h1>Clarity in an industry of <em>confusion.</em></h1>
       <p class="lede">
-        We exist so that advancing your career never requires a law degree to understand the
-        prerequisites. TestPrepPilot is an independent research desk that maps the real path to
-        U.S. licenses and certifications — verified against primary sources, checked by people
-        who hold the credential.
+        TestPrepPilot is an independent editorial desk. We read the actual statutes,
+        candidate handbooks and fee schedules behind U.S. licenses and certifications,
+        then publish the shortest accurate path through them — every figure traced to a
+        primary source, and licensed fields checked by professionals who hold the credential.
       </p>
     </header>
 
-    <main class="about-content">
-      <section class="prose-section">
+    <dl class="desk-stats" aria-label="The desk at a glance">
+      <div class="stat">
+        <dt>Credential roadmaps</dt>
+        <dd>600<span class="plus">+</span></dd>
+      </div>
+      <div class="stat">
+        <dt>Jurisdictions covered</dt>
+        <dd>50 <span class="plus">+ DC</span></dd>
+      </div>
+      <div class="stat">
+        <dt>Research steps per page</dt>
+        <dd>7</dd>
+      </div>
+      <div class="stat">
+        <dt>Facts paraphrased from blogs</dt>
+        <dd>0</dd>
+      </div>
+    </dl>
+
+    <main class="prose">
+      <section>
         <h2>The problem we set out to solve</h2>
         <p>
-          If you've ever tried to figure out exactly what it takes to become a licensed
-          professional in your state, you know the frustration. Between outdated government
-          websites, conflicting third-party blogs, and exam-prep companies trying to sell you
-          expensive courses, finding a single, reliable source of truth is nearly impossible.
+          If you have ever tried to pin down exactly what it takes to become a licensed
+          professional in your state, you know the frustration. Outdated government websites,
+          conflicting third-party blogs, and prep companies that blur the requirements to
+          sell you a course — finding a single reliable source of truth is nearly impossible.
         </p>
         <p>
           So we built one. TestPrepPilot is the source of truth we wished existed: a calm,
           plain-English map of what each credential actually requires, who issues it, what it
-          costs, and how long it takes — maintained by people whose only incentive is accuracy.
+          costs, and how long it takes — maintained by a desk whose only incentive is accuracy.
         </p>
       </section>
 
-      <section class="prose-section">
+      <section>
         <h2>Who's behind the desk</h2>
         <p>
-          We're a small editorial team of researchers, educators, and industry professionals —
-          not a content farm and not a prep vendor. We read the official statutes, candidate
-          handbooks, and testing-board requirements line by line, then distill that bureaucratic
-          legalese into a sequential roadmap you can actually act on.
+          We are a small editorial team of researchers, educators and industry professionals —
+          organized like a newsroom, not a marketing department. Four functions share
+          responsibility for every page:
         </p>
-        <p>
-          We don't aggregate links and call it research, and we don't let a course provider tell
-          us what the requirements are. Where a guide covers a licensed field, it's also confirmed
-          by a professional who holds that exact credential. You can meet them on our
-          <a href={TRUST_PAGES.reviewers}>Review Network</a> page.
-        </p>
+        <div class="masthead">
+          <div class="desk-role">
+            <h3>Research desk</h3>
+            <p>
+              Reads the statute, administrative code, candidate handbook and fee schedule for
+              each credential — line by line — and extracts the requirements with the source
+              attached. No aggregated links, no paraphrased blogs.
+            </p>
+          </div>
+          <div class="desk-role">
+            <h3>Verification &amp; updates</h3>
+            <p>
+              Re-checks fees, deadlines and rules on a rolling schedule, and stamps every
+              substantive page with the month it was last verified, so freshness is visible
+              rather than implied.
+            </p>
+          </div>
+          <div class="desk-role">
+            <h3>Licensed review network</h3>
+            <p>
+              Vetted professionals who hold the exact credential confirm a guide's accuracy
+              before or after publication. Real, checkable people — never invented names.
+              <a href={TRUST_PAGES.reviewers}>How the network works</a>.
+            </p>
+          </div>
+          <div class="desk-role">
+            <h3>Corrections &amp; readers</h3>
+            <p>
+              Every error report and credential suggestion lands on the desk and is read.
+              Substantive corrections are made on the page and noted, not quietly edited away.
+            </p>
+          </div>
+        </div>
+
+        <aside class="byline-policy">
+          <h3>Why our byline is a desk, not a persona</h3>
+          <p>
+            Much of the web solves the trust problem with invented authors — a stock photo, a
+            fake name, a fabricated credential. We take the harder route. Every guide is
+            bylined <strong>TestPrepPilot Editorial Desk</strong>, because that is who did the
+            work. When a licensed professional reviews a page, that person's real name,
+            credential and a way to verify them appear on the page itself. Until a reviewer is
+            attached, a guide says exactly who stands behind it: the desk.
+          </p>
+        </aside>
       </section>
 
       <div class="editorial-divider"></div>
 
-      <section class="team-section">
+      <section class="standards-section">
         <p class="eyebrow">WHAT WE STAND FOR</p>
-        <h2>Four commitments we don't bend</h2>
-        <p class="team-lede">
-          These aren't marketing slogans. They're the rules that govern every page we publish —
-          and the reason our recommendations don't shift when a provider pays.
+        <h2>The standards we publish under</h2>
+        <p class="standards-lede">
+          These are not slogans. Each is an operating rule with a public page that holds us to
+          it — if we break one, you can point at the rule we broke.
         </p>
 
-        <div class="values-grid">
-          <div class="value-item">
-            <h3>Verified data</h3>
-            <p>Every requirement we list is cited and checked against official state or national board documentation — never paraphrased from another blog.</p>
-          </div>
-          <div class="value-item">
-            <h3>Expert-reviewed</h3>
-            <p>Guides in licensed fields are confirmed by a professional who holds that credential and can be verified. Real people, never invented names.</p>
-          </div>
-          <div class="value-item">
-            <h3>Independent</h3>
-            <p>Affiliate revenue funds our research but never touches a fact, a ranking, or a recommendation. A provider cannot buy a better outcome here.</p>
-          </div>
-          <div class="value-item">
-            <h3>No fluff</h3>
-            <p>We respect your time. Our guides are built to be scanned, understood, and acted on immediately — no gated "download the full guide," no upsells.</p>
-          </div>
-        </div>
+        <ol class="standards">
+          <li>
+            <h3>Primary sources or nothing</h3>
+            <p>
+              Requirements come from the body that makes the rule — the state board, the
+              federal agency, the exam vendor's own handbook. Never from another blog, never
+              from a provider's sales page. <a href={TRUST_PAGES.methodology}>See the pipeline</a>.
+            </p>
+          </li>
+          <li>
+            <h3>Freshness is stated, not implied</h3>
+            <p>
+              Every substantive page carries a "last reviewed" month, and figures that change
+              often are labelled so you confirm them before paying. Certainty we don't have is
+              never performed.
+            </p>
+          </li>
+          <li>
+            <h3>Real reviewers, named — or none</h3>
+            <p>
+              A reviewed guide names the reviewer, their credential and how to verify it. A
+              guide with no reviewer says so. We will never attach an invented expert to a
+              page. <a href={TRUST_PAGES.reviewers}>Meet the network</a>.
+            </p>
+          </li>
+          <li>
+            <h3>Money never touches facts</h3>
+            <p>
+              Affiliate revenue funds the research; it does not shape it. No provider can pay
+              to alter a requirement, change a ranking or buy a recommendation.
+              <a href={TRUST_PAGES.disclosure}>How we're funded</a>.
+            </p>
+          </li>
+          <li>
+            <h3>Corrections in the open</h3>
+            <p>
+              When we get it wrong — or a board changes a rule — the page is corrected, the
+              last-reviewed stamp refreshed, and substantive changes noted.
+              <a href={TRUST_PAGES.editorialPolicy}>Editorial policy</a>.
+            </p>
+          </li>
+          <li>
+            <h3>Built to be used, not gated</h3>
+            <p>
+              No email walls, no "download the full guide," no upsell between you and the
+              requirements. The path is the product.
+            </p>
+          </li>
+        </ol>
       </section>
 
-      <section class="prose-section review-callout">
+      <div class="editorial-divider"></div>
+
+      <section class="review-callout">
         <h2>Reviewed by people who actually hold the license</h2>
         <p>
-          Anyone can rewrite a handbook. What makes a guide trustworthy is a second pair of eyes
-          from someone who has done the thing. Where we can, each guide is reviewed for accuracy
-          by a licensed expert in that exact field — a real, checkable person, never an invented
-          name. They confirm the eligibility, exam format, fees and timeline; they don't
-          "endorse" a provider. That separation is the whole point.
+          Anyone can rewrite a handbook. What makes a guide trustworthy is a second pair of
+          eyes from someone who has done the thing. Where a reviewer is attached, they confirm
+          the eligibility rules, exam format, fees and timeline against the primary sources —
+          an accuracy review, not an endorsement of any provider, and the attribution on the
+          page says exactly that.
         </p>
         <p class="rc-link"><a href={TRUST_PAGES.reviewers}>See how our review network works &rarr;</a></p>
+      </section>
+
+      <section>
+        <h2>How we keep the lights on</h2>
+        <p>
+          TestPrepPilot earns affiliate commissions from some of the prep providers we cover.
+          That relationship is disclosed wherever a link appears, and it never touches a fact,
+          a ranking or a recommendation — we routinely point readers to providers we earn
+          nothing from when they are the better route. The full terms are in our
+          <a href={TRUST_PAGES.disclosure}>Affiliate Disclosure</a>.
+        </p>
+      </section>
+
+      <section class="faq-section">
+        <h2>Questions readers ask the desk</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Who writes the guides on TestPrepPilot?</summary>
+            <p>
+              The <strong>TestPrepPilot Editorial Desk</strong> — a small research team, not a
+              content farm or a prep-course vendor. We byline the desk rather than inventing
+              personas, and when a licensed professional reviews a guide, that person is named
+              on the page. <a href={TRUST_PAGES.methodology}>How a guide is built</a>.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Are the guides reviewed by real experts?</summary>
+            <p>
+              Where a reviewer is attached, yes — a professional who holds that exact
+              credential, named on the page with a way to verify their license. Where no
+              reviewer is attached yet, the page says so and relies on the desk's
+              primary-source pipeline alone. We never invent a reviewer.
+              <a href={TRUST_PAGES.reviewers}>How reviewers are vetted</a>.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>How does TestPrepPilot make money?</summary>
+            <p>
+              Affiliate commissions from some exam-prep providers, disclosed on every page
+              where a link appears. Providers cannot pay to alter a requirement, change a
+              ranking, or secure a recommendation.
+              <a href={TRUST_PAGES.disclosure}>Read the disclosure</a>.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>How current is the information?</summary>
+            <p>
+              Every substantive page carries a "last reviewed" stamp showing the month its
+              figures were re-verified against primary sources. Anything that changes
+              frequently — fees especially — is labelled so you confirm it with the board
+              before you pay. <a href={TRUST_PAGES.methodology}>What the stamp means</a>.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I report an error or suggest a credential?</summary>
+            <p>
+              Through the <a href={TRUST_PAGES.contact}>contact page</a> — choose "Report an
+              error on a guide" or "Suggest a credential to cover." Every report is read by
+              the desk, and substantive corrections are made on the page and noted.
+            </p>
+          </details>
+        </div>
       </section>
 
       <section class="cta">
@@ -119,49 +333,109 @@ const breadcrumbItems = [
 </BaseLayout>
 
 <style>
-  .container { max-width: 900px; margin: 0 auto; padding: 0 2rem; }
+  .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
 
-  /* Hero Section */
-  .editorial-hero { padding: 5rem 0 4rem; border-bottom: 1px solid var(--line); margin-bottom: 4rem; text-align: center; }
-  .editorial-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 1.5rem; font-weight: 700; }
-  .editorial-hero h1 { font-family: var(--font-heading); font-size: clamp(3rem, 5vw, 4.5rem); margin: 0 0 1.5rem; font-weight: 700; line-height: 1.1; color: var(--ink); }
-  .editorial-hero .lede { font-family: var(--font-body); font-size: 1.35rem; color: var(--muted); max-width: 760px; margin: 0 auto; line-height: 1.7; }
+  /* Hero — matches the trust-page cluster (methodology, reviewers, policy) */
+  .page-hero { padding: 4.5rem 0 3rem; border-bottom: 2px solid var(--ink); margin-bottom: 0; }
+  .page-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin: 0 0 1.25rem; font-weight: 700; }
+  .page-hero h1 { font-family: var(--font-heading); font-size: var(--fs-h1); line-height: 1.12; margin: 0 0 1.5rem; }
+  .page-hero .lede { font-family: var(--font-body); font-size: var(--fs-prose); color: var(--muted); line-height: 1.75; margin: 0; }
 
-  /* Content Sections */
-  .about-content { padding-bottom: 8rem; }
+  /* At-a-glance stat strip */
+  .desk-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-gap);
+    margin: 0 0 1rem;
+    padding: 2.25rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .stat { text-align: left; }
+  .stat dt { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); font-weight: 700; margin-bottom: 0.4rem; order: 2; }
+  .stat dd { font-family: var(--font-heading); font-size: clamp(2rem, 1.4rem + 2.6vw, 3.1rem); font-weight: 700; color: var(--ink); margin: 0; line-height: 1; }
+  .stat .plus { font-size: 0.55em; font-weight: 600; color: var(--muted); }
+  .stat { display: flex; flex-direction: column; }
+  .stat dd { order: 1; margin-bottom: 0.35rem; }
+  .stat dt { order: 2; margin-bottom: 0; }
 
-  .prose-section { margin-bottom: 4rem; }
-  .prose-section h2 { font-family: var(--font-heading); font-size: 2.5rem; margin: 0 0 1.5rem 0; line-height: 1.2; }
-  .prose-section p { font-family: var(--font-body); font-size: 1.25rem; color: var(--ink); line-height: 1.8; margin: 0 0 1.5rem 0; }
-  .prose-section a { color: var(--primary); font-weight: 600; text-underline-offset: 3px; }
+  /* Prose */
+  .prose section { margin-top: 3.5rem; scroll-margin-top: 6rem; }
+  .prose h2 { font-family: var(--font-heading); font-size: var(--fs-h2); margin: 0 0 1.1rem; line-height: 1.2; }
+  .prose p { font-family: var(--font-body); font-size: var(--fs-prose); line-height: 1.8; margin: 0 0 1.35rem; color: var(--ink); }
+  .prose a { color: var(--primary); font-weight: 600; text-underline-offset: 3px; }
+  .prose strong { color: var(--ink); }
 
+  /* Masthead — desk functions */
+  .masthead { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-gap); margin: 2rem 0; }
+  .desk-role { padding: 1.5rem 1.6rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+  .desk-role h3 { font-family: var(--font-heading); font-size: var(--fs-h3); margin: 0 0 0.5rem; }
+  .desk-role p { margin: 0; font-size: 1rem; line-height: 1.65; color: var(--muted); }
+
+  /* Byline policy callout */
+  .byline-policy { padding: 1.75rem 2rem; background: var(--cream); border-left: 4px solid var(--primary); border-radius: var(--radius); margin-top: 2rem; }
+  .byline-policy h3 { font-family: var(--font-heading); font-size: var(--fs-h3); margin: 0 0 0.6rem; }
+  .byline-policy p { margin: 0; font-size: 1.05rem; line-height: 1.7; }
+
+  .editorial-divider { height: 1px; background: var(--line); width: 100px; margin: 4rem auto 0; }
+
+  /* Standards */
+  .standards-section .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin: 0 0 1rem; font-weight: 700; }
+  .standards-lede { color: var(--muted); max-width: 62ch; }
+  .standards { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-gap); counter-reset: std; }
+  .standards li { position: relative; padding: 1.5rem 1.6rem 1.5rem 4rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); counter-increment: std; }
+  .standards li::before { content: counter(std, decimal-leading-zero); position: absolute; left: 1.4rem; top: 1.55rem; font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--primary); line-height: 1; }
+  .standards h3 { font-family: var(--font-heading); font-size: var(--fs-h3); margin: 0 0 0.5rem; }
+  .standards p { margin: 0; font-size: 1rem; line-height: 1.65; color: var(--muted); }
+
+  /* Review callout */
   .review-callout { padding: 1.75rem 2rem; background: var(--cream); border-left: 4px solid var(--primary); border-radius: var(--radius); }
-  .review-callout h2 { font-size: 2rem; margin-bottom: 1rem; }
-  .review-callout p { font-size: 1.15rem; }
+  .review-callout h2 { margin-bottom: 1rem; }
+  .review-callout p { font-size: 1.1rem; }
   .rc-link { margin-bottom: 0 !important; }
   .rc-link a { font-weight: 700; }
 
-  .editorial-divider { height: 1px; background: var(--line); width: 100px; margin: 5rem auto; }
-
-  .team-section { text-align: center; }
-  .team-section .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 1rem; font-weight: 700; }
-  .team-section h2 { font-family: var(--font-heading); font-size: var(--fs-h1); line-height: 1.15; margin: 0 0 1.5rem 0; }
-  .team-section .team-lede { font-family: var(--font-body); font-size: var(--fs-prose); color: var(--muted); line-height: 1.7; max-width: 62ch; margin: 0 auto var(--space-section) auto; }
-
-  .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-gap); text-align: left; }
-  .value-item { padding: clamp(1.5rem, 1rem + 2.2vw, 3rem); background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
-  .value-item h3 { font-family: var(--font-heading); font-size: var(--fs-h3); margin: 0 0 1rem 0; }
-  .value-item p { font-family: var(--font-body); font-size: var(--fs-prose); color: var(--muted); line-height: 1.6; margin: 0; }
+  /* FAQ */
+  .faq-list { border-top: 1px solid var(--line); }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding: 1.15rem 2.5rem 1.15rem 0;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.35;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 0.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: var(--font-body);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--muted);
+    transition: transform 0.2s ease;
+  }
+  .faq-item[open] summary::after { content: '–'; }
+  .faq-item p { margin: 0; padding: 0 2.5rem 1.25rem 0; font-size: 1.02rem; line-height: 1.75; color: var(--muted); }
+  .faq-item p strong { color: var(--ink); }
 
   /* CTA */
-  .cta { border-top: 1px solid var(--line); padding-top: 3rem; text-align: center; }
-  .cta h2 { font-family: var(--font-heading); font-size: var(--fs-h2); margin: 0 0 1.5rem; }
-  .cta-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
+  .cta { border-top: 1px solid var(--line); padding-top: 2.5rem; margin-bottom: 4rem; }
+  .cta-links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
   .cta-links a { display: inline-block; padding: 0.6rem 1.1rem; border: 1px solid var(--line); border-radius: 999px; background: var(--cream); text-decoration: none; font-family: var(--font-body); font-size: 0.95rem; color: var(--ink); }
   .cta-links a:hover { border-color: var(--primary); }
 
-  @media (max-width: 768px) {
-    .editorial-divider { margin: 3rem auto; }
-    .prose-section h2 { font-size: 2rem; }
+  @media (max-width: 640px) {
+    .desk-stats { grid-template-columns: repeat(2, 1fr); gap: 1.75rem 1.25rem; }
+    .masthead { grid-template-columns: 1fr; }
+    .standards { grid-template-columns: 1fr; }
+    .byline-policy, .review-callout { padding: 1.4rem 1.35rem; }
+    .faq-item summary { font-size: 1.15rem; }
   }
 </style>
