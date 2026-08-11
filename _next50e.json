@@ -1,0 +1,502 @@
+[
+  {
+    "rank": 1,
+    "slug": "accuplacer-arithmetic",
+    "name": "accuplacer-arithmetic",
+    "heat": 83,
+    "vol": 2000000,
+    "src": "estimate",
+    "family": "ACCUPLACER",
+    "note": "Arithmetic placement subtest"
+  },
+  {
+    "rank": 2,
+    "slug": "accuplacer-reading",
+    "name": "accuplacer-reading",
+    "heat": 83,
+    "vol": 2000000,
+    "src": "estimate",
+    "family": "ACCUPLACER",
+    "note": "Reading placement subtest"
+  },
+  {
+    "rank": 3,
+    "slug": "accuplacer-quantitative-reasoning-algebra-statistics",
+    "name": "accuplacer-quantitative-reasoning-algebra-statistics",
+    "heat": 81,
+    "vol": 1500000,
+    "src": "estimate",
+    "family": "ACCUPLACER",
+    "note": "QAS placement subtest"
+  },
+  {
+    "rank": 4,
+    "slug": "accuplacer-writeplacer",
+    "name": "accuplacer-writeplacer",
+    "heat": 79,
+    "vol": 1000000,
+    "src": "estimate",
+    "family": "ACCUPLACER",
+    "note": "Essay placement subtest"
+  },
+  {
+    "rank": 5,
+    "slug": "accuplacer-writing",
+    "name": "accuplacer-writing",
+    "heat": 79,
+    "vol": 1000000,
+    "src": "estimate",
+    "family": "ACCUPLACER",
+    "note": "Writing placement subtest"
+  },
+  {
+    "rank": 6,
+    "slug": "ap-english-language-and-composition",
+    "name": "ap-english-language-and-composition",
+    "heat": 76,
+    "vol": 550000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "One of the most-taken AP exams"
+  },
+  {
+    "rank": 7,
+    "slug": "ap-united-states-history",
+    "name": "ap-united-states-history",
+    "heat": 74,
+    "vol": 450000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "One of the most-taken AP exams"
+  },
+  {
+    "rank": 8,
+    "slug": "ap-psychology",
+    "name": "ap-psychology",
+    "heat": 74,
+    "vol": 400000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "One of the most-taken AP exams"
+  },
+  {
+    "rank": 9,
+    "slug": "ap-world-history-modern",
+    "name": "ap-world-history-modern",
+    "heat": 74,
+    "vol": 400000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "One of the most-taken AP exams"
+  },
+  {
+    "rank": 10,
+    "slug": "ged-test",
+    "name": "ged-test",
+    "heat": 74,
+    "vol": 400000,
+    "src": "estimate",
+    "family": "HSE",
+    "note": "GED Testing Service reports ~400k test events per year"
+  },
+  {
+    "rank": 11,
+    "slug": "ap-english-literature-and-composition",
+    "name": "ap-english-literature-and-composition",
+    "heat": 72,
+    "vol": 300000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "One of the most-taken AP exams"
+  },
+  {
+    "rank": 12,
+    "slug": "cdl-on-road-driving-skills-test",
+    "name": "cdl-on-road-driving-skills-test",
+    "heat": 70,
+    "vol": 200000,
+    "src": "estimate",
+    "family": "CDL",
+    "note": "The on-road portion of the CDL skills test"
+  },
+  {
+    "rank": 13,
+    "slug": "cdl-pre-trip-vehicle-inspection-test",
+    "name": "cdl-pre-trip-vehicle-inspection-test",
+    "heat": 70,
+    "vol": 200000,
+    "src": "estimate",
+    "family": "CDL",
+    "note": "The pre-trip skills inspection, part of the CDL skills test"
+  },
+  {
+    "rank": 14,
+    "slug": "hiset-exam",
+    "name": "hiset-exam",
+    "heat": 68,
+    "vol": 150000,
+    "src": "estimate",
+    "family": "HSE",
+    "note": "HiSET is the second major HSE pathway"
+  },
+  {
+    "rank": 15,
+    "slug": "clep-introductory-psychology",
+    "name": "clep-introductory-psychology",
+    "heat": 66,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "CLEP",
+    "note": "The most-taken CLEP exam"
+  },
+  {
+    "rank": 16,
+    "slug": "learn2serve-alcohol-seller-server",
+    "name": "learn2serve-alcohol-seller-server",
+    "heat": 66,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "Alcohol",
+    "note": "Responsible alcohol seller-server training"
+  },
+  {
+    "rank": 17,
+    "slug": "tips-alcohol-certification",
+    "name": "tips-alcohol-certification",
+    "heat": 66,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "Alcohol",
+    "note": "TIPS alcohol training"
+  },
+  {
+    "rank": 18,
+    "slug": "cdl-hazmat-endorsement-knowledge-test",
+    "name": "cdl-hazmat-endorsement-knowledge-test",
+    "heat": 66,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "CDL",
+    "note": "Hazmat endorsement, requires TSA background check"
+  },
+  {
+    "rank": 19,
+    "slug": "faa-par-private-pilot-airplane",
+    "name": "faa-par-private-pilot-airplane",
+    "heat": 65,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "FAA",
+    "note": "The private pilot knowledge test, the most-taken FAA exam"
+  },
+  {
+    "rank": 20,
+    "slug": "clep-college-algebra",
+    "name": "clep-college-algebra",
+    "heat": 63,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "CLEP",
+    "note": "A major CLEP exam"
+  },
+  {
+    "rank": 21,
+    "slug": "clep-biology",
+    "name": "clep-biology",
+    "heat": 62,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "CLEP",
+    "note": "A major CLEP exam"
+  },
+  {
+    "rank": 22,
+    "slug": "servsafe-workplace",
+    "name": "servsafe-workplace",
+    "heat": 62,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "FoodSafety",
+    "note": "Workplace safety training"
+  },
+  {
+    "rank": 23,
+    "slug": "post-entry-level",
+    "name": "post-entry-level",
+    "heat": 62,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "LE",
+    "note": "POST entry-level law enforcement test"
+  },
+  {
+    "rank": 24,
+    "slug": "pro-board-firefighter-i",
+    "name": "pro-board-firefighter-i",
+    "heat": 62,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "Fire",
+    "note": "Pro Board firefighter I certification"
+  },
+  {
+    "rank": 25,
+    "slug": "nims-ics-400",
+    "name": "nims-ics-400",
+    "heat": 62,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "FEMA",
+    "note": "Advanced ICS course"
+  },
+  {
+    "rank": 26,
+    "slug": "corrections-officer-entrance-exam",
+    "name": "corrections-officer-entrance-exam",
+    "heat": 62,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "LE",
+    "note": "Corrections officer hiring exams nationwide"
+  },
+  {
+    "rank": 27,
+    "slug": "epa-608-universal",
+    "name": "epa-608-universal",
+    "heat": 62,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "EPA",
+    "note": "Universal refrigerant certification"
+  },
+  {
+    "rank": 28,
+    "slug": "cdl-passenger-endorsement-knowledge-test",
+    "name": "cdl-passenger-endorsement-knowledge-test",
+    "heat": 62,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "CDL",
+    "note": "Passenger endorsement for bus drivers"
+  },
+  {
+    "rank": 29,
+    "slug": "cdl-school-bus-endorsement-knowledge-test",
+    "name": "cdl-school-bus-endorsement-knowledge-test",
+    "heat": 62,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "CDL",
+    "note": "School bus endorsement"
+  },
+  {
+    "rank": 30,
+    "slug": "clep-history-of-the-united-states-i",
+    "name": "clep-history-of-the-united-states-i",
+    "heat": 61,
+    "vol": 45000,
+    "src": "estimate",
+    "family": "CLEP",
+    "note": "A major CLEP exam"
+  },
+  {
+    "rank": 31,
+    "slug": "clep-calculus",
+    "name": "clep-calculus",
+    "heat": 61,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "CLEP",
+    "note": "A major CLEP exam"
+  },
+  {
+    "rank": 32,
+    "slug": "wset-level-3-award-wines",
+    "name": "wset-level-3-award-wines",
+    "heat": 61,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "Wine",
+    "note": "WSET Level 3 is the sommelier-track standard"
+  },
+  {
+    "rank": 33,
+    "slug": "notary-signing-agent",
+    "name": "notary-signing-agent",
+    "heat": 61,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "Notary",
+    "note": "Notary signing agent certification"
+  },
+  {
+    "rank": 34,
+    "slug": "microsoft-office-specialist-excel-expert",
+    "name": "microsoft-office-specialist-excel-expert",
+    "heat": 61,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "MOS Excel Expert, one of the most-taken Office certs"
+  },
+  {
+    "rank": 35,
+    "slug": "nypd-police-officer-exam",
+    "name": "nypd-police-officer-exam",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "LE",
+    "note": "NYPD officer exam cycles draw tens of thousands"
+  },
+  {
+    "rank": 36,
+    "slug": "law-enforcement-pat",
+    "name": "law-enforcement-pat",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "LE",
+    "note": "Law enforcement physical ability test"
+  },
+  {
+    "rank": 37,
+    "slug": "hazwoper-8-hour-supervisor",
+    "name": "hazwoper-8-hour-supervisor",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "HAZWOPER",
+    "note": "Supervisor HAZWOPER"
+  },
+  {
+    "rank": 38,
+    "slug": "hashicorp-certified-terraform-associate",
+    "name": "hashicorp-certified-terraform-associate",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "HashiCorp",
+    "note": "The most-taken IaC certification"
+  },
+  {
+    "rank": 39,
+    "slug": "microsoft-office-specialist-powerpoint-associate",
+    "name": "microsoft-office-specialist-powerpoint-associate",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "MOS PowerPoint Associate"
+  },
+  {
+    "rank": 40,
+    "slug": "faa-ira-instrument-rating-airplane",
+    "name": "faa-ira-instrument-rating-airplane",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "FAA",
+    "note": "Instrument rating knowledge test"
+  },
+  {
+    "rank": 41,
+    "slug": "nes-essential-academic-skills",
+    "name": "nes-essential-academic-skills",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "NES",
+    "note": "NES EAS basic skills test"
+  },
+  {
+    "rank": 42,
+    "slug": "praxis-english-language-arts-content-and-analysis-5039",
+    "name": "praxis-english-language-arts-content-and-analysis-5039",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "English content knowledge Praxis"
+  },
+  {
+    "rank": 43,
+    "slug": "praxis-middle-school-mathematics-5164",
+    "name": "praxis-middle-school-mathematics-5164",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "Middle school math licensure Praxis"
+  },
+  {
+    "rank": 44,
+    "slug": "faa-air-traffic-controller",
+    "name": "faa-air-traffic-controller",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "FAA",
+    "note": "AT-SA exam"
+  },
+  {
+    "rank": 45,
+    "slug": "microsoft-office-specialist-word-expert",
+    "name": "microsoft-office-specialist-word-expert",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "MOS Word Expert"
+  },
+  {
+    "rank": 46,
+    "slug": "oracle-oci-foundations-associate",
+    "name": "oracle-oci-foundations-associate",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Oracle",
+    "note": "OCI foundations, a popular entry cloud cert"
+  },
+  {
+    "rank": 47,
+    "slug": "ase-a8-engine-performance",
+    "name": "ase-a8-engine-performance",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "ASE",
+    "note": "ASE A8 engine performance test"
+  },
+  {
+    "rank": 48,
+    "slug": "afaa-group-fitness-instructor",
+    "name": "afaa-group-fitness-instructor",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "Fitness",
+    "note": "AFAA group fitness certification"
+  },
+  {
+    "rank": 49,
+    "slug": "praxis-biology-5236",
+    "name": "praxis-biology-5236",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "Biology content knowledge Praxis"
+  },
+  {
+    "rank": 50,
+    "slug": "nfpa-70e-electrical-safety-training",
+    "name": "nfpa-70e-electrical-safety-training",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "NFPA70E",
+    "note": "NFPA 70E training"
+  }
+]

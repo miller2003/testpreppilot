@@ -1,0 +1,502 @@
+[
+  {
+    "rank": 1,
+    "slug": "servsafe-food-protection-manager",
+    "name": "ServSafe Food Protection Manager Certification",
+    "heat": 90,
+    "vol": 500000,
+    "src": "estimate",
+    "family": "FoodSafety",
+    "note": "ServSafe Manager is the food-industry standard; among the highest-volume US certifications"
+  },
+  {
+    "rank": 2,
+    "slug": "osha-10-general-industry",
+    "name": "OSHA 10-Hour General Industry Outreach Training",
+    "heat": 85,
+    "vol": 200000,
+    "src": "estimate",
+    "family": "OSHA",
+    "note": "OSHA 10 general industry — widely required by employers"
+  },
+  {
+    "rank": 3,
+    "slug": "osha-30-general-industry",
+    "name": "OSHA 30-Hour General Industry Outreach Training",
+    "heat": 82,
+    "vol": 120000,
+    "src": "estimate",
+    "family": "OSHA",
+    "note": "OSHA 30 general industry — supervisory requirement in many sectors"
+  },
+  {
+    "rank": 4,
+    "slug": "casper-test",
+    "name": "Casper Situational Judgment Test",
+    "heat": 81,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "Admissions",
+    "note": "CASPer situational-judgment test — used by health-professions admissions; very high volume"
+  },
+  {
+    "rank": 5,
+    "slug": "nmls-safe-mlo-national-test",
+    "name": "SAFE Mortgage Loan Originator National Test with Uniform State Content",
+    "heat": 81,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "Mortgage",
+    "note": "NMLS SAFE MLO national test — every new mortgage loan originator"
+  },
+  {
+    "rank": 6,
+    "slug": "microsoft-ms-900",
+    "name": "Microsoft 365 Certified: Fundamentals",
+    "heat": 81,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "MS-900 M365 Fundamentals — among the most-taken Microsoft certs"
+  },
+  {
+    "rank": 7,
+    "slug": "aapc-cpc",
+    "name": "AAPC Certified Professional Coder",
+    "heat": 80,
+    "vol": 90000,
+    "src": "estimate",
+    "family": "AAPC",
+    "note": "AAPC CPC — the flagship medical-coding credential; very high volume"
+  },
+  {
+    "rank": 8,
+    "slug": "ptcb-cpht",
+    "name": "PTCB Certified Pharmacy Technician",
+    "heat": 80,
+    "vol": 90000,
+    "src": "estimate",
+    "family": "PTCB",
+    "note": "PTCB Pharmacy Technician — one of the largest allied-health exams"
+  },
+  {
+    "rank": 9,
+    "slug": "epa-609-mvac-certification",
+    "name": "EPA Section 609 Motor Vehicle Air Conditioning Technician Certification",
+    "heat": 80,
+    "vol": 90000,
+    "src": "estimate",
+    "family": "EPA",
+    "note": "EPA 609 — motor-vehicle AC refrigerant; required for technicians, very high volume"
+  },
+  {
+    "rank": 10,
+    "slug": "safe-agilist",
+    "name": "SAFe Agilist",
+    "heat": 80,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "Agile",
+    "note": "SAFe Agilist — the flagship Scaled Agile cert, very high volume"
+  },
+  {
+    "rank": 11,
+    "slug": "eccouncil-ceh",
+    "name": "Certified Ethical Hacker",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "ECCouncil",
+    "note": "EC-Council CEH — one of the most-taken security certifications"
+  },
+  {
+    "rank": 12,
+    "slug": "nic-barber-theory",
+    "name": "NIC Barber Theory Examination",
+    "heat": 77,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "Beauty",
+    "note": "NIC barber theory — barber licensing, high state-exam volume"
+  },
+  {
+    "rank": 13,
+    "slug": "mblex",
+    "name": "Massage and Bodywork Licensing Examination",
+    "heat": 77,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "OTHER:mblex",
+    "note": "MBLEx — the massage-therapy licensing exam used by most states"
+  },
+  {
+    "rank": 14,
+    "slug": "google-cybersecurity-professional-certificate",
+    "name": "Google Cybersecurity Professional Certificate",
+    "heat": 77,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "Google",
+    "note": "Google Cybersecurity Career Certificate — very high enrollment"
+  },
+  {
+    "rank": 15,
+    "slug": "praxis-teaching-reading-k-12-5206",
+    "name": "Praxis Teaching Reading: K-12 (5206)",
+    "heat": 76,
+    "vol": 45000,
+    "src": "estimate",
+    "family": "Teaching",
+    "note": "Praxis Teaching Reading K-12 — reading is a widely required licensure exam"
+  },
+  {
+    "rank": 16,
+    "slug": "statefoodsafety-food-protection-manager",
+    "name": "StateFoodSafety Certified Food Protection Manager",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "FoodSafety",
+    "note": "StateFoodSafety manager exam — common online ANSI-accredited option"
+  },
+  {
+    "rank": 17,
+    "slug": "prince2-foundation",
+    "name": "PRINCE2 Foundation",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "Prince2",
+    "note": "PRINCE2 Foundation — one of the most-taken project-management exams worldwide"
+  },
+  {
+    "rank": 18,
+    "slug": "aws-certified-data-engineer-associate",
+    "name": "AWS Certified Data Engineer - Associate",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "AWS",
+    "note": "AWS Data Engineer Associate — new, very high initial volume"
+  },
+  {
+    "rank": 19,
+    "slug": "microsoft-dp-900",
+    "name": "Microsoft Certified: Azure Data Fundamentals",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "DP-900 Azure Data Fundamentals — popular entry data cert"
+  },
+  {
+    "rank": 20,
+    "slug": "microsoft-sc-900",
+    "name": "Microsoft Certified: Security, Compliance and Identity Fundamentals",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "SC-900 Security Compliance Identity Fundamentals"
+  },
+  {
+    "rank": 21,
+    "slug": "praxis-teaching-reading-elementary-5205",
+    "name": "Praxis Teaching Reading: Elementary (5205)",
+    "heat": 75,
+    "vol": 35000,
+    "src": "estimate",
+    "family": "Teaching",
+    "note": "Praxis Teaching Reading: Elementary — required in many states"
+  },
+  {
+    "rank": 22,
+    "slug": "isaca-cisa",
+    "name": "Certified Information Systems Auditor",
+    "heat": 75,
+    "vol": 35000,
+    "src": "estimate",
+    "family": "ISACA",
+    "note": "ISACA CISA — the audit/IS-control flagship"
+  },
+  {
+    "rank": 23,
+    "slug": "danb-ice",
+    "name": "DANB Infection Control Exam",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "DANB",
+    "note": "DANB Infection Control — widely required for dental assistants"
+  },
+  {
+    "rank": 24,
+    "slug": "nic-barber-practical",
+    "name": "NIC Barber Practical Examination",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Beauty",
+    "note": "NIC barber practical — hands-on barber licensing"
+  },
+  {
+    "rank": 25,
+    "slug": "nra-range-safety-officer",
+    "name": "NRA Range Safety Officer",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "NRA",
+    "note": "NRA Range Safety Officer — very common range credential"
+  },
+  {
+    "rank": 26,
+    "slug": "praxis-special-education-foundational-knowledge-5355",
+    "name": "Praxis Special Education: Foundational Knowledge (5355)",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Teaching",
+    "note": "Praxis Special Education — widely required sped licensure"
+  },
+  {
+    "rank": 27,
+    "slug": "aws-certified-ai-practitioner",
+    "name": "AWS Certified AI Practitioner",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "AWS",
+    "note": "AWS AI Practitioner — new entry AI cert"
+  },
+  {
+    "rank": 28,
+    "slug": "certified-kubernetes-administrator",
+    "name": "Certified Kubernetes Administrator",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "K8s",
+    "note": "CNCF CKA — Kubernetes administration, very high demand"
+  },
+  {
+    "rank": 29,
+    "slug": "microsoft-az-400",
+    "name": "Microsoft Certified: DevOps Engineer Expert",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "AZ-400 DevOps Engineer Expert"
+  },
+  {
+    "rank": 30,
+    "slug": "microsoft-md-102",
+    "name": "Microsoft 365 Certified: Endpoint Administrator Associate",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "MD-102 Endpoint Administrator — high-demand Windows admin"
+  },
+  {
+    "rank": 31,
+    "slug": "salesforce-administrator",
+    "name": "Salesforce Certified Administrator",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Salesforce",
+    "note": "Salesforce Administrator — the most-taken Salesforce cert"
+  },
+  {
+    "rank": 32,
+    "slug": "ase-xev-level-1-electrical-safety",
+    "name": "ASE xEV Level 1 Electrical Safety Awareness Certification",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "ASE",
+    "note": "ASE XEV Level 1 — EV safety, fast-growing technician cert"
+  },
+  {
+    "rank": 33,
+    "slug": "nha-cpct",
+    "name": "NHA Patient Care Technician Certification",
+    "heat": 73,
+    "vol": 25000,
+    "src": "estimate",
+    "family": "NHA",
+    "note": "NHA patient care technician — high-entry allied-health cert"
+  },
+  {
+    "rank": 34,
+    "slug": "danb-rhs",
+    "name": "DANB Radiation Health and Safety Exam",
+    "heat": 73,
+    "vol": 25000,
+    "src": "estimate",
+    "family": "DANB",
+    "note": "DANB Radiation Health and Safety — dental-assisting requirement"
+  },
+  {
+    "rank": 35,
+    "slug": "comptia-project-plus",
+    "name": "CompTIA Project+",
+    "heat": 73,
+    "vol": 25000,
+    "src": "estimate",
+    "family": "CompTIA",
+    "note": "CompTIA Project+ — project management for IT"
+  },
+  {
+    "rank": 36,
+    "slug": "nremt-aemt",
+    "name": "NREMT Advanced Emergency Medical Technician Certification",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "EMS",
+    "note": "NREMT Advanced EMT — mid EMS tier"
+  },
+  {
+    "rank": 37,
+    "slug": "navta-approved-veterinary-assistant",
+    "name": "NAVTA Approved Veterinary Assistant",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "VetTech",
+    "note": "NAVTA veterinary assistant — common entry vet credential"
+  },
+  {
+    "rank": 38,
+    "slug": "neha-certified-professional-food-safety",
+    "name": "Certified Professional – Food Safety",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "FoodSafety",
+    "note": "NEHA food-safety manager — alternative to ServSafe"
+  },
+  {
+    "rank": 39,
+    "slug": "nsca-cscs",
+    "name": "NSCA Certified Strength and Conditioning Specialist",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "PersonalTraining",
+    "note": "NSCA CSCS — strength & conditioning, professional standard"
+  },
+  {
+    "rank": 40,
+    "slug": "praxis-communication-and-literacy-combined-5753",
+    "name": "Praxis Communication and Literacy Combined (5753)",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Teaching",
+    "note": "Praxis Communication & Literacy (MA) — state-required combo"
+  },
+  {
+    "rank": 41,
+    "slug": "praxis-english-language-arts-content-knowledge-5038",
+    "name": "Praxis English Language Arts: Content Knowledge (5038)",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Teaching",
+    "note": "Praxis ELA Content Knowledge — common secondary licensure"
+  },
+  {
+    "rank": 42,
+    "slug": "series-79",
+    "name": "Series 79 Investment Banking Representative Exam",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "FINRA",
+    "note": "FINRA Series 79 — investment banking rep"
+  },
+  {
+    "rank": 43,
+    "slug": "osha-510-construction-standards",
+    "name": "OSHA 510 Occupational Safety and Health Standards for the Construction Industry",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "OSHA",
+    "note": "OSHA 510 — construction-standards trainer/competent-person path"
+  },
+  {
+    "rank": 44,
+    "slug": "aws-certified-devops-engineer-professional",
+    "name": "AWS Certified DevOps Engineer - Professional",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "AWS",
+    "note": "AWS DevOps Engineer Professional"
+  },
+  {
+    "rank": 45,
+    "slug": "aws-certified-security-specialty",
+    "name": "AWS Certified Security - Specialty",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "AWS",
+    "note": "AWS Security Specialty"
+  },
+  {
+    "rank": 46,
+    "slug": "certified-kubernetes-application-developer",
+    "name": "Certified Kubernetes Application Developer",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "K8s",
+    "note": "CNCF CKAD — Kubernetes app development"
+  },
+  {
+    "rank": 47,
+    "slug": "comptia-ai-essentials",
+    "name": "CompTIA AI Essentials",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "CompTIA",
+    "note": "CompTIA AI Essentials — new high-visibility AI entry cert"
+  },
+  {
+    "rank": 48,
+    "slug": "isaca-cism",
+    "name": "Certified Information Security Manager",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "ISACA",
+    "note": "ISACA CISM — information-security management"
+  },
+  {
+    "rank": 49,
+    "slug": "google-associate-data-practitioner",
+    "name": "Google Cloud Associate Data Practitioner",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Google",
+    "note": "Google Associate Data Practitioner — new entry data cert"
+  },
+  {
+    "rank": 50,
+    "slug": "google-professional-data-engineer",
+    "name": "Google Cloud Professional Data Engineer",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Google",
+    "note": "Google Professional Data Engineer"
+  }
+]

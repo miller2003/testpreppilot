@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.prometric.com//static/favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+    <link href="https://www.prometric.com/assets/tailwind.css?v=5.2" rel="stylesheet"  />
+    <link href="https://www.prometric.com/assets/base.min.css" rel="preload"  as="style"  onload="this.onload=null;this.rel='stylesheet'" />
+    <script src="https://www.prometric.com/assets/home.min.js?v=5.5"  ></script>
+    <script src="https://www.prometric.com/assets/innerpages.min.js?v=5.17"  ></script>
+    <style>
+        .dealay { opacity: 0; transition: opacity 0.6s ease-in-out; }    
+        .dealay-low { opacity: 0; transition: opacity 0.3s ease-in-out; }    
+        .dealay-lowest { opacity: 0; transition: opacity 0.3s ease-in-out; }
+    </style>
+<title>Prometric | Prometric</title>
+<script><!-- Google Tag Manager -->
+dataLayer = [];
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KTPZQMQ');
+<!-- End Google Tag Manager -->
+</script><meta name="generator" content="SEOmatic">
+<meta name="description" content="Prometric provides industry-leading assessment design and delivery solutions. Find exams and resources to meet your certification needs.">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="robots" content="none">
+<meta content="PrometricGlobal" property="fb:profile_id">
+<meta content="en_US" property="og:locale">
+<meta content="Prometric" property="og:site_name">
+<meta content="website" property="og:type">
+<meta content="Prometric | Prometric" property="og:title">
+<meta content="Prometric provides industry-leading assessment design and delivery solutions. Find exams and resources to meet your certification needs." property="og:description">
+<meta content="https://www.prometric.com/images/_1200x630_stretch_center-center_82_none/Prometric-Logo-Black_Jpeg.jpg?mtime=1746744145" property="og:image">
+<meta content="1200" property="og:image:width">
+<meta content="630" property="og:image:height">
+<meta content="Prometric logo" property="og:image:alt">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@prometricglobal">
+<meta name="twitter:creator" content="@prometricglobal">
+<meta name="twitter:title" content="Prometric | Prometric">
+<meta name="twitter:description" content="Prometric provides industry-leading assessment design and delivery solutions. Find exams and resources to meet your certification needs.">
+<meta name="twitter:image" content="https://www.prometric.com/images/_800x800_letterbox_center-center_82_none/Prometric-Logo-Black_Jpeg.jpg?mtime=1746744145">
+<meta name="twitter:image:width" content="800">
+<meta name="twitter:image:height" content="800">
+<meta name="twitter:image:alt" content="Prometric logo">
+<link href="https://www.prometric.com/" rel="home"></head>
+<body x-data="scrollHandler()" x-init="initScroll()"><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTPZQMQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="site-wrapper" id="siteWrapper" data-siteurl="https://www.prometric.com/">
+                    <header class="site-header sticky top-0 z-[127] dealay-low" :class="{ 'scrolled': isScrolled }">
+        <div class="utilityNav border-b border-b-[#DCDEEE] " >
+            <div class="utility-nav-inner py-2 bg-grey flex items-center h-full max-md:py-3.5">
+                <div class="container  ">
+                    <div class="utility-nav-wrapper flex items-center justify-between max-md:justify-end">
+                        <div class="utility-nav-left max-md:hidden">
+                            <ul  class="utility-nav-items flex items-center gap-x-8"><li  class="utility-nav-item flex"><a  class="nav-link text-sm leading-[19px] text-darkNavy" href="https://www.prometric.com/closures/">Test Center Closures</a></li><li  class="utility-nav-item flex"><a  class="nav-link text-sm leading-[19px] text-darkNavy" href="https://www.prometric.com/become-a-test-center/">Become a Test Center</a></li></ul>
+                        </div>
+                        <div class="utility-nav-right flex items-center gap-x-8 max-md:gap-x-6">
+                            <a class="nav-link text-sm leading-[19px] text-darkNavy" id="searchMenu" href="https://www.prometric.com/search/results?search=">Search</a>
+                            <ul  class="utility-nav-items flex items-center gap-x-8"><li  class="utility-nav-item flex"><a  class="nav-link text-sm leading-[19px] text-darkNavy" href="https://www.prometric.com/contact-us/">Contact Us</a></li></ul>
+                                                        <select id="site-selector" aria-label="Choose language" class="bg-transparent text-sm leading-[19px] text-darkNavy shadow-none font-semibold max-md:max-w-[100px]">
+                                                                    <option value="https://www.prometric.com/" data-langcode="en-US" selected disabled>English </option>
+                                                                    <option value="https://www.prometric.com/ar/" data-langcode="ar" >العربية </option>
+                                                                    <option value="https://www.prometric.com/zh-hans/" data-langcode="zh-Hans" >简体中文 </option>
+                                                                    <option value="https://www.prometric.com/zh-hant/" data-langcode="zh-Hant" >繁體中文 </option>
+                                                                    <option value="https://www.prometric.com/hr/" data-langcode="hr" >Hrvatski </option>
+                                                                    <option value="https://www.prometric.com/da/" data-langcode="da" >Dansk </option>
+                                                                    <option value="https://www.prometric.com/nl/" data-langcode="nl" >Nederlands </option>
+                                                                    <option value="https://www.prometric.com/fr/" data-langcode="fr" >Français </option>
+                                                                    <option value="https://www.prometric.com/ga/" data-langcode="ga" >Gaeilge </option>
+                                                                    <option value="https://www.prometric.com/de/" data-langcode="de" >Deutsch </option>
+                                                                    <option value="https://www.prometric.com/el/" data-langcode="el" >Ελληνικά </option>
+                                                                    <option value="https://www.prometric.com/hu/" data-langcode="hu" >Magyar </option>
+                                                                    <option value="https://www.prometric.com/id/" data-langcode="id" >Indonesia </option>
+                                                                    <option value="https://www.prometric.com/it/" data-langcode="it" >Italiano </option>
+                                                                    <option value="https://www.prometric.com/ja/" data-langcode="ja" >日本語 </option>
+                                                                    <option value="https://www.prometric.com/ko/" data-langcode="ko" >한국어 </option>
+                                                                    <option value="https://www.prometric.com/ms/" data-langcode="ms" >Melayu </option>
+                                                                    <option value="https://www.prometric.com/pl/" data-langcode="pl" >Polski </option>
+                                                                    <option value="https://www.prometric.com/pt/" data-langcode="pt" >Português </option>
+                                                                    <option value="https://www.prometric.com/ro/" data-langcode="ro" >Română </option>
+                                                                    <option value="https://www.prometric.com/gd/" data-langcode="gd" >Gàidhlig </option>
+                                                                    <option value="https://www.prometric.com/sl/" data-langcode="sl" >Slovenščina </option>
+                                                                    <option value="https://www.prometric.com/es/" data-langcode="es" >Español </option>
+                                                                    <option value="https://www.prometric.com/cy/" data-langcode="cy" >Cymraeg </option>
+                                                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainNav bg-paleGrey border-b border-b-[#DCDEEE] relative">
+            <div class="container  ">
+                <div class="flex flex-row justify-evenly max-lg:justify-between">
+                    <div class="w-1/5 logo max-md:w-[190px] flex">
+                                                    <a href="https://www.prometric.com/" class="inline-block">
+                            <img src="https://www.prometric.com/images/icon_2025-06-18-061456_bkbo.svg" alt="Icon" class="max-h-[55px]" fetchpriority="high" decoding="async" >
+                            </a>
+                                            </div>
+                    <div class="w-4/5 max-lg:flex max-lg:justify-end max-lg:items-center max-md:w-auto" x-data="{ dropdownID: '',mobileOpen:false }">
+                        <div class="hemburg-menu-icon lg:hidden " @click="mobileOpen = !mobileOpen;document.body.classList.toggle('max-lg:overflow-hidden', mobileOpen)" :class="mobileOpen?'mopen':''">
+                            <div class="top bar"></div>
+                            <div class="mid bar"></div>
+                            <div class="bot bar"></div>
+                        </div>
+                        <div class="main-nav-wrapper h-full max-lg:absolute max-lg:top-[100%] max-lg:left-0 max-lg:w-full  max-lg:overflow-y-auto hide-scrollbar" :class="{ 'max-lg:hidden': !mobileOpen }" x-cloak2>
+                                                <ul class="flex flex-row justify-end h-full menu-wrap max-lg:flex-col max-lg:justify-start max-lg:h-auto"   @click.away="dropdownID = ''">
+                                                            <li class=" h-full nav-button-li">
+                                                                            <button class=" flex flex-row items-center gap-x-3 nav-button h-full px-2.5 text-base leading-[22px] tracking-[-0.01em] border-y border-y-4 border-y-transparent font-medium text-darkNavy bg-white hover:bg-grey max-lg:border-b-transparent"  @click="dropdownID = (dropdownID === 'dropdown1' ? '' :'dropdown1')"
+                                                                                :class="{ 'opendrop': dropdownID === 'dropdown1' }" >
+                                            <span>Exams</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                                        </button>
+                                                                                                            <div class="main-nav-dropdown absolute w-[100%] max-w-[900px] -translate-x-2/4 left-2/4 top-[calc(_100%_+_1px)] bg-grey border-smoke p-6 pt-8 rounded-bl-2xl rounded-br-2xl max-lg:relative max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:max-w-full max-lg:rounded-none max-lg:p-4 " 
+                                      x-show="dropdownID === 'dropdown1'"
+                                      x-cloak
+                                      x-transition:enter="transition enter"
+                                      x-transition:enter-start="enter"
+                                      x-transition:enter-end="enter-active"
+                                      x-transition:leave="transition leave"
+                                      x-transition:leave-start="leave"
+                                      x-transition:leave-end="leave-active"
+                                    >
+                                                                            <a href="https://www.prometric.com/exams/"  class="flex items-center !text-[22px] !leading-7 font-semibold gap-x-2 justify-center mb-4 max-lg:justify-between max-lg:pr-4">
+                                            <span>Exams</span> 
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg>
+                                        </a>
+                                                                                                                        <div class="nav-link-desc max-w-[295px] mb-6 mx-auto max-lg:max-w-full max-lg:mb-4"><p>Explore our resources for test takers</p></div>
+                                                                                <ul class="nav-children grid grid-cols-3 gap-1.5 max-lg:grid-cols-2 max-md:grid-cols-1">
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/find-your-exam/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Find Your Exam</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Search our site to find your exam, schedule and more</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/before-your-exam/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Before Your Exam</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Learn how to prepare before exam day</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/accommodations/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Accommodations</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Access information about accommodations</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/on-exam-day/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>On Exam Day</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Get important details for test day</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/after-your-exam/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>After Your Exam</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Find out how to access scores and more</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/frequently-asked-questions/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Frequently Asked Questions</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Get answers to the most common questions</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                                                                                                                          <li class="nav-child-item bg-[#F3F6FB] border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/closures/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Test Center Closures</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Learn about any current test current closures</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                  </ul>
+                                    </div> 
+                                                                    </li>
+                                                            <li class=" h-full nav-button-li">
+                                                                            <button class=" flex flex-row items-center gap-x-3 nav-button h-full px-2.5 text-base leading-[22px] tracking-[-0.01em] border-y border-y-4 border-y-transparent font-medium text-darkNavy bg-white hover:bg-grey max-lg:border-b-transparent"  @click="dropdownID = (dropdownID === 'dropdown2' ? '' :'dropdown2')"
+                                                                                :class="{ 'opendrop': dropdownID === 'dropdown2' }" >
+                                            <span>Why Prometric</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                                        </button>
+                                                                                                            <div class="main-nav-dropdown absolute w-[100%] max-w-[900px] -translate-x-2/4 left-2/4 top-[calc(_100%_+_1px)] bg-grey border-smoke p-6 pt-8 rounded-bl-2xl rounded-br-2xl max-lg:relative max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:max-w-full max-lg:rounded-none max-lg:p-4 " 
+                                      x-show="dropdownID === 'dropdown2'"
+                                      x-cloak
+                                      x-transition:enter="transition enter"
+                                      x-transition:enter-start="enter"
+                                      x-transition:enter-end="enter-active"
+                                      x-transition:leave="transition leave"
+                                      x-transition:leave-start="leave"
+                                      x-transition:leave-end="leave-active"
+                                    >
+                                                                            <a href="https://www.prometric.com/why-prometric/"  class="flex items-center !text-[22px] !leading-7 font-semibold gap-x-2 justify-center mb-4 max-lg:justify-between max-lg:pr-4">
+                                            <span>Why Prometric</span> 
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg>
+                                        </a>
+                                                                                                                        <div class="nav-link-desc max-w-[295px] mb-6 mx-auto max-lg:max-w-full max-lg:mb-4"><p>Build the workforce of tomorrow with us</p></div>
+                                                                                <ul class="nav-children grid grid-cols-3 gap-1.5 max-lg:grid-cols-2 max-md:grid-cols-1">
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/assessment-development/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Assessment Development</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Learn about our custom assessment solutions</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/global-delivery/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Global Delivery</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Explore our global footprint of test centers</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/candidate-experience/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Candidate Experience</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Learn about our world-class testing experiences</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/program-growth/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Program Growth</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Discover how to grow your program with us</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/security/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Security</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Learn why we are global leaders in security</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/finetune-ai/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Finetune AI</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Innovate with patented custom assessment AI</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                                                                                                                          <li class="nav-child-item bg-[#F3F6FB] border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/client-resources/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Client Resources</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Access tools and stay up to date on new releases</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                  </ul>
+                                    </div> 
+                                                                    </li>
+                                                            <li class=" h-full nav-button-li">
+                                                                            <button class=" flex flex-row items-center gap-x-3 nav-button h-full px-2.5 text-base leading-[22px] tracking-[-0.01em] border-y border-y-4 border-y-transparent font-medium text-darkNavy bg-white hover:bg-grey max-lg:border-b-transparent"  @click="dropdownID = (dropdownID === 'dropdown3' ? '' :'dropdown3')"
+                                                                                :class="{ 'opendrop': dropdownID === 'dropdown3' }" >
+                                            <span>Solutions</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                                        </button>
+                                                                                                            <div class="main-nav-dropdown absolute w-[100%] max-w-[900px] -translate-x-2/4 left-2/4 top-[calc(_100%_+_1px)] bg-grey border-smoke p-6 pt-8 rounded-bl-2xl rounded-br-2xl max-lg:relative max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:max-w-full max-lg:rounded-none max-lg:p-4 " 
+                                      x-show="dropdownID === 'dropdown3'"
+                                      x-cloak
+                                      x-transition:enter="transition enter"
+                                      x-transition:enter-start="enter"
+                                      x-transition:enter-end="enter-active"
+                                      x-transition:leave="transition leave"
+                                      x-transition:leave-start="leave"
+                                      x-transition:leave-end="leave-active"
+                                    >
+                                                                            <a href="https://www.prometric.com/solutions/"  class="flex items-center !text-[22px] !leading-7 font-semibold gap-x-2 justify-center mb-4 max-lg:justify-between max-lg:pr-4">
+                                            <span>Solutions</span> 
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg>
+                                        </a>
+                                                                                                                        <div class="nav-link-desc max-w-[295px] mb-6 mx-auto max-lg:max-w-full max-lg:mb-4"><p><span>Our innovations evolve industry standards</span></p></div>
+                                                                                <ul class="nav-children grid grid-cols-3 gap-1.5 max-lg:grid-cols-2 max-md:grid-cols-1">
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/ai-exam-development/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>AI Exam Development</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Develop exams 18x faster with patented Finetune Generate®</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/ai-content-cataloging/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>AI Content Cataloging</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Align and classify content in minutes with Finetune Catalog<span style="background-color:rgb(255,255,255);color:rgb(113,119,125);"><span style="float:none;font-family:Roboto, Helvetica, sans-serif;font-size:14px;font-style:normal;font-weight:400;letter-spacing:normal;text-align:left;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">™</span></span></p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/vr-skills-development/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>VR Skills Development</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Develop and evaluate authentic skills in real-world contexts</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/in-center-delivery/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>In-Center Delivery</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Expand in-person exam delivery with 8K+ test centers worldwide</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/remote-delivery/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Remote Delivery</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Provide remote exams with secure, AI-powered ProProctor<span style="background-color:rgb(255,255,255);color:rgb(113,119,125);"><span style="float:none;font-family:Roboto, Helvetica, sans-serif;font-size:14px;font-style:normal;font-weight:400;letter-spacing:normal;text-align:left;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">™</span></span></p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/exam-prep/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Exam Prep</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Ensure test takers are prepared for exam day with Boost™ and Practice+™</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/content-library/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Content Library</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Sell and license your assessment content securely</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/language-proficiency/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Language Proficiency</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Rapidly and reliably prove English proficiency with CELPIP - Horizon</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/data-analytics/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Data Analytics</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Automate reporting with ProInsights lifecycle analytics</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                  </ul>
+                                    </div> 
+                                                                    </li>
+                                                            <li class=" h-full nav-button-li">
+                                                                            <button class=" flex flex-row items-center gap-x-3 nav-button h-full px-2.5 text-base leading-[22px] tracking-[-0.01em] border-y border-y-4 border-y-transparent font-medium text-darkNavy bg-white hover:bg-grey max-lg:border-b-transparent"  @click="dropdownID = (dropdownID === 'dropdown4' ? '' :'dropdown4')"
+                                                                                :class="{ 'opendrop': dropdownID === 'dropdown4' }" >
+                                            <span>Education</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                                        </button>
+                                                                                                            <div class="main-nav-dropdown absolute w-[100%] max-w-[900px] -translate-x-2/4 left-2/4 top-[calc(_100%_+_1px)] bg-grey border-smoke p-6 pt-8 rounded-bl-2xl rounded-br-2xl max-lg:relative max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:max-w-full max-lg:rounded-none max-lg:p-4 " 
+                                      x-show="dropdownID === 'dropdown4'"
+                                      x-cloak
+                                      x-transition:enter="transition enter"
+                                      x-transition:enter-start="enter"
+                                      x-transition:enter-end="enter-active"
+                                      x-transition:leave="transition leave"
+                                      x-transition:leave-start="leave"
+                                      x-transition:leave-end="leave-active"
+                                    >
+                                                                            <a href="https://www.prometric.com/education/"  class="flex items-center !text-[22px] !leading-7 font-semibold gap-x-2 justify-center mb-4 max-lg:justify-between max-lg:pr-4">
+                                            <span>Education</span> 
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg>
+                                        </a>
+                                                                                                                        <div class="nav-link-desc max-w-[295px] mb-6 mx-auto max-lg:max-w-full max-lg:mb-4"><p>Our education solutions transform schools</p></div>
+                                                                                <ul class="nav-children grid grid-cols-3 gap-1.5 max-lg:grid-cols-2 max-md:grid-cols-1">
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/ai-assessment-development/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>AI Assessment Development</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Develop exams up to 18x faster with Finetune Generate®</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/ai-content-alignment/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>AI Content Alignment</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Align content to standards in minutes with Finetune Catalog™</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/assessment-platform/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Assessment Platform</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Create and deliver assessments with EdAssess®</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/data-insights/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Data Insights</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Transform data into actionable analysis with EdInsights®</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/pl-portfolio/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>PL Portfolio</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Unlock educator growth through customized PL with EdFolio®</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                                                                                                                          <li class="nav-child-item bg-[#F3F6FB] border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/education-solutions-support/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Get Support</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Get support for our education solutions from our expert team</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                  </ul>
+                                    </div> 
+                                                                    </li>
+                                                            <li class=" h-full nav-button-li">
+                                                                            <button class=" flex flex-row items-center gap-x-3 nav-button h-full px-2.5 text-base leading-[22px] tracking-[-0.01em] border-y border-y-4 border-y-transparent font-medium text-darkNavy bg-white hover:bg-grey max-lg:border-b-transparent"  @click="dropdownID = (dropdownID === 'dropdown5' ? '' :'dropdown5')"
+                                                                                :class="{ 'opendrop': dropdownID === 'dropdown5' }" >
+                                            <span>Markets</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                                        </button>
+                                                                                                            <div class="main-nav-dropdown absolute w-[100%] max-w-[900px] -translate-x-2/4 left-2/4 top-[calc(_100%_+_1px)] bg-grey border-smoke p-6 pt-8 rounded-bl-2xl rounded-br-2xl max-lg:relative max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:max-w-full max-lg:rounded-none max-lg:p-4 " 
+                                      x-show="dropdownID === 'dropdown5'"
+                                      x-cloak
+                                      x-transition:enter="transition enter"
+                                      x-transition:enter-start="enter"
+                                      x-transition:enter-end="enter-active"
+                                      x-transition:leave="transition leave"
+                                      x-transition:leave-start="leave"
+                                      x-transition:leave-end="leave-active"
+                                    >
+                                                                            <a href="https://www.prometric.com/markets-we-serve/"  class="flex items-center !text-[22px] !leading-7 font-semibold gap-x-2 justify-center mb-4 max-lg:justify-between max-lg:pr-4">
+                                            <span>Markets</span> 
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg>
+                                        </a>
+                                                                                                                        <div class="nav-link-desc max-w-[295px] mb-6 mx-auto max-lg:max-w-full max-lg:mb-4"><p>Learn about our expertise across industries</p></div>
+                                                                                <ul class="nav-children grid grid-cols-3 gap-1.5 max-lg:grid-cols-2 max-md:grid-cols-1">
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/technology/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Technology</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Flexible, secure certification solutions built for fast-moving tech</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/healthcare/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Healthcare</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>See how we support 160+ healthcare specialties</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/finance/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Finance</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Explore secure, scalable certification solutions for the finance industry</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/government/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Government</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Secure, compliant credentialing to strengthen public trust</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/associations/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Associations</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Grow member value through secure, global credentialing</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/education/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Education</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Explore our assessment services for education</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/consumer/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Consumer</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Discover which exams we offer to consumers</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/redefining-player-performance-testing/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Athletic Performance</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Measure athletic performance with objective, data-driven assessments</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                  </ul>
+                                    </div> 
+                                                                    </li>
+                                                            <li class=" h-full nav-button-li">
+                                                                            <button class=" flex flex-row items-center gap-x-3 nav-button h-full px-2.5 text-base leading-[22px] tracking-[-0.01em] border-y border-y-4 border-y-transparent font-medium text-darkNavy bg-white hover:bg-grey max-lg:border-b-transparent"  @click="dropdownID = (dropdownID === 'dropdown6' ? '' :'dropdown6')"
+                                                                                :class="{ 'opendrop': dropdownID === 'dropdown6' }" >
+                                            <span>Resources</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                                        </button>
+                                                                                                            <div class="main-nav-dropdown absolute w-[100%] max-w-[900px] -translate-x-2/4 left-2/4 top-[calc(_100%_+_1px)] bg-grey border-smoke p-6 pt-8 rounded-bl-2xl rounded-br-2xl max-lg:relative max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:max-w-full max-lg:rounded-none max-lg:p-4 " 
+                                      x-show="dropdownID === 'dropdown6'"
+                                      x-cloak
+                                      x-transition:enter="transition enter"
+                                      x-transition:enter-start="enter"
+                                      x-transition:enter-end="enter-active"
+                                      x-transition:leave="transition leave"
+                                      x-transition:leave-start="leave"
+                                      x-transition:leave-end="leave-active"
+                                    >
+                                                                            <a href="https://www.prometric.com/resources/"  class="flex items-center !text-[22px] !leading-7 font-semibold gap-x-2 justify-center mb-4 max-lg:justify-between max-lg:pr-4">
+                                            <span>Resources</span> 
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg>
+                                        </a>
+                                                                                                                        <div class="nav-link-desc max-w-[295px] mb-6 mx-auto max-lg:max-w-full max-lg:mb-4"><p>Dive into our resources for program sponsors</p></div>
+                                                                                <ul class="nav-children grid grid-cols-3 gap-1.5 max-lg:grid-cols-2 max-md:grid-cols-1">
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/success-stories/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Success Stories</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Learn how we partner to achieve the extraordinary</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/guides/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Guides and Whitepapers</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Download guides to enhance your program</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/webinars/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Webinars</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Attend our webinars led by expert thought leaders</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/events/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Events</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Learn about upcoming events we're attending</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/blog/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Blog</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Read about the latest news and breakthroughs</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/research/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Research</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>
+    Explore cutting-edge research from our esteemed scientists
+</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                  </ul>
+                                    </div> 
+                                                                    </li>
+                                                            <li class=" h-full nav-button-li">
+                                                                            <button class=" flex flex-row items-center gap-x-3 nav-button h-full px-2.5 text-base leading-[22px] tracking-[-0.01em] border-y border-y-4 border-y-transparent font-medium text-darkNavy bg-white hover:bg-grey max-lg:border-b-transparent"  @click="dropdownID = (dropdownID === 'dropdown7' ? '' :'dropdown7')"
+                                                                                :class="{ 'opendrop': dropdownID === 'dropdown7' }" >
+                                            <span>About Us</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                                        </button>
+                                                                                                            <div class="main-nav-dropdown absolute w-[100%] max-w-[900px] -translate-x-2/4 left-2/4 top-[calc(_100%_+_1px)] bg-grey border-smoke p-6 pt-8 rounded-bl-2xl rounded-br-2xl max-lg:relative max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:max-w-full max-lg:rounded-none max-lg:p-4 " 
+                                      x-show="dropdownID === 'dropdown7'"
+                                      x-cloak
+                                      x-transition:enter="transition enter"
+                                      x-transition:enter-start="enter"
+                                      x-transition:enter-end="enter-active"
+                                      x-transition:leave="transition leave"
+                                      x-transition:leave-start="leave"
+                                      x-transition:leave-end="leave-active"
+                                    >
+                                                                            <a href="https://www.prometric.com/about-us/"  class="flex items-center !text-[22px] !leading-7 font-semibold gap-x-2 justify-center mb-4 max-lg:justify-between max-lg:pr-4">
+                                            <span>About Us</span> 
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg>
+                                        </a>
+                                                                                                                        <div class="nav-link-desc max-w-[295px] mb-6 mx-auto max-lg:max-w-full max-lg:mb-4"><p>Learn about Prometric and what we do best</p></div>
+                                                                                <ul class="nav-children grid grid-cols-3 gap-1.5 max-lg:grid-cols-2 max-md:grid-cols-1">
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/leadership/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Leadership</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Meet our expert leadership team</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/global-offices/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Global Offices</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Learn where we work across the world</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/prometric-exams/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Prometric Exams</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Explore exams for English language or college credits</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/press-room/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Press Room</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Access press releases and resources</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/careers/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Careers</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Learn about open roles and working for us</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                              <li class="nav-child-item bg-paleGrey border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/sustainability/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Corporate Sustainability</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Learn how we advance sustainability across our global operations.</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                                                                                                                                                                                                          <li class="nav-child-item bg-[#F3F6FB] border border-[#E3E6F8] rounded-lg px-6 py-[18px] relative max-lg:py-3.5 max-lg:px-4">
+                                                                                            <a href="https://www.prometric.com/contact-us/"  class="link-title z-[11] left-0 top-0">
+                                                                                        <h5 class="nav-child-title text-base leading-[22px] font-bold mb-3 tracking-[-0.01em] flex flex-row justify-between"><span>Contact Us</span> 
+                                                                                        <svg class="min-w-[17px] mt-[3.5px]" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.333328" y="16.5" width="16" height="16" rx="8" transform="rotate(-90 0.333328 16.5)" fill="#0A1023"/>
+                                            <path d="M7.19077 11.9277L10.6193 8.49916L7.19077 5.07059" stroke="white" stroke-width="1.37143" stroke-linecap="round"/>
+                                            </svg></h5>
+                                                                                        <div class="nav-child-link-desc max-w-[295px] mx-auto max-md:max-w-full"><p>Find support and get answers to any questions you may have</p></div>
+                                                                                                                                </a>
+                                                                                        </li>
+                                                                                  </ul>
+                                    </div> 
+                                                                    </li>
+                                                    </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<section class="section section-404 light py-10 lg-greenshadebottom flex items-center">
+	<div class="container text-center">
+		<img src="https://www.prometric.com//static/404.png" class="max-w-[170px] mx-auto mb-10 max-md:max-w-[100px]" alt="404 Image">
+		<h2 class="text-darkNavy mb-6">Page not found</h2>
+		<p class="large mb-10">Sorry, the page you are looking for could not be found Please try again some time.</p>
+		<a href="https://www.prometric.com/" class="btn-primary"><span>Go to homepage</span></a>
+	</div>
+</section>
+
+
+<footer class="site-footer bg-navy py-[72px] max-md:pb-12 border-t border-t-[#ffffff59] dealay-lowest">
+	<div class="container mid">
+		<div class="footer-menus flex flex-row justify-evenly pb-11 max-lg:grid max-lg:grid-cols-2 gap-x-6 gap-y-10 ">
+			<div class="footer-menu1 w-1/4 max-lg:w-full">
+						        <ul>
+            <li class="">
+        	        	    <img src="https://www.prometric.com/images/icon1.svg" class="w-14 h-14 mb-[33px] max-md:w-12 max-md:h-12 max-md:mb-4" alt="Icon" loading="lazy">
+        	                        	                    <a href="https://www.prometric.com/exams/" class=" !text-xl !leading-[27px] mb-[15px] last:mb-0 font-semibold text-white inline-block !max-md:text-[20px]"  >Exams</a>
+                                                    	<ul class="border-l border-l-[#678FEF] pl-6 mb-[35px] max-md:pl-0 max-md:border-none">
+            	            		<li>
+                	                        <a href="https://www.prometric.com/find-your-exam/" class=" py-[11px] text-white inline-block font-normal"  >Find Your Exam</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/before-your-exam/" class=" py-[11px] text-white inline-block font-normal"  >Before Your Exam</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/accommodations/" class=" py-[11px] text-white inline-block font-normal"  >Accommodations</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/on-exam-day/" class=" py-[11px] text-white inline-block font-normal"  >On Exam Day</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/after-your-exam/" class=" py-[11px] text-white inline-block font-normal"  >After Your Exam</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/frequently-asked-questions/" class=" py-[11px] text-white inline-block font-normal"  >Frequently Asked Questions</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/closures/" class=" py-[11px] text-white inline-block font-normal"  >Test Center Closures</a>
+                                    	</li>
+                            	</ul>
+                    </li>
+    </ul>			</div>
+			<div class="footer-menu2 w-1/4 max-lg:w-full">
+						        <ul>
+            <li class="">
+        	        	    <img src="https://www.prometric.com/images/icon2.svg" class="w-14 h-14 mb-[33px] max-md:w-12 max-md:h-12 max-md:mb-4" alt="Icon" loading="lazy">
+        	                        	                    <a href="https://www.prometric.com/why-prometric/" class=" !text-xl !leading-[27px] mb-[15px] last:mb-0 font-semibold text-white inline-block !max-md:text-[20px]"  >Why Prometric</a>
+                                                    	<ul class="border-l border-l-[#678FEF] pl-6 mb-[35px] max-md:pl-0 max-md:border-none">
+            	            		<li>
+                	                        <a href="https://www.prometric.com/assessment-development/" class=" py-[11px] text-white inline-block font-normal"  >Assessment Development</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/global-delivery/" class=" py-[11px] text-white inline-block font-normal"  >Global Delivery</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/candidate-experience/" class=" py-[11px] text-white inline-block font-normal"  >Candidate Experience</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/program-growth/" class=" py-[11px] text-white inline-block font-normal"  >Program Growth</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/security/" class=" py-[11px] text-white inline-block font-normal"  >Security</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/finetune-ai/" class=" py-[11px] text-white inline-block font-normal"  >Finetune AI</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/client-resources/" class=" py-[11px] text-white inline-block font-normal"  >Client Resources</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/become-a-test-center/" class=" py-[11px] text-white inline-block font-normal"  >Become a Test Center</a>
+                                    	</li>
+                            	</ul>
+                    </li>
+    </ul>			</div>
+			<div class="footer-menu3 w-1/4 max-lg:w-full">
+						        <ul>
+            <li class="">
+        	        	    <img src="https://www.prometric.com/images/icon3.svg" class="w-14 h-14 mb-[33px] max-md:w-12 max-md:h-12 max-md:mb-4" alt="Icon" loading="lazy">
+        	                        	                    <a href="https://www.prometric.com/resources/" class=" !text-xl !leading-[27px] mb-[15px] last:mb-0 font-semibold text-white inline-block !max-md:text-[20px]"  >Resources</a>
+                                                    	<ul class="border-l border-l-[#678FEF] pl-6 mb-[35px] max-md:pl-0 max-md:border-none">
+            	            		<li>
+                	                        <a href="https://www.prometric.com/success-stories/" class=" py-[11px] text-white inline-block font-normal"  >Success Stories</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/guides/" class=" py-[11px] text-white inline-block font-normal"  >Guides and Whitepapers</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/webinars/" class=" py-[11px] text-white inline-block font-normal"  >Webinars</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/events/" class=" py-[11px] text-white inline-block font-normal"  >Events</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/blog/" class=" py-[11px] text-white inline-block font-normal"  >Blog</a>
+                                    	</li>
+                            	</ul>
+                    </li>
+            <li class="">
+        	                        	                    <a href="https://www.prometric.com/solutions/" class=" !text-xl !leading-[27px] mb-[15px] last:mb-0 font-semibold text-white inline-block !max-md:text-[20px]"  >Solutions</a>
+                                                </li>
+            <li class="">
+        	                        	                    <a href="https://www.prometric.com/education/" class=" !text-xl !leading-[27px] mb-[15px] last:mb-0 font-semibold text-white inline-block !max-md:text-[20px]"  >Education</a>
+                                                </li>
+            <li class="">
+        	                        	                    <a href="https://www.prometric.com/markets-we-serve/" class=" !text-xl !leading-[27px] mb-[15px] last:mb-0 font-semibold text-white inline-block !max-md:text-[20px]"  >Markets We Serve</a>
+                                                </li>
+    </ul>			</div>
+			<div class="footer-menu4 w-1/4 max-lg:w-full">
+						        <ul>
+            <li class="">
+        	        	    <img src="https://www.prometric.com/images/icon0.svg" class="w-14 h-14 mb-[33px] max-md:w-12 max-md:h-12 max-md:mb-4" alt="Icon" loading="lazy">
+        	                        	                    <a href="https://www.prometric.com/about-us/" class=" !text-xl !leading-[27px] mb-[15px] last:mb-0 font-semibold text-white inline-block !max-md:text-[20px]"  >About Us</a>
+                                                    	<ul class="border-l border-l-[#678FEF] pl-6 mb-[35px] max-md:pl-0 max-md:border-none">
+            	            		<li>
+                	                        <a href="https://www.prometric.com/leadership/" class=" py-[11px] text-white inline-block font-normal"  >Leadership</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/global-offices/" class=" py-[11px] text-white inline-block font-normal"  >Global Offices</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/prometric-exams/" class=" py-[11px] text-white inline-block font-normal"  >Prometric Exams</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/press-room/" class=" py-[11px] text-white inline-block font-normal"  >Press Room</a>
+                                    	</li>
+                            		<li>
+                	                        <a href="https://www.prometric.com/careers/" class=" py-[11px] text-white inline-block font-normal"  >Careers</a>
+                                    	</li>
+                            	</ul>
+                    </li>
+            <li class="">
+        	                        	                    <a href="https://www.prometric.com/contact-us/" class=" !text-xl !leading-[27px] mb-[15px] last:mb-0 font-semibold text-white inline-block !max-md:text-[20px]"  >CONTACT US</a>
+                                                </li>
+    </ul>			</div>
+		</div>
+		<div class="footer-cta-bar flex flex-row justify-evenly items-center pt-11 pb-9 max-md:py-0 max-md:flex-col-reverse max-md:items-start">
+			<div class="w-1/2 max-md:w-full">
+									<a href="https://www.prometric.com/" class="inline-block" >
+                    <img src="https://www.prometric.com/images/icon-w.svg" alt="Prometric" loading="lazy">
+					</a>
+                			</div>
+			<div class="w-1/2 dark text-end max-md:w-full max-md:text-start max-md:mb-12">
+													<div class="social-media flex items-center justify-end gap-x-6 max-md:justify-start">
+											<a href="https://www.linkedin.com/company/prometric/" target="_blank" class="inline-block"><img src="https://www.prometric.com/images/linkden.svg" alt="Linkden" loading="lazy"></a>
+											<a href="https://x.com/prometricglobal" target="_blank" class="inline-block"><img src="https://www.prometric.com/images/x.svg" alt="X" loading="lazy"></a>
+											<a href="https://www.youtube.com/@prometricglobal" target="_blank" class="inline-block"><img src="https://www.prometric.com/icons/yt-2.svg" alt="Yt 2" loading="lazy"></a>
+											<a href="https://www.instagram.com/prometric_global/" target="_blank" class="inline-block"><img src="https://www.prometric.com/images/insta.svg" alt="Insta" loading="lazy"></a>
+										</div>
+							</div>
+		</div>
+		<div class="footer-bottom flex flex-row justify-evenly items-center pt-9 max-md:pt-12 max-md:flex-col">
+			<div class="w-2/3 max-md:w-full">
+				<ul  class="footer-copy-nav-items flex items-center gap-x-16 max-md:grid max-md:grid-cols-2 max-md:gap-y-6 max-md:mb-10"><li  class="footer-copy-nav-item flex"><a  class="nav-link text-base leading-[22px] font-normal text-white" href="https://www.prometric.com/privacy-policy/">Privacy</a></li><li  class="footer-copy-nav-item flex"><a  class="nav-link text-base leading-[22px] font-normal text-white" href="https://www.prometric.com/accessibility-statement/">Accessibility</a></li><li  class="footer-copy-nav-item flex"><a  class="nav-link text-base leading-[22px] font-normal text-white" href="https://www.prometric.com/terms/">Terms</a></li><li  class="footer-copy-nav-item flex"><a  class="nav-link text-base leading-[22px] font-normal text-white" href="https://www.prometric.com/ethics/">Ethics</a></li><li  class="footer-copy-nav-item flex"><a  class="nav-link text-base leading-[22px] font-normal text-white" href="https://www.prometric.com/responsible-ai/">Responsible AI</a></li></ul>
+			</div>
+			<div class="w-1/3 text-end max-md:w-full max-md:text-start">
+				 <p class="text-sm leading-[19px] font-normal text-white tracking-[0]">© Copyright 2026</p> 			</div>
+		</div>
+	</div>
+	
+<button id="scrollTopBtn" class="fa-angle-up" aria-label="Back to top">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" aria-hidden="true" focusable="false">
+    <path d="M297.4 201.4C309.9 188.9 330.2 188.9 342.7 201.4L502.7 361.4C515.2 373.9 515.2 394.2 502.7 406.7C490.2 419.2 469.9 419.2 457.4 406.7L320 269.3L182.6 406.6C170.1 419.1 149.8 419.1 137.3 406.6C124.8 394.1 124.8 373.8 137.3 361.3L297.3 201.3z"></path>
+  </svg>
+</button>
+</footer>
+</div>
+<link rel="stylesheet" href="https://www.prometric.com/assets/swiper-bundle.min.css?v=2.1" />
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        document.querySelectorAll(".dealay").forEach(function (el) {
+            el.style.opacity = 1;
+        });
+    }, 800);
+
+    setTimeout(function () {
+        document.querySelectorAll(".dealay-low").forEach(function (el) {
+            el.style.opacity = 1;
+        });
+    }, 1500);
+
+    setTimeout(function () {
+        document.querySelectorAll(".dealay-lowest").forEach(function (el) {
+            el.style.opacity = 1;
+        });
+    }, 2000);
+});
+
+</script>
+<script>
+function replaceAllLinksWithCountryCode() {
+    const countrySpecificUrl = "https://www.prometric.com/"; 
+    // Get all anchor tags within the specified section
+    const links = document.querySelectorAll('section a');
+    // Loop through each link and update the href attribute
+    links.forEach(link => {
+        const href = link.getAttribute('href');
+        // Skip links if:
+        // 1. They are inside elements with certain classes
+        if (link.closest('.breadcrumb') || link.closest('.text-lightNavy')) {return;}
+        // 2. The URL contains '/files/'
+        if (href && href.includes('/files/')) {return;}
+         // 3. The URL already starts with countrySpecificUrl
+        if (href && href.startsWith(countrySpecificUrl)) {return;}
+        // Update only links starting with 'https://prod.prometric.com/' but not yet customized
+        if (href && href.startsWith('https://www.prometric.com/')) {
+            const updatedHref = href.replace('https://www.prometric.com/', countrySpecificUrl);
+            link.setAttribute('href', updatedHref); // Update the href attribute
+        }
+    });
+}
+// Run the function to replace all links
+replaceAllLinksWithCountryCode();
+</script>
+
+<!--Back to Top-->
+<script>
+    const btn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 605 || document.documentElement.scrollTop > 605) {
+        btn.style.display = "flex";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    btn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","author":{"@id":"https://www.prometric.com/#identity"},"copyrightHolder":{"@id":"https://www.prometric.com/#identity"},"creator":{"@id":"#creator"},"description":"Prometric provides industry-leading assessment design and delivery solutions. Find exams and resources to meet your certification needs.","image":{"@type":"ImageObject","url":"https://www.prometric.com/images/_1200x630_fit_center-center_82_none/Prometric-Logo-Black_Jpeg.jpg?mtime=1746744145"},"name":"Prometric"},{"@id":"https://www.prometric.com/#identity","@type":"Organization","address":{"@type":"PostalAddress","addressCountry":"US","addressLocality":"Baltimore","addressRegion":"Maryland","postalCode":"21224","streetAddress":"1501 South Clinton St"},"description":"Prometric provides industry-leading assessment design and delivery solutions. Find exams and resources to meet your certification needs.","image":{"@type":"ImageObject","height":"386","url":"https://www.prometric.com/images/Prometric-Logo-Black_Jpeg.jpg","width":"864"},"logo":{"@type":"ImageObject","height":"60","url":"https://www.prometric.com/images/_600x60_fit_center-center_82_none/57349/Prometric-Logo-Black_Jpeg.png?mtime=1746744145","width":"134"},"name":"Prometric","telephone":"1-443-455-8000","url":"https://www.prometric.com/"},{"@id":"#creator","@type":"Organization","description":"Prometric offers industry-leading testing solutions. Find exams, services, and resources to meet your certification and licensing needs.","name":"Prometric"}]}</script></body>
+</html>

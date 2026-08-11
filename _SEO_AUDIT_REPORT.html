@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TestPrepPilot pSEO 全站深度审计报告</title>
+<style>
+:root{
+  --bg:#faf9f6; --surface:#fff; --line:#e5e2da; --ink:#1c1b19; --muted:#6b6862;
+  --faint:#93908a; --green:#0f6e56; --greenbg:#e1f5ee; --amber:#854f0b; --amberbg:#faeeda;
+  --red:#a32d2d; --redbg:#fcebeb; --blue:#185fa5; --bluebg:#e6f1fb;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#0e0f10; --surface:#17191b; --line:#2a2d30; --ink:#e8e6e3; --muted:#a3a09a;
+    --faint:#75726d; --green:#5dcaa5; --greenbg:#0d2b23; --amber:#ef9f27; --amberbg:#2e2209;
+    --red:#f09595; --redbg:#2f1414; --blue:#85b7eb; --bluebg:#0d2137;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:56px 28px 96px}
+h1{font-size:2.1rem;line-height:1.25;margin:0 0 8px;font-weight:650;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:.95rem;margin:0 0 40px}
+h2{font-size:1.4rem;margin:56px 0 6px;font-weight:600;letter-spacing:-.01em}
+h2 .n{color:var(--faint);font-variant-numeric:tabular-nums;margin-right:10px;font-weight:500}
+h3{font-size:1.05rem;margin:30px 0 10px;font-weight:600}
+p{margin:0 0 14px}
+.lead{font-size:1.05rem;color:var(--muted);margin-bottom:26px}
+hr{border:0;border-top:1px solid var(--line);margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px;margin:22px 0}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.kpi .l{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.kpi .v{font-size:1.6rem;font-weight:650;margin-top:3px;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.kpi .n{font-size:.8rem;color:var(--faint);margin-top:2px}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:.92rem}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.76rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+code{font:.86em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  background:var(--bluebg);color:var(--blue);padding:1px 5px;border-radius:4px}
+.tag{display:inline-block;font-size:.72rem;font-weight:650;padding:2px 8px;border-radius:20px;letter-spacing:.03em}
+.t-ok{background:var(--greenbg);color:var(--green)}
+.t-warn{background:var(--amberbg);color:var(--amber)}
+.t-bad{background:var(--redbg);color:var(--red)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:16px 0}
+.card.bad{border-left:3px solid var(--red)}
+.card.warn{border-left:3px solid var(--amber)}
+.card.ok{border-left:3px solid var(--green)}
+.card h4{margin:0 0 8px;font-size:1.02rem;font-weight:650;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.card p:last-child{margin-bottom:0}
+.ev{font-size:.86rem;color:var(--muted);background:var(--bg);border:1px solid var(--line);
+  border-radius:8px;padding:10px 13px;margin-top:10px}
+.ev b{color:var(--ink);font-weight:600}
+ul{margin:0 0 14px;padding-left:22px}
+li{margin-bottom:6px}
+.bar{height:8px;background:var(--line);border-radius:5px;overflow:hidden;margin:5px 0 2px}
+.bar>i{display:block;height:100%;border-radius:5px}
+.srow{margin-bottom:15px}
+.srow .top{display:flex;justify-content:space-between;align-items:baseline;font-size:.93rem}
+.srow .top b{font-weight:600}
+.srow .top span{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.85rem}
+.srow .note{font-size:.82rem;color:var(--faint)}
+.foot{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);font-size:.85rem;color:var(--faint)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>TestPrepPilot — pSEO 全站深度审计</h1>
+<p class="sub">审计对象：<code>testpreppilot.com</code> · Astro 5 静态站 · 基于 2026-08-07 全新构建产物（650 个 HTML）实测 · 非抽样估算</p>
+
+<p class="lead">
+一句话结论：<b>这是一个内容质量远超行业均值的 pSEO 站，工程素养也扎实——但它目前是一台没有仪表盘、也没有接上油管的引擎。</b>
+内容、架构、性能三项已经达到可以正面竞争的水准；真正拖后腿的不是 SEO，而是「测不到」和「赚不到」这两件事。
+</p>
+
+<div class="grid">
+  <div class="kpi"><div class="l">总页面</div><div class="v">650</div><div class="n">550 考试页为主力</div></div>
+  <div class="kpi"><div class="l">正文中位词数</div><div class="v">3,933</div><div class="n">P90 达 6,484</div></div>
+  <div class="kpi"><div class="l">样板文字占比</div><div class="v">2.7%</div><div class="n">行业普遍 40–70%</div></div>
+  <div class="kpi"><div class="l">孤儿页</div><div class="v">1</div><div class="n">仅 /404</div></div>
+  <div class="kpi"><div class="l">最大点击深度</div><div class="v">2</div><div class="n">572 页在第 2 层</div></div>
+  <div class="kpi"><div class="l">埋点覆盖</div><div class="v">0%</div><div class="n">无任何统计</div></div>
+</div>
+
+<hr>
+
+<h2><span class="n">01</span>做得好的部分</h2>
+
+<h3>内容深度是这个站真正的护城河</h3>
+<p>
+pSEO 站最常见的死法是「1 万个页面共用 300 词模板」。这个站正好相反。我剥离了 header/footer/nav，只统计 <code>&lt;main&gt;</code> 内的正文：
+中位数 <b>3,933 词</b>，P90 达 <b>6,484 词</b>，最长 10,990 词。全站平均样板文字只有 <b>89 词、占页面 2.7%</b>——
+意味着几乎每一个字都是这个页面独有的。这个数字我很少在程序化站上见到。
+</p>
+
+<h3>反编造纪律是真的在执行，不是写在文档里好看</h3>
+<p>
+抽查 <code>nclex-rn</code>：薪资段落 296 词，直接引 BLS SOC 29-1141 与 2024 年 5 月中位数 $93,600，并链到 bls.gov 原页；
+通过率段落 337 词，明确写出 NCSBN 不公布队列通过率，而不是编一个百分比。
+全站 <b>413 个页面引用 bls.gov</b>，<b>0 个考试页缺少外部权威来源</b>，平均每页引 2.12 个外部域。
+这在 Google 的 helpful-content 与 E-E-A-T 判定下是实打实的加分项。
+</p>
+
+<h3>站点架构近乎教科书</h3>
+<p>
+从首页 BFS 遍历，<b>最大点击深度只有 2</b>（1 层 76 页，2 层 572 页），全站唯一「孤儿页」是 <code>/404</code>——这本来就不该被链接。
+考试页入链中位数 17、P10 为 9、平均出链 36.3 条，权重分布均匀，没有出现「头部页吃掉全部内链」的典型病灶。
+</p>
+
+<div class="card ok">
+<h4>顺带修正一个误判 <span class="tag t-ok">此前报告有误</span></h4>
+<p>项目里 <code>_audit_now.py</code> 报告「649 个孤儿页」，这是脚本 bug 不是站点问题：<code>url_to_file</code> 字典在同一个循环里边遍历边填充，
+处理到首页时字典几乎是空的，导致首页 94 条内链全被判为「指向不存在的页面」而丢弃，BFS 自然只走得到根节点。
+我在 <code>_deep_audit.py</code> 里改为两遍扫描（先建全量 URL 集合，再解析链接），真实孤儿页 = 1。</p>
+</div>
+
+<h3>元信息与性能的工程细节到位</h3>
+<table>
+<tr><th>检查项</th><th>结果</th><th>说明</th></tr>
+<tr><td>重复 title</td><td class="num"><b>0</b></td><td>自适应后缀算法，绝不截断关键词本体</td></tr>
+<tr><td>重复 meta description</td><td class="num"><b>0</b></td><td>650 页全站唯一</td></tr>
+<tr><td>缺失 canonical</td><td class="num"><b>0</b></td><td>并已把 /affiliate-disclosure 排除出 sitemap</td></tr>
+<tr><td>H1 数量异常</td><td class="num"><b>0</b></td><td>每页恰好一个</td></tr>
+<tr><td>description 超 160 字符</td><td class="num"><b>0</b></td><td>已统一收敛</td></tr>
+<tr><td>Breadcrumb 结构化数据</td><td class="num"><b>550/550</b></td><td>考试页全覆盖</td></tr>
+<tr><td>平均 HTML 体积</td><td class="num">69.5 KB</td><td>CSS 最大 21KB，JS 全站仅 15KB</td></tr>
+<tr><td>llms.txt</td><td><span class="tag t-ok">已配置</span></td><td>AI 爬虫友好，同行少有</td></tr>
+</table>
+
+<hr>
+
+<h2><span class="n">02</span>致命短板：两个业务层面的洞</h2>
+
+<div class="card bad">
+<h4>P0-1　全站没有任何数据埋点 <span class="tag t-bad">最高优先级</span></h4>
+<p>
+构建产物里只有 Astro 自己的 <code>ClientRouter.js</code> 和 <code>page.js</code>，<b>没有 GA4、没有 Plausible、没有任何统计脚本</b>，
+首页也没有 Search Console 验证 meta。
+</p>
+<p>
+这意味着：你有 650 个页面在跑，但不知道哪 20 个带来了 80% 的流量、哪些页面有曝光却零点击（标题该改）、
+哪些页面进了索引哪些没进。pSEO 的核心打法是「大量铺 → 看数据 → 砍掉无效页 + 加码有效页」，
+<b>没有数据，这个循环根本转不起来</b>，后续所有优化都只能靠猜。
+</p>
+<div class="ev"><b>修复成本：约 30 分钟。</b>在 <code>BaseLayout.astro</code> 的 <code>&lt;head&gt;</code> 加 GA4 或 Plausible 片段，
+GSC / Bing 站长平台各验证一次并提交 sitemap。这是投入产出比最高的一件事，没有之一。</div>
+</div>
+
+<div class="card bad">
+<h4>P0-2　550 个主力页面上没有任何变现位 <span class="tag t-bad">收入=0</span></h4>
+<p>
+<code>AffiliateBox.astro</code> 和 <code>ProviderTable.astro</code> 写得很完整，但它们只被 <code>ExamGuide.astro</code> 引用，
+而 <code>ExamGuide</code> 只服务于 <code>/paths/*</code>（8 页）和 <code>/[state]/[credential]</code>（3 页）——<b>合计 11 个页面</b>。
+</p>
+<p>
+承担绝大部分搜索意图的 <code>/exams/[slug]</code> 那 550 个页面，模板里<b>完全没有引入这两个组件</b>，
+从头到尾没有一个联盟链接、没有一个转化 CTA。用户读完 4,000 词的高质量攻略，然后……就走了。
+换句话说，<b>98% 的内容资产目前没有接上任何收入管道</b>。
+</p>
+<div class="ev"><b>建议：</b>在 <code>[slug].astro</code> 的 <code>resourceComparison</code> 区块后、以及 <code>examDay</code> 区块后各插入一个
+provider 模块，复用现成组件与 <code>InlineDisclosure</code>。注意保持披露合规（站点已有 <code>/disclosure</code>，别丢）。</div>
+</div>
+
+<hr>
+
+<h2><span class="n">03</span>技术问题：需要修但不致命</h2>
+
+<div class="card warn">
+<h4>P1-1　12 条内链指向 404 <span class="tag t-warn">路由前缀错配</span></h4>
+<p>分类页和州页把一批凭证链到了 <code>/exams/&lt;slug&gt;</code>，但这些凭证实际上是 <code>/paths/&lt;slug&gt;</code> 页面：</p>
+<table>
+<tr><th>断链目标</th><th>入链数</th><th>来源示例</th><th>实际位置</th></tr>
+<tr><td><code>/exams/california-real-estate-license</code></td><td class="num">2</td><td>/california, /categories/real-estate</td><td>/paths/ ✓</td></tr>
+<tr><td><code>/exams/florida-real-estate-license</code></td><td class="num">2</td><td>/florida, /categories/real-estate</td><td>/paths/ ✓</td></tr>
+<tr><td><code>/exams/texas-real-estate-license</code></td><td class="num">2</td><td>/texas, /categories/real-estate</td><td>/paths/ ✓</td></tr>
+<tr><td><code>/exams/cpa-exam</code></td><td class="num">1</td><td>/categories/accounting</td><td>/paths/ ✓</td></tr>
+<tr><td><code>/exams/enrolled-agent</code></td><td class="num">1</td><td>/categories/accounting</td><td>/paths/ ✓</td></tr>
+<tr><td><code>/exams/osha-10-construction</code></td><td class="num">1</td><td>/categories/workplace-safety</td><td>/paths/ ✓</td></tr>
+<tr><td><code>/exams/osha-30-construction</code></td><td class="num">1</td><td>/categories/workplace-safety</td><td>/paths/ ✓</td></tr>
+<tr><td><code>/exams/epa-608-certification</code></td><td class="num">1</td><td>/categories/trades</td><td>/paths/ ✓</td></tr>
+<tr><td><code>/methodology</code></td><td class="num">1</td><td>首页 + <code>llms.txt</code></td><td><b>页面不存在</b></td></tr>
+</table>
+<p style="margin-top:12px">
+注意 <code>/methodology</code> 是另一类问题：它在旧构建里存在（<code>dist_bak_1785430319/methodology</code>），现在源码中已无对应
+<code>.astro</code>，但首页和 <code>llms.txt</code> 仍在引用。要么补回这个页面（对 E-E-A-T 有价值），要么两处引用都改指 <code>/editorial-policy</code>。
+</p>
+</div>
+
+<div class="card warn">
+<h4>P1-2　sitemap 需要在真实部署环境复核 <span class="tag t-warn">待验证</span></h4>
+<p>
+<code>robots.txt</code> 对外声明 <code>Sitemap: https://testpreppilot.com/sitemap-index.xml</code>，但本次构建的 <code>dist/</code> 里<b>没有生成任何 sitemap</b>。
+</p>
+<p>
+根因已定位：<code>astro build</code> 在收尾清理临时目录时被本地沙箱的安全删除机制拦截并抛错，
+而 <code>@astrojs/sitemap</code> 是挂在 <code>astro:build:done</code> 钩子上的——构建中途抛错，钩子就不会执行。
+旧备份 <code>dist_bak_1785430319/</code> 里 <code>sitemap-index.xml</code> 与 <code>sitemap-0.xml</code> 都在，
+<b>说明正常环境下功能是好的，这是本地环境问题而非代码缺陷</b>。
+</p>
+<div class="ev"><b>但仍需确认两件事：</b>① 线上 CI/部署平台的构建日志里 sitemap 确实生成了；
+② 同一个报错还会让 <code>dist/pages/</code> 与 <code>dist/chunks/</code> 两个构建临时目录残留（本次就残留了），
+如果直接把这样的 <code>dist</code> 传上线，等于把编译中间产物暴露在公网。部署前建议加一步校验。</div>
+</div>
+
+<div class="card warn">
+<h4>P1-3　487 条 meta description 被截断成「…」结尾 <span class="tag t-warn">占全站 75%</span></h4>
+<p>
+<code>clampMeta()</code> 把长文本硬切到 155 字符再补省略号。虽然长度合规（超 160 的为 0），
+但 649 个可索引页里有 <b>487 条</b>描述是半句话戛然而止的。这类描述在 SERP 里说服力弱，
+Google 也更倾向于直接弃用、自行改写摘要——你精心设计的关键词尾巴就白费了。
+</p>
+<div class="ev"><b>建议：</b>对流量最高的那批页面，改为「专门写一句 150 字符以内的完整描述」而不是截断长文本。
+数据层可加一个可选的 <code>metaDescription</code> 字段，有则用、无则回退到现在的截断逻辑，改动面很小。</div>
+</div>
+
+<hr>
+
+<h2><span class="n">04</span>内容层面：机会与风险</h2>
+
+<h3>全站 650 个页面，img 标签数为 0</h3>
+<p>
+一张图都没有。OG 图（<code>og-image.png</code> / <code>og-exam.png</code> / <code>og-state.png</code>）是有的，但那只在社交分享时露面，
+正文里<b>没有任何图片、图表或示意图</b>。对一个考试攻略站来说这是明显的机会成本：
+放弃了 Google 图片搜索入口，也失去了「考试内容占比饼图」「备考时间线」这类天然适合可视化、且能显著拉长停留时间的内容形态。
+好消息是数据层已经有 <code>topics[].weight</code>、<code>studyPlan.weeks</code> 这些结构化字段，
+用构建期 SVG 渲染即可批量生成，不增加运行时负担。
+</p>
+
+<h3>州变体页存在重复度风险</h3>
+<p>
+124 个页面属于「同一凭证 × 不同州」的模板家族，共 26 个家族、每族约 6 个州。我用 8-gram shingle 做了两两相似度计算：
+</p>
+<div class="grid">
+  <div class="kpi"><div class="l">≥0.35 相似</div><div class="v">27 对</div><div class="n">需留意</div></div>
+  <div class="kpi"><div class="l">≥0.50 相似</div><div class="v">14 对</div><div class="n">涉及 25 个页面</div></div>
+  <div class="kpi"><div class="l">≥0.70 相似</div><div class="v">8 对</div><div class="n">优先处理</div></div>
+</div>
+<table>
+<tr><th>相似度</th><th>页面 A</th><th>页面 B</th></tr>
+<tr><td class="num"><b>0.78</b></td><td>florida-registered-nurse-license</td><td>ohio-registered-nurse-license</td></tr>
+<tr><td class="num"><b>0.78</b></td><td>california-emt-certification</td><td>pennsylvania-emt-certification</td></tr>
+<tr><td class="num"><b>0.75</b></td><td>california-cosmetology-license</td><td>florida-cosmetology-license</td></tr>
+<tr><td class="num"><b>0.75</b></td><td>california-teacher-certification-exams</td><td>florida-teacher-certification-exams</td></tr>
+<tr><td class="num"><b>0.73</b></td><td>california-property-and-casualty-insurance</td><td>texas-property-and-casualty-insurance</td></tr>
+<tr><td class="num"><b>0.72</b></td><td>california-notary-public-commission</td><td>florida-notary-public-commission</td></tr>
+<tr><td class="num"><b>0.71</b></td><td>florida-food-handler-card</td><td>texas-food-handler-card</td></tr>
+<tr><td class="num"><b>0.71</b></td><td>ohio-real-estate-salesperson-license</td><td>pennsylvania-real-estate-salesperson-license</td></tr>
+</table>
+<p>
+<b>怎么看这个数字：</b>目前 8 对 / 550 页，量级很小，还不构成 doorway page 风险。
+但如果按现在的模板把 26 个家族铺满 50 州（=1,300 页），这个比例会被指数级放大，那时就危险了。
+<b>扩量前必须先解决</b>：每个州页至少要有 2–3 段真正州特有的内容——本州发证机构名称与官网、本州具体收费、
+本州学时要求、本州互认协议、本州 BLS 分区薪资。这些是各州真实不同的东西，也正是用户搜「加州 XX 执照」时想要的。
+</p>
+
+<h3>48 个页面偏薄，集中在州级技工执照</h3>
+<p>
+正文最短的 11 个页面不足 800 词，48 个不足 1,500 词——相对全站 3,933 的中位数落差明显。
+最薄的一批高度集中：<code>florida/california/new-york-journeyman-plumber-license</code>（639 / 646 / 655 词）、
+<code>pennsylvania-journeyman-electrician-license</code>、<code>new-york-hvac-contractor-license</code>、<code>texas-general-contractor-license</code>。
+这些恰恰是商业价值不低的词，建议优先补足到 2,000 词以上，重点补本州考试细则、报名流程与费用明细。
+</p>
+
+<h3>结构化数据还有覆盖缺口</h3>
+<table>
+<tr><th>Schema 类型</th><th>覆盖</th><th>缺口</th></tr>
+<tr><td>BreadcrumbList</td><td class="num">550 / 550</td><td><span class="tag t-ok">全覆盖</span></td></tr>
+<tr><td>FAQPage</td><td class="num">537 / 550</td><td>13 页缺失</td></tr>
+<tr><td>EducationalOccupationalCredential</td><td class="num">427 / 550</td><td><b>123 页缺失</b>（州档案模式未生成）</td></tr>
+<tr><td>Course</td><td class="num">11</td><td>studyPlan 数据已具备，可批量补</td></tr>
+</table>
+<p>
+123 个缺 <code>EducationalOccupationalCredential</code> 的页面，是因为模板里该 schema 只在 <code>mode === 'national'</code> 分支下生成。
+州档案模式（researched）其实同样是在描述一个真实凭证，完全应该输出。这是一处一行条件判断就能覆盖 123 页的改动。
+另外 550 个页面都有 <code>studyPlan</code> 结构化数据却只有 11 个 <code>Course</code> schema，也是现成的富媒体结果机会。
+</p>
+
+<h3>9 个考试页内链偏少</h3>
+<p>
+入链最少的是 <code>/exams/bcba-board-certified-behavior-analyst</code>（仅 2 条），
+其次 <code>aipb-certified-bookkeeper</code>、<code>epa-lead-renovator-rrp</code>、<code>fe-civil</code>、<code>pe-civil</code>、
+<code>nacpb-cpb</code>、<code>navta-approved-veterinary-assistant</code>、<code>pesticide-applicator-core-exam</code>、<code>vtne</code>（各 3 条）。
+这些多半是所在分类里同类页太少、<code>RelatedExams</code> 匹配不到足够邻居导致的。可以在分类枢纽页做一块「小众但高价值」的手工推荐位补上。
+</p>
+
+<hr>
+
+<h2><span class="n">05</span>行动优先级</h2>
+
+<table>
+<tr><th style="width:52px">优先级</th><th>动作</th><th style="width:88px">工作量</th><th>影响</th></tr>
+<tr><td><span class="tag t-bad">P0</span></td><td>接入 GA4 / Plausible + GSC、Bing 验证并提交 sitemap</td><td>0.5 小时</td><td>解锁全部后续决策依据</td></tr>
+<tr><td><span class="tag t-bad">P0</span></td><td>把 provider / affiliate 模块接入 <code>/exams/[slug]</code> 的 550 个页面</td><td>2–4 小时</td><td>从 0 收入到有收入</td></tr>
+<tr><td><span class="tag t-warn">P1</span></td><td>修 12 条断链：<code>/exams/*</code> → <code>/paths/*</code>，补回或改指 <code>/methodology</code></td><td>1 小时</td><td>止损内链权重</td></tr>
+<tr><td><span class="tag t-warn">P1</span></td><td>线上构建复核 sitemap 生成；部署前排除 <code>dist/pages</code>、<code>dist/chunks</code></td><td>0.5 小时</td><td>保障收录</td></tr>
+<tr><td><span class="tag t-warn">P1</span></td><td><code>EducationalOccupationalCredential</code> 扩展到州档案模式（+123 页）</td><td>0.5 小时</td><td>富媒体结果覆盖</td></tr>
+<tr><td><span class="tag t-warn">P2</span></td><td>头部页面改写完整 meta description，替代截断</td><td>按批推进</td><td>提升 SERP 点击率</td></tr>
+<tr><td><span class="tag t-warn">P2</span></td><td>构建期生成 SVG 图表（考点占比、备考时间线）</td><td>3–5 小时</td><td>图片搜索 + 停留时长</td></tr>
+<tr><td><span class="tag t-warn">P2</span></td><td>为 8 对高相似州页补本州独有内容</td><td>按批推进</td><td>扩量前必须完成</td></tr>
+<tr><td><span class="tag t-warn">P2</span></td><td>48 个薄页补足至 2,000 词以上</td><td>按批推进</td><td>提升竞争力</td></tr>
+</table>
+
+<hr>
+
+<h2><span class="n">06</span>综合评分</h2>
+
+<div id="scores"></div>
+
+<p style="margin-top:26px">
+<b>坦率地说：</b>这个站的内容和工程完成度，已经超过我见过的绝大多数程序化 SEO 项目——
+反编造纪律、BLS 溯源、2.7% 的样板占比、深度 2 的扁平架构，这些都是需要真功夫才能做到的。
+问题恰恰不在 SEO 本身，而在于它现在是一件<b>没有装仪表、也没有接变速箱的精密机器</b>。
+先花一小时补上埋点和变现位，再谈内容扩量——否则铺得越多，浪费得越多。
+</p>
+
+<div class="foot">
+审计方法：对 <code>dist/</code> 全部 650 个 HTML 构建产物做全量解析（非抽样）。正文词数剥离 header/footer/nav 后仅统计 <code>&lt;main&gt;</code>；
+重复度采用 8-gram shingle + Jaccard 相似度，经倒排索引候选剪枝；可达性与点击深度以首页为根做 BFS。
+审计脚本：<code>_deep_audit.py</code>，明细数据：<code>_deep_audit.json</code>。
+</div>
+
+</div>
+<script>
+var S=[["内容深度与原创性",92,"var(--green)","中位 3,933 词，样板文字仅 2.7%"],
+["站点架构与内链",90,"var(--green)","孤儿页仅 /404，最大点击深度 2"],
+["性能与前端体积",90,"var(--green)","平均 69.5KB，全站 JS 仅 15KB"],
+["E-E-A-T 可信度",88,"var(--green)","BLS 溯源，413 页引用官方来源"],
+["技术 SEO 基础",84,"var(--amber)","12 条断链，sitemap 待线上复核"],
+["结构化数据",80,"var(--amber)","123 页缺证书 Schema，Course 仅 11"],
+["页面元信息",72,"var(--amber)","487 条 description 被截断"],
+["商业变现路径",15,"var(--red)","550 个主力页零转化位"],
+["数据度量能力",5,"var(--red)","无任何统计埋点与站长验证"]];
+document.getElementById("scores").innerHTML=S.map(function(r){
+return '<div class="srow"><div class="top"><b>'+r[0]+'</b><span>'+r[1]+' / 100</span></div>'+
+'<div class="bar"><i style="width:'+r[1]+'%;background:'+r[2]+'"></i></div>'+
+'<div class="note">'+r[3]+'</div></div>';}).join("");
+</script>
+</body>
+</html>

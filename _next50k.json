@@ -1,0 +1,352 @@
+[
+  {
+    "rank": 1,
+    "slug": "ohio-drivers-license-written-test",
+    "name": "Ohio Driver’s License Written Test",
+    "heat": 83,
+    "vol": 1276000
+  },
+  {
+    "rank": 2,
+    "slug": "pennsylvania-drivers-license-written-test",
+    "name": "Pennsylvania Driver’s License Written Test",
+    "heat": 83,
+    "vol": 1276000
+  },
+  {
+    "rank": 3,
+    "slug": "ohio-food-handler-card",
+    "name": "Ohio Food Handler Card",
+    "heat": 82,
+    "vol": 928000
+  },
+  {
+    "rank": 4,
+    "slug": "pennsylvania-food-handler-card",
+    "name": "Pennsylvania Food Handler Card",
+    "heat": 82,
+    "vol": 928000
+  },
+  {
+    "rank": 5,
+    "slug": "ohio-cdl-commercial-drivers-license",
+    "name": "Ohio Commercial Driver’s License (CDL)",
+    "heat": 75,
+    "vol": 324800
+  },
+  {
+    "rank": 6,
+    "slug": "pennsylvania-cdl-commercial-drivers-license",
+    "name": "Pennsylvania Commercial Driver’s License (CDL)",
+    "heat": 75,
+    "vol": 324800
+  },
+  {
+    "rank": 7,
+    "slug": "ohio-alcohol-server-certification",
+    "name": "Ohio Alcohol Server Certification",
+    "heat": 75,
+    "vol": 301600
+  },
+  {
+    "rank": 8,
+    "slug": "pennsylvania-alcohol-server-certification",
+    "name": "Pennsylvania Alcohol Server Certification",
+    "heat": 75,
+    "vol": 301600
+  },
+  {
+    "rank": 9,
+    "slug": "ohio-concealed-carry-permit",
+    "name": "Ohio Concealed Carry Permit",
+    "heat": 73,
+    "vol": 243600
+  },
+  {
+    "rank": 10,
+    "slug": "pennsylvania-concealed-carry-permit",
+    "name": "Pennsylvania Concealed Carry Permit",
+    "heat": 73,
+    "vol": 243600
+  },
+  {
+    "rank": 11,
+    "slug": "ohio-certified-nursing-assistant-certification",
+    "name": "Ohio Certified Nursing Assistant Certification",
+    "heat": 71,
+    "vol": 174000
+  },
+  {
+    "rank": 12,
+    "slug": "pennsylvania-certified-nursing-assistant-certification",
+    "name": "Pennsylvania Certified Nursing Assistant Certification",
+    "heat": 71,
+    "vol": 174000
+  },
+  {
+    "rank": 13,
+    "slug": "ohio-motorcycle-license-test",
+    "name": "Ohio Motorcycle License Test",
+    "heat": 70,
+    "vol": 150800
+  },
+  {
+    "rank": 14,
+    "slug": "pennsylvania-motorcycle-license-test",
+    "name": "Pennsylvania Motorcycle License Test",
+    "heat": 70,
+    "vol": 150800
+  },
+  {
+    "rank": 15,
+    "slug": "ohio-registered-nurse-license",
+    "name": "Ohio Registered Nurse License",
+    "heat": 70,
+    "vol": 150800
+  },
+  {
+    "rank": 16,
+    "slug": "pennsylvania-registered-nurse-license",
+    "name": "Pennsylvania Registered Nurse License",
+    "heat": 70,
+    "vol": 150800
+  },
+  {
+    "rank": 17,
+    "slug": "ohio-emt-certification",
+    "name": "Ohio EMT Certification",
+    "heat": 67,
+    "vol": 81200
+  },
+  {
+    "rank": 18,
+    "slug": "pennsylvania-emt-certification",
+    "name": "Pennsylvania EMT Certification",
+    "heat": 67,
+    "vol": 81200
+  },
+  {
+    "rank": 19,
+    "slug": "georgia-real-estate-salesperson-license",
+    "name": "Georgia Real Estate Salesperson License",
+    "heat": 64,
+    "vol": 55000
+  },
+  {
+    "rank": 20,
+    "slug": "north-carolina-real-estate-salesperson-license",
+    "name": "North Carolina Real Estate Salesperson License",
+    "heat": 64,
+    "vol": 52800
+  },
+  {
+    "rank": 21,
+    "slug": "ohio-cosmetology-license",
+    "name": "Ohio Cosmetology License",
+    "heat": 64,
+    "vol": 52200
+  },
+  {
+    "rank": 22,
+    "slug": "pennsylvania-cosmetology-license",
+    "name": "Pennsylvania Cosmetology License",
+    "heat": 64,
+    "vol": 52200
+  },
+  {
+    "rank": 23,
+    "slug": "ohio-food-protection-manager-certification",
+    "name": "Ohio Food Protection Manager Certification",
+    "heat": 64,
+    "vol": 52200
+  },
+  {
+    "rank": 24,
+    "slug": "pennsylvania-food-protection-manager-certification",
+    "name": "Pennsylvania Food Protection Manager Certification",
+    "heat": 64,
+    "vol": 52200
+  },
+  {
+    "rank": 25,
+    "slug": "ohio-journeyman-electrician-license",
+    "name": "Ohio Journeyman Electrician License",
+    "heat": 64,
+    "vol": 51040
+  },
+  {
+    "rank": 26,
+    "slug": "pennsylvania-journeyman-electrician-license",
+    "name": "Pennsylvania Journeyman Electrician License",
+    "heat": 64,
+    "vol": 51040
+  },
+  {
+    "rank": 27,
+    "slug": "ohio-notary-public-commission",
+    "name": "Ohio Notary Public Commission",
+    "heat": 64,
+    "vol": 51040
+  },
+  {
+    "rank": 28,
+    "slug": "pennsylvania-notary-public-commission",
+    "name": "Pennsylvania Notary Public Commission",
+    "heat": 64,
+    "vol": 51040
+  },
+  {
+    "rank": 29,
+    "slug": "nccer-heavy-equipment-operator",
+    "name": "NCCER Heavy Equipment Operator",
+    "heat": 63,
+    "vol": 45000
+  },
+  {
+    "rank": 30,
+    "slug": "nccer-crane-operator",
+    "name": "NCCER Crane Operator",
+    "heat": 63,
+    "vol": 45000
+  },
+  {
+    "rank": 31,
+    "slug": "nccer-scaffolding",
+    "name": "NCCER Scaffolding",
+    "heat": 63,
+    "vol": 45000
+  },
+  {
+    "rank": 32,
+    "slug": "cisco-ccnp-security",
+    "name": "Cisco Certified Network Professional Security",
+    "heat": 63,
+    "vol": 42000
+  },
+  {
+    "rank": 33,
+    "slug": "cisco-ccnp-service-provider",
+    "name": "Cisco Certified Network Professional Service Provider",
+    "heat": 63,
+    "vol": 42000
+  },
+  {
+    "rank": 34,
+    "slug": "cisco-ccnp-wireless",
+    "name": "Cisco Certified Network Professional Wireless",
+    "heat": 63,
+    "vol": 42000
+  },
+  {
+    "rank": 35,
+    "slug": "new-york-esthetician-license",
+    "name": "New York Esthetician License",
+    "heat": 63,
+    "vol": 41600
+  },
+  {
+    "rank": 36,
+    "slug": "hubspot-content-marketing-certification",
+    "name": "HubSpot Content Marketing Certification",
+    "heat": 62,
+    "vol": 40000
+  },
+  {
+    "rank": 37,
+    "slug": "hubspot-inbound-marketing-certification",
+    "name": "HubSpot Inbound Marketing Certification",
+    "heat": 62,
+    "vol": 40000
+  },
+  {
+    "rank": 38,
+    "slug": "itil-4-specialist-high-velocity-it",
+    "name": "ITIL 4 Specialist: High-velocity IT",
+    "heat": 62,
+    "vol": 40000
+  },
+  {
+    "rank": 39,
+    "slug": "itil-4-strategist-direct-plan-and-improve",
+    "name": "ITIL 4 Strategist: Direct, Plan and Improve",
+    "heat": 62,
+    "vol": 40000
+  },
+  {
+    "rank": 40,
+    "slug": "itil-4-leader-digital-and-it-strategy",
+    "name": "ITIL 4 Leader: Digital and IT Strategy",
+    "heat": 62,
+    "vol": 40000
+  },
+  {
+    "rank": 41,
+    "slug": "hubspot-inbound-certification",
+    "name": "HubSpot Inbound Certification",
+    "heat": 62,
+    "vol": 40000
+  },
+  {
+    "rank": 42,
+    "slug": "texas-general-contractor-license",
+    "name": "Texas General Contractor License",
+    "heat": 62,
+    "vol": 38640
+  },
+  {
+    "rank": 43,
+    "slug": "texas-nail-technician-license",
+    "name": "Texas Nail Technician License",
+    "heat": 62,
+    "vol": 38640
+  },
+  {
+    "rank": 44,
+    "slug": "florida-hvac-contractor-license",
+    "name": "Florida HVAC Contractor License",
+    "heat": 62,
+    "vol": 37720
+  },
+  {
+    "rank": 45,
+    "slug": "florida-massage-therapy-license",
+    "name": "Florida Massage Therapy License",
+    "heat": 62,
+    "vol": 37720
+  },
+  {
+    "rank": 46,
+    "slug": "new-york-hvac-contractor-license",
+    "name": "New York HVAC Contractor License",
+    "heat": 62,
+    "vol": 36800
+  },
+  {
+    "rank": 47,
+    "slug": "new-york-massage-therapy-license",
+    "name": "New York Massage Therapy License",
+    "heat": 62,
+    "vol": 36800
+  },
+  {
+    "rank": 48,
+    "slug": "california-barber-license",
+    "name": "California Barber License",
+    "heat": 62,
+    "vol": 36000
+  },
+  {
+    "rank": 49,
+    "slug": "ohio-life-and-health-insurance-license",
+    "name": "Ohio Life & Health Insurance Producer License",
+    "heat": 62,
+    "vol": 35960
+  },
+  {
+    "rank": 50,
+    "slug": "pennsylvania-life-and-health-insurance-license",
+    "name": "Pennsylvania Life & Health Insurance Producer License",
+    "heat": 62,
+    "vol": 35960
+  }
+]

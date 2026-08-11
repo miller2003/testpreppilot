@@ -1,0 +1,352 @@
+[
+  {
+    "rank": 1,
+    "slug": "washington-drivers-license-written-test",
+    "name": "Washington Driver’s License Written Test",
+    "heat": 82,
+    "vol": 924000
+  },
+  {
+    "rank": 2,
+    "slug": "arizona-drivers-license-written-test",
+    "name": "Arizona Driver’s License Written Test",
+    "heat": 81,
+    "vol": 880000
+  },
+  {
+    "rank": 3,
+    "slug": "washington-food-handler-card",
+    "name": "Washington Food Handler Card",
+    "heat": 80,
+    "vol": 672000
+  },
+  {
+    "rank": 4,
+    "slug": "arizona-food-handler-card",
+    "name": "Arizona Food Handler Card",
+    "heat": 79,
+    "vol": 640000
+  },
+  {
+    "rank": 5,
+    "slug": "washington-cdl-commercial-drivers-license",
+    "name": "Washington Commercial Driver’s License (CDL)",
+    "heat": 73,
+    "vol": 235200
+  },
+  {
+    "rank": 6,
+    "slug": "arizona-cdl-commercial-drivers-license",
+    "name": "Arizona Commercial Driver’s License (CDL)",
+    "heat": 73,
+    "vol": 224000
+  },
+  {
+    "rank": 7,
+    "slug": "washington-alcohol-server-certification",
+    "name": "Washington Alcohol Server Certification",
+    "heat": 73,
+    "vol": 218400
+  },
+  {
+    "rank": 8,
+    "slug": "arizona-alcohol-server-certification",
+    "name": "Arizona Alcohol Server Certification",
+    "heat": 72,
+    "vol": 208000
+  },
+  {
+    "rank": 9,
+    "slug": "washington-concealed-carry-permit",
+    "name": "Washington Concealed Carry Permit",
+    "heat": 71,
+    "vol": 176400
+  },
+  {
+    "rank": 10,
+    "slug": "arizona-concealed-carry-permit",
+    "name": "Arizona Concealed Carry Permit",
+    "heat": 71,
+    "vol": 168000
+  },
+  {
+    "rank": 11,
+    "slug": "washington-certified-nursing-assistant-certification",
+    "name": "Washington Certified Nursing Assistant Certification",
+    "heat": 69,
+    "vol": 126000
+  },
+  {
+    "rank": 12,
+    "slug": "arizona-certified-nursing-assistant-certification",
+    "name": "Arizona Certified Nursing Assistant Certification",
+    "heat": 69,
+    "vol": 120000
+  },
+  {
+    "rank": 13,
+    "slug": "washington-motorcycle-license-test",
+    "name": "Washington Motorcycle License Test",
+    "heat": 69,
+    "vol": 109200
+  },
+  {
+    "rank": 14,
+    "slug": "washington-registered-nurse-license",
+    "name": "Washington Registered Nurse License",
+    "heat": 69,
+    "vol": 109200
+  },
+  {
+    "rank": 15,
+    "slug": "arizona-motorcycle-license-test",
+    "name": "Arizona Motorcycle License Test",
+    "heat": 68,
+    "vol": 104000
+  },
+  {
+    "rank": 16,
+    "slug": "arizona-registered-nurse-license",
+    "name": "Arizona Registered Nurse License",
+    "heat": 68,
+    "vol": 104000
+  },
+  {
+    "rank": 17,
+    "slug": "washington-emt-certification",
+    "name": "Washington EMT Certification",
+    "heat": 65,
+    "vol": 58800
+  },
+  {
+    "rank": 18,
+    "slug": "arizona-emt-certification",
+    "name": "Arizona EMT Certification",
+    "heat": 64,
+    "vol": 56000
+  },
+  {
+    "rank": 19,
+    "slug": "nccer-instrument-fitting",
+    "name": "NCCER Instrument Fitting",
+    "heat": 63,
+    "vol": 45000
+  },
+  {
+    "rank": 20,
+    "slug": "nccer-industrial-maintenance",
+    "name": "NCCER Industrial Maintenance",
+    "heat": 63,
+    "vol": 45000
+  },
+  {
+    "rank": 21,
+    "slug": "nccer-lineworker",
+    "name": "NCCER Lineworker",
+    "heat": 63,
+    "vol": 45000
+  },
+  {
+    "rank": 22,
+    "slug": "tennessee-real-estate-salesperson-license",
+    "name": "Tennessee Real Estate Salesperson License",
+    "heat": 63,
+    "vol": 40700
+  },
+  {
+    "rank": 23,
+    "slug": "indiana-real-estate-salesperson-license",
+    "name": "Indiana Real Estate Salesperson License",
+    "heat": 62,
+    "vol": 38500
+  },
+  {
+    "rank": 24,
+    "slug": "washington-cosmetology-license",
+    "name": "Washington Cosmetology License",
+    "heat": 62,
+    "vol": 37800
+  },
+  {
+    "rank": 25,
+    "slug": "washington-food-protection-manager-certification",
+    "name": "Washington Food Protection Manager Certification",
+    "heat": 62,
+    "vol": 37800
+  },
+  {
+    "rank": 26,
+    "slug": "washington-journeyman-electrician-license",
+    "name": "Washington Journeyman Electrician License",
+    "heat": 62,
+    "vol": 36960
+  },
+  {
+    "rank": 27,
+    "slug": "washington-notary-public-commission",
+    "name": "Washington Notary Public Commission",
+    "heat": 62,
+    "vol": 36960
+  },
+  {
+    "rank": 28,
+    "slug": "arizona-cosmetology-license",
+    "name": "Arizona Cosmetology License",
+    "heat": 62,
+    "vol": 36000
+  },
+  {
+    "rank": 29,
+    "slug": "arizona-food-protection-manager-certification",
+    "name": "Arizona Food Protection Manager Certification",
+    "heat": 62,
+    "vol": 36000
+  },
+  {
+    "rank": 30,
+    "slug": "arizona-journeyman-electrician-license",
+    "name": "Arizona Journeyman Electrician License",
+    "heat": 62,
+    "vol": 35200
+  },
+  {
+    "rank": 31,
+    "slug": "arizona-notary-public-commission",
+    "name": "Arizona Notary Public Commission",
+    "heat": 62,
+    "vol": 35200
+  },
+  {
+    "rank": 32,
+    "slug": "safe-lean-portfolio-management",
+    "name": "SAFe Lean Portfolio Management",
+    "heat": 61,
+    "vol": 30000
+  },
+  {
+    "rank": 33,
+    "slug": "safe-practice-consultant",
+    "name": "SAFe Practice Consultant",
+    "heat": 61,
+    "vol": 30000
+  },
+  {
+    "rank": 34,
+    "slug": "safe-practice-consultant-trainer",
+    "name": "SAFe Practice Consultant-Trainer",
+    "heat": 61,
+    "vol": 30000
+  },
+  {
+    "rank": 35,
+    "slug": "aws-certified-welding-sales-representative",
+    "name": "AWS Certified Welding Sales Representative (CWSR)",
+    "heat": 61,
+    "vol": 30000
+  },
+  {
+    "rank": 36,
+    "slug": "aws-certified-welding-engineer",
+    "name": "AWS Certified Welding Engineer (CWEng)",
+    "heat": 61,
+    "vol": 30000
+  },
+  {
+    "rank": 37,
+    "slug": "north-carolina-security-guard-license",
+    "name": "North Carolina Security Guard License",
+    "heat": 60,
+    "vol": 28800
+  },
+  {
+    "rank": 38,
+    "slug": "california-mortgage-loan-originator-license",
+    "name": "California Mortgage Loan Originator License",
+    "heat": 60,
+    "vol": 28000
+  },
+  {
+    "rank": 39,
+    "slug": "texas-master-electrician-license",
+    "name": "Texas Master Electrician License",
+    "heat": 60,
+    "vol": 27600
+  },
+  {
+    "rank": 40,
+    "slug": "texas-pesticide-applicator-license",
+    "name": "Texas Pesticide Applicator License",
+    "heat": 60,
+    "vol": 27600
+  },
+  {
+    "rank": 41,
+    "slug": "michigan-life-and-health-insurance-license",
+    "name": "Michigan Life & Health Insurance Producer License",
+    "heat": 60,
+    "vol": 27280
+  },
+  {
+    "rank": 42,
+    "slug": "new-jersey-life-and-health-insurance-license",
+    "name": "New Jersey Life & Health Insurance Producer License",
+    "heat": 60,
+    "vol": 27280
+  },
+  {
+    "rank": 43,
+    "slug": "ohio-hvac-contractor-license",
+    "name": "Ohio HVAC Contractor License",
+    "heat": 60,
+    "vol": 26680
+  },
+  {
+    "rank": 44,
+    "slug": "pennsylvania-hvac-contractor-license",
+    "name": "Pennsylvania HVAC Contractor License",
+    "heat": 60,
+    "vol": 26680
+  },
+  {
+    "rank": 45,
+    "slug": "ohio-massage-therapy-license",
+    "name": "Ohio Massage Therapy License",
+    "heat": 60,
+    "vol": 26680
+  },
+  {
+    "rank": 46,
+    "slug": "pennsylvania-massage-therapy-license",
+    "name": "Pennsylvania Massage Therapy License",
+    "heat": 60,
+    "vol": 26680
+  },
+  {
+    "rank": 47,
+    "slug": "michigan-journeyman-plumber-license",
+    "name": "Michigan Journeyman Plumber License",
+    "heat": 60,
+    "vol": 26400
+  },
+  {
+    "rank": 48,
+    "slug": "new-jersey-journeyman-plumber-license",
+    "name": "New Jersey Journeyman Plumber License",
+    "heat": 60,
+    "vol": 26400
+  },
+  {
+    "rank": 49,
+    "slug": "michigan-teacher-certification-exams",
+    "name": "Michigan Teacher Certification Exams",
+    "heat": 60,
+    "vol": 26400
+  },
+  {
+    "rank": 50,
+    "slug": "new-jersey-teacher-certification-exams",
+    "name": "New Jersey Teacher Certification Exams",
+    "heat": 60,
+    "vol": 26400
+  }
+]

@@ -1,0 +1,34 @@
+[2m17:38:52[22m [34m[types][39m Generated [2m2ms[22m
+[2m17:38:52[22m [34m[content][39m Syncing content
+[2m17:38:52[22m [34m[content][39m Synced content
+
+[42m[1m astro [22m[49m [32mv5.18.2[39m [2mready in[22m 713 [2mms[22m
+
+[2m┃[22m Local    [36mhttp://localhost:4321/[39m
+[2m┃[22m Network  [2muse --host to expose[22m
+
+[2m17:38:52[22m [32mwatching for file changes...[39m
+[2m17:38:57[22m [34m[200][39m / [2m48ms[22m
+[2m17:39:10[22m [34m[200][39m / [2m8ms[22m
+[2m17:39:18[22m [34m[200][39m /exams/california-teacher-certification-exams [2m47ms[22m
+[2m17:39:18[22m [34m[200][39m /exams/texas-drivers-license-written-test [2m14ms[22m
+[33m[1m17:39:18[22m [WARN] [router][39m A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/exams/praxis-geography-5921`.
+
+Possible dynamic routes being matched: src/pages/exams/[slug].astro, src/pages/[state]/[credential].astro.
+[2m17:39:18[22m [33m[404][39m /exams/praxis-geography-5921 [2m4ms[22m
+[2m17:39:24[22m [34m[200][39m /exams/california-teacher-certification-exams [2m12ms[22m
+[2m17:39:24[22m [34m[200][39m /exams/texas-life-and-health-insurance-license [2m15ms[22m
+[2m17:39:24[22m [34m[200][39m /exams/nccer-carpenter [2m15ms[22m
+[2m17:39:24[22m [34m[200][39m /exams/itil-4-specialist-high-velocity-it [2m14ms[22m
+[2m17:39:24[22m [34m[200][39m /exams/microsoft-office-specialist-outlook-associate [2m14ms[22m
+[2m17:39:25[22m [34m[200][39m /exams/florida-drivers-license-written-test [2m13ms[22m
+[2m19:36:07[22m Configuration file updated. Restarting...
+[2m19:36:07[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
+[31m[1m19:36:08[22m [ERROR] [config][39m [safe-delete][SAFE_DELETE_BULK_CONFIRM_REQUIRED] {"count":2852,"threshold":1500,"scope":"turn","targets":["C:\\Users\\samja\\Desktop\\testpreppilot-v2\\node_modules\\.vite\\deps"],"targetCount":1}
+  [1mStack trace:[22m
+[2m    at checkBulkDeleteGuard (D:\新建文件夹 (3)\WorkBuddy\resources\app.asar.unpacked\cli\vendor\shim\genie-safe-delete.cjs:222:19)
+    at tryRm (D:\新建文件夹 (3)\WorkBuddy\resources\app.asar.unpacked\cli\vendor\shim\genie-safe-delete.cjs:722:5)
+    [...] See full stack trace in the browser, or rerun with --verbose.[22m
+
+[31m[1m19:36:08[22m [ERROR][39m Continuing with previous valid configuration
+

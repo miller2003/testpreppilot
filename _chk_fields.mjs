@@ -1,0 +1,10 @@
+import { buildDirectory, allExams, examCategories } from './src/data/examCatalog/index.mjs';
+const d = buildDirectory();
+console.log('category 字段:', Object.keys(d[0]).join(', '));
+console.log('category.description 样本:', JSON.stringify(d[0].description || '(无)').slice(0, 140));
+const stateEx = allExams.find(e => e.scope === 'state');
+console.log('\nstate exam 字段:', Object.keys(stateEx).join(', '));
+console.log('样本:', JSON.stringify({ slug: stateEx.slug, scope: stateEx.scope, stateCode: stateEx.stateCode, stateSlug: stateEx.stateSlug, stateName: stateEx.stateName, type: stateEx.type }, null, 1));
+const natEx = allExams.find(e => e.scope !== 'state');
+console.log('\nnational exam type:', natEx.type, '| blurb长度:', (natEx.blurb || '').length);
+console.log('\n有 description 的分类数:', d.filter(c => c.description).length, '/', d.length);

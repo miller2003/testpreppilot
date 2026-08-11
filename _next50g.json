@@ -1,0 +1,502 @@
+[
+  {
+    "rank": 1,
+    "slug": "toeic-listening-and-reading",
+    "name": "TOEIC Listening and Reading Test",
+    "heat": 86,
+    "vol": 2000000,
+    "src": "estimate",
+    "family": "English",
+    "note": "Millions of TOEIC L&R tests per year worldwide"
+  },
+  {
+    "rank": 2,
+    "slug": "duolingo-english-test",
+    "name": "Duolingo English Test",
+    "heat": 82,
+    "vol": 1000000,
+    "src": "estimate",
+    "family": "English",
+    "note": "1M+ DET test-takers per year"
+  },
+  {
+    "rank": 3,
+    "slug": "asvab",
+    "name": "Armed Services Vocational Aptitude Battery",
+    "heat": 80,
+    "vol": 750000,
+    "src": "estimate",
+    "family": "Admission",
+    "note": "~750k ASVAB administrations per year (military enlistment)"
+  },
+  {
+    "rank": 4,
+    "slug": "pte-academic",
+    "name": "PTE Academic",
+    "heat": 79,
+    "vol": 600000,
+    "src": "estimate",
+    "family": "English",
+    "note": "~600k PTE Academic test-takers per year"
+  },
+  {
+    "rank": 5,
+    "slug": "ap-united-states-government-and-politics",
+    "name": "AP United States Government and Politics",
+    "heat": 75,
+    "vol": 330000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "~330k AP Gov exam takers per year — top-5 AP exam"
+  },
+  {
+    "rank": 6,
+    "slug": "ap-biology",
+    "name": "AP Biology",
+    "heat": 74,
+    "vol": 280000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "~280k AP Biology takers per year"
+  },
+  {
+    "rank": 7,
+    "slug": "ap-calculus-ab",
+    "name": "AP Calculus AB",
+    "heat": 74,
+    "vol": 270000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "~270k AP Calculus AB takers per year"
+  },
+  {
+    "rank": 8,
+    "slug": "ap-human-geography",
+    "name": "AP Human Geography",
+    "heat": 74,
+    "vol": 270000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "~270k AP Human Geography takers per year"
+  },
+  {
+    "rank": 9,
+    "slug": "ap-statistics",
+    "name": "AP Statistics",
+    "heat": 74,
+    "vol": 260000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "~260k AP Statistics takers per year"
+  },
+  {
+    "rank": 10,
+    "slug": "ap-environmental-science",
+    "name": "AP Environmental Science",
+    "heat": 72,
+    "vol": 200000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "~200k AP Environmental Science takers per year"
+  },
+  {
+    "rank": 11,
+    "slug": "ap-chemistry",
+    "name": "AP Chemistry",
+    "heat": 71,
+    "vol": 170000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "~170k AP Chemistry takers per year"
+  },
+  {
+    "rank": 12,
+    "slug": "ap-physics-1-algebra-based",
+    "name": "AP Physics 1: Algebra-Based",
+    "heat": 71,
+    "vol": 170000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "~170k AP Physics 1 takers per year"
+  },
+  {
+    "rank": 13,
+    "slug": "ap-computer-science-principles",
+    "name": "AP Computer Science Principles",
+    "heat": 70,
+    "vol": 150000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "~150k AP CSP takers per year"
+  },
+  {
+    "rank": 14,
+    "slug": "ap-macroeconomics",
+    "name": "AP Macroeconomics",
+    "heat": 70,
+    "vol": 150000,
+    "src": "estimate",
+    "family": "AP",
+    "note": "~150k AP Macroeconomics takers per year"
+  },
+  {
+    "rank": 15,
+    "slug": "clep-college-composition",
+    "name": "CLEP College Composition",
+    "heat": 68,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "CLEP",
+    "note": "Most-taken CLEP exam"
+  },
+  {
+    "rank": 16,
+    "slug": "mcat-exam",
+    "name": "Medical College Admission Test",
+    "heat": 67,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "Admission",
+    "note": "~80k MCAT administrations per year (AAMC)"
+  },
+  {
+    "rank": 17,
+    "slug": "nha-ccma",
+    "name": "NHA Certified Clinical Medical Assistant",
+    "heat": 64,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "AlliedHealth",
+    "note": "~50k NHA CCMA medical-assistant candidates per year"
+  },
+  {
+    "rank": 18,
+    "slug": "uniform-bar-exam",
+    "name": "Uniform Bar Exam",
+    "heat": 64,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "Bar",
+    "note": "~50k UBE takers per year (NCBE)"
+  },
+  {
+    "rank": 19,
+    "slug": "mpre",
+    "name": "Multistate Professional Responsibility Examination",
+    "heat": 64,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "Admission",
+    "note": "~50k MPRE test-takers per year (NCBE)"
+  },
+  {
+    "rank": 20,
+    "slug": "faa-part-107-initial-training-alc-451",
+    "name": "Part 107 Small UAS Initial Training for Part 61 Pilots",
+    "heat": 64,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "FAA",
+    "note": "~50k Part 107 remote-pilot certs per year (FAA)"
+  },
+  {
+    "rank": 21,
+    "slug": "law-school-admission-test",
+    "name": "Law School Admission Test",
+    "heat": 62,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "Admission",
+    "note": "~40k LSAT administrations per year (LSAC)"
+  },
+  {
+    "rank": 22,
+    "slug": "faa-part-107-recurrent-training-alc-677",
+    "name": "Part 107 Small UAS Recurrent Training",
+    "heat": 62,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "FAA",
+    "note": "Part 107 recurrent training"
+  },
+  {
+    "rank": 23,
+    "slug": "clep-spanish-language",
+    "name": "CLEP Spanish Language",
+    "heat": 61,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "CLEP",
+    "note": "High-volume CLEP language exam"
+  },
+  {
+    "rank": 24,
+    "slug": "ncct-ncma",
+    "name": "NCCT National Certified Medical Assistant",
+    "heat": 61,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "AlliedHealth",
+    "note": "~30k NCCT NCMA medical-assistant candidates per year"
+  },
+  {
+    "rank": 25,
+    "slug": "nha-cpht",
+    "name": "NHA Certified Pharmacy Technician",
+    "heat": 61,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "AlliedHealth",
+    "note": "~30k NHA pharmacy-tech candidates per year"
+  },
+  {
+    "rank": 26,
+    "slug": "clep-american-government",
+    "name": "CLEP American Government",
+    "heat": 60,
+    "vol": 25000,
+    "src": "estimate",
+    "family": "CLEP",
+    "note": "Common CLEP requirement"
+  },
+  {
+    "rank": 27,
+    "slug": "usmle-step-1",
+    "name": "USMLE Step 1",
+    "heat": 60,
+    "vol": 25000,
+    "src": "estimate",
+    "family": "Admission",
+    "note": "~25k USMLE Step 1 takers per year (US + IMG)"
+  },
+  {
+    "rank": 28,
+    "slug": "fcc-amateur-technician-class-license",
+    "name": "Amateur Radio Technician Class License Exam",
+    "heat": 60,
+    "vol": 25000,
+    "src": "estimate",
+    "family": "FCC",
+    "note": "~25k new technician-class hams per year (FCC)"
+  },
+  {
+    "rank": 29,
+    "slug": "clep-humanities",
+    "name": "CLEP Humanities",
+    "heat": 58,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "CLEP",
+    "note": "Common CLEP humanities exam"
+  },
+  {
+    "rank": 30,
+    "slug": "clep-natural-sciences",
+    "name": "CLEP Natural Sciences",
+    "heat": 58,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "CLEP",
+    "note": "Common CLEP science exam"
+  },
+  {
+    "rank": 31,
+    "slug": "clep-principles-of-microeconomics",
+    "name": "CLEP Principles of Microeconomics",
+    "heat": 58,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "CLEP",
+    "note": "Common CLEP business-core exam"
+  },
+  {
+    "rank": 32,
+    "slug": "bcen-cen",
+    "name": "BCEN Certified Emergency Nurse",
+    "heat": 56,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "AlliedHealth",
+    "note": "~15k BCEN CEN emergency-nursing candidates per year"
+  },
+  {
+    "rank": 33,
+    "slug": "pance",
+    "name": "Physician Assistant National Certifying Examination",
+    "heat": 56,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "Admission",
+    "note": "~15k PANCE takers per year (PA-C)"
+  },
+  {
+    "rank": 34,
+    "slug": "praxis-plt-grades-5-9-5623",
+    "name": "Praxis Principles of Learning and Teaching: Grades 5-9 (5623)",
+    "heat": 55,
+    "vol": 12000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "PLT 5-9 — middle-grades pedagogy licensure"
+  },
+  {
+    "rank": 35,
+    "slug": "fcc-amateur-general-class-license",
+    "name": "Amateur Radio General Class License Exam",
+    "heat": 55,
+    "vol": 12000,
+    "src": "estimate",
+    "family": "FCC",
+    "note": "General-class upgrade volume"
+  },
+  {
+    "rank": 36,
+    "slug": "praxis-middle-school-english-language-arts-5047",
+    "name": "Praxis Middle School English Language Arts (5047)",
+    "heat": 54,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "Middle-school ELA licensure"
+  },
+  {
+    "rank": 37,
+    "slug": "praxis-english-to-speakers-of-other-languages-5362",
+    "name": "Praxis English to Speakers of Other Languages (5362)",
+    "heat": 54,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "ESL licensure — widely required"
+  },
+  {
+    "rank": 38,
+    "slug": "california-bar-exam",
+    "name": "California Bar Exam",
+    "heat": 54,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Bar",
+    "note": "~10k California bar takers per year"
+  },
+  {
+    "rank": 39,
+    "slug": "praxis-health-education-5551",
+    "name": "Praxis Health Education (5551)",
+    "heat": 53,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "Health-education teacher licensure"
+  },
+  {
+    "rank": 40,
+    "slug": "praxis-chemistry-5246",
+    "name": "Praxis Chemistry: Content Knowledge (5246)",
+    "heat": 53,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "Chemistry teacher licensure"
+  },
+  {
+    "rank": 41,
+    "slug": "praxis-algebra-i-5162",
+    "name": "Praxis Algebra I (5162)",
+    "heat": 51,
+    "vol": 6000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "Algebra I add-on licensure"
+  },
+  {
+    "rank": 42,
+    "slug": "praxis-geometry-5163",
+    "name": "Praxis Geometry (5163)",
+    "heat": 50,
+    "vol": 5000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "Geometry add-on licensure"
+  },
+  {
+    "rank": 43,
+    "slug": "praxis-physics-5266",
+    "name": "Praxis Physics: Content Knowledge (5266)",
+    "heat": 50,
+    "vol": 5000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "Physics teacher licensure"
+  },
+  {
+    "rank": 44,
+    "slug": "praxis-educational-leadership-administration-and-supervision-5412",
+    "name": "Praxis Educational Leadership: Administration and Supervision (5412)",
+    "heat": 50,
+    "vol": 5000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "School-administrator licensure"
+  },
+  {
+    "rank": 45,
+    "slug": "arrt-nuclear-medicine",
+    "name": "ARRT Nuclear Medicine Technology Certification",
+    "heat": 47,
+    "vol": 3000,
+    "src": "estimate",
+    "family": "ARRT",
+    "note": "ARRT post-primary nuclear-medicine exam"
+  },
+  {
+    "rank": 46,
+    "slug": "arrt-vascular-interventional",
+    "name": "ARRT Vascular Interventional Radiography Certification",
+    "heat": 47,
+    "vol": 3000,
+    "src": "estimate",
+    "family": "ARRT",
+    "note": "ARRT post-primary VI exam"
+  },
+  {
+    "rank": 47,
+    "slug": "praxis-school-psychologist-5403",
+    "name": "Praxis School Psychologist (5403)",
+    "heat": 47,
+    "vol": 3000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "School-psychologist licensure"
+  },
+  {
+    "rank": 48,
+    "slug": "arrt-radiation-therapy",
+    "name": "ARRT Radiation Therapy Certification",
+    "heat": 46,
+    "vol": 2500,
+    "src": "estimate",
+    "family": "ARRT",
+    "note": "ARRT radiation-therapy primary exam"
+  },
+  {
+    "rank": 49,
+    "slug": "arrt-cardiac-interventional",
+    "name": "ARRT Cardiac Interventional Radiography Certification",
+    "heat": 44,
+    "vol": 2000,
+    "src": "estimate",
+    "family": "ARRT",
+    "note": "ARRT post-primary CI exam"
+  },
+  {
+    "rank": 50,
+    "slug": "arrt-breast-sonography",
+    "name": "ARRT Breast Sonography Certification",
+    "heat": 42,
+    "vol": 1500,
+    "src": "estimate",
+    "family": "ARRT",
+    "note": "ARRT post-primary breast sonography exam"
+  }
+]

@@ -1,0 +1,452 @@
+[
+  {
+    "rank": 1,
+    "slug": "ap-calculus-bc",
+    "name": "AP Calculus BC",
+    "heat": 72,
+    "vol": 180000,
+    "family": "AP",
+    "note": "~180k AP Calculus BC takers/yr"
+  },
+  {
+    "rank": 2,
+    "slug": "ap-spanish-language-and-culture",
+    "name": "AP Spanish Language and Culture",
+    "heat": 70,
+    "vol": 150000,
+    "family": "AP",
+    "note": "~150k AP Spanish takers/yr"
+  },
+  {
+    "rank": 3,
+    "slug": "ap-microeconomics",
+    "name": "AP Microeconomics",
+    "heat": 68,
+    "vol": 100000,
+    "family": "AP",
+    "note": "~100k AP Micro takers/yr"
+  },
+  {
+    "rank": 4,
+    "slug": "ap-european-history",
+    "name": "AP European History",
+    "heat": 68,
+    "vol": 100000,
+    "family": "AP",
+    "note": "~100k AP European History takers/yr"
+  },
+  {
+    "rank": 5,
+    "slug": "ap-computer-science-a",
+    "name": "AP Computer Science A",
+    "heat": 67,
+    "vol": 80000,
+    "family": "AP",
+    "note": "~80k AP CSA takers/yr"
+  },
+  {
+    "rank": 6,
+    "slug": "ap-physics-c-mechanics",
+    "name": "AP Physics C: Mechanics",
+    "heat": 65,
+    "vol": 60000,
+    "family": "AP",
+    "note": "~60k AP Physics C: Mech takers/yr"
+  },
+  {
+    "rank": 7,
+    "slug": "ap-precalculus",
+    "name": "AP Precalculus",
+    "heat": 64,
+    "vol": 50000,
+    "family": "AP",
+    "note": "~50k AP Precalculus takers/yr"
+  },
+  {
+    "rank": 8,
+    "slug": "microsoft-az-800",
+    "name": "Administering Windows Server Hybrid Core Infrastructure",
+    "heat": 64,
+    "vol": 50000,
+    "family": "Microsoft",
+    "note": "Windows Server hybrid admin — high Azure demand"
+  },
+  {
+    "rank": 9,
+    "slug": "ap-physics-2-algebra-based",
+    "name": "AP Physics 2: Algebra-Based",
+    "heat": 62,
+    "vol": 40000,
+    "family": "AP",
+    "note": "~40k AP Physics 2 takers/yr"
+  },
+  {
+    "rank": 10,
+    "slug": "microsoft-az-801",
+    "name": "Configuring Windows Server Hybrid Advanced Services",
+    "heat": 61,
+    "vol": 30000,
+    "family": "Microsoft",
+    "note": "Windows Server hybrid advanced"
+  },
+  {
+    "rank": 11,
+    "slug": "vmware-vcp-data-center-virtualization",
+    "name": "VMware Certified Professional - Data Center Virtualization",
+    "heat": 61,
+    "vol": 30000,
+    "family": "VMware",
+    "note": "VCP-DCV — core VMware credential"
+  },
+  {
+    "rank": 12,
+    "slug": "microsoft-dp-203",
+    "name": "Microsoft Certified: Azure Data Engineer Associate",
+    "heat": 61,
+    "vol": 30000,
+    "family": "Microsoft",
+    "note": "Azure Data Engineer Associate"
+  },
+  {
+    "rank": 13,
+    "slug": "safe-agile-product-manager",
+    "name": "SAFe Agile Product Manager",
+    "heat": 61,
+    "vol": 30000,
+    "family": "SAFe",
+    "note": "SAFe POPM — widely taken SAFe cert"
+  },
+  {
+    "rank": 14,
+    "slug": "nha-cmaa",
+    "name": "NHA Certified Medical Administrative Assistant",
+    "heat": 61,
+    "vol": 30000,
+    "family": "AlliedHealth",
+    "note": "NHA medical-administrative assistant"
+  },
+  {
+    "rank": 15,
+    "slug": "cma-part-1",
+    "name": "CMA Part 1: Financial Planning, Performance and Analytics",
+    "heat": 61,
+    "vol": 30000,
+    "family": "Accounting",
+    "note": "CMA Part 1 — financial planning"
+  },
+  {
+    "rank": 16,
+    "slug": "clep-college-mathematics",
+    "name": "CLEP College Mathematics",
+    "heat": 60,
+    "vol": 25000,
+    "family": "CLEP",
+    "note": "Common CLEP math exam"
+  },
+  {
+    "rank": 17,
+    "slug": "cma-part-2",
+    "name": "CMA Part 2: Strategic Financial Management",
+    "heat": 60,
+    "vol": 25000,
+    "family": "Accounting",
+    "note": "CMA Part 2 — strategic management"
+  },
+  {
+    "rank": 18,
+    "slug": "clep-chemistry",
+    "name": "CLEP Chemistry",
+    "heat": 58,
+    "vol": 20000,
+    "family": "CLEP",
+    "note": "Common CLEP chemistry exam"
+  },
+  {
+    "rank": 19,
+    "slug": "clep-principles-of-macroeconomics",
+    "name": "CLEP Principles of Macroeconomics",
+    "heat": 58,
+    "vol": 20000,
+    "family": "CLEP",
+    "note": "Common CLEP business-core exam"
+  },
+  {
+    "rank": 20,
+    "slug": "clep-financial-accounting",
+    "name": "CLEP Financial Accounting",
+    "heat": 58,
+    "vol": 20000,
+    "family": "CLEP",
+    "note": "Common CLEP business-core exam"
+  },
+  {
+    "rank": 21,
+    "slug": "microsoft-sc-100",
+    "name": "Microsoft Certified: Cybersecurity Architect Expert",
+    "heat": 58,
+    "vol": 20000,
+    "family": "Microsoft",
+    "note": "Cybersecurity Architect Expert"
+  },
+  {
+    "rank": 22,
+    "slug": "aws-certified-advanced-networking-specialty",
+    "name": "AWS Certified Advanced Networking - Specialty",
+    "heat": 58,
+    "vol": 20000,
+    "family": "AWS",
+    "note": "AWS Advanced Networking"
+  },
+  {
+    "rank": 23,
+    "slug": "comptia-data-plus",
+    "name": "CompTIA Data+",
+    "heat": 58,
+    "vol": 20000,
+    "family": "CompTIA",
+    "note": "CompTIA Data+ — data literacy cert"
+  },
+  {
+    "rank": 24,
+    "slug": "safe-architect",
+    "name": "SAFe Architect",
+    "heat": 58,
+    "vol": 20000,
+    "family": "SAFe",
+    "note": "SAFe Architect"
+  },
+  {
+    "rank": 25,
+    "slug": "google-professional-cloud-developer",
+    "name": "Google Cloud Professional Cloud Developer",
+    "heat": 58,
+    "vol": 20000,
+    "family": "Google",
+    "note": "GCP Professional Cloud Developer"
+  },
+  {
+    "rank": 26,
+    "slug": "ncct-pt",
+    "name": "NCCT Patient Care Technician Certification",
+    "heat": 58,
+    "vol": 20000,
+    "family": "AlliedHealth",
+    "note": "NCCT patient-care technician"
+  },
+  {
+    "rank": 27,
+    "slug": "ncct-ts",
+    "name": "NCCT Technician Specialist Certification",
+    "heat": 58,
+    "vol": 20000,
+    "family": "AlliedHealth",
+    "note": "NCCT surgical technologist"
+  },
+  {
+    "rank": 28,
+    "slug": "usmle-step-3",
+    "name": "USMLE Step 3",
+    "heat": 58,
+    "vol": 20000,
+    "family": "Medical",
+    "note": "~20k USMLE Step 3 takers/yr"
+  },
+  {
+    "rank": 29,
+    "slug": "clep-introductory-business-law",
+    "name": "CLEP Introductory Business Law",
+    "heat": 56,
+    "vol": 15000,
+    "family": "CLEP",
+    "note": "Common CLEP business-core exam"
+  },
+  {
+    "rank": 30,
+    "slug": "clep-precalculus",
+    "name": "CLEP Precalculus",
+    "heat": 56,
+    "vol": 15000,
+    "family": "CLEP",
+    "note": "Common CLEP math exam"
+  },
+  {
+    "rank": 31,
+    "slug": "aws-certified-database-specialty",
+    "name": "AWS Certified Database - Specialty",
+    "heat": 56,
+    "vol": 15000,
+    "family": "AWS",
+    "note": "AWS Database Specialty"
+  },
+  {
+    "rank": 32,
+    "slug": "ptcb-billing",
+    "name": "PTCB Billing and Reimbursement Assessment",
+    "heat": 56,
+    "vol": 15000,
+    "family": "AlliedHealth",
+    "note": "PTCB Billing and Reimbursement cert"
+  },
+  {
+    "rank": 33,
+    "slug": "ptcb-immunization",
+    "name": "PTCB Immunization Delivery Assessment",
+    "heat": 56,
+    "vol": 15000,
+    "family": "AlliedHealth",
+    "note": "PTCB Immunization Administration cert"
+  },
+  {
+    "rank": 34,
+    "slug": "cia-part-1",
+    "name": "Certified Internal Auditor Part 1: Essentials of Internal Auditing",
+    "heat": 56,
+    "vol": 15000,
+    "family": "Accounting",
+    "note": "CIA Part 1 — internal audit essentials"
+  },
+  {
+    "rank": 35,
+    "slug": "aws-certified-sap-on-aws-specialty",
+    "name": "AWS Certified: SAP on AWS - Specialty",
+    "heat": 54,
+    "vol": 10000,
+    "family": "AWS",
+    "note": "AWS SAP on AWS Specialty"
+  },
+  {
+    "rank": 36,
+    "slug": "nha-mental-health-tech",
+    "name": "NHA Mental Health Technician Certification",
+    "heat": 54,
+    "vol": 10000,
+    "family": "AlliedHealth",
+    "note": "NHA Mental Health Technician"
+  },
+  {
+    "rank": 37,
+    "slug": "ptcb-nonsterile-compounding",
+    "name": "PTCB Nonsterile Compounding Assessment",
+    "heat": 54,
+    "vol": 10000,
+    "family": "AlliedHealth",
+    "note": "PTCB Nonsterile Compounding cert"
+  },
+  {
+    "rank": 38,
+    "slug": "praxis-social-studies-5581",
+    "name": "Praxis Social Studies (5581)",
+    "heat": 54,
+    "vol": 10000,
+    "family": "Praxis",
+    "note": "Social Studies teacher licensure"
+  },
+  {
+    "rank": 39,
+    "slug": "cfe-exam",
+    "name": "Certified Fraud Examiner Exam",
+    "heat": 54,
+    "vol": 10000,
+    "family": "Accounting",
+    "note": "Certified Fraud Examiner"
+  },
+  {
+    "rank": 40,
+    "slug": "praxis-middle-school-science-5442",
+    "name": "Praxis Middle School Science (5442)",
+    "heat": 53,
+    "vol": 8000,
+    "family": "Praxis",
+    "note": "Middle-school science licensure"
+  },
+  {
+    "rank": 41,
+    "slug": "praxis-physical-education-content-knowledge-5091",
+    "name": "Praxis Physical Education: Content Knowledge (5091)",
+    "heat": 53,
+    "vol": 8000,
+    "family": "Praxis",
+    "note": "Physical education licensure"
+  },
+  {
+    "rank": 42,
+    "slug": "praxis-special-education-learning-disabilities-5383",
+    "name": "Praxis Special Education: Teaching Students with Learning Disabilities (5383)",
+    "heat": 53,
+    "vol": 8000,
+    "family": "Praxis",
+    "note": "Special-education licensure"
+  },
+  {
+    "rank": 43,
+    "slug": "bcen-cfrn",
+    "name": "BCEN Certified Flight Registered Nurse",
+    "heat": 51,
+    "vol": 6000,
+    "family": "AlliedHealth",
+    "note": "BCEN flight nurse credential"
+  },
+  {
+    "rank": 44,
+    "slug": "praxis-middle-school-social-studies-5089",
+    "name": "Praxis Middle School Social Studies (5089)",
+    "heat": 51,
+    "vol": 6000,
+    "family": "Praxis",
+    "note": "Middle-school social studies licensure"
+  },
+  {
+    "rank": 45,
+    "slug": "praxis-government-political-science-5931",
+    "name": "Praxis Government/Political Science (5931)",
+    "heat": 51,
+    "vol": 6000,
+    "family": "Praxis",
+    "note": "Government teacher licensure"
+  },
+  {
+    "rank": 46,
+    "slug": "bcen-tcrn",
+    "name": "BCEN Trauma Certified Registered Nurse",
+    "heat": 50,
+    "vol": 5000,
+    "family": "AlliedHealth",
+    "note": "BCEN trauma nurse credential"
+  },
+  {
+    "rank": 47,
+    "slug": "praxis-geography-5921",
+    "name": "Praxis Geography (5921)",
+    "heat": 50,
+    "vol": 5000,
+    "family": "Praxis",
+    "note": "Geography teacher licensure"
+  },
+  {
+    "rank": 48,
+    "slug": "praxis-reading-specialist-5302",
+    "name": "Praxis Reading Specialist (5302)",
+    "heat": 50,
+    "vol": 5000,
+    "family": "Praxis",
+    "note": "Reading-specialist licensure"
+  },
+  {
+    "rank": 49,
+    "slug": "praxis-music-content-knowledge-5113",
+    "name": "Praxis Music: Content Knowledge (5113)",
+    "heat": 50,
+    "vol": 5000,
+    "family": "Praxis",
+    "note": "Music teacher licensure"
+  },
+  {
+    "rank": 50,
+    "slug": "praxis-economics-5911",
+    "name": "Praxis Economics (5911)",
+    "heat": 48,
+    "vol": 4000,
+    "family": "Praxis",
+    "note": "Economics teacher licensure"
+  }
+]

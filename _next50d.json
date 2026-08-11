@@ -1,0 +1,502 @@
+[
+  {
+    "rank": 1,
+    "slug": "accuplacer-advanced-algebra-and-functions",
+    "name": "accuplacer-advanced-algebra-and-functions",
+    "heat": 88,
+    "vol": 5000000,
+    "src": "estimate",
+    "family": "CollegeAdmission",
+    "note": "ACCUPLACER placement tests are administered to millions of community-college and college students each year"
+  },
+  {
+    "rank": 2,
+    "slug": "nasbla-approved-boating-safety-course",
+    "name": "nasbla-approved-boating-safety-course",
+    "heat": 79,
+    "vol": 1000000,
+    "src": "estimate",
+    "family": "Boating",
+    "note": "Most states require a NASBLA-approved course before operating a boat; roughly a million courses a year"
+  },
+  {
+    "rank": 3,
+    "slug": "american-red-cross-lifeguarding",
+    "name": "american-red-cross-lifeguarding",
+    "heat": 72,
+    "vol": 300000,
+    "src": "estimate",
+    "family": "Lifeguard",
+    "note": "Red Cross lifeguard certification trains hundreds of thousands of lifeguards annually"
+  },
+  {
+    "rank": 4,
+    "slug": "nims-ics-300",
+    "name": "nims-ics-300",
+    "heat": 70,
+    "vol": 200000,
+    "src": "estimate",
+    "family": "FEMA",
+    "note": "Intermediate ICS training required for many incident-management roles"
+  },
+  {
+    "rank": 5,
+    "slug": "nremt-emr",
+    "name": "nremt-emr",
+    "heat": 68,
+    "vol": 150000,
+    "src": "estimate",
+    "family": "EMS",
+    "note": "Emergency Medical Responder is the entry EMS certification"
+  },
+  {
+    "rank": 6,
+    "slug": "nims-ics-800",
+    "name": "nims-ics-800",
+    "heat": 68,
+    "vol": 150000,
+    "src": "estimate",
+    "family": "FEMA",
+    "note": "NIMS ICS-800 is a core course for emergency-management personnel"
+  },
+  {
+    "rank": 7,
+    "slug": "servsafe-alcohol-advanced",
+    "name": "servsafe-alcohol-advanced",
+    "heat": 66,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "FoodSafety",
+    "note": "Advanced alcohol server certification"
+  },
+  {
+    "rank": 8,
+    "slug": "wset-level-1-award-wines",
+    "name": "wset-level-1-award-wines",
+    "heat": 66,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "Wine",
+    "note": "WSET Level 1 is the most-taken wine qualification worldwide"
+  },
+  {
+    "rank": 9,
+    "slug": "yoga-alliance-ryt-200",
+    "name": "yoga-alliance-ryt-200",
+    "heat": 66,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "Yoga",
+    "note": "~100k+ new RYT-200 registrations per year"
+  },
+  {
+    "rank": 10,
+    "slug": "faa-trust-recreational-uas-safety-test",
+    "name": "faa-trust-recreational-uas-safety-test",
+    "heat": 66,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "Aviation",
+    "note": "FAA TRUST is required for all recreational drone operators"
+  },
+  {
+    "rank": 11,
+    "slug": "wset-level-2-award-wines",
+    "name": "wset-level-2-award-wines",
+    "heat": 65,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "Wine",
+    "note": "WSET Level 2 is the most popular wine qualification by exam volume"
+  },
+  {
+    "rank": 12,
+    "slug": "pesticide-applicator-core-exam",
+    "name": "pesticide-applicator-core-exam",
+    "heat": 65,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "Pesticide",
+    "note": "Core pesticide applicator exams run in every state"
+  },
+  {
+    "rank": 13,
+    "slug": "nic-esthetics-theory",
+    "name": "nic-esthetics-theory",
+    "heat": 62,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "NIC",
+    "note": "Esthetics licensure is one of the largest state board exam categories"
+  },
+  {
+    "rank": 14,
+    "slug": "crossfit-level-1-trainer",
+    "name": "crossfit-level-1-trainer",
+    "heat": 62,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "Fitness",
+    "note": "CrossFit L1 seminars train ~50k+ coaches a year"
+  },
+  {
+    "rank": 15,
+    "slug": "hazwoper-24-hour",
+    "name": "hazwoper-24-hour",
+    "heat": 62,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "HAZWOPER",
+    "note": "24-hour HAZWOPER is common for TSD-facility and some site workers"
+  },
+  {
+    "rank": 16,
+    "slug": "imsa-work-zone-traffic-control-safety",
+    "name": "imsa-work-zone-traffic-control-safety",
+    "heat": 62,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "Traffic",
+    "note": "Flagging and traffic-control certifications required for highway work"
+  },
+  {
+    "rank": 17,
+    "slug": "cfp-certification-exam",
+    "name": "cfp-certification-exam",
+    "heat": 61,
+    "vol": 40000,
+    "src": "published",
+    "family": "FINRA",
+    "note": "CFP Board reports ~40k+ exam administrations per year"
+  },
+  {
+    "rank": 18,
+    "slug": "cicerone-certified-beer-server",
+    "name": "cicerone-certified-beer-server",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Cicerone",
+    "note": "Cicerone Beer Server is the entry beer credential"
+  },
+  {
+    "rank": 19,
+    "slug": "precision-nutrition-level-1",
+    "name": "precision-nutrition-level-1",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Fitness",
+    "note": "Pn1 is the most-taken nutrition-coach certification"
+  },
+  {
+    "rank": 20,
+    "slug": "cda-preschool",
+    "name": "cda-preschool",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "CDA",
+    "note": "CDA credentials are awarded to ~30k+ early educators a year"
+  },
+  {
+    "rank": 21,
+    "slug": "praxis-mathematics-5165",
+    "name": "praxis-mathematics-5165",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "Required for secondary math licensure in many states"
+  },
+  {
+    "rank": 22,
+    "slug": "npte",
+    "name": "npte",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "PT",
+    "note": "~30k first-time candidates for the physical therapist licensing exam each year"
+  },
+  {
+    "rank": 23,
+    "slug": "cpcu-designation",
+    "name": "cpcu-designation",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Insurance",
+    "note": "CPCU course exams (8 exams) administered through the Institutes"
+  },
+  {
+    "rank": 24,
+    "slug": "google-advanced-data-analytics-certificate",
+    "name": "google-advanced-data-analytics-certificate",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Google",
+    "note": "Google Career Certificate with high enrollment"
+  },
+  {
+    "rank": 25,
+    "slug": "microsoft-ms-102",
+    "name": "microsoft-ms-102",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "Microsoft 365 Administrator is a heavily-taken admin exam"
+  },
+  {
+    "rank": 26,
+    "slug": "microsoft-mb-910",
+    "name": "microsoft-mb-910",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "Dynamics 365 Fundamentals is Microsoft's most-taken business-apps exam"
+  },
+  {
+    "rank": 27,
+    "slug": "salesforce-platform-app-builder",
+    "name": "salesforce-platform-app-builder",
+    "heat": 59,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Salesforce",
+    "note": "One of the most-taken Salesforce certifications"
+  },
+  {
+    "rank": 28,
+    "slug": "microsoft-ai-102",
+    "name": "microsoft-ai-102",
+    "heat": 58,
+    "vol": 25000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "Azure AI Engineer Associate is a top Microsoft AI exam"
+  },
+  {
+    "rank": 29,
+    "slug": "arrt-radiography",
+    "name": "arrt-radiography",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "ARRT",
+    "note": "~20k new radiography candidates per year"
+  },
+  {
+    "rank": 30,
+    "slug": "danb-gc",
+    "name": "danb-gc",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "DANB",
+    "note": "DANB Infection Control exam is required by many state boards"
+  },
+  {
+    "rank": 31,
+    "slug": "nic-nail-technology-theory",
+    "name": "nic-nail-technology-theory",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "NIC",
+    "note": "Nail technician state board exams"
+  },
+  {
+    "rank": 32,
+    "slug": "ace-certified-group-fitness-instructor",
+    "name": "ace-certified-group-fitness-instructor",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Fitness",
+    "note": "ACE Group Fitness is the leading group-ex certification"
+  },
+  {
+    "rank": 33,
+    "slug": "bcba-board-certified-behavior-analyst",
+    "name": "bcba-board-certified-behavior-analyst",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "ABA",
+    "note": "BCBA exam ~20k administrations per year"
+  },
+  {
+    "rank": 34,
+    "slug": "certified-insurance-counselor",
+    "name": "certified-insurance-counselor",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Insurance",
+    "note": "CIC institutes certify ~20k+ a year"
+  },
+  {
+    "rank": 35,
+    "slug": "microsoft-ms-700",
+    "name": "microsoft-ms-700",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "Teams Administrator Associate"
+  },
+  {
+    "rank": 36,
+    "slug": "microsoft-sc-200",
+    "name": "microsoft-sc-200",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "Security Operations Analyst Associate"
+  },
+  {
+    "rank": 37,
+    "slug": "salesforce-platform-developer-i",
+    "name": "salesforce-platform-developer-i",
+    "heat": 57,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Salesforce",
+    "note": "Highly-taken Salesforce developer certification"
+  },
+  {
+    "rank": 38,
+    "slug": "arrt-sonography",
+    "name": "arrt-sonography",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "ARRT",
+    "note": "ARDMS sonography exams (SPI + specialty)"
+  },
+  {
+    "rank": 39,
+    "slug": "amt-rma",
+    "name": "amt-rma",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "MedicalAssist",
+    "note": "Registered Medical Assistant is a leading CMA credential"
+  },
+  {
+    "rank": 40,
+    "slug": "sca-coffee-skills-professional-diploma",
+    "name": "sca-coffee-skills-professional-diploma",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "Coffee",
+    "note": "SCA coffee certification pathway"
+  },
+  {
+    "rank": 41,
+    "slug": "nsca-certified-personal-trainer",
+    "name": "nsca-certified-personal-trainer",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "Fitness",
+    "note": "NSCA-CPT is a major personal-training cert"
+  },
+  {
+    "rank": 42,
+    "slug": "praxis-early-childhood-education-5025",
+    "name": "praxis-early-childhood-education-5025",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "Early childhood licensure Praxis"
+  },
+  {
+    "rank": 43,
+    "slug": "series-9",
+    "name": "series-9",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "FINRA",
+    "note": "FINRA general securities sales supervisor exam"
+  },
+  {
+    "rank": 44,
+    "slug": "npte-pta",
+    "name": "npte-pta",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "PT",
+    "note": "Physical therapist assistant licensing exam"
+  },
+  {
+    "rank": 45,
+    "slug": "isaca-crisc",
+    "name": "isaca-crisc",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "ISACA",
+    "note": "CRISC is ISACA's most-taken certification after CISA"
+  },
+  {
+    "rank": 46,
+    "slug": "vtne",
+    "name": "vtne",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "VetMed",
+    "note": "~10k VTNE candidates per year for veterinary technician licensure"
+  },
+  {
+    "rank": 47,
+    "slug": "asha-ccc-slp",
+    "name": "asha-ccc-slp",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Speech",
+    "note": "ASHA CCC-SLP is the standard credential for speech-language pathologists (~10k new certificants/year)"
+  },
+  {
+    "rank": 48,
+    "slug": "aws-certified-machine-learning-specialty",
+    "name": "aws-certified-machine-learning-specialty",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "AWS",
+    "note": "AWS ML specialty is a top advanced AWS exam"
+  },
+  {
+    "rank": 49,
+    "slug": "isc2-sscp",
+    "name": "isc2-sscp",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "ISC2",
+    "note": "Systems security certified practitioner"
+  },
+  {
+    "rank": 50,
+    "slug": "isc2-ccsp",
+    "name": "isc2-ccsp",
+    "heat": 52,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "ISC2",
+    "note": "Cloud security professional certification"
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "rank": 1,
+    "slug": "praxis-elementary-education-content-knowledge-5018",
+    "name": "Praxis Elementary Education: Content Knowledge (5018)",
+    "heat": 82,
+    "vol": 120000,
+    "src": "estimate",
+    "family": "Teaching",
+    "note": "Elementary content knowledge — widely required for elementary licensure"
+  },
+  {
+    "rank": 2,
+    "slug": "praxis-plt-grades-7-12-5624",
+    "name": "Praxis Principles of Learning and Teaching: Grades 7-12 (5624)",
+    "heat": 81,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "Teaching",
+    "note": "PLT 7-12 — widely required secondary pedagogy exam"
+  },
+  {
+    "rank": 3,
+    "slug": "google-it-support-professional-certificate",
+    "name": "Google IT Support Professional Certificate",
+    "heat": 80,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "OTHER:google",
+    "note": "Google Career Certificate — very high global enrollment"
+  },
+  {
+    "rank": 4,
+    "slug": "google-data-analytics-professional-certificate",
+    "name": "Google Data Analytics Professional Certificate",
+    "heat": 80,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "OTHER:google",
+    "note": "Google Career Certificate — very high global enrollment"
+  },
+  {
+    "rank": 5,
+    "slug": "nccer-electrician",
+    "name": "NCCER Electrician Certification",
+    "heat": 80,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "Trades-Elec/Plumb",
+    "note": "Electrician — mostly state-licensed; high volume"
+  },
+  {
+    "rank": 6,
+    "slug": "acsm-certified-personal-trainer",
+    "name": "ACSM Certified Personal Trainer",
+    "heat": 79,
+    "vol": 70000,
+    "src": "estimate",
+    "family": "PersonalTraining",
+    "note": "ACSM CPT — major personal-training cert"
+  },
+  {
+    "rank": 7,
+    "slug": "comptia-pentest-plus",
+    "name": "CompTIA PenTest+",
+    "heat": 79,
+    "vol": 70000,
+    "src": "estimate",
+    "family": "CompTIA",
+    "note": "CompTIA penetration-testing cert"
+  },
+  {
+    "rank": 8,
+    "slug": "nccer-welding",
+    "name": "NCCER Welding Certification",
+    "heat": 79,
+    "vol": 70000,
+    "src": "estimate",
+    "family": "Welding",
+    "note": "Welder credentialing — high volume"
+  },
+  {
+    "rank": 9,
+    "slug": "nccer-plumbing",
+    "name": "NCCER Plumbing",
+    "heat": 79,
+    "vol": 70000,
+    "src": "estimate",
+    "family": "Trades-Elec/Plumb",
+    "note": "Plumber licensure — high volume"
+  },
+  {
+    "rank": 10,
+    "slug": "nccer-hvac",
+    "name": "NCCER HVAC",
+    "heat": 79,
+    "vol": 70000,
+    "src": "estimate",
+    "family": "Trades-HVAC",
+    "note": "HVAC licensure — high volume"
+  },
+  {
+    "rank": 11,
+    "slug": "nclex-pn",
+    "name": "NCLEX-PN",
+    "heat": 78,
+    "vol": 63000,
+    "src": "published",
+    "family": "NCLEX",
+    "note": "NCSBN: ~63,000 PN testers in 2024"
+  },
+  {
+    "rank": 12,
+    "slug": "issa-certified-personal-trainer",
+    "name": "ISSA Certified Personal Trainer",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "PersonalTraining",
+    "note": "ISSA CPT — major personal-training cert"
+  },
+  {
+    "rank": 13,
+    "slug": "pe-civil",
+    "name": "Principles and Practice of Engineering (PE) Civil Exam",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "Engineering",
+    "note": "PE Civil — largest PE discipline"
+  },
+  {
+    "rank": 14,
+    "slug": "series-6",
+    "name": "Series 6 Investment Company and Variable Contracts Products Representative Exam",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "FINRA",
+    "note": "FINRA Series 6 — mutual fund rep, large volume"
+  },
+  {
+    "rank": 15,
+    "slug": "cfa-level-2",
+    "name": "CFA Program Level II Exam",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "CFA",
+    "note": "CFA L2 — subset progressing from L1"
+  },
+  {
+    "rank": 16,
+    "slug": "ahip-health-insurance-associate",
+    "name": "Health Insurance Associate",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "OTHER:ahip",
+    "note": "AHIP — health insurance certification, very common in the ACA market"
+  },
+  {
+    "rank": 17,
+    "slug": "scrum-org-psm-i",
+    "name": "Professional Scrum Master I",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "Agile",
+    "note": "Professional Scrum Master I — very high global volume"
+  },
+  {
+    "rank": 18,
+    "slug": "shrm-cp",
+    "name": "SHRM Certified Professional",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "OTHER:shrm",
+    "note": "SHRM-CP — very popular HR certification"
+  },
+  {
+    "rank": 19,
+    "slug": "pmi-capm",
+    "name": "Certified Associate in Project Management",
+    "heat": 78,
+    "vol": 60000,
+    "src": "published",
+    "family": "PMI",
+    "note": "PMI: ~76k active CAPM (2026)"
+  },
+  {
+    "rank": 20,
+    "slug": "pmi-acp",
+    "name": "PMI Agile Certified Practitioner",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "PMI",
+    "note": "PMI Agile Certified Practitioner"
+  },
+  {
+    "rank": 21,
+    "slug": "aws-certified-solutions-architect-professional",
+    "name": "AWS Certified Solutions Architect - Professional",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "AWS",
+    "note": "Advanced AWS cert"
+  },
+  {
+    "rank": 22,
+    "slug": "cisco-ccnp-enterprise",
+    "name": "Cisco Certified Network Professional Enterprise",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "Cisco",
+    "note": "Cisco professional-level routing/switching"
+  },
+  {
+    "rank": 23,
+    "slug": "comptia-server-plus",
+    "name": "CompTIA Server+",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "CompTIA",
+    "note": "CompTIA server admin cert"
+  },
+  {
+    "rank": 24,
+    "slug": "google-cloud-digital-leader",
+    "name": "Google Cloud Digital Leader",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "OTHER:google",
+    "note": "Google Cloud entry cert"
+  },
+  {
+    "rank": 25,
+    "slug": "aws-certified-welder",
+    "name": "AWS Certified Welder Program",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "Welding",
+    "note": "AWS welder performance qualification"
+  },
+  {
+    "rank": 26,
+    "slug": "series-63",
+    "name": "Series 63 Uniform Securities Agent State Law Exam",
+    "heat": 77,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "FINRA",
+    "note": "FINRA Series 63 — state blue-sky exam, large volume"
+  },
+  {
+    "rank": 27,
+    "slug": "hrci-phr",
+    "name": "Professional in Human Resources",
+    "heat": 77,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "OTHER:hrci",
+    "note": "HRCI PHR — popular HR certification"
+  },
+  {
+    "rank": 28,
+    "slug": "aws-certified-developer-associate",
+    "name": "AWS Certified Developer - Associate",
+    "heat": 77,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "AWS",
+    "note": "AWS developer track — popular associate cert"
+  },
+  {
+    "rank": 29,
+    "slug": "comptia-cloud-plus",
+    "name": "CompTIA Cloud+",
+    "heat": 77,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "CompTIA",
+    "note": "CompTIA cloud cert"
+  },
+  {
+    "rank": 30,
+    "slug": "comptia-it-fundamentals",
+    "name": "CompTIA IT Fundamentals (ITF+)",
+    "heat": 77,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "CompTIA",
+    "note": "ITF+ — entry-level IT cert, high volume"
+  },
+  {
+    "rank": 31,
+    "slug": "isc2-certified-in-cybersecurity",
+    "name": "ISC2 Certified in Cybersecurity",
+    "heat": 77,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "ISC2",
+    "note": "ISC2 entry cybersecurity cert"
+  },
+  {
+    "rank": 32,
+    "slug": "google-associate-cloud-engineer",
+    "name": "Google Cloud Associate Cloud Engineer",
+    "heat": 77,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "OTHER:google",
+    "note": "Google Cloud associate cert"
+  },
+  {
+    "rank": 33,
+    "slug": "aab-phlebotomy",
+    "name": "AAB Phlebotomy Certification",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "OTHER:aab",
+    "note": "Phlebotomy is a high-entry allied-health exam"
+  },
+  {
+    "rank": 34,
+    "slug": "nna-certified-notary-signing-agent",
+    "name": "NNA Certified Notary Signing Agent",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "Notary",
+    "note": "Notary signing agent — common side credential"
+  },
+  {
+    "rank": 35,
+    "slug": "cfa-level-3",
+    "name": "CFA Program Level III Exam",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "CFA",
+    "note": "CFA L3 — final level"
+  },
+  {
+    "rank": 36,
+    "slug": "scrum-org-pspo-i",
+    "name": "Professional Scrum Product Owner I",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "Agile",
+    "note": "Professional Scrum Product Owner I"
+  },
+  {
+    "rank": 37,
+    "slug": "asq-certified-six-sigma-black-belt",
+    "name": "ASQ Certified Six Sigma Black Belt",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "OTHER:asq",
+    "note": "ASQ CSSBB — popular quality/six-sigma cert"
+  },
+  {
+    "rank": 38,
+    "slug": "asq-certified-six-sigma-green-belt",
+    "name": "ASQ Certified Six Sigma Green Belt",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "OTHER:asq",
+    "note": "ASQ CSSGB — entry six-sigma cert"
+  },
+  {
+    "rank": 39,
+    "slug": "aws-certified-sysops-administrator-associate",
+    "name": "AWS Certified SysOps Administrator - Associate",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "AWS",
+    "note": "AWS ops track associate cert"
+  },
+  {
+    "rank": 40,
+    "slug": "cisco-ccst-networking",
+    "name": "Cisco Certified Support Technician Networking",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "Cisco",
+    "note": "Cisco Certified Support Technician — entry networking"
+  },
+  {
+    "rank": 41,
+    "slug": "isc2-cissp",
+    "name": "Certified Information Systems Security Professional",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "ISC2",
+    "note": "(ISC)2 CISSP — premier security cert; tens of thousands/yr"
+  },
+  {
+    "rank": 42,
+    "slug": "google-professional-cloud-architect",
+    "name": "Google Cloud Professional Cloud Architect",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "OTHER:google",
+    "note": "Google Cloud professional cert"
+  },
+  {
+    "rank": 43,
+    "slug": "python-institute-pcep",
+    "name": "PCEP - Certified Entry-Level Python Programmer",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "OTHER:python",
+    "note": "PCEP — entry Python programming cert"
+  },
+  {
+    "rank": 44,
+    "slug": "nremt-paramedic",
+    "name": "NREMT Paramedic Certification",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "EMS",
+    "note": "Paramedic is a subset of EMS volume"
+  },
+  {
+    "rank": 45,
+    "slug": "safe-scrum-master",
+    "name": "SAFe Scrum Master",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Agile",
+    "note": "SAFe Scrum Master"
+  },
+  {
+    "rank": 46,
+    "slug": "hrci-sphr",
+    "name": "Senior Professional in Human Resources",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "OTHER:hrci",
+    "note": "HRCI SPHR — senior HR certification"
+  },
+  {
+    "rank": 47,
+    "slug": "shrm-scp",
+    "name": "SHRM Senior Certified Professional",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "OTHER:shrm",
+    "note": "SHRM-SCP — senior HR certification"
+  },
+  {
+    "rank": 48,
+    "slug": "asq-certified-quality-engineer",
+    "name": "ASQ Certified Quality Engineer",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "OTHER:asq",
+    "note": "ASQ CQE — quality engineering cert"
+  },
+  {
+    "rank": 49,
+    "slug": "lpi-linux-essentials",
+    "name": "LPI Linux Essentials",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "OTHER:lpi",
+    "note": "Linux Essentials — entry Linux cert"
+  },
+  {
+    "rank": 50,
+    "slug": "ahima-cca",
+    "name": "AHIMA Certified Coding Associate",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "OTHER:ahima",
+    "note": "AHIMA Certified Coding Associate — health information entry cert"
+  }
+]

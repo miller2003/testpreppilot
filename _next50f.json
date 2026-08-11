@@ -1,0 +1,502 @@
+[
+  {
+    "rank": 1,
+    "slug": "microsoft-dp-300",
+    "name": "microsoft-dp-300",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "Azure Database Administrator Associate"
+  },
+  {
+    "rank": 2,
+    "slug": "microsoft-pl-200",
+    "name": "microsoft-pl-200",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "Power Platform Functional Consultant"
+  },
+  {
+    "rank": 3,
+    "slug": "salesforce-advanced-administrator",
+    "name": "salesforce-advanced-administrator",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "Salesforce",
+    "note": "The second-most-taken Salesforce certification"
+  },
+  {
+    "rank": 4,
+    "slug": "salesforce-business-analyst",
+    "name": "salesforce-business-analyst",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "Salesforce",
+    "note": "A heavily-taken Salesforce certification"
+  },
+  {
+    "rank": 5,
+    "slug": "faa-cax-commercial-pilot-airplane",
+    "name": "faa-cax-commercial-pilot-airplane",
+    "heat": 55,
+    "vol": 15000,
+    "src": "estimate",
+    "family": "FAA",
+    "note": "Commercial pilot knowledge test"
+  },
+  {
+    "rank": 6,
+    "slug": "pharmacy-college-admission-test",
+    "name": "pharmacy-college-admission-test",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "PCAT",
+    "note": "PCAT pharmacy admissions"
+  },
+  {
+    "rank": 7,
+    "slug": "nha-cehrs",
+    "name": "nha-cehrs",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "NHA",
+    "note": "NHA electronic health record specialist"
+  },
+  {
+    "rank": 8,
+    "slug": "nbstsa-cst",
+    "name": "nbstsa-cst",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "NBSTSA",
+    "note": "Certified surgical technologist"
+  },
+  {
+    "rank": 9,
+    "slug": "cicerone-certified-cicerone",
+    "name": "cicerone-certified-cicerone",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Cicerone",
+    "note": "The professional cicerone credential"
+  },
+  {
+    "rank": 10,
+    "slug": "cms-introductory-sommelier",
+    "name": "cms-introductory-sommelier",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Sommelier",
+    "note": "Court of Master Sommeliers entry exam"
+  },
+  {
+    "rank": 11,
+    "slug": "nasm-performance-enhancement-specialist",
+    "name": "nasm-performance-enhancement-specialist",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Fitness",
+    "note": "NASM PES"
+  },
+  {
+    "rank": 12,
+    "slug": "praxis-general-science-5436",
+    "name": "praxis-general-science-5436",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "General science Praxis"
+  },
+  {
+    "rank": 13,
+    "slug": "praxis-school-counselor-5422",
+    "name": "praxis-school-counselor-5422",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Praxis",
+    "note": "School counselor Praxis"
+  },
+  {
+    "rank": 14,
+    "slug": "google-certified-educator-level-2",
+    "name": "google-certified-educator-level-2",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Google",
+    "note": "Google educator level 2"
+  },
+  {
+    "rank": 15,
+    "slug": "series-24",
+    "name": "series-24",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "FINRA",
+    "note": "FINRA general securities principal"
+  },
+  {
+    "rank": 16,
+    "slug": "associate-in-insurance",
+    "name": "associate-in-insurance",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Institutes",
+    "note": "The Institutes AINS designation"
+  },
+  {
+    "rank": 17,
+    "slug": "cpcu-500",
+    "name": "cpcu-500",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "CPCU",
+    "note": "The CPCU 500 foundations course exam"
+  },
+  {
+    "rank": 18,
+    "slug": "ahip-managed-healthcare-professional",
+    "name": "ahip-managed-healthcare-professional",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "AHIP",
+    "note": "AHIP MHP"
+  },
+  {
+    "rank": 19,
+    "slug": "tableau-certified-data-analyst",
+    "name": "tableau-certified-data-analyst",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Tableau",
+    "note": "Tableau data analyst certification"
+  },
+  {
+    "rank": 20,
+    "slug": "lpic-1-system-administrator",
+    "name": "lpic-1-system-administrator",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "LPIC",
+    "note": "LPIC-1 Linux administrator"
+  },
+  {
+    "rank": 21,
+    "slug": "python-institute-pcap",
+    "name": "python-institute-pcap",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Python",
+    "note": "PCAP Python programming certificate"
+  },
+  {
+    "rank": 22,
+    "slug": "salesforce-sales-cloud-consultant",
+    "name": "salesforce-sales-cloud-consultant",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Salesforce",
+    "note": "A major Salesforce consultant certification"
+  },
+  {
+    "rank": 23,
+    "slug": "salesforce-service-cloud-consultant",
+    "name": "salesforce-service-cloud-consultant",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "Salesforce",
+    "note": "A major Salesforce consultant certification"
+  },
+  {
+    "rank": 24,
+    "slug": "icc-residential-building-inspector",
+    "name": "icc-residential-building-inspector",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "ICC",
+    "note": "ICC residential building inspector"
+  },
+  {
+    "rank": 25,
+    "slug": "hvac-excellence-employment-ready",
+    "name": "hvac-excellence-employment-ready",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "HVAC",
+    "note": "HVAC Excellence entry certification"
+  },
+  {
+    "rank": 26,
+    "slug": "nccer-core-curriculum",
+    "name": "nccer-core-curriculum",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "NCCER",
+    "note": "NCCER core curriculum"
+  },
+  {
+    "rank": 27,
+    "slug": "faa-atm-atp-multiengine-airplane",
+    "name": "faa-atm-atp-multiengine-airplane",
+    "heat": 53,
+    "vol": 10000,
+    "src": "estimate",
+    "family": "FAA",
+    "note": "ATP multiengine knowledge test"
+  },
+  {
+    "rank": 28,
+    "slug": "arrt-computed-tomography",
+    "name": "arrt-computed-tomography",
+    "heat": 52,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "ARRT",
+    "note": "ARRT CT post-primary"
+  },
+  {
+    "rank": 29,
+    "slug": "arrt-mammography",
+    "name": "arrt-mammography",
+    "heat": 52,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "ARRT",
+    "note": "ARRT mammography post-primary"
+  },
+  {
+    "rank": 30,
+    "slug": "ahima-rhit",
+    "name": "ahima-rhit",
+    "heat": 52,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "AHIMA",
+    "note": "AHIMA RHIT health information technician"
+  },
+  {
+    "rank": 31,
+    "slug": "jcahpo-coa",
+    "name": "jcahpo-coa",
+    "heat": 52,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "JCAHPO",
+    "note": "JCAHPO ophthalmic assistant"
+  },
+  {
+    "rank": 32,
+    "slug": "series-4",
+    "name": "series-4",
+    "heat": 52,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "FINRA",
+    "note": "FINRA registered options principal"
+  },
+  {
+    "rank": 33,
+    "slug": "chartered-life-underwriter",
+    "name": "chartered-life-underwriter",
+    "heat": 52,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "InsuranceDesig",
+    "note": "CLU designation"
+  },
+  {
+    "rank": 34,
+    "slug": "ancc-fnp",
+    "name": "ancc-fnp",
+    "heat": 52,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "ANCC",
+    "note": "ANCC family nurse practitioner"
+  },
+  {
+    "rank": 35,
+    "slug": "osha-3115-fall-protection",
+    "name": "osha-3115-fall-protection",
+    "heat": 52,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "OSHA",
+    "note": "OSHA fall protection"
+  },
+  {
+    "rank": 36,
+    "slug": "aws-certified-generative-ai-developer-professional",
+    "name": "aws-certified-generative-ai-developer-professional",
+    "heat": 52,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "AWS",
+    "note": "AWS generative AI developer"
+  },
+  {
+    "rank": 37,
+    "slug": "docker-certified-associate",
+    "name": "docker-certified-associate",
+    "heat": 52,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "Docker",
+    "note": "Docker Certified Associate"
+  },
+  {
+    "rank": 38,
+    "slug": "hashicorp-certified-vault-associate",
+    "name": "hashicorp-certified-vault-associate",
+    "heat": 52,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "HashiCorp",
+    "note": "Vault Associate"
+  },
+  {
+    "rank": 39,
+    "slug": "kubernetes-and-cloud-native-associate",
+    "name": "kubernetes-and-cloud-native-associate",
+    "heat": 52,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "CNCF",
+    "note": "KCNA, the entry Kubernetes cert"
+  },
+  {
+    "rank": 40,
+    "slug": "salesforce-platform-developer-ii",
+    "name": "salesforce-platform-developer-ii",
+    "heat": 52,
+    "vol": 8000,
+    "src": "estimate",
+    "family": "Salesforce",
+    "note": "The advanced developer certification"
+  },
+  {
+    "rank": 41,
+    "slug": "ahima-ccs",
+    "name": "ahima-ccs",
+    "heat": 50,
+    "vol": 6000,
+    "src": "estimate",
+    "family": "AHIMA",
+    "note": "AHIMA CCS coding specialist"
+  },
+  {
+    "rank": 42,
+    "slug": "arrt-mri",
+    "name": "arrt-mri",
+    "heat": 49,
+    "vol": 5000,
+    "src": "estimate",
+    "family": "ARRT",
+    "note": "ARRT MRI post-primary"
+  },
+  {
+    "rank": 43,
+    "slug": "arrt-vascular-sonography",
+    "name": "arrt-vascular-sonography",
+    "heat": 49,
+    "vol": 5000,
+    "src": "estimate",
+    "family": "ARRT",
+    "note": "ARDMS vascular sonography"
+  },
+  {
+    "rank": 44,
+    "slug": "acf-certified-fundamentals-cook",
+    "name": "acf-certified-fundamentals-cook",
+    "heat": 49,
+    "vol": 5000,
+    "src": "estimate",
+    "family": "ACF",
+    "note": "ACF fundamentals cook certification"
+  },
+  {
+    "rank": 45,
+    "slug": "american-red-cross-lifeguard-instructor",
+    "name": "american-red-cross-lifeguard-instructor",
+    "heat": 49,
+    "vol": 5000,
+    "src": "estimate",
+    "family": "Lifeguard",
+    "note": "Lifeguard instructor certification"
+  },
+  {
+    "rank": 46,
+    "slug": "nra-chief-range-safety-officer",
+    "name": "nra-chief-range-safety-officer",
+    "heat": 49,
+    "vol": 5000,
+    "src": "estimate",
+    "family": "NRA",
+    "note": "Chief RSO certification"
+  },
+  {
+    "rank": 47,
+    "slug": "nsca-certified-special-population-specialist",
+    "name": "nsca-certified-special-population-specialist",
+    "heat": 49,
+    "vol": 5000,
+    "src": "estimate",
+    "family": "Fitness",
+    "note": "NSCA CSPS"
+  },
+  {
+    "rank": 48,
+    "slug": "padi-instructor-development-course",
+    "name": "padi-instructor-development-course",
+    "heat": 49,
+    "vol": 5000,
+    "src": "estimate",
+    "family": "Scuba",
+    "note": "PADI IDC"
+  },
+  {
+    "rank": 49,
+    "slug": "mba-accredited-mortgage-professional",
+    "name": "mba-accredited-mortgage-professional",
+    "heat": 49,
+    "vol": 5000,
+    "src": "estimate",
+    "family": "Mortgage",
+    "note": "MBA AMP"
+  },
+  {
+    "rank": 50,
+    "slug": "series-99",
+    "name": "series-99",
+    "heat": 49,
+    "vol": 5000,
+    "src": "estimate",
+    "family": "FINRA",
+    "note": "FINRA operations professional"
+  }
+]

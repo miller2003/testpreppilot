@@ -1,0 +1,420 @@
+{
+  "report": {
+    "generated": "2026-08-06T12:44:50.113Z",
+    "totalPages": 650,
+    "exam-detail": {
+      "n": 550,
+      "avgDepth": 2,
+      "maxDepth": 2,
+      "avgIn": 19.1,
+      "avgOut": 36.3,
+      "prShare": 38.42,
+      "mainLinksPerPage": 27.2
+    },
+    "state-hub": {
+      "n": 51,
+      "avgDepth": 1,
+      "maxDepth": 1,
+      "avgIn": 54.4,
+      "avgOut": 76.5,
+      "prShare": 10.52,
+      "mainLinksPerPage": 70.6
+    },
+    "category": {
+      "n": 25,
+      "avgDepth": 1.56,
+      "maxDepth": 2,
+      "avgIn": 237.1,
+      "avgOut": 59.7,
+      "prShare": 28.78,
+      "mainLinksPerPage": 50.7
+    },
+    "static": {
+      "n": 10,
+      "avgDepth": 10.9,
+      "maxDepth": 99,
+      "avgIn": 519.3,
+      "avgOut": 34.4,
+      "prShare": 15.14,
+      "mainLinksPerPage": 26.5
+    },
+    "path": {
+      "n": 8,
+      "avgDepth": 1.5,
+      "maxDepth": 2,
+      "avgIn": 43.4,
+      "avgOut": 20.3,
+      "prShare": 1.32,
+      "mainLinksPerPage": 7.8
+    },
+    "state-credential": {
+      "n": 3,
+      "avgDepth": 2,
+      "maxDepth": 2,
+      "avgIn": 2,
+      "avgOut": 21,
+      "prShare": 0.09,
+      "mainLinksPerPage": 8.3
+    },
+    "exams-hub": {
+      "n": 1,
+      "avgDepth": 1,
+      "maxDepth": 1,
+      "avgIn": 649,
+      "avgOut": 627,
+      "prShare": 1.92,
+      "mainLinksPerPage": 611
+    },
+    "home": {
+      "n": 1,
+      "avgDepth": 0,
+      "maxDepth": 0,
+      "avgIn": 649,
+      "avgOut": 76,
+      "prShare": 1.9,
+      "mainLinksPerPage": 65
+    },
+    "states-hub": {
+      "n": 1,
+      "avgDepth": 1,
+      "maxDepth": 1,
+      "avgIn": 649,
+      "avgOut": 69,
+      "prShare": 1.9,
+      "mainLinksPerPage": 52
+    },
+    "depthHist": {
+      "0": 1,
+      "1": 76,
+      "2": 572,
+      "UNREACHABLE": 1
+    },
+    "lowestIn": [
+      [
+        "/404",
+        0
+      ],
+      [
+        "/affiliate-disclosure",
+        1
+      ],
+      [
+        "/california/california-real-estate-license",
+        2
+      ],
+      [
+        "/exams/bcba-board-certified-behavior-analyst",
+        2
+      ],
+      [
+        "/florida/florida-real-estate-license",
+        2
+      ],
+      [
+        "/texas/texas-real-estate-license",
+        2
+      ],
+      [
+        "/exams/aipb-certified-bookkeeper",
+        3
+      ],
+      [
+        "/exams/epa-lead-renovator-rrp",
+        3
+      ],
+      [
+        "/exams/fe-civil",
+        3
+      ],
+      [
+        "/exams/nacpb-cpb",
+        3
+      ],
+      [
+        "/exams/navta-approved-veterinary-assistant",
+        3
+      ],
+      [
+        "/exams/pe-civil",
+        3
+      ],
+      [
+        "/exams/pesticide-applicator-core-exam",
+        3
+      ],
+      [
+        "/exams/vtne",
+        3
+      ],
+      [
+        "/exams/lpi-linux-essentials",
+        5
+      ],
+      [
+        "/exams/python-institute-pcap",
+        5
+      ],
+      [
+        "/exams/lpic-1-system-administrator",
+        6
+      ],
+      [
+        "/exams/nnaap-cna",
+        6
+      ],
+      [
+        "/exams/precision-nutrition-level-1",
+        6
+      ],
+      [
+        "/exams/python-institute-pcep",
+        6
+      ],
+      [
+        "/exams/usmle-step-2-ck",
+        6
+      ],
+      [
+        "/exams/north-carolina-real-estate-salesperson-license",
+        7
+      ],
+      [
+        "/exams/nsca-cscs",
+        7
+      ],
+      [
+        "/exams/nyc-dcas-exam",
+        7
+      ],
+      [
+        "/exams/padi-instructor-development-course",
+        7
+      ],
+      [
+        "/exams/padi-open-water-diver",
+        7
+      ],
+      [
+        "/exams/tableau-desktop-specialist",
+        7
+      ],
+      [
+        "/exams/usps-vea-474",
+        7
+      ],
+      [
+        "/exams/usps-vea-475",
+        7
+      ],
+      [
+        "/exams/usps-vea-476",
+        7
+      ],
+      [
+        "/exams/usps-vea-477",
+        7
+      ],
+      [
+        "/exams/ace-certified-personal-trainer",
+        8
+      ],
+      [
+        "/exams/acsm-certified-personal-trainer",
+        8
+      ],
+      [
+        "/exams/danb-cda",
+        8
+      ],
+      [
+        "/exams/georgia-real-estate-salesperson-license",
+        8
+      ],
+      [
+        "/exams/illinois-real-estate-salesperson-license",
+        8
+      ],
+      [
+        "/exams/nmls-safe-mlo-national-test",
+        8
+      ],
+      [
+        "/exams/padi-divemaster",
+        8
+      ],
+      [
+        "/exams/statefoodsafety-food-protection-manager",
+        8
+      ],
+      [
+        "/exams/tableau-certified-data-analyst",
+        8
+      ]
+    ],
+    "prTop": [
+      [
+        "/exams",
+        1.923
+      ],
+      [
+        "/categories/technology",
+        1.915
+      ],
+      [
+        "/categories/admissions-academic",
+        1.908
+      ],
+      [
+        "/categories/allied-health",
+        1.908
+      ],
+      [
+        "/categories/food-hospitality",
+        1.905
+      ],
+      [
+        "/categories/trades",
+        1.905
+      ],
+      [
+        "/",
+        1.905
+      ],
+      [
+        "/categories/education-teaching",
+        1.904
+      ],
+      [
+        "/states",
+        1.903
+      ],
+      [
+        "/categories/transportation",
+        1.902
+      ],
+      [
+        "/categories/beauty-wellness",
+        1.901
+      ],
+      [
+        "/explore",
+        1.889
+      ],
+      [
+        "/how-it-works",
+        1.882
+      ],
+      [
+        "/about",
+        1.88
+      ],
+      [
+        "/disclosure",
+        1.88
+      ],
+      [
+        "/editorial-policy",
+        1.88
+      ],
+      [
+        "/guides",
+        1.88
+      ],
+      [
+        "/privacy",
+        1.88
+      ],
+      [
+        "/reviews",
+        1.88
+      ],
+      [
+        "/categories/fitness-recreation",
+        0.814
+      ]
+    ],
+    "prBottom": [
+      [
+        "/exams/navta-approved-veterinary-assistant",
+        0.0454
+      ],
+      [
+        "/exams/pe-civil",
+        0.0454
+      ],
+      [
+        "/exams/pesticide-applicator-core-exam",
+        0.0454
+      ],
+      [
+        "/exams/vtne",
+        0.0454
+      ],
+      [
+        "/exams/nsca-cscs",
+        0.0452
+      ],
+      [
+        "/exams/padi-instructor-development-course",
+        0.0451
+      ],
+      [
+        "/exams/padi-open-water-diver",
+        0.045
+      ],
+      [
+        "/exams/tableau-certified-data-analyst",
+        0.0442
+      ],
+      [
+        "/exams/bcba-board-certified-behavior-analyst",
+        0.044
+      ],
+      [
+        "/exams/usmle-step-2-ck",
+        0.0439
+      ],
+      [
+        "/exams/precision-nutrition-level-1",
+        0.0437
+      ],
+      [
+        "/exams/tableau-desktop-specialist",
+        0.0429
+      ],
+      [
+        "/exams/python-institute-pcep",
+        0.0426
+      ],
+      [
+        "/exams/lpic-1-system-administrator",
+        0.0421
+      ],
+      [
+        "/exams/python-institute-pcap",
+        0.0412
+      ],
+      [
+        "/exams/lpi-linux-essentials",
+        0.0407
+      ],
+      [
+        "/florida/florida-real-estate-license",
+        0.0308
+      ],
+      [
+        "/california/california-real-estate-license",
+        0.0306
+      ],
+      [
+        "/texas/texas-real-estate-license",
+        0.0306
+      ],
+      [
+        "/404",
+        0.0231
+      ]
+    ]
+  },
+  "anchors": {}
+}

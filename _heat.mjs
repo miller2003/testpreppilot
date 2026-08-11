@@ -26,7 +26,18 @@ const done = new Set([
   'nacpb-cpb','nasm-certified-nutrition-coach',
   'cpa-exam','enrolled-agent','epa-608-certification','osha-10-construction',
   'osha-30-construction','texas-real-estate-license','california-real-estate-license',
-  'florida-real-estate-license'
+  'florida-real-estate-license',
+  // batch 2 (30) — already delivered
+  'ace-certified-personal-trainer','ase-t7-truck-hvac',
+  'aws-certified-cloud-practitioner','aws-certified-solutions-architect-associate',
+  'cdl-air-brakes-knowledge-test','cdl-combination-vehicles-knowledge-test',
+  'cdl-general-knowledge-test','cfa-level-1','cisco-ccna','comptia-a-plus',
+  'comptia-cysa-plus','comptia-network-plus','comptia-security-plus','fe-civil',
+  'itil-4-foundation','nasm-certified-personal-trainer','nclex-rn',
+  'nic-cosmetology-practical','nic-cosmetology-theory','nnaap-cna','nremt-emt',
+  'pmi-pmp','praxis-core-combined-5752',
+  'praxis-elementary-education-multiple-subjects-5001','praxis-plt-grades-k-6-5622',
+  'scrum-alliance-certified-scrummaster','series-65','series-66','series-7','sie-exam'
 ]);
 
 // v = estimated annual candidates. src: 'published' = vendor/NCSBN/AICPA/PMI publishes
@@ -100,14 +111,48 @@ const VOL = {
   'ace-certified-personal-trainer': { v: 90000, src: 'estimate', note: 'ACE CPT — major personal-training cert' },
   'acsm-certified-personal-trainer': { v: 70000, src: 'estimate', note: 'ACSM CPT — major personal-training cert' },
 
-  // ---- Notary / legal ----
+  // ---- Notary / legal (one representative only; second slug is a near-duplicate) ----
   'nna-certified-notary-signing-agent': { v: 40000, src: 'estimate', note: 'Notary signing agent — common side credential' },
-  'notary-signing-agent': { v: 40000, src: 'estimate', note: 'Notary signing agent variant' },
 
   // ---- Teaching (3 highest-volume representative Praxis exams only) ----
   'praxis-core-combined-5752': { v: 180000, src: 'estimate', note: 'Praxis Core is the basic-skills gatekeeper required by many states' },
   'praxis-elementary-education-multiple-subjects-5001': { v: 150000, src: 'estimate', note: 'Required for elementary licensure in many states' },
-  'praxis-plt-grades-k-6-5622': { v: 120000, src: 'estimate', note: 'Principles of Learning & Teaching K-6 — widely required' }
+  'praxis-plt-grades-k-6-5622': { v: 120000, src: 'estimate', note: 'Principles of Learning & Teaching K-6 — widely required' },
+  'praxis-elementary-education-content-knowledge-5018': { v: 120000, src: 'estimate', note: 'Elementary content knowledge — widely required for elementary licensure' },
+  'praxis-plt-grades-7-12-5624': { v: 100000, src: 'estimate', note: 'PLT 7-12 — widely required secondary pedagogy exam' },
+
+  // ---- Batch-3 additions (next 50 candidates) ----
+  'aws-certified-developer-associate': { v: 50000, src: 'estimate', note: 'AWS developer track — popular associate cert' },
+  'aws-certified-sysops-administrator-associate': { v: 40000, src: 'estimate', note: 'AWS ops track associate cert' },
+  'google-associate-cloud-engineer': { v: 50000, src: 'estimate', note: 'Google Cloud associate cert' },
+  'google-professional-cloud-architect': { v: 40000, src: 'estimate', note: 'Google Cloud professional cert' },
+  'scrum-org-psm-i': { v: 60000, src: 'estimate', note: 'Professional Scrum Master I — very high global volume' },
+  'safe-scrum-master': { v: 30000, src: 'estimate', note: 'SAFe Scrum Master' },
+  'lpi-linux-essentials': { v: 30000, src: 'estimate', note: 'Linux Essentials — entry Linux cert' },
+  'python-institute-pcep': { v: 40000, src: 'estimate', note: 'PCEP — entry Python programming cert' },
+  'comptia-cloud-plus': { v: 50000, src: 'estimate', note: 'CompTIA cloud cert' },
+  'comptia-it-fundamentals': { v: 50000, src: 'estimate', note: 'ITF+ — entry-level IT cert, high volume' },
+  'cisco-ccst-networking': { v: 40000, src: 'estimate', note: 'Cisco Certified Support Technician — entry networking' },
+  'series-6': { v: 60000, src: 'estimate', note: 'FINRA Series 6 — mutual fund rep, large volume' },
+  'series-63': { v: 50000, src: 'estimate', note: 'FINRA Series 63 — state blue-sky exam, large volume' },
+  'nremt-aemt': { v: 20000, src: 'estimate', note: 'Advanced EMT — mid EMS tier' },
+  'nremt-emr': { v: 10000, src: 'estimate', note: 'Emergency Medical Responder — entry EMS tier' },
+  'shrm-cp': { v: 60000, src: 'estimate', note: 'SHRM-CP — very popular HR certification' },
+  'hrci-phr': { v: 50000, src: 'estimate', note: 'HRCI PHR — popular HR certification' },
+  'shrm-scp': { v: 30000, src: 'estimate', note: 'SHRM-SCP — senior HR certification' },
+  'hrci-sphr': { v: 30000, src: 'estimate', note: 'HRCI SPHR — senior HR certification' },
+  'asq-certified-six-sigma-black-belt': { v: 40000, src: 'estimate', note: 'ASQ CSSBB — popular quality/six-sigma cert' },
+  'asq-certified-six-sigma-green-belt': { v: 40000, src: 'estimate', note: 'ASQ CSSGB — entry six-sigma cert' },
+  'asq-certified-quality-engineer': { v: 30000, src: 'estimate', note: 'ASQ CQE — quality engineering cert' },
+  'issa-certified-personal-trainer': { v: 60000, src: 'estimate', note: 'ISSA CPT — major personal-training cert' },
+
+  // ---- Batch-3 additions round 2 (stronger mid-tier candidates) ----
+  'google-data-analytics-professional-certificate': { v: 80000, src: 'estimate', note: 'Google Career Certificate — very high global enrollment' },
+  'google-it-support-professional-certificate': { v: 80000, src: 'estimate', note: 'Google Career Certificate — very high global enrollment' },
+  'ahip-health-insurance-associate': { v: 60000, src: 'estimate', note: 'AHIP — health insurance certification, very common in the ACA market' },
+  'scrum-org-pspo-i': { v: 40000, src: 'estimate', note: 'Professional Scrum Product Owner I' },
+  'ahima-cca': { v: 20000, src: 'estimate', note: 'AHIMA Certified Coding Associate — health information entry cert' },
+  'navta-approved-veterinary-assistant': { v: 20000, src: 'estimate', note: 'Veterinary assistant — common entry vet credential' }
 };
 
 const clamp = (n, lo, hi) => Math.max(lo, Math.min(hi, n));
@@ -119,6 +164,7 @@ function familyOf(slug) {
   if (/nnaap|nurse\.aide/.test(slug)) return 'CNA';
   if (/nremt|paramedic|emt/.test(slug)) return 'EMS';
   if (/arrt|sonograph|radiolog|ultrasound/.test(slug)) return 'Imaging';
+  if (/weld|nims/.test(slug)) return 'Welding';
   if (/cisco/.test(slug)) return 'Cisco';
   if (/comptia/.test(slug)) return 'CompTIA';
   if (/aws-certified/.test(slug)) return 'AWS';
@@ -153,12 +199,13 @@ for (const e of allExamsFull) {
 
 rows.sort((a, b) => b.heat - a.heat || b.v - a.v);
 
-// near-duplicate safety net: cap 4 per content family
-const CAP = 4;
+// near-duplicate safety net: cap 5 per content family
+const CAP = 5;
+const N = 50;
 const picked = [];
 const famCount = {};
 for (const r of rows) {
-  if (picked.length >= 30) break;
+  if (picked.length >= N) break;
   const c = famCount[r.fam] || 0;
   if (c >= CAP) continue;
   famCount[r.fam] = c + 1;
@@ -166,14 +213,14 @@ for (const r of rows) {
 }
 
 console.log('Candidates with a volume estimate:', rows.length);
-console.log('\n=== NEXT 30 BY ESTIMATED ANNUAL CANDIDATE VOLUME ===');
+console.log('\n=== NEXT ' + N + ' BY ESTIMATED ANNUAL CANDIDATE VOLUME ===');
 picked.forEach((r, i) => {
   console.log(`${String(i + 1).padStart(2, ' ')}. heat=${String(r.heat).padStart(3)} vol≈${String(r.v).padStart(7)} [${r.src}] [${r.fam}]  ${r.slug}`);
   console.log(`       ${r.name}  —  ${r.note}`);
 });
 
-writeFileSync('./_next30.json', JSON.stringify(
+writeFileSync('./_next50.json', JSON.stringify(
   picked.map((r, i) => ({ rank: i + 1, slug: r.slug, name: r.name, heat: r.heat, vol: r.v, src: r.src, family: r.fam, note: r.note })),
   null, 2
 ));
-console.log('\nWrote _next30.json');
+console.log('\nWrote _next50.json');

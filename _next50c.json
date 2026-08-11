@@ -1,0 +1,502 @@
+[
+  {
+    "rank": 1,
+    "slug": "psat-nmsqt",
+    "name": "PSAT/NMSQT",
+    "heat": 100,
+    "vol": 3500000,
+    "src": "estimate",
+    "family": "CollegeAdmission",
+    "note": "PSAT/NMSQT ~3.5M juniors take it annually"
+  },
+  {
+    "rank": 2,
+    "slug": "act-workkeys",
+    "name": "ACT WorkKeys Assessments",
+    "heat": 99,
+    "vol": 2500000,
+    "src": "estimate",
+    "family": "CareerReadiness",
+    "note": "ACT WorkKeys National Career Readiness — employer-required credential, huge volume"
+  },
+  {
+    "rank": 3,
+    "slug": "nims-ics-100",
+    "name": "NIMS ICS-100",
+    "heat": 98,
+    "vol": 2000000,
+    "src": "estimate",
+    "family": "FEMA",
+    "note": "FEMA ICS-100 — every emergency-response professional"
+  },
+  {
+    "rank": 4,
+    "slug": "sat-exam",
+    "name": "SAT",
+    "heat": 98,
+    "vol": 1900000,
+    "src": "estimate",
+    "family": "CollegeAdmission",
+    "note": "SAT ~1.9M test-takers per year"
+  },
+  {
+    "rank": 5,
+    "slug": "psat-10",
+    "name": "PSAT 10",
+    "heat": 96,
+    "vol": 1500000,
+    "src": "estimate",
+    "family": "CollegeAdmission",
+    "note": "PSAT 10 — sophomores, large in-school volume"
+  },
+  {
+    "rank": 6,
+    "slug": "toefl-ibt",
+    "name": "TOEFL iBT",
+    "heat": 96,
+    "vol": 1500000,
+    "src": "estimate",
+    "family": "EnglishProficiency",
+    "note": "TOEFL iBT — ~1.5M tests/year worldwide"
+  },
+  {
+    "rank": 7,
+    "slug": "nims-ics-200",
+    "name": "NIMS ICS-200",
+    "heat": 96,
+    "vol": 1500000,
+    "src": "estimate",
+    "family": "FEMA",
+    "note": "FEMA ICS-200 — incident command"
+  },
+  {
+    "rank": 8,
+    "slug": "act-test",
+    "name": "ACT",
+    "heat": 95,
+    "vol": 1300000,
+    "src": "estimate",
+    "family": "CollegeAdmission",
+    "note": "ACT ~1.3M test-takers per year"
+  },
+  {
+    "rank": 9,
+    "slug": "servsafe-food-handler",
+    "name": "ServSafe Food Handler Certificate",
+    "heat": 95,
+    "vol": 1200000,
+    "src": "estimate",
+    "family": "FoodSafety",
+    "note": "ServSafe Food Handler — entry food-safety cert, millions yearly"
+  },
+  {
+    "rank": 10,
+    "slug": "padi-open-water-diver",
+    "name": "PADI Open Water Diver Certification",
+    "heat": 94,
+    "vol": 1000000,
+    "src": "estimate",
+    "family": "Scuba",
+    "note": "PADI Open Water Diver — the most-issued dive certification"
+  },
+  {
+    "rank": 11,
+    "slug": "nims-ics-700",
+    "name": "NIMS ICS-700",
+    "heat": 94,
+    "vol": 1000000,
+    "src": "estimate",
+    "family": "FEMA",
+    "note": "FEMA IS-700 — NIMS introduction"
+  },
+  {
+    "rank": 12,
+    "slug": "preact-8-9",
+    "name": "PreACT 8/9",
+    "heat": 90,
+    "vol": 500000,
+    "src": "estimate",
+    "family": "CollegeAdmission",
+    "note": "PreACT — 8th/9th grade in-school assessment"
+  },
+  {
+    "rank": 13,
+    "slug": "ielts-academic",
+    "name": "IELTS Academic",
+    "heat": 89,
+    "vol": 400000,
+    "src": "estimate",
+    "family": "EnglishProficiency",
+    "note": "IELTS Academic — huge global volume, US-bound students"
+  },
+  {
+    "rank": 14,
+    "slug": "gre-general-test",
+    "name": "GRE General Test",
+    "heat": 89,
+    "vol": 400000,
+    "src": "estimate",
+    "family": "GradAdmission",
+    "note": "GRE General Test ~400k/year"
+  },
+  {
+    "rank": 15,
+    "slug": "hazwoper-8-hour-refresher",
+    "name": "HAZWOPER 8-Hour Annual Refresher",
+    "heat": 89,
+    "vol": 400000,
+    "src": "estimate",
+    "family": "HAZWOPER",
+    "note": "HAZWOPER annual 8-hour refresher — huge recurring volume"
+  },
+  {
+    "rank": 16,
+    "slug": "hazwoper-40-hour",
+    "name": "HAZWOPER 40-Hour Training",
+    "heat": 87,
+    "vol": 300000,
+    "src": "estimate",
+    "family": "HAZWOPER",
+    "note": "HAZWOPER 40-hour — hazardous-waste operations, industry requirement"
+  },
+  {
+    "rank": 17,
+    "slug": "servsafe-alcohol-primary",
+    "name": "ServSafe Alcohol Primary Certification",
+    "heat": 85,
+    "vol": 200000,
+    "src": "estimate",
+    "family": "FoodSafety",
+    "note": "ServSafe Alcohol Primary — server training, huge volume"
+  },
+  {
+    "rank": 18,
+    "slug": "gmat-focus-edition",
+    "name": "GMAT Focus Edition",
+    "heat": 83,
+    "vol": 150000,
+    "src": "estimate",
+    "family": "GradAdmission",
+    "note": "GMAT Focus ~150k/year"
+  },
+  {
+    "rank": 19,
+    "slug": "servsafe-allergens",
+    "name": "ServSafe Allergens Certification",
+    "heat": 83,
+    "vol": 150000,
+    "src": "estimate",
+    "family": "FoodSafety",
+    "note": "ServSafe Allergens — food-allergy safety training"
+  },
+  {
+    "rank": 20,
+    "slug": "nyc-dcas-exam",
+    "name": "NYC DCAS Civil Service Exam",
+    "heat": 83,
+    "vol": 150000,
+    "src": "estimate",
+    "family": "GovCivil",
+    "note": "NYC DCAS — New York City civil-service exam system"
+  },
+  {
+    "rank": 21,
+    "slug": "olsat-8",
+    "name": "Otis-Lennon School Ability Test, Eighth Edition",
+    "heat": 81,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "SchoolAdmission",
+    "note": "OLSAT-8 — gifted/talented screening, school-administered"
+  },
+  {
+    "rank": 22,
+    "slug": "usmle-step-2-ck",
+    "name": "USMLE Step 2 Clinical Knowledge",
+    "heat": 81,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "MedicalLicensure",
+    "note": "USMLE Step 2 CK — every US medical student"
+  },
+  {
+    "rank": 23,
+    "slug": "epa-lead-renovator-rrp",
+    "name": "EPA Lead Renovation, Repair and Painting Renovator Certification",
+    "heat": 81,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "EPALead",
+    "note": "EPA RRP Lead Renovator — renovation-industry requirement"
+  },
+  {
+    "rank": 24,
+    "slug": "microsoft-pl-300",
+    "name": "Microsoft Certified: Power BI Data Analyst Associate",
+    "heat": 81,
+    "vol": 100000,
+    "src": "estimate",
+    "family": "PowerPlatform",
+    "note": "PL-300 Power BI Data Analyst — one of the hottest Microsoft certs"
+  },
+  {
+    "rank": 25,
+    "slug": "nra-certified-instructor",
+    "name": "NRA Certified Instructor",
+    "heat": 80,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "NRA",
+    "note": "NRA Certified Instructor — very common firearms-education credential"
+  },
+  {
+    "rank": 26,
+    "slug": "google-analytics-certification",
+    "name": "Google Analytics Certification",
+    "heat": 80,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "Analytics",
+    "note": "Google Analytics Certification — free Skillshop cert, huge volume"
+  },
+  {
+    "rank": 27,
+    "slug": "prince2-practitioner",
+    "name": "PRINCE2 Practitioner",
+    "heat": 80,
+    "vol": 80000,
+    "src": "estimate",
+    "family": "Prince2",
+    "note": "PRINCE2 Practitioner — one of the most-taken PM exams"
+  },
+  {
+    "rank": 28,
+    "slug": "ssat-upper-level",
+    "name": "SSAT Upper Level",
+    "heat": 78,
+    "vol": 60000,
+    "src": "estimate",
+    "family": "SchoolAdmission",
+    "note": "SSAT Upper — independent-school admission"
+  },
+  {
+    "rank": 29,
+    "slug": "google-certified-educator-level-1",
+    "name": "Google Certified Educator Level 1",
+    "heat": 77,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "EdTech",
+    "note": "Google Certified Educator L1 — very popular teacher credential"
+  },
+  {
+    "rank": 30,
+    "slug": "microsoft-office-specialist-excel-associate",
+    "name": "Microsoft Office Specialist: Excel Associate",
+    "heat": 77,
+    "vol": 50000,
+    "src": "estimate",
+    "family": "MOS",
+    "note": "MOS Excel Associate (MO-200) — huge office-cert volume"
+  },
+  {
+    "rank": 31,
+    "slug": "frm-part-1",
+    "name": "Financial Risk Manager Exam Part I",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "FRM",
+    "note": "FRM Part I — global risk certification"
+  },
+  {
+    "rank": 32,
+    "slug": "microsoft-office-specialist-word-associate",
+    "name": "Microsoft Office Specialist: Word Associate",
+    "heat": 76,
+    "vol": 40000,
+    "src": "estimate",
+    "family": "MOS",
+    "note": "MOS Word Associate (MO-100)"
+  },
+  {
+    "rank": 33,
+    "slug": "padi-divemaster",
+    "name": "PADI Divemaster Certification",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Scuba",
+    "note": "PADI Divemaster — professional dive leader"
+  },
+  {
+    "rank": 34,
+    "slug": "microsoft-certified-educator",
+    "name": "Microsoft Certified Educator",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "Microsoft",
+    "note": "Microsoft Certified Educator"
+  },
+  {
+    "rank": 35,
+    "slug": "iaed-emd",
+    "name": "Emergency Medical Dispatch",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "IAED",
+    "note": "IAED EMD — emergency medical dispatcher certification"
+  },
+  {
+    "rank": 36,
+    "slug": "osha-10-maritime",
+    "name": "OSHA 10-Hour Maritime Industry Outreach Training",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "OSHA",
+    "note": "OSHA 10 maritime"
+  },
+  {
+    "rank": 37,
+    "slug": "offsec-oscp",
+    "name": "OffSec Certified Professional",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "OffSec",
+    "note": "OffSec OSCP — penetration testing, very popular"
+  },
+  {
+    "rank": 38,
+    "slug": "itil-4-specialist-create-deliver-and-support",
+    "name": "ITIL 4 Specialist: Create, Deliver and Support",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "ITIL",
+    "note": "ITIL 4 CDS — create, deliver & support"
+  },
+  {
+    "rank": 39,
+    "slug": "itil-4-specialist-drive-stakeholder-value",
+    "name": "ITIL 4 Specialist: Drive Stakeholder Value",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "ITIL",
+    "note": "ITIL 4 DSV — stakeholder value specialist"
+  },
+  {
+    "rank": 40,
+    "slug": "itil-4-specialist-monitor-support-and-fulfil",
+    "name": "ITIL 4 Specialist: Monitor, Support and Fulfil",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "ITIL",
+    "note": "ITIL 4 MSF — monitor, support & fulfil"
+  },
+  {
+    "rank": 41,
+    "slug": "microsoft-pl-900",
+    "name": "Microsoft Certified: Power Platform Fundamentals",
+    "heat": 74,
+    "vol": 30000,
+    "src": "estimate",
+    "family": "PowerPlatform",
+    "note": "PL-900 Power Platform Fundamentals"
+  },
+  {
+    "rank": 42,
+    "slug": "frm-part-2",
+    "name": "Financial Risk Manager Exam Part II",
+    "heat": 73,
+    "vol": 25000,
+    "src": "estimate",
+    "family": "FRM",
+    "note": "FRM Part II"
+  },
+  {
+    "rank": 43,
+    "slug": "dental-admission-test",
+    "name": "Dental Admission Test",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Admissions",
+    "note": "DAT — dental-school admission"
+  },
+  {
+    "rank": 44,
+    "slug": "certified-insurance-service-representative",
+    "name": "Certified Insurance Service Representative",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Insurance",
+    "note": "CISR — very popular agency-staff designation"
+  },
+  {
+    "rank": 45,
+    "slug": "osha-511-general-industry-standards",
+    "name": "OSHA 511 Occupational Safety and Health Standards for General Industry",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "OSHA",
+    "note": "OSHA 511 — general-industry standards course"
+  },
+  {
+    "rank": 46,
+    "slug": "aws-certified-machine-learning-engineer-associate",
+    "name": "AWS Certified Machine Learning Engineer - Associate",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "AWS",
+    "note": "AWS ML Engineer Associate — new high-volume cert"
+  },
+  {
+    "rank": 47,
+    "slug": "comptia-tech-plus",
+    "name": "CompTIA Tech+",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "CompTIA",
+    "note": "CompTIA Tech+ — new entry IT certification"
+  },
+  {
+    "rank": 48,
+    "slug": "csa-ccsk",
+    "name": "Certificate of Cloud Security Knowledge",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "CloudSecurity",
+    "note": "CSA CCSK — cloud security knowledge certificate"
+  },
+  {
+    "rank": 49,
+    "slug": "tableau-desktop-specialist",
+    "name": "Tableau Desktop Specialist",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Tableau",
+    "note": "Tableau Desktop Specialist — popular analytics entry"
+  },
+  {
+    "rank": 50,
+    "slug": "google-professional-machine-learning-engineer",
+    "name": "Google Cloud Professional Machine Learning Engineer",
+    "heat": 72,
+    "vol": 20000,
+    "src": "estimate",
+    "family": "Google",
+    "note": "Google Professional ML Engineer"
+  }
+]

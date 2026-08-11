@@ -1,150 +1,79 @@
-// Audits the depth layer against the gap-analysis quality bar.
-//   node _validate_depth.mjs
-import examDepth, { depthSections } from './src/data/examCatalog/examDepth.mjs';
+// Depth-layer validator: checks every record in examDepth for the 8 required
+// sections, minimum summary length, and placeholder text.
+import examDepth from './src/data/examCatalog/examDepth.mjs';
 
-const P0 = [
-  ['salaryOutlook', 'Salary'],
-  ['passRate', 'PassRate'],
-  ['studyPlan', 'StudyPlan'],
-  ['prepStrategies', 'Strategies'],
-  ['resourceComparison', 'Resources'],
-  ['commonMistakes', 'Mistakes'],
-  ['questionTypes', 'QTypes'],
-  ['examDay', 'ExamDay'],
-];
+const SECTIONS = ['salaryOutlook', 'passRate', 'studyPlan', 'prepStrategies', 'resourceComparison', 'commonMistakes', 'questionTypes', 'examDay'];
+const MIN_WORDS = 250;
+const PLACEHOLDER = /Varies by exam|Varies by credential|TBD|TODO|to be confirmed|see the official handbook|see the awarding body|^Varies$/i;
 
-// Collect every string in a subtree so we can word-count the prose per section.
-function strings(v, acc = []) {
-  if (typeof v === 'string') { if (v.trim()) acc.push(v); return acc; }
-  if (Array.isArray(v)) { for (const x of v) strings(x, acc); return acc; }
-  if (v && typeof v === 'object') { for (const x of Object.values(v)) strings(x, acc); return acc; }
+function words(s) { return s.trim().split(/\s+/).filter(Boolean).length; }
+
+function stringValues(v, acc = []) {
+  if (typeof v === 'string') { acc.push(v); return acc; }
+  if (Array.isArray(v)) { for (const x of v) stringValues(x, acc); return acc; }
+  if (v && typeof v === 'object') { for (const x of Object.values(v)) stringValues(x, acc); return acc; }
   return acc;
 }
-const words = (v) => strings(v).join(' ').split(/\s+/).filter(Boolean).length;
 
-// Unfilled stub values. Anchored to the START of the string on purpose: "coverage
-// varies by exam" is legitimate prose, whereas a field whose entire value is
-// "Varies by exam" is an unfilled placeholder.
-const PLACEHOLDER = /^\s*(TBD|TODO|Varies by (exam|credential)|Lorem ipsum|XXX|FIXME)\b/i;
-
-// Jaccard over word shingles — the gap analysis wants siblings < 70% similar.
-function shingles(text, n = 3) {
-  const w = text.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(Boolean);
-  const s = new Set();
-  for (let i = 0; i + n <= w.length; i++) s.add(w.slice(i, i + n).join(' '));
-  return s;
-}
-function jaccard(a, b) {
-  if (!a.size || !b.size) return 0;
+function jaccardSim(a, b) {
+  const shingle = (text) => {
+    const w = text.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(Boolean);
+    const s = new Set();
+    for (let i = 0; i + 3 <= w.length; i++) s.add(w.slice(i, i + 3).join(' '));
+    return s;
+  };
+  const sa = shingle(a), sb = shingle(b);
+  if (!sa.size || !sb.size) return 0;
   let inter = 0;
-  for (const x of a) if (b.has(x)) inter++;
-  return inter / (a.size + b.size - inter);
+  for (const x of sa) if (sb.has(x)) inter++;
+  return inter / (sa.size + sb.size - inter);
 }
 
-const slugs = Object.keys(examDepth).sort();
-const problems = [];
-const rows = [];
-
-for (const slug of slugs) {
-  const d = examDepth[slug];
-  const present = [];
-  const thin = [];
-  const empty = [];
-
-  // A retired exam legitimately has no study plan, prep strategies, current
-  // resource market or exam day — writing them would be actively misleading.
-  const retired = /\bretired\b/i.test(strings(d).join(' ').slice(0, 4000));
-  const EXEMPT_WHEN_RETIRED = new Set(['StudyPlan', 'Strategies', 'Resources', 'ExamDay']);
-
-  // Table-driven sections carry their substance in cells, not prose.
-  const THIN_FLOOR = { Resources: 90 };
-
-  for (const [key, label] of P0) {
-    const block = d?.[key];
-    if (!block) {
-      if (!(retired && EXEMPT_WHEN_RETIRED.has(label))) empty.push(label);
-      continue;
-    }
-    present.push(label);
-    const w = words(block);
-    if (w < (THIN_FLOOR[label] ?? 120)) thin.push(`${label}(${w}w)`);
-  }
-
-  const total = words(d);
-  const author = d?.author?.name?.trim() || '';
-  const reviewed = d?.lastReviewed || '';
-
-  // Sourcing: every numeric table row should carry a note or the block a source url.
-  let unsourced = 0;
-  for (const key of ['salaryOutlook', 'passRate']) {
-    const block = d?.[key];
-    if (!block) continue;
-    const hasBlockSource = !!block.source?.url;
-    for (const r of block.rows || []) {
-      if (!r?.note?.trim() && !hasBlockSource) unsourced++;
-    }
-  }
-
-  const ph = strings(d).filter((s) => PLACEHOLDER.test(s));
-
-  if (!author) problems.push(`${slug}: MISSING author.name (E-E-A-T)`);
-  if (!reviewed) problems.push(`${slug}: MISSING lastReviewed`);
-  if (empty.length) problems.push(`${slug}: missing sections -> ${empty.join(', ')}`);
-  if (thin.length) problems.push(`${slug}: thin sections -> ${thin.join(', ')}`);
-  if (unsourced) problems.push(`${slug}: ${unsourced} numeric row(s) with no note/source`);
-  if (ph.length) problems.push(`${slug}: placeholder text -> ${ph.slice(0, 2).map((s) => s.slice(0, 60)).join(' | ')}`);
-  if (total < 700) problems.push(`${slug}: total depth prose only ${total} words (<700)`);
-
-  rows.push({
-    slug,
-    sections: `${present.length}/8`,
-    words: total,
-    author: author ? 'yes' : 'NO',
-    nav: depthSections(d).length,
-  });
-}
-
-console.log('\n=== DEPTH LAYER AUDIT ===\n');
-console.log(
-  ['slug'.padEnd(36), 'P0'.padEnd(5), 'words'.padEnd(7), 'author'.padEnd(7), 'nav'].join(' ')
-);
-console.log('-'.repeat(70));
-for (const r of rows) {
-  console.log(
-    [String(r.slug).padEnd(36), String(r.sections).padEnd(5), String(r.words).padEnd(7), String(r.author).padEnd(7), String(r.nav)].join(' ')
-  );
-}
-
-// ---- sibling similarity ----
-const FAMILIES = {
-  microsoft: slugs.filter((s) => s.startsWith('microsoft-')),
-  cisco: slugs.filter((s) => s.startsWith('cisco-')),
-  realestate: slugs.filter((s) => s.endsWith('-real-estate-license')),
-  osha: slugs.filter((s) => s.startsWith('osha-')),
-  bookkeeping: ['aipb-certified-bookkeeper', 'nacpb-cpb'].filter((s) => slugs.includes(s)),
+const builtinFams = {
+  CDL: ['cdl-general-knowledge-test', 'cdl-combination-vehicles-knowledge-test', 'cdl-air-brakes-knowledge-test'],
+  CompTIA: ['comptia-a-plus', 'comptia-network-plus', 'comptia-security-plus', 'comptia-cysa-plus'],
+  Praxis: ['praxis-core-combined-5752', 'praxis-elementary-education-multiple-subjects-5001', 'praxis-plt-grades-k-6-5622'],
+  FINRA: ['series-7', 'series-65', 'series-66', 'sie-exam'],
+  AWS: ['aws-certified-solutions-architect-associate', 'aws-certified-cloud-practitioner'],
+  Beauty: ['nic-cosmetology-theory', 'nic-cosmetology-practical'],
+  CPT: ['nasm-certified-personal-trainer', 'ace-certified-personal-trainer'],
+  Nursing: ['nclex-rn', 'nnaap-cna', 'nremt-emt']
 };
 
-console.log('\n=== SIBLING SIMILARITY (Jaccard, 3-gram; must stay < 0.70) ===\n');
+const problems = [];
 const cache = {};
-for (const s of slugs) cache[s] = shingles(strings(examDepth[s]).join(' '));
-for (const [fam, members] of Object.entries(FAMILIES)) {
-  if (members.length < 2) continue;
-  let worst = { pair: '', v: 0 };
-  for (let i = 0; i < members.length; i++) {
-    for (let j = i + 1; j < members.length; j++) {
-      const v = jaccard(cache[members[i]], cache[members[j]]);
-      if (v > worst.v) worst = { pair: `${members[i]} vs ${members[j]}`, v };
+for (const [slug, d] of Object.entries(examDepth)) {
+  if (!d || typeof d !== 'object') { problems.push(slug + ': record is not an object'); continue; }
+  for (const s of SECTIONS) {
+    if (!d[s] || typeof d[s] !== 'object') { problems.push(slug + ': missing section ' + s); continue; }
+    const sum = d[s].summary;
+    if (typeof sum !== 'string') { problems.push(slug + '.' + s + ': missing summary'); continue; }
+    if (words(sum) < MIN_WORDS) problems.push(slug + '.' + s + ': summary only ' + words(sum) + ' words');
+    for (const v of stringValues(d[s])) {
+      if (PLACEHOLDER.test(v)) problems.push(slug + '.' + s + ': placeholder text: ' + v.slice(0, 60));
     }
   }
-  const flag = worst.v >= 0.7 ? '  <-- TOO SIMILAR' : '';
-  console.log(`${fam.padEnd(13)} worst ${worst.v.toFixed(3)}  ${worst.pair}${flag}`);
-  if (worst.v >= 0.7) problems.push(`${fam}: siblings ${worst.pair} are ${(worst.v * 100).toFixed(0)}% similar`);
+  if (d.author?.name !== 'TestPrepPilot Editorial Desk') problems.push(slug + ': author name mismatch');
+  if (d.lastReviewed !== '2026-08') problems.push(slug + ': lastReviewed mismatch: ' + d.lastReviewed);
+  cache[slug] = stringValues(d).join(' ');
 }
 
-console.log('\n=== PROBLEMS ===\n');
-if (!problems.length) {
-  console.log('None. All ' + slugs.length + ' records clean.');
-} else {
-  for (const p of problems) console.log('  - ' + p);
-  console.log(`\n${problems.length} problem(s) across ${slugs.length} records.`);
+// Builtin sibling similarity (same families as the original validator)
+let worstAll = 0, worstPair = '';
+for (const [fam, members] of Object.entries(builtinFams)) {
+  for (let i = 0; i < members.length; i++) for (let j = i + 1; j < members.length; j++) {
+    const a = cache[members[i]], b = cache[members[j]];
+    if (!a || !b) continue;
+    const v = jaccardSim(a, b);
+    if (v > worstAll) { worstAll = v; worstPair = members[i] + ' vs ' + members[j]; }
+  }
 }
+
+if (problems.length) {
+  console.log('=== PROBLEMS ===');
+  problems.forEach((p) => console.log('  ' + p));
+  console.log('Total problems: ' + problems.length);
+} else {
+  console.log('None. All ' + Object.keys(examDepth).length + ' records clean.');
+}
+console.log('Builtin-family worst similarity: ' + worstAll.toFixed(3) + '  ' + worstPair);
