@@ -5,6 +5,7 @@ import { examTitle } from '../../lib/seoTitle';
 import DepthSections from '../../components/DepthSections.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
 import RelatedExams from '../../components/RelatedExams.astro';
+import SidebarTOC from '../../components/SidebarTOC.astro';
 import { depthFor, depthSections } from '../../data/examCatalog/examDepth.mjs';
 import {
   allExams,
@@ -90,6 +91,13 @@ const breadcrumbItems = [
 
 const peerSample = peers.slice(0, 24);
 
+// Shared depth layer — the eight deep-dive sections plus the named reviewer.
+// Only national pages carry it; state dossiers and placeholders are unaffected.
+// Declared up here because the sidebar TOC also reads depthNav to cluster the
+// eight P0 depth sections under two umbrella chapter headings.
+const depth = mode === 'national' ? depthFor(exam.slug) : null;
+const depthNav = depthSections(depth);
+
 const buildingBlocks = [
   { t: 'Eligibility & Requirements', d: 'Education, experience and prerequisites you need before you can sit.' },
   { t: 'The Exam in Detail', d: 'Question counts, time limits, pass marks, format and content outline.' },
@@ -105,6 +113,127 @@ function clampMeta(text) {
   const cut = s.slice(0, 155);
   return `${cut.slice(0, cut.lastIndexOf(' '))}…`;
 }
+
+// ── Sidebar TOC ────────────────────────────────────────────────────────────
+// Editorial chapter navigation. The previous flat list grew past 17 items on
+// gold-standard national pages and overflowed the viewport. We now group items
+// under four chapter headings, with cluster labels rolling the eight P0 depth
+// sections under two umbrella items. The old code also had a famous bug: the
+// `costs || natTimeline.length` expression evaluated to the literal number 0
+// when both were falsy, which JSX happily rendered as a stray "0" in the nav.
+// Every condition is now a strict boolean.
+const tocItems: { id: string; label: string; sub?: boolean; chapterTitle?: string }[] = [];
+const pushIf = (cond: any, item: typeof tocItems[number]) => { if (cond) tocItems.push(item); };
+const subItem = (id: string, label: string) => ({ id, label, sub: true });
+
+// Chapter 1 — The basics
+const showQuickAnswer = mode === 'national' && !!record.quickAnswer;
+if (showQuickAnswer) {
+  tocItems.push({ id: 'quick', label: 'Quick answer', chapterTitle: 'The basics' });
+  tocItems.push({ id: 'overview', label: 'Overview' });
+} else {
+  tocItems.push({ id: 'overview', label: 'Overview', chapterTitle: 'The basics' });
+}
+pushIf(mode === 'not-offered', { id: 'instead', label: 'What applies instead' });
+
+// Chapter 2 — What you need (eligibility + the exam)
+const showEligibility = mode === 'researched' || (mode === 'national' && !!(record.prerequisites || record.eligibility));
+const showExam = mode === 'researched' || (mode === 'national' && !!meta);
+if (showEligibility) {
+  tocItems.push({ id: 'eligibility', label: 'Eligibility', chapterTitle: 'What you need' });
+  if (showExam) {
+    tocItems.push({ id: 'exam', label: 'The exam' });
+    pushIf(mode === 'national' && topics.length > 0, subItem('topics', 'What is tested'));
+  }
+} else if (showExam) {
+  tocItems.push({ id: 'exam', label: 'The exam', chapterTitle: 'What you need' });
+  pushIf(mode === 'national' && topics.length > 0, subItem('topics', 'What is tested'));
+}
+
+// Chapter 3 — Plan & pay (logistics)
+const hasCosts = mode === 'researched' || (mode === 'national' && !!(costs || natTimeline.length));
+const showHowToRegister = mode === 'national' && regSteps.length > 0;
+const showStepByStep = mode === 'researched';
+const showCompare = mode === 'national' && !!natComparison;
+if (hasCosts) {
+  tocItems.push({ id: 'costs', label: 'Costs & timeline', chapterTitle: 'Plan & pay' });
+  pushIf(showStepByStep, { id: 'route', label: 'Step-by-step' });
+  if (showHowToRegister) {
+    tocItems.push({ id: 'register', label: 'How to register' });
+    pushIf(policies.length > 0, subItem('policies', 'Rules & renewal'));
+    pushIf(showCompare, { id: 'compare', label: 'How it compares' });
+  } else {
+    pushIf(showCompare, { id: 'compare', label: 'How it compares' });
+  }
+} else if (showStepByStep) {
+  tocItems.push({ id: 'route', label: 'Step-by-step', chapterTitle: 'Plan & pay' });
+} else if (showHowToRegister) {
+  tocItems.push({ id: 'register', label: 'How to register', chapterTitle: 'Plan & pay' });
+  pushIf(policies.length > 0, subItem('policies', 'Rules & renewal'));
+  pushIf(showCompare, { id: 'compare', label: 'How it compares' });
+}
+
+// Chapter 4 — Career & preparation (depth sections clustered into 1-2 headings)
+if (depthNav.length) {
+  const career = depthNav.filter(d => d.id === 'salary' || d.id === 'pass-rate');
+  const prep = depthNav.filter(d => d.id !== 'salary' && d.id !== 'pass-rate');
+
+  if (career.length > 0) {
+    const first = career[0];
+    const extraCareerLabels: Record<string, string> = { 'pass-rate': 'Pass rates' };
+    tocItems.push({
+      id: first.id,
+      label: first.id === 'salary' ? 'Career outlook' : (extraCareerLabels[first.id] || first.label),
+      chapterTitle: prep.length > 0 ? 'Career' : 'Career & prep'
+    });
+    for (let i = 1; i < career.length; i++) {
+      tocItems.push(subItem(career[i].id, extraCareerLabels[career[i].id] || career[i].label));
+    }
+    // When "Career outlook" is the label for #salary, sub #pass-rate reads "Pass rates"
+    if (first.id === 'salary') {
+      const pr = career.find(d => d.id === 'pass-rate');
+      if (pr) {
+        const idx = tocItems.findIndex(it => it.id === 'pass-rate');
+        if (idx >= 0) tocItems[idx].label = 'Pass rates';
+      }
+    }
+  }
+  if (prep.length > 0) {
+    const first = prep[0];
+    const prepLabels: Record<string, string> = {
+      'study-plan': 'Study plan',
+      'strategies': 'Prep strategies',
+      'resources': 'Study resources',
+      'mistakes': 'Common mistakes',
+      'question-types': 'Question types',
+      'exam-day': 'Exam day'
+    };
+    tocItems.push({
+      id: first.id,
+      label: prep.length === 1 ? (prepLabels[first.id] || first.label) : 'Master the material',
+      chapterTitle: career.length > 0 ? 'Preparation' : 'Career & prep'
+    });
+    for (let i = 1; i < prep.length; i++) {
+      tocItems.push(subItem(prep[i].id, prepLabels[prep[i].id] || prep[i].label));
+    }
+  }
+}
+
+// Chapter 5 — Reference
+const refItemsStart = tocItems.length;
+const showFaq = (mode === 'researched' && !!dossier?.faqs?.length) ||
+                (mode === 'national' && natFaqs.length > 0);
+pushIf(mode === 'placeholder', { id: 'building', label: "What we're building" });
+if (compact) {
+  pushIf(true, { id: 'reciprocity', label: 'Cross-state validity', chapterTitle: 'Reference' });
+  pushIf(true, { id: 'facts', label: 'At a glance' });
+} else {
+  pushIf(true, { id: 'facts', label: 'At a glance', chapterTitle: 'Reference' });
+}
+pushIf(showFaq, { id: 'faq', label: 'FAQ' });
+pushIf(mode === 'national' && siblings.length > 0, { id: 'ladder', label: 'Others from this body' });
+pushIf(peerSample.length > 0, { id: 'otherstates', label: 'Other states' });
+tocItems.push({ id: 'sources', label: 'Sources' });
 
 // Every branch is clamped, not just the national one. 65 pages were shipping
 // descriptions over 160 characters (max 290), so Google rewrote or truncated
@@ -137,10 +266,6 @@ const faqSchema = schemaFaqs.length
     }
   : null;
 
-// Shared depth layer — the eight deep-dive sections plus the named reviewer.
-// Only national pages carry it; state dossiers and placeholders are unaffected.
-const depth = mode === 'national' ? depthFor(exam.slug) : null;
-const depthNav = depthSections(depth);
 
 // A national credential is a real-world certification, so describe it as one
 // rather than leaving search engines to infer it from an FAQ block alone.
@@ -265,37 +390,7 @@ const credentialSchema =
 
   <div class="container two-column-content">
     <aside class="sidebar">
-      <div class="sticky-nav">
-        <h3>On this page</h3>
-        <nav>
-          <ul>
-            {mode === 'national' && record.quickAnswer && <li><a href="#quick">Quick answer</a></li>}
-            <li><a href="#overview">Overview</a></li>
-            {mode === 'not-offered' && <li><a href="#instead">What applies instead</a></li>}
-            {(mode === 'researched' || (mode === 'national' && (record.prerequisites || record.eligibility))) && (
-              <li><a href="#eligibility">Eligibility</a></li>
-            )}
-            {(mode === 'researched' || (mode === 'national' && meta)) && <li><a href="#exam">The exam</a></li>}
-            {mode === 'national' && topics.length > 0 && <li><a href="#topics">What is tested</a></li>}
-            {(mode === 'researched' || (mode === 'national' && (costs || natTimeline.length))) && (
-              <li><a href="#costs">Costs & timeline</a></li>
-            )}
-            {mode === 'researched' && <li><a href="#route">Step-by-step</a></li>}
-            {mode === 'national' && regSteps.length > 0 && <li><a href="#register">How to register</a></li>}
-            {mode === 'national' && policies.length > 0 && <li><a href="#policies">Rules & renewal</a></li>}
-            {mode === 'national' && natComparison && <li><a href="#compare">How it compares</a></li>}
-            {depthNav.map((d) => <li><a href={`#${d.id}`}>{d.label}</a></li>)}
-            {mode === 'placeholder' && <li><a href="#building">What we're building</a></li>}
-            {compact && <li><a href="#reciprocity">Cross-state validity</a></li>}
-            <li><a href="#facts">At a glance</a></li>
-            {mode === 'researched' && dossier?.faqs?.length > 0 && <li><a href="#faq">FAQ</a></li>}
-            {mode === 'national' && natFaqs.length > 0 && <li><a href="#faq">FAQ</a></li>}
-            {mode === 'national' && siblings.length > 0 && <li><a href="#ladder">Others from this body</a></li>}
-            {peerSample.length > 0 && <li><a href="#otherstates">Other states</a></li>}
-            <li><a href="#sources">Sources</a></li>
-          </ul>
-        </nav>
-      </div>
+      <SidebarTOC items={tocItems} />
     </aside>
 
     <main class="main-article">
@@ -1008,7 +1103,7 @@ const credentialSchema =
   .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 
   /* Hero */
-  .eg-hero { padding: 3rem 0 2.75rem; border-bottom: 1px solid var(--line); }
+  .eg-hero { padding: 3rem 0 1.25rem; border-bottom: 1px solid var(--line); }
   .eg-hero .eyebrow { color: var(--accent); font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem; }
   .eg-hero h1 { font-family: var(--font-heading); font-weight: 700; font-size: clamp(2.6rem, 5.5vw, 3.8rem); line-height: 1.15; margin: 0 0 1.25rem; }
   .eg-hero .lede { font-size: 1.25rem; color: var(--muted); max-width: 760px; line-height: 1.7; margin: 0; }
@@ -1027,13 +1122,8 @@ const credentialSchema =
   .eg-fact .value { display: block; font-family: var(--font-heading); font-size: 1.15rem; font-weight: 600; margin-top: 0.35rem; color: var(--ink); line-height: 1.35; }
 
   /* Two-column */
-  .two-column-content { display: grid; grid-template-columns: clamp(180px, 19vw, 230px) 1fr; gap: clamp(1.5rem, 3.4vw, 3.5rem); padding-top: var(--space-section); padding-bottom: var(--space-section); }
-  .sidebar { position: relative; }
-  .sticky-nav { position: sticky; top: 2rem; }
-  .sticky-nav h3 { font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--line); color: var(--ink); }
-  .sticky-nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.55rem; }
-  .sticky-nav a { color: var(--muted); text-decoration: none; transition: color var(--transition); font-size: 0.9rem; }
-  .sticky-nav a:hover { color: var(--primary); }
+  .two-column-content { display: grid; grid-template-columns: clamp(180px, 19vw, 230px) 1fr; gap: clamp(1.5rem, 3.4vw, 3.5rem); padding-top: var(--space-5); padding-bottom: var(--space-section); }
+  .sidebar { position: relative; min-width: 0; }
 
   /* Sections */
   .eg-section { padding: 2.75rem 0; border-top: 1px solid var(--line); }
@@ -1190,7 +1280,7 @@ const credentialSchema =
 
   @media (max-width: 900px) {
     .two-column-content { grid-template-columns: 1fr; gap: 1rem; }
-    .sticky-nav { display: none; }
+    .sidebar { display: none; }
     .eg-section-cream { padding: 2rem 1.25rem; }
     .eg-twocol { grid-template-columns: 1fr; }
     .eg-quickblock { padding-left: 1rem; }

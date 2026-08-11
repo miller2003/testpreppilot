@@ -18,3 +18,10 @@
 ## Verifiable site stats (for trust-page copy, counted 2026-08-11)
 - 609 exam depth pages (src/data/examCatalog/depth/, minus _-prefixed scripts) → "600+ roadmaps" is safe.
 - states.ts = 50 states + DC (51 codes). REVIEW_DOMAINS = 8 fields. Methodology pipeline = 7 steps.
+
+## Article-page sidebar (On this page TOC)
+- Shared component `src/components/SidebarTOC.astro`, NYT editorial chapters. Used by `/exams/[slug]` + `/paths/[slug]` (via `ExamGuide.astro`).
+- 6 chapter buckets: The basics / What you need / Plan & pay / Career / Preparation / Reference. 8 P0 depth sections roll under "Career" (Salary+Pass rates) and "Preparation" (the other six) umbrella clusters.
+- **JSX `0` trap**: any `cond1 || arr.length` inside `expr && JSX` will render literal "0" when both sides are falsy — always coerce with `!!(...)`. Hit once on `[slug].astro` (Costs & timeline condition).
+- `.sticky-nav` class removed from both files; grid slot is just `<aside class="sidebar">` now. Component owns its own sticky scroll, mask fade hints and IntersectionObserver scroll-spy.
+
