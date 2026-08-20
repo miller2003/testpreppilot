@@ -105,7 +105,7 @@ export const guideArticles: GuideArticle[] = [
     ],
     related: [
       { label: 'Browse exams by field', href: '/exams' },
-      { label: 'How TestPrepPilot works', href: '/how-it-works' },
+      { label: 'How TestPrepPilot works', href: '/about' },
       { label: 'Beat test anxiety', href: '/guides/beat-test-anxiety-exam-day' },
     ],
   },
@@ -221,7 +221,7 @@ export const guideArticles: GuideArticle[] = [
     ],
     related: [
       { label: 'Build a study plan', href: '/guides/study-plan-working-full-time' },
-      { label: 'How TestPrepPilot works', href: '/how-it-works' },
+      { label: 'How TestPrepPilot works', href: '/about' },
       { label: 'Our research methodology', href: '/methodology' },
     ],
   },

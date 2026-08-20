@@ -5,10 +5,14 @@
 - Always use the managed Node: `export PATH="/c/Users/samja/.workbuddy/binaries/node/versions/22.22.2:$PATH"`; call `./node_modules/.bin/astro` (shell wrapper, do NOT prefix with `node`).
 
 ## Site IA conventions (top nav)
-- Top-level: Guides · How it works · Reviews · **About ▾** (dropdown: About / Methodology / Review Network / Editorial Policy / Affiliate Disclosure) · Contact · Exams(button). The "About" dropdown is the home for all trust/company pages — keep new trust pages there, not as new top-level items.
+- **Top-level (as of 2026-08-20 refactor): Guides · States · About · [search icon] · [theme toggle] · Exams(button).** No dropdown.
+- `/how-it-works`, `/reviews`, `/contact` were removed from the nav and now meta-refresh + canonical + JS redirect to `/about` (or `/about#reviews`, `/about#contact`). They are excluded from the sitemap.
+- `/about` is the consolidated E-E-A-T hub: hero / masthead / standards / FAQ + reader testimonials (`#reviews`) + Reach-the-desk contact block (`#contact`) + anchor nav to the four deep-dive pages (`/methodology`, `/reviewers`, `/editorial-policy`, `/disclosure`). Those four deep pages remain independently routeable.
 - `/exams` and `/exams/[slug]` are the user's core product and are intentionally **off-limits** for foundational/content changes.
-- `/how-it-works` = reader's journey to pass; `/about` = who we are; `/methodology` = deep research pipeline. Keep these three distinct, don't let them re-overlap.
+- `/states` (50 states + DC, state-by-state credential paths) and `/explore` (category-browse directory linking into `/paths/[slug]`) are real product hubs. `/states` was promoted to top nav on 2026-08-20. **`/explore` was deliberately NOT promoted because it overlaps with `/exams` semantically** — if you ever revisit, confirm whether `/explore` and `/exams` are duplicate lenses before surfacing `/explore` in the nav.
 - `/guides` is a real editorial hub backed by `src/data/guides.ts` + `src/pages/guides/[slug].astro`. Never reintroduce `href="#"` placeholder links.
+- **Global search modal** lives in `Header.astro`: a search-icon button (desktop `#search-toggle` + mobile `#search-toggle-mobile`) opens `#search-modal`, which lazily mounts Pagefind into `#nav-search` (separate from SearchUI.astro's `#search` mount on `/explore` — keep IDs unique). Shortcut: Ctrl/Cmd+K to open, Esc to close. Pagefind assets are built to `/pagefind/` after `astro build`.
+
 
 ## Design system (actual, from src/styles/tokens.css — supersedes older notes)
 - Colors: --primary #1d4ed8, --ink #111e1f, --paper #faf9f6, --cream #f0eee5, --line #e3e4df; fonts Lora (body) + Cormorant Garamond (headings); --radius 12px; fluid type tokens --fs-h1/h2/h3/prose.

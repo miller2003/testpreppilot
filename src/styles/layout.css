@@ -60,114 +60,126 @@ html {
   color: var(--primary);
 }
 
-/* Dropdown (About cluster) — pure CSS on hover, JS-assist on focus/keyboard */
-.nav-item {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.dropdown-toggle {
+/* Icon button in the top nav — search, theme toggle. Square, transparent,
+   meets WCAG 2.5.8 touch target on mobile via the .tap-min sizing there. */
+.nav-icon-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  background: none;
-  border: none;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
   padding: 0;
-  margin: 0;
-  cursor: pointer;
-  font: inherit;
-  font-weight: 500;
-  color: var(--ink);
-  transition: color var(--transition);
-}
-.dropdown-toggle:hover,
-.nav-item.is-open .dropdown-toggle {
-  color: var(--primary);
-}
-
-.caret {
-  width: 7px;
-  height: 7px;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: rotate(45deg);
-  margin-top: -3px;
-  transition: transform var(--transition);
-}
-.nav-item:hover .caret,
-.nav-item.is-open .caret {
-  transform: rotate(225deg);
-  margin-top: 2px;
-}
-
-.dropdown-panel {
-  position: absolute;
-  top: calc(100% + 0.85rem);
-  left: 50%;
-  transform: translateX(-50%) translateY(8px);
-  min-width: 264px;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-md);
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
-  z-index: var(--z-nav);
-}
-/* Invisible bridge so the pointer can travel from toggle to panel */
-.dropdown-panel::before {
-  content: "";
-  position: absolute;
-  top: -0.9rem;
-  left: 0;
-  right: 0;
-  height: 0.9rem;
-}
-.nav-item:hover .dropdown-panel,
-.nav-item:focus-within .dropdown-panel,
-.nav-item.is-open .dropdown-panel {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transform: translateX(-50%) translateY(0);
-}
-
-.dropdown-link {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-  text-decoration: none;
-  color: var(--ink);
-  padding: 0.55rem 0.7rem;
+  background: transparent;
+  border: 1px solid transparent;
   border-radius: 8px;
-  transition: background-color var(--transition), color var(--transition);
+  color: var(--ink);
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
 }
-.dropdown-link:hover {
+.nav-icon-btn:hover {
   background: var(--cream);
   color: var(--primary);
 }
-.dropdown-link .dl-label {
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 0.95rem;
-  line-height: 1.2;
+.nav-icon-btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
-.dropdown-link .dl-desc {
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  color: var(--muted);
-  line-height: 1.35;
+
+/* Mobile-only search button (desktop uses #search-toggle inside .desktop-nav).
+   Hidden on desktop because .mobile-menu-wrapper is display:contents there. */
+.mobile-search-btn {
+  display: none;
 }
-.dropdown-link:hover .dl-desc {
+
+/* Search modal overlay (Pagefind-powered, lazily mounted into #nav-search). */
+.search-modal {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: none;
+}
+.search-modal.is-open {
+  display: block;
+}
+.search-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 30, 31, 0.55);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  animation: search-fade-in 0.18s ease-out;
+}
+.search-modal-panel {
+  position: relative;
+  max-width: 720px;
+  margin: 6vh auto 0;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-hover);
+  padding: 1.5rem;
+  max-height: 78vh;
+  overflow-y: auto;
+  animation: search-slide-in 0.22s ease-out;
+}
+.search-modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background-color var(--transition), color var(--transition);
+}
+.search-modal-close:hover {
+  background: var(--cream);
   color: var(--primary);
-  opacity: 0.85;
+}
+.search-modal-mount {
+  min-height: 60px;
+}
+.search-modal-mount:empty::before {
+  content: "Loading search…";
+  display: block;
+  text-align: center;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  padding: 1.5rem 0;
+}
+@keyframes search-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes search-slide-in {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+  /* Mobile: show the search button in the header bar, next to the hamburger */
+  .mobile-search-btn {
+    display: inline-flex;
+    width: var(--tap-min);
+    height: var(--tap-min);
+    margin-right: 0.25rem;
+  }
+  /* Panel takes more vertical room on small screens */
+  .search-modal-panel {
+    margin-top: 3vh;
+    max-height: 88vh;
+    border-radius: var(--radius);
+    padding: 1rem;
+  }
 }
 
 .footer {
@@ -303,7 +315,12 @@ html {
 
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
-  .mobile-menu-wrapper { display: block; }
+  /* Flex so the search button + hamburger sit side-by-side on the right */
+  .mobile-menu-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
   .mobile-menu-toggle { display: flex; }
   .desktop-nav { display: none; }
 
@@ -344,28 +361,6 @@ html {
   .mobile-nav a.button {
     margin-top: var(--space-3);
     width: 100%;
-  }
-
-  /* About cluster in the mobile sheet: parent link + nested sub-links */
-  .mobile-nav .mobile-parent {
-    font-weight: 700;
-  }
-  .mobile-nav .mobile-sub {
-    display: flex;
-    flex-direction: column;
-    padding-left: 1rem;
-    margin-bottom: 0.25rem;
-  }
-  .mobile-nav .mobile-sub a {
-    color: var(--muted);
-    font-size: 0.95rem;
-    font-weight: 500;
-    min-height: calc(var(--tap-min) - 8px);
-    padding: 0.4rem 0;
-    border-bottom: none;
-  }
-  .mobile-nav .mobile-sub a:last-child {
-    border-bottom: 1px solid var(--line);
   }
 
   /* Hamburger morphs into a close icon so state is obvious */

@@ -14,8 +14,12 @@ export default defineConfig({
       // <title> and the same purpose). A canonicalised URL must not be submitted
       // for indexing, or the sitemap contradicts the canonical tag.
       // /privacy-policy is a noindex redirect to /privacy — same reasoning.
+      // /how-it-works, /reviews and /contact now redirect to /about (their
+      // content was folded into the E-E-A-T hub) — exclude the same way.
       filter: (page) =>
-        !/\/affiliate-disclosure\/?$/.test(page) && !/\/privacy-policy\/?$/.test(page),
+        !/\/affiliate-disclosure\/?$/.test(page) &&
+        !/\/privacy-policy\/?$/.test(page) &&
+        !/\/(how-it-works|reviews|contact)\/?$/.test(page),
       serialize(item) {
         const url = new URL(item.url);
         const p = url.pathname.replace(/\/$/, '') || '/';
@@ -39,8 +43,8 @@ export default defineConfig({
         if (p.startsWith('/paths/')) { item.priority = 0.7; item.changefreq = 'monthly'; return item; }
         // State × credential
         if (p.split('/').filter(Boolean).length === 2) { item.priority = 0.7; item.changefreq = 'monthly'; return item; }
-        // Trust pages
-        if (/^\/(about|how-it-works|reviews|guides)$/.test(p)) {
+        // Trust pages (E-E-A-T hub + guides)
+        if (/^\/(about|guides)$/.test(p)) {
           item.priority = 0.5; item.changefreq = 'monthly'; return item;
         }
         // State hubs

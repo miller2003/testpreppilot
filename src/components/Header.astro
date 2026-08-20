@@ -1,16 +1,5 @@
 ---
 import ThemeToggle from './ThemeToggle.astro';
-
-// The "About" cluster gathers every trust / company page in one place so the
-// top bar stays uncluttered and the four overlapping "who we are / how we
-// research" pages are no longer scattered across the nav and footer.
-const aboutLinks = [
-  { label: 'About the desk', href: '/about', desc: 'Who we are & our mission' },
-  { label: 'Our methodology', href: '/methodology', desc: 'How every guide is researched' },
-  { label: 'Review network', href: '/reviewers', desc: 'Licensed experts who verify' },
-  { label: 'Editorial policy', href: '/editorial-policy', desc: 'Our standards & corrections' },
-  { label: 'Affiliate disclosure', href: '/disclosure', desc: 'How we are funded' },
-];
 ---
 <header class="header">
   <div class="header-container">
@@ -18,36 +7,39 @@ const aboutLinks = [
 
     <nav class="desktop-nav" aria-label="Main Navigation">
       <a href="/guides">Guides</a>
-      <a href="/how-it-works">How it works</a>
-      <a href="/reviews">Reviews</a>
-
-      <div class="nav-item">
-        <button
-          type="button"
-          class="dropdown-toggle"
-          aria-haspopup="true"
-          aria-expanded="false"
-          aria-controls="about-menu"
-        >
-          About
-          <span class="caret" aria-hidden="true"></span>
-        </button>
-        <div class="dropdown-panel" id="about-menu" role="menu">
-          {aboutLinks.map((l) => (
-            <a href={l.href} role="menuitem" class="dropdown-link">
-              <span class="dl-label">{l.label}</span>
-              <span class="dl-desc">{l.desc}</span>
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <a href="/contact">Contact</a>
+      <a href="/states">States</a>
+      <a href="/about">About</a>
+      <button
+        type="button"
+        class="nav-icon-btn"
+        id="search-toggle"
+        aria-label="Open search (Ctrl+K)"
+        aria-controls="search-modal"
+        aria-expanded="false"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
       <ThemeToggle />
       <a href="/exams" class="button button-small">Exams</a>
     </nav>
 
     <div class="mobile-menu-wrapper">
+      <button
+        type="button"
+        class="nav-icon-btn mobile-search-btn"
+        id="search-toggle-mobile"
+        aria-label="Open search"
+        aria-controls="search-modal"
+        aria-expanded="false"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
       <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle-input" aria-controls="mobile-nav" />
       <label for="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu">
         <span></span>
@@ -56,15 +48,8 @@ const aboutLinks = [
       </label>
       <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
         <a href="/guides">Guides</a>
-        <a href="/how-it-works">How it works</a>
-        <a href="/reviews">Reviews</a>
-        <a href="/about" class="mobile-parent">About</a>
-        <div class="mobile-sub">
-          {aboutLinks.map((l) => (
-            <a href={l.href}>{l.label}</a>
-          ))}
-        </div>
-        <a href="/contact">Contact</a>
+        <a href="/states">States</a>
+        <a href="/about">About</a>
         <a href="/exams" class="button button-small">Exams</a>
         <div class="mobile-nav-theme">
           <span>Appearance</span>
@@ -75,49 +60,38 @@ const aboutLinks = [
   </div>
 </header>
 
+<!-- Global search modal (Pagefind-powered) -->
+<div
+  id="search-modal"
+  class="search-modal"
+  aria-hidden="true"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Site search"
+>
+  <div class="search-modal-backdrop" data-search-close></div>
+  <div class="search-modal-panel" role="document">
+    <button type="button" class="search-modal-close" data-search-close aria-label="Close search">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <div id="nav-search" class="search-modal-mount"></div>
+  </div>
+</div>
+
 <script is:inline>
-  // Keep the desktop "About" dropdown keyboard-accessible: open on focus,
-  // close on Escape or blur. Pure CSS handles hover; this covers focus/keys.
-  (function () {
-    document.addEventListener('astro:page-load', function () {
-      var toggle = document.querySelector('.desktop-nav .dropdown-toggle');
-      var navItem = document.querySelector('.desktop-nav .nav-item');
-      if (!toggle || !navItem) return;
-
-      function setOpen(open) {
-        navItem.classList.toggle('is-open', open);
-        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      }
-
-      toggle.addEventListener('click', function (e) {
-        e.preventDefault();
-        setOpen(!navItem.classList.contains('is-open'));
-      });
-      toggle.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') { setOpen(false); toggle.blur(); }
-      });
-      navItem.addEventListener('focusout', function (e) {
-        if (!navItem.contains(e.relatedTarget)) setOpen(false);
-      });
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') setOpen(false);
-      });
-    });
-  })();
-
   // Offset in-page anchors so the sticky header never covers the section heading.
   // Measured at runtime so it stays correct if the header height changes.
   (function () {
     function setScrollOffset() {
       var header = document.querySelector('.header');
       if (!header) return;
-      // header height + a small breathing room below it
       var offset = header.offsetHeight + 12;
       document.documentElement.style.setProperty('--scroll-offset', offset + 'px');
     }
-
     function init() { setScrollOffset(); }
-
     document.addEventListener('astro:page-load', init);
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', init);
@@ -125,5 +99,79 @@ const aboutLinks = [
       init();
     }
     window.addEventListener('resize', setScrollOffset);
+  })();
+
+  // Global search modal — Pagefind lazy-loaded on first open.
+  (function () {
+    var modal = document.getElementById('search-modal');
+    if (!modal) return;
+    var toggles = document.querySelectorAll('#search-toggle, #search-toggle-mobile');
+    var closers = modal.querySelectorAll('[data-search-close]');
+    var lastFocused = null;
+    var pagefindLoaded = false;
+
+    function focusInput() {
+      var input = modal.querySelector('.pagefind-ui__search-input');
+      if (input) { try { input.focus(); } catch (e) {} }
+    }
+
+    function loadPagefind() {
+      if (pagefindLoaded) { focusInput(); return; }
+      var mount = document.getElementById('nav-search');
+      if (!mount) return;
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = '/pagefind/pagefind-ui.css';
+      document.head.appendChild(link);
+      var script = document.createElement('script');
+      script.src = '/pagefind/pagefind-ui.js';
+      script.onload = function () {
+        if (window.PagefindUI) {
+          try {
+            new PagefindUI({
+              element: '#nav-search',
+              showImages: false,
+              showEmptyFilters: false,
+              resetStyles: false
+            });
+            pagefindLoaded = true;
+            setTimeout(focusInput, 120);
+          } catch (e) {}
+        }
+      };
+      document.body.appendChild(script);
+    }
+
+    function open() {
+      lastFocused = document.activeElement;
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      toggles.forEach(function (t) { t.setAttribute('aria-expanded', 'true'); });
+      document.body.style.overflow = 'hidden';
+      loadPagefind();
+      setTimeout(focusInput, 250);
+    }
+
+    function close() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      toggles.forEach(function (t) { t.setAttribute('aria-expanded', 'false'); });
+      document.body.style.overflow = '';
+      if (lastFocused && lastFocused.focus) { try { lastFocused.focus(); } catch (e) {} }
+    }
+
+    toggles.forEach(function (t) {
+      t.addEventListener('click', function (e) { e.preventDefault(); open(); });
+    });
+    closers.forEach(function (c) {
+      c.addEventListener('click', function (e) { e.preventDefault(); close(); });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) { e.preventDefault(); close(); }
+      if ((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) {
+        e.preventDefault();
+        if (modal.classList.contains('is-open')) { close(); } else { open(); }
+      }
+    });
   })();
 </script>

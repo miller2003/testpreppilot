@@ -11,6 +11,7 @@ const breadcrumbItems = [
 
 const pageUrl = `${SITE}/about`;
 const dateModified = '2026-08-11';
+const CONTACT_EMAIL = 'contact@testpreppilot.com';
 
 // Plain-text FAQ answers for structured data. The rendered answers below carry
 // the same facts plus internal links; schema.org wants the text only.
@@ -33,7 +34,7 @@ const faqSchemaItems = [
   },
   {
     q: 'How do I report an error or suggest a credential?',
-    a: 'Through the contact page. Choose “Report an error on a guide” or “Suggest a credential to cover.” Every report is read by the desk; substantive corrections are made on the page and noted.'
+    a: 'Through the contact form on this page, or by email. Choose “Report an error on a guide” or “Suggest a credential to cover.” Every report is read by the desk; substantive corrections are made on the page and noted.'
   }
 ];
 
@@ -50,7 +51,7 @@ const aboutSchema = {
       name: 'About TestPrepPilot — the editorial desk behind the roadmaps',
       description:
         'Who runs TestPrepPilot, the standards the desk publishes under, and how ' +
-        'every guide is researched, verified and reviewed.',
+        'every guide is researched, verified and reviewed — plus how to reach the desk.',
       isPartOf: { '@id': `${SITE}/#website` },
       about: { '@id': `${SITE}/#organization` },
       mainEntity: { '@id': `${SITE}/#organization` },
@@ -68,11 +69,44 @@ const aboutSchema = {
     }
   ]
 };
----
 
+// Reader testimonials — formerly the /reviews page, now consolidated here.
+const reviews = [
+  {
+    quote: "TestPrepPilot completely removed the anxiety of figuring out the Texas Real Estate requirements. Their roadmap was the only reason I passed on my first try.",
+    author: "Sarah Jenkins",
+    role: "Passed Texas Real Estate Exam"
+  },
+  {
+    quote: "The side-by-side provider comparisons are brilliant. I avoided spending $800 on a course that wouldn't have fit my schedule anyway. Ended up passing my Enrolled Agent exam in 3 months.",
+    author: "David Chen",
+    role: "Passed Enrolled Agent Exam"
+  },
+  {
+    quote: "I've been in the trades for 10 years, but the paperwork for my contractor license was terrifying. The checklist here broke it down so simply. I cannot recommend this platform enough.",
+    author: "Michael T.",
+    role: "Passed HVAC Journeyman Exam"
+  },
+  {
+    quote: "It's rare to find a site that isn't just trying to sell you something. The independent research here is obvious. Clean, direct, and incredibly useful.",
+    author: "Emily R.",
+    role: "Passed CPA FAR Section"
+  },
+  {
+    quote: "I was overwhelmed by the differing state requirements for medical assisting. The guide here made everything crystal clear. I felt completely prepared.",
+    author: "Jessica M.",
+    role: "Passed CMA Exam"
+  },
+  {
+    quote: "As someone pivoting careers, I needed a no-nonsense guide to IT certifications. The roadmap saved me hundreds of hours of googling.",
+    author: "James L.",
+    role: "Passed CompTIA A+"
+  }
+];
+---
 <BaseLayout
   title="About TestPrepPilot — The Editorial Desk Behind 600+ Exam Guides"
-  description="Meet the independent editorial desk behind TestPrepPilot — 600+ U.S. credential guides verified against primary sources, checked by licensed professionals, and never pay-to-rank."
+  description="Meet the independent editorial desk behind TestPrepPilot — 600+ U.S. credential guides verified against primary sources, checked by licensed professionals, and never pay-to-rank. Read reviews and reach the desk."
   schema={aboutSchema}
   dateModified={dateModified}
 >
@@ -89,6 +123,14 @@ const aboutSchema = {
         primary source, and licensed fields checked by professionals who hold the credential.
       </p>
     </header>
+
+    <!-- Anchor nav: jump to the deep-dive trust pages without leaving the cluster -->
+    <nav class="trust-jump" aria-label="Trust pages">
+      <a href={TRUST_PAGES.methodology}>Research methodology</a>
+      <a href={TRUST_PAGES.reviewers}>Review network</a>
+      <a href={TRUST_PAGES.editorialPolicy}>Editorial policy</a>
+      <a href={TRUST_PAGES.disclosure}>How we're funded</a>
+    </nav>
 
     <dl class="desk-stats" aria-label="The desk at a glance">
       <div class="stat">
@@ -110,7 +152,7 @@ const aboutSchema = {
     </dl>
 
     <main class="prose">
-      <section>
+      <section id="who">
         <h2>The problem we set out to solve</h2>
         <p>
           If you have ever tried to pin down exactly what it takes to become a licensed
@@ -254,6 +296,28 @@ const aboutSchema = {
         <p class="rc-link"><a href={TRUST_PAGES.reviewers}>See how our review network works &rarr;</a></p>
       </section>
 
+      <!-- Formerly /reviews — reader testimonials now live here -->
+      <section id="reviews" class="reviews-section">
+        <p class="eyebrow">WHAT READERS SAY</p>
+        <h2>Trusted by those who <em>take the next step.</em></h2>
+        <p class="reviews-lede">
+          Real professionals who used our independently researched roadmaps to pass and
+          advance. Quotes are published as submitted.
+        </p>
+        <div class="reviews-grid">
+          {reviews.map((review) => (
+            <div class="review-card">
+              <div class="quote-mark">"</div>
+              <p class="quote-text">{review.quote}</p>
+              <div class="author-meta">
+                <span class="author-name">{review.author}</span>
+                <span class="author-role">{review.role}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section>
         <h2>How we keep the lights on</h2>
         <p>
@@ -263,6 +327,81 @@ const aboutSchema = {
           nothing from when they are the better route. The full terms are in our
           <a href={TRUST_PAGES.disclosure}>Affiliate Disclosure</a>.
         </p>
+      </section>
+
+      <!-- Formerly /contact — reach the desk now lives here -->
+      <section id="contact" class="contact-section">
+        <p class="eyebrow">REACH THE DESK</p>
+        <h2>We read every <em>message.</em></h2>
+        <p class="contact-lede">
+          Whether you spotted a mistake, want a credential covered, or are a licensed
+          professional who'd like to review our work, this is the fastest way to reach us.
+        </p>
+
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form" action={`mailto:${CONTACT_EMAIL}`} method="post" enctype="text/plain">
+            <label class="field">
+              <span>Your name</span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label class="field">
+              <span>Topic</span>
+              <select name="topic">
+                <option value="Report an error">Report an error on a guide</option>
+                <option value="Suggest a credential">Suggest a credential to cover</option>
+                <option value="Join the review network">Join the licensed-expert review network</option>
+                <option value="Partnership / Press">Partnership or press</option>
+                <option value="Something else">Something else</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Message</span>
+              <textarea name="message" rows="6" required></textarea>
+            </label>
+            <button type="submit" class="submit">Send message</button>
+            <p class="form-note">
+              Opens in your email app. Prefer to write directly? Email
+              <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+            </p>
+          </form>
+
+          <aside class="info-col">
+            <div class="info-card">
+              <h3>Editorial desk</h3>
+              <p>
+                Reach the researchers who maintain the guides. We aim to reply to error reports
+                and review-network applications within a few business days.
+              </p>
+              <p class="email-row">
+                <span class="email-label">Email</span>
+                <a href={`mailto:${CONTACT_EMAIL}`} class="email-link">{CONTACT_EMAIL}</a>
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>Report an error</h3>
+              <p>
+                Rules and fees change constantly. If something on a page looks out of date, tell
+                us the page and what you found — we verify against the primary source and update
+                the "last reviewed" date.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>Are you a licensed professional?</h3>
+              <p>
+                We build our review network from verifiable, licensed experts. If you hold an
+                active license in a field we cover and want to review guides in it, we'd love to
+                hear from you. Learn how it works on our
+                <a href={TRUST_PAGES.reviewers}> Review Network</a> page.
+              </p>
+            </div>
+          </aside>
+        </div>
       </section>
 
       <section class="faq-section">
@@ -308,9 +447,9 @@ const aboutSchema = {
           <details class="faq-item">
             <summary>How do I report an error or suggest a credential?</summary>
             <p>
-              Through the <a href={TRUST_PAGES.contact}>contact page</a> — choose "Report an
-              error on a guide" or "Suggest a credential to cover." Every report is read by
-              the desk, and substantive corrections are made on the page and noted.
+              Through the form above — choose "Report an error on a guide" or "Suggest a
+              credential to cover." Every report is read by the desk, and substantive
+              corrections are made on the page and noted.
             </p>
           </details>
         </div>
@@ -323,7 +462,6 @@ const aboutSchema = {
           <a href={TRUST_PAGES.reviewers}>Review network</a>
           <a href={TRUST_PAGES.editorialPolicy}>Editorial policy</a>
           <a href={TRUST_PAGES.disclosure}>How we're funded</a>
-          <a href={TRUST_PAGES.contact}>Contact the desk</a>
         </p>
       </section>
     </main>
@@ -331,6 +469,30 @@ const aboutSchema = {
 
   <TopicHubs />
 </BaseLayout>
+
+<script is:inline>
+  // Assemble a mailto: from the form fields so the contact form works with no
+  // backend. If `action` has been pointed at a real endpoint, this is skipped.
+  (function () {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    var action = form.getAttribute('action') || '';
+    if (action.indexOf('mailto:') !== 0) return; // real endpoint → let it submit
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      var name = (data.get('name') || '').toString().trim();
+      var email = (data.get('email') || '').toString().trim();
+      var topic = (data.get('topic') || '').toString().trim();
+      var message = (data.get('message') || '').toString().trim();
+      var subject = encodeURIComponent('[TestPrepPilot] ' + topic + (name ? ' — ' + name : ''));
+      var body = encodeURIComponent(
+        'Name: ' + name + '\nEmail: ' + email + '\nTopic: ' + topic + '\n\n' + message
+      );
+      window.location.href = 'mailto:' + action.slice(7) + '?subject=' + subject + '&body=' + body;
+    });
+  })();
+</script>
 
 <style>
   .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
@@ -340,6 +502,11 @@ const aboutSchema = {
   .page-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin: 0 0 1.25rem; font-weight: 700; }
   .page-hero h1 { font-family: var(--font-heading); font-size: var(--fs-h1); line-height: 1.12; margin: 0 0 1.5rem; }
   .page-hero .lede { font-family: var(--font-body); font-size: var(--fs-prose); color: var(--muted); line-height: 1.75; margin: 0; }
+
+  /* Anchor jump nav to deep-dive trust pages */
+  .trust-jump { display: flex; flex-wrap: wrap; gap: 0.6rem; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+  .trust-jump a { display: inline-block; padding: 0.5rem 1rem; border: 1px solid var(--line); border-radius: 999px; background: var(--cream); text-decoration: none; font-family: var(--font-body); font-size: 0.92rem; color: var(--ink); transition: border-color var(--transition); }
+  .trust-jump a:hover { border-color: var(--primary); }
 
   /* At-a-glance stat strip */
   .desk-stats {
@@ -394,6 +561,42 @@ const aboutSchema = {
   .rc-link { margin-bottom: 0 !important; }
   .rc-link a { font-weight: 700; }
 
+  /* Reviews grid (formerly /reviews) */
+  .reviews-section .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin: 0 0 1rem; font-weight: 700; }
+  .reviews-section h2 { font-family: var(--font-heading); font-size: var(--fs-h2); margin: 0 0 1rem; line-height: 1.2; }
+  .reviews-lede { color: var(--muted); max-width: 62ch; margin-bottom: 2.5rem; }
+  .reviews-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 2rem; }
+  .review-card { background: var(--paper); padding: 2rem; border: 1px solid var(--line); border-radius: var(--radius); display: flex; flex-direction: column; position: relative; }
+  .quote-mark { font-family: var(--font-heading); font-size: 5rem; color: var(--primary); opacity: 0.15; position: absolute; top: -0.5rem; left: 1rem; line-height: 1; pointer-events: none; }
+  .quote-text { font-family: var(--font-heading); font-size: 1.25rem; line-height: 1.45; color: var(--ink); margin: 0 0 1.5rem 0; position: relative; z-index: 1; font-style: italic; }
+  .author-meta { margin-top: auto; display: flex; flex-direction: column; gap: 0.25rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+  .author-name { font-family: var(--font-body); font-weight: 700; color: var(--ink); font-size: 1rem; }
+  .author-role { font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* Contact (formerly /contact) */
+  .contact-section .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin: 0 0 1rem; font-weight: 700; }
+  .contact-section h2 { font-family: var(--font-heading); font-size: var(--fs-h2); margin: 0 0 1rem; line-height: 1.2; }
+  .contact-lede { color: var(--muted); max-width: 62ch; margin-bottom: 2.5rem; }
+  .contact-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(2rem, 4vw, 4rem); align-items: start; }
+  .contact-form { display: flex; flex-direction: column; gap: 1.1rem; }
+  .field { display: flex; flex-direction: column; gap: 0.45rem; }
+  .field > span { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); font-weight: 700; }
+  .field input, .field select, .field textarea { font-family: var(--font-body); font-size: 1rem; color: var(--ink); padding: 0.8rem 1rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); width: 100%; transition: border-color var(--transition); }
+  .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--primary); }
+  .field textarea { resize: vertical; }
+  .submit { align-self: flex-start; font-family: var(--font-mono); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; color: #fff; background: var(--primary); border: none; border-radius: 999px; padding: 0.85rem 2rem; cursor: pointer; transition: transform var(--transition), box-shadow var(--transition); }
+  .submit:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+  .form-note { font-size: 0.9rem; color: var(--muted); line-height: 1.6; margin: 0.25rem 0 0; }
+  .form-note a { color: var(--primary); font-weight: 600; }
+  .info-col { display: flex; flex-direction: column; gap: 1.1rem; position: sticky; top: 2rem; }
+  .info-card { padding: 1.4rem 1.6rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+  .info-card h3 { font-family: var(--font-heading); font-size: var(--fs-h3); margin: 0 0 0.6rem; }
+  .info-card p { font-size: 0.98rem; line-height: 1.65; color: var(--muted); margin: 0; }
+  .info-card a { color: var(--primary); font-weight: 600; text-underline-offset: 3px; }
+  .email-row { margin-top: 0.9rem; display: flex; flex-direction: column; gap: 0.2rem; }
+  .email-label { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); font-weight: 700; }
+  .email-link { font-family: var(--font-body); font-weight: 700; color: var(--ink); font-size: 1.05rem; word-break: break-word; }
+
   /* FAQ */
   .faq-list { border-top: 1px solid var(--line); }
   .faq-item { border-bottom: 1px solid var(--line); }
@@ -431,10 +634,12 @@ const aboutSchema = {
   .cta-links a { display: inline-block; padding: 0.6rem 1.1rem; border: 1px solid var(--line); border-radius: 999px; background: var(--cream); text-decoration: none; font-family: var(--font-body); font-size: 0.95rem; color: var(--ink); }
   .cta-links a:hover { border-color: var(--primary); }
 
-  @media (max-width: 640px) {
+  @media (max-width: 760px) {
     .desk-stats { grid-template-columns: repeat(2, 1fr); gap: 1.75rem 1.25rem; }
     .masthead { grid-template-columns: 1fr; }
     .standards { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .info-col { position: static; }
     .byline-policy, .review-callout { padding: 1.4rem 1.35rem; }
     .faq-item summary { font-size: 1.15rem; }
   }

@@ -16,6 +16,10 @@ export const DESK = {
 };
 
 // Canonical trust-page URLs — reuse everywhere so internal links never drift.
+// /about is the single E-E-A-T hub; /methodology, /reviewers, /editorial-policy
+// and /disclosure are the deep-dive pages it links out to. Former nav/cluster
+// pages (/how-it-works, /reviews, /contact) have been folded into /about and
+// now 308-redirect there, so they are no longer listed here.
 export const TRUST_PAGES = {
   about: '/about',
   methodology: '/methodology',
@@ -23,8 +27,6 @@ export const TRUST_PAGES = {
   editorialPolicy: '/editorial-policy',
   disclosure: '/disclosure',
   privacy: '/privacy',
-  contact: '/contact',
-  howItWorks: '/how-it-works',
 } as const;
 
 // Review-network domains we recruit licensed experts for. Used by /reviewers

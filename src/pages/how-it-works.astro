@@ -1,148 +1,25 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import BreadcrumbNav from '../components/BreadcrumbNav.astro';
-import TopicHubs from '../components/TopicHubs.astro';
-import { TRUST_PAGES } from '../data/editorial';
 
-const breadcrumbItems = [
-  { label: 'Home', href: '/' },
-  { label: 'How it works', href: '/how-it-works' }
-];
-
-const steps = [
-  {
-    num: '01',
-    title: 'Find your exam',
-    body: 'Start from your goal, not a search box full of ads. Browse every credential by field, by state, or by name — then land on a single page that tells you exactly what the credential is and who issues it.',
-    link: { href: '/exams', label: 'Browse all exams' }
-  },
-  {
-    num: '02',
-    title: 'See the real requirements',
-    body: 'No more guessing. Each roadmap lays out eligibility, education hours, exam format, fees, and timelines up front — every figure traced to a primary source and stamped with a last-reviewed date.',
-    link: { href: '/states', label: 'Find your state' }
-  },
-  {
-    num: '03',
-    title: 'Compare prep providers',
-    body: 'When a course helps, we show side-by-side comparisons of legitimate providers — matched to your learning style, budget, and schedule. Recommendations are made on the merits, never bought.',
-    link: { href: '/explore', label: 'Explore pathways' }
-  },
-  {
-    num: '04',
-    title: 'Study and sit the exam',
-    body: 'Use our study guides and checklists to plan your weeks, then book and sit with confidence. If a rule changes before your test date, the page you relied on is the one we keep current.',
-    link: { href: '/guides', label: 'Study guides' }
-  }
-];
+// "How it works" is now covered inside the /about E-E-A-T hub (who's behind the
+// desk, the research pipeline, and how a guide is built). Forward the URL to /about.
+const target = 'https://testpreppilot.com/about';
 ---
-
 <BaseLayout
-  title="How It Works — From Goal to Passed Exam | TestPrepPilot"
-  description="How to use TestPrepPilot to find your credential, see the exact requirements, compare prep providers, and walk into exam day prepared."
+  title="How it works — TestPrepPilot"
+  description="How TestPrepPilot turns regulations into clear roadmaps is now explained on our About page."
+  canonical={target}
 >
-  <div class="container">
-    <BreadcrumbNav items={breadcrumbItems} />
-
-    <header class="editorial-hero">
-      <p class="eyebrow">YOUR PATH TO PASS</p>
-      <h1>From "I need a license" to <em>"I passed."</em></h1>
-      <p class="lede">
-        TestPrepPilot turns a tangle of state websites and sales pitches into four clear steps.
-        Here's exactly how the journey works — for you.
-      </p>
-    </header>
-
-    <main class="journey">
-      {steps.map((step) => (
-        <section class="step-card">
-          <div class="step-meta">
-            <span class="numeral">{step.num}</span>
-            <span class="phase">Step</span>
-          </div>
-          <div class="step-content">
-            <h2>{step.title}</h2>
-            <p>{step.body}</p>
-            <a href={step.link.href} class="step-link">{step.link.label} &rarr;</a>
-          </div>
-        </section>
-      ))}
-    </main>
-
-    <section class="build">
-      <div class="build-inner">
-        <div class="build-copy">
-          <p class="eyebrow">HOW EACH GUIDE IS BUILT</p>
-          <h2>Every roadmap starts with the requirement — not the sale.</h2>
-          <p>
-            Behind each page is a repeatable research pipeline: we read the primary regulation,
-            extract the facts that matter, structure them into a plain-English path, and have it
-            confirmed by a licensed professional where one is available. Nothing publishes until
-            it clears every step.
-          </p>
-          <a href={TRUST_PAGES.methodology} class="button button-small">Read our full methodology</a>
-        </div>
-        <ul class="build-points">
-          <li><strong>Primary sources only.</strong> State boards, federal agencies, and vendor handbooks — never other blogs.</li>
-          <li><strong>Confidence labelled.</strong> "Verified" vs "confirm with the board" so you never mistake a guess for a fact.</li>
-          <li><strong>Expert-checked.</strong> Licensed reviewers confirm eligibility, format, fees, and timeline.</li>
-          <li><strong>Kept current.</strong> High-traffic pages are re-checked on a rolling schedule and re-stamped.</li>
-        </ul>
-      </div>
-    </section>
+  <meta http-equiv="refresh" content="0; url=/about" />
+  <div class="container" style="max-width:760px;margin:0 auto;padding:6rem 2rem;text-align:center;">
+    <h1 style="font-family:var(--font-heading);font-size:2rem;margin-bottom:1rem;">How it works has moved</h1>
+    <p style="color:var(--muted);margin-bottom:1.5rem;">
+      See how the editorial desk researches and verifies every guide on our <a href="/about">About the desk</a> page.
+    </p>
+    <a href="/about" class="button">Continue to About</a>
   </div>
-
-  <TopicHubs />
 </BaseLayout>
 
-<style>
-  .container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
-
-  /* Hero Section */
-  .editorial-hero { padding: 3rem 0 4rem; border-bottom: 1px solid var(--line); margin-bottom: 4rem; text-align: center; }
-  .editorial-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 1.5rem; font-weight: 700; }
-  .editorial-hero h1 { font-family: var(--font-heading); font-size: clamp(3rem, 5vw, 4.5rem); margin: 0 0 1.5rem; font-weight: 700; line-height: 1.1; color: var(--ink); }
-  .editorial-hero .lede { font-family: var(--font-body); font-size: 1.35rem; color: var(--muted); max-width: 750px; margin: 0 auto; line-height: 1.7; }
-
-  /* Journey */
-  .journey { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 5rem; }
-
-  .step-card {
-    background: var(--paper);
-    padding: clamp(1.5rem, 1rem + 2.2vw, 3rem);
-    border-radius: var(--radius);
-    border: 1px solid var(--line);
-    display: grid;
-    grid-template-columns: minmax(120px, 180px) 1fr;
-    gap: clamp(1.25rem, 0.6rem + 2.8vw, 3rem);
-    align-items: start;
-    transition: transform var(--transition), box-shadow var(--transition);
-  }
-  .step-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-sm); }
-
-  .step-meta { display: flex; flex-direction: column; gap: 0.5rem; }
-  .numeral { font-family: var(--font-heading); font-size: 4.5rem; color: var(--primary); font-weight: 400; line-height: 1; opacity: 0.9; }
-  .phase { font-family: var(--font-mono); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); font-weight: 600; padding-top: 0.5rem; border-top: 1px solid var(--line); margin-top: 1rem; }
-
-  .step-content h2 { font-size: 2.2rem; font-family: var(--font-heading); margin: 0 0 1.25rem 0; color: var(--ink); line-height: 1.2; font-weight: 600; }
-  .step-content p { font-size: 1.15rem; line-height: 1.7; color: var(--muted); font-family: var(--font-body); margin: 0 0 1.5rem 0; }
-  .step-link { font-family: var(--font-mono); font-weight: 700; color: var(--primary); text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.85rem; transition: color var(--transition); }
-  .step-link:hover { color: var(--ink); }
-
-  /* Build section */
-  .build { background: var(--cream); border-radius: var(--radius-lg); padding: clamp(2rem, 1rem + 4vw, 4rem); margin-bottom: 8rem; }
-  .build-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(2rem, 4vw, 4rem); align-items: start; }
-  .build-copy .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin: 0 0 1rem; font-weight: 700; }
-  .build-copy h2 { font-family: var(--font-heading); font-size: clamp(1.8rem, 1.3rem + 2vw, 2.6rem); margin: 0 0 1.25rem; line-height: 1.2; color: var(--ink); }
-  .build-copy p { font-family: var(--font-body); font-size: 1.1rem; line-height: 1.7; color: var(--muted); margin: 0 0 1.75rem; }
-  .build-points { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.9rem; }
-  .build-points li { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.2rem; font-family: var(--font-body); font-size: 1rem; line-height: 1.55; color: var(--muted); }
-  .build-points strong { color: var(--ink); }
-
-  @media (max-width: 860px) {
-    .step-card { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem; }
-    .numeral { font-size: 3.5rem; }
-    .build-inner { grid-template-columns: 1fr; }
-    .editorial-hero { padding: 3rem 0; margin-bottom: 3rem; }
-  }
-</style>
+<script is:inline>
+  window.location.replace('/about');
+</script>
