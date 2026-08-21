@@ -2,6 +2,7 @@
   "redirects": [
     { "source": "/reviews", "destination": "/about", "statusCode": 301 },
     { "source": "/contact", "destination": "/about", "statusCode": 301 },
-    { "source": "/how-it-works", "destination": "/about", "statusCode": 301 }
+    { "source": "/how-it-works", "destination": "/about", "statusCode": 301 },
+    { "source": "/exams", "destination": "/", "statusCode": 301 }
   ]
 }

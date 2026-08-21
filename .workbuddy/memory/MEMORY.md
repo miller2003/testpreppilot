@@ -3,6 +3,8 @@
 ## Build / dev environment (non-obvious)
 - Astro 5 site. `astro build` and `astro preview` **must run with `dangerouslyDisableSandbox: true`** — the default sandbox's "safe-delete" shim blocks Vite's `.vite/deps` cache cleanup and the build silently produces no `dist/`.
 - Always use the managed Node: `export PATH="/c/Users/samja/.workbuddy/binaries/node/versions/22.22.2:$PATH"`; call `./node_modules/.bin/astro` (shell wrapper, do NOT prefix with `node`).
+- **Astro `is:inline` script gotcha**: `{expr}` template expressions are NOT evaluated inside `<script is:inline>` — the literal text is emitted as-is (build still succeeds, JS breaks at runtime). To pass frontmatter data into an inline script, use `<script is:inline define:vars={{ myVar }}>` — define:vars injects `const myVar = "<serialized>"` (a JSON *string*), so consume it with `JSON.parse(myVar)`. Hit twice on the homepage autocomplete (2026-08-21).
+- Homepage (`/`) IS the exam directory since 2026-08-21: sticky search+filter bar with commit-on-确定 filter form (scope 全部/全国/州级 + state + category selects) and abbreviation-aware combobox autocomplete (`searchIndex`/`scoreExam` in index.astro). `/exams` index redirects to `/` (301 + meta-refresh); detail pages `/exams/<slug>` untouched.
 
 ## Site IA conventions (top nav)
 - **Top-level (as of 2026-08-20 refactor): Guides · States · About · [search icon] · [theme toggle] · Exams(button).** No dropdown.

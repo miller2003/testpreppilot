@@ -1,331 +1,757 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { credentials } from '../data/credentials';
-import PathFinder from '../components/PathFinder.astro';
-import CredentialCard from '../components/CredentialCard.astro';
-import StateDirectory from '../components/StateDirectory.astro';
+import { buildDirectory } from '../data/examCatalog/index.mjs';
+import { jurisdictions } from '../data/examCatalog/index.mjs';
 
-const featuredCredentials = credentials.slice(0, 4);
+// Homepage IS the directory. Data-driven from the manifest-gated catalog, so any
+// exam released in release-manifest.mjs appears here automatically on rebuild.
+const directory = buildDirectory().map((cat) => ({
+  ...cat,
+  exams: cat.groups
+    .flatMap((g) => g.exams)
+    .sort((a, b) => a.name.localeCompare(b.name)),
+}));
+const totalExams = directory.reduce((n, c) => n + c.exams.length, 0);
+const catCount = directory.length;
+
+// State list for the filter <select> (sorted by name for easy scanning).
+const stateList = [...jurisdictions].sort((a, b) => a.name.localeCompare(b.name));
+
+const title = 'TestPrepPilot — The U.S. Exam, License & Certification Directory';
+const description = `A clean, source-checked directory of U.S. exams, licenses and certifications across ${catCount} professions. Search any credential and open a verified preparation roadmap.`;
+
+// Uniform, scannable meta line; the issuer + full prose stay on each detail page.
+const metaOf = (e) =>
+  e.type && e.group ? `${e.type} · ${e.group}` : e.blurb || '';
+
+// The live filter matches against this lowercased haystack (cheap includes()).
+const hayOf = (e) =>
+  [e.name, e.type, e.group, e.stateName, e.blurb, e.short, ...(e.aka || [])]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase();
+
+// Richer precomputed index for the autocomplete combobox: name + initials +
+// short acronym + aka list, so "CPA" → "Uniform CPA Examination" and
+// "cdl gk" → "CDL General Knowledge" both resolve.
+const searchIndex = directory
+  .flatMap((c) => c.exams)
+  .map((e) => {
+    const n = e.name.toLowerCase();
+    const w = n.split(/\s+/);
+    return {
+      name: e.name,
+      href: e.href,
+      scope: e.scope,
+      state: e.stateCode || '',
+      meta: metaOf(e),
+      n,
+      w,
+      ini: w.map((s) => s[0]).join(''),
+      short: (e.short || '').toLowerCase(),
+      aka: (e.aka || []).map((a) => a.toLowerCase()),
+    };
+  });
+const idxJson = JSON.stringify(searchIndex);
 ---
 
-<BaseLayout 
-  title="TestPrepPilot — Find the credential path that fits your future" 
-  description="Navigate your career with clear, requirement-based credential guidance."
->
-  <section class="hero | container | animate-on-scroll">
-    <div class="hero-content">
-      <p class="eyebrow">YOUR CAREER, MADE LEGIBLE</p>
-      <h1>The Optimal Path to Pass Any <em>Exam</em>.</h1>
-      <p class="lede">Independently researched, data-backed preparation roadmaps designed to save you time and maximize your score.</p>
-      <div class="cta-group">
-        <a href="/explore" class="button">Find your exam</a>
-        <a href="/about#reviews" class="button button-small" style="background:transparent; color:var(--ink); border: 1px solid var(--line);">Reader reviews</a>
-      </div>
-      <p class="proof-line"><small>Built around official state and national requirements.</small></p>
-    </div>
-    <div class="hero-art" aria-hidden="true">
-      <div class="hero-gradient-blob"></div>
-      <div class="glass-card path-card" style="top: 15%; left: 10%; animation: float 6s ease-in-out infinite;">
-        <span class="step-num">01</span> Explore
-      </div>
-      <div class="glass-card path-card" style="top: 45%; right: 5%; animation: float 7s ease-in-out infinite alternate;">
-        <span class="step-num">02</span> Compare
-      </div>
-      <div class="glass-card path-card" style="bottom: 15%; left: 20%; animation: float 8s ease-in-out infinite;">
-        <span class="step-num">03</span> Move
-      </div>
-    </div>
-  </section>
-
-  <section id="path-finder" class="pathfinder-section | bg-cream | animate-on-scroll">
-    <div class="container">
-      <PathFinder />
-    </div>
-  </section>
-
-  <section class="featured-section | container | animate-on-scroll">
-    <div class="section-header">
-      <h2>Popular career pathways</h2>
-      <a href="/explore" class="view-all">View all &rarr;</a>
-    </div>
-    <div class="credential-grid">
-      {featuredCredentials.map(cred => (
-        <CredentialCard credential={cred} />
-      ))}
-    </div>
-  </section>
-
-  <section class="states-section | container | animate-on-scroll">
-    <div class="section-header">
-      <h2>Find your state's requirements</h2>
-      <a href="/states" class="view-all">All states &rarr;</a>
-    </div>
-    <p class="states-intro">
-      Licensing boards differ in every state. Jump straight to verified credential pathways for your location.
+<BaseLayout title={title} description={description}>
+  <section class="hero | container">
+    <h1 class="hero-title">The Optimal Path to Pass Any <em>Exam</em>.</h1>
+    <p class="hero-sub">
+      Every U.S. exam, license &amp; certification — researched against primary
+      sources and mapped to a clear plan.
     </p>
-    <StateDirectory heading="" showHeading={false} />
+    <p class="hero-stat">
+      {totalExams} credentials &middot; {catCount} professions &middot; every entry source-checked
+    </p>
+    <p class="hero-note"><span class="hero-dot" aria-hidden="true"></span>Continuously updated &middot; new guides added regularly</p>
   </section>
 
-  <section class="trust-band | bg-ink color-paper | animate-on-scroll">
-    <div class="container trust-layout">
-      <div class="trust-stat">100%</div>
-      <div class="trust-content">
-        <p class="eyebrow">NO BLACK BOXES</p>
-        <h2>Every recommendation starts with the requirement—not the sale.</h2>
-        <p>We analyze state and national requirements first, ensuring you only see valid pathways to your chosen career. Our methodology is public, clear, and designed to serve you.</p>
-        <a href="/methodology" class="btn btn-outline color-paper">Read our methodology</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="how-it-works-section | container | animate-on-scroll">
-    <div class="two-column-layout">
-      <div class="visual-column">
-        <div class="grid-pattern">
-          <div class="stamp">THE CLEAR PATH</div>
-          <div class="card-element"></div>
+  <!-- Single source of truth for search + filter. Sticks under the header on scroll. -->
+  <div class="dir-bar" id="dir-bar">
+    <div class="dir-bar-inner | container">
+      <div class="dir-search">
+        <div class="combobox">
+          <label for="dir-q" class="sr-only">Search exams and credentials</label>
+          <input
+            id="dir-q"
+            type="search"
+            placeholder={`Search ${totalExams} exams & credentials…`}
+            autocomplete="off"
+            role="combobox"
+            aria-expanded="false"
+            aria-controls="combo-list"
+            aria-autocomplete="list"
+            aria-label="Search exams and credentials"
+          />
+          <ul class="combobox-list" id="combo-list" role="listbox" aria-label="Suggestions" hidden></ul>
         </div>
       </div>
-      <div class="content-column">
-        <p class="eyebrow">HOW WE HELP</p>
-        <h2>Less searching. <em>Better deciding.</em></h2>
-        <ol class="step-list">
-          <li>
-            <h3>Understand the route</h3>
-            <p>Clear breakdowns of requirements, prerequisites, and realistic timelines.</p>
-          </li>
-          <li>
-            <h3>Compare meaningful options</h3>
-            <p>Side-by-side evaluations of legitimate providers that meet your needs.</p>
-          </li>
-          <li>
-            <h3>Take the next step</h3>
-            <p>Actionable guidance to start your certification or licensure process today.</p>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </section>
 
-  <section class="newsletter-section | bg-primary color-paper | animate-on-scroll">
-    <div class="container">
-      <div class="newsletter-content">
-        <h2>Get practical career guidance, occasionally.</h2>
-        <form id="newsletter-form" class="newsletter-form">
-          <input type="email" placeholder="Your email address" required aria-label="Email address" />
-          <button type="submit" class="btn btn-ink">Subscribe</button>
-        </form>
-        <div id="newsletter-success" class="newsletter-success" hidden>
-          <p><strong>Thanks for subscribing!</strong> Check your inbox for the next steps.</p>
+      <form class="dir-filters" id="dir-filters" aria-label="Filter exams">
+        <div class="seg" role="group" aria-label="Exam scope">
+          <button type="button" class="seg-btn is-active" data-scope="all">All</button>
+          <button type="button" class="seg-btn" data-scope="national">National</button>
+          <button type="button" class="seg-btn" data-scope="state">State</button>
         </div>
-        <p class="disclaimer"><small>No spam. Unsubscribe anytime. See our <a href="/privacy">Privacy Policy</a>.</small></p>
-      </div>
-    </div>
-  </section>
 
-  <script>
-    document.addEventListener('astro:page-load', () => {
-      const form = document.getElementById('newsletter-form');
-      const success = document.getElementById('newsletter-success');
-      
-      if (form && success) {
-        // Remove existing listener to prevent duplicates if it was somehow preserved
-        const newForm = form.cloneNode(true);
-        form.parentNode.replaceChild(newForm, form);
-        
-        newForm.addEventListener('submit', (e) => {
-          e.preventDefault();
-          newForm.style.display = 'none';
-          success.hidden = false;
-          // In a real app, you would send the data to an API here.
-        });
-      }
-    });
-  </script>
+        <select id="f-state" aria-label="Filter by state" disabled>
+          <option value="">All states</option>
+          {stateList.map((s) => <option value={s.code}>{s.name}</option>)}
+        </select>
+
+        <select id="f-cat" aria-label="Filter by category">
+          <option value="">All categories</option>
+          {directory.map((cat) => <option value={cat.id}>{cat.name}</option>)}
+        </select>
+
+        <div class="filter-actions">
+          <button type="submit" class="btn btn-primary">Apply</button>
+          <button type="button" class="btn btn-ghost" id="f-reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="dir-body | container">
+    <p class="dir-count" id="dir-count" aria-live="polite"></p>
+
+    {directory.map((cat, i) => (
+      <section class="cat" id={cat.id} data-cat={cat.id}>
+        <header class="cat-head">
+          <span class="cat-index" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+          <div class="cat-headtext">
+            <h2 class="cat-name">{cat.name}</h2>
+            <p class="cat-desc">{cat.description}</p>
+          </div>
+          <span class="cat-count">{cat.exams.length}</span>
+        </header>
+
+        <ul class="exam-grid">
+          {cat.exams.map((exam) => (
+            <li
+              class="exam"
+              data-cat={cat.id}
+              data-hay={hayOf(exam)}
+              data-scope={exam.scope}
+              data-state={exam.stateCode || ''}
+            >
+              <a class="exam-row" href={exam.href}>
+                <span class="exam-text">
+                  <span class="exam-name">{exam.name}</span>
+                  <span class="exam-meta">{metaOf(exam)}</span>
+                </span>
+                <span class="exam-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+
+    <div class="dir-empty" id="dir-empty" hidden>
+      <p>Nothing matches that search.</p>
+      <button type="button" id="dir-reset">Clear search &amp; filters</button>
+    </div>
+  </div>
 </BaseLayout>
 
+<script is:inline define:vars={{ idxJson }}>
+  document.addEventListener('astro:page-load', () => {
+    const combo = document.getElementById('dir-q');
+    const list = document.getElementById('combo-list');
+    const form = document.getElementById('dir-filters');
+    const segBtns = Array.from(document.querySelectorAll('.seg-btn'));
+    const stateSel = document.getElementById('f-state');
+    const catSel = document.getElementById('f-cat');
+    const resetBtn = document.getElementById('f-reset');
+    const cats = Array.from(document.querySelectorAll('.cat'));
+    const items = Array.from(document.querySelectorAll('.exam'));
+    const countEl = document.getElementById('dir-count');
+    const emptyEl = document.getElementById('dir-empty');
+    const dirReset = document.getElementById('dir-reset');
+    const bar = document.getElementById('dir-bar');
+    if (!combo || !items.length) return;
+
+    const INDEX = JSON.parse(idxJson);
+
+    let query = '';
+    let activeScope = 'all';
+    let activeState = '';
+    let activeCat = '';
+
+    // Honour ?q= from the WebSite SearchAction (sitelinks search box).
+    const params = new URLSearchParams(window.location.search);
+    const qp = params.get('q');
+    if (qp) {
+      combo.value = qp;
+      query = qp.trim().toLowerCase();
+    }
+
+    /* ── Filter (committed) ─────────────────────────────────────────── */
+    function matches(it) {
+      const hay = it.dataset.hay || '';
+      const scope = it.dataset.scope || '';
+      const state = (it.dataset.state || '').toUpperCase();
+      if (activeScope !== 'all' && scope !== activeScope) return false;
+      if (activeScope === 'state' && activeState && state !== activeState.toUpperCase()) return false;
+      if (activeCat && (it.dataset.cat || '') !== activeCat) return false;
+      if (query && !hay.includes(query)) return false;
+      return true;
+    }
+
+    function apply() {
+      let visible = 0;
+      for (const it of items) {
+        const show = matches(it);
+        it.hidden = !show;
+        if (show) visible++;
+      }
+      for (const c of cats) {
+        const anyVisible = Array.from(c.querySelectorAll('.exam')).some((x) => !x.hidden);
+        c.hidden = !anyVisible;
+      }
+      if (emptyEl) emptyEl.hidden = visible !== 0;
+      if (countEl) {
+        countEl.textContent =
+          query === '' && activeScope === 'all' && activeCat === ''
+            ? `${visible} credentials`
+            : `${visible} of ${items.length} match`;
+      }
+    }
+
+    /* ── Scope segmented control ─────────────────────────────────────── */
+    function setScope(scope, btn) {
+      activeScope = scope;
+      segBtns.forEach((b) => b.classList.toggle('is-active', b === btn));
+      stateSel.disabled = scope !== 'state';
+      if (scope !== 'state') { stateSel.value = ''; activeState = ''; }
+    }
+    segBtns.forEach((btn) => {
+      btn.addEventListener('click', () => setScope(btn.dataset.scope, btn));
+    });
+
+    /* ── Commit on Apply ─────────────────────────────────────────────── */
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        activeState = stateSel.value;
+        activeCat = catSel.value;
+        apply();
+      });
+    }
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        activeScope = 'all';
+        activeState = '';
+        activeCat = '';
+        query = '';
+        combo.value = '';
+        segBtns.forEach((b) => b.classList.toggle('is-active', b.dataset.scope === 'all'));
+        stateSel.value = '';
+        stateSel.disabled = true;
+        catSel.value = '';
+        closeCombo();
+        apply();
+      });
+    }
+    if (dirReset) {
+      dirReset.addEventListener('click', () => {
+        activeScope = 'all'; activeState = ''; activeCat = ''; query = ''; combo.value = '';
+        segBtns.forEach((b) => b.classList.toggle('is-active', b.dataset.scope === 'all'));
+        stateSel.value = ''; stateSel.disabled = true; catSel.value = '';
+        apply();
+      });
+    }
+
+    /* ── Search: live filter + autocomplete combobox ─────────────────── */
+    function scoreExam(e, tokens) {
+      let total = 0;
+      for (const t of tokens) {
+        let best = 0;
+        if (e.n === t) best = Math.max(best, 1000);
+        if (e.short === t) best = Math.max(best, 950);
+        if (e.aka.includes(t)) best = Math.max(best, 900);
+        if (e.n.startsWith(t)) best = Math.max(best, 600);
+        if (e.short.startsWith(t) || e.aka.some((a) => a.startsWith(t))) best = Math.max(best, 520);
+        if (e.n.includes(t)) best = Math.max(best, 420);
+        if (e.short.includes(t) || e.aka.some((a) => a.includes(t))) best = Math.max(best, 380);
+        const wordStart = e.w.filter((w) => w.startsWith(t)).length;
+        if (wordStart) best = Math.max(best, 140 + wordStart * 10);
+        if (e.ini.includes(t)) best = Math.max(best, 120);
+        const wordSub = e.w.filter((w) => w.includes(t)).length;
+        if (wordSub) best = Math.max(best, 70 + wordSub * 8);
+        if (best === 0) return -1;
+        total += best;
+      }
+      return total;
+    }
+
+    function esc(s) {
+      return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    }
+
+    let suggestions = [];
+    let activeOpt = -1;
+
+    function renderCombo() {
+      if (!suggestions.length) { closeCombo(); return; }
+      list.innerHTML = suggestions
+        .map((e, i) => {
+          const scopeTag = e.scope === 'state' ? 'State' : 'National';
+          const extra = e.state ? ` · ${esc(e.state)}` : '';
+          return `<li class="combobox-opt${i === activeOpt ? ' is-active' : ''}" role="option" id="combo-opt-${i}" aria-selected="${i === activeOpt}" data-i="${i}">
+            <span class="co-name">${esc(e.name)}</span>
+            <span class="co-meta">${scopeTag}${extra}</span>
+          </li>`;
+        })
+        .join('');
+      list.hidden = false;
+      combo.setAttribute('aria-expanded', 'true');
+      if (activeOpt >= 0) combo.setAttribute('aria-activedescendant', `combo-opt-${activeOpt}`);
+      else combo.removeAttribute('aria-activedescendant');
+    }
+
+    function openCombo() { if (suggestions.length) { list.hidden = false; combo.setAttribute('aria-expanded', 'true'); } }
+    function closeCombo() { list.hidden = true; combo.setAttribute('aria-expanded', 'false'); activeOpt = -1; combo.removeAttribute('aria-activedescendant'); }
+
+    function buildSuggestions() {
+      const q = combo.value.trim().toLowerCase();
+      if (!q) { closeCombo(); return; }
+      const tokens = q.split(/\s+/).filter(Boolean);
+      suggestions = INDEX
+        .map((e) => {
+          const s = scoreExam(e, tokens);
+          return s < 0 ? null : { e, s };
+        })
+        .filter(Boolean)
+        .sort((a, b) => b.s - a.s)
+        .slice(0, 8)
+        .map((x) => x.e);
+      activeOpt = -1;
+      renderCombo();
+    }
+
+    function move(dir) {
+      if (!suggestions.length) return;
+      activeOpt = (activeOpt + dir + suggestions.length) % suggestions.length;
+      renderCombo();
+      const el = document.getElementById(`combo-opt-${activeOpt}`);
+      if (el) el.scrollIntoView({ block: 'nearest' });
+    }
+
+    function go(href) { window.location.href = href; }
+
+    combo.addEventListener('input', () => {
+      query = combo.value.trim().toLowerCase();
+      apply();
+      buildSuggestions();
+    });
+    combo.addEventListener('focus', () => { if (combo.value.trim()) buildSuggestions(); });
+    combo.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') { e.preventDefault(); openCombo(); move(1); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); }
+      else if (e.key === 'Enter') {
+        if (activeOpt >= 0 && suggestions[activeOpt]) { e.preventDefault(); go(suggestions[activeOpt].href); }
+      } else if (e.key === 'Escape') { closeCombo(); }
+    });
+    list.addEventListener('click', (e) => {
+      const opt = e.target.closest('.combobox-opt');
+      if (!opt) return;
+      const i = Number(opt.dataset.i);
+      if (suggestions[i]) go(suggestions[i].href);
+    });
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.combobox')) closeCombo();
+    });
+
+    /* ── Sticky bar elevation ────────────────────────────────────────── */
+    if (bar) {
+      const sentinel = document.createElement('div');
+      sentinel.setAttribute('aria-hidden', 'true');
+      bar.parentNode.insertBefore(sentinel, bar);
+      const off = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--scroll-offset')) || 72;
+      const io = new IntersectionObserver(
+        (entries) => bar.classList.toggle('is-stuck', !entries[0].isIntersecting),
+        { rootMargin: `-${off}px 0px 0px 0px`, threshold: 0 }
+      );
+      io.observe(sentinel);
+    }
+
+    apply();
+  });
+</script>
+
 <style>
-  /* Local component styles for layout structure. Relying on global CSS for visual design. */
+  .sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
   .container {
-    max-width: 1200px;
+    max-width: var(--wrap-max);
     margin: 0 auto;
-    padding: var(--space-5) max(var(--wrap-pad), env(safe-area-inset-left));
+    padding-inline: max(var(--wrap-pad), env(safe-area-inset-left));
   }
-  .bg-cream { background-color: var(--cream); }
-  .bg-ink { background-color: var(--ink); color: var(--paper); }
-  .bg-primary { background-color: var(--primary); }
-  .color-paper { color: var(--paper); }
-  .color-ink { color: var(--ink); }
-  
+
+  /* ---------- Hero: slim, centred, slogan-forward ---------- */
   .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-gap-lg);
-    align-items: center;
-    min-height: 80vh;
+    text-align: center;
     padding-top: var(--space-section);
+    padding-bottom: var(--space-4);
   }
-  .hero-content h1 {
+  .hero-title {
+    font-family: var(--font-heading);
     font-size: var(--fs-hero);
-    line-height: 1.08;
-    letter-spacing: -0.025em;
-    margin-bottom: 1.5rem;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0 auto 0.7rem;
+    max-width: 17ch;
     text-wrap: balance;
   }
-  .hero-content .lede {
+  .hero-title em { font-style: italic; color: var(--primary); }
+  .hero-sub {
+    font-family: var(--font-body);
     font-size: var(--fs-prose);
     color: var(--muted);
-    max-width: 46ch;
+    max-width: 54ch;
+    margin: 0 auto 0.9rem;
+    line-height: 1.55;
     text-wrap: pretty;
   }
-  .cta-group { display: flex; gap: 1rem; align-items: center; margin: 2rem 0; flex-wrap: wrap; }
-
-  /* Enhanced Hero Art */
-  .hero-art { position: relative; width: 100%; height: 500px; display: flex; justify-content: center; align-items: center; }
-  .hero-gradient-blob {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, var(--primary) 0%, rgba(239, 101, 78, 0) 70%);
-    opacity: 0.4;
-    filter: blur(40px);
-    border-radius: 50%;
-    animation: pulseBlob 8s infinite alternate;
+  .hero-stat {
+    font-family: var(--font-mono);
+    font-size: var(--fs-small);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin: 0;
   }
-  .glass-card {
-    position: absolute;
-    background: var(--glass-bg);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--glass-border);
-    padding: 1rem 1.5rem;
-    border-radius: var(--radius-lg);
-    font-family: var(--font-heading);
-    font-size: 1.125rem;
-    box-shadow: var(--shadow-md);
-    z-index: 10;
-    display: flex;
+  .hero-note {
+    display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-  }
-  .step-num { font-family: var(--font-mono); color: var(--primary); font-size: 0.875rem; font-weight: bold; }
-  
-  @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
-  }
-  @keyframes pulseBlob {
-    0% { transform: scale(1); opacity: 0.4; }
-    100% { transform: scale(1.2); opacity: 0.6; }
-  }
-
-  .pathfinder-section { padding: var(--space-section) 0; }
-  .featured-section { padding: var(--space-section) 0; }
-  .states-section { padding: var(--space-section) 0; border-top: 1px solid var(--line); }
-  .states-intro { color: var(--muted); max-width: 68ch; line-height: 1.7; margin: 0 0 2.5rem; font-size: var(--fs-prose); }
-  .section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: var(--space-3);
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-  }
-  .section-header h2 { font-size: var(--fs-h2); line-height: 1.2; margin: 0; }
-  .view-all { white-space: nowrap; }
-  .credential-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
-    gap: var(--space-gap);
-  }
-
-  .trust-band { padding: var(--space-section) 0; }
-  .trust-layout {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: var(--space-gap-lg);
-    align-items: center;
-  }
-  .trust-stat { font-size: var(--fs-display); font-family: var(--font-serif); line-height: 1; }
-  .trust-content h2 { font-size: var(--fs-h2); line-height: 1.25; text-wrap: balance; }
-
-  .how-it-works-section { padding: var(--space-section-lg) 0; }
-  .two-column-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-gap-lg);
-    align-items: center;
-  }
-  .content-column h2 { font-size: var(--fs-h2); line-height: 1.25; }
-  .step-list h3 { font-size: var(--fs-h3); }
-  .step-list { list-style: none; padding: 0; counter-reset: step; }
-  .step-list li { position: relative; padding-left: 3rem; margin-bottom: 2rem; }
-  .step-list li::before { counter-increment: step; content: "0" counter(step); position: absolute; left: 0; top: 0; font-family: var(--font-mono); font-size: 1.25rem; font-weight: bold; color: var(--primary); }
-  .visual-column { position: relative; height: 100%; min-height: 400px; background: var(--cream); display: flex; align-items: center; justify-content: center; }
-  .grid-pattern { width: 80%; height: 80%; background-image: radial-gradient(var(--ink) 1px, transparent 1px); background-size: 20px 20px; opacity: 0.2; position: relative; }
-  .stamp { position: absolute; top: -1rem; left: -1rem; background: var(--primary); color: var(--paper); padding: 0.5rem 1rem; font-family: var(--font-mono); font-size: 0.875rem; font-weight: bold; transform: rotate(-5deg); z-index: 10; opacity: 1 !important; }
-  
-  .newsletter-section { padding: var(--space-section) 0; text-align: center; }
-  .newsletter-content h2 { font-size: var(--fs-h2); line-height: 1.25; text-wrap: balance; }
-  .newsletter-form { display: flex; gap: 1rem; justify-content: center; max-width: 500px; margin: 2rem auto; flex-wrap: wrap; }
-  .newsletter-form input {
-    flex: 1 1 240px;
-    min-width: 0;
-    padding: 1rem;
-    border: 2px solid var(--ink);
+    margin: 0.85rem 0 0;
     font-family: var(--font-body);
-    font-size: 1rem; /* >=16px stops iOS Safari auto-zoom on focus */
+    font-size: var(--fs-small);
+    letter-spacing: 0.04em;
+    color: var(--muted);
   }
-  .newsletter-form button {
-    padding: 1rem 2rem;
-    font-weight: bold;
-    border: 2px solid var(--ink);
+  .hero-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--primary);
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--primary) 60%, transparent);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--primary) 55%, transparent); }
+    70%  { box-shadow: 0 0 0 7px color-mix(in srgb, var(--primary) 0%, transparent); }
+    100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--primary) 0%, transparent); }
+  }
+
+  /* ---------- Sticky search + filter bar (single row on desktop) ---------- */
+  .dir-bar {
+    position: sticky;
+    top: var(--scroll-offset, 72px);
+    z-index: var(--z-nav);
+    background: var(--paper);
+    border-block: 1px solid var(--line);
+    padding: 0.6rem 0;
+    transition: box-shadow 0.3s ease;
+  }
+  .dir-bar.is-stuck { box-shadow: var(--shadow-md); }
+  .dir-bar-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .dir-search { display: flex; flex: 1 1 280px; min-width: 0; }
+  .combobox { position: relative; width: 100%; }
+  #dir-q {
+    width: 100%;
+    padding: 0.72rem 1rem;
+    font-family: var(--font-body);
+    font-size: 1rem; /* >=16px stops iOS auto-zoom */
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  #dir-q::placeholder { color: var(--muted); }
+  #dir-q:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-light);
+  }
+
+  /* Autocomplete dropdown */
+  .combobox-list {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    z-index: 5;
+    list-style: none;
+    margin: 0;
+    padding: 0.35rem;
+    max-height: 320px;
+    overflow-y: auto;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+  }
+  .combobox-opt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.6rem 0.7rem;
+    border-radius: calc(var(--radius) - 4px);
+    cursor: pointer;
+  }
+  .combobox-opt.is-active { background: var(--cream); }
+  .co-name { font-family: var(--font-body); font-weight: 600; font-size: 0.96rem; color: var(--ink); }
+  .combobox-opt.is-active .co-name { color: var(--primary); }
+  .co-meta {
+    flex: 0 0 auto;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+  }
+
+  /* Filter form: inline row, committed on Apply */
+  .dir-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+  }
+  .seg {
+    display: inline-flex;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .seg-btn {
+    appearance: none;
+    border: none;
+    background: var(--paper);
+    color: var(--muted);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    padding: 0.55rem 0.75rem;
+    min-height: var(--tap-min);
+    cursor: pointer;
+    border-right: 1px solid var(--line);
+    transition: color 0.2s ease, background 0.2s ease;
+  }
+  .seg-btn:last-child { border-right: none; }
+  .seg-btn:hover { color: var(--ink); }
+  .seg-btn.is-active { background: var(--ink); color: var(--paper); }
+  .seg-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
+
+  .dir-filters select {
+    appearance: none;
+    padding: 0.55rem 2rem 0.55rem 0.7rem;
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    color: var(--ink);
+    background: var(--paper)
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%236b7280' stroke-width='1.5'/%3E%3C/svg%3E")
+      no-repeat right 0.7rem center;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
     cursor: pointer;
     min-height: var(--tap-min);
+    max-width: 190px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .dir-filters select:disabled { opacity: 0.45; cursor: not-allowed; }
+  .dir-filters select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-light);
   }
 
-  /* ---------------- Responsive ---------------- */
+  .filter-actions { display: flex; gap: 0.4rem; }
+  .btn {
+    min-height: var(--tap-min);
+    padding: 0.55rem 1rem;
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  }
+  .btn-primary { background: var(--primary); color: var(--paper); border: 1px solid var(--primary); }
+  .btn-primary:hover { background: var(--ink); border-color: var(--ink); }
+  .btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+  .btn-ghost:hover { color: var(--ink); border-color: var(--ink); }
 
-  /* Tablet / narrow desktop: two-column blocks stop being readable well
-     before the phone breakpoint, so collapse them early. */
-  @media (max-width: 1024px) {
-    .hero { gap: var(--space-gap); }
-    .hero-art { height: 400px; }
-    .trust-layout { gap: var(--space-gap); }
+  /* ---------- Directory body ---------- */
+  .dir-body { padding-top: var(--space-6); padding-bottom: var(--space-section-lg); }
+  .dir-count {
+    font-family: var(--font-mono);
+    font-size: var(--fs-small);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 0 0 0.5rem;
   }
 
-  @media (max-width: 860px) {
-    .hero {
-      grid-template-columns: 1fr;
-      min-height: 0;
-      padding-top: var(--space-5);
-      text-align: left;
-    }
-    /* Decorative floating cards overlap badly once the column narrows;
-       they carry no information (aria-hidden) so they step aside. */
-    .hero-art { display: none; }
-    .hero-content .lede { max-width: none; }
+  .cat {
+    padding: var(--space-6) 0;
+    border-top: 1px solid var(--line);
+    scroll-margin-top: calc(var(--scroll-offset, 72px) + 140px);
+  }
+  .cat:first-of-type { border-top: none; padding-top: var(--space-3); }
 
-    .trust-layout {
-      grid-template-columns: 1fr;
-      gap: var(--space-4);
-      text-align: left;
-    }
-
-    .two-column-layout { grid-template-columns: 1fr; }
-    /* Lead with the words, not the decorative panel */
-    .visual-column { order: 2; min-height: 220px; }
-    .content-column { order: 1; }
+  .cat-head {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.4rem;
+  }
+  .cat-index {
+    font-family: var(--font-mono);
+    font-size: var(--fs-small);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--primary);
+  }
+  .cat-headtext { min-width: 0; flex: 1 1 60%; }
+  .cat-name {
+    font-family: var(--font-heading);
+    font-size: var(--fs-h2);
+    line-height: 1.1;
+    margin: 0;
+  }
+  .cat-desc {
+    font-family: var(--font-body);
+    font-size: var(--fs-small);
+    color: var(--muted);
+    margin: 0.3rem 0 0;
+    max-width: 72ch;
+    line-height: 1.55;
+  }
+  .cat-count {
+    margin-left: auto;
+    font-family: var(--font-mono);
+    font-size: var(--fs-small);
+    color: var(--muted);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.2rem 0.7rem;
+    white-space: nowrap;
   }
 
-  @media (max-width: 560px) {
-    .cta-group { gap: 0.75rem; margin: 1.5rem 0; }
-    .cta-group > .button { flex: 1 1 100%; }
-    .newsletter-form { flex-direction: column; margin: 1.5rem auto; }
-    .newsletter-form input,
-    .newsletter-form button { width: 100%; }
-    .step-list li { padding-left: 2.5rem; margin-bottom: 1.5rem; }
-    .visual-column { min-height: 170px; }
+  /* Clean ruled index: responsive columns, no cards, no icons. */
+  .exam-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+    column-gap: var(--space-gap);
+  }
+  .exam { border-top: 1px solid var(--line); }
+  .exam-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* Constant padding — no horizontal shift on hover, so long names never
+       re-wrap and the rows below never jump. */
+    padding: 0.95rem 0.9rem;
+    text-decoration: none;
+    color: var(--ink);
+    transition: background var(--transition);
+  }
+  /* Hover accent bar (no layout impact) */
+  .exam-row::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 18%;
+    height: 64%;
+    width: 3px;
+    border-radius: 3px;
+    background: var(--primary);
+    transform: scaleY(0);
+    transition: transform var(--transition);
+  }
+  .exam-row:hover { background: var(--cream); }
+  .exam-row:hover::before,
+  .exam-row:focus-visible::before { transform: scaleY(1); }
+  .exam-text { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+  .exam-name {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.02rem;
+    line-height: 1.3;
+    transition: color 0.2s ease;
+  }
+  .exam-row:hover .exam-name,
+  .exam-row:focus-visible .exam-name { color: var(--primary); }
+  .exam-meta {
+    font-family: var(--font-body);
+    font-size: var(--fs-small);
+    color: var(--muted);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .exam-arrow {
+    margin-left: auto;
+    flex: 0 0 auto;
+    color: var(--primary);
+    font-size: 1.05rem;
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity var(--transition), transform var(--transition);
+  }
+  .exam-row:hover .exam-arrow,
+  .exam-row:focus-visible .exam-arrow { opacity: 1; transform: none; }
+
+  .dir-empty { text-align: center; padding: var(--space-section) var(--wrap-pad); }
+  .dir-empty p {
+    font-family: var(--font-heading);
+    font-size: var(--fs-h2);
+    color: var(--ink);
+    margin: 0 0 1.25rem;
+  }
+  #dir-reset {
+    padding: 0.7rem 1.4rem;
+    border: 1px solid var(--primary);
+    background: var(--primary);
+    color: var(--paper);
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  #dir-reset:hover { background: var(--ink); border-color: var(--ink); }
+
+  @media (max-width: 700px) {
+    .hero { padding-top: var(--space-6); }
+    .cat-head { gap: 0.6rem; }
+    .cat-count { margin-left: 0; }
+    .dir-search { flex-basis: 100%; }
+    .dir-filters { width: 100%; }
+    .dir-filters select { max-width: none; flex: 1 1 130px; }
   }
 </style>

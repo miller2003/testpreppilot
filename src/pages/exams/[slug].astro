@@ -78,7 +78,7 @@ const natComparison = program?.comparison || null;
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
-  { label: 'Exams', href: '/exams' },
+  { label: 'Exams', href: '/' },
   { label: cat?.name || 'Exams', href: `/categories/${exam.category}` },
   { label: exam.name, href: `/exams/${exam.slug}` }
 ];
@@ -457,7 +457,7 @@ const credentialSchema =
             <div class="eg-callout eg-progress">
               <strong>Full guide in progress.</strong> Our editorial team is researching the official requirements for
               this credential right now. Every section below will be filled with verified, source-linked detail.
-              Meanwhile, <a href="/exams">browse the full directory</a>.
+              Meanwhile, <a href="/">browse the full directory</a>.
             </div>
           </>
         )}

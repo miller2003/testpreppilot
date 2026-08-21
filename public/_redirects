@@ -6,3 +6,5 @@
 /reviews /about 301
 /contact /about 301
 /how-it-works /about 301
+# Homepage is now the exam directory; the standalone /exams listing folds into /.
+/exams / 301

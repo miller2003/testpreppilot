@@ -16,10 +16,13 @@ export default defineConfig({
       // /privacy-policy is a noindex redirect to /privacy — same reasoning.
       // /how-it-works, /reviews and /contact now redirect to /about (their
       // content was folded into the E-E-A-T hub) — exclude the same way.
+      // /exams now redirects to / (the homepage IS the directory) — exclude the
+      // bare index but keep /exams/<slug> detail pages indexable.
       filter: (page) =>
         !/\/affiliate-disclosure\/?$/.test(page) &&
         !/\/privacy-policy\/?$/.test(page) &&
-        !/\/(how-it-works|reviews|contact)\/?$/.test(page),
+        !/\/(how-it-works|reviews|contact)\/?$/.test(page) &&
+        !/\/exams\/?$/.test(page),
       serialize(item) {
         const url = new URL(item.url);
         const p = url.pathname.replace(/\/$/, '') || '/';
@@ -32,7 +35,7 @@ export default defineConfig({
         }
         // Root + primary hubs
         if (p === '/') { item.priority = 1.0; item.changefreq = 'daily'; return item; }
-        if (p === '/exams' || p === '/states' || p === '/explore') {
+        if (p === '/states' || p === '/explore') {
           item.priority = 0.9; item.changefreq = 'daily'; return item;
         }
         // Category hubs
