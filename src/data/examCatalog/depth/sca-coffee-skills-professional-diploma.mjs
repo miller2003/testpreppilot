@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Coffee & specialty-beverage credentialing desk',
     bio: 'SCA certification structure comes from the Specialty Coffee Association official pages and is revised with each curriculum update. Wage figures come from the BLS OEWS series named by code, with the occupational fit noted since BLS has no barista-specific code. This desk states plainly when a figure is not published.',
     url: '/editorial-policy'

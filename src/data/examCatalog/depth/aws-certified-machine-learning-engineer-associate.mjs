@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, data & analytics certifications desk',
     bio: 'We cover AWS certifications. Format and fee facts come from AWS official pages and are revised frequently; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
     url: '/editorial-policy'

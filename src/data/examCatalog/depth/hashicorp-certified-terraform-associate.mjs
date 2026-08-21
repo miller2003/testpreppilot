@@ -1,7 +1,7 @@
 // Depth content for: hashicorp-certified-terraform-associate
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This desk covers cloud and infrastructure-as-code certifications. Exam structure, fees, validity and objectives come from the vendor\u2019s own certification pages and are checked against the current exam version — HashiCorp retires and replaces exam versions on a schedule, and studying a retired blueprint is the most common way candidates waste money here. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

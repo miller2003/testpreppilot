@@ -1,7 +1,7 @@
 // Depth content for: new-york-registered-nurse-license
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Nursing licensure desk',
     bio: 'New York registered nurse facts in this guide come from the New York State Education Department Office of the Professions (op.nysed.gov) nursing licensure pages and its published fee structure, the NCSBN NCLEX-RN test plan and exam information, and Pearson VUE registration materials, which are the official sources for the application, the exam, the format and the registration cycle. NYSED does not publish a single headline pass rate for the state, while NCSBN publishes pass-rate statistics by state and by nursing program, and we report that structure honestly rather than inventing a figure. Wage figures come from the BLS Occupational Outlook Handbook occupation page named by SOC code (May 2024 data).',
     url: '/editorial-policy'

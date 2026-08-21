@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Medical & health professions admissions desk',
     bio: 'The MCAT structure, scoring, fees, and test-volume figures are drawn from the AAMC\u2019s official MCAT pages, including the MCAT Essentials and the AAMC scheduling-fee page. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook Physicians and Surgeons profile (SOC 29-1210 series), May 2024 wage data.',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'English-language assessment desk',
     bio: 'The TOEIC Listening and Reading test structure (question counts, timing, scoring) is drawn from ETS official TOEIC materials, which are revised on a published cycle. There is no single pass rate because TOEIC has no pass/fail standard — organizations and schools set their own cut scores, and we explain that plainly. Score-use and fee information is stated as of the current ETS program page.',
     url: '/editorial-policy'

@@ -2,7 +2,7 @@
 // Corrections Officer Entrance Exam
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Public-safety hiring exams desk',
     bio: 'Corrections officer written-exam structure, content domains and typical passing standards are verified against the standardized testing providers that administer these exams for state and local agencies (including CPS HR and the National Testing Network) and against published exam-preparation guidance from state departments of corrections. Because the exam is state-administered, exact question counts, passing scores and physical-test components are reported as the published state patterns rather than one universal figure. Wage and employment figures come from the Bureau of Labor Statistics occupational series for correctional officers and jailers, named by SOC code.',
     url: '/editorial-policy'

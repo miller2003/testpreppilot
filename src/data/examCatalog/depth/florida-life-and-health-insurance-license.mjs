@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Insurance licensing & producer career desk',
     bio: 'This Florida life and health insurance producer guide is compiled from the Florida Department of Financial Services licensing pages, the Pearson VUE candidate information for the Florida insurance exams, and the BLS Occupational Outlook Handbook (May 2024 data). Florida DFS publishes no pass rates for the insurance licensing exams, and private estimates circulating online are labeled as such. Fees, question counts, and retake rules come from the official pages and should be confirmed there before registering.',
     url: '/editorial-policy'

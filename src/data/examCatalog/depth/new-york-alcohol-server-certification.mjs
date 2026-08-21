@@ -1,7 +1,7 @@
 // Depth content for: new-york-alcohol-server-certification
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'NYSLA alcohol training desk',
     bio: 'New York alcohol server facts are drawn from the New York State Liquor Authority (SLA) Alcohol Training Awareness Program (ATAP) pages, New York Alcoholic Beverage Control Law Section 65, and the approved-provider documentation that implements the program. ATAP is voluntary by state law for most workers, so there is no state-administered exam and no published pass rate, and we state that plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
     url: '/editorial-policy'

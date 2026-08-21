@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud-native & DevOps certifications desk',
     bio: 'The Docker Certified Associate exam structure and program status are drawn from Docker\u2019s official certification materials and announcements, which are updated on Docker\u2019s published cycle; Docker does not publish cohort pass rates, and we state that plainly. Wage figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024). Where Docker or BLS does not publish a figure, we say so rather than estimating.',
     url: '/editorial-policy'

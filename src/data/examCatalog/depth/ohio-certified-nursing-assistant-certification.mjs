@@ -4,7 +4,7 @@
 // nursing assistant wages.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Allied health & nurse-aide certification desk',
     bio: 'Ohio STNA facts in this guide come from the Ohio Department of Health (ODH) Nurse Aide Registry pages and the Ohio nurse aide candidate handbook published by the testing vendor, Headmaster / D&S Diversified Technologies, which is the official source for the question count, time limit, passing standard, fees and retake rules. Ohio does not publish a single official pass rate for the STNA competency evaluation, so we state that plainly and report the published structure of the exam instead. Wage figures come from the BLS Occupational Outlook Handbook occupation named by SOC code (May 2024 data).',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Emergency management & NIMS desk',
     bio: 'IS-800 structure and content come from the FEMA Emergency Management Institute official course page and are revised with each update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
     url: '/editorial-policy'

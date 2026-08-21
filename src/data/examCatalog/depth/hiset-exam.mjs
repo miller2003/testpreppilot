@@ -3,7 +3,7 @@
 // state adult-education agencies; education-return wage data come from BLS.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'High school equivalency & adult education desk',
     bio: 'This guide is compiled and maintained by our adult-education desk. HiSET structure and scoring come from ETS, which develops and administers the HiSET program, and from named state adult-education agencies that set fees and credential rules, so we state the ETS baseline and flag anything a state sets on its own. Wage data come from the BLS Education Pays series, which reports median weekly earnings by education level. This desk states plainly when a figure is not published.',
     url: '/editorial-policy'

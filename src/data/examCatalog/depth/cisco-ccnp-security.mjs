@@ -3,7 +3,7 @@
 // (90 min), pass/fail with no published numeric passing score or pass rate.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This desk covers networking and IT certifications. Exam structure, fees and rules come from the vendor certification pages (Cisco, CompTIA, AWS, Google), which are revised and sometimes retired on fixed schedules; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

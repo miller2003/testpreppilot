@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Fitness & wellness credentialing desk',
     bio: 'Yoga Alliance registration requirements come from the Yoga Alliance official pages and are revised with each standards update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
     url: '/editorial-policy'

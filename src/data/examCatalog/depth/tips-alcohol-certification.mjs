@@ -2,7 +2,7 @@
 // TIPS Alcohol Certification
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'We cover the TIPS (Training for Intervention ProcedureS) alcohol certification program. Course structure, exam mechanics and pricing come from the TIPS official pages and approved-provider materials, and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
     url: '/editorial-policy'

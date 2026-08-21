@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Speech-language pathology credentialing desk',
     bio: 'ASHA certification structure comes from the American Speech-Language-Hearing Association official pages and is revised with each standards update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
     url: '/editorial-policy'

@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Trades & skilled-licensure desk',
     bio: 'This guide is compiled and maintained by our trades desk. NCCER welding credentials are modular — a written test plus a hands-on performance profile per module, with the hands-on weld coupons assessed against inspection criteria — and the credential is one route among several (AWS certification and state/national code tests are others), so we state plainly what NCCER itself verifies. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

@@ -2,7 +2,7 @@
 // WSET Level 3 Award in Wines
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Wine & hospitality education desk',
     bio: 'WSET Level 3 structure, assessment format and pass standards come from the Wine & Spirit Education Trust official pages and the Level 3 Award in Wines qualification specification, and are revised with each syllabus update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure \u2014 such as a WSET pass rate \u2014 is not published.',
     url: '/editorial-policy'

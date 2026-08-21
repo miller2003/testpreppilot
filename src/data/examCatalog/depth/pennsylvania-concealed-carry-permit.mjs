@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Personal security & firearms licensing desk',
     bio: 'Pennsylvania LTCF facts in this guide come from the Pennsylvania State Police firearms pages and county sheriff licensing pages, including the $20 fee, the five-year validity, the 45-day decision requirement and the PICS background check; the LTCF has no training requirement and no examination, and no approval-rate statistics are published, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code, with an honest note that the LTCF is a personal-carry permit rather than a job license.',
     url: '/editorial-policy'

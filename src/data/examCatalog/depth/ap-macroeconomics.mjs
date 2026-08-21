@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Advanced Placement & college-credit desk',
     bio: 'The AP Macroeconomics exam structure (question counts, timing, scoring weights) is drawn from the College Board official AP Macroeconomics course and exam description, which was updated for the current course framework. The College Board publishes annual AP score distributions for every subject, and we cite that practice.',
     url: '/editorial-policy'

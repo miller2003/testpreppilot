@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Allied health certifications desk',
     bio: 'The NHA CCMA exam structure (question count, time limit, passing scaled score, renewal terms) is drawn from the NHA candidate handbook and NHA certification pages. Pass-rate figures are as reported by NHA and third-party compilations of NHA statistics, and we flag that NHA does not maintain a single always-visible public pass-rate page. Wage figures come from the BLS Occupational Outlook Handbook Medical Assistants profile (SOC 31-9092), May 2024 data.',
     url: '/editorial-policy'

@@ -4,7 +4,7 @@
 // 350-401 core plus a wireless concentration (300-425 ENWLSD / 300-430 ENWLSI).
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This desk covers networking and IT certifications. The most important fact about "CCNP Wireless" is that Cisco retired the standalone credential on 24 February 2020, so we state that plainly and cover the current path — CCNP Enterprise with a wireless concentration — which is what a candidate searching for CCNP Wireless actually sits today. Exam structure, fees and rules come from the vendor certification pages, which are revised and sometimes retired on fixed schedules; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

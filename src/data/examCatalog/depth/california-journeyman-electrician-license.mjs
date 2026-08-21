@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Skilled trades licensure desk',
     bio: 'The California electrician certification facts below are drawn from the California Department of Industrial Relations (DIR) Division of Labor Standards Enforcement (DLSE) Electrician Certification Unit requirements and the PSI candidate information for the certification exam; where a fee or retake detail is not confirmed on the official page, we say so plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation page for Electricians (May 2024 data), cited by SOC code.',
     url: '/editorial-policy'

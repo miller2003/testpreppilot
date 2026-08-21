@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Trades & skilled-licensure desk',
     bio: 'This guide is compiled and maintained by our trades desk. California contractor licensing is administered by the Contractors State License Board (CSLB) under Business and Professions Code Section 7000 et seq., with examinations delivered by PSI Services; exam structure, fees, experience requirements and renewal rules come from the CSLB applicant materials and the CSLB-licensed classification guides. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook (May 2024), named by SOC code. We state plainly where a figure is not published rather than guessing.',
     url: '/editorial-policy'

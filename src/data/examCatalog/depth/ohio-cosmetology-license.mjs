@@ -1,7 +1,7 @@
 // Depth content for: ohio-cosmetology-license
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cosmetology licensing desk',
     bio: 'The Ohio cosmetology exam facts below are drawn from the Ohio State Cosmetology and Barber Board official Testing Information Packets (TIPs), the board\u2019s examination-center procedures, and the Ohio Revised Code chapter 4713. Where the state does not publish a figure, such as pass rates, we say so plainly. Wage figures come from the BLS Occupational Outlook Handbook, which classifies by job duties rather than by license, cited by SOC code with May 2024 data.',
     url: '/editorial-policy'

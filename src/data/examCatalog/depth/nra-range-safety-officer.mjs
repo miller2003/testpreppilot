@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Recreation & safety certifications desk',
     bio: 'This desk covers recreation, range and safety credentials. Program structure and rules come from the certifying body\'s official pages (NRA), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code, with explicit caveats where no direct occupation exists. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

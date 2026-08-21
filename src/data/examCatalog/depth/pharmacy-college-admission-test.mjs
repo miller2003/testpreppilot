@@ -3,7 +3,7 @@
 // plainly and covers the legacy exam for reference plus what admissions use now.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'College admissions & graduate-health assessments desk',
     bio: 'This guide is compiled and maintained by our admissions desk. PCAT retirement dates come from Pearson and the American Association of Colleges of Pharmacy (AACP) announcements, which we verified directly. Wage and education data come from the BLS series named by SOC code. Because the PCAT no longer exists, this desk states that plainly and does not sell the false impression that it can still be taken; legacy format details are labelled as historical.',
     url: '/editorial-policy'

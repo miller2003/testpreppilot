@@ -2,7 +2,7 @@
 // See examDepth.mjs for the full schema. All figures verified 2026-08.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Technology & federal licensing desk',
     bio: 'This guide is compiled and maintained by our federal-licensing desk. Amateur radio licensing is governed by the Federal Communications Commission under 47 CFR Part 97, and we take the exam structure and passing standards from the regulations themselves — Element 3 is 35 questions with a minimum passing score of 26, as codified in 47 CFR \u00a797.503(b)(2). The question pool, its effective dates and its size come from the National Conference of Volunteer Examiner Coordinators (NCVEC), which publishes the pool used by all Volunteer Examiner teams. The $35 FCC application fee is per FCC Order DA-22-389, in effect since 19 April 2022, and the volunteer-examiner session fee is set by each VEC, so we state the range and flag that it varies. The FCC does not publish pass rates for amateur examinations, and we state that plainly rather than inventing a figure. There is no Bureau of Labor Statistics occupation for amateur radio operators, so the salary section states that honestly and does not fabricate a wage.',
     url: '/editorial-policy'

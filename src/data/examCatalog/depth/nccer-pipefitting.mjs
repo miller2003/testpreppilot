@@ -1,7 +1,7 @@
 // Depth content for: nccer-pipefitting
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Trades & skilled-licensure desk',
     bio: 'This guide is compiled and maintained by our trades desk. NCCER credentials are modular, and the pipefitting pathway combines the NCCER Pipefitting curriculum, with per-module written tests at a 70 percent threshold by convention, and the journey-level Industrial Pipefitter assessment, which is a three-hour closed-book written test with a 75 percent minimum passing score plus a hands-on performance verification, so we state plainly what each leg of the pathway verifies. The assessment facts come from NCCER\u2019s official Industrial Pipefitter specification sheet. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

@@ -4,7 +4,7 @@
 // convention, tracked in the NCCER registry.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Trades & skilled-licensure desk',
     bio: 'This guide is compiled and maintained by our trades desk. NCCER credentials are modular — a written test plus a hands-on performance profile per module — and scaffolding specifically is delivered through authorized training programs, with the credential tracked in the NCCER registry that employers and programs use to verify training. We state plainly what NCCER itself certifies versus what the broader pathway requires, and we note where NCCER publishes no statistics at all. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

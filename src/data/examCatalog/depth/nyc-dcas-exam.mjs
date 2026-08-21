@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Public service & civil-service testing desk',
     bio: 'We cover New York City civil-service examinations administered by DCAS. Format and fee facts come from NYC DCAS official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
     url: '/editorial-policy'

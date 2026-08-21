@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Teacher licensure & education certifications desk',
     bio: 'The Praxis Music exam structure is drawn from the ETS Praxis official test information for test code 5113, which is updated on a published revision cycle; ETS does not publish pass rates, and each state sets its own passing score, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024).',
     url: '/editorial-policy'

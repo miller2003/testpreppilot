@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cosmetology, barbering & appearance enhancement licensure desk',
     bio: 'This New York cosmetology licensing guide is compiled from the New York State Department of State, Division of Licensing Services pages for cosmetology and the appearance enhancement laws it administers, and from the BLS Occupational Outlook Handbook (May 2024 data). NYS DOS does not publish pass rates for the cosmetology examinations and reports results only as pass or fail, which we state plainly. Fees and exam logistics are taken from the official DOS pages and the current amounts should be confirmed there before applying.',
     url: '/editorial-policy'

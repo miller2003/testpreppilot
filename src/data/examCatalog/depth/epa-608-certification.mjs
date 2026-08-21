@@ -5,7 +5,7 @@
 // (May 2024) for HVAC mechanics (SOC 49-9021).
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Workplace safety & trades certifications desk',
     bio: 'This guide is compiled and maintained by our safety and trades desk. Federal programmes are described from the issuing agency’s own material — OSHA’s Outreach Training Program requirements and its published procedures, and the EPA’s Section 608 regulation and certifying-organisation rules. This matters more than usual here, because both areas are crowded with resellers whose claims about card validity, expiry and employer acceptance do not match the agency’s position. Where the agency deliberately publishes no figure — OSHA does not publish Outreach pass rates — we say that rather than invent one.',
     url: '/editorial-policy'

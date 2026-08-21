@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Notary public licensing desk',
     bio: 'The California notary public exam facts below are drawn from the California Secretary of State notary public requirements, the SOS notary regulations, and the exam administrator CPS HR Consulting; where a figure is not published by the state, we say so plainly. Salary figures come from the closest official BLS data to the notary role, which is the Legal Support Workers, All Other line in the BLS Occupational Outlook Handbook data for occupations not covered in detail (May 2024 data), cited by SOC code, with the mismatch stated honestly.',
     url: '/editorial-policy'

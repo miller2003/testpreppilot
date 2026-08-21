@@ -2,7 +2,7 @@
 // LPIC-1 Linux System Administrator (exams 101-500 and 102-500).
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & Linux certifications desk',
     bio: 'This guide is compiled and maintained by our IT-certifications desk. LPIC-1 exam structure, version numbers, validity and language options come from the Linux Professional Institute (LPI) official certification pages and the Pearson VUE LPI portal, which we verified directly. LPI publishes no pass-rate statistics, and we state that plainly. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

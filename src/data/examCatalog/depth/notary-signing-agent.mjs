@@ -2,7 +2,7 @@
 // Notary Signing Agent Certification
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Legal support & administrative certifications desk',
     bio: 'This desk covers administrative and legal-support credentials. Program structure and rules come from the certifying bodies\u2019 official pages (the National Notary Association and state notary commissions), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code, used as context with an explicit caveat because BLS has no signing-agent occupation. When a figure is not published \u2014 or when no single national standard exists \u2014 we say so plainly rather than guessing.',
     url: '/editorial-policy'

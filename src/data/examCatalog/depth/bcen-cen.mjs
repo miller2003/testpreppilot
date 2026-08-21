@@ -2,7 +2,7 @@
 // See examDepth.mjs for the full schema. All figures verified 2026-08.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Nursing & healthcare certification desk',
     bio: 'This guide is compiled and maintained by our healthcare-certifications desk. The CEN credential is owned and administered by the Board of Certification for Emergency Nursing (BCEN), and we track the exam by its published content outline and passing point. The 2026 CEN content outline takes effect on 6 July 2026, with a passing score set by the 2026 CEN Passing Point Study, and we state both as published by BCEN. Exam length, item counts, the pass-fail reporting model and the fee schedule come from BCEN\u2019s own CEN pages and candidate materials; the fee differs by Emergency Nurses Association membership status, which we flag. Pass-rate information comes from BCEN\u2019s published certification exam statistics, which report exams passed and failed rather than a first-time breakout, so we present the published numbers and say plainly what they do and do not show. Wage figures come from the Bureau of Labor Statistics occupation Registered Nurses (SOC 29-1141), named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

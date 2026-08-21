@@ -1,7 +1,7 @@
 // Depth content for: icc-residential-building-inspector
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Trades & construction certifications desk',
     bio: 'This guide is compiled and maintained by our construction and trades desk. ICC exam structure, content outlines and fees come from the International Code Council certification catalogue and the exam publisher materials that cite it, and we flag where the fee differs between members and non-members. Certification validity and renewal terms come from ICC policy pages. Wage figures come from the Bureau of Labor Statistics occupational series named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Alcohol responsibility & hospitality certifications desk',
     bio: 'Pennsylvania RAMP facts in this guide come from the Pennsylvania Liquor Control Board (PLCB) RAMP pages, including the Server/Seller Training requirement, the 80 percent exam standard, the six-month and 180-day deadlines and the two-year certification validity; the PLCB publishes no pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
     url: '/editorial-policy'

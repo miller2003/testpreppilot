@@ -18,7 +18,7 @@ const { provider } = Astro.props;
       <li>{feature}</li>
     ))}
   </ul>
-  <a href={provider.affiliateUrl || provider.url} class="button affiliate-cta" target="_blank" rel="noopener noreferrer">
+  <a href={provider.affiliateUrl || provider.url} class="button affiliate-cta" target="_blank" rel="sponsored nofollow noopener noreferrer">
     Start with {provider.name}
   </a>
   <p class="disclosure-line">

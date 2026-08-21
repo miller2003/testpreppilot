@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'College admissions & standardized-testing desk',
     bio: 'We track College Board testing programs and their role in college admission. Fee and format facts come from the College Board official pages and are revised each testing year; wage and education-earnings figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
     url: '/editorial-policy'

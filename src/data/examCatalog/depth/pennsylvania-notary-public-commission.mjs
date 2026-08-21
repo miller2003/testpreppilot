@@ -1,7 +1,7 @@
 // Depth content for: pennsylvania-notary-public-commission
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Notary public licensing desk',
     bio: 'The Pennsylvania notary public facts below are drawn from the Pennsylvania Department of State notary program, the Revised Uniform Law on Notarial Acts (57 Pa.C.S. Chapter 3), and the Pearson VUE Pennsylvania notary examination materials. Where a figure is not published by the state, such as pass rates or a raw pass count, we say so plainly. Salary figures come from the closest official BLS data to the notary role, cited by SOC code with May 2024 data, with the mismatch stated honestly because the BLS does not publish a notary public occupation.',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Securities & financial licensing desk',
     bio: 'This desk covers FINRA and NASAA qualification exams. Fees and exam structure come from the FINRA qualification-exam pages and the NASAA exam outlines, which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a regulator does not publish a figure, we say so plainly rather than guessing.',
     url: '/editorial-policy'

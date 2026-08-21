@@ -1,7 +1,7 @@
 // Depth content for: microsoft-pl-200
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This desk covers Microsoft role-based certifications. Exam structure, fees, scoring and retirement dates come from the Microsoft Learn official pages, which are revised regularly — Microsoft retires and replaces exams on a published schedule, and studying a retiring exam without a plan is the most common way candidates waste money here. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

@@ -2,7 +2,7 @@
 // OCI Foundations Associate 2025 (1Z0-1085-25) is Oracle's entry-level cloud credential.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud & database certifications desk',
     bio: 'This guide is compiled by our cloud and database certifications desk. Oracle rewrites its OCI Foundations exam on a roughly annual cadence, and candidates frequently buy material for the previous exam version, so we state the current exam code and number of questions explicitly and warn when an older study guide will not match. Exam structure, passing scores, and pricing come from Oracle\u2019s education pages and the official exam PDF. Wage figures come from the Bureau of Labor Statistics occupational series closest to the developer and cloud roles this credential feeds, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

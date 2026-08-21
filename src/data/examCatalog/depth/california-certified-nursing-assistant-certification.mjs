@@ -3,7 +3,7 @@
 // administered by Headmaster and Credentia, plus BLS nursing assistant wages.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Allied health & nurse-aide certification desk',
     bio: 'California CNA facts in this guide come from the California Department of Public Health (CDPH) Aide and Technician Certification Section and the candidate handbooks of the two testing vendors the state uses (Headmaster / D&S Diversified Technologies and Credentia), supplemented by county and training-program pages that publish the current fee schedule. California does not publish a single official pass rate for the nurse assistant competency evaluation, so we state that plainly and report the published structure of the exam instead. Wage figures come from the BLS Occupational Outlook Handbook occupation named by SOC code (May 2024 data).',
     url: '/editorial-policy'

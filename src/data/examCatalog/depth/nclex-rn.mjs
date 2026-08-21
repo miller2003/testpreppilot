@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Nursing & healthcare certification desk',
     bio: 'This guide is compiled and maintained by our healthcare-certifications desk. The NCLEX is owned and operated by the National Council of State Boards of Nursing (NCSBN), and we track the published test plan by its effective date - the current RN Test Plan became effective 1 April 2026. Exam length, the adaptive stopping rule, the passing standard and the fees come from NCSBN and the individual Nursing Regulatory Bodies; fees and retake rules vary by state board, so we state the published ranges and flag where you must check your own board. Wage figures come from the Bureau of Labor Statistics occupation Registered Nurses (SOC 29-1141), named by SOC code; BLS classifies by job duties rather than by license.',
     url: '/editorial-policy'

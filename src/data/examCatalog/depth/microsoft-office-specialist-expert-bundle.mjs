@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Office productivity & desktop-applications desk',
     bio: 'We cover Microsoft Office Specialist certifications. The Expert-credential requirements in this guide come from Microsoft Learn official pages (Associate prerequisite plus two of three Expert exams for Office 2019) and are revised; wage figures come from the BLS occupational series named by code. Microsoft publishes no pass rates for MOS exams, which we state plainly.',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Real estate licensure desk',
     bio: 'The Ohio real estate salesperson exam facts below are drawn from the Ohio Division of Real Estate and Professional Licensing (under the Ohio Department of Commerce) requirements and the PSI candidate information for the Ohio salesperson exam; where a passing score or fee is not confirmed on the official page, we say so plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation page for Real Estate Brokers and Sales Agents (May 2024 data), cited by SOC code.',
     url: '/editorial-policy'

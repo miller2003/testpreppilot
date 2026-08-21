@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Medical imaging & sonography certifications desk',
     bio: 'ARDMS structure and requirements come from the American Registry for Diagnostic Medical Sonography official pages and are revised with each exam update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
     url: '/editorial-policy'

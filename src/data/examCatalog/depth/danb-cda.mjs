@@ -3,7 +3,7 @@
 // row carries a note/source. Omitted fields were not verifiable — not invented.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Allied health & clinical credentials desk',
     bio: 'This guide is compiled and maintained by our allied-health desk. We work from the certifying board\'s own published material — the current exam blueprint or content outline, the candidate handbook, the fee schedule and any pass-rate disclosure the board releases — rather than from coaching-school summaries, which routinely lag a blueprint revision by a year or more. Wage and outlook figures come from the Bureau of Labor Statistics occupational series that matches the role, and we name the SOC code so you can check it yourself. Where a board publishes no pass rate, we say so instead of estimating one.',
     url: '/editorial-policy'

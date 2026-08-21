@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Beauty, trades & skilled-licensure desk',
     bio: 'This desk covers beauty and skilled-licensure exams. Exam structure, fees and rules come from the testing body (NIC) and the state barber boards, which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Beauty, trades & skilled-licensure desk',
     bio: 'This guide is compiled and maintained by our skilled-licensure desk, which covers exams that sit between a vocational program and a state licence. The NIC Cosmetology Practical Examination is the performance counterpart to the written theory exam, and it is the one candidates most often underestimate because they have done the services hundreds of times in school. The catch is that the exam grades a specific, written procedure — section order, timing, sanitation checkpoints and the mannequin-and-tool setup — not your salon intuition. We cite the NIC Candidate Information Bulletin and name the testing vendor and the state board where details differ, and we state plainly that some states have eliminated the practical entirely or replaced it with a different format. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

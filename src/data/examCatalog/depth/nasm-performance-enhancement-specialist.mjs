@@ -2,7 +2,7 @@
 // NASM Performance Enhancement Specialist (PES).
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Fitness & personal-training certification desk',
     bio: 'This guide is compiled and maintained by our fitness-certification desk. NASM PES exam structure, scoring, pricing and validity come from the National Academy of Sports Medicine (NASM) official pages and the NASM store, which we verified directly; the credential\'s no-expiry status is NASM\'s own published statement. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate and that its wage data reflects employer wages, understating independent trainers.',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'State licensing & DMV exams desk',
     bio: 'Pennsylvania PennDOT facts in this guide come from the official PennDOT driver-licensing pages and the Pennsylvania Driver\'s Manual, including the 18-question knowledge test, the 15-of-18 passing standard, the one-business-day retake rule, the three-attempt fee structure and the one-year learner\'s permit; PennDOT does not publish pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
     url: '/editorial-policy'

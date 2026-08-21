@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Beauty & licensed-occupations desk',
     bio: 'NIC esthetics examination structure comes from the NIC (National-Interstate Council of State Boards of Cosmetology) official pages and state boards, and requirements vary by state and are revised. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
     url: '/editorial-policy'

@@ -1,7 +1,7 @@
 // Depth content for: associate-in-insurance
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Risk management & insurance education desk',
     bio: 'This guide is compiled and maintained by our insurance-education desk. Program structure, exam format, testing windows and fees come from The Institutes\u2019 official course and exam pages, which we re-check each quarter because the designation portfolio is revised periodically. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by designation.',
     url: '/editorial-policy'

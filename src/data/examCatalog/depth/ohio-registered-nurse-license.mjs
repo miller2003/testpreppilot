@@ -3,7 +3,7 @@
 // fees, format, renewal, plus BLS registered nurse wages.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Nursing licensure desk',
     bio: 'Ohio RN facts in this guide come from the Ohio Board of Nursing (OBN) licensure pages and its published fee schedule, the NCSBN NCLEX-RN exam materials, and Pearson VUE registration information, which are the official sources for the application, fees, exam format and renewal cycle. The OBN does not publish a single official statewide pass rate for the NCLEX beyond program-level data, and NCSBN publishes pass-rate statistics nationally, so we report the structure honestly rather than inventing a figure. Wage figures come from the BLS Occupational Outlook Handbook occupation named by SOC code (May 2024 data).',
     url: '/editorial-policy'

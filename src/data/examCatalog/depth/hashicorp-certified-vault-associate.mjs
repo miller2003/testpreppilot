@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, security & DevOps certifications desk',
     bio: 'This guide is compiled and maintained by our cloud-and-security certifications desk. HashiCorp exam structure, fees, delivery, language and credential validity come from the vendor\u2019s own certification pages, and we state plainly when a figure such as a pass rate or an official cut score is not published rather than repeating third-party estimates as fact. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

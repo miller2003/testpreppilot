@@ -1,7 +1,7 @@
 // Depth content for: new-york-food-handler-card
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'NYC DOHMH food protection desk',
     bio: 'New York food handler facts are drawn from the New York City Department of Health and Mental Hygiene (NYC DOHMH) Health Academy food protection course pages and the NYC Health Code. The requirement that drives most searches is New York City\u2019s Food Protection Certificate, a supervisor credential with a published format and fee; New York State has no statewide food handler card, and we state that distinction plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
     url: '/editorial-policy'

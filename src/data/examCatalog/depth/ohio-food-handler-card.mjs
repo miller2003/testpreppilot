@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'Ohio food-handler facts in this guide come from Ohio Administrative Code 3701-21-25 and local health-department food-safety pages, including the Level 1 Person-in-Charge certification requirement, the per-shift rule, the typical three-hour course and the provider-based exam; the Ohio Department of Health publishes no pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
     url: '/editorial-policy'

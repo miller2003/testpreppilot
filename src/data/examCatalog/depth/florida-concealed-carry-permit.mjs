@@ -1,7 +1,7 @@
 // Depth content for: florida-concealed-carry-permit
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'FDACS concealed weapon licensing desk',
     bio: 'Florida concealed carry facts are drawn from Florida Statute 790.06, the Florida Department of Agriculture and Consumer Services (FDACS) Division of Licensing pages, and the permitless-carry law (HB 543) that took effect July 1, 2023. Florida has no state-administered carry exam, so there is no published pass rate, and we state that plainly. The salary anchor uses the closest BLS occupational fit for armed work, Security Guards (SOC 33-9032), with the honest caveat that the permit itself is not a professional license. Salary figures come from the BLS Occupational Outlook Handbook (May 2024 data).',
     url: '/editorial-policy'

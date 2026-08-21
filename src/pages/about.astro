@@ -18,7 +18,7 @@ const CONTACT_EMAIL = 'contact@testpreppilot.com';
 const faqSchemaItems = [
   {
     q: 'Who writes the guides on TestPrepPilot?',
-    a: 'Every guide is written and maintained by the TestPrepPilot Editorial Desk — a small research team, not a content farm or a prep-course vendor. We byline the desk rather than inventing individual personas. When a licensed professional reviews a guide, that person is named on the page with a verifiable credential.'
+    a: 'Every guide is written and maintained by the TestPrepPilot Editorial Board — a small research team, not a content farm or a prep-course vendor. We byline the board rather than inventing individual personas. When a licensed professional reviews a guide, that person is named on the page with a verifiable credential.'
   },
   {
     q: 'Are the guides reviewed by real experts?',
@@ -48,7 +48,7 @@ const aboutSchema = {
       '@type': 'AboutPage',
       '@id': `${pageUrl}#about`,
       url: pageUrl,
-      name: 'About TestPrepPilot — the editorial desk behind the roadmaps',
+      name: 'About TestPrepPilot — the Editorial Board behind the roadmaps',
       description:
         'Who runs TestPrepPilot, the standards the desk publishes under, and how ' +
         'every guide is researched, verified and reviewed — plus how to reach the desk.',
@@ -105,8 +105,8 @@ const reviews = [
 ];
 ---
 <BaseLayout
-  title="About TestPrepPilot — The Editorial Desk Behind 600+ Exam Guides"
-  description="Meet the independent editorial desk behind TestPrepPilot — 600+ U.S. credential guides verified against primary sources, checked by licensed professionals, and never pay-to-rank. Read reviews and reach the desk."
+  title="About TestPrepPilot — The Editorial Board Behind 600+ Credential Guides"
+  description="Meet the independent Editorial Board behind TestPrepPilot — 600+ U.S. credential guides verified against primary sources, checked by licensed professionals, and never pay-to-rank. Read reviews and reach the board."
   schema={aboutSchema}
   dateModified={dateModified}
 >
@@ -114,13 +114,14 @@ const reviews = [
     <BreadcrumbNav items={breadcrumbItems} />
 
     <header class="page-hero">
-      <p class="eyebrow">ABOUT THE DESK</p>
+      <p class="eyebrow">ABOUT THE EDITORIAL BOARD</p>
       <h1>Clarity in an industry of <em>confusion.</em></h1>
       <p class="lede">
-        TestPrepPilot is an independent editorial desk. We read the actual statutes,
-        candidate handbooks and fee schedules behind U.S. licenses and certifications,
-        then publish the shortest accurate path through them — every figure traced to a
-        primary source, and licensed fields checked by professionals who hold the credential.
+        TestPrepPilot is run by an independent Editorial Board. We read the actual
+        statutes, candidate handbooks and fee schedules behind U.S. licenses and
+        certifications, then publish the shortest accurate path through them — every
+        figure traced to a primary source, and licensed fields checked by professionals
+        who hold the credential.
       </p>
     </header>
 
@@ -168,11 +169,11 @@ const reviews = [
       </section>
 
       <section>
-        <h2>Who's behind the desk</h2>
+        <h2>The Editorial Board</h2>
         <p>
-          We are a small editorial team of researchers, educators and industry professionals —
-          organized like a newsroom, not a marketing department. Four functions share
-          responsibility for every page:
+          TestPrepPilot is run by an Editorial Board — a small team of researchers,
+          educators and industry professionals, organized like a newsroom rather than a
+          marketing department. Four functions share responsibility for every page:
         </p>
         <div class="masthead">
           <div class="desk-role">
@@ -209,16 +210,37 @@ const reviews = [
         </div>
 
         <aside class="byline-policy">
-          <h3>Why our byline is a desk, not a persona</h3>
+          <h3>Why we byline the Editorial Board, not a persona</h3>
           <p>
             Much of the web solves the trust problem with invented authors — a stock photo, a
             fake name, a fabricated credential. We take the harder route. Every guide is
-            bylined <strong>TestPrepPilot Editorial Desk</strong>, because that is who did the
-            work. When a licensed professional reviews a page, that person's real name,
-            credential and a way to verify them appear on the page itself. Until a reviewer is
-            attached, a guide says exactly who stands behind it: the desk.
+            bylined <strong>TestPrepPilot Editorial Board</strong>, because that is who does
+            the work. When a licensed professional reviews a page, that person's real name,
+            credential and a way to verify them will appear on the page itself. Until a
+            reviewer is attached, a guide says exactly who stands behind it: the board.
           </p>
         </aside>
+      </section>
+
+      <section class="standards-section" id="investigation-method">
+        <p class="eyebrow">HOW A GUIDE IS INVESTIGATED</p>
+        <h2>Our investigation standard</h2>
+        <p class="standards-lede">
+          Every credential on TestPrepPilot is built by the same investigative protocol
+          before it is published. This is the Editorial Board's standing method — the full,
+          source-by-source whitepaper lives on our
+          <a href={TRUST_PAGES.methodology}>Research Methodology</a> page.
+        </p>
+        <ol class="standards">
+          <li><h3>Identify the authority</h3><p>Pin down the exact issuing body and jurisdiction — a state board, federal agency, or private certifying organization — and the precise credential name.</p></li>
+          <li><h3>Read the primary documents</h3><p>Pull the statute, administrative code, candidate handbook and fee schedule directly from the source. No paraphrased blogs, no vendor sales pages.</p></li>
+          <li><h3>Extract the facts that matter</h3><p>Eligibility, education hours, exam format, fees, timelines and renewal rules — each captured with its source attached.</p></li>
+          <li><h3>Draft a plain-English roadmap</h3><p>Turn the legalese into a sequential path: what to do, in what order, and what it costs.</p></li>
+          <li><h3>Licensed review where available</h3><p>A professional who holds the credential checks the eligibility, format, fees and timeline. Named reviewers are attached to the page as they are recruited.</p></li>
+          <li><h3>Publish with a "last reviewed" date</h3><p>Every substantive page carries the month it was last verified against its sources.</p></li>
+          <li><h3>Monitor for change</h3><p>Boards revise fees and rules constantly; high-traffic pages are re-checked on a rolling schedule and the date is refreshed.</p></li>
+        </ol>
+        <p class="cta-links" style="margin-top:2rem"><a href={TRUST_PAGES.methodology}>Read the full research whitepaper &rarr;</a></p>
       </section>
 
       <div class="editorial-divider"></div>
@@ -371,7 +393,7 @@ const reviews = [
 
           <aside class="info-col">
             <div class="info-card">
-              <h3>Editorial desk</h3>
+              <h3>Editorial Board</h3>
               <p>
                 Reach the researchers who maintain the guides. We aim to reply to error reports
                 and review-network applications within a few business days.
@@ -410,7 +432,7 @@ const reviews = [
           <details class="faq-item">
             <summary>Who writes the guides on TestPrepPilot?</summary>
             <p>
-              The <strong>TestPrepPilot Editorial Desk</strong> — a small research team, not a
+              The <strong>TestPrepPilot Editorial Board</strong> — a small research team, not a
               content farm or a prep-course vendor. We byline the desk rather than inventing
               personas, and when a licensed professional reviews a guide, that person is named
               on the page. <a href={TRUST_PAGES.methodology}>How a guide is built</a>.

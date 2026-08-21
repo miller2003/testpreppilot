@@ -5,7 +5,7 @@
 // practical exam, both reported pass/fail.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Licensed professions & wellness desk',
     bio: 'This guide is compiled and maintained by our licensed-professions desk. New York esthetician licensing is administered by the New York State Department of State, Division of Licensing Services, under the Appearance Enhancement licensing framework, with applications and exam scheduling handled through the online Appearance Enhancement and Barber Licensing System; exam format, fees, education hours, renewal and retake rules come from the NY DOS official pages. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook (May 2024), named by SOC code. We state plainly where a figure is not published rather than guessing.',
     url: '/editorial-policy'

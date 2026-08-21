@@ -2,7 +2,7 @@
 // FAA Private Pilot - Airplane (PAR)
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Aviation & unmanned aircraft desk',
     bio: 'FAA Private Pilot knowledge-test structure comes from the FAA Airman Knowledge Testing Matrix, the FAA Airman Certification Standards (ACS), and the FAA Community Advisory that set the current 60-question, 120-minute, 70-percent format, and is revised with each update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
     url: '/editorial-policy'

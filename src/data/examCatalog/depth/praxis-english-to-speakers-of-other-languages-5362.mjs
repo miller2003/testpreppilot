@@ -2,7 +2,7 @@
 // See examDepth.mjs for the full schema. All figures verified 2026-08.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Teacher licensure & Praxis desk',
     bio: 'This guide is compiled and maintained by our teacher-licensure desk. The Praxis tests are administered by ETS, and we take the exam structure — question counts, timing, content-category percentages and the scoring model — from the official ETS page for English to Speakers of Other Languages (5362), which is the authoritative source for this test. Passing scores are set by each certifying state rather than by ETS, so we state the published mechanics and flag that the actual required score must be confirmed on the ETS state-requirements page. The registration fee comes from the ETS Praxis fee schedule, which distinguishes selected-response-only tests from tests containing constructed-response items; 5362 is selected-response only. Wage figures come from the Bureau of Labor Statistics occupation High School Teachers (SOC 25-2031), named by SOC code, with the caveat that BLS classifies by job duties and that the exam is a licensure step rather than an occupation. ETS does not publish Praxis pass rates, and we do not invent one.',
     url: '/editorial-policy'

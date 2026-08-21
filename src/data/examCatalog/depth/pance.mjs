@@ -2,7 +2,7 @@
 // See examDepth.mjs for the full schema. All figures verified 2026-08.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Healthcare & clinical practitioner certification desk',
     bio: 'This guide is compiled and maintained by our healthcare-certifications desk. The PANCE is owned and administered by the National Commission on Certification of Physician Assistants (NCCPA), and we track the exam by its published content blueprint and passing standard; the current blueprint and passing standard became effective 1 January 2025, and we state the dates as published. Exam structure (300 questions, five 60-question blocks), the fee, eligibility limits and the published pass-rate statistics come from NCCPA\u2019s own pages and its five-year pass-rate report, which reports first-time and repeat performance separately. The passing score is the scaled 350 threshold on the 200-800 scale as published by NCCPA. Wage figures come from the Bureau of Labor Statistics occupation Physician Assistants (SOC 29-1071), named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

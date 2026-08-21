@@ -1,7 +1,7 @@
 // Depth content for: pennsylvania-journeyman-electrician-license
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Trades & skilled-licensure desk',
     bio: 'The Pennsylvania electrician licensing facts below are drawn from the Philadelphia Department of Licenses and Inspections, the City of Pittsburgh Bureau of Building Inspection, and municipal licensing guidance for other Pennsylvania jurisdictions. Pennsylvania has no statewide electrician license, so we state plainly that licensing is local and that requirements, exams, fees, and renewal vary by city. Wage figures come from the BLS Occupational Outlook Handbook, cited by SOC code with May 2024 data.',
     url: '/editorial-policy'

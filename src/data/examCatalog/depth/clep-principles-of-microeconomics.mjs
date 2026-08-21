@@ -2,7 +2,7 @@
 // See examDepth.mjs for the full schema. All figures verified 2026-08.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'College credit-by-exam desk',
     bio: 'This guide is compiled and maintained by our college-credit desk. CLEP is a program of the College Board, and we take the exam structure (question count, timing, content percentages) from the College Board fact sheet for Principles of Microeconomics, which is revised on a published cycle. The credit recommendation comes from the American Council on Education (ACE), which reviews CLEP exams, while the score a college actually accepts is set by each institution, so we state the ACE figure and flag that the individual school decides. The exam fee is the College Board fee effective for the 2025-26 academic year. The College Board does not publish CLEP pass rates, and we do not invent one. Wage context, where it appears, comes from the Bureau of Labor Statistics education-level earnings data rather than from a CLEP-specific occupation, because no such occupation exists.',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'State licensing & public safety desk',
     bio: 'The California security guard registration structure is drawn from the BSIS Security Guard Registration fact sheet and the California Department of Consumer Affairs licensing information, which are updated on a published revision cycle; BSIS does not publish pass rates for the Power to Arrest examination, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024).',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Finance & investment certifications desk',
     bio: 'This desk covers the CFA Program and related investment credentials. Exam structure, fees and pass rates come from CFA Institute\'s published program pages and candidate resources, which are revised each year; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

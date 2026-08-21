@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This guide is compiled and maintained by our IT-certifications desk. Google Career Certificates are completion-based programmes delivered on Coursera rather than proctored exams, so there is no exam pass rate to report and no cut score — we state that plainly and cover the real completion mechanics instead. Fees and structure come from Google\'s own certificate pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate, and that entry-level analyst work is a step below the data-scientist occupation we cite.',
     url: '/editorial-policy'

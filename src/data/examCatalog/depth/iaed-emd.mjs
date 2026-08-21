@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Public safety & emergency communications desk',
     bio: 'We cover emergency-dispatch certification programs including the International Academies of Emergency Dispatch. Format and fee facts come from IAED official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
     url: '/editorial-policy'

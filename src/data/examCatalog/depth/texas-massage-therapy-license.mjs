@@ -1,7 +1,7 @@
 // Depth content for: texas-massage-therapy-license
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'State occupational licensing desk',
     bio: 'This guide is compiled and maintained by our state-licensing desk. Exam structure, fees, eligibility and renewal terms come from the Texas Department of Licensing and Regulation (TDLR) massage therapy pages and the PSI candidate information bulletin TDLR publishes for the examination. Texas is an unusual case among licensing programs: TDLR publishes written-exam pass and fail statistics by fiscal year, and we quote those official numbers directly rather than any private estimate. Wage figures come from the Bureau of Labor Statistics occupational series named by SOC code, May 2024 data, with the caveat that BLS classifies by job duties rather than by license.',
     url: '/editorial-policy'

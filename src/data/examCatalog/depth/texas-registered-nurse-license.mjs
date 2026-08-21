@@ -3,7 +3,7 @@
 // fees, jurisprudence exam, renewal, plus BLS registered nurse wages.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Nursing licensure desk',
     bio: 'Texas RN facts in this guide come from the Texas Board of Nursing (BON) licensing and fee pages, the NCSBN NCLEX-RN exam materials, and Pearson VUE registration information, which are the official sources for the application, fees, the Nursing Jurisprudence Examination requirement, the exam format and the renewal cycle. The BON does not publish a single official pass rate for the NCLEX in Texas beyond program-level data, and NCSBN publishes pass-rate statistics nationally, so we report the structure honestly rather than inventing a figure. Wage figures come from the BLS Occupational Outlook Handbook occupation named by SOC code (May 2024 data).',
     url: '/editorial-policy'

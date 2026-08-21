@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Alcohol responsibility & hospitality certifications desk',
     bio: 'Ohio alcohol-server facts in this guide come from the Ohio Division of Liquor Control and the Ohio Investigative Unit Alcohol Server Knowledge (ASK) program, including the voluntary training structure, the approved programs, the age gates and the penalty-mitigation benefit; the state publishes no pass rates and administers no state exam, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
     url: '/editorial-policy'

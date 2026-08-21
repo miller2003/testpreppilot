@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Advanced practice nursing & clinical credentials desk',
     bio: 'This desk covers advanced practice registered nurse certifications. Exam structure, pricing and renewal terms come from the ANCC certification pages, and pass rates from the ANCC\u2019s published certification data, which is updated annually; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a body does not publish a figure, we say so plainly rather than guessing.',
     url: '/editorial-policy'

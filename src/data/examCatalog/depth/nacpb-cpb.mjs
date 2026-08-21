@@ -9,7 +9,7 @@
 // differences rather than repeating the AIPB structure.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Accounting, tax & bookkeeping desk',
     bio: 'This guide is compiled and maintained by our accounting desk. Content comes from the examining body’s current blueprint and candidate bulletin — AICPA and NASBA for the CPA, the IRS for the Special Enrolment Examination, and the certifying association’s own handbook for the bookkeeping credentials. Pass rates are quoted only where the body publishes them, with the reporting window named, because quarter-to-quarter movement in this field is large enough to mislead. Wage data comes from the matching Bureau of Labor Statistics occupational series, cited by SOC code.',
     url: '/editorial-policy'

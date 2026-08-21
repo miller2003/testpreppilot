@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Finance, accounting & professional-designation desk',
     bio: 'This guide is compiled and maintained by our finance-certifications desk. The CFA Program is owned and operated by CFA Institute, and its fees, topic weights, calculator policy and pass-rate reporting are taken from the Institute’s own candidate and exam pages. We track the published exam structure by exam window and state plainly when a figure is historical versus current. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by charter. CFA charterholders work across many BLS occupations, so the salary section names the closest fit and explains the mismatch rather than implying the charter is a single job title.',
     url: '/editorial-policy'

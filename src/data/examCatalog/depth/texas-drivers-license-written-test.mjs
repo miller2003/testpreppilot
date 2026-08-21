@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'State licensing & DMV exams desk',
     bio: 'Texas DPS facts in this guide come from the official Texas DPS and texas.gov driver-license pages, including the 30-question format, the 70 percent passing standard and the retake rules; DPS does not publish pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
     url: '/editorial-policy'

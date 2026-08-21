@@ -298,6 +298,7 @@ const credentialSchema =
   canonical={canonicalUrl}
   ogImage="/og-exam.png"
   dateModified={depth?.lastReviewed || record?.reviewed || undefined}
+  ogType="article"
   noindex={!indexable}
 >
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
@@ -394,6 +395,19 @@ const credentialSchema =
     </aside>
 
     <main class="main-article">
+      {/* Per-exam branded infographic — gives every money page a real,
+          crawlable <img> for Google Images + Discover and lifts engagement. */}
+      <figure class="eg-infographic">
+        <img
+          src={`/exams/${exam.slug}/infographic.svg`}
+          alt={`${exam.name} — quick facts at a glance: requirements, exam format, fees and timeline`}
+          width="760"
+          height="600"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>{exam.name} — verified snapshot</figcaption>
+      </figure>
       {/* ── NATIONAL: quick answer ──────────────────────────── */}
       {mode === 'national' && record.quickAnswer && (
         <section id="quick" class="eg-section eg-quickblock">
@@ -1302,4 +1316,8 @@ const credentialSchema =
        they cannot push the row wider than the viewport. */
     .eg-step-dur { white-space: normal; }
   }
+  /* Per-exam infographic figure */
+  .eg-infographic { margin: 0 0 2.5rem; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--paper); }
+  .eg-infographic img { display: block; width: 100%; height: auto; }
+  .eg-infographic figcaption { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); padding: 0.75rem 1rem; border-top: 1px solid var(--line); }
 </style>

@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Allied health & EMS certification desk',
     bio: 'This guide is compiled and maintained by our allied-health desk. The NREMT EMT certification exam was substantially revised and relaunched on 7 April 2025, built on the 2023 BLS Practice Analysis, and we track it by that relaunch date. The cognitive exam is a computer-adaptive test run through Pearson VUE at $104 per attempt. A critical, frequently misunderstood point: the state-level EMT psychomotor (skills) examination is still required — NREMT did not discontinue the skills requirement for EMT, and candidates must pass both the cognitive and their state\'s psychomotor exam to be certified. Fees, retest rules and the psychomotor requirement are set by NREMT and the individual state EMS office, so we state the published figures and flag where you must check your own state. Wage figures come from the Bureau of Labor Statistics occupation EMTs and Paramedics (SOC 29-2041), named by SOC code; BLS combines EMTs and paramedics into one series and we separate the EMT figure where BLS reports it.',
     url: '/editorial-policy'

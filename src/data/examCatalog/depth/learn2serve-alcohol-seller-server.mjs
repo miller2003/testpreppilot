@@ -2,7 +2,7 @@
 // Learn2Serve Alcohol Seller-Server Training
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'We cover the Learn2Serve by 360training alcohol seller-server program. Course structure, passing scores and state-approval facts come from the Learn2Serve official pages and the state agencies that approve each course, and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
     url: '/editorial-policy'

@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Securities licensing desk',
     bio: 'This guide is maintained by our securities-licensing desk. FINRA representative-level exams are revised on FINRA\'s own publication schedule and the content outlines change without much fanfare, so we anchor every claim to the current FINRA qualification-exam page, the published content outline, and the relevant FINRA rule text, and we name the regulator plainly. Fees, scoring, retake windows and sponsorship rules come from FINRA and from FINRA Rule 1210. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by licence. We do not publish a pass rate because FINRA does not release one.',
     url: '/editorial-policy'

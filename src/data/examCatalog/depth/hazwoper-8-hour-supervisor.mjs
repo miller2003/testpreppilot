@@ -1,7 +1,7 @@
 // Depth content for: hazwoper-8-hour-supervisor
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Workplace safety & OSHA training desk',
     bio: 'This desk covers OSHA and workplace-safety training credentials. Course structure and requirements come from the governing regulation — 29 CFR 1910.120 for HAZWOPER, with the parallel construction standard at 29 CFR 1926.65 — and from the OSHA page for the standard; provider pricing and assessment formats come from the individual training providers. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

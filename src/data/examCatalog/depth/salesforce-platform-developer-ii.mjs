@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'CRM & platform development certifications desk',
     bio: 'This guide is compiled and maintained by our Salesforce-certifications desk. Exam structure, question count, timing, passing score, fees and prerequisites come from the official Salesforce Platform Developer II exam guide, which is revised with each platform release, and we state plainly when a figure such as a pass rate is not published rather than repeating third-party estimates. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

@@ -2,7 +2,7 @@
 // LSAT (Law School Admission Test)
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Law school admissions & standardized-testing desk',
     bio: 'LSAT structure, scoring, fees and retake limits are taken from the Law School Admission Council (LSAC) official pages and the LSAT test-format documentation, which has been revised since the Analytical Reasoning section was removed in 2024. Lawyer wage data comes from the Bureau of Labor Statistics Occupational Outlook Handbook occupation for lawyers, cited by SOC code 23-1011. We state plainly when a figure \u2014 such as an LSAT pass rate \u2014 is not published, because the LSAT is a scored exam rather than a pass/fail one.',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Workplace safety & compliance certifications desk',
     bio: 'This desk covers OSHA and workplace-safety credentials. Program structure and rules come from the official pages (OSHA Outreach Training Program, authorized training providers), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

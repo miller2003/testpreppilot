@@ -3,7 +3,7 @@
 // Salary: BLS OOH Accountants and Auditors (SOC 13-2011), May 2024
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Accounting & forensic accounting certifications desk',
     bio: 'This guide is compiled and maintained by our accounting-and-fraud desk. The CFE Exam is administered by the Association of Certified Fraud Examiners (ACFE), and we track the section structure, question counts, the 75 percent per-section passing requirement, fees and the CPE renewal rule from the ACFE\u2019s own CFE Exam FAQs and credential pages. The ACFE does not publish an overall pass rate, and we state that plainly rather than quoting a fabricated figure. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

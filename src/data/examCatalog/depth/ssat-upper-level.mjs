@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'School admissions & independent-school testing desk',
     bio: 'We cover SSAT and other independent-school admission tests. Format and fee facts come from the EMA/SSAT official pages and are revised; wage and education-earnings figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
     url: '/editorial-policy'

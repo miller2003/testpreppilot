@@ -49,6 +49,7 @@ const schemaData = {
 <BaseLayout
   title={credTitle(credential.name)}
   description={clampDesc(`${credential.tagline ? credential.tagline + ' ' : ''}${credential.name}: requirements, exam format, fees and eligibility, with official registration steps.`)}
+  ogType="article"
 >
   <SchemaMarkup type="Course" data={schemaData} />
   <BreadcrumbSchema items={breadcrumbItems} />

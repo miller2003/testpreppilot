@@ -3,7 +3,7 @@
 // row carries a note/source. Omitted fields were not verifiable — not invented.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Fitness & nutrition credentials desk',
     bio: 'This guide is compiled and maintained by our fitness-credentials desk. Certification marketing in this field is unusually aggressive, so we check accreditation claims against the accrediting body or the parent company’s own published register rather than repeating the seller’s wording, and we flag it plainly when the two disagree. Exam mechanics, renewal requirements and fees come from the issuer’s candidate handbook. Wage figures come from the Bureau of Labor Statistics series for fitness trainers and instructors, with the self-employment caveat stated rather than buried.',
     url: '/editorial-policy'

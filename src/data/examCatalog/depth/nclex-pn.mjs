@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Nursing & healthcare certifications desk',
     bio: 'This guide is compiled and maintained by our nursing desk. The NCLEX-PN is administered by NCSBN (the National Council of State Boards of Nursing) through Pearson VUE, and NCSBN publishes first-time pass rates by education type in its quarterly reports — the closest thing to an official pass-rate figure, which we cite with the caveat that it is a cohort statistic, not a per-candidate prediction. Exam structure, fees and registration come from NCSBN\'s official pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

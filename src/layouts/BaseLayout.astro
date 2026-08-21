@@ -3,7 +3,7 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SEOHead from '../components/SEOHead.astro';
-import { organizationSchema } from '../data/editorial';
+import { organizationSchema, editorialBoardNode } from '../data/editorial';
 import { ClientRouter } from 'astro:transitions';
 
 interface Props {
@@ -15,9 +15,24 @@ interface Props {
   noindex?: boolean;
   dateModified?: string;
   datePublished?: string;
+  ogType?: string;
+  articlePublishedTime?: string;
+  articleModifiedTime?: string;
 }
 
-const { title, description, canonical, ogImage, schema, noindex, dateModified, datePublished } = Astro.props;
+const {
+  title,
+  description,
+  canonical,
+  ogImage,
+  schema,
+  noindex,
+  dateModified,
+  datePublished,
+  ogType = 'website',
+  articlePublishedTime,
+  articleModifiedTime,
+} = Astro.props;
 
 // Site-wide baseline last-updated stamp. Individual pages override with their
 // own verified date (e.g. an exam guide's lastReviewed) via the prop.
@@ -57,20 +72,36 @@ const webPageSchema = {
   "name": title,
   "isPartOf": { "@id": "https://testpreppilot.com/#website" },
   "inLanguage": "en-US",
-  "author": { "@id": "https://testpreppilot.com/#organization" },
+  "author": { "@id": "https://testpreppilot.com/#editorial-board" },
   "publisher": { "@id": "https://testpreppilot.com/#organization" },
   "datePublished": finalDatePublished,
   "dateModified": finalDateModified
 };
+
+// The Editorial Board is the named author entity for E-E-A-T — a real,
+// verifiable team rather than an invented individual. Its node (an
+// Organization) is emitted on every page; individual licensed reviewers are
+// attached per-guide once real people have been recruited.
+const editorialBoardSchema = editorialBoardNode();
 ---
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <SEOHead title={title} description={description} canonical={canonical} ogImage={finalOgImage} noindex={noindex} />
+    <SEOHead
+      title={title}
+      description={description}
+      canonical={canonical}
+      ogImage={finalOgImage}
+      noindex={noindex}
+      ogType={ogType}
+      articlePublishedTime={articlePublishedTime || finalDatePublished}
+      articleModifiedTime={articleModifiedTime || finalDateModified}
+    />
     <link rel="alternate" type="application/rss+xml" title="TestPrepPilot" href="/rss.xml" />
     <script type="application/ld+json" set:html={JSON.stringify(schemaData, null, 2)} is:inline />
     <script type="application/ld+json" set:html={JSON.stringify(webSiteSchema)} is:inline />
     <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} is:inline />
+    <script type="application/ld+json" set:html={JSON.stringify(editorialBoardSchema)} is:inline />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     {/* Resolve theme before first paint so dark-mode users never see a
         white flash, and keep the mobile browser chrome in sync. */}

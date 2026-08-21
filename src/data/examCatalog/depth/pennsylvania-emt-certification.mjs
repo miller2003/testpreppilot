@@ -4,7 +4,7 @@
 // EMT wages.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'EMS & emergency-care certification desk',
     bio: 'Pennsylvania EMT facts in this guide come from the Pennsylvania Department of Health, Bureau of Emergency Medical Services (BEMS), its published EMS information bulletins, and the National Registry of Emergency Medical Technicians (NREMT) exam materials, which are the official sources for the certification path, the two-part exam structure and the renewal rules. No single current official pass rate for the EMT cognitive exam in Pennsylvania was published in the materials we verified, so we state that plainly and report the published exam structure instead. Wage figures come from the BLS Occupational Outlook Handbook occupations named by SOC code (May 2024 data).',
     url: '/editorial-policy'

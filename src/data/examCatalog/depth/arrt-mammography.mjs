@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Radiologic & medical imaging certifications desk',
     bio: 'The ARRT Mammography exam structure and scoring are drawn from the ARRT Examination Content Specifications and ARRT candidate materials, which are updated on a published revision cycle; ARRT publishes pass-rate statistics in its Annual Exam Report. Wage figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024). Where ARRT or BLS does not publish a figure, we say so plainly rather than estimating.',
     url: '/editorial-policy'

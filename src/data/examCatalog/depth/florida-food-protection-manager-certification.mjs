@@ -1,7 +1,7 @@
 // Depth content for: florida-food-protection-manager-certification
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Food safety certifications desk',
     bio: 'Florida food protection manager certification facts in this guide come from the Florida Department of Business and Professional Regulation Division of Hotels and Restaurants Rule 61C-4.023, the Florida Department of Health Rule 64E-11.012, the Conference for Food Protection accreditation standards, and the approved certifying organizations, which are the official sources for who must be certified, the five-year validity, and the on-site manager requirement. The state agencies publish the certification rule but no pass rate, and the individual providers publish their own exam formats, so we state plainly what is official and what is not. Wage figures come from the BLS Occupational Outlook Handbook occupation page named by SOC code (May 2024 data).',
     url: '/editorial-policy'

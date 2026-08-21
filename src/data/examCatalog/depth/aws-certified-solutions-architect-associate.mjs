@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This guide is compiled and maintained by our IT-certifications desk. Cloud exams are revised on a two-to-three-year cycle and the exam series code is the only reliable way to tell current material from stale material, so we track the AWS exam guide by its code — SAA-C03 here — and say plainly when a version is likely to be replaced. Fees, question counts, scoring, retake rules and recertification terms come from AWS’s own exam guide and certification policy pages rather than from training vendors. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies workers by job duties rather than by certificate. Where a number is not published — AWS releases no pass rate — we state that instead of estimating one.',
     url: '/editorial-policy'

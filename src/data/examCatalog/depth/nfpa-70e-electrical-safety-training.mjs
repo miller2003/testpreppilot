@@ -2,7 +2,7 @@
 // NFPA 70E training is an employer-mandated safety course with provider-set assessments, not a national credentialing exam.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Workplace safety & electrical training desk',
     bio: 'This guide is compiled by our workplace safety and electrical training desk. NFPA 70E is a consensus safety standard, not a test, and the training built on it is delivered by many providers with their own assessments, so we distinguish clearly between what the standard requires, what NFPA itself offers, and what is employer- or provider-specific. Course structure and certification figures come from NFPA\u2019s official training and certification pages. Wage figures come from the Bureau of Labor Statistics occupational series for the job, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

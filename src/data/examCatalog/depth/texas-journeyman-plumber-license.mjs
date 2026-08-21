@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Trades & skilled-licensure desk',
     bio: 'This guide is compiled and maintained by our trades desk. Exam structure, fees, scoring and retake rules come from the official Texas State Board of Plumbing Examiners (TSBPE) licensing pages and the Pearson VUE TSBPE candidate handbook (August 2025 edition), which is the authoritative source for the written and practical exam formats. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook (May 2024) for the occupation the license gates, named by SOC code. We state plainly where a figure is not published rather than guessing.',
     url: '/editorial-policy'

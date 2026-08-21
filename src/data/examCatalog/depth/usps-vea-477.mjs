@@ -3,7 +3,7 @@
 // sections, scoring, plus BLS postal clerk wages.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Federal employment & postal exam desk',
     bio: 'USPS VEA 477 facts in this guide come from the official USPS Virtual Entry Assessment Candidate Guide (about.usps.com) and the USPS careers pages, which are the authoritative sources for the assessment sections, the 72-hour window, the 70 percent passing score, the job group the 477 version serves, and the one-year retest rule. USPS publishes the passing score but not cohort pass rates for the VEA, so we state that plainly. Wage figures come from the BLS Occupational Employment and Wage Statistics and the BLS Occupational Outlook Handbook postal service workers data (May 2024), cited by SOC code.',
     url: '/editorial-policy'

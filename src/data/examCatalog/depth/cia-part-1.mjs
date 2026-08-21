@@ -3,7 +3,7 @@
 // Salary: BLS OOH Accountants and Auditors (SOC 13-2011), May 2024
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Accounting & internal audit certifications desk',
     bio: 'This guide is compiled and maintained by our accounting-and-audit desk. The CIA exam is administered by The Institute of Internal Auditors (IIA), and we track question counts, timing, fees, scoring and renewal from the IIA\u2019s own certification pages, including the 2025 syllabus revision that aligned the exam with the new Global Internal Audit Standards. We state plainly where a figure is published and where it is an industry estimate. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Occupational safety & health training desk',
     bio: 'This desk covers OSHA Training Institute courses. Course structure, contact hours and completion requirements come from the OSHA Training Institute Education Center course pages, which are administered by regional centers rather than a single national body; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When no national pass rate or fee is published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

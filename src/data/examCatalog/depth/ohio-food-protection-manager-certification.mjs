@@ -1,7 +1,7 @@
 // Depth content for: ohio-food-protection-manager-certification
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certification desk',
     bio: 'The Ohio food protection manager certification facts below are drawn from the Ohio Department of Health Food Safety Program, the Ohio Administrative Code rule 3701-21-25, and the ANAB (ANSI National Accreditation Board) food protection manager credentialing standards. Ohio does not administer its own exam: candidates pass an ANAB-accredited food protection manager exam from an approved provider, then apply to ODH for the state certificate, and we describe that structure plainly. Wage figures come from the BLS Occupational Outlook Handbook, cited by SOC code with May 2024 data.',
     url: '/editorial-policy'

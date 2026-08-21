@@ -1,19 +1,61 @@
 // Central EEAT entity definitions for TestPrepPilot.
 //
-// Single source of truth for the editorial-desk identity, the review network,
+// Single source of truth for the editorial-board identity, the review network,
 // and the canonical trust-page URLs used across pages and structured data.
 // Keeping these in one place means internal links and schema never drift.
 
 export const SITE = 'https://testpreppilot.com';
 
-export const DESK = {
-  name: 'TestPrepPilot Editorial Desk',
+// ── Editorial Board (the site's named E-E-A-T author) ──────────
+// Every page attributes its content to the "TestPrepPilot Editorial Board"
+// rather than to an invented individual. The board is the real, verifiable
+// team behind the research — researchers, educators and industry professionals
+// organised like a newsroom — and it is what appears as the author of every
+// WebPage in structured data.
+//
+// Its published research method (the "whitepaper") lives on /methodology.
+// When a licensed professional reviews a specific guide, that person is named
+// on the page itself (see /reviewers and the AuthorByline "Reviewed by"
+// block). We never invent a reviewer — a fabricated endorser is itself a
+// quality-guideline violation, so named human reviewers are attached only
+// once real, verifiable people have been recruited.
+export const EDITORIAL_BOARD = {
+  // Display name used in bylines and schema.
+  name: 'TestPrepPilot Editorial Board',
+  // Longer, looser label still used in some prose.
+  alternateName: 'TestPrepPilot Research & Editorial Team',
   url: `${SITE}/about`,
   description:
-    'The research and editorial team behind TestPrepPilot. We read primary ' +
-    'regulatory sources line by line and distill them into verified, ' +
-    'source-linked credential roadmaps.',
+    'The research and editorial team behind TestPrepPilot — researchers, educators ' +
+    'and industry professionals who read primary regulatory sources line by line and ' +
+    'distill them into verified, source-linked credential roadmaps.',
+  // Internal trust pages that describe the board's standards and method, used
+  // to consolidate the entity in structured data without inventing external
+  // social profiles we do not control.
+  sameAs: [
+    `${SITE}/about`,
+    `${SITE}/methodology`,
+    `${SITE}/reviewers`,
+    `${SITE}/editorial-policy`,
+  ],
 };
+
+// The board as a schema.org Organization node. It is the author of every
+// WebPage and a child of the site Organization, which lets search engines tie
+// the accountable author entity to the publisher.
+export function editorialBoardNode() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${SITE}/#editorial-board`,
+    name: EDITORIAL_BOARD.name,
+    alternateName: EDITORIAL_BOARD.alternateName,
+    url: EDITORIAL_BOARD.url,
+    description: EDITORIAL_BOARD.description,
+    parentOrganization: { '@id': `${SITE}/#organization` },
+    sameAs: EDITORIAL_BOARD.sameAs,
+  };
+}
 
 // Canonical trust-page URLs — reuse everywhere so internal links never drift.
 // /about is the single E-E-A-T hub; /methodology, /reviewers, /editorial-policy

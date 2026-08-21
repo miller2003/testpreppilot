@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Beauty, trades & skilled-licensure desk',
     bio: 'This guide is compiled and maintained by our skilled-licensure desk, which covers exams that sit between a vocational program and a state licence or industry certification. ASE (the National Institute for Automotive Service Excellence) is the dominant certification body for vehicle technicians in the United States, and its Medium-Heavy Truck series (T2 through T8) is the credential track for class 4-8 truck and bus technicians. We cite ASE\'s own test pages and study guides for exam structure, question counts, time limits and fees, and we name the testing vendor (Prometric) and the recertification rules. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate — and we are deliberate that the correct SOC for a medium-heavy truck HVAC technician is Bus and Truck Mechanics and Diesel Engine Specialists (49-3031), not the Automotive Service Technicians category used for light vehicles.',
     url: '/editorial-policy'

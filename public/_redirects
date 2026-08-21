@@ -1,0 +1,8 @@
+# TestPrepPilot — host-level redirects (Netlify & Cloudflare Pages format)
+# These URLs were folded into the /about E-E-A-T hub. A server 301 (not a
+# <meta refresh>) passes the most PageRank-equivalent signal and is the
+# correct, permanent move. Keep the meta-refresh pages in src/pages as a
+# fallback for any host that does not read this file.
+/reviews /about 301
+/contact /about 301
+/how-it-works /about 301

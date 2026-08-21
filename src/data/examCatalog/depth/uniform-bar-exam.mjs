@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Legal licensure desk',
     bio: 'The UBE structure (MBE, MEE, MPT component weights and timing) is drawn from the NCBE\u2019s official Uniform Bar Examination materials and the NCBE Understanding the Uniform Bar Examination guide. Jurisdiction passing scores are as published by the adopting jurisdictions and compiled by the NCBE and bar-exam reference sources. Wage figures come from the BLS Occupational Outlook Handbook Lawyers profile (SOC 23-1011), May 2024 data.',
     url: '/editorial-policy'

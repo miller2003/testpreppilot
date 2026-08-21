@@ -1,7 +1,7 @@
 // Depth content for: salesforce-advanced-administrator
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This desk covers Salesforce and other platform certifications. Exam structure, fees, prerequisites and maintenance rules come from the vendor certification pages and the official exam guides, which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

@@ -2,7 +2,7 @@
 // FCC Amateur Radio Technician Class License
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Technology & public-service licensing desk',
     bio: 'This guide covers the FCC Amateur Radio Technician Class license, earned by passing Element 2 of the amateur radio examinations. Exam format, the passing standard, the question-pool system and the $35 FCC application fee are verified against FCC and NCVEC (National Conference of Volunteer Examiner Coordinators) sources, and we state plainly that there is no BLS occupation for amateur radio operators \u2014 this is a hobby and public-service license with no direct salary outcome. VEC session fees are cited as examples and vary by organisation.',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'IT service management & ITSM desk',
     bio: 'We cover PeopleCert/Axelos ITIL 4 certifications. Format and fee facts come from PeopleCert official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
     url: '/editorial-policy'

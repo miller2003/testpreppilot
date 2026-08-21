@@ -2,7 +2,7 @@
 // CLEP Humanities
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'College admissions & credit-by-exam desk',
     bio: 'CLEP Humanities exam structure, the 20-80 score scale and the ACE credit recommendation are verified against the College Board CLEP official page and the American Council on Education (ACE) National Guide entry for the exam. Education-return context comes from BLS data on earnings by education level. This desk states plainly when a figure \u2014 such as a CLEP pass rate \u2014 is not published.',
     url: '/editorial-policy'

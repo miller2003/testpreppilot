@@ -1,7 +1,7 @@
 // Depth content for: new-york-motorcycle-license-test
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'NYSDMV motorcycle endorsement desk',
     bio: 'New York motorcycle license facts are drawn from the New York State Department of Motor Vehicles motorcycle permit and license pages (dmv.ny.gov), the New York State Motorcycle Operator\u2019s Manual (MV-21MC), and the New York State Motorcycle Safety Program materials, which are the official sources for the 20-question permit test, the 14-correct passing standard, the road-test waiver, and the course rules. The DMV publishes the permit test structure but no pass rate, and we state that plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation page named by SOC code (May 2024 data).',
     url: '/editorial-policy'

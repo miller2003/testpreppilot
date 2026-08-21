@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Securities licensing desk',
     bio: 'This guide is maintained by our securities-licensing desk. The Series 66 is a NASAA exam delivered through FINRA\'s systems, and NASAA revises its uniform combined state law content periodically, so we anchor every claim to the current FINRA Series 66 page and the NASAA published outline, and we name the regulators plainly. Fees, scoring, time limits and the Series 7 co-requisite come from those sources; retake windows come from the NASAA/FINRA rules. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by licence. We do not publish a pass rate because NASAA does not release one.',
     url: '/editorial-policy'

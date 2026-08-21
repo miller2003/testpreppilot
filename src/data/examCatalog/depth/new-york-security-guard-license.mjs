@@ -1,7 +1,7 @@
 // Depth content for: new-york-security-guard-license
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Security & private-investigation licensure desk',
     bio: 'New York security guard registration facts in this guide come from the New York State Department of State (DOS) Division of Licensing Services and the New York State Division of Criminal Justice Services (DCJS) Office of Public Safety pages, which are the official sources for the registration rules, the mandated training courses and the fees under the Security Guard Act of 1992. New York does not administer a state security guard exam, and we state that plainly. Wage figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
     url: '/editorial-policy'

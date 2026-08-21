@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Teacher licensure & education certifications desk',
     bio: 'The California teacher certification exam structure is drawn from the California Commission on Teacher Credentialing (CTC) examination program and the ctcexams.nesinc.com test information, which is updated on a published revision cycle; the CTC does not publish aggregate pass rates for CBEST or CSET, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024).',
     url: '/editorial-policy'

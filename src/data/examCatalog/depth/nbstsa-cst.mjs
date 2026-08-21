@@ -2,7 +2,7 @@
 // NBSTSA Certified Surgical Technologist (CST).
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Allied-health certification desk',
     bio: 'This guide is compiled and maintained by our allied-health desk. CST exam structure, fees, eligibility and renewal terms come from the National Board of Surgical Technology and Surgical Assisting (NBSTSA) official pages and the 2025 CST Exam Application; pass rates come from NBSTSA\'s published annual Certification Data reports, the authoritative source. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

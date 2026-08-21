@@ -1,7 +1,7 @@
 // Depth content for: pennsylvania-cosmetology-license
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cosmetology licensing desk',
     bio: 'The Pennsylvania cosmetology exam facts below are drawn from the Pennsylvania State Board of Cosmetology, the PALS licensing portal, the Pearson VUE Pennsylvania cosmetology examination page and candidate handbook, and the board\u2019s licensure guide. Where the state does not publish a figure, such as pass rates or a raw question-level cut score, we say so plainly. Wage figures come from the BLS Occupational Outlook Handbook, which classifies by job duties rather than by license, cited by SOC code with May 2024 data.',
     url: '/editorial-policy'

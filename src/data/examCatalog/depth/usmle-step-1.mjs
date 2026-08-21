@@ -2,7 +2,7 @@
 // USMLE Step 1
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Medical licensure & graduate-medical-education desk',
     bio: 'We cover USMLE examinations for physician licensure. Step 1 format, the May 2026 block-structure change, the pass/fail reporting change, fees and attempt limits come from the USMLE program official pages (NBME, FSMB and usmle.org). Wage figures come from the BLS occupational series named by code, and we state plainly when a figure \u2014 such as a published Step 1 numeric score \u2014 is not reported.',
     url: '/editorial-policy'

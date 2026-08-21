@@ -6,7 +6,7 @@
 // licensing in some upstate counties, and the federal EPA 608 certification.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Construction & trade licensing desk',
     bio: 'This guide is compiled and maintained by our construction-licensing desk. The core fact here is that New York has no statewide HVAC contractor license, and we state that plainly and explain the layered structure that replaces it: New York City Department of Buildings trade licenses, the NYC Department of Consumer and Worker Protection Home Improvement Contractor registration, county-level licensing in some counties, and the federal EPA Section 608 certification that applies to every technician who handles refrigerants. Because the structure is jurisdiction-by-jurisdiction, there is no single exam and no statewide pass rate, and we do not invent one. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook page for Heating, Air Conditioning, and Refrigeration Mechanics and Installers (SOC 49-9021), May 2024 data, with the caveat that BLS classifies by job duties rather than by credential.',
     url: '/editorial-policy'

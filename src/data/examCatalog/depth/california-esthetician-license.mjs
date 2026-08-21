@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Licensed professions & wellness desk',
     bio: 'This guide is compiled and maintained by our licensed-professions desk. California esthetician licensing is administered by the California Board of Barbering and Cosmetology (BBC), part of the Department of Consumer Affairs, with examinations delivered by PSI Services; exam format, fees, education hours, renewal and retake rules come from the BBC official pages and the BBC Esthetician Application for Examination form. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook (May 2024), named by SOC code. We state plainly where a figure is not published rather than guessing.',
     url: '/editorial-policy'

@@ -2,7 +2,7 @@
 // Pro Board Firefighter I Certification
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Public-safety & fire-service certification desk',
     bio: 'Firefighter I certification format and passing standards are verified against the National Board on Fire Service Professional Qualifications (the Pro Board), IFSAC, and state fire-training agencies that administer the certification under NFPA 1001, including the written-exam and practical-skills structures they publish. Because certification is state-administered, we report the national structure and the published state examples rather than inventing a single universal number. Wage figures come from the Bureau of Labor Statistics occupational series for firefighters, named by SOC code.',
     url: '/editorial-policy'

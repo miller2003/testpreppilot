@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Alcohol responsibility & hospitality certifications desk',
     bio: 'California RBS facts in this guide come from the California ABC RBS program and the implementing regulation (AB 1221), including the training requirement, the 50-question exam, the 70 percent passing standard, the three-attempt/30-day rule and the $3 state fee; the ABC publishes no pass rates, which we state plainly. Salary figures come from the BLS occupational series named by SOC code (May 2024).',
     url: '/editorial-policy'

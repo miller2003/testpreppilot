@@ -2,7 +2,7 @@
 // BCEN Trauma Certified Registered Nurse (TCRN). All figures verified 2026-08.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Nursing & healthcare certification desk',
     bio: 'This guide is compiled and maintained by our healthcare-certifications desk. The TCRN credential is owned and administered by the Board of Certification for Emergency Nursing (BCEN), and we track the exam by its published content outline and passing point. Exam length, item counts, the pass-fail reporting model, the fee schedule by membership status, and the four-year renewal cycle come from BCEN\u2019s own TCRN pages and candidate materials. Pass-rate information comes from BCEN\u2019s published certification exam statistics, which report exams passed and failed rather than a first-time breakout, so we present the published numbers and say plainly what they do and do not show. Wage figures come from the Bureau of Labor Statistics occupation Registered Nurses (SOC 29-1141), named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

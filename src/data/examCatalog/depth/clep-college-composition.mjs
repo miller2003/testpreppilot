@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'College Board CLEP & college-credit desk',
     bio: 'The CLEP College Composition exam structure (question counts, timing, essay scoring) is drawn from the College Board official CLEP College Composition exam page and the ACE National Guide credit recommendation. CLEP publishes no pass rates or score distributions for individual exams, and we state that plainly rather than inventing figures.',
     url: '/editorial-policy'

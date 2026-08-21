@@ -1,7 +1,7 @@
 // Depth content for: florida-registered-nurse-license
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Nursing licensure desk',
     bio: 'Florida registered nurse facts in this guide come from the Florida Board of Nursing (floridasnursing.gov) licensing and fees pages, the NCSBN NCLEX-RN test plan and exam information, and Pearson VUE registration materials, which are the official sources for the application, the exam fee, the exam format and the renewal cycle. The Board does not publish a single headline pass rate for the state, while NCSBN publishes pass-rate statistics by state and by nursing program, and we report that structure honestly rather than inventing a figure. Wage figures come from the BLS Occupational Outlook Handbook occupation page named by SOC code (May 2024 data).',
     url: '/editorial-policy'

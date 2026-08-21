@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'Texas food-handler facts in this guide come from the Texas DSHS food-handler program and the Texas Food Establishment Rules, including the approved-provider requirement, the 70 percent passing standard, the two-year validity and the employer-recordkeeping rule; no pass-rate statistics are published, which we state plainly. Salary figures come from the BLS occupational series named by SOC code (May 2024).',
     url: '/editorial-policy'

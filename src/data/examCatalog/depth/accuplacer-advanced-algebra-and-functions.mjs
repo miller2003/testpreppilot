@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'College readiness & admissions assessments desk',
     bio: 'ACCUPLACER structure and placement policies come from College Board official pages and individual college placement catalogs, which vary by institution and are revised. This desk explains placement-test mechanics and notes plainly when a figure is not published. Wage and education data come from the BLS OEWS series named by code.',
     url: '/editorial-policy'

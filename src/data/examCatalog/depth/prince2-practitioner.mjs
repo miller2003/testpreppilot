@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Project management & methodology certifications desk',
     bio: 'We cover PeopleCert/Axelos project-management certifications. Format and fee facts come from PeopleCert and Axelos official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
     url: '/editorial-policy'

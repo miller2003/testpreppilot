@@ -2,7 +2,7 @@
 // NHA Certified Electronic Health Records Specialist (CEHRS).
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Allied-health certification desk',
     bio: 'This guide is compiled and maintained by our allied-health desk. CEHRS exam structure, fees, eligibility and renewal terms come from the National Healthcareer Association (NHA) official pages and the NHA Candidate Handbook; pass rates come from NHA\'s published annual pass-rate reports, which are the authoritative source. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

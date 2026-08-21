@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Beauty, trades & skilled-licensure desk',
     bio: 'This guide is compiled and maintained by our skilled-licensure desk, which covers exams that sit between a vocational program and a state licence. Cosmetology is a good example of why these exams deserve their own treatment: there is no single national "cosmetology exam". The National-Interstate Council of State Boards of Cosmetology (NIC) publishes model written and practical examinations that individual states adopt, modify or replace, and the exact item count, domain weightings and passing score depend on the state board that administers them. We therefore cite the NIC Candidate Information Bulletin (CIB) and name the testing vendor (PSI, Prov, or Prometric) and the state board where figures differ, and we state plainly when a number is a model specification rather than a universal rule. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

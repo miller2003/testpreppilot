@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Food safety, hospitality & restaurant management certifications desk',
     bio: 'This New York food protection manager guide is compiled from the New York State Department of Health food safety rules, the ServSafe program materials published by the National Restaurant Association, the NYC Health Department Food Protection Course pages, and the BLS Occupational Outlook Handbook (May 2024 data). Neither the state nor the certification providers publish cohort pass-rate statistics for food protection manager exams, which we state plainly. Fees, question counts, and retake rules come from the provider pages and should be confirmed there before registering.',
     url: '/editorial-policy'

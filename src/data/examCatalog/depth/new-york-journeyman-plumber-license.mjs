@@ -1,7 +1,7 @@
 // Depth content for: new-york-journeyman-plumber-license
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Trades & skilled-licensure desk',
     bio: 'New York plumbing license facts in this guide come from the New York City Department of Buildings (NYC DOB) Licensing and Exams pages, which are the official source for the journeyman plumber registration rules, because New York has no statewide plumber license and licensing is handled at the local level, with New York City the jurisdiction most candidates ask about. We state plainly that the NYC journeyman plumber registration is experience-based and currently has no written exam, and that the written exam in this career path is the Master Plumber license exam. Wage figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
     url: '/editorial-policy'

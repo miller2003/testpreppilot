@@ -1,7 +1,7 @@
 // Depth content for: hvac-excellence-employment-ready
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Trades & construction certifications desk',
     bio: 'This guide is compiled and maintained by our HVAC and trades desk. HVAC Excellence program structure, passing thresholds and the distinction between Employment Ready and Professional Technician credentials come from the official ESCO Group certification pages. We state plainly that this program publishes no national pass-rate statistics. Wage figures come from the Bureau of Labor Statistics occupational series named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

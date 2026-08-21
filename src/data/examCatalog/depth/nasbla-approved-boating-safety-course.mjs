@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Maritime safety & licensing desk',
     bio: 'Boating-safety course structure and state requirements come from NASBLA member-state pages and the U.S. Coast Guard, which are revised. Wage figures come from the BLS OEWS series named by code, with the most recent available OEWS release noted. This desk states plainly when a figure is not published.',
     url: '/editorial-policy'

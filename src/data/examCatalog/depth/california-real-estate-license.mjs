@@ -3,7 +3,7 @@
 // Comparative Production Statistics, BLS OOH/OES (May 2024). See examDepth.mjs.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Real estate licensing desk',
     bio: 'This guide is compiled and maintained by our licensing desk. Real estate rules are set state by state, so everything here traces to that state’s own commission or department — the licensing statute and rules, the approved education requirement, the fee schedule, and the examination provider’s candidate handbook for that jurisdiction. Pass rates are quoted only where the state or its exam vendor publishes them, split into national and state-law portions where the report separates the two, because the combined figure hides which half candidates actually fail.',
     url: '/editorial-policy'

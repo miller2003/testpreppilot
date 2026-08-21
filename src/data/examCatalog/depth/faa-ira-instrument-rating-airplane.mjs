@@ -1,7 +1,7 @@
 // Depth content for: faa-ira-instrument-rating-airplane
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Aviation & maritime credentials desk',
     bio: 'This desk covers FAA pilot knowledge and practical tests. Exam structure, question counts, time allotments, passing scores and endorsement rules come from the FAA Airman Certification Standards (ACS) and the FAA Airman Knowledge Testing Matrix; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published or has changed, we say so plainly rather than guessing.',
     url: '/editorial-policy'

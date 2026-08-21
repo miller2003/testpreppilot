@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'California food-handler facts in this guide come from the California Health and Safety Code (SB 602/SB 603 law) and county health-department guidance, including the ANSI-accredited course requirement, the 70 percent passing standard, the three-year validity and the employer reimbursement rule; no pass-rate statistics are published, which we state plainly. Salary figures come from the BLS occupational series named by SOC code (May 2024).',
     url: '/editorial-policy'

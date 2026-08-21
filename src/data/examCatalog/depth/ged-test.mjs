@@ -3,7 +3,7 @@
 // named state agencies; education-return wage data come from BLS.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'High school equivalency & adult education desk',
     bio: 'This guide is compiled and maintained by our adult-education desk. GED structure, scoring, and program volume come from GED Testing Service materials and named state adult-education agencies, and they change as states revise their contracts and fees, so we state the federal program baseline and flag anything a state sets on its own. Wage data come from the BLS Education Pays series, which reports median weekly earnings by education level. This desk states plainly when a figure is not published.',
     url: '/editorial-policy'

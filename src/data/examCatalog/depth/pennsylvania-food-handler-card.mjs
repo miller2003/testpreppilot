@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'Pennsylvania food-certification facts in this guide come from the Pennsylvania Department of Agriculture Food Employee Certification Act (3 Pa.C.S.A. 6501-6510) and local health-jurisdiction pages, including the manager-level certification required per facility and the local programs in Philadelphia, Allegheny County and other jurisdictions; no pass-rate statistics are published, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
     url: '/editorial-policy'

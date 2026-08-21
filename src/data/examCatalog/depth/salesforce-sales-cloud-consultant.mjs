@@ -2,7 +2,7 @@
 // Salesforce Certified Sales Cloud Consultant (CRT-251).
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud-platform & Salesforce certification desk',
     bio: 'This guide is compiled and maintained by our platform-certifications desk. Sales Cloud Consultant exam structure, scoring, fees and the administrator prerequisite come from the Salesforce exam guide and the official Trailhead certification pages, which we verified directly. Salesforce publishes no pass rates, and we state that plainly. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certification.',
     url: '/editorial-policy'

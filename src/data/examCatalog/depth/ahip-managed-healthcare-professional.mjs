@@ -1,7 +1,7 @@
 // Depth content for: ahip-managed-healthcare-professional
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Risk management & insurance education desk',
     bio: 'This guide is compiled and maintained by our insurance-education desk. The Managed Healthcare Professional designation\u2019s course structure, exam format and passing standards come from AHIP\u2019s Insurance Education program and the Academy for Healthcare Management, whose course and exam documentation we track against the current AHIP course catalogue. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by designation.',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Teacher licensure & education certifications desk',
     bio: 'Praxis test structure comes from the ETS Praxis official pages and varies by state; passing scores are set by each state. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
     url: '/editorial-policy'

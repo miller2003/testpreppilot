@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, AI & software certifications desk',
     bio: 'The AWS Generative AI Developer - Professional exam structure and availability are drawn from the AWS official certification announcement (November 2025) and the AWS exam guide, which are revised on AWS\u2019s published cycle; AWS does not publish pass rates, and we state that plainly. Wage figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024). Where AWS or BLS does not publish a figure, we say so rather than estimating.',
     url: '/editorial-policy'

@@ -2,7 +2,7 @@
 // Court of Master Sommeliers, Americas — Introductory Sommelier Course and Exam.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Food, beverage & hospitality certification desk',
     bio: 'This guide is compiled and maintained by our food-and-beverage desk. Introductory Sommelier exam structure and the 60% pass mark come from the Court of Master Sommeliers, Americas (CMS-A) official examination pages, which we verified directly; the fee range comes from CMS-A pricing on its registration materials. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate. This desk states plainly when a figure — such as a pass rate — is not published.',
     url: '/editorial-policy'

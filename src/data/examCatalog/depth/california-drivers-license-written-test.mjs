@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'State licensing & DMV exams desk',
     bio: 'California DMV facts in this guide come from the official dmv.ca.gov driver-license and licensing-fee pages, including the knowledge-test format, the three-attempt retake rule and the application fee; the DMV does not publish pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
     url: '/editorial-policy'

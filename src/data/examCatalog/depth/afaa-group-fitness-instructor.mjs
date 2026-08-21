@@ -2,7 +2,7 @@
 // The AFAA Certified Group Fitness Instructor (AFAA-CGFI) credential, offered by AFAA, a division of NASM.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Fitness & recreation credentials desk',
     bio: 'This guide is compiled by our fitness and recreation credentials desk. AFAA was acquired by NASM, and its Certified Group Fitness Instructor (AFAA-CGFI) credential is the group-fitness track of that organisation, so we verify exam structure against the current AFAA/NASM product pages and note where the program has changed. Exam length, question counts, scoring, and pricing come from AFAA\u2019s official pages. Wage figures come from the Bureau of Labor Statistics occupational series for the job, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

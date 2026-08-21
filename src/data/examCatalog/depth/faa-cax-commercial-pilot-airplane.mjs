@@ -3,7 +3,7 @@
 // sourced data for. Each prose section needs >=250 words of exam-specific narrative.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Aviation & FAA certification desk',
     bio: 'This guide is compiled and maintained by our aviation desk. FAA knowledge-test structure comes from the FAA Airman Knowledge Testing Matrix and the Commercial Pilot Airplane Airman Certification Standards (ACS), which we track by edition. The FAA publishes no pass-rate statistics, and we state that plainly rather than repeating industry guesses. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

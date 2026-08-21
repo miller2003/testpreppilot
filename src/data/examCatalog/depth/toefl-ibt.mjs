@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'English proficiency & international testing desk',
     bio: 'We cover ETS language-proficiency testing. Format and fee facts come from ETS official pages and are revised; wage and education-earnings figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
     url: '/editorial-policy'

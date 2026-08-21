@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Securities & financial licensing desk',
     bio: 'This desk covers FINRA qualification exams. Exam structure, item counts and passing standards come from the FINRA content-outline documents and qualification-exam pages, which are revised when rules change; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When FINRA does not publish a figure, such as a cohort pass rate, we say so plainly and do not pass off third-party estimates as official data.',
     url: '/editorial-policy'

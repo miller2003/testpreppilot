@@ -1,7 +1,7 @@
 // Depth content for: florida-cosmetology-license
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cosmetology and barber licensing desk',
     bio: 'Florida cosmetology license facts in this guide come from the Florida Department of Business and Professional Regulation Board of Cosmetology pages (myfloridalicense.com), Chapter 477 of the Florida Statutes, Rule 61G5 of the Florida Administrative Code, and the Pearson VUE examination materials, which are the official sources for the training-hour requirement, the two-part written examination, the fees, and the renewal cycle. The Board publishes the exam structure and passing score but no cohort pass rate, and we state that plainly. Wage figures come from the BLS Occupational Outlook Handbook and BLS OEWS occupation data named by SOC code (May 2024 data).',
     url: '/editorial-policy'

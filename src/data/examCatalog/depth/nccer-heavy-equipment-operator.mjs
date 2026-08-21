@@ -2,7 +2,7 @@
 // NCCER credentials are modular: a written test plus a hands-on performance profile per module, with the NCCER registry as the portable record.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Trades & skilled-licensure desk',
     bio: 'This guide is compiled and maintained by our trades desk. NCCER credentials are modular — a written test plus a hands-on performance profile per module — and the credential is part of a broader pathway that also involves employer and, in many states, separate state requirements, so we state plainly what NCCER itself certifies versus what the pathway requires. The official NCCER assessment specification for the Heavy Equipment Operator: Excavator credential was used for the exam facts. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

@@ -23,7 +23,7 @@ const canonicalUrl = new URL('/exams', Astro.site || 'https://testpreppilot.com'
 
 <BaseLayout
   title="Every U.S. Exam, License & Certification — TestPrepPilot Directory"
-  description="The most comprehensive directory of U.S. exams, licenses and certifications across every profession, state and level. Browse 5,000+ credential paths."
+  description={`The most comprehensive directory of U.S. exams, licenses and certifications across every profession, state and level. Browse ${stats.total.toLocaleString()} credential paths, each verified against primary sources.`}
   canonical={canonicalUrl}
 >
   <div class="container | animate-on-scroll">
@@ -81,7 +81,7 @@ const canonicalUrl = new URL('/exams', Astro.site || 'https://testpreppilot.com'
             <input
               id="exam-search"
               type="search"
-              placeholder="Search 5,000+ exams by name…"
+              placeholder={`Search ${stats.total.toLocaleString()} exams by name…`}
               autocomplete="off"
               aria-label="Search exams"
             />

@@ -2,7 +2,7 @@
 // CLEP History of the United States I
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'College admissions & credit-by-exam desk',
     bio: 'CLEP exam structure, scoring and ACE credit recommendations are verified against the College Board CLEP official pages and the American Council on Education (ACE) National Guide. Education-return context comes from BLS data on earnings by education level. This desk states plainly when a figure — such as a CLEP pass rate — is not published.',
     url: '/editorial-policy'

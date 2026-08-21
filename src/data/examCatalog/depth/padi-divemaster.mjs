@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Recreation, scuba & skills-certification desk',
     bio: 'We cover recreational certification programs including PADI professional-level dive courses. Structure and fee facts come from PADI official pages and are revised; wage figures come from the BLS occupational series named by code, and we state plainly when a certification has no direct occupational mapping.',
     url: '/editorial-policy'

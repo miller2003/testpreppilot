@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'State licensing & insurance desk',
     bio: 'The Texas Life & Health insurance exam structure is drawn from the Texas Department of Insurance (TDI) exam program and the Pearson VUE testing information for the General Lines Life, Accident & Health exam, which is updated on a published revision cycle; TDI does not publish aggregate first-time pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024).',
     url: '/editorial-policy'

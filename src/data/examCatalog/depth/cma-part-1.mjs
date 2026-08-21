@@ -2,7 +2,7 @@
 // CMA Part 1: Financial Planning, Performance, and Analytics. All figures verified 2026-08.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Accounting & corporate-finance certifications desk',
     bio: 'This guide is compiled and maintained by our accounting desk. The CMA program structure (two parts, the 100-question plus two-essay format, the 0-500 scaled scoring with a 360 pass mark, the testing windows, the fees and the 3-year completion clock) comes from the Institute of Management Accountants (IMA) CMA program pages and the IMA Content Specification Outlines, which are revised on a published cycle. We state plainly when IMA does not publish an official pass-rate percentage. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook occupation accountants and auditors, named by SOC code 13-2011, with the caveat that BLS classifies workers by job duties rather than by certificate.',
     url: '/editorial-policy'

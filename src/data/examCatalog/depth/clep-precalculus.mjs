@@ -2,7 +2,7 @@
 // CLEP Precalculus
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'College admissions & credit-by-exam desk',
     bio: 'CLEP Precalculus exam structure, section format, scoring and the ACE credit recommendation are verified against the College Board CLEP official page and the American Council on Education (ACE) National Guide entry for the exam. Education-return context comes from BLS data on earnings by education level. This desk states plainly when a figure — such as a CLEP pass rate — is not published.',
     url: '/editorial-policy'

@@ -1,7 +1,7 @@
 // Depth content for: florida-notary-public-commission
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Notary public licensing desk',
     bio: 'The Florida notary public commission facts below are drawn from the Florida Department of State Division of Corporations notary pages (notaries.dos.fl.gov), the Governor\u2019s Office notary pages, and the Florida statutes governing notaries (Chapter 117, F.S.), which are the official sources for the education course, the $39 state fee, the $7,500 bond, the four-year term, and the bonding-agency application path. Florida has no notary examination, so there is no pass rate to report, and we state that plainly. Salary figures come from the closest official BLS data to the notary role, which is the Legal Support Workers, All Other line in the BLS Occupational Outlook Handbook data for occupations not covered in detail (May 2024 data), cited by SOC code, with the mismatch stated honestly.',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Legal licensure desk',
     bio: 'The MPRE structure (question count, timing, scaling) is drawn from the NCBE\u2019s official MPRE materials. Jurisdiction passing scores are as published by the adopting jurisdictions and compiled by the NCBE and bar-exam reference sources; the registration fee is as documented by NCBE and bar-exam reference pages, with current-source conflicts noted. Wage figures come from the BLS Occupational Outlook Handbook Lawyers profile (SOC 23-1011), May 2024 data.',
     url: '/editorial-policy'

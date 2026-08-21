@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Insurance & financial licensure desk',
     bio: 'This guide is compiled and maintained by our insurance-licensure desk. California insurance producer licensing is administered by the California Department of Insurance (CDI), with examinations delivered by PSI Services; exam format, passing scores, fees, prelicensing education and renewal rules come from the CDI official pages, including the CDI examination time-and-question chart and the CDI fee schedule. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook (May 2024), named by SOC code. We state plainly where a figure is not published rather than guessing.',
     url: '/editorial-policy'

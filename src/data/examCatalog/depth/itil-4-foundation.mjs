@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'IT service management & framework certifications desk',
     bio: 'This guide is compiled and maintained by our IT-service-management desk. ITIL 4 is owned by AXELOS and delivered through PeopleCert; exam structure, question formats, fees and renewal terms come from PeopleCert’s ITIL 4 Foundation page and the published syllabus. ITIL is revised on a multi-year cycle, and the launch of ITIL (Version 5) in early 2026 is the single most important version fact for anyone buying material now — we state plainly that ITIL 4 remains valid and available but is scheduled for sunset, and we name the replacement and its date. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

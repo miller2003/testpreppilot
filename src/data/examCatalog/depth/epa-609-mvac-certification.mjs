@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Skilled trades & manufacturing certifications desk',
     bio: 'This desk covers skilled-trade and environmental certifications. Program structure and rules come from the certifying body\'s official pages (EPA, Section 609 program), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

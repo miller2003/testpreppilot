@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Personal security & firearms licensing desk',
     bio: 'Texas LTC facts in this guide come from Texas Government Code Chapter 411 (Subchapter H) and the Texas DPS handgun-licensing program, including the 4-6 hour training requirement, the written exam, the 50-round proficiency course, the $40 application fee and the validity periods; the DPS publishes no pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code, with an honest note that the LTC is a carry license rather than a job license.',
     url: '/editorial-policy'

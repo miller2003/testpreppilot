@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Workforce readiness & career-certification desk',
     bio: 'We cover ACT WorkKeys and the National Career Readiness Certificate. Format and fee facts come from ACT official pages and are revised; wage and employment figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
     url: '/editorial-policy'

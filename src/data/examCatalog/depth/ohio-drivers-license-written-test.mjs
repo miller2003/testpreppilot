@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'State licensing & DMV exams desk',
     bio: 'Ohio BMV facts in this guide come from the official bmv.ohio.gov driver-license and fee-schedule pages, including the 40-question knowledge test, the 75 percent passing standard, the 24-hour in-person retake rule, the two-attempt cap on online testing and the $26.50 TIPIC fee; the BMV does not publish pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
     url: '/editorial-policy'

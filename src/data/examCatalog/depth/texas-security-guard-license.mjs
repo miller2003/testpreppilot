@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Public safety & licensing desk',
     bio: 'This guide is compiled and maintained by our public-safety desk. Texas private security licensing is administered by the Texas Department of Public Safety (DPS) Private Security Bureau under Texas Occupations Code Chapter 1702, and applications run through the Texas Online Private Security (TOPS) portal; training hours, exam format, fees and renewal rules come from the DPS fee schedule and the DPS-published Level II training curriculum. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook (May 2024), named by SOC code. We state plainly where a figure is not published rather than guessing.',
     url: '/editorial-policy'

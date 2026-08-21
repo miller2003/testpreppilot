@@ -3,7 +3,7 @@
 // LEMSA certification process, renewal, plus BLS EMT wages.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'EMS & emergency-care certification desk',
     bio: 'California EMT facts in this guide come from the California Emergency Medical Services Authority (EMSA) EMT certification pages, the NREMT exam materials, and county Local EMS Agency (LEMSA) application guides, which are the official sources for the certification path, the exam structure and the renewal rules. Neither EMSA nor NREMT publishes a single current official pass rate for the EMT cognitive exam in this verification, so we state that plainly and report the published exam structure instead. Wage figures come from the BLS Occupational Outlook Handbook occupations named by SOC code (May 2024 data).',
     url: '/editorial-policy'

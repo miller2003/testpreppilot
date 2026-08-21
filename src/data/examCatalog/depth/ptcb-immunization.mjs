@@ -2,7 +2,7 @@
 // PTCB Immunization Administration Certificate (CPhT-ADM). All figures verified 2026-08.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Pharmacy-technician & allied-health certifications desk',
     bio: 'This desk covers pharmacy-technician credentials. Exam structure, the 0-400 scaled scoring model, fees, eligibility pathways and the renewal relationship to the CPhT come from the Pharmacy Technician Certification Board (PTCB) certificate pages, which are revised on a published cycle; we state plainly when the certificate itself does not require renewal and when the underlying CPhT requirement does. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook occupation pharmacy technicians, named by SOC code 29-2052, with the caveat that BLS classifies workers by job duties rather than by certificate.',
     url: '/editorial-policy'

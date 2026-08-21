@@ -2,7 +2,7 @@
 // EPA Section 608 Universal Certification
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Trades & technical certification desk',
     bio: 'EPA Section 608 exam structure, passing scores, section requirements and provider practices are verified against EPA regulatory requirements under 40 CFR Part 82, the EPA-approved testing organizations that administer the exam (including ESCO Institute, Mainstream Engineering and HVAC Excellence), and provider-published scoring documentation. Because the EPA sets requirements rather than publishing pass-rate statistics, we state plainly what is and is not published. Wage figures come from the Bureau of Labor Statistics occupational series for heating, air conditioning, and refrigeration mechanics and installers, named by SOC code.',
     url: '/editorial-policy'

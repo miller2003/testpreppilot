@@ -2,7 +2,7 @@
 // The AT-SA is the FAA aptitude screening gate in the air traffic controller hiring process.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Government & civil-service assessments desk',
     bio: 'This guide is compiled by our government and civil-service assessments desk. Air traffic controller hiring is run through USAJOBS vacancy announcements and is governed by FAA hiring policy, which changes by bid cycle, so we track the active announcement and state plainly which parts of the process are published and which are not. The Air Traffic Skills Assessment (AT-SA) itself is a proprietary, FAA-validated aptitude instrument; the FAA does not publish pass rates, item-level detail, or raw scoring formulas, and we do not pretend otherwise. Wage figures come from the Bureau of Labor Statistics occupational series that matches the job, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

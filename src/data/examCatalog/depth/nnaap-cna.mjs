@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Allied health & nurse-aide certification desk',
     bio: 'This guide is compiled and maintained by our allied-health desk. The NNAAP (National Nurse Aide Assessment Program) is the nurse-aide competency evaluation used in many states, and since 2021 it has been administered by Credentia (Pearson VUE formerly ran it; some states still use Prometric or Headmaster). We track the published content outline by its revision — the current outline dates to 2024 — and we state plainly that fees, the exact skill list and the passing standard are set by each state\'s nurse-aide registry, so you must check your own state. Wage figures come from the Bureau of Labor Statistics occupation Nursing Assistants (SOC 31-1131), named by SOC code; BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

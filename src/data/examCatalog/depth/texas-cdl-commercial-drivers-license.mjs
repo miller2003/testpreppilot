@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Commercial driving & transportation desk',
     bio: 'Texas CDL facts in this guide come from the official Texas DPS commercial-driver-license pages and the DPS fee schedule, including the knowledge-test structure, the 80 percent passing standard, the CLP requirements, the ELDT requirement and the fees; DPS does not publish pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
     url: '/editorial-policy'

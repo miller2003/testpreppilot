@@ -2,7 +2,7 @@
 // MO-101 is the Word Expert exam on the Office 2019 MOS track.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Productivity & office-software certifications desk',
     bio: 'This guide is compiled by our productivity and office-software certifications desk. Microsoft Office Specialist exams are revised with each Office release, and older versions are retired, so we track the exam by its code and version and warn when material for a previous Office version will not match the current blueprint. Exam structure, passing scores, and pricing come from Microsoft Learn and Certiport, the authorised MOS testing channel. We also track the validity policy for MOS credentials, which changed in September 2025, because it is one of the most common sources of confusion for candidates. Wage figures come from the Bureau of Labor Statistics occupational series closest to the office work this certification supports, named by SOC code.',
     url: '/editorial-policy'

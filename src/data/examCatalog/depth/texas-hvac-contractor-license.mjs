@@ -1,7 +1,7 @@
 // Depth content for: texas-hvac-contractor-license
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Trades & skilled-licensure desk',
     bio: 'Texas air conditioning and refrigeration contractor license facts in this guide come from the Texas Department of Licensing and Regulation (TDLR) Air Conditioning and Refrigeration (ACR) program pages and the PSI examination materials, which are the official sources for the license classes, the open-book exam structure, the 70 percent passing standard, the eligibility rules and the published exam statistics. TDLR publishes official pass and fail totals for its ACR exams, which we report directly from the TDLR statistics pages. Wage figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
     url: '/editorial-policy'

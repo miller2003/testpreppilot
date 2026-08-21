@@ -1,7 +1,7 @@
 // Depth content for: cisco-ccnp-automation
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This guide is compiled and maintained by our IT-certifications desk. Cisco professional-level exams are revised on a published cycle, so we track the current exam version by its official exam code and revision number — the single most common way candidates waste money here is studying a superseded blueprint. Exam fees, durations, question formats, prerequisites and retake rules come from Cisco\u2019s own certification pages and the official exam-topics pages on the Cisco Learning Network. Cisco does not publish pass rates or numeric passing scores for these exams and reports results as pass or fail, which we state plainly. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

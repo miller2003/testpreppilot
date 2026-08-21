@@ -1,7 +1,7 @@
 // Depth content for: new-york-teacher-certification-exams
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Teacher licensure & education certifications desk',
     bio: 'The New York State Teacher Certification Examinations (NYSTCE) structure in this guide is drawn from the New York State Education Department (NYSED) Office of Teaching Initiatives and the official NYSTCE pages administered by Pearson, which are the official sources for the Educating All Students test, the Content Specialty Tests, the fees and the passing scores. We state plainly that the edTPA is no longer a certification requirement in New York as of April 27, 2022, and that NYSED publishes no cohort pass rates for the NYSTCE exams. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
     url: '/editorial-policy'

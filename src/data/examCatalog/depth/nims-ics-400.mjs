@@ -2,7 +2,7 @@
 // NIMS ICS-400 Advanced Incident Command System
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Public-safety & emergency management desk',
     bio: 'ICS-400 structure, prerequisites, objectives and delivery are verified against FEMA\u2019s National Incident Management System training program materials, the course pages for E/L/G0400, and the state emergency-management agencies that publish their ICS-400 course descriptions and prerequisites. Because the course is instructor-led and state-delivered, exam and cost details are reported as the published state patterns rather than a single universal figure. Wage figures come from the Bureau of Labor Statistics occupational series for emergency management directors, named by SOC code.',
     url: '/editorial-policy'

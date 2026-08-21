@@ -1,7 +1,7 @@
 // Depth content for: florida-esthetician-license
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cosmetology and barber licensing desk',
     bio: 'Florida facial specialist (esthetician) facts in this guide come from the Florida Department of Business and Professional Regulation (DBPR) Board of Cosmetology pages (myfloridalicense.com), Chapter 477 of the Florida Statutes, and Rule 61G5 of the Florida Administrative Code, which are the official sources for the 220-hour training requirement, the HIV/AIDS course, the application and the biennial renewal cycle. We state plainly that Florida does not require a state exam for the Facial Specialist registration, so there is no state pass rate to report. Wage figures come from the BLS Occupational Outlook Handbook and BLS OEWS occupation data named by SOC code (May 2024 data).',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Aviation & FAA licensure desk',
     bio: 'The FAA ATM knowledge-test structure (question count, time limit, passing standard) is drawn from the current FAA Airman Certification Standards (ACS) and the FAA written test matrix, which are revised on a published cycle. Wage figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024). Where the FAA or BLS does not publish a figure, we say so plainly rather than estimating.',
     url: '/editorial-policy'

@@ -1,5 +1,7 @@
 import type { APIRoute } from 'astro';
 import { credentials } from '../data/credentials';
+import { allExams } from '../data/examCatalog/index.mjs';
+import { guideArticles } from '../data/guides';
 
 const SITE = 'https://testpreppilot.com';
 
@@ -12,16 +14,49 @@ function escapeXml(s: string = ''): string {
     .replace(/'/g, '&apos;');
 }
 
+// Only surface pages with real, indexed substance. A thin stub competing for a
+// high-volume query earns no reader trust and adds noise to the feed.
+function isSubstantive(exam: {
+  status?: string;
+  scope?: string;
+  researched?: boolean;
+}): boolean {
+  return exam.status === 'complete' || exam.scope === 'national' || exam.researched === true;
+}
+
 export const GET: APIRoute = () => {
-  const items = credentials.map((c) => {
+  const items: string[] = [];
+
+  for (const c of credentials) {
     const url = `${SITE}/paths/${c.slug}`;
-    return `    <item>
+    items.push(`    <item>
       <title>${escapeXml(c.name)}</title>
       <link>${url}</link>
       <guid isPermaLink="true">${url}</guid>
       <description>${escapeXml(c.description || c.tagline || '')}</description>
-    </item>`;
-  });
+    </item>`);
+  }
+
+  for (const e of allExams) {
+    if (!isSubstantive(e)) continue;
+    const url = `${SITE}/exams/${e.slug}`;
+    items.push(`    <item>
+      <title>${escapeXml(e.name)}</title>
+      <link>${url}</link>
+      <guid isPermaLink="true">${url}</guid>
+      <description>${escapeXml(e.blurb || '')}</description>
+    </item>`);
+  }
+
+  for (const g of guideArticles) {
+    const url = `${SITE}/guides/${g.slug}`;
+    items.push(`    <item>
+      <title>${escapeXml(g.title)}</title>
+      <link>${url}</link>
+      <guid isPermaLink="true">${url}</guid>
+      <description>${escapeXml(g.description || '')}</description>
+    </item>`);
+  }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">

@@ -1,7 +1,7 @@
 // Depth content for: florida-security-guard-license
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Security & private-investigation licensure desk',
     bio: 'Florida Class D security officer license facts in this guide come from the Florida Department of Agriculture and Consumer Services (FDACS) Division of Licensing pages, Chapter 493 of the Florida Statutes, and Rule 5N-1 of the Florida Administrative Code, which are the official sources for the eligibility rules, the 40-hour training requirement, the application process and the two-year license term. FDACS does not administer a state exam for this license, and we state that plainly. Wage figures come from the BLS Occupational Outlook Handbook and BLS OEWS occupation data named by SOC code (May 2024 data).',
     url: '/editorial-policy'

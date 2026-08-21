@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Engineering, architecture & design licensure desk',
     bio: 'This guide is compiled and maintained by our engineering-licensure desk. NCEES revises the FE and PE exams and their topic weighting on a multi-year cycle, so we cite the current FE Civil topic areas and the published pass rates by discipline and attempt type, and we state plainly where a figure is a NCEES-published number versus an estimate. The fee and calculator rules come from NCEES; wage figures come from the BLS occupational series for civil engineers, named by SOC code, with the caveat that BLS classifies by job duties rather than by licensure.',
     url: '/editorial-policy'

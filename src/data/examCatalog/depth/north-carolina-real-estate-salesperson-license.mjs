@@ -4,7 +4,7 @@
 // postlicensing and renewal, plus BLS wages.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Real estate licensing desk',
     bio: 'North Carolina real estate salesperson facts in this guide come from the North Carolina Real Estate Commission (NCREC) licensing brochure, the Pearson VUE examination materials for the North Carolina broker exam, and the Commission\u2019s postlicensing and renewal rules, which are the official sources for the exam format, the passing standard, the fees, the postlicensing requirement and the renewal cycle. NCREC does not publish a pass rate for the broker examination, so we state that plainly and report the published exam structure instead. Wage figures come from the BLS Occupational Outlook Handbook occupation named by SOC code (May 2024 data).',
     url: '/editorial-policy'

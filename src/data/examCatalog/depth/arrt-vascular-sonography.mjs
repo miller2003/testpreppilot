@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Allied health & diagnostic sonography certifications desk',
     bio: 'This guide is compiled and maintained by our allied-health and diagnostic-sonography desk. The credential covered here is the Registered Vascular Technologist (RVT), which is administered by the American Registry for Diagnostic Medical Sonography (ARDMS, part of Inteleos) — not by the American Registry of Radiologic Technologists (ARRT), despite the exam slug under which this page is filed. Exam structure, question counts, timing, scoring, fees and renewal requirements come from ARDMS official pages, and ARDMS publishes annual pass rates in its Global Exam Performance summaries, which we cite directly. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

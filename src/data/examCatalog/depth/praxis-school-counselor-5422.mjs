@@ -1,7 +1,7 @@
 // Depth content for: praxis-school-counselor-5422
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Teacher certification & education technology desk',
     bio: 'This guide is compiled and maintained by our teacher-certification desk. Praxis test structure, content categories and scoring come from the ETS official test information and study companion, revised with each test cycle. Because each state sets its own passing score, we treat the state requirement page as authoritative rather than quoting a national average. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

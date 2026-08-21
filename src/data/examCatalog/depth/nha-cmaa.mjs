@@ -2,7 +2,7 @@
 // NHA Certified Medical Administrative Assistant (CMAA). All figures verified 2026-08.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Allied-health & front-office administration certifications desk',
     bio: 'This guide is compiled and maintained by our allied-health desk, focused on the administrative side of the clinic. Exam structure, the 200-500 scaled scoring model, fees, retake rules and renewal terms come from the National Healthcareer Association (NHA) candidate handbook and NHA certification pages, which are revised on a published cycle. Pass-rate figures are as reported by NHA and third-party compilations of NHA statistics, and we flag that NHA does not maintain a single always-visible public pass-rate page. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook occupation closest to the role, named by SOC code, with the caveat that BLS classifies workers by job duties rather than by certificate.',
     url: '/editorial-policy'

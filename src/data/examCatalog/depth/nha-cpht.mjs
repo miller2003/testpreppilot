@@ -2,7 +2,7 @@
 // NHA Certified Pharmacy Technician (CPhT)
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Allied-health & clinical certification desk',
     bio: 'NHA ExCPT exam format, fees, scoring and recertification requirements are verified against the NHA candidate handbook and test plan for the Certified Pharmacy Technician (CPhT) credential, and we state plainly that NHA publishes no official pass rate \u2014 the percentages circulating online are third-party estimates, not NHA statistics. Wage data comes from the Bureau of Labor Statistics Occupational Outlook Handbook occupation for pharmacy technicians, cited by SOC code 29-2052, May 2024 release.',
     url: '/editorial-policy'

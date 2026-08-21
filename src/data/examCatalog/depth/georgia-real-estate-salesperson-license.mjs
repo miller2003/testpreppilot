@@ -3,7 +3,7 @@
 // PSI exam (100 national + 52 state), license fees, renewal, plus BLS wages.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Real estate licensing desk',
     bio: 'Georgia real estate salesperson facts in this guide come from the Georgia Real Estate Commission (GREC), the PSI candidate information bulletin for the Georgia salesperson examination, and the Georgia prelicensing course requirements, which are the official sources for the exam format, the passing standard, the fees and the license cycle. GREC does not publish a pass rate for the salesperson examination, so we state that plainly and report the published exam structure instead. Wage figures come from the BLS Occupational Outlook Handbook occupation named by SOC code (May 2024 data).',
     url: '/editorial-policy'

@@ -166,7 +166,7 @@ export const guideArticles: GuideArticle[] = [
     related: [
       { label: 'Browse licenses by state', href: '/states' },
       { label: 'Find your credential', href: '/exams' },
-      { label: 'About our editorial desk', href: '/about' },
+      { label: 'About our Editorial Board', href: '/about' },
     ],
   },
   {

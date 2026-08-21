@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Teacher licensure & education certifications desk',
     bio: 'This Florida teacher certification exams guide is compiled from the Florida Department of Education Bureau of Educator Certification pages, the FTCE program information delivered by Pearson VUE, and the BLS Occupational Outlook Handbook (May 2024 data). The Florida DOE does not publish cohort pass rates for the FTCE exams, and any percentage circulating online is a private estimate, which we state plainly. Fees, question counts, and retake rules come from the official pages and should be confirmed there before registering.',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'State licensing & trades desk',
     bio: 'The California plumbing licensing structure is drawn from the California Contractors State License Board (CSLB) C-36 classification information and the state and local apprenticeship and journeyman certification structures, which are updated on a published revision cycle; California has no statewide journeyman plumber examination, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024).',
     url: '/editorial-policy'

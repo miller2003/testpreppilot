@@ -3,7 +3,7 @@
 // PAMSP course waiver, plus closest BLS occupation context.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'State driver-licensing desk',
     bio: 'Pennsylvania motorcycle licensing facts in this guide come from the PennDOT motorcycle licensing pages, the Pennsylvania Motorcycle Operator Manual (PUB 147), and the Pennsylvania Motorcycle Safety Program (PAMSP) materials, which are the official sources for the knowledge test, the learner-permit restrictions, the skills test and the course waiver. PennDOT publishes no pass rate for the motorcycle knowledge or skills tests, so we state that plainly and report the published format instead. The motorcycle license is a personal driving credential rather than an occupational license, so the salary section honestly explains that no BLS occupation requires it and cites the closest occupational category (Couriers and Messengers, SOC 43-5021) with that caveat; wage figures use BLS May 2024 data.',
     url: '/editorial-policy'

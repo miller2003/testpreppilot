@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Advanced Placement & college-credit desk',
     bio: 'The AP Physics 1: Algebra-Based exam structure (question counts, timing, scoring weights) is drawn from the College Board official course and exam description, which was redesigned for the May 2025 exam — a redesign we flag because older prep materials describe a different format. The College Board publishes annual AP score distributions for every subject, and we cite that practice.',
     url: '/editorial-policy'

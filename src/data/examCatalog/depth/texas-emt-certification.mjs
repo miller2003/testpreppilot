@@ -3,7 +3,7 @@
 // renewal, plus BLS EMT wages.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'EMS & emergency-care certification desk',
     bio: 'Texas EMT facts in this guide come from the Texas Department of State Health Services (DSHS) EMS and Trauma Systems certification pages, the DSHS EMS application fee schedule, and NREMT exam materials, which are the official sources for the certification path, the exam structure, the fees and the renewal rules. Neither DSHS nor NREMT publishes a single current official pass rate for the EMT cognitive exam in this verification, so we state that plainly and report the published exam structure instead. Wage figures come from the BLS Occupational Outlook Handbook occupations named by SOC code (May 2024 data).',
     url: '/editorial-policy'

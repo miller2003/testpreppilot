@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Medical coding & health-information certifications desk',
     bio: 'This desk covers medical-coding certifications. Exam structure, fees and rules come from the certifying body\'s official pages (AAPC), which are revised annually with the code updates; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

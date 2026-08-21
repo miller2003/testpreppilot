@@ -3,7 +3,7 @@
 // state DMV materials; wage figures come from BLS.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Commercial driving & transportation certifications desk',
     bio: 'This guide is compiled and maintained by our commercial-driving desk. CDL endorsement rules are a federal-state mix: the H endorsement\u2019s knowledge-test requirement and 80 percent passing standard come from 49 CFR 383.135, the TSA security threat assessment from 49 CFR Part 1572, and the exact question count and fee from the state that issues your licence. We state the federal baseline and flag anything a state sets on its own. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code; BLS classifies by job duties rather than by licence class or endorsement, so the closest official fit for a hazmat-endorsed driver is Heavy and Tractor-trailer Truck Drivers (SOC 53-3032).',
     url: '/editorial-policy'

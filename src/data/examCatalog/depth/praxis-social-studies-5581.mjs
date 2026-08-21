@@ -3,7 +3,7 @@
 // Salary: BLS OOH High School Teachers (SOC 25-2031), May 2024
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Teacher licensure & education certifications desk',
     bio: 'This guide is compiled and maintained by our teacher-licensure desk. Praxis tests are administered by ETS, and the passing scores are set by each state education agency rather than by ETS, so we track structure, question counts, timing and fees from the official ETS Praxis pages and the ETS Study Companion for each test, and we state plainly where you must confirm a state-specific cut score. ETS publishes no pass rate for Praxis tests, and we do not invent one. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

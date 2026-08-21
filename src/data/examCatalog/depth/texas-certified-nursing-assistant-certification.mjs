@@ -3,7 +3,7 @@
 // overseen by Texas HHSC, plus BLS nursing assistant wages.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Allied health & nurse-aide certification desk',
     bio: 'Texas CNA facts in this guide come from the Texas Health and Human Services Commission (HHSC) nurse aide pages, the Prometric Texas nurse aide candidate information bulletin, and the TULIP registration guidance published by Texas training programs. Texas does not publish a single official statewide pass rate for the nurse aide exam, so we state that plainly and report the published exam structure and passing standard instead. Wage figures come from the BLS Occupational Outlook Handbook occupation named by SOC code (May 2024 data).',
     url: '/editorial-policy'

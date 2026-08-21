@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Health, fitness & recreation certifications desk',
     bio: 'This guide is compiled and maintained by our fitness-certifications desk. ISSA revises its CPT curriculum periodically, so we track the exam by its current published format and state plainly when a number is ISSA-published versus a third-party estimate. Fees, format, scoring and renewal come from the International Sports Sciences Association certification pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

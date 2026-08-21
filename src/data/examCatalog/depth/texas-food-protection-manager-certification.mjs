@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Food safety certification desk',
     bio: 'The Texas food protection manager certification facts below are drawn from the Texas Department of State Health Services (DSHS) food manager certification requirements and the published exam formats of the ANSI-accredited providers (including ServSafe and the Texas FoodGuard exam); where a provider price or format detail varies, we say so plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation page for Food Service Managers (May 2024 data), cited by SOC code.',
     url: '/editorial-policy'

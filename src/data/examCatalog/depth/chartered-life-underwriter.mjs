@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Insurance & financial services designations desk',
     bio: 'This desk covers professional designations awarded by The American College and other financial-services educators. Program structure, course counts and grading standards come from the issuing institution\u2019s official program pages and student handbook, which were revised in April 2026; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When the College does not publish a figure, such as a program pass rate, we say so plainly rather than guessing.',
     url: '/editorial-policy'

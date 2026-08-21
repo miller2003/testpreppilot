@@ -2,7 +2,7 @@
 // Certified Cicerone — second level of the Cicerone Certification Program.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Food, beverage & hospitality certification desk',
     bio: 'This guide is compiled and maintained by our food-and-beverage desk. Certified Cicerone exam structure, scoring, fees and pass-rate information come from the Cicerone Certification Program\'s official pages and support centre; the pass rate is the figure Cicerone itself publishes in its FAQ, which we verified. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties and its bartender wage data excludes tips.',
     url: '/editorial-policy'

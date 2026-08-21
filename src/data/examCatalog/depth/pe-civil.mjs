@@ -4,7 +4,7 @@
 // >=250 words of exam-specific narrative. See examDepth.mjs for the full schema.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Engineering licensure desk',
     bio: 'This guide is compiled and maintained by our engineering-licensure desk. The PE Civil exam is developed and administered by NCEES, but the licence itself is issued by your state licensing board, which sets the experience, education and exam requirements — so we state plainly what NCEES runs versus what your state requires. NCEES publishes pass rates by discipline, which we cite with the caveat that they are cohort statistics. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'

@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Highway & traffic-control credentialing desk',
     bio: 'Work-zone traffic control structure comes from the IMSA (International Municipal Signal Association) official pages and state DOT requirements, which vary by state and are revised. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
     url: '/editorial-policy'

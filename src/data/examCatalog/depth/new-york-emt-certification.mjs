@@ -1,7 +1,7 @@
 // Depth content for: new-york-emt-certification
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Emergency medical services certifications desk',
     bio: 'New York EMT certification facts in this guide come from the New York State Department of Health Bureau of Emergency Medical Services pages (ny.gov and health.ny.gov), the EMS certification application forms (DOH-4245, DOH-65), and the National Registry of Emergency Medical Technicians (NREMT) exam materials, which are the official sources for the training requirement, the state written and practical exams, the NREMT alternative pathway, the fees, and the renewal cycle. The State publishes the exam structure and fee but no cohort pass rate, and we state that plainly. Wage figures come from the BLS Occupational Outlook Handbook occupation page named by SOC code (May 2024 data).',
     url: '/editorial-policy'

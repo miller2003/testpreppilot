@@ -3,7 +3,7 @@
 // CMSP training requirement, plus closest BLS occupation context.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'State driver-licensing desk',
     bio: 'California motorcycle licensing facts in this guide come from the California DMV Motorcyclists Handbook, the DMV motorcycle licensing pages and the California Highway Patrol\u2019s California Motorcyclist Safety Program (CMSP) materials, which are the official sources for the knowledge test, the skills test and the under-21 training requirement. The DMV publishes no pass rate for the motorcycle knowledge or skills tests, so we state that plainly. The motorcycle license is a personal driving credential rather than an occupational license, so the salary section honestly explains that no BLS occupation requires it and cites the closest occupational category (Couriers and Messengers, SOC 43-5021) with that caveat; wage figures use BLS May 2024 data.',
     url: '/editorial-policy'

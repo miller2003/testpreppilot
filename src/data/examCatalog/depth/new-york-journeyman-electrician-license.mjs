@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Construction trades, electrical & contractor licensing desk',
     bio: 'This New York electrician licensing guide is compiled from the New York City Department of Buildings licensing pages, the local electrical examining boards that license electricians in New York, and the BLS Occupational Outlook Handbook (May 2024 data). The central fact is stated plainly throughout: New York State does not issue a statewide journeyman electrician license, and electrician licensing is handled by local jurisdictions, so the requirements, exams, fees, and renewal rules below vary by city and county. No New York jurisdiction publishes exam pass rates, and we do not restate private estimates.',
     url: '/editorial-policy'

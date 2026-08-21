@@ -5,7 +5,7 @@
 // publish pass rates. BLS SOC 39-5092 Manicurists and Pedicurists.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cosmetology & personal services licensing desk',
     bio: 'This guide is compiled and maintained by our cosmetology-licensing desk. Texas licenses nail technicians as Manicurists through the Texas Department of Licensing and Regulation (TDLR), and the requirements here — 600 training hours, the written and practical exams through the third-party vendor PSI, the application fee and the two-year renewal cycle — come from TDLR\u2019s official pages and the PSI candidate information. TDLR does not publish pass rates, and we state that plainly rather than inventing a number. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook page for Manicurists and Pedicurists (SOC 39-5092), May 2024 data, with the caveat that BLS classifies by job duties rather than by credential.',
     url: '/editorial-policy'

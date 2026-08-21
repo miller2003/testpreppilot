@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Insurance & healthcare coverage desk',
     bio: 'This desk covers insurance and Medicare-related credentials. Exam structure and certification requirements come from AHIP\'s published program pages, which are revised annually around each Annual Election Period; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

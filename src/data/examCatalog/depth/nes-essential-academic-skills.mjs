@@ -1,7 +1,7 @@
 // Depth content for: nes-essential-academic-skills
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Teacher licensure & education certifications desk',
     bio: 'This desk covers Pearson National Evaluation Series (NES) and ETS Praxis exams and teacher-licensure credentials. Exam structure, subtests, testing times and passing-score rules come from the official Pearson NES test pages and vary by state; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'

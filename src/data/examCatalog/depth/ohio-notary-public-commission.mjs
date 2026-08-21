@@ -1,7 +1,7 @@
 // Depth content for: ohio-notary-public-commission
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Notary public licensing desk',
     bio: 'The Ohio notary public facts below are drawn from the Ohio Secretary of State notary program, the Ohio Administrative Code chapter 111:6-1, and Ohio Revised Code chapter 147. Where a figure is not published by the state, such as pass rates, we say so plainly. Salary figures come from the closest official BLS data to the notary role, cited by SOC code with May 2024 data, with the mismatch stated honestly because the BLS does not publish a notary public occupation.',
     url: '/editorial-policy'

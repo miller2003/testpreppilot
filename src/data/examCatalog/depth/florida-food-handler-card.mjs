@@ -1,7 +1,7 @@
 // Depth content for: florida-food-handler-card
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'FL DBPR food safety training desk',
     bio: 'Florida food handler training facts are drawn from Florida Statute 509.049, the Florida Department of Business and Professional Regulation (DBPR) food service employee training rules, and DBPR-approved provider information. Florida law requires DBPR-approved training rather than a state-administered exam, so there is no state test and no published pass rate, and we state that plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
     url: '/editorial-policy'

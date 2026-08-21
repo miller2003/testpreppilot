@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Securities & financial licensing desk',
     bio: 'This desk covers financial-services credentials, including designations awarded through the Mortgage Bankers Association. Program structure, course requirements and grading standards come from the MBA Education course pages and the AMP designation materials, which are revised as the School of Mortgage Banking curriculum changes; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When the issuing body does not publish a figure, such as a designation pass rate, we say so plainly rather than guessing.',
     url: '/editorial-policy'

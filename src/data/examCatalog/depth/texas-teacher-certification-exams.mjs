@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Teacher licensure & education certifications desk',
     bio: 'This guide is compiled and maintained by our teacher-licensure desk. The TExES program is developed by the Texas Education Agency (TEA) and administered by Pearson; exam structure, fees, passing scores and retake rules come from the official TExES site at tx.nesinc.com, which publishes per-exam test pages. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook (May 2024), named by SOC code. We state plainly where a figure is not published rather than guessing.',
     url: '/editorial-policy'

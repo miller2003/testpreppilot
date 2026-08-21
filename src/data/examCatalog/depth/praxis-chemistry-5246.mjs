@@ -2,7 +2,7 @@
 // See examDepth.mjs for the full schema. All figures verified 2026-08.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Teacher licensure & Praxis desk',
     bio: 'This guide is compiled and maintained by our teacher-licensure desk. The Praxis tests are administered by ETS, and we take the exam structure — question counts, timing, content-category percentages and the scoring model — from the official ETS page for Chemistry (5246), which is the authoritative source for this test and supersedes the older 5245 outline. The content is aligned with the Next Generation Science Standards and the NSTA preparation standards for chemistry teachers, and the exam\u2019s five categories, the no-calculator rule and the provided reference tables are as ETS describes them. Passing scores are set by each certifying state rather than by ETS, so we state the published mechanics and flag that the actual required score must be confirmed on the ETS state-requirements page. The registration fee comes from the ETS Praxis fee schedule; 5246 is selected-response only. Wage figures come from the Bureau of Labor Statistics occupation High School Teachers (SOC 25-2031), named by SOC code, with the caveat that BLS classifies by job duties and that the exam is a licensure step rather than an occupation. ETS does not publish Praxis pass rates, and we do not invent one.',
     url: '/editorial-policy'

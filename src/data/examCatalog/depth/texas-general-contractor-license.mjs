@@ -5,7 +5,7 @@
 // registration and permit systems. There is no GC exam and no GC pass rate.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Construction & trade licensing desk',
     bio: 'This guide is compiled and maintained by our construction-licensing desk. The core fact here is that Texas has no statewide general contractor license, and we state that plainly and explain the real structure that replaces it: state licensing of specialty trades through TDLR and the Texas State Board of Plumbing Examiners, plus municipal contractor registration and permit systems that vary by city. Because there is no GC exam, there is also no pass rate, and we do not invent one. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook occupation page for Construction Managers (SOC 11-9021), May 2024 data, with the caveat that BLS classifies by job duties rather than by credential.',
     url: '/editorial-policy'

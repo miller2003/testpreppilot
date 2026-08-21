@@ -2,7 +2,7 @@
 // NCCT National Certified Patient Care Technician (NCPCT / PCT). All figures verified 2026-08.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Allied-health & patient-care support certifications desk',
     bio: 'This guide is compiled and maintained by our allied-health desk. NCCT exam format, the 200-720 scaled scoring model, fees, retake policy and recertification requirements are verified against the NCCT detailed test plan and candidate materials, and NCCT\u2019s published route-specific first-time pass rates are cited as the official source where they exist. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook occupations closest to the role, named by SOC code, with the caveat that BLS classifies workers by job duties rather than by certificate. Fees and test plans change; we date everything we quote.',
     url: '/editorial-policy'

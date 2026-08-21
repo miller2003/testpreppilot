@@ -3,7 +3,7 @@
 // (e.g., ServSafe), California Retail Food Code requirement, plus BLS wages.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'California Certified Food Protection Manager (CFPM) facts in this guide come from the California Retail Food Code (Health and Safety Code) requirements, county environmental-health pages that publish the ANSI/CFP accreditation rule, and the ServSafe program materials, which are the official sources for the exam format, the passing standard and the five-year validity. California does not publish a single official pass rate for CFPM exams, so we state that plainly. Wage figures come from the BLS Occupational Outlook Handbook occupation named by SOC code (May 2024 data).',
     url: '/editorial-policy'

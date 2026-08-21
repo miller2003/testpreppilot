@@ -1,7 +1,7 @@
 // Depth content for: california-general-contractor-license
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'State occupational licensing desk',
     bio: 'This guide is compiled and maintained by our state-licensing desk. Exam structure, fees, experience requirements, retake rules and renewal terms come from the California Contractors State License Board (CSLB) application pages and fee schedule, and from the published exam-administration rules of PSI, which delivers CSLB examinations on computer. CSLB does not publish pass-rate statistics for its examinations, so we state that plainly and report the published 72-percent passing standard instead. Wage figures come from the Bureau of Labor Statistics occupational series named by SOC code, May 2024 data, with the caveat that BLS classifies by job duties rather than by license.',
     url: '/editorial-policy'

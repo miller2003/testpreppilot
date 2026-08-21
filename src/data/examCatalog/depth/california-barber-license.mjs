@@ -6,7 +6,7 @@
 // $50 two-year renewal, no CE. BLS SOC 39-5011 Barbers.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Cosmetology & personal services licensing desk',
     bio: 'This guide is compiled and maintained by our cosmetology-licensing desk. California licenses barbers through the Board of Barbering and Cosmetology within the Department of Consumer Affairs, and the requirements here — the 1000-hour training minimum, the written-only examination, the fee schedule and the two-year renewal — come from the Board\u2019s official pages, the candidate information bulletin and the California Business and Professions Code. A key fact we state plainly: Senate Bill 803, effective January 1, 2022, reduced barber training from 1500 hours to 1000 hours and eliminated the practical examination, so the current exam is written only. The Board does not publish pass rates, and we do not invent one. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook page for Barbers, Hairstylists, and Cosmetologists (SOC 39-5011 for barbers), May 2024 data, with the caveat that BLS classifies by job duties rather than by credential.',
     url: '/editorial-policy'

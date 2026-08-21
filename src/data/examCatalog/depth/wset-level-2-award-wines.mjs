@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Wine & hospitality education desk',
     bio: 'WSET Level 2 structure and pricing come from the Wine & Spirit Education Trust official pages and are revised with each syllabus update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
     url: '/editorial-policy'

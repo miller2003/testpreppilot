@@ -3,7 +3,7 @@
 // course waiver, plus closest BLS occupation context.
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'State driver-licensing desk',
     bio: 'Ohio motorcycle licensing facts in this guide come from the Ohio Bureau of Motor Vehicles (BMV) motorcycle licensing pages, the Ohio Motorcycle Operator Manual, and the Motorcycle Ohio program pages of the Ohio Department of Public Safety, which are the official sources for the temporary instruction permit, the knowledge test, the skills test and the course waiver. The BMV does not publish a pass rate for the motorcycle knowledge or skills tests, and the published question count varies across unofficial sources, so we state that plainly and describe the structure that is verifiable. The motorcycle license is a personal driving credential rather than an occupational license, so the salary section honestly explains that no BLS occupation requires it and cites the closest occupational category (Couriers and Messengers, SOC 43-5021) with that caveat; wage figures use BLS May 2024 data.',
     url: '/editorial-policy'

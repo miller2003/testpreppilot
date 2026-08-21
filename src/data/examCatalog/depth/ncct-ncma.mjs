@@ -2,7 +2,7 @@
 // NCCT National Certified Medical Assistant (NCMA)
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Allied-health & clinical certification desk',
     bio: 'NCCT NCMA exam format, fees, scoring, retake policy and recertification requirements are verified against the NCCT detailed test plan and candidate materials, and NCCT\u2019s published route-specific first-time pass rates are cited as the official source. Wage data comes from the Bureau of Labor Statistics Occupational Outlook Handbook occupation for medical assistants, cited by SOC code 31-9092, May 2024 release. Fees and test plans change; we date everything we quote.',
     url: '/editorial-policy'

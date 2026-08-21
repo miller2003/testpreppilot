@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Ophthalmic & allied-eye-care certifications desk',
     bio: 'The JCAHPO COA exam structure (question count, time, delivery) is drawn from JCAHPO\u2019s official COA candidate materials, which are updated on a published revision cycle; JCAHPO does not publish cohort pass rates, and we state that plainly. Wage figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024). Where JCAHPO or BLS does not publish a figure, we say so rather than estimating.',
     url: '/editorial-policy'

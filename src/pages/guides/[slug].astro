@@ -24,6 +24,9 @@ const breadcrumbItems = [
   title={`${article.title} — TestPrepPilot Guides`}
   description={article.description}
   canonical={canonicalUrl}
+  ogType="article"
+  articlePublishedTime={article.dateISO}
+  articleModifiedTime={article.dateISO}
 >
   <div class="container">
     <BreadcrumbNav items={breadcrumbItems} />

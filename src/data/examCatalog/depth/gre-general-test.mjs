@@ -1,6 +1,6 @@
 const data = {
   author: {
-    name: 'TestPrepPilot Editorial Desk',
+    name: 'TestPrepPilot Editorial Board',
     title: 'Graduate admissions & standardized-testing desk',
     bio: 'We cover the GRE General Test and its role in graduate admission. Format and fee facts come from ETS official pages and are revised; wage and education-earnings figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
     url: '/editorial-policy'
