@@ -10,7 +10,7 @@
 //
 // GA4 is loaded with `is:inline` + async so Astro never rewrites or bundles
 // it, and the request is non-blocking for LCP.
-const ga4Id = import.meta.env.PUBLIC_GA4_ID;
+const ga4Id = import.meta.env.PUBLIC_GA4_ID || 'G-P2G1H5ML96';
 const gscToken = import.meta.env.PUBLIC_GSC_VERIFICATION;
 ---
 
