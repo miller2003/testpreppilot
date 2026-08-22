@@ -1,0 +1,31 @@
+---
+// Site analytics + Search Console verification.
+// Config-driven and graceful: when the PUBLIC_* env vars are unset (local dev,
+// previews), this component renders NOTHING — the site ships with zero
+// third-party requests. Set the vars in .env (see .env.example) and rebuild to
+// activate.
+//
+//   PUBLIC_GA4_ID           e.g. G-XXXXXXXXXX  (GA4 "Data streams" panel)
+//   PUBLIC_GSC_VERIFICATION token from GSC -> Settings -> Ownership -> HTML tag
+//
+// GA4 is loaded with `is:inline` + async so Astro never rewrites or bundles
+// it, and the request is non-blocking for LCP.
+const ga4Id = import.meta.env.PUBLIC_GA4_ID;
+const gscToken = import.meta.env.PUBLIC_GSC_VERIFICATION;
+---
+
+{gscToken && <meta name="google-site-verification" content={gscToken} />}
+
+{ga4Id && (
+  <>
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`}></script>
+    <script is:inline define:vars={{ ga4Id }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      // debug_mode is OFF in production builds; add ?debug_mode to the URL
+      // only when validating events in GA4 DebugView.
+      gtag('config', ga4Id, { send_page_view: true });
+    </script>
+  </>
+)}

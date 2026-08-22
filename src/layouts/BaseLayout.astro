@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SEOHead from '../components/SEOHead.astro';
+import Analytics from '../components/Analytics.astro';
 import { organizationSchema, editorialBoardNode } from '../data/editorial';
 import { ClientRouter } from 'astro:transitions';
 
@@ -97,6 +98,7 @@ const editorialBoardSchema = editorialBoardNode();
       articlePublishedTime={articlePublishedTime || finalDatePublished}
       articleModifiedTime={articleModifiedTime || finalDateModified}
     />
+    <Analytics />
     <link rel="alternate" type="application/rss+xml" title="TestPrepPilot" href="/rss.xml" />
     <script type="application/ld+json" set:html={JSON.stringify(schemaData, null, 2)} is:inline />
     <script type="application/ld+json" set:html={JSON.stringify(webSiteSchema)} is:inline />
