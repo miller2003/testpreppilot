@@ -1,4 +1,70 @@
+# TestPrepPilot — robots.txt
+#
+# Everything on this site is free to read and free to cite. The explicit
+# per-agent blocks below exist because several AI crawlers are blocked by
+# default elsewhere on the web (or infer a block from a bare wildcard rule on
+# hosts with aggressive defaults), and because a publisher that WANTS to be a
+# source for AI answers should say so. Per-agent Allow rules are written out
+# rather than implied, so the intent survives any future edit to the wildcard
+# block.
+#
+# AI answer surfaces served by these agents:
+#   GPTBot / OAI-SearchBot / ChatGPT-User  → ChatGPT search + training
+#   PerplexityBot                          → Perplexity answers
+#   ClaudeBot / anthropic-ai / Claude-User → Claude
+#   Google-Extended                        → Gemini app & Vertex grounding
+#   Applebot-Extended                      → Apple Intelligence summaries
+#   Amazonbot, meta-externalagent, YouBot, Diffbot, cohere-ai, Bytespider
+#
+# A machine-readable map of our best content lives at /llms.txt.
+
 User-agent: *
+Allow: /
+
+# ── AI answer engines & training crawlers ──────────────────────────
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
 Allow: /
 
 Sitemap: https://testpreppilot.com/sitemap-index.xml

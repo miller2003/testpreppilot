@@ -13,29 +13,37 @@ const pageUrl = `${SITE}/about`;
 const dateModified = '2026-08-11';
 const CONTACT_EMAIL = 'contact@testpreppilot.com';
 
-// Plain-text FAQ answers for structured data. The rendered answers below carry
-// the same facts plus internal links; schema.org wants the text only.
+// Single source of truth for the FAQ: the schema below AND the rendered
+// answers further down both come from this array. The structured data can
+// therefore never disagree with the visible text — the one failure mode
+// that gets markup ignored outright. `link` is rendered as a trailing
+// anchor after the answer text; it is navigation, not part of the answer.
 const faqSchemaItems = [
   {
     q: 'Who writes the guides on TestPrepPilot?',
-    a: 'Every guide is written and maintained by the TestPrepPilot Editorial Board — a small research team, not a content farm or a prep-course vendor. We byline the board rather than inventing individual personas. When a licensed professional reviews a guide, that person is named on the page with a verifiable credential.'
+    a: 'The TestPrepPilot Editorial Board — a small research team, not a content farm or a prep-course vendor. We byline the desk rather than inventing personas, and when a licensed professional reviews a guide, that person is named on the page.',
+    link: { label: 'How a guide is built', href: TRUST_PAGES.methodology },
   },
   {
     q: 'Are the guides reviewed by real experts?',
-    a: 'Where a guide covers a licensed field and a reviewer is attached, it is checked for accuracy by a professional who holds that exact credential — a real person whose license can be verified publicly. Where no reviewer is attached yet, the page says so and relies on the desk’s primary-source research pipeline alone. We never invent a reviewer.'
+    a: 'Where a reviewer is attached, yes — a professional who holds that exact credential, named on the page with a way to verify their license. Where no reviewer is attached yet, the page says so and relies on the desk’s primary-source pipeline alone. We never invent a reviewer.',
+    link: { label: 'How reviewers are vetted', href: TRUST_PAGES.reviewers },
   },
   {
     q: 'How does TestPrepPilot make money?',
-    a: 'Through affiliate commissions from some exam-prep providers, disclosed on every page where a link appears. Providers cannot pay to alter a requirement, change a ranking, or secure a recommendation, and we routinely list providers we earn nothing from when they are the better route.'
+    a: 'Affiliate commissions from some exam-prep providers, disclosed on every page where a link appears. Providers cannot pay to alter a requirement, change a ranking, or secure a recommendation — and we routinely list providers we earn nothing from when they are the better route.',
+    link: { label: 'Read the disclosure', href: TRUST_PAGES.disclosure },
   },
   {
     q: 'How current is the information?',
-    a: 'Every substantive page carries a “last reviewed” stamp showing the month its figures were re-verified against primary sources. High-traffic pages are re-checked on a rolling schedule, and anything that changes frequently, such as fees, is labelled so you confirm it with the board before you pay.'
+    a: 'Every substantive page carries a “last reviewed” stamp showing the month its figures were re-verified against primary sources. High-traffic pages are re-checked on a rolling schedule, and anything that changes frequently — fees especially — is labelled so you confirm it with the board before you pay.',
+    link: { label: 'What the stamp means', href: TRUST_PAGES.methodology },
   },
   {
     q: 'How do I report an error or suggest a credential?',
-    a: 'Through the contact form on this page, or by email. Choose “Report an error on a guide” or “Suggest a credential to cover.” Every report is read by the desk; substantive corrections are made on the page and noted.'
-  }
+    a: 'Through the form above — choose “Report an error on a guide” or “Suggest a credential to cover.” Every report is read by the desk, and substantive corrections are made on the page and noted.',
+    link: { label: 'Reach the desk', href: TRUST_PAGES.about + '#contact' },
+  },
 ];
 
 const { '@context': _orgContext, ...orgNode } = organizationSchema();
@@ -429,51 +437,14 @@ const reviews = [
       <section class="faq-section">
         <h2>Questions readers ask the desk</h2>
         <div class="faq-list">
-          <details class="faq-item">
-            <summary>Who writes the guides on TestPrepPilot?</summary>
-            <p>
-              The <strong>TestPrepPilot Editorial Board</strong> — a small research team, not a
-              content farm or a prep-course vendor. We byline the desk rather than inventing
-              personas, and when a licensed professional reviews a guide, that person is named
-              on the page. <a href={TRUST_PAGES.methodology}>How a guide is built</a>.
-            </p>
-          </details>
-          <details class="faq-item">
-            <summary>Are the guides reviewed by real experts?</summary>
-            <p>
-              Where a reviewer is attached, yes — a professional who holds that exact
-              credential, named on the page with a way to verify their license. Where no
-              reviewer is attached yet, the page says so and relies on the desk's
-              primary-source pipeline alone. We never invent a reviewer.
-              <a href={TRUST_PAGES.reviewers}>How reviewers are vetted</a>.
-            </p>
-          </details>
-          <details class="faq-item">
-            <summary>How does TestPrepPilot make money?</summary>
-            <p>
-              Affiliate commissions from some exam-prep providers, disclosed on every page
-              where a link appears. Providers cannot pay to alter a requirement, change a
-              ranking, or secure a recommendation.
-              <a href={TRUST_PAGES.disclosure}>Read the disclosure</a>.
-            </p>
-          </details>
-          <details class="faq-item">
-            <summary>How current is the information?</summary>
-            <p>
-              Every substantive page carries a "last reviewed" stamp showing the month its
-              figures were re-verified against primary sources. Anything that changes
-              frequently — fees especially — is labelled so you confirm it with the board
-              before you pay. <a href={TRUST_PAGES.methodology}>What the stamp means</a>.
-            </p>
-          </details>
-          <details class="faq-item">
-            <summary>How do I report an error or suggest a credential?</summary>
-            <p>
-              Through the form above — choose "Report an error on a guide" or "Suggest a
-              credential to cover." Every report is read by the desk, and substantive
-              corrections are made on the page and noted.
-            </p>
-          </details>
+          {faqSchemaItems.map((f) => (
+            <details class="faq-item">
+              <summary>{f.q}</summary>
+              <p>
+                {f.a} <a href={f.link.href}>{f.link.label}</a>.
+              </p>
+            </details>
+          ))}
         </div>
       </section>
 

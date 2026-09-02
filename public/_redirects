@@ -8,3 +8,73 @@
 /how-it-works /about 301
 # Homepage is now the exam directory; the standalone /exams listing folds into /.
 /exams / 301
+
+# ── 2026-09-02: state directory layer removed ─────────────────────────
+# The 51 /[state] hub pages rendered near-identical content (avg 98.3%
+# cross-similarity, 486–617 words) with zero state-specific exams behind
+# them — textbook doorway pages that GSC refused to index. The site is now
+# exam-first: state-level coverage returns later via published state-scope
+# exams, not pre-built empty hubs.
+# The /states hub and all 51 state slugs consolidate to the exam directory.
+/states / 301
+/texas/texas-real-estate-license /paths/texas-real-estate-license 301
+/california/california-real-estate-license /paths/california-real-estate-license 301
+/florida/florida-real-estate-license /paths/florida-real-estate-license 301
+/alabama / 301
+/alaska / 301
+/arizona / 301
+/arkansas / 301
+/california / 301
+/colorado / 301
+/connecticut / 301
+/delaware / 301
+/district-of-columbia / 301
+/florida / 301
+/georgia / 301
+/hawaii / 301
+/idaho / 301
+/illinois / 301
+/indiana / 301
+/iowa / 301
+/kansas / 301
+/kentucky / 301
+/louisiana / 301
+/maine / 301
+/maryland / 301
+/massachusetts / 301
+/michigan / 301
+/minnesota / 301
+/mississippi / 301
+/missouri / 301
+/montana / 301
+/nebraska / 301
+/nevada / 301
+/new-hampshire / 301
+/new-jersey / 301
+/new-mexico / 301
+/new-york / 301
+/north-carolina / 301
+/north-dakota / 301
+/ohio / 301
+/oklahoma / 301
+/oregon / 301
+/pennsylvania / 301
+/rhode-island / 301
+/south-carolina / 301
+/south-dakota / 301
+/tennessee / 301
+/texas / 301
+/utah / 301
+/vermont / 301
+/virginia / 301
+/washington / 301
+/west-virginia / 301
+/wisconsin / 301
+/wyoming / 301
+
+# ── 2026-09-02: thin category consolidation (<3 published exams each) ──
+/categories/engineering-design /categories/trades 301
+/categories/environment /categories/workplace-safety 301
+/categories/aviation-maritime /categories/transportation 301
+/categories/government-civil-service /categories/public-safety 301
+/categories/beauty-wellness /categories/fitness-recreation 301

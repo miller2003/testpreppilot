@@ -1,8 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
-import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
-import { buildDirectory } from '../../data/examCatalog/index.mjs';
+import { buildDirectory, getExamDetail } from '../../data/examCatalog/index.mjs';
 import { categoryTitle, clampDesc } from '../../lib/seoTitle';
 
 export function getStaticPaths() {
@@ -30,10 +29,118 @@ const stateCodes = [...new Set(stateScoped.map((e: any) => e.stateCode).filter(B
 
 const title = categoryTitle(category.name, category.total);
 const description = clampDesc(`Every ${category.name.toLowerCase()} credential we track: ${category.total} exams across ${category.groups.length} specialisms${stateCodes.length ? `, including ${stateCodes.length} state-issued licences` : ''}. Requirements, costs and exam formats verified against official sources.`);
+
+const SITE = 'https://testpreppilot.com';
+const catLower = category.name.toLowerCase();
+
+// ── Answer-first line (GEO 2.2/2.3) ──────────────────────────────────────
+// A category page that opens with a paragraph of positioning copy gives a
+// retrieval system nothing to quote. This one opens with the counts and the
+// scope split — the two facts a "how many / do I need one" query actually
+// asks for.
+const catAnswer = `There are ${category.total} ${catLower} credentials in the TestPrepPilot directory: ${nationalScoped.length} national certifications awarded by a single body, and ${stateScoped.length} licences issued by individual state boards across ${stateCodes.length} ${stateCodes.length === 1 ? 'state' : 'states'}.`;
+
+// ── Comparison table (GEO 2.4) ───────────────────────────────────────────
+// The single highest-value addition on this page type. 16 category pages had
+// zero tables, which means zero structured, cell-by-cell facts for an answer
+// engine to lift. Rows are drawn from the same researched records the exam
+// pages render, so the table cannot drift from the detail pages it links to.
+const tableRows = nationalScoped
+  .map((e: any) => {
+    const d = getExamDetail(e.slug) || {};
+    const r = d.record;
+    if (!r) return null;
+    const m = r.examMeta || {};
+    return {
+      slug: e.slug,
+      name: e.name,
+      body: r.body || e.type || '—',
+      fee: m.fee || r.cost || '—',
+      time: m.time || r.time || '—',
+      pass: m.pass || '—'
+    };
+  })
+  .filter(Boolean)
+  .slice(0, 10);
+
+// Pull the leading dollar figure out of a fee string so a range can be quoted.
+// "US$125 (plus applicable tax…)" → 125. Non-numeric fees are skipped rather
+// than guessed at.
+const feeNumbers = tableRows
+  .map((r: any) => {
+    const m = /\$\s?([\d,]+(?:\.\d+)?)/.exec(String(r.fee));
+    return m ? parseFloat(m[1].replace(/,/g, '')) : null;
+  })
+  .filter((n: any) => typeof n === 'number' && !Number.isNaN(n))
+  .sort((a: number, b: number) => a - b);
+
+const feeRange =
+  feeNumbers.length >= 2
+    ? `$${feeNumbers[0]}–$${feeNumbers[feeNumbers.length - 1]}`
+    : feeNumbers.length === 1
+      ? `$${feeNumbers[0]}`
+      : null;
+
+// ── FAQ (GEO 2.5) ────────────────────────────────────────────────────────
+// Built from the same numbers rendered in the markup below. The FAQPage graph
+// is generated from this array, never hand-written, so the structured data
+// cannot disagree with the visible text — the one failure mode that gets
+// structured data ignored outright.
+const faqs: { q: string; a: string }[] = [];
+
+faqs.push({
+  q: `How many ${catLower} credentials are there?`,
+  a: catAnswer
+});
+
+if (feeRange) {
+  faqs.push({
+    q: `How much do ${catLower} exams cost?`,
+    a: `Across the ${tableRows.length} national ${catLower} credentials we have verified fee data for, exam fees run from ${feeRange}. Renewal, membership and study-material costs are additional and vary by awarding body — each guide breaks out its own full cost table.`
+  });
+}
+
+if (stateScoped.length > 0) {
+  faqs.push({
+    q: `Do you need a licence to work in ${catLower}?`,
+    a: `It depends on the role and the state. ${stateScoped.length} of the ${category.total} credentials in this field are state-issued licences, issued by ${stateCodes.length} ${stateCodes.length === 1 ? 'state board' : 'state boards'}; the remaining ${nationalScoped.length} are national certifications that employers commonly require even where the law does not. Check your state board's rules before you pay for anything.`
+  });
+} else {
+  faqs.push({
+    q: `Do you need a certification to work in ${catLower}?`,
+    a: `None of the ${category.total} credentials in this field is a state-issued licence — all ${nationalScoped.length} are national certifications awarded by a professional body. That usually means the certification is not legally mandatory, but employers, insurers or clients may require it as a condition of the work.`
+  });
+}
+
+if (tableRows.length > 0) {
+  faqs.push({
+    q: `Which ${catLower} credential should you start with?`,
+    a: `Start with the one your target employer or state board names. The most widely recognised national options in this field are ${tableRows
+      .slice(0, 3)
+      .map((r: any) => r.name)
+      .join(', ')} — each has a full guide with eligibility rules, fees and a week-by-week study plan.`
+  });
+}
+
+faqs.push({
+  q: `How often do ${catLower} requirements change?`,
+  a: `Fees are revised most years and eligibility rules change whenever a state legislature or awarding body acts. Every guide on TestPrepPilot links to the primary regulatory source it was verified against, and the "Sources" section is the authoritative place to confirm current figures before you book.`
+});
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a }
+  }))
+};
 ---
 
 <BaseLayout title={title} description={description}>
-  <BreadcrumbSchema items={breadcrumbItems} />
+  {/* BreadcrumbNav emits the page's single BreadcrumbList JSON-LD itself. */}
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -58,6 +165,7 @@ const description = clampDesc(`Every ${category.name.toLowerCase()} credential w
 
     <header class="category-hero">
       <h1>{category.name}</h1>
+      <p class="cat-answer">{catAnswer}</p>
       <p class="lede">{category.description || `Independently researched requirement guides for every ${category.name.toLowerCase()} credential we track.`}</p>
       <dl class="cat-facts">
         <div><dt>Credentials</dt><dd>{category.total}</dd></div>
@@ -68,6 +176,40 @@ const description = clampDesc(`Every ${category.name.toLowerCase()} credential w
     </header>
 
     <main class="category-content">
+      {tableRows.length > 0 && (
+        <section class="cat-compare">
+          <h2 class="group-h2">How do the main {catLower} credentials compare?</h2>
+          <p class="cross-note">
+            Verified figures for {tableRows.length} of the national {catLower} credentials, drawn from each
+            awarding body's published material. Fees change — confirm with the body before you book.
+          </p>
+          <div class="cat-tablewrap">
+            <table class="cat-table">
+              <thead>
+                <tr>
+                  <th scope="col">Credential</th>
+                  <th scope="col">Awarded by</th>
+                  <th scope="col">Exam fee</th>
+                  <th scope="col">Length</th>
+                  <th scope="col">Pass mark</th>
+                </tr>
+              </thead>
+              <tbody>
+                {tableRows.map((r: any) => (
+                  <tr>
+                    <th scope="row"><a href={`/exams/${r.slug}`}>{r.name}</a></th>
+                    <td>{r.body}</td>
+                    <td>{r.fee}</td>
+                    <td>{r.time}</td>
+                    <td>{r.pass}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+
       {category.groups.map((group: any) => (
         <section class="exam-group">
           <h2 class="group-h2">
@@ -91,19 +233,17 @@ const description = clampDesc(`Every ${category.name.toLowerCase()} credential w
         </section>
       ))}
 
-      {stateCodes.length > 0 && (
+      {stateScoped.length > 0 && (
         <section class="state-cross">
           <h2 class="group-h2">{category.name} by state</h2>
           <p class="cross-note">
-            {stateCodes.length} states issue their own {category.name.toLowerCase()} credentials with
+            {stateScoped.length} states issue their own {category.name.toLowerCase()} credentials with
             separate boards, fees and renewal cycles.
           </p>
           <ul class="state-links">
-            {stateCodes.map((code: any) => {
-              const ex = stateScoped.find((e: any) => e.stateCode === code);
-              const slug = ex?.stateSlug || String(code).toLowerCase();
-              return <li><a href={`/${slug}`}>{ex?.stateName || code} requirements</a></li>;
-            })}
+            {stateScoped.map((e: any) => (
+              <li><a href={e.href}>{e.name}</a></li>
+            ))}
           </ul>
         </section>
       )}
@@ -118,6 +258,18 @@ const description = clampDesc(`Every ${category.name.toLowerCase()} credential w
             ))}
         </ul>
       </nav>
+
+      <section class="cat-faq">
+        <h2 class="group-h2">Frequently asked questions about {catLower} credentials</h2>
+        <div class="cat-faq-list">
+          {faqs.map((f) => (
+            <details>
+              <summary>{f.q}</summary>
+              <p>{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
     </main>
   </div>
 </BaseLayout>
@@ -152,6 +304,36 @@ const description = clampDesc(`Every ${category.name.toLowerCase()} credential w
   .state-links { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .5rem 1.75rem; }
   .state-links a { color: var(--primary); text-decoration: none; font-size: .95rem; }
   .state-links a:hover { text-decoration: underline; }
+
+  /* Answer-first hero line — the passage an AI answer is most likely to lift */
+  .cat-answer {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    max-width: 780px;
+    margin: 1.5rem auto 0;
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  /* Comparison table */
+  .cat-compare { margin-bottom: 3rem; }
+  .cat-tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
+  .cat-table { width: 100%; border-collapse: collapse; }
+  .cat-table th, .cat-table td { padding: 0.8rem 1rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 0.92rem; }
+  .cat-table thead th { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; background: var(--cream); white-space: nowrap; }
+  .cat-table tbody th { font-weight: 600; }
+  .cat-table tbody th a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
+  .cat-table tbody tr:last-child th, .cat-table tbody tr:last-child td { border-bottom: none; }
+
+  /* FAQ */
+  .cat-faq { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+  .cat-faq-list { display: flex; flex-direction: column; gap: 0.65rem; }
+  .cat-faq details { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.35rem; }
+  .cat-faq summary { cursor: pointer; font-weight: 600; font-family: var(--font-heading); font-size: 1.05rem; list-style: none; }
+  .cat-faq summary::-webkit-details-marker { display: none; }
+  .cat-faq summary::after { content: '+'; float: right; color: var(--primary); font-weight: 700; }
+  .cat-faq details[open] summary::after { content: '−'; }
+  .cat-faq p { color: var(--muted); line-height: 1.75; margin: 0.85rem 0 0; }
 
   .sibling-cats { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--line); }
   .cat-links { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: .4rem 1.5rem; }

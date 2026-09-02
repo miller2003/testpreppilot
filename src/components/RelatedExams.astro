@@ -13,7 +13,7 @@ const { groups, category } = relatedExams(exam, { perBucket });
 {groups.length > 0 && (
   <section class="related-exams" aria-labelledby="related-exams-heading">
     <div class="re-inner">
-      <h2 id="related-exams-heading">Related credentials</h2>
+      <h2 id="related-exams-heading">Which credentials are related to {exam.name}?</h2>
 
       {groups.map((g: any) => (
         <div class="re-block">

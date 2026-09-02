@@ -34,7 +34,12 @@ const finalOgTitle = ogTitle || title;
 {description && <meta name="description" content={description} />}
 <meta name="theme-color" content="#f8f7f3" />
 <link rel="canonical" href={finalCanonical} />
-<meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
+{/* max-snippet:-1 / max-image-preview:large are the two directives that decide
+    whether Google (and, by extension, AI Overviews) may quote the page at
+    length. Without them the default snippet cap truncates exactly the
+    number-dense first paragraphs an AI answer needs to lift. */}
+<meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"} />
+<meta name="googlebot" content={noindex ? "noindex, nofollow" : "index, follow, max-snippet:-1, max-image-preview:large"} />
 
 <meta property="og:site_name" content="TestPrepPilot" />
 <meta property="og:locale" content="en_US" />

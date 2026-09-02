@@ -65,7 +65,7 @@ const showDay = !!day && (dayBring.length > 0 || dayTimeline.length > 0 || has(d
 {showSalary && (
   <section id="salary" class={sec}>
     <p class={kicker}>What it pays</p>
-    <h2>Salary &amp; Career Outlook</h2>
+    <h2>How much does this credential pay?</h2>
     {has(salary.headline) && <p class="dp-headline">{salary.headline}</p>}
     {has(salary.summary) && <p class={lead}>{salary.summary}</p>}
 
@@ -101,7 +101,7 @@ const showDay = !!day && (dayBring.length > 0 || dayTimeline.length > 0 || has(d
 {showPass && (
   <section id="pass-rate" class={secAlt}>
     <p class={kicker}>Your odds</p>
-    <h2>Pass Rates</h2>
+    <h2>What are the pass rates?</h2>
     {has(pass.headline) && <p class="dp-headline">{pass.headline}</p>}
     {has(pass.summary) && <p class={lead}>{pass.summary}</p>}
 
@@ -135,7 +135,7 @@ const showDay = !!day && (dayBring.length > 0 || dayTimeline.length > 0 || has(d
 {showPlan && (
   <section id="study-plan" class={sec}>
     <p class={kicker}>Your schedule</p>
-    <h2>Study Plan</h2>
+    <h2>How long should I study for it?</h2>
     {has(plan.totalHours) && <p class="dp-headline">{plan.totalHours} of focused study</p>}
     {has(plan.summary) && <p class={lead}>{plan.summary}</p>}
 
@@ -171,7 +171,7 @@ const showDay = !!day && (dayBring.length > 0 || dayTimeline.length > 0 || has(d
 {showStrat && (
   <section id="strategies" class={secAlt}>
     <p class={kicker}>How to study</p>
-    <h2>Prep Strategies That Actually Work</h2>
+    <h2>How do I prepare most effectively?</h2>
     {has(strat.summary) && <p class={lead}>{strat.summary}</p>}
     <div class="dp-cards">
       {stratItems.map((i: any) => (
@@ -188,7 +188,7 @@ const showDay = !!day && (dayBring.length > 0 || dayTimeline.length > 0 || has(d
 {showRes && (
   <section id="resources" class={sec}>
     <p class={kicker}>What to buy</p>
-    <h2>Study Resources Compared</h2>
+    <h2>Which study resources are worth paying for?</h2>
     {has(res.summary) && <p class={lead}>{res.summary}</p>}
     <div class={tablewrap}>
       <table class={table}>
@@ -213,7 +213,7 @@ const showDay = !!day && (dayBring.length > 0 || dayTimeline.length > 0 || has(d
 {showMist && (
   <section id="mistakes" class={secAlt}>
     <p class={kicker}>Avoid these</p>
-    <h2>Common Mistakes</h2>
+    <h2>What mistakes do candidates most often make?</h2>
     {has(mist.summary) && <p class={lead}>{mist.summary}</p>}
     <div class="dp-mistakes">
       {mistItems.map((i: any) => (
@@ -230,7 +230,7 @@ const showDay = !!day && (dayBring.length > 0 || dayTimeline.length > 0 || has(d
 {showQt && (
   <section id="question-types" class={sec}>
     <p class={kicker}>What you'll face</p>
-    <h2>Question Types &amp; Worked Examples</h2>
+    <h2>What question types will I see?</h2>
     {has(qt.summary) && <p class={lead}>{qt.summary}</p>}
 
     {qtTypes.length > 0 && (
@@ -278,7 +278,7 @@ const showDay = !!day && (dayBring.length > 0 || dayTimeline.length > 0 || has(d
 {showDay && (
   <section id="exam-day" class={secAlt}>
     <p class={kicker}>The big day</p>
-    <h2>Exam Day Guide</h2>
+    <h2>What should I expect on exam day?</h2>
     {has(day.summary) && <p class={lead}>{day.summary}</p>}
 
     {(dayBring.length > 0 || dayLeave.length > 0) && (

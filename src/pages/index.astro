@@ -53,14 +53,59 @@ const searchIndex = directory
     };
   });
 const idxJson = JSON.stringify(searchIndex);
+
+// ── ItemList graph (GEO step 3) ────────────────────────────────────────
+// The homepage previously shipped no page-level structured data beyond the
+// site-wide Organization/WebSite/WebPage nodes. For a directory that is a
+// real omission: ItemList is the one type that tells a parser "this URL is an
+// enumerated collection of these N things", which is exactly the shape a
+// "list of X certifications" query needs. Both lists are generated from the
+// same `directory` array the page renders, so they cannot drift.
+const SITE = 'https://testpreppilot.com';
+const allEntries = directory.flatMap((c: any) => c.exams);
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${SITE}/#directory`,
+  name: title,
+  description,
+  url: SITE + '/',
+  isPartOf: { '@id': `${SITE}/#website` },
+  mainEntity: {
+    '@type': 'ItemList',
+    name: 'U.S. exams, licenses and certifications',
+    numberOfItems: totalExams,
+    itemListElement: allEntries.map((e: any, i: number) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE}/exams/${e.slug}`,
+      name: e.name
+    }))
+  },
+  about: {
+    '@type': 'ItemList',
+    name: 'Credential fields covered',
+    numberOfItems: catCount,
+    itemListElement: directory.map((c: any, i: number) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE}/categories/${c.id}`,
+      name: c.name
+    }))
+  }
+};
 ---
 
 <BaseLayout title={title} description={description}>
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
   <section class="hero | container">
     <h1 class="hero-title">The Optimal Path to Pass Any <em>Exam</em>.</h1>
+    {/* Answer-first: the count and the scope come before the brand promise. */}
     <p class="hero-sub">
-      Every U.S. exam, license &amp; certification — researched against primary
-      sources and mapped to a clear plan.
+      Verified guides to {totalExams} U.S. exams, licenses and certifications across {catCount} professions —
+      each one researched against the issuing body's own published rules and linked to the primary source.
     </p>
     <p class="hero-stat">
       {totalExams} credentials &middot; {catCount} professions &middot; every entry source-checked

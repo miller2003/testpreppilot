@@ -33,7 +33,7 @@ import transportationAviationMaritime from './national/transportation-aviation-m
 
 import { stateTemplates } from './stateTemplates.mjs';
 import { jurisdictions, jurisdictionByCode } from './jurisdictions.mjs';
-import { examCategories, categoryById } from './categories.mjs';
+import { examCategories, categoryById, CATEGORY_MERGES } from './categories.mjs';
 import { dossierByKey, factsFor, researchStats } from './research/index.mjs';
 import {
   nationalFor,
@@ -156,7 +156,14 @@ function buildCatalog() {
     status: 'complete'
   }));
 
-  return [...complete, ...stubs];
+  // Apply the 2026-09-02 category consolidation (see categories.mjs) so every
+  // consumer — directory, category pages, filters, stats — sees the merged
+  // taxonomy no matter what the raw research files say.
+  return [...complete, ...stubs].map((row) =>
+    CATEGORY_MERGES[row.category]
+      ? { ...row, category: CATEGORY_MERGES[row.category] }
+      : row
+  );
 }
 
 // Build the FULL catalog once (used by the content manager to list every

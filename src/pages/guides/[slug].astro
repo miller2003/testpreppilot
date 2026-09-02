@@ -12,12 +12,51 @@ export function getStaticPaths() {
 }
 
 const { article } = Astro.props;
-const canonicalUrl = new URL(`/guides/${article.slug}`, Astro.site || 'https://testpreppilot.com').toString();
+const SITE = 'https://testpreppilot.com';
+const canonicalUrl = new URL(`/guides/${article.slug}`, Astro.site || SITE).toString();
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: 'Guides', href: '/guides' },
   { label: article.title, href: `/guides/${article.slug}` },
 ];
+
+// ── Article schema (GEO step 3) ────────────────────────────────────────
+// Same citable wrapper the exam pages use: who wrote it, when it was
+// checked, and the canonical URL. Editorial Board is the site-wide author
+// entity (BaseLayout emits its node on every page).
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `${canonicalUrl}#article`,
+  headline: article.title,
+  description: article.description,
+  url: canonicalUrl,
+  mainEntityOfPage: { '@id': `${canonicalUrl}#webpage` },
+  inLanguage: 'en-US',
+  author: { '@id': `${SITE}/#editorial-board` },
+  publisher: { '@id': `${SITE}/#organization` },
+  datePublished: article.dateISO,
+  dateModified: article.dateISO,
+  about: {
+    '@type': 'Thing',
+    name: article.category,
+  },
+  isAccessibleForFree: true,
+};
+
+// ── FAQ schema (GEO rules 2.5 + 3) ─────────────────────────────────────
+// Generated from the same array the template renders below, so the
+// structured data cannot disagree with the visible text.
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  '@id': `${canonicalUrl}#faq`,
+  mainEntity: article.faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
 ---
 
 <BaseLayout
@@ -28,6 +67,10 @@ const breadcrumbItems = [
   articlePublishedTime={article.dateISO}
   articleModifiedTime={article.dateISO}
 >
+  {/* BreadcrumbNav emits the page's single BreadcrumbList JSON-LD itself. */}
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
   <div class="container">
     <BreadcrumbNav items={breadcrumbItems} />
 
@@ -59,6 +102,20 @@ const breadcrumbItems = [
           {section.callout && <p class="callout">{section.callout}</p>}
         </section>
       ))}
+
+      {/* GEO rule 2.5: FAQ at the bottom, one concrete question per entry.
+          The FAQPage JSON-LD above is generated from this same array. */}
+      <section class="article-faq" id="faq">
+        <h2>Frequently asked questions</h2>
+        <div class="faq-list">
+          {article.faqs.map((f) => (
+            <details class="faq-item">
+              <summary>{f.q}</summary>
+              <p>{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
 
       <aside class="related-panel">
         <h3>Keep reading</h3>
@@ -105,6 +162,17 @@ const breadcrumbItems = [
     color: var(--muted) !important;
     font-style: italic;
   }
+
+  /* FAQ — same visual language as the category-page FAQ */
+  .article-faq { margin-top: 1.5rem; padding-top: 2rem; border-top: 1px solid var(--line); scroll-margin-top: 6rem; }
+  .article-faq h2 { font-family: var(--font-heading); font-size: var(--fs-h2); margin: 0 0 1.25rem; line-height: 1.2; color: var(--ink); }
+  .faq-list { display: flex; flex-direction: column; gap: 0.65rem; }
+  .faq-item { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.35rem; }
+  .faq-item summary { cursor: pointer; font-weight: 600; font-family: var(--font-heading); font-size: 1.05rem; color: var(--ink); list-style: none; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; float: right; color: var(--primary); font-weight: 700; }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item p { color: var(--muted); line-height: 1.75; margin: 0.85rem 0 0; font-size: var(--fs-prose); }
 
   /* Related */
   .related-panel {

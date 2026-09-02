@@ -20,6 +20,11 @@ export interface GuideRelated {
   href: string;
 }
 
+export interface GuideFaq {
+  q: string;
+  a: string;
+}
+
 export interface GuideArticle {
   slug: string;
   title: string;
@@ -31,6 +36,12 @@ export interface GuideArticle {
   intro: string;
   sections: GuideSection[];
   related: GuideRelated[];
+  // GEO rule 2.5: every article ends with an FAQ where each Q&A maps to one
+  // concrete question a candidate would actually type into a search box or an
+  // AI assistant. The [slug] template renders these AND emits the FAQPage
+  // JSON-LD from the same array, so the structured data can never disagree
+  // with the visible text. Answers must stay grounded in the article body.
+  faqs: GuideFaq[];
 }
 
 export const guideArticles: GuideArticle[] = [
@@ -108,6 +119,24 @@ export const guideArticles: GuideArticle[] = [
       { label: 'How TestPrepPilot works', href: '/about' },
       { label: 'Beat test anxiety', href: '/guides/beat-test-anxiety-exam-day' },
     ],
+    faqs: [
+      {
+        q: 'How many hours a week do I need to study while working full-time?',
+        a: 'Most working professionals can genuinely free 2–4 hours on weekdays plus one larger weekend block. If a time audit says you have 10 free hours, plan for 8 — a plan built on your best week collapses the first time real life shows up. For a typical license or certification exam, a six-week plan at that pace is a realistic baseline.',
+      },
+      {
+        q: 'How long should each study session be?',
+        a: '25–45 minutes for daily micro-blocks, six days a week, plus one 2–3 hour deep block on the weekend for practice questions and full-length sections, and one timed full-length simulated exam per month. Short daily sessions keep the material warm; the deep block is where connections get made.',
+      },
+      {
+        q: 'Is re-reading notes an effective way to study?',
+        a: 'No. Reading and highlighting feel productive but barely move the needle. Testing yourself — flashcards, blank-page recall, practice questions — is what builds retrievable memory. Spend at least half of every session in retrieval mode; if a topic feels "familiar" rather than "I can explain it cold," you have not learned it yet.',
+      },
+      {
+        q: 'What should I do when I miss a study session?',
+        a: 'Do the next one. Do not "make it up" with a double session — that burns you out and starts a collapse. Tell one person your exam date and weekly target so a missed block costs social capital, not just a private shrug, and resume the schedule at the next block.',
+      },
+    ],
   },
   {
     slug: 'license-reciprocity-across-state-lines',
@@ -164,9 +193,27 @@ export const guideArticles: GuideArticle[] = [
       },
     ],
     related: [
-      { label: 'Browse licenses by state', href: '/states' },
+      { label: 'State license guides', href: '/categories/real-estate' },
       { label: 'Find your credential', href: '/' },
       { label: 'About our Editorial Board', href: '/about' },
+    ],
+    faqs: [
+      {
+        q: 'Does a professional license transfer automatically to another state?',
+        a: 'No. "It transfers automatically" and "you will have to start over" are both wrong often enough to be dangerous. Most states handle moves through endorsement — you apply as an already-licensed professional and the new board grants a license after verifying your education, exams and record, sometimes with conditions to close. A few fields have compacts that reduce the steps, but even those are not automatic.',
+      },
+      {
+        q: 'What is the difference between reciprocity and endorsement?',
+        a: 'Reciprocity is a state-to-state agreement to honor another state\'s license, often with conditions. Endorsement is the more common modern path: you apply to the new state as an already-licensed professional, and the board issues a license based on your existing one after verifying education, exam history and a clean record.',
+      },
+      {
+        q: 'Where do I find the official requirements for transferring my license?',
+        a: 'At the licensing board of the state you are moving to — not a national summary site, not a forum, and not a prep vendor\'s blog. The receiving board publishes the exact endorsement pathway, forms, fees and any education gaps you must close. Anything else is a hint, not the rule.',
+      },
+      {
+        q: 'What are the most common reasons a license transfer fails?',
+        a: 'Four gaps catch experienced professionals by surprise: education-hour gaps (the old state accepted fewer training hours than the new one requires), exam-version mismatch (some states require a specific edition or a state-law supplement), background or standing problems (a lapsed renewal, an open complaint or unpaid fees in the old state), and reciprocity agreements that expired — a path a colleague used two years ago may no longer exist.',
+      },
     ],
   },
   {
@@ -223,6 +270,24 @@ export const guideArticles: GuideArticle[] = [
       { label: 'Build a study plan', href: '/guides/study-plan-working-full-time' },
       { label: 'How TestPrepPilot works', href: '/about' },
       { label: 'Our research methodology', href: '/methodology' },
+    ],
+    faqs: [
+      {
+        q: 'How do I stop test anxiety before an exam?',
+        a: 'Treat it as physiology, not a character flaw. A racing heart and a blank mind are your nervous system treating the exam like a threat, and anxiety drops as competence rises — so the single best anti-anxiety tool is a full timed simulation taken under real conditions weeks earlier, making exam day feel like the fourth or fifth time, not the first.',
+      },
+      {
+        q: 'What should I do the night before an exam?',
+        a: 'No new topics — light review only. A walk, a normal meal and a fixed bedtime beat "one more chapter." Decide the night before what you will eat, wear and do for the 90 minutes before the exam, so the day itself carries zero small decisions. Cramming the last 48 hours trades retrievable memory for fatigue and spikes anxiety.',
+      },
+      {
+        q: 'What is box breathing and does it work for exam panic?',
+        a: 'Box breathing is four counts in, four counts hold, four counts out, four counts hold. It is boring and it works: the slow exhale directly signals the nervous system that you are safe, which is what a panic spike is asking for. Use it the moment you feel the spike, before restarting on the next question.',
+      },
+      {
+        q: 'What should I do if I blank out during an exam?',
+        a: 'Do not fight it. Skip the question, mark it and move on — momentum restores confidence, and an answered-easy-question streak is the fastest way back. If panic spikes, put the pen down, do one minute of box breathing, and restart with the next item, not the one that scared you. Most passers leave questions for later; almost no one answers in perfect order.',
+      },
     ],
   },
 ];

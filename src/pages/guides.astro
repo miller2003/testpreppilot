@@ -9,6 +9,31 @@ const breadcrumbItems = [
   { label: 'Guides', href: '/guides' }
 ];
 
+const SITE = 'https://testpreppilot.com';
+
+// ── ItemList (GEO step 3) ───────────────────────────────────────────────
+// Enumerates the editorial guides in machine-readable form. Generated from
+// the same guideArticles array the page renders, so it cannot drift.
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${SITE}/guides#collection`,
+  name: 'Guides & Resources — TestPrepPilot',
+  url: `${SITE}/guides`,
+  isPartOf: { '@id': `${SITE}/#website` },
+  mainEntity: {
+    '@type': 'ItemList',
+    name: 'TestPrepPilot editorial guides',
+    numberOfItems: guideArticles.length,
+    itemListElement: guideArticles.map((a, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE}/guides/${a.slug}`,
+      name: a.title,
+    })),
+  },
+};
+
 // Themed collections link only to REAL pages on the site — no placeholder URLs.
 const collections = [
   {
@@ -17,7 +42,6 @@ const collections = [
     links: [
       { label: 'Browse all exams', href: '/' },
       { label: 'Explore by field', href: '/explore' },
-      { label: 'Browse by state', href: '/states' },
     ],
   },
   {
@@ -34,7 +58,7 @@ const collections = [
     blurb: 'What reciprocity really means, and the traps that derail a relocation.',
     links: [
       { label: 'License reciprocity explained', href: '/guides/license-reciprocity-across-state-lines' },
-      { label: 'Requirements by state', href: '/states' },
+      { label: 'State license guides', href: '/categories/real-estate' },
     ],
   },
   {
@@ -54,6 +78,8 @@ const collections = [
   title="Guides & Resources — TestPrepPilot"
   description="Practical, independently researched guides to choosing a credential, planning your study, moving a license across states, and walking into exam day prepared."
 >
+  {/* BreadcrumbNav emits the page's single BreadcrumbList JSON-LD itself. */}
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
   <div class="container">
     <BreadcrumbNav items={breadcrumbItems} />
 

@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { releases } from './src/data/examCatalog/release-manifest.mjs';
 
 export default defineConfig({
   site: 'https://testpreppilot.com',
@@ -33,24 +34,34 @@ export default defineConfig({
           item.changefreq = 'yearly';
           return item;
         }
-        // Root + primary hubs
+        // Root + primary hub
         if (p === '/') { item.priority = 1.0; item.changefreq = 'daily'; return item; }
-        if (p === '/states' || p === '/explore') {
+        if (p === '/explore') {
           item.priority = 0.9; item.changefreq = 'daily'; return item;
         }
         // Category hubs
         if (p.startsWith('/categories/')) { item.priority = 0.8; item.changefreq = 'weekly'; return item; }
         // Exam detail — the money pages
-        if (p.startsWith('/exams/')) { item.priority = 0.8; item.changefreq = 'weekly'; return item; }
+        if (p.startsWith('/exams/')) {
+          item.priority = 0.8;
+          item.changefreq = 'weekly';
+          // Report the page's actual release date rather than the build
+          // timestamp. A build-time lastmod on every URL is indistinguishable
+          // from noise, so Google discards it; a per-page date is a real
+          // freshness signal and matches the on-page datePublished.
+          const slug = p.slice('/exams/'.length);
+          if (releases[slug]) item.lastmod = new Date(releases[slug] + 'T00:00:00Z');
+          return item;
+        }
         // Long-form pathway guides
         if (p.startsWith('/paths/')) { item.priority = 0.7; item.changefreq = 'monthly'; return item; }
-        // State × credential
-        if (p.split('/').filter(Boolean).length === 2) { item.priority = 0.7; item.changefreq = 'monthly'; return item; }
-        // Trust pages (E-E-A-T hub + guides)
+        // Editorial long-form guides (/guides/<slug>)
+        if (p.startsWith('/guides/')) { item.priority = 0.6; item.changefreq = 'monthly'; return item; }
+        // Trust pages (E-E-A-T hub + guides index)
         if (/^\/(about|guides)$/.test(p)) {
           item.priority = 0.5; item.changefreq = 'monthly'; return item;
         }
-        // State hubs
+        // Everything else (legal, 404-adjacent statics)
         item.priority = 0.6;
         item.changefreq = 'weekly';
         return item;

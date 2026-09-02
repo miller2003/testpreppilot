@@ -17,6 +17,32 @@ const categoriesWithCredentials = categories.map(cat => ({
 })).filter(cat => cat.credentials.length > 0);
 
 const canonicalUrl = new URL('/explore', Astro.site || 'https://testpreppilot.com').toString();
+const SITE = 'https://testpreppilot.com';
+
+// ── ItemList (GEO step 3) ───────────────────────────────────────────────
+// The explore page enumerates the flagship pathway guides; ItemList makes
+// that enumeration machine-readable. Built from the same
+// categoriesWithCredentials array the page renders, so it cannot drift.
+const allPathwayEntries = categoriesWithCredentials.flatMap((cat) => cat.credentials);
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${SITE}/explore#collection`,
+  name: 'Explore Credentials Directory — TestPrepPilot',
+  url: `${SITE}/explore`,
+  isPartOf: { '@id': `${SITE}/#website` },
+  mainEntity: {
+    '@type': 'ItemList',
+    name: 'Flagship credential pathway guides',
+    numberOfItems: allPathwayEntries.length,
+    itemListElement: allPathwayEntries.map((cred, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE}/paths/${cred.slug}`,
+      name: cred.name,
+    })),
+  },
+};
 ---
 
 <BaseLayout 
@@ -24,6 +50,8 @@ const canonicalUrl = new URL('/explore', Astro.site || 'https://testpreppilot.co
   description="Browse our comprehensive directory of professional credentials, certifications, and licenses."
   canonical={canonicalUrl}
 >
+  {/* BreadcrumbNav emits the page's single BreadcrumbList JSON-LD itself. */}
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
   <div class="container | animate-on-scroll">
     <BreadcrumbNav items={breadcrumbItems} />
     

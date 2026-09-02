@@ -4,13 +4,16 @@
 
 export const releases = {
   "aama-cma": "2026-08-06",
+  "aapc-cpc": "2026-08-19",
   "ace-certified-group-fitness-instructor": "2026-08-18",
   "ace-certified-personal-trainer": "2026-08-09",
+  "act-test": "2026-08-13",
   "afaa-certified-personal-trainer": "2026-08-11",
   "aipb-certified-bookkeeper": "2026-08-06",
   "ase-t7-truck-hvac": "2026-08-11",
   "aws-certified-cloud-practitioner": "2026-08-13",
   "aws-certified-solutions-architect-associate": "2026-08-13",
+  "california-bar-exam": "2026-08-14",
   "cdl-air-brakes-knowledge-test": "2026-08-08",
   "cdl-combination-vehicles-knowledge-test": "2026-08-07",
   "cdl-general-knowledge-test": "2026-08-15",
@@ -18,6 +21,7 @@ export const releases = {
   "certified-dietary-manager-cfpp": "2026-08-04",
   "cfa-level-1": "2026-08-07",
   "cfa-level-2": "2026-08-19",
+  "cfp-certification-exam": "2026-08-25",
   "cisco-ccna": "2026-08-11",
   "cisco-ccna-cybersecurity": "2026-08-09",
   "cisco-ccnp-cybersecurity": "2026-08-05",
@@ -25,14 +29,25 @@ export const releases = {
   "cms-introductory-sommelier": "2026-08-19",
   "comptia-a-plus": "2026-08-13",
   "comptia-cysa-plus": "2026-08-08",
+  "comptia-data-plus": "2026-08-09",
   "comptia-linux-plus": "2026-08-05",
   "comptia-network-plus": "2026-08-04",
   "comptia-security-plus": "2026-08-14",
   "corrections-officer-entrance-exam": "2026-08-18",
   "danb-cda": "2026-08-13",
+  "epa-lead-renovator-rrp": "2026-08-21",
+  "faa-part-107-initial-training-alc-451": "2026-08-24",
   "fe-civil": "2026-08-12",
+  "ged-test": "2026-08-17",
+  "gmat-focus-edition": "2026-08-11",
+  "gre-general-test": "2026-08-15",
   "hazwoper-8-hour-supervisor": "2026-08-17",
+  "ielts-academic": "2026-08-23",
+  "isaca-cisa": "2026-09-02",
+  "isc2-cissp": "2026-08-30",
   "itil-4-foundation": "2026-08-10",
+  "mblex": "2026-08-11",
+  "mcat-exam": "2026-08-31",
   "microsoft-ai-900": "2026-08-14",
   "microsoft-ai-901": "2026-08-05",
   "microsoft-az-104": "2026-08-11",
@@ -42,9 +57,11 @@ export const releases = {
   "microsoft-az-500": "2026-08-02",
   "microsoft-az-700": "2026-08-05",
   "microsoft-az-900": "2026-08-04",
+  "mpre": "2026-08-22",
   "nacpb-cpb": "2026-08-13",
   "nasm-certified-nutrition-coach": "2026-08-06",
   "nasm-certified-personal-trainer": "2026-08-02",
+  "nclex-pn": "2026-08-28",
   "nclex-rn": "2026-08-07",
   "nic-cosmetology-practical": "2026-08-13",
   "nic-cosmetology-theory": "2026-08-04",
@@ -52,23 +69,45 @@ export const releases = {
   "npte": "2026-08-18",
   "nra-certified-instructor": "2026-08-17",
   "nremt-emt": "2026-08-15",
+  "nypd-police-officer-exam": "2026-08-14",
+  "pance": "2026-08-27",
+  "pmi-capm": "2026-08-08",
   "pmi-pmp": "2026-08-02",
   "praxis-core-combined-5752": "2026-08-07",
   "praxis-elementary-education-multiple-subjects-5001": "2026-08-06",
+  "praxis-mathematics-5165": "2026-08-26",
   "praxis-plt-grades-k-6-5622": "2026-08-07",
   "pro-board-firefighter-i": "2026-08-18",
+  "ptcb-cpht": "2026-09-01",
+  "sat-exam": "2026-08-18",
   "scrum-alliance-certified-scrummaster": "2026-08-09",
+  "series-6": "2026-08-29",
+  "series-63": "2026-09-01",
   "series-65": "2026-08-04",
   "series-66": "2026-08-11",
   "series-7": "2026-08-02",
   "servsafe-alcohol-advanced": "2026-08-18",
+  "shrm-cp": "2026-08-30",
   "sie-exam": "2026-08-15",
+  "toefl-ibt": "2026-08-20",
+  "uniform-bar-exam": "2026-08-10",
+  "usmle-step-1": "2026-08-16",
+  "usps-vea-474": "2026-08-12",
 };
 
 export function isReleased(slug, now = new Date()) {
   const d = releases[slug];
   if (!d) return false;
   return new Date(d + 'T00:00:00Z') <= now;
+}
+
+// The scheduled release date doubles as the article's publication date: it is
+// the day the page first became reachable, and pages are only ever scheduled
+// up to today, so it can never be a future date. Pages that predate the
+// manifest (the eight hand-written flagship guides) return null and fall back
+// to the site-wide baseline in BaseLayout.
+export function releaseDateFor(slug) {
+  return releases[slug] || null;
 }
 
 export default releases;

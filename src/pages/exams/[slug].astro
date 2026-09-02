@@ -7,6 +7,7 @@ import AuthorByline from '../../components/AuthorByline.astro';
 import RelatedExams from '../../components/RelatedExams.astro';
 import SidebarTOC from '../../components/SidebarTOC.astro';
 import { depthFor, depthSections } from '../../data/examCatalog/examDepth.mjs';
+import { releaseDateFor } from '../../data/examCatalog/release-manifest.mjs';
 import {
   allExams,
   getExamDetail,
@@ -75,6 +76,68 @@ const policies = program
   : [];
 
 const natComparison = program?.comparison || null;
+
+// ── Answer-first lines (GEO rule 2.2) ───────────────────────────────────
+// Each major section opens with one sentence that states the answer and leads
+// with its figures. Retrieval systems — AI Overviews, Perplexity, ChatGPT
+// browsing — chunk by heading and usually keep only the first sentence or two
+// of each chunk. A section that opens with "Weightings come from the official
+// exam outline" contributes nothing quotable; one that opens with the fee and
+// the time limit does.
+const bodyName = program?.body || exam.body || 'the awarding body';
+const f = (v: any) => String(v || '').replace(/\s+/g, ' ').trim();
+const isNumericish = (v: any) => /\d/.test(String(v || ''));
+const isRealPassMark = (v: any) => isNumericish(v) && !/^no\b/i.test(String(v || ''));
+
+const formatAnswer = (() => {
+  if (mode !== 'national' || !meta) return '';
+  const parts: string[] = [];
+  if (meta.time) parts.push(`runs ${f(meta.time)}`);
+  const q = f(meta.questions);
+  if (q && /^\d/.test(q)) parts.push(`contains ${q.replace(/\s*questions?\s*$/i, '')} questions`);
+  if (isRealPassMark(meta.pass)) parts.push(`requires ${f(meta.pass)} to pass`);
+  if (!parts.length) return '';
+  const joined =
+    parts.length === 1
+      ? parts[0]
+      : `${parts.slice(0, -1).join(', ')} and ${parts[parts.length - 1]}`;
+  return `The ${exam.name} is administered by ${f(meta.admin) || bodyName} and ${joined}.`;
+})();
+
+const costAnswer = (() => {
+  if (mode !== 'national') return '';
+  const bits: string[] = [];
+  if (meta?.fee) bits.push(`the exam fee is ${f(meta.fee)}`);
+  if (record.cost) bits.push(`the all-in cost is typically ${f(record.cost)}`);
+  if (record.time) bits.push(`most candidates spend ${f(record.time)} preparing`);
+  if (!bits.length) return '';
+  return `For the ${exam.name}, ${bits.join('; ')}.`;
+})();
+
+const topicAnswer = (() => {
+  if (mode !== 'national' || topics.length === 0) return '';
+  const weighted = topics.filter((t: any) => t.weight);
+  if (!weighted.length) return `The ${exam.name} covers ${topics.length} content domains.`;
+  const top = weighted
+    .slice(0, 3)
+    .map((t: any) => `${f(t.name)} (${f(t.weight)})`)
+    .join(', ');
+  return `The ${exam.name} is weighted across ${topics.length} domains; the largest are ${top}.`;
+})();
+
+const glanceAnswer = (() => {
+  const bits: string[] = [];
+  bits.push(`${exam.name} is a ${f(exam.type).toLowerCase()} credential`);
+  if (mode === 'national') {
+    if (bodyName && bodyName !== 'the awarding body') bits.push(`awarded by ${bodyName}`);
+    if (meta?.fee) bits.push(`the exam fee is ${f(meta.fee)}`);
+    if (record.time) bits.push(`typical preparation is ${f(record.time)}`);
+    if (record.salaryRange) bits.push(`holders typically earn ${f(record.salaryRange)}`);
+  } else if (mode === 'researched') {
+    if (facts?.agency) bits.push(`issued in ${exam.stateName} by ${f(facts.agency)}`);
+  }
+  return `${bits.join('; ')}.`;
+})();
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
@@ -290,6 +353,107 @@ const credentialSchema =
         ...(record.prerequisites ? { competencyRequired: record.prerequisites } : {})
       }
     : null;
+
+// Schema dates. `lastReviewed` records the month an editor last verified the
+// content ("2026-08") — it is a review stamp, not a modification timestamp.
+// Normalised to a day it can read as earlier than the page's own publication
+// date, which emits a contradictory dateModified < datePublished. Clamp it: a
+// page is never modified before it exists. The human-facing "Last reviewed"
+// line in the byline is deliberately left alone — it answers a different
+// question than dateModified and is an E-E-A-T signal, not a timestamp.
+const publishedOn = releaseDateFor(exam.slug) || null;
+const reviewedRaw = depth?.lastReviewed || record?.reviewed || null;
+const reviewedIso = reviewedRaw
+  ? reviewedRaw.length === 7
+    ? `${reviewedRaw}-01`
+    : reviewedRaw
+  : null;
+const modifiedOn = publishedOn && reviewedIso
+  ? (reviewedIso < publishedOn ? publishedOn : reviewedIso)
+  : reviewedIso || undefined;
+
+// ── HowTo: the registration / licensing route ────────────────────────────
+// Google's HowTo rich result was retired for desktop in 2023, but the markup
+// is still parsed by LLM-based answer engines precisely because it states, in
+// machine form, that this page contains an ordered procedure. Every step below
+// is copied from the visible step list rendered further down — mismatched
+// structured data is worse than none, so the two are built from the same array.
+const routeSteps = mode === 'national'
+  ? regSteps.map((s: any) => ({ name: s.title, text: s.description || s.title }))
+  : mode === 'researched'
+    ? (dossier?.route || []).map((s: any) => ({ name: s.title, text: s.description || s.title }))
+    : [];
+
+const howToSchema = routeSteps.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: mode === 'national'
+        ? `How to register for the ${exam.name}`
+        : `How to get licensed as a ${exam.name}`,
+      description: mode === 'national'
+        ? `The registration sequence for the ${exam.name}, from confirming eligibility to receiving the credential.`
+        : `The licensing sequence for the ${exam.name} in ${exam.stateName}.`,
+      totalTime: record?.time || undefined,
+      estimatedCost: record?.cost
+        ? { '@type': 'MonetaryAmount', currency: 'USD', value: String(record.cost).replace(/[^0-9.]/g, '') || undefined }
+        : undefined,
+      step: routeSteps.map((s: any, i: number) => ({
+        '@type': 'HowToStep',
+        position: i + 1,
+        name: s.name,
+        text: s.text
+      }))
+    }
+  : null;
+
+// ── Article: the citable wrapper ─────────────────────────────────────────
+// WebPage alone tells a parser what the URL is. Article tells it who stands
+// behind the claims (author / reviewedBy), when they were checked
+// (datePublished / dateModified) and — critically for AI citation — which
+// external sources the page relied on. `citation` is the field that turns a
+// summariser into a referrer: it names the primary source to attribute.
+const citations = [
+  ...new Set(
+    [
+      program?.bodyUrl || exam.bodyUrl,
+      record?.sourceUrl,
+      program?.sourceUrl,
+      facts?.agencyUrl,
+      dossier?.sourceUrl,
+      compact?.url
+    ].filter(Boolean)
+  )
+];
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `${canonicalUrl}#article`,
+  headline: exam.name,
+  description: metaDescription,
+  url: canonicalUrl,
+  mainEntityOfPage: { '@id': `${canonicalUrl}#webpage` },
+  inLanguage: 'en-US',
+  author: { '@id': 'https://testpreppilot.com/#editorial-board' },
+  publisher: { '@id': 'https://testpreppilot.com/#organization' },
+  datePublished: publishedOn || undefined,
+  dateModified: modifiedOn || publishedOn || undefined,
+  ...(depth?.reviewedBy ? { reviewedBy: { '@type': 'Person', name: depth.reviewedBy } } : {}),
+  ...(citations.length ? { citation: citations.map((u) => ({ '@type': 'WebPage', url: u })) } : {}),
+  about: {
+    '@type': 'Thing',
+    name: exam.name,
+    ...(exam.aka?.length ? { alternateName: exam.aka } : {})
+  },
+  // speakable marks the extractable answer region. Voice assistants and
+  // snippet builders use it to find the passage worth reading aloud.
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['.eg-quicksummary', '.eg-lead', '.eg-factstrip']
+  },
+  isAccessibleForFree: true
+};
 ---
 
 <BaseLayout
@@ -297,12 +461,15 @@ const credentialSchema =
   description={metaDescription}
   canonical={canonicalUrl}
   ogImage="/og-exam.png"
-  dateModified={depth?.lastReviewed || record?.reviewed || undefined}
+  dateModified={modifiedOn}
+  datePublished={publishedOn || undefined}
   ogType="article"
   noindex={!indexable}
 >
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   {credentialSchema && <script type="application/ld+json" set:html={JSON.stringify(credentialSchema)} />}
+  {howToSchema && <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />}
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 
   <header class="eg-hero" style={`--accent:${accentVar}`}>
     <div class="container">
@@ -412,7 +579,7 @@ const credentialSchema =
       {mode === 'national' && record.quickAnswer && (
         <section id="quick" class="eg-section eg-quickblock">
           <p class="eg-kicker">The short version</p>
-          <h2>Quick answer</h2>
+          <h2>What is the {exam.name} and is it worth it?</h2>
           <p class="eg-quicksummary">{record.quickAnswer.summary}</p>
           {record.quickAnswer.advantages.length > 0 && (
             <ul class="eg-advantages">
@@ -427,7 +594,7 @@ const credentialSchema =
       {/* ── OVERVIEW ─────────────────────────────────────────── */}
       <section id="overview" class="eg-section">
         <p class="eg-kicker">What is it?</p>
-        <h2>Overview</h2>
+        <h2>What exactly is the {exam.name}?</h2>
 
         {mode === 'national' && (
           <>
@@ -521,7 +688,7 @@ const credentialSchema =
       {mode === 'researched' && (
         <section id="eligibility" class="eg-section eg-section-cream">
           <p class="eg-kicker">Can you sit?</p>
-          <h2>Eligibility & prerequisites</h2>
+          <h2>Do you meet the eligibility requirements?</h2>
           <p class="eg-body">{dossier.eligibility}</p>
           <div class="eg-splitcards">
             <div class="eg-minicard">
@@ -541,7 +708,7 @@ const credentialSchema =
       {mode === 'researched' && (
         <section id="exam" class="eg-section">
           <p class="eg-kicker">The test itself</p>
-          <h2>The exam in detail</h2>
+          <h2>What does the exam look like?</h2>
           <div class="eg-tablewrap">
             <table class="eg-table">
               <tbody>
@@ -561,7 +728,7 @@ const credentialSchema =
       {mode === 'researched' && (
         <section id="costs" class="eg-section eg-section-cream">
           <p class="eg-kicker">Money & time</p>
-          <h2>What it costs and how long it takes</h2>
+          <h2>How much does it cost, and how long does it take?</h2>
           <div class="eg-twocol">
             <div>
               <h4 class="eg-subhead">Cost breakdown</h4>
@@ -600,7 +767,7 @@ const credentialSchema =
       {mode === 'researched' && (
         <section id="route" class="eg-section">
           <p class="eg-kicker">The path</p>
-          <h2>Your step-by-step route in {exam.stateName}</h2>
+          <h2>How do you get licensed, step by step?</h2>
           <ol class="eg-steps">
             {dossier.route.map((s, i) => (
               <li>
@@ -622,7 +789,7 @@ const credentialSchema =
       {mode === 'national' && (record.prerequisites || record.eligibility) && (
         <section id="eligibility" class="eg-section">
           <p class="eg-kicker">Before you book</p>
-          <h2>Who can sit this exam</h2>
+          <h2>Who is eligible to sit the {exam.name}?</h2>
           {record.eligibility && <p class="eg-lead">{record.eligibility}</p>}
           {record.prerequisites && (
             <div class="eg-callout">
@@ -639,7 +806,8 @@ const credentialSchema =
       {mode === 'national' && meta && (
         <section id="exam" class="eg-section">
           <p class="eg-kicker">The test itself</p>
-          <h2>The exam in detail</h2>
+          <h2>What is the format of the {exam.name}?</h2>
+          {formatAnswer && <p class="eg-lead">{formatAnswer}</p>}
           <div class="eg-tablewrap">
             <table class="eg-table">
               <tbody>
@@ -659,8 +827,9 @@ const credentialSchema =
       {mode === 'national' && topics.length > 0 && (
         <section id="topics" class="eg-section eg-section-cream">
           <p class="eg-kicker">Content outline</p>
-          <h2>What is tested, and how heavily</h2>
-          <p class="eg-lead">
+          <h2>What topics are on the {exam.name}?</h2>
+          {topicAnswer && <p class="eg-lead">{topicAnswer}</p>}
+          <p class="eg-note">
             Weightings come from the official exam outline. Study time is best allocated in roughly
             these proportions rather than evenly across domains.
           </p>
@@ -687,7 +856,8 @@ const credentialSchema =
       {mode === 'national' && (costs || natTimeline.length > 0) && (
         <section id="costs" class="eg-section">
           <p class="eg-kicker">Money & time</p>
-          <h2>What it costs and how long it takes</h2>
+          <h2>How much does the {exam.name} cost?</h2>
+          {costAnswer && <p class="eg-lead">{costAnswer}</p>}
           <div class="eg-twocol">
             {costs && (
               <div>
@@ -729,7 +899,7 @@ const credentialSchema =
       {mode === 'national' && regSteps.length > 0 && (
         <section id="register" class="eg-section eg-section-cream">
           <p class="eg-kicker">The path</p>
-          <h2>How to register, step by step</h2>
+          <h2>How do you register for the {exam.name}?</h2>
           <ol class="eg-steps">
             {regSteps.map((s, i) => (
               <li>
@@ -759,7 +929,7 @@ const credentialSchema =
       {mode === 'national' && policies.length > 0 && (
         <section id="policies" class="eg-section">
           <p class="eg-kicker">The fine print</p>
-          <h2>Rules, retakes and renewal</h2>
+          <h2>What are the retake and renewal rules for the {exam.name}?</h2>
           <dl class="eg-policies">
             {policies.map(([label, value]) => (
               <div class="eg-policy">
@@ -811,7 +981,7 @@ const credentialSchema =
       {mode === 'placeholder' && (
         <section id="building" class="eg-section eg-section-cream">
           <p class="eg-kicker">The plan</p>
-          <h2>What this guide will cover</h2>
+          <h2>What will this guide cover?</h2>
           <p class="eg-lead">
             Every TestPrepPilot guide follows the same rigorous structure. Here is what we are building for
             <em>{exam.name}</em>:
@@ -832,7 +1002,7 @@ const credentialSchema =
       {compact && (
         <section id="reciprocity" class="eg-section eg-section-cream">
           <p class="eg-kicker">One licence, many states?</p>
-          <h2>Cross-state validity</h2>
+          <h2>Can you transfer your {dossier.name} to another state?</h2>
           <div class={`eg-compact-status ${facts?.compactMember ? 'is-member' : 'not-member'}`}>
             <span class="eg-compact-dot"></span>
             <div>
@@ -862,7 +1032,8 @@ const credentialSchema =
       {/* ── AT A GLANCE ─────────────────────────────────────── */}
       <section id="facts" class="eg-section">
         <p class="eg-kicker">Reference</p>
-        <h2>At a glance</h2>
+        <h2>What are the key facts about the {exam.name}?</h2>
+        <p class="eg-lead">{glanceAnswer}</p>
         <div class="eg-tablewrap">
           <table class="eg-table">
             <tbody>
@@ -917,7 +1088,7 @@ const credentialSchema =
       {mode === 'researched' && dossier?.faqs?.length > 0 && (
         <section id="faq" class="eg-section eg-section-cream">
           <p class="eg-kicker">Real questions</p>
-          <h2>Frequently asked</h2>
+          <h2>Frequently asked questions about the {exam.name}</h2>
           <div class="eg-faqs">
             {dossier.faqs.map((f) => (
               <details class="eg-faq">
@@ -933,7 +1104,7 @@ const credentialSchema =
       {mode === 'national' && natFaqs.length > 0 && (
         <section id="faq" class="eg-section eg-section-cream">
           <p class="eg-kicker">Real questions</p>
-          <h2>Frequently asked</h2>
+          <h2>Frequently asked questions about the {exam.name}</h2>
           <div class="eg-faqs">
             {natFaqs.map((f) => (
               <details class="eg-faq">
@@ -949,7 +1120,7 @@ const credentialSchema =
       {mode === 'national' && record.summaryPoints.length > 0 && (
         <section id="summary" class="eg-section">
           <p class="eg-kicker">In short</p>
-          <h2>The bottom line</h2>
+          <h2>Is the {exam.name} worth it?</h2>
           <ul class="eg-summary">
             {record.summaryPoints.map((s) => <li>{s}</li>)}
           </ul>
@@ -960,7 +1131,7 @@ const credentialSchema =
       {mode === 'national' && siblings.length > 0 && (
         <section id="ladder" class="eg-section eg-section-cream">
           <p class="eg-kicker">Same awarding body</p>
-          <h2>Other {program?.body || exam.body} credentials</h2>
+          <h2>What other credentials does {bodyName} award?</h2>
           <div class="eg-statechips">
             {siblings.map((s) => (
               <a href={s.href} class="eg-statechip">{s.short || s.name}</a>
@@ -973,7 +1144,7 @@ const credentialSchema =
       {mode === 'national' && relatedResolved.length > 0 && (
         <section id="alternatives" class="eg-section">
           <p class="eg-kicker">Worth comparing</p>
-          <h2>Often considered alongside this</h2>
+          <h2>How does the {exam.name} compare with similar credentials?</h2>
           <ul class="related-list">
             {relatedResolved.map((r) => (
               <li>
@@ -991,7 +1162,7 @@ const credentialSchema =
       {peerSample.length > 0 && (
         <section id="otherstates" class="eg-section">
           <p class="eg-kicker">Same credential elsewhere</p>
-          <h2>{dossier.name} in other states</h2>
+          <h2>Which states license the {dossier.name}?</h2>
           <p class="eg-lead">
             Requirements, fees and issuing agencies differ in every jurisdiction. Pick a state to see its rules.
           </p>
@@ -1014,7 +1185,7 @@ const credentialSchema =
       {/* ── SOURCES ─────────────────────────────────────────── */}
       <section id="sources" class="eg-section">
         <p class="eg-kicker">Trust</p>
-        <h2>Sources</h2>
+        <h2>Where does this information come from?</h2>
         {dossier ? (
           <>
             <p class="eg-lead">

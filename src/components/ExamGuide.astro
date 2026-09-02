@@ -167,7 +167,7 @@ const hasAffiliate = topProvider?.affiliateUrl;
     {/* OVERVIEW */}
     <section id="overview" class="eg-section">
       <p class="eg-kicker">Is this the right path for you?</p>
-      <h2>What you're getting into</h2>
+      <h2>What does {credential.name} involve?</h2>
       <p class="eg-tagline">{credential.tagline}</p>
 
       <div class="eg-infogrid">
@@ -189,7 +189,7 @@ const hasAffiliate = topProvider?.affiliateUrl;
     {credential.quickAnswer && (
       <section id="quick-answer" class="eg-section">
         <p class="eg-kicker">TL;DR</p>
-        <h2>Quick Answer</h2>
+        <h2>What is {credential.name}, in brief?</h2>
         <div class="eg-quick">
           <p>{credential.quickAnswer.summary}</p>
           {credential.quickAnswer.advantages?.length > 0 && (
@@ -205,7 +205,7 @@ const hasAffiliate = topProvider?.affiliateUrl;
     {roadmap.length > 0 && (
       <section id="path" class="eg-section eg-section-cream">
         <p class="eg-kicker">The journey</p>
-        <h2>The Path at a Glance</h2>
+        <h2>What is the path to {credential.name}?</h2>
         <p class="eg-lead">You can't skip ahead — each phase unlocks the next. Here's the full route, end to end.</p>
         <div class="eg-path">
           {roadmap.map((step: any, i: number) => (
@@ -224,7 +224,7 @@ const hasAffiliate = topProvider?.affiliateUrl;
     {/* REQUIREMENTS */}
     <section id="requirements" class="eg-section">
       <p class="eg-kicker">Before you start</p>
-      <h2>Eligibility &amp; Requirements</h2>
+      <h2>What are the eligibility requirements for {credential.name}?</h2>
       {isState && stateData?.additionalRequirements?.length > 0 && (
         <div class="eg-callout">
           <strong>Note for {stateInfo.name}.</strong> Requirements may differ from national averages — complete education with a state-approved provider.
@@ -258,7 +258,7 @@ const hasAffiliate = topProvider?.affiliateUrl;
     {(ex || credential.examDetails) && (
       <section id="exam" class="eg-section eg-section-cream">
         <p class="eg-kicker">Inside the test</p>
-        <h2>The Exam in Detail</h2>
+        <h2>What is the format of the {credential.name} exam?</h2>
 
         {ex?.examMeta && (
           <div class="eg-meta">
@@ -319,7 +319,7 @@ const hasAffiliate = topProvider?.affiliateUrl;
     {credential.providers?.length > 0 && (
       <section id="providers" class="eg-section">
         <p class="eg-kicker">Choose your school</p>
-        <h2>Approved Providers</h2>
+        <h2>Which prep providers are approved for {credential.name}?</h2>
         <InlineDisclosure />
 
         {hasAffiliate && topProvider && (
@@ -336,7 +336,7 @@ const hasAffiliate = topProvider?.affiliateUrl;
     {((credential.registrationSteps?.length || credential.steps?.length)) > 0 && (
       <section id="route" class="eg-section eg-section-cream">
         <p class="eg-kicker">Step by step</p>
-        <h2>Your Step-by-Step Route</h2>
+        <h2>How do you earn {credential.name}, step by step?</h2>
         {credential.registrationSteps?.length > 0 ? (
           <ol class="eg-route">
             {credential.registrationSteps.map((step: any, index: number) => (
@@ -378,7 +378,7 @@ const hasAffiliate = topProvider?.affiliateUrl;
     {credential.timeline?.length > 0 && (
       <section id="timeline" class="eg-section">
         <p class="eg-kicker">How long</p>
-        <h2>Timeline</h2>
+        <h2>How long does it take to get {credential.name}?</h2>
         <div class="eg-tablewrap">
           <table class="eg-table">
             <thead><tr><th>Stage</th><th>Typical Duration</th></tr></thead>
@@ -396,7 +396,7 @@ const hasAffiliate = topProvider?.affiliateUrl;
     {credential.costBreakdown?.items?.length > 0 && (
       <section id="costs" class="eg-section eg-section-cream">
         <p class="eg-kicker">The bill</p>
-        <h2>Cost Breakdown</h2>
+        <h2>How much does {credential.name} cost?</h2>
         <div class="eg-tablewrap">
           <table class="eg-table">
             <thead><tr><th>Item</th><th>Fee</th></tr></thead>
@@ -416,7 +416,7 @@ const hasAffiliate = topProvider?.affiliateUrl;
     {faqItems.length > 0 && (
       <section id="faq" class="eg-section">
         <p class="eg-kicker">Good to know</p>
-        <h2>{isState ? 'State FAQ' : 'Frequently Asked Questions'}</h2>
+        <h2>Frequently asked questions about {credential.name}</h2>
         <FAQAccordion items={faqItems} />
       </section>
     )}
@@ -425,7 +425,7 @@ const hasAffiliate = topProvider?.affiliateUrl;
     {credential.summaryPoints?.length > 0 && (
       <section id="summary" class="eg-section">
         <p class="eg-kicker">In short</p>
-        <h2>Summary</h2>
+        <h2>Is {credential.name} worth it?</h2>
         <div class="eg-summary">
           <ul>
             {credential.summaryPoints.map((point: string) => <li>{point}</li>)}
@@ -443,7 +443,7 @@ const hasAffiliate = topProvider?.affiliateUrl;
     {/* SOURCES */}
     <section id="sources" class="eg-section eg-section-cream">
       <p class="eg-kicker">Trust</p>
-      <h2>Sources</h2>
+      <h2>Where does this information come from?</h2>
       <p class="eg-lead">We believe in showing our work. The information on this page was sourced from official requirements.</p>
       {credential.sourceUrl && (
         <a href={credential.sourceUrl} target="_blank" rel="noopener noreferrer" class="eg-sourcelink">View official requirements source &rarr;</a>

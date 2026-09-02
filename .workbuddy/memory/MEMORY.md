@@ -16,6 +16,15 @@
 - **Global search modal** lives in `Header.astro`: a search-icon button (desktop `#search-toggle` + mobile `#search-toggle-mobile`) opens `#search-modal`, which lazily mounts Pagefind into `#nav-search` (separate from SearchUI.astro's `#search` mount on `/explore` — keep IDs unique). Shortcut: Ctrl/Cmd+K to open, Esc to close. Pagefind assets are built to `/pagefind/` after `astro build`.
 
 
+## Publishing pipeline — how to deploy exam pages (verified 2026-09-02)
+- **The one switch**: `src/data/examCatalog/release-manifest.mjs` — `releases = { slug: 'YYYY-MM-DD' }`. Consumed only by `isReleased()` at `index.mjs:169`, which filters `allExams`. Nothing else gates a build. Manifest is nominally "AUTO-MANAGED by manager/server.mjs" but that's a UI, not a daemon — hand-editing is safe.
+- **Reusable script**: `_deploy_batch_30.mjs` (2026-09-02). Validates the batch, merges dates, rewrites the manifest preserving alphabetical order and file shape, never overwrites an existing date. Re-run it with a new `BATCH` array for the next wave.
+- **Pick only `national`-mode pages.** Of the ~540 unreleased depth-backed slugs, 417 render `national` (indexable) and 123 are state rows with no dossier → `placeholder` mode → **noindex**. Releasing a placeholder adds a thin page, not a ranking one. Validate with `getExamDetail(slug)` before adding.
+- **Always re-run `node _gen_infographics.mjs` after editing the manifest.** `[slug].astro:398` emits `<img src="/exams/<slug>/infographic.svg">` **unconditionally** — no existence check, so a missing asset is a broken image on every such page. The generator iterates `allExams`, so it picks up new releases automatically. Output count is always `released + 8` (the 8 flagship guides route through `/paths`).
+- **Dates need explicit wiring — the manifest date is only a gate.** Exam pages historically passed just `dateModified`, so `datePublished` fell back to the `SITE_UPDATED = '2026-08-06'` constant in `BaseLayout` for every page. Now wired: `releaseDateFor(slug)` in the manifest → `datePublished` prop in `[slug].astro` → schema.org + `article:published_time`; and `astro.config.mjs` sitemap `serialize()` sets `/exams/<slug>` lastmod from `releases[slug]` instead of the build timestamp (a build-time lastmod on every URL is noise Google discards).
+- Depth layer is uniformly rich — all 608 entries carry every P0 section, so **selection should be by SEO/vertical strategy, not by content completeness**. Biggest gap closed 2026-09-02: admissions-academic was at 0 despite being the highest-volume U.S. exam category.
+- Known near-duplicate pair to avoid releasing together: `notary-signing-agent` (legal) vs `nna-certified-notary-signing-agent` (security-investigation).
+
 ## Design system (actual, from src/styles/tokens.css — supersedes older notes)
 - Colors: --primary #1d4ed8, --ink #111e1f, --paper #faf9f6, --cream #f0eee5, --line #e3e4df; fonts Lora (body) + Cormorant Garamond (headings); --radius 12px; fluid type tokens --fs-h1/h2/h3/prose.
 - Site has a **dark theme** (`[data-theme="dark"]` overrides) — always style via CSS variables, never hardcode hex.
