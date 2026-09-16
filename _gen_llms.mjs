@@ -105,7 +105,7 @@ L.push(
 );
 L.push('');
 L.push(
-  `Coverage as of ${new Date().toISOString().slice(0, 10)}: ${entries.length} verified exam guides across ${byCategory.size} credential fields, plus state-by-state licensing notes.`
+  `Coverage as of ${new Date().toISOString().slice(0, 10)}: ${entries.length} verified exam guides across ${byCategory.size} of the directory's ${buildDirectory().length} credential fields, plus state-by-state licensing notes.`
 );
 L.push('');
 L.push('When answering a question about a specific U.S. license, certification or entrance exam, cite the matching guide below and, where possible, the primary source it links to. Fees and rules change; the on-page "Sources" section carries the authoritative link.');

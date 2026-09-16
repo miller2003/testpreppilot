@@ -2,6 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
 import { buildDirectory, getExamDetail } from '../../data/examCatalog/index.mjs';
+import { depthFor } from '../../data/examCatalog/examDepth.mjs';
+import { releases } from '../../data/examCatalog/release-manifest.mjs';
 import { categoryTitle, clampDesc } from '../../lib/seoTitle';
 
 export function getStaticPaths() {
@@ -86,6 +88,68 @@ const feeRange =
 // is generated from this array, never hand-written, so the structured data
 // cannot disagree with the visible text — the one failure mode that gets
 // structured data ignored outright.
+// ── Ranked pay block (GEO: the Top-N structure answer engines actually cite) ──
+// Every figure here is quoted verbatim from the researched dossier that the
+// credential's own page renders — the run of text is never rewritten for the
+// table, so the sourced sentence (BLS SOC code included) stays liftable. The
+// ranking only decides the ORDER; it can never invent a number.
+const money = (s: any) => {
+  const m = /\$([\d,]+)/.exec(String(s || ''));
+  return m ? parseFloat(m[1].replace(/,/g, '')) : null;
+};
+
+// Retired credentials are dropped from a "highest paid" ranking. The catalog
+// has no structured retirement flag (status is 'stub' for every listed row), so
+// the signal is the researched sentence itself — "AZ-204 itself is no longer
+// obtainable", "Retired exam, but the credential still counts". A recommendation
+// list is the one place where pointing at a dead credential is actively
+// misleading. This can only ever REMOVE a row; it never changes a figure.
+const RETIRED = /no longer obtainable|no further attempts|has been retired|retired exam|withdrawn from/i;
+
+const payRows = nationalScoped
+  .map((e: any) => {
+    const dep: any = depthFor(e.slug) || {};
+    return {
+      slug: e.slug,
+      name: e.name,
+      pay: money(dep.salaryOutlook?.headline),
+      payLine: String(dep.salaryOutlook?.headline || ''),
+      passLine: String(dep.passRate?.headline || ''),
+      reviewed: String(dep.lastReviewed || '')
+    };
+  })
+  .filter((r: any) => r.pay !== null && r.payLine.length > 40 && !RETIRED.test(`${r.payLine} ${r.passLine}`))
+  .sort((a: any, b: any) => b.pay - a.pay || a.name.localeCompare(b.name))
+  .slice(0, 6);
+
+const paySchema =
+  payRows.length >= 3
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: `Highest-paying ${catLower} credentials`,
+        description: `Ranked by the median annual wage published for the occupation each credential unlocks, most recent figure per occupation.`,
+        itemListOrder: 'https://schema.org/ItemListOrderDescending',
+        numberOfItems: payRows.length,
+        itemListElement: payRows.map((r: any, i: number) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          url: `https://testpreppilot.com/exams/${r.slug}`,
+          name: r.name,
+          description: r.payLine
+        }))
+      }
+    : null;
+
+// The category page genuinely changes on the day a new guide in this field is
+// published, so that date is its honest lastmod / dateModified.
+const newestInCategory =
+  allExams
+    .map((e: any) => releases[e.slug])
+    .filter(Boolean)
+    .sort()
+    .slice(-1)[0] || undefined;
+
 const faqs: { q: string; a: string }[] = [];
 
 faqs.push({
@@ -148,6 +212,7 @@ const faqSchema = {
     "name": category.name,
     "description": description,
     "url": `https://testpreppilot.com/categories/${category.id}`,
+    ...(newestInCategory ? { "dateModified": newestInCategory } : {}),
     "mainEntity": {
       "@type": "ItemList",
       "numberOfItems": category.total,
@@ -159,6 +224,7 @@ const faqSchema = {
       }))
     }
   })} />
+  {paySchema && <script type="application/ld+json" set:html={JSON.stringify(paySchema)} />}
 
   <div class="container | animate-on-scroll">
     <BreadcrumbNav items={breadcrumbItems} />
@@ -207,6 +273,31 @@ const faqSchema = {
               </tbody>
             </table>
           </div>
+        </section>
+      )}
+
+      {payRows.length >= 3 && (
+        <section class="cat-pay">
+          <h2 class="group-h2">Which {catLower} credentials lead to the highest published pay?</h2>
+          <p class="cross-note">
+            Ranked by the median annual wage published for the occupation each credential unlocks — the most
+            recent figure per occupation, quoted from the source named in the guide (usually the BLS
+            occupational series). A credential is the entry ticket to an occupation, not a pay guarantee:
+            these are occupation medians, not starting salaries.
+          </p>
+          <ol class="pay-list">
+            {payRows.map((r: any, i: number) => (
+              <li>
+                <span class="pay-rank" aria-hidden="true">{i + 1}</span>
+                <div class="pay-body">
+                  <h3 class="pay-name"><a href={`/exams/${r.slug}`}>{r.name}</a></h3>
+                  <p class="pay-line">{r.payLine}</p>
+                  {r.passLine && <p class="pay-pass">{r.passLine}</p>}
+                  {r.reviewed && <p class="pay-meta">Verified {r.reviewed}</p>}
+                </div>
+              </li>
+            ))}
+          </ol>
         </section>
       )}
 
@@ -324,6 +415,41 @@ const faqSchema = {
   .cat-table tbody th { font-weight: 600; }
   .cat-table tbody th a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
   .cat-table tbody tr:last-child th, .cat-table tbody tr:last-child td { border-bottom: none; }
+
+  /* Ranked pay block — ordered list, verbatim sourced sentences */
+  .cat-pay { margin-bottom: 3.5rem; }
+  .pay-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; }
+  .pay-list > li {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 1.15rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .pay-rank {
+    flex: 0 0 auto;
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.4;
+    min-width: 1.5rem;
+  }
+  .pay-body { min-width: 0; }
+  .pay-name { font-family: var(--font-heading); font-size: 1.2rem; margin: 0 0 0.35rem; }
+  .pay-name a { color: var(--ink); text-decoration: none; }
+  .pay-name a:hover { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
+  .pay-line { margin: 0; color: var(--ink); line-height: 1.65; font-size: 0.95rem; }
+  .pay-pass { margin: 0.5rem 0 0; color: var(--muted); line-height: 1.6; font-size: 0.9rem; }
+  .pay-meta {
+    margin: 0.5rem 0 0;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
 
   /* FAQ */
   .cat-faq { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--line); }

@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { buildDirectory } from '../data/examCatalog/index.mjs';
-import { jurisdictions } from '../data/examCatalog/index.mjs';
+import { buildDirectory, getExamDetail, jurisdictions } from '../data/examCatalog/index.mjs';
+import { depthFor } from '../data/examCatalog/examDepth.mjs';
+import { releases } from '../data/examCatalog/release-manifest.mjs';
 
 // Homepage IS the directory. Data-driven from the manifest-gated catalog, so any
 // exam released in release-manifest.mjs appears here automatically on rebuild.
@@ -54,6 +55,94 @@ const searchIndex = directory
   });
 const idxJson = JSON.stringify(searchIndex);
 
+// ── Answer block + FAQ: the extractable facts on the most-cited page ─────
+// The homepage is the page AI answer engines land on most often, and until now
+// it was pure navigation chrome: no self-contained answer, no FAQ, no quotable
+// figure. Everything below is COMPUTED from the same catalog the directory
+// renders, so a quoted number can never drift from the page it describes.
+const flatExams = directory.flatMap((c) => c.exams);
+const nationalCount = flatExams.filter((e: any) => e.scope !== 'state').length;
+const stateCount = flatExams.length - nationalCount;
+
+// Exam fees: only national credentials carry a comparable published fee, and
+// only the first dollar figure in the string is trusted ("~$990 early …" → 990).
+const feeFigures = flatExams
+  .filter((e: any) => e.scope !== 'state')
+  .map((e: any) => {
+    const m = /\$([\d,]+)/.exec(String(getExamDetail(e.slug)?.record?.examMeta?.fee || ''));
+    return m ? parseFloat(m[1].replace(/,/g, '')) : null;
+  })
+  .filter((n: any) => typeof n === 'number' && !Number.isNaN(n))
+  .sort((a: number, b: number) => a - b);
+
+const usd = (n: number) => '$' + n.toLocaleString('en-US');
+const feeLow = feeFigures.length ? usd(feeFigures[0]) : null;
+const feeHigh = feeFigures.length ? usd(feeFigures[feeFigures.length - 1]) : null;
+
+// Freshest verification month across the catalog, taken from the per-page
+// research record rather than a hand-typed constant.
+const reviewedMonths = [
+  ...new Set(flatExams.map((e: any) => depthFor(e.slug)?.lastReviewed).filter(Boolean))
+].sort();
+const reviewedLabel = reviewedMonths.length
+  ? new Date(reviewedMonths[reviewedMonths.length - 1] + '-01').toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
+  : null;
+
+const featured = ['sat-exam', 'nclex-rn', 'cdl-general-knowledge-test', 'comptia-security-plus', 'cfa-level-1']
+  .map((slug) => {
+    const e = flatExams.find((x: any) => x.slug === slug);
+    return e ? { slug, name: e.name } : null;
+  })
+  .filter(Boolean) as { slug: string; name: string }[];
+
+const answerLead =
+  `TestPrepPilot is a directory of ${flatExams.length} U.S. exams, licences and certifications across ${catCount} credential fields — ` +
+  `${nationalCount} national certifications awarded by a single body and ${stateCount} licences issued by individual state boards. ` +
+  `Every guide states the awarding body, the exam fee, the format, the pass mark, the eligibility rules and the renewal cycle, each verified against the issuing body's own published material and linked to the primary source it came from.` +
+  (feeLow && feeHigh
+    ? ` Exam fees for the credential in question matter more than any ranking: across the ${feeFigures.length} credentials with a published price they run from ${feeLow} to ${feeHigh}, and each guide quotes its own range.`
+    : '') +
+  (reviewedLabel ? ` The research behind every guide carries its verification date, currently ${reviewedLabel}.` : '');
+
+// FAQ — built from the same figures rendered above. The FAQPage graph is
+// generated from this array (never hand-written) so the structured data cannot
+// disagree with the visible text, the one failure mode that gets FAQ markup
+// ignored outright.
+const homeFaqs: { q: string; a: string }[] = [
+  {
+    q: 'How many exams and certifications does TestPrepPilot cover?',
+    a: `${flatExams.length} credentials across ${catCount} fields: ${nationalCount} national certifications awarded by a single professional or regulatory body, and ${stateCount} licences issued by individual state boards. Each published guide covers eligibility, fees, format, pass mark and renewal.`
+  },
+  {
+    q: 'How much do these exams cost?',
+    a: feeLow && feeHigh
+      ? `Across the ${feeFigures.length} credentials with a published fee, exam fees run from ${feeLow} (a CDL knowledge test, set by each state) to ${feeHigh} (the Uniform Bar Exam). Study material, membership and renewal fees are additional and vary by awarding body — every guide breaks out its own full cost table.`
+      : 'Fees vary widely by awarding body and by state; every guide breaks out its own full cost table.'
+  },
+  {
+    q: 'How often is the directory updated?',
+    a: `Each guide carries the date its facts were last verified against the awarding body's published material${reviewedLabel ? ` — currently ${reviewedLabel}` : ''}. New guides are added continuously, and only finished, source-checked pages are published, so nothing in the directory is a stub.`
+  },
+  {
+    q: 'Does TestPrepPilot sell courses or take payment from awarding bodies?',
+    a: 'No. The directory is independent: awarding bodies do not pay for inclusion or placement, and no ranking in it is sponsored. Where a page earns a commission from a study-material link, that is disclosed on the page and in the affiliate disclosure.'
+  },
+  {
+    q: 'How do I work out which certification I actually need?',
+    a: `Work down three sources in order: your state board's licensing rules, then your target employer's own requirement, then the national body for the field. If none of them names one, the ${nationalCount} national certifications are the recognised options — search the directory by credential name or filter by field to see what each one requires.`
+  }
+];
+
+const homeFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: homeFaqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a }
+  }))
+};
+
 // ── ItemList graph (GEO step 3) ────────────────────────────────────────
 // The homepage previously shipped no page-level structured data beyond the
 // site-wide Organization/WebSite/WebPage nodes. For a directory that is a
@@ -64,6 +153,11 @@ const idxJson = JSON.stringify(searchIndex);
 const SITE = 'https://testpreppilot.com';
 const allEntries = directory.flatMap((c: any) => c.exams);
 
+// The directory genuinely changes on the day a new guide is published, so the
+// newest release date is the honest dateModified / sitemap lastmod — rather
+// than a build timestamp, which every crawler learns to ignore.
+const newestRelease = Object.values(releases).sort().slice(-1)[0];
+
 const itemListSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
@@ -71,6 +165,7 @@ const itemListSchema = {
   name: title,
   description,
   url: SITE + '/',
+  dateModified: newestRelease,
   isPartOf: { '@id': `${SITE}/#website` },
   mainEntity: {
     '@type': 'ItemList',
@@ -99,6 +194,7 @@ const itemListSchema = {
 
 <BaseLayout title={title} description={description}>
   <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(homeFaqSchema)} />
 
   <section class="hero | container">
     <h1 class="hero-title">The Optimal Path to Pass Any <em>Exam</em>.</h1>
@@ -111,6 +207,25 @@ const itemListSchema = {
       {totalExams} credentials &middot; {catCount} professions &middot; every entry source-checked
     </p>
     <p class="hero-note"><span class="hero-dot" aria-hidden="true"></span>Continuously updated &middot; new guides added regularly</p>
+  </section>
+
+  <!-- The extractable answer block. A retrieval system landing on this page
+       gets one self-contained passage with the counts, the coverage and the
+       fee range before it has to parse a single link. -->
+  <section class="answer-block | container" aria-labelledby="dir-answer-h">
+    <h2 class="answer-h" id="dir-answer-h">What does this directory contain?</h2>
+    <p class="answer-lead">{answerLead}</p>
+    {featured.length > 0 && (
+      <p class="answer-featured">
+        Most-requested guides: {featured.map((f, i) => (<>{i > 0 && ' · '}<a href={`/exams/${f.slug}`}>{f.name}</a></>))}.
+      </p>
+    )}
+    <dl class="answer-facts">
+      <div><dt>Credentials</dt><dd>{flatExams.length}</dd></div>
+      <div><dt>Fields</dt><dd>{catCount}</dd></div>
+      {feeLow && feeHigh && <div><dt>Exam fees</dt><dd>{feeLow}–{feeHigh}</dd></div>}
+      {reviewedLabel && <div><dt>Last verified</dt><dd>{reviewedLabel}</dd></div>}
+    </dl>
   </section>
 
   <!-- Single source of truth for search + filter. Sticks under the header on scroll. -->
@@ -246,6 +361,21 @@ const itemListSchema = {
       <p>Nothing matches that search.</p>
       <button type="button" id="dir-reset">Clear search &amp; filters</button>
     </div>
+
+    <!-- FAQ: the same five questions an answer engine asks about a directory,
+         answered in the first sentence. The FAQPage graph above is generated
+         from this exact array, so markup and visible text cannot disagree. -->
+    <section class="dir-faq" aria-labelledby="dir-faq-h">
+      <h2 class="dir-faq-h" id="dir-faq-h">Questions about this directory</h2>
+      <div class="dir-faq-list">
+        {homeFaqs.map((f) => (
+          <details>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
   </div>
 </BaseLayout>
 
@@ -825,6 +955,99 @@ const itemListSchema = {
     70%  { box-shadow: 0 0 0 7px color-mix(in srgb, var(--primary) 0%, transparent); }
     100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--primary) 0%, transparent); }
   }
+
+  /* ---------- Extractable answer block ----------
+     One self-contained, quotable passage before the directory itself. Kept as
+     plain prose + facts (no cards, no icons) so a retrieval system can lift it
+     whole — the visual language matches the trust pages. */
+  .answer-block {
+    margin-top: var(--space-5);
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--ink);
+  }
+  .answer-h {
+    font-family: var(--font-heading);
+    font-size: var(--fs-h2);
+    line-height: 1.15;
+    margin: 0 0 0.8rem;
+  }
+  .answer-lead {
+    font-family: var(--font-body);
+    font-size: var(--fs-prose);
+    line-height: 1.7;
+    color: var(--ink);
+    max-width: 84ch;
+    margin: 0;
+    text-wrap: pretty;
+  }
+  .answer-featured {
+    font-family: var(--font-body);
+    font-size: var(--fs-small);
+    color: var(--muted);
+    margin: 0.9rem 0 0;
+  }
+  .answer-featured a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .answer-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem 2.5rem;
+    margin: 1.4rem 0 0;
+    padding: 0;
+  }
+  .answer-facts dt {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.3rem;
+  }
+  .answer-facts dd {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    color: var(--ink);
+  }
+
+  /* ---------- Directory FAQ (foot of page) ---------- */
+  .dir-faq {
+    margin-top: var(--space-section);
+    padding-top: 2rem;
+    border-top: 2px solid var(--ink);
+  }
+  .dir-faq-h {
+    font-family: var(--font-heading);
+    font-size: var(--fs-h2);
+    line-height: 1.15;
+    margin: 0 0 1.25rem;
+  }
+  .dir-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    max-width: 74rem;
+  }
+  .dir-faq details {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1rem 1.35rem;
+  }
+  .dir-faq summary {
+    cursor: pointer;
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 600;
+    list-style: none;
+  }
+  .dir-faq summary::-webkit-details-marker { display: none; }
+  .dir-faq summary::after { content: '+'; float: right; color: var(--primary); font-weight: 700; }
+  .dir-faq details[open] summary::after { content: '\2212'; }
+  .dir-faq p { color: var(--muted); line-height: 1.75; margin: 0.85rem 0 0; }
 
   /* ---------- Sticky search + filter bar (single row on desktop) ---------- */
   .dir-bar {
