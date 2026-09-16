@@ -134,28 +134,75 @@ const itemListSchema = {
         </div>
       </div>
 
-      <form class="dir-filters" id="dir-filters" aria-label="Filter exams">
-        <div class="seg" role="group" aria-label="Exam scope">
-          <button type="button" class="seg-btn is-active" data-scope="all">All</button>
-          <button type="button" class="seg-btn" data-scope="national">National</button>
-          <button type="button" class="seg-btn" data-scope="state">State</button>
+      <!-- Mobile-only entry point. Opens the filter sheet below; hidden ≥901px,
+           where the same form renders inline exactly as it always has. -->
+      <button
+        type="button"
+        class="filter-trigger"
+        id="filter-trigger"
+        aria-expanded="false"
+        aria-controls="filter-panel"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="4" y1="7" x2="20" y2="7"></line>
+          <line x1="7" y1="12" x2="17" y2="12"></line>
+          <line x1="10" y1="17" x2="14" y2="17"></line>
+        </svg>
+        <span class="filter-trigger-label">Filters</span>
+        <span class="filter-badge" id="filter-badge" hidden></span>
+      </button>
+
+      <!-- One form, two layouts. ≥901px the shell and panel are `display: contents`,
+           so the form is a plain flex item of the bar. ≤900px the shell becomes a
+           fixed overlay and the panel a bottom sheet. No duplicated controls, no
+           ID collisions, and the desktop row is byte-for-byte the same markup. -->
+      <div class="filter-shell" id="filter-shell">
+        <div class="filter-backdrop" id="filter-backdrop" aria-hidden="true"></div>
+        <div class="filter-panel" id="filter-panel" tabindex="-1">
+          <div class="filter-grab" id="filter-grab" aria-hidden="true"></div>
+          <div class="filter-head">
+            <h2 class="filter-title" id="filter-title">Filters</h2>
+            <button type="button" class="filter-close" id="filter-close" aria-label="Close filters">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          <form class="dir-filters" id="dir-filters" aria-label="Filter exams">
+            <span class="field-label" aria-hidden="true">Scope</span>
+            <div class="seg" role="group" aria-label="Exam scope">
+              <button type="button" class="seg-btn is-active" data-scope="all">All</button>
+              <button type="button" class="seg-btn" data-scope="national">National</button>
+              <button type="button" class="seg-btn" data-scope="state">State</button>
+            </div>
+
+            <label class="field-label" for="f-state">State</label>
+            <select id="f-state" aria-label="Filter by state" disabled>
+              <option value="">All states</option>
+              {stateList.map((s) => <option value={s.code}>{s.name}</option>)}
+            </select>
+            <p class="filter-hint" id="f-state-hint">Choose “State” above to filter by one state.</p>
+
+            <label class="field-label" for="f-cat">Category</label>
+            <select id="f-cat" aria-label="Filter by category">
+              <option value="">All categories</option>
+              {directory.map((cat) => <option value={cat.id}>{cat.name}</option>)}
+            </select>
+
+            <p class="filter-preview" id="filter-preview" aria-live="polite"></p>
+
+            <div class="filter-actions">
+              <button type="submit" class="btn btn-primary" id="f-apply">Apply</button>
+              <button type="button" class="btn btn-ghost" id="f-reset">Reset</button>
+            </div>
+          </form>
         </div>
+      </div>
 
-        <select id="f-state" aria-label="Filter by state" disabled>
-          <option value="">All states</option>
-          {stateList.map((s) => <option value={s.code}>{s.name}</option>)}
-        </select>
-
-        <select id="f-cat" aria-label="Filter by category">
-          <option value="">All categories</option>
-          {directory.map((cat) => <option value={cat.id}>{cat.name}</option>)}
-        </select>
-
-        <div class="filter-actions">
-          <button type="submit" class="btn btn-primary">Apply</button>
-          <button type="button" class="btn btn-ghost" id="f-reset">Reset</button>
-        </div>
-      </form>
+      <!-- Applied filters, mobile only: tap a chip to drop just that facet. -->
+      <div class="filter-chips" id="filter-chips" hidden></div>
     </div>
   </div>
 
@@ -217,12 +264,31 @@ const itemListSchema = {
     const emptyEl = document.getElementById('dir-empty');
     const dirReset = document.getElementById('dir-reset');
     const bar = document.getElementById('dir-bar');
+    const trigger = document.getElementById('filter-trigger');
+    const badge = document.getElementById('filter-badge');
+    const shell = document.getElementById('filter-shell');
+    const panel = document.getElementById('filter-panel');
+    const backdrop = document.getElementById('filter-backdrop');
+    const closeBtn = document.getElementById('filter-close');
+    const grab = document.getElementById('filter-grab');
+    const chipsEl = document.getElementById('filter-chips');
+    const applyBtn = document.getElementById('f-apply');
+    const previewEl = document.getElementById('filter-preview');
+    const stateHint = document.getElementById('f-state-hint');
     if (!combo || !items.length) return;
 
     const INDEX = JSON.parse(idxJson);
 
-    let query = '';
-    let activeScope = 'all';
+    // 900px matches the header's own desktop/mobile switch, so the bar and the
+    // nav never change personality at different widths.
+    const mq = window.matchMedia('(max-width: 900px)');
+    const canInert = 'inert' in HTMLElement.prototype;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const PH_DESKTOP = `Search ${items.length} exams & credentials\u2026`;
+    const PH_MOBILE = `Search ${items.length} exams\u2026`;
+
+    let query = '';        // live: the search box filters as you type
+    let activeScope = 'all'; // committed facets: only ever changed through a commit
     let activeState = '';
     let activeCat = '';
 
@@ -235,15 +301,22 @@ const itemListSchema = {
     }
 
     /* ── Filter (committed) ─────────────────────────────────────────── */
-    function matches(it) {
-      const hay = it.dataset.hay || '';
-      const scope = it.dataset.scope || '';
-      const state = (it.dataset.state || '').toUpperCase();
-      if (activeScope !== 'all' && scope !== activeScope) return false;
-      if (activeScope === 'state' && activeState && state !== activeState.toUpperCase()) return false;
-      if (activeCat && (it.dataset.cat || '') !== activeCat) return false;
-      if (query && !hay.includes(query)) return false;
+    function matchesWith(it, f) {
+      if (f.scope !== 'all' && (it.dataset.scope || '') !== f.scope) return false;
+      if (f.scope === 'state' && f.state && (it.dataset.state || '').toUpperCase() !== f.state.toUpperCase()) return false;
+      if (f.cat && (it.dataset.cat || '') !== f.cat) return false;
+      if (f.query && !(it.dataset.hay || '').includes(f.query)) return false;
       return true;
+    }
+
+    function countMatching(f) {
+      let n = 0;
+      for (const it of items) if (matchesWith(it, f)) n++;
+      return n;
+    }
+
+    function matches(it) {
+      return matchesWith(it, { scope: activeScope, state: activeState, cat: activeCat, query });
     }
 
     function apply() {
@@ -266,49 +339,299 @@ const itemListSchema = {
       }
     }
 
-    /* ── Scope segmented control ─────────────────────────────────────── */
+    function optionLabel(sel, val) {
+      const o = Array.from(sel.options).find((x) => x.value === val);
+      return o ? o.textContent.trim() : val;
+    }
+
+    /* ── Facets → badge + chips (mobile chrome) ──────────────────────── */
+    function activeFacets() {
+      const f = [];
+      if (activeScope !== 'all') f.push({ key: 'scope', label: activeScope === 'state' ? 'State' : 'National' });
+      if (activeScope === 'state' && activeState) f.push({ key: 'state', label: optionLabel(stateSel, activeState) });
+      if (activeCat) f.push({ key: 'cat', label: optionLabel(catSel, activeCat) });
+      return f;
+    }
+
+    function syncChrome() {
+      const facets = activeFacets();
+      if (badge) {
+        badge.hidden = facets.length === 0;
+        badge.textContent = String(facets.length);
+      }
+      if (trigger) trigger.classList.toggle('is-active', facets.length > 0);
+      if (chipsEl) {
+        chipsEl.hidden = facets.length === 0;
+        chipsEl.innerHTML = facets
+          .map(
+            (f) =>
+              `<button type="button" class="filter-chip" data-facet="${f.key}" aria-label="Remove filter: ${esc(f.label)}">` +
+              `<span class="filter-chip-text">${esc(f.label)}</span><span class="filter-chip-x" aria-hidden="true">&times;</span></button>`
+          )
+          .join('');
+      }
+      if (stateHint) stateHint.hidden = activeScope === 'state';
+    }
+
+    /* ── Scope segmented control: commits immediately, on every width ──
+       It reads as a tab, so it behaves like one. (Previously it wrote straight
+       into the committed scope but never re-ran the filter, so the list and the
+       control could disagree until something else triggered a re-filter.) */
     function setScope(scope, btn) {
       activeScope = scope;
       segBtns.forEach((b) => b.classList.toggle('is-active', b === btn));
       stateSel.disabled = scope !== 'state';
       if (scope !== 'state') { stateSel.value = ''; activeState = ''; }
+      else { activeState = stateSel.value; }
+      apply();
+      syncChrome();
+      syncPreview();
     }
     segBtns.forEach((btn) => {
       btn.addEventListener('click', () => setScope(btn.dataset.scope, btn));
     });
 
-    /* ── Commit on Apply ─────────────────────────────────────────────── */
+    /* ── Commit on Apply / Show results ─────────────────────────────── */
     if (form) {
       form.addEventListener('submit', (e) => {
         e.preventDefault();
-        activeState = stateSel.value;
-        activeCat = catSel.value;
-        apply();
+        if (isSheetOpen()) commitSheet();
+        else {
+          activeState = stateSel.value;
+          activeCat = catSel.value;
+          apply();
+          syncChrome();
+        }
       });
     }
-    if (resetBtn) {
-      resetBtn.addEventListener('click', () => {
-        activeScope = 'all';
-        activeState = '';
-        activeCat = '';
-        query = '';
-        combo.value = '';
-        segBtns.forEach((b) => b.classList.toggle('is-active', b.dataset.scope === 'all'));
-        stateSel.value = '';
-        stateSel.disabled = true;
-        catSel.value = '';
-        closeCombo();
-        apply();
+
+    if (chipsEl) {
+      chipsEl.addEventListener('click', (e) => {
+        const chip = e.target.closest('.filter-chip');
+        if (!chip) return;
+        const key = chip.dataset.facet;
+        if (key === 'scope') setScope('all', segBtns.find((b) => b.dataset.scope === 'all'));
+        else {
+          if (key === 'state') { activeState = ''; stateSel.value = ''; }
+          if (key === 'cat') { activeCat = ''; catSel.value = ''; }
+          apply();
+          syncChrome();
+          syncPreview();
+        }
       });
     }
-    if (dirReset) {
-      dirReset.addEventListener('click', () => {
-        activeScope = 'all'; activeState = ''; activeCat = ''; query = ''; combo.value = '';
-        segBtns.forEach((b) => b.classList.toggle('is-active', b.dataset.scope === 'all'));
-        stateSel.value = ''; stateSel.disabled = true; catSel.value = '';
-        apply();
-      });
+
+    function resetAll() {
+      activeScope = 'all';
+      activeState = '';
+      activeCat = '';
+      query = '';
+      combo.value = '';
+      segBtns.forEach((b) => b.classList.toggle('is-active', b.dataset.scope === 'all'));
+      stateSel.value = '';
+      stateSel.disabled = true;
+      catSel.value = '';
+      closeCombo();
+      apply();
+      syncChrome();
+      syncPreview();
+      snapshot = null; // a reset is a deliberate commit — nothing left to cancel
     }
+    if (resetBtn) resetBtn.addEventListener('click', resetAll);
+    if (dirReset) dirReset.addEventListener('click', resetAll);
+
+    [stateSel, catSel].forEach((sel) => {
+      sel.addEventListener('change', syncPreview);
+    });
+
+    /* ── Mobile filter sheet ─────────────────────────────────────────── */
+    let snapshot = null;      // applied facets at the moment the sheet opened
+    let lastFocused = null;
+
+    function isSheetOpen() {
+      return !!shell && shell.classList.contains('is-open');
+    }
+
+    function syncControlsFromApplied() {
+      segBtns.forEach((b) => b.classList.toggle('is-active', b.dataset.scope === activeScope));
+      stateSel.disabled = activeScope !== 'state';
+      stateSel.value = activeScope === 'state' ? activeState : '';
+      catSel.value = activeCat;
+    }
+
+    function openSheet() {
+      if (!shell || !trigger || isSheetOpen()) return;
+      syncControlsFromApplied();
+      snapshot = { scope: activeScope, state: stateSel.value, cat: catSel.value };
+      lastFocused = document.activeElement;
+      panel.style.transform = '';
+      shell.classList.add('is-open');
+      if (canInert) shell.inert = false;
+      trigger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+      syncPreview();
+      // Focusing the dialog itself makes screen readers announce the heading,
+      // then the first Tab lands on the scope control.
+      try { panel.focus({ preventScroll: true }); } catch (e) {}
+    }
+
+    function closeSheet() {
+      if (!shell || !isSheetOpen()) return;
+      panel.style.transform = '';
+      shell.classList.remove('is-open');
+      if (canInert) shell.inert = true;
+      if (trigger) trigger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+      const back = lastFocused && lastFocused !== document.body && document.contains(lastFocused) ? lastFocused : trigger;
+      if (back && back.focus) { try { back.focus({ preventScroll: true }); } catch (e) {} }
+    }
+
+    function commitSheet() {
+      activeState = stateSel.value;
+      activeCat = catSel.value;
+      apply();
+      syncChrome();
+      closeSheet();
+      scrollToResults();
+    }
+
+    // Cancel means cancel: the scope commits live inside the sheet (it is a
+    // toggle), so roll it back to the value that was in force on open.
+    function cancelSheet() {
+      if (snapshot) {
+        if (snapshot.scope !== activeScope) {
+          activeScope = snapshot.scope;
+          segBtns.forEach((b) => b.classList.toggle('is-active', b.dataset.scope === snapshot.scope));
+          stateSel.disabled = activeScope !== 'state';
+        }
+        activeState = activeScope === 'state' ? snapshot.state : '';
+        activeCat = snapshot.cat;
+        stateSel.value = activeState;
+        catSel.value = activeCat;
+        apply();
+        syncChrome();
+      }
+      closeSheet();
+    }
+
+    function scrollToResults() {
+      const body = document.querySelector('.dir-body');
+      if (!body) return;
+      const off = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--scroll-offset')) || 72;
+      const y = Math.max(0, body.getBoundingClientRect().top + window.scrollY - off - 8);
+      if (Math.abs(window.scrollY - y) < 8) return;
+      window.scrollTo({ top: y, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+    }
+
+    /* Live count for the pending selection — the primary button says what
+       pressing it will actually produce. */
+    function readControls() {
+      const seg = segBtns.find((b) => b.classList.contains('is-active'));
+      return { scope: seg ? seg.dataset.scope : 'all', state: stateSel.value, cat: catSel.value };
+    }
+
+    function syncPreview() {
+      const d = readControls();
+      const n = countMatching({ scope: d.scope, state: d.state, cat: d.cat, query });
+      if (previewEl) {
+        previewEl.textContent =
+          n === items.length ? `All ${items.length} credentials` : `${n} of ${items.length} credentials match`;
+      }
+      if (applyBtn) {
+        applyBtn.textContent = mq.matches
+          ? n === 0 ? 'No matches' : `Show ${n} ${n === 1 ? 'result' : 'results'}`
+          : 'Apply';
+      }
+    }
+
+    if (trigger) {
+      trigger.addEventListener('click', () => (isSheetOpen() ? cancelSheet() : openSheet()));
+    }
+    if (backdrop) backdrop.addEventListener('click', cancelSheet);
+    if (closeBtn) closeBtn.addEventListener('click', cancelSheet);
+    shell.addEventListener('click', (e) => {
+      if (e.target === shell) cancelSheet();     // click outside the sheet body
+    });
+
+    /* Drag the grabber / header down to dismiss. */
+    if (grab) {
+      let startY = 0;
+      let startT = 0;
+      let dy = 0;
+      let dragging = false;
+      const onStart = (e) => {
+        if (!isSheetOpen() || !e.touches || e.touches.length !== 1) return;
+        dragging = true;
+        dy = 0;
+        startY = e.touches[0].clientY;
+        startT = Date.now();
+        panel.style.transition = 'none';
+      };
+      const onMove = (e) => {
+        if (!dragging) return;
+        dy = Math.max(0, e.touches[0].clientY - startY);
+        panel.style.transform = `translateY(${dy}px)`;
+        if (e.cancelable) e.preventDefault();
+      };
+      const onEnd = () => {
+        if (!dragging) return;
+        dragging = false;
+        panel.style.transition = '';
+        const fast = dy > 40 && Date.now() - startT < 400;
+        if (dy > 110 || fast) cancelSheet();
+        else panel.style.transform = '';
+      };
+      const dragTarget = panel.querySelector('.filter-head');
+      (dragTarget || grab).addEventListener('touchstart', onStart, { passive: true });
+      (dragTarget || grab).addEventListener('touchmove', onMove, { passive: false });
+      (dragTarget || grab).addEventListener('touchend', onEnd);
+      (dragTarget || grab).addEventListener('touchcancel', onEnd);
+    }
+
+    /* Focus trap + Escape while the sheet is open (the page behind stays inert). */
+    document.addEventListener('keydown', (e) => {
+      if (!isSheetOpen()) return;
+      if (e.key === 'Escape') { e.preventDefault(); cancelSheet(); return; }
+      if (e.key !== 'Tab') return;
+      const focusables = Array.from(
+        shell.querySelectorAll('button, select, input, a[href], [tabindex]:not([tabindex="-1"])')
+      ).filter((el) => !el.disabled && el.offsetParent !== null);
+      if (!focusables.length) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      const act = document.activeElement;
+      if (e.shiftKey && (act === first || act === panel)) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && act === last) { e.preventDefault(); first.focus(); }
+    });
+
+    /* Layout switch: dialog semantics, inertness and the placeholder all follow
+       the breakpoint, so neither layout carries the other's behaviour. */
+    function syncLayout() {
+      if (mq.matches) {
+        if (panel) {
+          panel.setAttribute('role', 'dialog');
+          panel.setAttribute('aria-modal', 'true');
+          panel.setAttribute('aria-labelledby', 'filter-title');
+        }
+        if (shell && canInert && !isSheetOpen()) shell.inert = true;
+        combo.placeholder = PH_MOBILE;
+      } else {
+        if (panel) {
+          panel.removeAttribute('role');
+          panel.removeAttribute('aria-modal');
+          panel.removeAttribute('aria-labelledby');
+        }
+        if (shell) {
+          shell.classList.remove('is-open');
+          if (canInert) shell.inert = false;
+        }
+        if (trigger) trigger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        combo.placeholder = PH_DESKTOP;
+      }
+      syncPreview();
+    }
+    if (mq.addEventListener) mq.addEventListener('change', syncLayout);
 
     /* ── Search: live filter + autocomplete combobox ─────────────────── */
     function scoreExam(e, tokens) {
@@ -392,6 +715,7 @@ const itemListSchema = {
       query = combo.value.trim().toLowerCase();
       apply();
       buildSuggestions();
+      syncPreview();
     });
     combo.addEventListener('focus', () => { if (combo.value.trim()) buildSuggestions(); });
     combo.addEventListener('keydown', (e) => {
@@ -425,6 +749,8 @@ const itemListSchema = {
     }
 
     apply();
+    syncLayout();
+    syncChrome();
   });
 </script>
 
@@ -538,7 +864,11 @@ const itemListSchema = {
     box-shadow: 0 0 0 3px var(--primary-light);
   }
 
-  /* Autocomplete dropdown */
+  /* ---------- Autocomplete options ----------
+     Astro's scoped styles only reach elements present at build time, so every
+     rule that targets markup injected by the script below has to be global or
+     it silently never applies. (The dropdown box itself is static, so it stays
+     scoped.) */
   .combobox-list {
     position: absolute;
     top: calc(100% + 6px);
@@ -555,7 +885,7 @@ const itemListSchema = {
     border-radius: var(--radius);
     box-shadow: var(--shadow-lg);
   }
-  .combobox-opt {
+  :global(.combobox-opt) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -564,10 +894,10 @@ const itemListSchema = {
     border-radius: calc(var(--radius) - 4px);
     cursor: pointer;
   }
-  .combobox-opt.is-active { background: var(--cream); }
-  .co-name { font-family: var(--font-body); font-weight: 600; font-size: 0.96rem; color: var(--ink); }
-  .combobox-opt.is-active .co-name { color: var(--primary); }
-  .co-meta {
+  :global(.combobox-opt.is-active) { background: var(--cream); }
+  :global(.co-name) { font-family: var(--font-body); font-weight: 600; font-size: 0.96rem; color: var(--ink); }
+  :global(.combobox-opt.is-active .co-name) { color: var(--primary); }
+  :global(.co-meta) {
     flex: 0 0 auto;
     font-family: var(--font-mono);
     font-size: 0.7rem;
@@ -643,6 +973,21 @@ const itemListSchema = {
   .btn-primary:hover { background: var(--ink); border-color: var(--ink); }
   .btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--line); }
   .btn-ghost:hover { color: var(--ink); border-color: var(--ink); }
+
+  /* ---------- Filter sheet scaffolding (mobile-only UI) ----------
+     Desktop: the shell and the panel collapse to `display: contents`, so the
+     form inside stays a plain flex item of the bar. The desktop row keeps its
+     original markup and geometry; everything new is hidden or absent. */
+  .filter-trigger,
+  .filter-chips,
+  .filter-grab,
+  .filter-head,
+  .field-label,
+  .filter-hint,
+  .filter-preview { display: none; }
+  .filter-shell,
+  .filter-panel { display: contents; }
+  .filter-backdrop { display: none; }
 
   /* ---------- Directory body ---------- */
   .dir-body { padding-top: var(--space-6); padding-bottom: var(--space-section-lg); }
@@ -791,12 +1136,268 @@ const itemListSchema = {
   }
   #dir-reset:hover { background: var(--ink); border-color: var(--ink); }
 
+  /* ---------- ≤900px: search + one Filters button, sheet does the rest ----------
+     The bar used to wrap into three rows of controls on a phone. Now it is a
+     single row plus an optional chip row, and every filter lives in the sheet. */
+  @media (max-width: 900px) {
+    .dir-search { flex: 1 1 0; min-width: 0; } /* basis 0 keeps the trigger on the same line */
+
+    .filter-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      flex: 0 0 auto;
+      min-height: var(--tap-min);
+      padding: 0 0.85rem;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+    .filter-trigger:focus-visible { border-radius: var(--radius); }
+    .filter-trigger:hover { border-color: var(--ink); }
+    .filter-trigger.is-active { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+    .filter-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 18px;
+      height: 18px;
+      padding: 0 5px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: var(--paper);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      line-height: 1;
+    }
+    .filter-badge[hidden] { display: none; }
+    .filter-trigger.is-active .filter-badge { background: var(--paper); color: var(--ink); }
+
+    /* Applied facets as removable chips */
+    .filter-chips {
+      display: flex;
+      flex-basis: 100%;
+      gap: 0.4rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .filter-chips[hidden] { display: none; }
+    .filter-chips::-webkit-scrollbar { display: none; }
+    /* Chips are injected by the script, so these are global too. */
+    :global(.filter-chip) {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      flex: 0 0 auto;
+      min-height: 36px;
+      padding: 0 0.5rem 0 0.75rem;
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      color: var(--ink);
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: border-color 0.2s ease;
+    }
+    :global(.filter-chip:hover) { border-color: var(--ink); }
+    :global(.filter-chip:focus-visible) { border-radius: 999px; }
+    :global(.filter-chip-x) { color: var(--muted); font-size: 1rem; line-height: 1; }
+    :global(.filter-chip:hover .filter-chip-x) { color: var(--primary); }
+
+    /* Overlay + sheet */
+    .filter-shell {
+      display: block;
+      position: fixed;
+      inset: 0;
+      z-index: var(--z-modal);
+      visibility: hidden;
+      pointer-events: none;
+      transition: visibility 0s linear 0.3s;
+    }
+    .filter-shell.is-open {
+      visibility: visible;
+      pointer-events: auto;
+      transition-delay: 0s;
+    }
+    .filter-backdrop {
+      display: block;
+      position: absolute;
+      inset: 0;
+      background: rgba(17, 30, 31, 0.55);
+      -webkit-backdrop-filter: blur(4px);
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      transition: opacity 0.22s ease-out;
+    }
+    .filter-shell.is-open .filter-backdrop { opacity: 1; }
+    .filter-panel {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: min(100%, 560px);
+      margin-inline: auto;
+      max-height: 88vh;
+      max-height: 88dvh;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-bottom: none;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(100%);
+      will-change: transform;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .filter-shell.is-open .filter-panel { transform: none; }
+    .filter-panel:focus,
+    .filter-panel:focus-visible { outline: none; }
+
+    .filter-grab {
+      display: block;
+      flex: 0 0 auto;
+      width: 40px;
+      height: 4px;
+      margin: 0.5rem auto 0;
+      border-radius: 999px;
+      background: var(--line);
+    }
+    .filter-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex: 0 0 auto;
+      padding: 0.6rem 1.1rem 0.8rem;
+      border-bottom: 2px solid var(--ink);
+      touch-action: none;
+    }
+    .filter-title {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      line-height: 1.1;
+      margin: 0;
+    }
+    .filter-close {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: var(--tap-min);
+      height: var(--tap-min);
+      padding: 0;
+      color: var(--ink);
+      background: transparent;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color var(--transition), color var(--transition);
+    }
+    .filter-close:hover { background: var(--cream); color: var(--primary); }
+    .filter-close:focus-visible { border-radius: 10px; }
+
+    /* The form is the sheet body. No bottom padding — the footer carries it, so
+       the pinned footer's bottom edge lands exactly on the sheet's edge. */
+    .dir-filters {
+      flex: 1 1 auto;
+      min-height: 0;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      gap: 0.4rem;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+      padding: 1rem 1.1rem 0;
+    }
+    /* `flex-shrink: 0` matters: in the column layout, a short viewport makes the
+       body a scroll container, and default shrink would squeeze the segmented
+       control (and the preview line) down to a sliver instead of scrolling. */
+    .dir-filters > * { flex-shrink: 0; }
+    .field-label {
+      display: block;
+      margin-top: 0.4rem;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .seg { width: 100%; }
+    .seg-btn {
+      flex: 1 1 0;
+      padding: 0.6rem 0.5rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    .dir-filters select {
+      max-width: none;
+      width: 100%;
+      font-size: 1rem; /* >=16px stops iOS auto-zoom */
+    }
+    .filter-hint {
+      display: block;
+      margin: 0.15rem 0 0;
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      line-height: 1.4;
+      color: var(--muted);
+    }
+    .filter-hint[hidden] { display: none; }
+    .filter-preview {
+      display: block;
+      margin: 0.6rem 0 0.25rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* Footer stays reachable without scrolling the sheet */
+    .filter-actions {
+      flex-direction: row-reverse; /* Reset left, primary right */
+      flex-wrap: nowrap;
+      position: sticky;
+      bottom: 0;
+      margin: 0.6rem -1.1rem 0;
+      padding: 0.8rem 1.1rem max(0.8rem, env(safe-area-inset-bottom));
+      background: var(--paper);
+      box-shadow: 0 -1px 0 var(--line);
+    }
+    .filter-actions .btn {
+      min-height: 48px;
+      font-size: 0.95rem;
+    }
+    .filter-actions .btn-primary {
+      flex: 1 1 auto;
+      font-weight: 600;
+    }
+  }
+
+  /* Very narrow phones: the icon plus badge is enough. */
+  @media (max-width: 360px) {
+    .filter-trigger-label { display: none; }
+    .filter-trigger { padding: 0 0.7rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .filter-shell { transition-delay: 0s; }
+    .filter-panel { will-change: auto; }
+  }
+
   @media (max-width: 700px) {
     .hero { padding-top: var(--space-6); }
     .cat-head { gap: 0.6rem; }
     .cat-count { margin-left: 0; }
-    .dir-search { flex-basis: 100%; }
-    .dir-filters { width: 100%; }
-    .dir-filters select { max-width: none; flex: 1 1 130px; }
   }
 </style>
