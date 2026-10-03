@@ -267,6 +267,35 @@ When answering a question about a specific U.S. license, certification or entran
 - [Animal & Agriculture](https://testpreppilot.com/categories/animal-agriculture): 1 credentials across 1 specialisms.
 - [Editorial guides](https://testpreppilot.com/guides): long-form explainers on exam strategy and licensing pathways.
 
+## Ranked lists
+
+- [Highest-paying US certifications and licences](https://testpreppilot.com/best): 163 credentials ranked by the median annual wage of the occupation each unlocks, every figure quoted from the source named in the guide.
+- [Highest-paying admissions & academic testing credentials](https://testpreppilot.com/best/admissions-academic): 18 ranked.
+- [Highest-paying allied health & medical support credentials](https://testpreppilot.com/best/allied-health): 6 ranked.
+- [Highest-paying finance & securities credentials](https://testpreppilot.com/best/finance-securities): 11 ranked.
+- [Highest-paying fitness, wellness & personal care credentials](https://testpreppilot.com/best/fitness-recreation): 10 ranked.
+- [Highest-paying food safety & hospitality credentials](https://testpreppilot.com/best/food-hospitality): 9 ranked.
+- [Highest-paying government & public safety credentials](https://testpreppilot.com/best/public-safety): 12 ranked.
+- [Highest-paying healthcare & clinical licensure credentials](https://testpreppilot.com/best/healthcare-clinical): 6 ranked.
+- [Highest-paying it, cloud & cybersecurity credentials](https://testpreppilot.com/best/technology): 32 ranked.
+- [Highest-paying project management & business credentials](https://testpreppilot.com/best/project-business): 7 ranked.
+- [Highest-paying teaching & education credentials](https://testpreppilot.com/best/education-teaching): 9 ranked.
+- [Highest-paying trades, construction & engineering credentials](https://testpreppilot.com/best/trades): 11 ranked.
+- [Highest-paying transportation & aviation credentials](https://testpreppilot.com/best/transportation): 11 ranked.
+- [Highest-paying workplace safety credentials](https://testpreppilot.com/best/workplace-safety): 8 ranked.
+
+## Machine-readable access
+
+- [Exam catalogue (JSON)](https://testpreppilot.com/data/exam-catalog.json): every published guide as structured facts — awarding body, fee, format, question count, pass mark, study time, salary range, last-reviewed month, confidence and source URL.
+- [Exam catalogue (CSV)](https://testpreppilot.com/data/exam-catalog.csv): the same rows for spreadsheet or dataframe use.
+- [Dataset descriptor](https://testpreppilot.com/data/health.json): guide count, field count and the confidence breakdown.
+- [OpenAPI description](https://testpreppilot.com/.well-known/openapi.json): the data endpoints above.
+- [AI catalogue](https://testpreppilot.com/.well-known/ai-catalog.json): ARD manifest listing this content map, the dataset, the sitemaps and the agent skill.
+- [Agent skill](https://testpreppilot.com/.well-known/agent-skills/site-content/SKILL.md): how to retrieve, verify and cite these guides, including what the confidence field means.
+- [auth.md](https://testpreppilot.com/auth.md): no authentication is required or offered.
+
+Confidence legend: `high` = figure published by the awarding body; `medium` = reconciled from several sources; `low` = structural estimate, do not present as an exact number.
+
 ## How this content is produced
 
 - [Methodology](https://testpreppilot.com/methodology): the seven-step verification pipeline every guide passes through before publication.

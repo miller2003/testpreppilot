@@ -21,6 +21,7 @@
 //   node _gen_llms.mjs
 
 import { writeFileSync } from 'node:fs';
+import { rankedFields, payRankedAll } from './src/data/examCatalog/payRanking.mjs';
 import { allExams, getExamDetail, categoryById, buildDirectory } from './src/data/examCatalog/index.mjs';
 import { releases } from './src/data/examCatalog/release-manifest.mjs';
 import { depthFor } from './src/data/examCatalog/examDepth.mjs';
@@ -148,6 +149,33 @@ for (const c of buildDirectory()) {
   L.push(`- [${c.name}](${SITE}/categories/${c.id}): ${c.total} credentials across ${c.groups.length} specialisms.`);
 }
 L.push(`- [Editorial guides](${SITE}/guides): long-form explainers on exam strategy and licensing pathways.`);
+L.push('');
+
+// ── Ranked lists (Top-N is the structure answer engines cite most) ───────
+const ranked = rankedFields(5);
+const rankedTotal = payRankedAll().length;
+L.push('## Ranked lists');
+L.push('');
+L.push(`- [Highest-paying US certifications and licences](${SITE}/best): ${rankedTotal} credentials ranked by the median annual wage of the occupation each unlocks, every figure quoted from the source named in the guide.`);
+for (const f of ranked) {
+  L.push(`- [Highest-paying ${f.name.toLowerCase()} credentials](${SITE}/best/${f.id}): ${f.rows.length} ranked.`);
+}
+L.push('');
+
+// ── Machine-readable access ──────────────────────────────────────────────
+// Listed so an agent reading llms.txt finds the structured feed without having
+// to parse the Link response headers.
+L.push('## Machine-readable access');
+L.push('');
+L.push(`- [Exam catalogue (JSON)](${SITE}/data/exam-catalog.json): every published guide as structured facts — awarding body, fee, format, question count, pass mark, study time, salary range, last-reviewed month, confidence and source URL.`);
+L.push(`- [Exam catalogue (CSV)](${SITE}/data/exam-catalog.csv): the same rows for spreadsheet or dataframe use.`);
+L.push(`- [Dataset descriptor](${SITE}/data/health.json): guide count, field count and the confidence breakdown.`);
+L.push(`- [OpenAPI description](${SITE}/.well-known/openapi.json): the data endpoints above.`);
+L.push(`- [AI catalogue](${SITE}/.well-known/ai-catalog.json): ARD manifest listing this content map, the dataset, the sitemaps and the agent skill.`);
+L.push(`- [Agent skill](${SITE}/.well-known/agent-skills/site-content/SKILL.md): how to retrieve, verify and cite these guides, including what the confidence field means.`);
+L.push(`- [auth.md](${SITE}/auth.md): no authentication is required or offered.`);
+L.push('');
+L.push('Confidence legend: `high` = figure published by the awarding body; `medium` = reconciled from several sources; `low` = structural estimate, do not present as an exact number.');
 L.push('');
 L.push('## How this content is produced');
 L.push('');

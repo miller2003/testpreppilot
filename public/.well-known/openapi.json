@@ -1,0 +1,194 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "TestPrepPilot public data",
+    "version": "1.0.0",
+    "summary": "Structured facts about published U.S. exam and certification guides.",
+    "description": "Static, dataset-style endpoints. There is no write surface and no authentication.",
+    "license": {
+      "name": "Free to read and cite with attribution",
+      "url": "https://testpreppilot.com/disclosure"
+    },
+    "contact": {
+      "url": "https://testpreppilot.com/about"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://testpreppilot.com"
+    }
+  ],
+  "paths": {
+    "/data/exam-catalog.json": {
+      "get": {
+        "operationId": "getExamCatalog",
+        "summary": "Every published exam guide as a flat JSON array of structured facts.",
+        "responses": {
+          "200": {
+            "description": "The published catalogue.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Exam"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/exam-catalog.csv": {
+      "get": {
+        "operationId": "getExamCatalogCsv",
+        "summary": "The same catalogue as CSV.",
+        "responses": {
+          "200": {
+            "description": "CSV, one row per exam.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/health.json": {
+      "get": {
+        "operationId": "getDatasetDescriptor",
+        "summary": "Build descriptor: guide count, field count and generation timestamp.",
+        "responses": {
+          "200": {
+            "description": "Descriptor.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Exam": {
+        "type": "object",
+        "required": [
+          "slug",
+          "name",
+          "url",
+          "category"
+        ],
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "category": {
+            "type": "string"
+          },
+          "awardingBody": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fee": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Exam fee as stated on the guide."
+          },
+          "format": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "questions": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "length": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "passMark": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "costRange": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "studyTime": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "salaryRange": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "topics": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "published": {
+            "type": "string",
+            "format": "date"
+          },
+          "reviewed": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "sourceUrl": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri"
+          }
+        }
+      }
+    }
+  }
+}

@@ -190,6 +190,7 @@ function classify(path) {
   if (path.startsWith('/paths/')) return 'path';
   if (path.startsWith('/guides/')) return 'guide';
   if (path.startsWith('/categories/')) return 'category';
+  if (path === '/best' || path.startsWith('/best/')) return 'ranking';
   if (['/about', '/explore', '/states', '/guides', '/methodology', '/reviewers', '/editorial-policy', '/disclosure', '/privacy'].includes(path)) return 'hub';
   return 'other';
 }
@@ -226,11 +227,11 @@ for (const [type, rows] of Object.entries(byType)) {
 }
 
 // outstanding failures
-const noFaq = results.filter((r) => !r.error && (r.type === 'exam' || r.type === 'path' || r.type === 'guide') && r.visibleFaqCount === 0);
-const noTable = results.filter((r) => !r.error && r.type === 'exam' && r.tableCount === 0);
+const noFaq = results.filter((r) => !r.error && (r.type === 'exam' || r.type === 'path' || r.type === 'guide' || r.type === 'ranking') && r.visibleFaqCount === 0);
+const noTable = results.filter((r) => !r.error && (r.type === 'exam' || r.type === 'ranking') && r.tableCount === 0);
 const mismatch = results.filter((r) => !r.error && r.ldFaqMismatch.length > 0);
-const lowNum = results.filter((r) => !r.error && r.type === 'exam' && r.numPer100 < 2);
-const noLdFaq = results.filter((r) => !r.error && (r.type === 'exam' || r.type === 'path') && r.ldFaqCount === 0 && r.visibleFaqCount > 0);
+const lowNum = results.filter((r) => !r.error && (r.type === 'exam' || r.type === 'ranking') && r.numPer100 < 2);
+const noLdFaq = results.filter((r) => !r.error && (r.type === 'exam' || r.type === 'path' || r.type === 'ranking') && r.ldFaqCount === 0 && r.visibleFaqCount > 0);
 
 console.log('\n===== 违规清单 =====');
 console.log(`无可见FAQ的 exam/path/guide : ${noFaq.length}${noFaq.length ? ' → ' + noFaq.map((r) => r.path).join(', ') : ''}`);

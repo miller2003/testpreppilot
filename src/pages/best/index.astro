@@ -1,0 +1,250 @@
+---
+// /best — the site-wide ranked Top-N.
+//
+// This page type exists because ranked lists are the structure answer engines
+// cite most often. The ranking is computed from published occupation medians
+// already carried by the guides; nothing here is invented, and the printed
+// sentence is always the guide's own sourced headline, verbatim.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
+import FAQAccordion from '../../components/FAQAccordion.astro';
+import { payRankedAll, rankedFields, RANK_METHOD_NOTE } from '../../lib/payRanking';
+import { releases } from '../../data/examCatalog/release-manifest.mjs';
+
+const TOP_N = 25;
+const rows = payRankedAll(TOP_N);
+const all = payRankedAll();
+const fields = rankedFields(5);
+
+const newestRelease = Object.values(releases).sort().at(-1) as string;
+
+// Numbers for the answer block, computed — never typed.
+const topPayLine = rows[0]?.payLine || '';
+const fieldCount = new Set(rows.map((r) => r.category)).size;
+
+// Which fields appear most often in the list — the honest "shape of the top 25".
+const fieldTally = new Map<string, number>();
+for (const r of rows) fieldTally.set(r.category, (fieldTally.get(r.category) || 0) + 1);
+const topFields = [...fieldTally.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+const rankFieldName = (id: string) => fields.find((f) => f.id === id)?.name || id;
+
+const title = `Highest-Paying US Certifications and Licences (2026): ${rows.length} Ranked`;
+const description = `${rows.length} US credentials ranked by the median annual wage published for the occupation each one unlocks, from ${topPayLine ? 'nursing and healthcare to cybersecurity' : 'across every field'} — every figure quoted from the source named in the guide.`;
+
+const faqs = [
+  {
+    question: 'How is this ranking decided?',
+    answer: `Each credential is ordered by the median annual wage published for the occupation it unlocks — the most recent figure per occupation. Across ${all.length} published guides, ${rows.length} carry a citable occupation median and are ranked here. The order is computed; the sentence printed for each credential is quoted from its guide without rewriting, so the source attribution (usually the BLS occupational series) travels with the figure.`,
+  },
+  {
+    question: 'Does a higher-paying credential cost more to earn?',
+    answer: 'Not reliably. Exam fees in this list span roughly $18 to over $1,500 and do not track the published medians — several of the highest-ranked credentials are among the cheapest to sit, while some of the most expensive lead to mid-range occupations. Fee is what the exam costs to attempt; the median is what the occupation pays once you hold it.',
+  },
+  {
+    question: 'Why are credentials for retired exams missing?',
+    answer: 'A recommendation list is the one place where pointing at a dead credential is actively misleading, so any credential whose researched text marks the exam as retired, withdrawn or no longer obtainable is dropped. That filter can only remove a row — it never changes a figure.',
+  },
+  {
+    question: 'Is a high median a guarantee of that salary?',
+    answer: `No. These are medians for the occupation, not starting salaries and not an offer tied to the certificate. A credential is the entry ticket to an occupation: it makes you eligible, while experience, location, sector and negotiation set the number. Treat the ranking as a map of which doors lead where, not as a pay promise.`,
+  },
+  {
+    question: 'Can I see the ranking for just one field?',
+    answer: `Yes — ${fields.length} of the site's credential fields have enough published figures to support their own ranking, linked below. The site-wide list above mixes all of them, so a credential that is strong within its own field may not appear here.`,
+  },
+];
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: title,
+  description:
+    'Ranked by the median annual wage published for the occupation each credential unlocks, most recent figure per occupation.',
+  itemListOrder: 'https://schema.org/ItemListOrderDescending',
+  numberOfItems: rows.length,
+  itemListElement: rows.map((r, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `https://testpreppilot.com${r.url}`,
+    name: r.name,
+    description: r.payLine,
+  })),
+};
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': 'https://testpreppilot.com/best#webpage',
+  name: title,
+  description,
+  isPartOf: { '@id': 'https://testpreppilot.com/#website' },
+  dateModified: newestRelease,
+  mainEntity: { '@id': 'https://testpreppilot.com/best#ranking' },
+};
+---
+
+<BaseLayout
+  title={`${title} | TestPrepPilot`}
+  description={description}
+  dateModified={newestRelease}
+  schema={itemListSchema}
+>
+  <BreadcrumbNav items={[{ label: 'Home', href: '/' }, { label: 'Rankings', href: '/best' }]} />
+
+  <div class="wrap">
+    <header class="page-hero">
+      <p class="kicker">Ranked list · updated {newestRelease}</p>
+      <h1>Highest-paying US certifications and licences</h1>
+      <p class="lede">
+        <strong>{rows.length} credentials</strong> across <strong>{fieldCount} fields</strong> are ranked
+        below by the median annual wage published for the occupation each one unlocks. Every figure is
+        quoted from the source named inside the credential's own guide — no figure on this page was
+        typed in by hand, and none has been reworded for the list.
+      </p>
+      <dl class="rank-stats">
+        <div><dt>Credentials ranked</dt><dd>{rows.length}</dd></div>
+        <div><dt>Fields represented</dt><dd>{fieldCount}</dd></div>
+        <div><dt>Guides with a citable median</dt><dd>{all.length}</dd></div>
+        <div><dt>Field rankings</dt><dd>{fields.length}</dd></div>
+      </dl>
+    </header>
+
+    <main class="rank-body">
+      <section>
+        <h2>Which US credentials lead to the highest published pay?</h2>
+        <p>
+          The list below is ordered by the median annual wage published for the occupation each
+          credential unlocks. The order is computed from {all.length} researched guides; the sentence
+          printed under each credential is the guide's own sourced headline, reproduced verbatim so the
+          attribution stays attached to the number.
+        </p>
+
+        <div class="tablewrap">
+          <table class="rank-table">
+            <caption class="sr-only">
+              Top {rows.length} US credentials by the median annual wage of the occupation each unlocks
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Credential</th>
+                <th scope="col">Field</th>
+                <th scope="col">Published median for the occupation it unlocks (quoted)</th>
+                <th scope="col">Exam fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r, i) => (
+                <tr>
+                  <td class="rank-num">{i + 1}</td>
+                  <th scope="row"><a href={r.url}>{r.name}</a></th>
+                  <td>{rankFieldName(r.category)}</td>
+                  <td class="rank-pay">{r.payLine}</td>
+                  <td>{r.fee || '—'}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>What exactly does this ranking measure?</h2>
+        <p>{RANK_METHOD_NOTE}</p>
+        <p>
+          Two consequences are worth stating plainly. First, the figure for a credential is a median for
+          an <em>occupation</em>, never for the certificate itself — no government wage series tracks a
+          certificate. Second, a credential with no citable occupation median is omitted entirely rather
+          than estimated, which is why this list is shorter than the {all.length} guides that publish a
+          fee.
+        </p>
+      </section>
+
+      <section>
+        <h2>Which fields are most represented in the top {rows.length}?</h2>
+        <p>
+          {topFields.length} fields appear in the ranking, and the concentration is uneven:{' '}
+          {topFields.slice(0, 3).map(([id, n], i) => (
+            <span>{i > 0 ? ', ' : ''}<strong>{rankFieldName(id)}</strong> contributes {n}</span>
+          ))}
+          {topFields.length > 3 ? `, with the remaining ${topFields.length - 3} fields contributing ${rows.length - topFields.slice(0, 3).reduce((a, [, n]) => a + n, 0)} between them` : ''}.
+          A field with few entries here is not low-paid — it simply has fewer guides carrying a citable
+          occupation median.
+        </p>
+      </section>
+
+      <section>
+        <h2>Where can I see the ranking for a single field?</h2>
+        <p>
+          {fields.length} fields have enough published figures to support their own ranking. Each page
+          re-ranks only that field's credentials, so a strong performer inside a narrower field is not
+          buried by the site-wide list above.
+        </p>
+        <ul class="field-links">
+          {fields.map((f) => (
+            <li>
+              <a href={`/best/${f.id}`}>
+                {f.name} <span class="count">{f.rows.length} ranked</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="faq-section">
+        <h2>Frequently asked questions</h2>
+        <FAQAccordion items={faqs} />
+      </section>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.25rem 4rem; }
+  .kicker {
+    font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted, #6b7280); margin: 0 0 0.5rem;
+  }
+  .page-hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.9rem, 4vw, 2.9rem);
+    line-height: 1.12; margin: 0 0 0.75rem; color: var(--ink, #111e1f);
+  }
+  .lede { font-size: 1.05rem; line-height: 1.65; max-width: 68ch; }
+  .rank-stats {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.75rem; margin: 1.5rem 0 0; padding: 0;
+  }
+  .rank-stats > div {
+    background: var(--cream, #f0eee5); border: 1px solid var(--line, #e3e4df);
+    border-radius: 12px; padding: 0.7rem 0.9rem;
+  }
+  .rank-stats dt { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted, #6b7280); }
+  .rank-stats dd { margin: 0.15rem 0 0; font-size: 1.4rem; font-weight: 700; color: var(--ink, #111e1f); }
+
+  .rank-body section { margin-top: 2.75rem; }
+  .rank-body h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.55rem; line-height: 1.25; margin: 0 0 0.6rem; color: var(--ink, #111e1f); }
+  .rank-body p { line-height: 1.65; max-width: 74ch; }
+
+  .tablewrap { overflow-x: auto; margin-top: 1.1rem; border: 1px solid var(--line, #e3e4df); border-radius: 12px; }
+  .rank-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; min-width: 720px; }
+  .rank-table th, .rank-table td { text-align: left; padding: 0.6rem 0.7rem; border-bottom: 1px solid var(--line, #e3e4df); vertical-align: top; }
+  .rank-table thead th { background: var(--cream, #f0eee5); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  .rank-table tbody tr:last-child th, .rank-table tbody tr:last-child td { border-bottom: 0; }
+  .rank-num { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--primary, #1d4ed8); width: 3rem; }
+  .rank-pay { min-width: 22rem; }
+  .rank-table a { color: var(--primary, #1d4ed8); }
+
+  .field-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.6rem; padding: 0; list-style: none; }
+  .field-links a {
+    display: flex; justify-content: space-between; gap: 0.75rem; align-items: baseline;
+    padding: 0.65rem 0.85rem; border: 1px solid var(--line, #e3e4df); border-radius: 10px;
+    text-decoration: none; color: var(--ink, #111e1f); background: #fff;
+  }
+  .field-links a:hover { border-color: var(--primary, #1d4ed8); }
+  .field-links .count { font-size: 0.78rem; color: var(--muted, #6b7280); white-space: nowrap; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+</style>

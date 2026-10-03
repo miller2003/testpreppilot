@@ -1,0 +1,78 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "TestPrepPilot",
+    "identifier": "did:web:testpreppilot.com",
+    "documentationUrl": "https://testpreppilot.com/about"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:testpreppilot.com:data:exam-catalog",
+      "displayName": "Published U.S. exam and certification catalogue",
+      "description": "Structured facts for every published guide: awarding body, exam fee, format, question count, pass mark, eligibility, study time, salary range, last-reviewed month, confidence level and the primary source each figure was verified against.",
+      "type": "application/json",
+      "url": "https://testpreppilot.com/data/exam-catalog.json",
+      "representativeQueries": [
+        "How much does the NCLEX-RN cost and how many questions does it have?",
+        "What is the pass mark for CompTIA Security+?",
+        "How long do you need to study for the Series 7?",
+        "Which U.S. certifications have the highest published salary range?"
+      ]
+    },
+    {
+      "identifier": "urn:air:testpreppilot.com:data:exam-catalog-csv",
+      "displayName": "Published U.S. exam and certification catalogue (CSV)",
+      "description": "The same catalogue rows in CSV form, for spreadsheet and dataframe use.",
+      "type": "text/csv",
+      "url": "https://testpreppilot.com/data/exam-catalog.csv",
+      "representativeQueries": [
+        "Give me a table of U.S. certification exam fees.",
+        "List exam lengths and pass marks for US professional licences."
+      ]
+    },
+    {
+      "identifier": "urn:air:testpreppilot.com:docs:llms",
+      "displayName": "llms.txt content map",
+      "description": "Plain-text index of every published guide, one line each, with fee, length and pass mark. The cheapest entry point for retrieval.",
+      "type": "text/plain",
+      "url": "https://testpreppilot.com/llms.txt",
+      "representativeQueries": [
+        "Which U.S. professional exams does this site cover?",
+        "Find a guide to a specific certification."
+      ]
+    },
+    {
+      "identifier": "urn:air:testpreppilot.com:skill:site-content",
+      "displayName": "Agent Skills index",
+      "description": "Discovery index for the site-content skill, which documents how to retrieve, verify and cite these guides.",
+      "type": "application/json",
+      "url": "https://testpreppilot.com/.well-known/agent-skills/index.json",
+      "representativeQueries": [
+        "How should an agent cite this site?",
+        "How do I tell how reliable a figure on this site is?"
+      ]
+    },
+    {
+      "identifier": "urn:air:testpreppilot.com:docs:sitemap",
+      "displayName": "XML sitemap",
+      "description": "Every indexable URL with an honest lastmod. For exam guides the lastmod is the publication date of that guide.",
+      "type": "application/xml",
+      "url": "https://testpreppilot.com/sitemap-index.xml",
+      "representativeQueries": [
+        "What are the newest U.S. exam guides?",
+        "List every published guide URL."
+      ]
+    },
+    {
+      "identifier": "urn:air:testpreppilot.com:docs:api-catalog",
+      "displayName": "API catalogue (RFC 9727)",
+      "description": "Linkset describing the public data endpoints and the OpenAPI document that describes them.",
+      "type": "application/linkset+json",
+      "url": "https://testpreppilot.com/.well-known/api-catalog",
+      "representativeQueries": [
+        "Is there a machine-readable API for this site?",
+        "How do I fetch this data programmatically?"
+      ]
+    }
+  ]
+}

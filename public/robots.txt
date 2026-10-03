@@ -16,10 +16,21 @@
 #   Applebot-Extended                      → Apple Intelligence summaries
 #   Amazonbot, meta-externalagent, YouBot, Diffbot, cohere-ai, Bytespider
 #
-# A machine-readable map of our best content lives at /llms.txt.
+# A machine-readable map of our best content lives at /llms.txt, and the full
+# agent-facing discovery surface is indexed from /.well-known/ai-catalog.json.
+#
+# Content-Signal is a non-binding, machine-readable statement of preference
+# (https://contentsignals.org/). This site's purpose is to be found and cited:
+# training corpora, search indexing and real-time AI input (citations / RAG)
+# are all deliberately welcome. Flip any one of these to "no" to reserve that
+# right — note that Google-Extended, Applebot-Extended, GPTBot and ClaudeBot
+# bundle training WITH grounding in a single token, so a blanket no also closes
+# the citation channel.
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
 
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
 # ── AI answer engines & training crawlers ──────────────────────────
 User-agent: GPTBot
@@ -68,3 +79,4 @@ User-agent: Bytespider
 Allow: /
 
 Sitemap: https://testpreppilot.com/sitemap-index.xml
+Agentmap: https://testpreppilot.com/.well-known/ai-catalog.json

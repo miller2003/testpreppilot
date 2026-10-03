@@ -1,0 +1,40 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://testpreppilot.com/data/",
+      "service-desc": [
+        {
+          "href": "https://testpreppilot.com/.well-known/openapi.json",
+          "type": "application/openapi+json",
+          "title": "OpenAPI description of the public data endpoints"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://testpreppilot.com/llms.txt",
+          "type": "text/plain",
+          "title": "llms.txt content map"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://testpreppilot.com/data/health.json",
+          "type": "application/json",
+          "title": "Dataset descriptor and guide count"
+        }
+      ],
+      "item": [
+        {
+          "href": "https://testpreppilot.com/data/exam-catalog.json",
+          "type": "application/json",
+          "title": "Published exam catalogue (JSON)"
+        },
+        {
+          "href": "https://testpreppilot.com/data/exam-catalog.csv",
+          "type": "text/csv",
+          "title": "Published exam catalogue (CSV)"
+        }
+      ]
+    }
+  ]
+}

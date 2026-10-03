@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "version": "0.2.0",
+  "skills": [
+    {
+      "name": "site-content",
+      "type": "skill-md",
+      "description": "Retrieve and cite TestPrepPilot U.S. exam and certification guides: plain-text index, structured JSON/CSV dataset, and the per-fact confidence and source fields.",
+      "url": "https://testpreppilot.com/.well-known/agent-skills/site-content/SKILL.md",
+      "digest": "sha256:eab0ad1e1a1a86d5a15ac28f9c35c448b478d274440fc8e2b8f58c549c2eb8cf",
+      "tags": [
+        "credentials",
+        "certification",
+        "exam",
+        "education",
+        "dataset"
+      ]
+    }
+  ]
+}

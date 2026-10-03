@@ -1,0 +1,105 @@
+# TestPrepPilot — edge response headers
+#
+# Cloudflare Pages reads this file (it is the sibling of public/_redirects,
+# which demonstrably takes effect on this deployment). Every rule here is
+# additive; a later matching rule wins for the same header name.
+#
+# ── Why the Link header matters ──────────────────────────────────────
+# RFC 8288 Link headers let an agent discover this site's machine-readable
+# surface from ANY URL it happens to land on, without guessing paths. Only
+# registered relation types are used:
+#   api-catalog   RFC 9727 §3   → the RFC 9727 linkset
+#   service-desc  RFC 8631      → the OpenAPI description of the data endpoints
+#   service-doc   RFC 8631      → the llms.txt content map
+#   service-meta  RFC 8631      → the ARD / ai-catalog manifest
+#   status        RFC 8631      → the dataset descriptor (a real JSON endpoint)
+# Every one of those targets must resolve, or the header sends agents to a 404 —
+# which is worse than sending nothing. _verify_agent_surface.mjs checks them.
+
+/*
+  Link: </.well-known/api-catalog>; rel="api-catalog", </.well-known/openapi.json>; rel="service-desc", </llms.txt>; rel="service-doc", </.well-known/ai-catalog.json>; rel="service-meta", </data/health.json>; rel="status"
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# ── HTML: never cache the document itself ────────────────────────────
+# The asset files it references are fingerprinted and cached immutably below;
+# the HTML must revalidate so a deploy is visible immediately.
+/
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Type: text/html; charset=utf-8
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Type: text/html; charset=utf-8
+
+# ── Fingerprinted build assets: safe to cache hard ───────────────────
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# ── Discovery documents ──────────────────────────────────────────────
+# Content-Type is declared explicitly. Several of these paths have no file
+# extension, so the platform would otherwise be free to serve them as
+# application/octet-stream — which defeats the entire point of the document.
+/.well-known/api-catalog
+  Content-Type: application/linkset+json
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: noindex, follow
+
+/.well-known/ai-catalog.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: noindex, follow
+
+/.well-known/openapi.json
+  Content-Type: application/openapi+json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: noindex, follow
+
+/.well-known/agent-skills/index.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: noindex, follow
+
+/.well-known/agent-skills/site-content/SKILL.md
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: noindex, follow
+
+# auth.md is a protocol document for agents, not a page for readers, so it is
+# kept out of the search index while staying fully readable.
+/auth.md
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: noindex, follow
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+# ── Public dataset ───────────────────────────────────────────────────
+# Deliberately NOT noindexed: this is the machine-readable corpus AI answer
+# engines are invited to ingest, and a noindex could make a crawler drop it
+# from its store. CORS is open because it is a public dataset.
+/data/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+# ── Sitemaps ─────────────────────────────────────────────────────────
+/sitemap-*.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/rss.xml
+  Content-Type: application/rss+xml; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+# ── Static media ─────────────────────────────────────────────────────
+/images/*
+  Cache-Control: public, max-age=604800
+
+/exams/*/infographic.svg
+  Cache-Control: public, max-age=604800

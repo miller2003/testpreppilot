@@ -1,0 +1,234 @@
+---
+// /best/[field] — the ranking restricted to one credential field.
+//
+// Only fields with enough qualifying credentials get a page (see rankedFields);
+// a two-row "ranking" would just be a thinner copy of /best and would compete
+// with it rather than add anything.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
+import FAQAccordion from '../../components/FAQAccordion.astro';
+import { payRankedField, rankedFields, RANK_METHOD_NOTE } from '../../lib/payRanking';
+import { releases } from '../../data/examCatalog/release-manifest.mjs';
+
+export function getStaticPaths() {
+  return rankedFields(5).map((f) => ({
+    params: { field: f.id },
+    props: { fieldId: f.id, fieldName: f.name, fieldTotal: f.rows.length },
+  }));
+}
+
+const { fieldId, fieldName, fieldTotal } = Astro.props as {
+  fieldId: string;
+  fieldName: string;
+  fieldTotal: number;
+};
+
+const rows = payRankedField(fieldId);
+const siteWide = rankedFields(5);
+const newestRelease = Object.values(releases).sort().at(-1) as string;
+
+const fieldLower = fieldName.toLowerCase();
+const title = `Highest-Paying ${fieldName} Credentials (2026): ${rows.length} Ranked`;
+const description = `${rows.length} ${fieldLower} credentials ranked by the median annual wage published for the occupation each one unlocks, with the exam fee for every credential and the source quoted for each figure.`;
+
+// Spread of fees — computed, so the page can state it without typing a number.
+const feeValues = rows
+  .map((r) => /\$([\d,]+)/.exec(r.fee || ''))
+  .filter(Boolean)
+  .map((m) => parseFloat((m as RegExpExecArray)[1].replace(/,/g, '')));
+const feeLow = feeValues.length ? Math.min(...feeValues) : null;
+const feeHigh = feeValues.length ? Math.max(...feeValues) : null;
+
+const faqs = [
+  {
+    question: `How many ${fieldLower} credentials are ranked here?`,
+    answer: `${rows.length} of this field's published guides carry a citable occupation median and are ranked below${fieldTotal !== rows.length ? ` (out of ${fieldTotal} qualifying)` : ''}. Site-wide, ${siteWide.reduce((a, f) => a + f.rows.length, 0)} credentials across ${siteWide.length} fields are ranked, so this page is a subset of the main list rather than an alternative to it.`,
+  },
+  {
+    question: `What does a ${fieldLower} credential cost to attempt?`,
+    answer: feeLow !== null
+      ? `Exam fees across this field's ranked credentials run from about $${feeLow.toLocaleString('en-US')} to $${feeHigh!.toLocaleString('en-US')}. Fee is what the exam costs to sit; the median quoted for each row is what the occupation pays once you hold the credential, and the two do not move together.`
+      : 'Fee data is not available for every credential in this field; each guide states its own fee where it is published.',
+  },
+  {
+    question: `Is the highest-paying ${fieldLower} credential the right one to start with?`,
+    answer: `Not necessarily. The ranking orders by the median for the occupation each credential unlocks, and several of the credentials here are sequential steps in the same career path rather than competing alternatives — one may be the prerequisite for another on this list. Read the guide for a credential's eligibility rules before treating its position here as a starting recommendation.`,
+  },
+  {
+    question: 'Why is a credential I expected to see missing?',
+    answer: `Only credentials with a published occupation median appear. A credential whose guide does not carry a citable median is left out rather than estimated, and any credential whose researched text marks its exam as retired, withdrawn or no longer obtainable is removed — pointing at a dead exam in a recommendation list would be actively misleading.`,
+  },
+];
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: title,
+  description:
+    'Ranked by the median annual wage published for the occupation each credential unlocks, most recent figure per occupation.',
+  itemListOrder: 'https://schema.org/ItemListOrderDescending',
+  numberOfItems: rows.length,
+  itemListElement: rows.map((r, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `https://testpreppilot.com${r.url}`,
+    name: r.name,
+    description: r.payLine,
+  })),
+};
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `https://testpreppilot.com/best/${fieldId}#webpage`,
+  name: title,
+  description,
+  isPartOf: { '@id': 'https://testpreppilot.com/#website' },
+  dateModified: newestRelease,
+  mainEntity: { '@id': `https://testpreppilot.com/best/${fieldId}#ranking` },
+};
+---
+
+<BaseLayout
+  title={`${title} | TestPrepPilot`}
+  description={description}
+  dateModified={newestRelease}
+  schema={itemListSchema}
+>
+  <BreadcrumbNav
+    items={[
+      { label: 'Home', href: '/' },
+      { label: 'Rankings', href: '/best' },
+      { label: fieldName, href: `/best/${fieldId}` },
+    ]}
+  />
+
+  <div class="wrap">
+    <header class="page-hero">
+      <p class="kicker">Ranked list · updated {newestRelease}</p>
+      <h1>Highest-paying {fieldLower} credentials</h1>
+      <p class="lede">
+        <strong>{rows.length} {fieldLower} credentials</strong> are ranked below by the median annual wage
+        published for the occupation each one unlocks. Every figure is quoted from the source named inside
+        that credential's own guide, and the exam fee shown beside it comes from the awarding body.
+      </p>
+      <dl class="rank-stats">
+        <div><dt>Credentials ranked</dt><dd>{rows.length}</dd></div>
+        {feeLow !== null && <div><dt>Exam fees</dt><dd>${feeLow.toLocaleString('en-US')}–${feeHigh!.toLocaleString('en-US')}</dd></div>}
+        <div><dt>Field</dt><dd class="small">{fieldName}</dd></div>
+      </dl>
+    </header>
+
+    <main class="rank-body">
+      <section>
+        <h2>Which {fieldLower} credentials lead to the highest published pay?</h2>
+        <p>
+          The {rows.length} credentials below are ordered by the median annual wage published for the
+          occupation each one unlocks. The order is computed from the researched guides; the sentence
+          printed for each credential is that guide's own sourced headline, reproduced verbatim so its
+          attribution stays attached to the number.
+        </p>
+
+        <div class="tablewrap">
+          <table class="rank-table">
+            <caption class="sr-only">
+              {fieldLower} credentials ranked by the median annual wage of the occupation each unlocks
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Credential</th>
+                <th scope="col">Published median for the occupation it unlocks (quoted)</th>
+                <th scope="col">Exam fee</th>
+                <th scope="col">Verified</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r, i) => (
+                <tr>
+                  <td class="rank-num">{i + 1}</td>
+                  <th scope="row"><a href={r.url}>{r.name}</a></th>
+                  <td class="rank-pay">{r.payLine}</td>
+                  <td>{r.fee || '—'}</td>
+                  <td class="rank-meta">{r.reviewed || '—'}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>What does this ranking actually measure?</h2>
+        <p>{RANK_METHOD_NOTE}</p>
+        <p>
+          Each row also carries the month its guide was last checked against the primary source, so you can
+          see how current the figure is before you rely on it. Fees and pass rules change; the guide linked
+          from every row carries the authoritative reference.
+        </p>
+      </section>
+
+      <section>
+        <h2>Where does this field sit in the site-wide ranking?</h2>
+        <p>
+          The main ranking pools all {siteWide.reduce((a, f) => a + f.rows.length, 0)} credential-with-median
+          pairs across {siteWide.length} fields, so a credential that leads this page may still sit outside
+          the site-wide top 25 — and a credential outside this page's top few may rank highly overall. Use
+          whichever view matches the question you are answering.
+        </p>
+        <ul class="field-links">
+          <li><a href="/best">All fields, site-wide ranking <span class="count">{siteWide.reduce((a, f) => a + f.rows.length, 0)} ranked</span></a></li>
+          {siteWide.filter((f) => f.id !== fieldId).map((f) => (
+            <li>
+              <a href={`/best/${f.id}`}>{f.name} <span class="count">{f.rows.length} ranked</span></a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="faq-section">
+        <h2>Frequently asked questions</h2>
+        <FAQAccordion items={faqs} />
+      </section>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.25rem 4rem; }
+  .kicker {
+    font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted, #6b7280); margin: 0 0 0.5rem;
+  }
+  .page-hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.9rem, 4vw, 2.9rem);
+    line-height: 1.12; margin: 0 0 0.75rem; color: var(--ink, #111e1f);
+  }
+  .lede { font-size: 1.05rem; line-height: 1.65; max-width: 68ch; }
+  .rank-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; margin: 1.5rem 0 0; padding: 0; }
+  .rank-stats > div { background: var(--cream, #f0eee5); border: 1px solid var(--line, #e3e4df); border-radius: 12px; padding: 0.7rem 0.9rem; }
+  .rank-stats dt { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted, #6b7280); }
+  .rank-stats dd { margin: 0.15rem 0 0; font-size: 1.4rem; font-weight: 700; color: var(--ink, #111e1f); }
+  .rank-stats dd.small { font-size: 1rem; }
+
+  .rank-body section { margin-top: 2.75rem; }
+  .rank-body h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.55rem; line-height: 1.25; margin: 0 0 0.6rem; color: var(--ink, #111e1f); }
+  .rank-body p { line-height: 1.65; max-width: 74ch; }
+
+  .tablewrap { overflow-x: auto; margin-top: 1.1rem; border: 1px solid var(--line, #e3e4df); border-radius: 12px; }
+  .rank-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; min-width: 720px; }
+  .rank-table th, .rank-table td { text-align: left; padding: 0.6rem 0.7rem; border-bottom: 1px solid var(--line, #e3e4df); vertical-align: top; }
+  .rank-table thead th { background: var(--cream, #f0eee5); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  .rank-table tbody tr:last-child th, .rank-table tbody tr:last-child td { border-bottom: 0; }
+  .rank-num { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--primary, #1d4ed8); width: 3rem; }
+  .rank-pay { min-width: 22rem; }
+  .rank-meta { white-space: nowrap; color: var(--muted, #6b7280); }
+  .rank-table a { color: var(--primary, #1d4ed8); }
+
+  .field-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.6rem; padding: 0; list-style: none; }
+  .field-links a { display: flex; justify-content: space-between; gap: 0.75rem; align-items: baseline; padding: 0.65rem 0.85rem; border: 1px solid var(--line, #e3e4df); border-radius: 10px; text-decoration: none; color: var(--ink, #111e1f); background: #fff; }
+  .field-links a:hover { border-color: var(--primary, #1d4ed8); }
+  .field-links .count { font-size: 0.78rem; color: var(--muted, #6b7280); white-space: nowrap; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+</style>

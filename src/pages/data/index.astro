@@ -1,0 +1,174 @@
+---
+// The landing page for the public data surface — and the RFC 9727 `anchor`
+// advertised in /.well-known/api-catalog, so that anchor resolves to something
+// a human can read rather than to a 404.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
+import FAQAccordion from '../../components/FAQAccordion.astro';
+import { datasetMeta, EXAM_FIELDS } from '../../lib/examDataset';
+
+const meta = datasetMeta();
+const SITE = 'https://testpreppilot.com';
+
+const title = 'Public exam data — JSON and CSV';
+const description = `${meta.rows} US exam and certification guides as structured data: awarding body, fee, format, question count, pass mark, study time and salary range, each with a confidence level and the source it was verified against.`;
+
+const endpoints = [
+  { path: '/data/exam-catalog.json', type: 'application/json', desc: `All ${meta.rows} published guides as one object per exam.` },
+  { path: '/data/exam-catalog.csv', type: 'text/csv', desc: 'The same rows as CSV, one line per exam.' },
+  { path: '/data/health.json', type: 'application/json', desc: 'Descriptor: row count, field count and the confidence breakdown.' },
+  { path: '/.well-known/openapi.json', type: 'application/openapi+json', desc: 'OpenAPI 3.1 description of the endpoints above.' },
+  { path: '/.well-known/ai-catalog.json', type: 'application/ai-catalog+json', desc: 'ARD manifest listing every machine-readable resource on this site.' },
+  { path: '/.well-known/agent-skills/site-content/SKILL.md', type: 'text/markdown', desc: 'How an agent should retrieve, verify and cite these guides.' },
+  { path: '/auth.md', type: 'text/markdown', desc: 'Access policy: public, read-only, no key required.' },
+];
+
+const faqs = [
+  {
+    question: 'Is there an API key or rate limit?',
+    answer: 'No key, no registration and no rate limit. The endpoints are static files with an open CORS policy, so any client can read them. TestPrepPilot asks crawlers to keep requests sequential and to identify themselves honestly.',
+  },
+  {
+    question: 'What does the confidence field mean?',
+    answer: `Each row carries a confidence level. ${meta.confidence.high} rows are "high" (the figure is published by the awarding body), ${meta.confidence.medium} are "medium" (reconciled from several sources and may vary by jurisdiction) and ${meta.confidence.low} are "low" (a structural estimate that should not be presented as an exact figure).`,
+  },
+  {
+    question: 'How current is the data?',
+    answer: `Every row carries a published date and the month its guide was last checked against the primary source. ${meta.withSourceUrl} of the ${meta.rows} rows also carry the source URL the research was verified against; where that was not recorded the field is null rather than guessed.`,
+  },
+  {
+    question: 'Can I reuse this data?',
+    answer: 'Yes — quote or cite it freely, with a link to the specific guide you used rather than to the homepage. Fees and eligibility rules change, so a figure should travel with its guide link and, where present, its source URL.',
+  },
+];
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  '@id': `${SITE}/data#dataset`,
+  name: 'TestPrepPilot — published U.S. exam and certification catalogue',
+  description,
+  url: `${SITE}/data`,
+  creator: { '@id': `${SITE}/#organization` },
+  publisher: { '@id': `${SITE}/#organization` },
+  license: `${SITE}/disclosure`,
+  isAccessibleForFree: true,
+  keywords: ['certification', 'licensure', 'exam fees', 'pass marks', 'United States'],
+  variableMeasured: EXAM_FIELDS,
+  distribution: [
+    { '@type': 'DataDownload', contentUrl: `${SITE}/data/exam-catalog.json`, encodingFormat: 'application/json' },
+    { '@type': 'DataDownload', contentUrl: `${SITE}/data/exam-catalog.csv`, encodingFormat: 'text/csv' },
+  ],
+};
+---
+
+<BaseLayout title={`${title} | TestPrepPilot`} description={description} schema={webPageSchema}>
+  <BreadcrumbNav items={[{ label: 'Home', href: '/' }, { label: 'Data', href: '/data' }]} />
+
+  <div class="wrap">
+    <header class="page-hero">
+      <p class="kicker">Open data</p>
+      <h1>Public exam data</h1>
+      <p class="lede">
+        Every published guide on this site is available as structured data — <strong>{meta.rows} exams</strong>{' '}
+        across <strong>{meta.categories.length} fields</strong>, each row carrying its awarding body, fee, format,
+        question count, pass mark, study time and published salary range. There is no key, no registration and
+        no rate limit.
+      </p>
+      <dl class="stats">
+        <div><dt>Rows</dt><dd>{meta.rows}</dd></div>
+        <div><dt>Fields per row</dt><dd>{meta.fields}</dd></div>
+        <div><dt>Rows with a source URL</dt><dd>{meta.withSourceUrl}</dd></div>
+        <div><dt>Credential fields</dt><dd>{meta.categories.length}</dd></div>
+      </dl>
+    </header>
+
+    <main>
+      <section>
+        <h2>Which endpoints can I fetch?</h2>
+        <p>
+          Three data URLs plus four discovery documents. All of them are static, cacheable and served with an
+          open CORS policy, so a browser-based agent can read them directly.
+        </p>
+        <div class="tablewrap">
+          <table class="ep-table">
+            <thead>
+              <tr>
+                <th scope="col">URL</th>
+                <th scope="col">Content type</th>
+                <th scope="col">What it returns</th>
+              </tr>
+            </thead>
+            <tbody>
+              {endpoints.map((e) => (
+                <tr>
+                  <th scope="row"><a href={e.path}>{e.path}</a></th>
+                  <td><code>{e.type}</code></td>
+                  <td>{e.desc}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>What is in each row?</h2>
+        <p>
+          {meta.fields} fields per exam, from the awarding body and the exam fee through to the median salary
+          published for the occupation the credential unlocks. Two fields carry the evidence rather than the
+          fact: <code>confidence</code> and <code>sourceUrl</code>.
+        </p>
+        <ul class="fields">
+          {EXAM_FIELDS.map((f) => <li><code>{f}</code></li>)}
+        </ul>
+      </section>
+
+      <section>
+        <h2>Why does a row have a confidence level?</h2>
+        <p>
+          Because not every figure is equally well sourced, and flattening them would be dishonest.{' '}
+          <strong>{meta.confidence.high}</strong> rows are <code>high</code> — the figure is published by the
+          awarding body. <strong>{meta.confidence.medium}</strong> are <code>medium</code> — reconciled from
+          several sources and may vary by jurisdiction. <strong>{meta.confidence.low}</strong> are{' '}
+          <code>low</code> — a structural estimate that should not be presented as an exact number. Where the
+          research recorded the page it verified against, <code>sourceUrl</code> carries it; where it did not,
+          the field is null rather than guessed.
+        </p>
+      </section>
+
+      <section class="faq-section">
+        <h2>Frequently asked questions</h2>
+        <FAQAccordion items={faqs} />
+      </section>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 1.25rem 4rem; }
+  .kicker { font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #6b7280); margin: 0 0 0.5rem; }
+  .page-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.9rem, 4vw, 2.9rem); line-height: 1.12; margin: 0 0 0.75rem; color: var(--ink, #111e1f); }
+  .lede { font-size: 1.05rem; line-height: 1.65; max-width: 68ch; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.75rem; margin: 1.5rem 0 0; padding: 0; }
+  .stats > div { background: var(--cream, #f0eee5); border: 1px solid var(--line, #e3e4df); border-radius: 12px; padding: 0.7rem 0.9rem; }
+  .stats dt { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted, #6b7280); }
+  .stats dd { margin: 0.15rem 0 0; font-size: 1.4rem; font-weight: 700; color: var(--ink, #111e1f); }
+
+  main section { margin-top: 2.5rem; }
+  main h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; line-height: 1.25; margin: 0 0 0.6rem; color: var(--ink, #111e1f); }
+  main p { line-height: 1.65; max-width: 74ch; }
+  code { font-size: 0.86em; background: var(--cream, #f0eee5); padding: 0.1em 0.35em; border-radius: 5px; }
+
+  .tablewrap { overflow-x: auto; margin-top: 1.1rem; border: 1px solid var(--line, #e3e4df); border-radius: 12px; }
+  .ep-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; min-width: 620px; }
+  .ep-table th, .ep-table td { text-align: left; padding: 0.6rem 0.7rem; border-bottom: 1px solid var(--line, #e3e4df); vertical-align: top; }
+  .ep-table thead th { background: var(--cream, #f0eee5); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  .ep-table tbody tr:last-child th, .ep-table tbody tr:last-child td { border-bottom: 0; }
+  .ep-table a { color: var(--primary, #1d4ed8); }
+
+  .fields { display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0; list-style: none; margin-top: 0.9rem; }
+  .faq-item { border-bottom: 1px solid var(--line, #e3e4df); padding: 0.7rem 0; }
+  .faq-item summary { cursor: pointer; font-weight: 600; }
+  .faq-item p { margin: 0.5rem 0 0; }
+</style>

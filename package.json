@@ -8,7 +8,12 @@
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
     "gen:infographics": "node _gen_infographics.mjs",
-    "prebuild": "node _gen_infographics.mjs",
+    "gen:agent": "node _gen_agent_surface.mjs",
+    "gen:llms": "node _gen_llms.mjs",
+    "verify:agent": "node _verify_agent_surface.mjs",
+    "verify:content": "node _geo_audit.mjs && node _qa/verify-seo-geo.mjs",
+    "verify:batch": "node _verify55.mjs",
+    "prebuild": "node _gen_infographics.mjs && node _gen_agent_surface.mjs",
     "format": "prettier --write \"src/**/*.{astro,css,ts,js}\"",
     "manage": "node manager/server.mjs"
   },

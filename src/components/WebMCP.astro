@@ -1,0 +1,162 @@
+---
+// WebMCP — exposes the exam directory as browser-side tools for an agent that
+// is already on the page (navigator.modelContext).
+//
+// Both generations of the API are registered, because the spec is a draft and
+// the detector may look for either:
+//   · registerTool(tool, { signal })   — current draft
+//   · provideContext({ tools })        — earlier shape
+//
+// Two deliberate constraints:
+//   1. Registration is wrapped in try/catch and never throws. A shared script
+//      that breaks would take down every page on the site, not just this tool.
+//   2. The tools read the REAL public dataset (/data/exam-catalog.json) and
+//      return real rows. They do not fabricate an answer, and they cannot be
+//      used to navigate the agent off-site: no tool accepts a URL.
+---
+
+<script is:inline>
+  (function () {
+    var DATASET = '/data/exam-catalog.json';
+    var cache = null;
+
+    // Lazily fetched, so a page load costs nothing unless a tool is called.
+    function load() {
+      if (!cache) {
+        cache = fetch(DATASET, { headers: { Accept: 'application/json' } }).then(function (r) {
+          if (!r.ok) throw new Error('dataset unavailable: ' + r.status);
+          return r.json();
+        });
+      }
+      return cache;
+    }
+
+    function slim(row) {
+      return {
+        slug: row.slug,
+        name: row.name,
+        url: row.url,
+        category: row.category,
+        awardingBody: row.awardingBody,
+        fee: row.fee,
+        format: row.format,
+        questions: row.questions,
+        length: row.length,
+        passMark: row.passMark,
+        studyTime: row.studyTime,
+        salaryRange: row.salaryRange,
+        published: row.published,
+        reviewed: row.reviewed,
+        confidence: row.confidence,
+        sourceUrl: row.sourceUrl,
+        note: 'Cite the url. Treat a "low" confidence figure as an estimate, not an exact number.'
+      };
+    }
+
+    function search(args) {
+      var q = String((args && args.query) || '').trim().toLowerCase();
+      var limit = Math.min(Number((args && args.limit) || 8), 25);
+      if (!q) return Promise.resolve({ ok: false, error: 'query is required' });
+      return load().then(function (rows) {
+        var terms = q.split(/\s+/);
+        var hits = rows.filter(function (r) {
+          var hay = [r.name, r.slug, r.category, r.awardingBody, r.topics.join(' ')]
+            .join(' ')
+            .toLowerCase();
+          return terms.every(function (t) { return hay.indexOf(t) !== -1; });
+        });
+        return {
+          ok: true,
+          query: args.query,
+          matches: hits.length,
+          results: hits.slice(0, limit).map(slim)
+        };
+      });
+    }
+
+    function getExam(args) {
+      var slug = String((args && args.slug) || '').trim().toLowerCase();
+      if (!slug) return Promise.resolve({ ok: false, error: 'slug is required' });
+      return load().then(function (rows) {
+        var hit = rows.filter(function (r) { return r.slug === slug; })[0];
+        if (!hit) return { ok: false, error: 'no published guide with slug "' + slug + '"' };
+        return { ok: true, exam: slim(hit) };
+      });
+    }
+
+    function listCategories() {
+      return load().then(function (rows) {
+        var counts = {};
+        rows.forEach(function (r) { counts[r.category] = (counts[r.category] || 0) + 1; });
+        return {
+          ok: true,
+          total: rows.length,
+          categories: Object.keys(counts).sort().map(function (c) { return { category: c, guides: counts[c] }; })
+        };
+      });
+    }
+
+    var TOOLS = [
+      {
+        name: 'search_exams',
+        description:
+          'Search TestPrepPilot\'s published U.S. exam and certification guides. Returns structured facts (fee, format, pass mark, study time, confidence) for matching guides.',
+        inputSchema: {
+          type: 'object',
+          properties: {
+            query: { type: 'string', description: 'Keywords, e.g. "pharmacy technician" or "security plus".' },
+            limit: { type: 'number', description: 'Max results (default 8, max 25).' }
+          },
+          required: ['query']
+        },
+        execute: search
+      },
+      {
+        name: 'get_exam',
+        description:
+          'Fetch one published guide by its slug. Returns the guide URL plus its structured facts and its confidence level.',
+        inputSchema: {
+          type: 'object',
+          properties: { slug: { type: 'string', description: 'Guide slug, e.g. "nclex-rn".' } },
+          required: ['slug']
+        },
+        execute: getExam
+      },
+      {
+        name: 'list_exam_categories',
+        description: 'List the credential fields this site covers and how many published guides each one has.',
+        inputSchema: { type: 'object', properties: {} },
+        execute: listCategories
+      }
+    ];
+
+    try {
+      var mc = navigator.modelContext;
+      if (!mc) return;
+
+      var controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+      var registered = 0;
+
+      // Current draft: per-tool registration with an abort signal.
+      if (typeof mc.registerTool === 'function') {
+        TOOLS.forEach(function (t) {
+          mc.registerTool(t, controller ? { signal: controller.signal } : undefined);
+          registered++;
+        });
+      } else if (typeof mc.provideContext === 'function') {
+        // Earlier shape: hand the whole context over at once.
+        mc.provideContext({ tools: TOOLS });
+        registered = TOOLS.length;
+      }
+
+      // Exposed for teardown and for tests that need to assert registration.
+      window.__testpreppilotMcp = {
+        tools: TOOLS,
+        registered: registered,
+        teardown: function () { if (controller) controller.abort(); }
+      };
+    } catch (e) {
+      // The API is experimental. A failure here must never affect the page.
+    }
+  })();
+</script>

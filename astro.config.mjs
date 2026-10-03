@@ -1,7 +1,23 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { execFileSync } from 'node:child_process';
 import { releases } from './src/data/examCatalog/release-manifest.mjs';
 import { buildDirectory } from './src/data/examCatalog/index.mjs';
+
+// Regenerate the agent-readiness surface on every build.
+//
+// The npm `prebuild` script covers `npm run build`, but a bare `astro build`
+// would skip it — and a stale Agent Skills digest or a catalogue pointing at a
+// URL that has since moved is exactly the failure mode that makes a discovery
+// document worthless. Hooking the build itself makes it unconditional.
+const agentSurface = {
+  name: 'agent-surface',
+  hooks: {
+    'astro:build:start': () => {
+      execFileSync(process.execPath, ['_gen_agent_surface.mjs'], { stdio: 'inherit' });
+    },
+  },
+};
 
 // Real freshness dates, derived from the catalog instead of the clock.
 //
@@ -31,6 +47,7 @@ for (const cat of directory) {
 export default defineConfig({
   site: 'https://testpreppilot.com',
   integrations: [
+    agentSurface,
     sitemap({
       // Was bare <loc> only across 628 URLs — no lastmod, no priority, no
       // changefreq, so Google had no signal about which pages matter or when
@@ -95,6 +112,14 @@ export default defineConfig({
           const slug = p.slice('/exams/'.length);
           if (releases[slug]) item.lastmod = new Date(releases[slug] + 'T00:00:00Z');
           else delete item.lastmod;
+          return item;
+        }
+        // Ranked Top-N pages — the list changes whenever any guide in the pool
+        // ships, so the newest release overall is their honest lastmod.
+        if (p === '/best' || p.startsWith('/best/')) {
+          item.priority = 0.85;
+          item.changefreq = 'weekly';
+          if (siteLatest) item.lastmod = new Date(siteLatest + 'T00:00:00Z');
           return item;
         }
         // Long-form pathway guides
