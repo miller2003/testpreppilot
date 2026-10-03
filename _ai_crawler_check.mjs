@@ -140,10 +140,39 @@ console.log(`\n${critical.length ? 'FAIL' : 'PASS'} — ${critical.length} crawl
 if (critical.length) {
   console.log('\nWhat this costs:');
   for (const r of critical) console.log(`  · ${r.label.padEnd(20)} ${r.role}`);
-  console.log('\nFix: it is a CDN/WAF rule, not a robots.txt or code problem. In the Cloudflare');
-  console.log('dashboard check, in this order: Security → Bots (Bot Fight Mode / "Block AI');
-  console.log('scrapers"), then Security → WAF → Managed rules, then any custom rule matching');
-  console.log('these user agents. Re-run this script until every line reads ok.');
+  console.log('\nFix: it is a CDN/WAF rule, not a robots.txt or code problem.');
+  console.log('');
+  console.log('Cloudflare replaced the single "Block AI bots" toggle on 2026-09-15 with');
+  console.log('THREE enforced crawler categories: Search, Agent, Training. The crawlers');
+  console.log('listed above are almost all Training-class, which is blocked by default on');
+  console.log('pages that carry an ad unit. Check these places, in this order:');
+  console.log('');
+  console.log('  1. Security → Settings → Configure AI bot policies');
+  console.log('     The three category toggles (Search / Agent / Training). Set Training to');
+  console.log('     Allow to open these crawlers. A saved preference is what stops the');
+  console.log('     2026-09-15 default from applying to the zone automatically.');
+  console.log('  2. Security → Bots → AI Crawl Control → Crawlers tab');
+  console.log('     Per-crawler ground truth, with an Allow/Block per bot. Blocking here');
+  console.log('     writes a WAF custom rule, which is why it survives an allowing robots.txt.');
+  console.log('  3. Security → WAF → Custom rules');
+  console.log('     Look for a rule matching these user agents (usually machine-written by');
+  console.log('     AI Crawl Control). This is the layer that actually returns the 403.');
+  console.log('  4. Security → Settings → Bot traffic');
+  console.log('     Bot Fight Mode / Super Bot Fight Mode must be OFF, or legitimate');
+  console.log('     crawlers get challenged.');
+  console.log('');
+  console.log('CAUTION: Cloudflare evaluates multi-purpose crawlers (Googlebot, Bingbot,');
+  console.log('Applebot) under BOTH Search and Training and applies the strictest matching');
+  console.log('rule — so blocking Training at CATEGORY level can block Googlebot too. Check');
+  console.log('each bot\'s category in the AI Crawl Control table before saving, and prefer');
+  console.log('per-crawler blocks over a category-wide Training block.');
+  console.log('');
+  console.log('Also keep Cloudflare\'s managed robots.txt OFF (zone Overview → Control AI');
+  console.log('Crawlers → "Display Content Signals Policy"). This repo\'s robots.txt is the');
+  console.log('single source of truth and already declares the Content-Signal line; letting');
+  console.log('Cloudflare prepend its own block would contradict it.');
+  console.log('');
+  console.log('Re-run this script until every line reads ok.');
 }
 
 process.exit(critical.length ? 1 : 0);
