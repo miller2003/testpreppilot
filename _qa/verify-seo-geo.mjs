@@ -1,6 +1,7 @@
 // Verify the pages shipped in this pass: new blocks present, JSON-LD parses,
 // FAQ text matches the visible page, and the sitemap carries honest lastmods.
 import { readFileSync, existsSync } from 'node:fs';
+import { releases } from '../src/data/examCatalog/release-manifest.mjs';
 
 const read = (p) => readFileSync(p, 'utf8');
 const textOf = (h) =>
@@ -93,17 +94,21 @@ for (const u of urls) {
 // lastmod == today is legitimate when a guide really shipped today; what must
 // never happen is a date in the FUTURE (the old build-stamp behaviour).
 ok(counts.buildStamp === 0, 'no URL claims a future lastmod', JSON.stringify(counts));
-const todayUrls = urls.filter((u) => (dateOf(u) || '').slice(0, 10) === '2026-09-16').map(locOf);
-console.log('   lastmod == today (must all be justified by a 2026-09-16 release):');
+// The "newest release" is read from the manifest rather than hardcoded, so this
+// harness does not go stale every time a new batch ships.
+const newestRelease = Object.values(releases).sort().at(-1);
+const probeExam = 'sat-exam';
+const todayUrls = urls.filter((u) => (dateOf(u) || '').slice(0, 10) === newestRelease).map(locOf);
+console.log(`   lastmod == newest release ${newestRelease} (must all be justified by a release on that date):`);
 for (const u of todayUrls) console.log('     ' + u);
 const homeEntry = urls.find((u) => locOf(u) === 'https://testpreppilot.com');
 const catEntry = urls.find((u) => locOf(u).includes('/categories/technology'));
-const examEntry = urls.find((u) => locOf(u).includes('/exams/sat-exam'));
+const examEntry = urls.find((u) => locOf(u).includes('/exams/' + probeExam));
 console.log('   home       lastmod:', dateOf(homeEntry));
 console.log('   categories lastmod:', dateOf(catEntry), '(technology)');
-console.log('   exams      lastmod:', dateOf(examEntry), '(sat-exam)');
-ok(!!dateOf(homeEntry) && dateOf(homeEntry).slice(0, 10) === '2026-09-16', 'home lastmod = newest release');
-ok(!!dateOf(examEntry) && dateOf(examEntry).slice(0, 10) === '2026-08-18', 'exam lastmod = its release date');
+console.log('   exams      lastmod:', dateOf(examEntry), `(${probeExam})`);
+ok(!!dateOf(homeEntry) && dateOf(homeEntry).slice(0, 10) === newestRelease, `home lastmod = newest release (${newestRelease})`);
+ok(!!dateOf(examEntry) && dateOf(examEntry).slice(0, 10) === releases[probeExam], `${probeExam} lastmod = its release date (${releases[probeExam]})`);
 
 console.log(`\n${fail ? 'FAILURES: ' + fail : 'ALL CHECKS PASSED'}`);
 process.exit(fail ? 1 : 0);

@@ -1,0 +1,35 @@
+
+=== homepage ===
+PASS  answer block rendered
+PASS  answer block heading present
+PASS  featured-guide links present
+PASS  directory FAQ rendered
+PASS  FAQPage node present — 5 Q
+PASS  CollectionPage.dateModified — 2026-10-03
+PASS  nested ItemList present — 183 items
+PASS  every FAQ Q&A exists in the visible text
+
+=== category pages (all 19) ===
+PASS  19 category URLs in sitemap — 19
+PASS  all category JSON-LD blocks parse
+PASS  ranked pay block on categories with data — 15/19
+PASS  ranked ItemList (with itemListOrder) emitted — 15/19
+PASS  CollectionPage.dateModified set where a guide exists — 18/19
+PASS  category FAQ schema still matches visible text — 0
+
+=== sitemap lastmod honesty ===
+PASS  no URL claims a future lastmod — {"withDate":195,"withoutDate":19,"buildStamp":0}
+   lastmod == newest release 2026-10-03 (must all be justified by a release on that date):
+     https://testpreppilot.com
+     https://testpreppilot.com/categories/fitness-recreation
+     https://testpreppilot.com/categories/public-safety
+     https://testpreppilot.com/exams/american-red-cross-lifeguarding
+     https://testpreppilot.com/exams/nims-ics-200
+     https://testpreppilot.com/explore
+   home       lastmod: 2026-10-03T00:00:00.000Z
+   categories lastmod: 2026-09-29T00:00:00.000Z (technology)
+   exams      lastmod: 2026-08-18T00:00:00.000Z (sat-exam)
+PASS  home lastmod = newest release (2026-10-03)
+PASS  sat-exam lastmod = its release date (2026-08-18)
+
+ALL CHECKS PASSED
