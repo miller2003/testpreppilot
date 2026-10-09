@@ -2,6 +2,7 @@
 // FAQ text matches the visible page, and the sitemap carries honest lastmods.
 import { readFileSync, existsSync } from 'node:fs';
 import { releases } from '../src/data/examCatalog/release-manifest.mjs';
+import { buildDirectory } from '../src/data/examCatalog/index.mjs';
 
 const read = (p) => readFileSync(p, 'utf8');
 const textOf = (h) =>
@@ -41,10 +42,16 @@ for (const q of homeFaq.mainEntity) {
 }
 ok(missing === 0, 'every FAQ Q&A exists in the visible text', missing ? missing + ' missing' : '');
 
-console.log('\n=== category pages (all 19) ===');
+// Derived from the catalog, never hardcoded: buildDirectory() is release-aware,
+// so a category appears in the sitemap the first time one of its guides ships
+// (animal-agriculture joined on 2026-10-09, taking the count 19 -> 20). One
+// /categories/<id> page is built per buildDirectory() entry — see getStaticPaths()
+// in src/pages/categories/[id].astro.
+const expectedCats = buildDirectory().length;
+console.log(`\n=== category pages (all ${expectedCats}) ===`);
 const sm = read('dist/sitemap-0.xml');
 const catUrls = [...sm.matchAll(/<loc>(https:\/\/testpreppilot\.com\/categories\/[^<]+)<\/loc>/g)].map((m) => m[1]);
-ok(catUrls.length === 19, '19 category URLs in sitemap', String(catUrls.length));
+ok(catUrls.length === expectedCats, `${expectedCats} category URLs in sitemap`, String(catUrls.length));
 let withPay = 0, withItemList = 0, withDate = 0, badLd = 0, faqMismatch = 0;
 for (const u of catUrls) {
   const slug = u.split('/').pop();
@@ -72,11 +79,11 @@ for (const u of catUrls) {
   }
 }
 ok(badLd === 0, 'all category JSON-LD blocks parse');
-ok(withPay >= 15, 'ranked pay block on categories with data', withPay + '/19');
-ok(withItemList >= 15, 'ranked ItemList (with itemListOrder) emitted', withItemList + '/19');
+ok(withPay >= 15, 'ranked pay block on categories with data', withPay + '/' + catUrls.length);
+ok(withItemList >= 15, 'ranked ItemList (with itemListOrder) emitted', withItemList + '/' + catUrls.length);
 // One category (real-estate) has no published guides, so it correctly emits no
 // date rather than inventing one.
-ok(withDate >= 18, 'CollectionPage.dateModified set where a guide exists', withDate + '/19');
+ok(withDate >= 18, 'CollectionPage.dateModified set where a guide exists', withDate + '/' + catUrls.length);
 ok(faqMismatch === 0, 'category FAQ schema still matches visible text', String(faqMismatch));
 
 console.log('\n=== sitemap lastmod honesty ===');

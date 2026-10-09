@@ -1,217 +1,614 @@
-[2m12:25:34[22m [34m[content][39m Syncing content
-[2m12:25:34[22m [34m[content][39m Synced content
-[2m12:25:34[22m [34m[types][39m Generated [2m114ms[22m
-[2m12:25:34[22m [34m[build][39m output: [34m"static"[39m
-[2m12:25:34[22m [34m[build][39m mode: [34m"static"[39m
-[2m12:25:34[22m [34m[build][39m directory: [34mC:\Users\samja\Desktop\testpreppilot-v2\dist\[39m
-[2m12:25:34[22m [34m[build][39m Collecting build info...
-[2m12:25:34[22m [34m[build][39m [32m✓ Completed in 143ms.[39m
-[2m12:25:52[22m [34m[build][39m Building static entrypoints...
-[2m12:26:02[22m [34m[vite][39m [32m✓ built in 10.22s[39m
-[2m12:26:02[22m [34m[build][39m [32m✓ Completed in 10.26s.[39m
+[2m14:53:00[22m [34m[content][39m Syncing content
+[2m14:53:00[22m [34m[content][39m Synced content
+[2m14:53:00[22m [34m[types][39m Generated [2m226ms[22m
+Agent surface written — 6 artifacts.
+    3112 B  eab0ad1e1a1a…  public/.well-known/agent-skills/site-content/SKILL.md
+     680 B  2060f0cb394c…  public/.well-known/agent-skills/index.json
+    4399 B  820ed6a8ea7b…  public/.well-known/openapi.json
+    1091 B  99042d486158…  public/.well-known/api-catalog
+    3550 B  a7174a800ce7…  public/.well-known/ai-catalog.json
+    1903 B  746231686aa7…  public/auth.md
+
+SSOT: every URL above is referenced from the same table, so the
+catalog / linkset / OpenAPI / skills index cannot disagree.
+
+Corpus: 477 published guides across 19 fields;
+  fee stated on 477, pass mark on 477; newest release 2026-10-09.
+  skill digest = sha256:eab0ad1e1a1a86d5a15ac28f9c35c448b478d274440fc8e2b8f58c549c2eb8cf
+[2m14:53:01[22m [34m[build][39m output: [34m"static"[39m
+[2m14:53:01[22m [34m[build][39m mode: [34m"static"[39m
+[2m14:53:01[22m [34m[build][39m directory: [34mC:\Users\samja\Desktop\testpreppilot-v2\dist\[39m
+[2m14:53:01[22m [34m[build][39m Collecting build info...
+[2m14:53:01[22m [34m[build][39m [32m✓ Completed in 1.44s.[39m
+[2m14:53:42[22m [34m[build][39m Building static entrypoints...
+[2m14:54:00[22m [34m[vite][39m [32m✓ built in 17.79s[39m
+[2m14:54:00[22m [34m[build][39m [32m✓ Completed in 17.88s.[39m
 
 [42m[30m building client (vite) [39m[49m
-[2m12:26:02[22m [34m[vite][39m transforming...
-[2m12:26:02[22m [34m[vite][39m [32m✓[39m 14 modules transformed.
-[2m12:26:02[22m [34m[vite][39m rendering chunks...
-[2m12:26:02[22m [34m[vite][39m computing gzip size...
-[2m12:26:02[22m [34m[vite][39m [2mdist/[22m[36m_astro/page.DTPp-pk-.js                                               [39m[1m[2m 0.05 kB[22m[1m[22m[2m │ gzip: 0.07 kB[22m
-[2m12:26:02[22m [34m[vite][39m [2mdist/[22m[36m_astro/index.E2NZU3JX.js                                              [39m[1m[2m 2.29 kB[22m[1m[22m[2m │ gzip: 1.04 kB[22m
-[2m12:26:02[22m [34m[vite][39m [2mdist/[22m[36m_astro/ClientRouter.astro_astro_type_script_index_0_lang.DxD8ucBX.js  [39m[1m[2m13.11 kB[22m[1m[22m[2m │ gzip: 4.54 kB[22m
-[2m12:26:02[22m [34m[vite][39m [32m✓ built in 112ms[39m
+[2m14:54:00[22m [34m[vite][39m transforming...
+[2m14:54:00[22m [34m[vite][39m [32m✓[39m 14 modules transformed.
+[2m14:54:00[22m [34m[vite][39m rendering chunks...
+[2m14:54:00[22m [34m[vite][39m computing gzip size...
+[2m14:54:00[22m [34m[vite][39m [2mdist/[22m[36m_astro/page.DTPp-pk-.js                                               [39m[1m[2m 0.05 kB[22m[1m[22m[2m │ gzip: 0.07 kB[22m
+[2m14:54:00[22m [34m[vite][39m [2mdist/[22m[36m_astro/index.E2NZU3JX.js                                              [39m[1m[2m 2.29 kB[22m[1m[22m[2m │ gzip: 1.04 kB[22m
+[2m14:54:00[22m [34m[vite][39m [2mdist/[22m[36m_astro/ClientRouter.astro_astro_type_script_index_0_lang.DxD8ucBX.js  [39m[1m[2m13.11 kB[22m[1m[22m[2m │ gzip: 4.54 kB[22m
+[2m14:54:00[22m [34m[vite][39m [32m✓ built in 208ms[39m
 
 [42m[30m generating static routes [39m[49m
-[2m12:26:03[22m [32m▶[39m src/pages/404.astro
-[2m12:26:03[22m   [34m└─[39m [2m/404.html[22m [2m(+18ms)[22m 
-[2m12:26:03[22m [32m▶[39m src/pages/about.astro
-[2m12:26:03[22m   [34m└─[39m [2m/about/index.html[22m [2m(+17ms)[22m 
-[2m12:26:03[22m [32m▶[39m src/pages/affiliate-disclosure.astro
-[2m12:26:03[22m   [34m└─[39m [2m/affiliate-disclosure/index.html[22m [2m(+31ms)[22m 
-[2m12:26:03[22m [32m▶[39m src/pages/categories/[id].astro
-[2m12:26:03[22m   [34m├─[39m [2m/categories/admissions-academic/index.html[22m [2m(+9ms)[22m 
-[2m12:26:03[22m   [34m├─[39m [2m/categories/healthcare-clinical/index.html[22m [2m(+23ms)[22m 
-[2m12:26:03[22m   [34m├─[39m [2m/categories/allied-health/index.html[22m [2m(+23ms)[22m 
-[2m12:26:03[22m   [34m├─[39m [2m/categories/behavioral-health/index.html[22m [2m(+23ms)[22m 
-[2m12:26:03[22m   [34m├─[39m [2m/categories/education-teaching/index.html[22m [2m(+23ms)[22m 
-[2m12:26:03[22m   [34m├─[39m [2m/categories/real-estate/index.html[22m [2m(+24ms)[22m 
-[2m12:26:03[22m   [34m├─[39m [2m/categories/accounting/index.html[22m [2m(+24ms)[22m 
-[2m12:26:03[22m   [34m├─[39m [2m/categories/finance-securities/index.html[22m [2m(+25ms)[22m 
-[2m12:26:03[22m   [34m├─[39m [2m/categories/insurance/index.html[22m [2m(+23ms)[22m 
-[2m12:26:03[22m   [34m├─[39m [2m/categories/legal/index.html[22m [2m(+28ms)[22m 
-[2m12:26:03[22m   [34m├─[39m [2m/categories/technology/index.html[22m [2m(+24ms)[22m 
-[2m12:26:03[22m   [34m├─[39m [2m/categories/project-business/index.html[22m [2m(+25ms)[22m 
-[2m12:26:03[22m   [34m├─[39m [2m/categories/trades/index.html[22m [2m(+26ms)[22m 
-[2m12:26:03[22m   [34m├─[39m [2m/categories/workplace-safety/index.html[22m [2m(+31ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/categories/transportation/index.html[22m [2m(+29ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/categories/public-safety/index.html[22m [2m(+23ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/categories/food-hospitality/index.html[22m [2m(+25ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/categories/fitness-recreation/index.html[22m [2m(+29ms)[22m 
-[2m12:26:04[22m   [34m└─[39m [2m/categories/animal-agriculture/index.html[22m [2m(+15ms)[22m 
-[2m12:26:04[22m [32m▶[39m src/pages/contact.astro
-[2m12:26:04[22m   [34m└─[39m [2m/contact/index.html[22m [2m(+22ms)[22m 
-[2m12:26:04[22m [32m▶[39m src/pages/disclosure.astro
-[2m12:26:04[22m   [34m└─[39m [2m/disclosure/index.html[22m [2m(+32ms)[22m 
-[2m12:26:04[22m [32m▶[39m src/pages/editorial-policy.astro
-[2m12:26:04[22m   [34m└─[39m [2m/editorial-policy/index.html[22m [2m(+30ms)[22m 
-[2m12:26:04[22m [32m▶[39m src/pages/exams/[slug].astro
-[2m12:26:04[22m   [34m├─[39m [2m/exams/ap-biology/index.html[22m [2m(+49ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/ap-calculus-ab/index.html[22m [2m(+24ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/ap-psychology/index.html[22m [2m(+29ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/ap-statistics/index.html[22m [2m(+23ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/act-test/index.html[22m [2m(+24ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/sat-exam/index.html[22m [2m(+23ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/ielts-academic/index.html[22m [2m(+24ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/toefl-ibt/index.html[22m [2m(+9ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/gmat-focus-edition/index.html[22m [2m(+56ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/gre-general-test/index.html[22m [2m(+29ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/mcat-exam/index.html[22m [2m(+12ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/ged-test/index.html[22m [2m(+83ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/arrt-radiography/index.html[22m [2m(+23ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/nnaap-cna/index.html[22m [2m(+23ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/aama-cma/index.html[22m [2m(+23ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/nha-ccma/index.html[22m [2m(+39ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/aapc-cpc/index.html[22m [2m(+31ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/nremt-emt/index.html[22m [2m(+40ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/ptcb-cpht/index.html[22m [2m(+9ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/danb-cda/index.html[22m [2m(+92ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/vtne/index.html[22m [2m(+40ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/nic-cosmetology-practical/index.html[22m [2m(+31ms)[22m 
-[2m12:26:04[22m   [34m├─[39m [2m/exams/nic-cosmetology-theory/index.html[22m [2m(+31ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/certified-dietary-manager-cfpp/index.html[22m [2m(+50ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/cms-introductory-sommelier/index.html[22m [2m(+27ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/servsafe-alcohol-advanced/index.html[22m [2m(+23ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/servsafe-food-protection-manager/index.html[22m [2m(+27ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/tips-alcohol-certification/index.html[22m [2m(+34ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/ace-certified-group-fitness-instructor/index.html[22m [2m(+49ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/ace-certified-personal-trainer/index.html[22m [2m(+30ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/afaa-certified-personal-trainer/index.html[22m [2m(+56ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/nasm-certified-nutrition-coach/index.html[22m [2m(+34ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/nasm-certified-personal-trainer/index.html[22m [2m(+27ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/nra-certified-instructor/index.html[22m [2m(+29ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/bcba-board-certified-behavior-analyst/index.html[22m [2m(+53ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/cda-preschool/index.html[22m [2m(+20ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/praxis-core-combined-5752/index.html[22m [2m(+30ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/praxis-early-childhood-education-5025/index.html[22m [2m(+72ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/praxis-elementary-education-content-knowledge-5018/index.html[22m [2m(+32ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/praxis-elementary-education-multiple-subjects-5001/index.html[22m [2m(+28ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/praxis-mathematics-5165/index.html[22m [2m(+37ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/praxis-plt-grades-k-6-5622/index.html[22m [2m(+20ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/fe-civil/index.html[22m [2m(+34ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/aipb-certified-bookkeeper/index.html[22m [2m(+69ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/nacpb-cpb/index.html[22m [2m(+36ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/nmls-safe-mlo-national-test/index.html[22m [2m(+27ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/sie-exam/index.html[22m [2m(+27ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/series-6/index.html[22m [2m(+27ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/series-63/index.html[22m [2m(+25ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/series-65/index.html[22m [2m(+27ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/series-66/index.html[22m [2m(+28ms)[22m 
-[2m12:26:05[22m   [34m├─[39m [2m/exams/series-7/index.html[22m [2m(+34ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/cfp-certification-exam/index.html[22m [2m(+101ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/cfa-level-1/index.html[22m [2m(+29ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/cfa-level-2/index.html[22m [2m(+30ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/cfa-level-3/index.html[22m [2m(+25ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/usmle-step-1/index.html[22m [2m(+30ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/nclex-rn/index.html[22m [2m(+22ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/nclex-pn/index.html[22m [2m(+28ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/npte/index.html[22m [2m(+7ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/mblex/index.html[22m [2m(+83ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/pance/index.html[22m [2m(+27ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/ahip-health-insurance-associate/index.html[22m [2m(+32ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/uniform-bar-exam/index.html[22m [2m(+23ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/mpre/index.html[22m [2m(+32ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/california-bar-exam/index.html[22m [2m(+24ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/usps-vea-474/index.html[22m [2m(+25ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/faa-air-traffic-controller/index.html[22m [2m(+40ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/scrum-alliance-certified-scrummaster/index.html[22m [2m(+50ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/shrm-cp/index.html[22m [2m(+45ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/pmi-capm/index.html[22m [2m(+27ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/pmi-pmp/index.html[22m [2m(+52ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/pmi-acp/index.html[22m [2m(+33ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/prince2-foundation/index.html[22m [2m(+24ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/nypd-police-officer-exam/index.html[22m [2m(+24ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/pro-board-firefighter-i/index.html[22m [2m(+24ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/nims-ics-100/index.html[22m [2m(+26ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/corrections-officer-entrance-exam/index.html[22m [2m(+21ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/epa-lead-renovator-rrp/index.html[22m [2m(+41ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/hazwoper-8-hour-supervisor/index.html[22m [2m(+24ms)[22m 
-[2m12:26:06[22m   [34m├─[39m [2m/exams/osha-10-general-industry/index.html[22m [2m(+47ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/osha-30-general-industry/index.html[22m [2m(+27ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/aws-certified-cloud-practitioner/index.html[22m [2m(+10ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/aws-certified-solutions-architect-associate/index.html[22m [2m(+52ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/aws-certified-solutions-architect-professional/index.html[22m [2m(+36ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/cisco-ccna/index.html[22m [2m(+25ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/cisco-ccna-cybersecurity/index.html[22m [2m(+30ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/cisco-ccnp-cybersecurity/index.html[22m [2m(+47ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/cisco-ccst-cybersecurity/index.html[22m [2m(+37ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/certified-kubernetes-administrator/index.html[22m [2m(+24ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/comptia-a-plus/index.html[22m [2m(+24ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/comptia-cysa-plus/index.html[22m [2m(+40ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/comptia-data-plus/index.html[22m [2m(+24ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/comptia-linux-plus/index.html[22m [2m(+29ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/comptia-network-plus/index.html[22m [2m(+24ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/comptia-security-plus/index.html[22m [2m(+25ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/isc2-cissp/index.html[22m [2m(+13ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/isaca-cisa/index.html[22m [2m(+52ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/itil-4-foundation/index.html[22m [2m(+38ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/microsoft-az-900/index.html[22m [2m(+24ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/microsoft-az-104/index.html[22m [2m(+54ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/microsoft-az-140/index.html[22m [2m(+25ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/microsoft-az-204/index.html[22m [2m(+28ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/microsoft-az-305/index.html[22m [2m(+23ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/microsoft-az-400/index.html[22m [2m(+26ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/microsoft-az-500/index.html[22m [2m(+40ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/microsoft-az-700/index.html[22m [2m(+36ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/microsoft-ai-900/index.html[22m [2m(+24ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/microsoft-ai-901/index.html[22m [2m(+38ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/salesforce-administrator/index.html[22m [2m(+30ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/ase-a8-engine-performance/index.html[22m [2m(+8ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/ase-t7-truck-hvac/index.html[22m [2m(+27ms)[22m 
-[2m12:26:07[22m   [34m├─[39m [2m/exams/epa-608-universal/index.html[22m [2m(+65ms)[22m 
-[2m12:26:08[22m   [34m├─[39m [2m/exams/cdl-air-brakes-knowledge-test/index.html[22m [2m(+20ms)[22m 
-[2m12:26:08[22m   [34m├─[39m [2m/exams/cdl-combination-vehicles-knowledge-test/index.html[22m [2m(+43ms)[22m 
-[2m12:26:08[22m   [34m├─[39m [2m/exams/cdl-general-knowledge-test/index.html[22m [2m(+29ms)[22m 
-[2m12:26:08[22m   [34m├─[39m [2m/exams/cdl-hazmat-endorsement-knowledge-test/index.html[22m [2m(+27ms)[22m 
-[2m12:26:08[22m   [34m├─[39m [2m/exams/cdl-on-road-driving-skills-test/index.html[22m [2m(+30ms)[22m 
-[2m12:26:08[22m   [34m├─[39m [2m/exams/cdl-school-bus-endorsement-knowledge-test/index.html[22m [2m(+42ms)[22m 
-[2m12:26:08[22m   [34m└─[39m [2m/exams/faa-part-107-initial-training-alc-451/index.html[22m [2m(+25ms)[22m 
-[2m12:26:08[22m [32m▶[39m src/pages/exams.astro
-[2m12:26:08[22m   [34m└─[39m [2m/exams/index.html[22m [2m(+26ms)[22m 
-[2m12:26:08[22m [32m▶[39m src/pages/explore.astro
-[2m12:26:08[22m   [34m└─[39m [2m/explore/index.html[22m [2m(+18ms)[22m 
-[2m12:26:08[22m [32m▶[39m src/pages/guides/[slug].astro
-[2m12:26:08[22m   [34m├─[39m [2m/guides/study-plan-working-full-time/index.html[22m [2m(+36ms)[22m 
-[2m12:26:08[22m   [34m├─[39m [2m/guides/license-reciprocity-across-state-lines/index.html[22m [2m(+26ms)[22m 
-[2m12:26:08[22m   [34m└─[39m [2m/guides/beat-test-anxiety-exam-day/index.html[22m [2m(+24ms)[22m 
-[2m12:26:08[22m [32m▶[39m src/pages/guides.astro
-[2m12:26:08[22m   [34m└─[39m [2m/guides/index.html[22m [2m(+20ms)[22m 
-[2m12:26:08[22m [32m▶[39m src/pages/how-it-works.astro
-[2m12:26:08[22m   [34m└─[39m [2m/how-it-works/index.html[22m [2m(+20ms)[22m 
-[2m12:26:08[22m [32m▶[39m src/pages/index.astro
-[2m12:26:08[22m   [34m└─[39m [2m/index.html[22m [2m(+51ms)[22m 
-[2m12:26:08[22m [32m▶[39m src/pages/methodology.astro
-[2m12:26:08[22m   [34m└─[39m [2m/methodology/index.html[22m [2m(+22ms)[22m 
-[2m12:26:08[22m [32m▶[39m src/pages/paths/[slug].astro
-[2m12:26:08[22m   [34m├─[39m [2m/paths/texas-real-estate-license/index.html[22m [2m(+19ms)[22m 
-[2m12:26:08[22m   [34m├─[39m [2m/paths/california-real-estate-license/index.html[22m [2m(+29ms)[22m 
-[2m12:26:08[22m   [34m├─[39m [2m/paths/florida-real-estate-license/index.html[22m [2m(+24ms)[22m 
-[2m12:26:08[22m   [34m├─[39m [2m/paths/enrolled-agent/index.html[22m [2m(+24ms)[22m 
-[2m12:26:08[22m   [34m├─[39m [2m/paths/osha-10-construction/index.html[22m [2m(+24ms)[22m 
-[2m12:26:08[22m   [34m├─[39m [2m/paths/osha-30-construction/index.html[22m [2m(+42ms)[22m 
-[2m12:26:08[22m   [34m├─[39m [2m/paths/epa-608-certification/index.html[22m [2m(+27ms)[22m 
-[2m12:26:08[22m   [34m└─[39m [2m/paths/cpa-exam/index.html[22m [2m(+24ms)[22m 
-[2m12:26:08[22m [32m▶[39m src/pages/privacy-policy.astro
-[2m12:26:08[22m   [34m└─[39m [2m/privacy-policy/index.html[22m [2m(+23ms)[22m 
-[2m12:26:08[22m [32m▶[39m src/pages/privacy.astro
-[2m12:26:08[22m   [34m└─[39m [2m/privacy/index.html[22m [2m(+25ms)[22m 
-[2m12:26:08[22m [32m▶[39m src/pages/reviewers.astro
-[2m12:26:08[22m   [34m└─[39m [2m/reviewers/index.html[22m [2m(+28ms)[22m 
-[2m12:26:08[22m [32m▶[39m src/pages/reviews.astro
-[2m12:26:08[22m   [34m└─[39m [2m/reviews/index.html[22m [2m(+21ms)[22m 
-[2m12:26:08[22m [35mλ[39m src/pages/rss.xml.ts
-[2m12:26:08[22m   [34m└─[39m [2m/rss.xml[22m [2m(+41ms)[22m 
-[2m12:26:08[22m [32m✓ Completed in 5.98s.
+[2m14:54:01[22m [32m▶[39m src/pages/404.astro
+[2m14:54:01[22m   [34m└─[39m [2m/404.html[22m [2m(+53ms)[22m 
+[2m14:54:01[22m [32m▶[39m src/pages/about.astro
+[2m14:54:01[22m   [34m└─[39m [2m/about/index.html[22m [2m(+12ms)[22m 
+[2m14:54:01[22m [32m▶[39m src/pages/affiliate-disclosure.astro
+[2m14:54:01[22m   [34m└─[39m [2m/affiliate-disclosure/index.html[22m [2m(+9ms)[22m 
+[2m14:54:01[22m [32m▶[39m src/pages/best/[field].astro
+[2m14:54:01[22m   [34m├─[39m [2m/best/accounting/index.html[22m [2m(+41ms)[22m 
+[2m14:54:01[22m   [34m├─[39m [2m/best/admissions-academic/index.html[22m [2m(+30ms)[22m 
+[2m14:54:01[22m   [34m├─[39m [2m/best/allied-health/index.html[22m [2m(+28ms)[22m 
+[2m14:54:01[22m   [34m├─[39m [2m/best/finance-securities/index.html[22m [2m(+57ms)[22m 
+[2m14:54:01[22m   [34m├─[39m [2m/best/fitness-recreation/index.html[22m [2m(+57ms)[22m 
+[2m14:54:02[22m   [34m├─[39m [2m/best/food-hospitality/index.html[22m [2m(+181ms)[22m 
+[2m14:54:02[22m   [34m├─[39m [2m/best/public-safety/index.html[22m [2m(+47ms)[22m 
+[2m14:54:02[22m   [34m├─[39m [2m/best/healthcare-clinical/index.html[22m [2m(+54ms)[22m 
+[2m14:54:02[22m   [34m├─[39m [2m/best/insurance/index.html[22m [2m(+47ms)[22m 
+[2m14:54:02[22m   [34m├─[39m [2m/best/technology/index.html[22m [2m(+132ms)[22m 
+[2m14:54:02[22m   [34m├─[39m [2m/best/project-business/index.html[22m [2m(+67ms)[22m 
+[2m14:54:02[22m   [34m├─[39m [2m/best/education-teaching/index.html[22m [2m(+43ms)[22m 
+[2m14:54:02[22m   [34m├─[39m [2m/best/trades/index.html[22m [2m(+50ms)[22m 
+[2m14:54:02[22m   [34m├─[39m [2m/best/transportation/index.html[22m [2m(+19ms)[22m 
+[2m14:54:02[22m   [34m└─[39m [2m/best/workplace-safety/index.html[22m [2m(+16ms)[22m 
+[2m14:54:02[22m [32m▶[39m src/pages/best/index.astro
+[2m14:54:02[22m   [34m└─[39m [2m/best/index.html[22m [2m(+20ms)[22m 
+[2m14:54:02[22m [32m▶[39m src/pages/categories/[id].astro
+[2m14:54:02[22m   [34m├─[39m [2m/categories/admissions-academic/index.html[22m [2m(+20ms)[22m 
+[2m14:54:02[22m   [34m├─[39m [2m/categories/healthcare-clinical/index.html[22m [2m(+14ms)[22m 
+[2m14:54:02[22m   [34m├─[39m [2m/categories/allied-health/index.html[22m [2m(+25ms)[22m 
+[2m14:54:02[22m   [34m├─[39m [2m/categories/behavioral-health/index.html[22m [2m(+11ms)[22m 
+[2m14:54:02[22m   [34m├─[39m [2m/categories/education-teaching/index.html[22m [2m(+225ms)[22m 
+[2m14:54:03[22m   [34m├─[39m [2m/categories/real-estate/index.html[22m [2m(+31ms)[22m 
+[2m14:54:03[22m   [34m├─[39m [2m/categories/accounting/index.html[22m [2m(+52ms)[22m 
+[2m14:54:03[22m   [34m├─[39m [2m/categories/finance-securities/index.html[22m [2m(+83ms)[22m 
+[2m14:54:03[22m   [34m├─[39m [2m/categories/insurance/index.html[22m [2m(+36ms)[22m 
+[2m14:54:03[22m   [34m├─[39m [2m/categories/legal/index.html[22m [2m(+68ms)[22m 
+[2m14:54:03[22m   [34m├─[39m [2m/categories/technology/index.html[22m [2m(+83ms)[22m 
+[2m14:54:03[22m   [34m├─[39m [2m/categories/project-business/index.html[22m [2m(+23ms)[22m 
+[2m14:54:03[22m   [34m├─[39m [2m/categories/trades/index.html[22m [2m(+21ms)[22m 
+[2m14:54:03[22m   [34m├─[39m [2m/categories/workplace-safety/index.html[22m [2m(+26ms)[22m 
+[2m14:54:03[22m   [34m├─[39m [2m/categories/transportation/index.html[22m [2m(+16ms)[22m 
+[2m14:54:03[22m   [34m├─[39m [2m/categories/public-safety/index.html[22m [2m(+9ms)[22m 
+[2m14:54:03[22m   [34m├─[39m [2m/categories/food-hospitality/index.html[22m [2m(+18ms)[22m 
+[2m14:54:03[22m   [34m├─[39m [2m/categories/security-investigation/index.html[22m [2m(+21ms)[22m 
+[2m14:54:03[22m   [34m├─[39m [2m/categories/fitness-recreation/index.html[22m [2m(+68ms)[22m 
+[2m14:54:03[22m   [34m└─[39m [2m/categories/animal-agriculture/index.html[22m [2m(+280ms)[22m 
+[2m14:54:03[22m [32m▶[39m src/pages/contact.astro
+[2m14:54:03[22m   [34m└─[39m [2m/contact/index.html[22m [2m(+23ms)[22m 
+[2m14:54:03[22m [35mλ[39m src/pages/data/exam-catalog.csv.ts
+[2m14:54:03[22m   [34m└─[39m [2m/data/exam-catalog.csv[22m [2m(+30ms)[22m 
+[2m14:54:03[22m [35mλ[39m src/pages/data/exam-catalog.json.ts
+[2m14:54:03[22m   [34m└─[39m [2m/data/exam-catalog.json[22m [2m(+17ms)[22m 
+[2m14:54:03[22m [35mλ[39m src/pages/data/health.json.ts
+[2m14:54:03[22m   [34m└─[39m [2m/data/health.json[22m [2m(+10ms)[22m 
+[2m14:54:03[22m [32m▶[39m src/pages/data/index.astro
+[2m14:54:03[22m   [34m└─[39m [2m/data/index.html[22m [2m(+14ms)[22m 
+[2m14:54:03[22m [32m▶[39m src/pages/disclosure.astro
+[2m14:54:03[22m   [34m└─[39m [2m/disclosure/index.html[22m [2m(+8ms)[22m 
+[2m14:54:04[22m [32m▶[39m src/pages/editorial-policy.astro
+[2m14:54:04[22m   [34m└─[39m [2m/editorial-policy/index.html[22m [2m(+7ms)[22m 
+[2m14:54:04[22m [32m▶[39m src/pages/exams/[slug].astro
+[2m14:54:04[22m   [34m├─[39m [2m/exams/ap-biology/index.html[22m [2m(+346ms)[22m 
+[2m14:54:04[22m   [34m├─[39m [2m/exams/ap-calculus-ab/index.html[22m [2m(+323ms)[22m 
+[2m14:54:04[22m   [34m├─[39m [2m/exams/ap-calculus-bc/index.html[22m [2m(+12ms)[22m 
+[2m14:54:04[22m   [34m├─[39m [2m/exams/ap-chemistry/index.html[22m [2m(+14ms)[22m 
+[2m14:54:04[22m   [34m├─[39m [2m/exams/ap-computer-science-a/index.html[22m [2m(+16ms)[22m 
+[2m14:54:04[22m   [34m├─[39m [2m/exams/ap-computer-science-principles/index.html[22m [2m(+17ms)[22m 
+[2m14:54:04[22m   [34m├─[39m [2m/exams/ap-english-language-and-composition/index.html[22m [2m(+358ms)[22m 
+[2m14:54:05[22m   [34m├─[39m [2m/exams/ap-english-literature-and-composition/index.html[22m [2m(+330ms)[22m 
+[2m14:54:05[22m   [34m├─[39m [2m/exams/ap-environmental-science/index.html[22m [2m(+10ms)[22m 
+[2m14:54:05[22m   [34m├─[39m [2m/exams/ap-european-history/index.html[22m [2m(+11ms)[22m 
+[2m14:54:05[22m   [34m├─[39m [2m/exams/ap-human-geography/index.html[22m [2m(+8ms)[22m 
+[2m14:54:05[22m   [34m├─[39m [2m/exams/ap-macroeconomics/index.html[22m [2m(+15ms)[22m 
+[2m14:54:05[22m   [34m├─[39m [2m/exams/ap-microeconomics/index.html[22m [2m(+30ms)[22m 
+[2m14:54:05[22m   [34m├─[39m [2m/exams/ap-physics-1-algebra-based/index.html[22m [2m(+46ms)[22m 
+[2m14:54:05[22m   [34m├─[39m [2m/exams/ap-physics-2-algebra-based/index.html[22m [2m(+39ms)[22m 
+[2m14:54:05[22m   [34m├─[39m [2m/exams/ap-physics-c-mechanics/index.html[22m [2m(+186ms)[22m 
+[2m14:54:05[22m   [34m├─[39m [2m/exams/ap-precalculus/index.html[22m [2m(+26ms)[22m 
+[2m14:54:05[22m   [34m├─[39m [2m/exams/ap-psychology/index.html[22m [2m(+335ms)[22m 
+[2m14:54:06[22m   [34m├─[39m [2m/exams/ap-spanish-language-and-culture/index.html[22m [2m(+37ms)[22m 
+[2m14:54:06[22m   [34m├─[39m [2m/exams/ap-statistics/index.html[22m [2m(+288ms)[22m 
+[2m14:54:06[22m   [34m├─[39m [2m/exams/ap-united-states-government-and-politics/index.html[22m [2m(+273ms)[22m 
+[2m14:54:06[22m   [34m├─[39m [2m/exams/ap-united-states-history/index.html[22m [2m(+274ms)[22m 
+[2m14:54:07[22m   [34m├─[39m [2m/exams/ap-world-history-modern/index.html[22m [2m(+290ms)[22m 
+[2m14:54:07[22m   [34m├─[39m [2m/exams/clep-american-government/index.html[22m [2m(+112ms)[22m 
+[2m14:54:07[22m   [34m├─[39m [2m/exams/clep-biology/index.html[22m [2m(+43ms)[22m 
+[2m14:54:07[22m   [34m├─[39m [2m/exams/clep-calculus/index.html[22m [2m(+68ms)[22m 
+[2m14:54:07[22m   [34m├─[39m [2m/exams/clep-chemistry/index.html[22m [2m(+51ms)[22m 
+[2m14:54:07[22m   [34m├─[39m [2m/exams/clep-college-algebra/index.html[22m [2m(+66ms)[22m 
+[2m14:54:07[22m   [34m├─[39m [2m/exams/clep-college-composition/index.html[22m [2m(+18ms)[22m 
+[2m14:54:07[22m   [34m├─[39m [2m/exams/clep-college-mathematics/index.html[22m [2m(+59ms)[22m 
+[2m14:54:07[22m   [34m├─[39m [2m/exams/clep-financial-accounting/index.html[22m [2m(+63ms)[22m 
+[2m14:54:07[22m   [34m├─[39m [2m/exams/clep-history-of-the-united-states-i/index.html[22m [2m(+271ms)[22m 
+[2m14:54:08[22m   [34m├─[39m [2m/exams/clep-humanities/index.html[22m [2m(+48ms)[22m 
+[2m14:54:08[22m   [34m├─[39m [2m/exams/clep-introductory-business-law/index.html[22m [2m(+41ms)[22m 
+[2m14:54:08[22m   [34m├─[39m [2m/exams/clep-introductory-psychology/index.html[22m [2m(+69ms)[22m 
+[2m14:54:08[22m   [34m├─[39m [2m/exams/clep-natural-sciences/index.html[22m [2m(+86ms)[22m 
+[2m14:54:08[22m   [34m├─[39m [2m/exams/clep-precalculus/index.html[22m [2m(+67ms)[22m 
+[2m14:54:08[22m   [34m├─[39m [2m/exams/clep-principles-of-macroeconomics/index.html[22m [2m(+83ms)[22m 
+[2m14:54:08[22m   [34m├─[39m [2m/exams/clep-principles-of-microeconomics/index.html[22m [2m(+68ms)[22m 
+[2m14:54:08[22m   [34m├─[39m [2m/exams/clep-spanish-language/index.html[22m [31m(+2.26s)[39m 
+[2m14:54:10[22m   [34m├─[39m [2m/exams/act-test/index.html[22m [2m(+45ms)[22m 
+[2m14:54:10[22m   [34m├─[39m [2m/exams/preact-8-9/index.html[22m [2m(+19ms)[22m 
+[2m14:54:10[22m   [34m├─[39m [2m/exams/psat-10/index.html[22m [2m(+316ms)[22m 
+[2m14:54:11[22m   [34m├─[39m [2m/exams/psat-nmsqt/index.html[22m [2m(+296ms)[22m 
+[2m14:54:11[22m   [34m├─[39m [2m/exams/sat-exam/index.html[22m [2m(+301ms)[22m 
+[2m14:54:11[22m   [34m├─[39m [2m/exams/accuplacer-advanced-algebra-and-functions/index.html[22m [2m(+8ms)[22m 
+[2m14:54:11[22m   [34m├─[39m [2m/exams/accuplacer-arithmetic/index.html[22m [2m(+82ms)[22m 
+[2m14:54:11[22m   [34m├─[39m [2m/exams/accuplacer-quantitative-reasoning-algebra-statistics/index.html[22m [2m(+56ms)[22m 
+[2m14:54:11[22m   [34m├─[39m [2m/exams/accuplacer-reading/index.html[22m [2m(+37ms)[22m 
+[2m14:54:11[22m   [34m├─[39m [2m/exams/accuplacer-writeplacer/index.html[22m [2m(+39ms)[22m 
+[2m14:54:12[22m   [34m├─[39m [2m/exams/accuplacer-writing/index.html[22m [2m(+76ms)[22m 
+[2m14:54:12[22m   [34m├─[39m [2m/exams/duolingo-english-test/index.html[22m [2m(+313ms)[22m 
+[2m14:54:12[22m   [34m├─[39m [2m/exams/ielts-academic/index.html[22m [2m(+277ms)[22m 
+[2m14:54:12[22m   [34m├─[39m [2m/exams/pte-academic/index.html[22m [2m(+230ms)[22m 
+[2m14:54:12[22m   [34m├─[39m [2m/exams/toefl-ibt/index.html[22m [2m(+223ms)[22m 
+[2m14:54:13[22m   [34m├─[39m [2m/exams/toeic-listening-and-reading/index.html[22m [2m(+204ms)[22m 
+[2m14:54:13[22m   [34m├─[39m [2m/exams/casper-test/index.html[22m [2m(+211ms)[22m 
+[2m14:54:13[22m   [34m├─[39m [2m/exams/dental-admission-test/index.html[22m [2m(+5ms)[22m 
+[2m14:54:13[22m   [34m├─[39m [2m/exams/gmat-focus-edition/index.html[22m [2m(+193ms)[22m 
+[2m14:54:13[22m   [34m├─[39m [2m/exams/gre-general-test/index.html[22m [2m(+196ms)[22m 
+[2m14:54:13[22m   [34m├─[39m [2m/exams/law-school-admission-test/index.html[22m [2m(+179ms)[22m 
+[2m14:54:14[22m   [34m├─[39m [2m/exams/mcat-exam/index.html[22m [2m(+174ms)[22m 
+[2m14:54:14[22m   [34m├─[39m [2m/exams/pharmacy-college-admission-test/index.html[22m [2m(+6ms)[22m 
+[2m14:54:14[22m   [34m├─[39m [2m/exams/ged-test/index.html[22m [2m(+182ms)[22m 
+[2m14:54:14[22m   [34m├─[39m [2m/exams/hiset-exam/index.html[22m [2m(+6ms)[22m 
+[2m14:54:14[22m   [34m├─[39m [2m/exams/olsat-8/index.html[22m [2m(+177ms)[22m 
+[2m14:54:14[22m   [34m├─[39m [2m/exams/ssat-upper-level/index.html[22m [2m(+6ms)[22m 
+[2m14:54:14[22m   [34m├─[39m [2m/exams/asvab/index.html[22m [2m(+197ms)[22m 
+[2m14:54:14[22m   [34m├─[39m [2m/exams/act-workkeys/index.html[22m [2m(+6ms)[22m 
+[2m14:54:14[22m   [34m├─[39m [2m/exams/arrt-radiography/index.html[22m [2m(+189ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/arrt-nuclear-medicine/index.html[22m [2m(+6ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/arrt-radiation-therapy/index.html[22m [2m(+7ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/arrt-mri/index.html[22m [2m(+8ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/arrt-sonography/index.html[22m [2m(+12ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/arrt-vascular-sonography/index.html[22m [2m(+100ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/arrt-breast-sonography/index.html[22m [2m(+58ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/arrt-cardiac-interventional/index.html[22m [2m(+90ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/arrt-computed-tomography/index.html[22m [2m(+19ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/arrt-mammography/index.html[22m [2m(+11ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/arrt-vascular-interventional/index.html[22m [2m(+10ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/aab-phlebotomy/index.html[22m [2m(+18ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/nnaap-cna/index.html[22m [2m(+249ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/nha-cpct/index.html[22m [2m(+6ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/ncct-pt/index.html[22m [2m(+6ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/nha-mental-health-tech/index.html[22m [2m(+7ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/aama-cma/index.html[22m [2m(+13ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/amt-rma/index.html[22m [2m(+9ms)[22m 
+[2m14:54:15[22m   [34m├─[39m [2m/exams/nha-ccma/index.html[22m [2m(+404ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/nha-cmaa/index.html[22m [2m(+7ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/nha-cehrs/index.html[22m [2m(+12ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/ncct-ncma/index.html[22m [2m(+8ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/ncct-ts/index.html[22m [2m(+13ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/aapc-cpc/index.html[22m [2m(+43ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/ahima-cca/index.html[22m [2m(+195ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/ahima-ccs/index.html[22m [2m(+19ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/ahima-rhit/index.html[22m [2m(+8ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/nremt-emr/index.html[22m [2m(+11ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/nremt-emt/index.html[22m [2m(+201ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/nremt-aemt/index.html[22m [2m(+7ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/nremt-paramedic/index.html[22m [2m(+6ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/bcen-cen/index.html[22m [2m(+6ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/bcen-cfrn/index.html[22m [2m(+13ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/bcen-tcrn/index.html[22m [2m(+27ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/ptcb-cpht/index.html[22m [2m(+317ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/ptcb-billing/index.html[22m [2m(+6ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/ptcb-immunization/index.html[22m [2m(+5ms)[22m 
+[2m14:54:16[22m   [34m├─[39m [2m/exams/ptcb-nonsterile-compounding/index.html[22m [2m(+8ms)[22m 
+[2m14:54:17[22m   [34m├─[39m [2m/exams/nha-cpht/index.html[22m [2m(+10ms)[22m 
+[2m14:54:17[22m   [34m├─[39m [2m/exams/danb-cda/index.html[22m [2m(+252ms)[22m 
+[2m14:54:17[22m   [34m├─[39m [2m/exams/danb-rhs/index.html[22m [2m(+6ms)[22m 
+[2m14:54:17[22m   [34m├─[39m [2m/exams/danb-ice/index.html[22m [2m(+6ms)[22m 
+[2m14:54:17[22m   [34m├─[39m [2m/exams/danb-gc/index.html[22m [2m(+8ms)[22m 
+[2m14:54:17[22m   [34m├─[39m [2m/exams/nbstsa-cst/index.html[22m [2m(+8ms)[22m 
+[2m14:54:17[22m   [34m├─[39m [2m/exams/jcahpo-coa/index.html[22m [2m(+24ms)[22m 
+[2m14:54:17[22m   [34m├─[39m [2m/exams/navta-approved-veterinary-assistant/index.html[22m [2m(+23ms)[22m 
+[2m14:54:17[22m   [34m├─[39m [2m/exams/vtne/index.html[22m [2m(+345ms)[22m 
+[2m14:54:17[22m   [34m├─[39m [2m/exams/nic-barber-practical/index.html[22m [2m(+6ms)[22m 
+[2m14:54:17[22m   [34m├─[39m [2m/exams/nic-barber-theory/index.html[22m [2m(+6ms)[22m 
+[2m14:54:17[22m   [34m├─[39m [2m/exams/nic-cosmetology-practical/index.html[22m [2m(+203ms)[22m 
+[2m14:54:17[22m   [34m├─[39m [2m/exams/nic-cosmetology-theory/index.html[22m [2m(+170ms)[22m 
+[2m14:54:18[22m   [34m├─[39m [2m/exams/nic-esthetics-theory/index.html[22m [2m(+5ms)[22m 
+[2m14:54:18[22m   [34m├─[39m [2m/exams/nic-nail-technology-theory/index.html[22m [2m(+4ms)[22m 
+[2m14:54:18[22m   [34m├─[39m [2m/exams/acf-certified-fundamentals-cook/index.html[22m [2m(+9ms)[22m 
+[2m14:54:18[22m   [34m├─[39m [2m/exams/certified-dietary-manager-cfpp/index.html[22m [2m(+242ms)[22m 
+[2m14:54:18[22m   [34m├─[39m [2m/exams/cicerone-certified-beer-server/index.html[22m [2m(+7ms)[22m 
+[2m14:54:18[22m   [34m├─[39m [2m/exams/cicerone-certified-cicerone/index.html[22m [2m(+5ms)[22m 
+[2m14:54:18[22m   [34m├─[39m [2m/exams/cms-introductory-sommelier/index.html[22m [2m(+221ms)[22m 
+[2m14:54:18[22m   [34m├─[39m [2m/exams/learn2serve-alcohol-seller-server/index.html[22m [2m(+227ms)[22m 
+[2m14:54:18[22m   [34m├─[39m [2m/exams/neha-certified-professional-food-safety/index.html[22m [2m(+6ms)[22m 
+[2m14:54:18[22m   [34m├─[39m [2m/exams/sca-coffee-skills-professional-diploma/index.html[22m [2m(+6ms)[22m 
+[2m14:54:18[22m   [34m├─[39m [2m/exams/servsafe-alcohol-advanced/index.html[22m [2m(+228ms)[22m 
+[2m14:54:19[22m   [34m├─[39m [2m/exams/servsafe-alcohol-primary/index.html[22m [2m(+185ms)[22m 
+[2m14:54:19[22m   [34m├─[39m [2m/exams/servsafe-allergens/index.html[22m [2m(+5ms)[22m 
+[2m14:54:19[22m   [34m├─[39m [2m/exams/servsafe-food-handler/index.html[22m [2m(+189ms)[22m 
+[2m14:54:19[22m   [34m├─[39m [2m/exams/servsafe-food-protection-manager/index.html[22m [2m(+233ms)[22m 
+[2m14:54:19[22m   [34m├─[39m [2m/exams/servsafe-workplace/index.html[22m [2m(+177ms)[22m 
+[2m14:54:19[22m   [34m├─[39m [2m/exams/statefoodsafety-food-protection-manager/index.html[22m [2m(+190ms)[22m 
+[2m14:54:20[22m   [34m├─[39m [2m/exams/tips-alcohol-certification/index.html[22m [2m(+209ms)[22m 
+[2m14:54:20[22m   [34m├─[39m [2m/exams/wset-level-1-award-wines/index.html[22m [2m(+7ms)[22m 
+[2m14:54:20[22m   [34m├─[39m [2m/exams/wset-level-2-award-wines/index.html[22m [2m(+7ms)[22m 
+[2m14:54:20[22m   [34m├─[39m [2m/exams/wset-level-3-award-wines/index.html[22m [2m(+10ms)[22m 
+[2m14:54:20[22m   [34m├─[39m [2m/exams/acsm-certified-personal-trainer/index.html[22m [2m(+17ms)[22m 
+[2m14:54:20[22m   [34m├─[39m [2m/exams/ace-certified-group-fitness-instructor/index.html[22m [2m(+19ms)[22m 
+[2m14:54:20[22m   [34m├─[39m [2m/exams/ace-certified-personal-trainer/index.html[22m [2m(+15ms)[22m 
+[2m14:54:20[22m   [34m├─[39m [2m/exams/afaa-certified-personal-trainer/index.html[22m [2m(+391ms)[22m 
+[2m14:54:20[22m   [34m├─[39m [2m/exams/afaa-group-fitness-instructor/index.html[22m [2m(+5ms)[22m 
+[2m14:54:20[22m   [34m├─[39m [2m/exams/american-red-cross-lifeguard-instructor/index.html[22m [2m(+10ms)[22m 
+[2m14:54:20[22m   [34m├─[39m [2m/exams/american-red-cross-lifeguarding/index.html[22m [2m(+232ms)[22m 
+[2m14:54:20[22m   [34m├─[39m [2m/exams/crossfit-level-1-trainer/index.html[22m [2m(+5ms)[22m 
+[2m14:54:20[22m   [34m├─[39m [2m/exams/issa-certified-personal-trainer/index.html[22m [2m(+6ms)[22m 
+[2m14:54:20[22m   [34m├─[39m [2m/exams/nasm-certified-nutrition-coach/index.html[22m [2m(+231ms)[22m 
+[2m14:54:21[22m   [34m├─[39m [2m/exams/nasm-certified-personal-trainer/index.html[22m [2m(+231ms)[22m 
+[2m14:54:21[22m   [34m├─[39m [2m/exams/nasm-performance-enhancement-specialist/index.html[22m [2m(+5ms)[22m 
+[2m14:54:21[22m   [34m├─[39m [2m/exams/nra-certified-instructor/index.html[22m [2m(+178ms)[22m 
+[2m14:54:21[22m   [34m├─[39m [2m/exams/nra-chief-range-safety-officer/index.html[22m [2m(+6ms)[22m 
+[2m14:54:21[22m   [34m├─[39m [2m/exams/nra-range-safety-officer/index.html[22m [2m(+5ms)[22m 
+[2m14:54:21[22m   [34m├─[39m [2m/exams/nsca-certified-personal-trainer/index.html[22m [2m(+9ms)[22m 
+[2m14:54:21[22m   [34m├─[39m [2m/exams/nsca-certified-special-population-specialist/index.html[22m [2m(+15ms)[22m 
+[2m14:54:21[22m   [34m├─[39m [2m/exams/nsca-cscs/index.html[22m [2m(+12ms)[22m 
+[2m14:54:21[22m   [34m├─[39m [2m/exams/padi-divemaster/index.html[22m [2m(+44ms)[22m 
+[2m14:54:21[22m   [34m├─[39m [2m/exams/padi-instructor-development-course/index.html[22m [2m(+173ms)[22m 
+[2m14:54:21[22m   [34m├─[39m [2m/exams/padi-open-water-diver/index.html[22m [2m(+200ms)[22m 
+[2m14:54:22[22m   [34m├─[39m [2m/exams/precision-nutrition-level-1/index.html[22m [2m(+5ms)[22m 
+[2m14:54:22[22m   [34m├─[39m [2m/exams/yoga-alliance-ryt-200/index.html[22m [2m(+5ms)[22m 
+[2m14:54:22[22m   [34m├─[39m [2m/exams/nna-certified-notary-signing-agent/index.html[22m [2m(+7ms)[22m 
+[2m14:54:22[22m   [34m├─[39m [2m/exams/bcba-board-certified-behavior-analyst/index.html[22m [2m(+246ms)[22m 
+[2m14:54:22[22m   [34m├─[39m [2m/exams/cda-preschool/index.html[22m [2m(+178ms)[22m 
+[2m14:54:22[22m   [34m├─[39m [2m/exams/nes-essential-academic-skills/index.html[22m [2m(+6ms)[22m 
+[2m14:54:22[22m   [34m├─[39m [2m/exams/praxis-health-education-5551/index.html[22m [2m(+8ms)[22m 
+[2m14:54:22[22m   [34m├─[39m [2m/exams/praxis-physical-education-content-knowledge-5091/index.html[22m [2m(+7ms)[22m 
+[2m14:54:22[22m   [34m├─[39m [2m/exams/praxis-communication-and-literacy-combined-5753/index.html[22m [2m(+36ms)[22m 
+[2m14:54:22[22m   [34m├─[39m [2m/exams/praxis-core-combined-5752/index.html[22m [2m(+278ms)[22m 
+[2m14:54:22[22m   [34m├─[39m [2m/exams/praxis-early-childhood-education-5025/index.html[22m [2m(+194ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-elementary-education-content-knowledge-5018/index.html[22m [2m(+188ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-elementary-education-multiple-subjects-5001/index.html[22m [2m(+205ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-teaching-reading-elementary-5205/index.html[22m [2m(+5ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-teaching-reading-k-12-5206/index.html[22m [2m(+7ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-economics-5911/index.html[22m [2m(+8ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-english-language-arts-content-and-analysis-5039/index.html[22m [2m(+12ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-english-language-arts-content-knowledge-5038/index.html[22m [2m(+13ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-geography-5921/index.html[22m [2m(+168ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-government-political-science-5931/index.html[22m [2m(+77ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-music-content-knowledge-5113/index.html[22m [2m(+13ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-social-studies-5581/index.html[22m [2m(+19ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-algebra-i-5162/index.html[22m [2m(+13ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-biology-5236/index.html[22m [2m(+17ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-chemistry-5246/index.html[22m [2m(+27ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-general-science-5436/index.html[22m [2m(+22ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-geometry-5163/index.html[22m [2m(+158ms)[22m 
+[2m14:54:23[22m   [34m├─[39m [2m/exams/praxis-mathematics-5165/index.html[22m [2m(+239ms)[22m 
+[2m14:54:24[22m   [34m├─[39m [2m/exams/praxis-physics-5266/index.html[22m [2m(+5ms)[22m 
+[2m14:54:24[22m   [34m├─[39m [2m/exams/praxis-middle-school-english-language-arts-5047/index.html[22m [2m(+6ms)[22m 
+[2m14:54:24[22m   [34m├─[39m [2m/exams/praxis-middle-school-mathematics-5164/index.html[22m [2m(+8ms)[22m 
+[2m14:54:24[22m   [34m├─[39m [2m/exams/praxis-middle-school-science-5442/index.html[22m [2m(+7ms)[22m 
+[2m14:54:24[22m   [34m├─[39m [2m/exams/praxis-middle-school-social-studies-5089/index.html[22m [2m(+16ms)[22m 
+[2m14:54:24[22m   [34m├─[39m [2m/exams/praxis-plt-grades-5-9-5623/index.html[22m [2m(+90ms)[22m 
+[2m14:54:24[22m   [34m├─[39m [2m/exams/praxis-plt-grades-7-12-5624/index.html[22m [2m(+355ms)[22m 
+[2m14:54:24[22m   [34m├─[39m [2m/exams/praxis-plt-grades-k-6-5622/index.html[22m [2m(+238ms)[22m 
+[2m14:54:24[22m   [34m├─[39m [2m/exams/praxis-educational-leadership-administration-and-supervision-5412/index.html[22m [2m(+13ms)[22m 
+[2m14:54:24[22m   [34m├─[39m [2m/exams/praxis-school-counselor-5422/index.html[22m [2m(+11ms)[22m 
+[2m14:54:24[22m   [34m├─[39m [2m/exams/praxis-reading-specialist-5302/index.html[22m [2m(+13ms)[22m 
+[2m14:54:24[22m   [34m├─[39m [2m/exams/praxis-school-psychologist-5403/index.html[22m [2m(+19ms)[22m 
+[2m14:54:25[22m   [34m├─[39m [2m/exams/praxis-special-education-foundational-knowledge-5355/index.html[22m [2m(+28ms)[22m 
+[2m14:54:25[22m   [34m├─[39m [2m/exams/praxis-special-education-learning-disabilities-5383/index.html[22m [2m(+199ms)[22m 
+[2m14:54:25[22m   [34m├─[39m [2m/exams/praxis-english-to-speakers-of-other-languages-5362/index.html[22m [2m(+12ms)[22m 
+[2m14:54:25[22m   [34m├─[39m [2m/exams/google-certified-educator-level-1/index.html[22m [2m(+198ms)[22m 
+[2m14:54:25[22m   [34m├─[39m [2m/exams/google-certified-educator-level-2/index.html[22m [2m(+10ms)[22m 
+[2m14:54:25[22m   [34m├─[39m [2m/exams/microsoft-certified-educator/index.html[22m [2m(+9ms)[22m 
+[2m14:54:25[22m   [34m├─[39m [2m/exams/fe-civil/index.html[22m [2m(+236ms)[22m 
+[2m14:54:25[22m   [34m├─[39m [2m/exams/pe-civil/index.html[22m [2m(+9ms)[22m 
+[2m14:54:25[22m   [34m├─[39m [2m/exams/aipb-certified-bookkeeper/index.html[22m [2m(+234ms)[22m 
+[2m14:54:25[22m   [34m├─[39m [2m/exams/cia-part-1/index.html[22m [2m(+6ms)[22m 
+[2m14:54:25[22m   [34m├─[39m [2m/exams/cfe-exam/index.html[22m [2m(+7ms)[22m 
+[2m14:54:25[22m   [34m├─[39m [2m/exams/cma-part-1/index.html[22m [2m(+17ms)[22m 
+[2m14:54:25[22m   [34m├─[39m [2m/exams/cma-part-2/index.html[22m [2m(+9ms)[22m 
+[2m14:54:25[22m   [34m├─[39m [2m/exams/nacpb-cpb/index.html[22m [2m(+274ms)[22m 
+[2m14:54:26[22m   [34m├─[39m [2m/exams/mba-accredited-mortgage-professional/index.html[22m [2m(+11ms)[22m 
+[2m14:54:26[22m   [34m├─[39m [2m/exams/nmls-safe-mlo-national-test/index.html[22m [2m(+207ms)[22m 
+[2m14:54:26[22m   [34m├─[39m [2m/exams/sie-exam/index.html[22m [2m(+175ms)[22m 
+[2m14:54:26[22m   [34m├─[39m [2m/exams/series-24/index.html[22m [2m(+5ms)[22m 
+[2m14:54:26[22m   [34m├─[39m [2m/exams/series-4/index.html[22m [2m(+9ms)[22m 
+[2m14:54:26[22m   [34m├─[39m [2m/exams/series-6/index.html[22m [2m(+235ms)[22m 
+[2m14:54:26[22m   [34m├─[39m [2m/exams/series-63/index.html[22m [2m(+211ms)[22m 
+[2m14:54:27[22m   [34m├─[39m [2m/exams/series-65/index.html[22m [2m(+178ms)[22m 
+[2m14:54:27[22m   [34m├─[39m [2m/exams/series-66/index.html[22m [2m(+173ms)[22m 
+[2m14:54:27[22m   [34m├─[39m [2m/exams/series-7/index.html[22m [2m(+169ms)[22m 
+[2m14:54:27[22m   [34m├─[39m [2m/exams/series-79/index.html[22m [2m(+6ms)[22m 
+[2m14:54:27[22m   [34m├─[39m [2m/exams/series-9/index.html[22m [2m(+7ms)[22m 
+[2m14:54:27[22m   [34m├─[39m [2m/exams/series-99/index.html[22m [2m(+8ms)[22m 
+[2m14:54:27[22m   [34m├─[39m [2m/exams/cfp-certification-exam/index.html[22m [2m(+244ms)[22m 
+[2m14:54:27[22m   [34m├─[39m [2m/exams/chartered-life-underwriter/index.html[22m [2m(+5ms)[22m 
+[2m14:54:27[22m   [34m├─[39m [2m/exams/cfa-level-1/index.html[22m [2m(+275ms)[22m 
+[2m14:54:28[22m   [34m├─[39m [2m/exams/cfa-level-2/index.html[22m [2m(+297ms)[22m 
+[2m14:54:28[22m   [34m├─[39m [2m/exams/cfa-level-3/index.html[22m [2m(+290ms)[22m 
+[2m14:54:28[22m   [34m├─[39m [2m/exams/frm-part-1/index.html[22m [2m(+19ms)[22m 
+[2m14:54:28[22m   [34m├─[39m [2m/exams/frm-part-2/index.html[22m [2m(+16ms)[22m 
+[2m14:54:28[22m   [34m├─[39m [2m/exams/usmle-step-1/index.html[22m [2m(+337ms)[22m 
+[2m14:54:29[22m   [34m├─[39m [2m/exams/usmle-step-2-ck/index.html[22m [2m(+14ms)[22m 
+[2m14:54:29[22m   [34m├─[39m [2m/exams/usmle-step-3/index.html[22m [2m(+13ms)[22m 
+[2m14:54:29[22m   [34m├─[39m [2m/exams/nclex-rn/index.html[22m [2m(+350ms)[22m 
+[2m14:54:29[22m   [34m├─[39m [2m/exams/nclex-pn/index.html[22m [2m(+292ms)[22m 
+[2m14:54:29[22m   [34m├─[39m [2m/exams/ancc-fnp/index.html[22m [2m(+17ms)[22m 
+[2m14:54:29[22m   [34m├─[39m [2m/exams/npte/index.html[22m [2m(+301ms)[22m 
+[2m14:54:30[22m   [34m├─[39m [2m/exams/npte-pta/index.html[22m [2m(+20ms)[22m 
+[2m14:54:30[22m   [34m├─[39m [2m/exams/asha-ccc-slp/index.html[22m [2m(+17ms)[22m 
+[2m14:54:30[22m   [34m├─[39m [2m/exams/mblex/index.html[22m [2m(+310ms)[22m 
+[2m14:54:30[22m   [34m├─[39m [2m/exams/pance/index.html[22m [2m(+302ms)[22m 
+[2m14:54:30[22m   [34m├─[39m [2m/exams/associate-in-insurance/index.html[22m [2m(+17ms)[22m 
+[2m14:54:30[22m   [34m├─[39m [2m/exams/cpcu-500/index.html[22m [2m(+14ms)[22m 
+[2m14:54:30[22m   [34m├─[39m [2m/exams/cpcu-designation/index.html[22m [2m(+14ms)[22m 
+[2m14:54:30[22m   [34m├─[39m [2m/exams/ahip-health-insurance-associate/index.html[22m [2m(+280ms)[22m 
+[2m14:54:31[22m   [34m├─[39m [2m/exams/ahip-managed-healthcare-professional/index.html[22m [2m(+15ms)[22m 
+[2m14:54:31[22m   [34m├─[39m [2m/exams/certified-insurance-counselor/index.html[22m [2m(+24ms)[22m 
+[2m14:54:31[22m   [34m├─[39m [2m/exams/certified-insurance-service-representative/index.html[22m [2m(+62ms)[22m 
+[2m14:54:31[22m   [34m├─[39m [2m/exams/uniform-bar-exam/index.html[22m [2m(+300ms)[22m 
+[2m14:54:31[22m   [34m├─[39m [2m/exams/mpre/index.html[22m [2m(+308ms)[22m 
+[2m14:54:31[22m   [34m├─[39m [2m/exams/california-bar-exam/index.html[22m [2m(+303ms)[22m 
+[2m14:54:32[22m   [34m├─[39m [2m/exams/notary-signing-agent/index.html[22m [2m(+26ms)[22m 
+[2m14:54:32[22m   [34m├─[39m [2m/exams/usps-vea-474/index.html[22m [2m(+315ms)[22m 
+[2m14:54:32[22m   [34m├─[39m [2m/exams/usps-vea-475/index.html[22m [2m(+8ms)[22m 
+[2m14:54:32[22m   [34m├─[39m [2m/exams/usps-vea-476/index.html[22m [2m(+15ms)[22m 
+[2m14:54:32[22m   [34m├─[39m [2m/exams/usps-vea-477/index.html[22m [2m(+10ms)[22m 
+[2m14:54:32[22m   [34m├─[39m [2m/exams/faa-air-traffic-controller/index.html[22m [2m(+328ms)[22m 
+[2m14:54:32[22m   [34m├─[39m [2m/exams/nyc-dcas-exam/index.html[22m [2m(+319ms)[22m 
+[2m14:54:33[22m   [34m├─[39m [2m/exams/scrum-alliance-certified-scrummaster/index.html[22m [2m(+291ms)[22m 
+[2m14:54:33[22m   [34m├─[39m [2m/exams/scrum-org-psm-i/index.html[22m [2m(+9ms)[22m 
+[2m14:54:33[22m   [34m├─[39m [2m/exams/scrum-org-pspo-i/index.html[22m [2m(+11ms)[22m 
+[2m14:54:33[22m   [34m├─[39m [2m/exams/safe-agile-product-manager/index.html[22m [2m(+14ms)[22m 
+[2m14:54:33[22m   [34m├─[39m [2m/exams/safe-agilist/index.html[22m [2m(+20ms)[22m 
+[2m14:54:33[22m   [34m├─[39m [2m/exams/safe-architect/index.html[22m [2m(+48ms)[22m 
+[2m14:54:33[22m   [34m├─[39m [2m/exams/safe-scrum-master/index.html[22m [2m(+108ms)[22m 
+[2m14:54:33[22m   [34m├─[39m [2m/exams/hrci-phr/index.html[22m [2m(+71ms)[22m 
+[2m14:54:33[22m   [34m├─[39m [2m/exams/hrci-sphr/index.html[22m [2m(+29ms)[22m 
+[2m14:54:33[22m   [34m├─[39m [2m/exams/shrm-cp/index.html[22m [2m(+287ms)[22m 
+[2m14:54:34[22m   [34m├─[39m [2m/exams/shrm-scp/index.html[22m [2m(+13ms)[22m 
+[2m14:54:34[22m   [34m├─[39m [2m/exams/google-analytics-certification/index.html[22m [2m(+299ms)[22m 
+[2m14:54:34[22m   [34m├─[39m [2m/exams/hubspot-content-marketing-certification/index.html[22m [2m(+11ms)[22m 
+[2m14:54:34[22m   [34m├─[39m [2m/exams/hubspot-inbound-marketing-certification/index.html[22m [2m(+15ms)[22m 
+[2m14:54:34[22m   [34m├─[39m [2m/exams/pmi-capm/index.html[22m [2m(+288ms)[22m 
+[2m14:54:34[22m   [34m├─[39m [2m/exams/pmi-pmp/index.html[22m [2m(+286ms)[22m 
+[2m14:54:34[22m   [34m├─[39m [2m/exams/pmi-acp/index.html[22m [2m(+290ms)[22m 
+[2m14:54:35[22m   [34m├─[39m [2m/exams/prince2-foundation/index.html[22m [2m(+288ms)[22m 
+[2m14:54:35[22m   [34m├─[39m [2m/exams/prince2-practitioner/index.html[22m [2m(+16ms)[22m 
+[2m14:54:35[22m   [34m├─[39m [2m/exams/asq-certified-quality-engineer/index.html[22m [2m(+27ms)[22m 
+[2m14:54:35[22m   [34m├─[39m [2m/exams/asq-certified-six-sigma-black-belt/index.html[22m [2m(+10ms)[22m 
+[2m14:54:35[22m   [34m├─[39m [2m/exams/asq-certified-six-sigma-green-belt/index.html[22m [2m(+31ms)[22m 
+[2m14:54:35[22m   [34m├─[39m [2m/exams/nypd-police-officer-exam/index.html[22m [2m(+299ms)[22m 
+[2m14:54:35[22m   [34m├─[39m [2m/exams/post-entry-level/index.html[22m [2m(+311ms)[22m 
+[2m14:54:36[22m   [34m├─[39m [2m/exams/law-enforcement-pat/index.html[22m [2m(+287ms)[22m 
+[2m14:54:36[22m   [34m├─[39m [2m/exams/pro-board-firefighter-i/index.html[22m [2m(+289ms)[22m 
+[2m14:54:36[22m   [34m├─[39m [2m/exams/nims-ics-100/index.html[22m [2m(+259ms)[22m 
+[2m14:54:37[22m   [34m├─[39m [2m/exams/nims-ics-200/index.html[22m [2m(+247ms)[22m 
+[2m14:54:37[22m   [34m├─[39m [2m/exams/nims-ics-300/index.html[22m [2m(+7ms)[22m 
+[2m14:54:37[22m   [34m├─[39m [2m/exams/nims-ics-400/index.html[22m [2m(+13ms)[22m 
+[2m14:54:37[22m   [34m├─[39m [2m/exams/nims-ics-700/index.html[22m [2m(+266ms)[22m 
+[2m14:54:37[22m   [34m├─[39m [2m/exams/nims-ics-800/index.html[22m [2m(+186ms)[22m 
+[2m14:54:37[22m   [34m├─[39m [2m/exams/iaed-emd/index.html[22m [2m(+5ms)[22m 
+[2m14:54:37[22m   [34m├─[39m [2m/exams/corrections-officer-entrance-exam/index.html[22m [2m(+202ms)[22m 
+[2m14:54:37[22m   [34m├─[39m [2m/exams/epa-lead-renovator-rrp/index.html[22m [2m(+205ms)[22m 
+[2m14:54:38[22m   [34m├─[39m [2m/exams/hazwoper-24-hour/index.html[22m [2m(+4ms)[22m 
+[2m14:54:38[22m   [34m├─[39m [2m/exams/hazwoper-40-hour/index.html[22m [2m(+211ms)[22m 
+[2m14:54:38[22m   [34m├─[39m [2m/exams/hazwoper-8-hour-refresher/index.html[22m [2m(+222ms)[22m 
+[2m14:54:38[22m   [34m├─[39m [2m/exams/hazwoper-8-hour-supervisor/index.html[22m [2m(+195ms)[22m 
+[2m14:54:38[22m   [34m├─[39m [2m/exams/nfpa-70e-electrical-safety-training/index.html[22m [2m(+4ms)[22m 
+[2m14:54:38[22m   [34m├─[39m [2m/exams/osha-10-general-industry/index.html[22m [2m(+217ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/osha-10-maritime/index.html[22m [2m(+7ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/osha-30-general-industry/index.html[22m [2m(+212ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/osha-510-construction-standards/index.html[22m [2m(+6ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/osha-511-general-industry-standards/index.html[22m [2m(+8ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/osha-3115-fall-protection/index.html[22m [2m(+8ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/pesticide-applicator-core-exam/index.html[22m [2m(+7ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/aws-certified-ai-practitioner/index.html[22m [2m(+266ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/aws-certified-advanced-networking-specialty/index.html[22m [2m(+6ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/aws-certified-cloud-practitioner/index.html[22m [2m(+230ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/aws-certified-data-engineer-associate/index.html[22m [2m(+8ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/aws-certified-database-specialty/index.html[22m [2m(+9ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/aws-certified-developer-associate/index.html[22m [2m(+7ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/aws-certified-devops-engineer-professional/index.html[22m [2m(+16ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/aws-certified-generative-ai-developer-professional/index.html[22m [2m(+29ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/aws-certified-machine-learning-engineer-associate/index.html[22m [2m(+26ms)[22m 
+[2m14:54:39[22m   [34m├─[39m [2m/exams/aws-certified-machine-learning-specialty/index.html[22m [2m(+211ms)[22m 
+[2m14:54:40[22m   [34m├─[39m [2m/exams/aws-certified-sap-on-aws-specialty/index.html[22m [2m(+11ms)[22m 
+[2m14:54:40[22m   [34m├─[39m [2m/exams/aws-certified-security-specialty/index.html[22m [2m(+20ms)[22m 
+[2m14:54:40[22m   [34m├─[39m [2m/exams/aws-certified-solutions-architect-associate/index.html[22m [2m(+334ms)[22m 
+[2m14:54:40[22m   [34m├─[39m [2m/exams/aws-certified-solutions-architect-professional/index.html[22m [2m(+294ms)[22m 
+[2m14:54:40[22m   [34m├─[39m [2m/exams/aws-certified-sysops-administrator-associate/index.html[22m [2m(+27ms)[22m 
+[2m14:54:40[22m   [34m├─[39m [2m/exams/cisco-ccna/index.html[22m [2m(+320ms)[22m 
+[2m14:54:41[22m   [34m├─[39m [2m/exams/cisco-ccna-cybersecurity/index.html[22m [2m(+357ms)[22m 
+[2m14:54:41[22m   [34m├─[39m [2m/exams/cisco-ccnp-automation/index.html[22m [2m(+58ms)[22m 
+[2m14:54:41[22m   [34m├─[39m [2m/exams/cisco-ccnp-collaboration/index.html[22m [2m(+24ms)[22m 
+[2m14:54:41[22m   [34m├─[39m [2m/exams/cisco-ccnp-cybersecurity/index.html[22m [2m(+348ms)[22m 
+[2m14:54:41[22m   [34m├─[39m [2m/exams/cisco-ccnp-data-center/index.html[22m [2m(+18ms)[22m 
+[2m14:54:41[22m   [34m├─[39m [2m/exams/cisco-ccnp-enterprise/index.html[22m [2m(+321ms)[22m 
+[2m14:54:42[22m   [34m├─[39m [2m/exams/cisco-ccnp-security/index.html[22m [2m(+23ms)[22m 
+[2m14:54:42[22m   [34m├─[39m [2m/exams/cisco-ccnp-service-provider/index.html[22m [2m(+23ms)[22m 
+[2m14:54:42[22m   [34m├─[39m [2m/exams/cisco-ccnp-wireless/index.html[22m [2m(+24ms)[22m 
+[2m14:54:42[22m   [34m├─[39m [2m/exams/cisco-ccst-cybersecurity/index.html[22m [2m(+329ms)[22m 
+[2m14:54:42[22m   [34m├─[39m [2m/exams/cisco-ccst-networking/index.html[22m [2m(+8ms)[22m 
+[2m14:54:42[22m   [34m├─[39m [2m/exams/certified-kubernetes-administrator/index.html[22m [2m(+315ms)[22m 
+[2m14:54:42[22m   [34m├─[39m [2m/exams/certified-kubernetes-application-developer/index.html[22m [2m(+10ms)[22m 
+[2m14:54:42[22m   [34m├─[39m [2m/exams/docker-certified-associate/index.html[22m [2m(+11ms)[22m 
+[2m14:54:42[22m   [34m├─[39m [2m/exams/hashicorp-certified-terraform-associate/index.html[22m [2m(+16ms)[22m 
+[2m14:54:42[22m   [34m├─[39m [2m/exams/hashicorp-certified-vault-associate/index.html[22m [2m(+13ms)[22m 
+[2m14:54:42[22m   [34m├─[39m [2m/exams/kubernetes-and-cloud-native-associate/index.html[22m [2m(+36ms)[22m 
+[2m14:54:43[22m   [34m├─[39m [2m/exams/comptia-a-plus/index.html[22m [2m(+377ms)[22m 
+[2m14:54:43[22m   [34m├─[39m [2m/exams/comptia-ai-essentials/index.html[22m [2m(+14ms)[22m 
+[2m14:54:43[22m   [34m├─[39m [2m/exams/comptia-cloud-plus/index.html[22m [2m(+14ms)[22m 
+[2m14:54:43[22m   [34m├─[39m [2m/exams/comptia-cysa-plus/index.html[22m [2m(+330ms)[22m 
+[2m14:54:43[22m   [34m├─[39m [2m/exams/comptia-data-plus/index.html[22m [2m(+305ms)[22m 
+[2m14:54:44[22m   [34m├─[39m [2m/exams/comptia-it-fundamentals/index.html[22m [2m(+11ms)[22m 
+[2m14:54:44[22m   [34m├─[39m [2m/exams/comptia-linux-plus/index.html[22m [2m(+333ms)[22m 
+[2m14:54:44[22m   [34m├─[39m [2m/exams/comptia-network-plus/index.html[22m [2m(+309ms)[22m 
+[2m14:54:44[22m   [34m├─[39m [2m/exams/comptia-pentest-plus/index.html[22m [2m(+296ms)[22m 
+[2m14:54:45[22m   [34m├─[39m [2m/exams/comptia-project-plus/index.html[22m [2m(+13ms)[22m 
+[2m14:54:45[22m   [34m├─[39m [2m/exams/comptia-security-plus/index.html[22m [2m(+306ms)[22m 
+[2m14:54:45[22m   [34m├─[39m [2m/exams/comptia-server-plus/index.html[22m [2m(+332ms)[22m 
+[2m14:54:45[22m   [34m├─[39m [2m/exams/comptia-tech-plus/index.html[22m [2m(+10ms)[22m 
+[2m14:54:45[22m   [34m├─[39m [2m/exams/isc2-certified-in-cybersecurity/index.html[22m [2m(+19ms)[22m 
+[2m14:54:45[22m   [34m├─[39m [2m/exams/isc2-sscp/index.html[22m [2m(+29ms)[22m 
+[2m14:54:45[22m   [34m├─[39m [2m/exams/isc2-cissp/index.html[22m [2m(+325ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/isc2-ccsp/index.html[22m [2m(+17ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/isaca-cisa/index.html[22m [2m(+297ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/isaca-cism/index.html[22m [2m(+9ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/isaca-crisc/index.html[22m [2m(+25ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/eccouncil-ceh/index.html[22m [2m(+25ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/offsec-oscp/index.html[22m [2m(+44ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/csa-ccsk/index.html[22m [2m(+38ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/tableau-desktop-specialist/index.html[22m [2m(+76ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/tableau-certified-data-analyst/index.html[22m [2m(+83ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/google-cloud-digital-leader/index.html[22m [2m(+36ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/google-associate-cloud-engineer/index.html[22m [2m(+32ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/google-associate-data-practitioner/index.html[22m [2m(+31ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/google-professional-cloud-architect/index.html[22m [2m(+21ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/google-professional-cloud-developer/index.html[22m [2m(+68ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/google-professional-data-engineer/index.html[22m [2m(+97ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/google-professional-machine-learning-engineer/index.html[22m [2m(+42ms)[22m 
+[2m14:54:46[22m   [34m├─[39m [2m/exams/google-it-support-professional-certificate/index.html[22m [2m(+341ms)[22m 
+[2m14:54:47[22m   [34m├─[39m [2m/exams/google-cybersecurity-professional-certificate/index.html[22m [2m(+9ms)[22m 
+[2m14:54:47[22m   [34m├─[39m [2m/exams/google-data-analytics-professional-certificate/index.html[22m [2m(+301ms)[22m 
+[2m14:54:47[22m   [34m├─[39m [2m/exams/google-advanced-data-analytics-certificate/index.html[22m [2m(+11ms)[22m 
+[2m14:54:47[22m   [34m├─[39m [2m/exams/itil-4-foundation/index.html[22m [2m(+294ms)[22m 
+[2m14:54:47[22m   [34m├─[39m [2m/exams/itil-4-specialist-create-deliver-and-support/index.html[22m [2m(+8ms)[22m 
+[2m14:54:47[22m   [34m├─[39m [2m/exams/itil-4-specialist-drive-stakeholder-value/index.html[22m [2m(+15ms)[22m 
+[2m14:54:47[22m   [34m├─[39m [2m/exams/itil-4-specialist-high-velocity-it/index.html[22m [2m(+12ms)[22m 
+[2m14:54:47[22m   [34m├─[39m [2m/exams/itil-4-strategist-direct-plan-and-improve/index.html[22m [2m(+37ms)[22m 
+[2m14:54:48[22m   [34m├─[39m [2m/exams/itil-4-leader-digital-and-it-strategy/index.html[22m [2m(+84ms)[22m 
+[2m14:54:48[22m   [34m├─[39m [2m/exams/itil-4-specialist-monitor-support-and-fulfil/index.html[22m [2m(+49ms)[22m 
+[2m14:54:48[22m   [34m├─[39m [2m/exams/lpi-linux-essentials/index.html[22m [2m(+85ms)[22m 
+[2m14:54:48[22m   [34m├─[39m [2m/exams/lpic-1-system-administrator/index.html[22m [2m(+16ms)[22m 
+[2m14:54:48[22m   [34m├─[39m [2m/exams/microsoft-az-900/index.html[22m [2m(+306ms)[22m 
+[2m14:54:48[22m   [34m├─[39m [2m/exams/microsoft-az-104/index.html[22m [2m(+297ms)[22m 
+[2m14:54:48[22m   [34m├─[39m [2m/exams/microsoft-az-140/index.html[22m [2m(+292ms)[22m 
+[2m14:54:49[22m   [34m├─[39m [2m/exams/microsoft-az-204/index.html[22m [2m(+286ms)[22m 
+[2m14:54:49[22m   [34m├─[39m [2m/exams/microsoft-az-305/index.html[22m [2m(+302ms)[22m 
+[2m14:54:49[22m   [34m├─[39m [2m/exams/microsoft-az-400/index.html[22m [2m(+294ms)[22m 
+[2m14:54:50[22m   [34m├─[39m [2m/exams/microsoft-az-500/index.html[22m [2m(+286ms)[22m 
+[2m14:54:50[22m   [34m├─[39m [2m/exams/microsoft-az-700/index.html[22m [2m(+296ms)[22m 
+[2m14:54:50[22m   [34m├─[39m [2m/exams/microsoft-az-800/index.html[22m [2m(+9ms)[22m 
+[2m14:54:50[22m   [34m├─[39m [2m/exams/microsoft-az-801/index.html[22m [2m(+11ms)[22m 
+[2m14:54:50[22m   [34m├─[39m [2m/exams/microsoft-ai-900/index.html[22m [2m(+281ms)[22m 
+[2m14:54:50[22m   [34m├─[39m [2m/exams/microsoft-ai-901/index.html[22m [2m(+298ms)[22m 
+[2m14:54:51[22m   [34m├─[39m [2m/exams/microsoft-ai-102/index.html[22m [2m(+12ms)[22m 
+[2m14:54:51[22m   [34m├─[39m [2m/exams/microsoft-dp-900/index.html[22m [2m(+16ms)[22m 
+[2m14:54:51[22m   [34m├─[39m [2m/exams/microsoft-dp-203/index.html[22m [2m(+18ms)[22m 
+[2m14:54:51[22m   [34m├─[39m [2m/exams/microsoft-dp-300/index.html[22m [2m(+59ms)[22m 
+[2m14:54:51[22m   [34m├─[39m [2m/exams/microsoft-ms-900/index.html[22m [2m(+59ms)[22m 
+[2m14:54:51[22m   [34m├─[39m [2m/exams/microsoft-ms-102/index.html[22m [2m(+280ms)[22m 
+[2m14:54:51[22m   [34m├─[39m [2m/exams/microsoft-md-102/index.html[22m [2m(+36ms)[22m 
+[2m14:54:51[22m   [34m├─[39m [2m/exams/microsoft-ms-700/index.html[22m [2m(+26ms)[22m 
+[2m14:54:51[22m   [34m├─[39m [2m/exams/microsoft-sc-900/index.html[22m [2m(+24ms)[22m 
+[2m14:54:51[22m   [34m├─[39m [2m/exams/microsoft-sc-100/index.html[22m [2m(+24ms)[22m 
+[2m14:54:51[22m   [34m├─[39m [2m/exams/microsoft-sc-200/index.html[22m [2m(+63ms)[22m 
+[2m14:54:51[22m   [34m├─[39m [2m/exams/microsoft-pl-900/index.html[22m [2m(+71ms)[22m 
+[2m14:54:51[22m   [34m├─[39m [2m/exams/microsoft-pl-200/index.html[22m [2m(+96ms)[22m 
+[2m14:54:51[22m   [34m├─[39m [2m/exams/microsoft-pl-300/index.html[22m [2m(+19ms)[22m 
+[2m14:54:52[22m   [34m├─[39m [2m/exams/microsoft-mb-910/index.html[22m [2m(+48ms)[22m 
+[2m14:54:52[22m   [34m├─[39m [2m/exams/microsoft-office-specialist-excel-associate/index.html[22m [2m(+329ms)[22m 
+[2m14:54:52[22m   [34m├─[39m [2m/exams/microsoft-office-specialist-excel-expert/index.html[22m [2m(+10ms)[22m 
+[2m14:54:52[22m   [34m├─[39m [2m/exams/microsoft-office-specialist-word-associate/index.html[22m [2m(+14ms)[22m 
+[2m14:54:52[22m   [34m├─[39m [2m/exams/microsoft-office-specialist-word-expert/index.html[22m [2m(+24ms)[22m 
+[2m14:54:52[22m   [34m├─[39m [2m/exams/microsoft-office-specialist-powerpoint-associate/index.html[22m [2m(+75ms)[22m 
+[2m14:54:52[22m   [34m├─[39m [2m/exams/microsoft-office-specialist-outlook-associate/index.html[22m [2m(+87ms)[22m 
+[2m14:54:52[22m   [34m├─[39m [2m/exams/microsoft-office-specialist-associate-bundle/index.html[22m [2m(+84ms)[22m 
+[2m14:54:52[22m   [34m├─[39m [2m/exams/microsoft-office-specialist-expert-bundle/index.html[22m [2m(+22ms)[22m 
+[2m14:54:52[22m   [34m├─[39m [2m/exams/python-institute-pcep/index.html[22m [2m(+23ms)[22m 
+[2m14:54:52[22m   [34m├─[39m [2m/exams/python-institute-pcap/index.html[22m [2m(+35ms)[22m 
+[2m14:54:52[22m   [34m├─[39m [2m/exams/vmware-vcp-data-center-virtualization/index.html[22m [2m(+31ms)[22m 
+[2m14:54:52[22m   [34m├─[39m [2m/exams/salesforce-administrator/index.html[22m [2m(+471ms)[22m 
+[2m14:54:53[22m   [34m├─[39m [2m/exams/salesforce-advanced-administrator/index.html[22m [2m(+9ms)[22m 
+[2m14:54:53[22m   [34m├─[39m [2m/exams/salesforce-platform-app-builder/index.html[22m [2m(+35ms)[22m 
+[2m14:54:53[22m   [34m├─[39m [2m/exams/salesforce-platform-developer-i/index.html[22m [2m(+21ms)[22m 
+[2m14:54:53[22m   [34m├─[39m [2m/exams/salesforce-platform-developer-ii/index.html[22m [2m(+24ms)[22m 
+[2m14:54:53[22m   [34m├─[39m [2m/exams/salesforce-sales-cloud-consultant/index.html[22m [2m(+33ms)[22m 
+[2m14:54:53[22m   [34m├─[39m [2m/exams/salesforce-service-cloud-consultant/index.html[22m [2m(+177ms)[22m 
+[2m14:54:53[22m   [34m├─[39m [2m/exams/salesforce-business-analyst/index.html[22m [2m(+13ms)[22m 
+[2m14:54:53[22m   [34m├─[39m [2m/exams/oracle-oci-foundations-associate/index.html[22m [2m(+29ms)[22m 
+[2m14:54:53[22m   [34m├─[39m [2m/exams/hubspot-inbound-certification/index.html[22m [2m(+20ms)[22m 
+[2m14:54:53[22m   [34m├─[39m [2m/exams/ase-a8-engine-performance/index.html[22m [2m(+322ms)[22m 
+[2m14:54:53[22m   [34m├─[39m [2m/exams/ase-t7-truck-hvac/index.html[22m [2m(+305ms)[22m 
+[2m14:54:54[22m   [34m├─[39m [2m/exams/ase-xev-level-1-electrical-safety/index.html[22m [2m(+13ms)[22m 
+[2m14:54:54[22m   [34m├─[39m [2m/exams/epa-609-mvac-certification/index.html[22m [2m(+343ms)[22m 
+[2m14:54:54[22m   [34m├─[39m [2m/exams/aws-certified-welder/index.html[22m [2m(+294ms)[22m 
+[2m14:54:54[22m   [34m├─[39m [2m/exams/nccer-welding/index.html[22m [2m(+11ms)[22m 
+[2m14:54:54[22m   [34m├─[39m [2m/exams/icc-residential-building-inspector/index.html[22m [2m(+17ms)[22m 
+[2m14:54:54[22m   [34m├─[39m [2m/exams/hvac-excellence-employment-ready/index.html[22m [2m(+7ms)[22m 
+[2m14:54:54[22m   [34m├─[39m [2m/exams/epa-608-universal/index.html[22m [2m(+304ms)[22m 
+[2m14:54:55[22m   [34m├─[39m [2m/exams/nccer-electrician/index.html[22m [2m(+306ms)[22m 
+[2m14:54:55[22m   [34m├─[39m [2m/exams/nccer-core-curriculum/index.html[22m [2m(+317ms)[22m 
+[2m14:54:55[22m   [34m├─[39m [2m/exams/nccer-carpenter/index.html[22m [2m(+8ms)[22m 
+[2m14:54:55[22m   [34m├─[39m [2m/exams/nccer-masonry/index.html[22m [2m(+17ms)[22m 
+[2m14:54:55[22m   [34m├─[39m [2m/exams/nccer-concrete-finisher/index.html[22m [2m(+39ms)[22m 
+[2m14:54:55[22m   [34m├─[39m [2m/exams/nccer-pipefitting/index.html[22m [2m(+44ms)[22m 
+[2m14:54:55[22m   [34m├─[39m [2m/exams/nccer-plumbing/index.html[22m [2m(+312ms)[22m 
+[2m14:54:56[22m   [34m├─[39m [2m/exams/nccer-hvac/index.html[22m [2m(+316ms)[22m 
+[2m14:54:56[22m   [34m├─[39m [2m/exams/nccer-electrical/index.html[22m [2m(+11ms)[22m 
+[2m14:54:56[22m   [34m├─[39m [2m/exams/nccer-heavy-equipment-operator/index.html[22m [2m(+18ms)[22m 
+[2m14:54:56[22m   [34m├─[39m [2m/exams/nccer-crane-operator/index.html[22m [2m(+10ms)[22m 
+[2m14:54:56[22m   [34m├─[39m [2m/exams/nccer-scaffolding/index.html[22m [2m(+87ms)[22m 
+[2m14:54:56[22m   [34m├─[39m [2m/exams/cdl-air-brakes-knowledge-test/index.html[22m [2m(+325ms)[22m 
+[2m14:54:57[22m   [34m├─[39m [2m/exams/cdl-combination-vehicles-knowledge-test/index.html[22m [2m(+292ms)[22m 
+[2m14:54:57[22m   [34m├─[39m [2m/exams/cdl-general-knowledge-test/index.html[22m [2m(+314ms)[22m 
+[2m14:54:57[22m   [34m├─[39m [2m/exams/cdl-hazmat-endorsement-knowledge-test/index.html[22m [2m(+310ms)[22m 
+[2m14:54:57[22m   [34m├─[39m [2m/exams/cdl-on-road-driving-skills-test/index.html[22m [2m(+287ms)[22m 
+[2m14:54:58[22m   [34m├─[39m [2m/exams/cdl-passenger-endorsement-knowledge-test/index.html[22m [2m(+263ms)[22m 
+[2m14:54:58[22m   [34m├─[39m [2m/exams/cdl-pre-trip-vehicle-inspection-test/index.html[22m [2m(+285ms)[22m 
+[2m14:54:58[22m   [34m├─[39m [2m/exams/cdl-school-bus-endorsement-knowledge-test/index.html[22m [2m(+300ms)[22m 
+[2m14:54:59[22m   [34m├─[39m [2m/exams/imsa-work-zone-traffic-control-safety/index.html[22m [2m(+10ms)[22m 
+[2m14:54:59[22m   [34m├─[39m [2m/exams/faa-atm-atp-multiengine-airplane/index.html[22m [2m(+35ms)[22m 
+[2m14:54:59[22m   [34m├─[39m [2m/exams/faa-cax-commercial-pilot-airplane/index.html[22m [2m(+12ms)[22m 
+[2m14:54:59[22m   [34m├─[39m [2m/exams/faa-ira-instrument-rating-airplane/index.html[22m [2m(+43ms)[22m 
+[2m14:54:59[22m   [34m├─[39m [2m/exams/faa-part-107-recurrent-training-alc-677/index.html[22m [2m(+455ms)[22m 
+[2m14:54:59[22m   [34m├─[39m [2m/exams/faa-part-107-initial-training-alc-451/index.html[22m [2m(+291ms)[22m 
+[2m14:54:59[22m   [34m├─[39m [2m/exams/faa-par-private-pilot-airplane/index.html[22m [2m(+9ms)[22m 
+[2m14:54:59[22m   [34m├─[39m [2m/exams/faa-trust-recreational-uas-safety-test/index.html[22m [2m(+289ms)[22m 
+[2m14:55:00[22m   [34m├─[39m [2m/exams/nasbla-approved-boating-safety-course/index.html[22m [2m(+328ms)[22m 
+[2m14:55:00[22m   [34m├─[39m [2m/exams/fcc-amateur-general-class-license/index.html[22m [2m(+8ms)[22m 
+[2m14:55:00[22m   [34m└─[39m [2m/exams/fcc-amateur-technician-class-license/index.html[22m [2m(+11ms)[22m 
+[2m14:55:00[22m [32m▶[39m src/pages/exams.astro
+[2m14:55:00[22m   [34m└─[39m [2m/exams/index.html[22m [2m(+7ms)[22m 
+[2m14:55:00[22m [32m▶[39m src/pages/explore.astro
+[2m14:55:00[22m   [34m└─[39m [2m/explore/index.html[22m [2m(+23ms)[22m 
+[2m14:55:00[22m [32m▶[39m src/pages/guides/[slug].astro
+[2m14:55:00[22m   [34m├─[39m [2m/guides/study-plan-working-full-time/index.html[22m [2m(+186ms)[22m 
+[2m14:55:00[22m   [34m├─[39m [2m/guides/license-reciprocity-across-state-lines/index.html[22m [2m(+19ms)[22m 
+[2m14:55:00[22m   [34m└─[39m [2m/guides/beat-test-anxiety-exam-day/index.html[22m [2m(+14ms)[22m 
+[2m14:55:00[22m [32m▶[39m src/pages/guides.astro
+[2m14:55:00[22m   [34m└─[39m [2m/guides/index.html[22m [2m(+16ms)[22m 
+[2m14:55:00[22m [32m▶[39m src/pages/how-it-works.astro
+[2m14:55:00[22m   [34m└─[39m [2m/how-it-works/index.html[22m [2m(+40ms)[22m 
+[2m14:55:00[22m [32m▶[39m src/pages/index.astro
+[2m14:55:00[22m   [34m└─[39m [2m/index.html[22m [2m(+111ms)[22m 
+[2m14:55:01[22m [32m▶[39m src/pages/methodology.astro
+[2m14:55:01[22m   [34m└─[39m [2m/methodology/index.html[22m [2m(+18ms)[22m 
+[2m14:55:01[22m [32m▶[39m src/pages/paths/[slug].astro
+[2m14:55:01[22m   [34m├─[39m [2m/paths/texas-real-estate-license/index.html[22m [2m(+39ms)[22m 
+[2m14:55:01[22m   [34m├─[39m [2m/paths/california-real-estate-license/index.html[22m [2m(+15ms)[22m 
+[2m14:55:01[22m   [34m├─[39m [2m/paths/florida-real-estate-license/index.html[22m [2m(+10ms)[22m 
+[2m14:55:01[22m   [34m├─[39m [2m/paths/enrolled-agent/index.html[22m [2m(+33ms)[22m 
+[2m14:55:01[22m   [34m├─[39m [2m/paths/osha-10-construction/index.html[22m [2m(+92ms)[22m 
+[2m14:55:01[22m   [34m├─[39m [2m/paths/osha-30-construction/index.html[22m [2m(+105ms)[22m 
+[2m14:55:01[22m   [34m├─[39m [2m/paths/epa-608-certification/index.html[22m [2m(+17ms)[22m 
+[2m14:55:01[22m   [34m└─[39m [2m/paths/cpa-exam/index.html[22m [2m(+26ms)[22m 
+[2m14:55:01[22m [32m▶[39m src/pages/privacy-policy.astro
+[2m14:55:01[22m   [34m└─[39m [2m/privacy-policy/index.html[22m [2m(+37ms)[22m 
+[2m14:55:01[22m [32m▶[39m src/pages/privacy.astro
+[2m14:55:01[22m   [34m└─[39m [2m/privacy/index.html[22m [2m(+9ms)[22m 
+[2m14:55:01[22m [32m▶[39m src/pages/reviewers.astro
+[2m14:55:01[22m   [34m└─[39m [2m/reviewers/index.html[22m [2m(+59ms)[22m 
+[2m14:55:01[22m [32m▶[39m src/pages/reviews.astro
+[2m14:55:01[22m   [34m└─[39m [2m/reviews/index.html[22m [2m(+19ms)[22m 
+[2m14:55:01[22m [35mλ[39m src/pages/rss.xml.ts
+[2m14:55:01[22m   [34m└─[39m [2m/rss.xml[22m [2m(+58ms)[22m 
+[2m14:55:01[22m [32m✓ Completed in 61.37s.
 [39m
-[2m12:26:11[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
-[2m12:26:11[22m [34m[build][39m 166 page(s) built in [1m36.55s[22m
-[2m12:26:11[22m [34m[build][39m [1mComplete![22m
-EXIT=0
+[2m14:55:26[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
+[2m14:55:26[22m [34m[build][39m 541 page(s) built in [1m146.37s[22m
+[2m14:55:26[22m [34m[build][39m [1mComplete![22m

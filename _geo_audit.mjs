@@ -237,5 +237,5 @@ console.log('\n===== 违规清单 =====');
 console.log(`无可见FAQ的 exam/path/guide : ${noFaq.length}${noFaq.length ? ' → ' + noFaq.map((r) => r.path).join(', ') : ''}`);
 console.log(`无表格的 exam              : ${noTable.length}${noTable.length ? ' → ' + noTable.map((r) => r.path).slice(0, 20).join(', ') : ''}`);
 console.log(`JSON-LD与可见文字不一致     : ${mismatch.length}`);
-console.log(`数字密度<2/百词的 exam     : ${lowNum.length}`);
+console.log(`数字密度<2/百词的 exam     : ${lowNum.length}${lowNum.length ? ' → ' + lowNum.map((r) => `${r.path} (${r.numPer100.toFixed(1)})`).join(', ') : ''}`);
 console.log(`有可见FAQ但无FAQPage标记   : ${noLdFaq.length}${noLdFaq.length ? ' → ' + noLdFaq.map((r) => r.path).join(', ') : ''}`);
