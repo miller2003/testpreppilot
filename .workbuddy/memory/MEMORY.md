@@ -19,6 +19,7 @@
 
 ## Deploy / live surface
 - Cloudflare-hosted, **built from this repo; the user deploys by pushing**. `public/_headers` is live. Post-deploy checks: `curl -sI .../.well-known/api-catalog`, `curl -s .../llms.txt | head -3`, `_ai_crawler_check.mjs`.
+- **IndexNow**: `scripts/indexnow.mjs`（key `0041cb82f5036c8165b4caf1723d44af` 已放 `public/`；源 = 本地 `dist/sitemap-0.xml`；`--dry/--live/--verify/子集`）。**只推 apex 主机**：`dash.testpreppilot.com` 是内部看板（noindex + robots `Disallow:/`），永不提交 —— 已用 hostname 锁 + DENY 清单做成结构性防线。
 - **OPEN (2026-10-03): every URL 308s to add a trailing slash** (Astro directory format + CF `html_handling: auto-trailing-slash`), so canonical/sitemap no-slash URLs redirect. Fix = CF `drop-trailing-slash`, or flip Astro to `trailingSlash:'always'`. Awaiting the user's choice.
 - **CF AI bots (2026-09-15 three-category policy)**: Training/Agent default-block on ad pages; the 8 Training-class 403s were fixed by setting Training=Allow. Multi-purpose crawlers are judged under BOTH Search and Training, strictest wins → prefer per-crawler blocks; keep CF's managed robots.txt OFF.
 
