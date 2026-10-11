@@ -3,7 +3,7 @@ export const programs = [
     "id": "comptia",
     "body": "CompTIA",
     "bodyUrl": "https://www.comptia.org",
-    "about": "CompTIA (the Computing Technology Industry Association) is a leading vendor-neutral IT certification body. Its Linux+ certification is delivered worldwide through Pearson VUE, either at a physical test center or via online proctoring (OnVUE). Linux+ is ANSI-accredited to ISO/IEC 17024 and approved for U.S. Department of Defense DoD 8140 (formerly 8570) IAT Level II roles. CompTIA also sells official self-paced training (CertMaster Learn, CertMaster Practice, CertMaster Labs) and exam voucher bundles, and manages renewal through its CertCentral portal.",
+    "about": "CompTIA (the Computing Technology Industry Association) is a leading vendor-neutral IT certification body. Its exams are delivered worldwide through Pearson VUE, either at a physical test center or via online proctoring (OnVUE). Most CompTIA certifications are ANSI-accredited to ISO/IEC 17024, and several are approved baselines for U.S. Department of Defense DoD 8140 (formerly 8570) roles. CompTIA also sells official self-paced training (CertMaster Learn, CertMaster Practice, CertMaster Labs) and exam voucher bundles, and manages renewal through its CertCentral portal.",
     "registrationSteps": [
       {
         "title": "Create your accounts",

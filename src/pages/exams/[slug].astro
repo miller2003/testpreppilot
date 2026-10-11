@@ -118,7 +118,12 @@ const topicAnswer = (() => {
   if (mode !== 'national' || topics.length === 0) return '';
   const weighted = topics.filter((t: any) => t.weight);
   if (!weighted.length) return `The ${exam.name} covers ${topics.length} content domains.`;
-  const top = weighted
+  // Sort by the leading number of the weight ("22%", "15–20%") before taking
+  // three — the outline order is not the size order, and 33 pages were
+  // calling their first three domains "the largest".
+  const pct = (t: any) => parseFloat((String(t.weight).match(/\d+(?:\.\d+)?/) || ['0'])[0]);
+  const top = [...weighted]
+    .sort((a: any, b: any) => pct(b) - pct(a))
     .slice(0, 3)
     .map((t: any) => `${f(t.name)} (${f(t.weight)})`)
     .join(', ');

@@ -2,205 +2,771 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../components/BreadcrumbNav.astro';
 import TopicHubs from '../components/TopicHubs.astro';
-import { TRUST_PAGES } from '../data/editorial';
+import { TRUST_PAGES, organizationSchema, SITE } from '../data/editorial';
+import { releases, isReleased } from '../data/examCatalog/release-manifest.mjs';
+import { nationalBySlug, nationalStats } from '../data/examCatalog/national-research/index.mjs';
+import depthBySlug from '../data/examCatalog/depth/index.mjs';
+import { buildDirectory } from '../data/examCatalog/index.mjs';
+
+// ── Every figure on this page is derived from the research corpus itself ──
+// A methodology page that states "477 guides" in prose goes stale the day the
+// 478th ships, and a stale self-description is exactly what erodes trust in
+// the rest of it. So the corpus statistics below are computed at build time
+// from the same records and depth files the guides render from. The few
+// figures that are expensive to compute (word counts, pairwise similarity) are
+// labelled as dated measurements in §8.3 instead.
+
+const VERSION = '2.0';
+const VERSION_DATE = '2026-10-11';
+
+const pubSlugs = Object.keys(releases).filter(
+  (s) => isReleased(s) && nationalBySlug[s] && depthBySlug[s]
+);
+const records = pubSlugs.map((s) => nationalBySlug[s]);
+const depths = pubSlugs.map((s) => depthBySlug[s]);
+const N = pubSlugs.length;
+
+const corpusExams = nationalStats.exams;
+const corpusBodies = nationalStats.programs;
+const pubBodies = new Set(records.map((r) => r.body)).size;
+const pubFields = buildDirectory().length;
+
+const conf = { high: 0, medium: 0, low: 0 };
+for (const r of records) if (r.confidence in conf) conf[r.confidence]++;
+const pct = (n: number) => `${Math.round((n / N) * 100)}%`;
+
+const faqTotal = records.reduce((a, r) => a + (r.faqs?.length || 0), 0);
+const weightedPages = records.filter((r) => (r.topics || []).some((t: any) => t.weight)).length;
+const recordSourceUrls = records.filter((r) => r.sourceUrl).length;
+
+const SECTIONS: [string, string][] = [
+  ['salaryOutlook', 'Career outlook & wages'],
+  ['passRate', 'Pass rates'],
+  ['studyPlan', 'Week-by-week study plan'],
+  ['prepStrategies', 'Preparation strategies'],
+  ['resourceComparison', 'Study-resource comparison'],
+  ['commonMistakes', 'Common mistakes'],
+  ['questionTypes', 'Question types & worked samples'],
+  ['examDay', 'Exam-day guide'],
+];
+const sectionCoverage = SECTIONS.map(([k, label]) => ({
+  label,
+  n: depths.filter((d) => {
+    const v = d[k];
+    if (!v) return false;
+    if (k === 'studyPlan') return !!v.weeks?.length;
+    if (k === 'prepStrategies' || k === 'commonMistakes') return !!v.items?.length;
+    if (k === 'resourceComparison') return !!v.rows?.length;
+    if (k === 'questionTypes') return !!(v.types?.length || v.samples?.length);
+    return true;
+  }).length,
+}));
+const allEight = depths.filter((d) => sectionCoverage.length && SECTIONS.every(([k]) => d[k])).length;
+
+const sampleItems = depths.reduce((a, d) => a + (d.questionTypes?.samples?.length || 0), 0);
+const mistakeItems = depths.reduce((a, d) => a + (d.commonMistakes?.items?.length || 0), 0);
+const strategyItems = depths.reduce((a, d) => a + (d.prepStrategies?.items?.length || 0), 0);
+const planWeeks = depths.reduce((a, d) => a + (d.studyPlan?.weeks?.length || 0), 0);
+const blsPages = depths.filter((d) => /bls\.gov|Bureau of Labor Statistics/.test(JSON.stringify(d.salaryOutlook || {}))).length;
+// A pass-rate section "reports a figure" when its headline carries a percentage.
+// Everything else explains why no official rate exists (and what the cut score is).
+const passRateFigure = depths.filter((d) => /\d+(\.\d+)?\s*(%|percent)/i.test(d.passRate?.headline || '')).length;
+const passRateNone = depths.filter((d) => d.passRate).length - passRateFigure;
+
+// Source domains cited anywhere in a published guide's research record or depth layer.
+const URL_RE = /https?:\/\/[^"'\s)\\<>]+/g;
+const domainCount: Record<string, number> = {};
+const urlSet = new Set<string>();
+for (let i = 0; i < N; i++) {
+  const blob = JSON.stringify(records[i]) + JSON.stringify(depths[i]);
+  const seen = new Set<string>();
+  for (const m of blob.matchAll(URL_RE)) {
+    const u = m[0].replace(/[.,;]+$/, '');
+    urlSet.add(u);
+    try {
+      const h = new URL(u).hostname.replace(/^www\./, '');
+      if (h.endsWith('testpreppilot.com')) continue;
+      seen.add(h);
+    } catch {}
+  }
+  for (const h of seen) domainCount[h] = (domainCount[h] || 0) + 1;
+}
+const domainsRanked = Object.entries(domainCount).sort((a, b) => b[1] - a[1]);
+const sourceKind = (h: string) =>
+  h === 'bls.gov'
+    ? 'Federal labor statistics'
+    : /\.gov$|\.mil$|\.us$/.test(h)
+      ? 'Government regulator'
+      : 'Awarding body / exam sponsor';
+const govDomains = domainsRanked.filter(([h]) => /\.gov$|\.mil$|\.us$/.test(h)).length;
+const topDomains = domainsRanked.slice(0, 15);
+
+const reviewedMonths = [...new Set(depths.map((d) => d.lastReviewed).filter(Boolean))].sort();
+const fmt = (n: number) => n.toLocaleString('en-US');
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
-  { label: 'Methodology', href: TRUST_PAGES.methodology }
+  { label: 'Methodology', href: TRUST_PAGES.methodology },
+];
+
+const title = 'Research Methodology — How TestPrepPilot Exam Guides Are Built';
+const description = `How ${fmt(N)} U.S. exam guides were researched from ${fmt(corpusBodies)} awarding bodies: AI-assisted source collection, a primary-source hierarchy, confidence grading, automated validation and known limitations.`;
+
+const schema = [
+  organizationSchema(),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    '@id': `${SITE}/methodology#article`,
+    headline: 'Research methodology for the TestPrepPilot exam-guide corpus',
+    alternativeHeadline: title,
+    description,
+    version: VERSION,
+    datePublished: VERSION_DATE,
+    dateModified: VERSION_DATE,
+    inLanguage: 'en-US',
+    url: `${SITE}/methodology`,
+    author: { '@id': `${SITE}/#editorial-board` },
+    publisher: { '@id': `${SITE}/#organization` },
+    about: ['Professional certification', 'Licensure examinations', 'Research methodology'],
+    citation: [
+      'https://www.bls.gov/ooh/',
+      'https://www.bls.gov/oes/',
+      'https://www.bls.gov/soc/',
+      'https://www.ecfr.gov/',
+      'https://www.iso.org/standard/52993.html',
+    ],
+  },
 ];
 ---
 
-<BaseLayout
-  title="Research Whitepaper — How the TestPrepPilot Editorial Board Verifies Every Requirement"
-  description="The TestPrepPilot Editorial Board's published research standard: how every license and certification guide is investigated, verified and maintained from primary sources, with our review protocol and last-reviewed dates."
->
+<BaseLayout title={title} description={description} schema={schema} ogType="article" dateModified={VERSION_DATE}>
   <div class="container">
     <BreadcrumbNav items={breadcrumbItems} />
 
-    <header class="page-hero">
-      <p class="eyebrow">EDITORIAL BOARD RESEARCH WHITEPAPER</p>
-      <h1>We show our work, <em>source by source.</em></h1>
-      <p class="lede">
-        This is the TestPrepPilot Editorial Board's published research standard — the
-        investigation protocol every guide is built from. Every requirement, fee and
-        deadline on this site is traced back to a primary regulatory document; this page
-        explains exactly how a guide is investigated, how it is checked, and what happens
-        when a rule changes.
+    <header class="paper-head">
+      <p class="eyebrow">Methodology · Version {VERSION} · {VERSION_DATE}</p>
+      <h1>How we research U.S. certification and licensing exams</h1>
+      <p class="byline">
+        TestPrepPilot Editorial Board · Applies to all {fmt(N)} published exam guides ·
+        <a href="#cite">Cite this page</a>
       </p>
-    </header>
 
-    <main class="prose">
-      <section>
-        <h2>The one rule that governs everything</h2>
+      <section class="abstract" aria-labelledby="abstract-h">
+        <h2 id="abstract-h">Abstract</h2>
         <p>
-          We cite primary sources. A "primary source" is the body that actually makes or
-          enforces the rule: a state licensing board, a federal agency, an exam vendor's
-          own candidate handbook, or the statute behind a credential. We read those
-          documents directly. We do <strong>not</strong> build pages by paraphrasing other
-          blogs, and we do not let a prep-course company tell us what the requirements are.
-        </p>
-        <p>
-          Where a figure cannot be confirmed from a primary source, we say so. You will see
-          confidence labels on our pages ("verified", "confirm with the board") rather than
-          a false sense of certainty.
+          Information about smaller U.S. certification exams is spread across candidate handbooks,
+          fee schedules, exam blueprints, federal regulations, labor statistics and scattered
+          vendor pages. Most of it has never been gathered into one place. We built a research
+          pipeline that pairs frontier large language models (with live web search and page retrieval) with fixed
+          research briefs, a ranked list of trusted sources, required fields per guide and automated
+          validation. With it we cataloged <strong>{fmt(corpusExams)} exams from
+          {fmt(corpusBodies)} awarding bodies</strong>. Of those, <strong>{fmt(N)} guides from
+          {fmt(pubBodies)} bodies across {pubFields} career fields</strong> met our publication
+          bar so far. Every published guide gives a confidence grade for its figures:
+          {pct(conf.high)} high, {pct(conf.medium)} medium, {pct(conf.low)} low. This document
+          explains how the guides are made, what each kind of figure means, how we
+          check them, where the method fails and how errors are corrected. It is written so
+          a reader can decide how much to rely on any given number.
         </p>
       </section>
 
-      <section>
-        <h2>The investigation protocol</h2>
+      <div class="keyfigs" role="list">
+        <div role="listitem"><span class="kf-n">{fmt(corpusExams)}</span><span class="kf-l">exams cataloged and researched</span></div>
+        <div role="listitem"><span class="kf-n">{fmt(N)}</span><span class="kf-l">guides that passed the publication gate</span></div>
+        <div role="listitem"><span class="kf-n">{fmt(domainsRanked.length)}</span><span class="kf-l">distinct source domains cited in published guides</span></div>
+        <div role="listitem"><span class="kf-n">{fmt(faqTotal)}</span><span class="kf-l">candidate questions answered in guide FAQs</span></div>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Contents">
+      <p class="toc-h">Contents</p>
+      <ol>
+        <li><a href="#s1">The problem this corpus addresses</a></li>
+        <li><a href="#s2">Scope and the publication gate</a></li>
+        <li><a href="#s3">The research pipeline</a></li>
+        <li><a href="#s4">Source hierarchy</a></li>
+        <li><a href="#s5">How each kind of figure is defined</a></li>
+        <li><a href="#s6">Confidence grading</a></li>
+        <li><a href="#s7">Automated validation</a></li>
+        <li><a href="#s8">Results: what the corpus contains</a></li>
+        <li><a href="#s9">The role of AI, and the role of people</a></li>
+        <li><a href="#s10">Limitations and known failure modes</a></li>
+        <li><a href="#s11">Maintenance, corrections and change log</a></li>
+        <li><a href="#s12">Independence and funding</a></li>
+        <li><a href="#s13">How to use a guide: a five-minute verification checklist</a></li>
+        <li><a href="#refs">References</a> · <a href="#cite">Citation</a></li>
+      </ol>
+    </nav>
+
+    <main class="paper">
+      <!-- 1 -->
+      <section id="s1">
+        <h2><span class="sn">1</span> The problem this corpus addresses</h2>
         <p>
-          Each credential page moves through the same investigative pipeline, owned end to end
-          by the Editorial Board. Nothing is published until it has cleared every step.
+          A candidate for a well-known exam such as the CPA, the NCLEX or the PMP can find good
+          guidance easily. A candidate for a phlebotomy credential, an ASE truck-systems test, a
+          Praxis subject assessment or a USPS entrance exam usually cannot. The facts they need
+          do exist. They are published by the awarding body, but spread across documents that
+          were never meant to be read together:
         </p>
-        <ol class="pipeline">
-          <li>
-            <span class="step-num">1</span>
-            <div>
-              <h4>Scope the credential</h4>
-              <p>
-                Identify the exact issuing authority and jurisdiction — a state board, a
-                federal agency, or a private certifying body — and the precise name and
-                abbreviation of the credential.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span class="step-num">2</span>
-            <div>
-              <h4>Read the primary sources</h4>
-              <p>
-                Pull the statute, administrative code, candidate handbook and fee schedule.
-                For state credentials we read the board's own site; for national credentials
-                we read the awarding body's published materials.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span class="step-num">3</span>
-            <div>
-              <h4>Extract the facts that matter</h4>
-              <p>
-                Eligibility, education hours, exam format, question counts, pass marks, fees,
-                timelines and renewal rules — each captured with its source attached.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span class="step-num">4</span>
-            <div>
-              <h4>Structure into a roadmap</h4>
-              <p>
-                Turn the legalese into a plain-English, sequential path: what to do, in what
-                order, and what it costs — so a first-time candidate can act on it.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span class="step-num">5</span>
-            <div>
-              <h4>Expert review</h4>
-              <p>
-                Before publication, the draft is checked by a licensed professional in that
-                field where one is available. See our
-                <a href={TRUST_PAGES.reviewers}>Review Network</a>.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span class="step-num">6</span>
-            <div>
-              <h4>Publish with a "last reviewed" date</h4>
-              <p>
-                Every substantive page carries the month it was last verified against its
-                sources, so you can see how fresh the information is.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span class="step-num">7</span>
-            <div>
-              <h4>Monitor for change</h4>
-              <p>
-                Boards revise fees and rules constantly. We re-check high-traffic pages on a
-                rolling schedule and update the "last reviewed" stamp when we do.
-              </p>
-            </div>
-          </li>
+        <ul>
+          <li>a <em>candidate handbook</em> (eligibility, identification, retake and refund rules), often a PDF revised once a year;</li>
+          <li>an <em>exam content outline</em> or blueprint (domains and their weights), sometimes in a separate PDF named by revision code;</li>
+          <li>a <em>fee schedule</em>, often on a registration portal and often split into member and non-member prices;</li>
+          <li>the <em>test-delivery vendor's</em> rules (Pearson VUE, Prometric, PSI and others) for check-in, online proctoring and rescheduling;</li>
+          <li>for regulated occupations, a <em>federal or state rule</em> (for example the Code of Federal Regulations for FAA, EPA and OSHA-linked credentials);</li>
+          <li>and, for the question "is it worth it?", <em>labor-market statistics</em> that are organized by occupation, not by certificate.</li>
+        </ul>
+        <p>
+          Putting these together by hand is slow, and it is too slow to do across thousands of
+          small exams. That is why most of them have no independent guide at all, or only a prep
+          vendor's sales page. This corpus uses AI to cover that long tail. Because AI is involved,
+          the method has to show its safeguards openly, which is why this document exists.
+        </p>
+      </section>
+
+      <!-- 2 -->
+      <section id="s2">
+        <h2><span class="sn">2</span> Scope and the publication gate</h2>
+        <h3>2.1 What is in scope</h3>
+        <p>
+          The corpus covers <strong>national-scope</strong> U.S. exams. These are credentials
+          awarded by a certifying body, exam sponsor or federal agency that apply across the
+          country. Examples include IT vendor certifications, allied-health certifications,
+          Advanced Placement and CLEP exams, Praxis assessments, FAA and FCC licenses, and
+          the NCCER and ASE trade credentials. State-specific licensing rules (for example a
+          particular state's real-estate pre-licensing hours) are out of scope for these
+          guides. Where a national exam feeds into a state license, the guide says so
+          and points to the state board.
+        </p>
+        <h3>2.2 Catalog construction</h3>
+        <p>
+          We first built a catalog of exams and awarding bodies, organized by career field.
+          Each exam got a permanent identifier (its URL slug), an official name, common
+          abbreviations and alternate names (so "CPhT" and "PTCB exam" lead to the same guide), the
+          awarding body, and that body's official website. The catalog currently holds
+          <strong>{fmt(corpusExams)} exams</strong> attributed to
+          <strong>{fmt(corpusBodies)} awarding bodies</strong>.
+        </p>
+        <h3>2.3 The publication gate</h3>
+        <p>
+          A researched exam is not automatically a published guide. A guide is published only
+          when all of the following are true:
+        </p>
+        <ol>
+          <li>its core research record exists and passes the schema validator (§7.1) with zero errors;</li>
+          <li>its eight-section depth layer (§3.4) has been written to the depth rules;</li>
+          <li>it passes the build-time checks in §7. A guide over the duplicate-content threshold is rewritten, or listed as a known exception in §8.3;</li>
+          <li>and it has been scheduled for release in the release manifest.</li>
+        </ol>
+        <p>
+          At this version, <strong>{fmt(N)} of {fmt(corpusExams)}</strong> researched exams
+          ({((N / corpusExams) * 100).toFixed(1)}%) have cleared the gate. The rest
+          stay unpublished. We would rather publish nothing for an exam than publish a thin page
+          made from a template.
+        </p>
+      </section>
+
+      <!-- 3 -->
+      <section id="s3">
+        <h2><span class="sn">3</span> The research pipeline</h2>
+        <p>
+          Each guide goes through the same seven stages. Stages 3–4 are carried out by AI research
+          agents. Stages 1–2 and 5–7 are fixed rules and code written by our editors, applied the
+          same way to every exam.
+        </p>
+
+        <figure class="pipeline-fig">
+          <ol class="pipeline">
+            <li><span class="pn">1</span><div><strong>Catalog</strong><span>Exam, awarding body, official site, aliases</span></div></li>
+            <li><span class="pn">2</span><div><strong>Brief &amp; schema</strong><span>Fixed instructions + required fields</span></div></li>
+            <li><span class="pn">3</span><div><strong>Body dossier</strong><span>One per awarding body: registration, proctoring, retakes, renewal</span></div></li>
+            <li><span class="pn">4</span><div><strong>Exam research</strong><span>Core record + eight-section depth layer</span></div></li>
+            <li><span class="pn">5</span><div><strong>Validation</strong><span>Schema, depth, duplication, consistency</span></div></li>
+            <li><span class="pn">6</span><div><strong>Assembly</strong><span>Rendered guide, structured data, dataset row</span></div></li>
+            <li><span class="pn">7</span><div><strong>Release &amp; maintenance</strong><span>Scheduled release, corrections, re-verification</span></div></li>
+          </ol>
+          <figcaption>Figure 1. Research pipeline. Every published guide passes every stage. A failure at stage 5 sends the record back to stage 4.</figcaption>
+        </figure>
+
+        <h3>3.1 Research briefs</h3>
+        <p>
+          AI agents do not get an open-ended prompt. Each one receives the same written brief.
+          It sets the quality bar (for example: a description of at least 180 characters, four to
+          six FAQs with answers of two to four sentences, a timeline and a full cost breakdown).
+          It also sets the source preference (§4) and the rules against making things up. Among
+          those rules:
+        </p>
+        <blockquote>
+          If a fee, weight, pass mark or salary cannot be confirmed from a real source, omit the
+          field and lower the confidence grade. Never invent an exam code or a domain weight.
+        </blockquote>
+        <p>
+          The brief also covers exams that have been withdrawn. A retired exam is labelled
+          retired in its first sentence, with the retirement date and a pointer to its
+          replacement. It is not described as if it were still offered.
+        </p>
+
+        <h3>3.2 Work in small chunks</h3>
+        <p>
+          The catalog is split into chunks of about 30 exams, and one research agent handles one
+          chunk. Agents write records in small batches and check that each batch loads before
+          they continue. This matters: long single writes by language models tend to get cut off
+          partway or break their own quoting, and errors like that end up in published pages if
+          nobody checks. Chunks are independent, so any chunk can be redone without
+          affecting the rest of the corpus.
+        </p>
+
+        <h3>3.3 The awarding-body dossier</h3>
+        <p>
+          Many facts belong to the awarding body, not to a single exam: how to register, how
+          proctoring works, retake waiting periods, how scores are reported, renewal cycles and
+          continuing-education rules. These are researched once per body and shared by all of
+          its exams. Each fact is then maintained in one place, so two guides for the same
+          body cannot disagree about it.
+        </p>
+        <p class="note">
+          Sharing has a known risk. If body-level text is accidentally written about one
+          specific exam, the error spreads to every exam from that body. §11 records a real case
+          of this.
+        </p>
+
+        <h3>3.4 The exam record and its depth layer</h3>
+        <p>
+          The <em>core record</em> holds the facts: format, question count, time limit, pass
+          mark, fee, content domains (with official weights where published), eligibility, a
+          step-by-step roadmap, a staged timeline, an itemised cost breakdown and FAQs. The
+          <em>depth layer</em> adds eight practical sections that candidates actually look for.
+          Each section has its own evidence rules:
+        </p>
+        <div class="tbl">
+          <table>
+            <caption>Table 1. Depth-layer sections and their evidence rules, with coverage across the {fmt(N)} published guides.</caption>
+            <thead><tr><th>Section</th><th>Evidence rule</th><th class="num">Guides</th></tr></thead>
+            <tbody>
+              {sectionCoverage.map((s) => (
+                <tr>
+                  <td>{s.label}</td>
+                  <td>{
+                    s.label.startsWith('Career') ? 'BLS occupational series named by SOC code; otherwise a named survey; otherwise omitted' :
+                    s.label.startsWith('Pass') ? 'Only rates published by the awarding body; if none exists, the guide says so' :
+                    s.label.startsWith('Week') ? 'Built in proportion to the official domain weights; total hours stated as a range with assumptions' :
+                    s.label.startsWith('Preparation') ? 'Advice specific to this exam; generic advice that would apply to a sibling exam counts as a defect' :
+                    s.label.startsWith('Study-resource') ? 'Prices with the month they were checked; never ranked by commission' :
+                    s.label.startsWith('Common') ? 'Each mistake paired with a concrete fix' :
+                    s.label.startsWith('Question') ? 'Original items written to the published blueprint; never live exam content' :
+                    'Delivery-vendor and body rules: ID, prohibited items, check-in timing, score release'
+                  }</td>
+                  <td class="num">{fmt(s.n)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Two rules apply to every section. First, <strong>every number in a data row needs a
+          note or a source</strong>. Second, <strong>each section needs at least about 250 words of
+          narrative specific to that exam</strong>. A paragraph that would read the same on a
+          sibling exam's page counts as a defect, not as filler that happens to be allowed.
+          {fmt(allEight)} of {fmt(N)} guides carry all eight sections. The exceptions are retired exams.
+          For those, a study plan or exam-day guide would send candidates toward a test they
+          can no longer book.
+        </p>
+      </section>
+
+      <!-- 4 -->
+      <section id="s4">
+        <h2><span class="sn">4</span> Source hierarchy</h2>
+        <p>
+          When two sources disagree, the higher-ranked one wins. The guide records which
+          kind of source a figure came from through its confidence grade (§6).
+        </p>
+        <div class="tbl">
+          <table>
+            <caption>Table 2. Source tiers, in order of precedence.</caption>
+            <thead><tr><th>Tier</th><th>Source</th><th>Used for</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>The awarding body's own publications: candidate handbook, exam content outline, fee schedule, policy pages</td><td>Eligibility, format, pass mark, fees, domain weights, retake and renewal rules, published pass rates</td></tr>
+              <tr><td>2</td><td>Government regulators and the rules they enforce (e.g. eCFR, FAA, OSHA, EPA, FCC, FEMA)</td><td>Credentials that exist because a regulation requires them; legal eligibility requirements</td></tr>
+              <tr><td>3</td><td>Official statistics: U.S. Bureau of Labor Statistics Occupational Outlook Handbook and OEWS wage series</td><td>Wages, employment and projected growth, always for the <em>occupation</em> named by SOC code</td></tr>
+              <tr><td>4</td><td>Test-delivery vendors' published candidate rules</td><td>Check-in, identification, online-proctoring and rescheduling rules</td></tr>
+              <tr><td>5</td><td>Reconciliation across several secondary sources</td><td>Only when tiers 1–4 are silent. Any such figure is graded medium or low, never high</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          <strong>Excluded as sources of fact:</strong> prep-course marketing claims (pass
+          guarantees, "average salary of certified professionals"), job-board salary aggregates,
+          and unsourced forum posts. These may be useful as background, but they are never the
+          basis for a figure printed as fact.
+        </p>
+        <h3>4.1 Where the citations actually point</h3>
+        <p>
+          The {fmt(N)} published guides cite <strong>{fmt(domainsRanked.length)} distinct
+          domains</strong> ({fmt(urlSet.size)} distinct URLs), including {govDomains} government
+          domains. The table lists the most-cited ones. It shows how heavily the corpus
+          relies on awarding bodies' own pages and on BLS.
+        </p>
+        <div class="tbl">
+          <table>
+            <caption>Table 3. The {topDomains.length} most-cited source domains, by number of published guides citing each (computed at build time).</caption>
+            <thead><tr><th>Domain</th><th>Source type</th><th class="num">Guides citing</th></tr></thead>
+            <tbody>
+              {topDomains.map(([h, n]) => (
+                <tr><td><code>{h}</code></td><td>{sourceKind(h)}</td><td class="num">{fmt(n)}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="note">
+          Not every figure has its own link. Inside a guide, the "Sources" section links the
+          awarding body's exam page and program page. The wage and pass-rate sections each
+          name their own source. {fmt(recordSourceUrls)} of {fmt(N)} core records also store the
+          single most specific official page the research was checked against (often the
+          content-outline PDF). The rest name the body's site instead, and the field is left empty
+          rather than filled with a guess (see §10).
+        </p>
+      </section>
+
+      <!-- 5 -->
+      <section id="s5">
+        <h2><span class="sn">5</span> How each kind of figure is defined</h2>
+        <p>
+          Many mistakes in exam guides come from mixing up two similar figures, such as a
+          percentage score and a scaled score, or an occupation's wage and a certificate's
+          value. These are the definitions every guide follows.
+        </p>
+        <dl class="defs">
+          <dt>Exam fee</dt>
+          <dd>The registration or exam fee the awarding body publishes for a U.S. candidate. Where the body publishes
+            member and non-member prices, both are shown. Taxes, optional training, application
+            fees and retakes are listed separately in the cost breakdown, never folded into
+            the exam fee.</dd>
+
+          <dt>All-in cost</dt>
+          <dd>A range that adds the realistic extra costs to the exam fee: application fees,
+            official prep materials, and the retake fee as a risk item. It is an
+            estimate and is labelled as one.</dd>
+
+          <dt>Pass mark</dt>
+          <dd>Shown exactly as the body publishes it. A scaled score is never converted into a
+            percentage. For example, 750 on a 100–900 scale does <em>not</em> mean 83% of
+            questions correct, and guides explain this where it matters. When a body uses a
+            criterion-referenced cut score it does not disclose, the guide says so.</dd>
+
+          <dt>Domain weights</dt>
+          <dd>Printed only when the official content outline publishes them
+            ({fmt(weightedPages)} of {fmt(N)} guides). Otherwise domains are listed without
+            weights. A plausible-looking percentage would mislead study planning, so we
+            do not estimate one.</dd>
+
+          <dt>Pass rate</dt>
+          <dd>Reported only when the awarding body (or, for AP-style exams, the sponsor's score
+            distribution) publishes it, with the cohort and year. {fmt(passRateFigure)} guides report
+            a published figure. In the other {fmt(passRateNone)}, the body publishes no rate. Those
+            guides say so plainly and explain the passing standard instead of repeating
+            unofficial estimates.</dd>
+
+          <dt>Wages</dt>
+          <dd>No government series tracks the earnings of a <em>certificate</em>. Wage figures
+            are the BLS median for the <em>occupation</em> the credential leads to, named by SOC
+            code, with the reference year. This applies to {fmt(blsPages)} guides. The guide states
+            that the figure describes the occupation, not the credential. Where no occupation
+            fits, the wage section uses a named survey or explains why it gives no figure.</dd>
+
+          <dt>Study time</dt>
+          <dd>A range with its assumptions (prior experience, hours per week). Few bodies
+            publish study time, so this is usually a reasoned estimate built from the blueprint's
+            scope and is graded accordingly.</dd>
+
+          <dt>Sample questions</dt>
+          <dd>{fmt(sampleItems)} worked items across the corpus. All are <strong>original
+            illustrations written to the published blueprint</strong>, each with an explanation of
+            why the right answer is right and why the tempting wrong answer is wrong. None is a live
+            or recalled exam item. Reproducing live items would breach exam security and
+            candidate agreements.</dd>
+
+          <dt>Last reviewed</dt>
+          <dd>The month the guide's figures were last checked against their sources. It is not
+            the month the page was last rebuilt or redesigned, and it is only moved when the
+            figures are actually re-checked. The current corpus snapshot is
+            {reviewedMonths.join(', ')}.</dd>
+        </dl>
+      </section>
+
+      <!-- 6 -->
+      <section id="s6">
+        <h2><span class="sn">6</span> Confidence grading</h2>
+        <p>
+          Some figures on a guide are better supported than others, and readers should be
+          able to tell which. Each guide therefore carries one of three grades, shown in its
+          "Sources" section and in the public <a href="/data/">dataset</a>.
+        </p>
+        <div class="tbl">
+          <table>
+            <caption>Table 4. Confidence grades and their distribution across published guides.</caption>
+            <thead><tr><th>Grade</th><th>Meaning</th><th>What you should do</th><th class="num">Guides</th></tr></thead>
+            <tbody>
+              <tr><td><span class="g g-hi">High</span></td><td>The key figures are published by the awarding body itself and were confirmed against that publication.</td><td>Use the figures for planning, and confirm the fee at checkout.</td><td class="num">{fmt(conf.high)} <span class="muted">({pct(conf.high)})</span></td></tr>
+              <tr><td><span class="g g-md">Medium</span></td><td>The figures were combined from several sources, or vary by membership status, delivery channel or state. These guides also show a "confirm before you book" badge.</td><td>Treat fees and timelines as close but not exact. Confirm on the official page.</td><td class="num">{fmt(conf.medium)} <span class="muted">({pct(conf.medium)})</span></td></tr>
+              <tr><td><span class="g g-lo">Low</span></td><td>At least one important figure is an estimate based on the exam's structure, because the body does not publish it or it could not be confirmed.</td><td>Use the guide for orientation and preparation. Do not quote its numbers as exact, and check every figure with the body.</td><td class="num">{fmt(conf.low)} <span class="muted">({pct(conf.low)})</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          A large share of guides are graded low, and this is a finding in its own right rather
+          than something to hide. Many smaller certifying bodies publish less than the
+          large ones: no pass rates, no domain weights, and sometimes no fee until you have
+          opened an account. The low grade flags the gap so it is not covered over with an
+          invented figure. Grades go up only when a re-check finds a publication that
+          supports the figure.
+        </p>
+      </section>
+
+      <!-- 7 -->
+      <section id="s7">
+        <h2><span class="sn">7</span> Automated validation</h2>
+        <p>
+          Every check below is code that runs on the whole corpus, not on a sample. A
+          failure blocks publication, or for warnings, adds the guide to a fix list.
+        </p>
+        <h3>7.1 Schema validator (research records)</h3>
+        <ul>
+          <li><strong>Errors (block publication):</strong> a duplicate exam record or body dossier; a slug that does not match the catalog (the guide would never render); a missing tagline, quick-answer summary or exam-facts block; a description under 180 characters; fewer than three FAQs; a body dossier with no retake policy, an "about" text under 60 characters or fewer than three registration steps; a source URL that is not a full address.</li>
+          <li><strong>Warnings (fix list):</strong> an exam whose awarding body has no dossier; a thin quick-answer summary; fewer than three advantages, four roadmap steps or four exam essentials; one-line FAQ answers; fewer than three summary points.</li>
+        </ul>
+        <h3>7.2 Answer-first content audit (built pages)</h3>
+        <p>
+          Every built page listed in the sitemap is checked against our content rules.
+          Each H2 asks one question. The first sentence of each section answers it directly,
+          leading with the figures. Concrete numbers are used instead of adjectives, and a list
+          of promotional words ("world-class", "game-changer" …) is flagged. Comparison tables
+          must contain real data. The FAQ structured data must match the visible FAQ text
+          word for word, so search engines and readers see the same answers.
+        </p>
+        <h3>7.3 Duplicate-content check</h3>
+        <p>
+          Exams from the same body share a lot of facts, so there is a real risk that sibling
+          guides become near-copies. We measure overlap as the Jaccard similarity of six-word
+          shingles<sup><a href="#r6">[6]</a></sup> across the rendered body text of every pair
+          of guides. A pair at <strong>0.70 or above</strong> is treated as a defect. When a pair
+          crossed that line during production, the later guide was normally rewritten from a
+          different angle, and the exceptions are listed in §8.3. One example is two Praxis assessments for elementary and high-school
+          teachers, which were rewritten from 0.80 down to 0.29 by refocusing the second on the
+          high-school classroom.
+        </p>
+        <h3>7.4 Build-integrity checks</h3>
+        <ul>
+          <li>Nothing unpublished may appear in the sitemap, the public dataset or the <code>llms.txt</code> index.</li>
+          <li>A page's published date in the sitemap, its structured data and the release manifest must agree.</li>
+          <li>Every URL that our machine-readable files point to must resolve in the build.</li>
+          <li>No page may carry a "date modified" that it cannot back with a real content change. When such dates were found, they were removed (see §11).</li>
+        </ul>
+      </section>
+
+      <!-- 8 -->
+      <section id="s8">
+        <h2><span class="sn">8</span> Results: what the corpus contains</h2>
+        <h3>8.1 Coverage</h3>
+        <p>
+          {fmt(N)} published guides cover {fmt(pubBodies)} awarding bodies across {pubFields} career
+          fields. Together they answer {fmt(faqTotal)} FAQ questions, explain
+          {fmt(mistakeItems)} common mistakes, each with a fix, give {fmt(strategyItems)} exam-specific
+          preparation strategies, set out {fmt(planWeeks)} week-blocks of study plans, and work
+          through {fmt(sampleItems)} original sample questions.
+        </p>
+        <h3>8.2 Evidence profile</h3>
+        <ul>
+          <li>Confidence: {fmt(conf.high)} high · {fmt(conf.medium)} medium · {fmt(conf.low)} low (§6).</li>
+          <li>Official domain weights published and printed: {fmt(weightedPages)} guides.</li>
+          <li>Published pass rate or score distribution reported: {fmt(passRateFigure)} guides; "no official rate" stated explicitly: {fmt(passRateNone)}.</li>
+          <li>Wage section tied to a BLS occupational series: {fmt(blsPages)} guides.</li>
+          <li>Distinct source domains cited: {fmt(domainsRanked.length)}, of which {govDomains} are government domains.</li>
+        </ul>
+        <h3>8.3 Dated measurements</h3>
+        <p>These two figures are expensive to compute, so they were measured once on the built site on 2026-10-11:</p>
+        <ul>
+          <li><strong>Length.</strong> Rendered guide body text runs from 3,228 to 11,282 words (median 5,491). The corpus totals about 2.56 million words.</li>
+          <li><strong>Uniqueness.</strong> For each guide we found its most similar other guide. The median similarity to that nearest guide is 0.225 (90th percentile 0.439). This includes the navigation and labels every guide shares. Three guides are at 0.70 or above: the USPS 474, 475 and 476 Virtual Entry Assessments. These are three versions of one hiring assessment, with genuinely near-identical rules, so they are listed here as a known exception rather than hidden.</li>
+        </ul>
+      </section>
+
+      <!-- 9 -->
+      <section id="s9">
+        <h2><span class="sn">9</span> The role of AI, and the role of people</h2>
+        <p>
+          The research on this site was done with AI, and we say so on this page.
+          Search engines and readers are entitled to know how content was made. Leaving it
+          out would also undermine everything else this document claims.
+        </p>
+        <h3>9.1 What the models did</h3>
+        <p>
+          Research agents built on frontier large language models, with live web search and the
+          ability to open and read pages and PDFs, carried out stages 3 and 4. They found the
+          relevant handbooks, outlines and fee pages for each exam, pulled out the facts, reconciled
+          conflicts using the source hierarchy, assigned a confidence grade and wrote the guide
+          text. Doing this across {fmt(corpusExams)} exams cost several thousand U.S. dollars
+          in model compute. We consistently used the most capable models
+          available at the time and did not cut costs with smaller ones.
+        </p>
+        <h3>9.2 What people did</h3>
+        <p>
+          The editors designed the system the models worked inside. They wrote the
+          research briefs and field schemas, the source hierarchy, the figure definitions in §5,
+          the validators in §7 and the publication gate in §2.3. They chose which exams to publish
+          and when. They investigate every validator failure and every reader
+          report, and they make and record corrections (§11).
+        </p>
+        <h3>9.3 What has not happened yet</h3>
+        <p>
+          At this version, <strong>no guide has been signed off by an outside licensed or certified
+          professional in its field</strong>. Every guide is credited to the TestPrepPilot
+          Editorial Board, not to a named expert. We are recruiting practitioners
+          through our <a href={TRUST_PAGES.reviewers}>review network</a>. When a practitioner
+          reviews a guide, they will be named on that guide with a way to verify
+          their credential. We will not show a reviewer who does not exist.
+        </p>
+      </section>
+
+      <!-- 10 -->
+      <section id="s10">
+        <h2><span class="sn">10</span> Limitations and known failure modes</h2>
+        <ol class="limits">
+          <li><strong>Model error is reduced, not eliminated.</strong> Language models can state
+            a wrong figure with confidence. The source hierarchy, required fields, confidence
+            grading and validators catch structural errors well. They are weaker at catching a
+            single wrong number that is formatted correctly. This is why §13 asks you to
+            confirm fees and dates at the source.</li>
+          <li><strong>A snapshot in time.</strong> Figures reflect what the sources said at the
+            "last reviewed" month. Exam sponsors revise fees, retire exams and publish new
+            blueprints all the time, and IT vendors do so most often.</li>
+          <li><strong>Uneven source citation.</strong> Every guide links its awarding body.
+            Only {fmt(recordSourceUrls)} of {fmt(N)} core records store the exact page
+            (rather than the site) that was checked. We are adding these during re-checks
+            instead of adding them in bulk without checking.</li>
+          <li><strong>Errors in shared text.</strong> Facts kept at body level (§3.3) mean one
+            error can appear on every guide from that body. Code that builds summary sentences
+            from data can also say something the data does not support. §11 records both kinds.</li>
+          <li><strong>Things we cannot know.</strong> We have not sat these exams, and we have no
+            access to unpublished pass rates or item banks. Exam-day and difficulty guidance comes
+            from published rules and the blueprint, not from first-hand experience of the test.</li>
+          <li><strong>State variation.</strong> Where a national exam leads to a state license,
+            state requirements can add hours, fees or background checks that the national guide
+            does not list.</li>
+          <li><strong>Wages are not a promise.</strong> Occupational medians describe the job,
+            not what a certificate will earn you, and vary a great deal by region, experience and
+            security clearance.</li>
         </ol>
       </section>
 
-      <section>
-        <h2>How we verify — and what "last reviewed" means</h2>
+      <!-- 11 -->
+      <section id="s11">
+        <h2><span class="sn">11</span> Maintenance, corrections and change log</h2>
         <p>
-          Each page shows a <strong>last reviewed</strong> date. That date is the month we
-          last confirmed the page's figures against its primary sources — not the date the
-          page was first written. When we re-verify, we update the stamp.
+          A guide is re-checked when a reader reports an error, when its awarding body announces
+          a new blueprint, fee or retirement, or when its grade is low or medium and a new
+          publication may now support a higher grade. "Last reviewed" moves only when the figures
+          have actually been re-checked. A rebuild or redesign does not count.
         </p>
-        <p>We also flag confidence explicitly:</p>
-        <ul class="confidence">
-          <li>
-            <strong class="ok">Verified</strong> — confirmed against a current primary source
-            at the last-reviewed date.
-          </li>
-          <li>
-            <strong class="warn">Confirm with the board</strong> — the figure is current to
-            our knowledge but changes frequently (fees especially), so we ask you to confirm
-            before you pay.
-          </li>
-          <li>
-            <strong class="none">Not yet verified</strong> — a page still being researched; we
-            label it as in-progress rather than presenting guesses as fact.
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Independence from affiliate revenue</h2>
+        <p>Substantive corrections are logged here, including errors our own system introduced:</p>
+        <div class="tbl">
+          <table>
+            <caption>Table 5. Correction log.</caption>
+            <thead><tr><th>Date</th><th>Scope</th><th>What was wrong</th><th>Fix</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>2026-10-11</td><td>All CompTIA guides (13)</td>
+                <td>The shared CompTIA body description had been written about Linux+ specifically. As a result, every CompTIA guide, including Security+ and A+, said "its Linux+ certification is delivered…" in its "About" paragraph.</td>
+                <td>The body text was rewritten to apply to all CompTIA exams. The shared-text risk is now described in §3.3 and §10.</td>
+              </tr>
+              <tr>
+                <td>2026-10-11</td><td>Guides with weighted domains (33 affected)</td>
+                <td>The generated summary sentence "the largest domains are …" listed the <em>first</em> three domains in outline order, not the three heaviest. For Security+ it named a 12% domain as one of the largest, when Security Operations is 28%.</td>
+                <td>The domains are now sorted by official weight before the sentence is written.</td>
+              </tr>
+              <tr>
+                <td>2026-10-03</td><td>About 15 pages</td>
+                <td>Pages claimed a "date modified" without any matching content change.</td>
+                <td>The field is now left out unless a real content date exists. Sitemap dates follow actual publication dates, not the build time.</td>
+              </tr>
+              <tr>
+                <td>{VERSION_DATE}</td><td>This document</td>
+                <td>The previous version described a licensed-expert review step that has not yet taken place for any guide, and did not disclose the role of AI.</td>
+                <td>Rewritten as version {VERSION}. See §9.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <p>
-          TestPrepPilot participates in affiliate programs to fund its research (see our
-          <a href={TRUST_PAGES.disclosure}>Affiliate Disclosure</a>). That relationship never
-          touches the facts. The requirements, exam format and costs on a page are researched
-          from primary sources first; provider recommendations are made separately, on the
-          merits, and we routinely list providers we earn nothing from when they are the
-          better route.
-        </p>
-        <p>
-          No provider can pay to alter a requirement, change a ranking, or secure a
-          recommendation. Where an affiliate link appears next to a recommendation, it is
-          labelled inline.
-        </p>
-      </section>
-
-      <section>
-        <h2>Corrections & updates</h2>
-        <p>
-          Rules change and we make mistakes like anyone else. When we find an error — or a
-          reader reports one — we correct the page and refresh its last-reviewed date. If a
-          correction is substantive, we note what changed. You can report anything that looks
-          off via our <a href="/about#contact">contact page</a>; we read every one.
+          Found something wrong? <a href="/about#contact">Tell us</a>. Please include the guide's URL, the figure
+          and the official page that contradicts it. We read every report, and confirmed errors
+          are corrected and, when substantive, added to the log above.
         </p>
       </section>
 
-      <section>
-        <h2>What we will not do</h2>
-        <ul class="dont">
-          <li>We will not hide a total cost or timeline to make a path look easier.</li>
-          <li>We will not alter a fact to flatter a provider we earn commission from.</li>
-          <li>
-            We will not present unverified information as confirmed, or invent an expert
-            reviewer.
-          </li>
-          <li>We will not accept guest posts disguised as independent research.</li>
-        </ul>
+      <!-- 12 -->
+      <section id="s12">
+        <h2><span class="sn">12</span> Independence and funding</h2>
+        <p>
+          Facts are researched before any commercial decision is made and kept separate
+          from it. No exam sponsor, prep company or affiliate network can pay to change
+          a requirement, a fee, a confidence grade or a ranking. Rankings on our
+          <a href="/best">Top-N pages</a> are ordered by published wage data, not by commission. If a
+          guide recommends a paid product, any commercial relationship is disclosed
+          next to the recommendation and summarized in our
+          <a href={TRUST_PAGES.disclosure}>disclosure</a>.
+        </p>
       </section>
 
-      <section class="cta">
-        <h2>Read the related policies</h2>
-        <p class="cta-links">
-          <a href={TRUST_PAGES.editorialPolicy}>Editorial Policy</a>
-          <a href={TRUST_PAGES.reviewers}>Our Review Network</a>
-          <a href={TRUST_PAGES.disclosure}>Affiliate Disclosure</a>
-          <a href={TRUST_PAGES.about}>About the Desk</a>
+      <!-- 13 -->
+      <section id="s13">
+        <h2><span class="sn">13</span> How to use a guide: a five-minute verification checklist</h2>
+        <p>
+          Our guides are built to get you through the reading and planning quickly. Before you
+          spend money or book a date, take five minutes to check the details that change most often:
+        </p>
+        <ol class="checklist">
+          <li><strong>Check the confidence grade</strong> in the guide's "Sources" section. For
+            medium or low, treat every figure as provisional.</li>
+          <li><strong>Open the awarding body's exam page</strong> from the Sources section and
+            confirm the <em>exam code or blueprint revision</em>. Studying an outdated blueprint
+            is the most expensive mistake candidates make.</li>
+          <li><strong>Confirm the fee at checkout.</strong> Check whether you qualify for a member,
+            student or voucher price, and whether the fee includes online proctoring.</li>
+          <li><strong>Read the retake and rescheduling rules</strong> before you book. Waiting
+            periods and cancellation deadlines are where candidates lose the most money.</li>
+          <li><strong>Check your ID matches your registration exactly.</strong> A name mismatch is
+            a common reason candidates are turned away on exam day.</li>
+          <li><strong>If the credential leads to a state license</strong>, check your state
+            board's requirements as well. They can add steps the national exam does not.</li>
+        </ol>
+      </section>
+
+      <!-- References -->
+      <section id="refs" class="refs">
+        <h2>References</h2>
+        <ol>
+          <li id="r1">U.S. Bureau of Labor Statistics. <em>Occupational Outlook Handbook.</em> <a href="https://www.bls.gov/ooh/" rel="noopener">bls.gov/ooh</a></li>
+          <li id="r2">U.S. Bureau of Labor Statistics. <em>Occupational Employment and Wage Statistics (OEWS).</em> <a href="https://www.bls.gov/oes/" rel="noopener">bls.gov/oes</a></li>
+          <li id="r3">U.S. Bureau of Labor Statistics. <em>Standard Occupational Classification (SOC) System.</em> <a href="https://www.bls.gov/soc/" rel="noopener">bls.gov/soc</a></li>
+          <li id="r4">Office of the Federal Register. <em>Electronic Code of Federal Regulations.</em> <a href="https://www.ecfr.gov/" rel="noopener">ecfr.gov</a></li>
+          <li id="r5">ISO/IEC 17024:2012. <em>Conformity assessment — General requirements for bodies operating certification of persons.</em> <a href="https://www.iso.org/standard/52993.html" rel="noopener">iso.org</a></li>
+          <li id="r6">Broder, A. Z. (1997). On the resemblance and containment of documents. <em>Proceedings of Compression and Complexity of SEQUENCES 1997</em>, 21–29.</li>
+        </ol>
+      </section>
+
+      <section id="cite" class="cite">
+        <h2>How to cite this document</h2>
+        <p class="cite-box">
+          TestPrepPilot Editorial Board. ({VERSION_DATE.slice(0, 4)}). <em>Research methodology for the
+          TestPrepPilot exam-guide corpus</em> (Version {VERSION}). {SITE}/methodology
+        </p>
+        <p class="muted small">
+          Version history: 1.0 (2026) first published research standard · {VERSION} ({VERSION_DATE})
+          full rewrite with corpus statistics, AI disclosure, limitations and correction log.
+          Related: <a href={TRUST_PAGES.editorialPolicy}>Editorial policy</a> ·
+          <a href="/data/">Open dataset</a> · <a href={TRUST_PAGES.about}>About</a>
         </p>
       </section>
     </main>
@@ -212,43 +778,78 @@ const breadcrumbItems = [
 <style>
   .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
 
-  .page-hero { padding: 4.5rem 0 3rem; border-bottom: 2px solid var(--ink); margin-bottom: 3.5rem; }
-  .page-hero .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; margin: 0 0 1.25rem; font-weight: 700; }
-  .page-hero h1 { font-family: var(--font-heading); font-size: var(--fs-h1); line-height: 1.12; margin: 0 0 1.5rem; }
-  .page-hero .lede { font-family: var(--font-body); font-size: var(--fs-prose); color: var(--muted); line-height: 1.75; }
+  .paper-head { padding: 3.5rem 0 2rem; border-bottom: 2px solid var(--ink); margin-bottom: 2rem; }
+  .eyebrow { font-family: var(--font-mono); color: var(--primary); letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.8rem; font-weight: 700; margin: 0 0 1rem; }
+  .paper-head h1 { font-family: var(--font-heading); font-size: var(--fs-h1); line-height: 1.12; margin: 0 0 1rem; }
+  .byline { color: var(--muted); font-size: 0.95rem; margin: 0 0 2rem; }
+  .byline a { color: var(--primary); }
 
-  .prose section { margin-bottom: 3rem; scroll-margin-top: 6rem; }
-  .prose h2 { font-family: var(--font-heading); font-size: var(--fs-h2); margin: 0 0 1.1rem; line-height: 1.2; }
-  .prose p { font-family: var(--font-body); font-size: var(--fs-prose); line-height: 1.8; margin: 0 0 1.35rem; color: var(--ink); }
-  .prose a { color: var(--primary); font-weight: 600; text-underline-offset: 3px; }
-  .prose strong { color: var(--ink); }
+  .abstract { background: var(--cream); border-left: 4px solid var(--primary); padding: 1.25rem 1.5rem; border-radius: var(--radius); margin: 0 0 2rem; }
+  .abstract h2 { font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 0.6rem; color: var(--muted); }
+  .abstract p { margin: 0; font-size: 1.02rem; line-height: 1.75; color: var(--ink); }
 
-  /* Pipeline */
-  .pipeline { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.25rem; }
-  .pipeline li { display: flex; gap: 1.1rem; align-items: flex-start; padding: 1.1rem 1.25rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
-  .step-num { flex: 0 0 auto; width: 34px; height: 34px; border-radius: 50%; background: var(--primary); color: #fff; display: grid; place-items: center; font-family: var(--font-mono); font-size: 0.9rem; font-weight: 700; }
-  .pipeline h4 { font-family: var(--font-heading); font-size: var(--fs-h3); margin: 0 0 0.4rem; }
-  .pipeline p { margin: 0; font-size: 1rem; line-height: 1.65; color: var(--muted); }
+  .keyfigs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+  .keyfigs > div { border: 1px solid var(--line); border-radius: var(--radius); padding: 0.9rem 1rem; background: var(--paper); }
+  .kf-n { display: block; font-family: var(--font-heading); font-size: 1.7rem; font-weight: 700; color: var(--ink); line-height: 1.1; }
+  .kf-l { display: block; font-size: 0.82rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.35; }
 
-  /* Confidence */
-  .confidence { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
-  .confidence li { padding: 0.85rem 1.15rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); font-size: 1rem; line-height: 1.6; color: var(--muted); }
-  .confidence strong { margin-right: 0.5rem; }
-  .confidence .ok { color: #0b7a5b; }
-  .confidence .warn { color: #92400e; }
-  .confidence .none { color: #475569; }
+  .toc { border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.5rem; margin: 0 0 3rem; background: var(--paper); }
+  .toc-h { font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.5rem; font-weight: 700; }
+  .toc ol { margin: 0; padding-left: 1.4rem; columns: 2; column-gap: 2rem; }
+  .toc li { font-size: 0.95rem; line-height: 1.8; break-inside: avoid; }
+  .toc a { color: var(--ink); text-decoration: none; }
+  .toc a:hover { color: var(--primary); text-decoration: underline; }
 
-  /* Don't list */
-  .dont { padding-left: 1.25rem; }
-  .dont li { font-size: 1rem; line-height: 1.7; margin-bottom: 0.75rem; color: var(--ink); }
+  .paper section { margin-bottom: 3.25rem; scroll-margin-top: 6rem; }
+  .paper h2 { font-family: var(--font-heading); font-size: var(--fs-h2); margin: 0 0 1rem; line-height: 1.2; }
+  .sn { color: var(--primary); font-family: var(--font-mono); margin-right: 0.4rem; }
+  .paper h3 { font-family: var(--font-heading); font-size: var(--fs-h3); margin: 1.75rem 0 0.6rem; }
+  .paper p, .paper li, .paper dd { font-family: var(--font-body); font-size: var(--fs-prose); line-height: 1.8; color: var(--ink); }
+  .paper p { margin: 0 0 1.2rem; }
+  .paper ul, .paper ol { padding-left: 1.35rem; margin: 0 0 1.2rem; }
+  .paper li { margin-bottom: 0.5rem; }
+  .paper a { color: var(--primary); font-weight: 600; text-underline-offset: 3px; }
+  .paper code { font-size: 0.88em; background: var(--cream); padding: 0.1em 0.35em; border-radius: 4px; }
+  .note { font-size: 0.98rem !important; color: var(--muted) !important; border-left: 3px solid var(--line); padding-left: 1rem; }
+  .muted { color: var(--muted); }
+  .small { font-size: 0.9rem !important; }
 
-  /* CTA */
-  .cta { border-top: 1px solid var(--line); padding-top: 2.5rem; }
-  .cta-links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
-  .cta-links a { display: inline-block; padding: 0.6rem 1.1rem; border: 1px solid var(--line); border-radius: 999px; background: var(--cream); text-decoration: none; font-family: var(--font-body); font-size: 0.95rem; }
-  .cta-links a:hover { border-color: var(--primary); }
+  blockquote { margin: 0 0 1.2rem; padding: 0.9rem 1.25rem; border-left: 4px solid var(--accent-gold); background: var(--cream); border-radius: var(--radius); font-style: italic; line-height: 1.7; }
+
+  .pipeline-fig { margin: 1.5rem 0 2rem; }
+  .pipeline { list-style: none; padding: 0 !important; margin: 0 !important; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); counter-reset: none; }
+  .pipeline li { margin: 0 !important; display: flex; align-items: baseline; gap: 0.9rem; padding: 0.7rem 1rem; border-bottom: 1px solid var(--line); font-size: 0.95rem !important; line-height: 1.5 !important; }
+  .pipeline li:last-child { border-bottom: 0; }
+  .pipeline li > div { display: flex; flex-wrap: wrap; gap: 0.15rem 1rem; align-items: baseline; }
+  .pipeline strong { flex: 0 0 11rem; font-size: 0.98rem; }
+  .pipeline span:not(.pn) { color: var(--muted); font-size: 0.92rem; flex: 1 1 16rem; }
+  .pn { flex: 0 0 auto; align-self: center; width: 26px; height: 26px; border-radius: 50%; background: var(--primary); color: #fff; display: grid; place-items: center; font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; }
+  figcaption, caption { font-size: 0.88rem; color: var(--muted); text-align: left; margin-top: 0.6rem; line-height: 1.5; }
+  caption { caption-side: top; margin: 0 0 0.6rem; }
+
+  .tbl { overflow-x: auto; margin: 0 0 1.5rem; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
+  th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.7rem; border-bottom: 1px solid var(--line); line-height: 1.5; }
+  thead th { border-bottom: 2px solid var(--ink); font-family: var(--font-heading); font-size: 0.88rem; }
+  .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+  .defs dt { font-family: var(--font-heading); font-weight: 700; margin-top: 1.1rem; }
+  .defs dd { margin: 0.25rem 0 0; padding-left: 1rem; border-left: 2px solid var(--line); }
+
+  .g { display: inline-block; padding: 0.15rem 0.55rem; border-radius: 999px; font-size: 0.82rem; font-weight: 700; white-space: nowrap; }
+  .g-hi { background: #dcfce7; color: #166534; }
+  .g-md { background: #fef3c7; color: #92400e; }
+  .g-lo { background: #e2e8f0; color: #334155; }
+
+  .checklist li::marker { color: var(--primary); font-weight: 700; }
+
+  .refs ol { font-size: 0.95rem; }
+  .refs li { font-size: 0.95rem !important; line-height: 1.6 !important; }
+  .cite-box { background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.25rem; font-size: 0.98rem !important; }
 
   @media (max-width: 640px) {
-    .pipeline li { flex-direction: column; gap: 0.6rem; }
+    .container { padding: 0 1rem; }
+    .keyfigs { grid-template-columns: 1fr 1fr; }
+    .toc ol { columns: 1; }
   }
 </style>
