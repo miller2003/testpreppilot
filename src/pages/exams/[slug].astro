@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
 import { examTitle } from '../../lib/seoTitle';
+import seoOverrides from '../../data/seoOverrides.mjs';
 import DepthSections from '../../components/DepthSections.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
 import RelatedExams from '../../components/RelatedExams.astro';
@@ -306,7 +307,9 @@ tocItems.push({ id: 'sources', label: 'Sources' });
 // Every branch is clamped, not just the national one. 65 pages were shipping
 // descriptions over 160 characters (max 290), so Google rewrote or truncated
 // them and the intended keyword tail never rendered in the SERP.
-const metaDescription = clampMeta(
+// Hand-written overrides (src/data/seoOverrides.mjs) win over the template.
+const seo = seoOverrides[`exams/${exam.slug}`] || null;
+const metaDescription = seo?.description || clampMeta(
   mode === 'not-offered'
     ? `${exam.stateName} does not issue a state-level ${dossier.name.toLowerCase()}. Here is what applies instead, plus the ${offeringCount} states that do license it.`
     : mode === 'researched'
@@ -462,7 +465,7 @@ const articleSchema = {
 ---
 
 <BaseLayout
-  title={examTitle(exam.name)}
+  title={seo?.title || examTitle(exam.name)}
   description={metaDescription}
   canonical={canonicalUrl}
   ogImage="/og-exam.png"

@@ -6,6 +6,7 @@ import RelatedPaths from '../../components/RelatedPaths.astro';
 import { credentials, getRelatedCredentials } from '../../data/credentials';
 import examEditorial from '../../data/examEditorial.mjs';
 import { credTitle, clampDesc } from '../../lib/seoTitle';
+import seoOverrides from '../../data/seoOverrides.mjs';
 
 export function getStaticPaths() {
   return credentials.map(credential => ({
@@ -17,6 +18,8 @@ export function getStaticPaths() {
 const { credential } = Astro.props;
 const ex = examEditorial[credential.slug] || null;
 const relatedCredentials = getRelatedCredentials(credential.slug);
+// Hand-written overrides (src/data/seoOverrides.mjs) win over the template.
+const seo = seoOverrides[`paths/${credential.slug}`] || null;
 
 // The /<state>/<credential> state-specific layer was removed on 2026-09-02
 // (51 near-identical hub pages + 3 leaf pages, avg 98.3% cross-similarity).
@@ -41,8 +44,8 @@ const schemaData = {
 ---
 
 <BaseLayout
-  title={credTitle(credential.name)}
-  description={clampDesc(`${credential.tagline ? credential.tagline + ' ' : ''}${credential.name}: requirements, exam format, fees and eligibility, with official registration steps.`)}
+  title={seo?.title || credTitle(credential.name)}
+  description={seo?.description || clampDesc(`${credential.tagline ? credential.tagline + ' ' : ''}${credential.name}: requirements, exam format, fees and eligibility, with official registration steps.`)}
   ogType="article"
 >
   {/* ExamGuide renders BreadcrumbNav, which emits the page's single
