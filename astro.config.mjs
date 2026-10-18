@@ -10,10 +10,14 @@ import { buildDirectory } from './src/data/examCatalog/index.mjs';
 // would skip it — and a stale Agent Skills digest or a catalogue pointing at a
 // URL that has since moved is exactly the failure mode that makes a discovery
 // document worthless. Hooking the build itself makes it unconditional.
+// llms.txt is generated first: the agent surface (ai-catalog, agent skill)
+// describes it, so it must exist with the current guide count before those
+// documents are built.
 const agentSurface = {
   name: 'agent-surface',
   hooks: {
     'astro:build:start': () => {
+      execFileSync(process.execPath, ['_gen_llms.mjs'], { stdio: 'inherit' });
       execFileSync(process.execPath, ['_gen_agent_surface.mjs'], { stdio: 'inherit' });
     },
   },
@@ -146,5 +150,13 @@ export default defineConfig({
   build: {
     format: 'directory',
   },
-  trailingSlash: 'never',
+  // ── trailingSlash must match what the host actually serves ───────────────
+  // Cloudflare Pages serves a directory index at the SLASHED form and answers
+  // the unslashed form with a 308. With `never` the site shipped a sitemap and
+  // a self-referencing canonical that both pointed at the 308 — and Google
+  // discards a canonical that redirects, so 533 pages had a canonical tag it
+  // was free to ignore. `always` makes the declaration, the sitemap and the
+  // 200 response agree; SEOHead normalises canonical/og:url for the pages that
+  // pass an explicit path.
+  trailingSlash: 'always',
 });

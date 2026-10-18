@@ -3,6 +3,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../components/BreadcrumbNav.astro';
 import TopicHubs from '../components/TopicHubs.astro';
 import { TRUST_PAGES, SITE, organizationSchema } from '../data/editorial';
+import { allExams } from '../data/examCatalog/index.mjs';
+
+// Counted, not typed. The page claimed "600+ credential guides" in its title
+// and description while the catalog published 485 — an inconsistency a reader
+// (or a reviewer) can check in one click, which is the worst kind.
+const guideCount = allExams.length;
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
@@ -113,8 +119,8 @@ const reviews = [
 ];
 ---
 <BaseLayout
-  title="About TestPrepPilot — The Editorial Board Behind 600+ Credential Guides"
-  description="Meet the independent Editorial Board behind TestPrepPilot — 600+ U.S. credential guides verified against primary sources, checked by licensed professionals, and never pay-to-rank. Read reviews and reach the board."
+  title="About TestPrepPilot — Editorial Board & Standards"
+  description={`Who researches and maintains TestPrepPilot: the verification method, sourcing standards and independence rules behind ${guideCount} U.S. credential guides.`}
   schema={aboutSchema}
   dateModified={dateModified}
 >

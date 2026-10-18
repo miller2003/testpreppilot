@@ -85,6 +85,18 @@ export function stateCredTitle(name: string, stateName: string): string {
 }
 
 /**
+ * Lower-case a field/category name for mid-sentence use without destroying
+ * acronyms. `category.name.toLowerCase()` turned "IT, Cloud & Cybersecurity"
+ * into "it, cloud & cybersecurity" and printed that on 20 category pages.
+ */
+export function lowerLabel(name: string): string {
+  return String(name || '')
+    .split(/(\s+|,|&)/)
+    .map((tok) => (/^[A-Z][A-Z0-9]{1,5}$/.test(tok) ? tok : tok.toLowerCase()))
+    .join('');
+}
+
+/**
  * Meta descriptions get cut around 155-160 chars in the SERP. Trim on a word
  * boundary instead of mid-word, and never leave a dangling separator.
  */

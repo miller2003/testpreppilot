@@ -35,6 +35,12 @@
   Cache-Control: public, max-age=0, must-revalidate
   Content-Type: text/html; charset=utf-8
 
+# ── Social cards ─────────────────────────────────────────────────────
+# One PNG per credential field (plus the ranked-list hub). These never change
+# between deploys unless the field count does, so they cache like assets.
+/og/*
+  Cache-Control: public, max-age=604800
+
 # ── Fingerprinted build assets: safe to cache hard ───────────────────
 /_astro/*
   Cache-Control: public, max-age=31536000, immutable
@@ -76,6 +82,14 @@
   X-Robots-Tag: noindex, follow
 
 /llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+# The complete index (every published guide). llms.txt is curated to stay
+# inside an agent's context budget; this file is the exhaustive fallback and
+# must not be content-typed as octet-stream or an agent will stop at HEAD.
+/llms-full.txt
   Content-Type: text/plain; charset=utf-8
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=3600

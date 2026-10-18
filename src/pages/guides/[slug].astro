@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
 import TopicHubs from '../../components/TopicHubs.astro';
 import { guideArticles, getGuideBySlug } from '../../data/guides';
+import { buildTitle, clampDesc } from '../../lib/seoTitle';
 
 export function getStaticPaths() {
   return guideArticles.map((article) => ({
@@ -60,8 +61,8 @@ const faqSchema = {
 ---
 
 <BaseLayout
-  title={`${article.title} — TestPrepPilot Guides`}
-  description={article.description}
+  title={buildTitle(article.title, [' — TestPrepPilot Guides', ' — Guides', ''])}
+  description={clampDesc(article.description, 157)}
   canonical={canonicalUrl}
   ogType="article"
   articlePublishedTime={article.dateISO}

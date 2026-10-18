@@ -6,12 +6,16 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
 import FAQAccordion from '../../components/FAQAccordion.astro';
 import { datasetMeta, EXAM_FIELDS } from '../../lib/examDataset';
+import { clampDesc } from '../../lib/seoTitle';
 
 const meta = datasetMeta();
 const SITE = 'https://testpreppilot.com';
 
 const title = 'Public exam data — JSON and CSV';
-const description = `${meta.rows} US exam and certification guides as structured data: awarding body, fee, format, question count, pass mark, study time and salary range, each with a confidence level and the source it was verified against.`;
+const description = clampDesc(
+  `${meta.rows} US exam and certification guides as structured data: awarding body, fee, format, question count, pass mark, study time and salary range, each with a confidence level and its source.`,
+  157
+);
 
 const endpoints = [
   { path: '/data/exam-catalog.json', type: 'application/json', desc: `All ${meta.rows} published guides as one object per exam.` },

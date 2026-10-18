@@ -7,6 +7,7 @@ import { releases, isReleased } from '../data/examCatalog/release-manifest.mjs';
 import { nationalBySlug, nationalStats } from '../data/examCatalog/national-research/index.mjs';
 import depthBySlug from '../data/examCatalog/depth/index.mjs';
 import { buildDirectory } from '../data/examCatalog/index.mjs';
+import { clampDesc } from '../lib/seoTitle';
 
 // ── Every figure on this page is derived from the research corpus itself ──
 // A methodology page that states "477 guides" in prose goes stale the day the
@@ -109,8 +110,11 @@ const breadcrumbItems = [
   { label: 'Methodology', href: TRUST_PAGES.methodology },
 ];
 
-const title = 'Research Methodology — How TestPrepPilot Exam Guides Are Built';
-const description = `How ${fmt(N)} U.S. exam guides were researched from ${fmt(corpusBodies)} awarding bodies: AI-assisted source collection, a primary-source hierarchy, confidence grading, automated validation and known limitations.`;
+const title = 'Research Methodology — How Our Exam Guides Are Built';
+const description = clampDesc(
+  `How ${fmt(N)} U.S. exam guides were researched from ${fmt(corpusBodies)} awarding bodies: source collection, a primary-source hierarchy, confidence grading and known limitations.`,
+  157
+);
 
 const schema = [
   organizationSchema(),

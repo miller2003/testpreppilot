@@ -30,7 +30,6 @@ Content-Signal: ai-train=yes, search=yes, ai-input=yes
 
 User-agent: *
 Allow: /
-Crawl-delay: 1
 
 # ── AI answer engines & training crawlers ──────────────────────────
 User-agent: GPTBot
@@ -79,4 +78,8 @@ User-agent: Bytespider
 Allow: /
 
 Sitemap: https://testpreppilot.com/sitemap-index.xml
-Agentmap: https://testpreppilot.com/.well-known/ai-catalog.json
+
+# Agent-facing discovery lives in two registered places rather than as a
+# directive here: the RFC 8288 `Link` response header in public/_headers
+# (rel="service-doc" / "service-meta"), and /.well-known/ai-catalog.json.
+# ("Agentmap:" was an invented directive — no crawler parses it.)

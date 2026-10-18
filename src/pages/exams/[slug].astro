@@ -434,6 +434,28 @@ const citations = [
   )
 ];
 
+// `depth.reviewedBy` is a free-text note about how the figures were checked
+// ("Verified against the AAHPM… page and BLS OOH …, May 2024 data"), not a
+// person. Emitting it as Person.name produced 447 different "humans" whose
+// names were whole sentences — which is exactly the pattern Google discards as
+// noise, and it wasted a real trust signal by expressing it in the one field
+// that cannot hold it. Only a genuine short personal name goes into Person;
+// the note stays on the page (byline + Sources) and the machine-readable
+// accountability is the Editorial Board, which is the entity actually
+// answering for the page.
+const reviewerRaw = String(depth?.reviewedBy || '').trim();
+const reviewerIsPerson =
+  reviewerRaw.length > 0 &&
+  reviewerRaw.length <= 40 &&
+  !/[,;:]/.test(reviewerRaw) &&
+  /^[\p{Lu}][\p{L}.'’-]+(?:\s+[\p{L}.'’-]+){1,3}$/u.test(reviewerRaw);
+
+const reviewedByNode = reviewerRaw
+  ? reviewerIsPerson
+    ? { '@type': 'Person', name: reviewerRaw }
+    : { '@id': 'https://testpreppilot.com/#editorial-board' }
+  : null;
+
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -447,7 +469,7 @@ const articleSchema = {
   publisher: { '@id': 'https://testpreppilot.com/#organization' },
   datePublished: publishedOn || undefined,
   dateModified: modifiedOn || publishedOn || undefined,
-  ...(depth?.reviewedBy ? { reviewedBy: { '@type': 'Person', name: depth.reviewedBy } } : {}),
+  ...(reviewedByNode ? { reviewedBy: reviewedByNode } : {}),
   ...(citations.length ? { citation: citations.map((u) => ({ '@type': 'WebPage', url: u })) } : {}),
   about: {
     '@type': 'Thing',

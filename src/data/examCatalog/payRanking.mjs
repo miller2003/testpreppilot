@@ -44,7 +44,12 @@ function allRows() {
       slug: e.slug,
       name: e.name,
       category: e.category,
-      url: `/exams/${e.slug}`,
+      // The catalog row already knows the canonical path for this credential.
+      // The 8 hand-written flagship guides live at /paths/<slug>, not
+      // /exams/<slug> — building the URL from the slug alone sent /best and the
+      // category tables to a 404 for CPA, EA, OSHA 10/30, EPA 608 and the
+      // TX/CA/FL real-estate licences.
+      url: e.href || `/exams/${e.slug}`,
       pay,
       payLine,
       passLine,

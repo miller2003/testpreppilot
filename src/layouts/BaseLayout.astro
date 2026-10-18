@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import SEOHead from '../components/SEOHead.astro';
 import Analytics from '../components/Analytics.astro';
 import WebMCP from '../components/WebMCP.astro';
+import { canonicalForm } from '../lib/url';
 import { organizationSchema, editorialBoardNode } from '../data/editorial';
 import { ClientRouter } from 'astro:transitions';
 
@@ -45,7 +46,9 @@ const {
 // teaches crawlers to discount the field on the pages where it IS accurate.
 // Omitting the property is valid schema.org and is the honest answer.
 const siteUrl = Astro.site || 'https://testpreppilot.com';
-const pageUrl = new URL(Astro.url.pathname, siteUrl).toString();
+// Same canonical form the <link rel="canonical"> and og:url use, so the WebPage
+// @id can be matched to the canonical instead of pointing at a 308.
+const pageUrl = canonicalForm(Astro.url.pathname, siteUrl);
 const finalOgImage = ogImage || '/og-image.png';
 
 // Either prop name is accepted: exam pages pass datePublished/dateModified,
