@@ -3,11 +3,16 @@
 //
 // Every href is a Mometrix-issued tracking link (ref.mometrix.com/1262-…htm).
 // Never rewrite or append parameters to them: they are untested in that form.
+// Pages link to `go` (/go/mometrix/<goSlug>), never to href directly: the
+// Pages Function in functions/go/mometrix/[slug].js redirects real visitors to
+// href and turns away bots, link previewers and prefetches.
 
 export const mometrixProducts = {
   "14": {
     "id": "14",
     "name": "ACE Personal Trainer Exam Flashcards",
+    "goSlug": "ace-personal-trainer-exam-flashcards",
+    "go": "/go/mometrix/ace-personal-trainer-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-613-4-14.htm",
     "img": "https://www.flashcardsecrets.com/personaltrainer/personaltrainer-cover_660.jpg",
@@ -17,6 +22,8 @@ export const mometrixProducts = {
   "15": {
     "id": "15",
     "name": "ACE Personal Trainer Exam Secrets Study Guide",
+    "goSlug": "ace-personal-trainer-exam-secrets-study-guide",
+    "go": "/go/mometrix/ace-personal-trainer-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-612-4-15.htm",
     "img": "https://www.mometrix.com/studyguides/personaltrainer/personaltrainer-cover_612.jpg",
@@ -26,6 +33,8 @@ export const mometrixProducts = {
   "20": {
     "id": "20",
     "name": "ACT Exam Flashcards",
+    "goSlug": "act-exam-flashcards",
+    "go": "/go/mometrix/act-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-21-4-20.htm",
     "img": "https://www.flashcardsecrets.com/act/act-cover_660.jpg",
@@ -35,6 +44,8 @@ export const mometrixProducts = {
   "21": {
     "id": "21",
     "name": "ACT Secrets Study Guide",
+    "goSlug": "act-secrets-study-guide",
+    "go": "/go/mometrix/act-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-20-4-21.htm",
     "img": "https://www.mometrix.com/studyguides/act/act-cover_612.jpg",
@@ -44,6 +55,8 @@ export const mometrixProducts = {
   "22": {
     "id": "22",
     "name": "AFAA Certified Personal Fitness Trainer Exam Flashcards",
+    "goSlug": "afaa-certified-personal-fitness-trainer-exam-flashcards",
+    "go": "/go/mometrix/afaa-certified-personal-fitness-trainer-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-31-4-22.htm",
     "img": "https://www.flashcardsecrets.com/afaa/afaa-cover_660.jpg",
@@ -53,6 +66,8 @@ export const mometrixProducts = {
   "23": {
     "id": "23",
     "name": "AFAA Certified Personal Fitness Trainer Exam Secrets Study Guide",
+    "goSlug": "afaa-certified-personal-fitness-trainer-exam-secrets-study-guide",
+    "go": "/go/mometrix/afaa-certified-personal-fitness-trainer-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-30-4-23.htm",
     "img": "https://www.mometrix.com/studyguides/afaa/afaa-cover_612.jpg",
@@ -62,6 +77,8 @@ export const mometrixProducts = {
   "48": {
     "id": "48",
     "name": "ASVAB Flashcards",
+    "goSlug": "asvab-flashcards",
+    "go": "/go/mometrix/asvab-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-74-4-48.htm",
     "img": "https://www.flashcardsecrets.com/asvab/asvab-cover_660.jpg",
@@ -71,6 +88,8 @@ export const mometrixProducts = {
   "49": {
     "id": "49",
     "name": "ASVAB Secrets Study Guide",
+    "goSlug": "asvab-secrets-study-guide",
+    "go": "/go/mometrix/asvab-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-73-4-49.htm",
     "img": "https://www.mometrix.com/studyguides/asvab/asvab-cover_612.jpg",
@@ -80,6 +99,8 @@ export const mometrixProducts = {
   "59": {
     "id": "59",
     "name": "CAPM Exam Flashcards",
+    "goSlug": "capm-exam-flashcards",
+    "go": "/go/mometrix/capm-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-93-4-59.htm",
     "img": "https://www.flashcardsecrets.com/capm/capm-cover_660.jpg",
@@ -89,6 +110,8 @@ export const mometrixProducts = {
   "60": {
     "id": "60",
     "name": "CAPM Exam Secrets Study Guide",
+    "goSlug": "capm-exam-secrets-study-guide",
+    "go": "/go/mometrix/capm-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-92-4-60.htm",
     "img": "https://www.mometrix.com/studyguides/capm/capm-cover_612.jpg",
@@ -98,6 +121,8 @@ export const mometrixProducts = {
   "85": {
     "id": "85",
     "name": "CDL Exam Flashcards",
+    "goSlug": "cdl-exam-flashcards",
+    "go": "/go/mometrix/cdl-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-127-4-85.htm",
     "img": "https://www.flashcardsecrets.com/cdl/cdl-cover_660.jpg",
@@ -107,6 +132,8 @@ export const mometrixProducts = {
   "86": {
     "id": "86",
     "name": "CEN Exam Flashcards",
+    "goSlug": "cen-exam-flashcards",
+    "go": "/go/mometrix/cen-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-135-4-86.htm",
     "img": "https://www.flashcardsecrets.com/cen/cen-cover_660.jpg",
@@ -116,6 +143,8 @@ export const mometrixProducts = {
   "87": {
     "id": "87",
     "name": "CEN Exam Secrets Study Guide",
+    "goSlug": "cen-exam-secrets-study-guide",
+    "go": "/go/mometrix/cen-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-134-4-87.htm",
     "img": "https://www.mometrix.com/studyguides/cen/cen-cover_612.jpg",
@@ -125,6 +154,8 @@ export const mometrixProducts = {
   "90": {
     "id": "90",
     "name": "Certified Coding Associate Exam Flashcards",
+    "goSlug": "certified-coding-associate-exam-flashcards",
+    "go": "/go/mometrix/certified-coding-associate-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-210-4-90.htm",
     "img": "https://www.flashcardsecrets.com/codingassociate/codingassociate-cover_660.jpg",
@@ -134,6 +165,8 @@ export const mometrixProducts = {
   "91": {
     "id": "91",
     "name": "Certified Coding Associate Exam Secrets Study Guide",
+    "goSlug": "certified-coding-associate-exam-secrets-study-guide",
+    "go": "/go/mometrix/certified-coding-associate-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-209-4-91.htm",
     "img": "https://www.mometrix.com/studyguides/codingassociate/codingassociate-cover_612.jpg",
@@ -143,6 +176,8 @@ export const mometrixProducts = {
   "96": {
     "id": "96",
     "name": "Certified Dietary Manager Exam Flashcards",
+    "goSlug": "certified-dietary-manager-exam-flashcards",
+    "go": "/go/mometrix/certified-dietary-manager-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-129-4-96.htm",
     "img": "https://www.flashcardsecrets.com/cdm/cdm-cover_660.jpg",
@@ -152,6 +187,8 @@ export const mometrixProducts = {
   "97": {
     "id": "97",
     "name": "Certified Dietary Manager Exam Secrets Study Guide",
+    "goSlug": "certified-dietary-manager-exam-secrets-study-guide",
+    "go": "/go/mometrix/certified-dietary-manager-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-128-4-97.htm",
     "img": "https://www.mometrix.com/studyguides/cdm/cdm-cover_612.jpg",
@@ -161,6 +198,8 @@ export const mometrixProducts = {
   "110": {
     "id": "110",
     "name": "Certified Medical Assistant Exam Flashcards",
+    "goSlug": "certified-medical-assistant-exam-flashcards",
+    "go": "/go/mometrix/certified-medical-assistant-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-431-4-110.htm",
     "img": "https://www.flashcardsecrets.com/medicalassistant/medicalassistant-cover_660.jpg",
@@ -170,6 +209,8 @@ export const mometrixProducts = {
   "111": {
     "id": "111",
     "name": "Certified Medical Assistant Exam Secrets Study Guide",
+    "goSlug": "certified-medical-assistant-exam-secrets-study-guide",
+    "go": "/go/mometrix/certified-medical-assistant-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-430-4-111.htm",
     "img": "https://www.mometrix.com/studyguides/medicalassistant/medicalassistant-cover_612.jpg",
@@ -179,6 +220,8 @@ export const mometrixProducts = {
   "124": {
     "id": "124",
     "name": "CFP Exam Flashcards",
+    "goSlug": "cfp-exam-flashcards",
+    "go": "/go/mometrix/cfp-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-145-4-124.htm",
     "img": "https://www.flashcardsecrets.com/cfp/cfp-cover_660.jpg",
@@ -188,6 +231,8 @@ export const mometrixProducts = {
   "125": {
     "id": "125",
     "name": "CFP Exam Secrets Study Guide",
+    "goSlug": "cfp-exam-secrets-study-guide",
+    "go": "/go/mometrix/cfp-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-144-4-125.htm",
     "img": "https://www.mometrix.com/studyguides/cfp/cfp-cover_612.jpg",
@@ -197,6 +242,8 @@ export const mometrixProducts = {
   "128": {
     "id": "128",
     "name": "CFRN Exam Flashcards",
+    "goSlug": "cfrn-exam-flashcards",
+    "go": "/go/mometrix/cfrn-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-149-4-128.htm",
     "img": "https://www.flashcardsecrets.com/cfrn/cfrn-cover_660.jpg",
@@ -206,6 +253,8 @@ export const mometrixProducts = {
   "129": {
     "id": "129",
     "name": "CFRN Exam Secrets Study Guide",
+    "goSlug": "cfrn-exam-secrets-study-guide",
+    "go": "/go/mometrix/cfrn-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-148-4-129.htm",
     "img": "https://www.mometrix.com/studyguides/cfrn/cfrn-cover_612.jpg",
@@ -215,6 +264,8 @@ export const mometrixProducts = {
   "154": {
     "id": "154",
     "name": "CISA Exam Flashcards",
+    "goSlug": "cisa-exam-flashcards",
+    "go": "/go/mometrix/cisa-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-175-4-154.htm",
     "img": "https://www.flashcardsecrets.com/cisa/cisa-cover_660.jpg",
@@ -224,6 +275,8 @@ export const mometrixProducts = {
   "155": {
     "id": "155",
     "name": "CISA Exam Secrets Study Guide",
+    "goSlug": "cisa-exam-secrets-study-guide",
+    "go": "/go/mometrix/cisa-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-174-4-155.htm",
     "img": "https://www.mometrix.com/studyguides/cisa/cisa-cover_612.jpg",
@@ -233,6 +286,8 @@ export const mometrixProducts = {
   "156": {
     "id": "156",
     "name": "Civil Engineering PE Exam Secrets Study Guide",
+    "goSlug": "civil-engineering-pe-exam-secrets-study-guide",
+    "go": "/go/mometrix/civil-engineering-pe-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-606-4-156.htm",
     "img": "https://www.mometrix.com/studyguides/pe/pe-cover_612.jpg",
@@ -242,6 +297,8 @@ export const mometrixProducts = {
   "164": {
     "id": "164",
     "name": "CMAA Exam Flashcards",
+    "goSlug": "cmaa-exam-flashcards",
+    "go": "/go/mometrix/cmaa-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-192-4-164.htm",
     "img": "https://www.flashcardsecrets.com/cmaa/cmaa-cover_660.jpg",
@@ -251,6 +308,8 @@ export const mometrixProducts = {
   "165": {
     "id": "165",
     "name": "CMAA Exam Secrets Study Guide",
+    "goSlug": "cmaa-exam-secrets-study-guide",
+    "go": "/go/mometrix/cmaa-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-191-4-165.htm",
     "img": "https://www.mometrix.com/studyguides/cmaa/cmaa-cover_612.jpg",
@@ -260,6 +319,8 @@ export const mometrixProducts = {
   "172": {
     "id": "172",
     "name": "CNA Exam Flashcards",
+    "goSlug": "cna-exam-flashcards",
+    "go": "/go/mometrix/cna-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-200-4-172.htm",
     "img": "https://www.flashcardsecrets.com/cna/cna-cover_660.jpg",
@@ -269,6 +330,8 @@ export const mometrixProducts = {
   "173": {
     "id": "173",
     "name": "CNA Exam Secrets Study Guide",
+    "goSlug": "cna-exam-secrets-study-guide",
+    "go": "/go/mometrix/cna-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-199-4-173.htm",
     "img": "https://www.mometrix.com/studyguides/cna/cna-cover_612.jpg",
@@ -278,6 +341,8 @@ export const mometrixProducts = {
   "182": {
     "id": "182",
     "name": "Computed Tomography Exam Flashcards",
+    "goSlug": "computed-tomography-exam-flashcards",
+    "go": "/go/mometrix/computed-tomography-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-278-4-182.htm",
     "img": "https://www.flashcardsecrets.com/ct/ct-cover_660.jpg",
@@ -287,6 +352,8 @@ export const mometrixProducts = {
   "183": {
     "id": "183",
     "name": "Computed Tomography Exam Secrets Study Guide",
+    "goSlug": "computed-tomography-exam-secrets-study-guide",
+    "go": "/go/mometrix/computed-tomography-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-277-4-183.htm",
     "img": "https://www.mometrix.com/studyguides/ct/ct-cover_612.jpg",
@@ -296,6 +363,8 @@ export const mometrixProducts = {
   "184": {
     "id": "184",
     "name": "Corrections Officer Exam Flashcards",
+    "goSlug": "corrections-officer-exam-flashcards",
+    "go": "/go/mometrix/corrections-officer-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-223-4-184.htm",
     "img": "https://www.flashcardsecrets.com/corrections/corrections-cover_660.jpg",
@@ -305,6 +374,8 @@ export const mometrixProducts = {
   "185": {
     "id": "185",
     "name": "Corrections Officer Exam Secrets Study Guide",
+    "goSlug": "corrections-officer-exam-secrets-study-guide",
+    "go": "/go/mometrix/corrections-officer-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-222-4-185.htm",
     "img": "https://www.mometrix.com/studyguides/corrections/corrections-cover_612.jpg",
@@ -314,6 +385,8 @@ export const mometrixProducts = {
   "186": {
     "id": "186",
     "name": "Cosmetology Exam Flashcards",
+    "goSlug": "cosmetology-exam-flashcards",
+    "go": "/go/mometrix/cosmetology-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-225-4-186.htm",
     "img": "https://www.flashcardsecrets.com/cosmetology/cosmetology-cover_660.jpg",
@@ -323,6 +396,8 @@ export const mometrixProducts = {
   "187": {
     "id": "187",
     "name": "Cosmetology Exam Secrets Study Guide",
+    "goSlug": "cosmetology-exam-secrets-study-guide",
+    "go": "/go/mometrix/cosmetology-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-224-4-187.htm",
     "img": "https://www.mometrix.com/studyguides/cosmetology/cosmetology-cover_612.jpg",
@@ -332,6 +407,8 @@ export const mometrixProducts = {
   "190": {
     "id": "190",
     "name": "CPC Exam Flashcards",
+    "goSlug": "cpc-exam-flashcards",
+    "go": "/go/mometrix/cpc-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-866-4-190.htm",
     "img": "https://www.flashcardsecrets.com/cpc/cpc-cover_660.jpg",
@@ -341,6 +418,8 @@ export const mometrixProducts = {
   "191": {
     "id": "191",
     "name": "CPC Exam Secrets Study Guide",
+    "goSlug": "cpc-exam-secrets-study-guide",
+    "go": "/go/mometrix/cpc-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-870-4-191.htm",
     "img": "https://www.mometrix.com/studyguides/cpc/cpc-cover_612.jpg",
@@ -350,6 +429,8 @@ export const mometrixProducts = {
   "228": {
     "id": "228",
     "name": "CSCS Exam Flashcards",
+    "goSlug": "cscs-exam-flashcards",
+    "go": "/go/mometrix/cscs-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-272-4-228.htm",
     "img": "https://www.flashcardsecrets.com/cscs/cscs-cover_660.jpg",
@@ -359,6 +440,8 @@ export const mometrixProducts = {
   "229": {
     "id": "229",
     "name": "CSCS Exam Secrets Study Guide",
+    "goSlug": "cscs-exam-secrets-study-guide",
+    "go": "/go/mometrix/cscs-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-271-4-229.htm",
     "img": "https://www.mometrix.com/studyguides/cscs/cscs-cover_612.jpg",
@@ -368,6 +451,8 @@ export const mometrixProducts = {
   "232": {
     "id": "232",
     "name": "CST Exam Flashcards",
+    "goSlug": "cst-exam-flashcards",
+    "go": "/go/mometrix/cst-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-495-4-232.htm",
     "img": "https://www.flashcardsecrets.com/nbstsa/nbstsa-cover_660.jpg",
@@ -377,6 +462,8 @@ export const mometrixProducts = {
   "233": {
     "id": "233",
     "name": "CST Exam Secrets Study Guide",
+    "goSlug": "cst-exam-secrets-study-guide",
+    "go": "/go/mometrix/cst-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-494-4-233.htm",
     "img": "https://www.mometrix.com/studyguides/nbstsa/nbstsa-cover_612.jpg",
@@ -386,6 +473,8 @@ export const mometrixProducts = {
   "244": {
     "id": "244",
     "name": "DAT Flashcards",
+    "goSlug": "dat-flashcards",
+    "go": "/go/mometrix/dat-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-294-4-244.htm",
     "img": "https://www.flashcardsecrets.com/dat/dat-cover_660.jpg",
@@ -395,6 +484,8 @@ export const mometrixProducts = {
   "250": {
     "id": "250",
     "name": "Esthetician Exam Flashcards",
+    "goSlug": "esthetician-exam-flashcards",
+    "go": "/go/mometrix/esthetician-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-313-4-250.htm",
     "img": "https://www.flashcardsecrets.com/esthetician/esthetician-cover_660.jpg",
@@ -404,6 +495,8 @@ export const mometrixProducts = {
   "251": {
     "id": "251",
     "name": "Esthetician Exam Secrets Study Guide",
+    "goSlug": "esthetician-exam-secrets-study-guide",
+    "go": "/go/mometrix/esthetician-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-312-4-251.htm",
     "img": "https://www.mometrix.com/studyguides/esthetician/esthetician-cover_612.jpg",
@@ -413,6 +506,8 @@ export const mometrixProducts = {
   "270": {
     "id": "270",
     "name": "GED Exam Flashcards",
+    "goSlug": "ged-exam-flashcards",
+    "go": "/go/mometrix/ged-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-342-4-270.htm",
     "img": "https://www.flashcardsecrets.com/ged/ged-cover_660.jpg",
@@ -422,6 +517,8 @@ export const mometrixProducts = {
   "271": {
     "id": "271",
     "name": "GED Secrets Study Guide",
+    "goSlug": "ged-secrets-study-guide",
+    "go": "/go/mometrix/ged-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-341-4-271.htm",
     "img": "https://www.mometrix.com/studyguides/ged/ged-cover_612.jpg",
@@ -431,6 +528,8 @@ export const mometrixProducts = {
   "276": {
     "id": "276",
     "name": "GRE Flashcards",
+    "goSlug": "gre-flashcards",
+    "go": "/go/mometrix/gre-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-350-4-276.htm",
     "img": "https://www.flashcardsecrets.com/gre/gre-cover_660.jpg",
@@ -440,6 +539,8 @@ export const mometrixProducts = {
   "277": {
     "id": "277",
     "name": "GRE Secrets Study Guide",
+    "goSlug": "gre-secrets-study-guide",
+    "go": "/go/mometrix/gre-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-349-4-277.htm",
     "img": "https://www.mometrix.com/studyguides/gre/gre-cover_612.jpg",
@@ -449,6 +550,8 @@ export const mometrixProducts = {
   "281": {
     "id": "281",
     "name": "HiSET Flashcards",
+    "goSlug": "hiset-flashcards",
+    "go": "/go/mometrix/hiset-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-361-4-281.htm",
     "img": "https://www.flashcardsecrets.com/hiset/hiset-cover_660.jpg",
@@ -458,6 +561,8 @@ export const mometrixProducts = {
   "282": {
     "id": "282",
     "name": "HiSET Secrets Study Guide",
+    "goSlug": "hiset-secrets-study-guide",
+    "go": "/go/mometrix/hiset-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-360-4-282.htm",
     "img": "https://www.mometrix.com/studyguides/hiset/hiset-cover_612.jpg",
@@ -467,6 +572,8 @@ export const mometrixProducts = {
   "291": {
     "id": "291",
     "name": "IELTS Exam Flashcards",
+    "goSlug": "ielts-exam-flashcards",
+    "go": "/go/mometrix/ielts-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-383-4-291.htm",
     "img": "https://www.flashcardsecrets.com/ielts/ielts-cover_660.jpg",
@@ -476,6 +583,8 @@ export const mometrixProducts = {
   "292": {
     "id": "292",
     "name": "IELTS Exam Secrets Study Guide",
+    "goSlug": "ielts-exam-secrets-study-guide",
+    "go": "/go/mometrix/ielts-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-382-4-292.htm",
     "img": "https://www.mometrix.com/studyguides/ielts/ielts-cover_612.jpg",
@@ -485,6 +594,8 @@ export const mometrixProducts = {
   "307": {
     "id": "307",
     "name": "LSAT Flashcards",
+    "goSlug": "lsat-flashcards",
+    "go": "/go/mometrix/lsat-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-414-4-307.htm",
     "img": "https://www.flashcardsecrets.com/lsat/lsat-cover_660.jpg",
@@ -494,6 +605,8 @@ export const mometrixProducts = {
   "308": {
     "id": "308",
     "name": "LSAT Secrets Study Guide",
+    "goSlug": "lsat-secrets-study-guide",
+    "go": "/go/mometrix/lsat-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-413-4-308.htm",
     "img": "https://www.mometrix.com/studyguides/lsat/lsat-cover_612.jpg",
@@ -503,6 +616,8 @@ export const mometrixProducts = {
   "316": {
     "id": "316",
     "name": "MBLEx Flashcards",
+    "goSlug": "mblex-flashcards",
+    "go": "/go/mometrix/mblex-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-423-4-316.htm",
     "img": "https://www.flashcardsecrets.com/mblex/mblex-cover_660.jpg",
@@ -512,6 +627,8 @@ export const mometrixProducts = {
   "317": {
     "id": "317",
     "name": "MBLEx Secrets Study Guide",
+    "goSlug": "mblex-secrets-study-guide",
+    "go": "/go/mometrix/mblex-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-422-4-317.htm",
     "img": "https://www.mometrix.com/studyguides/mblex/mblex-cover_612.jpg",
@@ -521,6 +638,8 @@ export const mometrixProducts = {
   "318": {
     "id": "318",
     "name": "MCAT Flashcards",
+    "goSlug": "mcat-flashcards",
+    "go": "/go/mometrix/mcat-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-428-4-318.htm",
     "img": "https://www.flashcardsecrets.com/mcat/mcat-cover_660.jpg",
@@ -530,6 +649,8 @@ export const mometrixProducts = {
   "319": {
     "id": "319",
     "name": "MCAT Secrets Study Guide",
+    "goSlug": "mcat-secrets-study-guide",
+    "go": "/go/mometrix/mcat-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-427-4-319.htm",
     "img": "https://www.mometrix.com/studyguides/mcat/mcat-cover_612.jpg",
@@ -539,6 +660,8 @@ export const mometrixProducts = {
   "336": {
     "id": "336",
     "name": "MPRE Flashcards",
+    "goSlug": "mpre-flashcards",
+    "go": "/go/mometrix/mpre-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-452-4-336.htm",
     "img": "https://www.flashcardsecrets.com/mpre/mpre-cover_660.jpg",
@@ -548,6 +671,8 @@ export const mometrixProducts = {
   "337": {
     "id": "337",
     "name": "MPRE Secrets Study Guide",
+    "goSlug": "mpre-secrets-study-guide",
+    "go": "/go/mometrix/mpre-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-451-4-337.htm",
     "img": "https://www.mometrix.com/studyguides/mpre/mpre-cover_612.jpg",
@@ -557,6 +682,8 @@ export const mometrixProducts = {
   "338": {
     "id": "338",
     "name": "Multistate Bar Exam Flashcards",
+    "goSlug": "multistate-bar-exam-flashcards",
+    "go": "/go/mometrix/multistate-bar-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-462-4-338.htm",
     "img": "https://www.flashcardsecrets.com/multistatebar/multistatebar-cover_660.jpg",
@@ -566,6 +693,8 @@ export const mometrixProducts = {
   "339": {
     "id": "339",
     "name": "Multistate Bar Exam Success Strategies Study Guide",
+    "goSlug": "multistate-bar-exam-success-strategies-study-guide",
+    "go": "/go/mometrix/multistate-bar-exam-success-strategies-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-461-4-339.htm",
     "img": "https://www.mometrix.com/studyguides/multistatebar/multistatebar-cover_612.jpg",
@@ -575,6 +704,8 @@ export const mometrixProducts = {
   "344": {
     "id": "344",
     "name": "Nail Technician Exam Flashcards",
+    "goSlug": "nail-technician-exam-flashcards",
+    "go": "/go/mometrix/nail-technician-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-468-4-344.htm",
     "img": "https://www.flashcardsecrets.com/nailtechnician/nailtechnician-cover_660.jpg",
@@ -584,6 +715,8 @@ export const mometrixProducts = {
   "345": {
     "id": "345",
     "name": "Nail Technician Exam Secrets Study Guide",
+    "goSlug": "nail-technician-exam-secrets-study-guide",
+    "go": "/go/mometrix/nail-technician-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-467-4-345.htm",
     "img": "https://www.mometrix.com/studyguides/nailtechnician/nailtechnician-cover_612.jpg",
@@ -593,6 +726,8 @@ export const mometrixProducts = {
   "348": {
     "id": "348",
     "name": "NASM Personal Trainer Exam Flashcards",
+    "goSlug": "nasm-personal-trainer-exam-flashcards",
+    "go": "/go/mometrix/nasm-personal-trainer-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-473-4-348.htm",
     "img": "https://www.flashcardsecrets.com/nasm/nasm-cover_660.jpg",
@@ -602,6 +737,8 @@ export const mometrixProducts = {
   "349": {
     "id": "349",
     "name": "NASM Personal Trainer Exam Secrets Study Guide",
+    "goSlug": "nasm-personal-trainer-exam-secrets-study-guide",
+    "go": "/go/mometrix/nasm-personal-trainer-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-472-4-349.htm",
     "img": "https://www.mometrix.com/studyguides/nasm/nasm-cover_612.jpg",
@@ -611,6 +748,8 @@ export const mometrixProducts = {
   "368": {
     "id": "368",
     "name": "NCLEX-PN Flashcards",
+    "goSlug": "nclex-pn-flashcards",
+    "go": "/go/mometrix/nclex-pn-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-509-4-368.htm",
     "img": "https://www.flashcardsecrets.com/nclexpn/nclexpn-cover_660.jpg",
@@ -620,6 +759,8 @@ export const mometrixProducts = {
   "369": {
     "id": "369",
     "name": "NCLEX-PN Secrets Study Guide",
+    "goSlug": "nclex-pn-secrets-study-guide",
+    "go": "/go/mometrix/nclex-pn-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-508-4-369.htm",
     "img": "https://www.mometrix.com/studyguides/nclexpn/nclexpn-cover_612.jpg",
@@ -629,6 +770,8 @@ export const mometrixProducts = {
   "370": {
     "id": "370",
     "name": "NCLEX-RN Flashcards",
+    "goSlug": "nclex-rn-flashcards",
+    "go": "/go/mometrix/nclex-rn-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-511-4-370.htm",
     "img": "https://www.flashcardsecrets.com/nclexrn/nclexrn-cover_660.jpg",
@@ -638,6 +781,8 @@ export const mometrixProducts = {
   "371": {
     "id": "371",
     "name": "NCLEX-RN Review Book",
+    "goSlug": "nclex-rn-review-book",
+    "go": "/go/mometrix/nclex-rn-review-book",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-510-4-371.htm",
     "img": "https://www.mometrix.com/studyguides/nclexrn/nclexrn-cover_612.jpg",
@@ -647,6 +792,8 @@ export const mometrixProducts = {
   "386": {
     "id": "386",
     "name": "NSCA-CPT Exam Flashcards",
+    "goSlug": "nsca-cpt-exam-flashcards",
+    "go": "/go/mometrix/nsca-cpt-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-542-4-386.htm",
     "img": "https://www.flashcardsecrets.com/nsca/nsca-cover_660.jpg",
@@ -656,6 +803,8 @@ export const mometrixProducts = {
   "387": {
     "id": "387",
     "name": "NSCA-CPT Exam Secrets Study Guide",
+    "goSlug": "nsca-cpt-exam-secrets-study-guide",
+    "go": "/go/mometrix/nsca-cpt-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-541-4-387.htm",
     "img": "https://www.mometrix.com/studyguides/nsca/nsca-cover_612.jpg",
@@ -665,6 +814,8 @@ export const mometrixProducts = {
   "414": {
     "id": "414",
     "name": "PANCE Flashcards",
+    "goSlug": "pance-flashcards",
+    "go": "/go/mometrix/pance-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-593-4-414.htm",
     "img": "https://www.flashcardsecrets.com/pance/pance-cover_660.jpg",
@@ -674,6 +825,8 @@ export const mometrixProducts = {
   "415": {
     "id": "415",
     "name": "PANCE Secrets Study Guide",
+    "goSlug": "pance-secrets-study-guide",
+    "go": "/go/mometrix/pance-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-592-4-415.htm",
     "img": "https://www.mometrix.com/studyguides/pance/pance-cover_612.jpg",
@@ -683,6 +836,8 @@ export const mometrixProducts = {
   "420": {
     "id": "420",
     "name": "Patient Care Technician Exam Flashcards",
+    "goSlug": "patient-care-technician-exam-flashcards",
+    "go": "/go/mometrix/patient-care-technician-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-601-4-420.htm",
     "img": "https://www.flashcardsecrets.com/patientcare/patientcare-cover_660.jpg",
@@ -692,6 +847,8 @@ export const mometrixProducts = {
   "421": {
     "id": "421",
     "name": "Patient Care Technician Exam Secrets Study Guide",
+    "goSlug": "patient-care-technician-exam-secrets-study-guide",
+    "go": "/go/mometrix/patient-care-technician-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-600-4-421.htm",
     "img": "https://www.mometrix.com/studyguides/patientcare/patientcare-cover_612.jpg",
@@ -701,6 +858,8 @@ export const mometrixProducts = {
   "424": {
     "id": "424",
     "name": "PCAT Flashcards",
+    "goSlug": "pcat-flashcards",
+    "go": "/go/mometrix/pcat-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-603-4-424.htm",
     "img": "https://www.flashcardsecrets.com/pcat/pcat-cover_660.jpg",
@@ -710,6 +869,8 @@ export const mometrixProducts = {
   "425": {
     "id": "425",
     "name": "PCAT Secrets Study Guide",
+    "goSlug": "pcat-secrets-study-guide",
+    "go": "/go/mometrix/pcat-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-602-4-425.htm",
     "img": "https://www.mometrix.com/studyguides/pcat/pcat-cover_612.jpg",
@@ -719,6 +880,8 @@ export const mometrixProducts = {
   "428": {
     "id": "428",
     "name": "PE Exam Flashcards",
+    "goSlug": "pe-exam-flashcards",
+    "go": "/go/mometrix/pe-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-607-4-428.htm",
     "img": "https://www.flashcardsecrets.com/pe/pe-cover_660.jpg",
@@ -728,6 +891,8 @@ export const mometrixProducts = {
   "436": {
     "id": "436",
     "name": "PMP Exam Flashcards",
+    "goSlug": "pmp-exam-flashcards",
+    "go": "/go/mometrix/pmp-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-628-4-436.htm",
     "img": "https://www.flashcardsecrets.com/pmp/pmp-cover_660.jpg",
@@ -737,6 +902,8 @@ export const mometrixProducts = {
   "437": {
     "id": "437",
     "name": "PMP Exam Secrets Study Guide",
+    "goSlug": "pmp-exam-secrets-study-guide",
+    "go": "/go/mometrix/pmp-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-627-4-437.htm",
     "img": "https://www.mometrix.com/studyguides/pmp/pmp-cover_612.jpg",
@@ -746,6 +913,8 @@ export const mometrixProducts = {
   "440": {
     "id": "440",
     "name": "Postal Exam Secrets Study Guide",
+    "goSlug": "postal-exam-secrets-study-guide",
+    "go": "/go/mometrix/postal-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-633-4-440.htm",
     "img": "https://www.mometrix.com/studyguides/postal/postal-cover_612.jpg",
@@ -755,6 +924,8 @@ export const mometrixProducts = {
   "442": {
     "id": "442",
     "name": "Praxis Exam Flashcards",
+    "goSlug": "praxis-exam-flashcards",
+    "go": "/go/mometrix/praxis-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-635-4-442.htm",
     "img": "https://www.flashcardsecrets.com/praxis/praxis-cover_660.jpg",
@@ -764,6 +935,8 @@ export const mometrixProducts = {
   "443": {
     "id": "443",
     "name": "Praxis Exam Secrets Study Guide",
+    "goSlug": "praxis-exam-secrets-study-guide",
+    "go": "/go/mometrix/praxis-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-634-4-443.htm",
     "img": "https://www.mometrix.com/studyguides/praxis/praxis-cover_612.jpg",
@@ -773,6 +946,8 @@ export const mometrixProducts = {
   "444": {
     "id": "444",
     "name": "PreACT Flashcards",
+    "goSlug": "preact-flashcards",
+    "go": "/go/mometrix/preact-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-639-4-444.htm",
     "img": "https://www.flashcardsecrets.com/preact/preact-cover_660.jpg",
@@ -782,6 +957,8 @@ export const mometrixProducts = {
   "445": {
     "id": "445",
     "name": "PreACT Secrets Study Guide",
+    "goSlug": "preact-secrets-study-guide",
+    "go": "/go/mometrix/preact-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-638-4-445.htm",
     "img": "https://www.mometrix.com/studyguides/preact/preact-cover_612.jpg",
@@ -791,6 +968,8 @@ export const mometrixProducts = {
   "452": {
     "id": "452",
     "name": "PSAT Exam Flashcards",
+    "goSlug": "psat-exam-flashcards",
+    "go": "/go/mometrix/psat-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-645-4-452.htm",
     "img": "https://www.flashcardsecrets.com/psat/psat-cover_660.jpg",
@@ -800,6 +979,8 @@ export const mometrixProducts = {
   "453": {
     "id": "453",
     "name": "PTCB Exam Flashcards",
+    "goSlug": "ptcb-exam-flashcards",
+    "go": "/go/mometrix/ptcb-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-651-4-453.htm",
     "img": "https://www.flashcardsecrets.com/ptcb/ptcb-cover_660.jpg",
@@ -809,6 +990,8 @@ export const mometrixProducts = {
   "454": {
     "id": "454",
     "name": "PTCB Exam Secrets Study Guide",
+    "goSlug": "ptcb-exam-secrets-study-guide",
+    "go": "/go/mometrix/ptcb-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-650-4-454.htm",
     "img": "https://www.mometrix.com/studyguides/ptcb/ptcb-cover_612.jpg",
@@ -818,6 +1001,8 @@ export const mometrixProducts = {
   "455": {
     "id": "455",
     "name": "Radiography Exam Flashcards",
+    "goSlug": "radiography-exam-flashcards",
+    "go": "/go/mometrix/radiography-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-653-4-455.htm",
     "img": "https://www.flashcardsecrets.com/radiography/radiography-cover_660.jpg",
@@ -827,6 +1012,8 @@ export const mometrixProducts = {
   "456": {
     "id": "456",
     "name": "Radiography Exam Secrets Study Guide",
+    "goSlug": "radiography-exam-secrets-study-guide",
+    "go": "/go/mometrix/radiography-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-652-4-456.htm",
     "img": "https://www.mometrix.com/studyguides/radiography/radiography-cover_612.jpg",
@@ -836,6 +1023,8 @@ export const mometrixProducts = {
   "459": {
     "id": "459",
     "name": "Real Estate Sales Exam Flashcards",
+    "goSlug": "real-estate-sales-exam-flashcards",
+    "go": "/go/mometrix/real-estate-sales-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-661-4-459.htm",
     "img": "https://www.flashcardsecrets.com/realestatesales/realestatesales-cover_660.jpg",
@@ -845,6 +1034,8 @@ export const mometrixProducts = {
   "460": {
     "id": "460",
     "name": "Real Estate Sales Exam Secrets Study Guide",
+    "goSlug": "real-estate-sales-exam-secrets-study-guide",
+    "go": "/go/mometrix/real-estate-sales-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-660-4-460.htm",
     "img": "https://www.mometrix.com/studyguides/realestatesales/realestatesales-cover_612.jpg",
@@ -854,6 +1045,8 @@ export const mometrixProducts = {
   "465": {
     "id": "465",
     "name": "RHIT Exam Flashcards",
+    "goSlug": "rhit-exam-flashcards",
+    "go": "/go/mometrix/rhit-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-671-4-465.htm",
     "img": "https://www.flashcardsecrets.com/rhit/rhit-cover_660.jpg",
@@ -863,6 +1056,8 @@ export const mometrixProducts = {
   "466": {
     "id": "466",
     "name": "RHIT Exam Secrets Study Guide",
+    "goSlug": "rhit-exam-secrets-study-guide",
+    "go": "/go/mometrix/rhit-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-670-4-466.htm",
     "img": "https://www.mometrix.com/studyguides/rhit/rhit-cover_612.jpg",
@@ -872,6 +1067,8 @@ export const mometrixProducts = {
   "469": {
     "id": "469",
     "name": "RMA Exam Flashcards",
+    "goSlug": "rma-exam-flashcards",
+    "go": "/go/mometrix/rma-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-675-4-469.htm",
     "img": "https://www.flashcardsecrets.com/rma/rma-cover_660.jpg",
@@ -881,6 +1078,8 @@ export const mometrixProducts = {
   "470": {
     "id": "470",
     "name": "RMA Exam Secrets Study Guide",
+    "goSlug": "rma-exam-secrets-study-guide",
+    "go": "/go/mometrix/rma-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-674-4-470.htm",
     "img": "https://www.mometrix.com/studyguides/rma/rma-cover_612.jpg",
@@ -890,6 +1089,8 @@ export const mometrixProducts = {
   "476": {
     "id": "476",
     "name": "SAT Exam Flashcards",
+    "goSlug": "sat-exam-flashcards",
+    "go": "/go/mometrix/sat-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-686-4-476.htm",
     "img": "https://www.flashcardsecrets.com/sat/sat-cover_660.jpg",
@@ -899,6 +1100,8 @@ export const mometrixProducts = {
   "481": {
     "id": "481",
     "name": "Series 24 Exam Flashcards",
+    "goSlug": "series-24-exam-flashcards",
+    "go": "/go/mometrix/series-24-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-695-4-481.htm",
     "img": "https://www.flashcardsecrets.com/series24/series24-cover_660.jpg",
@@ -908,6 +1111,8 @@ export const mometrixProducts = {
   "482": {
     "id": "482",
     "name": "Series 24 Exam Secrets Study Guide",
+    "goSlug": "series-24-exam-secrets-study-guide",
+    "go": "/go/mometrix/series-24-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-694-4-482.htm",
     "img": "https://www.mometrix.com/studyguides/series24/series24-cover_612.jpg",
@@ -917,6 +1122,8 @@ export const mometrixProducts = {
   "495": {
     "id": "495",
     "name": "Series 6 Exam Flashcards",
+    "goSlug": "series-6-exam-flashcards",
+    "go": "/go/mometrix/series-6-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-709-4-495.htm",
     "img": "https://www.flashcardsecrets.com/series6/series6-cover_660.jpg",
@@ -926,6 +1133,8 @@ export const mometrixProducts = {
   "496": {
     "id": "496",
     "name": "Series 6 Exam Secrets Study Guide",
+    "goSlug": "series-6-exam-secrets-study-guide",
+    "go": "/go/mometrix/series-6-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-708-4-496.htm",
     "img": "https://www.mometrix.com/studyguides/series6/series6-cover_612.jpg",
@@ -935,6 +1144,8 @@ export const mometrixProducts = {
   "497": {
     "id": "497",
     "name": "Series 63 Exam Flashcards",
+    "goSlug": "series-63-exam-flashcards",
+    "go": "/go/mometrix/series-63-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-713-4-497.htm",
     "img": "https://www.flashcardsecrets.com/series63/series63-cover_660.jpg",
@@ -944,6 +1155,8 @@ export const mometrixProducts = {
   "498": {
     "id": "498",
     "name": "Series 63 Exam Secrets Study Guide",
+    "goSlug": "series-63-exam-secrets-study-guide",
+    "go": "/go/mometrix/series-63-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-712-4-498.htm",
     "img": "https://www.mometrix.com/studyguides/series63/series63-cover_612.jpg",
@@ -953,6 +1166,8 @@ export const mometrixProducts = {
   "499": {
     "id": "499",
     "name": "Series 65 Exam Flashcards",
+    "goSlug": "series-65-exam-flashcards",
+    "go": "/go/mometrix/series-65-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-715-4-499.htm",
     "img": "https://www.flashcardsecrets.com/series65/series65-cover_660.jpg",
@@ -962,6 +1177,8 @@ export const mometrixProducts = {
   "500": {
     "id": "500",
     "name": "Series 65 Exam Secrets Study Guide",
+    "goSlug": "series-65-exam-secrets-study-guide",
+    "go": "/go/mometrix/series-65-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-714-4-500.htm",
     "img": "https://www.mometrix.com/studyguides/series65/series65-cover_612.jpg",
@@ -971,6 +1188,8 @@ export const mometrixProducts = {
   "501": {
     "id": "501",
     "name": "Series 66 Exam Flashcards",
+    "goSlug": "series-66-exam-flashcards",
+    "go": "/go/mometrix/series-66-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-717-4-501.htm",
     "img": "https://www.flashcardsecrets.com/series66/series66-cover_660.jpg",
@@ -980,6 +1199,8 @@ export const mometrixProducts = {
   "502": {
     "id": "502",
     "name": "Series 66 Exam Secrets Study Guide",
+    "goSlug": "series-66-exam-secrets-study-guide",
+    "go": "/go/mometrix/series-66-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-716-4-502.htm",
     "img": "https://www.mometrix.com/studyguides/series66/series66-cover_612.jpg",
@@ -989,6 +1210,8 @@ export const mometrixProducts = {
   "503": {
     "id": "503",
     "name": "Series 7 Exam Flashcards",
+    "goSlug": "series-7-exam-flashcards",
+    "go": "/go/mometrix/series-7-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-693-4-503.htm",
     "img": "https://www.flashcardsecrets.com/series/series-cover_660.jpg",
@@ -998,6 +1221,8 @@ export const mometrixProducts = {
   "504": {
     "id": "504",
     "name": "Series 7 Exam Secrets Study Guide",
+    "goSlug": "series-7-exam-secrets-study-guide",
+    "go": "/go/mometrix/series-7-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-692-4-504.htm",
     "img": "https://www.mometrix.com/studyguides/series/series-cover_612.jpg",
@@ -1007,6 +1232,8 @@ export const mometrixProducts = {
   "505": {
     "id": "505",
     "name": "Series 79 Exam Flashcards",
+    "goSlug": "series-79-exam-flashcards",
+    "go": "/go/mometrix/series-79-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-719-4-505.htm",
     "img": "https://www.flashcardsecrets.com/series79/series79-cover_660.jpg",
@@ -1016,6 +1243,8 @@ export const mometrixProducts = {
   "506": {
     "id": "506",
     "name": "Series 79 Exam Secrets Study Guide",
+    "goSlug": "series-79-exam-secrets-study-guide",
+    "go": "/go/mometrix/series-79-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-718-4-506.htm",
     "img": "https://www.mometrix.com/studyguides/series79/series79-cover_612.jpg",
@@ -1025,6 +1254,8 @@ export const mometrixProducts = {
   "509": {
     "id": "509",
     "name": "Series 9/10 Exam Flashcards",
+    "goSlug": "series-9-10-exam-flashcards",
+    "go": "/go/mometrix/series-9-10-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-723-4-509.htm",
     "img": "https://www.flashcardsecrets.com/series910/series910-cover_660.jpg",
@@ -1034,6 +1265,8 @@ export const mometrixProducts = {
   "510": {
     "id": "510",
     "name": "Series 9/10 Exam Secrets Study Guide",
+    "goSlug": "series-9-10-exam-secrets-study-guide",
+    "go": "/go/mometrix/series-9-10-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-722-4-510.htm",
     "img": "https://www.mometrix.com/studyguides/series910/series910-cover_612.jpg",
@@ -1043,6 +1276,8 @@ export const mometrixProducts = {
   "511": {
     "id": "511",
     "name": "Series 99 Exam Flashcards",
+    "goSlug": "series-99-exam-flashcards",
+    "go": "/go/mometrix/series-99-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-725-4-511.htm",
     "img": "https://www.flashcardsecrets.com/series99/series99-cover_660.jpg",
@@ -1052,6 +1287,8 @@ export const mometrixProducts = {
   "512": {
     "id": "512",
     "name": "Series 99 Exam Secrets Study Guide",
+    "goSlug": "series-99-exam-secrets-study-guide",
+    "go": "/go/mometrix/series-99-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-724-4-512.htm",
     "img": "https://www.mometrix.com/studyguides/series99/series99-cover_612.jpg",
@@ -1061,6 +1298,8 @@ export const mometrixProducts = {
   "513": {
     "id": "513",
     "name": "SHRM Exam Flashcards",
+    "goSlug": "shrm-exam-flashcards",
+    "go": "/go/mometrix/shrm-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-729-4-513.htm",
     "img": "https://www.flashcardsecrets.com/shrm/shrm-cover_660.jpg",
@@ -1070,6 +1309,8 @@ export const mometrixProducts = {
   "514": {
     "id": "514",
     "name": "SHRM Exam Secrets Study Guide",
+    "goSlug": "shrm-exam-secrets-study-guide",
+    "go": "/go/mometrix/shrm-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-728-4-514.htm",
     "img": "https://www.mometrix.com/studyguides/shrm/shrm-cover_612.jpg",
@@ -1079,6 +1320,8 @@ export const mometrixProducts = {
   "515": {
     "id": "515",
     "name": "SIE Exam Flashcards",
+    "goSlug": "sie-exam-flashcards",
+    "go": "/go/mometrix/sie-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-727-4-515.htm",
     "img": "https://www.flashcardsecrets.com/seriessie/seriessie-cover_660.jpg",
@@ -1088,6 +1331,8 @@ export const mometrixProducts = {
   "516": {
     "id": "516",
     "name": "SIE Exam Secrets Study Guide",
+    "goSlug": "sie-exam-secrets-study-guide",
+    "go": "/go/mometrix/sie-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-726-4-516.htm",
     "img": "https://www.mometrix.com/studyguides/seriessie/seriessie-cover_612.jpg",
@@ -1097,6 +1342,8 @@ export const mometrixProducts = {
   "541": {
     "id": "541",
     "name": "TOEFL Flashcards",
+    "goSlug": "toefl-flashcards",
+    "go": "/go/mometrix/toefl-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-779-4-541.htm",
     "img": "https://www.flashcardsecrets.com/toefl/toefl-cover_660.jpg",
@@ -1106,6 +1353,8 @@ export const mometrixProducts = {
   "542": {
     "id": "542",
     "name": "Trauma Certified Registered Nurse (TCRN) Exam Flashcards",
+    "goSlug": "trauma-certified-registered-nurse-tcrn-exam-flashcards",
+    "go": "/go/mometrix/trauma-certified-registered-nurse-tcrn-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-763-4-542.htm",
     "img": "https://www.flashcardsecrets.com/tcrn/tcrn-cover_660.jpg",
@@ -1115,6 +1364,8 @@ export const mometrixProducts = {
   "543": {
     "id": "543",
     "name": "Trauma Certified Registered Nurse (TCRN) Exam Secrets Study Guide",
+    "goSlug": "trauma-certified-registered-nurse-tcrn-exam-secrets-study-guide",
+    "go": "/go/mometrix/trauma-certified-registered-nurse-tcrn-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-762-4-543.htm",
     "img": "https://www.mometrix.com/studyguides/tcrn/tcrn-cover_612.jpg",
@@ -1124,6 +1375,8 @@ export const mometrixProducts = {
   "546": {
     "id": "546",
     "name": "USMLE Flashcards",
+    "goSlug": "usmle-flashcards",
+    "go": "/go/mometrix/usmle-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-785-4-546.htm",
     "img": "https://www.flashcardsecrets.com/usmle/usmle-cover_660.jpg",
@@ -1133,6 +1386,8 @@ export const mometrixProducts = {
   "547": {
     "id": "547",
     "name": "USMLE Preparation Secrets Study Guide",
+    "goSlug": "usmle-preparation-secrets-study-guide",
+    "go": "/go/mometrix/usmle-preparation-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-784-4-547.htm",
     "img": "https://www.mometrix.com/studyguides/usmle/usmle-cover_612.jpg",
@@ -1142,6 +1397,8 @@ export const mometrixProducts = {
   "552": {
     "id": "552",
     "name": "VTNE Flashcards",
+    "goSlug": "vtne-flashcards",
+    "go": "/go/mometrix/vtne-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-793-4-552.htm",
     "img": "https://www.flashcardsecrets.com/vtne/vtne-cover_660.jpg",
@@ -1151,6 +1408,8 @@ export const mometrixProducts = {
   "553": {
     "id": "553",
     "name": "VTNE Secrets Study Guide",
+    "goSlug": "vtne-secrets-study-guide",
+    "go": "/go/mometrix/vtne-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-792-4-553.htm",
     "img": "https://www.mometrix.com/studyguides/vtne/vtne-cover_612.jpg",
@@ -1160,6 +1419,8 @@ export const mometrixProducts = {
   "556": {
     "id": "556",
     "name": "WorkKeys Math Flashcards",
+    "goSlug": "workkeys-math-flashcards",
+    "go": "/go/mometrix/workkeys-math-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-803-4-556.htm",
     "img": "https://www.flashcardsecrets.com/workkeys/workkeys-cover_660.jpg",
@@ -1169,6 +1430,8 @@ export const mometrixProducts = {
   "557": {
     "id": "557",
     "name": "WorkKeys Secrets Study Guide",
+    "goSlug": "workkeys-secrets-study-guide",
+    "go": "/go/mometrix/workkeys-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-802-4-557.htm",
     "img": "https://www.mometrix.com/studyguides/workkeys/workkeys-cover_612.jpg",
@@ -1178,6 +1441,8 @@ export const mometrixProducts = {
   "562": {
     "id": "562",
     "name": "ACCUPLACER Exam Flashcards",
+    "goSlug": "accuplacer-exam-flashcards",
+    "go": "/go/mometrix/accuplacer-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-13-4-562.htm",
     "img": "https://www.flashcardsecrets.com/accuplacer/accuplacer-cover_660.jpg",
@@ -1187,6 +1452,8 @@ export const mometrixProducts = {
   "563": {
     "id": "563",
     "name": "ACCUPLACER Exam Secrets Study Guide",
+    "goSlug": "accuplacer-exam-secrets-study-guide",
+    "go": "/go/mometrix/accuplacer-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-12-4-563.htm",
     "img": "https://www.mometrix.com/studyguides/accuplacer/accuplacer-cover_612.jpg",
@@ -1196,6 +1463,8 @@ export const mometrixProducts = {
   "564": {
     "id": "564",
     "name": "ACSM Exam Flashcards",
+    "goSlug": "acsm-exam-flashcards",
+    "go": "/go/mometrix/acsm-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-19-4-564.htm",
     "img": "https://www.flashcardsecrets.com/acsm/acsm-cover_660.jpg",
@@ -1205,6 +1474,8 @@ export const mometrixProducts = {
   "565": {
     "id": "565",
     "name": "ACSM Exam Secrets Study Guide",
+    "goSlug": "acsm-exam-secrets-study-guide",
+    "go": "/go/mometrix/acsm-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-18-4-565.htm",
     "img": "https://www.mometrix.com/studyguides/acsm/acsm-cover_612.jpg",
@@ -1214,6 +1485,8 @@ export const mometrixProducts = {
   "575": {
     "id": "575",
     "name": "AP Exam Flashcards",
+    "goSlug": "ap-exam-flashcards",
+    "go": "/go/mometrix/ap-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-48-4-575.htm",
     "img": "https://www.flashcardsecrets.com/ap/ap-cover_660.jpg",
@@ -1223,6 +1496,8 @@ export const mometrixProducts = {
   "576": {
     "id": "576",
     "name": "AP Exam Secrets Study Guide",
+    "goSlug": "ap-exam-secrets-study-guide",
+    "go": "/go/mometrix/ap-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-47-4-576.htm",
     "img": "https://www.mometrix.com/studyguides/ap/ap-cover_612.jpg",
@@ -1232,6 +1507,8 @@ export const mometrixProducts = {
   "591": {
     "id": "591",
     "name": "DANB CDA Exam Flashcards",
+    "goSlug": "danb-cda-exam-flashcards",
+    "go": "/go/mometrix/danb-cda-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-292-4-591.htm",
     "img": "https://www.flashcardsecrets.com/danb/danb-cover_660.jpg",
@@ -1241,6 +1518,8 @@ export const mometrixProducts = {
   "592": {
     "id": "592",
     "name": "CDL Exam Secrets Study Guide",
+    "goSlug": "cdl-exam-secrets-study-guide",
+    "go": "/go/mometrix/cdl-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-126-4-592.htm",
     "img": "https://www.mometrix.com/studyguides/cdl/cdl-cover_612.jpg",
@@ -1250,6 +1529,8 @@ export const mometrixProducts = {
   "595": {
     "id": "595",
     "name": "Certified Six Sigma Exam Flashcards",
+    "goSlug": "certified-six-sigma-exam-flashcards",
+    "go": "/go/mometrix/certified-six-sigma-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-733-4-595.htm",
     "img": "https://www.flashcardsecrets.com/sixsigma/sixsigma-cover_660.jpg",
@@ -1259,6 +1540,8 @@ export const mometrixProducts = {
   "596": {
     "id": "596",
     "name": "Certified Six Sigma Exam Secrets Study Guide",
+    "goSlug": "certified-six-sigma-exam-secrets-study-guide",
+    "go": "/go/mometrix/certified-six-sigma-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-732-4-596.htm",
     "img": "https://www.mometrix.com/studyguides/sixsigma/sixsigma-cover_612.jpg",
@@ -1268,6 +1551,8 @@ export const mometrixProducts = {
   "601": {
     "id": "601",
     "name": "CLEP Exam Flashcards",
+    "goSlug": "clep-exam-flashcards",
+    "go": "/go/mometrix/clep-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-182-4-601.htm",
     "img": "https://www.flashcardsecrets.com/clep/clep-cover_660.jpg",
@@ -1277,6 +1562,8 @@ export const mometrixProducts = {
   "602": {
     "id": "602",
     "name": "CLEP Exam Secrets Study Guide",
+    "goSlug": "clep-exam-secrets-study-guide",
+    "go": "/go/mometrix/clep-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-181-4-602.htm",
     "img": "https://www.mometrix.com/studyguides/clep/clep-cover_612.jpg",
@@ -1286,6 +1573,8 @@ export const mometrixProducts = {
   "605": {
     "id": "605",
     "name": "CMA Exam Flashcards",
+    "goSlug": "cma-exam-flashcards",
+    "go": "/go/mometrix/cma-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-190-4-605.htm",
     "img": "https://www.flashcardsecrets.com/cma/cma-cover_660.jpg",
@@ -1295,6 +1584,8 @@ export const mometrixProducts = {
   "606": {
     "id": "606",
     "name": "CMA Exam Secrets Study Guide",
+    "goSlug": "cma-exam-secrets-study-guide",
+    "go": "/go/mometrix/cma-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-189-4-606.htm",
     "img": "https://www.mometrix.com/studyguides/cma/cma-cover_612.jpg",
@@ -1304,6 +1595,8 @@ export const mometrixProducts = {
   "625": {
     "id": "625",
     "name": "DANB Exam Secrets Study Guide",
+    "goSlug": "danb-exam-secrets-study-guide",
+    "go": "/go/mometrix/danb-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-291-4-625.htm",
     "img": "https://www.mometrix.com/studyguides/danb/danb-cover_612.jpg",
@@ -1313,6 +1606,8 @@ export const mometrixProducts = {
   "632": {
     "id": "632",
     "name": "EMT Exam Flashcards",
+    "goSlug": "emt-exam-flashcards",
+    "go": "/go/mometrix/emt-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-303-4-632.htm",
     "img": "https://www.flashcardsecrets.com/emt/emt-cover_660.jpg",
@@ -1322,6 +1617,8 @@ export const mometrixProducts = {
   "633": {
     "id": "633",
     "name": "EMT Exam Secrets Study Guide",
+    "goSlug": "emt-exam-secrets-study-guide",
+    "go": "/go/mometrix/emt-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-302-4-633.htm",
     "img": "https://www.mometrix.com/studyguides/emt/emt-cover_612.jpg",
@@ -1331,6 +1628,8 @@ export const mometrixProducts = {
   "648": {
     "id": "648",
     "name": "Ham Radio License Exam Flashcards",
+    "goSlug": "ham-radio-license-exam-flashcards",
+    "go": "/go/mometrix/ham-radio-license-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-356-4-648.htm",
     "img": "https://www.flashcardsecrets.com/hamradio/hamradio-cover_660.jpg",
@@ -1340,6 +1639,8 @@ export const mometrixProducts = {
   "649": {
     "id": "649",
     "name": "Ham Radio License Exam Secrets Study Guide",
+    "goSlug": "ham-radio-license-exam-secrets-study-guide",
+    "go": "/go/mometrix/ham-radio-license-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-355-4-649.htm",
     "img": "https://www.mometrix.com/studyguides/hamradio/hamradio-cover_612.jpg",
@@ -1349,6 +1650,8 @@ export const mometrixProducts = {
   "679": {
     "id": "679",
     "name": "NCCT Exam Flashcards",
+    "goSlug": "ncct-exam-flashcards",
+    "go": "/go/mometrix/ncct-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-499-4-679.htm",
     "img": "https://www.flashcardsecrets.com/ncct/ncct-cover_660.jpg",
@@ -1358,6 +1661,8 @@ export const mometrixProducts = {
   "680": {
     "id": "680",
     "name": "NCCT Exam Secrets Study Guide",
+    "goSlug": "ncct-exam-secrets-study-guide",
+    "go": "/go/mometrix/ncct-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-498-4-680.htm",
     "img": "https://www.mometrix.com/studyguides/ncct/ncct-cover_612.jpg",
@@ -1367,6 +1672,8 @@ export const mometrixProducts = {
   "685": {
     "id": "685",
     "name": "NES Certification Test Flashcards",
+    "goSlug": "nes-certification-test-flashcards",
+    "go": "/go/mometrix/nes-certification-test-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-527-4-685.htm",
     "img": "https://www.flashcardsecrets.com/nesinc/nesinc-cover_660.jpg",
@@ -1376,6 +1683,8 @@ export const mometrixProducts = {
   "686": {
     "id": "686",
     "name": "NES Certification Test Secrets Study Guide",
+    "goSlug": "nes-certification-test-secrets-study-guide",
+    "go": "/go/mometrix/nes-certification-test-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-526-4-686.htm",
     "img": "https://www.mometrix.com/studyguides/nesinc/nesinc-cover_612.jpg",
@@ -1385,6 +1694,8 @@ export const mometrixProducts = {
   "692": {
     "id": "692",
     "name": "NPTE & NPTAE Flashcards",
+    "goSlug": "npte-and-nptae-flashcards",
+    "go": "/go/mometrix/npte-and-nptae-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-537-4-692.htm",
     "img": "https://www.flashcardsecrets.com/npte/npte-cover_660.jpg",
@@ -1394,6 +1705,8 @@ export const mometrixProducts = {
   "693": {
     "id": "693",
     "name": "NPTE & NPTAE Secrets Study Guide",
+    "goSlug": "npte-and-nptae-secrets-study-guide",
+    "go": "/go/mometrix/npte-and-nptae-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-536-4-693.htm",
     "img": "https://www.mometrix.com/studyguides/npte/npte-cover_612.jpg",
@@ -1403,6 +1716,8 @@ export const mometrixProducts = {
   "700": {
     "id": "700",
     "name": "NYC Civil Service Exam Secrets Study Guide",
+    "goSlug": "nyc-civil-service-exam-secrets-study-guide",
+    "go": "/go/mometrix/nyc-civil-service-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-561-4-700.htm",
     "img": "https://www.mometrix.com/studyguides/nyccivilservice/nyccivilservice-cover_612.jpg",
@@ -1412,6 +1727,8 @@ export const mometrixProducts = {
   "716": {
     "id": "716",
     "name": "Phlebotomy Exam Flashcards",
+    "goSlug": "phlebotomy-exam-flashcards",
+    "go": "/go/mometrix/phlebotomy-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-617-4-716.htm",
     "img": "https://www.flashcardsecrets.com/phlebotomy/phlebotomy-cover_660.jpg",
@@ -1421,6 +1738,8 @@ export const mometrixProducts = {
   "717": {
     "id": "717",
     "name": "Phlebotomy Exam Secrets Study Guide",
+    "goSlug": "phlebotomy-exam-secrets-study-guide",
+    "go": "/go/mometrix/phlebotomy-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-616-4-717.htm",
     "img": "https://www.mometrix.com/studyguides/phlebotomy/phlebotomy-cover_612.jpg",
@@ -1430,6 +1749,8 @@ export const mometrixProducts = {
   "722": {
     "id": "722",
     "name": "Police Exam Secrets Study Guide",
+    "goSlug": "police-exam-secrets-study-guide",
+    "go": "/go/mometrix/police-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-631-4-722.htm",
     "img": "https://www.mometrix.com/studyguides/police/police-cover_612.jpg",
@@ -1439,6 +1760,8 @@ export const mometrixProducts = {
   "723": {
     "id": "723",
     "name": "Praxis II Exam Flashcards",
+    "goSlug": "praxis-ii-exam-flashcards",
+    "go": "/go/mometrix/praxis-ii-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-637-4-723.htm",
     "img": "https://www.flashcardsecrets.com/praxisii/praxisii-cover_660.jpg",
@@ -1448,6 +1771,8 @@ export const mometrixProducts = {
   "724": {
     "id": "724",
     "name": "Praxis II Exam Secrets Study Guide",
+    "goSlug": "praxis-ii-exam-secrets-study-guide",
+    "go": "/go/mometrix/praxis-ii-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-636-4-724.htm",
     "img": "https://www.mometrix.com/studyguides/praxisii/praxisii-cover_612.jpg",
@@ -1457,6 +1782,8 @@ export const mometrixProducts = {
   "725": {
     "id": "725",
     "name": "PSAT Exam Secrets Study Guide",
+    "goSlug": "psat-exam-secrets-study-guide",
+    "go": "/go/mometrix/psat-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-644-4-725.htm",
     "img": "https://www.mometrix.com/studyguides/psat/psat-cover_612.jpg",
@@ -1466,6 +1793,8 @@ export const mometrixProducts = {
   "737": {
     "id": "737",
     "name": "Sonography Exam Flashcards",
+    "goSlug": "sonography-exam-flashcards",
+    "go": "/go/mometrix/sonography-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-739-4-737.htm",
     "img": "https://www.flashcardsecrets.com/sonography/sonography-cover_660.jpg",
@@ -1475,6 +1804,8 @@ export const mometrixProducts = {
   "738": {
     "id": "738",
     "name": "Sonography Exam Secrets Study Guide",
+    "goSlug": "sonography-exam-secrets-study-guide",
+    "go": "/go/mometrix/sonography-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-738-4-738.htm",
     "img": "https://www.mometrix.com/studyguides/sonography/sonography-cover_612.jpg",
@@ -1484,6 +1815,8 @@ export const mometrixProducts = {
   "739": {
     "id": "739",
     "name": "SSAT Flashcards",
+    "goSlug": "ssat-flashcards",
+    "go": "/go/mometrix/ssat-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-743-4-739.htm",
     "img": "https://www.flashcardsecrets.com/ssat/ssat-cover_660.jpg",
@@ -1493,6 +1826,8 @@ export const mometrixProducts = {
   "740": {
     "id": "740",
     "name": "SSAT Secrets Study Guide",
+    "goSlug": "ssat-secrets-study-guide",
+    "go": "/go/mometrix/ssat-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-742-4-740.htm",
     "img": "https://www.mometrix.com/studyguides/ssat/ssat-cover_612.jpg",
@@ -1502,6 +1837,8 @@ export const mometrixProducts = {
   "746": {
     "id": "746",
     "name": "TOEFL Secrets Study Guide",
+    "goSlug": "toefl-secrets-study-guide",
+    "go": "/go/mometrix/toefl-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-778-4-746.htm",
     "img": "https://www.mometrix.com/studyguides/toefl/toefl-cover_612.jpg",
@@ -1511,6 +1848,8 @@ export const mometrixProducts = {
   "761": {
     "id": "761",
     "name": "Certified Coding Specialist Exam Flashcards",
+    "goSlug": "certified-coding-specialist-exam-flashcards",
+    "go": "/go/mometrix/certified-coding-specialist-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-898-4-761.htm",
     "img": "https://www.flashcardsecrets.com/codingspecialist/codingspecialist-cover_660.jpg",
@@ -1520,6 +1859,8 @@ export const mometrixProducts = {
   "762": {
     "id": "762",
     "name": "Certified Coding Specialist Exam Secrets Study Guide",
+    "goSlug": "certified-coding-specialist-exam-secrets-study-guide",
+    "go": "/go/mometrix/certified-coding-specialist-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-899-4-762.htm",
     "img": "https://www.mometrix.com/studyguides/codingspecialist/codingspecialist-cover_612.jpg",
@@ -1529,6 +1870,8 @@ export const mometrixProducts = {
   "766": {
     "id": "766",
     "name": "CNA Online Course",
+    "goSlug": "cna-online-course",
+    "go": "/go/mometrix/cna-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-903-4-766.htm",
     "img": "https://coverimages.mometrix.com/compressed/cnacourse.jpg",
@@ -1538,6 +1881,8 @@ export const mometrixProducts = {
   "770": {
     "id": "770",
     "name": "HiSET Online Course",
+    "goSlug": "hiset-online-course",
+    "go": "/go/mometrix/hiset-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-907-4-770.htm",
     "img": "https://coverimages.mometrix.com/compressed/hisetcourse.jpg",
@@ -1547,6 +1892,8 @@ export const mometrixProducts = {
   "774": {
     "id": "774",
     "name": "Praxis Middle School English Language Arts Online Course",
+    "goSlug": "praxis-middle-school-english-language-arts-online-course",
+    "go": "/go/mometrix/praxis-middle-school-english-language-arts-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-911-4-774.htm",
     "img": "https://coverimages.mometrix.com/compressed/praxmsela5047course.jpg",
@@ -1556,6 +1903,8 @@ export const mometrixProducts = {
   "781": {
     "id": "781",
     "name": "CCMA Exam Secrets Study Guide",
+    "goSlug": "ccma-exam-secrets-study-guide",
+    "go": "/go/mometrix/ccma-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-918-4-781.htm",
     "img": "https://www.mometrix.com/studyguides/ccma/ccma-cover_612.jpg",
@@ -1565,6 +1914,8 @@ export const mometrixProducts = {
   "782": {
     "id": "782",
     "name": "Certified Medical Assistant CMA Online Course",
+    "goSlug": "certified-medical-assistant-cma-online-course",
+    "go": "/go/mometrix/certified-medical-assistant-cma-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-919-4-782.htm",
     "img": "https://coverimages.mometrix.com/compressed/certmedasstcourse.jpg",
@@ -1574,6 +1925,8 @@ export const mometrixProducts = {
   "796": {
     "id": "796",
     "name": "NMLS Test Flashcards",
+    "goSlug": "nmls-test-flashcards",
+    "go": "/go/mometrix/nmls-test-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-933-4-796.htm",
     "img": "https://www.flashcardsecrets.com/nmls/nmls-cover_660.jpg",
@@ -1583,6 +1936,8 @@ export const mometrixProducts = {
   "797": {
     "id": "797",
     "name": "NMLS Test Secrets Study Guide",
+    "goSlug": "nmls-test-secrets-study-guide",
+    "go": "/go/mometrix/nmls-test-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-934-4-797.htm",
     "img": "https://www.mometrix.com/studyguides/nmls/nmls-cover_612.jpg",
@@ -1592,6 +1947,8 @@ export const mometrixProducts = {
   "802": {
     "id": "802",
     "name": "PHR Exam Flashcards",
+    "goSlug": "phr-exam-flashcards",
+    "go": "/go/mometrix/phr-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-939-4-802.htm",
     "img": "https://www.flashcardsecrets.com/phr/phr-cover_660.jpg",
@@ -1601,6 +1958,8 @@ export const mometrixProducts = {
   "803": {
     "id": "803",
     "name": "PHR Exam Secrets Study Guide",
+    "goSlug": "phr-exam-secrets-study-guide",
+    "go": "/go/mometrix/phr-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-940-4-803.htm",
     "img": "https://www.mometrix.com/studyguides/phr/phr-cover_612.jpg",
@@ -1610,6 +1969,8 @@ export const mometrixProducts = {
   "806": {
     "id": "806",
     "name": "Praxis Teaching Reading - Elementary (5205) Online Course",
+    "goSlug": "praxis-teaching-reading-elementary-5205-online-course",
+    "go": "/go/mometrix/praxis-teaching-reading-elementary-5205-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-943-4-806.htm",
     "img": "https://coverimages.mometrix.com/compressed/praxtrelem5205course.jpg",
@@ -1619,6 +1980,8 @@ export const mometrixProducts = {
   "808": {
     "id": "808",
     "name": "PSAT Online Course",
+    "goSlug": "psat-online-course",
+    "go": "/go/mometrix/psat-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-945-4-808.htm",
     "img": "https://coverimages.mometrix.com/compressed/psatcourse.jpg",
@@ -1628,6 +1991,8 @@ export const mometrixProducts = {
   "810": {
     "id": "810",
     "name": "SPHR Exam Flashcards",
+    "goSlug": "sphr-exam-flashcards",
+    "go": "/go/mometrix/sphr-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-947-4-810.htm",
     "img": "https://www.flashcardsecrets.com/sphr/sphr-cover_660.jpg",
@@ -1637,6 +2002,8 @@ export const mometrixProducts = {
   "811": {
     "id": "811",
     "name": "SPHR Exam Secrets Study Guide",
+    "goSlug": "sphr-exam-secrets-study-guide",
+    "go": "/go/mometrix/sphr-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-948-4-811.htm",
     "img": "https://www.mometrix.com/studyguides/sphr/sphr-cover_612.jpg",
@@ -1646,6 +2013,8 @@ export const mometrixProducts = {
   "818": {
     "id": "818",
     "name": "EMT Online Course",
+    "goSlug": "emt-online-course",
+    "go": "/go/mometrix/emt-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-955-4-818.htm",
     "img": "https://coverimages.mometrix.com/compressed/emtcourse.jpg",
@@ -1655,6 +2024,8 @@ export const mometrixProducts = {
   "820": {
     "id": "820",
     "name": "DANB CDA Online Course",
+    "goSlug": "danb-cda-online-course",
+    "go": "/go/mometrix/danb-cda-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-957-4-820.htm",
     "img": "https://coverimages.mometrix.com/compressed/danbcdacourse.jpg",
@@ -1664,6 +2035,8 @@ export const mometrixProducts = {
   "821": {
     "id": "821",
     "name": "GRE Online Course",
+    "goSlug": "gre-online-course",
+    "go": "/go/mometrix/gre-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-958-4-821.htm",
     "img": "https://coverimages.mometrix.com/compressed/grecourse.jpg",
@@ -1673,6 +2046,8 @@ export const mometrixProducts = {
   "825": {
     "id": "825",
     "name": "VTNE Online Course",
+    "goSlug": "vtne-online-course",
+    "go": "/go/mometrix/vtne-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-962-4-825.htm",
     "img": "https://coverimages.mometrix.com/compressed/vtnecourse.jpg",
@@ -1682,6 +2057,8 @@ export const mometrixProducts = {
   "863": {
     "id": "863",
     "name": "PANCE Online Course",
+    "goSlug": "pance-online-course",
+    "go": "/go/mometrix/pance-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-982-4-863.htm",
     "img": "https://coverimages.mometrix.com/compressed/pancecourse.jpg",
@@ -1691,6 +2068,8 @@ export const mometrixProducts = {
   "864": {
     "id": "864",
     "name": "ExCPT Flashcards",
+    "goSlug": "excpt-flashcards",
+    "go": "/go/mometrix/excpt-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-983-4-864.htm",
     "img": "https://www.flashcardsecrets.com/excpt/excpt-cover_660.jpg",
@@ -1700,6 +2079,8 @@ export const mometrixProducts = {
   "866": {
     "id": "866",
     "name": "ExCPT Secrets Study Guide",
+    "goSlug": "excpt-secrets-study-guide",
+    "go": "/go/mometrix/excpt-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-985-4-866.htm",
     "img": "https://www.mometrix.com/studyguides/excpt/excpt-cover_612.jpg",
@@ -1709,6 +2090,8 @@ export const mometrixProducts = {
   "870": {
     "id": "870",
     "name": "SIE Online Course",
+    "goSlug": "sie-online-course",
+    "go": "/go/mometrix/sie-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-989-4-870.htm",
     "img": "https://coverimages.mometrix.com/compressed/seriessiecourse.jpg",
@@ -1718,6 +2101,8 @@ export const mometrixProducts = {
   "873": {
     "id": "873",
     "name": "Family Nurse Practitioner Exam Flashcards",
+    "goSlug": "family-nurse-practitioner-exam-flashcards",
+    "go": "/go/mometrix/family-nurse-practitioner-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-992-4-873.htm",
     "img": "https://www.flashcardsecrets.com/familynp/familynp-cover_660.jpg",
@@ -1727,6 +2112,8 @@ export const mometrixProducts = {
   "878": {
     "id": "878",
     "name": "Family Nurse Practitioner Exam Secrets Study Guide",
+    "goSlug": "family-nurse-practitioner-exam-secrets-study-guide",
+    "go": "/go/mometrix/family-nurse-practitioner-exam-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-997-4-878.htm",
     "img": "https://www.mometrix.com/studyguides/familynp/familynp-cover_612.jpg",
@@ -1736,6 +2123,8 @@ export const mometrixProducts = {
   "892": {
     "id": "892",
     "name": "Certified Surgical Technologist Online Course",
+    "goSlug": "certified-surgical-technologist-online-course",
+    "go": "/go/mometrix/certified-surgical-technologist-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1024-4-892.htm",
     "img": "https://coverimages.mometrix.com/compressed/cstcourse.jpg",
@@ -1745,6 +2134,8 @@ export const mometrixProducts = {
   "895": {
     "id": "895",
     "name": "PMP Online Course",
+    "goSlug": "pmp-online-course",
+    "go": "/go/mometrix/pmp-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1027-4-895.htm",
     "img": "https://coverimages.mometrix.com/compressed/pmpcourse.jpg",
@@ -1754,6 +2145,8 @@ export const mometrixProducts = {
   "897": {
     "id": "897",
     "name": "WorkKeys Online Course",
+    "goSlug": "workkeys-online-course",
+    "go": "/go/mometrix/workkeys-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-897-4-897.htm",
     "img": "https://coverimages.mometrix.com/compressed/workkeyscourse.jpg",
@@ -1763,6 +2156,8 @@ export const mometrixProducts = {
   "898": {
     "id": "898",
     "name": "SSAT Upper Level Online Course",
+    "goSlug": "ssat-upper-level-online-course",
+    "go": "/go/mometrix/ssat-upper-level-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-896-4-898.htm",
     "img": "https://coverimages.mometrix.com/compressed/ssatuppercourse.jpg",
@@ -1772,6 +2167,8 @@ export const mometrixProducts = {
   "899": {
     "id": "899",
     "name": "SAT Online Course",
+    "goSlug": "sat-online-course",
+    "go": "/go/mometrix/sat-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-895-4-899.htm",
     "img": "https://coverimages.mometrix.com/compressed/satcourse.jpg",
@@ -1781,6 +2178,8 @@ export const mometrixProducts = {
   "902": {
     "id": "902",
     "name": "PTCB Online Course",
+    "goSlug": "ptcb-online-course",
+    "go": "/go/mometrix/ptcb-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-892-4-902.htm",
     "img": "https://coverimages.mometrix.com/compressed/ptcbcourse.jpg",
@@ -1790,6 +2189,8 @@ export const mometrixProducts = {
   "904": {
     "id": "904",
     "name": "Praxis Core Online Course",
+    "goSlug": "praxis-core-online-course",
+    "go": "/go/mometrix/praxis-core-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-890-4-904.htm",
     "img": "https://coverimages.mometrix.com/compressed/praxcorecourse.jpg",
@@ -1799,6 +2200,8 @@ export const mometrixProducts = {
   "905": {
     "id": "905",
     "name": "Praxis Elementary Education: Multiple Subjects (5001) Online Course",
+    "goSlug": "praxis-elementary-education-multiple-subjects-5001-online-course",
+    "go": "/go/mometrix/praxis-elementary-education-multiple-subjects-5001-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-889-4-905.htm",
     "img": "https://coverimages.mometrix.com/compressed/praxeems5001course.jpg",
@@ -1808,6 +2211,8 @@ export const mometrixProducts = {
   "915": {
     "id": "915",
     "name": "ASVAB Online Course",
+    "goSlug": "asvab-online-course",
+    "go": "/go/mometrix/asvab-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-878-4-915.htm",
     "img": "https://coverimages.mometrix.com/compressed/asvabcourse.jpg",
@@ -1817,6 +2222,8 @@ export const mometrixProducts = {
   "916": {
     "id": "916",
     "name": "ACT Online Course",
+    "goSlug": "act-online-course",
+    "go": "/go/mometrix/act-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-877-4-916.htm",
     "img": "https://coverimages.mometrix.com/compressed/actcourse.jpg",
@@ -1826,6 +2233,8 @@ export const mometrixProducts = {
   "917": {
     "id": "917",
     "name": "ACCUPLACER Online Course",
+    "goSlug": "accuplacer-online-course",
+    "go": "/go/mometrix/accuplacer-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-876-4-917.htm",
     "img": "https://coverimages.mometrix.com/compressed/accuplacercourse.jpg",
@@ -1835,6 +2244,8 @@ export const mometrixProducts = {
   "922": {
     "id": "922",
     "name": "SHRM-CP Online Course",
+    "goSlug": "shrm-cp-online-course",
+    "go": "/go/mometrix/shrm-cp-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-856-4-922.htm",
     "img": "https://coverimages.mometrix.com/compressed/shrmcpcourse.jpg",
@@ -1844,6 +2255,8 @@ export const mometrixProducts = {
   "923": {
     "id": "923",
     "name": "PHR Online Course",
+    "goSlug": "phr-online-course",
+    "go": "/go/mometrix/phr-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-855-4-923.htm",
     "img": "https://coverimages.mometrix.com/compressed/phrcourse.jpg",
@@ -1853,6 +2266,8 @@ export const mometrixProducts = {
   "926": {
     "id": "926",
     "name": "NCLEX-RN Online Course",
+    "goSlug": "nclex-rn-online-course",
+    "go": "/go/mometrix/nclex-rn-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-852-4-926.htm",
     "img": "https://coverimages.mometrix.com/compressed/nclexrncourse.jpg",
@@ -1862,6 +2277,8 @@ export const mometrixProducts = {
   "927": {
     "id": "927",
     "name": "NCLEX-PN Online Course",
+    "goSlug": "nclex-pn-online-course",
+    "go": "/go/mometrix/nclex-pn-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-851-4-927.htm",
     "img": "https://coverimages.mometrix.com/compressed/nclexpncourse.jpg",
@@ -1871,6 +2288,8 @@ export const mometrixProducts = {
   "930": {
     "id": "930",
     "name": "FNP Online Course",
+    "goSlug": "fnp-online-course",
+    "go": "/go/mometrix/fnp-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-848-4-930.htm",
     "img": "https://coverimages.mometrix.com/compressed/npfamilycourse.jpg",
@@ -1880,6 +2299,8 @@ export const mometrixProducts = {
   "933": {
     "id": "933",
     "name": "CEN Online Course",
+    "goSlug": "cen-online-course",
+    "go": "/go/mometrix/cen-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-845-4-933.htm",
     "img": "https://coverimages.mometrix.com/compressed/cencourse.jpg",
@@ -1889,6 +2310,8 @@ export const mometrixProducts = {
   "936": {
     "id": "936",
     "name": "GED Online Course",
+    "goSlug": "ged-online-course",
+    "go": "/go/mometrix/ged-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-340-4-936.htm",
     "img": "https://coverimages.mometrix.com/compressed/gedcourse.jpg",
@@ -1898,6 +2321,8 @@ export const mometrixProducts = {
   "938": {
     "id": "938",
     "name": "NMLS Online Course",
+    "goSlug": "nmls-online-course",
+    "go": "/go/mometrix/nmls-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1038-4-938.htm",
     "img": "https://coverimages.mometrix.com/compressed/nmlscourse.jpg",
@@ -1907,6 +2332,8 @@ export const mometrixProducts = {
   "939": {
     "id": "939",
     "name": "RHIT Online Course",
+    "goSlug": "rhit-online-course",
+    "go": "/go/mometrix/rhit-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1039-4-939.htm",
     "img": "https://coverimages.mometrix.com/compressed/rhitcourse.jpg",
@@ -1916,6 +2343,8 @@ export const mometrixProducts = {
   "940": {
     "id": "940",
     "name": "SPHR Online Course",
+    "goSlug": "sphr-online-course",
+    "go": "/go/mometrix/sphr-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1040-4-940.htm",
     "img": "https://coverimages.mometrix.com/compressed/sphrcourse.jpg",
@@ -1925,6 +2354,8 @@ export const mometrixProducts = {
   "979": {
     "id": "979",
     "name": "CPC Online Course",
+    "goSlug": "cpc-online-course",
+    "go": "/go/mometrix/cpc-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1060-4-979.htm",
     "img": "https://coverimages.mometrix.com/compressed/cpccourse.jpg",
@@ -1934,6 +2365,8 @@ export const mometrixProducts = {
   "989": {
     "id": "989",
     "name": "Civil Service Online Course",
+    "goSlug": "civil-service-online-course",
+    "go": "/go/mometrix/civil-service-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1070-4-989.htm",
     "img": "https://coverimages.mometrix.com/compressed/civilservicecourse.jpg",
@@ -1943,6 +2376,8 @@ export const mometrixProducts = {
   "990": {
     "id": "990",
     "name": "Cosmetology Online Course",
+    "goSlug": "cosmetology-online-course",
+    "go": "/go/mometrix/cosmetology-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1071-4-990.htm",
     "img": "https://coverimages.mometrix.com/compressed/cosmetologycourse.jpg",
@@ -1952,6 +2387,8 @@ export const mometrixProducts = {
   "991": {
     "id": "991",
     "name": "DANB RHS Online Course",
+    "goSlug": "danb-rhs-online-course",
+    "go": "/go/mometrix/danb-rhs-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1072-4-991.htm",
     "img": "https://coverimages.mometrix.com/compressed/danbrhscourse.jpg",
@@ -1961,6 +2398,8 @@ export const mometrixProducts = {
   "996": {
     "id": "996",
     "name": "Praxis Mathematics (5165) Online Course",
+    "goSlug": "praxis-mathematics-5165-online-course",
+    "go": "/go/mometrix/praxis-mathematics-5165-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1077-4-996.htm",
     "img": "https://coverimages.mometrix.com/compressed/praxmath5165course.jpg",
@@ -1970,6 +2409,8 @@ export const mometrixProducts = {
   "997": {
     "id": "997",
     "name": "Series 65 Online Course",
+    "goSlug": "series-65-online-course",
+    "go": "/go/mometrix/series-65-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1078-4-997.htm",
     "img": "https://coverimages.mometrix.com/compressed/series65course.jpg",
@@ -1979,6 +2420,8 @@ export const mometrixProducts = {
   "999": {
     "id": "999",
     "name": "DAT Secrets Study Guide",
+    "goSlug": "dat-secrets-study-guide",
+    "go": "/go/mometrix/dat-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-1080-4-999.htm",
     "img": "https://www.mometrix.com/studyguides/dat/dat-cover_612.jpg",
@@ -1988,6 +2431,8 @@ export const mometrixProducts = {
   "1005": {
     "id": "1005",
     "name": "LSAT Online Course",
+    "goSlug": "lsat-online-course",
+    "go": "/go/mometrix/lsat-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1086-4-1005.htm",
     "img": "https://coverimages.mometrix.com/compressed/lsatcourse.jpg",
@@ -1997,6 +2442,8 @@ export const mometrixProducts = {
   "1008": {
     "id": "1008",
     "name": "Series 7 Online Course",
+    "goSlug": "series-7-online-course",
+    "go": "/go/mometrix/series-7-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1089-4-1008.htm",
     "img": "https://coverimages.mometrix.com/compressed/series7course.jpg",
@@ -2006,6 +2453,8 @@ export const mometrixProducts = {
   "1009": {
     "id": "1009",
     "name": "ServSafe Manager Secrets Study Guide",
+    "goSlug": "servsafe-manager-secrets-study-guide",
+    "go": "/go/mometrix/servsafe-manager-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-1090-4-1009.htm",
     "img": "https://www.mometrix.com/studyguides/servsafe/servsafe-cover_612.jpg",
@@ -2015,6 +2464,8 @@ export const mometrixProducts = {
   "1012": {
     "id": "1012",
     "name": "ServSafe Manager Flashcards",
+    "goSlug": "servsafe-manager-flashcards",
+    "go": "/go/mometrix/servsafe-manager-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-1093-4-1012.htm",
     "img": "https://www.flashcardsecrets.com/servsafe/servsafe-cover_660.jpg",
@@ -2024,6 +2475,8 @@ export const mometrixProducts = {
   "1019": {
     "id": "1019",
     "name": "Certified Coding Specialist (CCS) Online Course",
+    "goSlug": "certified-coding-specialist-ccs-online-course",
+    "go": "/go/mometrix/certified-coding-specialist-ccs-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1100-4-1019.htm",
     "img": "https://coverimages.mometrix.com/compressed/certcodespeccourse.jpg",
@@ -2033,6 +2486,8 @@ export const mometrixProducts = {
   "1020": {
     "id": "1020",
     "name": "CDL Online Course",
+    "goSlug": "cdl-online-course",
+    "go": "/go/mometrix/cdl-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1101-4-1020.htm",
     "img": "https://coverimages.mometrix.com/compressed/cdlspteallcourse.jpg",
@@ -2042,6 +2497,8 @@ export const mometrixProducts = {
   "1021": {
     "id": "1021",
     "name": "Certified Dietary Manager Online Course",
+    "goSlug": "certified-dietary-manager-online-course",
+    "go": "/go/mometrix/certified-dietary-manager-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1102-4-1021.htm",
     "img": "https://coverimages.mometrix.com/compressed/cdmcourse.jpg",
@@ -2051,6 +2508,8 @@ export const mometrixProducts = {
   "1023": {
     "id": "1023",
     "name": "Certified Financial Planner (CFP) Online Course",
+    "goSlug": "certified-financial-planner-cfp-online-course",
+    "go": "/go/mometrix/certified-financial-planner-cfp-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1104-4-1023.htm",
     "img": "https://coverimages.mometrix.com/compressed/cfpcourse.jpg",
@@ -2060,6 +2519,8 @@ export const mometrixProducts = {
   "1024": {
     "id": "1024",
     "name": "Esthetician Online Course",
+    "goSlug": "esthetician-online-course",
+    "go": "/go/mometrix/esthetician-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1105-4-1024.htm",
     "img": "https://coverimages.mometrix.com/compressed/estheticiancourse.jpg",
@@ -2069,6 +2530,8 @@ export const mometrixProducts = {
   "1026": {
     "id": "1026",
     "name": "Phlebotomy Online Course",
+    "goSlug": "phlebotomy-online-course",
+    "go": "/go/mometrix/phlebotomy-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1107-4-1026.htm",
     "img": "https://coverimages.mometrix.com/compressed/phlebotomycourse.jpg",
@@ -2078,6 +2541,8 @@ export const mometrixProducts = {
   "1028": {
     "id": "1028",
     "name": "NHA CCMA Exam Flashcards",
+    "goSlug": "nha-ccma-exam-flashcards",
+    "go": "/go/mometrix/nha-ccma-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-1109-4-1028.htm",
     "img": "https://www.flashcardsecrets.com/ccma/ccma-cover_660.jpg",
@@ -2087,6 +2552,8 @@ export const mometrixProducts = {
   "1037": {
     "id": "1037",
     "name": "NHA CCMA Online Course",
+    "goSlug": "nha-ccma-online-course",
+    "go": "/go/mometrix/nha-ccma-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1118-4-1037.htm",
     "img": "https://coverimages.mometrix.com/compressed/nhaccmacourse.jpg",
@@ -2096,6 +2563,8 @@ export const mometrixProducts = {
   "1040": {
     "id": "1040",
     "name": "CSCS Online Course",
+    "goSlug": "cscs-online-course",
+    "go": "/go/mometrix/cscs-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1121-4-1040.htm",
     "img": "https://coverimages.mometrix.com/compressed/cscscourse.jpg",
@@ -2105,6 +2574,8 @@ export const mometrixProducts = {
   "1043": {
     "id": "1043",
     "name": "Praxis 5412 Online Course",
+    "goSlug": "praxis-5412-online-course",
+    "go": "/go/mometrix/praxis-5412-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1124-4-1043.htm",
     "img": "https://coverimages.mometrix.com/compressed/praxedul5412course.jpg",
@@ -2114,6 +2585,8 @@ export const mometrixProducts = {
   "1050": {
     "id": "1050",
     "name": "Computed Tomography (CT) Online Course",
+    "goSlug": "computed-tomography-ct-online-course",
+    "go": "/go/mometrix/computed-tomography-ct-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1131-4-1050.htm",
     "img": "https://coverimages.mometrix.com/compressed/ctcourse.jpg",
@@ -2123,6 +2596,8 @@ export const mometrixProducts = {
   "1058": {
     "id": "1058",
     "name": "Praxis School Counselor (5422) Online Course",
+    "goSlug": "praxis-school-counselor-5422-online-course",
+    "go": "/go/mometrix/praxis-school-counselor-5422-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1139-4-1058.htm",
     "img": "https://coverimages.mometrix.com/compressed/praxsccoun5422course.jpg",
@@ -2132,6 +2607,8 @@ export const mometrixProducts = {
   "1065": {
     "id": "1065",
     "name": "MBLEx Online Course",
+    "goSlug": "mblex-online-course",
+    "go": "/go/mometrix/mblex-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1146-4-1065.htm",
     "img": "https://coverimages.mometrix.com/compressed/mblexcourse.jpg",
@@ -2141,6 +2618,8 @@ export const mometrixProducts = {
   "1066": {
     "id": "1066",
     "name": "Civil Service Exam Flashcards",
+    "goSlug": "civil-service-exam-flashcards",
+    "go": "/go/mometrix/civil-service-exam-flashcards",
     "kind": "flashcards",
     "href": "https://ref.mometrix.com/1262-1147-4-1066.htm",
     "img": null,
@@ -2150,6 +2629,8 @@ export const mometrixProducts = {
   "1072": {
     "id": "1072",
     "name": "BCBA Secrets Study Guide",
+    "goSlug": "bcba-secrets-study-guide",
+    "go": "/go/mometrix/bcba-secrets-study-guide",
     "kind": "guide",
     "href": "https://ref.mometrix.com/1262-1153-4-1072.htm",
     "img": "https://www.mometrix.com/studyguides/bcba/bcba-cover_612.jpg",
@@ -2159,6 +2640,8 @@ export const mometrixProducts = {
   "1075": {
     "id": "1075",
     "name": "ExCPT Online Course",
+    "goSlug": "excpt-online-course",
+    "go": "/go/mometrix/excpt-online-course",
     "kind": "course",
     "href": "https://ref.mometrix.com/1262-1156-4-1075.htm",
     "img": "https://coverimages.mometrix.com/compressed/excptcourse.jpg",

@@ -28,55 +28,73 @@
 # the citation channel.
 Content-Signal: ai-train=yes, search=yes, ai-input=yes
 
+# /go/ holds outbound affiliate redirects (functions/go/). They are not content,
+# and a crawler following one would register as a fake click with the partner.
 User-agent: *
 Allow: /
+Disallow: /go/
 Crawl-delay: 1
 
 # ── AI answer engines & training crawlers ──────────────────────────
 User-agent: GPTBot
 Allow: /
+Disallow: /go/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /go/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /go/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /go/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /go/
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /go/
 
 User-agent: Claude-User
 Allow: /
+Disallow: /go/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /go/
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /go/
 
 User-agent: Amazonbot
 Allow: /
+Disallow: /go/
 
 User-agent: meta-externalagent
 Allow: /
+Disallow: /go/
 
 User-agent: YouBot
 Allow: /
+Disallow: /go/
 
 User-agent: Diffbot
 Allow: /
+Disallow: /go/
 
 User-agent: cohere-ai
 Allow: /
+Disallow: /go/
 
 User-agent: Bytespider
 Allow: /
+Disallow: /go/
 
 Sitemap: https://testpreppilot.com/sitemap-index.xml
 Agentmap: https://testpreppilot.com/.well-known/ai-catalog.json

@@ -8,8 +8,10 @@
  *   variant="compact"  a one-line reminder for the end of the page.
  *
  * Renders nothing when the exam has no mapped product, so callers can drop it
- * in unconditionally. Links are Mometrix-issued tracking links and must be used
- * verbatim; clicks are reported to GA4 as `affiliate_click`.
+ * in unconditionally. Links point at /go/mometrix/<slug>, a Pages Function
+ * (functions/go/mometrix/[slug].js) that redirects real visitors to the
+ * Mometrix tracking link and refuses bots and prefetches; clicks are reported
+ * to GA4 as `affiliate_click`.
  */
 import { mometrixFor } from '../data/mometrix.mjs';
 
@@ -49,7 +51,11 @@ const track = (p: any) => ({
   'data-mx-product': p.id,
   'data-mx-kind': p.kind,
   'data-mx-exam': slug,
-  'data-mx-placement': placement
+  'data-mx-placement': placement,
+  // /go/ links are same-origin: keep Astro's hover prefetch and the
+  // ClientRouter away from them, or a hover would count as a click.
+  'data-astro-prefetch': 'false',
+  'data-astro-reload': true
 });
 const heading = featured?.kind === 'course'
   ? `Which prep course should you use for the ${examName}?`
@@ -66,7 +72,7 @@ const heading = featured?.kind === 'course'
     </p>
 
     <div class="mx-layout">
-      <a class="mx-feature" href={featured.href} target="_blank" rel={rel} {...track(featured)}>
+      <a class="mx-feature" href={featured.go} target="_blank" rel={rel} {...track(featured)}>
         {featured.img && (
           <span class="mx-cover">
             <img
@@ -94,7 +100,7 @@ const heading = featured?.kind === 'course'
           <ul class="mx-list">
             {others.map((p) => (
               <li>
-                <a class="mx-row" href={p.href} target="_blank" rel={rel} {...track(p)}>
+                <a class="mx-row" href={p.go} target="_blank" rel={rel} {...track(p)}>
                   <span class="mx-row-text">
                     <span class="mx-kind">{KIND[p.kind].label}</span>
                     <span class="mx-row-name">{p.name}</span>
@@ -125,7 +131,7 @@ const heading = featured?.kind === 'course'
       <span class="mx-kind">{KIND[featured.kind].label}</span>
       <span class="mx-compact-name">Ready to start? {featured.name}</span>
     </p>
-    <a class="mx-btn mx-btn-solid" href={featured.href} target="_blank" rel={rel} {...track(featured)}>
+    <a class="mx-btn mx-btn-solid" href={featured.go} target="_blank" rel={rel} {...track(featured)}>
       {KIND[featured.kind].cta} <span aria-hidden="true">→</span>
     </a>
     <p class="mx-compact-disc">
