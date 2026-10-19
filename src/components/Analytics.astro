@@ -10,8 +10,20 @@
 //
 // GA4 is loaded with `is:inline` + async so Astro never rewrites or bundles
 // it, and the request is non-blocking for LCP.
+//
+// PostHog: shares project 532954 with the other sites on purpose (the traffic
+// dashboard queries that one project and tells sites apart by `$host`). The phc_
+// key is a public ingestion key (write-only), so it is safe to ship in HTML.
+// `capture_performance.web_vitals` must stay on: the dashboard only counts a
+// session as human when it reported $web_vitals.
+//   aff_click — trusted click on an affiliate link (Mometrix block, AffiliateBox),
+//               props: slug / ctaSource / location / text. Same name as PsychicWho's
+//               so the dashboard picks it up; site = "testpreppilot" on every event.
 const ga4Id = import.meta.env.PUBLIC_GA4_ID || 'G-P2G1H5ML96';
 const gscToken = import.meta.env.PUBLIC_GSC_VERIFICATION;
+const POSTHOG_KEY = import.meta.env.PUBLIC_POSTHOG_KEY || 'phc_wKtYrkAQ9gynGBsKNW6bZ2PahhYaACwdXTtLSmhB8TCj';
+const POSTHOG_HOST = import.meta.env.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com';
+const SITE_ID = 'testpreppilot';
 ---
 
 {gscToken && <meta name="google-site-verification" content={gscToken} />}
@@ -29,3 +41,53 @@ const gscToken = import.meta.env.PUBLIC_GSC_VERIFICATION;
     </script>
   </>
 )}
+
+<script is:inline define:vars={{ POSTHOG_KEY, POSTHOG_HOST, SITE_ID }}>
+  !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId setPersonProperties get_distinct_id".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+  // No measurement when the browser sends Global Privacy Control; Do Not Track is
+  // handled inside PostHog by respect_dnt.
+  var gpc = false;
+  try { gpc = navigator.globalPrivacyControl === true; } catch (e) {}
+
+  if (!gpc) {
+    posthog.init(POSTHOG_KEY, {
+      api_host: POSTHOG_HOST,
+      person_profiles: 'identified_only',
+      autocapture: true,
+      capture_pageview: true,
+      respect_dnt: true,
+      disable_surveys: true,
+      capture_dead_clicks: false,
+      capture_performance: { web_vitals: true },
+      disable_session_recording: true,
+      loaded: function (ph) { ph.register({ site: SITE_ID }); }
+    });
+    posthog.register({ site: SITE_ID });
+
+    // Outbound affiliate clicks. Only trusted (real user) clicks count; middle-click
+    // opens arrive as auxclick. sendBeacon survives the navigation away.
+    var report = function (e) {
+      if (!e.isTrusted) return;
+      if (e.type === 'auxclick' && e.button !== 1) return;
+      var a = e.target && e.target.closest ? e.target.closest('a[data-mx-product], a.affiliate-cta') : null;
+      if (!a) return;
+      var d = a.dataset || {};
+      var opts = { send_instantly: true };
+      if (navigator.sendBeacon) opts.transport = 'sendBeacon';
+      try {
+        posthog.capture('aff_click', {
+          site: SITE_ID,
+          program: d.mxProduct ? 'mometrix' : 'provider',
+          slug: d.mxProduct || a.hostname,
+          ctaSource: d.mxPlacement || 'affiliate-box',
+          location: window.location.pathname,
+          product_kind: d.mxKind || null,
+          exam_slug: d.mxExam || null,
+          text: (a.innerText || '').trim().slice(0, 80)
+        }, opts);
+      } catch (_) {}
+    };
+    document.addEventListener('click', report);
+    document.addEventListener('auxclick', report);
+  }
+</script>
