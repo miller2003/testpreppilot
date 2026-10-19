@@ -1,6 +1,7 @@
 ---
 import type { Provider } from '../data/types';
 import InlineDisclosure from './InlineDisclosure.astro';
+import { liveAffiliateUrl } from '../lib/affiliate';
 
 interface Props {
   providers: Provider[];
@@ -8,7 +9,10 @@ interface Props {
 }
 
 const { providers, credentialName = 'Certification Providers' } = Astro.props;
-const hasAffiliate = providers.some(p => p.affiliateUrl);
+const hrefFor = (p: Provider) => liveAffiliateUrl(p.affiliateUrl) || p.url;
+const relFor = (p: Provider) =>
+  liveAffiliateUrl(p.affiliateUrl) ? 'sponsored nofollow noopener' : 'noopener noreferrer';
+const hasAffiliate = providers.some(p => liveAffiliateUrl(p.affiliateUrl));
 
 const schemaData = providers && providers.length > 0 ? {
   "@context": "https://schema.org",
@@ -20,7 +24,7 @@ const schemaData = providers && providers.length > 0 ? {
     "item": {
       "@type": "Organization",
       "name": provider.name,
-      "url": provider.affiliateUrl || provider.url
+      "url": provider.url
     }
   }))
 } : null;
@@ -41,7 +45,7 @@ const schemaData = providers && providers.length > 0 ? {
         <tr>
           <td>
             {provider.name}
-            {provider.isSponsored && <span class="sponsored-badge">Sponsored</span>}
+            {provider.isSponsored && liveAffiliateUrl(provider.affiliateUrl) && <span class="sponsored-badge">Sponsored</span>}
           </td>
           <td>{provider.price}</td>
           <td>
@@ -51,7 +55,7 @@ const schemaData = providers && providers.length > 0 ? {
           </td>
           <td>{provider.rating ? `${provider.rating} stars` : 'N/A'}</td>
           <td>
-            <a href={provider.affiliateUrl || provider.url} class="button button-small" target="_blank" rel="noopener noreferrer">
+            <a href={hrefFor(provider)} class="button button-small" target="_blank" rel={relFor(provider)}>
               View Program
             </a>
           </td>
@@ -66,7 +70,7 @@ const schemaData = providers && providers.length > 0 ? {
         <div class="provider-header">
           <h4>
             {provider.name}
-            {provider.isSponsored && <span class="sponsored-badge">Sponsored</span>}
+            {provider.isSponsored && liveAffiliateUrl(provider.affiliateUrl) && <span class="sponsored-badge">Sponsored</span>}
           </h4>
           <span class="provider-rating">{provider.rating ? `${provider.rating} stars` : ''}</span>
         </div>
@@ -74,7 +78,7 @@ const schemaData = providers && providers.length > 0 ? {
         <ul class="provider-features">
           {provider.features.map(f => <li>{f}</li>)}
         </ul>
-        <a href={provider.affiliateUrl || provider.url} class="button button-small provider-cta" target="_blank" rel="noopener noreferrer">
+        <a href={hrefFor(provider)} class="button button-small provider-cta" target="_blank" rel={relFor(provider)}>
           View Program
         </a>
       </div>

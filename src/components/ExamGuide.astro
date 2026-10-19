@@ -7,7 +7,9 @@ import InlineDisclosure from './InlineDisclosure.astro';
 import DepthSections from './DepthSections.astro';
 import AuthorByline from './AuthorByline.astro';
 import SidebarTOC from './SidebarTOC.astro';
+import MometrixPrep from './MometrixPrep.astro';
 import { depthFor, depthSections } from '../data/examCatalog/examDepth.mjs';
+import { liveAffiliateUrl } from '../lib/affiliate';
 
 interface Props {
   credential: any;
@@ -134,7 +136,8 @@ const hasParts = ex?.parts?.length;
 const hasModules = ex?.modules?.length;
 
 const topProvider = credential.providers?.[0];
-const hasAffiliate = topProvider?.affiliateUrl;
+const topAffiliateUrl = liveAffiliateUrl(topProvider?.affiliateUrl);
+const hasAffiliate = !!topAffiliateUrl;
 ---
 
 <header class="eg-hero">
@@ -329,6 +332,8 @@ const hasAffiliate = topProvider?.affiliateUrl;
         )}
 
         <ProviderTable providers={credential.providers} />
+
+        <MometrixPrep slug={credential.slug} examName={credential.name} placement="path-providers" />
       </section>
     )}
 
@@ -431,11 +436,13 @@ const hasAffiliate = topProvider?.affiliateUrl;
             {credential.summaryPoints.map((point: string) => <li>{point}</li>)}
           </ul>
         </div>
-        {topProvider?.affiliateUrl && (
+        {topAffiliateUrl ? (
           <div class="eg-cta">
             <h3>Ready to start your {credential.shortName || credential.name}?</h3>
-            <a href={topProvider.affiliateUrl} class="button" target="_blank" rel="noopener noreferrer">Start with {topProvider.name}</a>
+            <a href={topAffiliateUrl} class="button" target="_blank" rel="sponsored nofollow noopener">Start with {topProvider.name}</a>
           </div>
+        ) : (
+          <MometrixPrep slug={credential.slug} examName={credential.name} variant="compact" placement="path-summary" />
         )}
       </section>
     )}

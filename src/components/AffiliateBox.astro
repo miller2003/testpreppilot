@@ -1,5 +1,6 @@
 ---
 import type { Provider } from '../data/types';
+import { liveAffiliateUrl } from '../lib/affiliate';
 
 interface Props {
   provider: Provider;
@@ -18,7 +19,7 @@ const { provider } = Astro.props;
       <li>{feature}</li>
     ))}
   </ul>
-  <a href={provider.affiliateUrl || provider.url} class="button affiliate-cta" target="_blank" rel="sponsored nofollow noopener noreferrer">
+  <a href={liveAffiliateUrl(provider.affiliateUrl) || provider.url} class="button affiliate-cta" target="_blank" rel="sponsored nofollow noopener noreferrer">
     Start with {provider.name}
   </a>
   <p class="disclosure-line">
