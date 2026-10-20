@@ -1,0 +1,71 @@
+{
+  "id": "pkg50",
+  "bodies": [
+    "National Registry of Emergency Medical Technicians (NREMT)",
+    "Pharmacy Technician Certification Board (PTCB)"
+  ],
+  "ownsPrograms": [
+    "National Registry of Emergency Medical Technicians (NREMT)",
+    "Pharmacy Technician Certification Board (PTCB)"
+  ],
+  "slugs": [
+    "nremt-aemt",
+    "nremt-emr",
+    "nremt-emt",
+    "nremt-paramedic",
+    "ptcb-billing",
+    "ptcb-cpht",
+    "ptcb-immunization",
+    "ptcb-nonsterile-compounding"
+  ],
+  "exams": [
+    {
+      "slug": "nremt-aemt",
+      "name": "NREMT Advanced Emergency Medical Technician Certification",
+      "category": "allied-health",
+      "body": "National Registry of Emergency Medical Technicians (NREMT)"
+    },
+    {
+      "slug": "nremt-emr",
+      "name": "NREMT Emergency Medical Responder Certification",
+      "category": "allied-health",
+      "body": "National Registry of Emergency Medical Technicians (NREMT)"
+    },
+    {
+      "slug": "nremt-emt",
+      "name": "NREMT Emergency Medical Technician Certification",
+      "category": "allied-health",
+      "body": "National Registry of Emergency Medical Technicians (NREMT)"
+    },
+    {
+      "slug": "nremt-paramedic",
+      "name": "NREMT Paramedic Certification",
+      "category": "allied-health",
+      "body": "National Registry of Emergency Medical Technicians (NREMT)"
+    },
+    {
+      "slug": "ptcb-billing",
+      "name": "PTCB Billing and Reimbursement Assessment",
+      "category": "allied-health",
+      "body": "Pharmacy Technician Certification Board (PTCB)"
+    },
+    {
+      "slug": "ptcb-cpht",
+      "name": "PTCB Certified Pharmacy Technician",
+      "category": "allied-health",
+      "body": "Pharmacy Technician Certification Board (PTCB)"
+    },
+    {
+      "slug": "ptcb-immunization",
+      "name": "PTCB Immunization Delivery Assessment",
+      "category": "allied-health",
+      "body": "Pharmacy Technician Certification Board (PTCB)"
+    },
+    {
+      "slug": "ptcb-nonsterile-compounding",
+      "name": "PTCB Nonsterile Compounding Assessment",
+      "category": "allied-health",
+      "body": "Pharmacy Technician Certification Board (PTCB)"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "pkg45",
+  "bodies": [
+    "ACT, Inc.",
+    "Acuity Insights",
+    "American Dental Association",
+    "Association of American Medical Colleges",
+    "British Council, IDP: IELTS Australia and Cambridge University Press and Assessment",
+    "Duolingo, Inc."
+  ],
+  "ownsPrograms": [
+    "ACT, Inc.",
+    "Acuity Insights",
+    "American Dental Association",
+    "Association of American Medical Colleges",
+    "British Council, IDP: IELTS Australia and Cambridge University Press and Assessment",
+    "Duolingo, Inc."
+  ],
+  "slugs": [
+    "act-test",
+    "act-workkeys",
+    "preact-8-9",
+    "casper-test",
+    "dental-admission-test",
+    "mcat-exam",
+    "ielts-academic",
+    "duolingo-english-test"
+  ],
+  "exams": [
+    {
+      "slug": "act-test",
+      "name": "ACT",
+      "category": "admissions-academic",
+      "body": "ACT, Inc."
+    },
+    {
+      "slug": "act-workkeys",
+      "name": "ACT WorkKeys Assessments",
+      "category": "admissions-academic",
+      "body": "ACT, Inc."
+    },
+    {
+      "slug": "preact-8-9",
+      "name": "PreACT 8/9",
+      "category": "admissions-academic",
+      "body": "ACT, Inc."
+    },
+    {
+      "slug": "casper-test",
+      "name": "Casper Situational Judgment Test",
+      "category": "admissions-academic",
+      "body": "Acuity Insights"
+    },
+    {
+      "slug": "dental-admission-test",
+      "name": "Dental Admission Test",
+      "category": "admissions-academic",
+      "body": "American Dental Association"
+    },
+    {
+      "slug": "mcat-exam",
+      "name": "Medical College Admission Test",
+      "category": "admissions-academic",
+      "body": "Association of American Medical Colleges"
+    },
+    {
+      "slug": "ielts-academic",
+      "name": "IELTS Academic",
+      "category": "admissions-academic",
+      "body": "British Council, IDP: IELTS Australia and Cambridge University Press and Assessment"
+    },
+    {
+      "slug": "duolingo-english-test",
+      "name": "Duolingo English Test",
+      "category": "admissions-academic",
+      "body": "Duolingo, Inc."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "pkg66",
+  "bodies": [
+    "National Notary Association",
+    "Broadcom",
+    "Cloud Native Computing Foundation",
+    "Cloud Security Alliance",
+    "Docker"
+  ],
+  "ownsPrograms": [
+    "National Notary Association",
+    "Broadcom",
+    "Cloud Native Computing Foundation",
+    "Cloud Security Alliance",
+    "Docker"
+  ],
+  "slugs": [
+    "nna-certified-notary-signing-agent",
+    "notary-signing-agent",
+    "vmware-vcp-data-center-virtualization",
+    "certified-kubernetes-administrator",
+    "certified-kubernetes-application-developer",
+    "kubernetes-and-cloud-native-associate",
+    "csa-ccsk",
+    "docker-certified-associate"
+  ],
+  "exams": [
+    {
+      "slug": "nna-certified-notary-signing-agent",
+      "name": "NNA Certified Notary Signing Agent",
+      "category": "security-investigation",
+      "body": "National Notary Association"
+    },
+    {
+      "slug": "notary-signing-agent",
+      "name": "Certified Notary Signing Agent",
+      "category": "legal",
+      "body": "National Notary Association"
+    },
+    {
+      "slug": "vmware-vcp-data-center-virtualization",
+      "name": "VMware Certified Professional - Data Center Virtualization",
+      "category": "technology",
+      "body": "Broadcom"
+    },
+    {
+      "slug": "certified-kubernetes-administrator",
+      "name": "Certified Kubernetes Administrator",
+      "category": "technology",
+      "body": "Cloud Native Computing Foundation"
+    },
+    {
+      "slug": "certified-kubernetes-application-developer",
+      "name": "Certified Kubernetes Application Developer",
+      "category": "technology",
+      "body": "Cloud Native Computing Foundation"
+    },
+    {
+      "slug": "kubernetes-and-cloud-native-associate",
+      "name": "Kubernetes and Cloud Native Associate",
+      "category": "technology",
+      "body": "Cloud Native Computing Foundation"
+    },
+    {
+      "slug": "csa-ccsk",
+      "name": "Certificate of Cloud Security Knowledge",
+      "category": "technology",
+      "body": "Cloud Security Alliance"
+    },
+    {
+      "slug": "docker-certified-associate",
+      "name": "Docker Certified Associate",
+      "category": "technology",
+      "body": "Docker"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "pkg20",
+  "bodies": [
+    "Amazon Web Services"
+  ],
+  "ownsPrograms": [
+    "Amazon Web Services"
+  ],
+  "slugs": [
+    "aws-certified-advanced-networking-specialty",
+    "aws-certified-ai-practitioner",
+    "aws-certified-cloud-practitioner",
+    "aws-certified-data-engineer-associate",
+    "aws-certified-database-specialty"
+  ],
+  "exams": [
+    {
+      "slug": "aws-certified-advanced-networking-specialty",
+      "name": "AWS Certified Advanced Networking - Specialty",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    },
+    {
+      "slug": "aws-certified-ai-practitioner",
+      "name": "AWS Certified AI Practitioner",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    },
+    {
+      "slug": "aws-certified-cloud-practitioner",
+      "name": "AWS Certified Cloud Practitioner",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    },
+    {
+      "slug": "aws-certified-data-engineer-associate",
+      "name": "AWS Certified Data Engineer - Associate",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    },
+    {
+      "slug": "aws-certified-database-specialty",
+      "name": "AWS Certified Database - Specialty",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    }
+  ]
+}

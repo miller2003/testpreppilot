@@ -253,7 +253,7 @@ if (depthNav.length) {
     const extraCareerLabels: Record<string, string> = { 'pass-rate': 'Pass rates' };
     tocItems.push({
       id: first.id,
-      label: first.id === 'salary' ? 'Career outlook' : (extraCareerLabels[first.id] || first.label),
+      label: first.id === 'salary' ? (depth?.salaryOutlook?.sectionLabel || 'Career outlook') : (extraCareerLabels[first.id] || first.label),
       chapterTitle: prep.length > 0 ? 'Career' : 'Career & prep'
     });
     for (let i = 1; i < career.length; i++) {

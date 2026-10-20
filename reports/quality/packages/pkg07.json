@@ -1,0 +1,60 @@
+{
+  "id": "pkg07",
+  "bodies": [
+    "College Board"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "clep-precalculus",
+    "clep-principles-of-macroeconomics",
+    "clep-principles-of-microeconomics",
+    "clep-spanish-language",
+    "psat-10",
+    "psat-nmsqt",
+    "sat-exam"
+  ],
+  "exams": [
+    {
+      "slug": "clep-precalculus",
+      "name": "CLEP Precalculus",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-principles-of-macroeconomics",
+      "name": "CLEP Principles of Macroeconomics",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-principles-of-microeconomics",
+      "name": "CLEP Principles of Microeconomics",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-spanish-language",
+      "name": "CLEP Spanish Language",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "psat-10",
+      "name": "PSAT 10",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "psat-nmsqt",
+      "name": "PSAT/NMSQT",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "sat-exam",
+      "name": "SAT",
+      "category": "admissions-academic",
+      "body": "College Board"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "pkg53",
+  "bodies": [
+    "North American Securities Administrators Association (NASAA)",
+    "The American College of Financial Services",
+    "American College of Sports Medicine",
+    "American Council on Exercise"
+  ],
+  "ownsPrograms": [
+    "North American Securities Administrators Association (NASAA)",
+    "The American College of Financial Services",
+    "American College of Sports Medicine",
+    "American Council on Exercise"
+  ],
+  "slugs": [
+    "series-63",
+    "series-65",
+    "series-66",
+    "chartered-life-underwriter",
+    "acsm-certified-personal-trainer",
+    "ace-certified-group-fitness-instructor",
+    "ace-certified-personal-trainer"
+  ],
+  "exams": [
+    {
+      "slug": "series-63",
+      "name": "Series 63 Uniform Securities Agent State Law Exam",
+      "category": "finance-securities",
+      "body": "North American Securities Administrators Association (NASAA)"
+    },
+    {
+      "slug": "series-65",
+      "name": "Series 65 Uniform Investment Adviser Law Exam",
+      "category": "finance-securities",
+      "body": "North American Securities Administrators Association (NASAA)"
+    },
+    {
+      "slug": "series-66",
+      "name": "Series 66 Uniform Combined State Law Exam",
+      "category": "finance-securities",
+      "body": "North American Securities Administrators Association (NASAA)"
+    },
+    {
+      "slug": "chartered-life-underwriter",
+      "name": "Chartered Life Underwriter",
+      "category": "finance-securities",
+      "body": "The American College of Financial Services"
+    },
+    {
+      "slug": "acsm-certified-personal-trainer",
+      "name": "ACSM Certified Personal Trainer",
+      "category": "fitness-recreation",
+      "body": "American College of Sports Medicine"
+    },
+    {
+      "slug": "ace-certified-group-fitness-instructor",
+      "name": "ACE Group Fitness Instructor Certification",
+      "category": "fitness-recreation",
+      "body": "American Council on Exercise"
+    },
+    {
+      "slug": "ace-certified-personal-trainer",
+      "name": "ACE Certified Personal Trainer",
+      "category": "fitness-recreation",
+      "body": "American Council on Exercise"
+    }
+  ]
+}

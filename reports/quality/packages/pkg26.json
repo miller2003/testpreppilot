@@ -1,0 +1,53 @@
+{
+  "id": "pkg26",
+  "bodies": [
+    "NCCER"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "nccer-hvac",
+    "nccer-masonry",
+    "nccer-pipefitting",
+    "nccer-plumbing",
+    "nccer-scaffolding",
+    "nccer-welding"
+  ],
+  "exams": [
+    {
+      "slug": "nccer-hvac",
+      "name": "NCCER HVAC",
+      "category": "trades",
+      "body": "NCCER"
+    },
+    {
+      "slug": "nccer-masonry",
+      "name": "NCCER Masonry",
+      "category": "trades",
+      "body": "NCCER"
+    },
+    {
+      "slug": "nccer-pipefitting",
+      "name": "NCCER Pipefitting",
+      "category": "trades",
+      "body": "NCCER"
+    },
+    {
+      "slug": "nccer-plumbing",
+      "name": "NCCER Plumbing",
+      "category": "trades",
+      "body": "NCCER"
+    },
+    {
+      "slug": "nccer-scaffolding",
+      "name": "NCCER Scaffolding",
+      "category": "trades",
+      "body": "NCCER"
+    },
+    {
+      "slug": "nccer-welding",
+      "name": "NCCER Welding Certification",
+      "category": "trades",
+      "body": "NCCER"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "pkg60",
+  "bodies": [
+    "National Council of State Boards of Nursing (NCSBN)",
+    "America's Health Insurance Plans (AHIP)",
+    "Risk and Insurance Education Alliance"
+  ],
+  "ownsPrograms": [
+    "National Council of State Boards of Nursing (NCSBN)",
+    "America's Health Insurance Plans (AHIP)",
+    "Risk and Insurance Education Alliance"
+  ],
+  "slugs": [
+    "nclex-pn",
+    "nclex-rn",
+    "ahip-health-insurance-associate",
+    "ahip-managed-healthcare-professional",
+    "certified-insurance-counselor",
+    "certified-insurance-service-representative"
+  ],
+  "exams": [
+    {
+      "slug": "nclex-pn",
+      "name": "NCLEX-PN",
+      "category": "healthcare-clinical",
+      "body": "National Council of State Boards of Nursing (NCSBN)"
+    },
+    {
+      "slug": "nclex-rn",
+      "name": "NCLEX-RN",
+      "category": "healthcare-clinical",
+      "body": "National Council of State Boards of Nursing (NCSBN)"
+    },
+    {
+      "slug": "ahip-health-insurance-associate",
+      "name": "Health Insurance Associate",
+      "category": "insurance",
+      "body": "America's Health Insurance Plans (AHIP)"
+    },
+    {
+      "slug": "ahip-managed-healthcare-professional",
+      "name": "Managed Healthcare Professional",
+      "category": "insurance",
+      "body": "America's Health Insurance Plans (AHIP)"
+    },
+    {
+      "slug": "certified-insurance-counselor",
+      "name": "Certified Insurance Counselor",
+      "category": "insurance",
+      "body": "Risk and Insurance Education Alliance"
+    },
+    {
+      "slug": "certified-insurance-service-representative",
+      "name": "Certified Insurance Service Representative",
+      "category": "insurance",
+      "body": "Risk and Insurance Education Alliance"
+    }
+  ]
+}

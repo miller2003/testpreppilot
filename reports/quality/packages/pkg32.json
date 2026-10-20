@@ -1,0 +1,39 @@
+{
+  "id": "pkg32",
+  "bodies": [
+    "Financial Industry Regulatory Authority (FINRA)"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "series-79",
+    "series-9",
+    "series-99",
+    "sie-exam"
+  ],
+  "exams": [
+    {
+      "slug": "series-79",
+      "name": "Series 79 Investment Banking Representative Exam",
+      "category": "finance-securities",
+      "body": "Financial Industry Regulatory Authority (FINRA)"
+    },
+    {
+      "slug": "series-9",
+      "name": "Series 9 General Securities Sales Supervisor Exam, Options Module",
+      "category": "finance-securities",
+      "body": "Financial Industry Regulatory Authority (FINRA)"
+    },
+    {
+      "slug": "series-99",
+      "name": "Series 99 Operations Professional Exam",
+      "category": "finance-securities",
+      "body": "Financial Industry Regulatory Authority (FINRA)"
+    },
+    {
+      "slug": "sie-exam",
+      "name": "Securities Industry Essentials Exam",
+      "category": "finance-securities",
+      "body": "Financial Industry Regulatory Authority (FINRA)"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "pkg44",
+  "bodies": [
+    "American Institute of Professional Bookkeepers (AIPB)",
+    "Association of Certified Fraud Examiners (ACFE)",
+    "Institute of Internal Auditors (IIA)",
+    "Institute of Management Accountants (IMA)",
+    "National Association of Certified Public Bookkeepers (NACPB)"
+  ],
+  "ownsPrograms": [
+    "American Institute of Professional Bookkeepers (AIPB)",
+    "Association of Certified Fraud Examiners (ACFE)",
+    "Institute of Internal Auditors (IIA)",
+    "Institute of Management Accountants (IMA)",
+    "National Association of Certified Public Bookkeepers (NACPB)"
+  ],
+  "slugs": [
+    "aipb-certified-bookkeeper",
+    "cfe-exam",
+    "cia-part-1",
+    "cma-part-1",
+    "cma-part-2",
+    "nacpb-cpb"
+  ],
+  "exams": [
+    {
+      "slug": "aipb-certified-bookkeeper",
+      "name": "Certified Bookkeeper",
+      "category": "accounting",
+      "body": "American Institute of Professional Bookkeepers (AIPB)"
+    },
+    {
+      "slug": "cfe-exam",
+      "name": "Certified Fraud Examiner Exam",
+      "category": "accounting",
+      "body": "Association of Certified Fraud Examiners (ACFE)"
+    },
+    {
+      "slug": "cia-part-1",
+      "name": "Certified Internal Auditor Part 1: Essentials of Internal Auditing",
+      "category": "accounting",
+      "body": "Institute of Internal Auditors (IIA)"
+    },
+    {
+      "slug": "cma-part-1",
+      "name": "CMA Part 1: Financial Planning, Performance and Analytics",
+      "category": "accounting",
+      "body": "Institute of Management Accountants (IMA)"
+    },
+    {
+      "slug": "cma-part-2",
+      "name": "CMA Part 2: Strategic Financial Management",
+      "category": "accounting",
+      "body": "Institute of Management Accountants (IMA)"
+    },
+    {
+      "slug": "nacpb-cpb",
+      "name": "Certified Public Bookkeeper Licence Exam",
+      "category": "accounting",
+      "body": "National Association of Certified Public Bookkeepers (NACPB)"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "pkg35",
+  "bodies": [
+    "State Driver Licensing Agencies (AAMVA model curriculum)"
+  ],
+  "ownsPrograms": [
+    "State Driver Licensing Agencies (AAMVA model curriculum)"
+  ],
+  "slugs": [
+    "cdl-air-brakes-knowledge-test",
+    "cdl-combination-vehicles-knowledge-test",
+    "cdl-general-knowledge-test",
+    "cdl-hazmat-endorsement-knowledge-test"
+  ],
+  "exams": [
+    {
+      "slug": "cdl-air-brakes-knowledge-test",
+      "name": "CDL Air Brakes Knowledge Test",
+      "category": "transportation",
+      "body": "State Driver Licensing Agencies (AAMVA model curriculum)"
+    },
+    {
+      "slug": "cdl-combination-vehicles-knowledge-test",
+      "name": "CDL Combination Vehicles Knowledge Test",
+      "category": "transportation",
+      "body": "State Driver Licensing Agencies (AAMVA model curriculum)"
+    },
+    {
+      "slug": "cdl-general-knowledge-test",
+      "name": "CDL General Knowledge Test",
+      "category": "transportation",
+      "body": "State Driver Licensing Agencies (AAMVA model curriculum)"
+    },
+    {
+      "slug": "cdl-hazmat-endorsement-knowledge-test",
+      "name": "CDL Hazardous Materials Endorsement Knowledge Test",
+      "category": "transportation",
+      "body": "State Driver Licensing Agencies (AAMVA model curriculum)"
+    }
+  ]
+}

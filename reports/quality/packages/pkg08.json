@@ -1,0 +1,62 @@
+{
+  "id": "pkg08",
+  "bodies": [
+    "ETS"
+  ],
+  "ownsPrograms": [
+    "ETS"
+  ],
+  "slugs": [
+    "gre-general-test",
+    "hiset-exam",
+    "praxis-algebra-i-5162",
+    "praxis-biology-5236",
+    "praxis-chemistry-5246",
+    "praxis-communication-and-literacy-combined-5753",
+    "praxis-core-combined-5752"
+  ],
+  "exams": [
+    {
+      "slug": "gre-general-test",
+      "name": "GRE General Test",
+      "category": "admissions-academic",
+      "body": "ETS"
+    },
+    {
+      "slug": "hiset-exam",
+      "name": "HiSET Exam",
+      "category": "admissions-academic",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-algebra-i-5162",
+      "name": "Praxis Algebra I (5162)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-biology-5236",
+      "name": "Praxis Biology: Content Knowledge (5236)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-chemistry-5246",
+      "name": "Praxis Chemistry: Content Knowledge (5246)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-communication-and-literacy-combined-5753",
+      "name": "Praxis Communication and Literacy Combined (5753)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-core-combined-5752",
+      "name": "Praxis Core Academic Skills for Educators: Combined (5752)",
+      "category": "education-teaching",
+      "body": "ETS"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "pkg67",
+  "bodies": [
+    "EC-Council",
+    "HashiCorp",
+    "HubSpot",
+    "ISACA"
+  ],
+  "ownsPrograms": [
+    "EC-Council",
+    "HashiCorp",
+    "HubSpot",
+    "ISACA"
+  ],
+  "slugs": [
+    "eccouncil-ceh",
+    "hashicorp-certified-terraform-associate",
+    "hashicorp-certified-vault-associate",
+    "hubspot-inbound-certification",
+    "isaca-cisa",
+    "isaca-cism",
+    "isaca-crisc"
+  ],
+  "exams": [
+    {
+      "slug": "eccouncil-ceh",
+      "name": "Certified Ethical Hacker",
+      "category": "technology",
+      "body": "EC-Council"
+    },
+    {
+      "slug": "hashicorp-certified-terraform-associate",
+      "name": "HashiCorp Certified: Terraform Associate",
+      "category": "technology",
+      "body": "HashiCorp"
+    },
+    {
+      "slug": "hashicorp-certified-vault-associate",
+      "name": "HashiCorp Certified: Vault Associate",
+      "category": "technology",
+      "body": "HashiCorp"
+    },
+    {
+      "slug": "hubspot-inbound-certification",
+      "name": "HubSpot Inbound Certification",
+      "category": "technology",
+      "body": "HubSpot"
+    },
+    {
+      "slug": "isaca-cisa",
+      "name": "Certified Information Systems Auditor",
+      "category": "technology",
+      "body": "ISACA"
+    },
+    {
+      "slug": "isaca-cism",
+      "name": "Certified Information Security Manager",
+      "category": "technology",
+      "body": "ISACA"
+    },
+    {
+      "slug": "isaca-crisc",
+      "name": "Certified in Risk and Information Systems Control",
+      "category": "technology",
+      "body": "ISACA"
+    }
+  ]
+}

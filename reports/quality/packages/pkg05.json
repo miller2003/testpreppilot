@@ -1,0 +1,60 @@
+{
+  "id": "pkg05",
+  "bodies": [
+    "College Board"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "ap-world-history-modern",
+    "clep-american-government",
+    "clep-biology",
+    "clep-calculus",
+    "clep-chemistry",
+    "clep-college-algebra",
+    "clep-college-composition"
+  ],
+  "exams": [
+    {
+      "slug": "ap-world-history-modern",
+      "name": "AP World History: Modern",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-american-government",
+      "name": "CLEP American Government",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-biology",
+      "name": "CLEP Biology",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-calculus",
+      "name": "CLEP Calculus",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-chemistry",
+      "name": "CLEP Chemistry",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-college-algebra",
+      "name": "CLEP College Algebra",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-college-composition",
+      "name": "CLEP College Composition",
+      "category": "admissions-academic",
+      "body": "College Board"
+    }
+  ]
+}

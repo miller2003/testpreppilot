@@ -1,0 +1,62 @@
+{
+  "id": "pkg37",
+  "bodies": [
+    "Google Cloud"
+  ],
+  "ownsPrograms": [
+    "Google Cloud"
+  ],
+  "slugs": [
+    "google-associate-cloud-engineer",
+    "google-associate-data-practitioner",
+    "google-cloud-digital-leader",
+    "google-professional-cloud-architect",
+    "google-professional-cloud-developer",
+    "google-professional-data-engineer",
+    "google-professional-machine-learning-engineer"
+  ],
+  "exams": [
+    {
+      "slug": "google-associate-cloud-engineer",
+      "name": "Google Cloud Associate Cloud Engineer",
+      "category": "technology",
+      "body": "Google Cloud"
+    },
+    {
+      "slug": "google-associate-data-practitioner",
+      "name": "Google Cloud Associate Data Practitioner",
+      "category": "technology",
+      "body": "Google Cloud"
+    },
+    {
+      "slug": "google-cloud-digital-leader",
+      "name": "Google Cloud Digital Leader",
+      "category": "technology",
+      "body": "Google Cloud"
+    },
+    {
+      "slug": "google-professional-cloud-architect",
+      "name": "Google Cloud Professional Cloud Architect",
+      "category": "technology",
+      "body": "Google Cloud"
+    },
+    {
+      "slug": "google-professional-cloud-developer",
+      "name": "Google Cloud Professional Cloud Developer",
+      "category": "technology",
+      "body": "Google Cloud"
+    },
+    {
+      "slug": "google-professional-data-engineer",
+      "name": "Google Cloud Professional Data Engineer",
+      "category": "technology",
+      "body": "Google Cloud"
+    },
+    {
+      "slug": "google-professional-machine-learning-engineer",
+      "name": "Google Cloud Professional Machine Learning Engineer",
+      "category": "technology",
+      "body": "Google Cloud"
+    }
+  ]
+}

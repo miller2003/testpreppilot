@@ -1,0 +1,39 @@
+{
+  "id": "pkg34",
+  "bodies": [
+    "Salesforce"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "salesforce-platform-developer-i",
+    "salesforce-platform-developer-ii",
+    "salesforce-sales-cloud-consultant",
+    "salesforce-service-cloud-consultant"
+  ],
+  "exams": [
+    {
+      "slug": "salesforce-platform-developer-i",
+      "name": "Salesforce Certified Platform Developer I",
+      "category": "technology",
+      "body": "Salesforce"
+    },
+    {
+      "slug": "salesforce-platform-developer-ii",
+      "name": "Salesforce Certified Platform Developer II",
+      "category": "technology",
+      "body": "Salesforce"
+    },
+    {
+      "slug": "salesforce-sales-cloud-consultant",
+      "name": "Salesforce Certified Sales Cloud Consultant",
+      "category": "technology",
+      "body": "Salesforce"
+    },
+    {
+      "slug": "salesforce-service-cloud-consultant",
+      "name": "Salesforce Certified Service Cloud Consultant",
+      "category": "technology",
+      "body": "Salesforce"
+    }
+  ]
+}

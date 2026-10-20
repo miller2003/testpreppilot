@@ -1,0 +1,48 @@
+{
+  "id": "pkg29",
+  "bodies": [
+    "PeopleCert"
+  ],
+  "ownsPrograms": [
+    "PeopleCert"
+  ],
+  "slugs": [
+    "itil-4-foundation",
+    "itil-4-leader-digital-and-it-strategy",
+    "itil-4-specialist-create-deliver-and-support",
+    "itil-4-specialist-drive-stakeholder-value",
+    "itil-4-specialist-high-velocity-it"
+  ],
+  "exams": [
+    {
+      "slug": "itil-4-foundation",
+      "name": "ITIL 4 Foundation",
+      "category": "technology",
+      "body": "PeopleCert"
+    },
+    {
+      "slug": "itil-4-leader-digital-and-it-strategy",
+      "name": "ITIL 4 Leader: Digital and IT Strategy",
+      "category": "technology",
+      "body": "PeopleCert"
+    },
+    {
+      "slug": "itil-4-specialist-create-deliver-and-support",
+      "name": "ITIL 4 Specialist: Create, Deliver and Support",
+      "category": "technology",
+      "body": "PeopleCert"
+    },
+    {
+      "slug": "itil-4-specialist-drive-stakeholder-value",
+      "name": "ITIL 4 Specialist: Drive Stakeholder Value",
+      "category": "technology",
+      "body": "PeopleCert"
+    },
+    {
+      "slug": "itil-4-specialist-high-velocity-it",
+      "name": "ITIL 4 Specialist: High-velocity IT",
+      "category": "technology",
+      "body": "PeopleCert"
+    }
+  ]
+}

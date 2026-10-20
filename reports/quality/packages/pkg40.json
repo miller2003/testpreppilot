@@ -1,0 +1,55 @@
+{
+  "id": "pkg40",
+  "bodies": [
+    "National Restaurant Association"
+  ],
+  "ownsPrograms": [
+    "National Restaurant Association"
+  ],
+  "slugs": [
+    "servsafe-alcohol-advanced",
+    "servsafe-alcohol-primary",
+    "servsafe-allergens",
+    "servsafe-food-handler",
+    "servsafe-food-protection-manager",
+    "servsafe-workplace"
+  ],
+  "exams": [
+    {
+      "slug": "servsafe-alcohol-advanced",
+      "name": "ServSafe Alcohol Advanced Certification",
+      "category": "food-hospitality",
+      "body": "National Restaurant Association"
+    },
+    {
+      "slug": "servsafe-alcohol-primary",
+      "name": "ServSafe Alcohol Primary Certification",
+      "category": "food-hospitality",
+      "body": "National Restaurant Association"
+    },
+    {
+      "slug": "servsafe-allergens",
+      "name": "ServSafe Allergens Certification",
+      "category": "food-hospitality",
+      "body": "National Restaurant Association"
+    },
+    {
+      "slug": "servsafe-food-handler",
+      "name": "ServSafe Food Handler Certificate",
+      "category": "food-hospitality",
+      "body": "National Restaurant Association"
+    },
+    {
+      "slug": "servsafe-food-protection-manager",
+      "name": "ServSafe Food Protection Manager Certification",
+      "category": "food-hospitality",
+      "body": "National Restaurant Association"
+    },
+    {
+      "slug": "servsafe-workplace",
+      "name": "ServSafe Workplace",
+      "category": "food-hospitality",
+      "body": "National Restaurant Association"
+    }
+  ]
+}

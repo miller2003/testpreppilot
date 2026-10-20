@@ -1,0 +1,55 @@
+{
+  "id": "pkg41",
+  "bodies": [
+    "FEMA Emergency Management Institute"
+  ],
+  "ownsPrograms": [
+    "FEMA Emergency Management Institute"
+  ],
+  "slugs": [
+    "nims-ics-100",
+    "nims-ics-200",
+    "nims-ics-300",
+    "nims-ics-400",
+    "nims-ics-700",
+    "nims-ics-800"
+  ],
+  "exams": [
+    {
+      "slug": "nims-ics-100",
+      "name": "NIMS ICS-100",
+      "category": "public-safety",
+      "body": "FEMA Emergency Management Institute"
+    },
+    {
+      "slug": "nims-ics-200",
+      "name": "NIMS ICS-200",
+      "category": "public-safety",
+      "body": "FEMA Emergency Management Institute"
+    },
+    {
+      "slug": "nims-ics-300",
+      "name": "NIMS ICS-300",
+      "category": "public-safety",
+      "body": "FEMA Emergency Management Institute"
+    },
+    {
+      "slug": "nims-ics-400",
+      "name": "NIMS ICS-400",
+      "category": "public-safety",
+      "body": "FEMA Emergency Management Institute"
+    },
+    {
+      "slug": "nims-ics-700",
+      "name": "NIMS ICS-700",
+      "category": "public-safety",
+      "body": "FEMA Emergency Management Institute"
+    },
+    {
+      "slug": "nims-ics-800",
+      "name": "NIMS ICS-800",
+      "category": "public-safety",
+      "body": "FEMA Emergency Management Institute"
+    }
+  ]
+}

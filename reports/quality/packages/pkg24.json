@@ -1,0 +1,53 @@
+{
+  "id": "pkg24",
+  "bodies": [
+    "CompTIA"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "comptia-network-plus",
+    "comptia-pentest-plus",
+    "comptia-project-plus",
+    "comptia-security-plus",
+    "comptia-server-plus",
+    "comptia-tech-plus"
+  ],
+  "exams": [
+    {
+      "slug": "comptia-network-plus",
+      "name": "CompTIA Network+",
+      "category": "technology",
+      "body": "CompTIA"
+    },
+    {
+      "slug": "comptia-pentest-plus",
+      "name": "CompTIA PenTest+",
+      "category": "technology",
+      "body": "CompTIA"
+    },
+    {
+      "slug": "comptia-project-plus",
+      "name": "CompTIA Project+",
+      "category": "technology",
+      "body": "CompTIA"
+    },
+    {
+      "slug": "comptia-security-plus",
+      "name": "CompTIA Security+",
+      "category": "technology",
+      "body": "CompTIA"
+    },
+    {
+      "slug": "comptia-server-plus",
+      "name": "CompTIA Server+",
+      "category": "technology",
+      "body": "CompTIA"
+    },
+    {
+      "slug": "comptia-tech-plus",
+      "name": "CompTIA Tech+",
+      "category": "technology",
+      "body": "CompTIA"
+    }
+  ]
+}

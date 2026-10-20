@@ -1,0 +1,57 @@
+{
+  "id": "pkg55",
+  "bodies": [
+    "National Academy of Sports Medicine",
+    "National Rifle Association"
+  ],
+  "ownsPrograms": [
+    "National Academy of Sports Medicine",
+    "National Rifle Association"
+  ],
+  "slugs": [
+    "nasm-certified-nutrition-coach",
+    "nasm-certified-personal-trainer",
+    "nasm-performance-enhancement-specialist",
+    "nra-certified-instructor",
+    "nra-chief-range-safety-officer",
+    "nra-range-safety-officer"
+  ],
+  "exams": [
+    {
+      "slug": "nasm-certified-nutrition-coach",
+      "name": "NASM Certified Nutrition Coach",
+      "category": "fitness-recreation",
+      "body": "National Academy of Sports Medicine"
+    },
+    {
+      "slug": "nasm-certified-personal-trainer",
+      "name": "NASM Certified Personal Trainer",
+      "category": "fitness-recreation",
+      "body": "National Academy of Sports Medicine"
+    },
+    {
+      "slug": "nasm-performance-enhancement-specialist",
+      "name": "NASM Performance Enhancement Specialist",
+      "category": "fitness-recreation",
+      "body": "National Academy of Sports Medicine"
+    },
+    {
+      "slug": "nra-certified-instructor",
+      "name": "NRA Certified Instructor",
+      "category": "fitness-recreation",
+      "body": "National Rifle Association"
+    },
+    {
+      "slug": "nra-chief-range-safety-officer",
+      "name": "NRA Chief Range Safety Officer",
+      "category": "fitness-recreation",
+      "body": "National Rifle Association"
+    },
+    {
+      "slug": "nra-range-safety-officer",
+      "name": "NRA Range Safety Officer",
+      "category": "fitness-recreation",
+      "body": "National Rifle Association"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "pkg16",
+  "bodies": [
+    "Microsoft"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "microsoft-az-900",
+    "microsoft-certified-educator",
+    "microsoft-dp-203",
+    "microsoft-dp-300",
+    "microsoft-dp-900",
+    "microsoft-mb-910"
+  ],
+  "exams": [
+    {
+      "slug": "microsoft-az-900",
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-certified-educator",
+      "name": "Microsoft Certified Educator",
+      "category": "education-teaching",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-dp-203",
+      "name": "Microsoft Certified: Azure Data Engineer Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-dp-300",
+      "name": "Microsoft Certified: Azure Database Administrator Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-dp-900",
+      "name": "Microsoft Certified: Azure Data Fundamentals",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-mb-910",
+      "name": "Microsoft Certified: Dynamics 365 Fundamentals (CRM)",
+      "category": "technology",
+      "body": "Microsoft"
+    }
+  ]
+}

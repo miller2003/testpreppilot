@@ -1,0 +1,61 @@
+{
+  "id": "pkg54",
+  "bodies": [
+    "American Red Cross",
+    "Athletics and Fitness Association of America",
+    "CrossFit, Inc.",
+    "International Sports Sciences Association"
+  ],
+  "ownsPrograms": [
+    "American Red Cross",
+    "Athletics and Fitness Association of America",
+    "CrossFit, Inc.",
+    "International Sports Sciences Association"
+  ],
+  "slugs": [
+    "american-red-cross-lifeguard-instructor",
+    "american-red-cross-lifeguarding",
+    "afaa-certified-personal-trainer",
+    "afaa-group-fitness-instructor",
+    "crossfit-level-1-trainer",
+    "issa-certified-personal-trainer"
+  ],
+  "exams": [
+    {
+      "slug": "american-red-cross-lifeguard-instructor",
+      "name": "American Red Cross Lifeguarding Instructor Certification",
+      "category": "fitness-recreation",
+      "body": "American Red Cross"
+    },
+    {
+      "slug": "american-red-cross-lifeguarding",
+      "name": "American Red Cross Lifeguarding Certification",
+      "category": "fitness-recreation",
+      "body": "American Red Cross"
+    },
+    {
+      "slug": "afaa-certified-personal-trainer",
+      "name": "AFAA Certified Personal Trainer",
+      "category": "fitness-recreation",
+      "body": "Athletics and Fitness Association of America"
+    },
+    {
+      "slug": "afaa-group-fitness-instructor",
+      "name": "AFAA Group Fitness Instructor Certification",
+      "category": "fitness-recreation",
+      "body": "Athletics and Fitness Association of America"
+    },
+    {
+      "slug": "crossfit-level-1-trainer",
+      "name": "CrossFit Level 1 Trainer Certificate",
+      "category": "fitness-recreation",
+      "body": "CrossFit, Inc."
+    },
+    {
+      "slug": "issa-certified-personal-trainer",
+      "name": "ISSA Certified Personal Trainer",
+      "category": "fitness-recreation",
+      "body": "International Sports Sciences Association"
+    }
+  ]
+}

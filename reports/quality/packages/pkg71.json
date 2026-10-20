@@ -1,0 +1,61 @@
+{
+  "id": "pkg71",
+  "bodies": [
+    "Federal Aviation Administration (FAASafety.gov)",
+    "Federal Communications Commission (Volunteer Examiner Coordinators)",
+    "International Municipal Signal Association",
+    "National Association of State Boating Law Administrators"
+  ],
+  "ownsPrograms": [
+    "Federal Aviation Administration (FAASafety.gov)",
+    "Federal Communications Commission (Volunteer Examiner Coordinators)",
+    "International Municipal Signal Association",
+    "National Association of State Boating Law Administrators"
+  ],
+  "slugs": [
+    "faa-part-107-initial-training-alc-451",
+    "faa-part-107-recurrent-training-alc-677",
+    "fcc-amateur-general-class-license",
+    "fcc-amateur-technician-class-license",
+    "imsa-work-zone-traffic-control-safety",
+    "nasbla-approved-boating-safety-course"
+  ],
+  "exams": [
+    {
+      "slug": "faa-part-107-initial-training-alc-451",
+      "name": "Part 107 Small UAS Initial Training for Part 61 Pilots",
+      "category": "transportation",
+      "body": "Federal Aviation Administration (FAASafety.gov)"
+    },
+    {
+      "slug": "faa-part-107-recurrent-training-alc-677",
+      "name": "Part 107 Small UAS Recurrent Training",
+      "category": "transportation",
+      "body": "Federal Aviation Administration (FAASafety.gov)"
+    },
+    {
+      "slug": "fcc-amateur-general-class-license",
+      "name": "Amateur Radio General Class License Exam",
+      "category": "transportation",
+      "body": "Federal Communications Commission (Volunteer Examiner Coordinators)"
+    },
+    {
+      "slug": "fcc-amateur-technician-class-license",
+      "name": "Amateur Radio Technician Class License Exam",
+      "category": "transportation",
+      "body": "Federal Communications Commission (Volunteer Examiner Coordinators)"
+    },
+    {
+      "slug": "imsa-work-zone-traffic-control-safety",
+      "name": "IMSA Work Zone Traffic Control Safety Certification",
+      "category": "transportation",
+      "body": "International Municipal Signal Association"
+    },
+    {
+      "slug": "nasbla-approved-boating-safety-course",
+      "name": "NASBLA-Approved Boating Safety Course",
+      "category": "transportation",
+      "body": "National Association of State Boating Law Administrators"
+    }
+  ]
+}

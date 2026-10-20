@@ -1,0 +1,60 @@
+{
+  "id": "pkg04",
+  "bodies": [
+    "College Board"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "ap-physics-c-mechanics",
+    "ap-precalculus",
+    "ap-psychology",
+    "ap-spanish-language-and-culture",
+    "ap-statistics",
+    "ap-united-states-government-and-politics",
+    "ap-united-states-history"
+  ],
+  "exams": [
+    {
+      "slug": "ap-physics-c-mechanics",
+      "name": "AP Physics C: Mechanics",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-precalculus",
+      "name": "AP Precalculus",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-psychology",
+      "name": "AP Psychology",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-spanish-language-and-culture",
+      "name": "AP Spanish Language and Culture",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-statistics",
+      "name": "AP Statistics",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-united-states-government-and-politics",
+      "name": "AP United States Government and Politics",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-united-states-history",
+      "name": "AP United States History",
+      "category": "admissions-academic",
+      "body": "College Board"
+    }
+  ]
+}

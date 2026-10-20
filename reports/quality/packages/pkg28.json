@@ -1,0 +1,53 @@
+{
+  "id": "pkg28",
+  "bodies": [
+    "Cisco Systems"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "cisco-ccnp-enterprise",
+    "cisco-ccnp-security",
+    "cisco-ccnp-service-provider",
+    "cisco-ccnp-wireless",
+    "cisco-ccst-cybersecurity",
+    "cisco-ccst-networking"
+  ],
+  "exams": [
+    {
+      "slug": "cisco-ccnp-enterprise",
+      "name": "Cisco Certified Network Professional Enterprise",
+      "category": "technology",
+      "body": "Cisco Systems"
+    },
+    {
+      "slug": "cisco-ccnp-security",
+      "name": "Cisco Certified Network Professional Security",
+      "category": "technology",
+      "body": "Cisco Systems"
+    },
+    {
+      "slug": "cisco-ccnp-service-provider",
+      "name": "Cisco Certified Network Professional Service Provider",
+      "category": "technology",
+      "body": "Cisco Systems"
+    },
+    {
+      "slug": "cisco-ccnp-wireless",
+      "name": "Cisco Certified Network Professional Wireless",
+      "category": "technology",
+      "body": "Cisco Systems"
+    },
+    {
+      "slug": "cisco-ccst-cybersecurity",
+      "name": "Cisco Certified Support Technician Cybersecurity",
+      "category": "technology",
+      "body": "Cisco Systems"
+    },
+    {
+      "slug": "cisco-ccst-networking",
+      "name": "Cisco Certified Support Technician Networking",
+      "category": "technology",
+      "body": "Cisco Systems"
+    }
+  ]
+}

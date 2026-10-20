@@ -1,0 +1,46 @@
+{
+  "id": "pkg22",
+  "bodies": [
+    "Amazon Web Services"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "aws-certified-sap-on-aws-specialty",
+    "aws-certified-security-specialty",
+    "aws-certified-solutions-architect-associate",
+    "aws-certified-solutions-architect-professional",
+    "aws-certified-sysops-administrator-associate"
+  ],
+  "exams": [
+    {
+      "slug": "aws-certified-sap-on-aws-specialty",
+      "name": "AWS Certified: SAP on AWS - Specialty",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    },
+    {
+      "slug": "aws-certified-security-specialty",
+      "name": "AWS Certified Security - Specialty",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    },
+    {
+      "slug": "aws-certified-solutions-architect-associate",
+      "name": "AWS Certified Solutions Architect - Associate",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    },
+    {
+      "slug": "aws-certified-solutions-architect-professional",
+      "name": "AWS Certified Solutions Architect - Professional",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    },
+    {
+      "slug": "aws-certified-sysops-administrator-associate",
+      "name": "AWS Certified SysOps Administrator - Associate",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "pkg03",
+  "bodies": [
+    "College Board"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "ap-environmental-science",
+    "ap-european-history",
+    "ap-human-geography",
+    "ap-macroeconomics",
+    "ap-microeconomics",
+    "ap-physics-1-algebra-based",
+    "ap-physics-2-algebra-based"
+  ],
+  "exams": [
+    {
+      "slug": "ap-environmental-science",
+      "name": "AP Environmental Science",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-european-history",
+      "name": "AP European History",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-human-geography",
+      "name": "AP Human Geography",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-macroeconomics",
+      "name": "AP Macroeconomics",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-microeconomics",
+      "name": "AP Microeconomics",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-physics-1-algebra-based",
+      "name": "AP Physics 1: Algebra-Based",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-physics-2-algebra-based",
+      "name": "AP Physics 2: Algebra-Based",
+      "category": "admissions-academic",
+      "body": "College Board"
+    }
+  ]
+}

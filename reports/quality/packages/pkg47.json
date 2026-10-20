@@ -1,0 +1,70 @@
+{
+  "id": "pkg47",
+  "bodies": [
+    "AAPC",
+    "American Association of Bioanalysts (AAB)",
+    "American Association of Medical Assistants (AAMA)",
+    "American Health Information Management Association (AHIMA)",
+    "American Medical Technologists (AMT)"
+  ],
+  "ownsPrograms": [
+    "AAPC",
+    "American Association of Bioanalysts (AAB)",
+    "American Association of Medical Assistants (AAMA)",
+    "American Health Information Management Association (AHIMA)",
+    "American Medical Technologists (AMT)"
+  ],
+  "slugs": [
+    "aapc-cpc",
+    "aab-phlebotomy",
+    "aama-cma",
+    "ahima-cca",
+    "ahima-ccs",
+    "ahima-rhit",
+    "amt-rma"
+  ],
+  "exams": [
+    {
+      "slug": "aapc-cpc",
+      "name": "AAPC Certified Professional Coder",
+      "category": "allied-health",
+      "body": "AAPC"
+    },
+    {
+      "slug": "aab-phlebotomy",
+      "name": "AAB Phlebotomy Certification",
+      "category": "allied-health",
+      "body": "American Association of Bioanalysts (AAB)"
+    },
+    {
+      "slug": "aama-cma",
+      "name": "AAMA Certified Medical Assistant",
+      "category": "allied-health",
+      "body": "American Association of Medical Assistants (AAMA)"
+    },
+    {
+      "slug": "ahima-cca",
+      "name": "AHIMA Certified Coding Associate",
+      "category": "allied-health",
+      "body": "American Health Information Management Association (AHIMA)"
+    },
+    {
+      "slug": "ahima-ccs",
+      "name": "AHIMA Certified Coding Specialist",
+      "category": "allied-health",
+      "body": "American Health Information Management Association (AHIMA)"
+    },
+    {
+      "slug": "ahima-rhit",
+      "name": "AHIMA Registered Health Information Technician",
+      "category": "allied-health",
+      "body": "American Health Information Management Association (AHIMA)"
+    },
+    {
+      "slug": "amt-rma",
+      "name": "AMT Registered Medical Assistant",
+      "category": "allied-health",
+      "body": "American Medical Technologists (AMT)"
+    }
+  ]
+}

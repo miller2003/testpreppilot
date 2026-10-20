@@ -1,0 +1,52 @@
+{
+  "id": "pkg49",
+  "bodies": [
+    "National Board of Surgical Technology and Surgical Assisting (NBSTSA)",
+    "National Center for Competency Testing (NCCT)",
+    "National Nurse Aide Assessment Program (NNAAP) / Pearson VUE"
+  ],
+  "ownsPrograms": [
+    "National Board of Surgical Technology and Surgical Assisting (NBSTSA)",
+    "National Center for Competency Testing (NCCT)",
+    "National Nurse Aide Assessment Program (NNAAP) / Pearson VUE"
+  ],
+  "slugs": [
+    "nbstsa-cst",
+    "ncct-ncma",
+    "ncct-pt",
+    "ncct-ts",
+    "nnaap-cna"
+  ],
+  "exams": [
+    {
+      "slug": "nbstsa-cst",
+      "name": "NBSTSA Certified Surgical Technologist",
+      "category": "allied-health",
+      "body": "National Board of Surgical Technology and Surgical Assisting (NBSTSA)"
+    },
+    {
+      "slug": "ncct-ncma",
+      "name": "NCCT National Certified Medical Assistant",
+      "category": "allied-health",
+      "body": "National Center for Competency Testing (NCCT)"
+    },
+    {
+      "slug": "ncct-pt",
+      "name": "NCCT Patient Care Technician Certification",
+      "category": "allied-health",
+      "body": "National Center for Competency Testing (NCCT)"
+    },
+    {
+      "slug": "ncct-ts",
+      "name": "NCCT Technician Specialist Certification",
+      "category": "allied-health",
+      "body": "National Center for Competency Testing (NCCT)"
+    },
+    {
+      "slug": "nnaap-cna",
+      "name": "NNAAP Nurse Aide Competency Evaluation",
+      "category": "allied-health",
+      "body": "National Nurse Aide Assessment Program (NNAAP) / Pearson VUE"
+    }
+  ]
+}

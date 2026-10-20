@@ -1,0 +1,70 @@
+{
+  "id": "pkg58",
+  "bodies": [
+    "Specialty Coffee Association",
+    "StateFoodSafety",
+    "Wine & Spirit Education Trust",
+    "American Nurses Credentialing Center (ANCC)",
+    "American Speech-Language-Hearing Association (ASHA)"
+  ],
+  "ownsPrograms": [
+    "Specialty Coffee Association",
+    "StateFoodSafety",
+    "Wine & Spirit Education Trust",
+    "American Nurses Credentialing Center (ANCC)",
+    "American Speech-Language-Hearing Association (ASHA)"
+  ],
+  "slugs": [
+    "sca-coffee-skills-professional-diploma",
+    "statefoodsafety-food-protection-manager",
+    "wset-level-1-award-wines",
+    "wset-level-2-award-wines",
+    "wset-level-3-award-wines",
+    "ancc-fnp",
+    "asha-ccc-slp"
+  ],
+  "exams": [
+    {
+      "slug": "sca-coffee-skills-professional-diploma",
+      "name": "SCA Coffee Skills Program Professional Diploma",
+      "category": "food-hospitality",
+      "body": "Specialty Coffee Association"
+    },
+    {
+      "slug": "statefoodsafety-food-protection-manager",
+      "name": "StateFoodSafety Certified Food Protection Manager",
+      "category": "food-hospitality",
+      "body": "StateFoodSafety"
+    },
+    {
+      "slug": "wset-level-1-award-wines",
+      "name": "WSET Level 1 Award in Wines",
+      "category": "food-hospitality",
+      "body": "Wine & Spirit Education Trust"
+    },
+    {
+      "slug": "wset-level-2-award-wines",
+      "name": "WSET Level 2 Award in Wines",
+      "category": "food-hospitality",
+      "body": "Wine & Spirit Education Trust"
+    },
+    {
+      "slug": "wset-level-3-award-wines",
+      "name": "WSET Level 3 Award in Wines",
+      "category": "food-hospitality",
+      "body": "Wine & Spirit Education Trust"
+    },
+    {
+      "slug": "ancc-fnp",
+      "name": "ANCC Family Nurse Practitioner Certification",
+      "category": "healthcare-clinical",
+      "body": "American Nurses Credentialing Center (ANCC)"
+    },
+    {
+      "slug": "asha-ccc-slp",
+      "name": "ASHA CCC-SLP Certification",
+      "category": "healthcare-clinical",
+      "body": "American Speech-Language-Hearing Association (ASHA)"
+    }
+  ]
+}

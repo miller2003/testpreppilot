@@ -1,0 +1,79 @@
+{
+  "id": "pkg64",
+  "bodies": [
+    "Scrum.org",
+    "Society for Human Resource Management",
+    "International Academies of Emergency Dispatch",
+    "Law enforcement agencies",
+    "National Board on Fire Service Professional Qualifications",
+    "New York City Police Department"
+  ],
+  "ownsPrograms": [
+    "Scrum.org",
+    "Society for Human Resource Management",
+    "International Academies of Emergency Dispatch",
+    "Law enforcement agencies",
+    "National Board on Fire Service Professional Qualifications",
+    "New York City Police Department"
+  ],
+  "slugs": [
+    "scrum-org-psm-i",
+    "scrum-org-pspo-i",
+    "shrm-cp",
+    "shrm-scp",
+    "iaed-emd",
+    "law-enforcement-pat",
+    "pro-board-firefighter-i",
+    "nypd-police-officer-exam"
+  ],
+  "exams": [
+    {
+      "slug": "scrum-org-psm-i",
+      "name": "Professional Scrum Master I",
+      "category": "project-business",
+      "body": "Scrum.org"
+    },
+    {
+      "slug": "scrum-org-pspo-i",
+      "name": "Professional Scrum Product Owner I",
+      "category": "project-business",
+      "body": "Scrum.org"
+    },
+    {
+      "slug": "shrm-cp",
+      "name": "SHRM Certified Professional",
+      "category": "project-business",
+      "body": "Society for Human Resource Management"
+    },
+    {
+      "slug": "shrm-scp",
+      "name": "SHRM Senior Certified Professional",
+      "category": "project-business",
+      "body": "Society for Human Resource Management"
+    },
+    {
+      "slug": "iaed-emd",
+      "name": "Emergency Medical Dispatch",
+      "category": "public-safety",
+      "body": "International Academies of Emergency Dispatch"
+    },
+    {
+      "slug": "law-enforcement-pat",
+      "name": "Law Enforcement Physical Ability Test",
+      "category": "public-safety",
+      "body": "Law enforcement agencies"
+    },
+    {
+      "slug": "pro-board-firefighter-i",
+      "name": "Pro Board Firefighter I",
+      "category": "public-safety",
+      "body": "National Board on Fire Service Professional Qualifications"
+    },
+    {
+      "slug": "nypd-police-officer-exam",
+      "name": "NYPD Police Officer Exam",
+      "category": "public-safety",
+      "body": "New York City Police Department"
+    }
+  ]
+}

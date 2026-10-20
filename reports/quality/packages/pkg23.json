@@ -1,0 +1,62 @@
+{
+  "id": "pkg23",
+  "bodies": [
+    "CompTIA"
+  ],
+  "ownsPrograms": [
+    "CompTIA"
+  ],
+  "slugs": [
+    "comptia-a-plus",
+    "comptia-ai-essentials",
+    "comptia-cloud-plus",
+    "comptia-cysa-plus",
+    "comptia-data-plus",
+    "comptia-it-fundamentals",
+    "comptia-linux-plus"
+  ],
+  "exams": [
+    {
+      "slug": "comptia-a-plus",
+      "name": "CompTIA A+ Certification",
+      "category": "technology",
+      "body": "CompTIA"
+    },
+    {
+      "slug": "comptia-ai-essentials",
+      "name": "CompTIA AI Essentials",
+      "category": "technology",
+      "body": "CompTIA"
+    },
+    {
+      "slug": "comptia-cloud-plus",
+      "name": "CompTIA Cloud+",
+      "category": "technology",
+      "body": "CompTIA"
+    },
+    {
+      "slug": "comptia-cysa-plus",
+      "name": "CompTIA Cybersecurity Analyst (CySA+)",
+      "category": "technology",
+      "body": "CompTIA"
+    },
+    {
+      "slug": "comptia-data-plus",
+      "name": "CompTIA Data+",
+      "category": "technology",
+      "body": "CompTIA"
+    },
+    {
+      "slug": "comptia-it-fundamentals",
+      "name": "CompTIA IT Fundamentals (ITF+)",
+      "category": "technology",
+      "body": "CompTIA"
+    },
+    {
+      "slug": "comptia-linux-plus",
+      "name": "CompTIA Linux+",
+      "category": "technology",
+      "body": "CompTIA"
+    }
+  ]
+}

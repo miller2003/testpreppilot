@@ -12,6 +12,9 @@
 //  layer only ever sees one shape.
 // ─────────────────────────────────────────────────────────────────────
 
+// Flagship overlay (highest priority; first record per slug / first program per body wins).
+import flagship from './flagship/index.mjs';
+
 // ==AUTO_BATCH_IMPORTS_START==
 import b01 from './batch01.mjs';
 import b02 from './batch02.mjs';
@@ -387,7 +390,7 @@ function normExam(e) {
 export const nationalPrograms = [];
 export const nationalExamRecords = [];
 
-for (const batch of BATCHES) {
+for (const batch of [flagship, ...BATCHES]) {
   for (const p of arr(batch?.programs)) {
     const np = normProgram(p);
     if (np.body) nationalPrograms.push(np);

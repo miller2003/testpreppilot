@@ -111,6 +111,7 @@ const jaccard = (a, b) => {
 };
 
 /* ── index national exams ─────────────────────────────────────────────── */
+const allSlugs = new Set(allExamsFull.map((e) => e.slug));
 const national = allExamsFull.filter((e) => e.scope === 'national');
 const byBody = new Map();
 for (const e of national) {
@@ -169,6 +170,15 @@ function checkExam(exam) {
     const sum = weighted.reduce((acc, t) => acc + parseFloat(t.weight), 0);
     if (sum < 95 || sum > 105) failures.push(`topics-weight-sum(${sum})`);
   }
+
+  /* 4. related exams — 3+ valid slugs from the catalog */
+  const related = rec.relatedSlugs || [];
+  if (related.length < 3) failures.push(`relatedSlugs<3(${related.length})`);
+  const badRelated = related.filter((x) => !allSlugs.has(x) || x === exam.slug);
+  if (badRelated.length) failures.push(`relatedSlugs-invalid(${badRelated.join(',')})`);
+  if (!(rec.summaryPoints || []).length || rec.summaryPoints.length < 4) failures.push(`summaryPoints<4(${(rec.summaryPoints || []).length})`);
+  if ((rec.quickAnswer?.advantages || []).length < 4) failures.push('quickAnswer-advantages<4');
+  if ((rec.examEssentials || []).length < 5) failures.push(`examEssentials<5(${(rec.examEssentials || []).length})`);
 
   /* 5. cost & timeline */
   const items = rec.costBreakdown?.items || [];
@@ -257,7 +267,13 @@ function checkExam(exam) {
 /* ── run ──────────────────────────────────────────────────────────────── */
 let targets = national.filter((e) => e.record);
 if (flag('released')) targets = targets.filter((e) => Object.prototype.hasOwnProperty.call(releases, e.slug));
-if (opt('slug')) targets = targets.filter((e) => e.slug === opt('slug'));
+const slugFilter = new Set([opt('slug'), ...(opt('slugs') || '').split(',')].filter(Boolean));
+if (slugFilter.size) targets = targets.filter((e) => slugFilter.has(e.slug));
+if (opt('pkg')) {
+  const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'reports', 'quality', 'packages', `${opt('pkg')}.json`), 'utf8'));
+  const want = new Set(pkg.slugs);
+  targets = national.filter((e) => e.record && want.has(e.slug));
+}
 
 const results = targets.map(checkExam);
 const outRows = flag('fail-only') ? results.filter((r) => r.failures.length) : results;
@@ -275,6 +291,16 @@ const summary = {
 
 const outDir = path.join(ROOT, 'reports', 'quality');
 fs.mkdirSync(outDir, { recursive: true });
+const scoped = slugFilter.size > 0 || Boolean(opt('pkg'));
+if (scoped) {
+  // Scoped runs (a writer checking its own slugs) print results and never overwrite the shared report.
+  for (const r of results) {
+    console.log(`${r.failures.length ? 'FAIL' : 'PASS'} ${r.slug} (${r.words} words)${r.failures.length ? ' :: ' + r.failures.join('; ') : ''}`);
+    if (r.warnings.length) console.log(`     warnings: ${r.warnings.join('; ')}`);
+  }
+  console.log(`scoped gate — ${results.length - failing.length}/${results.length} passing`);
+  process.exit(failing.length && flag('strict') ? 1 : 0);
+}
 fs.writeFileSync(
   path.join(outDir, 'national-gate.json'),
   JSON.stringify({ summary, results: outRows }, null, 2)
