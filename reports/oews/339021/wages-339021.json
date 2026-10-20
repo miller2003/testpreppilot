@@ -1,0 +1,503 @@
+{
+ "_meta": {
+  "soc": "33-9021",
+  "socName": "Private Detectives and Investigators",
+  "year": "",
+  "sourceLabel": "O*NET OnLine (BLS OEWS)",
+  "fetchedOn": "2026-10-20",
+  "noDataStates": [
+   "MD",
+   "NV"
+  ]
+ },
+ "AL": {
+  "median": "$46,810",
+  "p25": "$37,740",
+  "p75": "$52,610",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=AL"
+ },
+ "AK": {
+  "median": "$53,440",
+  "p25": "$42,780",
+  "p75": "$71,240",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=AK"
+ },
+ "AZ": {
+  "median": "$61,030",
+  "p25": "$41,450",
+  "p75": "$79,790",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=AZ"
+ },
+ "AR": {
+  "median": "$47,750",
+  "p25": "$37,970",
+  "p75": "$69,990",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=AR"
+ },
+ "CA": {
+  "median": "$61,250",
+  "p25": "$45,380",
+  "p75": "$82,110",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=CA"
+ },
+ "CO": {
+  "median": "$48,730",
+  "p25": "$44,150",
+  "p75": "$67,800",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=CO"
+ },
+ "CT": {
+  "median": "$75,010",
+  "p25": "$42,130",
+  "p75": "$83,320",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=CT"
+ },
+ "DE": {
+  "median": "$55,710",
+  "p25": "$47,520",
+  "p75": "$67,800",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=DE"
+ },
+ "DC": {
+  "median": "$72,720",
+  "p25": "$46,330",
+  "p75": "$107,920",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=DC"
+ },
+ "FL": {
+  "median": "$50,640",
+  "p25": "$38,120",
+  "p75": "$64,080",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=FL"
+ },
+ "GA": {
+  "median": "$45,060",
+  "p25": "$38,650",
+  "p75": "$59,950",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=GA"
+ },
+ "HI": {
+  "median": "$45,750",
+  "p25": "$43,790",
+  "p75": "$66,350",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=HI"
+ },
+ "ID": {
+  "median": "$47,910",
+  "p25": "$44,530",
+  "p75": "$65,350",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=ID"
+ },
+ "IL": {
+  "median": "$60,210",
+  "p25": "$44,380",
+  "p75": "$79,140",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=IL"
+ },
+ "IN": {
+  "median": "$41,830",
+  "p25": "$37,990",
+  "p75": "$53,590",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=IN"
+ },
+ "IA": {
+  "median": "$41,110",
+  "p25": "$38,380",
+  "p75": "$54,680",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=IA"
+ },
+ "KS": {
+  "median": "$45,260",
+  "p25": "$36,900",
+  "p75": "$60,610",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=KS"
+ },
+ "KY": {
+  "median": "$47,650",
+  "p25": "$40,220",
+  "p75": "$56,080",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=KY"
+ },
+ "LA": {
+  "median": "$41,950",
+  "p25": "$36,750",
+  "p75": "$52,930",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=LA"
+ },
+ "ME": {
+  "median": "$43,830",
+  "p25": "$39,580",
+  "p75": "$54,070",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=ME"
+ },
+ "MA": {
+  "median": "$50,240",
+  "p25": "$42,540",
+  "p75": "$94,660",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=MA"
+ },
+ "MI": {
+  "median": "$48,650",
+  "p25": "$38,410",
+  "p75": "$61,590",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=MI"
+ },
+ "MN": {
+  "median": "$57,880",
+  "p25": "$45,930",
+  "p75": "$83,670",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=MN"
+ },
+ "MS": {
+  "median": "$39,060",
+  "p25": "$36,210",
+  "p75": "$52,360",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=MS"
+ },
+ "MO": {
+  "median": "$41,600",
+  "p25": "$37,480",
+  "p75": "$51,880",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=MO"
+ },
+ "MT": {
+  "median": "$47,430",
+  "p25": "$42,640",
+  "p75": "$55,040",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=MT"
+ },
+ "NE": {
+  "median": "$51,750",
+  "p25": "$42,800",
+  "p75": "$76,000",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=NE"
+ },
+ "NH": {
+  "median": "$65,370",
+  "p25": "$46,970",
+  "p75": "$78,300",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=NH"
+ },
+ "NJ": {
+  "median": "$54,710",
+  "p25": "$42,890",
+  "p75": "$91,990",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=NJ"
+ },
+ "NM": {
+  "median": "$41,600",
+  "p25": "$36,900",
+  "p75": "$64,280",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=NM"
+ },
+ "NY": {
+  "median": "$59,140",
+  "p25": "$45,970",
+  "p75": "$80,910",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=NY"
+ },
+ "NC": {
+  "median": "$52,890",
+  "p25": "$41,000",
+  "p75": "$74,900",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=NC"
+ },
+ "ND": {
+  "median": "$44,310",
+  "p25": "$39,840",
+  "p75": "$50,440",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=ND"
+ },
+ "OH": {
+  "median": "$47,200",
+  "p25": "$41,600",
+  "p75": "$70,910",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=OH"
+ },
+ "OK": {
+  "median": "$39,680",
+  "p25": "$37,110",
+  "p75": "$58,430",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=OK"
+ },
+ "OR": {
+  "median": "$76,480",
+  "p25": "$55,660",
+  "p75": "$92,390",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=OR"
+ },
+ "PA": {
+  "median": "$51,200",
+  "p25": "$44,840",
+  "p75": "$71,830",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=PA"
+ },
+ "RI": {
+  "median": "$54,620",
+  "p25": "$39,830",
+  "p75": "$79,140",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=RI"
+ },
+ "SC": {
+  "median": "$51,530",
+  "p25": "$40,140",
+  "p75": "$73,430",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=SC"
+ },
+ "SD": {
+  "median": "$44,840",
+  "p25": "$40,860",
+  "p75": "$48,550",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=SD"
+ },
+ "TN": {
+  "median": "$49,360",
+  "p25": "$38,520",
+  "p75": "$99,170",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=TN"
+ },
+ "TX": {
+  "median": "$51,810",
+  "p25": "$36,810",
+  "p75": "$72,660",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=TX"
+ },
+ "UT": {
+  "median": "$57,910",
+  "p25": "$48,460",
+  "p75": "$61,090",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=UT"
+ },
+ "VT": {
+  "median": "$67,910",
+  "p25": "$44,640",
+  "p75": "$76,960",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=VT"
+ },
+ "VA": {
+  "median": "$56,160",
+  "p25": "$41,200",
+  "p75": "$76,680",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=VA"
+ },
+ "WA": {
+  "median": "$64,080",
+  "p25": "$46,580",
+  "p75": "$84,700",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=WA"
+ },
+ "WV": {
+  "median": "$46,410",
+  "p25": "$37,060",
+  "p75": "$60,740",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=WV"
+ },
+ "WI": {
+  "median": "$41,850",
+  "p25": "$38,580",
+  "p75": "$58,210",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=WI"
+ },
+ "WY": {
+  "median": "$54,310",
+  "p25": "$42,800",
+  "p75": "$74,240",
+  "usMedian": "$51,220",
+  "usP25": "$40,700",
+  "usP75": "$73,990",
+  "year": "May 2025",
+  "sourceUrl": "https://www.onetonline.org/link/localwages/33-9021.00?st=WY"
+ }
+}
