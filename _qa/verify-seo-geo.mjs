@@ -54,7 +54,7 @@ const catUrls = [...sm.matchAll(/<loc>(https:\/\/testpreppilot\.com\/categories\
 ok(catUrls.length === expectedCats, `${expectedCats} category URLs in sitemap`, String(catUrls.length));
 let withPay = 0, withItemList = 0, withDate = 0, badLd = 0, faqMismatch = 0;
 for (const u of catUrls) {
-  const slug = u.split('/').pop();
+  const slug = u.split('/').filter(Boolean).pop(); // trailingSlash:'always' sitemap locs end with '/'
   const p = `dist/categories/${slug}/index.html`;
   if (!existsSync(p)) { console.log('  missing dist file', slug); badLd++; continue; }
   const html = read(p);
@@ -108,9 +108,9 @@ const probeExam = 'sat-exam';
 const todayUrls = urls.filter((u) => (dateOf(u) || '').slice(0, 10) === newestRelease).map(locOf);
 console.log(`   lastmod == newest release ${newestRelease} (must all be justified by a release on that date):`);
 for (const u of todayUrls) console.log('     ' + u);
-const homeEntry = urls.find((u) => locOf(u) === 'https://testpreppilot.com');
-const catEntry = urls.find((u) => locOf(u).includes('/categories/technology'));
-const examEntry = urls.find((u) => locOf(u).includes('/exams/' + probeExam));
+const homeEntry = urls.find((u) => locOf(u) === 'https://testpreppilot.com/'); // trailingSlash:'always'
+const catEntry = urls.find((u) => (locOf(u) || '').includes('/categories/technology'));
+const examEntry = urls.find((u) => (locOf(u) || '').includes('/exams/' + probeExam));
 console.log('   home       lastmod:', dateOf(homeEntry));
 console.log('   categories lastmod:', dateOf(catEntry), '(technology)');
 console.log('   exams      lastmod:', dateOf(examEntry), `(${probeExam})`);

@@ -131,8 +131,12 @@ console.log('\n=== dataset matches its OpenAPI schema ===');
 console.log('\n=== robots.txt policy lines ===');
 {
   const robots = read('public/robots.txt');
+  const hdrs = read('public/_headers');
   ok(/^Content-Signal:/m.test(robots), 'Content-Signal present');
-  ok(/^Agentmap:\s*https:\/\/testpreppilot\.com\/\.well-known\/ai-catalog\.json/m.test(robots), 'Agentmap points at the ai-catalog');
+  // Agentmap: was removed on purpose (invented directive, no crawler parses it).
+  // Discovery now rides on the RFC 8288 Link header (rel="service-meta" -> ai-catalog)
+  // and /.well-known/ai-catalog.json — assert the Link header declares it instead.
+  ok(/rel="service-meta"/.test(hdrs) && /<\/\.well-known\/ai-catalog\.json>/.test(hdrs), 'ai-catalog discovered via Link header (Agentmap retired)');
   ok(/^Sitemap:\s*https:\/\/testpreppilot\.com\/sitemap-index\.xml/m.test(robots), 'Sitemap declared');
   const allowed = [...robots.matchAll(/User-agent:\s*(\S+)\nAllow:\s*\//g)].map((m) => m[1]);
   ok(allowed.includes('GPTBot') && allowed.includes('ClaudeBot') && allowed.includes('PerplexityBot'),

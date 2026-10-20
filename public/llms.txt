@@ -159,6 +159,17 @@ Each field lists its 4 most complete guides; the other 409 are in llms-full.txt.
 - [NAVTA Approved Veterinary Assistant](https://testpreppilot.com/exams/navta-approved-veterinary-assistant): Varies by location and currency — confirm on the official registration page · 90 minutes · 100 questions. NAVTA Approved Veterinary Assistant is a…
 - [Veterinary Technician National Examination](https://testpreppilot.com/exams/vtne): ~$300-360 · 3 hours · 170 questions. Veterinary Technician National Examination is a professional credential administered by American Association of…
 
+## State license requirements by state
+
+- [Security Guard License requirements by state](https://testpreppilot.com/exams/security-guard-license-by-state): all 51 jurisdictions compared — education hours, exam fees, exam vendors, renewal cycles and reciprocity (compiled 2026-10-20).
+- [Private Investigator License requirements by state](https://testpreppilot.com/exams/private-investigator-license-by-state): all 51 jurisdictions compared — education hours, exam fees, exam vendors, renewal cycles and reciprocity (compiled 2026-10-20).
+- [Concealed Carry Permit requirements by state](https://testpreppilot.com/exams/concealed-carry-license-by-state): all 51 jurisdictions compared — education hours, exam fees, exam vendors, renewal cycles and reciprocity (compiled 2026-10-20).
+- [Professional Engineer Licensure requirements by state](https://testpreppilot.com/exams/professional-engineer-license-by-state): all 51 jurisdictions compared — education hours, exam fees, exam vendors, renewal cycles and reciprocity (compiled 2026-10-20).
+- [Professional Land Surveyor Licensure requirements by state](https://testpreppilot.com/exams/land-surveyor-license-by-state): all 51 jurisdictions compared — education hours, exam fees, exam vendors, renewal cycles and reciprocity (compiled 2026-10-20).
+- [CPA License Requirements requirements by state](https://testpreppilot.com/exams/cpa-licensure-license-by-state): all 51 jurisdictions compared — education hours, exam fees, exam vendors, renewal cycles and reciprocity (compiled 2026-10-20).
+- [Funeral Director License requirements by state](https://testpreppilot.com/exams/funeral-director-license-by-state): all 51 jurisdictions compared — education hours, exam fees, exam vendors, renewal cycles and reciprocity (compiled 2026-10-20).
+- [Nursing Home Administrator License requirements by state](https://testpreppilot.com/exams/nursing-home-administrator-license-by-state): all 51 jurisdictions compared — education hours, exam fees, exam vendors, renewal cycles and reciprocity (compiled 2026-10-20).
+
 ## Browse & reference
 
 - [All exams directory](https://testpreppilot.com/): searchable directory of every credential we track, filterable by field and by state scope.

@@ -31,11 +31,12 @@ for (const { slug, heat } of picks) {
   check(new RegExp(`"datePublished":"${date}"`).test(html), slug, `schema datePublished != ${date}`);
   check(!new RegExp(`"datePublished":"(?!${date})`).test(html), slug, 'a second, different datePublished is present');
   check(html.includes(`/exams/${slug}/infographic.svg`), slug, 'infographic not referenced');
-  check(html.includes(`rel="canonical" href="https://testpreppilot.com/exams/${slug}"`), slug, 'canonical missing/mismatched');
+  check(html.includes(`rel="canonical" href="https://testpreppilot.com/exams/${slug}/"`), slug, 'canonical missing/mismatched');
   check(html.length > 20000, slug, `page suspiciously small (${html.length} bytes)`);
 
-  // sitemap: loc without trailing slash, lastmod == release date (ISO midnight)
-  const loc = `<loc>https://testpreppilot.com/exams/${slug}</loc>`;
+  // sitemap: loc WITH trailing slash (trailingSlash:'always' — must match the served 200 URL),
+  // lastmod == release date (ISO midnight)
+  const loc = `<loc>https://testpreppilot.com/exams/${slug}/</loc>`;
   check(sitemap.includes(loc), slug, 'sitemap loc missing or has a trailing slash');
   const idx = sitemap.indexOf(loc);
   const after = sitemap.slice(idx, idx + 220);
