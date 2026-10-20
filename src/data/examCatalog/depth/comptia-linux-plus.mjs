@@ -9,8 +9,8 @@ const data = {
     bio: 'This guide is compiled and maintained by our IT-certifications desk. Vendor exams in this space are revised and retired frequently, so we track the objectives document by its published revision date and state plainly when an exam is being retired and what replaces it — the single most common way candidates waste money here is studying a superseded blueprint. Fees, scoring, retake rules and renewal terms come from the vendor’s own certification pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'
   },
-  reviewedBy: 'Objectives, exam codes, fees and retirement dates were taken from the vendor’s current certification pages and checked for the revision date shown there.',
-  lastReviewed: '2026-08',
+  reviewedBy: 'Re-verified October 2026 against the CompTIA Linux+ (XK0-006) certification page, the CompTIA Continuing Education fee and CEU pages and the retake policy.',
+  lastReviewed: '2026-10',
 
   // P0-1  Career outlook & salary (cite BLS where an SOC fits)
   salaryOutlook: {
@@ -184,14 +184,14 @@ const data = {
       'The important buying decision here is not which course but which version. XK0-005 material is still widely on sale and still ranks well in search results, and it covers a four-domain blueprint that no longer exists. Check for XK0-006 or "V8" on the cover of anything you buy. The other decision is whether to pay for CompTIA\'s own bundles, which add labs and a retake to the voucher at a significant premium.',
     columns: ['Resource', 'Price', 'Format', 'Best for'],
     rows: [
-      { label: 'Exam voucher (XK0-006)', values: ['~$390 US list; authorised resellers commonly $330-369', 'Pearson VUE, test centre or online', 'Required — buy the voucher alone if you already have a lab'] },
-      { label: 'CompTIA CertMaster Perform + CertMaster Practice bundles', values: ['Bundle pricing at the CompTIA Store; includes voucher and often a retake', 'eLearning with hands-on labs plus adaptive practice', 'Candidates with no lab of their own and no employer training budget'] },
-      { label: 'Your own VMs — Rocky/AlmaLinux plus Ubuntu Server in VirtualBox', values: ['Free', 'Self-built lab', 'The single most valuable resource for a PBQ-heavy exam'] },
-      { label: 'Sander van Vugt Linux+ video course (Pearson/O\'Reilly)', values: ['Included with an O\'Reilly subscription, ~$49/month; also sold outright', 'Video with demonstrations', 'Watching an experienced administrator work rather than narrate slides'] },
-      { label: 'CompTIA Linux+ Study Guide (Sybex)', values: ['~$50-60 list', 'Print + eBook with online test bank', 'A single ordered reference — confirm you are buying the XK0-006 edition'] },
-      { label: 'Jason Dion practice tests (Udemy)', values: ['~$15-30 during Udemy\'s frequent sales', 'Timed practice exams with explanations', 'Cheap readiness checks; weaker on PBQ simulation than on multiple choice'] },
-      { label: 'OverTheWire Bandit', values: ['Free', 'Browser/SSH wargame', 'Shell fluency and reasoning under constraint, early in your prep'] },
-      { label: 'man pages, --help and the distribution documentation', values: ['Free', 'On the box', 'Rehearsing exactly the conditions the PBQ environment gives you'] }
+      { label: 'Exam voucher (XK0-006)', values: ['~$390 US list; authorised resellers commonly $330-369', 'Pearson VUE, test centre or online', 'Required — buy the voucher alone if you already have a lab'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'CompTIA CertMaster Perform + CertMaster Practice bundles', values: ['Bundle pricing at the CompTIA Store; includes voucher and often a retake', 'eLearning with hands-on labs plus adaptive practice', 'Candidates with no lab of their own and no employer training budget'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'Your own VMs — Rocky/AlmaLinux plus Ubuntu Server in VirtualBox', values: ['Free', 'Self-built lab', 'The single most valuable resource for a PBQ-heavy exam'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'Sander van Vugt Linux+ video course (Pearson/O\'Reilly)', values: ['Included with an O\'Reilly subscription, ~$49/month; also sold outright', 'Video with demonstrations', 'Watching an experienced administrator work rather than narrate slides'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'CompTIA Linux+ Study Guide (Sybex)', values: ['~$50-60 list', 'Print + eBook with online test bank', 'A single ordered reference — confirm you are buying the XK0-006 edition'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'Jason Dion practice tests (Udemy)', values: ['~$15-30 during Udemy\'s frequent sales', 'Timed practice exams with explanations', 'Cheap readiness checks; weaker on PBQ simulation than on multiple choice'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'OverTheWire Bandit', values: ['Free', 'Browser/SSH wargame', 'Shell fluency and reasoning under constraint, early in your prep'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'man pages, --help and the distribution documentation', values: ['Free', 'On the box', 'Rehearsing exactly the conditions the PBQ environment gives you'], note: 'Typical 2026 price; confirm at the seller before buying.' }
     ],
     footnote: 'Prices checked 2026-08 in USD before tax; CompTIA voucher pricing varies by region and promotion and Udemy list prices are close to meaningless outside a sale — confirm at the source before buying. We do not rank by commission.'
   },
@@ -223,7 +223,7 @@ const data = {
       },
       {
         mistake: 'Forgetting that the certification expires',
-        fix: 'Linux+ is a CompTIA CE certification, valid for three years, renewed by earning 50 continuing education units or by passing a higher-level CompTIA certification. There is also an annual CE fee. Diary the expiry the week you pass, and note that a higher CompTIA certification renews it automatically — which makes the renewal cycle a prompt to move up rather than a chore.'
+        fix: 'Linux+ is a CompTIA CE certification, valid for three years, renewed by earning 50 continuing education units or by passing a higher-level CompTIA certification. There is also a $150 CE fee for the three-year cycle. Diary the expiry the week you pass, and note that a higher CompTIA certification renews it automatically — which makes the renewal cycle a prompt to move up rather than a chore.'
       }
     ]
   },
@@ -315,7 +315,7 @@ const data = {
       'No waiting period between your first and second attempt; from the third attempt onward you must wait 14 calendar days between sittings, and each attempt is paid unless you bought a retake bundle.'
     ],
     afterwards:
-      'Your pass or fail and your scaled score appear on screen the instant you submit, and you leave a test centre with a printed score report showing how you performed relative to each of the five domains. That report is the most useful artefact any of these four exams produces, so read it properly rather than filing it. On a pass, your certification appears in your CompTIA account within a few days and you can claim the digital badge and download the certificate; Linux+ is valid for three years under the CompTIA Continuing Education programme, renewed with 50 CEUs plus the annual CE fee, or automatically by passing a higher-level CompTIA certification. Log the expiry date immediately and start banking CEUs from real work rather than scrambling in year three. On a fail, resist booking the immediate retake that the no-waiting-period policy makes possible. Take the domain breakdown, identify the one or two areas that dragged the scaled score down, and spend a fortnight labbing those specifically — the score report tells you precisely where to aim, which is a luxury a Cisco candidate does not get, and wasting it by re-sitting on the same knowledge is how a $390 voucher becomes a $780 one.'
+      'Your pass or fail and your scaled score appear on screen the instant you submit, and you leave a test centre with a printed score report showing how you performed relative to each of the five domains. That report is the most useful artefact any of these four exams produces, so read it properly rather than filing it. On a pass, your certification appears in your CompTIA account within a few days and you can claim the digital badge and download the certificate; Linux+ is valid for three years under the CompTIA Continuing Education programme, renewed with 50 CEUs plus the $150 CE fee for the three-year cycle, or automatically by passing a higher-level CompTIA certification. Log the expiry date immediately and start banking CEUs from real work rather than scrambling in year three. On a fail, resist booking the immediate retake that the no-waiting-period policy makes possible. Take the domain breakdown, identify the one or two areas that dragged the scaled score down, and spend a fortnight labbing those specifically — the score report tells you precisely where to aim, which is a luxury a Cisco candidate does not get, and wasting it by re-sitting on the same knowledge is how a $390 voucher becomes a $780 one.'
   }
 };
 

@@ -11,8 +11,8 @@ const data = {
     bio: 'This guide is compiled and maintained by our IT-certifications desk. Vendor exams in this space are revised and retired frequently, so we track the objectives document by its published revision date and state plainly when an exam is being retired and what replaces it — the single most common way candidates waste money here is studying a superseded blueprint. Fees, scoring, retake rules and renewal terms come from the vendor\u2019s own certification pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'
   },
-  reviewedBy: 'Objectives, exam codes, fees and retirement dates were taken from the vendor\u2019s current certification pages and checked for the revision date shown there.',
-  lastReviewed: '2026-08',
+  reviewedBy: 'Domains, weights, passing score and question counts were checked on 2026-10-20 against the DBS-C01 exam guide v2.2, and the April 29-30, 2024 retirement against the AWS Training and Certification blog; the 180-minute duration was not restated in the exam guide.',
+  lastReviewed: '2026-10',
 
   // P0-1  Career outlook & salary
   salaryOutlook: {

@@ -6,7 +6,7 @@ const data = {
   author: {
     name: 'TestPrepPilot Editorial Board',
     title: 'Commercial driving & transportation certifications desk',
-    bio: 'This guide is compiled and maintained by our commercial-driving desk. CDL knowledge-test content and fees vary by state and are revised when each state updates its driver manual or when federal standards change under 49 CFR Part 383, so we state the federal baseline — the 80 percent cut score in 49 CFR 383.135 and the required knowledge areas in 49 CFR 383.111 — and flag that the exact question count, fee and language options are set by the state that issues your Commercial Learner’s Permit. Entry-Level Driver Training (ELDT) requirements, effective 7 February 2022, also affect who may sit the knowledge test at all, and those rules are federal. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code; BLS classifies by job duties rather than by licence class, so the closest official fit for the Combination Vehicles knowledge test is Heavy and Tractor-trailer Truck Drivers (SOC 53-3032), because a combination (Class A) licence is what that role requires.',
+    bio: 'This guide is compiled and maintained by our commercial-driving desk. CDL knowledge-test content and fees vary by state and are revised when each state updates its driver manual or when federal standards change under 49 CFR Part 383, so we state the federal baseline — the 80 percent cut score in 49 CFR 383.135 and the required knowledge areas in 49 CFR 383.111 — and flag that the exact question count, fee and language options are set by the state that issues your Commercial Learner’s Permit. Entry-Level Driver Training (ELDT) requirements, effective 7 February 2022, also determine who may sit the skills test (and the hazmat knowledge test); they do not apply to the CLP knowledge tests. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code; BLS classifies by job duties rather than by licence class, so the closest official fit for the Combination Vehicles knowledge test is Heavy and Tractor-trailer Truck Drivers (SOC 53-3032), because a combination (Class A) licence is what that role requires.',
     url: '/editorial-policy'
   },
   reviewedBy: 'Knowledge areas, the 80 percent cut score and the Group A restriction rule were taken from 49 CFR Part 383 (Subparts G and H) and cross-checked against the AAMVA 2005 CDL Test System model that state Combination Vehicles sections follow. State-specific fees and question counts were drawn from named state driver manuals.',
@@ -37,7 +37,7 @@ const data = {
   passRate: {
     headline: 'FMCSA and the states publish the 80 percent cut score — 49 CFR 383.135 — but no national pass rate',
     summary:
-      'As with every CDL knowledge test, the federal government fixes the passing line and publishes no pass rate. 49 CFR 383.135(a)(1) requires at least 80 percent correct on each knowledge test, and 49 CFR 383.135(a)(3) adds a stake that is unique to this exam: an applicant who fails the combination vehicle knowledge test "may not be issued a commercial learner’s permit or commercial driver’s license that authorizes… operation of a combination of vehicles in Group A." In plain terms, failing the Combination Vehicles test does not just mean retaking one sub-test — it means you cannot be issued a Group A CLP at all, so if your goal is a tractor-trailer (Class A) licence, this is a gate you cannot route around by taking a different knowledge test. The 80 percent line itself is a flat floor with no curve: if your state writes the exam as 20 questions, you need 16 correct, and 15 is a fail with no rounding. States set the question count and retake terms themselves; many permit a prompt retake for a fee. As with the General Knowledge test, the federal prerequisites sit upstream: ELDT theory must be in the FMCSA Training Provider Registry before a first-time Class A applicant may sit the test (effective 7 February 2022), and a passing score yields only a CLP, after which the 14-day skills-test waiting period of 49 CFR 383.25(e) applies. The point worth stressing is that combination-vehicle failure is more consequential than a mere percentage miss because of the Group A bar — so candidates aiming at Class A should treat this test as non-optional rather than as an optional add-on to the General Knowledge exam.',
+      'As with every CDL knowledge test, the federal government fixes the passing line and publishes no pass rate. 49 CFR 383.135(a)(1) requires at least 80 percent correct on each knowledge test, and 49 CFR 383.135(a)(3) adds a stake that is unique to this exam: an applicant who fails the combination vehicle knowledge test "may not be issued a commercial learner’s permit or commercial driver’s license that authorizes… operation of a combination of vehicles in Group A." In plain terms, failing the Combination Vehicles test does not just mean retaking one sub-test — it means you cannot be issued a Group A CLP at all, so if your goal is a tractor-trailer (Class A) licence, this is a gate you cannot route around by taking a different knowledge test. The 80 percent line itself is a flat floor with no curve: if your state writes the exam as 20 questions, you need 16 correct, and 15 is a fail with no rounding. States set the question count and retake terms themselves; many permit a prompt retake for a fee. As with the General Knowledge test, the federal prerequisites sit upstream: ELDT is not required for this knowledge test, but it must be logged in the FMCSA Training Provider Registry before a first-time Class A applicant takes the skills test (effective 7 February 2022), and a passing score yields only a CLP, after which the 14-day skills-test waiting period of 49 CFR 383.25(e) applies. The point worth stressing is that combination-vehicle failure is more consequential than a mere percentage miss because of the Group A bar — so candidates aiming at Class A should treat this test as non-optional rather than as an optional add-on to the General Knowledge exam.',
     source: {
       label: 'eCFR — 49 CFR Part 383 (knowledge tests, CLP, and 80% standard)',
       url: 'https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-383'
@@ -97,7 +97,7 @@ const data = {
       }
     ],
     variants: [
-      { label: 'First-time Class A applicant, ELDT not done', detail: 'Add the ELDT step before booking. The DMV will refuse the knowledge test until your ELDT theory is in the FMCSA Training Provider Registry; complete the registered provider’s course and verify the entry first.' },
+      { label: 'First-time Class A applicant, ELDT not done', detail: 'ELDT is not required before this knowledge test. Complete it with a provider on the FMCSA Training Provider Registry before the Class A skills test.' },
       { label: 'Class B driver adding combination (Group A)', detail: 'Often a focused 3-4 day block. You already hold the General Knowledge base; concentrate on Section 6’s combination-specific dynamics and the coupling/uncoupling sequence, which are new to you.' },
       { label: 'Planning doubles/triples endorsement later', detail: 'Note that Doubles/Triples is a separate endorsement knowledge test, not this one. Passing Combination Vehicles qualifies you for Group A generally; the doubles/triples endorsement is an additional exam you will schedule separately.' }
     ]
@@ -130,7 +130,7 @@ const data = {
       },
       {
         title: 'Clear ELDT before you book',
-        detail: 'For a first-time Class A applicant the FMCSA Training Provider Registry entry is a hard prerequisite. Verify it is logged — not merely that a course was completed — before you pay, because a missing entry means a refused test and a forfeited fee.'
+        detail: 'For a first-time Class A applicant the Training Provider Registry entry is a prerequisite to the skills test, not to this knowledge test. Verify it is logged before you book the skills test.'
       }
     ]
   },
@@ -141,12 +141,12 @@ const data = {
       'As with the General Knowledge test, the authoritative source is free: your state’s CDL manual Section 6 plus its official practice items. Paid resources add value mainly as repetition or as structured ELDT courses. Be wary of any product quoting a "combination pass rate," since that figure is not published by any government and is the vendor’s own practice-test metric, not an official outcome.',
     columns: ['Resource', 'Price', 'Format', 'Best for'],
     rows: [
-      { label: 'Your state DMV CDL manual, Section 6 (Combination Vehicles)', values: ['Free', 'PDF / web from the issuing state', 'The only source the test is written from — read it end to end'] },
-      { label: 'Your state DMV official practice tests', values: ['Free', 'Web or app', 'Wording that tracks the real question bank; do these before any paid set'] },
-      { label: 'Registered ELDT theory course (if first-time)', values: ['Varies by provider, commonly $0-300', 'Online, logged to the FMCSA registry', 'Mandatory prerequisite before the DMV seats a first-time Class A applicant'] },
-      { label: 'Commercial CDL prep apps (e.g. driving-tests.org, CDL Prep)', values: ['Free tier; ~$5-15/mo for premium', 'Mobile app, large question volume', 'Repetition once the official material is clean'] },
-      { label: 'CDL study guidebooks with a combination chapter', values: ['~$15-30', 'Print or eBook', 'A portable summary if you will not open the PDF; confirm it matches your state'] },
-      { label: 'CDL training school combination module', values: ['Often bundled into tuition; standalone $50-150', 'Classroom or online', 'Candidates who want a deadline and hands-on coupling demos'] }
+      { label: 'Your state DMV CDL manual, Section 6 (Combination Vehicles)', values: ['Free', 'PDF / web from the issuing state', 'The only source the test is written from — read it end to end'], note: 'See the state CDL manual; prices are indicative and unverified nationally' },
+      { label: 'Your state DMV official practice tests', values: ['Free', 'Web or app', 'Wording that tracks the real question bank; do these before any paid set'], note: 'See the state CDL manual; prices are indicative and unverified nationally' },
+      { label: 'Registered ELDT course (needed before the skills test)', values: ['Varies by provider, commonly $0-300', 'Online, logged to the FMCSA registry', 'Required before the first Class A or B skills test (49 CFR 383.71), not before the CLP knowledge tests'], note: 'See the state CDL manual; prices are indicative and unverified nationally' },
+      { label: 'Commercial CDL prep apps (e.g. driving-tests.org, CDL Prep)', values: ['Free tier; ~$5-15/mo for premium', 'Mobile app, large question volume', 'Repetition once the official material is clean'], note: 'See the state CDL manual; prices are indicative and unverified nationally' },
+      { label: 'CDL study guidebooks with a combination chapter', values: ['~$15-30', 'Print or eBook', 'A portable summary if you will not open the PDF; confirm it matches your state'], note: 'See the state CDL manual; prices are indicative and unverified nationally' },
+      { label: 'CDL training school combination module', values: ['Often bundled into tuition; standalone $50-150', 'Classroom or online', 'Candidates who want a deadline and hands-on coupling demos'], note: 'See the state CDL manual; prices are indicative and unverified nationally' }
     ],
     footnote: 'Prices checked 2026-08 in USD before tax and vary by state and provider. State DMV manuals and practice tests are free and authoritative; commercial "pass rate" claims are vendor-internal and not official. We do not rank by commission.'
   },
@@ -178,7 +178,7 @@ const data = {
       },
       {
         mistake: 'Forgetting ELDT before booking',
-        fix: 'Since 7 February 2022 a first-time Class A applicant must have ELDT theory logged in the FMCSA Training Provider Registry before the DMV administers the test. Verify the registry entry — not just course completion — before you pay, or the test is refused and the fee forfeited.'
+        fix: 'Since 7 February 2022 a first-time Class A applicant must have ELDT logged in the FMCSA Training Provider Registry before the skills test (49 CFR 383.71), not before this knowledge test. Verify the registry entry before you book the skills test.'
       }
     ]
   },
@@ -234,7 +234,7 @@ const data = {
   // P0-8  Exam-day guide
   examDay: {
     summary:
-      'The Combination Vehicles knowledge test is taken at a state DMV/SDLA, by computer, as part of your Group A CLP application — there is no vehicle on exam day, only documents and a terminal. The two things that go wrong most often are paperwork and misunderstanding the stakes: candidates arrive without the exact REAL-ID-era identity/residency documents, or they do not realise that failing this specific test blocks a Group A CLP entirely under 49 CFR 383.135(a)(3). Build your day around clearing ELDT verification first and having the document list in hand, because a refused test is a forfeited fee and, for a Class A seeker, a blocked path. Where this exam differs from General Knowledge is its consequence: the 80 percent line is the same flat federal floor, but the prize or penalty is the Group A gate. Plan the skills-test booking before you leave, because the 14-day waiting period of 49 CFR 383.25(e) starts the moment the CLP is issued.',
+      'The Combination Vehicles knowledge test is taken at a state DMV/SDLA, by computer, as part of your Group A CLP application — there is no vehicle on exam day, only documents and a terminal. The two things that go wrong most often are paperwork and misunderstanding the stakes: candidates arrive without the exact REAL-ID-era identity/residency documents, or they do not realise that failing this specific test blocks a Group A CLP entirely under 49 CFR 383.135(a)(3). Build your day around having the document list in hand, because a refused test is a forfeited fee and, for a Class A seeker, a blocked path. Where this exam differs from General Knowledge is its consequence: the 80 percent line is the same flat federal floor, but the prize or penalty is the Group A gate. Plan the skills-test booking before you leave, because the 14-day waiting period of 49 CFR 383.25(e) starts the moment the CLP is issued.',
     bring: [
       'Proof of identity, lawful presence, Social Security number and state residency per your DMV’s REAL-ID document list',
       'Confirmation that ELDT theory is logged in the FMCSA Training Provider Registry (first-time Class A applicants)',
@@ -250,7 +250,7 @@ const data = {
       'Any expectation of leaving as a licensed Class A driver — you leave with a CLP, supervised only'
     ],
     timeline: [
-      { time: 'The week before', detail: 'Confirm ELDT is in the registry and assemble the DMV document list exactly. A missing document is the most common cause of a refused test, and for a Group A seeker that refusal blocks the whole licence.' },
+      { time: 'The week before', detail: 'Assemble the DMV document list exactly. A missing document is the most common cause of a refused test, and for a Group A seeker that refusal blocks the whole licence.' },
       { time: 'Day before', detail: 'Re-run timed practice exams at your state’s combination question count; re-read only the chapters where you missed items, especially coupling order and air-line roles.' },
       { time: 'Arrival', detail: 'Allow extra time for document check-in and the photo. Present documents and pay the CLP and test fees for all Group A sub-tests you are taking.' },
       { time: 'At the terminal', detail: 'You receive the Combination Vehicles multiple-choice exam (your state’s count). Work the quick sequence items first; the 80 percent floor has no curve, so bank the straightforward ones.' },

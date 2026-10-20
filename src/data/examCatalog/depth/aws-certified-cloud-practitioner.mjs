@@ -9,8 +9,8 @@ const data = {
     bio: 'This guide is compiled and maintained by our IT-certifications desk. Cloud exams are revised on a two-to-three-year cycle and the exam series code is the only reliable way to separate current material from stale material, so we track the AWS exam guide by its code — CLF-C02 here — and say plainly when a version is likely to be replaced. Fees, question counts, scoring, retake rules and recertification terms come from AWS’s own exam guide and certification policy pages rather than from training vendors. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies workers by job duties rather than by certificate — a point that matters more for a foundational credential than for any other exam we cover. Where a number is not published, and AWS publishes no pass rate, we say so rather than estimating one.',
     url: '/editorial-policy'
   },
-  reviewedBy: 'Question count, scored versus unscored items, duration, fee, scaled scoring range, passing score, the four domain weightings and the explicit out-of-scope job tasks were taken from the AWS Certified Cloud Practitioner (CLF-C02) exam guide and the AWS certification product page; retake, results and recertification terms from AWS Certification policy and recertification pages; wages from the BLS Occupational Outlook Handbook, May 2024 data.',
-  lastReviewed: '2026-08',
+  reviewedBy: 'Exam questions, time, passing score, domain weights, fee and renewal options were checked on 2026-10-20 against the CLF-C02 exam guide, the AWS exam page, the AWS Certification policies and recertification pages; BLS OOH data as before.',
+  lastReviewed: '2026-10',
 
   // P0-1  Career outlook & salary (cite BLS where an SOC fits)
   salaryOutlook: {

@@ -9,8 +9,8 @@ const data = {
     bio: 'This guide is compiled and maintained by our IT-certifications desk. Vendor exams in this space are revised and retired frequently, so we track the objectives document by its published revision date and state plainly when an exam is being retired and what replaces it — the single most common way candidates waste money here is studying a superseded blueprint. Fees, scoring, retake rules and renewal terms come from the vendor’s own certification pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'
   },
-  reviewedBy: 'Objectives, exam codes, fees, scoring, retake rules and renewal terms were taken from CompTIA’s current A+ certification pages and checked for the revision date shown there.',
-  lastReviewed: '2026-08',
+  reviewedBy: 'Re-verified October 2026 against the CompTIA A+ Core 1 V15 and Core 2 V15 certification pages, the CompTIA Certification Retake Policy and the CompTIA Continuing Education renewal-fee and CEU pages.',
+  lastReviewed: '2026-10',
 
   // P0-1  Career outlook & salary (cite BLS where an SOC fits)
   salaryOutlook: {
@@ -182,18 +182,18 @@ const data = {
   // P0-5  Study-resource comparison table
   resourceComparison: {
     summary:
-      'The buying decision is which version, then whether to pay for CompTIA’s own bundles that add labs and a retake to each voucher. V14 material is retired and still ranks in search; anything you buy must say 220-1201 / 220-1202. Each exam is a separate voucher — about $274 at the 2026 US list per core, with a retake bundle around $359 per core — so the full certification is two vouchers, and that total is the firm reference point against which reseller and sale prices move.',
+      'The buying decision is which version, then whether to pay for CompTIA’s own bundles that add labs and a retake to each voucher. V14 material is retired and still ranks in search; anything you buy must say 220-1201 / 220-1202. Each exam is a separate voucher — priced in the CompTIA Store (CompTIA last published $253 per exam in February 2024, and 2026 listings show about $274 per core) — so the full certification is two vouchers. CompTIA student direct pricing lists a verified-student voucher at $122, or $175 with a retake.',
     columns: ['Resource', 'Price', 'Format', 'Best for'],
     rows: [
-      { label: 'Exam voucher (220-1201 Core 1)', values: ['~$274 US list per core; bundles and resellers vary', 'Pearson VUE, test centre or online', 'Required for Core 1 — budget two vouchers for the full cert'], },
-      { label: 'Exam voucher (220-1202 Core 2)', values: ['~$274 US list per core; bundles and resellers vary', 'Pearson VUE, test centre or online', 'Required for Core 2 — the second half of the credential'], },
-      { label: 'CompTIA CertMaster bundles (Perform + Practice)', values: ['Bundle pricing per core at the CompTIA Store; includes voucher and often a retake', 'eLearning with labs plus adaptive practice', 'Candidates with no lab of their own and no employer training budget'], },
-      { label: 'A cheap PC or a strong VM', values: ['Free to ~$100', 'Self-built lab', 'The most valuable resource for Core 1 hardware and PBQs'], },
-      { label: 'Professor Messer A+ videos and notes', values: ['Free videos; low-cost notes and practice', 'Video with downloadable notes', 'A zero-cost complete path, widely used by first-timers'], },
-      { label: 'Mike Meyers / Sybex A+ Study Guide', values: ['~$50-60 list per volume', 'Print + eBook with test bank', 'A single ordered reference — confirm the 220-1201/1202 edition'], },
-      { label: 'Jason Dion practice tests (Udemy)', values: ['~$15-30 during Udemy sales', 'Timed practice exams with explanations', 'Cheap readiness checks for both cores'], } 
+      { label: 'Exam voucher (220-1201 Core 1)', values: ['~$274 per core in 2026 listings (CompTIA last published $253 in Feb 2024); students $122', 'Pearson VUE, test centre or online', 'Required for Core 1 — budget two vouchers for the full cert'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'Exam voucher (220-1202 Core 2)', values: ['~$274 per core in 2026 listings (CompTIA last published $253 in Feb 2024); students $122', 'Pearson VUE, test centre or online', 'Required for Core 2 — the second half of the credential'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'CompTIA CertMaster bundles (Perform + Practice)', values: ['Bundle pricing per core at the CompTIA Store; includes voucher and often a retake', 'eLearning with labs plus adaptive practice', 'Candidates with no lab of their own and no employer training budget'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'A cheap PC or a strong VM', values: ['Free to ~$100', 'Self-built lab', 'The most valuable resource for Core 1 hardware and PBQs'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'Professor Messer A+ videos and notes', values: ['Free videos; low-cost notes and practice', 'Video with downloadable notes', 'A zero-cost complete path, widely used by first-timers'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'Mike Meyers / Sybex A+ Study Guide', values: ['~$50-60 list per volume', 'Print + eBook with test bank', 'A single ordered reference — confirm the 220-1201/1202 edition'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'Jason Dion practice tests (Udemy)', values: ['~$15-30 during Udemy sales', 'Timed practice exams with explanations', 'Cheap readiness checks for both cores'], note: 'Typical 2026 price; confirm at the seller before buying.' }
     ],
-    footnote: 'Prices checked 2026-08 in USD before tax; the ~$274 per-core voucher is CompTIA’s US list and the firm reference, while Udemy and bundle prices swing with promotion. Two vouchers are required for the full certification. We do not rank by commission.'
+    footnote: 'Prices checked 2026-08 in USD before tax; the ~$274 per-core voucher is a 2026 listing price rather than a figure CompTIA publishes (its last published price was $253 in February 2024), while Udemy and bundle prices swing with promotion. Two vouchers are required for the full certification. We do not rank by commission.'
   },
 
   // P0-6  Common mistakes
@@ -315,7 +315,7 @@ const data = {
       'No waiting period between your first and second attempt; from the third attempt onward you must wait 14 calendar days, and each attempt is paid unless you bought a retake bundle.'
     ],
     afterwards:
-      'Your pass or fail and your scaled score appear on screen the instant you submit, and you leave a test centre with a printed score report showing how you performed relative to each domain. That report is the most useful artefact any of these exams produces, so read it properly. On passing a core, note it and move to the other — only both passed earns the A+ credential. On a full pass of both cores, the certification appears in your CompTIA account within a few days; A+ is valid for three years under the CompTIA Continuing Education programme, renewed with 20 CEUs plus the CE fee (about $75 over the cycle), or automatically by passing a higher-level CompTIA certification. Log the expiry the week you pass. On a fail of a core, resist booking the immediate retake the no-waiting-period policy makes possible. Take the domain breakdown, identify the area that dragged the scaled score down, and spend a fortnight on it specifically. The score report tells you precisely where to aim, which is a luxury a Cisco candidate does not get, and wasting it by re-sitting on the same knowledge is how a $274 voucher becomes a $548 one.'
+      'Your pass or fail and your scaled score appear on screen the instant you submit, and you leave a test centre with a printed score report showing how you performed relative to each domain. That report is the most useful artefact any of these exams produces, so read it properly. On passing a core, note it and move to the other — only both passed earns the A+ credential. On a full pass of both cores, the certification appears in your CompTIA account within a few days; A+ is valid for three years under the CompTIA Continuing Education programme, renewed with 20 CEUs plus the CE fee (about $75 over the cycle), or automatically by passing a higher-level CompTIA certification. Log the expiry the week you pass. On a fail of a core, resist booking the immediate retake the no-waiting-period policy makes possible. Take the domain breakdown, identify the area that dragged the scaled score down, and spend a fortnight on it specifically. The score report tells you precisely where to aim, which is a luxury a Cisco candidate does not get, and wasting it by re-sitting on the same knowledge is how one voucher fee becomes two.'
   }
 };
 

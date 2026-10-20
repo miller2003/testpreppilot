@@ -6,7 +6,7 @@ const data = {
   author: {
     name: 'TestPrepPilot Editorial Board',
     title: 'Commercial driving & transportation certifications desk',
-    bio: 'This guide is compiled and maintained by our commercial-driving desk. CDL knowledge-test content and fees vary by state and are revised when each state updates its driver manual or when federal standards change under 49 CFR Part 383, so we state the federal baseline — the 80 percent cut score in 49 CFR 383.135 and the required knowledge areas in 49 CFR 383.111 — and flag that the exact question count, fee and language options are set by the state that issues your Commercial Learner’s Permit. Entry-Level Driver Training (ELDT) requirements, effective 7 February 2022, also affect who may sit the knowledge test at all, and those rules are federal. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code; BLS classifies by job duties rather than by licence class, so the closest official fit for the Air Brakes knowledge test is Heavy and Tractor-trailer Truck Drivers (SOC 53-3032), because most air-braked commercial vehicles are tractor-trailers, though air brakes also appear on many Class B buses and straight trucks (SOC 53-3052 / 53-3051).',
+    bio: 'This guide is compiled and maintained by our commercial-driving desk. CDL knowledge-test content and fees vary by state and are revised when each state updates its driver manual or when federal standards change under 49 CFR Part 383, so we state the federal baseline — the 80 percent cut score in 49 CFR 383.135 and the required knowledge areas in 49 CFR 383.111 — and flag that the exact question count, fee and language options are set by the state that issues your Commercial Learner’s Permit. Entry-Level Driver Training (ELDT) requirements, effective 7 February 2022, also determine who may sit the skills test (and the hazmat knowledge test); they do not apply to the CLP knowledge tests. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code; BLS classifies by job duties rather than by licence class, so the closest official fit for the Air Brakes knowledge test is Heavy and Tractor-trailer Truck Drivers (SOC 53-3032), because most air-braked commercial vehicles are tractor-trailers, though air brakes also appear on many Class B buses and straight trucks (SOC 53-3052 / 53-3051).',
     url: '/editorial-policy'
   },
   reviewedBy: 'Knowledge areas, the 80 percent cut score and the "L" air-brake restriction rule were taken from 49 CFR Part 383 (Subparts G and H) and cross-checked against the AAMVA 2005 CDL Test System model that state Air Brakes sections follow. State-specific fees and question counts were drawn from named state driver manuals.',
@@ -37,7 +37,7 @@ const data = {
   passRate: {
     headline: 'FMCSA and the states publish the 80 percent cut score — 49 CFR 383.135 — but no national pass rate',
     summary:
-      'As with every CDL knowledge test, the federal government fixes the passing line and publishes no pass rate. 49 CFR 383.135(a)(1) requires at least 80 percent correct on each knowledge test, and 49 CFR 383.135(a)(2) defines the consequence of failing the air-brake portion specifically: the applicant "shall be issued a commercial learner’s permit or commercial driver’s license that contains the restriction described in § 383.95(b)(2)" — the "L" air-brake restriction. The key distinction from the Combination Vehicles test is that failing Air Brakes does not block the CDL; it simply brands the licence so its holder may not drive any vehicle equipped with air brakes. That makes the stakes different: a driver can hold a valid CDL with an "L" restriction and legally operate hydraulic-brake vehicles, but is locked out of the bulk of the freight and passenger fleet. The 80 percent line is a flat floor with no curve: if your state writes the exam as 25 questions, you need 20 correct, and 19 is a fail with no rounding. States set the question count and retake terms themselves; many permit a prompt retake for a fee. The federal prerequisites still apply: ELDT theory must be in the FMCSA Training Provider Registry before a first-time applicant may sit the test (effective 7 February 2022), and a passing score yields only a CLP, after which the 14-day skills-test waiting period of 49 CFR 383.25(e) applies. The practical reading is that the Air Brakes test is small and frequently under-prepared, yet its failure imposes a restriction that follows the licence for as long as the driver avoids re-testing — so candidates should treat clearing it as part of earning a full, unrestricted credential rather than as optional.',
+      'As with every CDL knowledge test, the federal government fixes the passing line and publishes no pass rate. 49 CFR 383.135(a)(1) requires at least 80 percent correct on each knowledge test, and 49 CFR 383.135(a)(2) defines the consequence of failing the air-brake portion specifically: the applicant "shall be issued a commercial learner’s permit or commercial driver’s license that contains the restriction described in § 383.95(b)(2)" — the "L" air-brake restriction. The key distinction from the Combination Vehicles test is that failing Air Brakes does not block the CDL; it simply brands the licence so its holder may not drive any vehicle equipped with air brakes. That makes the stakes different: a driver can hold a valid CDL with an "L" restriction and legally operate hydraulic-brake vehicles, but is locked out of the bulk of the freight and passenger fleet. The 80 percent line is a flat floor with no curve: if your state writes the exam as 25 questions, you need 20 correct, and 19 is a fail with no rounding. States set the question count and retake terms themselves; many permit a prompt retake for a fee. The federal prerequisites still apply: ELDT is not required for this knowledge test, but it must be logged in the FMCSA Training Provider Registry before a first-time Class A or B applicant takes the skills test (effective 7 February 2022), and a passing score yields only a CLP, after which the 14-day skills-test waiting period of 49 CFR 383.25(e) applies. The practical reading is that the Air Brakes test is small and frequently under-prepared, yet its failure imposes a restriction that follows the licence for as long as the driver avoids re-testing — so candidates should treat clearing it as part of earning a full, unrestricted credential rather than as optional.',
     source: {
       label: 'eCFR — 49 CFR Part 383 (knowledge tests, CLP, and 80% standard)',
       url: 'https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-383'
@@ -107,7 +107,7 @@ const data = {
       }
     ],
     variants: [
-      { label: 'First-time applicant, ELDT not done', detail: 'Add the ELDT step before booking. The DMV will refuse the knowledge test until your ELDT theory is in the FMCSA Training Provider Registry; complete the registered provider’s course and verify the entry first.' },
+      { label: 'First-time applicant, ELDT not done', detail: 'ELDT is not required before this knowledge test. Complete it with a provider on the FMCSA Training Provider Registry before the Class A or B skills test, where the air brake pre-trip check is graded.' },
       { label: 'Holding a CDL with an "L" restriction', detail: 'This is a focused 3-4 day re-study. You already hold the licence; passing this test removes the restriction. Concentrate on the pressure numbers, which are what restriction holders most often miss on the retest.' },
       { label: 'Hydraulic-brake-only driver', detail: 'You may choose to skip this test, but understand the trade: skipping leaves the "L" restriction on permanently until you later test, and excludes most freight and bus work. Most candidates take it anyway to keep the licence unrestricted.' }
     ]
@@ -140,7 +140,7 @@ const data = {
       },
       {
         title: 'Clear ELDT before you book',
-        detail: 'For a first-time applicant the FMCSA Training Provider Registry entry is a hard prerequisite. Verify it is logged — not merely that a course was completed — before you pay, or the test is refused and the fee forfeited.'
+        detail: 'For a first-time Class A or B applicant the Training Provider Registry entry is a prerequisite to the skills test, not to this knowledge test. Verify it is logged before you book the skills test.'
       }
     ]
   },
@@ -151,13 +151,13 @@ const data = {
       'As with the other CDL knowledge tests, the authoritative source is free: your state’s CDL manual Section 5 plus its official practice items. Paid resources add value mainly as repetition or as structured ELDT courses. Beware any product quoting an "air-brake pass rate," since that figure is not published by any government and is the vendor’s own practice-test metric, not an official outcome.',
     columns: ['Resource', 'Price', 'Format', 'Best for'],
     rows: [
-      { label: 'Your state DMV CDL manual, Section 5 (Air Brakes)', values: ['Free', 'PDF / web from the issuing state', 'The only source the test is written from — read it end to end'],
+      { label: 'Your state DMV CDL manual, Section 5 (Air Brakes)', values: ['Free', 'PDF / web from the issuing state', 'The only source the test is written from — read it end to end'], note: 'Free from your state licensing agency; 49 CFR 383.111(b) defines the content',
       },
-      { label: 'Your state DMV official practice tests', values: ['Free', 'Web or app', 'Wording that tracks the real question bank; do these before any paid set'] },
-      { label: 'Registered ELDT theory course (if first-time)', values: ['Varies by provider, commonly $0-300', 'Online, logged to the FMCSA registry', 'Mandatory prerequisite before the DMV seats a first-time applicant'] },
-      { label: 'Commercial CDL prep apps (e.g. driving-tests.org, CDL Prep)', values: ['Free tier; ~$5-15/mo for premium', 'Mobile app, large question volume', 'Repetition once the official material is clean'] },
-      { label: 'CDL study guidebooks with an air-brake chapter', values: ['~$15-30', 'Print or eBook', 'A portable summary if you will not open the PDF; confirm it matches your state'] },
-      { label: 'CDL training school air-brake module', values: ['Often bundled into tuition; standalone $50-150', 'Classroom or online', 'Candidates who want a deadline and hands-on brake demos'] }
+      { label: 'Your state DMV official practice tests', values: ['Free', 'Web or app', 'Wording that tracks the real question bank; do these before any paid set'], note: 'See the state CDL manual; prices are indicative and unverified nationally' },
+      { label: 'Registered ELDT course (needed before the skills test)', values: ['Varies by provider, commonly $0-300', 'Online, logged to the FMCSA registry', 'Required before the first Class A or B skills test (49 CFR 383.71), not before the CLP knowledge tests'], note: 'See the state CDL manual; prices are indicative and unverified nationally' },
+      { label: 'Commercial CDL prep apps (e.g. driving-tests.org, CDL Prep)', values: ['Free tier; ~$5-15/mo for premium', 'Mobile app, large question volume', 'Repetition once the official material is clean'], note: 'See the state CDL manual; prices are indicative and unverified nationally' },
+      { label: 'CDL study guidebooks with an air-brake chapter', values: ['~$15-30', 'Print or eBook', 'A portable summary if you will not open the PDF; confirm it matches your state'], note: 'See the state CDL manual; prices are indicative and unverified nationally' },
+      { label: 'CDL training school air-brake module', values: ['Often bundled into tuition; standalone $50-150', 'Classroom or online', 'Candidates who want a deadline and hands-on brake demos'], note: 'See the state CDL manual; prices are indicative and unverified nationally' }
     ],
     footnote: 'Prices checked 2026-08 in USD before tax and vary by state and provider. State DMV manuals and practice tests are free and authoritative; commercial "pass rate" claims are vendor-internal and not official. We do not rank by commission.'
   },
@@ -189,7 +189,7 @@ const data = {
       },
       {
         mistake: 'Forgetting ELDT before booking',
-        fix: 'Since 7 February 2022 a first-time applicant must have ELDT theory logged in the FMCSA Training Provider Registry before the DMV administers the test. Verify the registry entry — not just course completion — before you pay, or the test is refused and the fee forfeited.'
+        fix: 'Since 7 February 2022 a first-time Class A or B applicant must have ELDT logged in the FMCSA Training Provider Registry before the skills test (49 CFR 383.71), not before this knowledge test. Verify the registry entry before you book the skills test.'
       }
     ]
   },
@@ -245,7 +245,7 @@ const data = {
   // P0-8  Exam-day guide
   examDay: {
     summary:
-      'The Air Brakes knowledge test is taken at a state DMV/SDLA, by computer, as part of your CLP application — there is no vehicle on exam day, only documents and a terminal. The two things that go wrong most often are paperwork and misunderstanding the consequence: candidates arrive without the exact REAL-ID-era identity/residency documents, or they do not grasp that failing this specific test stamps an "L" restriction rather than refusing the licence. Build your day around clearing ELDT verification first and having the document list in hand, because a refused test is a forfeited fee. Where this exam differs from the others is the stakes: the 80 percent line is the same flat federal floor, but the outcome is an unrestricted licence versus one branded "L" — a restriction that follows the credential until you re-test. Plan the skills-test booking before you leave, because the 14-day waiting period of 49 CFR 383.25(e) starts the moment the CLP is issued.',
+      'The Air Brakes knowledge test is taken at a state DMV/SDLA, by computer, as part of your CLP application — there is no vehicle on exam day, only documents and a terminal. The two things that go wrong most often are paperwork and misunderstanding the consequence: candidates arrive without the exact REAL-ID-era identity/residency documents, or they do not grasp that failing this specific test stamps an "L" restriction rather than refusing the licence. Build your day around having the document list in hand, because a refused test is a forfeited fee. Where this exam differs from the others is the stakes: the 80 percent line is the same flat federal floor, but the outcome is an unrestricted licence versus one branded "L" — a restriction that follows the credential until you re-test. Plan the skills-test booking before you leave, because the 14-day waiting period of 49 CFR 383.25(e) starts the moment the CLP is issued.',
     bring: [
       'Proof of identity, lawful presence, Social Security number and state residency per your DMV’s REAL-ID document list',
       'Confirmation that ELDT theory is logged in the FMCSA Training Provider Registry (first-time applicants)',
@@ -261,7 +261,7 @@ const data = {
       'Any expectation of leaving as a licensed, unrestricted CDL holder — you leave with a CLP, and a failed Air Brakes portion means an "L" restriction'
     ],
     timeline: [
-      { time: 'The week before', detail: 'Confirm ELDT is in the registry and assemble the DMV document list exactly. A missing document is the most common cause of a refused test; for a first-time applicant it also blocks the whole CLP.' },
+      { time: 'The week before', detail: 'Assemble the DMV document list exactly. A missing document is the most common cause of a refused test; for a first-time applicant it also blocks the whole CLP.' },
       { time: 'Day before', detail: 'Re-run timed practice exams at your state’s air-brake question count; re-read only the chapters where you missed items, especially the pressure thresholds.' },
       { time: 'Arrival', detail: 'Allow extra time for document check-in and the photo. Present documents and pay the CLP and test fees for all sub-tests you are taking.' },
       { time: 'At the terminal', detail: 'You receive the Air Brakes multiple-choice exam (your state’s count). Work the quick threshold items first; the 80 percent floor has no curve, so bank the straightforward numbers.' },

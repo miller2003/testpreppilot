@@ -9,8 +9,8 @@ const data = {
     bio: 'This guide is maintained by our securities-licensing desk. FINRA representative-level exams are revised on FINRA\'s own publication schedule and the content outlines change without much fanfare, so we anchor every claim to the current FINRA qualification-exam page, the published content outline, and the relevant FINRA rule text, and we name the regulator plainly. Fees, scoring, retake windows and sponsorship rules come from FINRA and from FINRA Rule 1210. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by licence. We do not publish a pass rate because FINRA does not release one.',
     url: '/editorial-policy'
   },
-  reviewedBy: 'Exam codes, fees, scoring, time limits and sponsorship requirements were taken from the current FINRA qualification-exams pages and the published Series 7 content outline, and cross-checked against FINRA Rule 1210.',
-  lastReviewed: '2026-08',
+  reviewedBy: 'Checked in October 2026 against the FINRA Series 7 exam page, the 2025 Series 7 content outline, FINRA test-center and online-testing pages, the FINRA reschedule and cancellation policy, and Regulatory Notice 26-18.',
+  lastReviewed: '2026-10',
 
   // P0-1  Career outlook & salary (cite BLS where an SOC fits)
   salaryOutlook: {
@@ -32,15 +32,15 @@ const data = {
 
   // P0-2  Pass rates
   passRate: {
-    headline: 'FINRA publishes no pass rate — but it does publish the passing score: 72% (90 of 125 scored items)',
+    headline: 'FINRA publishes no pass rate, but it does publish the passing score: 72',
     summary:
-      'FINRA does not release pass-rate statistics for the Series 7 or for any of its qualification exams, and it never has. Unlike some vendors that publish a first-time rate, FINRA treats that as firm- and candidate-specific and keeps it internal, so any percentage you see circulating online is an estimate, not a published figure, and we will not repeat one. What FINRA does publish is the cut score, and that is more useful than a rumoured rate. The Series 7 is 125 scored questions (plus 5 unscored pretest items, for 130 delivered) and you need 72 percent of the scored items — 90 correct — to pass. The 72 percent is not "get 72 percent on your practice bank" in a clean sense, because the 5 unscored pretest questions are mixed in and do not count, so a 90/125 raw score is what matters; on a full 130-question form, 90 is about 69 percent, which is why candidates who aim for "72 percent of everything" are slightly off. Two policies matter more than a rate. First, eligibility: you cannot sit the Series 7 without a FINRA member firm sponsoring you through Form U4, and the SIE is a co-requisite — you must pass the SIE (or hold a comparable qualification) to earn the Series 7. Second, retakes: under FINRA Rule 1210.06, after a first or second failure you wait 30 calendar days before the next attempt, and after a third or subsequent failure within two years you wait 180 days. FINRA has proposed shortening the wait for its own exams, but the operative rule as of this review is still 30/180, and you are re-paying the full $395 each time, so a failed first attempt is expensive.',
+      'FINRA does not release pass-rate statistics for the Series 7 or for any of its qualification exams, and it never has. Unlike some vendors that publish a first-time rate, FINRA treats that as firm- and candidate-specific and keeps it internal, so any percentage you see circulating online is an estimate, not a published figure, and we will not repeat one. What FINRA does publish is the cut score, and that is more useful than a rumoured rate. The Series 7 is 125 scored questions (plus 5 unscored pretest items, for 130 delivered) and the FINRA exam page lists the passing score as 72. FINRA does not publish how many raw items that equals: scores are equated across exam forms, so the raw cut can differ slightly from one form to another, and the 5 unscored pretest questions are mixed in and do not count. Two policies matter more than a rate. First, eligibility: you cannot sit the Series 7 without a FINRA member firm sponsoring you through Form U4, and the SIE is a co-requisite — you must pass the SIE (or hold a comparable qualification) to earn the Series 7. Second, retakes: under FINRA Rule 1210.06, as of this review you wait 30 calendar days after a failed attempt and 180 calendar days after three or more consecutive failures within two years. Regulatory Notice 26-18 (published October 14, 2026) shortens these waits to 15 and 60 calendar days effective January 19, 2027, and you are re-paying the full $395 each time, so a failed first attempt is expensive.',
     source: {
       label: 'FINRA — Series 7 Exam and Qualification Exams',
       url: 'https://www.finra.org/registration-exams-ce/qualification-exams/series7'
     },
     caveat:
-      'No pass rate is published by FINRA, by Prometric, or by any accrediting body for the Series 7. We have deliberately left the pass-rate table empty. What is published and verifiable is the 72% cut score (90 of 125 scored), the eligibility/sponsorship rule, and the 30/180 retake schedule, which the narrative above covers instead.'
+      'No pass rate is published by FINRA, by Prometric, or by any accrediting body for the Series 7. We have deliberately left the pass-rate table empty. What is published and verifiable is the passing score of 72, the eligibility and sponsorship rule, and the retake schedule (30 and 180 days now, 15 and 60 days from January 19, 2027), which the narrative above covers instead.'
   },
 
   // P0-3  Study plan / timetable
@@ -55,7 +55,7 @@ const data = {
         tasks: [
           'Confirm your firm has filed Form U4 and that your SIE is passed or scheduled — the Series 7 will not be awarded without both',
           'Memorise the four functions and their weights: F1 7%, F2 9%, F3 73%, F4 11%',
-          'Understand the exam format: 125 scored + 5 unscored pretest = 130 questions, 225 minutes, 72% (90/125) to pass',
+          'Understand the exam format: 125 scored + 5 unscored pretest = 130 questions, 225 minutes, passing score 72',
           'Build a topic map that puts 90 of your 125 study questions under Function 3 from day one'
         ],
         hours: '8-10 hrs'
@@ -66,7 +66,7 @@ const data = {
         tasks: [
           'Account opening and types: cash vs margin, TOD, joint, corporate, trust, and the documentation each requires',
           'Suitability: the customer profile, KYC, and the orders-tests — quantitative, qualitative and the firm\'s obligation to document',
-          'Transfers and disbursements: ACATS, the 30-day transfer process, and frozen/blocked accounts',
+          'Transfers and disbursements: ACATS and how delivering and receiving firms process transfers, and frozen/blocked accounts',
           'Margin: Regulation T initial 50%, maintenance, and the math for long and short positions — drill the calculations cold'
         ],
         hours: '12-16 hrs/week'
@@ -127,7 +127,7 @@ const data = {
       },
       {
         title: 'Respect the 5 unscored pretest questions',
-        detail: 'The form delivers 130 questions but only 125 count, and you cannot tell the pretest items apart. Do not try to game the count; answer every item as if it scores. Candidates who obsess over "which are the throwaways" waste attention they should spend on the 90 they need for the 72% cut.'
+        detail: 'The form delivers 130 questions but only 125 count, and you cannot tell the pretest items apart. Do not try to game the count; answer every item as if it scores. Candidates who obsess over "which are the throwaways" waste attention they should spend on getting scored items right.'
       },
       {
         title: 'Lock in eligibility before you study the hard parts',
@@ -139,7 +139,7 @@ const data = {
       },
       {
         title: 'Use the diagnostic report if you fail',
-        detail: 'FINRA gives a pass/fail on screen with a section-level breakdown by function. A failed attempt is expensive given the $395 re-sit and the 30-day wait, but the function breakdown tells you precisely where to aim. Treat it as a study plan, not a verdict, and re-sit on corrected knowledge rather than repeating the same prep.'
+        detail: 'FINRA shows pass or fail on screen; a candidate who fails also sees an overall score and performance by content section. A failed attempt is expensive given the $395 re-sit and the 30-day wait, but the function breakdown tells you precisely where to aim. Treat it as a study plan, not a verdict, and re-sit on corrected knowledge rather than repeating the same prep.'
       }
     ]
   },
@@ -150,14 +150,14 @@ const data = {
       'The decisive buying decision for the Series 7 is sponsorship, not course choice: you cannot take the exam without a member firm\'s Form U4, and most firms hand you a paid training vendor (Kaplan, STC, Pass Perfect or similar) as part of affiliation. If you are self-funding, the market is mature and the differentiators are question-bank quality and how well the vendor mirrors FINRA\'s four-function weighting.',
     columns: ['Resource', 'Price', 'Format', 'Best for'],
     rows: [
-      { label: 'FINRA Series 7 page and content outline', values: ['Free', 'Web + PDF', 'The only authoritative source for functions, weights, time and cut score'], },
-      { label: 'Firm-provided training (Kaplan / STC / Pass Perfect)', values: ['Typically paid by your member firm', 'eLearning, books, question bank', 'Sponsored candidates — use what your firm bought; it is mapped to the outline'] },
-      { label: 'Exam fee', values: ['$395 (FINRA Section 4 fee)', 'Paid via your firm at registration', 'Required; you re-pay in full on every retake'] },
-      { label: 'Knopman Marks or similar boutique Q-bank', values: ['~$200-400 for a full course', 'Video + adaptive Q-bank', 'Candidates who want a second question style beyond the firm default'] },
-      { label: 'Solomon Exam Prep (Series 7)', values: ['~$100-250 for book + Q-bank', 'Print + digital', 'Self-sponsored study of the operations and suitability content'] },
-      { label: 'Your own one-page formula sheet (margin, Reg T, suitability)', values: ['Free', 'Self-made', 'The single highest-leverage artefact for the math-heavy Function 3 items'] }
+      { label: 'FINRA Series 7 page and content outline', values: ['Free', 'Web + PDF', 'The only authoritative source for functions, weights, time and cut score'], note: 'finra.org Series 7 page and 2025 content outline' },
+      { label: 'Firm-provided training (Kaplan / STC / Pass Perfect)', values: ['Typically paid by your member firm', 'eLearning, books, question bank', 'Sponsored candidates — use what your firm bought; it is mapped to the outline'], note: 'Vendor pricing varies by employer contract; not a FINRA figure' },
+      { label: 'Exam fee', values: ['$395 (FINRA Section 4 fee)', 'Paid via your firm at registration', 'Required; you re-pay in full on every retake'], note: 'FINRA Series 7 exam page lists $395' },
+      { label: 'Knopman Marks or similar boutique Q-bank', values: ['~$200-400 for a full course', 'Video + adaptive Q-bank', 'Candidates who want a second question style beyond the firm default'], note: 'Approximate vendor price range; check the vendor site' },
+      { label: 'Solomon Exam Prep (Series 7)', values: ['~$100-250 for book + Q-bank', 'Print + digital', 'Self-sponsored study of the operations and suitability content'], note: 'Approximate vendor price range; check the vendor site' },
+      { label: 'Your own one-page formula sheet (margin, Reg T, suitability)', values: ['Free', 'Self-made', 'The single highest-leverage artefact for the math-heavy Function 3 items'], note: 'Self-made study aid' }
     ],
-    footnote: 'Prices checked 2026-08 in USD before tax; the $395 exam fee is set by FINRA Section 4 and re-paid on every attempt. Course prices vary by promotion and by whether your firm covers them. We do not rank by commission.'
+    footnote: 'Prices checked 2026-10 in USD before tax; the $395 exam fee is listed on the FINRA Series 7 page and re-paid on every attempt. Course prices vary by promotion and by whether your firm covers them. We do not rank by commission.'
   },
 
   // P0-6  Common mistakes
@@ -195,7 +195,7 @@ const data = {
   // P0-7  Question types & worked examples
   questionTypes: {
     summary:
-      'The Series 7 is a 130-question, 225-minute multiple-choice exam: 125 scored items plus 5 unscored pretest questions that are indistinguishable on screen. You need 72 percent of the scored items — 90 correct — to pass. Every question is four-option multiple choice; there are no performance-based or essay items, but the stems are frequently long scenario problems, especially in suitability and margin, where a short question hides a calculation. The four published functions are F1 Seeks Business (7%, ~9 questions), F2 Evaluates Customers\' Financial Profiles and Investment Objectives (9%, ~11), F3 Opens, Transfers and Closes Accounts and Processes, Maintains and Services Customer Accounts (73%, ~91), and F4 Solicits, Reviews and Places Customer Orders (11%, ~14). Notice that F3 carries nearly three-quarters of the paper; the product and order-handling material that candidates enjoy studying is concentrated in F1 and F4, which together are only 18 percent. Because the pretest items are mixed in, your raw score is computed on 125 not 130, so aim for 90 correct scored items rather than a 72-percent-of-everything heuristic. The practical pacing rule is to clear the straightforward definitions quickly and reserve the clock for the scenario-based suitability and margin items, which is where the F3 weight actually lives.',
+      'The Series 7 is a 130-question, 225-minute multiple-choice exam: 125 scored items plus 5 unscored pretest questions that are indistinguishable on screen. The passing score is 72, and FINRA does not publish the raw number of correct answers. Every question is four-option multiple choice; there are no performance-based or essay items, but the stems are frequently long scenario problems, especially in suitability and margin, where a short question hides a calculation. The four published functions are F1 Seeks Business (7%, ~9 questions), F2 Evaluates Customers\' Financial Profiles and Investment Objectives (9%, ~11), F3 Opens, Transfers and Closes Accounts and Processes, Maintains and Services Customer Accounts (73%, ~91), and F4 Solicits, Reviews and Places Customer Orders (11%, ~14). Notice that F3 carries nearly three-quarters of the paper; the product and order-handling material that candidates enjoy studying is concentrated in F1 and F4, which together are only 18 percent. Because the pretest items are mixed in, your raw score is computed on 125 not 130, so measure yourself on scored items and aim comfortably above 72 percent on timed practice. The practical pacing rule is to clear the straightforward definitions quickly and reserve the clock for the scenario-based suitability and margin items, which is where the F3 weight actually lives.',
     types: [
       { name: 'Straightforward knowledge items', share: 'A sizeable minority', detail: 'Definitions, registration facts and rule recall — account types, communications rules, MSRB basics. Fast to answer; the floor of your score.' },
       { name: 'Suitability scenario items', share: 'Concentrated in Function 3', detail: 'A customer profile is given and you must select the appropriate recommendation or identify the violation. These reward documented KYC and the orders-tests rather than product trivia.' },
@@ -226,15 +226,15 @@ const data = {
         explanation: 'The SIE is a co-requisite of the Series 7: passing both (with a firm\'s Form U4 sponsorship) is what registers someone as a General Securities Representative. A is wrong because the SIE alone grants no representative authority. B is wrong because the Series 7 is not awarded without the SIE. D inverts reality: the SIE has no sponsorship requirement, while the Series 7 requires member-firm sponsorship.'
       },
       {
-        prompt: 'A customer instructs a registered representative to transfer 100 shares of a publicly traded stock from one brokerage firm to another. Which process and approximate timeline apply?',
+        prompt: 'A customer instructs a registered representative to transfer 100 shares of a publicly traded stock from one brokerage firm to another. Which process applies?',
         options: [
-          'A. A wire transfer completed within one business day',
-          'B. An ACATS transfer, generally completed within approximately 30 days',
-          'C. A physical certificate re-issue completed within 5 business days',
-          'D. An internal journal entry completed the same day'
+          'A. A wire transfer of the securities within one business day',
+          'B. An ACATS transfer between the two firms',
+          'C. A physical certificate re-issue',
+          'D. An internal journal entry at the original firm'
         ],
         answer: 'B',
-        explanation: 'Customer-initiated transfers of securities between broker-dealers are handled through ACATS (Automated Customer Account Transfer Service) and are generally completed within about 30 days under the standard timeline. A is wrong because securities positions are not moved by wire (that moves cash). C describes a largely obsolete certificate process and an incorrect timeline. D applies only to transfers within the same firm, not between firms. This is core Function 3 account-servicing content.'
+        explanation: 'Customer-initiated transfers of securities between broker-dealers are handled through ACATS (Automated Customer Account Transfer Service). A is wrong because securities positions are not moved by wire (that moves cash). C describes a largely obsolete certificate process. D applies only to transfers within the same firm, not between firms. This is core Function 3 account-servicing content.'
       }
     ],
     note: 'Samples are editor-written illustrations of the published blueprint, not live exam items.'
@@ -243,38 +243,38 @@ const data = {
   // P0-8  Exam-day guide
   examDay: {
     summary:
-      'The Series 7 is delivered at Prometric test centres; FINRA qualification exams are not offered by remote proctoring, so plan to travel to a centre. Check-in is strict and tied to your Form U4 registration, so the single most common cause of a lost seat is a name mismatch between your ID and your CRD record. Two things work in your favour. First, you get your result immediately: pass/fail appears on screen when you finish, with a section-level diagnostic by function that turns a failure into an actionable plan. Second, the 225-minute clock is generous for 130 items, so a calm, steady tempo beats last-minute cramming. The thing that goes wrong most often has nothing to do with securities: your government photo ID must match your FINRA registration exactly, and a mismatch cannot be fixed at the desk. Confirm the spelling on your CRD record the week before.',
+      'The Series 7 is delivered at Prometric test centres; FINRA offers online proctoring for the SIE to any candidate but allows the Series 7 online only with an approved accommodation (for example living more than 150 miles from a test center), so plan to travel to a centre. Check-in is strict and tied to your Form U4 registration, so the single most common cause of a lost seat is a name mismatch between your ID and your CRD record. Two things work in your favour. First, you get your result immediately: pass/fail appears on screen when you finish, and a candidate who fails also sees an overall score and performance by content section, which turns a failure into an actionable plan. Second, the 225-minute clock is generous for 130 items, so a calm, steady tempo beats last-minute cramming. The thing that goes wrong most often has nothing to do with securities: your government photo ID must match your FINRA registration exactly, and a mismatch cannot be fixed at the desk. Confirm the spelling on your CRD record the week before.',
     bring: [
-      'Two forms of identification, both unexpired, with the name matching your FINRA/Form U4 registration exactly',
-      'One must be a government-issued photo ID; the second must carry your name and signature (a credit or bank card is usually accepted)',
+      'One valid, unexpired government-issued ID showing your signature and photo, with the name matching your exam appointment exactly',
+      'Electronic copies, photocopies and faxes of ID are not accepted',
       'Your Prometric confirmation number, in case check-in cannot locate the booking',
-      'Nothing else — an electronic calculator and a whiteboard are provided at the seat'
+      'Nothing else — a four-function calculator is provided at the test center and returned afterwards'
     ],
     leave: [
       'Phones, smartwatches, fitness trackers and earbuds — stored in a locker',
       'All notes, formula sheets and printed study material — the exam is closed book',
-      'Your own calculator and pens — Prometric provides the permitted tools',
+      'Your own calculator and pens — the test center provides the permitted tools',
       'Bags, coats, hats and food beyond what the centre permits',
       'Any other person; you are seated alone and monitored'
     ],
     timeline: [
       { time: 'The week before', detail: 'Confirm the name on your CRD/Form U4 matches your photo ID exactly. Mismatches are the most common cause of a lost seat and cannot be fixed at the desk.' },
       { time: '24 hours before', detail: 'Confirm the Prometric centre address and travel time; your 120-day exam window from registration is what bounds scheduling.' },
-      { time: '30 minutes before', detail: 'Arrive for check-in: ID verification, digital signature, photograph and, at some centres, a palm or finger scan. You are seated and issued a whiteboard.' },
-      { time: 'First 2 minutes at the seat', detail: 'Write your margin and Reg T formulas on the whiteboard. Two minutes here buys back far more during the Function 3 calculations.' },
+      { time: '30 minutes before', detail: 'Arrive for check-in: ID verification, digital signature, photograph and, at some centres, a palm or finger scan. You are seated at a workstation.' },
+      { time: 'First 2 minutes at the seat', detail: 'If the test center provides a whiteboard or scratch materials, write your margin and Reg T formulas down first. Two minutes here buys back far more during the Function 3 calculations.' },
       { time: '0-180 minutes', detail: 'Work the straightforward definitions at a brisk tempo, flag the long suitability and margin scenarios, and reserve the back of the clock for them. You have ~1:40 per item with margin to spare.' },
       { time: '180-225 minutes', detail: 'Return to flagged items and the scenario problems. Submit rather than letting the clock expire; there is no penalty for an early, confident finish.' }
     ],
     rules: [
-      'Passing score is 72% of the 125 scored items — 90 correct; 5 additional unscored pretest questions are mixed in and do not count.',
-      'Two forms of ID are required, one government-issued with photo, names matching your FINRA registration exactly.',
-      'Closed book: an electronic calculator and a whiteboard are provided; you may not bring your own.',
-      'FINRA qualification exams are delivered at Prometric centres; remote proctoring is not offered — confirm your centre when you schedule.',
-      'Retake schedule under FINRA Rule 1210.06: 30 days after a first or second failure, 180 days after a third or subsequent failure within two years; each attempt is paid in full.',
-      'Result and a function-level diagnostic appear on screen immediately upon submission.'
+      'Passing score is 72; 5 additional unscored pretest questions are mixed in and do not count.',
+      'One government-issued ID with signature and photo is required, with the name matching your appointment exactly.',
+      'Closed book: a four-function calculator is provided at the test center; you may not bring your own.',
+      'FINRA qualification exams are delivered at Prometric centres; online proctoring is open to everyone only for the SIE, so confirm your centre when you schedule.',
+      'Retake schedule under FINRA Rule 1210.06: 30 days after a failure, 180 days after three or more consecutive failures within two years (15 and 60 days from January 19, 2027); each attempt is paid in full.',
+      'Result appears on screen immediately; a failing result adds an overall score and performance by content section.'
     ],
     afterwards:
-      'Your pass or fail and your function-level diagnostic appear on screen the instant you submit. On a pass, your qualification is recorded in CRD and your firm completes the registration so you can act as a General Securities Representative — the licence is active only while you are affiliated with a member firm and goes inactive if you leave, with re-activation (or, after two years, a re-take) required to return. You also enter FINRA\'s continuing-education cycle: the Firm Element annually and the Regulatory Element every three years, or the registration lapses. On a fail, do not immediately pay the $395 and re-sit on the same knowledge — FINRA\'s function breakdown tells you exactly where you fell short, and the 30-day wait is a study window, not a penalty. Target the weak function (almost always Function 3), re-lab your missed practice items against the four functions, and return with corrected prep; a failed first attempt that becomes a pass on the second is far cheaper than a string of rushed re-sits.'
+      'Your pass or fail appears on screen the instant you submit, with a section breakdown if you did not pass. On a pass, your qualification is recorded in CRD and your firm completes the registration so you can act as a General Securities Representative — the licence is active only while you are affiliated with a member firm and goes inactive if you leave, with re-activation (or, after two years, a re-take) required to return. You also enter FINRA\'s continuing-education cycle: the Regulatory Element annually by December 31 under FINRA Rule 1240 and a Firm Element training program run by your firm, or the registration becomes CE inactive. On a fail, do not immediately pay the $395 and re-sit on the same knowledge — FINRA\'s section breakdown for a failed attempt tells you where you fell short, and the 30-day wait (15 days from January 19, 2027) is a study window, not a penalty. Target the weak function (almost always Function 3), re-lab your missed practice items against the four functions, and return with corrected prep; a failed first attempt that becomes a pass on the second is far cheaper than a string of rushed re-sits.'
   }
 };
 

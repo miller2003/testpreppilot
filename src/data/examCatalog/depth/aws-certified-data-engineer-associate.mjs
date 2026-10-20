@@ -5,8 +5,8 @@ const data = {
     bio: 'This desk covers AWS and other cloud certifications. Exam structure, fees and rules come from the vendor certification pages, which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
     url: '/editorial-policy'
   },
-  reviewedBy: 'Verified against AWS\'s Data Engineer - Associate exam guide (DEA-C01) and BLS OOH Data Scientists (SOC 15-2051), May 2024 data.',
-  lastReviewed: '2026-08',
+  reviewedBy: 'Exam questions, time, passing score, domain weights, fee and the v1.1 revisions (December 12, 2025) were checked on 2026-10-20 against the DEA-C01 exam guide, the AWS exam page and the AWS Certification policies pages; BLS OOH data as before.',
+  lastReviewed: '2026-10',
   salaryOutlook: {
     headline: '$112,590 median for data scientists (BLS, May 2024)',
     summary: 'There is no Bureau of Labor Statistics occupation called "AWS Data Engineer" — the certification validates data-engineering skill on AWS, and the wage question belongs to the role you perform with it. The closest official BLS occupation is Data Scientists, SOC 15-2051, which had a May 2024 median wage of $112,590, with the lowest 10 percent under $68,170 and the highest 10 percent above $172,270, with Software Developers (SOC 15-1252, $132,270 median) as the adjacent engineering series. The fit is deliberate: AWS Data Engineer holders work as data engineers, data platform engineers and analytics engineers who build and operate data pipelines on AWS, and the data-engineering role sits between the data-scientist and developer series in the labour market. BLS counted 197,200 data scientist jobs in 2024 and projects a striking 34 percent growth from 2024 to 2034, with about 23,400 openings a year. The limitation to state plainly: the BLS median covers the whole occupation at all levels, credentialed or not, and the certification\'s value is as a hiring signal for data-engineering roles in AWS shops. Read the number as the market for the occupation the credential serves.',
@@ -102,13 +102,13 @@ const data = {
     note: 'Samples are editor-written illustrations of the published exam guide, not live exam items.'
   },
   examDay: {
-    summary: 'The DEA-C01 is a 65-question, 130-minute computer-based exam at a Pearson VUE centre or through online proctoring. Bring a valid government-issued photo ID matching your registration name and your appointment confirmation; personal items go in the locker. Arrive 30 minutes early; late arrivals forfeit the appointment and the $150 fee. Pace at exactly 2 minutes per item, flag uncertain items for review, and budget extra time for the reading-heavy scenario items. You receive your score on screen immediately, with the official result and score report following; AWS reports your scaled score against the 720 line. If you fail, you may retake after a 14-day waiting period. On a pass, the certification is valid for three years; recertify by passing the current exam or the recertification path. The afterwards matters: record the expiration date and plan the recertification cycle early.',
+    summary: 'The DEA-C01 is a 65-question, 130-minute computer-based exam at a Pearson VUE centre or through online proctoring. Bring a valid government-issued photo ID matching your registration name and your appointment confirmation; personal items go in the locker. Arrive 30 minutes early; late arrivals forfeit the appointment and the $150 fee. Pace at exactly 2 minutes per item, flag uncertain items for review, and budget extra time for the reading-heavy scenario items. Your result and a downloadable score report post to your AWS Certification account within five business days after the exam closes; AWS reports your scaled score against the 720 line. If you fail, you may retake after a 14-day waiting period. On a pass, the certification is valid for three years; recertify by passing the current exam or the recertification path. The afterwards matters: record the expiration date and plan the recertification cycle early.',
     bring: ['Valid government-issued photo ID matching your registration name', 'Appointment confirmation'],
     leave: ['Phone, smartwatch and all electronics', 'Notes and study materials', 'Personal bags beyond what the centre allows'],
     timeline: [
       { time: '30 minutes before', detail: 'Arrive, check in, store belongings and complete centre security steps.' },
       { time: 'Exam', detail: '65 questions in 130 minutes; pace 2 minutes per item, flag and review.' },
-      { time: 'After submit', detail: 'Scaled score appears on screen against the 720/1000 passing line.' },
+      { time: 'After submit', detail: 'Result posts to your AWS Certification account within five business days; passing line is 720/1000.' },
       { time: 'Next', detail: 'Record the three-year validity date and plan recertification.' }
     ],
     rules: [

@@ -9,8 +9,8 @@ const data = {
     bio: 'This guide is compiled and maintained by our certifications desk. Vendor exams in this space are revised and retired frequently, so we track the objectives document by its published revision date and state plainly when an exam is being retired and what replaces it — the single most common way candidates waste money here is studying a superseded blueprint. Fees, scoring, retake rules and renewal terms come from CompTIA’s own certification pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
     url: '/editorial-policy'
   },
-  reviewedBy: 'Objectives, exam codes, fees and retirement dates were taken from the vendor’s current certification pages and checked for the revision date shown there — CySA+ CS0-004 (V4) is the current exam as of its 23 June 2026 launch.',
-  lastReviewed: '2026-08',
+  reviewedBy: 'Re-verified October 2026 against the CompTIA CySA+ V4 (CS0-004) certification page, the CySA+ V3 retirement page, the CompTIA Continuing Education fee and CEU pages and the retake policy.',
+  lastReviewed: '2026-10',
 
   // P0-1  Career outlook & salary (cite BLS where an SOC fits)
   salaryOutlook: {
@@ -162,12 +162,12 @@ const data = {
       'The buying decision for CySA+ is, as with every CompTIA exam, first and foremost about version: CS0-004 material is new as of its June 2026 launch, and CS0-003 books and courses are still widely sold and ranked. Buy anything labelled CS0-004 or "V4", and verify the AI-in-security content is actually present rather than promised. The other decision is whether to pay for CompTIA’s own bundles, which add labs and a retake to the voucher at a premium. The exam voucher itself carries a list price around $439, and the certification is renewed over three years with 60 continuing-education units and a $150 CE fee.',
     columns: ['Resource', 'Price', 'Format', 'Best for'],
     rows: [
-      { label: 'Exam voucher (CS0-004)', values: ['~$439 CompTIA US list; resellers often lower', 'Pearson VUE, test centre or online', 'Required — buy the voucher alone if you already have a lab'] },
-      { label: 'CompTIA CertMaster bundles (Perform + Practice)', values: ['Bundle pricing at the CompTIA Store; includes voucher and often a retake', 'eLearning with labs plus adaptive practice', 'Candidates without their own SOC-style lab'] },
-      { label: 'Your own lab — SIEM/log source, packet tool, scanner trial', values: ['Free to low cost', 'Self-built', 'The most valuable resource for a performance-based-heavy exam'] },
-      { label: 'Jason Dion CySA+ course (Udemy)', values: ['~$15-30 in Udemy sales', 'Video + practice exams', 'Structured video with a large practice-question bank — verify it is the V4 edition'] },
-      { label: 'CySA+ Study Guide (Sybex / Wiley)', values: ['~$50-60 list', 'Print + eBook with test bank', 'Ordered reference — confirm the CS0-004 edition before buying'] },
-      { label: 'Official CompTIA CySA+ objectives and CertMaster Practice', values: ['Objectives free; Practice paid', 'PDF / web + online', 'The authoritative blueprint to study against'] }
+      { label: 'Exam voucher (CS0-004)', values: ['~$439 CompTIA US list; resellers often lower', 'Pearson VUE, test centre or online', 'Required — buy the voucher alone if you already have a lab'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'CompTIA CertMaster bundles (Perform + Practice)', values: ['Bundle pricing at the CompTIA Store; includes voucher and often a retake', 'eLearning with labs plus adaptive practice', 'Candidates without their own SOC-style lab'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'Your own lab — SIEM/log source, packet tool, scanner trial', values: ['Free to low cost', 'Self-built', 'The most valuable resource for a performance-based-heavy exam'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'Jason Dion CySA+ course (Udemy)', values: ['~$15-30 in Udemy sales', 'Video + practice exams', 'Structured video with a large practice-question bank — verify it is the V4 edition'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'CySA+ Study Guide (Sybex / Wiley)', values: ['~$50-60 list', 'Print + eBook with test bank', 'Ordered reference — confirm the CS0-004 edition before buying'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'Official CompTIA CySA+ objectives and CertMaster Practice', values: ['Objectives free; Practice paid', 'PDF / web + online', 'The authoritative blueprint to study against'], note: 'Typical 2026 price; confirm at the seller before buying.' }
     ],
     footnote: 'Prices checked 2026-08 in USD before tax. CompTIA voucher list is ~$439 and varies by region and promotion; Udemy sale prices are far below list. Confirm any course is the CS0-004 (V4) edition, since CS0-003 material remains on sale. We do not rank by commission.'
   },

@@ -51,11 +51,11 @@ const data = {
     summary: 'AI Essentials prep is inexpensive because CompTIA provides free official resources. The free official training, the published exam objectives and the practice questions cover the scope at no cost. Third-party providers sell AI Essentials courses and practice exams at roughly $30-$150; the free official stack is sufficient for a disciplined candidate. The exam fee is about $139. A realistic total budget is $150 to $300 including the exam fee. Prices below are list prices as of mid-2026 and change frequently; we rank nothing by commission.',
     columns: ['Resource', 'Price', 'Format', 'Best for'],
     rows: [
-      { label: 'CompTIA free official training', values: ['Free', 'Official online modules', 'The authoritative scope; the primary resource'] },
-      { label: 'Exam objectives', values: ['Free', 'Official PDF', 'The exam-scope reference'] },
-      { label: 'Practice questions', values: ['Free or included', 'Official practice items', 'The closest item style'] },
-      { label: 'Third-party courses', values: ['$30-$150', 'Video courses and quizzes', 'Structured alternatives'] },
-      { label: 'AI Essentials exam', values: ['~$139', 'Computer-based exam', 'The certification itself'] }
+      { label: 'CompTIA free official training', values: ['Free', 'Official online modules', 'The authoritative scope; the primary resource'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'Exam objectives', values: ['Free', 'Official PDF', 'The exam-scope reference'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'Practice questions', values: ['Free or included', 'Official practice items', 'The closest item style'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'Third-party courses', values: ['$30-$150', 'Video courses and quizzes', 'Structured alternatives'], note: 'Typical 2026 price; confirm at the seller before buying.' },
+      { label: 'AI Essentials exam', values: ['~$139', 'Computer-based exam', 'The certification itself'], note: 'Typical 2026 price; confirm at the seller before buying.' }
     ],
     footnote: 'List prices as of mid-2026, subject to change; the AI-001 exam fee is about $139; no commission or affiliate ranking is implied.'
   },

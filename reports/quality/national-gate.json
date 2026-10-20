@@ -1,10 +1,10 @@
 {
   "summary": {
     "checked": 477,
-    "passing": 11,
-    "failing": 466,
+    "passing": 78,
+    "failing": 399,
     "releasedChecked": 477,
-    "releasedFailing": 466,
+    "releasedFailing": 399,
     "generatedOn": "2026-10-20"
   },
   "results": [
@@ -12,15 +12,11 @@
       "slug": "ap-biology",
       "body": "College Board",
       "released": true,
-      "failures": [
-        "topics-weight-sum(83)",
-        "faqs<6(5)",
-        "faq-answer-length(5)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 5003,
+      "words": 6270,
       "skeleton": {
         "record": [],
         "program": [],
@@ -40,7 +36,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 4869,
+      "words": 5246,
       "skeleton": {
         "record": [],
         "program": [],
@@ -59,7 +55,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 5514,
+      "words": 5891,
       "skeleton": {
         "record": [],
         "program": [],
@@ -79,7 +75,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 5538,
+      "words": 5915,
       "skeleton": {
         "record": [],
         "program": [],
@@ -99,7 +95,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 5363,
+      "words": 5740,
       "skeleton": {
         "record": [],
         "program": [],
@@ -119,7 +115,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 5658,
+      "words": 6035,
       "skeleton": {
         "record": [],
         "program": [],
@@ -139,7 +135,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3572,
+      "words": 3949,
       "skeleton": {
         "record": [],
         "program": [],
@@ -160,7 +156,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 4377,
+      "words": 4754,
       "skeleton": {
         "record": [],
         "program": [],
@@ -180,7 +176,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 4769,
+      "words": 5146,
       "skeleton": {
         "record": [],
         "program": [],
@@ -200,7 +196,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 5467,
+      "words": 5844,
       "skeleton": {
         "record": [],
         "program": [],
@@ -220,7 +216,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 4755,
+      "words": 5132,
       "skeleton": {
         "record": [],
         "program": [],
@@ -240,7 +236,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 5333,
+      "words": 5710,
       "skeleton": {
         "record": [],
         "program": [],
@@ -260,7 +256,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 5427,
+      "words": 5804,
       "skeleton": {
         "record": [],
         "program": [],
@@ -280,7 +276,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 5547,
+      "words": 5924,
       "skeleton": {
         "record": [],
         "program": [],
@@ -300,7 +296,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 5487,
+      "words": 5864,
       "skeleton": {
         "record": [],
         "program": [],
@@ -320,7 +316,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 5451,
+      "words": 5828,
       "skeleton": {
         "record": [],
         "program": [],
@@ -341,7 +337,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 5437,
+      "words": 5814,
       "skeleton": {
         "record": [],
         "program": [],
@@ -361,7 +357,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 4551,
+      "words": 4928,
       "skeleton": {
         "record": [],
         "program": [],
@@ -381,7 +377,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5413,
+      "words": 5790,
       "skeleton": {
         "record": [],
         "program": [],
@@ -401,7 +397,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 4765,
+      "words": 5142,
       "skeleton": {
         "record": [],
         "program": [],
@@ -421,7 +417,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 4836,
+      "words": 5213,
       "skeleton": {
         "record": [],
         "program": [],
@@ -441,7 +437,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 4599,
+      "words": 4976,
       "skeleton": {
         "record": [],
         "program": [],
@@ -461,7 +457,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 4648,
+      "words": 5025,
       "skeleton": {
         "record": [],
         "program": [],
@@ -474,6 +470,8 @@
       "released": true,
       "failures": [
         "topics-weight-sum(85)",
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -483,7 +481,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 6371,
+      "words": 6748,
       "skeleton": {
         "record": [],
         "program": [],
@@ -496,6 +494,8 @@
       "released": true,
       "failures": [
         "topics-weights-partial",
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -505,7 +505,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5811,
+      "words": 6188,
       "skeleton": {
         "record": [],
         "program": [],
@@ -518,6 +518,8 @@
       "released": true,
       "failures": [
         "topics-weight-sum(150)",
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -527,7 +529,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 5665,
+      "words": 6042,
       "skeleton": {
         "record": [],
         "program": [],
@@ -540,6 +542,8 @@
       "released": true,
       "failures": [
         "topics-weight-sum(86)",
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -549,7 +553,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5787,
+      "words": 6164,
       "skeleton": {
         "record": [],
         "program": [],
@@ -561,6 +565,8 @@
       "body": "College Board",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -570,7 +576,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5681,
+      "words": 6058,
       "skeleton": {
         "record": [],
         "program": [],
@@ -582,6 +588,8 @@
       "body": "College Board",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -591,7 +599,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5486,
+      "words": 5863,
       "skeleton": {
         "record": [],
         "program": [],
@@ -603,6 +611,8 @@
       "body": "College Board",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -612,7 +622,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5525,
+      "words": 5902,
       "skeleton": {
         "record": [],
         "program": [],
@@ -625,6 +635,8 @@
       "released": true,
       "failures": [
         "topics-weight-sum(75)",
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -634,7 +646,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5486,
+      "words": 5863,
       "skeleton": {
         "record": [],
         "program": [],
@@ -646,6 +658,8 @@
       "body": "College Board",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -655,7 +669,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5597,
+      "words": 5974,
       "skeleton": {
         "record": [],
         "program": [],
@@ -667,6 +681,8 @@
       "body": "College Board",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -676,7 +692,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 6258,
+      "words": 6635,
       "skeleton": {
         "record": [],
         "program": [],
@@ -689,6 +705,8 @@
       "released": true,
       "failures": [
         "topics-weight-sum(75)",
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -698,7 +716,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5602,
+      "words": 5979,
       "skeleton": {
         "record": [],
         "program": [],
@@ -711,6 +729,8 @@
       "released": true,
       "failures": [
         "topics-weight-sum(41)",
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -720,7 +740,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5563,
+      "words": 5940,
       "skeleton": {
         "record": [],
         "program": [],
@@ -732,6 +752,8 @@
       "body": "College Board",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -741,7 +763,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 6534,
+      "words": 6911,
       "skeleton": {
         "record": [],
         "program": [],
@@ -753,6 +775,8 @@
       "body": "College Board",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -762,7 +786,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5686,
+      "words": 6063,
       "skeleton": {
         "record": [],
         "program": [],
@@ -775,6 +799,8 @@
       "released": true,
       "failures": [
         "topics-weight-sum(75)",
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -784,7 +810,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5549,
+      "words": 5926,
       "skeleton": {
         "record": [],
         "program": [],
@@ -797,6 +823,8 @@
       "released": true,
       "failures": [
         "topics-weight-sum(79)",
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -806,7 +834,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 6565,
+      "words": 6942,
       "skeleton": {
         "record": [],
         "program": [],
@@ -818,6 +846,8 @@
       "body": "College Board",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -827,7 +857,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 6375,
+      "words": 6752,
       "skeleton": {
         "record": [],
         "program": [],
@@ -857,6 +887,8 @@
       "body": "ACT, Inc.",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(4)",
         "faq-answer-length(4)",
@@ -885,7 +917,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 4072,
+      "words": 4449,
       "skeleton": {
         "record": [],
         "program": [],
@@ -905,7 +937,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 4429,
+      "words": 4806,
       "skeleton": {
         "record": [],
         "program": [],
@@ -924,7 +956,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 4288,
+      "words": 4665,
       "skeleton": {
         "record": [],
         "program": [],
@@ -935,16 +967,11 @@
       "slug": "accuplacer-advanced-algebra-and-functions",
       "body": "College Board",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(440)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 4063,
+      "words": 5467,
       "skeleton": {
         "record": [],
         "program": [],
@@ -955,16 +982,11 @@
       "slug": "accuplacer-arithmetic",
       "body": "College Board",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(419)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3630,
+      "words": 4894,
       "skeleton": {
         "record": [],
         "program": [],
@@ -975,17 +997,11 @@
       "slug": "accuplacer-quantitative-reasoning-algebra-statistics",
       "body": "College Board",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(414)",
-        "page-words<3500(3439)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3439,
+      "words": 4703,
       "skeleton": {
         "record": [],
         "program": [],
@@ -996,16 +1012,11 @@
       "slug": "accuplacer-reading",
       "body": "College Board",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(405)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3539,
+      "words": 4785,
       "skeleton": {
         "record": [],
         "program": [],
@@ -1016,17 +1027,11 @@
       "slug": "accuplacer-writeplacer",
       "body": "College Board",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(424)",
-        "page-words<3500(3384)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3384,
+      "words": 4659,
       "skeleton": {
         "record": [],
         "program": [],
@@ -1037,18 +1042,11 @@
       "slug": "accuplacer-writing",
       "body": "College Board",
       "released": true,
-      "failures": [
-        "topics<4(3)",
-        "costBreakdown<3-or-no-total",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(400)",
-        "page-words<3500(3417)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3417,
+      "words": 4721,
       "skeleton": {
         "record": [],
         "program": [],
@@ -1060,6 +1058,8 @@
       "body": "Duolingo, Inc.",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(4)",
         "faq-answer-length(4)",
@@ -1081,6 +1081,8 @@
       "body": "British Council, IDP: IELTS Australia and Cambridge University Press and Assessment",
       "released": true,
       "failures": [
+        "summaryPoints<4(3)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(4)",
         "faq-answer-length(4)",
@@ -1103,6 +1105,9 @@
       "released": true,
       "failures": [
         "topics<4(3)",
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(4)",
         "faq-answer-length(4)",
@@ -1124,6 +1129,9 @@
       "body": "ETS",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(5)",
         "faq-answer-length(5)",
@@ -1145,6 +1153,9 @@
       "released": true,
       "failures": [
         "topics<4(2)",
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(4)",
         "faq-answer-length(4)",
@@ -1165,6 +1176,8 @@
       "body": "Acuity Insights",
       "released": true,
       "failures": [
+        "summaryPoints<4(3)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(4)",
         "faq-answer-length(4)",
@@ -1187,6 +1200,8 @@
       "body": "American Dental Association",
       "released": true,
       "failures": [
+        "summaryPoints<4(3)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(4)",
         "faq-answer-length(4)",
@@ -1210,6 +1225,8 @@
       "released": true,
       "failures": [
         "topics<4(3)",
+        "summaryPoints<4(3)",
+        "examEssentials<5(4)",
         "faqs<6(4)",
         "faq-answer-length(4)",
         "sourceUrl-homepage",
@@ -1231,6 +1248,9 @@
       "released": true,
       "failures": [
         "topics<4(3)",
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(5)",
         "faq-answer-length(5)",
@@ -1251,6 +1271,8 @@
       "body": "Law School Admission Council",
       "released": true,
       "failures": [
+        "relatedSlugs<3(1)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(4)",
         "faq-answer-length(4)",
@@ -1272,6 +1294,9 @@
       "body": "Association of American Medical Colleges",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "examEssentials<5(4)",
         "faqs<6(5)",
         "faq-answer-length(5)",
         "record-words<600(571)"
@@ -1291,6 +1316,9 @@
       "body": "Pearson",
       "released": true,
       "failures": [
+        "relatedSlugs<3(1)",
+        "summaryPoints<4(3)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -1349,6 +1377,8 @@
       "body": "Pearson",
       "released": true,
       "failures": [
+        "summaryPoints<4(3)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(4)",
         "faq-answer-length(4)",
@@ -1371,6 +1401,8 @@
       "body": "Enrollment Management Association",
       "released": true,
       "failures": [
+        "summaryPoints<4(3)",
+        "examEssentials<5(4)",
         "faqs<6(4)",
         "faq-answer-length(4)",
         "sourceUrl-homepage",
@@ -1392,6 +1424,8 @@
       "body": "United States Department of Defense",
       "released": true,
       "failures": [
+        "summaryPoints<4(3)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(4)",
         "faq-answer-length(4)",
@@ -1414,6 +1448,8 @@
       "released": true,
       "failures": [
         "topics<4(3)",
+        "relatedSlugs<3(1)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(4)",
         "faq-answer-length(4)",
@@ -1603,6 +1639,8 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -1662,6 +1700,8 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "relatedSlugs<3(0)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -1711,52 +1751,13 @@
       "slug": "nha-cpct",
       "body": "National Healthcareer Association (NHA)",
       "released": true,
-      "failures": [
-        "skeleton-record(28)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(541)",
-        "page-words<3500(2829)",
-        "duplicate(0.64 vs nha-mental-health-tech)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 2829,
+      "words": 4980,
       "skeleton": {
-        "record": [
-          "verified competence in",
-          "Candidates should review the official handbook",
-          "should review the official handbook for eligibility, exam format, and scoring",
-          "commonly used for career entry, advancement, regulatory compliance",
-          "validates job-ready knowledge and skills in the",
-          "is a professional credential administered by",
-          "Recognized credential from",
-          "Demonstrates verified competence in",
-          "career advancement and may satisfy licensing or employer requirements",
-          "Confirm you meet any eligibility or prerequisites",
-          "Review the official handbook and study materials",
-          "Register and pay through the awarding body or authorized provider",
-          "Schedule and take the exam \\(test center or online proctoring\\)",
-          "Receive your score and, if passed, your credential",
-          "Eligibility varies; many credentials are open to all",
-          "many credentials are open to all, while others require",
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "computer-based \\(test center or online remote proctoring\\)",
-          "Topic area tested on the exam; see the official blueprint",
-          "Professionals and candidates seeking to validate",
-          "Create an account, select the exam, pay the fee, and schedule a date",
-          "through .{0,80}official portal or an authorized test provider \\(e\\.g\\.",
-          "confirm the current fee on the official registration page",
-          "fees? vary by location and currency",
-          "bodies allow retakes after a waiting period",
-          "job-ready competence in",
-          "retake policies vary"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -1768,6 +1769,8 @@
       "failures": [
         "skeleton-record(31)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -1821,54 +1824,13 @@
       "slug": "nha-mental-health-tech",
       "body": "National Healthcareer Association (NHA)",
       "released": true,
-      "failures": [
-        "skeleton-record(31)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(553)",
-        "duplicate(0.70 vs nha-cmaa)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5426,
+      "words": 7468,
       "skeleton": {
-        "record": [
-          "verified competence in",
-          "Candidates should review the official handbook",
-          "should review the official handbook for eligibility, exam format, and scoring",
-          "commonly used for career entry, advancement, regulatory compliance",
-          "validates job-ready knowledge and skills in the",
-          "is a professional credential administered by",
-          "Recognized credential from",
-          "Demonstrates verified competence in",
-          "career advancement and may satisfy licensing or employer requirements",
-          "Confirm you meet any eligibility or prerequisites",
-          "Review the official handbook and study materials",
-          "Register and pay through the awarding body or authorized provider",
-          "Schedule and take the exam \\(test center or online proctoring\\)",
-          "Receive your score and, if passed, your credential",
-          "Varies by credential",
-          "by credential — see the awarding body",
-          "Eligibility varies; many credentials are open to all",
-          "many credentials are open to all, while others require",
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "computer-based \\(test center or online remote proctoring\\)",
-          "Topic area tested on the exam; see the official blueprint",
-          "Professionals and candidates seeking to validate",
-          "Create an account, select the exam, pay the fee, and schedule a date",
-          "through .{0,80}official portal or an authorized test provider \\(e\\.g\\.",
-          "confirm the current fee on the official registration page",
-          "fees? vary by location and currency",
-          "usually requires continuing education or a recertification exam — see",
-          "bodies allow retakes after a waiting period",
-          "job-ready competence in",
-          "retake policies vary"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -1879,6 +1841,7 @@
       "released": true,
       "failures": [
         "topics<4(3)",
+        "relatedSlugs<3(0)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(5)",
@@ -1902,6 +1865,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -1955,53 +1919,13 @@
       "slug": "nha-ccma",
       "body": "National Healthcareer Association (NHA)",
       "released": true,
-      "failures": [
-        "skeleton-record(30)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(540)",
-        "duplicate(0.74 vs nha-cmaa)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 4926,
+      "words": 7175,
       "skeleton": {
-        "record": [
-          "verified competence in",
-          "Candidates should review the official handbook",
-          "should review the official handbook for eligibility, exam format, and scoring",
-          "commonly used for career entry, advancement, regulatory compliance",
-          "validates job-ready knowledge and skills in the",
-          "is a professional credential administered by",
-          "Recognized credential from",
-          "Demonstrates verified competence in",
-          "career advancement and may satisfy licensing or employer requirements",
-          "Confirm you meet any eligibility or prerequisites",
-          "Review the official handbook and study materials",
-          "Register and pay through the awarding body or authorized provider",
-          "Schedule and take the exam \\(test center or online proctoring\\)",
-          "Receive your score and, if passed, your credential",
-          "Eligibility varies; many credentials are open to all",
-          "many credentials are open to all, while others require",
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "computer-based \\(test center or online remote proctoring\\)",
-          "Topic area tested on the exam; see the official blueprint",
-          "Professionals and candidates seeking to validate",
-          "Create an account, select the exam, pay the fee, and schedule a date",
-          "through .{0,80}official portal or an authorized test provider \\(e\\.g\\.",
-          "confirm the current fee on the official registration page",
-          "fees? vary by location and currency",
-          "Varies by credential",
-          "usually requires continuing education or a recertification exam — see",
-          "bodies allow retakes after a waiting period",
-          "job-ready competence in",
-          "retake policies vary"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -2010,54 +1934,13 @@
       "slug": "nha-cmaa",
       "body": "National Healthcareer Association (NHA)",
       "released": true,
-      "failures": [
-        "skeleton-record(31)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(551)",
-        "duplicate(0.74 vs nha-ccma)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5427,
+      "words": 7573,
       "skeleton": {
-        "record": [
-          "verified competence in",
-          "Candidates should review the official handbook",
-          "should review the official handbook for eligibility, exam format, and scoring",
-          "commonly used for career entry, advancement, regulatory compliance",
-          "validates job-ready knowledge and skills in the",
-          "is a professional credential administered by",
-          "Recognized credential from",
-          "Demonstrates verified competence in",
-          "career advancement and may satisfy licensing or employer requirements",
-          "Confirm you meet any eligibility or prerequisites",
-          "Review the official handbook and study materials",
-          "Register and pay through the awarding body or authorized provider",
-          "Schedule and take the exam \\(test center or online proctoring\\)",
-          "Receive your score and, if passed, your credential",
-          "Varies by credential",
-          "by credential — see the awarding body",
-          "Eligibility varies; many credentials are open to all",
-          "many credentials are open to all, while others require",
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "computer-based \\(test center or online remote proctoring\\)",
-          "Topic area tested on the exam; see the official blueprint",
-          "Professionals and candidates seeking to validate",
-          "Create an account, select the exam, pay the fee, and schedule a date",
-          "through .{0,80}official portal or an authorized test provider \\(e\\.g\\.",
-          "confirm the current fee on the official registration page",
-          "fees? vary by location and currency",
-          "usually requires continuing education or a recertification exam — see",
-          "bodies allow retakes after a waiting period",
-          "job-ready competence in",
-          "retake policies vary"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -2066,53 +1949,13 @@
       "slug": "nha-cehrs",
       "body": "National Healthcareer Association (NHA)",
       "released": true,
-      "failures": [
-        "skeleton-record(30)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(536)",
-        "duplicate(0.72 vs nha-cmaa)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5993,
+      "words": 8164,
       "skeleton": {
-        "record": [
-          "verified competence in",
-          "Candidates should review the official handbook",
-          "should review the official handbook for eligibility, exam format, and scoring",
-          "commonly used for career entry, advancement, regulatory compliance",
-          "validates job-ready knowledge and skills in the",
-          "is a professional credential administered by",
-          "Recognized credential from",
-          "Demonstrates verified competence in",
-          "career advancement and may satisfy licensing or employer requirements",
-          "Confirm you meet any eligibility or prerequisites",
-          "Review the official handbook and study materials",
-          "Register and pay through the awarding body or authorized provider",
-          "Schedule and take the exam \\(test center or online proctoring\\)",
-          "Receive your score and, if passed, your credential",
-          "Eligibility varies; many credentials are open to all",
-          "many credentials are open to all, while others require",
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "computer-based \\(test center or online remote proctoring\\)",
-          "Topic area tested on the exam; see the official blueprint",
-          "Professionals and candidates seeking to validate",
-          "Create an account, select the exam, pay the fee, and schedule a date",
-          "through .{0,80}official portal or an authorized test provider \\(e\\.g\\.",
-          "confirm the current fee on the official registration page",
-          "fees? vary by location and currency",
-          "Varies by credential",
-          "usually requires continuing education or a recertification exam — see",
-          "bodies allow retakes after a waiting period",
-          "job-ready competence in",
-          "retake policies vary"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -2124,6 +1967,8 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -2179,6 +2024,8 @@
       "failures": [
         "skeleton-record(31)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -2233,6 +2080,7 @@
       "body": "AAPC",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "faqs<6(5)",
         "faq-answer-length(5)",
         "page-words<3500(3423)"
@@ -2255,6 +2103,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -2315,6 +2164,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -2376,6 +2226,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -2657,15 +2508,11 @@
       "slug": "nha-cpht",
       "body": "National Healthcareer Association (NHA)",
       "released": true,
-      "failures": [
-        "faqs<6(5)",
-        "faq-answer-length(5)",
-        "record-words<600(503)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5796,
+      "words": 8004,
       "skeleton": {
         "record": [],
         "program": [],
@@ -2699,6 +2546,7 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -2754,6 +2602,7 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -2809,6 +2658,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -2866,6 +2716,8 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -2922,6 +2774,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -2980,6 +2833,7 @@
       "body": "National Association of Veterinary Technicians in America",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "faqs<6(5)",
         "faq-answer-length(5)",
         "record-words<600(540)",
@@ -3000,6 +2854,7 @@
       "body": "American Association of Veterinary State Boards",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "faqs<6(5)",
         "faq-answer-length(5)",
         "sourceUrl-homepage",
@@ -3024,6 +2879,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3084,6 +2940,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3144,6 +3001,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3202,6 +3060,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3260,6 +3119,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3322,6 +3182,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3384,6 +3245,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3442,6 +3304,7 @@
       "body": "Association of Nutrition & Foodservice Professionals",
       "released": true,
       "failures": [
+        "relatedSlugs<3(0)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(5)",
@@ -3465,6 +3328,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3527,6 +3391,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3588,6 +3453,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3649,6 +3515,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3710,6 +3578,8 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(0)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3769,6 +3639,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(0)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3830,6 +3702,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3892,6 +3765,7 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -3951,6 +3825,7 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4010,6 +3885,7 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4069,6 +3945,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4129,6 +4006,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4190,6 +4068,8 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(0)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4249,6 +4129,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(0)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4309,6 +4191,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4371,6 +4254,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4433,6 +4317,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4494,6 +4379,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4552,6 +4438,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4614,6 +4501,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4670,6 +4558,7 @@
       "body": "Athletics and Fitness Association of America",
       "released": true,
       "failures": [
+        "relatedSlugs<3(1)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(5)",
@@ -4693,6 +4582,8 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4749,6 +4640,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4810,6 +4703,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4872,6 +4767,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -4934,6 +4830,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5013,6 +4910,7 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5066,6 +4964,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5122,6 +5021,8 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5181,6 +5082,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5242,6 +5145,8 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5302,6 +5207,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5364,6 +5270,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5425,6 +5332,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5485,6 +5393,7 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5544,6 +5453,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5605,6 +5515,7 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5664,6 +5575,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5726,6 +5639,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5788,6 +5703,8 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5847,6 +5764,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5909,6 +5827,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -5971,6 +5890,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6031,6 +5951,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6087,6 +6008,7 @@
       "failures": [
         "skeleton-record(31)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6144,6 +6066,7 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6199,6 +6122,7 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6253,6 +6177,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6310,6 +6235,7 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6364,6 +6290,7 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6418,6 +6345,7 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6473,6 +6401,7 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6528,6 +6457,7 @@
       "failures": [
         "skeleton-record(31)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6585,6 +6515,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6641,6 +6572,7 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6696,6 +6628,7 @@
       "failures": [
         "skeleton-record(31)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6753,6 +6686,7 @@
       "failures": [
         "skeleton-record(31)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6810,6 +6744,7 @@
       "failures": [
         "skeleton-record(31)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6867,6 +6802,7 @@
       "failures": [
         "skeleton-record(31)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6924,6 +6860,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -6980,6 +6917,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7036,6 +6974,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7092,6 +7031,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7148,6 +7088,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7204,6 +7145,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7261,6 +7203,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7317,6 +7260,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7373,6 +7317,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7429,6 +7374,7 @@
       "failures": [
         "skeleton-record(31)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7486,6 +7432,7 @@
       "failures": [
         "skeleton-record(31)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7543,6 +7490,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7599,6 +7547,7 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7653,6 +7602,7 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7707,6 +7657,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7763,6 +7714,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7819,6 +7771,7 @@
       "failures": [
         "skeleton-record(31)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7876,6 +7829,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7932,6 +7886,7 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -7987,6 +7942,7 @@
       "failures": [
         "skeleton-record(31)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -8044,6 +8000,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -8101,6 +8058,8 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -8160,6 +8119,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -8220,6 +8181,7 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -8230,7 +8192,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 3663,
+      "words": 4118,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -8249,6 +8211,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -8307,6 +8270,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -8362,6 +8326,7 @@
       "body": "American Institute of Professional Bookkeepers (AIPB)",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(4)",
         "faq-answer-length(4)",
@@ -8383,6 +8348,7 @@
       "body": "Institute of Internal Auditors (IIA)",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(5)",
         "faq-answer-length(5)",
@@ -8405,6 +8371,7 @@
       "released": true,
       "failures": [
         "topics<4(3)",
+        "examEssentials<5(4)",
         "faqs<6(5)",
         "faq-answer-length(5)",
         "sourceUrl-homepage",
@@ -8425,6 +8392,7 @@
       "body": "Institute of Management Accountants (IMA)",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(5)",
         "faq-answer-length(5)",
@@ -8446,6 +8414,7 @@
       "body": "Institute of Management Accountants (IMA)",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faqs<6(5)",
         "faq-answer-length(5)",
@@ -8468,6 +8437,8 @@
       "released": true,
       "failures": [
         "topics<4(3)",
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "faqs<6(5)",
         "faq-answer-length(2)",
         "sourceUrl-homepage"
@@ -8490,6 +8461,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -8551,6 +8524,8 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(0)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -8607,20 +8582,19 @@
       "released": true,
       "failures": [
         "skeleton-record(28)",
-        "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(574)",
-        "duplicate(0.60 vs series-4)"
+        "duplicate(0.60 vs series-82)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 5073,
+      "words": 6177,
       "skeleton": {
         "record": [
           "verified competence in",
@@ -8652,11 +8626,7 @@
           "job-ready competence in",
           "retake policies vary"
         ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "program": [],
         "depth": []
       }
     },
@@ -8664,60 +8634,12 @@
       "slug": "series-24",
       "body": "Financial Industry Regulatory Authority (FINRA)",
       "released": true,
-      "failures": [
-        "skeleton-record(30)",
-        "skeleton-program(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "no-sourceUrl",
-        "record-words<600(557)",
-        "duplicate(0.63 vs series-4)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(5)"
-      ],
-      "words": 5060,
+      "failures": [],
+      "warnings": [],
+      "words": 7101,
       "skeleton": {
-        "record": [
-          "verified competence in",
-          "Candidates should review the official handbook",
-          "should review the official handbook for eligibility, exam format, and scoring",
-          "commonly used for career entry, advancement, regulatory compliance",
-          "validates job-ready knowledge and skills in the",
-          "is a professional credential administered by",
-          "Recognized credential from",
-          "Demonstrates verified competence in",
-          "career advancement and may satisfy licensing or employer requirements",
-          "Confirm you meet any eligibility or prerequisites",
-          "Review the official handbook and study materials",
-          "Register and pay through the awarding body or authorized provider",
-          "Schedule and take the exam \\(test center or online proctoring\\)",
-          "Receive your score and, if passed, your credential",
-          "Eligibility varies; many credentials are open to all",
-          "many credentials are open to all, while others require",
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "computer-based \\(test center or online remote proctoring\\)",
-          "Topic area tested on the exam; see the official blueprint",
-          "Professionals and candidates seeking to validate",
-          "Create an account, select the exam, pay the fee, and schedule a date",
-          "through .{0,80}official portal or an authorized test provider \\(e\\.g\\.",
-          "confirm the current fee on the official registration page",
-          "fees? vary by location and currency",
-          "Varies by credential",
-          "usually requires continuing education or a recertification exam — see",
-          "bodies allow retakes after a waiting period",
-          "job-ready competence in",
-          "retake policies vary"
-        ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "record": [],
+        "program": [],
         "depth": []
       }
     },
@@ -8725,60 +8647,12 @@
       "slug": "series-4",
       "body": "Financial Industry Regulatory Authority (FINRA)",
       "released": true,
-      "failures": [
-        "skeleton-record(30)",
-        "skeleton-program(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "no-sourceUrl",
-        "record-words<600(554)",
-        "duplicate(0.63 vs series-24)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(6)"
-      ],
-      "words": 4542,
+      "failures": [],
+      "warnings": [],
+      "words": 6580,
       "skeleton": {
-        "record": [
-          "verified competence in",
-          "Candidates should review the official handbook",
-          "should review the official handbook for eligibility, exam format, and scoring",
-          "commonly used for career entry, advancement, regulatory compliance",
-          "validates job-ready knowledge and skills in the",
-          "is a professional credential administered by",
-          "Recognized credential from",
-          "Demonstrates verified competence in",
-          "career advancement and may satisfy licensing or employer requirements",
-          "Confirm you meet any eligibility or prerequisites",
-          "Review the official handbook and study materials",
-          "Register and pay through the awarding body or authorized provider",
-          "Schedule and take the exam \\(test center or online proctoring\\)",
-          "Receive your score and, if passed, your credential",
-          "Eligibility varies; many credentials are open to all",
-          "many credentials are open to all, while others require",
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "computer-based \\(test center or online remote proctoring\\)",
-          "Topic area tested on the exam; see the official blueprint",
-          "Professionals and candidates seeking to validate",
-          "Create an account, select the exam, pay the fee, and schedule a date",
-          "through .{0,80}official portal or an authorized test provider \\(e\\.g\\.",
-          "confirm the current fee on the official registration page",
-          "fees? vary by location and currency",
-          "Varies by credential",
-          "usually requires continuing education or a recertification exam — see",
-          "bodies allow retakes after a waiting period",
-          "job-ready competence in",
-          "retake policies vary"
-        ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "record": [],
+        "program": [],
         "depth": []
       }
     },
@@ -8786,57 +8660,12 @@
       "slug": "series-6",
       "body": "Financial Industry Regulatory Authority (FINRA)",
       "released": true,
-      "failures": [
-        "skeleton-record(28)",
-        "skeleton-program(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(3)",
-        "no-sourceUrl",
-        "duplicate(0.60 vs series-82)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(5)"
-      ],
-      "words": 3615,
+      "failures": [],
+      "warnings": [],
+      "words": 5533,
       "skeleton": {
-        "record": [
-          "verified competence in",
-          "Candidates should review the official handbook",
-          "should review the official handbook for eligibility, exam format, and scoring",
-          "commonly used for career entry, advancement, regulatory compliance",
-          "validates job-ready knowledge and skills in the",
-          "is a professional credential administered by",
-          "Recognized credential from",
-          "Demonstrates verified competence in",
-          "career advancement and may satisfy licensing or employer requirements",
-          "Confirm you meet any eligibility or prerequisites",
-          "Review the official handbook and study materials",
-          "Register and pay through the awarding body or authorized provider",
-          "Schedule and take the exam \\(test center or online proctoring\\)",
-          "Receive your score and, if passed, your credential",
-          "Eligibility varies; many credentials are open to all",
-          "many credentials are open to all, while others require",
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "computer-based \\(test center or online remote proctoring\\)",
-          "Topic area tested on the exam; see the official blueprint",
-          "Professionals and candidates seeking to validate",
-          "Create an account, select the exam, pay the fee, and schedule a date",
-          "through .{0,80}official portal or an authorized test provider \\(e\\.g\\.",
-          "confirm the current fee on the official registration page",
-          "fees? vary by location and currency",
-          "bodies allow retakes after a waiting period",
-          "job-ready competence in",
-          "retake policies vary"
-        ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "record": [],
+        "program": [],
         "depth": []
       }
     },
@@ -8848,6 +8677,8 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -8907,6 +8738,8 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -8966,6 +8799,8 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -9021,58 +8856,12 @@
       "slug": "series-7",
       "body": "Financial Industry Regulatory Authority (FINRA)",
       "released": true,
-      "failures": [
-        "skeleton-record(28)",
-        "skeleton-program(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "no-sourceUrl",
-        "record-words<600(581)",
-        "duplicate(0.62 vs series-82)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(6)"
-      ],
-      "words": 4986,
+      "failures": [],
+      "warnings": [],
+      "words": 7190,
       "skeleton": {
-        "record": [
-          "verified competence in",
-          "Candidates should review the official handbook",
-          "should review the official handbook for eligibility, exam format, and scoring",
-          "commonly used for career entry, advancement, regulatory compliance",
-          "validates job-ready knowledge and skills in the",
-          "is a professional credential administered by",
-          "Recognized credential from",
-          "Demonstrates verified competence in",
-          "career advancement and may satisfy licensing or employer requirements",
-          "Confirm you meet any eligibility or prerequisites",
-          "Review the official handbook and study materials",
-          "Register and pay through the awarding body or authorized provider",
-          "Schedule and take the exam \\(test center or online proctoring\\)",
-          "Receive your score and, if passed, your credential",
-          "Eligibility varies; many credentials are open to all",
-          "many credentials are open to all, while others require",
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "computer-based \\(test center or online remote proctoring\\)",
-          "Topic area tested on the exam; see the official blueprint",
-          "Professionals and candidates seeking to validate",
-          "Create an account, select the exam, pay the fee, and schedule a date",
-          "through .{0,80}official portal or an authorized test provider \\(e\\.g\\.",
-          "confirm the current fee on the official registration page",
-          "fees? vary by location and currency",
-          "bodies allow retakes after a waiting period",
-          "job-ready competence in",
-          "retake policies vary"
-        ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "record": [],
+        "program": [],
         "depth": []
       }
     },
@@ -9082,21 +8871,19 @@
       "released": true,
       "failures": [
         "skeleton-record(28)",
-        "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(573)",
-        "page-words<3500(2928)",
         "duplicate(0.62 vs series-82)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 2928,
+      "words": 4032,
       "skeleton": {
         "record": [
           "verified competence in",
@@ -9128,11 +8915,7 @@
           "job-ready competence in",
           "retake policies vary"
         ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "program": [],
         "depth": []
       }
     },
@@ -9142,21 +8925,19 @@
       "released": true,
       "failures": [
         "skeleton-record(30)",
-        "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(572)",
-        "page-words<3500(2745)",
         "duplicate(0.62 vs series-10)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 2745,
+      "words": 3849,
       "skeleton": {
         "record": [
           "verified competence in",
@@ -9190,11 +8971,7 @@
           "job-ready competence in",
           "retake policies vary"
         ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "program": [],
         "depth": []
       }
     },
@@ -9204,20 +8981,19 @@
       "released": true,
       "failures": [
         "skeleton-record(30)",
-        "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(551)",
-        "duplicate(0.61 vs series-4)"
+        "duplicate(0.61 vs series-82)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 4333,
+      "words": 5437,
       "skeleton": {
         "record": [
           "verified competence in",
@@ -9251,11 +9027,7 @@
           "job-ready competence in",
           "retake policies vary"
         ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "program": [],
         "depth": []
       }
     },
@@ -9267,6 +9039,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(0)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -9328,6 +9102,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -9389,6 +9164,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -9448,6 +9224,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -9507,6 +9284,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -9567,6 +9345,8 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -9626,6 +9406,8 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -9685,6 +9467,8 @@
         "skeleton-record(29)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -9744,6 +9528,8 @@
         "skeleton-record(26)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -9801,6 +9587,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -9861,6 +9649,8 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -9920,6 +9710,8 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -9978,6 +9770,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10039,6 +9832,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10101,6 +9896,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10163,6 +9960,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10225,6 +10024,8 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(0)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10284,6 +10085,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10345,6 +10148,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10406,6 +10210,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10467,6 +10272,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10529,6 +10335,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10589,6 +10396,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10650,6 +10458,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10712,6 +10521,7 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10771,6 +10581,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10832,6 +10643,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10893,6 +10705,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(0)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -10953,6 +10767,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11013,6 +10829,7 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11071,6 +10888,7 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11129,6 +10947,7 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11187,6 +11006,7 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11245,6 +11065,7 @@
       "failures": [
         "skeleton-record(30)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11301,6 +11122,8 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(0)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11359,6 +11182,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11417,6 +11241,7 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11446,6 +11271,7 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11476,6 +11302,7 @@
         "skeleton-record(31)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11538,6 +11365,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11598,6 +11426,7 @@
         "skeleton-record(31)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11660,6 +11489,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11720,6 +11550,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11780,6 +11611,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11840,6 +11672,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11899,6 +11732,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -11957,6 +11791,7 @@
       "failures": [
         "skeleton-record(27)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12009,6 +11844,8 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12067,6 +11904,8 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12125,6 +11964,7 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12155,6 +11995,7 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12184,6 +12025,7 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12214,19 +12056,18 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(517)",
-        "page-words<3500(2809)",
         "duplicate(0.60 vs prince2-agile-foundation)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 2809,
+      "words": 3950,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -12244,19 +12085,18 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(485)",
-        "page-words<3500(3138)",
         "duplicate(0.58 vs msp-practitioner)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 3138,
+      "words": 4279,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -12275,6 +12115,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12335,6 +12176,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12395,6 +12237,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12455,6 +12298,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(0)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12515,6 +12360,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(0)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12575,6 +12422,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12636,6 +12485,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12697,6 +12548,7 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12756,6 +12608,7 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12815,6 +12668,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12877,6 +12731,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12938,6 +12793,7 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -12997,6 +12853,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13059,6 +12916,8 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13118,6 +12977,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(0)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13178,6 +13039,7 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13237,6 +13099,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13299,6 +13162,7 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13358,6 +13222,7 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13417,6 +13282,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13478,6 +13344,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13538,6 +13405,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13598,6 +13466,7 @@
         "skeleton-record(27)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13657,6 +13526,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13717,6 +13587,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13777,6 +13648,7 @@
         "skeleton-record(26)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13835,6 +13707,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13896,6 +13769,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -13954,18 +13828,11 @@
       "slug": "aws-certified-ai-practitioner",
       "body": "Amazon Web Services",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(403)",
-        "page-words<3500(3087)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3087,
+      "words": 4914,
       "skeleton": {
         "record": [],
         "program": [],
@@ -13976,17 +13843,11 @@
       "slug": "aws-certified-advanced-networking-specialty",
       "body": "Amazon Web Services",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(403)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(7)"
       ],
-      "words": 6419,
+      "words": 8183,
       "skeleton": {
         "record": [],
         "program": [],
@@ -13997,17 +13858,11 @@
       "slug": "aws-certified-cloud-practitioner",
       "body": "Amazon Web Services",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(346)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(8)"
       ],
-      "words": 7226,
+      "words": 9072,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14018,18 +13873,11 @@
       "slug": "aws-certified-data-engineer-associate",
       "body": "Amazon Web Services",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(365)",
-        "page-words<3500(3043)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3043,
+      "words": 4923,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14040,17 +13888,11 @@
       "slug": "aws-certified-database-specialty",
       "body": "Amazon Web Services",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(367)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(7)"
       ],
-      "words": 6366,
+      "words": 8112,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14062,17 +13904,17 @@
       "body": "Amazon Web Services",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "record-words<600(354)",
-        "page-words<3500(3110)"
+        "record-words<600(354)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3110,
+      "words": 3884,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14084,17 +13926,17 @@
       "body": "Amazon Web Services",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "record-words<600(346)",
-        "page-words<3500(2887)"
+        "record-words<600(346)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 2887,
+      "words": 3661,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14106,6 +13948,7 @@
       "body": "Amazon Web Services",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -14115,7 +13958,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 4298,
+      "words": 5072,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14127,17 +13970,17 @@
       "body": "Amazon Web Services",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "record-words<600(372)",
-        "page-words<3500(3164)"
+        "record-words<600(372)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 3164,
+      "words": 3938,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14149,17 +13992,17 @@
       "body": "Amazon Web Services",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "record-words<600(383)",
-        "page-words<3500(2908)"
+        "record-words<600(383)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 2908,
+      "words": 3682,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14171,6 +14014,7 @@
       "body": "Amazon Web Services",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -14180,7 +14024,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(7)"
       ],
-      "words": 6377,
+      "words": 7151,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14192,17 +14036,17 @@
       "body": "Amazon Web Services",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "record-words<600(343)",
-        "page-words<3500(2882)"
+        "record-words<600(343)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 2882,
+      "words": 3656,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14214,6 +14058,7 @@
       "body": "Amazon Web Services",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -14223,7 +14068,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(8)"
       ],
-      "words": 7406,
+      "words": 8180,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14235,17 +14080,17 @@
       "body": "Amazon Web Services",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "record-words<600(320)",
-        "page-words<3500(3185)"
+        "record-words<600(320)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3185,
+      "words": 3959,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14257,17 +14102,17 @@
       "body": "Amazon Web Services",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "record-words<600(352)",
-        "page-words<3500(3118)"
+        "record-words<600(352)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3118,
+      "words": 3892,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14278,16 +14123,11 @@
       "slug": "cisco-ccna",
       "body": "Cisco Systems",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "faqs<6(3)",
-        "faq-answer-length(3)",
-        "record-words<600(232)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(8)"
       ],
-      "words": 5664,
+      "words": 7327,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14298,16 +14138,11 @@
       "slug": "cisco-ccna-cybersecurity",
       "body": "Cisco Systems",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(5)",
-        "faq-answer-length(5)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(9)"
       ],
-      "words": 6303,
+      "words": 7190,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14318,17 +14153,11 @@
       "slug": "cisco-ccnp-automation",
       "body": "Cisco Systems",
       "released": true,
-      "failures": [
-        "topics<4(3)",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faq-answer-length(6)",
-        "record-words<600(267)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(7)"
       ],
-      "words": 5720,
+      "words": 7146,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14339,16 +14168,11 @@
       "slug": "cisco-ccnp-collaboration",
       "body": "Cisco Systems",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faq-answer-length(6)",
-        "record-words<600(261)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(7)"
       ],
-      "words": 5739,
+      "words": 7124,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14359,16 +14183,11 @@
       "slug": "cisco-ccnp-cybersecurity",
       "body": "Cisco Systems",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(5)",
-        "faq-answer-length(5)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(9)"
       ],
-      "words": 6468,
+      "words": 7249,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14379,17 +14198,11 @@
       "slug": "cisco-ccnp-data-center",
       "body": "Cisco Systems",
       "released": true,
-      "failures": [
-        "topics-weight-sum(85)",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faq-answer-length(6)",
-        "record-words<600(271)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(7)"
       ],
-      "words": 5634,
+      "words": 6996,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14402,6 +14215,10 @@
       "released": true,
       "failures": [
         "topics-weight-sum(90)",
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "faq-answer-length(6)",
         "record-words<600(291)",
@@ -14423,6 +14240,10 @@
       "released": true,
       "failures": [
         "topics-weight-sum(80)",
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
@@ -14444,6 +14265,10 @@
       "released": true,
       "failures": [
         "topics-weight-sum(80)",
+        "relatedSlugs<3(1)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
@@ -14464,6 +14289,10 @@
       "body": "Cisco Systems",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
@@ -14484,6 +14313,7 @@
       "body": "Cisco Systems",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(5)",
@@ -14505,6 +14335,10 @@
       "released": true,
       "failures": [
         "topics<4(3)",
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
@@ -14526,6 +14360,7 @@
       "body": "Cloud Native Computing Foundation",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "faq-answer-length(6)",
         "record-words<600(591)",
@@ -14546,6 +14381,7 @@
       "body": "Cloud Native Computing Foundation",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
@@ -14570,6 +14406,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(0)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -14627,6 +14465,8 @@
       "body": "HashiCorp",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
@@ -14647,6 +14487,8 @@
       "body": "HashiCorp",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
@@ -14667,6 +14509,7 @@
       "body": "Cloud Native Computing Foundation",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
@@ -14686,16 +14529,9 @@
       "slug": "comptia-a-plus",
       "body": "CompTIA",
       "released": true,
-      "failures": [
-        "topics-weight-sum(116)",
-        "faqs<6(3)",
-        "faq-answer-length(3)",
-        "record-words<600(327)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(7)"
-      ],
-      "words": 5873,
+      "failures": [],
+      "warnings": [],
+      "words": 7626,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14706,52 +14542,11 @@
       "slug": "comptia-ai-essentials",
       "body": "CompTIA",
       "released": true,
-      "failures": [
-        "skeleton-record(28)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(493)",
-        "page-words<3500(3139)",
-        "duplicate(0.59 vs comptia-datasys-plus)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(5)"
-      ],
-      "words": 3139,
+      "failures": [],
+      "warnings": [],
+      "words": 4512,
       "skeleton": {
-        "record": [
-          "verified competence in",
-          "Candidates should review the official handbook",
-          "should review the official handbook for eligibility, exam format, and scoring",
-          "commonly used for career entry, advancement, regulatory compliance",
-          "validates job-ready knowledge and skills in the",
-          "is a professional credential administered by",
-          "Recognized credential from",
-          "Demonstrates verified competence in",
-          "career advancement and may satisfy licensing or employer requirements",
-          "Confirm you meet any eligibility or prerequisites",
-          "Review the official handbook and study materials",
-          "Register and pay through the awarding body or authorized provider",
-          "Schedule and take the exam \\(test center or online proctoring\\)",
-          "Receive your score and, if passed, your credential",
-          "Eligibility varies; many credentials are open to all",
-          "many credentials are open to all, while others require",
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "computer-based \\(test center or online remote proctoring\\)",
-          "Topic area tested on the exam; see the official blueprint",
-          "Professionals and candidates seeking to validate",
-          "Create an account, select the exam, pay the fee, and schedule a date",
-          "through .{0,80}official portal or an authorized test provider \\(e\\.g\\.",
-          "confirm the current fee on the official registration page",
-          "fees? vary by location and currency",
-          "bodies allow retakes after a waiting period",
-          "job-ready competence in",
-          "retake policies vary"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -14760,17 +14555,9 @@
       "slug": "comptia-cloud-plus",
       "body": "CompTIA",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faq-answer-length(6)",
-        "record-words<600(280)",
-        "page-words<3500(3089)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(5)"
-      ],
-      "words": 3089,
+      "failures": [],
+      "warnings": [],
+      "words": 4622,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14781,16 +14568,9 @@
       "slug": "comptia-cysa-plus",
       "body": "CompTIA",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faq-answer-length(6)",
-        "record-words<600(303)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(6)"
-      ],
-      "words": 5710,
+      "failures": [],
+      "warnings": [],
+      "words": 7169,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14801,16 +14581,9 @@
       "slug": "comptia-data-plus",
       "body": "CompTIA",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faq-answer-length(6)",
-        "record-words<600(284)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(7)"
-      ],
-      "words": 6352,
+      "failures": [],
+      "warnings": [],
+      "words": 7830,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14821,18 +14594,9 @@
       "slug": "comptia-it-fundamentals",
       "body": "CompTIA",
       "released": true,
-      "failures": [
-        "topics-weight-sum(77)",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faq-answer-length(6)",
-        "record-words<600(273)",
-        "page-words<3500(3109)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(5)"
-      ],
-      "words": 3109,
+      "failures": [],
+      "warnings": [],
+      "words": 4681,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14843,16 +14607,9 @@
       "slug": "comptia-linux-plus",
       "body": "CompTIA",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(5)",
-        "faq-answer-length(3)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(8)"
-      ],
-      "words": 6427,
+      "failures": [],
+      "warnings": [],
+      "words": 7313,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14864,6 +14621,9 @@
       "body": "CompTIA",
       "released": true,
       "failures": [
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "faqs<6(3)",
         "faq-answer-length(3)",
@@ -14872,7 +14632,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(8)"
       ],
-      "words": 6889,
+      "words": 7470,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14884,6 +14644,10 @@
       "body": "CompTIA",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(1)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
@@ -14892,7 +14656,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 5332,
+      "words": 5913,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14904,16 +14668,19 @@
       "body": "CompTIA",
       "released": true,
       "failures": [
+        "relatedSlugs<3(1)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(1)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
-        "record-words<600(282)",
-        "page-words<3500(2984)"
+        "record-words<600(282)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 2984,
+      "words": 3565,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14925,6 +14692,9 @@
       "body": "CompTIA",
       "released": true,
       "failures": [
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "faqs<6(3)",
         "faq-answer-length(3)",
@@ -14933,7 +14703,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(7)"
       ],
-      "words": 5360,
+      "words": 5941,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14945,16 +14715,19 @@
       "body": "CompTIA",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(1)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
-        "record-words<600(288)",
-        "page-words<3500(3086)"
+        "record-words<600(288)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3086,
+      "words": 3667,
       "skeleton": {
         "record": [],
         "program": [],
@@ -14968,18 +14741,18 @@
       "failures": [
         "skeleton-record(27)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
         "record-words<600(462)",
-        "page-words<3500(3431)",
         "duplicate(0.60 vs comptia-datasys-plus)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3431,
+      "words": 4012,
       "skeleton": {
         "record": [
           "verified competence in",
@@ -15019,6 +14792,7 @@
       "body": "ISC2",
       "released": true,
       "failures": [
+        "examEssentials<5(3)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15041,6 +14815,7 @@
       "body": "ISC2",
       "released": true,
       "failures": [
+        "examEssentials<5(3)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15063,6 +14838,7 @@
       "body": "ISC2",
       "released": true,
       "failures": [
+        "examEssentials<5(3)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15085,6 +14861,7 @@
       "body": "ISC2",
       "released": true,
       "failures": [
+        "examEssentials<5(3)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15107,6 +14884,7 @@
       "body": "ISACA",
       "released": true,
       "failures": [
+        "examEssentials<5(3)",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
@@ -15128,6 +14906,7 @@
       "body": "ISACA",
       "released": true,
       "failures": [
+        "examEssentials<5(3)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15150,6 +14929,7 @@
       "body": "ISACA",
       "released": true,
       "failures": [
+        "examEssentials<5(3)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15172,6 +14952,7 @@
       "body": "EC-Council",
       "released": true,
       "failures": [
+        "examEssentials<5(3)",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
@@ -15193,6 +14974,7 @@
       "body": "OffSec",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "faqs<6(4)",
         "faq-answer-length(4)",
         "record-words<600(446)",
@@ -15213,6 +14995,7 @@
       "body": "Cloud Security Alliance",
       "released": true,
       "failures": [
+        "examEssentials<5(3)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15235,6 +15018,8 @@
       "body": "Tableau",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15257,6 +15042,8 @@
       "body": "Tableau",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15277,18 +15064,11 @@
       "slug": "google-cloud-digital-leader",
       "body": "Google Cloud",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(515)",
-        "page-words<3500(3246)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3246,
+      "words": 5348,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15299,18 +15079,11 @@
       "slug": "google-associate-cloud-engineer",
       "body": "Google Cloud",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(3)",
-        "record-words<600(461)",
-        "page-words<3500(3172)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3172,
+      "words": 5306,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15321,18 +15094,11 @@
       "slug": "google-associate-data-practitioner",
       "body": "Google Cloud",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(386)",
-        "page-words<3500(2899)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 2899,
+      "words": 5098,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15343,18 +15109,11 @@
       "slug": "google-professional-cloud-architect",
       "body": "Google Cloud",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(3)",
-        "record-words<600(491)",
-        "page-words<3500(3245)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3245,
+      "words": 5366,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15365,17 +15124,11 @@
       "slug": "google-professional-cloud-developer",
       "body": "Google Cloud",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(378)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(8)"
       ],
-      "words": 6232,
+      "words": 8401,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15386,20 +15139,11 @@
       "slug": "google-professional-data-engineer",
       "body": "Google Cloud",
       "released": true,
-      "failures": [
-        "topics-weights-partial",
-        "topics-weight-sum(47)",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(455)",
-        "page-words<3500(3030)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3030,
+      "words": 5161,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15410,18 +15154,11 @@
       "slug": "google-professional-machine-learning-engineer",
       "body": "Google Cloud",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "record-words<600(373)",
-        "page-words<3500(3249)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 3249,
+      "words": 5549,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15433,6 +15170,7 @@
       "body": "Google",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15442,7 +15180,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 4541,
+      "words": 5481,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15456,6 +15194,7 @@
       "failures": [
         "skeleton-record(28)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15508,6 +15247,8 @@
       "body": "Google",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15529,6 +15270,8 @@
       "body": "Google",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15550,27 +15293,13 @@
       "slug": "itil-4-foundation",
       "body": "PeopleCert",
       "released": true,
-      "failures": [
-        "skeleton-record(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "no-sourceUrl",
-        "record-words<600(516)",
-        "duplicate(0.52 vs itil-4-specialist-collaborate-assure-and-improve)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 5144,
+      "words": 7335,
       "skeleton": {
-        "record": [
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "Professionals and candidates seeking to validate"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -15579,28 +15308,13 @@
       "slug": "itil-4-specialist-create-deliver-and-support",
       "body": "PeopleCert",
       "released": true,
-      "failures": [
-        "skeleton-record(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "no-sourceUrl",
-        "record-words<600(508)",
-        "page-words<3500(3161)",
-        "duplicate(0.51 vs itil-4-specialist-drive-stakeholder-value)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 3161,
+      "words": 5560,
       "skeleton": {
-        "record": [
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "Professionals and candidates seeking to validate"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -15609,28 +15323,13 @@
       "slug": "itil-4-specialist-drive-stakeholder-value",
       "body": "PeopleCert",
       "released": true,
-      "failures": [
-        "skeleton-record(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "no-sourceUrl",
-        "record-words<600(498)",
-        "page-words<3500(3020)",
-        "duplicate(0.52 vs itil-4-specialist-high-velocity-it)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 3020,
+      "words": 5398,
       "skeleton": {
-        "record": [
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "Professionals and candidates seeking to validate"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -15639,24 +15338,13 @@
       "slug": "itil-4-specialist-high-velocity-it",
       "body": "PeopleCert",
       "released": true,
-      "failures": [
-        "skeleton-record(1)",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "no-sourceUrl",
-        "record-words<600(522)",
-        "duplicate(0.52 vs itil-4-specialist-drive-stakeholder-value)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 6034,
+      "words": 8064,
       "skeleton": {
-        "record": [
-          "Professionals and candidates seeking to validate"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -15667,18 +15355,18 @@
       "released": true,
       "failures": [
         "skeleton-record(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(533)",
         "duplicate(0.52 vs itil-4-specialist-collaborate-assure-and-improve)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 5940,
+      "words": 7081,
       "skeleton": {
         "record": [
           "Professionals and candidates seeking to validate"
@@ -15691,24 +15379,13 @@
       "slug": "itil-4-leader-digital-and-it-strategy",
       "body": "PeopleCert",
       "released": true,
-      "failures": [
-        "skeleton-record(1)",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "no-sourceUrl",
-        "record-words<600(531)",
-        "duplicate(0.50 vs itil-4-foundation)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 6098,
+      "words": 8083,
       "skeleton": {
-        "record": [
-          "Professionals and candidates seeking to validate"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -15720,19 +15397,18 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(506)",
-        "page-words<3500(2993)",
         "duplicate(0.54 vs itil-4-specialist-collaborate-assure-and-improve)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 2993,
+      "words": 4134,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -15748,6 +15424,7 @@
       "body": "Linux Professional Institute",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15770,6 +15447,7 @@
       "body": "Linux Professional Institute",
       "released": true,
       "failures": [
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -15793,6 +15471,7 @@
       "failures": [
         "topics<4(3)",
         "topics-weight-sum(90)",
+        "relatedSlugs<3(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(5)",
@@ -15801,7 +15480,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(10)"
       ],
-      "words": 6836,
+      "words": 7291,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15812,17 +15491,11 @@
       "slug": "microsoft-az-104",
       "body": "Microsoft",
       "released": true,
-      "failures": [
-        "topics-weight-sum(80)",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(5)",
-        "faq-answer-length(5)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(11)"
       ],
-      "words": 8508,
+      "words": 9426,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15833,17 +15506,11 @@
       "slug": "microsoft-az-140",
       "body": "Microsoft",
       "released": true,
-      "failures": [
-        "topics-weight-sum(85)",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(5)",
-        "faq-answer-length(5)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(13)"
       ],
-      "words": 10332,
+      "words": 11261,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15854,15 +15521,9 @@
       "slug": "microsoft-az-204",
       "body": "Microsoft",
       "released": true,
-      "failures": [
-        "topics-weight-sum(85)",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(5)",
-        "faq-answer-length(5)"
-      ],
+      "failures": [],
       "warnings": [],
-      "words": 4523,
+      "words": 5293,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15873,17 +15534,11 @@
       "slug": "microsoft-az-305",
       "body": "Microsoft",
       "released": true,
-      "failures": [
-        "topics-weight-sum(90)",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(5)",
-        "faq-answer-length(5)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(11)"
       ],
-      "words": 8278,
+      "words": 9404,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15894,17 +15549,11 @@
       "slug": "microsoft-az-400",
       "body": "Microsoft",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faq-answer-length(6)",
-        "record-words<600(266)",
-        "page-words<3500(3126)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3126,
+      "words": 4714,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15915,17 +15564,11 @@
       "slug": "microsoft-az-500",
       "body": "Microsoft",
       "released": true,
-      "failures": [
-        "topics-weight-sum(85)",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(5)",
-        "faq-answer-length(5)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(11)"
       ],
-      "words": 8294,
+      "words": 9211,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15936,17 +15579,11 @@
       "slug": "microsoft-az-700",
       "body": "Microsoft",
       "released": true,
-      "failures": [
-        "topics-weight-sum(85)",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(5)",
-        "faq-answer-length(5)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(12)"
       ],
-      "words": 8545,
+      "words": 9626,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15957,16 +15594,11 @@
       "slug": "microsoft-az-800",
       "body": "Microsoft",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faq-answer-length(6)",
-        "record-words<600(270)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(9)"
       ],
-      "words": 7080,
+      "words": 8437,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15977,16 +15609,11 @@
       "slug": "microsoft-az-801",
       "body": "Microsoft",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faq-answer-length(6)",
-        "record-words<600(244)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(9)"
       ],
-      "words": 7007,
+      "words": 8370,
       "skeleton": {
         "record": [],
         "program": [],
@@ -15997,15 +15624,9 @@
       "slug": "microsoft-ai-900",
       "body": "Microsoft",
       "released": true,
-      "failures": [
-        "topics-weight-sum(80)",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(5)",
-        "faq-answer-length(5)"
-      ],
+      "failures": [],
       "warnings": [],
-      "words": 3775,
+      "words": 4604,
       "skeleton": {
         "record": [],
         "program": [],
@@ -16016,17 +15637,11 @@
       "slug": "microsoft-ai-901",
       "body": "Microsoft",
       "released": true,
-      "failures": [
-        "topics<4(2)",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(5)",
-        "faq-answer-length(5)"
-      ],
+      "failures": [],
       "warnings": [
         "depth-rows-without-source:resourceComparison(9)"
       ],
-      "words": 7296,
+      "words": 8211,
       "skeleton": {
         "record": [],
         "program": [],
@@ -16037,17 +15652,9 @@
       "slug": "microsoft-ai-102",
       "body": "Microsoft",
       "released": true,
-      "failures": [
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faq-answer-length(6)",
-        "record-words<600(265)",
-        "page-words<3500(3134)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(5)"
-      ],
-      "words": 3134,
+      "failures": [],
+      "warnings": [],
+      "words": 3611,
       "skeleton": {
         "record": [],
         "program": [],
@@ -16060,16 +15667,19 @@
       "released": true,
       "failures": [
         "topics<4(3)",
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
-        "record-words<600(251)",
-        "page-words<3500(3092)"
+        "record-words<600(251)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3092,
+      "words": 3547,
       "skeleton": {
         "record": [],
         "program": [],
@@ -16081,6 +15691,10 @@
       "body": "Microsoft",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
@@ -16089,7 +15703,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(10)"
       ],
-      "words": 6905,
+      "words": 7360,
       "skeleton": {
         "record": [],
         "program": [],
@@ -16101,6 +15715,10 @@
       "body": "Microsoft",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
@@ -16109,7 +15727,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 5040,
+      "words": 5495,
       "skeleton": {
         "record": [],
         "program": [],
@@ -16122,16 +15740,18 @@
       "released": true,
       "failures": [
         "topics<4(3)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
-        "record-words<600(252)",
-        "page-words<3500(3216)"
+        "record-words<600(252)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3216,
+      "words": 3671,
       "skeleton": {
         "record": [],
         "program": [],
@@ -16143,16 +15763,19 @@
       "body": "Microsoft",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
-        "record-words<600(251)",
-        "page-words<3500(3122)"
+        "record-words<600(251)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3122,
+      "words": 3577,
       "skeleton": {
         "record": [],
         "program": [],
@@ -16164,16 +15787,20 @@
       "body": "Microsoft",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
         "record-words<600(245)",
-        "page-words<3500(3012)"
+        "page-words<3500(3467)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3012,
+      "words": 3467,
       "skeleton": {
         "record": [],
         "program": [],
@@ -16186,16 +15813,20 @@
       "released": true,
       "failures": [
         "topics<4(3)",
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
         "record-words<600(242)",
-        "page-words<3500(3006)"
+        "page-words<3500(3461)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3006,
+      "words": 3461,
       "skeleton": {
         "record": [],
         "program": [],
@@ -16208,16 +15839,18 @@
       "released": true,
       "failures": [
         "topics<4(3)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
-        "record-words<600(253)",
-        "page-words<3500(3084)"
+        "record-words<600(253)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3084,
+      "words": 3539,
       "skeleton": {
         "record": [],
         "program": [],
@@ -16229,6 +15862,9 @@
       "body": "Microsoft",
       "released": true,
       "failures": [
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
@@ -16237,7 +15873,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(9)"
       ],
-      "words": 6920,
+      "words": 7375,
       "skeleton": {
         "record": [],
         "program": [],
@@ -16250,16 +15886,20 @@
       "released": true,
       "failures": [
         "topics<4(3)",
+        "relatedSlugs<3(2)",
+        "summaryPoints<4(3)",
+        "quickAnswer-advantages<4",
+        "examEssentials<5(2)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faq-answer-length(6)",
         "record-words<600(265)",
-        "page-words<3500(3017)"
+        "page-words<3500(3472)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3017,
+      "words": 3472,
       "skeleton": {
         "record": [],
         "program": [],
@@ -16273,6 +15913,7 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -16283,7 +15924,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3577,
+      "words": 4032,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -16301,6 +15942,7 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -16311,7 +15953,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 5858,
+      "words": 6313,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -16329,6 +15971,7 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -16339,7 +15982,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3784,
+      "words": 4239,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -16357,18 +16000,18 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
         "record-words<600(520)",
-        "page-words<3500(3380)",
         "duplicate(0.58 vs microsoft-mb-920)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 3380,
+      "words": 3835,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -16386,6 +16029,7 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -16396,7 +16040,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 3661,
+      "words": 4116,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -16414,6 +16058,7 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -16424,7 +16069,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 4740,
+      "words": 5195,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -16442,6 +16087,7 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -16452,7 +16098,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 3557,
+      "words": 4012,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -16470,6 +16116,7 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -16480,7 +16127,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 5495,
+      "words": 5950,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -16498,6 +16145,7 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -16508,7 +16156,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5758,
+      "words": 6213,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -16525,6 +16173,7 @@
       "released": true,
       "failures": [
         "skeleton-record(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -16535,7 +16184,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(4)"
       ],
-      "words": 4444,
+      "words": 4899,
       "skeleton": {
         "record": [
           "Professionals and candidates seeking to validate"
@@ -16550,6 +16199,7 @@
       "released": true,
       "failures": [
         "skeleton-record(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -16560,7 +16210,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 4723,
+      "words": 5178,
       "skeleton": {
         "record": [
           "Professionals and candidates seeking to validate"
@@ -16575,6 +16225,7 @@
       "released": true,
       "failures": [
         "skeleton-record(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -16585,7 +16236,7 @@
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 4783,
+      "words": 5238,
       "skeleton": {
         "record": [
           "Professionals and candidates seeking to validate"
@@ -16602,6 +16253,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -16662,6 +16314,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -16720,6 +16373,7 @@
       "body": "Broadcom",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
         "faq-answer-length(6)"
       ],
       "warnings": [
@@ -16736,28 +16390,11 @@
       "slug": "salesforce-administrator",
       "body": "Salesforce",
       "released": true,
-      "failures": [
-        "skeleton-record(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "no-sourceUrl",
-        "record-words<600(569)",
-        "page-words<3500(2876)",
-        "duplicate(0.62 vs salesforce-advanced-administrator)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(5)"
-      ],
-      "words": 2876,
+      "failures": [],
+      "warnings": [],
+      "words": 5012,
       "skeleton": {
-        "record": [
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "Professionals and candidates seeking to validate"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -16766,27 +16403,11 @@
       "slug": "salesforce-advanced-administrator",
       "body": "Salesforce",
       "released": true,
-      "failures": [
-        "skeleton-record(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "no-sourceUrl",
-        "record-words<600(569)",
-        "duplicate(0.62 vs salesforce-administrator)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(6)"
-      ],
-      "words": 5275,
+      "failures": [],
+      "warnings": [],
+      "words": 6977,
       "skeleton": {
-        "record": [
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "Professionals and candidates seeking to validate"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -16795,28 +16416,11 @@
       "slug": "salesforce-platform-app-builder",
       "body": "Salesforce",
       "released": true,
-      "failures": [
-        "skeleton-record(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "no-sourceUrl",
-        "record-words<600(544)",
-        "page-words<3500(2860)",
-        "duplicate(0.59 vs salesforce-platform-developer-ii)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(5)"
-      ],
-      "words": 2860,
+      "failures": [],
+      "warnings": [],
+      "words": 4837,
       "skeleton": {
-        "record": [
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "Professionals and candidates seeking to validate"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -16828,19 +16432,18 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(547)",
-        "page-words<3500(2802)",
         "duplicate(0.59 vs salesforce-platform-developer-ii)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 2802,
+      "words": 3838,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -16858,18 +16461,18 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(575)",
-        "duplicate(0.59 vs salesforce-platform-app-builder)"
+        "duplicate(0.59 vs salesforce-platform-developer-i)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5444,
+      "words": 6480,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -16887,18 +16490,18 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(576)",
         "duplicate(0.62 vs salesforce-experience-cloud-consultant)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 6003,
+      "words": 7039,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -16916,18 +16519,18 @@
       "failures": [
         "skeleton-record(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(578)",
         "duplicate(0.61 vs salesforce-sales-cloud-consultant)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(7)"
       ],
-      "words": 5539,
+      "words": 6575,
       "skeleton": {
         "record": [
           "Passing score set by the awarding body",
@@ -16942,27 +16545,11 @@
       "slug": "salesforce-business-analyst",
       "body": "Salesforce",
       "released": true,
-      "failures": [
-        "skeleton-record(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "no-sourceUrl",
-        "record-words<600(569)",
-        "duplicate(0.60 vs salesforce-administrator)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(5)"
-      ],
-      "words": 4998,
+      "failures": [],
+      "warnings": [],
+      "words": 6764,
       "skeleton": {
-        "record": [
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "Professionals and candidates seeking to validate"
-        ],
+        "record": [],
         "program": [],
         "depth": []
       }
@@ -16972,6 +16559,8 @@
       "body": "Oracle",
       "released": true,
       "failures": [
+        "relatedSlugs-invalid(oracle-oci-foundations-associate)",
+        "examEssentials<5(4)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -16995,6 +16584,8 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17054,6 +16645,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17115,6 +16707,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17173,6 +16766,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17233,6 +16827,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17293,6 +16888,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17353,6 +16949,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17412,6 +17009,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17473,6 +17071,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17534,6 +17133,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17595,6 +17195,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17654,6 +17255,7 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17714,6 +17316,7 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17772,6 +17375,7 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17830,6 +17434,7 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17888,6 +17493,7 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -17947,6 +17553,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -18006,6 +17613,7 @@
         "skeleton-record(28)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -18064,6 +17672,7 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -18122,6 +17731,7 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -18180,6 +17790,7 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -18238,6 +17849,7 @@
       "failures": [
         "skeleton-record(28)",
         "skeleton-program(3)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -18293,57 +17905,12 @@
       "slug": "cdl-air-brakes-knowledge-test",
       "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
       "released": true,
-      "failures": [
-        "skeleton-record(28)",
-        "skeleton-program(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(3)",
-        "no-sourceUrl",
-        "duplicate(0.61 vs cdl-combination-vehicles-knowledge-test)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(6)"
-      ],
-      "words": 5405,
+      "failures": [],
+      "warnings": [],
+      "words": 7198,
       "skeleton": {
-        "record": [
-          "verified competence in",
-          "Candidates should review the official handbook",
-          "should review the official handbook for eligibility, exam format, and scoring",
-          "commonly used for career entry, advancement, regulatory compliance",
-          "validates job-ready knowledge and skills in the",
-          "is a professional credential administered by",
-          "Recognized credential from",
-          "Demonstrates verified competence in",
-          "career advancement and may satisfy licensing or employer requirements",
-          "Confirm you meet any eligibility or prerequisites",
-          "Review the official handbook and study materials",
-          "Register and pay through the awarding body or authorized provider",
-          "Schedule and take the exam \\(test center or online proctoring\\)",
-          "Receive your score and, if passed, your credential",
-          "Eligibility varies; many credentials are open to all",
-          "many credentials are open to all, while others require",
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "computer-based \\(test center or online remote proctoring\\)",
-          "Topic area tested on the exam; see the official blueprint",
-          "Professionals and candidates seeking to validate",
-          "Create an account, select the exam, pay the fee, and schedule a date",
-          "through .{0,80}official portal or an authorized test provider \\(e\\.g\\.",
-          "confirm the current fee on the official registration page",
-          "fees? vary by location and currency",
-          "bodies allow retakes after a waiting period",
-          "job-ready competence in",
-          "retake policies vary"
-        ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "record": [],
+        "program": [],
         "depth": []
       }
     },
@@ -18351,57 +17918,12 @@
       "slug": "cdl-combination-vehicles-knowledge-test",
       "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
       "released": true,
-      "failures": [
-        "skeleton-record(28)",
-        "skeleton-program(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(3)",
-        "no-sourceUrl",
-        "duplicate(0.62 vs cdl-hazmat-endorsement-knowledge-test)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(6)"
-      ],
-      "words": 5370,
+      "failures": [],
+      "warnings": [],
+      "words": 7052,
       "skeleton": {
-        "record": [
-          "verified competence in",
-          "Candidates should review the official handbook",
-          "should review the official handbook for eligibility, exam format, and scoring",
-          "commonly used for career entry, advancement, regulatory compliance",
-          "validates job-ready knowledge and skills in the",
-          "is a professional credential administered by",
-          "Recognized credential from",
-          "Demonstrates verified competence in",
-          "career advancement and may satisfy licensing or employer requirements",
-          "Confirm you meet any eligibility or prerequisites",
-          "Review the official handbook and study materials",
-          "Register and pay through the awarding body or authorized provider",
-          "Schedule and take the exam \\(test center or online proctoring\\)",
-          "Receive your score and, if passed, your credential",
-          "Eligibility varies; many credentials are open to all",
-          "many credentials are open to all, while others require",
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "computer-based \\(test center or online remote proctoring\\)",
-          "Topic area tested on the exam; see the official blueprint",
-          "Professionals and candidates seeking to validate",
-          "Create an account, select the exam, pay the fee, and schedule a date",
-          "through .{0,80}official portal or an authorized test provider \\(e\\.g\\.",
-          "confirm the current fee on the official registration page",
-          "fees? vary by location and currency",
-          "bodies allow retakes after a waiting period",
-          "job-ready competence in",
-          "retake policies vary"
-        ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "record": [],
+        "program": [],
         "depth": []
       }
     },
@@ -18409,57 +17931,12 @@
       "slug": "cdl-general-knowledge-test",
       "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
       "released": true,
-      "failures": [
-        "skeleton-record(28)",
-        "skeleton-program(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(3)",
-        "no-sourceUrl",
-        "duplicate(0.62 vs cdl-combination-vehicles-knowledge-test)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(6)"
-      ],
-      "words": 5480,
+      "failures": [],
+      "warnings": [],
+      "words": 7422,
       "skeleton": {
-        "record": [
-          "verified competence in",
-          "Candidates should review the official handbook",
-          "should review the official handbook for eligibility, exam format, and scoring",
-          "commonly used for career entry, advancement, regulatory compliance",
-          "validates job-ready knowledge and skills in the",
-          "is a professional credential administered by",
-          "Recognized credential from",
-          "Demonstrates verified competence in",
-          "career advancement and may satisfy licensing or employer requirements",
-          "Confirm you meet any eligibility or prerequisites",
-          "Review the official handbook and study materials",
-          "Register and pay through the awarding body or authorized provider",
-          "Schedule and take the exam \\(test center or online proctoring\\)",
-          "Receive your score and, if passed, your credential",
-          "Eligibility varies; many credentials are open to all",
-          "many credentials are open to all, while others require",
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "computer-based \\(test center or online remote proctoring\\)",
-          "Topic area tested on the exam; see the official blueprint",
-          "Professionals and candidates seeking to validate",
-          "Create an account, select the exam, pay the fee, and schedule a date",
-          "through .{0,80}official portal or an authorized test provider \\(e\\.g\\.",
-          "confirm the current fee on the official registration page",
-          "fees? vary by location and currency",
-          "bodies allow retakes after a waiting period",
-          "job-ready competence in",
-          "retake policies vary"
-        ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "record": [],
+        "program": [],
         "depth": []
       }
     },
@@ -18467,59 +17944,12 @@
       "slug": "cdl-hazmat-endorsement-knowledge-test",
       "body": "State Driver Licensing Agencies (AAMVA model curriculum)",
       "released": true,
-      "failures": [
-        "skeleton-record(30)",
-        "skeleton-program(3)",
-        "meta-generic:pass",
-        "costBreakdown<3-or-no-total",
-        "timeline<3",
-        "faqs<6(4)",
-        "faq-answer-length(4)",
-        "no-sourceUrl",
-        "duplicate(0.63 vs cdl-passenger-endorsement-knowledge-test)"
-      ],
-      "warnings": [
-        "depth-rows-without-source:resourceComparison(5)"
-      ],
-      "words": 4589,
+      "failures": [],
+      "warnings": [],
+      "words": 6414,
       "skeleton": {
-        "record": [
-          "verified competence in",
-          "Candidates should review the official handbook",
-          "should review the official handbook for eligibility, exam format, and scoring",
-          "commonly used for career entry, advancement, regulatory compliance",
-          "validates job-ready knowledge and skills in the",
-          "is a professional credential administered by",
-          "Recognized credential from",
-          "Demonstrates verified competence in",
-          "career advancement and may satisfy licensing or employer requirements",
-          "Confirm you meet any eligibility or prerequisites",
-          "Review the official handbook and study materials",
-          "Register and pay through the awarding body or authorized provider",
-          "Schedule and take the exam \\(test center or online proctoring\\)",
-          "Receive your score and, if passed, your credential",
-          "Eligibility varies; many credentials are open to all",
-          "many credentials are open to all, while others require",
-          "Passing score set by the awarding body",
-          "see the official score report",
-          "computer-based \\(test center or online remote proctoring\\)",
-          "Topic area tested on the exam; see the official blueprint",
-          "Professionals and candidates seeking to validate",
-          "Create an account, select the exam, pay the fee, and schedule a date",
-          "through .{0,80}official portal or an authorized test provider \\(e\\.g\\.",
-          "confirm the current fee on the official registration page",
-          "fees? vary by location and currency",
-          "Varies by credential",
-          "usually requires continuing education or a recertification exam — see",
-          "bodies allow retakes after a waiting period",
-          "job-ready competence in",
-          "retake policies vary"
-        ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "record": [],
+        "program": [],
         "depth": []
       }
     },
@@ -18529,19 +17959,18 @@
       "released": true,
       "failures": [
         "skeleton-record(30)",
-        "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "duplicate(0.63 vs cdl-basic-vehicle-control-skills-test)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 4381,
+      "words": 5471,
       "skeleton": {
         "record": [
           "verified competence in",
@@ -18575,11 +18004,7 @@
           "job-ready competence in",
           "retake policies vary"
         ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "program": [],
         "depth": []
       }
     },
@@ -18589,20 +18014,19 @@
       "released": true,
       "failures": [
         "skeleton-record(30)",
-        "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(583)",
-        "duplicate(0.63 vs cdl-hazmat-endorsement-knowledge-test)"
+        "duplicate(0.62 vs cdl-school-bus-endorsement-knowledge-test)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 5169,
+      "words": 6259,
       "skeleton": {
         "record": [
           "verified competence in",
@@ -18636,11 +18060,7 @@
           "job-ready competence in",
           "retake policies vary"
         ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "program": [],
         "depth": []
       }
     },
@@ -18650,20 +18070,19 @@
       "released": true,
       "failures": [
         "skeleton-record(30)",
-        "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(590)",
         "duplicate(0.61 vs cdl-basic-vehicle-control-skills-test)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(5)"
       ],
-      "words": 4243,
+      "words": 5333,
       "skeleton": {
         "record": [
           "verified competence in",
@@ -18697,11 +18116,7 @@
           "job-ready competence in",
           "retake policies vary"
         ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "program": [],
         "depth": []
       }
     },
@@ -18711,20 +18126,19 @@
       "released": true,
       "failures": [
         "skeleton-record(30)",
-        "skeleton-program(3)",
         "meta-generic:pass",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
         "faq-answer-length(4)",
-        "no-sourceUrl",
         "record-words<600(595)",
-        "duplicate(0.63 vs cdl-hazmat-endorsement-knowledge-test)"
+        "duplicate(0.62 vs cdl-passenger-endorsement-knowledge-test)"
       ],
       "warnings": [
         "depth-rows-without-source:resourceComparison(6)"
       ],
-      "words": 5454,
+      "words": 6544,
       "skeleton": {
         "record": [
           "verified competence in",
@@ -18758,11 +18172,7 @@
           "job-ready competence in",
           "retake policies vary"
         ],
-        "program": [
-          "is the awarding organization for the credentials listed on this page",
-          "Visit the awarding body.s official website",
-          "Varies by credential"
-        ],
+        "program": [],
         "depth": []
       }
     },
@@ -18774,6 +18184,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -18833,6 +18245,8 @@
       "body": "Federal Aviation Administration",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(3)",
         "faqs<6(5)",
         "faq-answer-length(5)",
         "record-words<600(520)"
@@ -18852,6 +18266,8 @@
       "body": "Federal Aviation Administration",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(3)",
         "faqs<6(5)",
         "faq-answer-length(5)",
         "record-words<600(473)"
@@ -18871,6 +18287,8 @@
       "body": "Federal Aviation Administration",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(3)",
         "faqs<6(5)",
         "faq-answer-length(5)",
         "record-words<600(441)"
@@ -18891,6 +18309,8 @@
       "released": true,
       "failures": [
         "topics<4(3)",
+        "relatedSlugs<3(2)",
+        "examEssentials<5(3)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(5)",
@@ -18912,6 +18332,8 @@
       "body": "Federal Aviation Administration (FAASafety.gov)",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(3)",
         "costBreakdown<3-or-no-total",
         "faqs<6(5)",
         "faq-answer-length(5)",
@@ -18932,6 +18354,8 @@
       "body": "Federal Aviation Administration",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(3)",
         "faqs<6(5)",
         "faq-answer-length(5)",
         "record-words<600(446)"
@@ -18951,6 +18375,8 @@
       "body": "Federal Aviation Administration (approved test administrators)",
       "released": true,
       "failures": [
+        "relatedSlugs<3(2)",
+        "examEssentials<5(3)",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(5)",
@@ -18975,6 +18401,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(1)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -19036,6 +18464,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
@@ -19097,6 +18527,8 @@
         "skeleton-record(30)",
         "skeleton-program(3)",
         "meta-generic:pass",
+        "relatedSlugs<3(2)",
+        "quickAnswer-advantages<4",
         "costBreakdown<3-or-no-total",
         "timeline<3",
         "faqs<6(4)",
