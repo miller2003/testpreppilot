@@ -1,0 +1,479 @@
+    MI: {
+      education: { hours: 'Permit required; shall-issue to residents and non-residents', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Michigan runs a shall-issue CPL open to residents and non-residents, with county clerks processing applications.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Is Michigan a permitless state?', a: 'No \u2014 a permit is required for concealed carry.' },
+        { q: 'Does Michigan require a permit?', a: 'Yes \u2014 a Concealed Pistol Licence is required; Michigan is not a permitless state.' },
+        { q: 'Is it shall-issue?', a: 'Yes \u2014 qualified applicants must be issued, residents and non-residents alike.' },
+        { q: 'Is training required?', a: 'Yes \u2014 statutory training precedes the application.' },
+        { q: 'Is open carry lawful?', a: 'Yes \u2014 Michigan permits open carry without a CPL, though preemption disputes persist locally.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'GunTransfers \u2014 CCW laws by state 2026', url: 'https://guntransfers.com/concealed-carry-laws-by-state-2026/', checkedOn: '2026-10' }
+      ]
+    },
+    MN: {
+      education: { hours: 'Permit required; shall-issue to residents and non-residents', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Minnesota issues permits-to-carry on a shall-issue basis through county sheriffs, to residents and non-residents.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Is Minnesota a permitless state?', a: 'No \u2014 a permit is required for concealed carry.' },
+        { q: 'Is Minnesota permitless?', a: 'No \u2014 a permit-to-carry from the county sheriff is required.' },
+        { q: 'Is it shall-issue?', a: 'Yes \u2014 sheriffs must issue to qualified applicants, including non-residents.' },
+        { q: 'Is training required?', a: 'Yes \u2014 an approved training course accompanies the application.' },
+        { q: 'How long does a permit last?', a: 'Minnesota permits run on the multi-year statutory cycle with renewals through the sheriff.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'GunTransfers \u2014 CCW laws by state 2026', url: 'https://guntransfers.com/concealed-carry-laws-by-state-2026/', checkedOn: '2026-10' }
+      ]
+    },
+    MS: {
+      education: { hours: 'Constitutional carry (permitless age 18); shall-issue permits available for reciprocity', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Mississippi\u2019s permitless carry starts at 18, one of the younger thresholds, with the enhanced carry permit retained for reciprocity.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in Mississippi?', a: 'No \u2014 Mississippi has permitless carry for eligible adults (18), with the optional shall-issue permit retained for reciprocity.' },
+        { q: 'What is the permitless age in Mississippi?', a: '18 \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'Is Mississippi permitless?', a: 'Yes \u2014 constitutional carry from age 18.' },
+        { q: 'What is the enhanced permit?', a: 'An optional training-backed permit issued shall-issue for reciprocity with more states.' },
+        { q: 'Is open carry covered?', a: 'Yes \u2014 both modes are lawful without a permit.' },
+        { q: 'Who is still barred?', a: 'The federal prohibited-person floor applies in full.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' }
+      ]
+    },
+    MO: {
+      education: { hours: 'Constitutional carry (permitless age 21 (18 military)); shall-issue permits available for reciprocity', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Missouri\u2019s permitless age is 21 for civilians, with 18-year carry for active-duty military, Guard, reservists and honorably discharged veterans.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in Missouri?', a: 'No \u2014 Missouri has permitless carry for eligible adults (21 (18 military)), with the optional shall-issue permit retained for reciprocity.' },
+        { q: 'What is the permitless age in Missouri?', a: '21 (18 military) \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'Is Missouri permitless?', a: 'Yes \u2014 constitutional carry for eligible adults 21 and over.' },
+        { q: 'What is the military exception?', a: 'Service members and honorably discharged veterans may carry from 18.' },
+        { q: 'Do permits exist?', a: 'Yes \u2014 shall-issue, to residents and non-residents, for reciprocity.' },
+        { q: 'Is open carry covered?', a: 'Yes \u2014 both modes are lawful without a permit.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' }
+      ]
+    },
+    MT: {
+      education: { hours: 'Constitutional carry (permitless age 18); shall-issue permits available for reciprocity', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Montana\u2019s permitless carry starts at 18, with shall-issue permits available to residents and non-residents.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in Montana?', a: 'No \u2014 Montana has permitless carry for eligible adults (18), with the optional shall-issue permit retained for reciprocity.' },
+        { q: 'What is the permitless age in Montana?', a: '18 \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'Is Montana permitless?', a: 'Yes \u2014 constitutional carry from age 18.' },
+        { q: 'Who can get a permit?', a: 'Residents and non-residents, shall-issue.' },
+        { q: 'Why keep a permit?', a: 'Reciprocity with permit states.' },
+        { q: 'Are locations restricted?', a: 'Yes \u2014 standard sensitive places still apply.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' }
+      ]
+    },
+    NE: {
+      education: { hours: 'Constitutional carry (permitless age 21); shall-issue permits available for reciprocity', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Nebraska adopted permitless carry in 2023, with its shall-issue permit retained for reciprocity.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in Nebraska?', a: 'No \u2014 Nebraska has permitless carry for eligible adults (21), with the optional shall-issue permit retained for reciprocity.' },
+        { q: 'What is the permitless age in Nebraska?', a: '21 \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'Is Nebraska permitless?', a: 'Yes \u2014 since 2023, for eligible adults 21 and over.' },
+        { q: 'Do permits still exist?', a: 'Yes \u2014 shall-issue, mainly for travel reciprocity.' },
+        { q: 'Is training required for permitless carry?', a: 'No \u2014 though the optional permit path includes training.' },
+        { q: 'Is open carry covered?', a: 'Yes \u2014 both modes are lawful without a permit.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' }
+      ]
+    },
+    NV: {
+      education: { hours: 'Permit required; shall-issue to residents and non-residents', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Nevada issues shall-issue permits to residents and non-residents through county sheriffs.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Is Nevada a permitless state?', a: 'No \u2014 a permit is required for concealed carry.' },
+        { q: 'Is Nevada permitless?', a: 'No \u2014 a permit is required for concealed carry.' },
+        { q: 'Is it shall-issue?', a: 'Yes \u2014 qualified applicants must be issued, residents and non-residents alike.' },
+        { q: 'Is training required?', a: 'Yes \u2014 an approved course accompanies the application.' },
+        { q: 'Is open carry lawful?', a: 'Yes \u2014 Nevada permits open carry without a permit.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'GunTransfers \u2014 CCW laws by state 2026', url: 'https://guntransfers.com/concealed-carry-laws-by-state-2026/', checkedOn: '2026-10' }
+      ]
+    },
+    NH: {
+      education: { hours: 'Constitutional carry (permitless age 18); shall-issue permits available for reciprocity', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'New Hampshire\u2019s permitless carry starts at 18, and its shall-issue licence remains open to non-residents \u2014 a popular East-Coast travel permit.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in New Hampshire?', a: 'No \u2014 New Hampshire has permitless carry for eligible adults (18), with the optional shall-issue permit retained for reciprocity.' },
+        { q: 'What is the permitless age in New Hampshire?', a: '18 \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'Is New Hampshire permitless?', a: 'Yes \u2014 constitutional carry from age 18.' },
+        { q: 'Who can get the licence?', a: 'Residents and non-residents, shall-issue.' },
+        { q: 'Is training required for permitless carry?', a: 'No.' },
+        { q: 'Why is the NH licence popular?', a: 'It is widely recognised and available to non-residents.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' }
+      ]
+    },
+    NJ: {
+      education: { hours: 'Permit required; shall-issue in name after Bruen but among the heaviest-requirement jurisdictions', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'New Jersey is in the heaviest-requirement group \u2014 shall-issue in name after Bruen, with extensive requirements and expanded sensitive-place bans.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Is New Jersey a shall-issue state?', a: 'In name after Bruen \u2014 but it remains among the heaviest-requirement jurisdictions with broad sensitive-place bans.' },
+        { q: 'Is New Jersey shall-issue?', a: 'In name after Bruen; in practice the requirement stack remains among the heaviest.' },
+        { q: 'What did Bruen change?', a: 'It ended proper-cause discretion, forcing New Jersey to issue to qualified applicants.' },
+        { q: 'How did New Jersey respond?', a: 'With expanded sensitive-place bans and added requirements rather than liberalisation.' },
+        { q: 'Do outside permits work here?', a: 'Effectively no \u2014 New Jersey does not honour out-of-state permits.' }
+      ],
+      sources: [
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'GunTransfers \u2014 CCW laws by state 2026', url: 'https://guntransfers.com/concealed-carry-laws-by-state-2026/', checkedOn: '2026-10' },
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' }
+      ]
+    },
+    NM: {
+      education: { hours: 'Permit required; shall-issue to residents and non-residents', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'New Mexico issues shall-issue permits to residents and non-residents through the Department of Public Safety.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Is New Mexico a permitless state?', a: 'No \u2014 a permit is required for concealed carry.' },
+        { q: 'Is New Mexico permitless?', a: 'No \u2014 a concealed-carry licence is required.' },
+        { q: 'Is it shall-issue?', a: 'Yes \u2014 qualified applicants must be issued, including non-residents.' },
+        { q: 'Is training required?', a: 'Yes \u2014 an approved course precedes the application.' },
+        { q: 'Is open carry lawful?', a: 'Yes \u2014 New Mexico permits open carry without a licence.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'GunTransfers \u2014 CCW laws by state 2026', url: 'https://guntransfers.com/concealed-carry-laws-by-state-2026/', checkedOn: '2026-10' }
+      ]
+    },
+    NY: {
+      education: { hours: 'Permit required; shall-issue in name after Bruen but among the heaviest-requirement jurisdictions', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'New York responded to Bruen with the CCIA framework \u2014 shall-issue licensing wrapped in extensive sensitive-place bans and character requirements.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Is New York a shall-issue state?', a: 'In name after Bruen \u2014 but it remains among the heaviest-requirement jurisdictions with broad sensitive-place bans.' },
+        { q: 'Is New York shall-issue now?', a: 'Licensing is shall-issue post-Bruen, but the CCIA \u2014 New York\u2019s implementing law \u2014 layered on extensive restrictions.' },
+        { q: 'What is the CCIA?', a: 'The Concealed Carry Improvement Act: added training, character references and a long sensitive-places list.' },
+        { q: 'Do outside permits work in New York?', a: 'No \u2014 New York does not recognise other states\u2019 permits.' },
+        { q: 'Does the New York licence travel?', a: 'Recognition elsewhere is minimal; New York permits are largely home-state documents.' }
+      ],
+      sources: [
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'GunTransfers \u2014 CCW laws by state 2026', url: 'https://guntransfers.com/concealed-carry-laws-by-state-2026/', checkedOn: '2026-10' },
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' }
+      ]
+    },
+    NC: {
+      education: { hours: 'Permit required; shall-issue to residents and non-residents', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'North Carolina issues shall-issue permits to residents and non-residents through county sheriffs.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Is North Carolina a permitless state?', a: 'No \u2014 a permit is required for concealed carry.' },
+        { q: 'Is North Carolina permitless?', a: 'No \u2014 a concealed-carry permit from the county sheriff is required.' },
+        { q: 'Is it shall-issue?', a: 'Yes \u2014 qualified applicants must be issued.' },
+        { q: 'Is training required?', a: 'Yes \u2014 a statutorily defined course precedes the application.' },
+        { q: 'Is open carry lawful?', a: 'Yes \u2014 North Carolina permits open carry without a permit.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'GunTransfers \u2014 CCW laws by state 2026', url: 'https://guntransfers.com/concealed-carry-laws-by-state-2026/', checkedOn: '2026-10' }
+      ]
+    },
+    ND: {
+      education: { hours: 'Constitutional carry (permitless age 18); shall-issue permits available for reciprocity', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'North Dakota\u2019s permitless carry starts at 18, with shall-issue licences \u2014 including a Class 1 option \u2014 available to residents and non-residents.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in North Dakota?', a: 'No \u2014 North Dakota has permitless carry for eligible adults (18), with the optional shall-issue permit retained for reciprocity.' },
+        { q: 'What is the permitless age in North Dakota?', a: '18 \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'Is North Dakota permitless?', a: 'Yes \u2014 constitutional carry from age 18.' },
+        { q: 'What are the licence classes?', a: 'North Dakota issues Class 1 and Class 2 licences, the Class 1 carrying broader reciprocity through testing/training.' },
+        { q: 'Who can apply?', a: 'Residents and non-residents, shall-issue.' },
+        { q: 'Is open carry covered?', a: 'Yes \u2014 both modes are lawful without a licence.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' }
+      ]
+    },
+    OH: {
+      education: { hours: 'Constitutional carry (permitless age 21); shall-issue permits available for reciprocity', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Ohio enacted permitless carry in 2022; its shall-issue licence remains available to residents and non-residents.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in Ohio?', a: 'No \u2014 Ohio has permitless carry for eligible adults (21), with the optional shall-issue permit retained for reciprocity.' },
+        { q: 'What is the permitless age in Ohio?', a: '21 \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'When did Ohio go permitless?', a: '2022 \u2014 constitutional carry for eligible adults 21 and over.' },
+        { q: 'Do permits still exist?', a: 'Yes \u2014 shall-issue to residents and non-residents.' },
+        { q: 'Why keep an Ohio licence?', a: 'Reciprocity, plus the training foundation it documents.' },
+        { q: 'Is open carry covered?', a: 'Yes \u2014 both modes are lawful without a licence.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' }
+      ]
+    },
+    OK: {
+      education: { hours: 'Constitutional carry (permitless age 21 (18 military)); shall-issue permits available for reciprocity', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Oklahoma\u2019s 2019 permitless law predates Bruen; the permitless age is 21, with 18-year carry for service members and honorably discharged veterans.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in Oklahoma?', a: 'No \u2014 Oklahoma has permitless carry for eligible adults (21 (18 military)), with the optional shall-issue permit retained for reciprocity.' },
+        { q: 'What is the permitless age in Oklahoma?', a: '21 (18 military) \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'When did Oklahoma go permitless?', a: '2019 \u2014 before the Bruen decision.' },
+        { q: 'What is the military exception?', a: 'Service members and honorably discharged veterans may carry from 18.' },
+        { q: 'Do permits exist?', a: 'Yes \u2014 shall-issue, for reciprocity.' },
+        { q: 'Is open carry covered?', a: 'Yes \u2014 both modes are lawful without a permit.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' }
+      ]
+    },
+    OR: {
+      education: { hours: 'Permit required; shall-issue to residents and non-residents', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Oregon issues shall-issue permits to residents and non-residents through county sheriffs, though Measure 114 litigation has reshaped parts of the firearms framework.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Is Oregon a permitless state?', a: 'No \u2014 a permit is required for concealed carry.' },
+        { q: 'Is Oregon permitless?', a: 'No \u2014 a concealed-handgun licence from the county sheriff is required.' },
+        { q: 'Is it shall-issue?', a: 'Yes \u2014 qualified applicants must be issued, including non-residents.' },
+        { q: 'Is training required?', a: 'Yes \u2014 a qualifying course accompanies the application.' },
+        { q: 'Is open carry lawful?', a: 'Generally yes, though some cities require permits for open carry.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'GunTransfers \u2014 CCW laws by state 2026', url: 'https://guntransfers.com/concealed-carry-laws-by-state-2026/', checkedOn: '2026-10' }
+      ]
+    },
+    PA: {
+      education: { hours: 'Permit required; shall-issue to residents and non-residents', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Pennsylvania issues Licence to Carry Firearms (LTCF) permits on a shall-issue basis through county sheriffs, to residents and non-residents.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Is Pennsylvania a permitless state?', a: 'No \u2014 a permit is required for concealed carry.' },
+        { q: 'Is Pennsylvania permitless?', a: 'No \u2014 an LTCF is required for concealed carry.' },
+        { q: 'Is it shall-issue?', a: 'Yes \u2014 county sheriffs must issue to qualified applicants.' },
+        { q: 'Who can apply?', a: 'Residents and non-residents both.' },
+        { q: 'Is open carry lawful?', a: 'Yes \u2014 Pennsylvania generally permits open carry without a licence.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'GunTransfers \u2014 CCW laws by state 2026', url: 'https://guntransfers.com/concealed-carry-laws-by-state-2026/', checkedOn: '2026-10' }
+      ]
+    },
+    RI: {
+      education: { hours: 'Permit required; shall-issue to residents and non-residents', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Trackers classify Rhode Island as shall-issue for residents and non-residents, with the attorney general or courts as issuer.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Is Rhode Island a permitless state?', a: 'No \u2014 a permit is required for concealed carry.' },
+        { q: 'Is Rhode Island shall-issue?', a: 'Per the 2026 trackers, yes \u2014 a notable classification for a Northeastern state.' },
+        { q: 'Who issues the permit?', a: 'The attorney general (residents) with a court route available.' },
+        { q: 'Is training required?', a: 'Yes \u2014 a qualifying course accompanies applications.' },
+        { q: 'Do permits travel?', a: 'Recognition depends on other states\u2019 lists.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'GunTransfers \u2014 CCW laws by state 2026', url: 'https://guntransfers.com/concealed-carry-laws-by-state-2026/', checkedOn: '2026-10' }
+      ]
+    },
+    SC: {
+      education: { hours: 'Constitutional carry (permitless age 18); shall-issue permits available for reciprocity', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'South Carolina enacted permitless carry effective 7 March 2024, with permitless carry from 18 and shall-issue CWP permits retained for reciprocity.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in South Carolina?', a: 'No \u2014 South Carolina has permitless carry for eligible adults (18), with the optional shall-issue permit retained for reciprocity.' },
+        { q: 'What is the permitless age in South Carolina?', a: '18 \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'How new is South Carolina permitless carry?', a: 'Effective 7 March 2024 \u2014 alongside Louisiana, the most recent addition.' },
+        { q: 'What is the permitless age?', a: '18.' },
+        { q: 'Do CWP permits continue?', a: 'Yes \u2014 shall-issue, mainly for reciprocity.' },
+        { q: 'Is open carry covered?', a: 'Yes \u2014 both modes are lawful without a permit.' }
+      ],
+      sources: [
+        { label: 'LegalClarity \u2014 Constitutional carry map', url: 'https://legalclarity.org/constitutional-carry-states-map-rules-and-restrictions', checkedOn: '2026-10' },
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' }
+      ]
+    },
+    SD: {
+      education: { hours: 'Constitutional carry (permitless age 18); shall-issue permits available for reciprocity', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'South Dakota\u2019s permitless carry starts at 18, with shall-issue permits available to residents and non-residents.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in South Dakota?', a: 'No \u2014 South Dakota has permitless carry for eligible adults (18), with the optional shall-issue permit retained for reciprocity.' },
+        { q: 'What is the permitless age in South Dakota?', a: '18 \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'Is South Dakota permitless?', a: 'Yes \u2014 constitutional carry from age 18.' },
+        { q: 'Who can get a permit?', a: 'Residents and non-residents, shall-issue.' },
+        { q: 'What does the permit add?', a: 'Reciprocity with permit states.' },
+        { q: 'Is open carry covered?', a: 'Yes \u2014 both modes are lawful without a permit.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' }
+      ]
+    },
+    TN: {
+      education: { hours: 'Constitutional carry (permitless age 21 (18 military)); shall-issue permits available for reciprocity', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Tennessee\u2019s 2021 permitless law predates Bruen; the age is 21, with 18-year carry for service members and honorably discharged veterans, and shall-issue permits retained.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in Tennessee?', a: 'No \u2014 Tennessee has permitless carry for eligible adults (21 (18 military)), with the optional shall-issue permit retained for reciprocity.' },
+        { q: 'What is the permitless age in Tennessee?', a: '21 (18 military) \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'When did Tennessee go permitless?', a: '2021 \u2014 before Bruen.' },
+        { q: 'What is the military exception?', a: 'Service members and honorably discharged veterans may carry from 18.' },
+        { q: 'Do permits exist?', a: 'Yes \u2014 shall-issue, for reciprocity.' },
+        { q: 'Is open carry covered?', a: 'Yes \u2014 both modes are lawful without a permit.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' }
+      ]
+    },
+    TX: {
+      education: { hours: 'Constitutional carry (permitless age 21); shall-issue permits available for reciprocity', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Texas\u2019s 2021 permitless law carries from 21; its Licence to Carry remains shall-issue for residents and non-residents, and the v1 dossier notes roughly 38 states recognise it.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in Texas?', a: 'No \u2014 Texas has permitless carry for eligible adults (21), with the optional shall-issue permit retained for reciprocity.' },
+        { q: 'What is the permitless age in Texas?', a: '21 \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'When did Texas go permitless?', a: '2021 \u2014 constitutional carry for eligible adults 21 and over.' },
+        { q: 'What is the LTC for now?', a: 'Reciprocity \u2014 the Texas LTC is recognised in roughly 38 states, per the v1-verified practice note.' },
+        { q: 'Is training required for permitless carry?', a: 'No \u2014 though the LTC path includes training.' },
+        { q: 'Is open carry covered?', a: 'Yes \u2014 both modes are lawful without a licence.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' }
+      ]
+    },
+    UT: {
+      education: { hours: 'Constitutional carry (permitless age 21); shall-issue permits available for reciprocity', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Utah pairs permitless carry with its widely recognised concealed-firearm permit, issued shall-issue to residents and non-residents.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in Utah?', a: 'No \u2014 Utah has permitless carry for eligible adults (21), with the optional shall-issue permit retained for reciprocity.' },
+        { q: 'What is the permitless age in Utah?', a: '21 \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'Is Utah permitless?', a: 'Yes \u2014 constitutional carry for eligible adults.' },
+        { q: 'Why is the Utah permit famous?', a: 'Its shall-issue permit is one of the most widely recognised non-resident permits in the country.' },
+        { q: 'Is training required for the permit?', a: 'Yes \u2014 the permit path includes training even though permitless carry does not.' },
+        { q: 'Is open carry covered?', a: 'Yes \u2014 both modes are lawful without a permit.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' }
+      ]
+    },
+    VT: {
+      education: { hours: 'Constitutional carry with no permit system at all \u2014 Vermont has never issued carry permits', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Vermont is the original constitutional-carry state \u2014 it has never had a carry-permit system at any point in its history.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry in Vermont?', a: 'No \u2014 and Vermont has never had one: it is the only state with no permit system in its history.' },
+        { q: 'Has Vermont ever required a permit?', a: 'No \u2014 Vermont is the only state that has never had a carry-permit system.' },
+        { q: 'Is there any licence to obtain?', a: 'No \u2014 Vermont issues no carry permits, which also means no reciprocity document exists.' },
+        { q: 'What governs carrying here?', a: 'Eligibility under state and federal law, plus location restrictions.' },
+        { q: 'Is open carry covered?', a: 'Yes \u2014 both modes are lawful without any permit.' }
+      ],
+      sources: [
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry map', url: 'https://legalclarity.org/constitutional-carry-states-map-rules-and-restrictions', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' }
+      ]
+    },
+    VA: {
+      education: { hours: 'Permit required; shall-issue to residents and non-residents', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Virginia is shall-issue today, but a 2027 law shifts reciprocity decisions to the Attorney General on 1 July 2027 and ends resident carry on out-of-state permits (military excepted).', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Is Virginia a permitless state?', a: 'No \u2014 a permit is required for concealed carry.' },
+        { q: 'What changes in Virginia in 2027?', a: 'From 1 July 2027 the Attorney General decides which states\u2019 permits are honoured \u2014 based on substantial similarity \u2014 and Virginia residents can no longer carry on an out-of-state permit, with active-duty service members and spouses excepted.' },
+        { q: 'Is Virginia shall-issue?', a: 'Yes \u2014 qualified applicants must be issued, residents and non-residents alike.' },
+        { q: 'Is training required?', a: 'Yes \u2014 a qualifying course precedes the application.' },
+        { q: 'What did the Eighth Circuit decide about reciprocity?', a: 'In Johnson v. Jacobson (cert denied 5 October 2026), reciprocity is interstate courtesy, not a constitutional right.' }
+      ],
+      sources: [
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'GunTransfers \u2014 CCW laws by state 2026', url: 'https://guntransfers.com/concealed-carry-laws-by-state-2026/', checkedOn: '2026-10' }
+      ]
+    },
+    WA: {
+      education: { hours: 'Permit required; shall-issue to residents and non-residents', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Washington issues shall-issue concealed pistol licences to residents and non-residents, including a lifetime option.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Is Washington a permitless state?', a: 'No \u2014 a permit is required for concealed carry.' },
+        { q: 'Is Washington permitless?', a: 'No \u2014 a concealed pistol licence is required.' },
+        { q: 'Is it shall-issue?', a: 'Yes \u2014 including to non-residents.' },
+        { q: 'Is there a lifetime licence?', a: 'Yes \u2014 Washington offers a lifetime CPL, one of the few states to do so.' },
+        { q: 'Is training required?', a: 'No training prerequisite attaches to the CPL itself.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'GunTransfers \u2014 CCW laws by state 2026', url: 'https://guntransfers.com/concealed-carry-laws-by-state-2026/', checkedOn: '2026-10' }
+      ]
+    },
+    WV: {
+      education: { hours: 'Constitutional carry (permitless age 18 (from 12 June 2026)); shall-issue permits available for reciprocity', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'HB 4106 lowered West Virginia\u2019s permitless age from 21 to 18 effective 12 June 2026, with shall-issue permits retained for residents and non-residents.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in West Virginia?', a: 'No \u2014 West Virginia has permitless carry for eligible adults (18 (from 12 June 2026)), with the optional shall-issue permit retained for reciprocity.' },
+        { q: 'What is the permitless age in West Virginia?', a: '18 (from 12 June 2026) \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'What changed in West Virginia in 2026?', a: 'HB 4106 \u2014 effective 12 June 2026 \u2014 dropped the permitless-carry age from 21 to 18.' },
+        { q: 'Do permits still exist?', a: 'Yes \u2014 shall-issue to residents and non-residents, mainly for reciprocity.' },
+        { q: 'Is training required for permitless carry?', a: 'No.' },
+        { q: 'Is open carry covered?', a: 'Yes \u2014 both modes are lawful without a permit.' }
+      ],
+      sources: [
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' }
+      ]
+    },
+    WI: {
+      education: { hours: 'Permit required; shall-issue to residents and non-residents', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Wisconsin issues shall-issue licences to residents and non-residents through the Department of Justice.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Is Wisconsin a permitless state?', a: 'No \u2014 a permit is required for concealed carry.' },
+        { q: 'Is Wisconsin permitless?', a: 'No \u2014 a concealed-carry licence is required.' },
+        { q: 'Is it shall-issue?', a: 'Yes \u2014 qualified applicants must be issued, residents and non-residents alike.' },
+        { q: 'Is training required?', a: 'Yes \u2014 a qualifying course accompanies the application.' },
+        { q: 'Is open carry lawful?', a: 'Yes \u2014 Wisconsin permits open carry without a licence.' }
+      ],
+      sources: [
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'GunTransfers \u2014 CCW laws by state 2026', url: 'https://guntransfers.com/concealed-carry-laws-by-state-2026/', checkedOn: '2026-10' }
+      ]
+    },
+    WY: {
+      education: { hours: 'Constitutional carry; shall-issue permits issued to residents only', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'HB0096 (2026) lowered the Wyoming permit age to 18 effective 1 July 2026; permitless carry runs at 21 for residents and non-residents, and shall-issue permits go to residents only.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: 'Do I need a permit to carry concealed in Wyoming?', a: 'No \u2014 Wyoming has constitutional carry; the shall-issue permit is residents-only and used mainly for reciprocity.' },
+        { q: 'What is the permitless age in Wyoming?', a: '21 (permit 18 from 1 July 2026) \u2014 the state\u2019s published 2026 threshold.' },
+        { q: 'Is Wyoming permitless?', a: 'Yes \u2014 for residents and non-residents 21 and over.' },
+        { q: 'What did HB0096 do?', a: 'Lowered the Wyoming permit age to 18 effective 1 July 2026 \u2014 useful for younger residents needing reciprocity documents.' },
+        { q: 'Who can get a Wyoming permit?', a: 'Residents only, shall-issue.' },
+        { q: 'Is open carry covered?', a: 'Yes \u2014 both modes are lawful without a permit.' }
+      ],
+      sources: [
+        { label: 'Freedom\u2019s Lodge \u2014 Concealed Carry by State 2026', url: 'https://freedomslodge.com/concealed-carry-by-state', checkedOn: '2026-10' },
+        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+        { label: 'LegalClarity \u2014 Constitutional carry states', url: 'https://legalclarity.org/constitutional-carry-states-the-full-list-of-29', checkedOn: '2026-10' }
+      ]
+    }

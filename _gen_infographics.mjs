@@ -50,11 +50,21 @@ function statRows(exam, detail) {
     if (len) rows.push(['Length', len]);
     if (detail.program?.body) rows.push(['Awarded by', detail.program.body]);
   } else {
+    // State rows (flagship plan S4). Released state slugs MUST get an SVG —
+    // [slug].astro references /exams/<slug>/infographic.svg unconditionally.
+    // Prefer v2 state-true values; v1 fallbacks are dropped when they carry
+    // draft tokens (S-P5 "≈" estimates must never appear on a released page).
     const f = exam.facts || detail.facts;
+    const v2 = f?.state || null;
     const ag = f?.agency || detail.dossier?.defaultAgency;
     if (ag) rows.push(['Issuing agency', ag]);
     if (exam.stateName) rows.push(['Jurisdiction', exam.stateName]);
-    if (f?.fee) rows.push(['State fees', f.fee]);
+    const fee = v2?.exam?.fee
+      || (f?.fee && !/[\u2248]|\bTBD\b/i.test(String(f.fee)) ? f.fee : null);
+    if (fee) rows.push(['State fees', fee]);
+    if (v2?.wages?.median) {
+      rows.push(['Median wage', `${v2.wages.median}${v2.wages.year ? ` (${v2.wages.year})` : ''}`]);
+    }
   }
   rows.push(['Credential type', exam.type]);
   const cat = categoryById[exam.category];
@@ -106,9 +116,9 @@ function buildSvg(exam, detail) {
     .join('');
 
   const chips = [
-    `<rect x="44" y="${chipsY}" width="${esc((exam.type.length + 2) * 9)}" height="30" rx="15" fill="#eaf0fb"/>`,
+    `<rect x="44" y="${chipsY}" width="${esc((String(exam.type || '').length + 2) * 9)}" height="30" rx="15" fill="#eaf0fb"/>`,
     `<text x="44" y="${chipsY + 20}" font-family="'Courier New', monospace" font-size="13" fill="#1d4ed8">${esc(
-      exam.type
+      exam.type || ''
     )}</text>`,
   ].join('');
 

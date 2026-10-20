@@ -1,0 +1,13 @@
+{
+  "generatedOn": "2026-10-20",
+  "dist": "dist",
+  "note": "No built pages found under C:\\Users\\samja\\Desktop\\testpreppilot-v2\\.claude\\worktrees\\state-exam-pages-quality-06e9b4\\dist\\exams — nothing to check. Build the site first (astro build) or pass --dist.",
+  "perPage": [],
+  "summary": {
+    "passed": 0,
+    "failed": 0,
+    "list": [
+      "No built pages found under C:\\Users\\samja\\Desktop\\testpreppilot-v2\\.claude\\worktrees\\state-exam-pages-quality-06e9b4\\dist\\exams — nothing to check. Build the site first (astro build) or pass --dist."
+    ]
+  }
+}

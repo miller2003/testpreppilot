@@ -7,6 +7,7 @@ import AuthorByline from '../../components/AuthorByline.astro';
 import RelatedExams from '../../components/RelatedExams.astro';
 import SidebarTOC from '../../components/SidebarTOC.astro';
 import MometrixPrep from '../../components/MometrixPrep.astro';
+import StateExamSections from '../../components/StateExamSections.astro';
 import { mometrixFor } from '../../data/mometrix.mjs';
 import { depthFor, depthSections } from '../../data/examCatalog/examDepth.mjs';
 import { releaseDateFor } from '../../data/examCatalog/release-manifest.mjs';
@@ -20,6 +21,10 @@ import {
 export function getStaticPaths() {
   return allExams
     .filter((e) => e.status === 'stub')
+    // Flagship-plan decision B: state rows whose jurisdiction does NOT issue
+    // the credential (offered === false → buildPage === false) never generate
+    // a page. They are thin doorway candidates; the data stays for the hub.
+    .filter((e) => e.buildPage !== false)
     .map((exam) => ({ params: { slug: exam.slug }, props: { exam } }));
 }
 
@@ -55,6 +60,8 @@ const facts = exam.facts || null;
 // Only pages with verified substance are indexable. A national record has to
 // carry a real body of content before we let search engines at it — a thin
 // stub competing for a high-volume query does more harm than no page at all.
+// State pages: 'researched' mode is indexable; 'not-offered' rows never reach
+// render at all (getStaticPaths filters buildPage === false).
 const indexable = mode !== 'placeholder';
 
 // ── national-mode view models ───────────────────────────────────────
@@ -65,6 +72,27 @@ const costs = record?.costBreakdown || null;
 const natTimeline = record?.timeline || [];
 const natFaqs = [...(record?.faqs || []), ...(program?.orgFaqs || [])];
 const regSteps = program?.registrationSteps || [];
+
+// ── state-mode view models (v2 per-state research) ───────────────────
+// FAQ order: this state's own FAQs first, at most 2 template FAQs after.
+// Both the visible #faq section and the FAQPage schema consume pageFaqs,
+// so the rendered order and the structured-data order can never diverge.
+const stateFaqs = mode === 'researched' ? (facts?.state?.stateFaqs || []).filter((f: any) => f?.q && f?.a) : [];
+const pageFaqs =
+  mode === 'researched'
+    ? [
+        ...stateFaqs.map((f: any) => ({ q: f.q, a: f.a, state: true })),
+        ...(dossier?.faqs || []).slice(0, 2).map((f: any) => ({ q: f.q, a: f.a, state: false }))
+      ]
+    : mode === 'national'
+      ? natFaqs
+      : [];
+
+// The displayed compilation date is the earliest checkedOn across the state's
+// own sources — never a build-time year (flagship plan S-P10).
+const stateSources = (facts?.state?.sources || []).filter((s: any) => s?.url);
+const checkedDates = stateSources.map((s: any) => s?.checkedOn).filter(Boolean).sort();
+const lastCompiled = checkedDates[0] || facts?.state?.compiledOn || null;
 
 // Body-level policies only worth a section if at least one is populated.
 const policies = program
@@ -207,8 +235,11 @@ if (showQuickAnswer) {
 pushIf(mode === 'not-offered', { id: 'instead', label: 'What applies instead' });
 
 // Chapter 2 — What you need (eligibility + the exam)
+// On state pages the generic exam section only anchors when v2 state exam
+// data exists — otherwise the table would show national ranges, which the
+// flagship standard forbids on a state page.
 const showEligibility = mode === 'researched' || (mode === 'national' && !!(record.prerequisites || record.eligibility));
-const showExam = mode === 'researched' || (mode === 'national' && !!meta);
+const showExam = (mode === 'researched' && !!facts?.state?.exam) || (mode === 'national' && !!meta);
 if (showEligibility) {
   tocItems.push({ id: 'eligibility', label: 'Eligibility', chapterTitle: 'What you need' });
   if (showExam) {
@@ -291,8 +322,7 @@ if (depthNav.length) {
 
 // Chapter 5 — Reference
 const refItemsStart = tocItems.length;
-const showFaq = (mode === 'researched' && !!dossier?.faqs?.length) ||
-                (mode === 'national' && natFaqs.length > 0);
+const showFaq = pageFaqs.length > 0;
 pushIf(mode === 'placeholder', { id: 'building', label: "What we're building" });
 if (compact) {
   pushIf(true, { id: 'reciprocity', label: 'Cross-state validity', chapterTitle: 'Reference' });
@@ -307,7 +337,10 @@ tocItems.push({ id: 'sources', label: 'Sources' });
 
 // Affiliate study materials (Mometrix). The block renders just before the
 // costs section, so its TOC entry slots in after the last "what you need" item.
-const hasPrep = mode === 'national' && !!mometrixFor(exam.slug);
+// State pages are eligible too: a product keyed to the exact state slug OR to
+// the template's national credential unlocks the block (flagship plan S-P11).
+const prepProduct = mometrixFor(exam.slug) || mometrixFor(exam.templateKey || '');
+const hasPrep = (mode === 'national' || mode === 'researched') && !!prepProduct;
 if (hasPrep) {
   const beforePrep = new Set(['quick', 'overview', 'instead', 'eligibility', 'exam', 'topics']);
   let at = -1;
@@ -331,8 +364,7 @@ const metaDescription = clampMeta(
 
 const canonicalUrl = new URL(`/exams/${exam.slug}`, Astro.site || 'https://testpreppilot.com').toString();
 
-const schemaFaqs =
-  mode === 'researched' ? dossier?.faqs || [] : mode === 'national' ? natFaqs : [];
+const schemaFaqs = pageFaqs;
 
 const faqSchema = schemaFaqs.length
   ? {
@@ -347,8 +379,9 @@ const faqSchema = schemaFaqs.length
   : null;
 
 
-// A national credential is a real-world certification, so describe it as one
-// rather than leaving search engines to infer it from an FAQ block alone.
+// A credential is a real-world certification, so describe it as one rather
+// than leaving search engines to infer it from an FAQ block alone. State pages
+// name the issuing agency (recognizedBy) and the jurisdiction (areaServed).
 const credentialSchema =
   mode === 'national'
     ? {
@@ -369,7 +402,26 @@ const credentialSchema =
           : {}),
         ...(record.prerequisites ? { competencyRequired: record.prerequisites } : {})
       }
-    : null;
+    : mode === 'researched' && facts
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'EducationalOccupationalCredential',
+          name: exam.name,
+          description: exam.blurb,
+          url: canonicalUrl,
+          credentialCategory: exam.type,
+          ...(facts.agency || dossier?.defaultAgency
+            ? {
+                recognizedBy: {
+                  '@type': 'Organization',
+                  name: facts.agency || dossier.defaultAgency,
+                  ...(facts.agencyUrl ? { url: facts.agencyUrl } : {})
+                }
+              }
+            : {}),
+          ...(exam.stateName ? { areaServed: { '@type': 'State', name: exam.stateName } } : {})
+        }
+      : null;
 
 // Schema dates. `lastReviewed` records the month an editor last verified the
 // content ("2026-08") — it is a review stamp, not a modification timestamp.
@@ -438,7 +490,8 @@ const citations = [
       program?.sourceUrl,
       facts?.agencyUrl,
       dossier?.sourceUrl,
-      compact?.url
+      compact?.url,
+      ...stateSources.map((s: any) => s.url)
     ].filter(Boolean)
   )
 ];
@@ -482,6 +535,9 @@ const articleSchema = {
   datePublished={publishedOn || undefined}
   ogType="article"
   noindex={!indexable}
+  bodyAttrs={isState
+    ? { 'data-scope': 'state', 'data-template': exam.templateKey, 'data-state': exam.stateCode }
+    : undefined}
 >
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   {credentialSchema && <script type="application/ld+json" set:html={JSON.stringify(credentialSchema)} />}
@@ -721,24 +777,27 @@ const articleSchema = {
         </section>
       )}
 
-      {/* ── RESEARCHED: the exam ────────────────────────────── */}
+      {/* ── RESEARCHED: v2 per-state sections ──────────────────
+           Mounts the state flagship sections (state exam table, vs-other-
+           states rankings, itemised fees, application, renewal,
+           reciprocity, wages, recent changes, prep summary). Every section
+           renders only when its v2 data exists. The old template-level
+           exam table (which showed NATIONAL ranges on a state page —
+           S-P2) is gone: when facts.state.exam is absent, nothing is
+           rendered in its place, never a national substitute. */}
       {mode === 'researched' && (
-        <section id="exam" class="eg-section">
-          <p class="eg-kicker">The test itself</p>
-          <h2>What does the exam look like?</h2>
-          <div class="eg-tablewrap">
-            <table class="eg-table">
-              <tbody>
-                <tr><th scope="row">Administered by</th><td>{dossier.exam.admin}</td></tr>
-                <tr><th scope="row">Questions</th><td>{dossier.exam.questions}</td></tr>
-                <tr><th scope="row">Time limit</th><td>{dossier.exam.time}</td></tr>
-                <tr><th scope="row">Pass mark</th><td>{dossier.exam.pass}</td></tr>
-                <tr><th scope="row">Exam fee</th><td>{dossier.exam.fee}</td></tr>
-                <tr><th scope="row">Format</th><td>{dossier.exam.format}</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
+        <StateExamSections
+          exam={exam}
+          facts={facts}
+          dossier={dossier}
+          states={dossier?.states || {}}
+          compact={compact}
+        />
+      )}
+
+      {/* State-mode affiliate block — same conditions as national. */}
+      {mode === 'researched' && hasPrep && (
+        <MometrixPrep slug={exam.slug} examName={exam.name} placement="exam-inline" />
       )}
 
       {/* ── RESEARCHED: costs & timeline ────────────────────── */}
@@ -870,7 +929,7 @@ const articleSchema = {
       )}
 
       {/* ── NATIONAL: study materials (Mometrix affiliate) ──── */}
-      {hasPrep && <MometrixPrep slug={exam.slug} examName={exam.name} placement="exam-inline" />}
+      {mode === 'national' && hasPrep && <MometrixPrep slug={exam.slug} examName={exam.name} placement="exam-inline" />}
 
       {/* ── NATIONAL: costs & timeline ──────────────────────── */}
       {mode === 'national' && (costs || natTimeline.length > 0) && (
@@ -1104,14 +1163,14 @@ const articleSchema = {
         </div>
       </section>
 
-      {/* ── FAQ ─────────────────────────────────────────────── */}
-      {mode === 'researched' && dossier?.faqs?.length > 0 && (
+      {/* ── RESEARCHED: FAQ — state FAQs first, ≤2 template after ── */}
+      {mode === 'researched' && pageFaqs.length > 0 && (
         <section id="faq" class="eg-section eg-section-cream">
           <p class="eg-kicker">Real questions</p>
           <h2>Frequently asked questions about the {exam.name}</h2>
           <div class="eg-faqs">
-            {dossier.faqs.map((f) => (
-              <details class="eg-faq">
+            {pageFaqs.map((f) => (
+              <details class="eg-faq" data-state-faq={f.state ? '' : undefined}>
                 <summary>{f.q}</summary>
                 <p>{f.a}</p>
               </details>
@@ -1212,10 +1271,18 @@ const articleSchema = {
         {dossier ? (
           <>
             <p class="eg-lead">
-              This page is built from primary regulatory sources. Rules and fees change — verify with the
+              This page is built from primary regulatory sources. Rules and fees change — confirm with the
               issuing body before you pay for anything.
             </p>
             <ul class="eg-sources">
+              {stateSources.map((s: any) => (
+                <li>
+                  <a href={s.url} target="_blank" rel="noopener noreferrer">{s.label || s.url}</a>
+                  <span class="eg-src-tag" data-checked-on={s.checkedOn || undefined}>
+                    {s.checkedOn ? `Checked ${s.checkedOn}` : 'Source'}
+                  </span>
+                </li>
+              ))}
               {facts?.agencyUrl && (
                 <li>
                   <a href={facts.agencyUrl} target="_blank" rel="noopener noreferrer">
@@ -1239,8 +1306,11 @@ const articleSchema = {
                 </li>
               )}
             </ul>
-            <p class="eg-reviewed">
-              Research confidence: <strong>{dossier.confidence}</strong> · Last compiled {new Date().getFullYear()}
+            <p class="eg-reviewed" data-compiled-on={lastCompiled || undefined}>
+              Research confidence: <strong>{dossier.confidence}</strong>
+              {lastCompiled && (
+                <> · Last compiled {lastCompiled}</>
+              )}
             </p>
           </>
         ) : mode === 'national' ? (

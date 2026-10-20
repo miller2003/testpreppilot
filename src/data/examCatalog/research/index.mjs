@@ -22,6 +22,7 @@ import batch7 from './batch7.mjs';
 import batch8 from './batch8.mjs';
 import batch9 from './batch9.mjs';
 import batch10 from './batch10.mjs';
+import { v2Files, v2ByKey } from './v2/index.mjs';
 
 // ── Normalisation ───────────────────────────────────────────────────
 // A few dossiers came back with `timeline` / `route` as plain string arrays
@@ -88,6 +89,30 @@ export const dossiers = [
   ...batch6, ...batch7, ...batch8, ...batch9, ...batch10
 ].map(normalise);
 
+// ── v2 deep merge ────────────────────────────────────────────────────
+// v2 files (research/v2/<key>.mjs) carry structured per-state research.
+// They only AUGMENT state codes the v1 dossier already lists — v1 omission
+// means the jurisdiction does not issue the credential. v2 overrides of
+// v1 fields (agency, agencyUrl, fee, note) win, per RESEARCH_SCHEMA.md.
+let v2Merged = 0;
+let v2States = 0;
+for (const v2 of v2Files) {
+  const d = dossierRawKey(v2.key);
+  if (!d) continue;
+  for (const [code, inc] of Object.entries(v2.states || {})) {
+    const c = String(code).toUpperCase();
+    if (!d.states[c]) continue;
+    d.states[c] = { ...d.states[c], ...inc };
+    v2States++;
+  }
+  v2Merged++;
+}
+function dossierRawKey(key) {
+  return dossiers.find((d) => d.key === key) || null;
+}
+
+export const v2Stats = { files: v2Merged, states: v2States };
+
 export const dossierByKey = Object.fromEntries(dossiers.map((d) => [d.key, d]));
 
 /** Facts for one template in one jurisdiction, or null if unresearched. */
@@ -104,7 +129,11 @@ export function factsFor(templateKey, stateCode) {
     stateNote: s?.note || null,
     compactMember: s?.compactMember === true,
     confidence: d.confidence || 'medium',
-    verified: d.verified === true
+    verified: d.verified === true,
+    // Full merged per-state object — v1 fields plus every v2 field present
+    // (exam, education, fees, application, renewal, wages, stateFaqs, …).
+    // Null when the jurisdiction does not issue this credential.
+    state: s ? { ...s } : null
   };
 }
 

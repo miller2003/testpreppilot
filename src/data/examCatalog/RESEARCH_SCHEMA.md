@@ -66,3 +66,58 @@ export default [
   template-wide source.
 - Output is dependency-free ESM. No imports. `export default [...]` only.
 - Keep prose accurate and sourced; this becomes published content.
+
+---
+
+# v2 per-state research increment (`research/v2/<template-key>.mjs`)
+
+The v1 model is "template prose + 3 variables per state" (S-P1 in the flagship plan).
+v2 adds a **structured per-state dossier** so each state page carries genuinely
+state-specific content. One file per template, deep-merged into the v1 dossier's
+`states[CODE]` object at load time by `research/index.mjs`. v2 files NEVER touch
+template-level prose — that content belongs on the template hub page (S3).
+
+## File shape
+
+```js
+// research/v2/<template-key>.mjs — dependency-free ESM, no imports.
+export default {
+  key: '<template-key>',               // MUST match stateTemplates.mjs key
+  compiledOn: '2026-10-20',
+  states: {
+    AL: {
+      // v1 overrides are allowed here (they win): agency, agencyUrl, fee, note
+      exam: {
+        vendor: 'PSI', vendorUrl: 'https://…',
+        parts: [{ name: 'National', questions: '80', time: '120 min', pass: '70%' }],
+        fee: '$60', practical: null, languages: ['English'],
+        sourceUrl: 'https://…candidate-bulletin.pdf', sourceNote: 'p. 12'
+      },
+      education: { hours: '1,500', breakdown: '…', onlineAllowed: '…', apprenticeship: '…', sourceUrl: '…' },
+      experience: '…',
+      eligibility: { minAge: 18, education: 'High school diploma', other: '…' },
+      background: { method: 'Live Scan', fee: '$32', sourceUrl: '…' },
+      fees: [{ item: 'Application', fee: '$75', sourceUrl: '…' }],   // itemised, no "≈"
+      application: { portal: 'eLicense Ohio', portalUrl: '…', steps: ['…'], processingTime: '2–4 weeks', sourceUrl: '…' },
+      renewal: { cycle: '2 years', ce: '8 hours incl. 1 hr ethics', fee: '$60', sourceUrl: '…' },
+      reciprocity: { rule: 'Endorsement…', agreements: ['…'], sourceUrl: '…' },
+      stats: { licensees: 64000, passRate: { value: '…', year: 2025, sourceUrl: '…' } },
+      wages: { soc: '39-5012', socName: 'Hairdressers…', median: '$…', employment: 1234, year: 'May 2024', sourceUrl: '…' },
+      recentChanges: [{ year: 2024, change: '…', sourceUrl: '…' }],  // or [{ year: null, change: 'No regulatory changes verified as of 2026-10.', sourceUrl }]
+      localNuance: '…',                // e.g. NYC / Chicago local licence layers
+      stateFaqs: [{ q: '…', a: '…' }], // ≥4, state-specific, not template FAQs reworded
+      actualCredential: null,          // decision B: { name, slug } when the state issues a differently-named equivalent
+      sources: [{ label: '…', url: '…', checkedOn: '2026-10' }]
+    }
+  }
+};
+```
+
+## Rules
+- v2 only augments state codes that already exist in the v1 dossier `states` map
+  (v1 omission = jurisdiction does not issue the credential — v2 must not resurrect it).
+- NO fabrication: if a number could not be verified from a primary source, OMIT the
+  field. A missing field renders as "not published" — a wrong field is worse.
+- Every data-bearing field cites a `sourceUrl`; PDFs get a `sourceNote` with the page.
+- `checkedOn` per source; the page's displayed verification date is the earliest.
+- Zero draft language in reader-facing strings: no "verify", "TBD", "≈", "check with the state".

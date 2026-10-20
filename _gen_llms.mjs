@@ -25,6 +25,8 @@ import { rankedFields, payRankedAll } from './src/data/examCatalog/payRanking.mj
 import { allExams, getExamDetail, categoryById, buildDirectory } from './src/data/examCatalog/index.mjs';
 import { releases } from './src/data/examCatalog/release-manifest.mjs';
 import { depthFor } from './src/data/examCatalog/examDepth.mjs';
+import { stateTemplates } from './src/data/examCatalog/stateTemplates.mjs';
+import { v2ByKey } from './src/data/examCatalog/research/v2/index.mjs';
 
 const SITE = 'https://testpreppilot.com';
 const released = new Set(Object.keys(releases));
@@ -139,6 +141,21 @@ for (const catId of orderedCats) {
   }
   L.push('');
 }
+
+// ── State-by-state licensing hubs ─────────────────────────────────────────
+// Generated whenever a v2 research package covers ≥5 jurisdictions for a
+// template. The 51-jurisdiction comparison is the aggregate answer to
+// "X requirements by state" — the hub, not any single state page, is the
+// citable URL for that query.
+L.push('## State license requirements by state');
+L.push('');
+for (const tpl of stateTemplates) {
+  const v2 = v2ByKey[tpl.key];
+  if (!v2 || Object.keys(v2.states || {}).length < 5) continue;
+  const credName = tpl.name.replace(/\{State\}\s*/, '');
+  L.push(`- [${credName} requirements by state](${SITE}/exams/${tpl.key}-license-by-state): all 51 jurisdictions compared — education hours, exam fees, exam vendors, renewal cycles and reciprocity (compiled ${v2.compiledOn || '2026-10'}).`);
+}
+L.push('');
 
 // ── Hubs & reference ─────────────────────────────────────────────────────
 L.push('## Browse & reference');
