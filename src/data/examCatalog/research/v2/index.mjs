@@ -18,8 +18,9 @@ import landSurveyor from './land-surveyor.mjs';
 import nursingHomeAdministrator from './nursing-home-administrator.mjs';
 import professionalEngineer from './professional-engineer.mjs';
 import privateInvestigator from './private-investigator.mjs';
+import securityGuard from './security-guard.mjs';
 
-export const v2Files = [concealedCarry, cpaLicensure, funeralDirector, landSurveyor, nursingHomeAdministrator, privateInvestigator, professionalEngineer];
+export const v2Files = [concealedCarry, cpaLicensure, funeralDirector, landSurveyor, nursingHomeAdministrator, privateInvestigator, professionalEngineer, securityGuard];
 
 export const v2ByKey = Object.fromEntries(v2Files.map((f) => [f.key, f]));
 
