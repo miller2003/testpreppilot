@@ -456,7 +456,9 @@ const articleSchema = {
   publisher: { '@id': 'https://testpreppilot.com/#organization' },
   datePublished: publishedOn || undefined,
   dateModified: modifiedOn || publishedOn || undefined,
-  ...(depth?.reviewedBy ? { reviewedBy: { '@type': 'Person', name: depth.reviewedBy } } : {}),
+  // reviewedBy is a review-basis sentence, not a person's name. It stays on the
+  // page (AuthorByline); the schema names the reviewing desk as an Organization.
+  ...(depth?.reviewedBy ? { reviewedBy: { '@id': 'https://testpreppilot.com/#editorial-board' } } : {}),
   ...(citations.length ? { citation: citations.map((u) => ({ '@type': 'WebPage', url: u })) } : {}),
   about: {
     '@type': 'Thing',
@@ -846,10 +848,17 @@ const articleSchema = {
           <p class="eg-kicker">Content outline</p>
           <h2>What topics are on the {exam.name}?</h2>
           {topicAnswer && <p class="eg-lead">{topicAnswer}</p>}
-          <p class="eg-note">
-            Weightings come from the official exam outline. Study time is best allocated in roughly
-            these proportions rather than evenly across domains.
-          </p>
+          {topics.some((t: any) => t.weight) ? (
+            <p class="eg-note">
+              Weightings come from the official exam outline. Study time is best allocated in roughly
+              these proportions rather than evenly across domains.
+            </p>
+          ) : (
+            <p class="eg-note">
+              No percentage weights are listed for these domains here, so the outline is shown as
+              structure only. Check the certifying body's published outline before allocating study time.
+            </p>
+          )}
           <ul class="eg-topics">
             {topics.map((t) => (
               <li>
