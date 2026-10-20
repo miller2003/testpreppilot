@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+/* Google Fonts are requested from <head> (SEOHead.astro) with a preconnect,
+   NOT with `@import` here.
+   An @import inside the bundled stylesheet creates a serial chain:
+   HTML → about.css (23 KB, render-blocking) → fonts.googleapis.com → woff2.
+   The browser cannot even discover the font CSS until our own CSS has been
+   downloaded and parsed, which costs a full extra round-trip on every page.
+   A <link rel="stylesheet"> in the head is discovered by the preload scanner
+   immediately and runs in parallel with the preconnect handshake. */
 
 *, *::before, *::after {
   box-sizing: border-box;

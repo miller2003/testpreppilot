@@ -1,8 +1,18 @@
 {
+  "$comment": [
+    "NOT AUTHORITATIVE — this project deploys to Cloudflare Pages.",
+    "",
+    "public/_redirects and public/_headers are the files the live host reads",
+    "(verified: the RFC 8288 Link header from _headers is present on production",
+    "responses, and the 60+ state/category 301s from _redirects all resolve).",
+    "This file only covers the 4 rules it knew about in 2026-08, so a redirect",
+    "added there would silently not exist on production. Edit public/_redirects",
+    "instead; keep this in sync only if a Vercel deployment is ever revived."
+  ],
   "redirects": [
-    { "source": "/reviews", "destination": "/about", "statusCode": 301 },
-    { "source": "/contact", "destination": "/about", "statusCode": 301 },
-    { "source": "/how-it-works", "destination": "/about", "statusCode": 301 },
+    { "source": "/reviews", "destination": "/about/", "statusCode": 301 },
+    { "source": "/contact", "destination": "/about/", "statusCode": 301 },
+    { "source": "/how-it-works", "destination": "/about/", "statusCode": 301 },
     { "source": "/exams", "destination": "/", "statusCode": 301 }
   ]
 }

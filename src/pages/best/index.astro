@@ -8,6 +8,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
 import FAQAccordion from '../../components/FAQAccordion.astro';
+import { buildTitle, clampDesc } from '../../lib/seoTitle';
 import { payRankedAll, rankedFields, RANK_METHOD_NOTE } from '../../lib/payRanking';
 import { releases } from '../../data/examCatalog/release-manifest.mjs';
 
@@ -28,8 +29,17 @@ for (const r of rows) fieldTally.set(r.category, (fieldTally.get(r.category) || 
 const topFields = [...fieldTally.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 const rankFieldName = (id: string) => fields.find((f) => f.id === id)?.name || id;
 
-const title = `Highest-Paying US Certifications and Licences (2026): ${rows.length} Ranked`;
-const description = `${rows.length} US credentials ranked by the median annual wage published for the occupation each one unlocks, from ${topPayLine ? 'nursing and healthcare to cybersecurity' : 'across every field'} — every figure quoted from the source named in the guide.`;
+// 60 characters, not 78: the old title was cut before "2026" and the count.
+// US spelling ("licenses") because every reader is in the US market.
+const title = buildTitle('Highest-Paying US Certifications', [
+  ` (2026): ${rows.length} Ranked`,
+  ' (2026)',
+  ''
+]);
+const description = clampDesc(
+  `${rows.length} US credentials ranked by the published median annual wage of the occupation each one unlocks, with the exam fee and official source quoted for every entry.`,
+  157
+);
 
 const faqs = [
   {
@@ -84,8 +94,9 @@ const webPageSchema = {
 ---
 
 <BaseLayout
-  title={`${title} | TestPrepPilot`}
+  title={title}
   description={description}
+  ogImage="/og/best.png"
   dateModified={newestRelease}
   schema={itemListSchema}
 >

@@ -4,7 +4,7 @@ import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
 import { buildDirectory, getExamDetail } from '../../data/examCatalog/index.mjs';
 import { depthFor } from '../../data/examCatalog/examDepth.mjs';
 import { releases } from '../../data/examCatalog/release-manifest.mjs';
-import { categoryTitle, clampDesc } from '../../lib/seoTitle';
+import { categoryTitle, clampDesc, lowerLabel } from '../../lib/seoTitle';
 
 export function getStaticPaths() {
   // Was driven by src/data/categories.ts (4 near-empty pages, ~46-136 words each).
@@ -30,17 +30,30 @@ const nationalScoped = allExams.filter((e: any) => e.scope !== 'state');
 const stateCodes = [...new Set(stateScoped.map((e: any) => e.stateCode).filter(Boolean))];
 
 const title = categoryTitle(category.name, category.total);
-const description = clampDesc(`Every ${category.name.toLowerCase()} credential we track: ${category.total} exams across ${category.groups.length} specialisms${stateCodes.length ? `, including ${stateCodes.length} state-issued licences` : ''}. Requirements, costs and exam formats verified against official sources.`);
+// lowerLabel, not .toLowerCase(): the latter printed "every it, cloud &
+// cybersecurity credential" on 20 pages. Acronyms survive.
+const catLower = lowerLabel(category.name);
+// Pluralised: four categories carry a single guide, and "1 exams" in a meta
+// description is the kind of small wrongness that costs a click.
+const examWord = (n: number) => (n === 1 ? 'exam' : 'exams');
+const credentialWord = (n: number) => (n === 1 ? 'credential' : 'credentials');
+const description = clampDesc(`Every ${catLower} credential we track: ${category.total} ${examWord(category.total)} across ${category.groups.length} ${category.groups.length === 1 ? 'specialism' : 'specialisms'}${stateCodes.length ? `, including ${stateCodes.length} state-issued ${stateCodes.length === 1 ? 'licence' : 'licences'}` : ''}. Requirements, costs and exam formats verified against official sources.`);
 
 const SITE = 'https://testpreppilot.com';
-const catLower = category.name.toLowerCase();
 
 // ── Answer-first line (GEO 2.2/2.3) ──────────────────────────────────────
 // A category page that opens with a paragraph of positioning copy gives a
 // retrieval system nothing to quote. This one opens with the counts and the
 // scope split — the two facts a "how many / do I need one" query actually
 // asks for.
-const catAnswer = `There are ${category.total} ${catLower} credentials in the TestPrepPilot directory: ${nationalScoped.length} national certifications awarded by a single body, and ${stateScoped.length} licences issued by individual state boards across ${stateCodes.length} ${stateCodes.length === 1 ? 'state' : 'states'}.`;
+// Answer-first, and grammatical at n=1 — four fields carry a single guide, and
+// "There are 1 credentials" is the first sentence a retrieval system reads.
+const catAnswer =
+  `There ${category.total === 1 ? 'is' : 'are'} ${category.total} ${catLower} ${credentialWord(category.total)} in the TestPrepPilot directory: ` +
+  `${nationalScoped.length} national ${nationalScoped.length === 1 ? 'certification' : 'certifications'} awarded by a single body` +
+  (stateScoped.length
+    ? `, and ${stateScoped.length} ${stateScoped.length === 1 ? 'licence' : 'licences'} issued by individual state boards across ${stateCodes.length} ${stateCodes.length === 1 ? 'state' : 'states'}.`
+    : '.');
 
 // ── Comparison table (GEO 2.4) ───────────────────────────────────────────
 // The single highest-value addition on this page type. 16 category pages had
@@ -55,6 +68,9 @@ const tableRows = nationalScoped
     const m = r.examMeta || {};
     return {
       slug: e.slug,
+      // Canonical path from the catalog, not a guess: the 8 flagship guides are
+      // served at /paths/<slug>, and /exams/<slug> 404s for them.
+      href: e.href || `/exams/${e.slug}`,
       name: e.name,
       body: r.body || e.type || '—',
       fee: m.fee || r.cost || '—',
@@ -111,6 +127,7 @@ const payRows = nationalScoped
     const dep: any = depthFor(e.slug) || {};
     return {
       slug: e.slug,
+      href: e.href || `/exams/${e.slug}`,
       name: e.name,
       pay: money(dep.salaryOutlook?.headline),
       payLine: String(dep.salaryOutlook?.headline || ''),
@@ -134,7 +151,7 @@ const paySchema =
         itemListElement: payRows.map((r: any, i: number) => ({
           '@type': 'ListItem',
           position: i + 1,
-          url: `https://testpreppilot.com/exams/${r.slug}`,
+          url: `https://testpreppilot.com${r.href}`,
           name: r.name,
           description: r.payLine
         }))
@@ -202,7 +219,11 @@ const faqSchema = {
 };
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout
+  title={title}
+  description={description}
+  ogImage={`/og/cat-${category.id}.png`}
+>
   {/* BreadcrumbNav emits the page's single BreadcrumbList JSON-LD itself. */}
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
@@ -219,7 +240,7 @@ const faqSchema = {
       "itemListElement": allExams.slice(0, 100).map((e: any, i: number) => ({
         "@type": "ListItem",
         "position": i + 1,
-        "url": `https://testpreppilot.com/exams/${e.slug}`,
+        "url": `https://testpreppilot.com${e.href || `/exams/${e.slug}`}`,
         "name": e.name
       }))
     }
@@ -232,7 +253,7 @@ const faqSchema = {
     <header class="category-hero">
       <h1>{category.name}</h1>
       <p class="cat-answer">{catAnswer}</p>
-      <p class="lede">{category.description || `Independently researched requirement guides for every ${category.name.toLowerCase()} credential we track.`}</p>
+      <p class="lede">{category.description || `Independently researched requirement guides for every ${catLower} credential we track.`}</p>
       <dl class="cat-facts">
         <div><dt>Credentials</dt><dd>{category.total}</dd></div>
         <div><dt>Specialisms</dt><dd>{category.groups.length}</dd></div>
@@ -263,7 +284,7 @@ const faqSchema = {
               <tbody>
                 {tableRows.map((r: any) => (
                   <tr>
-                    <th scope="row"><a href={`/exams/${r.slug}`}>{r.name}</a></th>
+                    <th scope="row"><a href={r.href}>{r.name}</a></th>
                     <td>{r.body}</td>
                     <td>{r.fee}</td>
                     <td>{r.time}</td>
@@ -290,7 +311,7 @@ const faqSchema = {
               <li>
                 <span class="pay-rank" aria-hidden="true">{i + 1}</span>
                 <div class="pay-body">
-                  <h3 class="pay-name"><a href={`/exams/${r.slug}`}>{r.name}</a></h3>
+                  <h3 class="pay-name"><a href={r.href}>{r.name}</a></h3>
                   <p class="pay-line">{r.payLine}</p>
                   {r.passLine && <p class="pay-pass">{r.passLine}</p>}
                   {r.reviewed && <p class="pay-meta">Verified {r.reviewed}</p>}
@@ -310,7 +331,7 @@ const faqSchema = {
           <ul class="exam-list">
             {group.exams.map((e: any) => (
               <li>
-                <a href={`/exams/${e.slug}`}>
+                <a href={e.href || `/exams/${e.slug}`}>
                   <span class="exam-name">{e.name}</span>
                   {e.blurb && <span class="exam-blurb">{e.blurb}</span>}
                   <span class="exam-tags">
@@ -328,7 +349,7 @@ const faqSchema = {
         <section class="state-cross">
           <h2 class="group-h2">{category.name} by state</h2>
           <p class="cross-note">
-            {stateScoped.length} states issue their own {category.name.toLowerCase()} credentials with
+            {stateScoped.length} states issue their own {catLower} credentials with
             separate boards, fees and renewal cycles.
           </p>
           <ul class="state-links">

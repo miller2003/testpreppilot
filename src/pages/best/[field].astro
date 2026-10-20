@@ -7,6 +7,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
 import FAQAccordion from '../../components/FAQAccordion.astro';
+import { buildTitle, clampDesc, lowerLabel } from '../../lib/seoTitle';
 import { payRankedField, rankedFields, RANK_METHOD_NOTE } from '../../lib/payRanking';
 import { releases } from '../../data/examCatalog/release-manifest.mjs';
 
@@ -27,9 +28,22 @@ const rows = payRankedField(fieldId);
 const siteWide = rankedFields(5);
 const newestRelease = Object.values(releases).sort().at(-1) as string;
 
-const fieldLower = fieldName.toLowerCase();
-const title = `Highest-Paying ${fieldName} Credentials (2026): ${rows.length} Ranked`;
-const description = `${rows.length} ${fieldLower} credentials ranked by the median annual wage published for the occupation each one unlocks, with the exam fee for every credential and the source quoted for each figure.`;
+const fieldLower = lowerLabel(fieldName);
+// Titles are built to fit the SERP, not to describe the page fully: the old
+// template ran 79–99 characters ("… (2026): 24 Ranked | TestPrepPilot"), so
+// Google cut every one of these pages before the year and the count — the two
+// things that earn the click. buildTitle takes the longest suffix that fits 60
+// characters and never truncates the field name, which is the actual keyword.
+const title = buildTitle(`Highest-Paying ${fieldName}`, [
+  ' Credentials (2026)',
+  ' (2026)',
+  ' Credentials',
+  ''
+]);
+const description = clampDesc(
+  `${rows.length} ${fieldLower} credentials ranked by the published median annual wage of the occupation each one unlocks, with the exam fee and official source for every entry.`,
+  157
+);
 
 // Spread of fees — computed, so the page can state it without typing a number.
 const feeValues = rows
@@ -90,8 +104,9 @@ const webPageSchema = {
 ---
 
 <BaseLayout
-  title={`${title} | TestPrepPilot`}
+  title={title}
   description={description}
+  ogImage={`/og/cat-${fieldId}.png`}
   dateModified={newestRelease}
   schema={itemListSchema}
 >

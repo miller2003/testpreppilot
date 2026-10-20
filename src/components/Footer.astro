@@ -23,7 +23,11 @@ const topCategories = buildDirectory()
         <h4>Browse</h4>
         <ul>
           <li><a href="/">All Exams Directory</a></li>
-          <li><a href="/explore">Browse by Field</a></li>
+          {/* Was /explore — a 324-word duplicate of the homepage that competed
+              with it for "browse all credentials". That page now 301s to /,
+              and this sitewide slot goes to the 15 ranked lists instead, which
+              had no footer-level entrance at all. */}
+          <li><a href="/best/">Highest-Paying Credentials</a></li>
         </ul>
       </div>
 

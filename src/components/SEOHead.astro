@@ -1,4 +1,6 @@
 ---
+import { canonicalForm } from '../lib/url';
+
 interface Props {
   title: string;
   description?: string;
@@ -23,9 +25,14 @@ const {
   articleModifiedTime,
 } = Astro.props;
 const siteUrl = Astro.site || 'https://testpreppilot.com';
-const currentUrl = new URL(Astro.url.pathname, siteUrl).toString();
 
-const finalCanonical = canonical || currentUrl;
+// ── Canonical form: the URL that returns 200 in ONE hop ─────────────────
+// Directory indexes mean the host serves /about/ and 308-redirects /about. A
+// canonical that points at a redirect is ignored, so canonical, og:url and the
+// schema @id all read from the same helper — see src/lib/url.ts.
+const currentUrl = canonicalForm(Astro.url.pathname, siteUrl);
+
+const finalCanonical = canonicalForm(canonical || currentUrl, siteUrl);
 const finalOgTitle = ogTitle || title;
 ---
 
@@ -40,6 +47,19 @@ const finalOgTitle = ogTitle || title;
     number-dense first paragraphs an AI answer needs to lift. */}
 <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"} />
 <meta name="googlebot" content={noindex ? "noindex, nofollow" : "index, follow, max-snippet:-1, max-image-preview:large"} />
+
+{/* Fonts: preconnect + stylesheet link, discovered by the preload scanner.
+    Previously an @import inside the site CSS, which serialised the request
+    chain behind a 23 KB render-blocking file — one wasted round-trip on every
+    page, with no connection warm-up for the font host. The italic axis is cut
+    to 400 (the only italic weight the design uses); 500/600/700 upright are
+    retained because the type scale depends on them. */}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+/>
 
 <meta property="og:site_name" content="TestPrepPilot" />
 <meta property="og:locale" content="en_US" />

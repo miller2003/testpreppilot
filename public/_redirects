@@ -3,11 +3,42 @@
 # <meta refresh>) passes the most PageRank-equivalent signal and is the
 # correct, permanent move. Keep the meta-refresh pages in src/pages as a
 # fallback for any host that does not read this file.
-/reviews /about 301
-/contact /about 301
-/how-it-works /about 301
+#
+# Destinations carry the trailing slash: the site serves directory indexes, so
+# `/about` would answer with a 308 to `/about/` and turn every alias into a
+# two-hop redirect. One hop, permanent, done.
+/reviews /about/ 301
+/contact /about/ 301
+/how-it-works /about/ 301
 # Homepage is now the exam directory; the standalone /exams listing folds into /.
 /exams / 301
+
+# /explore was a second browse-all page: 324 words, 8 links, and an ItemList
+# that duplicated the homepage's, while the sitemap ranked it 0.9 — i.e. it
+# competed with / for the same intent. Consolidated, same as /exams above.
+/explore / 301
+
+# ── 2026-10-18: /exams/<slug> twins of the 8 hand-written flagship guides ──
+# The catalog routes these to /paths/<slug> (completedGuides in
+# src/data/examCatalog/index.mjs), but /exams/<slug> was still linked from the
+# category tables and the /best lists, and it 404'd. The internal links are
+# fixed at source; these rules cover inbound links from elsewhere and any
+# SERP entry that already exists.
+/exams/cpa-exam /paths/cpa-exam/ 301
+/exams/enrolled-agent /paths/enrolled-agent/ 301
+/exams/osha-10-construction /paths/osha-10-construction/ 301
+/exams/osha-30-construction /paths/osha-30-construction/ 301
+/exams/epa-608-certification /paths/epa-608-certification/ 301
+/exams/texas-real-estate-license /paths/texas-real-estate-license/ 301
+/exams/california-real-estate-license /paths/california-real-estate-license/ 301
+/exams/florida-real-estate-license /paths/florida-real-estate-license/ 301
+
+# ── Canonical-collapsed legal aliases ────────────────────────────────────
+# Both pages already declared a canonical elsewhere and were excluded from the
+# sitemap, but neither actually redirected — so the duplicate stayed reachable
+# and only the canonical tag was doing the work. Make it a real 301.
+/affiliate-disclosure /disclosure/ 301
+/privacy-policy /privacy/ 301
 
 # ── 2026-09-02: state directory layer removed ─────────────────────────
 # The 51 /[state] hub pages rendered near-identical content (avg 98.3%

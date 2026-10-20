@@ -18,8 +18,10 @@ const catCount = directory.length;
 // State list for the filter <select> (sorted by name for easy scanning).
 const stateList = [...jurisdictions].sort((a, b) => a.name.localeCompare(b.name));
 
-const title = 'TestPrepPilot — The U.S. Exam, License & Certification Directory';
-const description = `A clean, source-checked directory of U.S. exams, licenses and certifications across ${catCount} professions. Search any credential and open a verified preparation roadmap.`;
+// 59 characters: the previous "The U.S. Exam, License & Certification Directory"
+// ran to 64 and lost "Directory" in the SERP.
+const title = 'TestPrepPilot — U.S. Exam, License & Certification Directory';
+const description = `A source-checked directory of U.S. exams, licenses and certifications across ${catCount} professions. Search any credential and open a verified roadmap.`;
 
 // Uniform, scannable meta line; the issuer + full prose stay on each detail page.
 const metaOf = (e) =>
@@ -32,28 +34,12 @@ const hayOf = (e) =>
     .join(' ')
     .toLowerCase();
 
-// Richer precomputed index for the autocomplete combobox: name + initials +
-// short acronym + aka list, so "CPA" → "Uniform CPA Examination" and
-// "cdl gk" → "CDL General Knowledge" both resolve.
-const searchIndex = directory
-  .flatMap((c) => c.exams)
-  .map((e) => {
-    const n = e.name.toLowerCase();
-    const w = n.split(/\s+/);
-    return {
-      name: e.name,
-      href: e.href,
-      scope: e.scope,
-      state: e.stateCode || '',
-      meta: metaOf(e),
-      n,
-      w,
-      ini: w.map((s) => s[0]).join(''),
-      short: (e.short || '').toLowerCase(),
-      aka: (e.aka || []).map((a) => a.toLowerCase()),
-    };
-  });
-const idxJson = JSON.stringify(searchIndex);
+// The autocomplete index (name + initials + acronym + aka list, so "CPA" →
+// "Uniform CPA Examination" and "cdl gk" → "CDL General Knowledge" both
+// resolve) is served from /data/search-index.json and fetched on first focus.
+// Inlined here it was 185 KB of this page's 651 KB, for a feature that does not
+// exist until somebody types.
+const INDEX_URL = '/data/search-index.json';
 
 // ── Answer block + FAQ: the extractable facts on the most-cited page ─────
 // The homepage is the page AI answer engines land on most often, and until now
@@ -174,7 +160,9 @@ const itemListSchema = {
     itemListElement: allEntries.map((e: any, i: number) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `${SITE}/exams/${e.slug}`,
+      // e.href, not a rebuilt path: the 8 flagship guides are served from
+      // /paths/<slug> and their /exams/<slug> twin is a 404.
+      url: `${SITE}${e.href || `/exams/${e.slug}`}`,
       name: e.name
     }))
   },
@@ -379,7 +367,7 @@ const itemListSchema = {
   </div>
 </BaseLayout>
 
-<script is:inline define:vars={{ idxJson }}>
+<script is:inline define:vars={{ INDEX_URL }}>
   document.addEventListener('astro:page-load', () => {
     const combo = document.getElementById('dir-q');
     const list = document.getElementById('combo-list');
@@ -407,7 +395,18 @@ const itemListSchema = {
     const stateHint = document.getElementById('f-state-hint');
     if (!combo || !items.length) return;
 
-    const INDEX = JSON.parse(idxJson);
+    // Fetched once, on first focus — the filter itself runs off data-hay
+    // attributes in the markup and never waits for this.
+    let INDEX = null;
+    let indexPromise = null;
+    function loadIndex() {
+      if (!indexPromise) {
+        indexPromise = fetch(INDEX_URL, { credentials: 'same-origin' })
+          .then((r) => (r.ok ? r.json() : []))
+          .catch(() => []);
+      }
+      return indexPromise;
+    }
 
     // 900px matches the header's own desktop/mobile switch, so the bar and the
     // nav never change personality at different widths.
@@ -814,11 +813,13 @@ const itemListSchema = {
     function openCombo() { if (suggestions.length) { list.hidden = false; combo.setAttribute('aria-expanded', 'true'); } }
     function closeCombo() { list.hidden = true; combo.setAttribute('aria-expanded', 'false'); activeOpt = -1; combo.removeAttribute('aria-activedescendant'); }
 
-    function buildSuggestions() {
+    async function buildSuggestions() {
       const q = combo.value.trim().toLowerCase();
       if (!q) { closeCombo(); return; }
+      if (!INDEX) INDEX = await loadIndex();
+      if (!INDEX.length) { closeCombo(); return; }
       const tokens = q.split(/\s+/).filter(Boolean);
-      suggestions = INDEX
+      const next = INDEX
         .map((e) => {
           const s = scoreExam(e, tokens);
           return s < 0 ? null : { e, s };
@@ -827,6 +828,11 @@ const itemListSchema = {
         .sort((a, b) => b.s - a.s)
         .slice(0, 8)
         .map((x) => x.e);
+      // The query can change while the index is in flight — drop the stale
+      // result instead of painting suggestions for a prefix the reader has
+      // already typed past.
+      if (combo.value.trim().toLowerCase() !== q) return;
+      suggestions = next;
       activeOpt = -1;
       renderCombo();
     }
@@ -847,7 +853,12 @@ const itemListSchema = {
       buildSuggestions();
       syncPreview();
     });
-    combo.addEventListener('focus', () => { if (combo.value.trim()) buildSuggestions(); });
+    // Warm the index as soon as the reader shows intent, so the first keystroke
+    // does not wait on a round-trip.
+    combo.addEventListener('focus', () => {
+      loadIndex();
+      if (combo.value.trim()) buildSuggestions();
+    });
     combo.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowDown') { e.preventDefault(); openCombo(); move(1); }
       else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); }

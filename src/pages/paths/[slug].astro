@@ -1,11 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ExamGuide from '../../components/ExamGuide.astro';
-import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import RelatedPaths from '../../components/RelatedPaths.astro';
 import { credentials, getRelatedCredentials } from '../../data/credentials';
 import examEditorial from '../../data/examEditorial.mjs';
 import { credTitle, clampDesc } from '../../lib/seoTitle';
+import { SITE_URL, canonicalForm } from '../../lib/url';
+import seoOverrides from '../../data/seoOverrides.mjs';
 
 export function getStaticPaths() {
   return credentials.map(credential => ({
@@ -17,37 +18,88 @@ export function getStaticPaths() {
 const { credential } = Astro.props;
 const ex = examEditorial[credential.slug] || null;
 const relatedCredentials = getRelatedCredentials(credential.slug);
+// Hand-written overrides (src/data/seoOverrides.mjs) win over the template.
+const seo = seoOverrides[`paths/${credential.slug}`] || null;
 
 // The /<state>/<credential> state-specific layer was removed on 2026-09-02
 // (51 near-identical hub pages + 3 leaf pages, avg 98.3% cross-similarity).
 // State-level detail now lives in the exam catalog's state scope instead.
 
+// Two levels, not three: the old middle rung was /explore, a duplicate of the
+// homepage that now 301s to it. A flagship guide should reach home in one hop.
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
-  { label: 'Explore', href: '/explore' },
   { label: credential.name, href: `/paths/${credential.slug}` }
 ];
 
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "Course",
-  "name": credential.name,
-  "description": credential.description || credential.tagline,
-  "provider": {
-    "@type": "Organization",
-    "name": credential.providers?.[0]?.name || "Various Providers"
-  }
+const canonicalUrl = canonicalForm(`/paths/${credential.slug}`, SITE_URL);
+const description =
+  seo?.description ||
+  clampDesc(`${credential.tagline ? credential.tagline + ' ' : ''}${credential.name}: requirements, exam format, fees and eligibility, with official registration steps.`);
+
+// These 8 are the site's hand-written flagship guides — the pages most likely
+// to be quoted by an answer engine and the ones with real commercial intent.
+// They were the only page type on the site with NO Article node and no dates,
+// because they route through a different template, and they described the
+// credential as a `Course` whose provider was a literal "Various Providers"
+// placeholder. A licence is not a course and the awarding body is not "various":
+// both statements are wrong, and a wrong @type costs the page the eligibility
+// for the rich entity it actually is.
+//
+// Article carries accountability (author, dates, citation); the credential
+// itself is described as EducationalOccupationalCredential inside `about`, with
+// the real awarding body as recognizedBy.
+const reviewedOn = credential.reviewed || null;
+const stateKey = Object.keys(credential.stateSpecificData || {})[0];
+const stateData = stateKey ? credential.stateSpecificData![stateKey] : null;
+const awardingBody = credential.source || stateData?.regulatorName || null;
+const awardingUrl = credential.sourceUrl || stateData?.regulatorUrl || null;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `${canonicalUrl}#article`,
+  headline: credential.name,
+  description,
+  url: canonicalUrl,
+  mainEntityOfPage: { '@id': `${canonicalUrl}#webpage` },
+  inLanguage: 'en-US',
+  author: { '@id': `${SITE_URL}/#editorial-board` },
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  ...(reviewedOn ? { datePublished: reviewedOn, dateModified: reviewedOn } : {}),
+  ...(awardingUrl ? { citation: [{ '@type': 'WebPage', url: awardingUrl }] } : {}),
+  about: {
+    '@type': 'EducationalOccupationalCredential',
+    name: credential.name,
+    description: credential.description || credential.tagline,
+    url: canonicalUrl,
+    ...(credential.type ? { credentialCategory: credential.type } : {}),
+    ...(awardingBody
+      ? {
+          recognizedBy: {
+            '@type': 'Organization',
+            name: awardingBody,
+            ...(awardingUrl ? { url: awardingUrl } : {})
+          }
+        }
+      : {})
+  },
+  isAccessibleForFree: true
 };
 ---
 
 <BaseLayout
-  title={credTitle(credential.name)}
-  description={clampDesc(`${credential.tagline ? credential.tagline + ' ' : ''}${credential.name}: requirements, exam format, fees and eligibility, with official registration steps.`)}
+  title={seo?.title || credTitle(credential.name)}
+  description={description}
+  canonical={canonicalUrl}
+  datePublished={reviewedOn || undefined}
+  dateModified={reviewedOn || undefined}
+  ogImage="/og-exam.png"
   ogType="article"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   {/* ExamGuide renders BreadcrumbNav, which emits the page's single
       BreadcrumbList JSON-LD itself. */}
-  <SchemaMarkup type="Course" data={schemaData} />
   <ExamGuide credential={credential} ex={ex} breadcrumbs={breadcrumbItems} />
 
   {relatedCredentials && relatedCredentials.length > 0 && (

@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
 import { examTitle } from '../../lib/seoTitle';
+import seoOverrides from '../../data/seoOverrides.mjs';
 import DepthSections from '../../components/DepthSections.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
 import RelatedExams from '../../components/RelatedExams.astro';
@@ -351,7 +352,9 @@ if (hasPrep) {
 // Every branch is clamped, not just the national one. 65 pages were shipping
 // descriptions over 160 characters (max 290), so Google rewrote or truncated
 // them and the intended keyword tail never rendered in the SERP.
-const metaDescription = clampMeta(
+// Hand-written overrides (src/data/seoOverrides.mjs) win over the template.
+const seo = seoOverrides[`exams/${exam.slug}`] || null;
+const metaDescription = seo?.description || clampMeta(
   mode === 'not-offered'
     ? `${exam.stateName} does not issue a state-level ${dossier.name.toLowerCase()}. Here is what applies instead, plus the ${offeringCount} states that do license it.`
     : mode === 'researched'
@@ -496,6 +499,28 @@ const citations = [
   )
 ];
 
+// `depth.reviewedBy` is a free-text note about how the figures were checked
+// ("Verified against the AAHPM… page and BLS OOH …, May 2024 data"), not a
+// person. Emitting it as Person.name produced 447 different "humans" whose
+// names were whole sentences — which is exactly the pattern Google discards as
+// noise, and it wasted a real trust signal by expressing it in the one field
+// that cannot hold it. Only a genuine short personal name goes into Person;
+// the note stays on the page (byline + Sources) and the machine-readable
+// accountability is the Editorial Board, which is the entity actually
+// answering for the page.
+const reviewerRaw = String(depth?.reviewedBy || '').trim();
+const reviewerIsPerson =
+  reviewerRaw.length > 0 &&
+  reviewerRaw.length <= 40 &&
+  !/[,;:]/.test(reviewerRaw) &&
+  /^[\p{Lu}][\p{L}.'’-]+(?:\s+[\p{L}.'’-]+){1,3}$/u.test(reviewerRaw);
+
+const reviewedByNode = reviewerRaw
+  ? reviewerIsPerson
+    ? { '@type': 'Person', name: reviewerRaw }
+    : { '@id': 'https://testpreppilot.com/#editorial-board' }
+  : null;
+
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -509,7 +534,7 @@ const articleSchema = {
   publisher: { '@id': 'https://testpreppilot.com/#organization' },
   datePublished: publishedOn || undefined,
   dateModified: modifiedOn || publishedOn || undefined,
-  ...(depth?.reviewedBy ? { reviewedBy: { '@type': 'Person', name: depth.reviewedBy } } : {}),
+  ...(reviewedByNode ? { reviewedBy: reviewedByNode } : {}),
   ...(citations.length ? { citation: citations.map((u) => ({ '@type': 'WebPage', url: u })) } : {}),
   about: {
     '@type': 'Thing',
@@ -527,7 +552,7 @@ const articleSchema = {
 ---
 
 <BaseLayout
-  title={examTitle(exam.name)}
+  title={seo?.title || examTitle(exam.name)}
   description={metaDescription}
   canonical={canonicalUrl}
   ogImage="/og-exam.png"

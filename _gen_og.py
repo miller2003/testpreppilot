@@ -134,3 +134,48 @@ make_og(
     "Find your state's verified requirements, boards, and reciprocity rules.",
 )
 make_logo(os.path.join(OUT, "logo.png"))
+
+
+# ── Per-field social cards ────────────────────────────────────────────────
+# 541 pages previously shared exactly two og:image files, so every share of a
+# category or a ranked list rendered the same generic card. These are the pages
+# whose links actually get posted (fields and rankings), so each field gets its
+# own card with its real credential count.
+#
+# The manifest comes from the catalog via node, not from a list copied here —
+# see _gen_og_manifest.mjs.
+import json
+import subprocess
+import sys
+
+OG_FIELDS = os.path.join(OUT, "og")
+os.makedirs(OG_FIELDS, exist_ok=True)
+
+try:
+    raw = subprocess.check_output(
+        ["node", os.path.join(os.path.dirname(__file__), "_gen_og_manifest.mjs")],
+        text=True,
+    )
+    fields = json.loads(raw)
+except Exception as exc:  # noqa: BLE001 — generation must not break the build
+    print("could not read field manifest, skipping per-field cards:", exc)
+    fields = []
+
+for field in fields:
+    total = field.get("total", 0)
+    specialisms = field.get("specialisms", 0)
+    make_og(
+        os.path.join(OG_FIELDS, f"cat-{field['id']}.png"),
+        "CREDENTIAL FIELD",
+        field["name"],
+        f"{total} verified credentials across {specialisms} specialisms — "
+        f"requirements, fees and exam formats, sourced from the issuing bodies.",
+    )
+
+make_og(
+    os.path.join(OG_FIELDS, "best.png"),
+    "RANKED BY PUBLISHED PAY",
+    "The highest-paying U.S. credentials.",
+    "Every figure is the median annual wage published for the occupation each "
+    "credential unlocks, quoted from the source named in the guide.",
+)
