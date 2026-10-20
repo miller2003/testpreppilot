@@ -164,18 +164,18 @@ export default {
       "method": "One set of classifiable fingerprints submitted with the paper application; DPS conducts state and FBI criminal history checks",
       "fee": "$47 fingerprint fee payable to the State of Alaska",
       "disqualifiers": "Felony conviction, crime of moral turpitude, or any crime preventing firearm possession within 10 years of application unless a full pardon was granted; domestic violence convictions and protective orders are separately screened on the form.",
-      "sourceUrl": "http://dps.alaska.gov/getmedia/d072286d-0041-4aac-94a3-e3dc9d58d433/12-183-0-SGL-NEW-APP-(rev-1-2025).pdf"
+      "sourceUrl": "https://dps.alaska.gov/getmedia/d072286d-0041-4aac-94a3-e3dc9d58d433/12-183-0-SGL-NEW-APP-(rev-1-2025).pdf"
     },
     "fees": [
       {
         "item": "Security guard license application",
         "fee": "$50",
-        "sourceUrl": "http://dps.alaska.gov/getmedia/d072286d-0041-4aac-94a3-e3dc9d58d433/12-183-0-SGL-NEW-APP-(rev-1-2025).pdf"
+        "sourceUrl": "https://dps.alaska.gov/getmedia/d072286d-0041-4aac-94a3-e3dc9d58d433/12-183-0-SGL-NEW-APP-(rev-1-2025).pdf"
       },
       {
         "item": "Fingerprint processing",
         "fee": "$47",
-        "sourceUrl": "http://dps.alaska.gov/getmedia/d072286d-0041-4aac-94a3-e3dc9d58d433/12-183-0-SGL-NEW-APP-(rev-1-2025).pdf"
+        "sourceUrl": "https://dps.alaska.gov/getmedia/d072286d-0041-4aac-94a3-e3dc9d58d433/12-183-0-SGL-NEW-APP-(rev-1-2025).pdf"
       },
       {
         "item": "Renewal (2 years)",
@@ -194,7 +194,7 @@ export default {
         "There is no written state examination; a licensed agency may employ a new hire on a temporary basis for up to 30 days once the completed application and fee are submitted (13 AAC 60.130)."
       ],
       "processingTime": "Not published; the department processes after fingerprint results clear",
-      "sourceUrl": "http://dps.alaska.gov/getmedia/d072286d-0041-4aac-94a3-e3dc9d58d433/12-183-0-SGL-NEW-APP-(rev-1-2025).pdf"
+      "sourceUrl": "https://dps.alaska.gov/getmedia/d072286d-0041-4aac-94a3-e3dc9d58d433/12-183-0-SGL-NEW-APP-(rev-1-2025).pdf"
     },
     "renewal": {
       "cycle": "2 years",
@@ -251,7 +251,7 @@ export default {
       },
       {
         "label": "Alaska DPS Security Guard License Application 12-183 (rev. 1/2025, PDF)",
-        "url": "http://dps.alaska.gov/getmedia/d072286d-0041-4aac-94a3-e3dc9d58d433/12-183-0-SGL-NEW-APP-(rev-1-2025).pdf",
+        "url": "https://dps.alaska.gov/getmedia/d072286d-0041-4aac-94a3-e3dc9d58d433/12-183-0-SGL-NEW-APP-(rev-1-2025).pdf",
         "checkedOn": "2026-10"
       },
       {
@@ -704,7 +704,7 @@ export default {
       },
       {
         "label": "BSIS - Security Guard Registration Fact Sheet (PDF, rev. Oct 2025)",
-        "url": "http://bsis.ca.gov/forms_pubs/guard_fact.pdf",
+        "url": "https://bsis.ca.gov/forms_pubs/guard_fact.pdf",
         "checkedOn": "2026-10"
       },
       {
@@ -1897,7 +1897,7 @@ export default {
   },
   "LA": {
     "agency": "Louisiana State Board of Private Security Examiners (LSBPSE)",
-    "agencyUrl": "http://www.lsbpse.com/security-officer-registration",
+    "agencyUrl": "https://www.lsbpse.com/security-officer-registration",
     "exam": {
       "vendor": "LSBPSE Security Officer Safety Training (S.O.S.T.) program",
       "vendorUrl": "https://www.lsbpse.com/training",
@@ -1914,14 +1914,14 @@ export default {
       "languages": [
         "English"
       ],
-      "sourceUrl": "http://www.lsbpse.com/faq-security-officer"
+      "sourceUrl": "https://www.lsbpse.com/faq-security-officer"
     },
     "education": {
       "hours": "16",
       "breakdown": "Standard first-time security officers complete S.O.S.T. 1101 and S.O.S.T. 1102 (16 hours total) and pass the required examinations before the first work assignment. Qualifying out-of-state officers may use the 4-hour S.O.S.T. pathway; retired officers 5+ years take the 4-hour S.O.S.T. 1401 course.",
       "onlineAllowed": "Not stated on the board's registration pages",
       "apprenticeship": "No apprenticeship path",
-      "sourceUrl": "http://www.lsbpse.com/security-officer-registration"
+      "sourceUrl": "https://www.lsbpse.com/security-officer-registration"
     },
     "experience": "No experience requirement for security officer registration; retired law-enforcement officers receive training exemptions based on POST credentials.",
     "eligibility": {
@@ -1934,18 +1934,18 @@ export default {
       "method": "Criminal background check through IdentoGO using LSBPSE service code 27N43R",
       "fee": "Paid to IdentoGO at scheduling; the board publishes no fixed amount on its registration page",
       "disqualifiers": "The board will not issue a registration card until its investigation confirms the applicant meets registration requirements (La. Admin. Code Title 46, Part LIX)",
-      "sourceUrl": "http://www.lsbpse.com/faq-security-officer"
+      "sourceUrl": "https://www.lsbpse.com/faq-security-officer"
     },
     "fees": [
       {
         "item": "Security officer registration",
         "fee": "$75 (either the applicant or the company may pay; 3% processing fee on electronic payments)",
-        "sourceUrl": "http://www.lsbpse.com/security-officer-registration"
+        "sourceUrl": "https://www.lsbpse.com/security-officer-registration"
       },
       {
         "item": "Registration renewal (2 years)",
         "fee": "$65",
-        "sourceUrl": "http://www.lsbpse.com/security-officer-registration"
+        "sourceUrl": "https://www.lsbpse.com/security-officer-registration"
       },
       {
         "item": "Replacement card (lost or mutilated)",
@@ -1969,19 +1969,19 @@ export default {
         "Receive the registration card showing the company name and issue/expiration dates - you cannot work armed or unarmed on a pending application"
       ],
       "processingTime": "Not published by the board",
-      "sourceUrl": "http://www.lsbpse.com/faq-security-officer"
+      "sourceUrl": "https://www.lsbpse.com/faq-security-officer"
     },
     "renewal": {
       "cycle": "2 years from date of hire; the card displays issue and expiration dates",
       "ce": "The board's 2026 rule changes update training requirements; armed officers must maintain firearms qualification for their weapon classification",
       "fee": "$65",
       "late": "Reinstatement through the Registration and Licensing Portal under board requirements",
-      "sourceUrl": "http://www.lsbpse.com/security-officer-registration"
+      "sourceUrl": "https://www.lsbpse.com/security-officer-registration"
     },
     "reciprocity": {
       "rule": "Louisiana's Welcome Home Act gives applicants who hold a security officer registration or similar credential from another state a registration pathway, potentially including the 4-hour S.O.S.T. training pathway instead of the full 16 hours.",
       "agreements": null,
-      "sourceUrl": "http://www.lsbpse.com/security-officer-registration"
+      "sourceUrl": "https://www.lsbpse.com/security-officer-registration"
     },
     "wages": {
       "soc": "33-9032",
@@ -2031,12 +2031,12 @@ export default {
     "sources": [
       {
         "label": "LSBPSE - Security Officer Registration",
-        "url": "http://www.lsbpse.com/security-officer-registration",
+        "url": "https://www.lsbpse.com/security-officer-registration",
         "checkedOn": "2026-10"
       },
       {
         "label": "LSBPSE - Security Officers FAQ",
-        "url": "http://www.lsbpse.com/faq-security-officer",
+        "url": "https://www.lsbpse.com/faq-security-officer",
         "checkedOn": "2026-10"
       },
       {
@@ -2051,14 +2051,14 @@ export default {
       },
       {
         "label": "LSBPSE Security Officer FAQ page (background check service code)",
-        "url": "http://www.lsbpse.com/faq-security-officer",
+        "url": "https://www.lsbpse.com/faq-security-officer",
         "checkedOn": "2026-10"
       }
     ]
   },
   "ME": {
     "agency": "Maine State Police - Special Investigations Unit, Weapons and Professional Licensing Division",
-    "agencyUrl": "http://www.maine.gov/dps/msp/node/52",
+    "agencyUrl": "https://www.maine.gov/dps/msp/node/52",
     "education": {
       "hours": "None set by the state",
       "breakdown": "Chapter 93 (32 M.R.S. 9401-9418) sets no training-hour requirement for security guards and no exam; the employing contract security company sets and documents training.",
@@ -2103,7 +2103,7 @@ export default {
     ],
     "application": {
       "portal": "Maine State Police Weapons and Professional Licensing (paper application packet)",
-      "portalUrl": "http://www.maine.gov/dps/msp/node/52",
+      "portalUrl": "https://www.maine.gov/dps/msp/node/52",
       "steps": [
         "There is no individual guard license or state exam in Maine - apply to a licensed contract security company or proprietary security organization",
         "Before your first shift, the employer notifies the Commissioner of Public Safety that you are working as a guard",
@@ -2136,7 +2136,7 @@ export default {
       {
         "year": null,
         "change": "No regulatory changes recorded as of October 2026.",
-        "sourceUrl": "http://www.maine.gov/dps/msp/node/52"
+        "sourceUrl": "https://www.maine.gov/dps/msp/node/52"
       }
     ],
     "stateFaqs": [
@@ -2164,7 +2164,7 @@ export default {
     "sources": [
       {
         "label": "Maine State Police - Professional Investigator and Contract Security Licenses",
-        "url": "http://www.maine.gov/dps/msp/node/52",
+        "url": "https://www.maine.gov/dps/msp/node/52",
         "checkedOn": "2026-10"
       },
       {
@@ -2317,7 +2317,7 @@ export default {
       },
       {
         "label": "Md. Code, Business Occupations and Professions § 19-402 (guard certification qualifications)",
-        "url": "http://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gbo&section=19-402",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gbo&section=19-402",
         "checkedOn": "2026-10"
       },
       {
@@ -2641,7 +2641,7 @@ export default {
       {
         "item": "Fingerprint background check (Montana DOJ)",
         "fee": "$27.25",
-        "sourceUrl": "http://boards.bsd.dli.mt.gov/Portals/133/Documents/psp/Application_Alarm_Response_Runner.pdf?ver=2018-10-16-133203-150"
+        "sourceUrl": "https://boards.bsd.dli.mt.gov/Portals/133/Documents/psp/Application_Alarm_Response_Runner.pdf?ver=2018-10-16-133203-150"
       }
     ],
     "application": {
@@ -2655,7 +2655,7 @@ export default {
         "Allow about 30 days for a routine application; applications requiring board review may take up to 120 days."
       ],
       "processingTime": "About 30 days for routine applications; up to 120 days for non-routine applications requiring board review",
-      "sourceUrl": "http://boards.bsd.dli.mt.gov/Portals/133/Documents/psp/Application_Alarm_Response_Runner.pdf?ver=2018-10-16-133203-150"
+      "sourceUrl": "https://boards.bsd.dli.mt.gov/Portals/133/Documents/psp/Application_Alarm_Response_Runner.pdf?ver=2018-10-16-133203-150"
     },
     "renewal": {
       "cycle": "1 year",
@@ -2722,7 +2722,7 @@ export default {
       },
       {
         "label": "Montana Board of Private Security application packet (fingerprint and processing instructions)",
-        "url": "http://boards.bsd.dli.mt.gov/Portals/133/Documents/psp/Application_Alarm_Response_Runner.pdf?ver=2018-10-16-133203-150",
+        "url": "https://boards.bsd.dli.mt.gov/Portals/133/Documents/psp/Application_Alarm_Response_Runner.pdf?ver=2018-10-16-133203-150",
         "checkedOn": "2026-10"
       }
     ]
@@ -3247,7 +3247,7 @@ export default {
       {
         "item": "Unarmed guard - late renewal (within 90 days of expiration)",
         "fee": "$25 late fee in addition to the renewal fee",
-        "sourceUrl": "http://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
+        "sourceUrl": "https://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
       },
       {
         "item": "Unarmed guard - transfer",
@@ -3300,7 +3300,7 @@ export default {
       {
         "year": 2025,
         "change": "Chapter 16 rules of the Private Protective Services Board (14B NCAC 16), which govern guard registration standards and fees, were amended effective November 1, 2025, following earlier amendments effective September 1, 2024 and January 1, 2024.",
-        "sourceUrl": "http://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
+        "sourceUrl": "https://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
       }
     ],
     "stateFaqs": [
@@ -3334,7 +3334,7 @@ export default {
       },
       {
         "label": "14B NCAC Chapter 16 - Private Protective Services Board rules (fees, minimum standards, amendment history)",
-        "url": "http://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf",
+        "url": "https://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf",
         "checkedOn": "2026-10"
       },
       {
@@ -3359,14 +3359,14 @@ export default {
       "hours": "12 (Apprentice); 32 classroom + 1,000 field (Security Officer); 80 classroom + 4,000 field (Commissioned)",
       "breakdown": "North Dakota uses a tiered officer structure: Apprentice Security Officer requires 12 hours of classroom instruction or 12 hours of field service; Security Officer requires 1,000 hours of field service and 32 classroom hours; Commissioned Security Officer requires 4,000 hours of field service and 80 classroom hours. Armed Security Officer status requires at least Security Officer level plus the weapons requirements.",
       "apprenticeship": "An applicant may qualify as a security provider without commissioned officer status with 4,000 hours of security experience and 80 classroom hours, substantiated by third-party documentation.",
-      "sourceUrl": "http://www.pisb.nd.gov/licensing/application-forms"
+      "sourceUrl": "https://www.pisb.nd.gov/licensing/application-forms"
     },
     "experience": "The tier structure doubles as the experience ladder: 12 field hours (apprentice), 1,000 field hours (security officer), and 4,000 field hours (commissioned officer). Applicants for the licensed security provider credential must be commissioned officers or document 4,000 hours of experience with 80 classroom hours.",
     "background": {
       "method": "Two legible fingerprint cards submitted with the application (the Board provides cards free on request); criminal record search through the North Dakota BCI and the FBI",
       "fee": "$40 criminal records search fee",
       "disqualifiers": "Not itemized in the application materials reviewed; applications with unreadable prints or improper codes are rejected and returned.",
-      "sourceUrl": "http://www.pisb.nd.gov/licensing/application-forms"
+      "sourceUrl": "https://www.pisb.nd.gov/licensing/application-forms"
     },
     "fees": [
       {
@@ -3377,37 +3377,37 @@ export default {
       {
         "item": "Criminal records search (BCI and FBI)",
         "fee": "$40",
-        "sourceUrl": "http://www.pisb.nd.gov/licensing/application-forms"
+        "sourceUrl": "https://www.pisb.nd.gov/licensing/application-forms"
       },
       {
         "item": "Apprentice / Security / Commissioned Officer registration",
         "fee": "$45",
-        "sourceUrl": "http://www.pisb.nd.gov/licensing/application-forms"
+        "sourceUrl": "https://www.pisb.nd.gov/licensing/application-forms"
       },
       {
         "item": "Armed certification",
         "fee": "$45",
-        "sourceUrl": "http://www.pisb.nd.gov/licensing/application-forms"
+        "sourceUrl": "https://www.pisb.nd.gov/licensing/application-forms"
       },
       {
         "item": "Licensed Security Provider",
         "fee": "$225",
-        "sourceUrl": "http://www.pisb.nd.gov/licensing/application-forms"
+        "sourceUrl": "https://www.pisb.nd.gov/licensing/application-forms"
       },
       {
         "item": "Licensed Security Agency",
         "fee": "$450",
-        "sourceUrl": "http://www.pisb.nd.gov/licensing/application-forms"
+        "sourceUrl": "https://www.pisb.nd.gov/licensing/application-forms"
       },
       {
         "item": "Duplicate license or registration",
         "fee": "$30",
-        "sourceUrl": "http://www.pisb.nd.gov/licensing/application-forms"
+        "sourceUrl": "https://www.pisb.nd.gov/licensing/application-forms"
       }
     ],
     "application": {
       "portal": "Paper applications filed with the Board office in Bismarck",
-      "portalUrl": "http://www.pisb.nd.gov/licensing/application-forms",
+      "portalUrl": "https://www.pisb.nd.gov/licensing/application-forms",
       "steps": [
         "Choose the correct tier: Apprentice Security Officer, Security Officer, or Commissioned Security Officer, and complete the matching classroom and field-service hours.",
         "Complete pages 1, 2, 2a, and 3 of the application packet and attach documentation of hours and training.",
@@ -3422,7 +3422,7 @@ export default {
       "cycle": "1 year",
       "fee": "Per the current fee schedule: officer registration $45, armed certification $45, licensed security provider $225, security agency $450",
       "late": "Licenses expire September 30 of each year; administrative rules provide for late fees on individual license and registration renewals.",
-      "sourceUrl": "http://www.pisb.nd.gov/licensing/application-forms"
+      "sourceUrl": "https://www.pisb.nd.gov/licensing/application-forms"
     },
     "reciprocity": {
       "rule": "North Dakota has no reciprocity -- the Board states that applicants from other states must apply for a North Dakota license and meet all qualifications.",
@@ -3444,7 +3444,7 @@ export default {
       {
         "year": 2025,
         "change": "The Board published a new fee schedule effective April 22, 2025, setting officer registration at $45, armed certification at $45, criminal record search at $40, licensed security provider at $225, and licensed security agency at $450.",
-        "sourceUrl": "http://www.pisb.nd.gov/licensing/application-forms"
+        "sourceUrl": "https://www.pisb.nd.gov/licensing/application-forms"
       }
     ],
     "stateFaqs": [
@@ -3473,7 +3473,7 @@ export default {
       },
       {
         "label": "ND PISB - Application Forms and fee breakdown effective 4-22-2025",
-        "url": "http://www.pisb.nd.gov/licensing/application-forms",
+        "url": "https://www.pisb.nd.gov/licensing/application-forms",
         "checkedOn": "2026-10"
       },
       {
@@ -3507,7 +3507,7 @@ export default {
       "method": "The company's Qualifying Agent undergoes a criminal background check and Rap Back enrollment; registered employees are monitored by the state Rapback system, which notifies PISGS of arrests",
       "fee": "$10 Rap Back fee for the qualifying agent (included in the $35 QA initial fee)",
       "disqualifiers": "Registrants must certify at each renewal that they have not been convicted of or pled guilty to a disqualifying offense defined in rule 4501:7-1-19 of the Administrative Code during the previous registration year.",
-      "sourceUrl": "http://codes.ohio.gov/oac/4501:7-1-16"
+      "sourceUrl": "https://codes.ohio.gov/oac/4501:7-1-16"
     },
     "fees": [
       {
@@ -3558,7 +3558,7 @@ export default {
       "cycle": "1 year (employee registration, anniversary date); 2 years (company license)",
       "ce": "No state continuing-education hours are required for individual registrants; registrants certify annually that no disqualifying offense occurred in the prior year.",
       "fee": "$25 registrant renewal; $550 company license renewal",
-      "sourceUrl": "http://codes.ohio.gov/oac/4501:7-1-16"
+      "sourceUrl": "https://codes.ohio.gov/oac/4501:7-1-16"
     },
     "wages": {
       "soc": "33-9032",
@@ -3609,12 +3609,12 @@ export default {
       },
       {
         "label": "Ohio Revised Code Chapter 4749 - Private Investigators; Security Services",
-        "url": "http://codes.ohio.gov/orc/4749",
+        "url": "https://codes.ohio.gov/orc/4749",
         "checkedOn": "2026-10"
       },
       {
         "label": "Ohio Administrative Code 4501:7-1-16 - Renewal of registrations",
-        "url": "http://codes.ohio.gov/oac/4501:7-1-16",
+        "url": "https://codes.ohio.gov/oac/4501:7-1-16",
         "checkedOn": "2026-10"
       },
       {
@@ -4218,7 +4218,7 @@ export default {
     "agencyUrl": "https://www.dps.texas.gov/section/private-security",
     "exam": {
       "vendor": "DPS-approved training school or the licensee's manager (state board)",
-      "vendorUrl": "http://www.dps.texas.gov/rsd/psb/docs/adminrules.pdf",
+      "vendorUrl": "https://www.dps.texas.gov/rsd/psb/docs/adminrules.pdf",
       "parts": [
         {
           "name": "Level II training course written test",
@@ -4229,14 +4229,14 @@ export default {
       ],
       "fee": "Included in course tuition paid to the training provider",
       "practical": null,
-      "sourceUrl": "http://www.dps.texas.gov/rsd/psb/docs/adminrules.pdf"
+      "sourceUrl": "https://www.dps.texas.gov/rsd/psb/docs/adminrules.pdf"
     },
     "education": {
       "hours": "Level II course (no state minimum hours published)",
       "breakdown": "Board-prepared Level II material covering the security officer role, applicable Occupations Code and Administrative Code rules, communication and conflict resolution, use of force, arrest procedures, documentation, and emergencies; a completion certificate (Form PSP-36) must accompany the application.",
       "onlineAllowed": "Yes - DPS-approved providers offer the Level II course online with a test.",
       "apprenticeship": null,
-      "sourceUrl": "http://www.dps.texas.gov/rsd/psb/docs/adminrules.pdf"
+      "sourceUrl": "https://www.dps.texas.gov/rsd/psb/docs/adminrules.pdf"
     },
     "experience": "No prior experience required for a noncommissioned (unarmed) registration.",
     "eligibility": {
@@ -4342,7 +4342,7 @@ export default {
       },
       {
         "label": "Texas Private Security Administrative Rules - 37 TAC 35.141 Training Requirements (PDF)",
-        "url": "http://www.dps.texas.gov/rsd/psb/docs/adminrules.pdf",
+        "url": "https://www.dps.texas.gov/rsd/psb/docs/adminrules.pdf",
         "checkedOn": "2026-10"
       },
       {
@@ -4493,10 +4493,10 @@ export default {
   },
   "VA": {
     "agency": "Virginia Department of Criminal Justice Services (DCJS) - Private Security Services",
-    "agencyUrl": "http://www.dcjs.virginia.gov/node/35",
+    "agencyUrl": "https://www.dcjs.virginia.gov/node/35",
     "exam": {
       "vendor": "DCJS-certified private security training school (state board)",
-      "vendorUrl": "http://www.dcjs.virginia.gov/node/35",
+      "vendorUrl": "https://www.dcjs.virginia.gov/node/35",
       "parts": [
         {
           "name": "01E Security Officer Core Subjects written exam",
@@ -4514,7 +4514,7 @@ export default {
       "breakdown": "Course 01E (Security Officer Core Subjects) covering law and DCJS regulations, report writing, courtroom behavior, use of force, communication, patrol tactics, confrontation management, emergencies, and access control.",
       "onlineAllowed": "Initial 01E entry-level training is classroom-based; the 4-hour 01I in-service refresher may be completed online.",
       "apprenticeship": "Training exemptions are available under 6VAC20-174-190 for prior private security training or qualified law enforcement experience; an entry-level training exemption application costs $25.",
-      "sourceUrl": "http://www.dcjs.virginia.gov/node/35"
+      "sourceUrl": "https://www.dcjs.virginia.gov/node/35"
     },
     "experience": "No prior experience required; training completion must be within 12 months of filing the registration application.",
     "eligibility": {
@@ -4591,7 +4591,7 @@ export default {
       {
         "year": null,
         "change": "No regulatory changes recorded as of October 2026.",
-        "sourceUrl": "http://www.dcjs.virginia.gov/node/35"
+        "sourceUrl": "https://www.dcjs.virginia.gov/node/35"
       }
     ],
     "stateFaqs": [
@@ -4615,7 +4615,7 @@ export default {
     "sources": [
       {
         "label": "Virginia DCJS - Unarmed Security Officer/Courier",
-        "url": "http://www.dcjs.virginia.gov/node/35",
+        "url": "https://www.dcjs.virginia.gov/node/35",
         "checkedOn": "2026-10"
       },
       {
@@ -4671,7 +4671,7 @@ export default {
       "method": "Fingerprint-based background check through IdentoGO; unarmed applicants need the Washington State Patrol check only, armed applicants need WSP plus FBI",
       "fee": "$33.05 unarmed ($12.05 fingerprints + $21 background check); $45.05 armed",
       "disqualifiers": "Convictions the director determines directly relate to guard duties and justify withholding the license; gross misdemeanor or felony convictions within the last five years must be disclosed with an explanation.",
-      "sourceUrl": "http://www.dol.wa.gov/sites/default/files/forms/690008.pdf"
+      "sourceUrl": "https://www.dol.wa.gov/sites/default/files/forms/690008.pdf"
     },
     "fees": [
       {
@@ -4759,7 +4759,7 @@ export default {
       },
       {
         "label": "DOL Form PSG-690-008 - Apply for private security guard license (PDF)",
-        "url": "http://www.dol.wa.gov/sites/default/files/forms/690008.pdf",
+        "url": "https://www.dol.wa.gov/sites/default/files/forms/690008.pdf",
         "checkedOn": "2026-10"
       },
       {

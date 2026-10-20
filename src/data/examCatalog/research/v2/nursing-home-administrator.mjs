@@ -16,7 +16,7 @@ export default {
   compiledOn: '2026-10-20',
   states: {
     AL: {
-      agencyUrl: 'http://www.alboenha.alabama.gov/qualifications.aspx',
+      agencyUrl: 'https://www.alboenha.alabama.gov/qualifications.aspx',
       exam: {
         vendor: 'NAB at Pearson VUE test centres; Alabama state examination set by the board',
         parts: [
@@ -25,11 +25,11 @@ export default {
           { name: 'Alabama state examination', questions: 'Board-set', time: 'Board-set', pass: 'Board-set' }
         ],
         fee: '$480 for the CORE + NHA combination (from 1 February 2026); state exam fees per the board',
-        sourceUrl: 'http://www.alboenha.alabama.gov/qualifications.aspx'
+        sourceUrl: 'https://www.alboenha.alabama.gov/qualifications.aspx'
       },
       education: {
         hours: '1,000-hour AIT with a bachelor\u2019s degree; 2,000-hour AIT with an associate degree plus four years of supervisory nursing-home work; 500-hour internship with a bachelor\u2019s in health care administration; 200-hour internship with a master\u2019s in health care or hospital administration',
-        sourceUrl: 'http://www.alboenha.alabama.gov/qualifications.aspx'
+        sourceUrl: 'https://www.alboenha.alabama.gov/qualifications.aspx'
       },
       eligibility: { minAge: 19, education: 'High school diploma or associate degree minimum, scaling with the AIT length', other: 'US citizen or declared intent; good moral character' },
       renewal: { cycle: 'Annual', ce: '24 hours per year', sourceUrl: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7837745/table/T1/' },
@@ -42,14 +42,14 @@ export default {
         { q: 'What do nursing home administrators earn in Alabama?', a: 'BLS OEWS reports a median of $97,790 for Medical and Health Services Managers \u2014 the SOC that includes nursing home administrators \u2014 in Alabama as of May 2025, with the middle half earning roughly $79,500 to $118,440. The national median is $123,860.' }
       ],
       sources: [
-        { label: 'Alabama Board of Examiners of Nursing Home Administrators \u2014 Qualifications', url: 'http://www.alboenha.alabama.gov/qualifications.aspx', checkedOn: '2026-10' },
+        { label: 'Alabama Board of Examiners of Nursing Home Administrators \u2014 Qualifications', url: 'https://www.alboenha.alabama.gov/qualifications.aspx', checkedOn: '2026-10' },
         { label: 'NAB Exam Information', url: 'https://nabweb.connectedcommunity.org/nabsite/seeking-licensure/exam-info', checkedOn: '2026-10' },
         { label: 'NHA Licensure Requirements Summary (peer-reviewed table)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7837745/table/T1/', checkedOn: '2026-10' },
         { label: 'O*NET / BLS OEWS May 2025 \u2014 Alabama wages, SOC 11-9111', url: 'https://www.onetonline.org/link/localwages/11-9111.00?st=AL', checkedOn: '2026-10' }
       ]
     },
     AK: {
-      agencyUrl: 'http://dhss.alaska.gov/dhcs/Pages/hflc/fac_LTC.aspx',
+      agencyUrl: 'https://dhss.alaska.gov/dhcs/Pages/hflc/fac_LTC.aspx',
       exam: {
         vendor: 'NAB at Pearson VUE test centres',
         parts: [
@@ -174,7 +174,7 @@ export default {
       },
       education: {
         hours: 'Bachelor\u2019s degree plus a 1,000-hour board-approved AIT; alternate routes include a master\u2019s with a 480-hour skilled-nursing internship, or 10 years of qualifying nursing-home experience (5 supervisory) combined with college units and a 1,000-hour AIT',
-        sourceUrl: 'http://www.labormarketinfo.edd.ca.gov/cgi/databrowsing/licensedisplaypage.asp?licid=996'
+        sourceUrl: 'https://www.labormarketinfo.edd.ca.gov/cgi/databrowsing/licensedisplaypage.asp?licid=996'
       },
       eligibility: { minAge: 18, education: 'Bachelor\u2019s degree or qualifying experience route; official transcript required (Health and Safety Code \u00a7 1416.22)' },
       fees: [
@@ -186,7 +186,7 @@ export default {
         { item: 'Reciprocity licensure application', fee: '$188', sourceUrl: 'https://www.CDPH.CA.GOV/Programs/CHCQ/LCP/CDPH%20Document%20Library/25-26_Annual_Fee_Report.pdf' }
       ],
       renewal: { cycle: 'Biennial', ce: '40 hours per biennium', fee: '$830 timely ($1,022 delinquent) from 1 July 2026', sourceUrl: 'https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/NHAPFees.aspx' },
-      application: { portal: 'CDPH Nursing Home Administrator Program (NHAP) paper applications; checks payable to NHAP', steps: ['Submit the NHAP application and initial licensing fee', 'For the online national exam route, apply to NAB once on file with NHAP', 'Complete the AIT or qualify via the experience routes', 'Sit the California state examination'], processingTime: 'AIT and examination applications 30\u201345 working days; reciprocity about 30 working days', sourceUrl: 'http://www.labormarketinfo.edd.ca.gov/cgi/databrowsing/licensedisplaypage.asp?licid=996' },
+      application: { portal: 'CDPH Nursing Home Administrator Program (NHAP) paper applications; checks payable to NHAP', steps: ['Submit the NHAP application and initial licensing fee', 'For the online national exam route, apply to NAB once on file with NHAP', 'Complete the AIT or qualify via the experience routes', 'Sit the California state examination'], processingTime: 'AIT and examination applications 30\u201345 working days; reciprocity about 30 working days', sourceUrl: 'https://www.labormarketinfo.edd.ca.gov/cgi/databrowsing/licensedisplaypage.asp?licid=996' },
       wages: { soc: '11-9111', socName: 'Medical and Health Services Managers (includes nursing home administrators)', median: '$141,480', p25: '$98,470', p75: '$205,390', employment: 75090, national: '$123,860', year: 'May 2025', sourceUrl: 'https://www.onetonline.org/link/localwages/11-9111.00?st=CA' },
       recentChanges: [
         { year: 2026, change: 'NHAP fee list effective 1 July 2026 sets AIT at $448, licensing-exam application at $936, in-person state exam at $634, provisional licence at $2,193 and biennial renewal at $830.', sourceUrl: 'https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/NHAPFees.aspx' },

@@ -507,14 +507,14 @@ export default {
         "Upon passing, submit the $175 license fee to receive the license."
       ],
       "processingTime": "About 120 days on average per the state labor market information listing; BSIS notes BreEZe filing bypasses the cashiering office and can reduce processing time by up to two weeks.",
-      "sourceUrl": "http://bsis.ca.gov/consumers/faqs/pi.shtml"
+      "sourceUrl": "https://bsis.ca.gov/consumers/faqs/pi.shtml"
     },
     "renewal": {
       "cycle": "2 years",
       "ce": "None for the PI license; firearms permit holders complete periodic requalification",
       "fee": "$125",
       "late": "The license becomes delinquent 30 days after expiration and can be renewed up to three years after expiration; after three years a new application is required",
-      "sourceUrl": "http://bsis.ca.gov/consumers/faqs/pi.shtml"
+      "sourceUrl": "https://bsis.ca.gov/consumers/faqs/pi.shtml"
     },
     "wages": {
       "soc": "33-9021",
@@ -560,7 +560,7 @@ export default {
       },
       {
         "label": "BSIS Private Investigator FAQ",
-        "url": "http://bsis.ca.gov/consumers/faqs/pi.shtml",
+        "url": "https://bsis.ca.gov/consumers/faqs/pi.shtml",
         "checkedOn": "2026-10"
       },
       {
@@ -988,7 +988,7 @@ export default {
       "languages": [
         "English"
       ],
-      "sourceUrl": "http://aesecomm.fdacs.gov/content/download/23758/file/examination-faq.pdf",
+      "sourceUrl": "https://aesecomm.fdacs.gov/content/download/23758/file/examination-faq.pdf",
       "sourceNote": "The exam covers Sections 493.6100 through 493.6203 and Section 493.6301(5), Florida Statutes -- the business practices and legal responsibilities of the private investigative industry. It is administered remotely online or at Everblue facilities, and preliminary results display immediately."
     },
     "education": {
@@ -996,7 +996,7 @@ export default {
       "breakdown": "The intern course covers general investigative techniques and Chapter 493, offered by a state university or a school under the Department of Education's purview; the certificate must accompany the Class CC application",
       "onlineAllowed": "The Class CC training may be provided face-to-face, online, or as a home-study course under Department of Education rules",
       "apprenticeship": "A Class CC intern serves a two-year internship under a designated sponsor holding a Class C, MA, or M license (Section 493.6203(6), F.S.)",
-      "sourceUrl": "http://leg.state.fl.us/STATUTES/index.cfm?App_mode=Display_Statute&URL=0400-0499/0493/Sections/0493.6203.html//"
+      "sourceUrl": "https://leg.state.fl.us/STATUTES/index.cfm?App_mode=Display_Statute&URL=0400-0499/0493/Sections/0493.6203.html//"
     },
     "experience": "Two years of lawfully gained, verifiable, full-time experience: private investigative work or equivalent fields, up to one year of criminal-justice college coursework or law-enforcement training, time as a Class CC licensed intern, or any combination (Section 493.6203(4), F.S.). Bodyguard work is not creditable.",
     "eligibility": {
@@ -1019,7 +1019,7 @@ export default {
       {
         "item": "Class C license",
         "fee": "$75 (statutory maximum under Section 493.6202, F.S.)",
-        "sourceUrl": "http://leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0493/Sections/0493.6202.html"
+        "sourceUrl": "https://leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0493/Sections/0493.6202.html"
       },
       {
         "item": "Fingerprints",
@@ -1029,12 +1029,12 @@ export default {
       {
         "item": "Examination",
         "fee": "$70 paid to Everblue",
-        "sourceUrl": "http://aesecomm.fdacs.gov/content/download/23758/file/examination-faq.pdf"
+        "sourceUrl": "https://aesecomm.fdacs.gov/content/download/23758/file/examination-faq.pdf"
       },
       {
         "item": "Class CC intern license",
         "fee": "$60 license fee (statutory maximum) plus application and fingerprint fees",
-        "sourceUrl": "http://leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0493/Sections/0493.6202.html"
+        "sourceUrl": "https://leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0493/Sections/0493.6202.html"
       },
       {
         "item": "Renewal (2 years)",
@@ -1100,17 +1100,17 @@ export default {
     "sources": [
       {
         "label": "FDACS examination FAQ for PI/PI manager licenses (Everblue)",
-        "url": "http://aesecomm.fdacs.gov/content/download/23758/file/examination-faq.pdf",
+        "url": "https://aesecomm.fdacs.gov/content/download/23758/file/examination-faq.pdf",
         "checkedOn": "2026-10"
       },
       {
         "label": "Section 493.6203, Florida Statutes - license requirements",
-        "url": "http://leg.state.fl.us/STATUTES/index.cfm?App_mode=Display_Statute&URL=0400-0499/0493/Sections/493.6203.html//",
+        "url": "https://leg.state.fl.us/STATUTES/index.cfm?App_mode=Display_Statute&URL=0400-0499/0493/Sections/493.6203.html//",
         "checkedOn": "2026-10"
       },
       {
         "label": "Section 493.6202, Florida Statutes - fees",
-        "url": "http://leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0493/Sections/0493.6202.html",
+        "url": "https://leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0493/Sections/0493.6202.html",
         "checkedOn": "2026-10"
       },
       {
@@ -2250,7 +2250,7 @@ export default {
       "method": "Two Louisiana State Police forms plus two fingerprint cards for state and national criminal history checks",
       "fee": "$43 background check fee per the LSBPIE fee schedule",
       "disqualifiers": "Any felony conviction or conviction for a crime involving moral turpitude (LA R.S. 37:3507)",
-      "sourceUrl": "http://lsbpie.com/forms/application_Journeyman.pdf"
+      "sourceUrl": "https://lsbpie.com/forms/application_Journeyman.pdf"
     },
     "fees": [
       {
@@ -2261,7 +2261,7 @@ export default {
       {
         "item": "Journeyman application (total)",
         "fee": "$339.25 (application, exam, initial license, and background check fees combined)",
-        "sourceUrl": "http://lsbpie.com/forms/application_Journeyman.pdf"
+        "sourceUrl": "https://lsbpie.com/forms/application_Journeyman.pdf"
       },
       {
         "item": "Examination",
@@ -2276,7 +2276,7 @@ export default {
       {
         "item": "Returned application processing",
         "fee": "$20 (charged when an incomplete packet is returned)",
-        "sourceUrl": "http://lsbpie.com/forms/application_Journeyman.pdf"
+        "sourceUrl": "https://lsbpie.com/forms/application_Journeyman.pdf"
       }
     ],
     "application": {
@@ -2290,7 +2290,7 @@ export default {
         "Journeyman licensees may only work through LSBPIE-licensed agencies and cannot take cases directly from the public, attorneys, businesses, or government agencies."
       ],
       "processingTime": "2-3 months average for mailed applications",
-      "sourceUrl": "http://lsbpie.com/forms/application_Journeyman.pdf"
+      "sourceUrl": "https://lsbpie.com/forms/application_Journeyman.pdf"
     },
     "renewal": {
       "cycle": "Annual; licenses expire on the anniversary of issuance (LA R.S. 37:3517)",
@@ -2352,7 +2352,7 @@ export default {
       },
       {
         "label": "LSBPIE Journeyman Application Package and Checklist (fees, fingerprint forms, journeyman scope)",
-        "url": "http://lsbpie.com/forms/application_Journeyman.pdf",
+        "url": "https://lsbpie.com/forms/application_Journeyman.pdf",
         "checkedOn": "2026-10"
       },
       {
@@ -2734,7 +2734,7 @@ export default {
       },
       {
         "label": "M.G.L. Chapter 147, Section 24 (legislature.ma.gov)",
-        "url": "http://malegislature.gov/Laws/GeneralLaws/PartI/TitleXX/Chapter147/Section24",
+        "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXX/Chapter147/Section24",
         "checkedOn": "2026-10"
       },
       {
@@ -2842,7 +2842,7 @@ export default {
       },
       {
         "label": "MCL 338.826 - Professional Investigator Licensure Act qualifications",
-        "url": "http://www.legislature.mi.gov/(S(xdqs0svwg1i10zzft3pianq4))/mileg.aspx?page=getObject&objectName=mcl-338-826&highlight=investigator",
+        "url": "https://www.legislature.mi.gov/(S(xdqs0svwg1i10zzft3pianq4))/mileg.aspx?page=getObject&objectName=mcl-338-826&highlight=investigator",
         "checkedOn": "2026-10"
       },
       {
@@ -3119,10 +3119,10 @@ export default {
   },
   "MT": {
     "agency": "Montana Board of Private Security (Department of Labor & Industry) - Private Security Program",
-    "agencyUrl": "http://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator",
+    "agencyUrl": "https://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator",
     "exam": {
       "vendor": "State board (exam based on MCA Title 37, Chapters 1 and 60 and ARM 24, Chapter 182)",
-      "vendorUrl": "http://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator",
+      "vendorUrl": "https://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator",
       "parts": [
         {
           "name": "Montana private investigator written examination",
@@ -3154,17 +3154,17 @@ export default {
       {
         "item": "Application",
         "fee": "$80 (all fees non-refundable)",
-        "sourceUrl": "http://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator"
+        "sourceUrl": "https://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator"
       },
       {
         "item": "Renewal",
         "fee": "$160",
-        "sourceUrl": "http://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator"
+        "sourceUrl": "https://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator"
       },
       {
         "item": "Late renewal",
         "fee": "$80",
-        "sourceUrl": "http://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator"
+        "sourceUrl": "https://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator"
       },
       {
         "item": "Liability insurance",
@@ -3174,12 +3174,12 @@ export default {
       {
         "item": "Armed endorsement (optional)",
         "fee": "Firearm endorsement requires completion of a board-certified firearms training program taught by a certified firearms instructor; the prior board checklist listed a $50 endorsement fee",
-        "sourceUrl": "http://boards.bsd.dli.mt.gov/Portals/133/Documents/psp/PSP-PI-APP_License-App-Checklist.pdf?ver=2018-07-24-103438-773"
+        "sourceUrl": "https://boards.bsd.dli.mt.gov/Portals/133/Documents/psp/PSP-PI-APP_License-App-Checklist.pdf?ver=2018-07-24-103438-773"
       }
     ],
     "application": {
       "portal": "eBiz Montana online licensing (ebiz.mt.gov/POL)",
-      "portalUrl": "http://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator",
+      "portalUrl": "https://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator",
       "steps": [
         "Apply online through eBiz Montana or with a paper application, paying the $80 application fee.",
         "Provide proof of education, training, and experience totaling 5,400 hours (or the education substitution).",
@@ -3187,13 +3187,13 @@ export default {
         "List three references not related by blood or marriage - two must be former employers or firms with a contractual working relationship.",
         "Provide proof of the $500,000 commercial general liability policy; once the application is approved, take the board's written examination."
       ],
-      "sourceUrl": "http://boards.bsd.dli.mt.gov/Portals/133/Documents/psp/PSP-PI-APP_License-App-Checklist.pdf?ver=2018-07-24-103438-773"
+      "sourceUrl": "https://boards.bsd.dli.mt.gov/Portals/133/Documents/psp/PSP-PI-APP_License-App-Checklist.pdf?ver=2018-07-24-103438-773"
     },
     "renewal": {
       "cycle": "Annual - renewal window January 1 through March 1",
       "fee": "$160",
       "late": "$80 late fee",
-      "sourceUrl": "http://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator"
+      "sourceUrl": "https://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator"
     },
     "wages": {
       "soc": "33-9021",
@@ -3234,7 +3234,7 @@ export default {
     "sources": [
       {
         "label": "Montana Board of Private Security - Private Investigator license information",
-        "url": "http://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator",
+        "url": "https://boards.bsd.dli.mt.gov/private-security/license-information/private-investigator",
         "checkedOn": "2026-10"
       },
       {
@@ -3249,7 +3249,7 @@ export default {
       },
       {
         "label": "Montana Board of Private Security - PI application checklist (PDF)",
-        "url": "http://boards.bsd.dli.mt.gov/Portals/133/Documents/psp/PSP-PI-APP_License-App-Checklist.pdf?ver=2018-07-24-103438-773",
+        "url": "https://boards.bsd.dli.mt.gov/Portals/133/Documents/psp/PSP-PI-APP_License-App-Checklist.pdf?ver=2018-07-24-103438-773",
         "checkedOn": "2026-10"
       }
     ]
@@ -4065,27 +4065,27 @@ export default {
       {
         "item": "Application (non-refundable, plus a $4 convenience fee and card transaction fee)",
         "fee": "$150",
-        "sourceUrl": "http://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
+        "sourceUrl": "https://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
       },
       {
         "item": "License fee (per year of the license term)",
         "fee": "$250",
-        "sourceUrl": "http://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
+        "sourceUrl": "https://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
       },
       {
         "item": "Trainee permit (PI Associate, per year)",
         "fee": "$250",
-        "sourceUrl": "http://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
+        "sourceUrl": "https://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
       },
       {
         "item": "Late renewal",
         "fee": "$100 in addition to the renewal fee",
-        "sourceUrl": "http://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
+        "sourceUrl": "https://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
       },
       {
         "item": "Branch office (per year of term)",
         "fee": "$50",
-        "sourceUrl": "http://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
+        "sourceUrl": "https://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
       }
     ],
     "application": {
@@ -4100,19 +4100,19 @@ export default {
         "Meet personally with a Board investigator, the Screening Committee, the Director or another designated representative to review G.S. 74C and the rules before the license is issued"
       ],
       "processingTime": "Several weeks to a few months; the personal meeting and background review are built into the process and no fixed timeline is published",
-      "sourceUrl": "http://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
+      "sourceUrl": "https://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
     },
     "renewal": {
       "cycle": "1 or 2 years as issued by the Board (the fee is $250 per year of the license term)",
       "ce": "No continuing education requirement is published in the licensing rules",
       "fee": "$250 per year of term",
       "late": "$100 late renewal fee in addition to the renewal fee",
-      "sourceUrl": "http://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
+      "sourceUrl": "https://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
     },
     "reciprocity": {
       "rule": "No general reciprocity program is published. Under 14B NCAC 16 .0401, military spouses holding an active PI license from another state with substantially equal requirements, plus two years of investigative experience within the past five years, may have that accepted in place of the standard three-year requirement.",
       "agreements": null,
-      "sourceUrl": "http://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
+      "sourceUrl": "https://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf"
     },
     "wages": {
       "soc": "33-9021",
@@ -4158,7 +4158,7 @@ export default {
       },
       {
         "label": "14B NCAC Chapter 16 - Private Protective Services Board rules (fees, application)",
-        "url": "http://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf",
+        "url": "https://reports.oah.state.nc.us/ncac/title%2014b%20-%20public%20safety/chapter%2016%20-%20private%20protective%20services%20board/chapter%2016%20rules.pdf",
         "checkedOn": "2026-10"
       },
       {
@@ -4317,16 +4317,16 @@ export default {
   },
   "OH": {
     "agency": "Ohio Department of Public Safety - Private Investigator Security Guard Services (PISGS)",
-    "agencyUrl": "http://codes.ohio.gov/orc/4749",
+    "agencyUrl": "https://codes.ohio.gov/orc/4749",
     "exam": {
       "vendor": "Ohio DPS / PISGS (state examination devised by the Director of Public Safety)",
-      "vendorUrl": "http://codes.ohio.gov/orc/4749",
+      "vendorUrl": "https://codes.ohio.gov/orc/4749",
       "fee": "$25 exam application fee",
       "practical": null,
       "languages": [
         "English"
       ],
-      "sourceUrl": "http://codes.ohio.gov/oac/4501:7-1-17",
+      "sourceUrl": "https://codes.ohio.gov/oac/4501:7-1-17",
       "sourceNote": "OAC 4501:7-1-07 governs the exam; after eligibility is confirmed PISGS notifies the applicant of the exam time and place in Columbus, with up to 90 days and three attempts to pass. The state does not publish a question count or passing score."
     },
     "experience": "At least two years of continuous investigatory or security services work immediately preceding application - for a law enforcement or other public agency engaged in investigatory activities, for a private investigator or security guard provider, or in the practice of law - or equivalent experience as determined by rule of the Director (ORC 4749.03(A)(1)(b)). Criminal justice education may substitute for up to half of the experience requirement subject to PISGS approval.",
@@ -4340,48 +4340,48 @@ export default {
       "method": "Fingerprint submission to the Bureau of Criminal Identification and Investigation (BCI&I) via WebCheck; an FBI check is added if the applicant intends to carry a firearm; licensees and registrants enroll in the BCI retained applicant fingerprint database",
       "fee": "$10 BCI retained applicant fingerprint enrollment fee per company application; BCI/FBI vendor charges are paid separately to the WebCheck provider",
       "disqualifiers": "Disqualifying offenses are defined in OAC 4501:7-1-19, including crimes of moral turpitude and specified violent or sexually oriented offenses; adjudicated incompetence without restored capacity is disqualifying under ORC 4749.03",
-      "sourceUrl": "http://codes.ohio.gov/orc/4749"
+      "sourceUrl": "https://codes.ohio.gov/orc/4749"
     },
     "fees": [
       {
         "item": "Exam application (per individual or qualifying agent)",
         "fee": "$25",
-        "sourceUrl": "http://codes.ohio.gov/oac/4501:7-1-17"
+        "sourceUrl": "https://codes.ohio.gov/oac/4501:7-1-17"
       },
       {
         "item": "License issuance (Class A/B/C)",
         "fee": "$200 (refunded if the application is denied)",
-        "sourceUrl": "http://codes.ohio.gov/oac/4501:7-1-17"
+        "sourceUrl": "https://codes.ohio.gov/oac/4501:7-1-17"
       },
       {
         "item": "BCI retained applicant fingerprint enrollment (company application)",
         "fee": "$10",
-        "sourceUrl": "http://codes.ohio.gov/oac/4501:7-1-17"
+        "sourceUrl": "https://codes.ohio.gov/oac/4501:7-1-17"
       },
       {
         "item": "Branch license",
         "fee": "$100",
-        "sourceUrl": "http://codes.ohio.gov/oac/4501:7-1-17"
+        "sourceUrl": "https://codes.ohio.gov/oac/4501:7-1-17"
       },
       {
         "item": "Biennial renewal",
         "fee": "$550",
-        "sourceUrl": "http://codes.ohio.gov/oac/4501:7-1-17"
+        "sourceUrl": "https://codes.ohio.gov/oac/4501:7-1-17"
       },
       {
         "item": "Employee registration ID card",
         "fee": "$40 issuance / $25 annual renewal",
-        "sourceUrl": "http://codes.ohio.gov/oac/4501:7-1-17"
+        "sourceUrl": "https://codes.ohio.gov/oac/4501:7-1-17"
       },
       {
         "item": "Firearm bearer notation",
         "fee": "$15",
-        "sourceUrl": "http://codes.ohio.gov/oac/4501:7-1-17"
+        "sourceUrl": "https://codes.ohio.gov/oac/4501:7-1-17"
       }
     ],
     "application": {
       "portal": "PISGS online licensing (Ohio Department of Public Safety)",
-      "portalUrl": "http://pisgs.ohio.gov/pisgs.stm",
+      "portalUrl": "https://pisgs.ohio.gov/pisgs.stm",
       "steps": [
         "Create the PISGS account and start the Class B (private investigator) provider application",
         "Document two years of continuous qualifying experience with dates, employers and duties",
@@ -4391,14 +4391,14 @@ export default {
         "After prerequisites are met, take the PISGS exam in Columbus within the 90-day window (three attempts allowed)"
       ],
       "processingTime": "Several weeks; the state does not publish a fixed processing timeline, and the exam window runs from the eligibility notice",
-      "sourceUrl": "http://codes.ohio.gov/orc/4749"
+      "sourceUrl": "https://codes.ohio.gov/orc/4749"
     },
     "renewal": {
       "cycle": "2 years (licenses issued on or after April 9, 2025 follow the biennial cycle)",
       "ce": "No continuing education requirement is published in Chapter 4749 or OAC 4501:7-1",
       "fee": "$550 biennial renewal",
       "late": "Not specified in the fee rule; workers' compensation and unemployment coverage must be in place for renewal eligibility",
-      "sourceUrl": "http://codes.ohio.gov/oac/4501:7-1-17"
+      "sourceUrl": "https://codes.ohio.gov/oac/4501:7-1-17"
     },
     "wages": {
       "soc": "33-9021",
@@ -4415,12 +4415,12 @@ export default {
       {
         "year": 2025,
         "change": "House Bill 238 took effect April 9, 2025, moving Ohio private investigator licenses to a two-year (biennial) renewal cycle under amended ORC 4749.03.",
-        "sourceUrl": "http://codes.ohio.gov/orc/4749"
+        "sourceUrl": "https://codes.ohio.gov/orc/4749"
       },
       {
         "year": 2026,
         "change": "The fee rule OAC 4501:7-1-17 was reissued effective May 1, 2026, confirming the $25 exam application, $200 issuance, $10 BCI enrollment and $550 biennial renewal fees.",
-        "sourceUrl": "http://codes.ohio.gov/oac/4501:7-1-17"
+        "sourceUrl": "https://codes.ohio.gov/oac/4501:7-1-17"
       }
     ],
     "stateFaqs": [
@@ -4444,12 +4444,12 @@ export default {
     "sources": [
       {
         "label": "Ohio Revised Code Chapter 4749 - Private Investigators; Security Services",
-        "url": "http://codes.ohio.gov/orc/4749",
+        "url": "https://codes.ohio.gov/orc/4749",
         "checkedOn": "2026-10"
       },
       {
         "label": "Ohio Administrative Code 4501:7-1-17 - Fees (effective May 1, 2026)",
-        "url": "http://codes.ohio.gov/oac/4501:7-1-17",
+        "url": "https://codes.ohio.gov/oac/4501:7-1-17",
         "checkedOn": "2026-10"
       },
       {
@@ -4558,7 +4558,7 @@ export default {
       {
         "year": 2024,
         "change": "House Bill 3786 amended 59 O.S. Section 1750.6, making the $25 late renewal fee non-refundable, requiring new applications (not renewals) more than 30 days after expiration, and exempting retired peace officers in good standing from fingerprint submission for armed licenses.",
-        "sourceUrl": "http://webserver1.lsb.state.ok.us/cf_pdf/2023-24%20ENGR/hB/HB3786%20ENGR.PDF"
+        "sourceUrl": "https://webserver1.lsb.state.ok.us/cf_pdf/2023-24%20ENGR/hB/HB3786%20ENGR.PDF"
       }
     ],
     "stateFaqs": [
@@ -4597,7 +4597,7 @@ export default {
       },
       {
         "label": "Oklahoma HB 3786 (2024) - enrolled bill amending Section 1750.6",
-        "url": "http://webserver1.lsb.state.ok.us/cf_pdf/2023-24%20ENGR/hB/HB3786%20ENGR.PDF",
+        "url": "https://webserver1.lsb.state.ok.us/cf_pdf/2023-24%20ENGR/hB/HB3786%20ENGR.PDF",
         "checkedOn": "2026-10"
       }
     ]
@@ -5245,7 +5245,7 @@ export default {
       },
       {
         "label": "T.C.A. Section 62-26-206 experience and examination requirements (2009 amendment text)",
-        "url": "http://thepigroup.com/tennessee_private_investigator_license.html",
+        "url": "https://thepigroup.com/tennessee_private_investigator_license.html",
         "checkedOn": "2026-10"
       },
       {
