@@ -22,7 +22,7 @@ const ok = (cond, label, extra = '') => {
   if (!cond) fail++;
 };
 
-const read = (p) => readFileSync(p, 'utf8');
+const read = (p) => readFileSync(p, 'utf8').replace(/\r\n/g, '\n'); // autocrlf worktrees: normalize CRLF before LF-assuming assertions
 const readJson = (p) => JSON.parse(read(p));
 
 /** Map a site-relative URL to its file in dist/. */

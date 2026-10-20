@@ -1,0 +1,927 @@
+---
+// ─────────────────────────────────────────────────────────────────────────────
+//  Template hub pages — "{Credential} Requirements by State (2026)"
+//
+//  One page per state template that has a v2 research package covering ≥5
+//  jurisdictions. URL pattern: /exams/<template-key>-license-by-state.
+//
+//  Everything numeric on this page is COMPUTED from the merged per-state
+//  data (v1 dossier + research/v2/<key>.mjs increments) at build time —
+//  the quick answer, the rankings, the map buckets and the FAQ answers are
+//  never hand-written, so every claim is traceable to a state row above it.
+//
+//  Static build: no route ambiguity with [slug].astro — hub params always
+//  end in "-license-by-state", state slugs never do.
+// ─────────────────────────────────────────────────────────────────────────────
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
+import { allExams, allExamsFull, jurisdictionByCode, categoryById } from '../../data/examCatalog/index.mjs';
+import { stateTemplates } from '../../data/examCatalog/stateTemplates.mjs';
+import { dossierByKey } from '../../data/examCatalog/research/index.mjs';
+import { v2ByKey } from '../../data/examCatalog/research/v2/index.mjs';
+import { compactById } from '../../data/examCatalog/compacts.mjs';
+
+export function getStaticPaths() {
+  return stateTemplates
+    .filter((tpl) => {
+      const v2 = v2ByKey[tpl.key];
+      const dossier = dossierByKey[tpl.key];
+      return Boolean(v2 && dossier && Object.keys(v2.states || {}).length >= 5);
+    })
+    .map((tpl) => {
+      const hubSlug = `${tpl.key}-license-by-state`;
+      const v2 = v2ByKey[tpl.key];
+      const dossier = dossierByKey[tpl.key];
+      // Built state rows for this template — these carry the per-state page
+      // links and the ItemList schema. Unreleased templates yield [] and the
+      // page degrades honestly (no links, no ItemList).
+      const stateRows = allExams.filter((e) => e.templateKey === tpl.key && e.buildPage !== false);
+      // Rows the catalog deliberately does NOT build (offered === false) or
+      // maps to a differently-named local credential (actualCredential).
+      const notOfferedRows = allExamsFull.filter(
+        (e) => e.templateKey === tpl.key && (e.buildPage === false || e.actualCredential)
+      );
+      return {
+        params: { hub: hubSlug },
+        props: { tpl, dossier, v2states: v2.states, v2, stateRows, notOfferedRows }
+      };
+    });
+}
+
+const { tpl, dossier, v2states, v2, stateRows, notOfferedRows } = Astro.props;
+
+const siteUrl = Astro.site || 'https://testpreppilot.com';
+const hubSlug = `${tpl.key}-license-by-state`;
+const canonicalUrl = new URL(`/exams/${hubSlug}`, siteUrl).toString();
+
+const cat = categoryById[tpl.category];
+const credName = tpl.name.replace(/\{State\}\s*/, '');
+const credLower = credName.toLowerCase();
+const title = `${credName} Requirements by State (2026)`;
+
+// ── tiny extraction helpers ─────────────────────────────────────────────────
+// All displays below are verbatim slices of the researched strings — prefixes
+// only, never paraphrase — so a cell can never claim more than its source.
+// hoursNum only trusts a number explicitly annotated with "hours" — a bare
+// leading number would read dates ("since 24 May 2026") or subsection counts
+// as education requirements.
+const leadNum = (s) => {
+  const m = String(s || '').match(/(\d{1,3}(?:,\d{3})+|\d+(?:\.\d+)?)\s*(?:\+)?\s*(?:semester\s+|credit\s+)?hours/i);
+  return m ? parseFloat(m[1].replace(/,/g, '')) : null;
+};
+const dollarNum = (s) => {
+  const m = String(s || '').match(/\$\s*([\d,]+(?:\.\d+)?)/);
+  return m ? parseFloat(m[1].replace(/,/g, '')) : null;
+};
+// First sentence/clause only — keeps "$268.59 per section from 4 July 2026"
+// and drops the state-specific rider after the semicolon.
+const firstClause = (s) => {
+  const t = String(s || '').trim();
+  if (!t) return '';
+  return t.split(/[;·]/)[0].trim();
+};
+const clamp = (s, max) => {
+  const t = String(s || '').replace(/\s+/g, ' ').trim();
+  if (t.length <= max) return t;
+  return `${t.slice(0, max - 1).replace(/\s+\S*$/, '')}…`;
+};
+const clampMeta = (s) => clamp(s, 158);
+const ordinal = (n) => {
+  const s = ['th', 'st', 'nd', 'rd'];
+  const v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
+};
+const isApprox = (s) => /^\s*[≈~]\s*/.test(String(s || ''));
+
+// ── per-jurisdiction rows (the comparison table's data) ─────────────────────
+const issuedCodes = Object.keys(dossier.states || {});
+const issuedSet = new Set(issuedCodes);
+
+const tableRows = jurisdictionByCode
+  ? Object.values(jurisdictionByCode)
+      .map((j) => {
+        const s = dossier.states[j.code] || null;
+        const row = stateRows.find((r) => r.stateCode === j.code) || null;
+        const notOfferedRow = notOfferedRows.find((r) => r.stateCode === j.code) || null;
+        // v2 per-state exam fee wins; v1 fee is only used when it is not an
+        // "≈" estimate (S-P5: estimates must never masquerade as published fees).
+        const feeV2 = firstClause(s?.exam?.fee);
+        const feeV1 = s?.fee && !isApprox(s.fee) ? firstClause(s.fee) : '';
+        const examFee = feeV2 || feeV1 || '';
+        const parts = s?.exam?.parts || [];
+        const practicalPart = parts.find((p) =>
+          /practical|skills|practicum|manik|live.?fire|road.?test/i.test(`${p.name || ''} ${p.questions || ''}`)
+        );
+        const isMember = s?.compactMember === true;
+        const compactName = dossier.reciprocity?.compact ? compactById[dossier.reciprocity.compact]?.name : null;
+        const reciprocityText = isMember
+          ? `${compactName || 'Interstate compact'} member`
+          : compactName && issuedSet.has(j.code)
+            ? 'Not a compact member'
+            : s?.reciprocity?.rule
+              ? clamp(s.reciprocity.rule, 140)
+              : '';
+        return {
+          code: j.code,
+          name: j.name,
+          region: j.region,
+          issued: issuedSet.has(j.code),
+          row,
+          actual: s?.actualCredential || notOfferedRow?.actualCredential || null,
+          agency: s?.agency || dossier.defaultAgency || '',
+          agencyUrl: s?.agencyUrl || dossier.sourceUrl || '',
+          hoursFull: s?.education?.hours || '',
+          hoursNum: leadNum(s?.education?.hours),
+          vendor: s?.exam?.vendor || '',
+          examFee,
+          feeNum: dollarNum(examFee),
+          practical: firstClause(s?.exam?.practical || practicalPart?.name || ''),
+          renewal: firstClause(s?.renewal?.cycle),
+          ce: firstClause(s?.renewal?.ce),
+          reciprocityText,
+          isMember
+        };
+      })
+      .sort((a, b) => a.name.localeCompare(b.name))
+  : [];
+
+// ── computed quick answer ────────────────────────────────────────────────────
+const hoursList = tableRows.filter((r) => r.hoursNum !== null);
+const feeList = tableRows.filter((r) => r.feeNum !== null);
+const sortByNum = (list, key, dir) => [...list].sort((a, b) => (a[key] - b[key]) * dir);
+
+const strictest = hoursList.length ? sortByNum(hoursList, 'hoursNum', -1)[0] : null;
+const lightest = hoursList.length ? sortByNum(hoursList, 'hoursNum', 1)[0] : null;
+const cheapest = feeList.length ? sortByNum(feeList, 'feeNum', 1)[0] : null;
+const priciest = feeList.length ? sortByNum(feeList, 'feeNum', -1)[0] : null;
+const rankOf = (list, key, item, dir) =>
+  list.filter((r) => (dir === 'max' ? r[key] > item[key] : r[key] < item[key])).length + 1;
+const tiesOf = (list, key, item) => list.filter((r) => r[key] === item[key]).length;
+const tieNote = (list, key, item) => {
+  const t = tiesOf(list, key, item);
+  return t > 1 ? `, tied with ${t - 1} other ${t > 2 ? 'states' : 'state'}` : '';
+};
+
+const compactCount = issuedCodes.filter((c) => dossier.states[c].compactMember === true).length;
+const issuedCount = issuedCodes.length;
+const notIssuedCount = 51 - issuedCount;
+const notIssuedNames = tableRows.filter((r) => !r.issued).map((r) => r.name);
+const actualMappedCount = notOfferedRows.filter((r) => r.actualCredential).length;
+
+// Vendor + renewal patterns (mode of the published per-state values)
+const modeOf = (list) => {
+  const counts = new Map();
+  for (const v of list) counts.set(v, (counts.get(v) || 0) + 1);
+  let best = null;
+  for (const [v, n] of counts) if (!best || n > best.n) best = { v, n };
+  return best;
+};
+const vendorMode = modeOf(tableRows.filter((r) => r.vendor).map((r) => r.vendor));
+const distinctVendors = new Set(tableRows.filter((r) => r.vendor).map((r) => r.vendor)).size;
+const renewalMode = modeOf(tableRows.filter((r) => r.renewal).map((r) => r.renewal));
+const renewalCount = tableRows.filter((r) => r.renewal).length;
+const practicalCount = tableRows.filter((r) => r.practical).length;
+
+// ── SVG cartogram (tile grid — shape accuracy not required) ─────────────────
+const TILE = 52, GAP = 6, CELL = TILE + GAP;
+const TILE_GRID = {
+  AK: [1, 1], ME: [11, 1],
+  VT: [10, 2], NH: [11, 2],
+  WA: [1, 3], ID: [2, 3], MT: [3, 3], ND: [4, 3], MN: [5, 3], WI: [6, 3], MI: [7, 3], NY: [8, 3], MA: [10, 3], RI: [11, 3],
+  OR: [1, 4], NV: [2, 4], WY: [3, 4], SD: [4, 4], IA: [5, 4], IL: [6, 4], IN: [7, 4], OH: [8, 4], PA: [9, 4], NJ: [10, 4], CT: [11, 4],
+  CA: [1, 5], UT: [2, 5], CO: [3, 5], NE: [4, 5], MO: [5, 5], KY: [6, 5], WV: [7, 5], VA: [8, 5], MD: [9, 5], DE: [10, 5],
+  AZ: [2, 6], NM: [3, 6], KS: [4, 6], AR: [5, 6], TN: [6, 6], NC: [7, 6], SC: [8, 6], DC: [9, 6],
+  OK: [4, 7], LA: [5, 7], MS: [6, 7], AL: [7, 7], GA: [8, 7],
+  HI: [1, 8], TX: [4, 8], FL: [9, 8]
+};
+
+// Buckets come from per-state education hours; the exam fee stands in where
+// hours were never published. Quartile cuts over the published values.
+const mapRows = tableRows.map((r) => ({ ...r, mapNum: r.hoursNum ?? r.feeNum }));
+const mapVals = mapRows.filter((r) => r.mapNum !== null).map((r) => r.mapNum).sort((a, b) => a - b);
+const cut = (p) => (mapVals.length ? mapVals[Math.min(mapVals.length - 1, Math.floor(p * mapVals.length))] : null);
+const cuts = [cut(0), cut(0.25), cut(0.5), cut(0.75)];
+const BUCKET_COLORS = ['var(--accent-mint)', 'var(--accent-gold)', 'var(--accent-coral)', 'var(--primary)'];
+const BUCKET_TEXT = ['var(--ink)', 'var(--ink)', '#ffffff', '#ffffff'];
+const bucketOf = (v) => {
+  if (v === null || v === undefined) return -1;
+  if (v <= cuts[1]) return 0;
+  if (v <= cuts[2]) return 1;
+  if (v <= cuts[3]) return 2;
+  return 3;
+};
+const bucketCounts = [0, 0, 0, 0];
+let mapNoData = 0;
+const mapTiles = mapRows
+  .filter((r) => TILE_GRID[r.code])
+  .map((r) => {
+    const b = bucketOf(r.mapNum);
+    if (b === -1) mapNoData++;
+    else bucketCounts[b]++;
+    const [col, row] = TILE_GRID[r.code];
+    const valLabel = r.hoursNum !== null
+      ? `Education: ${firstClause(r.hoursFull)}`
+      : r.examFee
+        ? `Exam fee: ${r.examFee}`
+        : 'Not published';
+    return {
+      code: r.code,
+      name: r.name,
+      x: (col - 1) * CELL + 2,
+      y: (row - 1) * CELL + 2,
+      fill: b === -1 ? 'var(--line)' : BUCKET_COLORS[b],
+      textFill: b === -1 ? 'var(--muted)' : BUCKET_TEXT[b],
+      title: `${r.name} — ${valLabel}`
+    };
+  });
+const fmt = (n) => n.toLocaleString('en-US');
+const rangeLabel = (i) => {
+  if (i === 0) return `${fmt(cuts[0])} – ${fmt(cuts[1])}`;
+  if (i === 3) return `${fmt(cuts[3] !== cuts[2] ? cuts[3] : cuts[2])} and above`;
+  return `${fmt(cuts[i])} – ${fmt(cuts[i + 1] === cuts[i] ? cuts[i] : cuts[i + 1])}`;
+};
+const mapMetricLabel =
+  hoursList.length >= 26
+    ? 'published per-state education hours'
+    : 'education hours where published, otherwise the published exam fee';
+
+// ── template-level FAQ — every answer derived from the rows above ───────────
+const faqs = [];
+if (strictest && hoursList.length >= 2) {
+  const t = tiesOf(hoursList, 'hoursNum', strictest);
+  faqs.push({
+    q: `Which state has the strictest education requirement for the ${credLower}?`,
+    a: `${strictest.name} — ${strictest.hoursFull}. Measured on the leading hour figure, it is the ${ordinal(rankOf(hoursList, 'hoursNum', strictest, 'max'))} strictest of the ${hoursList.length} jurisdictions that publish a per-state hour requirement${t > 1 ? `, tied with ${t - 1} other ${t > 2 ? 'states' : 'state'} at the same figure` : ''}.`
+  });
+}
+if (lightest && hoursList.length >= 2) {
+  const t = tiesOf(hoursList, 'hoursNum', lightest);
+  faqs.push({
+    q: `Which state has the lightest education requirement for the ${credLower}?`,
+    a: `${lightest.name} — ${lightest.hoursFull}. It sits at the bottom of the range across the ${hoursList.length} jurisdictions that publish a per-state hour figure${t > 1 ? `, tied with ${t - 1} other ${t > 2 ? 'states' : 'state'}` : ''}.`
+  });
+}
+if (cheapest && priciest) {
+  faqs.push({
+    q: `What is the cheapest state in which to take the ${credLower} exam?`,
+    a: `${cheapest.name} publishes the lowest exam fee at ${cheapest.examFee} — the ${ordinal(rankOf(feeList, 'feeNum', cheapest, 'min'))} lowest of the ${feeList.length} jurisdictions with a published fee. At the other end, ${priciest.name} charges ${priciest.examFee}.`
+  });
+}
+faqs.push({
+  q: `How many states honor the ${credLower} across state lines?`,
+  a: compactCount > 0
+    ? `${compactCount} of the ${issuedCount} issuing jurisdictions are flagged in our data as members of ${compactById[dossier.reciprocity?.compact]?.name || 'the relevant interstate compact'}. Membership is verified per state — the comparison table above marks each one.`
+    : `None — there is no interstate compact covering the ${credLower}${dossier.reciprocity?.note ? '. ' + clamp(dossier.reciprocity.note, 240) : ''}`
+});
+faqs.push({
+  q: notIssuedCount > 0
+    ? `Which states do not issue a ${credLower}?`
+    : `Do all 51 US jurisdictions issue a ${credLower}?`,
+  a: notIssuedCount > 0
+    ? `${notIssuedCount} of the 51 jurisdictions do not issue it under that name: ${notIssuedNames.join(', ')}.${actualMappedCount > 0 ? ` For ${actualMappedCount} of them the state equivalent is a differently named credential, mapped in the section below.` : ''}`
+    : `Yes — all 51 jurisdictions (50 states plus the District of Columbia) issue this credential, which is why the comparison table above has a row for every one of them.`
+});
+if (vendorMode) {
+  faqs.push({
+    q: `Which exam vendor administers the ${credLower} exam in the most states?`,
+    a: `${vendorMode.v} — it is the published vendor for ${vendorMode.n} of the ${tableRows.filter((r) => r.vendor).length} jurisdictions that name one. The states use ${distinctVendors} distinct vendor arrangement${distinctVendors === 1 ? '' : 's'} in total.`
+  });
+}
+if (renewalMode) {
+  faqs.push({
+    q: `How often does the ${credLower} have to be renewed?`,
+    a: `${renewalMode.v} is the most common renewal cycle — ${renewalMode.n} of the ${renewalCount} jurisdictions that publish one use it. Renewal terms for the other states are listed in the comparison table.`
+  });
+}
+faqs.push({
+  q: `Is there a single national ${credLower} exam?`,
+  a: distinctVendors === 1 && vendorMode
+    ? `Effectively yes — every jurisdiction that names a vendor names the same one (${vendorMode.v}), so the exam itself is uniform and the states differ mainly in education hours, fees and eligibility.`
+    : `No single vendor covers it: the ${tableRows.filter((r) => r.vendor).length} jurisdictions that publish a vendor use ${distinctVendors} distinct arrangements. Where one exam body writes the questions nationally, states still set their own fees, education hours and eligibility on top — which is exactly what the comparison table tracks.`
+});
+
+// ── verification dates (shown honestly, never auto-stamped) ─────────────────
+const checkedOns = [];
+for (const s of Object.values(dossier.states || {})) {
+  for (const src of s.sources || []) if (src.checkedOn) checkedOns.push(src.checkedOn);
+}
+checkedOns.sort();
+const minChecked = checkedOns[0] || null;
+const maxChecked = checkedOns[checkedOns.length - 1] || null;
+const publishedOn = v2?.compiledOn || (maxChecked ? `${maxChecked}-01` : null);
+let modifiedOn = maxChecked ? `${maxChecked}-01` : null;
+if (publishedOn && modifiedOn && modifiedOn < publishedOn) modifiedOn = publishedOn;
+
+// Unique source list for the Sources section (capped, with the window shown)
+const seenUrls = new Set();
+const sourceList = [];
+for (const s of Object.values(dossier.states || {})) {
+  for (const src of s.sources || []) {
+    if (!src?.url || seenUrls.has(src.url)) continue;
+    seenUrls.add(src.url);
+    sourceList.push(src);
+  }
+}
+const templateSources = [
+  ...(dossier.sourceUrl ? [{ label: `${dossier.defaultAgency || 'Issuing body'} — template-level reference`, url: dossier.sourceUrl, checkedOn: minChecked || maxChecked || '2026-10' }] : []),
+  ...(dossier.reciprocity?.compact && compactById[dossier.reciprocity.compact]
+    ? [{ label: compactById[dossier.reciprocity.compact].name, url: compactById[dossier.reciprocity.compact].url, checkedOn: minChecked || '2026-10' }]
+    : []),
+  ...sourceList.slice(0, 10)
+];
+
+const citations = [...new Set(templateSources.map((s) => s.url).filter(Boolean))];
+
+// ── schema ───────────────────────────────────────────────────────────────────
+const metaDescription = clampMeta(
+  `${credName} requirements for all 51 US jurisdictions compared: education hours, exam fees, vendors, renewal and reciprocity` +
+  (strictest ? ` — strictest ${strictest.hoursNum.toLocaleString('en-US')} hours (${strictest.name})` : '') +
+  (notIssuedCount > 0 ? `, ${notIssuedCount} states do not issue it` : '') + '.'
+);
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `${canonicalUrl}#article`,
+  headline: title,
+  description: metaDescription,
+  url: canonicalUrl,
+  mainEntityOfPage: { '@id': `${canonicalUrl}#webpage` },
+  inLanguage: 'en-US',
+  author: { '@id': 'https://testpreppilot.com/#editorial-board' },
+  publisher: { '@id': 'https://testpreppilot.com/#organization' },
+  ...(publishedOn ? { datePublished: publishedOn } : {}),
+  dateModified: modifiedOn || publishedOn || undefined,
+  ...(citations.length ? { citation: citations.map((u) => ({ '@type': 'WebPage', url: u })) } : {}),
+  about: { '@type': 'Thing', name: credName, ...(tpl.aka?.length ? { alternateName: tpl.aka.map((a) => a.replace(/\{State\}\s*/, 'US')) } : {}) },
+  speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.hub-quickanswer', '.hub-lede'] },
+  isAccessibleForFree: true
+};
+
+const itemListSchema = stateRows.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: `${credName} state licensing pages`,
+      numberOfItems: stateRows.length,
+      itemListElement: stateRows.map((r, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: r.name,
+        url: `${siteUrl}/exams/${r.slug}`
+      }))
+    }
+  : null;
+
+const faqSchema = faqs.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a }
+      }))
+    }
+  : null;
+
+const datasetSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: `${credName} requirements by state — 51-jurisdiction comparison`,
+  description: `Per-jurisdiction figures for the ${credLower} across 50 states and the District of Columbia: issuing agency, education hours, exam vendor, exam fee, practical exam, renewal cycle, continuing-education hours and compact or reciprocity status. Compiled ${v2?.compiledOn || '2026-10'}; per-state figures checked ${minChecked || '2026-10'}.`,
+  url: `${canonicalUrl}#comparison`,
+  creator: { '@id': 'https://testpreppilot.com/#organization' },
+  temporalCoverage: minChecked ? `${minChecked}/` : undefined,
+  isAccessibleForFree: true,
+  variableMeasured: [
+    'Issuing agency', 'Education hours', 'Exam vendor', 'Exam fee',
+    'Practical exam', 'Renewal cycle', 'Continuing education hours', 'Compact or reciprocity status'
+  ]
+};
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Exams', href: '/' },
+  { label: cat?.name || 'Exams', href: `/categories/${tpl.category}` },
+  { label: title, href: canonicalUrl }
+];
+
+const compact = dossier.reciprocity?.compact ? compactById[dossier.reciprocity.compact] || null : null;
+const memberNames = issuedCodes
+  .filter((c) => dossier.states[c].compactMember === true)
+  .map((c) => jurisdictionByCode[c]?.name)
+  .filter(Boolean);
+const notMemberNames = issuedCodes
+  .filter((c) => dossier.states[c].compactMember !== true)
+  .map((c) => jurisdictionByCode[c]?.name)
+  .filter(Boolean);
+
+const introBits = [];
+if (strictest && lightest) {
+  introBits.push(`Published education-hour requirements run from ${lightest.hoursNum.toLocaleString('en-US')} hours (${lightest.name}) up to ${strictest.hoursNum.toLocaleString('en-US')} hours (${strictest.name})`);
+}
+if (cheapest && priciest) {
+  introBits.push(`published exam fees from ${cheapest.examFee} (${cheapest.name}) to ${priciest.examFee} (${priciest.name})`);
+}
+introBits.push(notIssuedCount > 0
+  ? `${notIssuedCount} of the 51 jurisdictions do not issue the credential at all`
+  : `all 51 jurisdictions issue it`);
+---
+
+<BaseLayout
+  title={title}
+  description={metaDescription}
+  canonical={canonicalUrl}
+  ogImage="/og-exam.png"
+  ogType="article"
+  datePublished={publishedOn || undefined}
+  dateModified={modifiedOn || undefined}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  {itemListSchema && <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />}
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  <script type="application/ld+json" set:html={JSON.stringify(datasetSchema)} />
+
+  <header class="hub-hero">
+    <div class="container">
+      <BreadcrumbNav items={breadcrumbItems} />
+      <p class="eyebrow">{cat?.name || tpl.category} • 51-jurisdiction comparison</p>
+      <h1>{title}</h1>
+      <p class="hub-lede">
+        Every US jurisdiction sets its own {credLower} rules. This page compares all 51 —
+        {introBits.join('; ')}. Figures are compiled from per-state research finished {v2?.compiledOn || '2026-10'},
+        with the per-state verification window listed in the Sources section.
+      </p>
+
+      <section id="quick" class="hub-quickanswer" aria-label="Quick answer">
+        <p class="hub-qa-kicker">Quick answer — computed from the 51 rows in the table below</p>
+        <div class="hub-qa-grid">
+          {strictest && hoursList.length >= 2 && (
+            <div class="hub-qa-card">
+              <span class="hub-qa-label">Strictest education requirement</span>
+              <span class="hub-qa-value">{fmt(strictest.hoursNum)} hours — {strictest.name}</span>
+              <span class="hub-qa-rank">the {ordinal(rankOf(hoursList, 'hoursNum', strictest, 'max'))} strictest of {hoursList.length} publishing states{tieNote(hoursList, 'hoursNum', strictest)}</span>
+            </div>
+          )}
+          {lightest && hoursList.length >= 2 && (
+            <div class="hub-qa-card">
+              <span class="hub-qa-label">Lightest education requirement</span>
+              <span class="hub-qa-value">{fmt(lightest.hoursNum)} hours — {lightest.name}</span>
+              <span class="hub-qa-rank">the {ordinal(rankOf(hoursList, 'hoursNum', lightest, 'min'))} lightest of {hoursList.length} publishing states{tieNote(hoursList, 'hoursNum', lightest)}</span>
+            </div>
+          )}
+          {cheapest && feeList.length >= 2 && (
+            <div class="hub-qa-card">
+              <span class="hub-qa-label">Cheapest published exam fee</span>
+              <span class="hub-qa-value">{cheapest.examFee} — {cheapest.name}</span>
+              <span class="hub-qa-rank">the {ordinal(rankOf(feeList, 'feeNum', cheapest, 'min'))} cheapest of {feeList.length} publishing states{tieNote(feeList, 'feeNum', cheapest)}</span>
+            </div>
+          )}
+          {priciest && feeList.length >= 2 && (
+            <div class="hub-qa-card">
+              <span class="hub-qa-label">Priciest published exam fee</span>
+              <span class="hub-qa-value">{priciest.examFee} — {priciest.name}</span>
+              <span class="hub-qa-rank">the {ordinal(rankOf(feeList, 'feeNum', priciest, 'max'))} priciest of {feeList.length} publishing states{tieNote(feeList, 'feeNum', priciest)}</span>
+            </div>
+          )}
+          <div class="hub-qa-card">
+            <span class="hub-qa-label">Compact / mobility members</span>
+            <span class="hub-qa-value">{compactCount} of {issuedCount}</span>
+            <span class="hub-qa-rank">{compact ? compact.name : 'no interstate compact — see the reciprocity section'}</span>
+          </div>
+          <div class="hub-qa-card">
+            <span class="hub-qa-label">Jurisdictions that do not issue it</span>
+            <span class="hub-qa-value">{notIssuedCount} of 51</span>
+            <span class="hub-qa-rank">{notIssuedCount > 0 ? notIssuedNames.slice(0, 4).join(', ') + (notIssuedNames.length > 4 ? '…' : '') : 'every jurisdiction issues the credential'}</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <div class="container hub-main">
+    {/* ── 51-jurisdiction comparison table ── */}
+    <section id="comparison" class="hub-section">
+      <p class="hub-kicker">The full comparison</p>
+      <h2>{credName} requirements in all 51 jurisdictions</h2>
+      <p class="hub-body">
+        The table carries one row per jurisdiction. Cells marked "Not published" mean the state's
+        authority does not publish that figure in the sources we verified — a blank would imply the
+        requirement does not exist, which is a different claim. Click any column heading to re-sort;
+        the table is server-rendered and the sort is a progressive enhancement on top of it.
+      </p>
+      <div class="hub-tablewrap">
+        <table class="hub-table" id="hub-compare">
+          <thead>
+            <tr>
+              <th scope="col" data-sort="state">State</th>
+              <th scope="col" data-sort="agency">Agency</th>
+              <th scope="col" data-sort="hours" class="num-col">Education hours</th>
+              <th scope="col" data-sort="vendor">Exam vendor</th>
+              <th scope="col" data-sort="fee" class="num-col">Exam fee</th>
+              <th scope="col" data-sort="practical">Practical exam</th>
+              <th scope="col" data-sort="renewal">Renewal cycle</th>
+              <th scope="col" data-sort="ce" class="num-col">CE hours</th>
+              <th scope="col" data-sort="recip">Compact / reciprocity</th>
+              <th scope="col">State page</th>
+            </tr>
+          </thead>
+          <tbody>
+            {tableRows.map((r) => (
+              <tr>
+                <th scope="row" data-col="state">
+                  {r.name}
+                  {!r.issued && <span class="hub-noissue">Does not issue</span>}
+                </th>
+                <td data-col="agency">
+                  {r.agency
+                    ? (r.agencyUrl
+                        ? <a href={r.agencyUrl} target="_blank" rel="noopener noreferrer">{r.agency}</a>
+                        : r.agency)
+                    : 'Not published'}
+                </td>
+                <td data-col="hours" data-n={r.hoursNum ?? ''} class="num-col">
+                  {r.hoursFull || 'Not published'}
+                </td>
+                <td data-col="vendor">{r.vendor || 'Not published'}</td>
+                <td data-col="fee" data-n={r.feeNum ?? ''} class="num-col">{r.examFee || 'Not published'}</td>
+                <td data-col="practical">{r.practical || 'Not published'}</td>
+                <td data-col="renewal">{r.renewal || 'Not published'}</td>
+                <td data-col="ce" class="num-col">{r.ce || 'Not published'}</td>
+                <td data-col="recip">{r.reciprocityText || 'Not published'}</td>
+                <td data-col="link">
+                  {r.row
+                    ? <a href={`/exams/${r.row.slug}`}>{r.code} page →</a>
+                    : r.actual
+                      ? <span title={r.actual.name}>{r.actual.name}</span>
+                      : <span class="hub-muted">Not yet published</span>}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="hub-note">
+        Column notes: "Education hours" quotes the state's published requirement verbatim (many states
+        add degree or coursework conditions after the headline number — the full text is the requirement,
+        not just the leading figure). "Exam fee" is the first clause of the published fee schedule; riders
+        such as re-examination or evaluation charges follow in the linked source. "Compact / reciprocity"
+        reflects per-state membership flags in our research data.
+      </p>
+    </section>
+
+    {/* ── SVG cartogram ── */}
+    <section id="map" class="hub-section hub-section-cream">
+      <p class="hub-kicker">The map view</p>
+      <h2>How the requirement varies across the country</h2>
+      <p class="hub-body">
+        Each tile is one jurisdiction, placed approximately by geography (it is a cartogram, not a map
+        projection — position is indicative, the data is exact). Colour buckets are quartiles of the
+        {mapMetricLabel}. Hover or focus a tile for the exact figure; the comparison table above remains
+        the authoritative rendering.
+      </p>
+      <div class="hub-mapwrap">
+        <svg viewBox="0 0 644 470" role="img" aria-label={`Cartogram of the 51 US jurisdictions coloured by ${mapMetricLabel}`}>
+          {mapTiles.map((t) => (
+            <g>
+              <title>{t.title}</title>
+              <rect x={t.x} y={t.y} width="52" height="52" rx="8" fill={t.fill} stroke="var(--line)" stroke-width="1" />
+              <text x={t.x + 26} y={t.y + 31} text-anchor="middle" fill={t.textFill} font-size="13" font-family="var(--font-mono)">{t.code}</text>
+            </g>
+          ))}
+        </svg>
+        <ul class="hub-legend">
+          <li><span class="hub-swatch" style={`background:${BUCKET_COLORS[0]}`}></span>Lightest quartile ({rangeLabel(0)}) — {bucketCounts[0]} states</li>
+          <li><span class="hub-swatch" style={`background:${BUCKET_COLORS[1]}`}></span>2nd quartile ({rangeLabel(1)}) — {bucketCounts[1]} states</li>
+          <li><span class="hub-swatch" style={`background:${BUCKET_COLORS[2]}`}></span>3rd quartile ({rangeLabel(2)}) — {bucketCounts[2]} states</li>
+          <li><span class="hub-swatch" style={`background:${BUCKET_COLORS[3]}`}></span>Strictest quartile ({rangeLabel(3)}) — {bucketCounts[3]} states</li>
+          {mapNoData > 0 && (
+            <li><span class="hub-swatch" style="background:var(--line)"></span>No published figure — {mapNoData} jurisdictions</li>
+          )}
+        </ul>
+      </div>
+    </section>
+
+    {/* ── shared prep content — written once, linked from every state page ── */}
+    <section id="prepare" class="hub-section">
+      <p class="hub-kicker">Preparing for the exam</p>
+      <h2>How to prepare for the {credName} requirements</h2>
+
+      <h3 class="hub-subhead">What the credential actually is</h3>
+      <p class="hub-body">{dossier.overview}</p>
+
+      <h3 class="hub-subhead">Eligibility patterns across the states</h3>
+      <p class="hub-body">{dossier.eligibility}</p>
+      {dossier.prerequisites && (
+        <p class="hub-body"><strong>Prerequisites in brief:</strong> {dossier.prerequisites}</p>
+      )}
+
+      <h3 class="hub-subhead">Exam format patterns</h3>
+      {dossier.exam && (
+        <div class="hub-tablewrap hub-tablewrap-tight">
+          <table class="hub-table hub-table-tight">
+            <tbody>
+              {dossier.exam.admin && (
+                <tr><th scope="row">Administered by</th><td>{dossier.exam.admin}</td></tr>
+              )}
+              {dossier.exam.questions && (
+                <tr><th scope="row">Format</th><td>{dossier.exam.questions}</td></tr>
+              )}
+              {dossier.exam.time && (
+                <tr><th scope="row">Length</th><td>{dossier.exam.time}</td></tr>
+              )}
+              {dossier.exam.pass && (
+                <tr><th scope="row">Pass standard</th><td>{dossier.exam.pass}</td></tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      )}
+      <p class="hub-body">
+        Vendor arrangements {vendorMode
+          ? `cluster on ${vendorMode.v} (${vendorMode.n} of the ${tableRows.filter((r) => r.vendor).length} states that name a vendor), with ${distinctVendors} distinct arrangement${distinctVendors === 1 ? '' : 's'} across the country`
+          : `are set per state — ${distinctVendors || 'no'} distinct arrangement${distinctVendors === 1 ? '' : 's'} appear in the published research`}. Because the exam body may be uniform while fees and eligibility are not, always read the fee column against your own state's row, not the national pattern.
+      </p>
+
+      <h3 class="hub-subhead">A prep plan that fits the requirement</h3>
+      <p class="hub-body">
+        The plan below is the shared backbone — your state's education hours (row in the comparison table)
+        decide how long each stage takes.
+      </p>
+      <ol class="hub-plan">
+        {dossier.timeline.map((t) => (
+          <li>
+            <span class="hub-plan-stage">{t.stage}</span>
+            {t.duration && <span class="hub-plan-dur">{t.duration}</span>}
+          </li>
+        ))}
+      </ol>
+
+      {dossier.route?.length > 0 && (
+        <>
+          <h3 class="hub-subhead">The application route, step by step</h3>
+          <ol class="hub-route">
+            {dossier.route.map((r) => (
+              <li>
+                <strong>{r.title}</strong>
+                {r.description && <span> — {r.description}</span>}
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
+
+      <h3 class="hub-subhead">Common mistakes</h3>
+      <ul class="hub-checklist">
+        <li>
+          <strong>Assuming the national pattern is your state's rule.</strong> The strictest and lightest
+          published requirements on this page{strictest && lightest ? ` differ by ${fmt(strictest.hoursNum - lightest.hoursNum)} hours` : ''} —
+          a prep plan sized for the average state can leave you short of your own state's figure.
+        </li>
+        <li>
+          <strong>Budgeting only the exam fee.</strong> The fee column covers the exam alone; application,
+          background-check and licence fees are separate line items in most states, and the priciest published
+          exam fee{priciest ? ` (${priciest.examFee}, ${priciest.name})` : ''} is rarely the all-in cost.
+        </li>
+        <li>
+          <strong>Missing the pass standard.</strong> {dossier.exam?.pass ? `The pass standard is ${dossier.exam.pass} — retake fees and waiting periods apply on top of the first attempt.` : 'Retake fees and waiting periods apply on top of the first attempt in most states.'}
+        </li>
+        <li>
+          <strong>Ignoring portability until after you license.</strong> {compactCount > 0
+            ? `${compactCount} jurisdictions participate in ${compact?.name || 'the interstate compact'} — if you might work across state lines, choosing a compact-member state (or understanding its limits) matters before you apply, not after.`
+            : `No interstate compact covers this credential, so working across state lines means meeting each state's own requirements — plan for it before you apply.`}
+        </li>
+      </ul>
+
+      <h3 class="hub-subhead">Exam-day notes</h3>
+      <p class="hub-body">
+        {dossier.exam?.time ? `Appointments run ${dossier.exam.time}; ` : ''}
+        {vendorMode ? `testing is delivered through ${vendorMode.v} in most jurisdictions, so ` : 'testing is arranged by each state, so '}
+        arrive with the identification your state's candidate bulletin names — the ID rules, not the content,
+        are what most often turn candidates away. Practical components{practicalCount > 0
+          ? ` are published for ${practicalCount} jurisdiction${practicalCount === 1 ? '' : 's'} in the comparison table; where one applies, it is a separate appointment from the written portion`
+          : ' are the exception rather than the rule for this credential'}.
+      </p>
+    </section>
+
+    {/* ── compact / reciprocity ── */}
+    <section id="reciprocity" class="hub-section hub-section-cream">
+      <p class="hub-kicker">Cross-state validity</p>
+      <h2>Compact membership and reciprocity</h2>
+      {compact ? (
+        <>
+          <p class="hub-body">
+            {compactCount} of the {issuedCount} issuing jurisdictions participate in the{' '}
+            <a href={compact.url} target="_blank" rel="noopener noreferrer">{compact.name}</a> — {compact.note}.
+          </p>
+          <p class="hub-body"><strong>Member states ({memberNames.length}):</strong> {memberNames.join(', ')}.</p>
+          {notMemberNames.length > 0 && (
+            <p class="hub-body"><strong>Not members ({notMemberNames.length}):</strong> in these states the licence is valid only at home, and relocating means applying under the new state's rules.</p>
+          )}
+        </>
+      ) : (
+        <p class="hub-body">{dossier.reciprocity?.note || `No interstate compact covers the ${credLower}. Each jurisdiction's reciprocity or endorsement rules stand alone — where a state publishes one, it appears in the comparison table's reciprocity column.`}</p>
+      )}
+    </section>
+
+    {/* ── states that don't license it ── */}
+    <section id="not-offered" class="hub-section">
+      <p class="hub-kicker">Where it does not exist</p>
+      <h2>States that do not license the {credLower}</h2>
+      {notIssuedCount === 0 && actualMappedCount === 0 ? (
+        <p class="hub-body">
+          None — all 51 jurisdictions issue this credential, which is why every row of the comparison table
+          carries data. There is no "what applies instead" mapping to give for this template.
+        </p>
+      ) : (
+        <>
+          <p class="hub-body">
+            {notIssuedCount} of the 51 jurisdictions do not issue a {credLower} under that name
+            {actualMappedCount > 0 ? `, and ${actualMappedCount} of those regulate the same work under a differently named state credential` : ''}.
+            Where an equivalent exists it is named below; those state pages are not built, so the mapping here is the honest record.
+          </p>
+          {notOfferedRows.length > 0 && (
+            <div class="hub-tablewrap hub-tablewrap-tight">
+              <table class="hub-table hub-table-tight">
+                <thead>
+                  <tr><th scope="col">Jurisdiction</th><th scope="col">What applies instead</th></tr>
+                </thead>
+                <tbody>
+                  {notOfferedRows.map((r) => (
+                    <tr>
+                      <th scope="row">{r.stateName} ({r.stateCode})</th>
+                      <td>
+                        {r.actualCredential
+                          ? <>The state equivalent is the <strong>{r.actualCredential.name}</strong>.</>
+                          : <>No state-level {credLower} is issued; regulation (if any) sits at municipal or voluntary-certification level.</>}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </>
+      )}
+    </section>
+
+    {/* ── template-level FAQ ── */}
+    <section id="faq" class="hub-section hub-section-cream">
+      <p class="hub-kicker">FAQ</p>
+      <h2>Questions the comparison data answers</h2>
+      <div class="hub-faqs">
+        {faqs.map((f) => (
+          <details class="hub-faq">
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    {/* ── sources ── */}
+    <section id="sources" class="hub-section">
+      <p class="hub-kicker">Sources</p>
+      <h2>Where these figures were verified</h2>
+      <p class="hub-body">
+        The per-state research behind this page was compiled {v2?.compiledOn || '2026-10'}.
+        Individual state figures carry their own checkedOn dates; across all {issuedCount} jurisdictions the
+        earliest verification month on file is {minChecked || 'not recorded'} and the latest is {maxChecked || 'not recorded'}.
+        That window — not today's build date — is the honest freshness statement for this page.
+      </p>
+      <ul class="hub-sources">
+        {templateSources.map((s) => (
+          <li>
+            <a href={s.url} target="_blank" rel="noopener noreferrer">{s.label}</a>
+            <span class="hub-src-date">checked {s.checkedOn || '2026-10'}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+</BaseLayout>
+
+<script>
+  // Sortable comparison table — progressive enhancement only. The table is
+  // fully server-rendered; this reorders existing rows and never injects DOM.
+  (function () {
+    var table = document.getElementById('hub-compare');
+    if (!table) return;
+    var tbody = table.querySelector('tbody');
+    var ths = table.querySelectorAll('th[data-sort]');
+    var current = null;
+    var dir = 1;
+    ths.forEach(function (th) {
+      th.setAttribute('tabindex', '0');
+      th.setAttribute('role', 'button');
+      var activate = function () {
+        var key = th.getAttribute('data-sort');
+        dir = current === key ? -dir : 1;
+        current = key;
+        ths.forEach(function (o) { o.classList.remove('hub-sorted-asc', 'hub-sorted-desc'); });
+        th.classList.add(dir === 1 ? 'hub-sorted-asc' : 'hub-sorted-desc');
+        var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+        rows.sort(function (a, b) {
+          var ac = a.querySelector('[data-col="' + key + '"]');
+          var bc = b.querySelector('[data-col="' + key + '"]');
+          var an = ac ? ac.getAttribute('data-n') : '';
+          var bn = bc ? bc.getAttribute('data-n') : '';
+          if (an !== '' && an !== null && bn !== '' && bn !== null) {
+            return (parseFloat(an) - parseFloat(bn)) * dir;
+          }
+          var at = ac ? ac.textContent.trim() : '';
+          var bt = bc ? bc.textContent.trim() : '';
+          return at.localeCompare(bt) * dir;
+        });
+        rows.forEach(function (r) { tbody.appendChild(r); });
+      };
+      th.addEventListener('click', activate);
+      th.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); }
+      });
+    });
+  })();
+</script>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+  .hub-hero { padding: 3rem 0 1.25rem; border-bottom: 1px solid var(--line); }
+  .hub-hero .eyebrow { color: var(--primary); font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem; }
+  .hub-hero h1 { font-family: var(--font-heading); font-weight: 700; font-size: clamp(2.2rem, 4.5vw, 3.4rem); line-height: 1.15; margin: 0 0 1.25rem; }
+  .hub-lede { font-size: 1.2rem; color: var(--muted); max-width: 820px; line-height: 1.7; margin: 0; }
+
+  .hub-quickanswer { margin-top: 2.25rem; border-left: 4px solid var(--primary); padding-left: 1.5rem; }
+  .hub-qa-kicker { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); font-weight: 700; margin: 0 0 1rem; }
+  .hub-qa-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1rem; }
+  .hub-qa-card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.15rem 1.35rem; display: flex; flex-direction: column; gap: 0.4rem; }
+  .hub-qa-label { font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  .hub-qa-value { font-family: var(--font-heading); font-size: 1.15rem; font-weight: 600; color: var(--ink); line-height: 1.4; }
+  .hub-qa-rank { font-size: 0.88rem; color: var(--muted); line-height: 1.55; }
+
+  .hub-main { padding: 1rem 0 var(--space-section); }
+  .hub-section { padding: 2.75rem 0; border-top: 1px solid var(--line); }
+  .hub-section-cream { background: var(--cream); border-radius: var(--radius-lg); border-top: none; margin: 1.5rem 0; padding: 2.75rem 2.5rem; }
+  .hub-kicker { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); font-weight: 700; margin: 0 0 0.5rem; }
+  .hub-section h2 { font-family: var(--font-heading); font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.2; margin: 0 0 1.25rem; }
+  .hub-subhead { font-family: var(--font-heading); font-size: 1.25rem; margin: 2rem 0 0.85rem; }
+  .hub-body { color: var(--ink); line-height: 1.8; font-size: 1.02rem; margin: 0 0 1.4rem; }
+  .hub-note { font-size: 0.88rem; color: var(--muted); line-height: 1.7; margin-top: 1rem; }
+  .hub-muted { color: var(--muted); }
+  .hub-noissue { display: block; font-family: var(--font-mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent-coral); margin-top: 0.25rem; }
+
+  .hub-tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
+  .hub-tablewrap-tight { margin-bottom: 1.5rem; }
+  .hub-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+  .hub-table thead th { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; text-align: left; padding: 0.85rem 1rem; border-bottom: 2px solid var(--line); white-space: nowrap; cursor: pointer; user-select: none; }
+  .hub-table thead th[data-sort]:hover { color: var(--primary); }
+  .hub-table thead th.hub-sorted-asc::after { content: ' ▲'; color: var(--primary); }
+  .hub-table thead th.hub-sorted-desc::after { content: ' ▼'; color: var(--primary); }
+  .hub-table tbody th, .hub-table tbody td { padding: 0.8rem 1rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; line-height: 1.6; }
+  .hub-table tbody th { font-weight: 600; white-space: nowrap; background: var(--cream); }
+  .hub-table tbody tr:last-child th, .hub-table tbody tr:last-child td { border-bottom: none; }
+  .hub-table .num-col { white-space: nowrap; }
+  .hub-table a { color: var(--primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
+  .hub-mapwrap { display: grid; grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr); gap: 2rem; align-items: start; }
+  .hub-mapwrap svg { width: 100%; height: auto; display: block; }
+  .hub-legend { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.9rem; color: var(--muted); }
+  .hub-legend li { display: flex; align-items: center; gap: 0.6rem; }
+  .hub-swatch { flex: 0 0 auto; width: 16px; height: 16px; border-radius: 4px; border: 1px solid var(--line); }
+
+  .hub-plan { list-style: none; padding: 0; margin: 0 0 1.5rem; display: flex; flex-direction: column; gap: 0.7rem; counter-reset: plan; }
+  .hub-plan li { counter-increment: plan; position: relative; padding-left: 2.5rem; line-height: 1.7; }
+  .hub-plan li::before { content: counter(plan); position: absolute; left: 0; top: 0.15rem; width: 1.65rem; height: 1.65rem; display: grid; place-items: center; border-radius: 50%; background: var(--primary); color: #fff; font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; }
+  .hub-plan-stage { display: block; font-weight: 600; color: var(--ink); }
+  .hub-plan-dur { display: block; font-family: var(--font-mono); font-size: 0.82rem; color: var(--muted); }
+
+  .hub-route { padding-left: 1.35rem; margin: 0 0 1.5rem; line-height: 1.8; }
+  .hub-route li { margin-bottom: 0.6rem; }
+  .hub-route strong { color: var(--ink); }
+
+  .hub-checklist { list-style: none; padding: 0; margin: 0 0 1.5rem; display: flex; flex-direction: column; gap: 0.9rem; }
+  .hub-checklist li { position: relative; padding-left: 1.75rem; line-height: 1.7; }
+  .hub-checklist li::before { content: '→'; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+
+  .hub-faqs { display: flex; flex-direction: column; gap: 0.65rem; }
+  .hub-faq { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.35rem; }
+  .hub-faq summary { cursor: pointer; font-weight: 600; font-family: var(--font-heading); font-size: 1.05rem; list-style: none; }
+  .hub-faq summary::-webkit-details-marker { display: none; }
+  .hub-faq summary::after { content: '+'; float: right; color: var(--primary); font-weight: 700; }
+  .hub-faq[open] summary::after { content: '−'; }
+  .hub-faq p { color: var(--muted); line-height: 1.75; margin: 0.85rem 0 0; }
+
+  .hub-sources { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.65rem; }
+  .hub-sources li { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 0.85rem 1.15rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+  .hub-sources a { color: var(--primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; word-break: break-word; }
+  .hub-src-date { flex: 0 0 auto; font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+
+  @media (max-width: 900px) {
+    .hub-main { padding: 1rem 0 var(--space-section); }
+    .hub-section-cream { padding: 2rem 1.25rem; }
+    .hub-mapwrap { grid-template-columns: 1fr; }
+    .hub-quickanswer { padding-left: 1rem; }
+  }
+</style>

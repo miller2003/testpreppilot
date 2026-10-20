@@ -186,6 +186,8 @@ for (const url of urls) {
 
 function classify(path) {
   if (path === '/') return 'home';
+  // template hub pages: /exams/<template-key>-license-by-state (S3)
+  if (/^\/exams\/.+?-license-by-state$/.test(path)) return 'state-hub';
   if (path.startsWith('/exams/')) return 'exam';
   if (path.startsWith('/paths/')) return 'path';
   if (path.startsWith('/guides/')) return 'guide';

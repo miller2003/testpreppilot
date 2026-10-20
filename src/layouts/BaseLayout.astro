@@ -20,6 +20,7 @@ interface Props {
   ogType?: string;
   articlePublishedTime?: string;
   articleModifiedTime?: string;
+  bodyAttrs?: Record<string, string | undefined>;
 }
 
 const {
@@ -34,6 +35,7 @@ const {
   ogType = 'website',
   articlePublishedTime,
   articleModifiedTime,
+  bodyAttrs,
 } = Astro.props;
 
 // Page-level dates are emitted ONLY when the page supplies a real one.
@@ -152,7 +154,7 @@ const editorialBoardSchema = editorialBoardNode();
     </script>
     <ClientRouter />
   </head>
-  <body data-pagefind-ignore={noindex ? '' : undefined}>
+  <body {...(bodyAttrs || {})} data-pagefind-ignore={noindex ? '' : undefined}>
     <Header />
     <main>
       <slot />

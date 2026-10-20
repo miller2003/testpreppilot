@@ -16,6 +16,7 @@
 // Run with the managed Node:  node _deploy_batch_55.mjs
 
 import { readFile, writeFile } from 'node:fs/promises';
+import { existsSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { allExamsFull } from './src/data/examCatalog/index.mjs';
@@ -25,6 +26,24 @@ import { examDepth } from './src/data/examCatalog/examDepth.mjs';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const MANIFEST = join(__dirname, 'src', 'data', 'examCatalog', 'release-manifest.mjs');
 const PICKS = join(__dirname, '_batch55_picks.json');
+const GATE_REPORT = join(__dirname, 'reports', 'quality', 'state-gate.json');
+
+// State rows (flagship plan S4) ship only through the quality gate: the batch
+// must carry --include-states AND the slug must be marked passed in
+// reports/quality/state-gate.json (produced by scripts/quality/stateGate.mjs
+// over the built dist). Without that, state rows are refused outright.
+const INCLUDE_STATES = process.argv.includes('--include-states');
+const gatePassed = (() => {
+  if (!INCLUDE_STATES) return null;
+  if (!existsSync(GATE_REPORT)) return new Set();
+  try {
+    const raw = JSON.parse(readFileSync(GATE_REPORT, 'utf8'));
+    return new Set((raw.perPage || []).filter((p) => p.passed).map((p) => p.slug));
+  } catch {
+    console.error(`Could not parse ${GATE_REPORT} — treating as no passes.`);
+    return new Set();
+  }
+})();
 
 // ── Release window: the trailing 30 days, today inclusive ───────────
 const WINDOW_DAYS = 30;
@@ -67,6 +86,15 @@ for (const slug of BATCH) {
   const exam = bySlug.get(slug);
   if (!exam) { problems.push(`${slug}: not in catalog`); continue; }
   if (releases[slug]) { problems.push(`${slug}: already released ${releases[slug]}`); continue; }
+
+  // State rows: never ship without a passing stateGate report.
+  if (exam.scope === 'state') {
+    if (exam.buildPage === false) { problems.push(`${slug}: state row is not-offered here (buildPage=false) — never generated`); continue; }
+    if (!INCLUDE_STATES) { problems.push(`${slug}: state row — requires a passing stateGate run; re-run with --include-states`); continue; }
+    if (!gatePassed.has(slug)) { problems.push(`${slug}: state row not marked passed in reports/quality/state-gate.json`); continue; }
+    continue; // state rows need no national record/depth layer
+  }
+
   if (!exam.record) { problems.push(`${slug}: no research record → renders noindex placeholder`); continue; }
   if (!examDepth[slug]) { problems.push(`${slug}: no depth layer`); continue; }
 }

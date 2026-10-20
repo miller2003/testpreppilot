@@ -1,0 +1,13 @@
+    HI: {
+      education: { hours: 'Permit required; may-issue lineage with training and the county police chief as issuer', sourceUrl: 'https://worldpopulationreview.com/state-rankings/shall-issue-states' },
+      recentChanges: [{ year: 2026, change: 'Hawaii remains in the heaviest-requirement group after Bruen, with county chiefs handling issuance and broad sensitive-place rules.', sourceUrl: 'https://freedomslodge.com/concealed-carry-by-state' }],
+      stateFaqs: [
+        { q: "Is Hawaii permitless?", a: "No \\u2014 a permit issued by the county police chief is required, and Hawaii sits in the heaviest-requirement group." },
+        { q: "What does the application require?", a: "Training plus the county-level review process the chief administers." },
+        { q: "How did Bruen change Hawaii?", a: "It ended proper-cause discretion, but Hawaii kept the permitting structure with extensive conditions." },
+        { q: "Do Hawaii permits work elsewhere?", a: "Recognition depends on other states; Hawaii\\u2019s own recognition of outside permits is minimal." }
+      ],
+      sources: [
+undefinedundefined        { label: 'World Population Review \u2014 Shall-issue states 2026', url: 'https://worldpopulationreview.com/state-rankings/shall-issue-states', checkedOn: '2026-10' },
+      ]
+    },

@@ -1,0 +1,550 @@
+---
+// ─────────────────────────────────────────────────────────────────────
+//  StateExamSections — v2 per-state flagship sections for /exams/[slug]
+//
+//  Mounted from [slug].astro in the mode==='researched' flow. Renders ONLY
+//  when facts.state carries v2 structured fields, and each section renders
+//  only when its own data exists (graceful degradation — a section is never
+//  faked from template-level numbers).
+//
+//  Zero client JS. All styling via tokens from src/styles/tokens.css
+//  (light + [data-theme="dark"]). No {expr} inside is:inline scripts —
+//  there are none.
+//
+//  Props:
+//    exam        catalog row (state row: stateCode/stateName/templateKey)
+//    facts       exam.facts (factsFor() output; .state = merged v1+v2 object)
+//    dossier     template dossier (for credential naming)
+//    states      the WHOLE merged per-state map for this template
+//                (dossier.states) — used to compute cross-state rankings
+//    compact     compact object (optional, for reciprocity status)
+// ─────────────────────────────────────────────────────────────────────
+import { jurisdictionByCode } from '../data/examCatalog/jurisdictions.mjs';
+
+interface Props {
+  exam: any;
+  facts: any;
+  dossier: any;
+  states: Record<string, any>;
+  compact?: any;
+}
+
+const { exam, facts, dossier, states = {}, compact = null } = Astro.props;
+
+const st = facts?.state || null;
+const stateName = exam.stateName || jurisdictionByCode[exam.stateCode]?.name || '';
+
+// v2 detection — at least one structured per-state field must exist.
+const V2_KEYS = ['exam','education','eligibility','background','fees','application','renewal','reciprocity','stats','wages','recentChanges','localNuance','stateFaqs','sources','experience'];
+const hasV2 = !!st && V2_KEYS.some((k) => st[k] != null);
+
+// ── numeric helpers (all comparison numbers are computed, never invented) ──
+const num = (v: any): number | null => {
+  if (v == null) return null;
+  const m = String(v).replace(/,/g, '').match(/\d+(?:\.\d+)?/);
+  return m ? parseFloat(m[0]) : null;
+};
+const feeNum = (v: any): number | null => {
+  if (v == null) return null;
+  const m = String(v).replace(/,/g, '').match(/\$\s*([\d,]+(?:\.\d+)?)/);
+  return m ? parseFloat(m[1]) : null;
+};
+const fmt = (n: number) => n.toLocaleString('en-US');
+const ordinal = (n: number) => {
+  const s = ['th','st','nd','rd'];
+  const v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
+};
+// renewal cycle → months (null when unparseable)
+const cycleMonths = (c: any): number | null => {
+  const s = String(c || '').toLowerCase();
+  if (/biennial|every two|two years?|2[\s-]*year/.test(s)) return 24;
+  if (/triennial|three years?|3[\s-]*year/.test(s)) return 36;
+  if (/annual|one year|1[\s-]*year|each year|every year|12[\s-]*month/.test(s)) return 12;
+  const y = s.match(/(\d+)\s*years?/);
+  if (y) return parseInt(y[1], 10) * 12;
+  const m = s.match(/(\d+)\s*months?/);
+  if (m) return parseInt(m[1], 10);
+  return null;
+};
+
+// ── cross-state comparison set: every OTHER jurisdiction in the template ──
+const ownCode = String(exam.stateCode || '').toUpperCase();
+const peers = Object.entries(states).filter(([code]) => code !== ownCode);
+
+const eduHours = st?.education ? num(st.education.hours) : null;
+const eduPeers = peers.filter(([, s]) => s?.education && num(s.education.hours) != null)
+  .map(([code, s]) => ({ code, name: jurisdictionByCode[code]?.name || code, v: num(s.education.hours) as number }));
+
+const examFeeRaw = st?.exam?.fee || st?.fee || null;
+const examFee = feeNum(examFeeRaw);
+const feePeers = peers.filter(([, s]) => feeNum(s?.exam?.fee || s?.fee) != null)
+  .map(([code, s]) => ({ code, name: jurisdictionByCode[code]?.name || code, v: feeNum(s?.exam?.fee || s?.fee) as number }));
+
+const ownCycle = st?.renewal ? cycleMonths(st.renewal.cycle) : null;
+const cyclePeers = peers.filter(([, s]) => s?.renewal && cycleMonths(s.renewal.cycle) != null)
+  .map(([code, s]) => ({ code, name: jurisdictionByCode[code]?.name || code, v: cycleMonths(s.renewal.cycle) as number }));
+
+// ── HAND-WRITTEN state adjacency (approximate, marked as such) ──────────
+// Simple bordering-state list per jurisdiction code, including DC. It is
+// deliberately coarse (no coastline debates, no "close but not bordering")
+// and is only used to name neighboring jurisdictions — never for numbers.
+// MARKED AS HARDCODED per the flagship plan (S4): keep honest, keep visible.
+const NEIGHBORS: Record<string, string[]> = {
+  AL:['MS','TN','GA','FL'], AK:[], AZ:['CA','NV','UT','NM'], AR:['MO','TN','MS','LA','TX','OK'],
+  CA:['OR','NV','AZ'], CO:['WY','NE','KS','OK','NM','UT'], CT:['NY','MA','RI'],
+  DE:['MD','PA','NJ'], DC:['MD','VA'], FL:['GA','AL'], GA:['FL','AL','TN','NC','SC'],
+  HI:[], ID:['WA','OR','NV','UT','WY','MT'], IL:['WI','IA','MO','KY','IN'],
+  IN:['MI','OH','KY','IL'], IA:['MN','WI','IL','MO','NE','SD'], KS:['NE','MO','OK','CO'],
+  KY:['IN','OH','WV','VA','TN','MO','IL'], LA:['TX','AR','MS'], ME:['NH'],
+  MD:['PA','DE','VA','WV','DC'], MA:['NH','VT','NY','CT','RI'], MI:['WI','IN','OH'],
+  MN:['WI','IA','SD','ND'], MS:['TN','AL','LA','AR'], MO:['IA','IL','KY','TN','AR','OK','KS','NE'],
+  MT:['ND','SD','WY','ID'], NE:['SD','IA','MO','KS','CO','WY'], NV:['OR','ID','UT','AZ','CA'],
+  NH:['ME','VT','MA'], NJ:['NY','PA','DE'], NM:['AZ','CO','OK','TX'],
+  NY:['VT','MA','CT','NJ','PA'], NC:['VA','TN','GA','SC'], ND:['MN','SD','MT'],
+  OH:['MI','PA','WV','KY','IN'], OK:['KS','MO','AR','TX','NM'], OR:['WA','ID','NV','CA'],
+  PA:['NY','NJ','DE','MD','WV','OH'], RI:['MA','CT'], SC:['NC','GA'],
+  SD:['ND','MN','IA','NE','WY','MT'], TN:['KY','VA','NC','GA','AL','MS','AR','MO'],
+  TX:['NM','OK','AR','LA'], UT:['ID','WY','CO','NM','AZ','NV'], VT:['NY','NH','MA'],
+  VA:['MD','WV','KY','TN','NC','DC'], WA:['ID','OR'], WV:['OH','PA','MD','VA','KY'],
+  WI:['MI','MN','IA','IL'], WY:['MT','SD','NE','CO','UT','ID']
+};
+const neighborCodes = (NEIGHBORS[ownCode] || []).filter((c) => states[c]);
+const neighborRows = neighborCodes.map((code) => {
+  const s = states[code];
+  const h = s?.education ? num(s.education.hours) : null;
+  const fee = feeNum(s?.exam?.fee || s?.fee);
+  const bits: string[] = [];
+  if (h != null) bits.push(`${fmt(h)} hrs`);
+  if (fee != null) bits.push(`$${fmt(fee)} exam`);
+  return {
+    code,
+    name: jurisdictionByCode[code]?.name || code,
+    detail: bits.join(' · ')
+  };
+});
+
+// ── computed ranking copy (only rendered when a denominator exists) ─────
+const strictestRank = eduHours != null && eduPeers.length >= 3
+  ? 1 + eduPeers.filter((p) => p.v > eduHours).length
+  : null;
+const feeAbovePct = examFee != null && feePeers.length >= 3
+  ? Math.round((feePeers.filter((p) => p.v < examFee).length / feePeers.length) * 100)
+  : null;
+const cycleEquals = ownCycle != null ? cyclePeers.filter((p) => p.v === ownCycle).length : null;
+
+const wages = st?.wages || null;
+const wageMedian = wages ? num(wages.median) : null;
+const wageNational = wages ? num(wages.national) : null;
+const wageDiffPct = wageMedian != null && wageNational != null && wageNational > 0
+  ? Math.round(((wageMedian - wageNational) / wageNational) * 100)
+  : null;
+
+const credential = (dossier?.name || exam.type || 'credential').toString();
+const vendor = st?.exam?.vendor || null;
+const vendorUrl = st?.exam?.vendorUrl || null;
+const parts = Array.isArray(st?.exam?.parts) ? st.exam.parts.filter((p: any) => p && p.name) : [];
+const fees = Array.isArray(st?.fees) ? st.fees.filter((r: any) => r && r.item) : [];
+const application = st?.application || null;
+const background = st?.background || null;
+const renewal = st?.renewal || null;
+const reciprocity = st?.reciprocity || null;
+const recentChanges = Array.isArray(st?.recentChanges) ? st.recentChanges.filter((c: any) => c && c.change) : [];
+const stateFaqs = Array.isArray(st?.stateFaqs) ? st.stateFaqs.filter((q: any) => q && q.q && q.a) : [];
+const localNuance = st?.localNuance || null;
+
+// Prep hub — exists for every template that has v2 states. Link only then.
+const v2StateCount = Object.values(states).filter((s: any) => s && (s.exam || s.stateFaqs || s.sources)).length;
+const hubHref = `/exams/${exam.templateKey}-license-by-state#prepare`;
+
+const showVs = strictestRank != null || feeAbovePct != null || (ownCycle != null && cycleEquals != null) || neighborRows.length > 0;
+const showExam = !!st?.exam;
+const showFees = fees.length > 0;
+const showApply = !!(application || background);
+const showRenewal = !!renewal;
+// Compact membership is rendered by [slug].astro's own #reciprocity section;
+// this section covers only the v2 per-state reciprocity research.
+const showReciprocity = !!reciprocity;
+const showWages = !!wages && (wages.median || wages.employment);
+const showChanges = recentChanges.length > 0;
+const showPrep = v2StateCount > 0;
+const renderComponent = hasV2 && (showExam || showVs || showFees || showApply || showRenewal || showReciprocity || showWages || showChanges || showPrep || localNuance);
+---
+
+{renderComponent && (
+  <div class="se-root">
+    {/* ── The state's exam, 100% state-true values ─────────────────── */}
+    {showExam && (
+      <section id="exam" class="se-section" data-state-exam>
+        <p class="se-kicker">The test itself</p>
+        <h2>What does the {stateName} {credential} exam look like?</h2>
+        {st.exam.fee && (
+          <p class="se-lead">
+            {vendor ? <>Administered by <strong>{vendor}</strong>.</> : null}
+            {' '}The exam fee is <strong>{st.exam.fee}</strong>.
+          </p>
+        )}
+        {parts.length > 0 && (
+          <div class="se-tablewrap">
+            <table class="se-table">
+              <thead>
+                <tr>
+                  <th scope="col">Part</th>
+                  <th scope="col">Questions</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Pass mark</th>
+                </tr>
+              </thead>
+              <tbody>
+                {parts.map((p: any) => (
+                  <tr>
+                    <th scope="row">{p.name}</th>
+                    <td>{p.questions || '—'}</td>
+                    <td>{p.time || '—'}</td>
+                    <td>{p.pass || '—'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+        <div class="se-tablewrap">
+          <table class="se-table se-table-tight">
+            <tbody>
+              {vendor && (
+                <tr>
+                  <th scope="row">Exam vendor</th>
+                  <td>{vendorUrl ? <a href={vendorUrl} target="_blank" rel="noopener noreferrer">{vendor}</a> : vendor}</td>
+                </tr>
+              )}
+              {st.exam.fee && <tr><th scope="row">Exam fee</th><td>{st.exam.fee}</td></tr>}
+              {st.exam.practical && <tr><th scope="row">Practical</th><td>{st.exam.practical}</td></tr>}
+              {Array.isArray(st.exam.languages) && st.exam.languages.length > 0 && (
+                <tr><th scope="row">Languages</th><td>{st.exam.languages.join(', ')}</td></tr>
+              )}
+              {st.exam.sourceUrl && (
+                <tr>
+                  <th scope="row">Source</th>
+                  <td><a href={st.exam.sourceUrl} target="_blank" rel="noopener noreferrer">Official candidate material</a></td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    {/* ── {State} vs. the other states — computed, never invented ──── */}
+    {showVs && (
+      <section id="state-vs" class="se-section se-section-cream" data-state-vs>
+        <p class="se-kicker">How it compares</p>
+        <h2>{stateName} vs. the other states</h2>
+        <div class="se-cards">
+          {eduHours != null && strictestRank != null && (
+            <div class="se-card">
+              <span class="se-card-label">Education required</span>
+              <span class="se-card-value">{fmt(eduHours)} hours</span>
+              <span class="se-card-note">{ordinal(strictestRank)} strictest of {eduPeers.length + 1} jurisdictions researched</span>
+            </div>
+          )}
+          {examFee != null && feeAbovePct != null && (
+            <div class="se-card">
+              <span class="se-card-label">Exam fee</span>
+              <span class="se-card-value">${fmt(examFee)}</span>
+              <span class="se-card-note">above {feeAbovePct}% of states researched ({feePeers.length + 1} with a published fee)</span>
+            </div>
+          )}
+          {ownCycle != null && (
+            <div class="se-card">
+              <span class="se-card-label">Renewal cycle</span>
+              <span class="se-card-value">{st.renewal.cycle}</span>
+              {cycleEquals != null && cyclePeers.length >= 3 && (
+                <span class="se-card-note">shared by {cycleEquals} of {cyclePeers.length + 1} states researched</span>
+              )}
+            </div>
+          )}
+          {wageMedian != null && (
+            <div class="se-card">
+              <span class="se-card-label">State median wage</span>
+              <span class="se-card-value">{wages.median}</span>
+              {wageDiffPct != null && (
+                <span class="se-card-note">{wageDiffPct >= 0 ? `${wageDiffPct}% above` : `${Math.abs(wageDiffPct)}% below`} the national median</span>
+              )}
+            </div>
+          )}
+          {neighborRows.length > 0 && (
+            <div class="se-card">
+              <span class="se-card-label">Neighboring states</span>
+              <span class="se-card-value">{neighborRows.length} of {(NEIGHBORS[ownCode] || []).length} license it</span>
+              <span class="se-card-note">{neighborRows.map((n) => n.name).join(' · ')}</span>
+            </div>
+          )}
+        </div>
+        <p class="se-body">
+          {[
+            strictestRank != null &&
+              `Among the ${eduPeers.length + 1} jurisdictions researched for the ${credential.toLowerCase()}, ${stateName}'s ${fmt(eduHours)}-hour education requirement ranks ${ordinal(strictestRank)} strictest.`,
+            feeAbovePct != null &&
+              `Its published exam fee sits above ${feeAbovePct}% of the ${feePeers.length + 1} states with a published fee.`,
+            ownCycle != null && cycleEquals != null && cyclePeers.length >= 3 &&
+              `Renewal runs on a ${String(st.renewal.cycle).toLowerCase()} — a cycle shared by ${cycleEquals} of the ${cyclePeers.length + 1} states researched.`,
+            neighborRows.length > 0 &&
+              `Neighboring states that also license the credential: ${neighborRows.map((n) => (n.detail ? `${n.name} (${n.detail})` : n.name)).join(' · ')}.`
+          ].filter(Boolean).join(' ')}
+        </p>
+      </section>
+    )}
+
+    {/* ── Itemised fees ────────────────────────────────────────────── */}
+    {showFees && (
+      <section id="state-fees" class="se-section" data-state-fees>
+        <p class="se-kicker">Every dollar</p>
+        <h2>What does the {stateName} {credential.toLowerCase()} cost, itemised?</h2>
+        <div class="se-tablewrap">
+          <table class="se-table">
+            <thead>
+              <tr><th scope="col">Item</th><th scope="col">Fee</th><th scope="col">Source</th></tr>
+            </thead>
+            <tbody>
+              {fees.map((r: any) => (
+                <tr>
+                  <th scope="row">{r.item}</th>
+                  <td>{r.fee}</td>
+                  <td>
+                    {r.sourceUrl
+                      ? <a href={r.sourceUrl} target="_blank" rel="noopener noreferrer">Official source</a>
+                      : '—'}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    {/* ── How to apply in {State} ──────────────────────────────────── */}
+    {showApply && (
+      <section id="state-apply" class="se-section se-section-cream" data-state-apply>
+        <p class="se-kicker">The paperwork</p>
+        <h2>How do you apply in {stateName}?</h2>
+        {application && (
+          <>
+            <p class="se-lead">
+              Applications go through{' '}
+              {application.portalUrl
+                ? <a href={application.portalUrl} target="_blank" rel="noopener noreferrer"><strong>{application.portal}</strong></a>
+                : <strong>{application.portal}</strong>}
+              {application.processingTime ? <> — processing takes {application.processingTime}</> : null}.
+            </p>
+            {Array.isArray(application.steps) && application.steps.length > 0 && (
+              <ol class="se-steps">
+                {application.steps.map((s: any) => <li>{typeof s === 'string' ? s : s.title || s.text}</li>)}
+              </ol>
+            )}
+            {application.sourceUrl && (
+              <p class="se-note">
+                Source: <a href={application.sourceUrl} target="_blank" rel="noopener noreferrer">official application instructions</a>
+              </p>
+            )}
+          </>
+        )}
+        {background && (background.method || background.fee) && (
+          <div class="se-callout">
+            <strong>Background check:</strong>{' '}
+            {background.method ? background.method : 'Required'}
+            {background.fee ? ` — ${background.fee}` : ''}.
+            {background.sourceUrl && (
+              <>
+                {' '}<a href={background.sourceUrl} target="_blank" rel="noopener noreferrer">Official source</a>
+              </>
+            )}
+          </div>
+        )}
+      </section>
+    )}
+
+    {/* ── Renewal & CE ─────────────────────────────────────────────── */}
+    {showRenewal && (
+      <section id="state-renewal" class="se-section" data-state-renewal>
+        <p class="se-kicker">Keeping it</p>
+        <h2>How do you renew a {stateName} {credential.toLowerCase()}?</h2>
+        <div class="se-tablewrap">
+          <table class="se-table">
+            <tbody>
+              {renewal.cycle && <tr><th scope="row">Cycle</th><td>{renewal.cycle}</td></tr>}
+              {renewal.ce && <tr><th scope="row">Continuing education</th><td>{renewal.ce}</td></tr>}
+              {renewal.fee && <tr><th scope="row">Renewal fee</th><td>{renewal.fee}</td></tr>}
+            </tbody>
+          </table>
+        </div>
+        {renewal.sourceUrl && (
+          <p class="se-note">
+            Source: <a href={renewal.sourceUrl} target="_blank" rel="noopener noreferrer">official renewal rules</a>
+          </p>
+        )}
+      </section>
+    )}
+
+    {/* ── Reciprocity ──────────────────────────────────────────────── */}
+    {showReciprocity && (
+      <section id="state-reciprocity" class="se-section se-section-cream" data-state-reciprocity>
+        <p class="se-kicker">Moving in (or out)</p>
+        <h2>Can you transfer a {credential.toLowerCase()} to or from {stateName}?</h2>
+        {reciprocity?.rule && <p class="se-body">{reciprocity.rule}</p>}
+        {Array.isArray(reciprocity?.agreements) && reciprocity.agreements.length > 0 && (
+          <>
+            <h3 class="se-subhead">Agreements in force</h3>
+            <ul class="se-list">
+              {reciprocity.agreements.map((a: any) => <li>{typeof a === 'string' ? a : a.name || a.text}</li>)}
+            </ul>
+          </>
+        )}
+        {reciprocity?.sourceUrl && (
+          <p class="se-note">
+            Source: <a href={reciprocity.sourceUrl} target="_blank" rel="noopener noreferrer">official reciprocity rules</a>
+          </p>
+        )}
+      </section>
+    )}
+
+    {/* ── State wages ──────────────────────────────────────────────── */}
+    {showWages && (
+      <section id="state-wages" class="se-section" data-state-wages>
+        <p class="se-kicker">What it pays</p>
+        <h2>What does this credential pay in {stateName}?</h2>
+        <div class="se-tablewrap">
+          <table class="se-table">
+            <tbody>
+              {wages.socName && <tr><th scope="row">Occupation</th><td>{wages.socName}{wages.soc ? ` (SOC ${wages.soc})` : ''}</td></tr>}
+              {wages.median && <tr><th scope="row">{stateName} median</th><td><strong>{wages.median}</strong></td></tr>}
+              {wages.national && <tr><th scope="row">National median</th><td>{wages.national}</td></tr>}
+              {wages.employment && <tr><th scope="row">Employment in {stateName}</th><td>{fmt(num(wages.employment) ?? wages.employment)}</td></tr>}
+              {wages.year && <tr><th scope="row">Data year</th><td>{wages.year}</td></tr>}
+            </tbody>
+          </table>
+        </div>
+        {wages.sourceUrl && (
+          <p class="se-note">
+            Source: <a href={wages.sourceUrl} target="_blank" rel="noopener noreferrer">BLS OEWS state wage table</a>
+          </p>
+        )}
+      </section>
+    )}
+
+    {/* ── Recent changes ───────────────────────────────────────────── */}
+    {showChanges && (
+      <section id="state-changes" class="se-section se-section-cream" data-state-changes>
+        <p class="se-kicker">What moved recently</p>
+        <h2>What has changed in {stateName} recently?</h2>
+        <ol class="se-timeline">
+          {recentChanges.map((c: any) => (
+            <li>
+              <span class="se-tl-year">{c.year}</span>
+              <span class="se-tl-body">
+                {c.change}
+                {c.sourceUrl && (
+                  <>
+                    {' '}<a href={c.sourceUrl} target="_blank" rel="noopener noreferrer">Source</a>
+                  </>
+                )}
+              </span>
+            </li>
+          ))}
+        </ol>
+      </section>
+    )}
+
+    {/* ── Local nuance ─────────────────────────────────────────────── */}
+    {localNuance && (
+      <div class="se-callout se-callout-local">
+        <strong>{stateName} nuance:</strong> {localNuance}
+      </div>
+    )}
+
+    {/* ── Prep summary → template hub ──────────────────────────────── */}
+    {showPrep && (
+      <section id="state-prep" class="se-section" data-state-prep>
+        <p class="se-kicker">Getting ready</p>
+        <h2>How should you prepare for the {stateName} exam?</h2>
+        <p class="se-body">
+          {st.exam?.fee && <>Budget for the exam first: {stateName}'s published exam fee is {st.exam.fee}. </>}
+          {vendor && <>The test is delivered by {vendor}, so register through the vendor's own scheduling system once {stateName}'s board approves your application. </>}
+          The material itself is largely national — content outlines, question styles and study plans are shared across jurisdictions even when fees and passing rules are not. That means the highest-value preparation is the same everywhere: work from the official content outline, take full-length timed practice tests before you book, and drill your weakest domain until your practice scores clear the pass mark with room to spare. Our template-level guide collects the study plan, question-type breakdowns and common mistakes in one place, so you prepare once instead of re-researching what changed in {stateName}.
+        </p>
+        <p class="se-note">
+          <a href={hubHref}>See the full {credential.toLowerCase()} preparation guide →</a>
+        </p>
+      </section>
+    )}
+  </div>
+)}
+
+<style>
+  .se-root { display: block; }
+
+  .se-section { padding: 2.75rem 0; border-top: 1px solid var(--line); }
+  .se-section:first-child { border-top: none; }
+  .se-section-cream { background: var(--cream); border-radius: var(--radius-lg); border-top: none; margin: 1.5rem 0; padding: 2.75rem 2.5rem; }
+  .se-kicker { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); font-weight: 700; margin: 0 0 0.5rem; }
+  .se-section h2 { font-family: var(--font-heading); font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.2; margin: 0 0 1.25rem; }
+  .se-subhead { font-family: var(--font-heading); font-size: 1.15rem; margin: 1.75rem 0 0.85rem; }
+  .se-lead { color: var(--muted); line-height: 1.75; margin: 0 0 1.5rem; font-size: 1.05rem; }
+  .se-lead strong { color: var(--ink); }
+  .se-body { color: var(--ink); line-height: 1.8; font-size: 1.05rem; margin: 1.25rem 0 0; }
+  .se-note { font-size: 0.92rem; color: var(--muted); line-height: 1.6; margin-top: 1rem; }
+  .se-note a, .se-lead a { color: var(--primary); font-weight: 600; }
+
+  /* Tables — horizontal scroll on narrow screens; children must not shrink
+     inside the scroll container (flex-shrink trap) */
+  .se-tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); margin: 0 0 1rem; }
+  .se-tablewrap > * { flex-shrink: 0; }
+  .se-table { width: 100%; border-collapse: collapse; }
+  .se-table th, .se-table td { padding: 0.95rem 1.2rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .se-table thead th { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); background: var(--cream); }
+  .se-table tbody th { font-weight: 600; width: 30%; background: var(--cream); }
+  .se-table tbody tr:last-child th, .se-table tbody tr:last-child td { border-bottom: none; }
+  .se-table-tight th, .se-table-tight td { padding: 0.7rem 1rem; font-size: 0.94rem; }
+  .se-table a { color: var(--primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
+  /* Stat cards */
+  .se-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 1rem; }
+  .se-card { display: flex; flex-direction: column; gap: 0.3rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem 1.35rem; transition: transform var(--transition), box-shadow var(--transition); }
+  .se-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+  .se-card-label { font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  .se-card-value { font-family: var(--font-heading); font-size: 1.45rem; font-weight: 700; color: var(--ink); line-height: 1.2; }
+  .se-card-note { font-size: 0.84rem; line-height: 1.5; color: var(--muted); }
+
+  /* Steps */
+  .se-steps { list-style: none; padding: 0; margin: 0 0 1.25rem; counter-reset: sestep; }
+  .se-steps li { counter-increment: sestep; position: relative; padding: 0.85rem 0 0.85rem 2.6rem; border-bottom: 1px solid var(--line); line-height: 1.7; }
+  .se-steps li:last-child { border-bottom: none; }
+  .se-steps li::before { content: counter(sestep); position: absolute; left: 0; top: 0.85rem; width: 1.65rem; height: 1.65rem; display: grid; place-items: center; border-radius: 50%; background: var(--primary); color: var(--paper); font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; }
+
+  /* Lists */
+  .se-list { list-style: none; padding: 0; margin: 0 0 1rem; display: flex; flex-direction: column; gap: 0.6rem; }
+  .se-list li { position: relative; padding-left: 1.5rem; line-height: 1.7; }
+  .se-list li::before { content: '→'; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+
+  /* Callouts */
+  .se-callout { border-left: 4px solid var(--primary); background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--primary); padding: 1.1rem 1.5rem; border-radius: var(--radius); line-height: 1.7; margin: 1.25rem 0 0; }
+  .se-callout a { color: var(--primary); font-weight: 600; }
+  .se-callout-local { border-left-color: var(--accent); background: var(--cream); margin: 0; }
+  .se-compact { margin-top: 1rem; padding: 1rem 1.35rem; border-radius: var(--radius); border: 1px solid var(--line); background: var(--paper); line-height: 1.6; }
+  .se-compact.is-member { border-color: #a5b4fc; background: var(--primary-light); }
+  .se-compact.not-member { border-color: var(--line); }
+
+  /* Timeline */
+  .se-timeline { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--line); }
+  .se-timeline li { position: relative; display: flex; gap: 1rem; padding: 0 0 1.15rem 1.35rem; }
+  .se-timeline li:last-child { padding-bottom: 0; }
+  .se-timeline li::before { content: ''; position: absolute; left: -6px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+  .se-tl-year { flex: 0 0 auto; font-family: var(--font-mono); font-weight: 700; color: var(--primary); min-width: 3.2rem; }
+  .se-tl-body { line-height: 1.7; color: var(--ink); }
+  .se-tl-body a { color: var(--primary); font-weight: 600; }
+
+  @media (max-width: 640px) {
+    .se-section-cream { padding: 1.75rem 1.25rem; }
+    .se-table th, .se-table td { padding: 0.75rem 0.85rem; }
+  }
+</style>

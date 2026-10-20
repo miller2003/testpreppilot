@@ -84,10 +84,12 @@ function buildStateExams() {
       if (tpl.replacedBy?.[state.code]) continue; // a finished guide covers this
 
       // Verified facts from the research dossier. `offered:false` means this
-      // jurisdiction does NOT issue the credential — we keep the page (long-tail
-      // traffic) but the template must say so plainly instead of implying it exists.
+      // jurisdiction does NOT issue the credential. Per flagship-plan decision B
+      // those rows are NOT built (thin doorway pages hurt the whole state layer);
+      // the data is kept for the template hub's "not offered here" section.
       const facts = factsFor(tpl.key, state.code);
       const offered = facts ? facts.offered : null; // null = not yet researched
+      const actual = facts?.state?.actualCredential || null;
 
       rows.push({
         slug: fill(tpl.slug, state),
@@ -96,9 +98,11 @@ function buildStateExams() {
         category: tpl.category,
         group: tpl.group,
         type: tpl.type,
-        blurb: offered === false && dossier
-          ? `${state.name} does not issue a state-level ${dossier.name.toLowerCase()}. Here is what actually applies in ${state.name} and how the credential works in the states that do require it.`
-          : fill(tpl.blurb, state),
+        blurb: actual
+          ? `${state.name} does not license a ${dossier ? dossier.name.toLowerCase() : 'credential of this type'} under that exact name — the state equivalent is the ${actual.name}. This page maps the requirements across.`
+          : offered === false && dossier
+            ? `${state.name} does not issue a state-level ${dossier.name.toLowerCase()}. Here is what actually applies in ${state.name} and how the credential works in the states that do require it.`
+            : fill(tpl.blurb, state),
         aka: (tpl.aka || []).map((a) => fill(a, state)),
         scope: 'state',
         stateCode: state.code,
@@ -108,6 +112,8 @@ function buildStateExams() {
         templateKey: tpl.key,
         researched: Boolean(facts),
         offered,
+        buildPage: offered !== false,
+        actualCredential: actual,
         facts
       });
     }
