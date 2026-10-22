@@ -31,6 +31,17 @@
       ]
     },
     {
+      "identifier": "urn:air:testpreppilot.com:mcp:exam-catalog",
+      "displayName": "MCP server for the exam catalogue",
+      "description": "Read-only MCP server (Streamable HTTP, no authentication) with search_exams, get_exam and list_categories tools over the published catalogue. This URL is its server card.",
+      "type": "application/json",
+      "url": "https://testpreppilot.com/.well-known/mcp/server-card.json",
+      "representativeQueries": [
+        "Search for a certification exam by name from my agent.",
+        "Get the fee and pass mark for a specific exam as structured data."
+      ]
+    },
+    {
       "identifier": "urn:air:testpreppilot.com:docs:llms",
       "displayName": "llms.txt content map",
       "description": "Plain-text index of every published guide, one line each, with fee, length and pass mark. The cheapest entry point for retrieval.",

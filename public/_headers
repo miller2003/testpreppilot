@@ -74,6 +74,25 @@
   Access-Control-Allow-Origin: *
   X-Robots-Tag: noindex, follow
 
+/.well-known/mcp/server-card.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: noindex, follow
+
+# Markdown twins of every page (written by _gen_markdown.mjs). Agents normally
+# get these through Accept: text/markdown on the page URL itself (see
+# functions/_middleware.js); fetched directly, they must not compete with the
+# HTML pages in search results.
+/*/index.md
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: noindex
+
+/index.md
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: noindex
+
 # auth.md is a protocol document for agents, not a page for readers, so it is
 # kept out of the search index while staying fully readable.
 /auth.md

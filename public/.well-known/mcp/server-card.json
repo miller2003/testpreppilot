@@ -1,0 +1,101 @@
+{
+  "name": "com.testpreppilot/exam-catalog",
+  "title": "TestPrepPilot exam catalogue",
+  "description": "Read-only access to TestPrepPilot's published U.S. exam and certification catalogue: search guides, fetch every structured fact for one, list categories.",
+  "version": "1.0.0",
+  "websiteUrl": "https://testpreppilot.com",
+  "serverInfo": {
+    "name": "testpreppilot",
+    "title": "TestPrepPilot exam catalogue",
+    "version": "1.0.0"
+  },
+  "protocolVersion": "2025-11-25",
+  "supportedProtocolVersions": [
+    "2025-11-25",
+    "2025-06-18",
+    "2025-03-26"
+  ],
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://testpreppilot.com/mcp"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://testpreppilot.com/mcp",
+      "supportedProtocolVersions": [
+        "2025-11-25",
+        "2025-06-18",
+        "2025-03-26"
+      ]
+    }
+  ],
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    }
+  },
+  "authentication": {
+    "required": false,
+    "schemes": []
+  },
+  "tools": [
+    {
+      "name": "search_exams",
+      "title": "Search exams",
+      "description": "Find published U.S. exam, licence and certification guides by keyword (name, acronym, awarding body, topic). Returns the best matches with fee and guide URL.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Keywords, e.g. \"nclex\", \"cpa exam\", \"comptia security\"."
+          },
+          "category": {
+            "type": "string",
+            "description": "Optional category filter, exactly as returned by list_categories."
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 25,
+            "default": 10
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "get_exam",
+      "title": "Get exam facts",
+      "description": "Every structured fact for one guide: awarding body, fee, format, questions, length, pass mark, study time, salary range, topics, last-reviewed month, confidence and primary source URL.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "Guide slug from search_exams, e.g. \"aama-cma\"."
+          }
+        },
+        "required": [
+          "slug"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "list_categories",
+      "title": "List categories",
+      "description": "The credential categories in the catalogue, with the number of published guides in each.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  ],
+  "documentationUrl": "https://testpreppilot.com/.well-known/agent-skills/site-content/SKILL.md"
+}

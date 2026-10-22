@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 import { releases } from './src/data/examCatalog/release-manifest.mjs';
 import { buildDirectory } from './src/data/examCatalog/index.mjs';
 
@@ -19,6 +20,11 @@ const agentSurface = {
     'astro:build:start': () => {
       execFileSync(process.execPath, ['_gen_llms.mjs'], { stdio: 'inherit' });
       execFileSync(process.execPath, ['_gen_agent_surface.mjs'], { stdio: 'inherit' });
+    },
+    // Markdown twins (dist/<route>/index.md) for Accept: text/markdown
+    // negotiation in functions/_middleware.js. Needs the finished HTML.
+    'astro:build:done': ({ dir }) => {
+      execFileSync(process.execPath, ['_gen_markdown.mjs', fileURLToPath(dir)], { stdio: 'inherit' });
     },
   },
 };

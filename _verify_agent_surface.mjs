@@ -49,6 +49,8 @@ const docs = [
   'public/.well-known/openapi.json',
   'public/.well-known/agent-skills/index.json',
   'public/.well-known/agent-skills/site-content/SKILL.md',
+  'public/.well-known/mcp/server-card.json',
+  'public/_routes.json',
   'public/auth.md',
   'public/_headers',
 ];
@@ -126,6 +128,36 @@ console.log('\n=== dataset matches its OpenAPI schema ===');
   ok(rows.length > 0, 'dataset is non-empty', String(rows.length));
   const unreleased = rows.filter((r) => !r.published);
   ok(unreleased.length === 0, 'dataset contains no unpublished guide', String(unreleased.length));
+}
+
+console.log('\n=== MCP server card matches functions/mcp.js ===');
+{
+  const { SERVER_INFO, PROTOCOL_VERSIONS, TOOLS } = await import('./functions/mcp.js');
+  const card = readJson('public/.well-known/mcp/server-card.json');
+  ok(card.serverInfo?.name === SERVER_INFO.name && card.serverInfo?.version === SERVER_INFO.version,
+    'serverInfo name + version match', `${card.serverInfo?.name}@${card.serverInfo?.version}`);
+  ok(card.transport?.endpoint === `${SITE}/mcp` && existsSync('functions/mcp.js'), 'transport endpoint is the /mcp Function', card.transport?.endpoint);
+  ok(card.protocolVersion === PROTOCOL_VERSIONS[0], 'protocolVersion is the newest the server negotiates', card.protocolVersion);
+  ok(!!card.capabilities?.tools, 'capabilities declares tools');
+  const cardTools = card.tools.map((t) => t.name).sort().join(',');
+  const realTools = TOOLS.map((t) => t.name).sort().join(',');
+  ok(cardTools === realTools, 'card lists exactly the tools the server implements', cardTools);
+  const headers = read('public/_headers');
+  ok(headers.includes('\n/.well-known/mcp/server-card.json\n'), 'Content-Type for /.well-known/mcp/server-card.json');
+}
+
+console.log('\n=== Markdown twins for Accept: text/markdown ===');
+{
+  ok(existsSync('functions/_middleware.js'), 'negotiation middleware exists');
+  for (const p of ['index.md', 'about/index.md']) {
+    const path = `${DIST}/${p}`;
+    const body = existsSync(path) ? read(path) : '';
+    ok(body.startsWith('---\ntitle: ') && /\nurl: "https:\/\/testpreppilot\.com\//.test(body), `${p} has front matter`);
+    ok(body.length > 500 && !/<script|<nav\b/i.test(body), `${p} has content and no chrome`, `${body.length} chars`);
+  }
+  const routes = readJson('public/_routes.json');
+  ok(routes.include.includes('/*') && !routes.exclude.some((r) => r === '/*' || r.startsWith('/go') || r.startsWith('/mcp')),
+    '_routes.json keeps pages, /go/ and /mcp on Functions');
 }
 
 console.log('\n=== robots.txt policy lines ===');

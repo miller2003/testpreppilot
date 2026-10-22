@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/_astro/*",
+    "/images/*",
+    "/og/*",
+    "/pagefind/*",
+    "/data/*",
+    "/.well-known/*",
+    "/favicon.svg",
+    "/favicon-32.png",
+    "/favicon-48.png",
+    "/apple-touch-icon.png",
+    "/logo.png",
+    "/og-image.png",
+    "/og-exam.png",
+    "/og-state.png",
+    "/robots.txt",
+    "/llms.txt",
+    "/llms-full.txt",
+    "/auth.md",
+    "/rss.xml",
+    "/sitemap-index.xml",
+    "/sitemap-0.xml"
+  ]
+}

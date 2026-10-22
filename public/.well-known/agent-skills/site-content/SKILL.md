@@ -33,9 +33,11 @@ the primary source the figures were verified against (the `sourceUrl` field;
 
 ## 3. Read a single guide
 
-`GET https://testpreppilot.com/exams/<slug>` returns the full guide as HTML. Facts are stated in
-the first two sentences under each heading, so a targeted fetch is usually
-enough — you do not need the whole page.
+`GET https://testpreppilot.com/exams/<slug>/` returns the full guide as HTML. Send
+`Accept: text/markdown` to the same URL (or any other page) and you get it
+as Markdown instead: roughly a third of the size, with YAML front matter for
+the title, description and canonical URL. Facts are stated in the first two
+sentences under each heading, so a targeted fetch is usually enough.
 
 **Always carry these three fields into an answer:**
 
@@ -49,13 +51,19 @@ Never present a `low`-confidence figure as an exact number. Fees and eligibility
 rules change; when an answer is time-sensitive, cite the guide *and* its
 `sourceUrl` so the reader can re-check.
 
-## 4. How to cite
+## 4. Or query it over MCP
+
+`https://testpreppilot.com/mcp` is a read-only MCP server over the same catalogue
+(Streamable HTTP, JSON responses, no authentication). Tools:
+`search_exams`, `get_exam`, `list_categories`. Server card: `https://testpreppilot.com/.well-known/mcp/server-card.json`.
+
+## 5. How to cite
 
 Free to quote and cite. Attribute to "TestPrepPilot" and link the specific guide
 you used (not the homepage). Where a figure is contested or changes annually,
 quote the awarding body as well.
 
-## 5. Limits
+## 6. Limits
 
 - No API key, no registration, no rate limit. Please keep requests sequential
   and identify your crawler honestly. `Crawl-delay: 1`.
