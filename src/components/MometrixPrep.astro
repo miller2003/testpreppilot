@@ -9,9 +9,11 @@
  *
  * Renders nothing when the exam has no mapped product, so callers can drop it
  * in unconditionally. Links point at /go/mometrix/<slug>, a Pages Function
- * (functions/go/mometrix/[slug].js) that redirects real visitors to the
- * Mometrix tracking link and refuses bots and prefetches; clicks are reported
- * to GA4 as `affiliate_click`.
+ * (functions/go/mometrix/[slug].js). The inline script below stamps a 120s
+ * ticket cookie on every trusted click; /go/ redirects straight away when the
+ * ticket is there, and otherwise shows a one-tap confirm page instead, so
+ * crawlers never reach the Mometrix tracking link. Clicks are also reported
+ * to GA4 as `affiliate_click` (and to PostHog by Analytics.astro).
  */
 import { mometrixFor } from '../data/mometrix.mjs';
 
@@ -140,24 +142,59 @@ const heading = featured?.kind === 'course'
   </aside>
 )}
 
-<script>
-  // One delegated listener per page (Astro dedupes processed scripts).
-  const report = (e: Event) => {
-    const a = (e.target as Element | null)?.closest?.('a[data-mx-product]') as HTMLAnchorElement | null;
-    if (!a) return;
-    const gtag = (window as any).gtag;
-    if (typeof gtag !== 'function') return;
-    gtag('event', 'affiliate_click', {
-      program: 'mometrix',
-      product_id: a.dataset.mxProduct,
-      product_kind: a.dataset.mxKind,
-      exam_slug: a.dataset.mxExam,
-      placement: a.dataset.mxPlacement,
-      transport_type: 'beacon'
-    });
-  };
-  document.addEventListener('click', report);
-  document.addEventListener('auxclick', report);
+<script is:inline>
+  // Two jobs, one delegated listener (guarded, because a page can render this
+  // component twice). Runs inline so the ticket is armed before anyone can click.
+  //
+  // 1. Ticket: a trusted click stamps a 120s cookie scoped to /go/. The Pages
+  //    Function only redirects when that ticket is present, so a crawler that
+  //    merely fetches the URL never reaches Mometrix. We never preventDefault:
+  //    the click stays 100% native (new tab, middle-click, Cmd/Ctrl+click).
+  // 2. GA4 affiliate_click, unchanged.
+  (function () {
+    if (window.__mxOutbound) return;
+    window.__mxOutbound = true;
+
+    function stamp(a) {
+      var href = a.getAttribute('href') || '';
+      if (href.indexOf('/go/') !== 0) return;
+      var rnd;
+      try {
+        rnd = Array.prototype.map.call(crypto.getRandomValues(new Uint8Array(6)), function (b) {
+          return ('0' + b.toString(16)).slice(-2);
+        }).join('');
+      } catch (e) {
+        rnd = Math.random().toString(16).slice(2, 14);
+      }
+      try {
+        document.cookie = 'mxg=' + Math.floor(Date.now() / 1000) + '.' + rnd +
+          ';Path=/go/;Max-Age=120;SameSite=Lax' + (location.protocol === 'https:' ? ';Secure' : '');
+      } catch (e) { /* blocked cookies just mean the confirm page */ }
+    }
+
+    function handler(e) {
+      if (!e.isTrusted) return;
+      if (e.type === 'auxclick' && e.button !== 1) return;
+      var t = e.target;
+      var a = t && t.closest ? t.closest('a[data-mx-product]') : null;
+      if (!a) return;
+      stamp(a);
+      if (typeof window.gtag !== 'function') return;
+      var d = a.dataset || {};
+      window.gtag('event', 'affiliate_click', {
+        program: 'mometrix',
+        product_id: d.mxProduct,
+        product_kind: d.mxKind,
+        exam_slug: d.mxExam,
+        placement: d.mxPlacement,
+        transport_type: 'beacon'
+      });
+    }
+
+    // Capture phase: even if another handler stops propagation, the ticket is set.
+    document.addEventListener('click', handler, true);
+    document.addEventListener('auxclick', handler, true);
+  })();
 </script>
 
 <style>
