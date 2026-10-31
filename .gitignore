@@ -23,3 +23,4 @@ rename-colors.cjs
 
 # broken git backup (2026-08-11)
 .git-broken-20260811/
+.wrangler/

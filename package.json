@@ -22,7 +22,12 @@
     "@astrojs/sitemap": "^3.0.0",
     "astro": "^5.0.0",
     "pagefind": "^1.5.2",
-    "typescript": "^5.9.3"
+    "rehype-parse": "^9.0.1",
+    "rehype-remark": "^10.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-stringify": "^11.0.0",
+    "typescript": "^5.9.3",
+    "unified": "^11.0.5"
   },
   "devDependencies": {
     "prettier": "^3.3.0",

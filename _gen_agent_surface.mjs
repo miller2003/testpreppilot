@@ -5,6 +5,7 @@
 //   public/.well-known/openapi.json                   (real description of the real endpoints)
 //   public/.well-known/agent-skills/index.json        (Agent Skills discovery, computed digests)
 //   public/.well-known/agent-skills/site-content/SKILL.md
+//   public/.well-known/mcp/server-card.json           (MCP Server Card for functions/mcp.js)
 //   public/auth.md
 //
 // THIS FILE IS THE SINGLE SOURCE OF TRUTH for that surface. Every document is
@@ -27,6 +28,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { allExamsFull } from './src/data/examCatalog/index.mjs';
 import { releases } from './src/data/examCatalog/release-manifest.mjs';
+import { SERVER_INFO, PROTOCOL_VERSIONS, TOOLS } from './functions/mcp.js';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const SITE = 'https://testpreppilot.com';
@@ -50,6 +52,8 @@ const OPENAPI = '/.well-known/openapi.json';
 const LLMS = '/llms.txt';
 const SITEMAP = '/sitemap-index.xml';
 const AUTH = '/auth.md';
+const MCP = '/mcp';
+const MCP_CARD = '/.well-known/mcp/server-card.json';
 
 const written = [];
 function put(relPath, content, { json = false } = {}) {
@@ -98,9 +102,11 @@ the primary source the figures were verified against (the \`sourceUrl\` field;
 
 ## 3. Read a single guide
 
-\`GET ${SITE}/exams/<slug>\` returns the full guide as HTML. Facts are stated in
-the first two sentences under each heading, so a targeted fetch is usually
-enough — you do not need the whole page.
+\`GET ${SITE}/exams/<slug>/\` returns the full guide as HTML. Send
+\`Accept: text/markdown\` to the same URL (or any other page) and you get it
+as Markdown instead: roughly a third of the size, with YAML front matter for
+the title, description and canonical URL. Facts are stated in the first two
+sentences under each heading, so a targeted fetch is usually enough.
 
 **Always carry these three fields into an answer:**
 
@@ -114,13 +120,19 @@ Never present a \`low\`-confidence figure as an exact number. Fees and eligibili
 rules change; when an answer is time-sensitive, cite the guide *and* its
 \`sourceUrl\` so the reader can re-check.
 
-## 4. How to cite
+## 4. Or query it over MCP
+
+\`${SITE}${MCP}\` is a read-only MCP server over the same catalogue
+(Streamable HTTP, JSON responses, no authentication). Tools:
+${TOOLS.map((t) => `\`${t.name}\``).join(', ')}. Server card: \`${SITE}${MCP_CARD}\`.
+
+## 5. How to cite
 
 Free to quote and cite. Attribute to "TestPrepPilot" and link the specific guide
 you used (not the homepage). Where a figure is contested or changes annually,
 quote the awarding body as well.
 
-## 5. Limits
+## 6. Limits
 
 - No API key, no registration, no rate limit. Please keep requests sequential
   and identify your crawler honestly. \`Crawl-delay: 1\`.
@@ -229,6 +241,30 @@ put('.well-known/api-catalog', {
   ],
 }, { json: true });
 
+// ═══ 3b. MCP Server Card (SEP-1649 / SEP-2127 draft) ═════════════════
+// Describes functions/mcp.js. serverInfo, the protocol versions and the tool
+// list are imported from that file, so the card cannot advertise a tool the
+// server does not have. The draft schema is still moving, so the card carries
+// both the scanner-era fields (serverInfo, transport, capabilities) and the
+// registry-style ones (name, version, remotes).
+put('.well-known/mcp/server-card.json', {
+  name: 'com.testpreppilot/exam-catalog',
+  title: SERVER_INFO.title,
+  description:
+    'Read-only access to TestPrepPilot\'s published U.S. exam and certification catalogue: search guides, fetch every structured fact for one, list categories.',
+  version: SERVER_INFO.version,
+  websiteUrl: SITE,
+  serverInfo: SERVER_INFO,
+  protocolVersion: PROTOCOL_VERSIONS[0],
+  supportedProtocolVersions: PROTOCOL_VERSIONS,
+  transport: { type: 'streamable-http', endpoint: `${SITE}${MCP}` },
+  remotes: [{ type: 'streamable-http', url: `${SITE}${MCP}`, supportedProtocolVersions: PROTOCOL_VERSIONS }],
+  capabilities: { tools: { listChanged: false } },
+  authentication: { required: false, schemes: [] },
+  tools: TOOLS.map(({ name, title, description, inputSchema }) => ({ name, title, description, inputSchema })),
+  documentationUrl: `${SITE}${SKILL_PATH}`,
+}, { json: true });
+
 // ═══ 4. ARD / ai-catalog manifest ═══════════════════════════════════
 // Each entry needs a URL that really resolves. Two to five representative
 // queries each, phrased the way a person would actually ask.
@@ -263,6 +299,18 @@ put('.well-known/ai-catalog.json', {
       representativeQueries: [
         'Give me a table of U.S. certification exam fees.',
         'List exam lengths and pass marks for US professional licences.',
+      ],
+    },
+    {
+      identifier: 'urn:air:testpreppilot.com:mcp:exam-catalog',
+      displayName: 'MCP server for the exam catalogue',
+      description:
+        'Read-only MCP server (Streamable HTTP, no authentication) with search_exams, get_exam and list_categories tools over the published catalogue. This URL is its server card.',
+      type: 'application/json',
+      url: `${SITE}${MCP_CARD}`,
+      representativeQueries: [
+        'Search for a certification exam by name from my agent.',
+        'Get the fee and pass mark for a specific exam as structured data.',
       ],
     },
     {
@@ -340,14 +388,18 @@ no credential to obtain.
 | API catalogue | ${SITE}${API_CATALOG} | RFC 9727 linkset |
 | AI catalogue | ${SITE}${AI_CATALOG} | ARD manifest listing the resources above |
 | Agent skills | ${SITE}${SKILLS_INDEX} | How an agent should retrieve and cite this content |
+| MCP server card | ${SITE}${MCP_CARD} | Read-only MCP server at ${SITE}${MCP}, no authentication |
 | Sitemap | ${SITE}${SITEMAP} | Every indexable URL |
+
+Any page also answers \`Accept: text/markdown\` with a Markdown version of itself.
 
 ## What is NOT supported
 
 - No OAuth 2.0 / OpenID Connect authorization server (there is no protected
   resource to authorize).
 - No identity assertions, client secrets or signed tokens.
-- No write, POST or mutation surface of any kind.
+- No write or mutation surface of any kind. The MCP endpoint takes POST only
+  because that is how its transport carries JSON-RPC; every tool is read-only.
 
 If a scanner reports missing OAuth metadata, that check does not apply to this
 site. Publishing an authorization server here would describe a capability that
