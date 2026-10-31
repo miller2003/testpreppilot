@@ -217,14 +217,19 @@ function checkPage(p, siblingsSameTemplate) {
   const add = (id, label, ok, detail) => checks.push({ id, label, ok: !!ok, detail: detail || (ok ? 'ok' : 'failed') });
 
   // (1) state-uniqueness >= 55%
-  const sibTokens = new Set();
-  for (const s of siblingsSameTemplate) for (const t of s.tokens) sibTokens.add(t);
+  // Measured on the same 6-word shingles as check 2: the share of this page's
+  // phrasing that appears on no same-template sibling. (A single-word version
+  // shipped first; it cannot pass for any honest page, because ordinary words
+  // — "license", "the", "fee" — occur on every sibling, so it measured English
+  // rather than duplication: 8-17% on pages whose worst sibling Jaccard is 0.25.)
+  const sibShingles = new Set();
+  for (const s of siblingsSameTemplate) for (const t of s.sh) sibShingles.add(t);
   let unique = 0;
-  const total = p.tokens.size;
-  for (const t of p.tokens) if (!sibTokens.has(t)) unique++;
+  const total = p.sh.size;
+  for (const t of p.sh) if (!sibShingles.has(t)) unique++;
   const uniqueness = total ? unique / total : 0;
   add(1, 'state-uniqueness >= 55%', uniqueness >= 0.55,
-    `${(uniqueness * 100).toFixed(1)}% unique tokens (${unique}/${total}) vs ${siblingsSameTemplate.length} same-template siblings`);
+    `${(uniqueness * 100).toFixed(1)}% unique 6-word shingles (${unique}/${total}) vs ${siblingsSameTemplate.length} same-template siblings`);
 
   // (2) Jaccard < 0.45 vs same-template pages, < 0.60 vs the rest (sampled)
   let worstSame = 0, worstOther = 0;

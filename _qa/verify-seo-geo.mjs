@@ -79,11 +79,15 @@ for (const u of catUrls) {
   }
 }
 ok(badLd === 0, 'all category JSON-LD blocks parse');
-ok(withPay >= 15, 'ranked pay block on categories with data', withPay + '/' + catUrls.length);
-ok(withItemList >= 15, 'ranked ItemList (with itemListOrder) emitted', withItemList + '/' + catUrls.length);
+// Proportional since the 2026-10-31 deindex: thin fields (legal, animal care,
+// security, real estate whose guides live under /paths/) have too few ranked
+// guides for a pay block, and the listed-category count now moves with triage.
+ok(withPay >= Math.ceil(catUrls.length * 0.75), 'ranked pay block on categories with data', withPay + '/' + catUrls.length);
+ok(withItemList >= Math.ceil(catUrls.length * 0.75), 'ranked ItemList (with itemListOrder) emitted', withItemList + '/' + catUrls.length);
 // One category (real-estate) has no published guides, so it correctly emits no
 // date rather than inventing one.
-ok(withDate >= 18, 'CollectionPage.dateModified set where a guide exists', withDate + '/' + catUrls.length);
+// real-estate lists only the /paths/ flagship guides, which carry no release date.
+ok(withDate >= catUrls.length - 1, 'CollectionPage.dateModified set where a guide exists', withDate + '/' + catUrls.length);
 ok(faqMismatch === 0, 'category FAQ schema still matches visible text', String(faqMismatch));
 
 console.log('\n=== sitemap lastmod honesty ===');
@@ -104,7 +108,8 @@ ok(counts.buildStamp === 0, 'no URL claims a future lastmod', JSON.stringify(cou
 // The "newest release" is read from the manifest rather than hardcoded, so this
 // harness does not go stale every time a new batch ships.
 const newestRelease = Object.values(releases).sort().at(-1);
-const probeExam = 'sat-exam';
+// Probe a page that stays in the sitemap (sat-exam was deindexed 2026-10-31).
+const probeExam = 'psat-10';
 const todayUrls = urls.filter((u) => (dateOf(u) || '').slice(0, 10) === newestRelease).map(locOf);
 console.log(`   lastmod == newest release ${newestRelease} (must all be justified by a release on that date):`);
 for (const u of todayUrls) console.log('     ' + u);

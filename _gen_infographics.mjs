@@ -59,8 +59,16 @@ function statRows(exam, detail) {
     const ag = f?.agency || detail.dossier?.defaultAgency;
     if (ag) rows.push(['Issuing agency', ag]);
     if (exam.stateName) rows.push(['Jurisdiction', exam.stateName]);
-    const fee = v2?.exam?.fee
-      || (f?.fee && !/[\u2248]|\bTBD\b/i.test(String(f.fee)) ? f.fee : null);
+    // The itemised v2 fee table is the sourced figure the page body leads with
+    // (its first row is the licence fee); the v1 one-liner is older and can
+    // disagree with it (AZ guard: v1 "$54", sourced v2 "$50").
+    // Shown with its item name: in some states the first row is the agency's
+    // fee, not the individual's.
+    const v2Fee = Array.isArray(v2?.fees) && v2.fees[0]?.fee
+      ? `${String(v2.fees[0].fee).replace(/\s*\(.*$/, '')} ${String(v2.fees[0].item).replace(/\s*\(.*$/, '').toLowerCase()}`
+      : null;
+    const fee = v2Fee
+      || (f?.fee && !/[\u2248]|\b(TBD|verify)\b/i.test(String(f.fee)) ? f.fee : null);
     if (fee) rows.push(['State fees', fee]);
     if (v2?.wages?.median) {
       rows.push(['Median wage', `${v2.wages.median}${v2.wages.year ? ` (${v2.wages.year})` : ''}`]);
@@ -89,7 +97,13 @@ function buildSvg(exam, detail) {
   const rowSvg = rows
     .map(([label, value], i) => {
       const y = rowStart + i * rowGap;
-      const valLines = wrap(value, 30).slice(0, 2);
+      // Two lines fit the card. Longer values (the rewritten national records
+      // carry full sentences) end on an ellipsis instead of stopping mid-phrase.
+      const allLines = wrap(value, 30);
+      const valLines = allLines.slice(0, 2);
+      if (allLines.length > 2) {
+        valLines[1] = `${valLines[1].replace(/[\s,;:.]+$/, '').slice(0, 28)}…`;
+      }
       const valText = valLines
         .map(
           (v, j) =>

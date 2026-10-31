@@ -58,6 +58,56 @@ const mode = dossier
 
 const facts = exam.facts || null;
 
+// ── State-led pages (v2 per-state research) ─────────────────────────────
+// When a state carries its own researched record, the page is built from that
+// record alone: the template dossier's national prose (overview, eligibility,
+// cost ranges, generic route) lives once on the cross-state hub instead of
+// being repeated on every state page with the state's name swapped in.
+const st = mode === 'researched' ? facts?.state || null : null;
+const v2Fees = Array.isArray(st?.fees) ? st.fees.filter((r: any) => r?.item && r?.fee) : [];
+const v2Steps = Array.isArray(st?.application?.steps) ? st.application.steps.filter(Boolean) : [];
+const stateLed = !!st && (v2Fees.length > 0 || v2Steps.length > 0 || !!st.exam);
+// Legacy v1 rows hold research placeholders ("Verify") in `fee`; never print one.
+const isDraftValue = (v: any) => !v || /\b(verify|tbd)\b/i.test(String(v));
+// The first row of the sourced fee schedule, always shown with its own item
+// name: in some states it is the individual's fee, in others (IN, MI, ME) the
+// state licenses the agency and the first row is the agency fee.
+const stateFee = v2Fees.length
+  ? String(v2Fees[0].fee).replace(/\s*\(.*$/, '')
+  : !isDraftValue(facts?.fee)
+    ? facts.fee
+    : null;
+const stateFeeItem = v2Fees.length ? String(v2Fees[0].item).replace(/\s*\(.*$/, '').trim() : null;
+const stateFeeLabel = stateFeeItem || 'State fees';
+const hubHref = exam.templateKey ? `/exams/${exam.templateKey}-license-by-state/` : null;
+const experienceText = st?.experience
+  ? typeof st.experience === 'string'
+    ? st.experience
+    : st.experience.summary || st.experience.note || null
+  : null;
+const sentenceCase = (t: any) => {
+  const x = String(t || '').trim().replace(/[.;]+$/, '');
+  return x ? x.charAt(0).toUpperCase() + x.slice(1) : '';
+};
+// One prose sentence, then "Label: value." facts. The research fields are
+// written in many shapes ("8", "Every 3 years; expires May 31", "Paid to the
+// vendor"), so they are labelled rather than spliced into a sentence that
+// only reads right for some states.
+const stateLead = stateLed
+  ? [
+      `${exam.stateName} issues the ${exam.name} through the ${facts?.agency || dossier?.defaultAgency}.`,
+      st?.eligibility?.minAge ? `Minimum age: ${st.eligibility.minAge}.` : '',
+      st?.education?.hours
+        ? /^\d/.test(String(st.education.hours)) && !/hour/i.test(String(st.education.hours))
+          ? `Required training (hours): ${sentenceCase(st.education.hours)}.`
+          : `Required training: ${sentenceCase(st.education.hours)}.`
+        : '',
+      stateFee ? `${stateFeeItem ? sentenceCase(stateFeeItem) : 'State fees'}: ${stateFee}.` : '',
+      st?.background?.fee ? `Background check: ${sentenceCase(st.background.fee)}.` : '',
+      st?.renewal?.cycle ? `Renewal: ${sentenceCase(st.renewal.cycle)}.` : ''
+    ].filter(Boolean).join(' ')
+  : '';
+
 // Only pages with verified substance are indexable. A national record has to
 // carry a real body of content before we let search engines at it — a thin
 // stub competing for a high-volume query does more harm than no page at all.
@@ -241,7 +291,7 @@ pushIf(mode === 'not-offered', { id: 'instead', label: 'What applies instead' })
 // On state pages the generic exam section only anchors when v2 state exam
 // data exists — otherwise the table would show national ranges, which the
 // flagship standard forbids on a state page.
-const showEligibility = mode === 'researched' || (mode === 'national' && !!(record.prerequisites || record.eligibility));
+const showEligibility = (mode === 'researched' && (!stateLed || !!(st?.eligibility || st?.education || st?.experience))) || (mode === 'national' && !!(record.prerequisites || record.eligibility));
 const showExam = (mode === 'researched' && !!facts?.state?.exam) || (mode === 'national' && !!meta);
 if (showEligibility) {
   tocItems.push({ id: 'eligibility', label: 'Eligibility', chapterTitle: 'What you need' });
@@ -255,9 +305,11 @@ if (showEligibility) {
 }
 
 // Chapter 3 — Plan & pay (logistics)
-const hasCosts = mode === 'researched' || (mode === 'national' && !!(costs || natTimeline.length));
+// State-led pages show the state's own itemised fees and application steps
+// (StateExamSections) in place of the template's national cost ranges and route.
+const hasCosts = (mode === 'researched' && !(stateLed && v2Fees.length)) || (mode === 'national' && !!(costs || natTimeline.length));
 const showHowToRegister = mode === 'national' && regSteps.length > 0;
-const showStepByStep = mode === 'researched';
+const showStepByStep = mode === 'researched' && !(stateLed && v2Steps.length);
 const showCompare = mode === 'national' && !!natComparison;
 if (hasCosts) {
   tocItems.push({ id: 'costs', label: 'Costs & timeline', chapterTitle: 'Plan & pay' });
@@ -275,6 +327,18 @@ if (hasCosts) {
   tocItems.push({ id: 'register', label: 'How to register', chapterTitle: 'Plan & pay' });
   pushIf(policies.length > 0, subItem('policies', 'Rules & renewal'));
   pushIf(showCompare, { id: 'compare', label: 'How it compares' });
+}
+if (stateLed) {
+  const statePlan = [
+    v2Fees.length > 0 && { id: 'state-fees', label: 'Fees' },
+    !!(st?.application || st?.background) && { id: 'state-apply', label: 'How to apply' },
+    !!st?.renewal && { id: 'state-renewal', label: 'Renewal' },
+    !!st?.reciprocity && { id: 'state-reciprocity', label: 'Reciprocity' },
+    !!st?.wages && { id: 'state-wages', label: 'Pay' }
+  ].filter(Boolean) as { id: string; label: string }[];
+  statePlan.forEach((it, i) =>
+    tocItems.push(i === 0 && !hasCosts && !showStepByStep ? { ...it, chapterTitle: 'Plan & pay' } : it)
+  );
 }
 
 // Chapter 4 — Career & preparation (depth sections clustered into 1-2 headings)
@@ -360,7 +424,9 @@ const metaDescription = seo?.description || clampMeta(
   mode === 'not-offered'
     ? `${exam.stateName} does not issue a state-level ${dossier.name.toLowerCase()}. Here is what applies instead, plus the ${offeringCount} states that do license it.`
     : mode === 'researched'
-      ? `${exam.name}: requirements, exam format, fees and timeline. Issued by ${facts?.agency || dossier.defaultAgency}.`
+      ? stateLed
+        ? `${exam.name}: ${[st?.education?.hours && `training: ${st.education.hours}`, stateFee && `${stateFeeItem ? stateFeeItem.toLowerCase() : "state fees"} ${stateFee}`, st?.renewal?.cycle && `renews every ${st.renewal.cycle}`].filter(Boolean).join('; ')}. Issued by ${facts?.agency || dossier.defaultAgency}.`
+        : `${exam.name}: requirements, exam format, fees and timeline. Issued by ${facts?.agency || dossier.defaultAgency}.`
       : mode === 'national'
         ? record.quickAnswer?.summary ||
           `${exam.name}: format, fees, topic weights, eligibility and how to register.`
@@ -455,7 +521,9 @@ const modifiedOn = publishedOn && reviewedIso
 const routeSteps = mode === 'national'
   ? regSteps.map((s: any) => ({ name: s.title, text: s.description || s.title }))
   : mode === 'researched'
-    ? (dossier?.route || []).map((s: any) => ({ name: s.title, text: s.description || s.title }))
+    ? stateLed && v2Steps.length
+      ? v2Steps.map((t: any, i: number) => ({ name: `Step ${i + 1}`, text: String(t) }))
+      : (dossier?.route || []).map((s: any) => ({ name: s.title, text: s.description || s.title }))
     : [];
 
 const howToSchema = routeSteps.length
@@ -640,10 +708,10 @@ const articleSchema = {
             <span class="label">Scope</span>
             <span class="value">{scopeLabel}</span>
           </div>
-          {mode === 'researched' && facts?.fee ? (
+          {mode === 'researched' && stateFee ? (
             <div class="eg-fact">
-              <span class="label">State fees</span>
-              <span class="value">{facts.fee}</span>
+              <span class="label">{stateFeeLabel}</span>
+              <span class="value">{stateFee}</span>
             </div>
           ) : (
             <div class="eg-fact">
@@ -744,7 +812,24 @@ const articleSchema = {
           </>
         )}
 
-        {mode === 'researched' && (
+        {mode === 'researched' && stateLed && (
+          <>
+            <p class="eg-lead">{stateLead}</p>
+            {facts?.stateNote && !isDraftValue(facts.stateNote) && (
+              <div class="eg-callout eg-callout-state">
+                <strong>{exam.stateName} specifics:</strong> {facts.stateNote}
+              </div>
+            )}
+            {hubHref && (
+              <p class="eg-note">
+                How the {dossier.name.toLowerCase()} works across all {offeringCount} licensing states, and how to
+                prepare for it: <a href={hubHref}>{dossier.name} requirements by state</a>.
+              </p>
+            )}
+          </>
+        )}
+
+        {mode === 'researched' && !stateLed && (
           <>
             <p class="eg-body">{dossier.overview}</p>
             {facts?.stateNote && (
@@ -784,8 +869,33 @@ const articleSchema = {
         </section>
       )}
 
+      {/* ── STATE-LED: this state's eligibility and training ── */}
+      {mode === 'researched' && stateLed && showEligibility && (
+        <section id="eligibility" class="eg-section eg-section-cream">
+          <p class="eg-kicker">Can you apply?</p>
+          <h2>What does {exam.stateName} require before you apply?</h2>
+          <div class="eg-tablewrap">
+            <table class="eg-table eg-table-tight">
+              <tbody>
+                {st?.eligibility?.minAge && <tr><th scope="row">Minimum age</th><td>{st.eligibility.minAge}</td></tr>}
+                {st?.eligibility?.citizenship && <tr><th scope="row">Citizenship / status</th><td>{st.eligibility.citizenship}</td></tr>}
+                {st?.eligibility?.education && <tr><th scope="row">Education</th><td>{st.eligibility.education}</td></tr>}
+                {experienceText && <tr><th scope="row">Experience</th><td>{experienceText}</td></tr>}
+                {st?.education?.hours && <tr><th scope="row">{/^\d/.test(String(st.education.hours)) && !/hour/i.test(String(st.education.hours)) ? 'Required training (hours)' : 'Required training'}</th><td>{st.education.hours}</td></tr>}
+                {st?.education?.onlineAllowed && <tr><th scope="row">Online training</th><td>{st.education.onlineAllowed}</td></tr>}
+              </tbody>
+            </table>
+          </div>
+          {st?.education?.breakdown && <p class="eg-body"><strong>What the training covers:</strong> {st.education.breakdown}</p>}
+          {st?.eligibility?.other && <p class="eg-body"><strong>Disqualifiers and other conditions:</strong> {st.eligibility.other}</p>}
+          {st?.education?.sourceUrl && (
+            <p class="eg-note">Source: <a href={st.education.sourceUrl} target="_blank" rel="noopener noreferrer">{exam.stateName} training rules</a></p>
+          )}
+        </section>
+      )}
+
       {/* ── RESEARCHED: eligibility ─────────────────────────── */}
-      {mode === 'researched' && (
+      {mode === 'researched' && !stateLed && (
         <section id="eligibility" class="eg-section eg-section-cream">
           <p class="eg-kicker">Can you sit?</p>
           <h2>Do you meet the eligibility requirements?</h2>
@@ -828,7 +938,7 @@ const articleSchema = {
       )}
 
       {/* ── RESEARCHED: costs & timeline ────────────────────── */}
-      {mode === 'researched' && (
+      {mode === 'researched' && hasCosts && (
         <section id="costs" class="eg-section eg-section-cream">
           <p class="eg-kicker">Money & time</p>
           <h2>How much does it cost, and how long does it take?</h2>
@@ -845,7 +955,7 @@ const articleSchema = {
                   </tbody>
                 </table>
               </div>
-              {facts?.fee && (
+              {!isDraftValue(facts?.fee) && (
                 <p class="eg-note">
                   {exam.stateName} state fees specifically: <strong>{facts.fee}</strong>
                 </p>
@@ -867,7 +977,7 @@ const articleSchema = {
       )}
 
       {/* ── RESEARCHED: step-by-step route ──────────────────── */}
-      {mode === 'researched' && (
+      {mode === 'researched' && showStepByStep && (
         <section id="route" class="eg-section">
           <p class="eg-kicker">The path</p>
           <h2>How do you get licensed, step by step?</h2>
@@ -1178,8 +1288,8 @@ const articleSchema = {
                   </td>
                 </tr>
               )}
-              {mode === 'researched' && facts?.fee && (
-                <tr><th scope="row">State fees</th><td>{facts.fee}</td></tr>
+              {mode === 'researched' && stateFee && (
+                <tr><th scope="row">{stateFeeLabel}</th><td>{stateFee}</td></tr>
               )}
               {dossier && (
                 <tr>

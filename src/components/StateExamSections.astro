@@ -76,10 +76,12 @@ const eduHours = st?.education ? num(st.education.hours) : null;
 const eduPeers = peers.filter(([, s]) => s?.education && num(s.education.hours) != null)
   .map(([code, s]) => ({ code, name: jurisdictionByCode[code]?.name || code, v: num(s.education.hours) as number }));
 
-const examFeeRaw = st?.exam?.fee || st?.fee || null;
+// Exam fees only: the v1 `fee` one-liner is a different (often stale) figure
+// and is not an exam fee, so it never enters the exam-fee comparison.
+const examFeeRaw = st?.exam?.fee || null;
 const examFee = feeNum(examFeeRaw);
-const feePeers = peers.filter(([, s]) => feeNum(s?.exam?.fee || s?.fee) != null)
-  .map(([code, s]) => ({ code, name: jurisdictionByCode[code]?.name || code, v: feeNum(s?.exam?.fee || s?.fee) as number }));
+const feePeers = peers.filter(([, s]) => feeNum(s?.exam?.fee) != null)
+  .map(([code, s]) => ({ code, name: jurisdictionByCode[code]?.name || code, v: feeNum(s?.exam?.fee) as number }));
 
 const ownCycle = st?.renewal ? cycleMonths(st.renewal.cycle) : null;
 const cyclePeers = peers.filter(([, s]) => s?.renewal && cycleMonths(s.renewal.cycle) != null)
@@ -113,7 +115,7 @@ const neighborCodes = (NEIGHBORS[ownCode] || []).filter((c) => states[c]);
 const neighborRows = neighborCodes.map((code) => {
   const s = states[code];
   const h = s?.education ? num(s.education.hours) : null;
-  const fee = feeNum(s?.exam?.fee || s?.fee);
+  const fee = feeNum(s?.exam?.fee);
   const bits: string[] = [];
   if (h != null) bits.push(`${fmt(h)} hrs`);
   if (fee != null) bits.push(`$${fmt(fee)} exam`);
@@ -159,6 +161,11 @@ const hubHref = `/exams/${exam.templateKey}-license-by-state/#prepare`;
 
 const showVs = strictestRank != null || feeAbovePct != null || (ownCycle != null && cycleEquals != null) || neighborRows.length > 0;
 const showExam = !!st?.exam;
+// `exam: null` is the researched, cited answer "this state has no licensing
+// exam" (FRAGMENT-SPEC: omitted when it could not be cited). Say so plainly:
+// "is there an exam?" is one of the first things candidates search.
+const noExam = !!st && 'exam' in st && st.exam === null;
+const noExamFaq = noExam ? stateFaqs.find((q: any) => /(exam|examination|test)/i.test(q.q) && /^no/i.test(String(q.a).trim())) : null;
 const showFees = fees.length > 0;
 const showApply = !!(application || background);
 const showRenewal = !!renewal;
@@ -168,7 +175,7 @@ const showReciprocity = !!reciprocity;
 const showWages = !!wages && (wages.median || wages.employment);
 const showChanges = recentChanges.length > 0;
 const showPrep = v2StateCount > 0;
-const renderComponent = hasV2 && (showExam || showVs || showFees || showApply || showRenewal || showReciprocity || showWages || showChanges || showPrep || localNuance);
+const renderComponent = hasV2 && (showExam || noExam || showVs || showFees || showApply || showRenewal || showReciprocity || showWages || showChanges || showPrep || localNuance);
 ---
 
 {renderComponent && (
@@ -231,6 +238,32 @@ const renderComponent = hasV2 && (showExam || showVs || showFees || showApply ||
             </tbody>
           </table>
         </div>
+      </section>
+    )}
+
+    {noExam && (
+      <section id="exam" class="se-section" data-state-exam data-state-no-exam>
+        <p class="se-kicker">The test itself</p>
+        <h2>Is there a {stateName} {credential} exam?</h2>
+        <p class="se-lead">
+          No. {stateName} does not administer a state licensing exam for the {credential.toLowerCase()}.
+          {st?.education?.hours ? <> Qualification rests on the required training ({st.education.hours}) and the background check.</> : null}
+        </p>
+        {noExamFaq && <p class="se-body">{noExamFaq.a}</p>}
+        <div class="se-tablewrap">
+          <table class="se-table se-table-tight">
+            <tbody>
+              <tr><th scope="row">State licensing exam</th><td>None</td></tr>
+              {st?.education?.hours && <tr><th scope="row">Required training</th><td>{st.education.hours}</td></tr>}
+              {background?.method && <tr><th scope="row">Background check</th><td>{background.method}</td></tr>}
+            </tbody>
+          </table>
+        </div>
+        {st?.education?.sourceUrl && (
+          <p class="se-note">
+            Source: <a href={st.education.sourceUrl} target="_blank" rel="noopener noreferrer">{stateName} licensing rules</a>
+          </p>
+        )}
       </section>
     )}
 

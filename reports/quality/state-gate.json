@@ -1,13 +1,1406 @@
 {
-  "generatedOn": "2026-10-20",
+  "generatedOn": "2026-10-31",
   "dist": "dist",
-  "note": "No built pages found under C:\\Users\\samja\\Desktop\\testpreppilot-v2\\.claude\\worktrees\\state-exam-pages-quality-06e9b4\\dist\\exams — nothing to check. Build the site first (astro build) or pass --dist.",
-  "perPage": [],
+  "note": null,
+  "perPage": [
+    {
+      "slug": "arizona-security-guard-license",
+      "template": "security-guard",
+      "state": "AZ",
+      "file": "dist\\exams\\arizona-security-guard-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "63.4% unique 6-word shingles (1053/1662) vs 5 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.205, worst other 0.104 (sampled 11)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "5 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "5 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "5 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "5 deep links, 5 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "arkansas-private-investigator-license",
+      "template": "private-investigator",
+      "state": "AR",
+      "file": "dist\\exams\\arkansas-private-investigator-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "58.9% unique 6-word shingles (950/1612) vs 10 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.223, worst other 0.137 (sampled 6)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "4 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "4 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "4 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "2 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "6 deep links, 6 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "arkansas-security-guard-license",
+      "template": "security-guard",
+      "state": "AR",
+      "file": "dist\\exams\\arkansas-security-guard-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "60.4% unique 6-word shingles (1102/1823) vs 5 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.213, worst other 0.137 (sampled 11)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "5 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "5 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "5 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "6 deep links, 6 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "delaware-security-guard-license",
+      "template": "security-guard",
+      "state": "DE",
+      "file": "dist\\exams\\delaware-security-guard-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "61.5% unique 6-word shingles (1076/1750) vs 5 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.213, worst other 0.110 (sampled 11)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "5 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "5 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "5 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "5 deep links, 5 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "georgia-private-investigator-license",
+      "template": "private-investigator",
+      "state": "GA",
+      "file": "dist\\exams\\georgia-private-investigator-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "60.6% unique 6-word shingles (1002/1653) vs 10 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.221, worst other 0.108 (sampled 6)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "5 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "5 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "4 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "7 deep links, 7 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "hawaii-private-investigator-license",
+      "template": "private-investigator",
+      "state": "HI",
+      "file": "dist\\exams\\hawaii-private-investigator-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "61.1% unique 6-word shingles (1002/1641) vs 10 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.220, worst other 0.129 (sampled 6)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "6 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "5 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "5 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "5 deep links, 5 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "hawaii-security-guard-license",
+      "template": "security-guard",
+      "state": "HI",
+      "file": "dist\\exams\\hawaii-security-guard-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "65.3% unique 6-word shingles (1191/1825) vs 5 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.199, worst other 0.129 (sampled 11)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "5 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "5 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "5 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "6 deep links, 6 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "illinois-private-investigator-license",
+      "template": "private-investigator",
+      "state": "IL",
+      "file": "dist\\exams\\illinois-private-investigator-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "64.1% unique 6-word shingles (1085/1693) vs 10 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.201, worst other 0.104 (sampled 6)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "4 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "5 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "5 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "5 deep links, 5 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "iowa-private-investigator-license",
+      "template": "private-investigator",
+      "state": "IA",
+      "file": "dist\\exams\\iowa-private-investigator-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "60.0% unique 6-word shingles (939/1565) vs 10 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.215, worst other 0.109 (sampled 6)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "5 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "5 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "5 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "5 deep links, 5 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "kentucky-private-investigator-license",
+      "template": "private-investigator",
+      "state": "KY",
+      "file": "dist\\exams\\kentucky-private-investigator-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "59.7% unique 6-word shingles (946/1585) vs 10 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.223, worst other 0.110 (sampled 6)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "5 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "5 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "5 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "4 deep links, 5 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "louisiana-private-investigator-license",
+      "template": "private-investigator",
+      "state": "LA",
+      "file": "dist\\exams\\louisiana-private-investigator-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "61.6% unique 6-word shingles (1042/1691) vs 10 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.209, worst other 0.119 (sampled 6)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "5 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "5 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "5 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "5 deep links, 5 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "louisiana-security-guard-license",
+      "template": "security-guard",
+      "state": "LA",
+      "file": "dist\\exams\\louisiana-security-guard-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "63.2% unique 6-word shingles (1115/1764) vs 5 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.207, worst other 0.119 (sampled 11)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "4 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "5 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "5 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "2 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "4 deep links, 6 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "maine-private-investigator-license",
+      "template": "private-investigator",
+      "state": "ME",
+      "file": "dist\\exams\\maine-private-investigator-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "65.6% unique 6-word shingles (1179/1796) vs 10 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.207, worst other 0.103 (sampled 6)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "3 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "5 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "5 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "6 deep links, 5 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "missouri-private-investigator-license",
+      "template": "private-investigator",
+      "state": "MO",
+      "file": "dist\\exams\\missouri-private-investigator-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "58.4% unique 6-word shingles (898/1538) vs 10 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.223, worst other 0.109 (sampled 6)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "4 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "5 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "4 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "7 deep links, 6 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "north-dakota-private-investigator-license",
+      "template": "private-investigator",
+      "state": "ND",
+      "file": "dist\\exams\\north-dakota-private-investigator-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "60.5% unique 6-word shingles (948/1567) vs 10 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.217, worst other 0.165 (sampled 6)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "6 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "6 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "4 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "5 deep links, 5 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "north-dakota-security-guard-license",
+      "template": "security-guard",
+      "state": "ND",
+      "file": "dist\\exams\\north-dakota-security-guard-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "62.1% unique 6-word shingles (1008/1622) vs 5 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.213, worst other 0.165 (sampled 11)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "7 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "5 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "4 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "5 deep links, 5 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    },
+    {
+      "slug": "wisconsin-private-investigator-license",
+      "template": "private-investigator",
+      "state": "WI",
+      "file": "dist\\exams\\wisconsin-private-investigator-license\\index.html",
+      "passed": true,
+      "checks": [
+        {
+          "id": 1,
+          "label": "state-uniqueness >= 55%",
+          "ok": true,
+          "detail": "62.0% unique 6-word shingles (995/1606) vs 10 same-template siblings"
+        },
+        {
+          "id": 2,
+          "label": "Jaccard < 0.45 same-template / < 0.60 site-wide",
+          "ok": true,
+          "detail": "worst same-template 0.211, worst other 0.108 (sampled 6)"
+        },
+        {
+          "id": 3,
+          "label": "state-true exam table, no national ranges",
+          "ok": true,
+          "detail": "state exam table present"
+        },
+        {
+          "id": 4,
+          "label": "itemised fees >= 3 rows",
+          "ok": true,
+          "detail": "5 fee rows"
+        },
+        {
+          "id": 5,
+          "label": "application portal + steps",
+          "ok": true,
+          "detail": "6 step items"
+        },
+        {
+          "id": 6,
+          "label": "renewal section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 7,
+          "label": "reciprocity section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 8,
+          "label": "state wages section",
+          "ok": true,
+          "detail": "present"
+        },
+        {
+          "id": 9,
+          "label": ">= 4 state FAQs",
+          "ok": true,
+          "detail": "5 state FAQs"
+        },
+        {
+          "id": 10,
+          "label": "recent-changes section",
+          "ok": true,
+          "detail": "1 entries"
+        },
+        {
+          "id": 11,
+          "label": ">= 4 source deep links with checkedOn",
+          "ok": true,
+          "detail": "8 deep links, 7 checked dates displayed"
+        },
+        {
+          "id": 12,
+          "label": "zero draft tokens",
+          "ok": true,
+          "detail": "clean"
+        }
+      ],
+      "failedChecks": []
+    }
+  ],
   "summary": {
-    "passed": 0,
+    "passed": 17,
     "failed": 0,
-    "list": [
-      "No built pages found under C:\\Users\\samja\\Desktop\\testpreppilot-v2\\.claude\\worktrees\\state-exam-pages-quality-06e9b4\\dist\\exams — nothing to check. Build the site first (astro build) or pass --dist."
-    ]
+    "list": []
   }
 }
