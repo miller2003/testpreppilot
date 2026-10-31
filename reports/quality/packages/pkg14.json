@@ -1,0 +1,55 @@
+{
+  "id": "pkg14",
+  "bodies": [
+    "Microsoft"
+  ],
+  "ownsPrograms": [
+    "Microsoft"
+  ],
+  "slugs": [
+    "microsoft-ai-102",
+    "microsoft-ai-900",
+    "microsoft-ai-901",
+    "microsoft-az-104",
+    "microsoft-az-140",
+    "microsoft-az-204"
+  ],
+  "exams": [
+    {
+      "slug": "microsoft-ai-102",
+      "name": "Microsoft Certified: Azure AI Engineer Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-ai-900",
+      "name": "Microsoft Certified: Azure AI Fundamentals (AI-900)",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-ai-901",
+      "name": "Microsoft Certified: Azure AI Fundamentals",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-az-104",
+      "name": "Microsoft Certified: Azure Administrator Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-az-140",
+      "name": "Microsoft Certified: Azure Virtual Desktop Specialty",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-az-204",
+      "name": "Microsoft Certified: Azure Developer Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    }
+  ]
+}

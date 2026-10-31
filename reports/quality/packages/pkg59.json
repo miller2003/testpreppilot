@@ -1,0 +1,68 @@
+{
+  "id": "pkg59",
+  "bodies": [
+    "Federation of State Boards of Physical Therapy (FSBPT)",
+    "Federation of State Massage Therapy Boards (FSMTB)",
+    "National Board of Medical Examiners (NBME) and Federation of State Medical Boards (FSMB)",
+    "National Commission on Certification of Physician Assistants (NCCPA)"
+  ],
+  "ownsPrograms": [
+    "Federation of State Boards of Physical Therapy (FSBPT)",
+    "Federation of State Massage Therapy Boards (FSMTB)",
+    "National Board of Medical Examiners (NBME) and Federation of State Medical Boards (FSMB)",
+    "National Commission on Certification of Physician Assistants (NCCPA)"
+  ],
+  "slugs": [
+    "npte",
+    "npte-pta",
+    "mblex",
+    "usmle-step-1",
+    "usmle-step-2-ck",
+    "usmle-step-3",
+    "pance"
+  ],
+  "exams": [
+    {
+      "slug": "npte",
+      "name": "National Physical Therapy Examination",
+      "category": "healthcare-clinical",
+      "body": "Federation of State Boards of Physical Therapy (FSBPT)"
+    },
+    {
+      "slug": "npte-pta",
+      "name": "National Physical Therapy Exam for PTA",
+      "category": "healthcare-clinical",
+      "body": "Federation of State Boards of Physical Therapy (FSBPT)"
+    },
+    {
+      "slug": "mblex",
+      "name": "Massage and Bodywork Licensing Examination",
+      "category": "healthcare-clinical",
+      "body": "Federation of State Massage Therapy Boards (FSMTB)"
+    },
+    {
+      "slug": "usmle-step-1",
+      "name": "USMLE Step 1",
+      "category": "healthcare-clinical",
+      "body": "National Board of Medical Examiners (NBME) and Federation of State Medical Boards (FSMB)"
+    },
+    {
+      "slug": "usmle-step-2-ck",
+      "name": "USMLE Step 2 Clinical Knowledge",
+      "category": "healthcare-clinical",
+      "body": "National Board of Medical Examiners (NBME) and Federation of State Medical Boards (FSMB)"
+    },
+    {
+      "slug": "usmle-step-3",
+      "name": "USMLE Step 3",
+      "category": "healthcare-clinical",
+      "body": "National Board of Medical Examiners (NBME) and Federation of State Medical Boards (FSMB)"
+    },
+    {
+      "slug": "pance",
+      "name": "Physician Assistant National Certifying Examination",
+      "category": "healthcare-clinical",
+      "body": "National Commission on Certification of Physician Assistants (NCCPA)"
+    }
+  ]
+}

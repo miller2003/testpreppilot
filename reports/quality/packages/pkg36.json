@@ -1,0 +1,39 @@
+{
+  "id": "pkg36",
+  "bodies": [
+    "State Driver Licensing Agencies (AAMVA model curriculum)"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "cdl-on-road-driving-skills-test",
+    "cdl-passenger-endorsement-knowledge-test",
+    "cdl-pre-trip-vehicle-inspection-test",
+    "cdl-school-bus-endorsement-knowledge-test"
+  ],
+  "exams": [
+    {
+      "slug": "cdl-on-road-driving-skills-test",
+      "name": "CDL On-Road Driving Skills Test",
+      "category": "transportation",
+      "body": "State Driver Licensing Agencies (AAMVA model curriculum)"
+    },
+    {
+      "slug": "cdl-passenger-endorsement-knowledge-test",
+      "name": "CDL Passenger Endorsement Knowledge Test",
+      "category": "transportation",
+      "body": "State Driver Licensing Agencies (AAMVA model curriculum)"
+    },
+    {
+      "slug": "cdl-pre-trip-vehicle-inspection-test",
+      "name": "CDL Pre-Trip Vehicle Inspection Test",
+      "category": "transportation",
+      "body": "State Driver Licensing Agencies (AAMVA model curriculum)"
+    },
+    {
+      "slug": "cdl-school-bus-endorsement-knowledge-test",
+      "name": "CDL School Bus Endorsement Knowledge Test",
+      "category": "transportation",
+      "body": "State Driver Licensing Agencies (AAMVA model curriculum)"
+    }
+  ]
+}

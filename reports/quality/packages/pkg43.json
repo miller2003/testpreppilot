@@ -1,0 +1,48 @@
+{
+  "id": "pkg43",
+  "bodies": [
+    "Google"
+  ],
+  "ownsPrograms": [
+    "Google"
+  ],
+  "slugs": [
+    "google-advanced-data-analytics-certificate",
+    "google-analytics-certification",
+    "google-cybersecurity-professional-certificate",
+    "google-data-analytics-professional-certificate",
+    "google-it-support-professional-certificate"
+  ],
+  "exams": [
+    {
+      "slug": "google-advanced-data-analytics-certificate",
+      "name": "Google Advanced Data Analytics Professional Certificate",
+      "category": "technology",
+      "body": "Google"
+    },
+    {
+      "slug": "google-analytics-certification",
+      "name": "Google Analytics Certification",
+      "category": "project-business",
+      "body": "Google"
+    },
+    {
+      "slug": "google-cybersecurity-professional-certificate",
+      "name": "Google Cybersecurity Professional Certificate",
+      "category": "technology",
+      "body": "Google"
+    },
+    {
+      "slug": "google-data-analytics-professional-certificate",
+      "name": "Google Data Analytics Professional Certificate",
+      "category": "technology",
+      "body": "Google"
+    },
+    {
+      "slug": "google-it-support-professional-certificate",
+      "name": "Google IT Support Professional Certificate",
+      "category": "technology",
+      "body": "Google"
+    }
+  ]
+}

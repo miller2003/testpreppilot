@@ -1,0 +1,75 @@
+{
+  "id": "pkg56",
+  "bodies": [
+    "National Strength and Conditioning Association",
+    "Precision Nutrition",
+    "Professional Association of Diving Instructors",
+    "Yoga Alliance"
+  ],
+  "ownsPrograms": [
+    "National Strength and Conditioning Association",
+    "Precision Nutrition",
+    "Professional Association of Diving Instructors",
+    "Yoga Alliance"
+  ],
+  "slugs": [
+    "nsca-certified-personal-trainer",
+    "nsca-certified-special-population-specialist",
+    "nsca-cscs",
+    "precision-nutrition-level-1",
+    "padi-divemaster",
+    "padi-instructor-development-course",
+    "padi-open-water-diver",
+    "yoga-alliance-ryt-200"
+  ],
+  "exams": [
+    {
+      "slug": "nsca-certified-personal-trainer",
+      "name": "NSCA Certified Personal Trainer",
+      "category": "fitness-recreation",
+      "body": "National Strength and Conditioning Association"
+    },
+    {
+      "slug": "nsca-certified-special-population-specialist",
+      "name": "NSCA Certified Special Population Specialist",
+      "category": "fitness-recreation",
+      "body": "National Strength and Conditioning Association"
+    },
+    {
+      "slug": "nsca-cscs",
+      "name": "NSCA Certified Strength and Conditioning Specialist",
+      "category": "fitness-recreation",
+      "body": "National Strength and Conditioning Association"
+    },
+    {
+      "slug": "precision-nutrition-level-1",
+      "name": "Precision Nutrition Level 1 Certification",
+      "category": "fitness-recreation",
+      "body": "Precision Nutrition"
+    },
+    {
+      "slug": "padi-divemaster",
+      "name": "PADI Divemaster Certification",
+      "category": "fitness-recreation",
+      "body": "Professional Association of Diving Instructors"
+    },
+    {
+      "slug": "padi-instructor-development-course",
+      "name": "PADI Instructor Development Course",
+      "category": "fitness-recreation",
+      "body": "Professional Association of Diving Instructors"
+    },
+    {
+      "slug": "padi-open-water-diver",
+      "name": "PADI Open Water Diver Certification",
+      "category": "fitness-recreation",
+      "body": "Professional Association of Diving Instructors"
+    },
+    {
+      "slug": "yoga-alliance-ryt-200",
+      "name": "Yoga Alliance Registered Yoga Teacher 200",
+      "category": "fitness-recreation",
+      "body": "Yoga Alliance"
+    }
+  ]
+}

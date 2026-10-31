@@ -1,0 +1,81 @@
+{
+  "id": "pkg51",
+  "bodies": [
+    "American Association of Veterinary State Boards",
+    "National Association of Veterinary Technicians in America",
+    "Behavior Analyst Certification Board",
+    "Council for Professional Recognition",
+    "Evaluation Systems, Pearson",
+    "Google for Education",
+    "Certified Financial Planner Board of Standards"
+  ],
+  "ownsPrograms": [
+    "American Association of Veterinary State Boards",
+    "National Association of Veterinary Technicians in America",
+    "Behavior Analyst Certification Board",
+    "Council for Professional Recognition",
+    "Evaluation Systems, Pearson",
+    "Google for Education",
+    "Certified Financial Planner Board of Standards"
+  ],
+  "slugs": [
+    "vtne",
+    "navta-approved-veterinary-assistant",
+    "bcba-board-certified-behavior-analyst",
+    "cda-preschool",
+    "nes-essential-academic-skills",
+    "google-certified-educator-level-1",
+    "google-certified-educator-level-2",
+    "cfp-certification-exam"
+  ],
+  "exams": [
+    {
+      "slug": "vtne",
+      "name": "Veterinary Technician National Examination",
+      "category": "animal-agriculture",
+      "body": "American Association of Veterinary State Boards"
+    },
+    {
+      "slug": "navta-approved-veterinary-assistant",
+      "name": "NAVTA Approved Veterinary Assistant",
+      "category": "animal-agriculture",
+      "body": "National Association of Veterinary Technicians in America"
+    },
+    {
+      "slug": "bcba-board-certified-behavior-analyst",
+      "name": "Board Certified Behavior Analyst",
+      "category": "behavioral-health",
+      "body": "Behavior Analyst Certification Board"
+    },
+    {
+      "slug": "cda-preschool",
+      "name": "Child Development Associate — Preschool",
+      "category": "education-teaching",
+      "body": "Council for Professional Recognition"
+    },
+    {
+      "slug": "nes-essential-academic-skills",
+      "name": "National Evaluation Series Essential Academic Skills",
+      "category": "education-teaching",
+      "body": "Evaluation Systems, Pearson"
+    },
+    {
+      "slug": "google-certified-educator-level-1",
+      "name": "Google Certified Educator Level 1",
+      "category": "education-teaching",
+      "body": "Google for Education"
+    },
+    {
+      "slug": "google-certified-educator-level-2",
+      "name": "Google Certified Educator Level 2",
+      "category": "education-teaching",
+      "body": "Google for Education"
+    },
+    {
+      "slug": "cfp-certification-exam",
+      "name": "CFP Certification Examination",
+      "category": "finance-securities",
+      "body": "Certified Financial Planner Board of Standards"
+    }
+  ]
+}

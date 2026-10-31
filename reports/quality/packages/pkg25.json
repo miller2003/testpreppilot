@@ -1,0 +1,62 @@
+{
+  "id": "pkg25",
+  "bodies": [
+    "NCCER"
+  ],
+  "ownsPrograms": [
+    "NCCER"
+  ],
+  "slugs": [
+    "nccer-carpenter",
+    "nccer-concrete-finisher",
+    "nccer-core-curriculum",
+    "nccer-crane-operator",
+    "nccer-electrical",
+    "nccer-electrician",
+    "nccer-heavy-equipment-operator"
+  ],
+  "exams": [
+    {
+      "slug": "nccer-carpenter",
+      "name": "NCCER Carpenter",
+      "category": "trades",
+      "body": "NCCER"
+    },
+    {
+      "slug": "nccer-concrete-finisher",
+      "name": "NCCER Concrete Finisher",
+      "category": "trades",
+      "body": "NCCER"
+    },
+    {
+      "slug": "nccer-core-curriculum",
+      "name": "NCCER Core Curriculum",
+      "category": "trades",
+      "body": "NCCER"
+    },
+    {
+      "slug": "nccer-crane-operator",
+      "name": "NCCER Crane Operator",
+      "category": "trades",
+      "body": "NCCER"
+    },
+    {
+      "slug": "nccer-electrical",
+      "name": "NCCER Electrical",
+      "category": "trades",
+      "body": "NCCER"
+    },
+    {
+      "slug": "nccer-electrician",
+      "name": "NCCER Electrician Certification",
+      "category": "trades",
+      "body": "NCCER"
+    },
+    {
+      "slug": "nccer-heavy-equipment-operator",
+      "name": "NCCER Heavy Equipment Operator",
+      "category": "trades",
+      "body": "NCCER"
+    }
+  ]
+}

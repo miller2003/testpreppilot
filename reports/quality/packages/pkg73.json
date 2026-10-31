@@ -1,0 +1,52 @@
+{
+  "id": "pkg73",
+  "bodies": [
+    "OSHA Training Institute Education Centers",
+    "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+    "U.S. Environmental Protection Agency"
+  ],
+  "ownsPrograms": [
+    "OSHA Training Institute Education Centers",
+    "State Lead Agencies under U.S. EPA 40 CFR Part 171",
+    "U.S. Environmental Protection Agency"
+  ],
+  "slugs": [
+    "osha-3115-fall-protection",
+    "osha-510-construction-standards",
+    "osha-511-general-industry-standards",
+    "pesticide-applicator-core-exam",
+    "epa-lead-renovator-rrp"
+  ],
+  "exams": [
+    {
+      "slug": "osha-3115-fall-protection",
+      "name": "OSHA 3115 Fall Protection",
+      "category": "workplace-safety",
+      "body": "OSHA Training Institute Education Centers"
+    },
+    {
+      "slug": "osha-510-construction-standards",
+      "name": "OSHA 510 Occupational Safety and Health Standards for the Construction Industry",
+      "category": "workplace-safety",
+      "body": "OSHA Training Institute Education Centers"
+    },
+    {
+      "slug": "osha-511-general-industry-standards",
+      "name": "OSHA 511 Occupational Safety and Health Standards for General Industry",
+      "category": "workplace-safety",
+      "body": "OSHA Training Institute Education Centers"
+    },
+    {
+      "slug": "pesticide-applicator-core-exam",
+      "name": "Pesticide Applicator Core Certification Exam",
+      "category": "workplace-safety",
+      "body": "State Lead Agencies under U.S. EPA 40 CFR Part 171"
+    },
+    {
+      "slug": "epa-lead-renovator-rrp",
+      "name": "EPA Lead Renovation, Repair and Painting Renovator Certification",
+      "category": "workplace-safety",
+      "body": "U.S. Environmental Protection Agency"
+    }
+  ]
+}

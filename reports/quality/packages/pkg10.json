@@ -1,0 +1,60 @@
+{
+  "id": "pkg10",
+  "bodies": [
+    "ETS"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "praxis-english-to-speakers-of-other-languages-5362",
+    "praxis-general-science-5436",
+    "praxis-geography-5921",
+    "praxis-geometry-5163",
+    "praxis-government-political-science-5931",
+    "praxis-health-education-5551",
+    "praxis-mathematics-5165"
+  ],
+  "exams": [
+    {
+      "slug": "praxis-english-to-speakers-of-other-languages-5362",
+      "name": "Praxis English to Speakers of Other Languages (5362)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-general-science-5436",
+      "name": "Praxis General Science: Content Knowledge (5436)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-geography-5921",
+      "name": "Praxis Geography (5921)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-geometry-5163",
+      "name": "Praxis Geometry (5163)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-government-political-science-5931",
+      "name": "Praxis Government/Political Science (5931)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-health-education-5551",
+      "name": "Praxis Health Education (5551)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-mathematics-5165",
+      "name": "Praxis Mathematics: Content Knowledge (5165)",
+      "category": "education-teaching",
+      "body": "ETS"
+    }
+  ]
+}

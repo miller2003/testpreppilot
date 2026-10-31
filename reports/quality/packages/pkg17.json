@@ -1,0 +1,53 @@
+{
+  "id": "pkg17",
+  "bodies": [
+    "Microsoft"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "microsoft-md-102",
+    "microsoft-ms-102",
+    "microsoft-ms-700",
+    "microsoft-ms-900",
+    "microsoft-office-specialist-associate-bundle",
+    "microsoft-office-specialist-excel-associate"
+  ],
+  "exams": [
+    {
+      "slug": "microsoft-md-102",
+      "name": "Microsoft 365 Certified: Endpoint Administrator Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-ms-102",
+      "name": "Microsoft 365 Certified: Administrator Expert",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-ms-700",
+      "name": "Microsoft 365 Certified: Teams Administrator Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-ms-900",
+      "name": "Microsoft 365 Certified: Fundamentals",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-office-specialist-associate-bundle",
+      "name": "Microsoft Office Specialist: Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-office-specialist-excel-associate",
+      "name": "Microsoft Office Specialist: Excel Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "pkg70",
+  "bodies": [
+    "National Council of Examiners for Engineering and Surveying (NCEES)",
+    "National Institute for Automotive Service Excellence (ASE)",
+    "U.S. Environmental Protection Agency approved programmes",
+    "Federal Aviation Administration (approved test administrators)"
+  ],
+  "ownsPrograms": [
+    "National Council of Examiners for Engineering and Surveying (NCEES)",
+    "National Institute for Automotive Service Excellence (ASE)",
+    "U.S. Environmental Protection Agency approved programmes",
+    "Federal Aviation Administration (approved test administrators)"
+  ],
+  "slugs": [
+    "fe-civil",
+    "pe-civil",
+    "ase-a8-engine-performance",
+    "ase-t7-truck-hvac",
+    "ase-xev-level-1-electrical-safety",
+    "epa-608-universal",
+    "epa-609-mvac-certification",
+    "faa-trust-recreational-uas-safety-test"
+  ],
+  "exams": [
+    {
+      "slug": "fe-civil",
+      "name": "Fundamentals of Engineering (FE) Civil Exam",
+      "category": "trades",
+      "body": "National Council of Examiners for Engineering and Surveying (NCEES)"
+    },
+    {
+      "slug": "pe-civil",
+      "name": "Principles and Practice of Engineering (PE) Civil Exam",
+      "category": "trades",
+      "body": "National Council of Examiners for Engineering and Surveying (NCEES)"
+    },
+    {
+      "slug": "ase-a8-engine-performance",
+      "name": "ASE A8 Engine Performance Certification Test",
+      "category": "trades",
+      "body": "National Institute for Automotive Service Excellence (ASE)"
+    },
+    {
+      "slug": "ase-t7-truck-hvac",
+      "name": "ASE T7 Medium-Heavy Truck Heating, Ventilation and Air Conditioning Certification Test",
+      "category": "trades",
+      "body": "National Institute for Automotive Service Excellence (ASE)"
+    },
+    {
+      "slug": "ase-xev-level-1-electrical-safety",
+      "name": "ASE xEV Level 1 Electrical Safety Awareness Certification",
+      "category": "trades",
+      "body": "National Institute for Automotive Service Excellence (ASE)"
+    },
+    {
+      "slug": "epa-608-universal",
+      "name": "EPA Section 608 Universal Certification",
+      "category": "trades",
+      "body": "U.S. Environmental Protection Agency approved programmes"
+    },
+    {
+      "slug": "epa-609-mvac-certification",
+      "name": "EPA Section 609 Motor Vehicle Air Conditioning Technician Certification",
+      "category": "trades",
+      "body": "U.S. Environmental Protection Agency approved programmes"
+    },
+    {
+      "slug": "faa-trust-recreational-uas-safety-test",
+      "name": "The Recreational UAS Safety Test",
+      "category": "transportation",
+      "body": "Federal Aviation Administration (approved test administrators)"
+    }
+  ]
+}

@@ -152,7 +152,7 @@ export function depthFor(slug) {
 export function depthSections(depth) {
   if (!depth) return [];
   const out = [];
-  if (depth.salaryOutlook) out.push({ id: 'salary', label: 'Salary & Outlook' });
+  if (depth.salaryOutlook) out.push({ id: 'salary', label: depth.salaryOutlook.sectionLabel || 'Salary & Outlook' });
   if (depth.passRate) out.push({ id: 'pass-rate', label: 'Pass Rates' });
   if (depth.studyPlan?.weeks?.length) out.push({ id: 'study-plan', label: 'Study Plan' });
   if (depth.prepStrategies?.items?.length) out.push({ id: 'strategies', label: 'Prep Strategies' });

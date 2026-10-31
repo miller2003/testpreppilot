@@ -1,0 +1,73 @@
+{
+  "id": "pkg63",
+  "bodies": [
+    "Project Management Institute",
+    "Scaled Agile, Inc.",
+    "Scrum Alliance"
+  ],
+  "ownsPrograms": [
+    "Project Management Institute",
+    "Scaled Agile, Inc.",
+    "Scrum Alliance"
+  ],
+  "slugs": [
+    "pmi-acp",
+    "pmi-capm",
+    "pmi-pmp",
+    "safe-agile-product-manager",
+    "safe-agilist",
+    "safe-architect",
+    "safe-scrum-master",
+    "scrum-alliance-certified-scrummaster"
+  ],
+  "exams": [
+    {
+      "slug": "pmi-acp",
+      "name": "PMI Agile Certified Practitioner",
+      "category": "project-business",
+      "body": "Project Management Institute"
+    },
+    {
+      "slug": "pmi-capm",
+      "name": "Certified Associate in Project Management",
+      "category": "project-business",
+      "body": "Project Management Institute"
+    },
+    {
+      "slug": "pmi-pmp",
+      "name": "Project Management Professional",
+      "category": "project-business",
+      "body": "Project Management Institute"
+    },
+    {
+      "slug": "safe-agile-product-manager",
+      "name": "SAFe Agile Product Manager",
+      "category": "project-business",
+      "body": "Scaled Agile, Inc."
+    },
+    {
+      "slug": "safe-agilist",
+      "name": "SAFe Agilist",
+      "category": "project-business",
+      "body": "Scaled Agile, Inc."
+    },
+    {
+      "slug": "safe-architect",
+      "name": "SAFe Architect",
+      "category": "project-business",
+      "body": "Scaled Agile, Inc."
+    },
+    {
+      "slug": "safe-scrum-master",
+      "name": "SAFe Scrum Master",
+      "category": "project-business",
+      "body": "Scaled Agile, Inc."
+    },
+    {
+      "slug": "scrum-alliance-certified-scrummaster",
+      "name": "Certified ScrumMaster",
+      "category": "project-business",
+      "body": "Scrum Alliance"
+    }
+  ]
+}

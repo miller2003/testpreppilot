@@ -1,0 +1,53 @@
+{
+  "id": "pkg19",
+  "bodies": [
+    "Microsoft"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "microsoft-pl-200",
+    "microsoft-pl-300",
+    "microsoft-pl-900",
+    "microsoft-sc-100",
+    "microsoft-sc-200",
+    "microsoft-sc-900"
+  ],
+  "exams": [
+    {
+      "slug": "microsoft-pl-200",
+      "name": "Microsoft Certified: Power Platform Functional Consultant Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-pl-300",
+      "name": "Microsoft Certified: Power BI Data Analyst Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-pl-900",
+      "name": "Microsoft Certified: Power Platform Fundamentals",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-sc-100",
+      "name": "Microsoft Certified: Cybersecurity Architect Expert",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-sc-200",
+      "name": "Microsoft Certified: Security Operations Analyst Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-sc-900",
+      "name": "Microsoft Certified: Security, Compliance and Identity Fundamentals",
+      "category": "technology",
+      "body": "Microsoft"
+    }
+  ]
+}

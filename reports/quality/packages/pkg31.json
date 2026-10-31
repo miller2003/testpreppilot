@@ -1,0 +1,41 @@
+{
+  "id": "pkg31",
+  "bodies": [
+    "Financial Industry Regulatory Authority (FINRA)"
+  ],
+  "ownsPrograms": [
+    "Financial Industry Regulatory Authority (FINRA)"
+  ],
+  "slugs": [
+    "series-24",
+    "series-4",
+    "series-6",
+    "series-7"
+  ],
+  "exams": [
+    {
+      "slug": "series-24",
+      "name": "Series 24 General Securities Principal Exam",
+      "category": "finance-securities",
+      "body": "Financial Industry Regulatory Authority (FINRA)"
+    },
+    {
+      "slug": "series-4",
+      "name": "Series 4 Registered Options Principal Exam",
+      "category": "finance-securities",
+      "body": "Financial Industry Regulatory Authority (FINRA)"
+    },
+    {
+      "slug": "series-6",
+      "name": "Series 6 Investment Company and Variable Contracts Products Representative Exam",
+      "category": "finance-securities",
+      "body": "Financial Industry Regulatory Authority (FINRA)"
+    },
+    {
+      "slug": "series-7",
+      "name": "Series 7 General Securities Representative Exam",
+      "category": "finance-securities",
+      "body": "Financial Industry Regulatory Authority (FINRA)"
+    }
+  ]
+}

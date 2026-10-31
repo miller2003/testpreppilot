@@ -1,0 +1,70 @@
+{
+  "id": "pkg69",
+  "bodies": [
+    "Python Institute",
+    "Tableau",
+    "American Welding Society (AWS)",
+    "ESCO Institute / HVAC Excellence",
+    "International Code Council (ICC)"
+  ],
+  "ownsPrograms": [
+    "Python Institute",
+    "Tableau",
+    "American Welding Society (AWS)",
+    "ESCO Institute / HVAC Excellence",
+    "International Code Council (ICC)"
+  ],
+  "slugs": [
+    "python-institute-pcap",
+    "python-institute-pcep",
+    "tableau-certified-data-analyst",
+    "tableau-desktop-specialist",
+    "aws-certified-welder",
+    "hvac-excellence-employment-ready",
+    "icc-residential-building-inspector"
+  ],
+  "exams": [
+    {
+      "slug": "python-institute-pcap",
+      "name": "PCAP - Certified Associate in Python Programming",
+      "category": "technology",
+      "body": "Python Institute"
+    },
+    {
+      "slug": "python-institute-pcep",
+      "name": "PCEP - Certified Entry-Level Python Programmer",
+      "category": "technology",
+      "body": "Python Institute"
+    },
+    {
+      "slug": "tableau-certified-data-analyst",
+      "name": "Tableau Certified Data Analyst",
+      "category": "technology",
+      "body": "Tableau"
+    },
+    {
+      "slug": "tableau-desktop-specialist",
+      "name": "Tableau Desktop Specialist",
+      "category": "technology",
+      "body": "Tableau"
+    },
+    {
+      "slug": "aws-certified-welder",
+      "name": "AWS Certified Welder Program",
+      "category": "trades",
+      "body": "American Welding Society (AWS)"
+    },
+    {
+      "slug": "hvac-excellence-employment-ready",
+      "name": "HVAC Excellence Employment Ready Certification",
+      "category": "trades",
+      "body": "ESCO Institute / HVAC Excellence"
+    },
+    {
+      "slug": "icc-residential-building-inspector",
+      "name": "ICC Residential Building Inspector (B1)",
+      "category": "trades",
+      "body": "International Code Council (ICC)"
+    }
+  ]
+}

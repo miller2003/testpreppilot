@@ -64,8 +64,8 @@ const showDay = !!day && (dayBring.length > 0 || dayTimeline.length > 0 || has(d
 {/* ---------- P0-1  SALARY & CAREER OUTLOOK ---------- */}
 {showSalary && (
   <section id="salary" class={sec}>
-    <p class={kicker}>What it pays</p>
-    <h2>How much does this credential pay?</h2>
+    <p class={kicker}>{has(salary.sectionKicker) ? salary.sectionKicker : 'What it pays'}</p>
+    <h2>{has(salary.sectionHeading) ? salary.sectionHeading : 'How much does this credential pay?'}</h2>
     {has(salary.headline) && <p class="dp-headline">{salary.headline}</p>}
     {has(salary.summary) && <p class={lead}>{salary.summary}</p>}
 

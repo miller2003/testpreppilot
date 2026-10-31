@@ -1,0 +1,39 @@
+{
+  "id": "pkg30",
+  "bodies": [
+    "PeopleCert"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "itil-4-specialist-monitor-support-and-fulfil",
+    "itil-4-strategist-direct-plan-and-improve",
+    "prince2-foundation",
+    "prince2-practitioner"
+  ],
+  "exams": [
+    {
+      "slug": "itil-4-specialist-monitor-support-and-fulfil",
+      "name": "ITIL 4 Specialist: Monitor, Support and Fulfil",
+      "category": "technology",
+      "body": "PeopleCert"
+    },
+    {
+      "slug": "itil-4-strategist-direct-plan-and-improve",
+      "name": "ITIL 4 Strategist: Direct, Plan and Improve",
+      "category": "technology",
+      "body": "PeopleCert"
+    },
+    {
+      "slug": "prince2-foundation",
+      "name": "PRINCE2 Foundation",
+      "category": "project-business",
+      "body": "PeopleCert"
+    },
+    {
+      "slug": "prince2-practitioner",
+      "name": "PRINCE2 Practitioner",
+      "category": "project-business",
+      "body": "PeopleCert"
+    }
+  ]
+}

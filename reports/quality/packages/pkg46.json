@@ -1,0 +1,79 @@
+{
+  "id": "pkg46",
+  "bodies": [
+    "Enrollment Management Association",
+    "GED Testing Service",
+    "Graduate Management Admission Council",
+    "Law School Admission Council",
+    "Pearson",
+    "United States Department of Defense"
+  ],
+  "ownsPrograms": [
+    "Enrollment Management Association",
+    "GED Testing Service",
+    "Graduate Management Admission Council",
+    "Law School Admission Council",
+    "Pearson",
+    "United States Department of Defense"
+  ],
+  "slugs": [
+    "ssat-upper-level",
+    "ged-test",
+    "gmat-focus-edition",
+    "law-school-admission-test",
+    "olsat-8",
+    "pharmacy-college-admission-test",
+    "pte-academic",
+    "asvab"
+  ],
+  "exams": [
+    {
+      "slug": "ssat-upper-level",
+      "name": "SSAT Upper Level",
+      "category": "admissions-academic",
+      "body": "Enrollment Management Association"
+    },
+    {
+      "slug": "ged-test",
+      "name": "GED Test",
+      "category": "admissions-academic",
+      "body": "GED Testing Service"
+    },
+    {
+      "slug": "gmat-focus-edition",
+      "name": "GMAT Focus Edition",
+      "category": "admissions-academic",
+      "body": "Graduate Management Admission Council"
+    },
+    {
+      "slug": "law-school-admission-test",
+      "name": "Law School Admission Test",
+      "category": "admissions-academic",
+      "body": "Law School Admission Council"
+    },
+    {
+      "slug": "olsat-8",
+      "name": "Otis-Lennon School Ability Test, Eighth Edition",
+      "category": "admissions-academic",
+      "body": "Pearson"
+    },
+    {
+      "slug": "pharmacy-college-admission-test",
+      "name": "Pharmacy College Admission Test",
+      "category": "admissions-academic",
+      "body": "Pearson"
+    },
+    {
+      "slug": "pte-academic",
+      "name": "PTE Academic",
+      "category": "admissions-academic",
+      "body": "Pearson"
+    },
+    {
+      "slug": "asvab",
+      "name": "Armed Services Vocational Aptitude Battery",
+      "category": "admissions-academic",
+      "body": "United States Department of Defense"
+    }
+  ]
+}

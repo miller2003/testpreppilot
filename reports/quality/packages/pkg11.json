@@ -1,0 +1,60 @@
+{
+  "id": "pkg11",
+  "bodies": [
+    "ETS"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "praxis-middle-school-english-language-arts-5047",
+    "praxis-middle-school-mathematics-5164",
+    "praxis-middle-school-science-5442",
+    "praxis-middle-school-social-studies-5089",
+    "praxis-music-content-knowledge-5113",
+    "praxis-physical-education-content-knowledge-5091",
+    "praxis-physics-5266"
+  ],
+  "exams": [
+    {
+      "slug": "praxis-middle-school-english-language-arts-5047",
+      "name": "Praxis Middle School English Language Arts (5047)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-middle-school-mathematics-5164",
+      "name": "Praxis Middle School Mathematics (5164)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-middle-school-science-5442",
+      "name": "Praxis Middle School Science (5442)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-middle-school-social-studies-5089",
+      "name": "Praxis Middle School Social Studies (5089)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-music-content-knowledge-5113",
+      "name": "Praxis Music: Content Knowledge (5113)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-physical-education-content-knowledge-5091",
+      "name": "Praxis Physical Education: Content Knowledge (5091)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-physics-5266",
+      "name": "Praxis Physics: Content Knowledge (5266)",
+      "category": "education-teaching",
+      "body": "ETS"
+    }
+  ]
+}

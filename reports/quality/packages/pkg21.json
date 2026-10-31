@@ -1,0 +1,46 @@
+{
+  "id": "pkg21",
+  "bodies": [
+    "Amazon Web Services"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "aws-certified-developer-associate",
+    "aws-certified-devops-engineer-professional",
+    "aws-certified-generative-ai-developer-professional",
+    "aws-certified-machine-learning-engineer-associate",
+    "aws-certified-machine-learning-specialty"
+  ],
+  "exams": [
+    {
+      "slug": "aws-certified-developer-associate",
+      "name": "AWS Certified Developer - Associate",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    },
+    {
+      "slug": "aws-certified-devops-engineer-professional",
+      "name": "AWS Certified DevOps Engineer - Professional",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    },
+    {
+      "slug": "aws-certified-generative-ai-developer-professional",
+      "name": "AWS Certified Generative AI Developer - Professional",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    },
+    {
+      "slug": "aws-certified-machine-learning-engineer-associate",
+      "name": "AWS Certified Machine Learning Engineer - Associate",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    },
+    {
+      "slug": "aws-certified-machine-learning-specialty",
+      "name": "AWS Certified Machine Learning - Specialty",
+      "category": "technology",
+      "body": "Amazon Web Services"
+    }
+  ]
+}

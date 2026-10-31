@@ -1,0 +1,60 @@
+{
+  "id": "pkg12",
+  "bodies": [
+    "ETS"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "praxis-plt-grades-5-9-5623",
+    "praxis-plt-grades-7-12-5624",
+    "praxis-plt-grades-k-6-5622",
+    "praxis-reading-specialist-5302",
+    "praxis-school-counselor-5422",
+    "praxis-school-psychologist-5403",
+    "praxis-social-studies-5581"
+  ],
+  "exams": [
+    {
+      "slug": "praxis-plt-grades-5-9-5623",
+      "name": "Praxis Principles of Learning and Teaching: Grades 5-9 (5623)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-plt-grades-7-12-5624",
+      "name": "Praxis Principles of Learning and Teaching: Grades 7-12 (5624)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-plt-grades-k-6-5622",
+      "name": "Praxis Principles of Learning and Teaching: Grades K-6 (5622)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-reading-specialist-5302",
+      "name": "Praxis Reading Specialist (5302)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-school-counselor-5422",
+      "name": "Praxis Professional School Counselor (5422)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-school-psychologist-5403",
+      "name": "Praxis School Psychologist (5403)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-social-studies-5581",
+      "name": "Praxis Social Studies (5581)",
+      "category": "education-teaching",
+      "body": "ETS"
+    }
+  ]
+}

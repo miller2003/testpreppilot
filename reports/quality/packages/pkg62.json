@@ -1,0 +1,66 @@
+{
+  "id": "pkg62",
+  "bodies": [
+    "American Society for Quality",
+    "HR Certification Institute",
+    "HubSpot Academy"
+  ],
+  "ownsPrograms": [
+    "American Society for Quality",
+    "HR Certification Institute",
+    "HubSpot Academy"
+  ],
+  "slugs": [
+    "asq-certified-quality-engineer",
+    "asq-certified-six-sigma-black-belt",
+    "asq-certified-six-sigma-green-belt",
+    "hrci-phr",
+    "hrci-sphr",
+    "hubspot-content-marketing-certification",
+    "hubspot-inbound-marketing-certification"
+  ],
+  "exams": [
+    {
+      "slug": "asq-certified-quality-engineer",
+      "name": "ASQ Certified Quality Engineer",
+      "category": "project-business",
+      "body": "American Society for Quality"
+    },
+    {
+      "slug": "asq-certified-six-sigma-black-belt",
+      "name": "ASQ Certified Six Sigma Black Belt",
+      "category": "project-business",
+      "body": "American Society for Quality"
+    },
+    {
+      "slug": "asq-certified-six-sigma-green-belt",
+      "name": "ASQ Certified Six Sigma Green Belt",
+      "category": "project-business",
+      "body": "American Society for Quality"
+    },
+    {
+      "slug": "hrci-phr",
+      "name": "Professional in Human Resources",
+      "category": "project-business",
+      "body": "HR Certification Institute"
+    },
+    {
+      "slug": "hrci-sphr",
+      "name": "Senior Professional in Human Resources",
+      "category": "project-business",
+      "body": "HR Certification Institute"
+    },
+    {
+      "slug": "hubspot-content-marketing-certification",
+      "name": "HubSpot Content Marketing Certification",
+      "category": "project-business",
+      "body": "HubSpot Academy"
+    },
+    {
+      "slug": "hubspot-inbound-marketing-certification",
+      "name": "HubSpot Inbound Marketing Certification",
+      "category": "project-business",
+      "body": "HubSpot Academy"
+    }
+  ]
+}

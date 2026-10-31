@@ -1,0 +1,60 @@
+{
+  "id": "pkg09",
+  "bodies": [
+    "ETS"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "praxis-early-childhood-education-5025",
+    "praxis-economics-5911",
+    "praxis-educational-leadership-administration-and-supervision-5412",
+    "praxis-elementary-education-content-knowledge-5018",
+    "praxis-elementary-education-multiple-subjects-5001",
+    "praxis-english-language-arts-content-and-analysis-5039",
+    "praxis-english-language-arts-content-knowledge-5038"
+  ],
+  "exams": [
+    {
+      "slug": "praxis-early-childhood-education-5025",
+      "name": "Praxis Early Childhood Education (5025)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-economics-5911",
+      "name": "Praxis Economics (5911)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-educational-leadership-administration-and-supervision-5412",
+      "name": "Praxis Educational Leadership: Administration and Supervision (5412)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-elementary-education-content-knowledge-5018",
+      "name": "Praxis Elementary Education: Content Knowledge (5018)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-elementary-education-multiple-subjects-5001",
+      "name": "Praxis Elementary Education: Multiple Subjects (5001)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-english-language-arts-content-and-analysis-5039",
+      "name": "Praxis English Language Arts: Content and Analysis (5039)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-english-language-arts-content-knowledge-5038",
+      "name": "Praxis English Language Arts: Content Knowledge (5038)",
+      "category": "education-teaching",
+      "body": "ETS"
+    }
+  ]
+}

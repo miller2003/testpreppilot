@@ -1,0 +1,81 @@
+{
+  "id": "pkg57",
+  "bodies": [
+    "360training",
+    "American Culinary Federation",
+    "Association of Nutrition & Foodservice Professionals",
+    "Cicerone Certification Program",
+    "Court of Master Sommeliers, Americas",
+    "Health Communications, Inc.",
+    "National Environmental Health Association"
+  ],
+  "ownsPrograms": [
+    "360training",
+    "American Culinary Federation",
+    "Association of Nutrition & Foodservice Professionals",
+    "Cicerone Certification Program",
+    "Court of Master Sommeliers, Americas",
+    "Health Communications, Inc.",
+    "National Environmental Health Association"
+  ],
+  "slugs": [
+    "learn2serve-alcohol-seller-server",
+    "acf-certified-fundamentals-cook",
+    "certified-dietary-manager-cfpp",
+    "cicerone-certified-beer-server",
+    "cicerone-certified-cicerone",
+    "cms-introductory-sommelier",
+    "tips-alcohol-certification",
+    "neha-certified-professional-food-safety"
+  ],
+  "exams": [
+    {
+      "slug": "learn2serve-alcohol-seller-server",
+      "name": "Learn2Serve Alcohol Seller-Server Training",
+      "category": "food-hospitality",
+      "body": "360training"
+    },
+    {
+      "slug": "acf-certified-fundamentals-cook",
+      "name": "ACF Certified Fundamentals Cook",
+      "category": "food-hospitality",
+      "body": "American Culinary Federation"
+    },
+    {
+      "slug": "certified-dietary-manager-cfpp",
+      "name": "Certified Dietary Manager, Certified Food Protection Professional",
+      "category": "food-hospitality",
+      "body": "Association of Nutrition & Foodservice Professionals"
+    },
+    {
+      "slug": "cicerone-certified-beer-server",
+      "name": "Certified Beer Server",
+      "category": "food-hospitality",
+      "body": "Cicerone Certification Program"
+    },
+    {
+      "slug": "cicerone-certified-cicerone",
+      "name": "Certified Cicerone",
+      "category": "food-hospitality",
+      "body": "Cicerone Certification Program"
+    },
+    {
+      "slug": "cms-introductory-sommelier",
+      "name": "Introductory Sommelier Course and Examination",
+      "category": "food-hospitality",
+      "body": "Court of Master Sommeliers, Americas"
+    },
+    {
+      "slug": "tips-alcohol-certification",
+      "name": "TIPS Alcohol Server Certification",
+      "category": "food-hospitality",
+      "body": "Health Communications, Inc."
+    },
+    {
+      "slug": "neha-certified-professional-food-safety",
+      "name": "Certified Professional – Food Safety",
+      "category": "food-hospitality",
+      "body": "National Environmental Health Association"
+    }
+  ]
+}

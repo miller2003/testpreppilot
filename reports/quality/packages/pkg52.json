@@ -1,0 +1,68 @@
+{
+  "id": "pkg52",
+  "bodies": [
+    "CFA Institute",
+    "Global Association of Risk Professionals (GARP)",
+    "Mortgage Bankers Association (MBA)",
+    "Nationwide Multistate Licensing System (NMLS)"
+  ],
+  "ownsPrograms": [
+    "CFA Institute",
+    "Global Association of Risk Professionals (GARP)",
+    "Mortgage Bankers Association (MBA)",
+    "Nationwide Multistate Licensing System (NMLS)"
+  ],
+  "slugs": [
+    "cfa-level-1",
+    "cfa-level-2",
+    "cfa-level-3",
+    "frm-part-1",
+    "frm-part-2",
+    "mba-accredited-mortgage-professional",
+    "nmls-safe-mlo-national-test"
+  ],
+  "exams": [
+    {
+      "slug": "cfa-level-1",
+      "name": "CFA Program Level I Exam",
+      "category": "finance-securities",
+      "body": "CFA Institute"
+    },
+    {
+      "slug": "cfa-level-2",
+      "name": "CFA Program Level II Exam",
+      "category": "finance-securities",
+      "body": "CFA Institute"
+    },
+    {
+      "slug": "cfa-level-3",
+      "name": "CFA Program Level III Exam",
+      "category": "finance-securities",
+      "body": "CFA Institute"
+    },
+    {
+      "slug": "frm-part-1",
+      "name": "Financial Risk Manager Exam Part I",
+      "category": "finance-securities",
+      "body": "Global Association of Risk Professionals (GARP)"
+    },
+    {
+      "slug": "frm-part-2",
+      "name": "Financial Risk Manager Exam Part II",
+      "category": "finance-securities",
+      "body": "Global Association of Risk Professionals (GARP)"
+    },
+    {
+      "slug": "mba-accredited-mortgage-professional",
+      "name": "Accredited Mortgage Professional Designation",
+      "category": "finance-securities",
+      "body": "Mortgage Bankers Association (MBA)"
+    },
+    {
+      "slug": "nmls-safe-mlo-national-test",
+      "name": "SAFE Mortgage Loan Originator National Test with Uniform State Content",
+      "category": "finance-securities",
+      "body": "Nationwide Multistate Licensing System (NMLS)"
+    }
+  ]
+}

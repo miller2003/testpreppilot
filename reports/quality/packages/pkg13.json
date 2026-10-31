@@ -1,0 +1,53 @@
+{
+  "id": "pkg13",
+  "bodies": [
+    "ETS"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "praxis-special-education-foundational-knowledge-5355",
+    "praxis-special-education-learning-disabilities-5383",
+    "praxis-teaching-reading-elementary-5205",
+    "praxis-teaching-reading-k-12-5206",
+    "toefl-ibt",
+    "toeic-listening-and-reading"
+  ],
+  "exams": [
+    {
+      "slug": "praxis-special-education-foundational-knowledge-5355",
+      "name": "Praxis Special Education: Foundational Knowledge (5355)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-special-education-learning-disabilities-5383",
+      "name": "Praxis Special Education: Teaching Students with Learning Disabilities (5383)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-teaching-reading-elementary-5205",
+      "name": "Praxis Teaching Reading: Elementary (5205)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "praxis-teaching-reading-k-12-5206",
+      "name": "Praxis Teaching Reading: K-12 (5206)",
+      "category": "education-teaching",
+      "body": "ETS"
+    },
+    {
+      "slug": "toefl-ibt",
+      "name": "TOEFL iBT",
+      "category": "admissions-academic",
+      "body": "ETS"
+    },
+    {
+      "slug": "toeic-listening-and-reading",
+      "name": "TOEIC Listening and Reading Test",
+      "category": "admissions-academic",
+      "body": "ETS"
+    }
+  ]
+}

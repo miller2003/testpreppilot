@@ -1,0 +1,53 @@
+{
+  "id": "pkg18",
+  "bodies": [
+    "Microsoft"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "microsoft-office-specialist-excel-expert",
+    "microsoft-office-specialist-expert-bundle",
+    "microsoft-office-specialist-outlook-associate",
+    "microsoft-office-specialist-powerpoint-associate",
+    "microsoft-office-specialist-word-associate",
+    "microsoft-office-specialist-word-expert"
+  ],
+  "exams": [
+    {
+      "slug": "microsoft-office-specialist-excel-expert",
+      "name": "Microsoft Office Specialist: Excel Expert",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-office-specialist-expert-bundle",
+      "name": "Microsoft Office Specialist: Expert",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-office-specialist-outlook-associate",
+      "name": "Microsoft Office Specialist: Outlook Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-office-specialist-powerpoint-associate",
+      "name": "Microsoft Office Specialist: PowerPoint Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-office-specialist-word-associate",
+      "name": "Microsoft Office Specialist: Word Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-office-specialist-word-expert",
+      "name": "Microsoft Office Specialist: Word Expert",
+      "category": "technology",
+      "body": "Microsoft"
+    }
+  ]
+}

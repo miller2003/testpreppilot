@@ -1,0 +1,60 @@
+{
+  "id": "pkg06",
+  "bodies": [
+    "College Board"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "clep-college-mathematics",
+    "clep-financial-accounting",
+    "clep-history-of-the-united-states-i",
+    "clep-humanities",
+    "clep-introductory-business-law",
+    "clep-introductory-psychology",
+    "clep-natural-sciences"
+  ],
+  "exams": [
+    {
+      "slug": "clep-college-mathematics",
+      "name": "CLEP College Mathematics",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-financial-accounting",
+      "name": "CLEP Financial Accounting",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-history-of-the-united-states-i",
+      "name": "CLEP History of the United States I: Early Colonization to 1877",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-humanities",
+      "name": "CLEP Humanities",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-introductory-business-law",
+      "name": "CLEP Introductory Business Law",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-introductory-psychology",
+      "name": "CLEP Introductory Psychology",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "clep-natural-sciences",
+      "name": "CLEP Natural Sciences",
+      "category": "admissions-academic",
+      "body": "College Board"
+    }
+  ]
+}

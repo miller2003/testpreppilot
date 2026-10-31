@@ -1,0 +1,41 @@
+{
+  "id": "pkg33",
+  "bodies": [
+    "Salesforce"
+  ],
+  "ownsPrograms": [
+    "Salesforce"
+  ],
+  "slugs": [
+    "salesforce-administrator",
+    "salesforce-advanced-administrator",
+    "salesforce-business-analyst",
+    "salesforce-platform-app-builder"
+  ],
+  "exams": [
+    {
+      "slug": "salesforce-administrator",
+      "name": "Salesforce Certified Administrator",
+      "category": "technology",
+      "body": "Salesforce"
+    },
+    {
+      "slug": "salesforce-advanced-administrator",
+      "name": "Salesforce Certified Advanced Administrator",
+      "category": "technology",
+      "body": "Salesforce"
+    },
+    {
+      "slug": "salesforce-business-analyst",
+      "name": "Salesforce Certified Business Analyst",
+      "category": "technology",
+      "body": "Salesforce"
+    },
+    {
+      "slug": "salesforce-platform-app-builder",
+      "name": "Salesforce Certified Platform App Builder",
+      "category": "technology",
+      "body": "Salesforce"
+    }
+  ]
+}

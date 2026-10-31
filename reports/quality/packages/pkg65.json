@@ -1,0 +1,68 @@
+{
+  "id": "pkg65",
+  "bodies": [
+    "NYC Department of Citywide Administrative Services",
+    "Stanard & Associates",
+    "State and county corrections agencies",
+    "United States Postal Service"
+  ],
+  "ownsPrograms": [
+    "NYC Department of Citywide Administrative Services",
+    "Stanard & Associates",
+    "State and county corrections agencies",
+    "United States Postal Service"
+  ],
+  "slugs": [
+    "nyc-dcas-exam",
+    "post-entry-level",
+    "corrections-officer-entrance-exam",
+    "usps-vea-474",
+    "usps-vea-475",
+    "usps-vea-476",
+    "usps-vea-477"
+  ],
+  "exams": [
+    {
+      "slug": "nyc-dcas-exam",
+      "name": "NYC DCAS Civil Service Exam",
+      "category": "public-safety",
+      "body": "NYC Department of Citywide Administrative Services"
+    },
+    {
+      "slug": "post-entry-level",
+      "name": "National Police Officer Selection Test",
+      "category": "public-safety",
+      "body": "Stanard & Associates"
+    },
+    {
+      "slug": "corrections-officer-entrance-exam",
+      "name": "Corrections Officer Entrance Exam",
+      "category": "public-safety",
+      "body": "State and county corrections agencies"
+    },
+    {
+      "slug": "usps-vea-474",
+      "name": "USPS Virtual Entry Assessment 474",
+      "category": "public-safety",
+      "body": "United States Postal Service"
+    },
+    {
+      "slug": "usps-vea-475",
+      "name": "USPS Virtual Entry Assessment 475",
+      "category": "public-safety",
+      "body": "United States Postal Service"
+    },
+    {
+      "slug": "usps-vea-476",
+      "name": "USPS Virtual Entry Assessment 476",
+      "category": "public-safety",
+      "body": "United States Postal Service"
+    },
+    {
+      "slug": "usps-vea-477",
+      "name": "USPS Virtual Entry Assessment 477",
+      "category": "public-safety",
+      "body": "United States Postal Service"
+    }
+  ]
+}

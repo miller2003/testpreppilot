@@ -1,0 +1,55 @@
+{
+  "id": "pkg38",
+  "bodies": [
+    "National Healthcareer Association (NHA)"
+  ],
+  "ownsPrograms": [
+    "National Healthcareer Association (NHA)"
+  ],
+  "slugs": [
+    "nha-ccma",
+    "nha-cehrs",
+    "nha-cmaa",
+    "nha-cpct",
+    "nha-cpht",
+    "nha-mental-health-tech"
+  ],
+  "exams": [
+    {
+      "slug": "nha-ccma",
+      "name": "NHA Certified Clinical Medical Assistant",
+      "category": "allied-health",
+      "body": "National Healthcareer Association (NHA)"
+    },
+    {
+      "slug": "nha-cehrs",
+      "name": "NHA Certified Electronic Health Records Specialist",
+      "category": "allied-health",
+      "body": "National Healthcareer Association (NHA)"
+    },
+    {
+      "slug": "nha-cmaa",
+      "name": "NHA Certified Medical Administrative Assistant",
+      "category": "allied-health",
+      "body": "National Healthcareer Association (NHA)"
+    },
+    {
+      "slug": "nha-cpct",
+      "name": "NHA Patient Care Technician Certification",
+      "category": "allied-health",
+      "body": "National Healthcareer Association (NHA)"
+    },
+    {
+      "slug": "nha-cpht",
+      "name": "NHA Certified Pharmacy Technician",
+      "category": "allied-health",
+      "body": "National Healthcareer Association (NHA)"
+    },
+    {
+      "slug": "nha-mental-health-tech",
+      "name": "NHA Mental Health Technician Certification",
+      "category": "allied-health",
+      "body": "National Healthcareer Association (NHA)"
+    }
+  ]
+}

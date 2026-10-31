@@ -1,0 +1,55 @@
+{
+  "id": "pkg27",
+  "bodies": [
+    "Cisco Systems"
+  ],
+  "ownsPrograms": [
+    "Cisco Systems"
+  ],
+  "slugs": [
+    "cisco-ccna",
+    "cisco-ccna-cybersecurity",
+    "cisco-ccnp-automation",
+    "cisco-ccnp-collaboration",
+    "cisco-ccnp-cybersecurity",
+    "cisco-ccnp-data-center"
+  ],
+  "exams": [
+    {
+      "slug": "cisco-ccna",
+      "name": "Cisco Certified Network Associate",
+      "category": "technology",
+      "body": "Cisco Systems"
+    },
+    {
+      "slug": "cisco-ccna-cybersecurity",
+      "name": "Cisco Certified Network Associate Cybersecurity",
+      "category": "technology",
+      "body": "Cisco Systems"
+    },
+    {
+      "slug": "cisco-ccnp-automation",
+      "name": "Cisco Certified Network Professional Automation",
+      "category": "technology",
+      "body": "Cisco Systems"
+    },
+    {
+      "slug": "cisco-ccnp-collaboration",
+      "name": "Cisco Certified Network Professional Collaboration",
+      "category": "technology",
+      "body": "Cisco Systems"
+    },
+    {
+      "slug": "cisco-ccnp-cybersecurity",
+      "name": "Cisco Certified Network Professional Cybersecurity",
+      "category": "technology",
+      "body": "Cisco Systems"
+    },
+    {
+      "slug": "cisco-ccnp-data-center",
+      "name": "Cisco Certified Network Professional Data Center",
+      "category": "technology",
+      "body": "Cisco Systems"
+    }
+  ]
+}

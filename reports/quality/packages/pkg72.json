@@ -1,0 +1,73 @@
+{
+  "id": "pkg72",
+  "bodies": [
+    "Employers under OSHA 29 CFR 1910.120",
+    "National Fire Protection Association (NFPA)",
+    "Occupational Safety and Health Administration (OSHA)"
+  ],
+  "ownsPrograms": [
+    "Employers under OSHA 29 CFR 1910.120",
+    "National Fire Protection Association (NFPA)",
+    "Occupational Safety and Health Administration (OSHA)"
+  ],
+  "slugs": [
+    "hazwoper-24-hour",
+    "hazwoper-40-hour",
+    "hazwoper-8-hour-refresher",
+    "hazwoper-8-hour-supervisor",
+    "nfpa-70e-electrical-safety-training",
+    "osha-10-general-industry",
+    "osha-10-maritime",
+    "osha-30-general-industry"
+  ],
+  "exams": [
+    {
+      "slug": "hazwoper-24-hour",
+      "name": "HAZWOPER 24-Hour Training",
+      "category": "workplace-safety",
+      "body": "Employers under OSHA 29 CFR 1910.120"
+    },
+    {
+      "slug": "hazwoper-40-hour",
+      "name": "HAZWOPER 40-Hour Training",
+      "category": "workplace-safety",
+      "body": "Employers under OSHA 29 CFR 1910.120"
+    },
+    {
+      "slug": "hazwoper-8-hour-refresher",
+      "name": "HAZWOPER 8-Hour Annual Refresher",
+      "category": "workplace-safety",
+      "body": "Employers under OSHA 29 CFR 1910.120"
+    },
+    {
+      "slug": "hazwoper-8-hour-supervisor",
+      "name": "HAZWOPER 8-Hour Supervisor Training",
+      "category": "workplace-safety",
+      "body": "Employers under OSHA 29 CFR 1910.120"
+    },
+    {
+      "slug": "nfpa-70e-electrical-safety-training",
+      "name": "NFPA 70E Electrical Safety in the Workplace Training",
+      "category": "workplace-safety",
+      "body": "National Fire Protection Association (NFPA)"
+    },
+    {
+      "slug": "osha-10-general-industry",
+      "name": "OSHA 10-Hour General Industry Outreach Training",
+      "category": "workplace-safety",
+      "body": "Occupational Safety and Health Administration (OSHA)"
+    },
+    {
+      "slug": "osha-10-maritime",
+      "name": "OSHA 10-Hour Maritime Industry Outreach Training",
+      "category": "workplace-safety",
+      "body": "Occupational Safety and Health Administration (OSHA)"
+    },
+    {
+      "slug": "osha-30-general-industry",
+      "name": "OSHA 30-Hour General Industry Outreach Training",
+      "category": "workplace-safety",
+      "body": "Occupational Safety and Health Administration (OSHA)"
+    }
+  ]
+}

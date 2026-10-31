@@ -1,0 +1,73 @@
+{
+  "id": "pkg48",
+  "bodies": [
+    "Board of Certification for Emergency Nursing (BCEN)",
+    "Dental Assisting National Board (DANB)",
+    "Joint Commission on Allied Health Personnel in Ophthalmology (JCAHPO)"
+  ],
+  "ownsPrograms": [
+    "Board of Certification for Emergency Nursing (BCEN)",
+    "Dental Assisting National Board (DANB)",
+    "Joint Commission on Allied Health Personnel in Ophthalmology (JCAHPO)"
+  ],
+  "slugs": [
+    "bcen-cen",
+    "bcen-cfrn",
+    "bcen-tcrn",
+    "danb-cda",
+    "danb-gc",
+    "danb-ice",
+    "danb-rhs",
+    "jcahpo-coa"
+  ],
+  "exams": [
+    {
+      "slug": "bcen-cen",
+      "name": "BCEN Certified Emergency Nurse",
+      "category": "allied-health",
+      "body": "Board of Certification for Emergency Nursing (BCEN)"
+    },
+    {
+      "slug": "bcen-cfrn",
+      "name": "BCEN Certified Flight Registered Nurse",
+      "category": "allied-health",
+      "body": "Board of Certification for Emergency Nursing (BCEN)"
+    },
+    {
+      "slug": "bcen-tcrn",
+      "name": "BCEN Trauma Certified Registered Nurse",
+      "category": "allied-health",
+      "body": "Board of Certification for Emergency Nursing (BCEN)"
+    },
+    {
+      "slug": "danb-cda",
+      "name": "DANB Certified Dental Assistant",
+      "category": "allied-health",
+      "body": "Dental Assisting National Board (DANB)"
+    },
+    {
+      "slug": "danb-gc",
+      "name": "DANB General Chairside Exam",
+      "category": "allied-health",
+      "body": "Dental Assisting National Board (DANB)"
+    },
+    {
+      "slug": "danb-ice",
+      "name": "DANB Infection Control Exam",
+      "category": "allied-health",
+      "body": "Dental Assisting National Board (DANB)"
+    },
+    {
+      "slug": "danb-rhs",
+      "name": "DANB Radiation Health and Safety Exam",
+      "category": "allied-health",
+      "body": "Dental Assisting National Board (DANB)"
+    },
+    {
+      "slug": "jcahpo-coa",
+      "name": "JCAHPO Certified Ophthalmic Assistant",
+      "category": "allied-health",
+      "body": "Joint Commission on Allied Health Personnel in Ophthalmology (JCAHPO)"
+    }
+  ]
+}

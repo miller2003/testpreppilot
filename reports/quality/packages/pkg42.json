@@ -1,0 +1,48 @@
+{
+  "id": "pkg42",
+  "bodies": [
+    "Federal Aviation Administration"
+  ],
+  "ownsPrograms": [
+    "Federal Aviation Administration"
+  ],
+  "slugs": [
+    "faa-air-traffic-controller",
+    "faa-atm-atp-multiengine-airplane",
+    "faa-cax-commercial-pilot-airplane",
+    "faa-ira-instrument-rating-airplane",
+    "faa-par-private-pilot-airplane"
+  ],
+  "exams": [
+    {
+      "slug": "faa-air-traffic-controller",
+      "name": "FAA Air Traffic Controller Selection",
+      "category": "public-safety",
+      "body": "Federal Aviation Administration"
+    },
+    {
+      "slug": "faa-atm-atp-multiengine-airplane",
+      "name": "Airline Transport Pilot Multiengine Airplane Knowledge Test",
+      "category": "transportation",
+      "body": "Federal Aviation Administration"
+    },
+    {
+      "slug": "faa-cax-commercial-pilot-airplane",
+      "name": "Commercial Pilot Airplane Knowledge Test",
+      "category": "transportation",
+      "body": "Federal Aviation Administration"
+    },
+    {
+      "slug": "faa-ira-instrument-rating-airplane",
+      "name": "Instrument Rating Airplane Knowledge Test",
+      "category": "transportation",
+      "body": "Federal Aviation Administration"
+    },
+    {
+      "slug": "faa-par-private-pilot-airplane",
+      "name": "Private Pilot Airplane Knowledge Test",
+      "category": "transportation",
+      "body": "Federal Aviation Administration"
+    }
+  ]
+}

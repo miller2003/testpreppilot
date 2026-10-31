@@ -1,0 +1,55 @@
+{
+  "id": "pkg39",
+  "bodies": [
+    "National-Interstate Council of State Boards of Cosmetology"
+  ],
+  "ownsPrograms": [
+    "National-Interstate Council of State Boards of Cosmetology"
+  ],
+  "slugs": [
+    "nic-barber-practical",
+    "nic-barber-theory",
+    "nic-cosmetology-practical",
+    "nic-cosmetology-theory",
+    "nic-esthetics-theory",
+    "nic-nail-technology-theory"
+  ],
+  "exams": [
+    {
+      "slug": "nic-barber-practical",
+      "name": "NIC Barber Practical Examination",
+      "category": "fitness-recreation",
+      "body": "National-Interstate Council of State Boards of Cosmetology"
+    },
+    {
+      "slug": "nic-barber-theory",
+      "name": "NIC Barber Theory Examination",
+      "category": "fitness-recreation",
+      "body": "National-Interstate Council of State Boards of Cosmetology"
+    },
+    {
+      "slug": "nic-cosmetology-practical",
+      "name": "NIC Cosmetology Practical Examination",
+      "category": "fitness-recreation",
+      "body": "National-Interstate Council of State Boards of Cosmetology"
+    },
+    {
+      "slug": "nic-cosmetology-theory",
+      "name": "NIC Cosmetology Theory Examination",
+      "category": "fitness-recreation",
+      "body": "National-Interstate Council of State Boards of Cosmetology"
+    },
+    {
+      "slug": "nic-esthetics-theory",
+      "name": "NIC Esthetics Theory Examination",
+      "category": "fitness-recreation",
+      "body": "National-Interstate Council of State Boards of Cosmetology"
+    },
+    {
+      "slug": "nic-nail-technology-theory",
+      "name": "NIC Nail Technology Theory Examination",
+      "category": "fitness-recreation",
+      "body": "National-Interstate Council of State Boards of Cosmetology"
+    }
+  ]
+}

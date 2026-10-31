@@ -1,0 +1,59 @@
+{
+  "id": "pkg61",
+  "bodies": [
+    "The Institutes",
+    "National Conference of Bar Examiners",
+    "State Bar of California"
+  ],
+  "ownsPrograms": [
+    "The Institutes",
+    "National Conference of Bar Examiners",
+    "State Bar of California"
+  ],
+  "slugs": [
+    "associate-in-insurance",
+    "cpcu-500",
+    "cpcu-designation",
+    "mpre",
+    "uniform-bar-exam",
+    "california-bar-exam"
+  ],
+  "exams": [
+    {
+      "slug": "associate-in-insurance",
+      "name": "Associate in Insurance",
+      "category": "insurance",
+      "body": "The Institutes"
+    },
+    {
+      "slug": "cpcu-500",
+      "name": "CPCU 500: Becoming a Leader in Risk Management and Insurance",
+      "category": "insurance",
+      "body": "The Institutes"
+    },
+    {
+      "slug": "cpcu-designation",
+      "name": "Chartered Property Casualty Underwriter Designation",
+      "category": "insurance",
+      "body": "The Institutes"
+    },
+    {
+      "slug": "mpre",
+      "name": "Multistate Professional Responsibility Examination",
+      "category": "legal",
+      "body": "National Conference of Bar Examiners"
+    },
+    {
+      "slug": "uniform-bar-exam",
+      "name": "Uniform Bar Exam",
+      "category": "legal",
+      "body": "National Conference of Bar Examiners"
+    },
+    {
+      "slug": "california-bar-exam",
+      "name": "California Bar Exam",
+      "category": "legal",
+      "body": "State Bar of California"
+    }
+  ]
+}

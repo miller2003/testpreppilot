@@ -1,0 +1,75 @@
+{
+  "id": "pkg68",
+  "bodies": [
+    "ISC2",
+    "Linux Professional Institute",
+    "OffSec",
+    "Oracle"
+  ],
+  "ownsPrograms": [
+    "ISC2",
+    "Linux Professional Institute",
+    "OffSec",
+    "Oracle"
+  ],
+  "slugs": [
+    "isc2-ccsp",
+    "isc2-certified-in-cybersecurity",
+    "isc2-cissp",
+    "isc2-sscp",
+    "lpi-linux-essentials",
+    "lpic-1-system-administrator",
+    "offsec-oscp",
+    "oracle-oci-foundations-associate"
+  ],
+  "exams": [
+    {
+      "slug": "isc2-ccsp",
+      "name": "Certified Cloud Security Professional",
+      "category": "technology",
+      "body": "ISC2"
+    },
+    {
+      "slug": "isc2-certified-in-cybersecurity",
+      "name": "ISC2 Certified in Cybersecurity",
+      "category": "technology",
+      "body": "ISC2"
+    },
+    {
+      "slug": "isc2-cissp",
+      "name": "Certified Information Systems Security Professional",
+      "category": "technology",
+      "body": "ISC2"
+    },
+    {
+      "slug": "isc2-sscp",
+      "name": "Systems Security Certified Practitioner",
+      "category": "technology",
+      "body": "ISC2"
+    },
+    {
+      "slug": "lpi-linux-essentials",
+      "name": "LPI Linux Essentials",
+      "category": "technology",
+      "body": "Linux Professional Institute"
+    },
+    {
+      "slug": "lpic-1-system-administrator",
+      "name": "LPIC-1: Linux Administrator",
+      "category": "technology",
+      "body": "Linux Professional Institute"
+    },
+    {
+      "slug": "offsec-oscp",
+      "name": "OffSec Certified Professional",
+      "category": "technology",
+      "body": "OffSec"
+    },
+    {
+      "slug": "oracle-oci-foundations-associate",
+      "name": "Oracle Cloud Infrastructure Foundations Associate",
+      "category": "technology",
+      "body": "Oracle"
+    }
+  ]
+}

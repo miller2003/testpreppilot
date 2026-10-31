@@ -1,0 +1,62 @@
+{
+  "id": "pkg01",
+  "bodies": [
+    "College Board"
+  ],
+  "ownsPrograms": [
+    "College Board"
+  ],
+  "slugs": [
+    "accuplacer-advanced-algebra-and-functions",
+    "accuplacer-arithmetic",
+    "accuplacer-quantitative-reasoning-algebra-statistics",
+    "accuplacer-reading",
+    "accuplacer-writeplacer",
+    "accuplacer-writing",
+    "ap-biology"
+  ],
+  "exams": [
+    {
+      "slug": "accuplacer-advanced-algebra-and-functions",
+      "name": "ACCUPLACER Advanced Algebra and Functions",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "accuplacer-arithmetic",
+      "name": "ACCUPLACER Arithmetic",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "accuplacer-quantitative-reasoning-algebra-statistics",
+      "name": "ACCUPLACER Quantitative Reasoning, Algebra, and Statistics",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "accuplacer-reading",
+      "name": "ACCUPLACER Reading",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "accuplacer-writeplacer",
+      "name": "ACCUPLACER WritePlacer",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "accuplacer-writing",
+      "name": "ACCUPLACER Writing",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-biology",
+      "name": "AP Biology",
+      "category": "admissions-academic",
+      "body": "College Board"
+    }
+  ]
+}

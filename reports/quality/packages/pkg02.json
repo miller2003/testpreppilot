@@ -1,0 +1,60 @@
+{
+  "id": "pkg02",
+  "bodies": [
+    "College Board"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "ap-calculus-ab",
+    "ap-calculus-bc",
+    "ap-chemistry",
+    "ap-computer-science-a",
+    "ap-computer-science-principles",
+    "ap-english-language-and-composition",
+    "ap-english-literature-and-composition"
+  ],
+  "exams": [
+    {
+      "slug": "ap-calculus-ab",
+      "name": "AP Calculus AB",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-calculus-bc",
+      "name": "AP Calculus BC",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-chemistry",
+      "name": "AP Chemistry",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-computer-science-a",
+      "name": "AP Computer Science A",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-computer-science-principles",
+      "name": "AP Computer Science Principles",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-english-language-and-composition",
+      "name": "AP English Language and Composition",
+      "category": "admissions-academic",
+      "body": "College Board"
+    },
+    {
+      "slug": "ap-english-literature-and-composition",
+      "name": "AP English Literature and Composition",
+      "category": "admissions-academic",
+      "body": "College Board"
+    }
+  ]
+}

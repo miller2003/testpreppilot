@@ -1,0 +1,53 @@
+{
+  "id": "pkg15",
+  "bodies": [
+    "Microsoft"
+  ],
+  "ownsPrograms": [],
+  "slugs": [
+    "microsoft-az-305",
+    "microsoft-az-400",
+    "microsoft-az-500",
+    "microsoft-az-700",
+    "microsoft-az-800",
+    "microsoft-az-801"
+  ],
+  "exams": [
+    {
+      "slug": "microsoft-az-305",
+      "name": "Microsoft Certified: Azure Solutions Architect Expert",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-az-400",
+      "name": "Microsoft Certified: DevOps Engineer Expert",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-az-500",
+      "name": "Microsoft Certified: Azure Security Engineer Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-az-700",
+      "name": "Microsoft Certified: Azure Network Engineer Associate",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-az-800",
+      "name": "Administering Windows Server Hybrid Core Infrastructure",
+      "category": "technology",
+      "body": "Microsoft"
+    },
+    {
+      "slug": "microsoft-az-801",
+      "name": "Configuring Windows Server Hybrid Advanced Services",
+      "category": "technology",
+      "body": "Microsoft"
+    }
+  ]
+}
