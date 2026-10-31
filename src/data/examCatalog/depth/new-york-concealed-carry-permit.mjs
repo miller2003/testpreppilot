@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'NY Penal Law 400.00 licensing desk',
     bio: 'New York concealed carry facts are drawn from New York Penal Law Section 400.00, the Concealed Carry Improvement Act (CCIA) that took effect September 1, 2022, the DCJS and State Police training standards, and county licensing-authority pages. The 18-hour training requirement and the 80 percent written-exam standard are published in the statute and state guidance, while no state agency publishes cohort pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against New York Penal Law 400.00, the CCIA training rules, DCJS and State Police standards, and the BLS OOH Security Guards page (May 2024 data).',
   lastReviewed: '2026-08',

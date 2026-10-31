@@ -9,7 +9,7 @@
 // release manifest, so nothing unpublished can leak into a machine-readable
 // feed (which would be far worse than a missing page: crawlers would index it).
 
-import { allExams } from '../data/examCatalog/index.mjs';
+import { listedExams as allExams } from '../data/examCatalog/index.mjs';
 import { releases } from '../data/examCatalog/release-manifest.mjs';
 
 export const SITE = 'https://testpreppilot.com';

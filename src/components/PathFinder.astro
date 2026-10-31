@@ -19,7 +19,7 @@ const getCredentialCount = (categoryId: string) => {
         {categories.map(category => {
           const count = getCredentialCount(category.id);
           return (
-            <a href={`/categories/${category.id}`} class="choice-card">
+            <a href={`/categories/${category.id}/`} class="choice-card">
               <span class="choice-icon" aria-hidden="true">{category.icon}</span>
               <span class="choice-name">{category.name}</span>
               <span class="choice-count">{count} {count === 1 ? 'path' : 'paths'}</span>

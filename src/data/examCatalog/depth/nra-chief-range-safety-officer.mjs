@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Safety, security & instructor-certification desk',
     bio: 'This guide is compiled and maintained by our safety and instructor-certification desk. NRA Chief Range Safety Officer course structure, prerequisites, exam standard and credentialing process come from the NRA instructors portal and NRA course documentation, and we state plainly when a figure such as a published pass rate is not available. The CRSO credential has no direct Bureau of Labor Statistics occupation; where a wage is quoted it is the closest official proxy, named by SOC code, and clearly labelled as a proxy rather than a match.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Course length, prerequisites, examination standard, credentialing steps and the relationship between the CRSO and RSO ratings were checked against the NRA instructors portal course catalog and NRA course documentation.',
   lastReviewed: '2026-08',

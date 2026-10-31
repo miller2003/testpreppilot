@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Health information & coding certifications desk',
     bio: 'The AHIMA RHIT exam structure (question count, time, passing score) and pass rates are drawn directly from AHIMA\u2019s official RHIT pages and the AHIMA exam specifications, which are updated on a published revision cycle. Wage figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024). Where AHIMA or BLS does not publish a figure, we say so plainly rather than estimating.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against AHIMA\u2019s official RHIT exam specifications and certified-professionals pass-rate table (2022-2025), and the BLS OOH Medical Records Specialists page (May 2024 data).',
   lastReviewed: '2026-08',

@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Fitness & personal-training credentialing desk',
     bio: 'NSCA certification structure comes from the National Strength and Conditioning Association official pages and is revised with each exam update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the NSCA-CPT exam structure, prerequisites, and requirements against NSCA official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

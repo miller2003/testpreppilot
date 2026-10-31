@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'We cover the TIPS (Training for Intervention ProcedureS) alcohol certification program. Course structure, exam mechanics and pricing come from the TIPS official pages and approved-provider materials, and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the TIPS exam structure (approximately 40 multiple-choice questions), the 70% passing score, the online and in-person delivery formats, the three-year validity, and the typical pricing range against TIPS official and approved-provider materials; verified BLS bartender wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

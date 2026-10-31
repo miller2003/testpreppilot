@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Advanced Placement & college-credit desk',
     bio: 'The AP Physics 2: Algebra-Based exam structure (question counts, timing, scoring) is drawn from the College Board official AP Physics 2 course and exam description, which is revised on a published cycle and was significantly updated for the 2025 administration; the College Board publishes annual AP score distributions, and we cite that practice. College-credit outcomes and the exam fee are stated as of the current College Board program page.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the College Board official AP Physics 2: Algebra-Based course and exam description (current edition), the annual AP score distribution report, and the current College Board exam-day, reference-sheet and calculator policy pages.',
   lastReviewed: '2026-08',

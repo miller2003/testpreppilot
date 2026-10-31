@@ -6,7 +6,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Federal employment & postal exam desk',
     bio: 'USPS VEA 477 facts in this guide come from the official USPS Virtual Entry Assessment Candidate Guide (about.usps.com) and the USPS careers pages, which are the authoritative sources for the assessment sections, the 72-hour window, the 70 percent passing score, the job group the 477 version serves, and the one-year retest rule. USPS publishes the passing score but not cohort pass rates for the VEA, so we state that plainly. Wage figures come from the BLS Occupational Employment and Wage Statistics and the BLS Occupational Outlook Handbook postal service workers data (May 2024), cited by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the official USPS Virtual Entry Assessment Candidate Guide, the USPS careers assessment pages, the BLS OEWS Postal Service Clerks profile (SOC 43-5051, May 2024), and the BLS OOH Postal Service Workers page (SOC 43-5050, May 2024).',
   lastReviewed: '2026-08',

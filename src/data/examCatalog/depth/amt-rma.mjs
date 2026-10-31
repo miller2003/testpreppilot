@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Medical assisting credentialing desk',
     bio: 'AMT RMA structure and requirements come from the American Medical Technologists official pages and are revised with each exam update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the AMT RMA exam structure, eligibility, and passing policy against AMT official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

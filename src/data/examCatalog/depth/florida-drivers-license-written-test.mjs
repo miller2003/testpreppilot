@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'FLHSMV & state licensing exams desk',
     bio: 'Florida Class E Knowledge Exam facts are drawn from the Florida Department of Highway Safety and Motor Vehicles (FLHSMV) Class E knowledge exam pages and the Official Florida Driver License Handbook, plus the Florida Statutes that govern the credential. FLHSMV publishes the question count, the 80 percent passing standard, and the fee schedule, but it does not publish cohort pass-rate statistics, and we state that plainly rather than quoting private estimates. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the FLHSMV Class E Knowledge Exam page, the Florida Driver License Handbook, Florida Statutes Chapter 322, and the BLS OOH Light Truck Drivers / Delivery Truck Drivers page (May 2024 data).',
   lastReviewed: '2026-08',

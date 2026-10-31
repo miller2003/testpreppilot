@@ -63,12 +63,12 @@ export function editorialBoardNode() {
 // pages (/how-it-works, /reviews, /contact) have been folded into /about and
 // now 308-redirect there, so they are no longer listed here.
 export const TRUST_PAGES = {
-  about: '/about',
-  methodology: '/methodology',
-  reviewers: '/reviewers',
-  editorialPolicy: '/editorial-policy',
-  disclosure: '/disclosure',
-  privacy: '/privacy',
+  about: '/about/',
+  methodology: '/methodology/',
+  reviewers: '/reviewers/',
+  editorialPolicy: '/editorial-policy/',
+  disclosure: '/disclosure/',
+  privacy: '/privacy/',
 } as const;
 
 // Review-network domains we recruit licensed experts for. Used by /reviewers

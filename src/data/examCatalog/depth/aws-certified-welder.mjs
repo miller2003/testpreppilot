@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Skilled trades & manufacturing certifications desk',
     bio: 'This desk covers welder and skilled-trade credentials. Program structure and rules come from the certifying body\'s official pages (American Welding Society, NCCER), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the American Welding Society\'s Certified Welder program pages and BLS OOH Welders, Cutters, Solderers, and Brazers (SOC 51-4121), May 2024 data.',
   lastReviewed: '2026-08',

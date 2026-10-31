@@ -6,7 +6,7 @@ import { guideArticles } from '../data/guides';
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
-  { label: 'Guides', href: '/guides' }
+  { label: 'Guides', href: '/guides/' }
 ];
 
 const SITE = 'https://testpreppilot.com';
@@ -48,27 +48,27 @@ const collections = [
     title: 'Plan and pass your study',
     blurb: 'Evidence-based study systems and exam-day routines that survive a full-time job.',
     links: [
-      { label: 'Study plan while working full-time', href: '/guides/study-plan-working-full-time' },
-      { label: 'Beat test anxiety on exam day', href: '/guides/beat-test-anxiety-exam-day' },
-      { label: 'How TestPrepPilot works', href: '/about' },
+      { label: 'Study plan while working full-time', href: '/guides/study-plan-working-full-time/' },
+      { label: 'Beat test anxiety on exam day', href: '/guides/beat-test-anxiety-exam-day/' },
+      { label: 'How TestPrepPilot works', href: '/about/' },
     ],
   },
   {
     title: 'Move a license across states',
     blurb: 'What reciprocity really means, and the traps that derail a relocation.',
     links: [
-      { label: 'License reciprocity explained', href: '/guides/license-reciprocity-across-state-lines' },
-      { label: 'State license guides', href: '/categories/real-estate' },
+      { label: 'License reciprocity explained', href: '/guides/license-reciprocity-across-state-lines/' },
+      { label: 'State license guides', href: '/categories/real-estate/' },
     ],
   },
   {
     title: 'Our standards & how we research',
     blurb: 'Why our roadmaps are independently researched and expert-verified.',
     links: [
-      { label: 'Research methodology', href: '/methodology' },
-      { label: 'Review network', href: '/reviewers' },
-      { label: 'Editorial policy', href: '/editorial-policy' },
-      { label: 'How we are funded', href: '/disclosure' },
+      { label: 'Research methodology', href: '/methodology/' },
+      { label: 'Review network', href: '/reviewers/' },
+      { label: 'Editorial policy', href: '/editorial-policy/' },
+      { label: 'How we are funded', href: '/disclosure/' },
     ],
   },
 ];
@@ -102,7 +102,7 @@ const collections = [
         <div class="articles-grid">
           {guideArticles.map((article) => (
             <article class="grid-article">
-              <a href={`/guides/${article.slug}`} class="article-link">
+              <a href={`/guides/${article.slug}/`} class="article-link">
                 <div class="article-meta">
                   <span class="category">{article.category}</span>
                   <span class="read">{article.readTime}</span>

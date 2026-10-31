@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'EdTech & teacher-certification desk',
     bio: 'We cover Google for Education certifications and educator-technology credentials. Format and fee facts come from Google for Education official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Google Certified Educator Level 1 exam structure, fees and delivery against Google for Education official pages; verified BLS teacher wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

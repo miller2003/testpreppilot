@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Notary, licensing & legal-support credentialing desk',
     bio: 'This New York notary public guide is compiled from the New York State Department of State, Division of Licensing Services notary pages, the NY Executive Law notary provisions, and the BLS Occupational Outlook Handbook (May 2024 data). NYS DOS does not publish pass rates for the notary public examination, and we state that plainly. Because BLS does not track notaries public as a distinct occupation, the salary section explains the fee-based structure of notary work rather than inventing wage figures.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the NYS DOS Division of Licensing Services notary public pages and the NY notary provisions of the Executive Law, with the BLS OOH used only for the surrounding occupations note (May 2024 data).',
   lastReviewed: '2026-08',

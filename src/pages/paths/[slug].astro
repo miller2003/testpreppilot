@@ -29,10 +29,10 @@ const seo = seoOverrides[`paths/${credential.slug}`] || null;
 // homepage that now 301s to it. A flagship guide should reach home in one hop.
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
-  { label: credential.name, href: `/paths/${credential.slug}` }
+  { label: credential.name, href: `/paths/${credential.slug}/` }
 ];
 
-const canonicalUrl = canonicalForm(`/paths/${credential.slug}`, SITE_URL);
+const canonicalUrl = canonicalForm(`/paths/${credential.slug}/`, SITE_URL);
 const description =
   seo?.description ||
   clampDesc(`${credential.tagline ? credential.tagline + ' ' : ''}${credential.name}: requirements, exam format, fees and eligibility, with official registration steps.`);

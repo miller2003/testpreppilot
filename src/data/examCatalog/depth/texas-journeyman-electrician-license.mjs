@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Skilled trades licensure desk',
     bio: 'The Texas journeyman electrician license facts below are drawn from the Texas Department of Licensing and Regulation (TDLR) electrician program requirements and the PSI candidate information bulletin for TDLR electrical examinations; where a fee or format detail is not confirmed on the official page, we say so plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation page for Electricians (May 2024 data), cited by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the TDLR electrician license requirements, the PSI candidate information bulletin, and the BLS OOH Electricians page (May 2024 data).',
   lastReviewed: '2026-08',

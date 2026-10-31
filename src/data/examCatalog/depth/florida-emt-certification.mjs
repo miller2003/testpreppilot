@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Emergency medical services certifications desk',
     bio: 'Florida EMT certification facts in this guide come from the Florida Department of Health Bureau of Emergency Medical Services pages (floridahealth.gov) and the National Registry of Emergency Medical Technicians (NREMT) exam materials, which are the official sources for the training requirement, the certification application, the fees, the exam, the renewal cycle and the retake rules. The Department publishes the fee schedule and the exam requirement but no cohort pass rate for the NREMT in Florida, and we state that plainly. Wage figures come from the BLS Occupational Outlook Handbook occupation page named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the Florida Department of Health Bureau of EMS EMT certification pages and fee schedule, the NREMT EMT examination materials, and the BLS OOH EMTs and Paramedics page (SOC 29-2042, May 2024).',
   lastReviewed: '2026-08',

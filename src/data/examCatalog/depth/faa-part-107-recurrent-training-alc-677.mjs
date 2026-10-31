@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Aviation & FAA certification desk',
     bio: 'This guide covers the FAA Part 107 Small Unmanned Aircraft Systems Recurrent Training course, FAA course code ALC-677, delivered free through the FAA Safety Team (FAASTeam) Learning Center at FAASafety.gov. Course eligibility, the 24-calendar-month aeronautical-knowledge recency requirement under 14 CFR 107.65, and the course completion process are verified against FAA official pages and FAA announcements. We state plainly that there is no BLS occupation specifically for small-UAS pilots, so no government wage figure is quoted for this training; the closest BLS categories cover manned aviation and do not isolate drone operations.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified ALC-677 eligibility, the free online course delivery through the FAASTeam Learning Center, and the 24-calendar-month recency requirement of 14 CFR 107.65 against FAA official pages and FAA news announcements.',
   lastReviewed: '2026-08',

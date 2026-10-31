@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Securities & financial licensing desk',
     bio: 'Series 9 structure comes from FINRA official pages and is revised with each exam update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Series 9 exam structure, co-requisites, and scoring against FINRA official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

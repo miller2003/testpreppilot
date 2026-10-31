@@ -6,7 +6,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'EMS & emergency-care certification desk',
     bio: 'Ohio EMT facts in this guide come from the Ohio Department of Public Safety, Division of Emergency Medical Services, and the National Registry of Emergency Medical Technicians (NREMT) exam materials, which are the official sources for the certification path, the exam structure and the renewal rules. No single current official pass rate for the EMT cognitive exam in Ohio was published in the materials we verified, so we state that plainly and report the published exam structure instead. Wage figures come from the BLS Occupational Outlook Handbook occupations named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the Ohio Division of EMS EMT certification pages, NREMT cognitive exam materials, and the BLS OOH EMTs and Paramedics page (SOC 29-2042 / 29-2043, May 2024).',
   lastReviewed: '2026-08',

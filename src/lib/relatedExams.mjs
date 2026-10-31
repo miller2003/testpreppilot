@@ -1,4 +1,4 @@
-import { allExams, categoryById } from '../data/examCatalog/index.mjs';
+import { listedExams as allExams, categoryById } from '../data/examCatalog/index.mjs';
 
 /**
  * Related-exam selection for /exams/<slug>.

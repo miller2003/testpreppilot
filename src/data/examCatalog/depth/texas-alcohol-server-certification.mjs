@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Alcohol responsibility & hospitality certifications desk',
     bio: 'Texas TABC facts in this guide come from the Texas Alcoholic Beverage Commission seller-server training program and TABC-approved provider pages, including the course length, the 25-question exam, the 70 percent passing standard, the two-year validity and the database reporting rule; the TABC publishes no pass rates, which we state plainly. Salary figures come from the BLS occupational series named by SOC code (May 2024).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Texas TABC seller-server training requirements, exam format and validity against TABC and approved-provider pages; verified BLS bartender wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

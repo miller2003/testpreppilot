@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'IT service management & ITSM desk',
     bio: 'We cover PeopleCert/Axelos ITIL 4 certifications. Format and fee facts come from PeopleCert official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the ITIL 4 CDS exam structure, scoring and prerequisites against PeopleCert official pages; verified BLS IT wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

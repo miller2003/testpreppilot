@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'California food-handler facts in this guide come from the California Health and Safety Code (SB 602/SB 603 law) and county health-department guidance, including the ANSI-accredited course requirement, the 70 percent passing standard, the three-year validity and the employer reimbursement rule; no pass-rate statistics are published, which we state plainly. Salary figures come from the BLS occupational series named by SOC code (May 2024).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the California Food Handler Card law, course and exam requirements and the employer-cost rule against the Health and Safety Code and county health-department pages; verified BLS food-service wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

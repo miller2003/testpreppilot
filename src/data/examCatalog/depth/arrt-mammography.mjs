@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Radiologic & medical imaging certifications desk',
     bio: 'The ARRT Mammography exam structure and scoring are drawn from the ARRT Examination Content Specifications and ARRT candidate materials, which are updated on a published revision cycle; ARRT publishes pass-rate statistics in its Annual Exam Report. Wage figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024). Where ARRT or BLS does not publish a figure, we say so plainly rather than estimating.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against ARRT Mammography candidate requirements and content specifications, and the BLS OOH Radiologic and MRI Technologists page (May 2024 data).',
   lastReviewed: '2026-08',

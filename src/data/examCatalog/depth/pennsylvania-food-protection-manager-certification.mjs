@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certification desk',
     bio: 'The Pennsylvania food protection manager certification facts below are drawn from the Pennsylvania Department of Agriculture Food Employee Certification Act (3 Pa C.S.A. 6501-6510), the PDA food employee certification guidance, and the ANAB (ANSI National Accreditation Board) food protection manager credentialing standards. Pennsylvania does not administer its own exam: candidates pass an ANAB-accredited food protection manager exam from an approved national program, and we describe that structure plainly. Wage figures come from the BLS Occupational Outlook Handbook, cited by SOC code with May 2024 data.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the PA Department of Agriculture Food Employee Certification Act and guidance, the ANAB food protection manager program accreditation standards, the PDA exemption and local-jurisdiction lists, and the BLS OOH Food Service Managers page (SOC 11-9051, May 2024).',
   lastReviewed: '2026-08',

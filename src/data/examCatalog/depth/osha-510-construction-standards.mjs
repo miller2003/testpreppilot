@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Workplace safety & compliance certifications desk',
     bio: 'This desk covers OSHA and workplace-safety credentials. Program structure and rules come from the official pages (OSHA Training Institute, authorized trainers), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against OSHA\'s 510 course pages and BLS OOH First-Line Supervisors of Construction Trades (SOC 47-1011), May 2024 data.',
   lastReviewed: '2026-08',

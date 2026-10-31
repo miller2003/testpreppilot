@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'We cover the Learn2Serve by 360training alcohol seller-server program. Course structure, passing scores and state-approval facts come from the Learn2Serve official pages and the state agencies that approve each course, and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Learn2Serve alcohol training structure, the typical passing-score requirement (70%, 72% in some states), the two-attempt exam policy, and the state-by-state delivery model against the Learn2Serve and 360training official pages; verified BLS bartender wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

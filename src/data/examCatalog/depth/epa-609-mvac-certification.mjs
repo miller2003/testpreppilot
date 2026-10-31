@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Skilled trades & manufacturing certifications desk',
     bio: 'This desk covers skilled-trade and environmental certifications. Program structure and rules come from the certifying body\'s official pages (EPA, Section 609 program), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the EPA Section 609 program pages and BLS OOH Automotive Service Technicians (SOC 49-3023), May 2024 data.',
   lastReviewed: '2026-08',

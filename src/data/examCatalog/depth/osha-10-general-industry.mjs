@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Workplace safety & compliance certifications desk',
     bio: 'This desk covers OSHA and workplace-safety credentials. Program structure and rules come from the official pages (OSHA Outreach Training Program, authorized training providers), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against OSHA\'s Outreach Training Program pages (10-hour general industry) and BLS OOH data for the production and warehouse occupations the training serves, May 2024.',
   lastReviewed: '2026-08',

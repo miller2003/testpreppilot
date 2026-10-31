@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Beverage & hospitality credentialing desk',
     bio: 'Cicerone certification structure comes from the Cicerone Certification Program official pages and is revised with each program update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Certified Beer Server exam structure and pricing against the Cicerone Certification Program official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

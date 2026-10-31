@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Environmental & hazardous-materials desk',
     bio: 'HAZWOPER structure and requirements come from OSHA standard 29 CFR 1910.120 and OSHA training pages, which are revised. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the 24-hour HAZWOPER training requirement and content against OSHA 29 CFR 1910.120; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

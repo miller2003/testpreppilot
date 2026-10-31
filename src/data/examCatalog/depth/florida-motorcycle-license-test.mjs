@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'FLHSMV motorcycle endorsement desk',
     bio: 'Florida motorcycle license facts are drawn from the Florida Department of Highway Safety and Motor Vehicles (FLHSMV) motorcycle endorsement pages, the Florida Rider Training Program (FRTP) and Motorcycle Safety Foundation (MSF) Basic RiderCourse materials, and the Official Florida Motorcycle Handbook. FLHSMV publishes the endorsement path and the course structure, but it does not publish pass rates for the motorcycle knowledge or skills tests, and we state that plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the FLHSMV motorcycle endorsement pages, the MSF Basic RiderCourse structure, the Florida Motorcycle Handbook, and the BLS OOH Delivery Truck Drivers and Driver/Sales Workers page (May 2024 data).',
   lastReviewed: '2026-08',

@@ -6,7 +6,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Personal care & service licensing desk',
     bio: 'California cosmetology facts in this guide come from the California Board of Barbering and Cosmetology (BBC) applicant pages and the PSI candidate information bulletin, which are the official sources for the written exam format, the training hours, the fees and the languages offered. The BBC publishes the exam format but no official pass rate, so we state that plainly. Wage figures come from the BLS Occupational Outlook Handbook occupation named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the California Board of Barbering and Cosmetology applicant and exam pages, the PSI California candidate bulletin, and the BLS OOH Barbers, Hairstylists, and Cosmetologists page (SOC 39-5012, May 2024).',
   lastReviewed: '2026-08',

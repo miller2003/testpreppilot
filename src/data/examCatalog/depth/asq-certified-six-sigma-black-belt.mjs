@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Quality, lean & six-sigma certifications desk',
     bio: 'This desk covers ASQ and quality certifications. Exam structure, fees and rules come from the certifying body\'s official pages (ASQ), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against ASQ\'s CSSBB program pages and exam FAQ, and BLS OOH Industrial Engineers (SOC 17-2112), May 2024 data.',
   lastReviewed: '2026-08',

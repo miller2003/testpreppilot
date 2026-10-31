@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Emergency management & public-safety desk',
     bio: 'We cover FEMA training programs and incident-command coursework. Format and fee facts come from FEMA Emergency Management Institute official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the IS-100.c format, completion requirements and free online delivery against FEMA EMI official pages; verified BLS emergency-management wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

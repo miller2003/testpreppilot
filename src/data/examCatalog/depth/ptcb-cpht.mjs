@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Allied-health & clinical-support certifications desk',
     bio: 'This desk covers allied-health certifications. Exam structure, fees and rules come from the certifying body\'s official pages (PTCB), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the PTCB Pharmacy Technician Certification Exam pages and BLS OOH Pharmacy Technicians (SOC 29-2052), May 2024 data.',
   lastReviewed: '2026-08',

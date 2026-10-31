@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Public safety & licensing desk',
     bio: 'This guide is compiled and maintained by our public-safety desk. Texas private security licensing is administered by the Texas Department of Public Safety (DPS) Private Security Bureau under Texas Occupations Code Chapter 1702, and applications run through the Texas Online Private Security (TOPS) portal; training hours, exam format, fees and renewal rules come from the DPS fee schedule and the DPS-published Level II training curriculum. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook (May 2024), named by SOC code. We state plainly where a figure is not published rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the Texas DPS Private Security Bureau requirements and fee schedule, the DPS Level II training course structure, the TOPS application guidance, and the BLS OOH Security Guards page (SOC 33-9032, May 2024 data).',
   lastReviewed: '2026-08',

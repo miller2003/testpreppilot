@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, data & analytics certifications desk',
     bio: 'We cover AWS certifications. Format and fee facts come from AWS official pages and are revised frequently; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the AWS ML Engineer Associate exam structure, scoring and fees against AWS official pages; verified BLS data-science wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

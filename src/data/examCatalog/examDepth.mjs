@@ -23,7 +23,7 @@
  *     name: 'Dana Whitfield, CPA',        // real named human
  *     title: 'Former state board examiner',
  *     bio: '1-2 sentences establishing why this person can speak to the exam.',
- *     url: '/about#dana-whitfield'        // optional author page
+ *     url: '/about/#dana-whitfield'        // optional author page
  *   },
  *   reviewedBy: 'Marcus Ellery, EA',      // optional second pair of eyes
  *   lastReviewed: '2026-08',              // YYYY-MM — surfaced next to the byline

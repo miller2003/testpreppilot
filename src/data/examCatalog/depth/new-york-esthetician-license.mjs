@@ -8,7 +8,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Licensed professions & wellness desk',
     bio: 'This guide is compiled and maintained by our licensed-professions desk. New York esthetician licensing is administered by the New York State Department of State, Division of Licensing Services, under the Appearance Enhancement licensing framework, with applications and exam scheduling handled through the online Appearance Enhancement and Barber Licensing System; exam format, fees, education hours, renewal and retake rules come from the NY DOS official pages. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook (May 2024), named by SOC code. We state plainly where a figure is not published rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the NY Department of State Esthetics application page, the NY DOS examination policies, the NY DOS practical exam information, and the BLS OOH Skincare Specialists page (SOC 39-5094, May 2024 data).',
   lastReviewed: '2026-08',

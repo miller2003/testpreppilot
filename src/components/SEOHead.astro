@@ -45,8 +45,10 @@ const finalOgTitle = ogTitle || title;
     whether Google (and, by extension, AI Overviews) may quote the page at
     length. Without them the default snippet cap truncates exactly the
     number-dense first paragraphs an AI answer needs to lift. */}
-<meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"} />
-<meta name="googlebot" content={noindex ? "noindex, nofollow" : "index, follow, max-snippet:-1, max-image-preview:large"} />
+{/* noindex pages keep `follow`: a deindexed guide still passes its links on
+    to the pages that remain indexed, instead of becoming a dead end. */}
+<meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"} />
+<meta name="googlebot" content={noindex ? "noindex, follow" : "index, follow, max-snippet:-1, max-image-preview:large"} />
 
 {/* Fonts: preconnect + stylesheet link, discovered by the preload scanner.
     Previously an @import inside the site CSS, which serialised the request

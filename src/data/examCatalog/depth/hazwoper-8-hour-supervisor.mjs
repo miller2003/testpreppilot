@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Workplace safety & OSHA training desk',
     bio: 'This desk covers OSHA and workplace-safety training credentials. Course structure and requirements come from the governing regulation — 29 CFR 1910.120 for HAZWOPER, with the parallel construction standard at 29 CFR 1926.65 — and from the OSHA page for the standard; provider pricing and assessment formats come from the individual training providers. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the HAZWOPER supervisor and annual refresher training requirements against the text of 29 CFR 1910.120(e)(4) and (e)(8), the parallel construction provision, and provider course formats; wage context against BLS OOH Hazardous Materials Removal Workers (SOC 47-4041), May 2024 data.',
   lastReviewed: '2026-08',

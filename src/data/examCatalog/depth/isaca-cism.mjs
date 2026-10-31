@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This desk covers ISACA and other IT certifications. Exam structure, fees and rules come from the certifying body\'s official pages (ISACA), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against ISACA\'s CISM program pages and BLS OOH Computer and Information Systems Managers (SOC 11-3021), May 2024 data.',
   lastReviewed: '2026-08',

@@ -6,7 +6,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Aviation & FAA certification desk',
     bio: 'This guide is compiled and maintained by our aviation desk. FAA knowledge-test structure comes from the FAA Airman Knowledge Testing Matrix and the Commercial Pilot Airplane Airman Certification Standards (ACS), which we track by edition. The FAA publishes no pass-rate statistics, and we state that plainly rather than repeating industry guesses. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Exam code, question count, time allotment and passing grade were taken from the current FAA Airman Knowledge Testing Matrix (revised 10/22/25) and the Commercial Pilot Airplane ACS; salary from the BLS Occupational Outlook Handbook May 2024 release.',
   lastReviewed: '2026-08',

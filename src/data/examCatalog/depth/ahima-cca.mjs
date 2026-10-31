@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Health-information & clinical-support certifications desk',
     bio: 'This desk covers health-information certifications. Exam structure, fees and rules come from the certifying body\'s official pages (AHIMA), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against AHIMA\'s Certified Coding Associate (CCA) program pages and BLS OOH Medical Records Specialists (SOC 29-2072), May 2024 data.',
   lastReviewed: '2026-08',

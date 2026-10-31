@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Public safety & law enforcement hiring desk',
     bio: 'This desk covers municipal and state law enforcement hiring exams. Exam structure, eligibility and process details come from the administering agency\u2019s official pages — for the NYPD that is the Department of Citywide Administrative Services (DCAS) and NYPD recruitment — and are revised with each exam announcement. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code, with the caveat that BLS classifies workers by job duties rather than by employer. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the DCAS-administered NYPD Police Officer written exam, the multi-stage hiring process and the Job Standards Test format against official NYC/DCAS and NYPD recruitment pages; wage context against BLS OOH Police and Detectives (SOC 33-3051), May 2024 data.',
   lastReviewed: '2026-08',

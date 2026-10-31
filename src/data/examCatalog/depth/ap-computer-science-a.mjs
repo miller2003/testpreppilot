@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Advanced Placement & college-credit desk',
     bio: 'The AP Computer Science A exam structure (question counts, timing, scoring) is drawn from the College Board official AP Computer Science A course and exam description, which is revised on a published cycle; the College Board publishes annual AP score distributions, and we cite that practice. College-credit outcomes and the exam fee are stated as of the current College Board program page.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the College Board official AP Computer Science A course and exam description (current edition), the annual AP score distribution report, and the current College Board exam-day policy pages.',
   lastReviewed: '2026-08',

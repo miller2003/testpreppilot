@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Veterinary & animal-care certifications desk',
     bio: 'This desk covers veterinary-support credentials. Exam structure, fees and rules come from the certifying body\'s official pages (NAVTA), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the NAVTA Approved Veterinary Assistant (AVA) program pages and BLS OOH Veterinary Assistants (SOC 31-9096), May 2024 data.',
   lastReviewed: '2026-08',

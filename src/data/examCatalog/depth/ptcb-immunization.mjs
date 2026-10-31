@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Pharmacy-technician & allied-health certifications desk',
     bio: 'This desk covers pharmacy-technician credentials. Exam structure, the 0-400 scaled scoring model, fees, eligibility pathways and the renewal relationship to the CPhT come from the Pharmacy Technician Certification Board (PTCB) certificate pages, which are revised on a published cycle; we state plainly when the certificate itself does not require renewal and when the underlying CPhT requirement does. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook occupation pharmacy technicians, named by SOC code 29-2052, with the caveat that BLS classifies workers by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Immunization Administration Certificate exam format (60 questions, 1 hour 20 minutes of testing), the $89 fee, the passing scaled score of 300 on the 0-400 scale, the no-renewal policy, and the active-CPhT plus PTCB-recognized-program eligibility requirements against ptcb.org and the BLS May 2024 pharmacy-technician profile.',
   lastReviewed: '2026-08',

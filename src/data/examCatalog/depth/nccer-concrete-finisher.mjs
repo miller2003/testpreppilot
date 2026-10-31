@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Trades & skilled-licensure desk',
     bio: 'This guide is compiled and maintained by our trades desk. NCCER credentials are modular, combining written module tests with hands-on performance verification, and the Concrete Finisher journey-level assessment is a separate two-hour written test with a corresponding hands-on performance verification, so we state plainly what the NCCER assessment itself verifies versus what the broader training pathway involves. The assessment facts come from NCCER\u2019s official Concrete Finisher assessment specification sheet. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the NCCER Concrete Finisher assessment specification sheet, the NCCER Concrete Finishing (1st edition) curriculum module list, and BLS data for SOC 47-2051 (May 2024).',
   lastReviewed: '2026-08',

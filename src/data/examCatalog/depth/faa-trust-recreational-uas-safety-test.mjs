@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Aviation & unmanned aircraft desk',
     bio: 'FAA TRUST program structure comes from the FAA official UAS pages and is revised with each update. Wage figures come from the BLS OEWS series named by code, with the occupational fit noted since BLS has no dedicated uncrewed-aircraft code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the FAA TRUST program, provider model, and testing requirements against FAA official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

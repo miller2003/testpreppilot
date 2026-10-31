@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud-native & Kubernetes certifications desk',
     bio: 'This guide is compiled and maintained by our cloud-native certifications desk. KCNA exam structure, domain weights, passing score, fee, retake entitlement and validity come from the CNCF certification page and the Linux Foundation candidate FAQ, which is the authoritative source for Linux Foundation exam policy. We state plainly when a pass rate is not published rather than quoting third-party estimates. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Exam duration, question count, passing score, fee, retake entitlement, domain weights and three-year validity were checked against the official CNCF KCNA page and the Linux Foundation KCNA FAQ.',
   lastReviewed: '2026-08',

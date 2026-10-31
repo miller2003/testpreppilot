@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Allied-health & surgical support certifications desk',
     bio: 'This guide is compiled and maintained by our allied-health desk. NCCT exam format, the scaled scoring model, fees, retake policy and recertification requirements are verified against the NCCT detailed test plan and candidate materials, and NCCT\u2019s published route-specific first-time pass rates are cited as the official source where they exist. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook occupation surgical technologists, named by SOC code 29-2055, with the caveat that BLS classifies workers by job duties rather than by certificate. Fees and test plans change; we date everything we quote.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the TS-C exam format (200 total questions, 175 scored and 25 unscored pretest, in 4 hours), the $199 application fee, the scaled-70 passing standard, annual recertification with 14 CE hours, and the BLS May 2024 surgical-technologist median of $62,830 against the NCCT detailed test plan and BLS materials.',
   lastReviewed: '2026-08',

@@ -17,7 +17,7 @@
 //     it can never change a figure.
 //   · A credential is an entry ticket to an occupation, not a pay guarantee.
 
-import { allExams } from './index.mjs';
+import { allExams, listedExams } from './index.mjs';
 import { examDepth } from './examDepth.mjs';
 import { examCategories } from './categories.mjs';
 
@@ -30,9 +30,12 @@ export function money(s) {
   return m ? parseFloat(m[1].replace(/,/g, '')) : null;
 }
 
-function allRows() {
+// Rankings list indexed guides only. `includeDeindexed` exists for the /best
+// routes of fields whose guides were deindexed: those pages keep their URL
+// (noindex) rather than turning into a 404.
+function allRows({ includeDeindexed = false } = {}) {
   const out = [];
-  for (const e of allExams) {
+  for (const e of includeDeindexed ? allExams : listedExams) {
     const dep = examDepth[e.slug];
     if (!dep) continue;
     const payLine = String(dep.salaryOutlook?.headline || '');
@@ -49,7 +52,7 @@ function allRows() {
       // /exams/<slug> — building the URL from the slug alone sent /best and the
       // category tables to a 404 for CPA, EA, OSHA 10/30, EPA 608 and the
       // TX/CA/FL real-estate licences.
-      url: e.href || `/exams/${e.slug}`,
+      url: e.href || `/exams/${e.slug}/`,
       pay,
       payLine,
       passLine,
@@ -67,8 +70,8 @@ export function payRankedAll(limit) {
 }
 
 /** Ranking restricted to one credential field. */
-export function payRankedField(categoryId, limit) {
-  const rows = allRows().filter((r) => r.category === categoryId);
+export function payRankedField(categoryId, limit, opts) {
+  const rows = allRows(opts).filter((r) => r.category === categoryId);
   return limit ? rows.slice(0, limit) : rows;
 }
 
@@ -76,9 +79,9 @@ export function payRankedField(categoryId, limit) {
  * One entry per field with enough qualifying credentials to justify its own
  * ranking page. Fields below the threshold get no page rather than a thin one.
  */
-export function rankedFields(minRows = 5) {
+export function rankedFields(minRows = 5, opts) {
   const byCat = new Map();
-  for (const r of allRows()) {
+  for (const r of allRows(opts)) {
     if (!byCat.has(r.category)) byCat.set(r.category, []);
     byCat.get(r.category).push(r);
   }

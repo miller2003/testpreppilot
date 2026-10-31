@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Real estate licensure desk',
     bio: 'The New York real estate salesperson exam facts below are drawn from the New York Department of State (DOS) Division of Licensing Services requirements and from public pass-rate figures the DOS Real Estate Board reports in its published meeting minutes; where a figure is not published, we state that plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation page for Real Estate Brokers and Sales Agents (May 2024 data), cited by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the NY DOS Division of Licensing Services salesperson requirements, the DOS Real Estate Board meeting minutes, and the BLS OOH Real Estate Brokers and Sales Agents page (May 2024 data).',
   lastReviewed: '2026-08',

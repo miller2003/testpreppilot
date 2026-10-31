@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Financial planning certification desk',
     bio: 'CFP exam structure and requirements come from the CFP Board official pages and are revised with each exam-window update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the CFP exam structure, pass-rate reporting, and requirements against CFP Board official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'English-language assessment desk',
     bio: 'The PTE Academic test structure (question counts, timing, scoring) is drawn from Pearson official PTE materials, which are revised on a published cycle. There is no single pass rate because PTE has no pass/fail standard — institutions set their own cut scores, and we explain that plainly. Score-use and fee information is stated as of the current Pearson program page.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against Pearson official PTE Academic test content and scoring materials (current program edition).',
   lastReviewed: '2026-08',

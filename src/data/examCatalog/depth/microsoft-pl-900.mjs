@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, data & analytics certifications desk',
     bio: 'We cover Microsoft fundamentals and role-based certifications. Format and fee facts come from Microsoft Learn official pages and are revised frequently; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the PL-900 exam structure, scoring and fees against Microsoft Learn official pages; verified BLS management-analyst wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

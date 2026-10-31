@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'College admissions & standardized-testing desk',
     bio: 'We cover ACT\u2019s PreACT suite for grades 8-10. Format and fee facts come from ACT official pages and are revised; wage and education-earnings figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the PreACT format, score scale and school-administered delivery against ACT official pages; verified BLS education-and-earnings data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

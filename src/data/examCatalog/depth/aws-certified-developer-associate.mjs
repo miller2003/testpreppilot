@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This desk covers cloud and IT certifications. Exam structure, fees and rules come from the vendor certification pages (AWS, Google, CompTIA, Cisco, ISC2), which are revised and sometimes retired on fixed schedules; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against AWS\'s Developer - Associate exam guide (DVA-C02) and BLS OOH Software Developers (SOC 15-1252), May 2024 data.',
   lastReviewed: '2026-08',

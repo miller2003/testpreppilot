@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Allied health & medical imaging certifications desk',
     bio: 'This guide is compiled and maintained by our allied-health and medical-imaging desk. ARRT exam structure, question counts, timing, passing score, fees and clinical-experience requirements come from the ARRT postprimary handbooks and content specifications, which are revised on a published schedule, and ARRT publishes annual first-time pass rates in its Annual Report of Exams, which we cite directly. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Postprimary exam structure, question counts, appointment time, scaled passing score, application fees, clinical-experience requirements and the published first-time pass rate were checked against ARRT handbooks, content specifications and the 2024 Annual Report of Exams.',
   lastReviewed: '2026-08',

@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Workforce readiness & career-certification desk',
     bio: 'We cover ACT WorkKeys and the National Career Readiness Certificate. Format and fee facts come from ACT official pages and are revised; wage and employment figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the WorkKeys assessment structure, NCRC tiers and scoring against ACT official pages; verified BLS education-and-earnings data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

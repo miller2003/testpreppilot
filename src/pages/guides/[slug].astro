@@ -14,11 +14,11 @@ export function getStaticPaths() {
 
 const { article } = Astro.props;
 const SITE = 'https://testpreppilot.com';
-const canonicalUrl = new URL(`/guides/${article.slug}`, Astro.site || SITE).toString();
+const canonicalUrl = new URL(`/guides/${article.slug}/`, Astro.site || SITE).toString();
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
-  { label: 'Guides', href: '/guides' },
-  { label: article.title, href: `/guides/${article.slug}` },
+  { label: 'Guides', href: '/guides/' },
+  { label: article.title, href: `/guides/${article.slug}/` },
 ];
 
 // ── Article schema (GEO step 3) ────────────────────────────────────────
@@ -125,7 +125,7 @@ const faqSchema = {
             <li><a href={r.href}>{r.label} &rarr;</a></li>
           ))}
         </ul>
-        <a href="/guides" class="back-link">All guides &rarr;</a>
+        <a href="/guides/" class="back-link">All guides &rarr;</a>
       </aside>
     </main>
   </div>

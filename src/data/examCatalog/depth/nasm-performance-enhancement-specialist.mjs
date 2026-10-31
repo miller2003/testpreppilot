@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Fitness & personal-training certification desk',
     bio: 'This guide is compiled and maintained by our fitness-certification desk. NASM PES exam structure, scoring, pricing and validity come from the National Academy of Sports Medicine (NASM) official pages and the NASM store, which we verified directly; the credential\'s no-expiry status is NASM\'s own published statement. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate and that its wage data reflects employer wages, understating independent trainers.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the 100-question, 90-minute format, the 70% passing score, the open-book and three-attempt policy, the NASM pricing plans, and the PES no-expiry statement against NASM\'s official pages.',
   lastReviewed: '2026-08',

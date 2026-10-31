@@ -7,7 +7,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Trades & skilled-licensure desk',
     bio: 'This guide is compiled and maintained by our trades desk. NCCER credentials are modular — a written test plus a hands-on performance profile per module — and the credential is part of a broader pathway that also involves apprenticeship hours and, in many states, separate state or employer requirements, so we state plainly what NCCER itself certifies versus what the pathway requires. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Credential structure, module format and pass-threshold conventions were taken from NCCER\u2019s official program materials, the NCCER Masonry Level Two test specification (4th Edition, released March 2024), and the Masonry Level One entry-level assessment specifications.',
   lastReviewed: '2026-08',

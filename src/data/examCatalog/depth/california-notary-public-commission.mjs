@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Notary public licensing desk',
     bio: 'The California notary public exam facts below are drawn from the California Secretary of State notary public requirements, the SOS notary regulations, and the exam administrator CPS HR Consulting; where a figure is not published by the state, we say so plainly. Salary figures come from the closest official BLS data to the notary role, which is the Legal Support Workers, All Other line in the BLS Occupational Outlook Handbook data for occupations not covered in detail (May 2024 data), cited by SOC code, with the mismatch stated honestly.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the CA Secretary of State notary public requirements and regulations, the CPS HR exam information, and the BLS OOH Data for Occupations Not Covered in Detail page (SOC 23-2099, May 2024 data).',
   lastReviewed: '2026-08',

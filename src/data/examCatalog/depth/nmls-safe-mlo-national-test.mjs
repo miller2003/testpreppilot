@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Mortgage & financial services licensing desk',
     bio: 'This desk covers mortgage and financial-licensing exams. Exam structure, fees and rules come from the regulator\'s official pages (NMLS, SAFE Act, state agencies), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the NMLS SAFE Mortgage Loan Originator national test page and BLS OOH Loan Officers (SOC 13-2072), May 2024 data.',
   lastReviewed: '2026-08',

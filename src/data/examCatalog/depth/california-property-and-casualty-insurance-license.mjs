@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Insurance & financial licensure desk',
     bio: 'This guide is compiled and maintained by our insurance-licensure desk. California insurance producer licensing is administered by the California Department of Insurance (CDI), with examinations delivered by PSI Services; exam format, passing scores, fees, prelicensing education and renewal rules come from the CDI official pages, including the CDI examination time-and-question chart and the CDI fee schedule. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook (May 2024), named by SOC code. We state plainly where a figure is not published rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the CDI Examinations: Time Limit and Number of Questions page, the CDI schedule of fees, the CDI non-resident and resident application procedures for the Casualty Broker-Agent license, the AB 943 prelicensing education change, and the BLS OOH Insurance Sales Agents page (SOC 41-3021, May 2024 data).',
   lastReviewed: '2026-08',

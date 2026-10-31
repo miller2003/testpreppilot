@@ -6,7 +6,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Allied health & nurse-aide certification desk',
     bio: 'Pennsylvania CNA facts in this guide come from the Pennsylvania Department of Health Nurse Aide pages and the Credentia Pennsylvania candidate handbook, which are the official sources for the written exam format, the skills evaluation, the fees, the three-attempt rule and the renewal cycle. The Pennsylvania Department of Health does not publish a pass rate for the nurse aide competency evaluation, so we state that plainly and report the published structure of the exam instead. Wage figures come from the BLS Occupational Outlook Handbook occupation named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the PA Department of Health nurse aide testing pages, the Credentia PA candidate handbook and exam-fee article, and the BLS OOH Nursing Assistants page (SOC 31-1131, May 2024).',
   lastReviewed: '2026-08',

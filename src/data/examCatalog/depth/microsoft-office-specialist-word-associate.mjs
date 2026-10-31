@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Office productivity & desktop-applications desk',
     bio: 'We cover Microsoft Office Specialist certifications. Format and fee facts come from Microsoft/Certiport official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the MOS Word Associate (MO-100) exam structure, scoring and fees against Certiport/Microsoft official pages; verified BLS wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

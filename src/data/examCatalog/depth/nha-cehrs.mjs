@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Allied-health certification desk',
     bio: 'This guide is compiled and maintained by our allied-health desk. CEHRS exam structure, fees, eligibility and renewal terms come from the National Healthcareer Association (NHA) official pages and the NHA Candidate Handbook; pass rates come from NHA\'s published annual pass-rate reports, which are the authoritative source. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the CEHRS 100-question format, 390/500 scaled passing score, exam fee, two-year renewal with 10 CE credits, and the 2024 pass rate of 68.81% against NHA\'s official pages and published pass-rate report.',
   lastReviewed: '2026-08',

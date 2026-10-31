@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Radiologic & medical imaging certifications desk',
     bio: 'The ARRT CT exam structure (question count, time, scoring) is drawn from the ARRT Examination Content Specifications and the ARRT Annual Exam Report, which are updated on a published revision cycle. Wage figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024). Where ARRT or BLS does not publish a figure, we say so plainly rather than estimating.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the ARRT Computed Tomography content specifications (board-approved 2025, effective September 2026) and the ARRT Annual Exam Report pass-rate data (2024).',
   lastReviewed: '2026-08',

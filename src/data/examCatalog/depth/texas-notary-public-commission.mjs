@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Notary public licensing desk',
     bio: 'The Texas notary public commission facts below are drawn from the Texas Secretary of State notary public program, including the notary education and testing requirement added by Senate Bill 693 effective January 1, 2026, and the SOS forms and fees page; where a detail is not confirmed on the official page, we say so plainly. Salary figures come from the closest official BLS data to the notary role, which is the Legal Support Workers, All Other line in the BLS Occupational Outlook Handbook data for occupations not covered in detail (May 2024 data), cited by SOC code, with the mismatch stated honestly.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the Texas Secretary of State notary forms and fees page, the SB 693 notary education requirement, and the BLS OOH Data for Occupations Not Covered in Detail page (SOC 23-2099, May 2024 data).',
   lastReviewed: '2026-08',

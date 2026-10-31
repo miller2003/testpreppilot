@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cybersecurity & offensive-security desk',
     bio: 'We cover OffSec certifications for penetration testing. Format and fee facts come from OffSec official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the OSCP exam structure, scoring, fees and course requirements against OffSec official pages; verified BLS cybersecurity wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

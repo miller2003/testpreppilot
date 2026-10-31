@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Allied health & health-information certifications desk',
     bio: 'This guide is compiled and maintained by our allied-health and health-information desk. AHIMA exam structure, question counts, timing, passing score, fees, retake rules and renewal requirements come from AHIMA\u2019s official certification pages, and AHIMA is one of the few bodies in this category that publishes annual first-time pass rates, which we cite directly from its certification pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Question count, exam duration, scaled passing score, member and non-member fees, retake window, renewal cycle and published first-time pass rates were checked against the official AHIMA CCS certification page.',
   lastReviewed: '2026-08',

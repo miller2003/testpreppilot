@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Skilled trades licensing desk',
     bio: 'Florida electrician licensing facts in this guide come from the Florida Department of Business and Professional Regulation Electrical Contractors Licensing Board pages and the local Construction Trades Qualifying Boards, because the honest structural fact is that Florida licenses electrical contractors at the state level and journeyman electricians at the local level, with no statewide journeyman license. Where a local detail is not confirmed on an official page, we say so plainly and direct you to the local board. Wage figures come from the BLS Occupational Outlook Handbook occupation page named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the DBPR Electrical Contractors Licensing Board pages, the local Construction Trades Qualifying Board structures for Florida counties, and the BLS OOH Electricians page (SOC 47-2111, May 2024).',
   lastReviewed: '2026-08',

@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Public service & civil-service testing desk',
     bio: 'We cover New York City civil-service examinations administered by DCAS. Format and fee facts come from NYC DCAS official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the NYC DCAS exam application process, format and appointment requirements against DCAS official pages; verified BLS public-sector wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

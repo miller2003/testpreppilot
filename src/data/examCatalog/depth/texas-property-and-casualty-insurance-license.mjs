@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Insurance & financial licensure desk',
     bio: 'This guide is compiled and maintained by our insurance-licensure desk. Texas insurance producer licensing is administered by the Texas Department of Insurance (TDI), with examinations delivered by Pearson VUE; exam format, fees, passing scores and retake rules come from the Pearson VUE Texas Insurance Licensing Candidate Handbook, and Texas is one of the states that publishes exam pass rates, reported by Pearson VUE on behalf of TDI. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook (May 2024), named by SOC code. We state plainly where a figure is not published rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the Pearson VUE Texas Insurance Licensing Candidate Handbook (124400), the Pearson VUE Texas insurance exam pass-rate reports (June 2024 and September 2025), the TDI be-an-agent page, and the BLS OOH Insurance Sales Agents page (SOC 41-3021, May 2024 data).',
   lastReviewed: '2026-08',

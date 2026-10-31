@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'School admissions & gifted-education testing desk',
     bio: 'We cover ability tests used in school admissions and gifted programs, including the OLSAT-8. Format and fee facts come from the test publishers and school policies and are revised; wage and education-earnings figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the OLSAT-8 structure, scoring and school-administered delivery against the publisher and school-district policies; verified BLS education-and-earnings data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

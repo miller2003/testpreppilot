@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Insurance & financial services designations desk',
     bio: 'This desk covers professional designations awarded by The American College and other financial-services educators. Program structure, course counts and grading standards come from the issuing institution\u2019s official program pages and student handbook, which were revised in April 2026; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When the College does not publish a figure, such as a program pass rate, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the CLU program structure and April 1, 2026 curriculum change against The American College\u2019s CLU program page and tuition schedule, and wage context against BLS OOH Insurance Sales Agents (SOC 41-3021) and Insurance Underwriters (SOC 13-2053), May 2024 data.',
   lastReviewed: '2026-08',

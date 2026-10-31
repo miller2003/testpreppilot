@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'Texas food-handler facts in this guide come from the Texas DSHS food-handler program and the Texas Food Establishment Rules, including the approved-provider requirement, the 70 percent passing standard, the two-year validity and the employer-recordkeeping rule; no pass-rate statistics are published, which we state plainly. Salary figures come from the BLS occupational series named by SOC code (May 2024).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Texas DSHS food-handler training requirements, the approved-provider list, exam formats and the two-year validity against DSHS and approved-provider pages; verified BLS food-service wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Commercial driving & transportation desk',
     bio: 'Texas CDL facts in this guide come from the official Texas DPS commercial-driver-license pages and the DPS fee schedule, including the knowledge-test structure, the 80 percent passing standard, the CLP requirements, the ELDT requirement and the fees; DPS does not publish pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the Texas DPS commercial-driver-license pages, the DPS driver-license fee schedule and the BLS OOH Heavy and Tractor-trailer Truck Drivers page (May 2024 data).',
   lastReviewed: '2026-08',

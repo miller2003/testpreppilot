@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Food safety certification desk',
     bio: 'The Texas food protection manager certification facts below are drawn from the Texas Department of State Health Services (DSHS) food manager certification requirements and the published exam formats of the ANSI-accredited providers (including ServSafe and the Texas FoodGuard exam); where a provider price or format detail varies, we say so plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation page for Food Service Managers (May 2024 data), cited by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the Texas DSHS food protection manager requirements, the ANSI-accredited provider exam formats, and the BLS OOH Food Service Managers page (May 2024 data).',
   lastReviewed: '2026-08',

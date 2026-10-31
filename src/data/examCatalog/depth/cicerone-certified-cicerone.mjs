@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Food, beverage & hospitality certification desk',
     bio: 'This guide is compiled and maintained by our food-and-beverage desk. Certified Cicerone exam structure, scoring, fees and pass-rate information come from the Cicerone Certification Program\'s official pages and support centre; the pass rate is the figure Cicerone itself publishes in its FAQ, which we verified. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties and its bartender wage data excludes tips.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the three-part exam format (written, tasting, demonstration), the 80% overall / 70% tasting passing standard, the published fee schedule, and the pass rate Cicerone states in its own FAQ.',
   lastReviewed: '2026-08',

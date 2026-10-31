@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Office productivity & desktop-applications desk',
     bio: 'We cover Microsoft Office Specialist certifications. Format, scoring and fee facts come from Microsoft/Certiport official pages and are revised — the PowerPoint Associate exam moved from MO-300 (Office 2019) to MO-310 (Microsoft 365 Apps), and this page reflects the current MO-310 version. Wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the MOS PowerPoint Associate (MO-310) exam structure, scoring and fees against Microsoft Learn/Certiport official pages, including the performance-based project format and 50-minute allowance; verified BLS wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

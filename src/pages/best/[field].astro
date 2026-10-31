@@ -12,19 +12,27 @@ import { payRankedField, rankedFields, RANK_METHOD_NOTE } from '../../lib/payRan
 import { releases } from '../../data/examCatalog/release-manifest.mjs';
 
 export function getStaticPaths() {
-  return rankedFields(5).map((f) => ({
-    params: { field: f.id },
-    props: { fieldId: f.id, fieldName: f.name, fieldTotal: f.rows.length },
-  }));
+  // A field that no longer qualifies once deindexed guides are left out keeps
+  // its page (noindex, ranking its original guides) instead of becoming a 404.
+  const listed = new Map(rankedFields(5).map((f) => [f.id, f]));
+  return rankedFields(5, { includeDeindexed: true }).map((f) => {
+    const isListed = listed.has(f.id);
+    const field = listed.get(f.id) || f;
+    return {
+      params: { field: f.id },
+      props: { fieldId: f.id, fieldName: field.name, fieldTotal: field.rows.length, isListed },
+    };
+  });
 }
 
-const { fieldId, fieldName, fieldTotal } = Astro.props as {
+const { fieldId, fieldName, fieldTotal, isListed } = Astro.props as {
   fieldId: string;
   fieldName: string;
   fieldTotal: number;
+  isListed: boolean;
 };
 
-const rows = payRankedField(fieldId);
+const rows = payRankedField(fieldId, undefined, { includeDeindexed: !isListed });
 const siteWide = rankedFields(5);
 const newestRelease = Object.values(releases).sort().at(-1) as string;
 
@@ -109,12 +117,13 @@ const webPageSchema = {
   ogImage={`/og/cat-${fieldId}.png`}
   dateModified={newestRelease}
   schema={itemListSchema}
+  noindex={!isListed}
 >
   <BreadcrumbNav
     items={[
       { label: 'Home', href: '/' },
-      { label: 'Rankings', href: '/best' },
-      { label: fieldName, href: `/best/${fieldId}` },
+      { label: 'Rankings', href: '/best/' },
+      { label: fieldName, href: `/best/${fieldId}/` },
     ]}
   />
 
@@ -192,10 +201,10 @@ const webPageSchema = {
           whichever view matches the question you are answering.
         </p>
         <ul class="field-links">
-          <li><a href="/best">All fields, site-wide ranking <span class="count">{siteWide.reduce((a, f) => a + f.rows.length, 0)} ranked</span></a></li>
+          <li><a href="/best/">All fields, site-wide ranking <span class="count">{siteWide.reduce((a, f) => a + f.rows.length, 0)} ranked</span></a></li>
           {siteWide.filter((f) => f.id !== fieldId).map((f) => (
             <li>
-              <a href={`/best/${f.id}`}>{f.name} <span class="count">{f.rows.length} ranked</span></a>
+              <a href={`/best/${f.id}/`}>{f.name} <span class="count">{f.rows.length} ranked</span></a>
             </li>
           ))}
         </ul>

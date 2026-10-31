@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Insurance licensing & producer career desk',
     bio: 'This New York life and health insurance producer guide is compiled from the New York State Department of Financial Services licensing pages, the PSI candidate information for the New York insurance exams, and the BLS Occupational Outlook Handbook (May 2024 data). New York DFS publishes no pass rates for the licensing exams, and private estimates circulating online are labeled as such. Fees, question counts, and retake rules come from the official pages and should be confirmed there before registering.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the NYS DFS insurance agent and broker licensing pages, the PSI New York insurance exam candidate information, and the BLS OOH Insurance Sales Agents page (May 2024 data).',
   lastReviewed: '2026-08',

@@ -7,7 +7,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This guide is compiled and maintained by our IT-certifications desk. Vendor exams in this space are revised and retired frequently, so we track the objectives document by its published exam series code and launch date, and we say plainly when a version is heading for retirement — the single most common way candidates waste money here is buying a course written for a superseded blueprint. Fees, scoring, retake rules and renewal terms come from CompTIA’s own certification and policy pages, not from resellers. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies workers by job duties rather than by certificate. Where a number is not published — a pass rate, for instance — we say so instead of estimating one.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Exam code, launch date, question count, duration, passing score and domain weightings were taken from CompTIA’s current Network+ certification page (V9 / N10-009); retake and renewal terms from the CompTIA Candidate Agreement and CompTIA’s published continuing-education fee schedule; wages from the BLS Occupational Outlook Handbook, May 2024 data.',
   lastReviewed: '2026-08',

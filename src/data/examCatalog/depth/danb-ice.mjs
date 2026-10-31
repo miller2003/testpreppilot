@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Dental & allied-health certifications desk',
     bio: 'This desk covers dental-assisting certifications. Exam structure, fees and rules come from the certifying body\'s official pages (DANB), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the DANB Infection Control (ICE) exam pages and BLS OOH Dental Assistants (SOC 31-9091), May 2024 data.',
   lastReviewed: '2026-08',

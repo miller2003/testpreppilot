@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This desk covers ISC2 and other cybersecurity certifications. Exam structure, fees and rules come from the certifying body\'s official pages, which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against ISC2\'s CISSP exam page and exam outline, and BLS OOH Information Security Analysts (SOC 15-1212), May 2024 data.',
   lastReviewed: '2026-08',

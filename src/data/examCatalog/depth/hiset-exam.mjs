@@ -6,7 +6,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'High school equivalency & adult education desk',
     bio: 'This guide is compiled and maintained by our adult-education desk. HiSET structure and scoring come from ETS, which develops and administers the HiSET program, and from named state adult-education agencies that set fees and credential rules, so we state the ETS baseline and flag anything a state sets on its own. Wage data come from the BLS Education Pays series, which reports median weekly earnings by education level. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the five-subtest structure, the 1-20 scoring scale, the 8-per-subtest and 45-total passing requirements, and the essay requirement against ETS HiSET materials and state agency pages.',
   lastReviewed: '2026-08',

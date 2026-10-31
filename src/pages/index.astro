@@ -162,7 +162,7 @@ const itemListSchema = {
       position: i + 1,
       // e.href, not a rebuilt path: the 8 flagship guides are served from
       // /paths/<slug> and their /exams/<slug> twin is a 404.
-      url: `${SITE}${e.href || `/exams/${e.slug}`}`,
+      url: `${SITE}${e.href || `/exams/${e.slug}/`}`,
       name: e.name
     }))
   },
@@ -205,7 +205,7 @@ const itemListSchema = {
     <p class="answer-lead">{answerLead}</p>
     {featured.length > 0 && (
       <p class="answer-featured">
-        Most-requested guides: {featured.map((f, i) => (<>{i > 0 && ' · '}<a href={`/exams/${f.slug}`}>{f.name}</a></>))}.
+        Most-requested guides: {featured.map((f, i) => (<>{i > 0 && ' · '}<a href={`/exams/${f.slug}/`}>{f.name}</a></>))}.
       </p>
     )}
     <dl class="answer-facts">

@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Teacher certification & education technology desk',
     bio: 'This guide is compiled and maintained by our teacher-certification and edtech desk. Google Certified Educator terms — exam format, lab structure, validity, pricing and retake policy — come from Google for Education\u2019s own certification FAQ and certification pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate, and no BLS occupation corresponds directly to holding a Google credential.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified exam format, 36-month validity, pricing and retake policy against the Google for Education certification FAQ; teacher salary context cross-checked against BLS May 2024 data.',
   lastReviewed: '2026-08',

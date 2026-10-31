@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Accounting & corporate-finance certifications desk',
     bio: 'This guide is compiled and maintained by our accounting desk. The CMA program structure (two parts, the 100-question plus two-essay format, the 0-500 scaled scoring with a 360 pass mark, the testing windows, the fees and the 3-year completion clock) comes from the Institute of Management Accountants (IMA) CMA program pages and the IMA Content Specification Outlines, which are revised on a published cycle. We state plainly when IMA does not publish an official pass-rate percentage. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook occupation accountants and auditors, named by SOC code 13-2011, with the caveat that BLS classifies workers by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the CMA Part 1 format (100 multiple-choice questions in 3 hours plus 2 essay or case-based questions in 1 hour, 4 hours total), the 360/500 pass mark, the 2026 fee structure, the three testing windows, the three-year completion clock, and the BLS May 2024 accountant-and-auditor median of $81,680 against imanet.org and bls.gov.',
   lastReviewed: '2026-08',

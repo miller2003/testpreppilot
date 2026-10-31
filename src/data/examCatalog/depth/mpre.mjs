@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Legal licensure desk',
     bio: 'The MPRE structure (question count, timing, scaling) is drawn from the NCBE\u2019s official MPRE materials. Jurisdiction passing scores are as published by the adopting jurisdictions and compiled by the NCBE and bar-exam reference sources; the registration fee is as documented by NCBE and bar-exam reference pages, with current-source conflicts noted. Wage figures come from the BLS Occupational Outlook Handbook Lawyers profile (SOC 23-1011), May 2024 data.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the NCBE official MPRE materials, the NCBE jurisdiction passing-score listings, and the BLS Occupational Outlook Handbook Lawyers profile (May 2024 data).',
   lastReviewed: '2026-08',

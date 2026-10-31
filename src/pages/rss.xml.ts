@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { credentials } from '../data/credentials';
-import { allExams, completedGuides } from '../data/examCatalog/index.mjs';
+import { listedExams as allExams, completedGuides } from '../data/examCatalog/index.mjs';
 import { releases } from '../data/examCatalog/release-manifest.mjs';
 import { guideArticles } from '../data/guides';
 

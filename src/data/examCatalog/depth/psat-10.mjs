@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'College admissions & standardized-testing desk',
     bio: 'We cover College Board\u2019s PSAT suite for grades 8-10. Format and fee facts come from the College Board official pages and are revised each testing year; wage and education-earnings figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the PSAT 10 format, score scale and school-administered delivery against College Board official pages; verified BLS education-and-earnings data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

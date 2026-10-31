@@ -7,7 +7,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Agile, securities & cybersecurity certifications desk',
     bio: 'This guide is compiled and maintained by our certifications desk. Vendor exams in this space are revised and retired frequently, so we track the objectives document by its published revision date and state plainly when an exam is being retired and what replaces it — the single most common way candidates waste money here is studying a superseded blueprint. Fees, scoring, retake rules and renewal terms come from CompTIA’s own certification pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Objectives, exam codes, fees and retirement dates were taken from the vendor’s current certification pages and checked for the revision date shown there — CySA+ CS0-004 (V4) is the current exam as of its 23 June 2026 launch.',
   lastReviewed: '2026-08',

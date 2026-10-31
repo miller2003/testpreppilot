@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Trades & skilled-licensure desk',
     bio: 'This guide is compiled and maintained by our trades desk. NCCER credentials are modular, and the electrical pathway combines the NCCER Electrical curriculum, with per-module written tests and hands-on performance profiles at a 70 percent threshold by convention, plus the official level tests such as the Electrical Level One test specification, so we state plainly what NCCER itself certifies versus what the pathway involves. The level-test facts come from NCCER\u2019s official Electrical Level One test specification sheet (11th edition). Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the NCCER Electrical Level One test specification sheet (11th edition), the NCCER Electrical curriculum module list, and BLS data for SOC 47-2111 (May 2024).',
   lastReviewed: '2026-08',

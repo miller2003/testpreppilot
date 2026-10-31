@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Developer & systems certifications desk',
     bio: 'This desk covers developer and IT certifications. Exam structure, fees and rules come from the certifying body\'s official pages (LPI, Python Institute, AHIMA), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against LPI\'s Linux Essentials exam page (010-160) and BLS OOH Network and Computer Systems Administrators (SOC 15-1244), May 2024 data.',
   lastReviewed: '2026-08',

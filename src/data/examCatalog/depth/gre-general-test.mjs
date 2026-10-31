@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Graduate admissions & standardized-testing desk',
     bio: 'We cover the GRE General Test and its role in graduate admission. Format and fee facts come from ETS official pages and are revised; wage and education-earnings figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the GRE General Test format, scoring scale, fees and retake policy against ETS official pages; verified BLS education-and-earnings data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

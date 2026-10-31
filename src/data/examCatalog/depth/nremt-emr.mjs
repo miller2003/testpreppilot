@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'EMS & prehospital certification desk',
     bio: 'NREMT-EMR structure and requirements come from the National Registry of Emergency Medical Technicians official pages and are revised with each exam update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the NREMT EMR cognitive exam format, skills requirements, and renewal policy against NREMT official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

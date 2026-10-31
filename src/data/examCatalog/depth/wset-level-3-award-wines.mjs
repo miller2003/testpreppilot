@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Wine & hospitality education desk',
     bio: 'WSET Level 3 structure, assessment format and pass standards come from the Wine & Spirit Education Trust official pages and the Level 3 Award in Wines qualification specification, and are revised with each syllabus update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure \u2014 such as a WSET pass rate \u2014 is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the WSET Level 3 Award in Wines assessment structure (50 multiple-choice questions plus four short-answer questions in the closed-book Unit 1, and a two-wine blind tasting in Unit 2), the 55% pass marks, and the pass/merit/distinction bands against WSET official pages and the qualification specification; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

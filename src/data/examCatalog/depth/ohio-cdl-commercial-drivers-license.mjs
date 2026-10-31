@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Commercial driving & transportation desk',
     bio: 'Ohio CDL facts in this guide come from the official Ohio BMV commercial-driver-license pages and the BMV fee schedule, including the 80 percent passing standard on each knowledge test, the general-knowledge, air-brakes and combination-vehicles test structure, the 14-day CLP holding period, the ELDT requirement and the fees; the BMV does not publish pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the Ohio BMV commercial-driver-license pages, the Ohio Commercial Driver Manual, the BMV fee schedule and the BLS OOH Heavy and Tractor-trailer Truck Drivers page (May 2024 data).',
   lastReviewed: '2026-08',

@@ -7,7 +7,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Health, fitness & recreation certifications desk',
     bio: 'This guide is compiled and maintained by our fitness-certifications desk. ACSM revises the CPT exam content outline periodically, so we track it by the current published Job Task Analysis and state plainly when a number is ACSM-published versus a third-party estimate. Fees, format, scoring and retake rules come from the American College of Sports Medicine certification pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Exam domains, weights, format, fees and scoring were taken from ACSM\'s official Certified Personal Trainer Exam Content Outline (effective July 10, 2025) and ACSM certification FAQ.',
   lastReviewed: '2026-08',

@@ -116,8 +116,8 @@ export const guideArticles: GuideArticle[] = [
     ],
     related: [
       { label: 'Browse exams by field', href: '/' },
-      { label: 'How TestPrepPilot works', href: '/about' },
-      { label: 'Beat test anxiety', href: '/guides/beat-test-anxiety-exam-day' },
+      { label: 'How TestPrepPilot works', href: '/about/' },
+      { label: 'Beat test anxiety', href: '/guides/beat-test-anxiety-exam-day/' },
     ],
     faqs: [
       {
@@ -193,9 +193,9 @@ export const guideArticles: GuideArticle[] = [
       },
     ],
     related: [
-      { label: 'State license guides', href: '/categories/real-estate' },
+      { label: 'State license guides', href: '/categories/real-estate/' },
       { label: 'Find your credential', href: '/' },
-      { label: 'About our Editorial Board', href: '/about' },
+      { label: 'About our Editorial Board', href: '/about/' },
     ],
     faqs: [
       {
@@ -267,9 +267,9 @@ export const guideArticles: GuideArticle[] = [
       },
     ],
     related: [
-      { label: 'Build a study plan', href: '/guides/study-plan-working-full-time' },
-      { label: 'How TestPrepPilot works', href: '/about' },
-      { label: 'Our research methodology', href: '/methodology' },
+      { label: 'Build a study plan', href: '/guides/study-plan-working-full-time/' },
+      { label: 'How TestPrepPilot works', href: '/about/' },
+      { label: 'Our research methodology', href: '/methodology/' },
     ],
     faqs: [
       {

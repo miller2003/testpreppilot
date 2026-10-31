@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'English-language assessment desk',
     bio: 'The Duolingo English Test structure (adaptive format, timing, scoring) is drawn from the official DET program materials, which are revised on a published cycle. There is no single pass rate because DET has no pass/fail standard — institutions set their own cut scores, and we explain that plainly. Score-use and fee information is stated as of the current official program page.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the official Duolingo English Test program materials (current edition) for test format, scoring, and acceptance.',
   lastReviewed: '2026-08',

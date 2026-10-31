@@ -43,6 +43,7 @@ import {
 } from './national-research/index.mjs';
 import { compactById } from './compacts.mjs';
 import { isReleased } from './release-manifest.mjs';
+import { isDeindexed } from './deindex.mjs';
 
 const nationalSources = [
   admissionsAcademic, alliedHealth, beautyFoodSecurityRecreation, behavioralHealth,
@@ -55,14 +56,14 @@ const nationalSources = [
 // Listed here so the directory can link straight to the finished page and
 // never generate a competing stub.
 export const completedGuides = [
-  { slug: 'texas-real-estate-license',      name: 'Texas Real Estate Sales Agent License', short: 'TX Real Estate',   category: 'real-estate',       group: 'Real Estate Licensing',   type: 'License',       stateCode: 'TX', href: '/paths/texas-real-estate-license',      blurb: 'Complete 180 hours of TREC-approved education, pass the background check and the two-part state exam, then find a sponsoring broker.' },
-  { slug: 'california-real-estate-license', name: 'California Real Estate Salesperson License', short: 'CA Real Estate', category: 'real-estate',    group: 'Real Estate Licensing',   type: 'License',       stateCode: 'CA', href: '/paths/california-real-estate-license', blurb: 'Three 45-hour DRE courses, a 150-question in-person exam at 70%, Live Scan fingerprints and a sponsoring broker to activate.' },
-  { slug: 'florida-real-estate-license',    name: 'Florida Real Estate Sales Associate License', short: 'FL Real Estate', category: 'real-estate',   group: 'Real Estate Licensing',   type: 'License',       stateCode: 'FL', href: '/paths/florida-real-estate-license',    blurb: 'Sixty-three hours of FREC-approved pre-licensing, a 100-question state exam at 75% and activation under a licensed broker.' },
-  { slug: 'enrolled-agent',                 name: 'Enrolled Agent (Special Enrollment Examination)', short: 'EA',       category: 'accounting',        group: 'Tax Practice',            type: 'Certification', href: '/paths/enrolled-agent',                 blurb: 'The IRS credential granting unlimited representation rights, earned by passing all three parts of the Special Enrollment Examination.' },
-  { slug: 'cpa-exam',                       name: 'Uniform CPA Examination',                  short: 'CPA',            category: 'accounting',        group: 'Public Accounting',       type: 'Exam',          href: '/paths/cpa-exam',                       blurb: 'Three Core sections plus one Discipline section under CPA Evolution, taken alongside the 150-credit-hour education requirement.' },
-  { slug: 'osha-10-construction',           name: 'OSHA 10-Hour Construction',                short: 'OSHA 10',        category: 'workplace-safety',  group: 'OSHA Outreach & Trainer', type: 'Training',      href: '/paths/osha-10-construction',           blurb: 'Ten-hour entry-level outreach course covering the Focus Four hazards, required on many construction sites and by several states.' },
-  { slug: 'osha-30-construction',           name: 'OSHA 30-Hour Construction',                short: 'OSHA 30',        category: 'workplace-safety',  group: 'OSHA Outreach & Trainer', type: 'Training',      href: '/paths/osha-30-construction',           blurb: 'Supervisor-level outreach training covering hazard recognition, OSHA standards and site safety management responsibilities.' },
-  { slug: 'epa-608-certification',          name: 'EPA Section 608 Technician Certification', short: 'EPA 608',        category: 'trades',            group: 'HVAC & Refrigeration',    type: 'Certification', href: '/paths/epa-608-certification',          blurb: 'Federally mandated certification for anyone who maintains, services or disposes of equipment containing regulated refrigerants.' }
+  { slug: 'texas-real-estate-license',      name: 'Texas Real Estate Sales Agent License', short: 'TX Real Estate',   category: 'real-estate',       group: 'Real Estate Licensing',   type: 'License',       stateCode: 'TX', href: '/paths/texas-real-estate-license/',      blurb: 'Complete 180 hours of TREC-approved education, pass the background check and the two-part state exam, then find a sponsoring broker.' },
+  { slug: 'california-real-estate-license', name: 'California Real Estate Salesperson License', short: 'CA Real Estate', category: 'real-estate',    group: 'Real Estate Licensing',   type: 'License',       stateCode: 'CA', href: '/paths/california-real-estate-license/', blurb: 'Three 45-hour DRE courses, a 150-question in-person exam at 70%, Live Scan fingerprints and a sponsoring broker to activate.' },
+  { slug: 'florida-real-estate-license',    name: 'Florida Real Estate Sales Associate License', short: 'FL Real Estate', category: 'real-estate',   group: 'Real Estate Licensing',   type: 'License',       stateCode: 'FL', href: '/paths/florida-real-estate-license/',    blurb: 'Sixty-three hours of FREC-approved pre-licensing, a 100-question state exam at 75% and activation under a licensed broker.' },
+  { slug: 'enrolled-agent',                 name: 'Enrolled Agent (Special Enrollment Examination)', short: 'EA',       category: 'accounting',        group: 'Tax Practice',            type: 'Certification', href: '/paths/enrolled-agent/',                 blurb: 'The IRS credential granting unlimited representation rights, earned by passing all three parts of the Special Enrollment Examination.' },
+  { slug: 'cpa-exam',                       name: 'Uniform CPA Examination',                  short: 'CPA',            category: 'accounting',        group: 'Public Accounting',       type: 'Exam',          href: '/paths/cpa-exam/',                       blurb: 'Three Core sections plus one Discipline section under CPA Evolution, taken alongside the 150-credit-hour education requirement.' },
+  { slug: 'osha-10-construction',           name: 'OSHA 10-Hour Construction',                short: 'OSHA 10',        category: 'workplace-safety',  group: 'OSHA Outreach & Trainer', type: 'Training',      href: '/paths/osha-10-construction/',           blurb: 'Ten-hour entry-level outreach course covering the Focus Four hazards, required on many construction sites and by several states.' },
+  { slug: 'osha-30-construction',           name: 'OSHA 30-Hour Construction',                short: 'OSHA 30',        category: 'workplace-safety',  group: 'OSHA Outreach & Trainer', type: 'Training',      href: '/paths/osha-30-construction/',           blurb: 'Supervisor-level outreach training covering hazard recognition, OSHA standards and site safety management responsibilities.' },
+  { slug: 'epa-608-certification',          name: 'EPA Section 608 Technician Certification', short: 'EPA 608',        category: 'trades',            group: 'HVAC & Refrigeration',    type: 'Certification', href: '/paths/epa-608-certification/',          blurb: 'Federally mandated certification for anyone who maintains, services or disposes of equipment containing regulated refrigerants.' }
 ];
 
 const completedSlugs = new Set(completedGuides.map((g) => g.slug));
@@ -140,7 +141,7 @@ function buildCatalog() {
         aka: row.aka || [],
         scope: 'national',
         status: 'stub',
-        href: `/exams/${row.slug}`,
+        href: `/exams/${row.slug}/`,
         researched: rich,
         record: rich ? record : null,
         blurb: rich && record.tagline ? record.tagline : row.blurb
@@ -149,7 +150,7 @@ function buildCatalog() {
   }
 
   for (const row of buildStateExams()) {
-    push({ ...row, status: 'stub', href: `/exams/${row.slug}` });
+    push({ ...row, status: 'stub', href: `/exams/${row.slug}/` });
   }
 
   const stubs = [...seen.values()];
@@ -165,11 +166,13 @@ function buildCatalog() {
   // Apply the 2026-09-02 category consolidation (see categories.mjs) so every
   // consumer — directory, category pages, filters, stats — sees the merged
   // taxonomy no matter what the raw research files say.
-  return [...complete, ...stubs].map((row) =>
-    CATEGORY_MERGES[row.category]
-      ? { ...row, category: CATEGORY_MERGES[row.category] }
-      : row
-  );
+  // `deindexed` rows (deindex.mjs) are still built, but every listing and
+  // internal link below works from listedExams, so nothing on the site points
+  // search engines at a page the page itself asks them not to index.
+  return [...complete, ...stubs].map((row) => ({
+    ...(CATEGORY_MERGES[row.category] ? { ...row, category: CATEGORY_MERGES[row.category] } : row),
+    deindexed: isDeindexed(row.slug)
+  }));
 }
 
 // Build the FULL catalog once (used by the content manager to list every
@@ -183,6 +186,9 @@ export const allExams = allExamsFull.filter(
 );
 export { allExamsFull };
 
+/** Released pages that are meant to be found: what listings and links use. */
+export const listedExams = allExams.filter((e) => !e.deindexed);
+
 export const stubExams = allExams.filter((e) => e.status === 'stub');
 export const nationalExams = allExams.filter((e) => e.scope === 'national');
 export const stateExams = allExams.filter((e) => e.scope === 'state');
@@ -193,7 +199,7 @@ export function getExamBySlug(slug) {
 }
 
 export function getExamsByCategory(categoryId) {
-  return allExams.filter((e) => e.category === categoryId);
+  return listedExams.filter((e) => e.category === categoryId);
 }
 
 /**
@@ -212,14 +218,14 @@ export function getExamDetail(slug) {
 
     const siblings = record
       ? allExams
-          .filter((e) => e.scope === 'national' && e.slug !== slug && e.body === exam.body && e.researched)
+          .filter((e) => e.scope === 'national' && e.slug !== slug && e.body === exam.body && e.researched && !e.deindexed)
           .sort((a, b) => a.name.localeCompare(b.name))
       : [];
 
     const relatedResolved = (record?.relatedSlugs || [])
       .map((s) => bySlug.get(s))
       .filter(Boolean)
-      .filter((e) => e.slug !== slug);
+      .filter((e) => e.slug !== slug && !e.deindexed);
 
     return {
       exam,
@@ -267,11 +273,16 @@ export function getExamsByState(stateCode) {
   return allExams.filter((e) => e.stateCode === code);
 }
 
-/** Category → ordered groups → exams, for rendering the directory. */
-export function buildDirectory() {
+/**
+ * Category → ordered groups → exams, for rendering the directory.
+ * Listed pages only; `includeDeindexed` is for the category routes themselves,
+ * which keep building (noindex) when every guide in them has been deindexed.
+ */
+export function buildDirectory({ includeDeindexed = false } = {}) {
+  const pool = includeDeindexed ? allExams : listedExams;
   return examCategories
     .map((cat) => {
-      const items = allExams.filter((e) => e.category === cat.id);
+      const items = pool.filter((e) => e.category === cat.id);
       const groupMap = new Map();
       for (const item of items) {
         if (!groupMap.has(item.group)) groupMap.set(item.group, []);

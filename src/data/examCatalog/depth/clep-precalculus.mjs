@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'College admissions & credit-by-exam desk',
     bio: 'CLEP Precalculus exam structure, section format, scoring and the ACE credit recommendation are verified against the College Board CLEP official page and the American Council on Education (ACE) National Guide entry for the exam. Education-return context comes from BLS data on earnings by education level. This desk states plainly when a figure — such as a CLEP pass rate — is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Exam structure (approximately 48 questions in two sections, approximately 90 minutes), the 20-80 score scale, the ACE credit-granting score of 50 and the 3-semester-hour recommendation were checked against the College Board CLEP page and the ACE National Guide.',
   lastReviewed: '2026-08',

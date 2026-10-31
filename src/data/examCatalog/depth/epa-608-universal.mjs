@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Trades & technical certification desk',
     bio: 'EPA Section 608 exam structure, passing scores, section requirements and provider practices are verified against EPA regulatory requirements under 40 CFR Part 82, the EPA-approved testing organizations that administer the exam (including ESCO Institute, Mainstream Engineering and HVAC Excellence), and provider-published scoring documentation. Because the EPA sets requirements rather than publishing pass-rate statistics, we state plainly what is and is not published. Wage figures come from the Bureau of Labor Statistics occupational series for heating, air conditioning, and refrigeration mechanics and installers, named by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Universal certification structure (Core plus Types I, II and III), the 70% closed-book and 84% open-book passing scores, the lifetime validity and the exam fee range were checked against EPA 608 provider materials.',
   lastReviewed: '2026-08',

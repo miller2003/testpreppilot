@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Advanced practice nursing & clinical credentials desk',
     bio: 'This desk covers advanced practice registered nurse certifications. Exam structure, pricing and renewal terms come from the ANCC certification pages, and pass rates from the ANCC\u2019s published certification data, which is updated annually; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a body does not publish a figure, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the FNP-BC exam structure, fee, renewal period and the published 2024 first-time pass rate against the ANCC Family Nurse Practitioner certification page and ANCC certification data; wage context against BLS OOH Nurse Anesthetists, Nurse Midwives, and Nurse Practitioners, May 2024 data.',
   lastReviewed: '2026-08',

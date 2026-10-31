@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Teacher-licensure & K-12 assessments desk',
     bio: 'This guide is compiled and maintained by our teacher-licensure desk. Praxis General Science (5436) test structure comes from the ETS Study Companion and the official Praxis test page, which we verified directly; passing scores are set by each state, not by ETS, and we state that plainly. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by licence.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the 135-question, 2-hour-30-minute format, the four content categories and percentages, the $130 fee, and the state-set passing-score model against the ETS Study Companion and Praxis test page.',
   lastReviewed: '2026-08',

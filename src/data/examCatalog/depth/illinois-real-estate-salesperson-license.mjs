@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Real estate licensing & brokerage career desk',
     bio: 'This Illinois real estate broker guide is compiled from the Illinois Department of Financial and Professional Regulation licensing pages, the PSI exam information for the Illinois real estate licensing exam, and the BLS Occupational Outlook Handbook (May 2024 data). Illinois abolished the salesperson license in 2011 and the entry-level license is the broker license, which we explain plainly. IDFPR publishes no pass rates, and private estimates circulating online are labeled as such rather than repeated as official figures.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the Illinois Department of Financial and Professional Regulation broker licensing pages, the PSI Illinois real estate exam information, and the BLS OOH Real Estate Brokers and Sales Agents page (May 2024 data).',
   lastReviewed: '2026-08',

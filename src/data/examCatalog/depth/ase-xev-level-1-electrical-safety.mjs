@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Skilled trades & automotive certifications desk',
     bio: 'This desk covers ASE and automotive-trade certifications. Exam structure, fees and rules come from the certifying body\'s official pages (ASE), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the ASE xEV Level 1 program pages and BLS OOH Automotive Service Technicians (SOC 49-3023), May 2024 data.',
   lastReviewed: '2026-08',

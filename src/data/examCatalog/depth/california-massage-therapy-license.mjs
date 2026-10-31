@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Massage & wellness licensure desk',
     bio: 'This desk covers massage and wellness licensure. California uses a certification model rather than a traditional state license: the California Massage Therapy Council (CAMTC) issues a voluntary certification, and the exam requirement is currently suspended under state law through December 31, 2027, which we state plainly so candidates understand the current rules. Where the MBLEx is discussed, its structure comes from the FSMTB official pages; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook (May 2024), named by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the CAMTC certification requirements, the CAMTC notification that the approved-exam requirement is suspended through December 31, 2027, the FSMTB MBLEx pages, and BLS OOH Massage Therapists (SOC 31-9011), May 2024 data.',
   lastReviewed: '2026-08',

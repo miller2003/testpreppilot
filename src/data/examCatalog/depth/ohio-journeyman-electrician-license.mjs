@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Trades & skilled-licensure desk',
     bio: 'The Ohio electrician licensing facts below are drawn from the Ohio Construction Industry Licensing Board (OCILB), Ohio Revised Code Chapter 4740, and the municipal licensing programs that govern individual electricians in Ohio cities such as Columbus, Cleveland, Cincinnati, and Toledo. Ohio does not issue a statewide journeyman electrician license, so we state plainly that the journeyman credential is local and that requirements vary by jurisdiction. Wage figures come from the BLS Occupational Outlook Handbook, cited by SOC code with May 2024 data.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the OCILB electrical contractor requirements and examination application, Ohio Revised Code Chapter 4740, municipal journeyman licensing guidance for Ohio cities, and the BLS OOH Electricians page (SOC 47-2111, May 2024).',
   lastReviewed: '2026-08',

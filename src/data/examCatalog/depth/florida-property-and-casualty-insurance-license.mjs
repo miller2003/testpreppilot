@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Insurance licensure desk',
     bio: 'Florida property and casualty insurance license facts in this guide come from the Florida Department of Financial Services (FLDFS) Division of Insurance Agent and Agency Services and the Pearson VUE Florida candidate materials, which are the official sources for the 2-20 General Lines license requirements, the 200-hour pre-licensing education, the exam structure, the 70 percent passing score and the fees. The FLDFS publishes the exam structure and passing score but no cohort pass rate, and we state that plainly. Wage figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the FLDFS Division of Insurance Agent and Agency Services pages, the Pearson VUE Florida insurance candidate handbook, Florida Statute 626, and BLS data for SOC 41-3021 (May 2024).',
   lastReviewed: '2026-08',

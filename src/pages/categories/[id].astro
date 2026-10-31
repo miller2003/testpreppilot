@@ -10,18 +10,23 @@ export function getStaticPaths() {
   // Was driven by src/data/categories.ts (4 near-empty pages, ~46-136 words each).
   // Now driven by the real catalog: 25 categories covering 558 exams, which gives
   // every exam page a topical parent instead of hanging off one 619-link mega hub.
-  return buildDirectory().map((category: any) => ({
+  //
+  // Routes come from the full directory so a field whose every guide was
+  // deindexed (deindex.mjs) keeps its URL; it renders those guides but is
+  // itself noindex, and the listed directory no longer links to it.
+  const listed = new Map(buildDirectory().map((c: any) => [c.id, c]));
+  return buildDirectory({ includeDeindexed: true }).map((category: any) => ({
     params: { id: category.id },
-    props: { category },
+    props: { category: listed.get(category.id) || category, isListed: listed.has(category.id) },
   }));
 }
 
-const { category } = Astro.props;
+const { category, isListed } = Astro.props;
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: 'Exams', href: '/' },
-  { label: category.name, href: `/categories/${category.id}` }
+  { label: category.name, href: `/categories/${category.id}/` }
 ];
 
 const allExams = category.groups.flatMap((g: any) => g.exams);
@@ -70,7 +75,7 @@ const tableRows = nationalScoped
       slug: e.slug,
       // Canonical path from the catalog, not a guess: the 8 flagship guides are
       // served at /paths/<slug>, and /exams/<slug> 404s for them.
-      href: e.href || `/exams/${e.slug}`,
+      href: e.href || `/exams/${e.slug}/`,
       name: e.name,
       body: r.body || e.type || '—',
       fee: m.fee || r.cost || '—',
@@ -127,7 +132,7 @@ const payRows = nationalScoped
     const dep: any = depthFor(e.slug) || {};
     return {
       slug: e.slug,
-      href: e.href || `/exams/${e.slug}`,
+      href: e.href || `/exams/${e.slug}/`,
       name: e.name,
       pay: money(dep.salaryOutlook?.headline),
       payLine: String(dep.salaryOutlook?.headline || ''),
@@ -223,6 +228,7 @@ const faqSchema = {
   title={title}
   description={description}
   ogImage={`/og/cat-${category.id}.png`}
+  noindex={!isListed}
 >
   {/* BreadcrumbNav emits the page's single BreadcrumbList JSON-LD itself. */}
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
@@ -240,7 +246,7 @@ const faqSchema = {
       "itemListElement": allExams.slice(0, 100).map((e: any, i: number) => ({
         "@type": "ListItem",
         "position": i + 1,
-        "url": `https://testpreppilot.com${e.href || `/exams/${e.slug}`}`,
+        "url": `https://testpreppilot.com${e.href || `/exams/${e.slug}/`}`,
         "name": e.name
       }))
     }
@@ -331,7 +337,7 @@ const faqSchema = {
           <ul class="exam-list">
             {group.exams.map((e: any) => (
               <li>
-                <a href={e.href || `/exams/${e.slug}`}>
+                <a href={e.href || `/exams/${e.slug}/`}>
                   <span class="exam-name">{e.name}</span>
                   {e.blurb && <span class="exam-blurb">{e.blurb}</span>}
                   <span class="exam-tags">
@@ -366,7 +372,7 @@ const faqSchema = {
           {buildDirectory()
             .filter((c: any) => c.id !== category.id)
             .map((c: any) => (
-              <li><a href={`/categories/${c.id}`}>{c.name} <span>{c.total}</span></a></li>
+              <li><a href={`/categories/${c.id}/`}>{c.name} <span>{c.total}</span></a></li>
             ))}
         </ul>
       </nav>

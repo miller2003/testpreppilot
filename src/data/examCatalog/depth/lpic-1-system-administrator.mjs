@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & Linux certifications desk',
     bio: 'This guide is compiled and maintained by our IT-certifications desk. LPIC-1 exam structure, version numbers, validity and language options come from the Linux Professional Institute (LPI) official certification pages and the Pearson VUE LPI portal, which we verified directly. LPI publishes no pass-rate statistics, and we state that plainly. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the current LPIC-1 version (5.0, exam codes 101-500 and 102-500), the 60-question, 90-minute format per exam, the 500/800 passing score, the 5-year validity, and the exam fee against LPI and Pearson VUE official pages.',
   lastReviewed: '2026-08',

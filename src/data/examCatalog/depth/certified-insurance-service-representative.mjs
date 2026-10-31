@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Insurance & risk-management education desk',
     bio: 'We cover insurance-industry designation programs including the CISR. Format and fee facts come from The Institutes official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the CISR program structure and exam requirements against The Institutes official pages; verified BLS insurance wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

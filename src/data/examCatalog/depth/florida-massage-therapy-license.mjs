@@ -9,7 +9,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Health & personal services licensing desk',
     bio: 'This guide is compiled and maintained by our health-professions licensing desk. Florida licenses massage therapists through the Florida Board of Massage Therapy within the Department of Health, and the requirements here — the 500-hour education minimum, the approved exams (MBLEx from FSMTB), the fee schedule, electronic fingerprinting and the biennial renewal — come from the Board\u2019s official pages and the FSMTB candidate materials. FSMTB publishes national MBLEx pass rates in its annual reports; the Florida Board does not publish a Florida-specific cohort pass rate, and we state that distinction plainly. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook page for Massage Therapists (SOC 31-9011), May 2024 data, with the caveat that BLS classifies by job duties rather than by credential.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the Florida Board of Massage Therapy general-requirements and statutes-rules pages, the FSMTB MBLEx candidate information and annual report data, and the BLS OOH Massage Therapists page (SOC 31-9011), May 2024 data.',
   lastReviewed: '2026-08',

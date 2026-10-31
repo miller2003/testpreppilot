@@ -7,7 +7,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Agile, securities & cybersecurity certifications desk',
     bio: 'This guide is compiled and maintained by our certifications desk. Exam structure, the passing score, fees, retake waits and the pretest-question policy come from FINRA’s own SIE pages and are revised by FINRA, so we cite the figure as published and flag it when it changes — the exam fee, for example, rose from $80 to $100 in January 2026. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Question count, time limit, passing score, fee, retake schedule and content weights were taken from the current FINRA SIE page and FINRA’s SIE content outline; wage data from the BLS Occupational Outlook Handbook.',
   lastReviewed: '2026-08',

@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Risk management & insurance education desk',
     bio: 'This guide is compiled and maintained by our insurance-education desk. Program structure, course content, testing windows and fees come from The Institutes\u2019 official CPCU course and designation pages, which we re-check each quarter because the curriculum is revised periodically. Exam item counts and format details are drawn from The Institutes\u2019 own course documentation and corroborated against the prep providers that publish exam specifications; where The Institutes does not publish a number, we say so. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Course structure, pricing and testing windows verified against The Institutes\u2019 CPCU 500 course page; salary cross-checked against BLS May 2024 data for SOC 13-2053.',
   lastReviewed: '2026-08',

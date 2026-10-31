@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Teacher licensure & education certifications desk',
     bio: 'This desk covers ETS Praxis exams and teacher-licensure credentials. Exam structure, fees and passing-score rules come from the ETS Praxis official pages and vary by state; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the ETS Praxis 5039 study companion structure (130 SR + 2 CR, 3 hours) and BLS OOH High School Teachers (SOC 25-2031), May 2024 data.',
   lastReviewed: '2026-08',

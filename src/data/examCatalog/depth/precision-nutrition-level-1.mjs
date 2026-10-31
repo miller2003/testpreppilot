@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Nutrition & wellness coaching desk',
     bio: 'Precision Nutrition Level 1 structure comes from Precision Nutrition official pages and is revised with each program update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Precision Nutrition Level 1 program structure, assessment, and pricing against Precision Nutrition official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

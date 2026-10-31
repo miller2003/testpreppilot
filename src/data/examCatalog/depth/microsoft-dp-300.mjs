@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud & database certifications desk',
     bio: 'This guide is compiled by our cloud and database certifications desk. Microsoft revises its role-based exams on a schedule, and the English-language DP-300 has been updated, so we anchor to the current skills-measured document on Microsoft Learn and warn when older study material does not match. Exam structure, passing scores, pricing, and the 12-month renewal model come from Microsoft Learn\u2019s official certification pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the database and developer roles this credential feeds, named by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Exam duration, question count, passing score, price, and the 12-month renewal assessment were verified against Microsoft Learn\u2019s DP-300 exam page and study guide.',
   lastReviewed: '2026-08',

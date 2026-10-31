@@ -7,7 +7,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Health, fitness & recreation certifications desk',
     bio: 'This guide is compiled and maintained by our fitness-certifications desk. ACE revises the CPT exam content outline periodically, so we track it by the current published domain structure and state plainly when a number is ACE-published versus an industry estimate. Fees, format, scoring and retake rules come from the American Council on Exercise certification pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Exam domains, weights, format, fees and retake schedule were taken from ACE’s current Certified Personal Trainer exam content outline and candidate handbook.',
   lastReviewed: '2026-08',

@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Fitness & group-exercise credentialing desk',
     bio: 'ACE certification structure comes from the American Council on Exercise official pages and is revised with each program update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the ACE Group Fitness Instructor exam structure and domains against ACE official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

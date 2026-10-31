@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Military aptitude & enlistment testing desk',
     bio: 'The ASVAB structure (subtests, timing, scoring) is drawn from the official DoD ASVAB program materials, which are revised on a published cycle. The AFQT score and line scores are the published scoring facts; the ASVAB has no pass/fail and no pass rate, and we explain that plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024), with military pay explained as a separate system.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the official DoD ASVAB program materials (current edition) for subtest structure and AFQT scoring.',
   lastReviewed: '2026-08',

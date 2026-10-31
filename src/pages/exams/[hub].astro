@@ -53,7 +53,7 @@ const { tpl, dossier, v2states, v2, stateRows, notOfferedRows } = Astro.props;
 
 const siteUrl = Astro.site || 'https://testpreppilot.com';
 const hubSlug = `${tpl.key}-license-by-state`;
-const canonicalUrl = new URL(`/exams/${hubSlug}`, siteUrl).toString();
+const canonicalUrl = new URL(`/exams/${hubSlug}/`, siteUrl).toString();
 
 const cat = categoryById[tpl.category];
 const credName = tpl.name.replace(/\{State\}\s*/, '');
@@ -404,7 +404,7 @@ const datasetSchema = {
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: 'Exams', href: '/' },
-  { label: cat?.name || 'Exams', href: `/categories/${tpl.category}` },
+  { label: cat?.name || 'Exams', href: `/categories/${tpl.category}/` },
   { label: title, href: canonicalUrl }
 ];
 
@@ -553,7 +553,7 @@ introBits.push(notIssuedCount > 0
                 <td data-col="recip">{r.reciprocityText || 'Not published'}</td>
                 <td data-col="link">
                   {r.row
-                    ? <a href={`/exams/${r.row.slug}`}>{r.code} page →</a>
+                    ? <a href={`/exams/${r.row.slug}/`}>{r.code} page →</a>
                     : r.actual
                       ? <span title={r.actual.name}>{r.actual.name}</span>
                       : <span class="hub-muted">Not yet published</span>}

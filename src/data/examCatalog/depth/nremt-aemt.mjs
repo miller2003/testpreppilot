@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Allied-health & clinical-support certifications desk',
     bio: 'This desk covers EMS and allied-health certifications. Exam structure, fees and rules come from the certifying body\'s official pages (NREMT, state agencies), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against NREMT\'s Advanced EMT certification pages and BLS OOH EMTs and Paramedics (SOC 29-2041), May 2024 data.',
   lastReviewed: '2026-08',

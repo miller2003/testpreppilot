@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'We cover the ServSafe program, administered by the National Restaurant Association. ServSafe Workplace course structure and assessment facts come from ServSafe official pages and the ServSafe product documentation, and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the ServSafe Workplace course suite, its completion-based assessment model (no scored national exam), and its workplace-safety, harassment-prevention and inclusion content against ServSafe official pages and product documentation; verified BLS food-service-manager wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

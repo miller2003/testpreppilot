@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Medical licensure & graduate-medical-education desk',
     bio: 'We cover USMLE examinations for physician licensure. Step 3 format, the two-day structure, the block layout, the passing standard, the fee and the attempt limits come from the USMLE program official pages (NBME, FSMB and usmle.org). Wage figures come from the BLS occupational series named by code, and we state plainly when a figure \u2014 such as a published Step 3 pass rate by a single source \u2014 is not reported in the form candidates search for.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Step 3 format (Day 1: 232 multiple-choice items; Day 2: 180 items plus 13-14 computer-based case simulations over two days), the passing score of 200 on the three-digit scale effective since 1 January 2024, the $955 fee for 2026, and the BLS May 2024 physician median of $239,200+ against usmle.org and bls.gov.',
   lastReviewed: '2026-08',

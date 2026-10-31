@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Office productivity & desktop-applications desk',
     bio: 'We cover Microsoft Office Specialist certifications. The Associate-credential requirements in this guide come from Microsoft Learn official pages (three of four Associate exams for Office 2019; three exams across programs for Microsoft 365 Apps) and are revised; wage figures come from the BLS occupational series named by code. Microsoft publishes no pass rates for MOS exams, which we state plainly.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the MOS Associate certification requirements, exam codes, scoring and fees against Microsoft Learn and Certiport pages; verified BLS wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

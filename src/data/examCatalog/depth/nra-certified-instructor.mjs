@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Firearms education & recreation credentials desk',
     bio: 'We cover NRA education programs and instructor certifications. Format and fee facts come from NRA official pages and are revised; wage figures come from the BLS occupational series named by code, and we state plainly when a certification has no direct occupational mapping.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the NRA Certified Instructor program structure and requirements against NRA official pages; verified BLS recreation wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

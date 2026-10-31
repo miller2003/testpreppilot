@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Aviation & FAA certifications desk',
     bio: 'The FAA Part 107 knowledge test structure (question count, time limit, passing score, fee) is drawn from the FAA\u2019s Part 107 certification pages and the PSI FAA testing program; the ALC-451 course details are drawn from the FAA Safety Team (FAASTeam) course pages on FAASafety.gov. Wage framing uses the BLS Occupational Outlook Handbook Photographers profile (May 2024 data) because the BLS has no dedicated drone-pilot occupation, and we say so plainly.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the FAA Part 107 remote-pilot certification pages, the FAASTeam ALC-451 course page, and the BLS Occupational Outlook Handbook Photographers profile (May 2024 data).',
   lastReviewed: '2026-08',

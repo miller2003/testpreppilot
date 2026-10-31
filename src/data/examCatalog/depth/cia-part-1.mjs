@@ -6,7 +6,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Accounting & internal audit certifications desk',
     bio: 'This guide is compiled and maintained by our accounting-and-audit desk. The CIA exam is administered by The Institute of Internal Auditors (IIA), and we track question counts, timing, fees, scoring and renewal from the IIA\u2019s own certification pages, including the 2025 syllabus revision that aligned the exam with the new Global Internal Audit Standards. We state plainly where a figure is published and where it is an industry estimate. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Exam structure, question counts, fees, the 600/750 passing score, the 30-day retake rule and the three-year program window were checked against the IIA\u2019s current CIA certification pages and the 2025 CIA syllabus.',
   lastReviewed: '2026-08',

@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Licensed professions & wellness desk',
     bio: 'This guide is compiled and maintained by our licensed-professions desk. Texas esthetician licensing is administered by the Texas Department of Licensing and Regulation (TDLR), which absorbed the old Texas Cosmetology Commission in 2015, with examinations delivered by PSI Services; training hours, exam format, fees, renewal and retake rules come from the TDLR official esthetician application page and the PSI candidate information bulletins. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook (May 2024), named by SOC code. We state plainly where a figure is not published rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the TDLR Apply for an Esthetician License page, the PSI candidate information bulletins for the TDLR esthetics exams, the TDLR continuing-education rules effective September 1, 2025, and the BLS OOH Skincare Specialists page (SOC 39-5094, May 2024 data).',
   lastReviewed: '2026-08',

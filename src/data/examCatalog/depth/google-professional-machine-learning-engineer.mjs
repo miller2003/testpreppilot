@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud & machine-learning certifications desk',
     bio: 'We cover Google Cloud certifications. Format and fee facts come from Google Cloud official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Google Professional ML Engineer exam structure, scoring and fees against Google Cloud official pages; verified BLS data-science wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

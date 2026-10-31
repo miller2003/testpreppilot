@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Finance & investment certifications desk',
     bio: 'This desk covers the CFA Program and related investment credentials. Exam structure, fees and pass rates come from CFA Institute\'s published program pages and candidate resources, which are revised each year; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against CFA Institute\'s Level III exam pages, the 2026 Level III curriculum weighting, and BLS OOH Financial Analysts (SOC 13-2051), May 2024 data.',
   lastReviewed: '2026-08',

@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Risk management & financial certifications desk',
     bio: 'We cover GARP certifications for financial risk. Format and fee facts come from GARP official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the FRM Part II exam structure, scoring, fees and pass-rate reporting against GARP official pages; verified BLS financial wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

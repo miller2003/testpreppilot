@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Florida Board of Nursing & Prometric desk',
     bio: 'Florida CNA facts are drawn from the Florida Department of Health and Board of Nursing certified nursing assistant pages, the Florida Nurse Aide Registry FAQ, and the Prometric Florida nurse aide candidate materials. The Board publishes the 60-question, 90-minute written format and the five-skill clinical evaluation, while no official cohort pass rates are published, and we state that plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the Florida Board of Nursing CNA pages, the Florida Nurse Aide Registry FAQ, Prometric Florida candidate materials, and the BLS OOH Nursing Assistants page (May 2024 data).',
   lastReviewed: '2026-08',

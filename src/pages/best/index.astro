@@ -100,7 +100,7 @@ const webPageSchema = {
   dateModified={newestRelease}
   schema={itemListSchema}
 >
-  <BreadcrumbNav items={[{ label: 'Home', href: '/' }, { label: 'Rankings', href: '/best' }]} />
+  <BreadcrumbNav items={[{ label: 'Home', href: '/' }, { label: 'Rankings', href: '/best/' }]} />
 
   <div class="wrap">
     <header class="page-hero">
@@ -194,7 +194,7 @@ const webPageSchema = {
         <ul class="field-links">
           {fields.map((f) => (
             <li>
-              <a href={`/best/${f.id}`}>
+              <a href={`/best/${f.id}/`}>
                 {f.name} <span class="count">{f.rows.length} ranked</span>
               </a>
             </li>

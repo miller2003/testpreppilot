@@ -38,7 +38,7 @@
 import { writeFileSync } from 'node:fs';
 import { rankedFields, payRankedAll } from './src/data/examCatalog/payRanking.mjs';
 import {
-  allExams,
+  listedExams as allExams,
   completedGuides,
   getExamDetail,
   categoryById,

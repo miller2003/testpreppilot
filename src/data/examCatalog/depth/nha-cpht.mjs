@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Allied-health & clinical certification desk',
     bio: 'NHA ExCPT exam format, fees, scoring and recertification requirements are verified against the NHA candidate handbook and test plan for the Certified Pharmacy Technician (CPhT) credential, and we state plainly that NHA publishes no official pass rate \u2014 the percentages circulating online are third-party estimates, not NHA statistics. Wage data comes from the Bureau of Labor Statistics Occupational Outlook Handbook occupation for pharmacy technicians, cited by SOC code 29-2052, May 2024 release.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the exam format (120 total questions \u2014 100 scored and 20 unscored pretest \u2014 in 2 hours 10 minutes), the 390 pass point on the 200-500 scale, the roughly $125-129 fee, 2-year recertification with 20 CE hours, and the BLS May 2024 pharmacy-technician median of $43,460 against NHA and BLS materials.',
   lastReviewed: '2026-08',

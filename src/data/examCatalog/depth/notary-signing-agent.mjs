@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Legal support & administrative certifications desk',
     bio: 'This desk covers administrative and legal-support credentials. Program structure and rules come from the certifying bodies\u2019 official pages (the National Notary Association and state notary commissions), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code, used as context with an explicit caveat because BLS has no signing-agent occupation. When a figure is not published \u2014 or when no single national standard exists \u2014 we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the notary-signing-agent pathway \u2014 state notary commission first, then signing-agent training and a provider-set exam \u2014 against the National Notary Association\u2019s signing-agent program pages and state notary education materials; used BLS OOH Real Estate Sales Agents (SOC 41-9022) as the closest-fit occupation with an explicit caveat, May 2024 data.',
   lastReviewed: '2026-08',

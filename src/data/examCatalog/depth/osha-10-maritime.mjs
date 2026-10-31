@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Occupational safety & maritime training desk',
     bio: 'We cover OSHA outreach training programs. Format and fee facts come from OSHA and authorized trainers and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the OSHA 10 maritime outreach course structure and requirements against OSHA official pages; verified BLS maritime wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

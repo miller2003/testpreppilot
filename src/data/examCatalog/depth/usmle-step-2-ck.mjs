@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Medical licensure & graduate-medical-education desk',
     bio: 'We cover USMLE examinations for physician licensure. Format and fee facts come from the USMLE program official pages (NBME, FSMB, ECFMG) and are revised; wage figures come from the BLS occupational series named by code, and we state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the USMLE Step 2 CK format, scoring and scheduling against USMLE official pages; verified BLS physician wage data and residency match data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

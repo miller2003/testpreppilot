@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'College admissions & credit-by-exam desk',
     bio: 'CLEP Spanish Language exam structure, the 20-80 score scale and the ACE credit recommendations are verified against the College Board CLEP official page and the American Council on Education (ACE) National Guide entry for the exam. Education-return context comes from BLS data on earnings by education level. This desk states plainly when a figure \u2014 such as a CLEP pass rate \u2014 is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the exam structure (approximately 121 multiple-choice questions in about 90 minutes, with listening sections of roughly 30 minutes and a reading section of roughly 60 minutes), the 20-80 score scale, and the ACE recommendations of 50 for Level 1 credit (6 semester hours) and 63 for Level 2 credit (9 semester hours) against the College Board CLEP page and the ACE National Guide.',
   lastReviewed: '2026-08',

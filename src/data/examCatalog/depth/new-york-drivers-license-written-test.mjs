@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'NYS DMV & state licensing exams desk',
     bio: 'New York permit test facts are drawn from the New York State Department of Motor Vehicles (NYS DMV) permit-test and driver-license pages, the New York State Driver\u2019s Manual (MV-21), and the DMV fee schedule. The DMV publishes the 20-question format, the 70 percent passing standard, the separate road-sign requirement, and the combined permit-and-license fee table, but it does not publish cohort pass-rate statistics, and we state that plainly instead of repeating private estimates. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the NYS DMV learner-permit pages, the NY State Driver\u2019s Manual, the DMV fees-and-refunds page, and the BLS OOH Delivery Truck Drivers and Driver/Sales Workers page (May 2024 data).',
   lastReviewed: '2026-08',

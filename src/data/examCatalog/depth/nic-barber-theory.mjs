@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Beauty, trades & skilled-licensure desk',
     bio: 'This desk covers beauty and skilled-licensure exams. Exam structure, fees and rules come from the testing body (NIC) and the state barber boards, which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the NIC barber theory exam pages and BLS OOH Barbers (SOC 39-5011), May 2024 data.',
   lastReviewed: '2026-08',

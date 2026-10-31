@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Commercial driving & transportation desk',
     bio: 'California CDL facts in this guide come from the official California DMV commercial-driver-license pages and the DMV licensing-fee schedule, including the knowledge-test structure, the 80 percent passing standard, the CLP holding period, the ELDT requirement and the fees; the DMV does not publish pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the California DMV commercial-driver-license pages, the DMV licensing-fee schedule and the BLS OOH Heavy and Tractor-trailer Truck Drivers page (May 2024 data).',
   lastReviewed: '2026-08',

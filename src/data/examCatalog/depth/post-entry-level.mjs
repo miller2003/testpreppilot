@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Public-safety hiring exams desk',
     bio: 'PELLETB structure, scoring and retake details are verified against California POST Commission materials and the exam contractors who administer it (CPS HR Consulting and agencies using POST directly). Passing cutoffs are reported as agency-set because POST does not set a statewide score. Wage figures come from the Bureau of Labor Statistics occupational series for police and sheriff\u2019s patrol officers, named by SOC code, with the caveat that BLS classifies by job duties rather than by any entrance exam.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Exam format, the T-score scale and agency-set cutoff ranges were checked against California POST materials and administered-exam documentation for the current test battery.',
   lastReviewed: '2026-08',

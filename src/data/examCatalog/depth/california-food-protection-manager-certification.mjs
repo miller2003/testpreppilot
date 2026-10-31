@@ -6,7 +6,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'California Certified Food Protection Manager (CFPM) facts in this guide come from the California Retail Food Code (Health and Safety Code) requirements, county environmental-health pages that publish the ANSI/CFP accreditation rule, and the ServSafe program materials, which are the official sources for the exam format, the passing standard and the five-year validity. California does not publish a single official pass rate for CFPM exams, so we state that plainly. Wage figures come from the BLS Occupational Outlook Handbook occupation named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the California Retail Food Code food-manager requirement, county environmental-health pages, the ServSafe Food Protection Manager program pages, and the BLS OOH Food Service Managers page (SOC 11-9051, May 2024).',
   lastReviewed: '2026-08',

@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Skilled trades & automotive certifications desk',
     bio: 'This guide is compiled by our skilled trades and automotive certifications desk. ASE tests are written from the official Task List in the ASE study guides, and ASE revises those lists on a schedule, so we anchor content to the current official study guide and state plainly where ASE does not publish data \u2014 notably the exact passing score. Exam structure, question counts, and testing times come from ASE\u2019s published guides. Wage figures come from the Bureau of Labor Statistics occupational series for the job, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Question count, testing time, task list, and the five-year recertification cycle were verified against the official ASE automobile study guide and ASE program pages.',
   lastReviewed: '2026-08',

@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'FINRA licensing & securities supervision desk',
     bio: 'This guide is compiled and maintained by our securities-licensing desk. FINRA exam structure, item counts, passing scores and retake rules come from the FINRA content outline for the exam and from FINRA registration rules governing eligibility and sponsorship. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by license, and that securities-industry compensation is heavily commission- and bonus-based.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Exam item counts, timing and the 70% passing standard verified against the FINRA Series 24 content outline; salary cross-checked against BLS May 2024 data for SOC 41-3031.',
   lastReviewed: '2026-08',

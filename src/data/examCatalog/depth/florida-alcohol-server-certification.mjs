@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'FL DBPR responsible vendor desk',
     bio: 'Florida alcohol server facts are drawn from Florida Statutes 561.701-561.706 (the Responsible Vendor Act), the Florida Department of Business and Professional Regulation (DBPR) Division of Alcoholic Beverages and Tobacco pages, and the training-provider documentation that implements the program. Florida has no state-issued bartending license and no state-administered alcohol server exam, so there is no published pass rate, and we state that plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against Florida Statutes 561.701-561.706, DBPR Division of Alcoholic Beverages and Tobacco program pages, and the BLS OOH Bartenders page (May 2024 data).',
   lastReviewed: '2026-08',

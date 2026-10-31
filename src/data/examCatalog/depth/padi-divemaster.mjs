@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Recreation, scuba & skills-certification desk',
     bio: 'We cover recreational certification programs including PADI professional-level dive courses. Structure and fee facts come from PADI official pages and are revised; wage figures come from the BLS occupational series named by code, and we state plainly when a certification has no direct occupational mapping.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the PADI Divemaster course structure, prerequisites and assessments against PADI official pages; verified BLS recreation wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

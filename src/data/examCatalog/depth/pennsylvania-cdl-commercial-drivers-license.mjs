@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Commercial driving & transportation desk',
     bio: 'Pennsylvania CDL facts in this guide come from the official PennDOT CDL pages and the Pennsylvania CDL Manual, including the 80 percent passing standard on each knowledge test, the Knowledge Test Authorization with three attempts over one year, the 14-day CLP holding period, the ELDT requirement and the fees; PennDOT does not publish pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the PennDOT CDL learner-permit pages, the Pennsylvania CDL Manual, the PennDOT fee schedule and the BLS OOH Heavy and Tractor-trailer Truck Drivers page (May 2024 data).',
   lastReviewed: '2026-08',

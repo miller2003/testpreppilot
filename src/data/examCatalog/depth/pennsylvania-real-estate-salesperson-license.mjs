@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Real estate licensing & brokerage career desk',
     bio: 'This Pennsylvania real estate salesperson guide is compiled from the Pennsylvania State Real Estate Commission pages under the PA Department of State, the PSI exam information for the Pennsylvania real estate salesperson exam, and the BLS Occupational Outlook Handbook (May 2024 data). The commission does not publish pass rates for the licensing exam, and any percentage circulating online is a private estimate, which we state plainly. Fees and rules are taken from the official pages and should be confirmed there before applying.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the Pennsylvania State Real Estate Commission licensing pages, the PSI Pennsylvania real estate salesperson exam information, and the BLS OOH Real Estate Brokers and Sales Agents page (May 2024 data).',
   lastReviewed: '2026-08',

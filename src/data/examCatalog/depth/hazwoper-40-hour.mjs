@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Occupational safety & environmental health desk',
     bio: 'We cover OSHA-mandated hazardous-waste training programs. Format and fee facts come from OSHA standards and authorized trainers and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the HAZWOPER 40-hour training requirement and structure against OSHA 29 CFR 1910.120 official text; verified BLS hazardous-materials wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

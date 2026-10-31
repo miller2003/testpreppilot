@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Teacher licensure & Praxis assessments desk',
     bio: 'This guide is compiled by our teacher licensure and Praxis assessments desk. Praxis exams are written and administered by ETS, and we anchor structure and content to the official ETS Study Companion, which is revised per exam cycle. Passing scores for Praxis subject tests are set by each state, not by ETS, so we state that plainly and direct candidates to the ETS state-requirement pages. ETS does not publish pass-rate statistics for Praxis tests, and we do not invent them. Wage figures come from the Bureau of Labor Statistics occupational series for the job, named by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Question count, time limit, content categories, and the state-set passing-score model were verified against the official ETS Praxis Biology (5236) Study Companion and ETS program pages.',
   lastReviewed: '2026-08',

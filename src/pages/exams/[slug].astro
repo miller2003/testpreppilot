@@ -63,7 +63,9 @@ const facts = exam.facts || null;
 // stub competing for a high-volume query does more harm than no page at all.
 // State pages: 'researched' mode is indexable; 'not-offered' rows never reach
 // render at all (getStaticPaths filters buildPage === false).
-const indexable = mode !== 'placeholder';
+// Deindexed pages (deindex.mjs, 2026-10-31 triage) still render in full for
+// anyone who reaches them, but ask search engines to drop them.
+const indexable = mode !== 'placeholder' && !exam.deindexed;
 
 // ── national-mode view models ───────────────────────────────────────
 const meta = record?.examMeta || null;
@@ -178,8 +180,8 @@ const glanceAnswer = (() => {
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: 'Exams', href: '/' },
-  { label: cat?.name || 'Exams', href: `/categories/${exam.category}` },
-  { label: exam.name, href: `/exams/${exam.slug}` }
+  { label: cat?.name || 'Exams', href: `/categories/${exam.category}/` },
+  { label: exam.name, href: `/exams/${exam.slug}/` }
 ];
 
 // Superseded by <RelatedExams />. The old rule was
@@ -365,7 +367,7 @@ const metaDescription = seo?.description || clampMeta(
         : exam.blurb
 );
 
-const canonicalUrl = new URL(`/exams/${exam.slug}`, Astro.site || 'https://testpreppilot.com').toString();
+const canonicalUrl = new URL(`/exams/${exam.slug}/`, Astro.site || 'https://testpreppilot.com').toString();
 
 const schemaFaqs = pageFaqs;
 
@@ -1280,7 +1282,7 @@ const articleSchema = {
           </div>
           {peers.length > peerSample.length && (
             <p class="eg-note">
-              <a href={`/categories/${exam.category}`}>See all {peers.length} states &rarr;</a>
+              <a href={`/categories/${exam.category}/`}>See all {peers.length} states &rarr;</a>
             </p>
           )}
         </section>

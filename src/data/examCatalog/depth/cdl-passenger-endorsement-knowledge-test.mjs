@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Commercial driving & transportation certifications desk',
     bio: 'This guide is compiled and maintained by our commercial-driving desk. CDL endorsement rules are a federal-state mix: the P endorsement\u2019s knowledge-test requirement and 80 percent passing standard come from 49 CFR 383.135, the passenger endorsement scope from 49 CFR 383.93 and 383.117, and the exact question count and fee from the state that issues your licence. We state the federal baseline and flag anything a state sets on its own. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code; BLS classifies by job duties rather than by licence class or endorsement, so the closest official fit for a passenger-endorsed driver is Heavy and Tractor-trailer Truck Drivers (SOC 53-3032), with bus drivers (SOC 53-3052) carrying a similar median.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the P endorsement\u2019s 80 percent knowledge-test standard (49 CFR 383.135), the endorsement scope in 49 CFR 383.93 and the passenger knowledge-test content baseline in 49 CFR 383.117, and the Entry-Level Driver Training trigger for the P endorsement; wage figures against BLS OOH.',
   lastReviewed: '2026-08',

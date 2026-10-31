@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Fitness & wellness credentialing desk',
     bio: 'Yoga Alliance registration requirements come from the Yoga Alliance official pages and are revised with each standards update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the RYT-200 training-hour requirements and registration process against Yoga Alliance official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

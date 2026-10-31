@@ -7,7 +7,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Behavioral-health & allied-health certifications desk',
     bio: 'This guide is compiled and maintained by our behavioral-health desk. We state plainly when a credential a candidate is searching for does not exist under the issuing body it is usually attributed to: as of the 2026-08 review, the National Healthcareer Association (NHA) does not list a Certified Mental Health Technician (CMHT) in its NCCA-accredited catalog \u2014 its current certifications are CCMA, CMAA, CET, CPhT, CPT, CPCT/A, CBCS, CEHRS and ExCPT \u2014 so we cover the CMHT designation as it actually exists in the market, attributing each credential to its real issuing body, and we do not invent an NHA exam, fee or pass rate. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook occupation closest to the role, psychiatric technicians, named by SOC code 29-2053.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed the NHA candidate handbook (no CMHT listed), the published CMHT examinations offered by other certifying bodies (NCCB, AMCA, NAHT), and the BLS Occupational Outlook Handbook Psychiatric Technicians and Aides profile (May 2024 data).',
   lastReviewed: '2026-08',

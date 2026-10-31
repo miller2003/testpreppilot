@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Dental assisting credentialing desk',
     bio: 'DANB structure and requirements come from the Dental Assisting National Board official pages and state dental boards, and requirements vary by state and are revised. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the DANB GC exam structure and state acceptance against DANB official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

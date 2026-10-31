@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Trades & skilled-licensure desk',
     bio: 'This guide is compiled and maintained by our trades desk. NCCER crane credentials come in two distinct parts: the Mobile Crane Operations training curriculum, which is modular with written module tests and hands-on performance tasks, and the separate ANAB-accredited Mobile Crane Operator Certification Program, which requires a closed-book knowledge assessment plus a practical examination. We state plainly what each part certifies. The official NCCER Boom Truck Crane Operator assessment specification and the NCCER curriculum catalog were used for the exam facts. Wage figures come from the BLS Occupational Outlook Handbook, cited by SOC code with May 2024 data, with the caveat that BLS classifies by job duty rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Credential structure, assessment format, and passing standards were taken from the NCCER Mobile Crane Operations curriculum catalog, the official Boom Truck Crane Operator assessment specification, and the NCCER Mobile Crane Operator Certification Program guidance on the simplified certification model.',
   lastReviewed: '2026-08',

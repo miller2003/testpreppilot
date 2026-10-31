@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Data analytics & business-intelligence desk',
     bio: 'We cover Tableau certifications for data analytics. Format and fee facts come from Tableau official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Tableau Desktop Specialist exam structure, scoring and fees against Tableau official pages; verified BLS data-science wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

@@ -6,7 +6,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Real estate licensing desk',
     bio: 'Georgia real estate salesperson facts in this guide come from the Georgia Real Estate Commission (GREC), the PSI candidate information bulletin for the Georgia salesperson examination, and the Georgia prelicensing course requirements, which are the official sources for the exam format, the passing standard, the fees and the license cycle. GREC does not publish a pass rate for the salesperson examination, so we state that plainly and report the published exam structure instead. Wage figures come from the BLS Occupational Outlook Handbook occupation named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the GREC salesperson licensing pages, the PSI Georgia candidate information bulletin, the 75-hour prelicense and 25-hour post-license requirements, and the BLS OOH Real Estate Brokers and Sales Agents page (SOC 41-9022, May 2024).',
   lastReviewed: '2026-08',

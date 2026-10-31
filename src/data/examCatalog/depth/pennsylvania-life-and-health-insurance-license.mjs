@@ -10,7 +10,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Insurance & financial licensing desk',
     bio: 'This guide is compiled and maintained by our insurance-licensing desk. Pennsylvania licenses insurance producers through the Pennsylvania Insurance Department, and the requirements here — the PSI Services examination, the fingerprint background check, the application fee and the two-year renewal — come from the Department\u2019s and PSI\u2019s official materials. A key fact we state plainly: Act 142 of 2024 eliminated pre-licensing education for Pennsylvania resident producers, effective April 29, 2025, so no pre-exam course is currently required. The Department does not publish pass rates for the examination, and we do not invent one. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook page for Insurance Sales Agents (SOC 41-3021), May 2024 data, with the caveat that BLS classifies by job duties rather than by license.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the Pennsylvania Insurance Department and PSI candidate information for the producer examinations, Act 142 of 2024, and the BLS OOH Insurance Sales Agents page (SOC 41-3021), May 2024 data.',
   lastReviewed: '2026-08',

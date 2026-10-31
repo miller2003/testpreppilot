@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Public safety & emergency communications desk',
     bio: 'We cover emergency-dispatch certification programs including the International Academies of Emergency Dispatch. Format and fee facts come from IAED official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the IAED EMD certification structure and requirements against IAED official pages; verified BLS dispatcher wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

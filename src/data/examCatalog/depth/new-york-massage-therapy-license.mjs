@@ -9,7 +9,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Health & personal services licensing desk',
     bio: 'This guide is compiled and maintained by our health-professions licensing desk. New York licenses massage therapists through the Office of the Professions of the New York State Education Department, and the requirements here — the 1000-hour education minimum, the New York State Massage Therapy Examination with its published 140-item blueprint, the $108 licensure fee, the CPR requirement and the triennial registration renewal — come from the NYSED official pages and the State Board for Massage Therapy. NYSED does not publish pass rates for the examination, and we state that plainly rather than inventing a number. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook page for Massage Therapists (SOC 31-9011), May 2024 data, with the caveat that BLS classifies by job duties rather than by credential.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the NYSED Office of the Professions massage therapy license-requirements and examination-blueprint pages, the New York Education Law Article 155 and Part 78 regulations, and the BLS OOH Massage Therapists page (SOC 31-9011), May 2024 data.',
   lastReviewed: '2026-08',

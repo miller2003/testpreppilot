@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Health-profession admissions testing desk',
     bio: 'We cover health-profession admission tests including the DAT. Format and fee facts come from the ADA official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the DAT structure, scoring, fees and delivery against the ADA official pages; verified BLS dentist wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

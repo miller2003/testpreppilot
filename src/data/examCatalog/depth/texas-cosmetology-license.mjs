@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cosmetology and barbering licensure desk',
     bio: 'The Texas cosmetology operator license facts below are drawn from the Texas Department of Licensing and Regulation (TDLR) cosmetology program requirements and the PSI candidate information bulletin for TDLR examinations; where a figure is not confirmed on the official page, we say so plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation page for Barbers, Hairstylists, and Cosmetologists (May 2024 data), cited by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the TDLR cosmetology operator license requirements, the PSI candidate information bulletin, and the BLS OOH Barbers, Hairstylists, and Cosmetologists page (May 2024 data).',
   lastReviewed: '2026-08',

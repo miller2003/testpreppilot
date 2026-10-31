@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'State licensing & DMV exams desk',
     bio: 'California DMV facts in this guide come from the official dmv.ca.gov driver-license and licensing-fee pages, including the knowledge-test format, the three-attempt retake rule and the application fee; the DMV does not publish pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the California DMV instruction-permit and driver-license pages, the DMV licensing-fee schedule and the BLS OOH Delivery Truck Drivers and Driver/Sales Workers page (May 2024 data).',
   lastReviewed: '2026-08',

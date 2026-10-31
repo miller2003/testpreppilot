@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Allied-health & clinical certification desk',
     bio: 'NCCT NCMA exam format, fees, scoring, retake policy and recertification requirements are verified against the NCCT detailed test plan and candidate materials, and NCCT\u2019s published route-specific first-time pass rates are cited as the official source. Wage data comes from the Bureau of Labor Statistics Occupational Outlook Handbook occupation for medical assistants, cited by SOC code 31-9092, May 2024 release. Fees and test plans change; we date everything we quote.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the exam format (approximately 150 total questions, 125 scored and 25 unscored pretest, in 3 hours), the $119 fee, the 575 pass point on NCCT\u2019s 200-720 scale, annual recertification with 12 CE hours, and the BLS May 2024 medical-assistant median of $44,200 against NCCT and BLS materials.',
   lastReviewed: '2026-08',

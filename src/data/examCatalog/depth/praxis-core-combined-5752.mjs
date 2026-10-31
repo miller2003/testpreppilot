@@ -7,7 +7,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Teacher licensure & education certifications desk',
     bio: 'This guide is compiled and maintained by our teacher-licensure desk. Praxis tests are administered by ETS and the passing scores are set by each state education agency rather than by ETS itself, so we track the structure and fees from the official ETS Praxis pages and state plainly where you must confirm a state-specific cut score. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Test structure, question counts, timing, fees and retake policy were taken from the official ETS Praxis Core Combined (5752) page and the Study Companions for subtests 5713, 5723 and 5733.',
   lastReviewed: '2026-08',

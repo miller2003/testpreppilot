@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Aquatics, fitness & recreation instructor certifications desk',
     bio: 'This guide is compiled and maintained by our aquatics and recreation-instructor desk. American Red Cross Lifeguarding Instructor course structure, prerequisites, skill assessments, written-exam standard and two-year validity come from Red Cross course documentation and licensed training providers, and we state plainly when a pass rate is not published. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Course prerequisites, skill-assessment components, written-exam standard, practice-teaching requirement and two-year validity were checked against American Red Cross course documentation and licensed provider pages.',
   lastReviewed: '2026-08',

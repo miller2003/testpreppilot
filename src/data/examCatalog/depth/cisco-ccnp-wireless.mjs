@@ -7,7 +7,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This desk covers networking and IT certifications. The most important fact about "CCNP Wireless" is that Cisco retired the standalone credential on 24 February 2020, so we state that plainly and cover the current path — CCNP Enterprise with a wireless concentration — which is what a candidate searching for CCNP Wireless actually sits today. Exam structure, fees and rules come from the vendor certification pages, which are revised and sometimes retired on fixed schedules; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against Cisco\u2019s CCNP Wireless retirement announcement, the CCNP Enterprise certification pages, the 350-401 ENCOR exam page, and BLS OOH Computer Network Architects (SOC 15-1241), May 2024 data.',
   lastReviewed: '2026-08',

@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'English proficiency & international testing desk',
     bio: 'We cover international English-proficiency testing including the IELTS Academic test. Format and fee facts come from IELTS official pages and are revised; wage and education-earnings figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the IELTS Academic format, band scale, fees and delivery against IELTS official pages; verified BLS education-and-earnings data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

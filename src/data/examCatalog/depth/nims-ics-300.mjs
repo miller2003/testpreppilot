@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Emergency management & NIMS desk',
     bio: 'ICS-300 structure and prerequisites come from FEMA Emergency Management Institute official pages and are revised with each course update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the ICS-300 course format, prerequisites, and unit content against FEMA EMI official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

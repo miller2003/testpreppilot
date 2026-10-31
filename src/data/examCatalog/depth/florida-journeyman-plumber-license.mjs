@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Construction trades, plumbing & contractor licensing desk',
     bio: 'This Florida plumber licensing guide is compiled from the Florida Department of Business and Professional Regulation Construction Industry Licensing Board pages, the local journeyman certification structures in Florida counties, and the BLS Occupational Outlook Handbook (May 2024 data). The central fact is stated plainly: Florida does not issue a statewide journeyman plumber license, and the state-level credential is the Certified Plumbing Contractor license issued by DBPR, while journeyman certification is handled locally by counties and municipalities. No Florida authority publishes exam pass rates, and we do not restate private estimates.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the Florida DBPR Construction Industry Licensing Board plumbing pages, the local county journeyman examination structures, and the BLS OOH Plumbers, Pipefitters, and Steamfitters page (May 2024 data).',
   lastReviewed: '2026-08',

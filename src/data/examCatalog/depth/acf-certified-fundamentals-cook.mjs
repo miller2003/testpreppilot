@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Culinary & food-service certifications desk',
     bio: 'This guide is compiled and maintained by our culinary and food-service certifications desk. ACF exam structure, component weights, passing scores, fees, retake rules and the five-year validity period come from the American Culinary Federation\u2019s official Certified Fundamentals Cook handbook and process pages, and we state plainly when a pass rate is not published. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Written and performance exam structure, passing scores, fees, retake rules and the five-year validity period were checked against the ACF Certified Fundamentals Cook handbook and official process pages.',
   lastReviewed: '2026-08',

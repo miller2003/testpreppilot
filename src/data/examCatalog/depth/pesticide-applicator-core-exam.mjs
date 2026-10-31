@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Agricultural & environmental credentialing desk',
     bio: 'Pesticide applicator certification structure comes from state agriculture departments and the EPA, and requirements vary by state and are revised. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the core-exam model and state certification requirements against state agriculture department pages and EPA resources; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

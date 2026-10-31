@@ -155,7 +155,7 @@ const localNuance = st?.localNuance || null;
 
 // Prep hub — exists for every template that has v2 states. Link only then.
 const v2StateCount = Object.values(states).filter((s: any) => s && (s.exam || s.stateFaqs || s.sources)).length;
-const hubHref = `/exams/${exam.templateKey}-license-by-state#prepare`;
+const hubHref = `/exams/${exam.templateKey}-license-by-state/#prepare`;
 
 const showVs = strictestRank != null || feeAbovePct != null || (ownCycle != null && cycleEquals != null) || neighborRows.length > 0;
 const showExam = !!st?.exam;

@@ -6,7 +6,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Commercial driving & transportation certifications desk',
     bio: 'This guide is compiled and maintained by our commercial-driving desk. CDL skills-test structure is set at the federal level by 49 CFR Part 383 and administered by the states, so we state the federal baseline and flag anything a state sets on its own — including pass/fail determination, which is entirely state-set. Entry-Level Driver Training (ELDT) requirements, effective 7 February 2022, also determine who may sit the skills test at all. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code; BLS classifies by job duties rather than by licence class, so the closest official fit for the road test is Heavy and Tractor-trailer Truck Drivers (SOC 53-3032).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the three-part skills test structure, the CLP 14-day waiting rule, and ELDT requirements against 49 CFR Part 383 and FMCSA materials; wage figures against BLS OOH.',
   lastReviewed: '2026-08',

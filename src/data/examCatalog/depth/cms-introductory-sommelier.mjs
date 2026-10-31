@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Food, beverage & hospitality certification desk',
     bio: 'This guide is compiled and maintained by our food-and-beverage desk. Introductory Sommelier exam structure and the 60% pass mark come from the Court of Master Sommeliers, Americas (CMS-A) official examination pages, which we verified directly; the fee range comes from CMS-A pricing on its registration materials. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate. This desk states plainly when a figure — such as a pass rate — is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the 70-question, 45-minute format, the 60% passing standard, the course structure and the CMS-A fee range against the Court of Master Sommeliers Americas official pages.',
   lastReviewed: '2026-08',

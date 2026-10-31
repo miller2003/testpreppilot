@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'College admissions & credit-by-exam desk',
     bio: 'CLEP College Algebra exam structure, the 20-80 score scale and the ACE credit recommendation are verified against the College Board CLEP official page and the American Council on Education (ACE) National Guide entry for the exam. Education-return context comes from BLS data on earnings by education level. This desk states plainly when a figure \u2014 such as a CLEP pass rate \u2014 is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the exam structure (approximately 60 questions in 90 minutes with an on-screen scientific calculator), the 20-80 score scale, the ACE credit-granting score of 50 for 3 semester hours, and the four content domains and their percentages against the College Board CLEP page and the ACE National Guide.',
   lastReviewed: '2026-08',

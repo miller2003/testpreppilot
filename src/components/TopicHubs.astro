@@ -36,7 +36,7 @@ const totalExams = cats.reduce((a: number, c: any) => a + c.total, 0);
   <ul class="hubs-grid">
     {cats.map((c: any) => (
       <li>
-        <a href={`/categories/${c.id}`}>
+        <a href={`/categories/${c.id}/`}>
           <span class="hub-name">{c.name}</span>
           <span class="hub-count">{c.total}</span>
         </a>

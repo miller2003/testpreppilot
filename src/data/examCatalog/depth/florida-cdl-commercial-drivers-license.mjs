@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'FLHSMV & FMCSA commercial licensing desk',
     bio: 'Florida CDL facts are drawn from the Florida Department of Highway Safety and Motor Vehicles (FLHSMV) commercial driver license pages, the federal commercial driver license rules in 49 CFR Part 383, and the FMCSA Training Provider Registry requirements. The passing standard and the knowledge-test structure come from federal rule, and FLHSMV publishes the fee schedule, while no state or federal agency publishes cohort CDL pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the FLHSMV CDL pages, 49 CFR Part 383, the FMCSA ELDT rule, and the BLS OOH Heavy and Tractor-trailer Truck Drivers page (May 2024 data).',
   lastReviewed: '2026-08',

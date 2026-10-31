@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Advanced Placement & college-credit desk',
     bio: 'The AP Computer Science Principles exam structure (question counts, timing, scoring weights) is drawn from the College Board official course and exam description. We verified directly against the College Board\u2019s current exam pages that the Create performance task remains part of the exam through the 2026 administration — contrary to some third-party claims that it had been removed — and we flag when a published change is still on the horizon.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the College Board official AP Computer Science Principles course and exam description (current edition), the College Board exam overview page, and the annual AP Computer Science Principles score distribution report.',
   lastReviewed: '2026-08',

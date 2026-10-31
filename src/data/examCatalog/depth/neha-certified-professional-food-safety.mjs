@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'This desk covers food-safety and hospitality credentials. Exam structure, fees and rules come from the certifying body\'s official pages (NEHA), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the NEHA Certified Professional - Food Safety (CP-FS) program pages and BLS OOH Food Service Managers (SOC 35-2021), May 2024 data.',
   lastReviewed: '2026-08',

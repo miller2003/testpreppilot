@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'College admissions & credit-by-exam desk',
     bio: 'CLEP exam structure, scoring and ACE credit recommendations are verified against the College Board CLEP official pages and the American Council on Education (ACE) National Guide. Education-return context comes from BLS data on earnings by education level. This desk states plainly when a figure — such as a CLEP pass rate — is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Exam format, content weightings, the 20-80 score scale, the ACE credit-granting score of 50 and the 3-semester-hour recommendation were checked against the College Board CLEP page and the ACE National Guide.',
   lastReviewed: '2026-08',

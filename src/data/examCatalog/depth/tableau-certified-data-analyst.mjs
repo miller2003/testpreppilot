@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, data & developer certifications desk',
     bio: 'This guide is compiled and maintained by our technology-certifications desk. Vendor exams in this space are revised frequently, so we track each exam against the vendor\u2019s own certification page and exam guide and state plainly when a figure is not published. Fees, scoring, retake rules and renewal terms come from the vendor\u2019s certification pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Exam structure, timing, passing score and fee verified against the Tableau Certified Data Analyst official exam guide; salary cross-checked against BLS May 2024 data for SOC 15-2051.',
   lastReviewed: '2026-08',

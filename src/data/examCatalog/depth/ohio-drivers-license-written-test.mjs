@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'State licensing & DMV exams desk',
     bio: 'Ohio BMV facts in this guide come from the official bmv.ohio.gov driver-license and fee-schedule pages, including the 40-question knowledge test, the 75 percent passing standard, the 24-hour in-person retake rule, the two-attempt cap on online testing and the $26.50 TIPIC fee; the BMV does not publish pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the Ohio BMV temporary-instruction-permit pages, the BMV driver-license and identification-card fee schedule, and the BLS OOH Delivery Truck Drivers and Driver/Sales Workers page (May 2024 data).',
   lastReviewed: '2026-08',

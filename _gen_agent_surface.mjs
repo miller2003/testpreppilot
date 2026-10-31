@@ -35,7 +35,7 @@ const SITE = 'https://testpreppilot.com';
 const BUILDER = 'TestPrepPilot';
 
 // ── Live counts, read from the catalog (never typed) ────────────────
-const released = allExamsFull.filter((e) => releases[e.slug]);
+const released = allExamsFull.filter((e) => releases[e.slug] && !e.deindexed);
 const fields = new Set(released.map((e) => e.category));
 const newest = Object.values(releases).sort().at(-1);
 const withFee = released.filter((e) => e.record?.examMeta?.fee).length;

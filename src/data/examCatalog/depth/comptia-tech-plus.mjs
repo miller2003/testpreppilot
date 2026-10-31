@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'IT entry-level & emerging-tech certifications desk',
     bio: 'We cover CompTIA certifications. Format and fee facts come from CompTIA official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the CompTIA Tech+ exam structure, scoring and fees against CompTIA official pages; verified BLS IT-support wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

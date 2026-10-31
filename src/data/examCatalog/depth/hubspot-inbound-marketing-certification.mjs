@@ -8,7 +8,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Marketing, growth & business certifications desk',
     bio: 'This guide is compiled and maintained by our marketing-certifications desk. HubSpot Academy certifications are free, online and self-paced, and the exam details — question count, time limit, pass mark, retake window and validity — come from HubSpot Academy\u2019s official pages and HubSpot\u2019s own community guidance. HubSpot has renamed and reorganized its inbound certifications over the years, so we flag that and tell you to confirm the current course page. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against HubSpot Academy\u2019s inbound certification course pages and HubSpot community guidance on the exam, and BLS OOH Marketing Managers (SOC 11-2021), May 2024 data.',
   lastReviewed: '2026-08',

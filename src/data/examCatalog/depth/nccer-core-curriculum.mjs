@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Trades & construction certifications desk',
     bio: 'This guide is compiled and maintained by our construction and trades desk. NCCER program structure, module IDs and the 70% assessment standard come from NCCER\u2019s official curriculum and assessment materials, including the published assessment specification sheets. We state plainly where NCCER does not publish a statistic. Wage figures come from the Bureau of Labor Statistics occupational series named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Module structure, the 70% per-module assessment standard and the registry-based credential system were checked against NCCER curriculum and assessment documentation.',
   lastReviewed: '2026-08',

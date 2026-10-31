@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Insurance producer licensure desk',
     bio: 'The California life and health insurance producer license facts below are drawn from the California Department of Insurance (CDI) producer licensing pages, including the official examination time-and-question chart and the AB 943 prelicensing change effective January 1, 2026; where a fee or rule is not confirmed on the official page, we say so plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation page for Insurance Sales Agents (May 2024 data), cited by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the CDI producer licensing pages (exam time-and-question chart), the AB 943 legislative change, and the BLS OOH Insurance Sales Agents page (May 2024 data).',
   lastReviewed: '2026-08',

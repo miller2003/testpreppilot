@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Aviation & maritime credentials desk',
     bio: 'This desk covers FAA pilot knowledge and practical tests. Exam structure, question counts, time allotments, passing scores and endorsement rules come from the FAA Airman Certification Standards (ACS) and the FAA Airman Knowledge Testing Matrix; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published or has changed, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the IRA knowledge test format (60 questions, 70% passing, endorsement requirements) against the FAA Instrument Rating Airplane ACS and the current FAA Airman Knowledge Testing Matrix; wage context against BLS OOH Airline and Commercial Pilots (SOC 53-2012), May 2024 data.',
   lastReviewed: '2026-08',

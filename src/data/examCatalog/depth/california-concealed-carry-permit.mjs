@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Personal security & firearms licensing desk',
     bio: 'California CCW facts in this guide come from California Penal Code sections 26150-26235 (as amended by SB 2) and county sheriff and police department licensing pages, including the training-hour requirements, the live-fire qualification, the fees and the two-year validity; no pass-rate statistics are published, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code, with an honest note that the CCW is a personal-carry permit rather than a job license.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against California Penal Code 26150-26235 (SB 2), county sheriff CCW pages (San Diego, Ridgecrest) and the BLS OOH Security Guards page (May 2024 data).',
   lastReviewed: '2026-08',

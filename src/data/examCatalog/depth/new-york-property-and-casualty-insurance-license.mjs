@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'State occupational licensing desk',
     bio: 'This guide is compiled and maintained by our state-licensing desk. Exam structure, pre-licensing requirements, fees, fingerprinting, retake rules and renewal terms come from the New York Department of Financial Services (DFS) insurance licensing pages and from the PSI candidate information for the Property and Casualty examination. New York publishes no exam pass-rate statistics, so we state that plainly and report the published 70-percent passing standard and the exam structure instead. Wage figures come from the Bureau of Labor Statistics occupational series named by SOC code, May 2024 data, with the caveat that BLS classifies by job duties rather than by license.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the NY DFS insurance producer licensing requirements, the PSI candidate information for the Property and Casualty insurance exam (17-56), the published DFS pre-licensing and continuing-education rules, and the BLS OOH Insurance Sales Agents page (SOC 41-3021, May 2024).',
   lastReviewed: '2026-08',

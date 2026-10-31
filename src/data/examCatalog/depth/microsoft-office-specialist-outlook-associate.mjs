@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Office productivity & desktop-applications desk',
     bio: 'We cover Microsoft Office Specialist certifications. Format and fee facts come from Microsoft/Certiport official pages and are revised; wage figures come from the BLS occupational series named by code. Microsoft publishes no pass rates for MOS exams, which we state plainly.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the MOS Outlook Associate (MO-400) exam structure, objective groups, scoring and fees against Microsoft Learn and Certiport pages; verified BLS wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

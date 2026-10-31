@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Aviation & unmanned aircraft desk',
     bio: 'FAA Private Pilot knowledge-test structure comes from the FAA Airman Knowledge Testing Matrix, the FAA Airman Certification Standards (ACS), and the FAA Community Advisory that set the current 60-question, 120-minute, 70-percent format, and is revised with each update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the PAR test structure (60 scored questions plus 5 unscored, 120 minutes, 70% passing per the current FAA Airman Knowledge Testing Matrix), the ACS basis, the instructor-endorsement requirement, and the knowledge-test-to-checkride sequence against FAA official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

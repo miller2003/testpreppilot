@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This desk covers Salesforce and other platform certifications. Exam structure, fees, prerequisites and maintenance rules come from the vendor certification pages and the official exam guides, which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Advanced Administrator exam format (60 scored questions, 105 minutes), fee, prerequisite and annual maintenance requirement against the official exam guide and Trailhead; wage context against BLS OOH Software Developers (SOC 15-1252), May 2024 data.',
   lastReviewed: '2026-08',

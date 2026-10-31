@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Environmental & construction-compliance desk',
     bio: 'We cover EPA lead-safety training programs under the Renovation, Repair and Painting rule. Format and fee facts come from EPA official pages and authorized trainers and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the EPA RRP certification requirements and course structure against EPA official pages and 40 CFR 745; verified BLS construction wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

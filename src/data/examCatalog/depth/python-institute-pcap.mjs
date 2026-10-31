@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Programming-language & developer certification desk',
     bio: 'This guide is compiled and maintained by our developer-certifications desk. PCAP exam structure, pricing, validity and the current exam-version status come from the Python Institute (OpenEDG) official certification pages, which we verified directly — including the retirement date of the current exam version, which is exactly the kind of fact a prep guide must not get wrong. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the PCAP-31-03 format (40 questions, 65 minutes, 70% passing), the $295 price, the lifetime validity of 31-03, and the scheduled retirement of 31-03 with the 31-04 successor against the Python Institute official pages.',
   lastReviewed: '2026-08',

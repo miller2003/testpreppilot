@@ -9,7 +9,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Construction & trade licensing desk',
     bio: 'This guide is compiled and maintained by our construction-licensing desk. Florida licenses air conditioning contractors through the Department of Business and Professional Regulation (DBPR) Construction Industry Licensing Board (CILB) under Chapter 489, Part I of the Florida Statutes, and the requirements here — the Class A/B/C structure, the four-year experience bar, the two-exam format, the financial-responsibility rule, insurance and workers\u2019 compensation — come from the CILB program pages and Florida Administrative Code. CILB does not publish pass rates, and we state that plainly rather than inventing a number. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook page for Heating, Air Conditioning, and Refrigeration Mechanics and Installers (SOC 49-9021), May 2024 data, with the caveat that BLS classifies by job duties rather than by credential.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the DBPR CILB air conditioning contractor program materials, Florida Administrative Code Rule 61G4, the Professional Testing/Pearson VUE exam information, and the BLS OOH Heating, Air Conditioning, and Refrigeration Mechanics and Installers page (SOC 49-9021), May 2024 data.',
   lastReviewed: '2026-08',

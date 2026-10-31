@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Personal security & firearms licensing desk',
     bio: 'Ohio CHL facts in this guide come from Ohio Revised Code 2923.125 and county sheriff CCW pages, including the 8-hour training requirement with two hours of live-fire range time, the $67/$77 fee structure, the 45-day decision requirement and the five-year validity; Ohio publishes no approval-rate statistics, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code, with an honest note that the CHL is a personal-carry permit rather than a job license.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against Ohio Revised Code 2923.125, county sheriff CCW pages, the Ohio Attorney General concealed-carry guidance, and the BLS OOH Security Guards page (May 2024 data).',
   lastReviewed: '2026-08',

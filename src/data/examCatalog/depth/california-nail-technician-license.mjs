@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'State occupational licensing desk',
     bio: 'This guide is compiled and maintained by our state-licensing desk. Exam structure, the content outline, fees and renewal terms come from the California Board of Barbering and Cosmetology (BBC) under the Department of Consumer Affairs, from the board\u2019s published fee schedule, and from the PSI candidate information materials for the manicurist written examination. The board publishes no pass-rate statistics, so we state that plainly and report the published 75-percent passing standard and the current content outline instead. Wage figures come from the Bureau of Labor Statistics occupational series named by SOC code, May 2024 data, with the caveat that BLS classifies by job duties rather than by license.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the BBC manicurist examination requirements, the BBC schedule of fees in Article 12 of its regulations, the published PSI candidate handbook for the manicurist exam, and the BLS OOH Manicurists and Pedicurists page (SOC 39-5092, May 2024).',
   lastReviewed: '2026-08',

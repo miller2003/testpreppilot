@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Medical imaging & ARRT certifications desk',
     bio: 'ARRT structure and requirements come from the American Registry of Radiologic Technologists official pages and are revised with each exam update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the ARRT radiography exam structure, passing standard, and requirements against ARRT official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

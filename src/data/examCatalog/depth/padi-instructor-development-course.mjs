@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Recreation, aquatics & dive-instructor certification desk',
     bio: 'This guide is compiled and maintained by our recreation and dive-professional desk. The PADI Instructor Development Course and Instructor Examination structure, prerequisites, components and standards come from PADI course documentation and licensed PADI course directors and dive centres, and we state plainly when a figure such as a published pass rate is not available. The IDC has no direct Bureau of Labor Statistics occupation; where a wage or income is discussed it is described as the industry\u2019s pay structure rather than quoted as a government statistic.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Course structure, prerequisites, the Instructor Examination components, the 75% examination standards, course-fee ranges and the separate PADI examination fees were checked against PADI course documentation and multiple licensed PADI dive-centre pages.',
   lastReviewed: '2026-08',

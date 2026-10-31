@@ -4,6 +4,8 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { releases } from './src/data/examCatalog/release-manifest.mjs';
 import { buildDirectory } from './src/data/examCatalog/index.mjs';
+import { isDeindexed } from './src/data/examCatalog/deindex.mjs';
+import { rankedFields } from './src/data/examCatalog/payRanking.mjs';
 
 // Regenerate the agent-readiness surface on every build.
 //
@@ -40,6 +42,21 @@ const agentSurface = {
 //   · the directory (home) and /explore report the newest release overall
 //   · anything without a real content date emits no lastmod at all
 const directory = buildDirectory();
+// Fields that still have at least one listed guide; the rest render noindex.
+const listedFields = new Set(directory.map((c) => c.id));
+const listedBest = new Set(rankedFields(5).map((f) => f.id));
+// noindex pages must not be submitted: a sitemap entry for a noindex URL is a
+// contradiction Search Console reports, and it wastes the crawl on the very
+// pages we asked Google to drop.
+const isUnlisted = (page) => {
+  const p = new URL(page).pathname;
+  const exam = /^\/exams\/([^/]+)\/?$/.exec(p);
+  if (exam && isDeindexed(exam[1])) return true;
+  const cat = /^\/categories\/([^/]+)\/?$/.exec(p);
+  if (cat && !listedFields.has(cat[1])) return true;
+  const best = /^\/best\/([^/]+)\/?$/.exec(p);
+  return !!(best && !listedBest.has(best[1]));
+};
 const categoryLatest = {};
 let siteLatest = '';
 for (const cat of directory) {
@@ -76,7 +93,8 @@ export default defineConfig({
         !/\/affiliate-disclosure\/?$/.test(page) &&
         !/\/privacy-policy\/?$/.test(page) &&
         !/\/(how-it-works|reviews|contact)\/?$/.test(page) &&
-        !/\/exams\/?$/.test(page),
+        !/\/exams\/?$/.test(page) &&
+        !isUnlisted(page),
       serialize(item) {
         const url = new URL(item.url);
         const p = url.pathname.replace(/\/$/, '') || '/';

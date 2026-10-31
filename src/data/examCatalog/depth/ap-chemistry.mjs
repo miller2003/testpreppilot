@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Advanced Placement & college-credit desk',
     bio: 'The AP Chemistry exam structure (question counts, timing, scoring weights) is drawn from the College Board official AP Chemistry course and exam description, which is revised on a published cycle; the College Board publishes annual AP score distributions for every subject, and we cite that practice. College-credit outcomes and the exam fee are stated as of the current College Board program pages.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the College Board official AP Chemistry course and exam description (current edition) and the annual AP Chemistry score distribution report.',
   lastReviewed: '2026-08',

@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Securities & financial licensing desk',
     bio: 'This desk covers FINRA qualification exams. Exam structure, item counts and passing standards come from the FINRA content-outline documents and qualification-exam pages, which are revised when rules change; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When FINRA does not publish a figure, such as a cohort pass rate, we say so plainly and do not pass off third-party estimates as official data.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Series 99 exam structure and passing standard against the current FINRA Operations Professional exam page and content outline, and wage context against BLS OOH Securities, Commodities, and Financial Services Sales Agents (SOC 41-3031), May 2024 data.',
   lastReviewed: '2026-08',

@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Legal support & administrative certifications desk',
     bio: 'This desk covers administrative and legal-support credentials. Program structure and rules come from the certifying body\'s official pages (NNA, state notary commissions), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the National Notary Association\'s Certified Notary Signing Agent program pages and BLS OOH Real Estate Sales Agents (SOC 41-9022) as the closest-fit occupation, May 2024 data.',
   lastReviewed: '2026-08',

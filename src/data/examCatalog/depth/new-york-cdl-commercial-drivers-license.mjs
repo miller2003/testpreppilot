@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'NYS DMV & FMCSA commercial licensing desk',
     bio: 'New York CDL facts are drawn from the New York State DMV commercial driver license pages, the federal commercial driver license rules in 49 CFR Part 383, and the FMCSA Training Provider Registry requirements. The knowledge-test structure and passing standard come from federal rule, and the DMV publishes the fee schedule, while no state or federal agency publishes cohort CDL pass rates, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the NYS DMV CDL pages, 49 CFR Part 383, the FMCSA ELDT rule, and the BLS OOH Heavy and Tractor-trailer Truck Drivers page (May 2024 data).',
   lastReviewed: '2026-08',

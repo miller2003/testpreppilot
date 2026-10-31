@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, IT & cybersecurity certifications desk',
     bio: 'This desk covers Microsoft role-based certifications. Exam structure, fees, scoring and retirement dates come from the Microsoft Learn official pages, which are revised regularly — Microsoft retires and replaces exams on a published schedule, and studying a retiring exam without a plan is the most common way candidates waste money here. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the PL-200 exam format, scoring, fee, one-year validity and the August 2026 retirement date against Microsoft Learn official pages; wage context against BLS OOH Software Developers (SOC 15-1252), May 2024 data.',
   lastReviewed: '2026-08',

@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Medical licensure & graduate-medical-education desk',
     bio: 'We cover USMLE examinations for physician licensure. Step 1 format, the May 2026 block-structure change, the pass/fail reporting change, fees and attempt limits come from the USMLE program official pages (NBME, FSMB and usmle.org). Wage figures come from the BLS occupational series named by code, and we state plainly when a figure \u2014 such as a published Step 1 numeric score \u2014 is not reported.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Step 1 format (up to 280 multiple-choice items in an 8-hour session, in seven 60-minute blocks before 14 May 2026 and fourteen 30-minute blocks on or after that date), pass/fail reporting since January 2022, the $695 fee for 2026, and the BLS May 2024 physician median of $239,200+ against usmle.org and bls.gov.',
   lastReviewed: '2026-08',

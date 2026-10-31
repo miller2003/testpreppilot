@@ -6,7 +6,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Nursing licensure desk',
     bio: 'California RN facts in this guide come from the California Board of Registered Nursing (BRN) licensing pages and its published fee schedule, the NCSBN NCLEX-RN exam materials, and Pearson VUE registration information, which are the official sources for the application, fees, exam format and renewal cycle. The BRN does not publish a single official pass rate for the NCLEX in California beyond program-level data, and NCSBN publishes pass-rate statistics nationally, so we report the structure honestly rather than inventing a figure. Wage figures come from the BLS Occupational Outlook Handbook occupation named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the California BRN licensing and fee schedule pages, the NCSBN NCLEX-RN test plan, Pearson VUE registration materials, and the BLS OOH Registered Nurses page (SOC 29-1141, May 2024).',
   lastReviewed: '2026-08',

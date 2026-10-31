@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud, AI & software certifications desk',
     bio: 'The AWS Generative AI Developer - Professional exam structure and availability are drawn from the AWS official certification announcement (November 2025) and the AWS exam guide, which are revised on AWS\u2019s published cycle; AWS does not publish pass rates, and we state that plainly. Wage figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024). Where AWS or BLS does not publish a figure, we say so rather than estimating.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the AWS certification portfolio announcement (November 2025) covering the Generative AI Developer - Professional beta launch, and the BLS OOH Software Developers page (May 2024 data).',
   lastReviewed: '2026-08',

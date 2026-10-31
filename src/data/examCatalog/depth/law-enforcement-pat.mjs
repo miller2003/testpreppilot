@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Public safety & law enforcement hiring desk',
     bio: 'This desk covers law enforcement hiring and academy standards. Physical ability test (PAT) components and standards come from the individual agency pages — state police and large municipal departments publish their own course diagrams, scoring charts and pass/fail times — and there is deliberately no single national standard, which is the first thing any candidate should understand. Wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified PAT component mixes and standards across published state and municipal agency pages (NY State Police, Pennsylvania MPOETC, Indiana ILEA, Fort Worth PD) and wage context against BLS OOH Police and Detectives (SOC 33-3051), May 2024 data.',
   lastReviewed: '2026-08',

@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Occupational safety & health training desk',
     bio: 'This desk covers OSHA Training Institute courses. Course structure, contact hours and completion requirements come from the OSHA Training Institute Education Center course pages, which are administered by regional centers rather than a single national body; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When no national pass rate or fee is published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the OSHA 3115 course structure, contact hours and completion requirements against multiple OSHA Training Institute Education Center listings, and wage context against BLS OOH Occupational Health and Safety Specialists and Technicians, May 2024 data.',
   lastReviewed: '2026-08',

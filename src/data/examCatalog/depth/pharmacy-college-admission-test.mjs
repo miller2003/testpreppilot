@@ -6,7 +6,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'College admissions & graduate-health assessments desk',
     bio: 'This guide is compiled and maintained by our admissions desk. PCAT retirement dates come from Pearson and the American Association of Colleges of Pharmacy (AACP) announcements, which we verified directly. Wage and education data come from the BLS series named by SOC code. Because the PCAT no longer exists, this desk states that plainly and does not sell the false impression that it can still be taken; legacy format details are labelled as historical.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the Pearson retirement notice (PCAT retired January 10, 2024; transcripts and score reports no longer available after December 2, 2024) and the AACP announcement, and matched the wage data to BLS Occupational Outlook Handbook May 2024 figures.',
   lastReviewed: '2026-08',

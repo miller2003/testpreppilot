@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Workplace safety & electrical training desk',
     bio: 'This guide is compiled by our workplace safety and electrical training desk. NFPA 70E is a consensus safety standard, not a test, and the training built on it is delivered by many providers with their own assessments, so we distinguish clearly between what the standard requires, what NFPA itself offers, and what is employer- or provider-specific. Course structure and certification figures come from NFPA\u2019s official training and certification pages. Wage figures come from the Bureau of Labor Statistics occupational series for the job, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Course structure, assessment model, and retraining requirements were verified against NFPA\u2019s official 70E training pages and the NFPA certification program pages for CEST and CESCP.',
   lastReviewed: '2026-08',

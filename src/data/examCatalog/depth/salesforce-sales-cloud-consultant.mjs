@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud-platform & Salesforce certification desk',
     bio: 'This guide is compiled and maintained by our platform-certifications desk. Sales Cloud Consultant exam structure, scoring, fees and the administrator prerequisite come from the Salesforce exam guide and the official Trailhead certification pages, which we verified directly. Salesforce publishes no pass rates, and we state that plainly. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certification.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the CRT-251 format (60 scored questions plus up to 5 unscored, 105 minutes), the 68% passing score, the $200 fee, and the Salesforce Administrator prerequisite against the Salesforce exam guide.',
   lastReviewed: '2026-08',

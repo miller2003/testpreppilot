@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Alcohol responsibility & hospitality certifications desk',
     bio: 'Ohio alcohol-server facts in this guide come from the Ohio Division of Liquor Control and the Ohio Investigative Unit Alcohol Server Knowledge (ASK) program, including the voluntary training structure, the approved programs, the age gates and the penalty-mitigation benefit; the state publishes no pass rates and administers no state exam, which we state plainly. Salary figures come from the BLS Occupational Outlook Handbook (May 2024) named by SOC code.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the Ohio Division of Liquor Control pages, the Ohio Investigative Unit ASK program, approved provider materials, and the BLS OOH Bartenders page (May 2024 data).',
   lastReviewed: '2026-08',

@@ -4,7 +4,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'NYSDOH nurse aide registry desk',
     bio: 'New York CNA facts are drawn from the New York State Department of Health (NYSDOH) nurse aide program pages, the NYS Nursing Home Nurse Aide Registry (NAR), and the Prometric New York nurse aide candidate materials. The NYSDOH publishes the 60-question, 90-minute written format, the five-skill clinical evaluation, and the fee schedule, while no official cohort pass rates are published, and we state that plainly. Salary figures come from the BLS Occupational Outlook Handbook occupation pages named by SOC code (May 2024 data).',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Reviewed against the NYSDOH nurse aide registry pages, the Prometric NY nurse aide candidate bulletin, and the BLS OOH Nursing Assistants page (May 2024 data).',
   lastReviewed: '2026-08',

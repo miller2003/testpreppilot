@@ -7,7 +7,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Health, fitness & recreation certifications desk',
     bio: 'This guide is compiled and maintained by our fitness-certifications desk. NASM revises the CPT curriculum and exam blueprint periodically, so we track the objectives by their current published domain structure and we state plainly when a number is a NASM-published figure versus an industry estimate. Fees, format, scoring and retake rules come from the National Academy of Sports Medicine certification pages. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate — a CPT holder may work under several BLS occupations.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Exam domains, weights, format, fees and retake schedule were taken from NASM’s current Certified Personal Trainer exam information and cross-checked against the NASM-CPT candidate handbook.',
   lastReviewed: '2026-08',

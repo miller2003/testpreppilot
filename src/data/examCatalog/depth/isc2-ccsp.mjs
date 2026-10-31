@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Cloud security certifications desk',
     bio: 'ISC2 certification structure comes from the ISC2 official pages and is revised with each exam update. Wage figures come from the BLS OEWS series named by code. This desk states plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the CCSP exam structure, domains, and requirements against ISC2 official pages; wages against BLS OEWS May 2024.',
   lastReviewed: '2026-08',

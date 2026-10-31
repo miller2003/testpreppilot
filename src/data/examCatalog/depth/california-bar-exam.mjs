@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Legal education & bar exam desk',
     bio: 'This guide is compiled and maintained by our legal-education desk. The California Bar Examination is administered by the State Bar of California, and we take the exam structure, passing score, fees and published pass-rate statistics from the State Bar\u2019s own pages and news releases, including the February 2026 results announced 1 May 2026. The two-day General Bar Examination structure — five essays and a performance test on day one, 200 Multistate Bar Examination questions on day two — is as described by the State Bar; California does not use the Uniform Bar Examination and writes its own essay and performance-test components, and we flag the State Bar Board of Trustees\u2019 May 2026 recommendation that the California Supreme Court adopt the NCBE NextGen Uniform Bar Exam beginning in July 2028 as a forward-looking change that is not yet in effect. The passing score of 1390 on the 2000-point combined scale and the fee schedule come from the State Bar. Wage figures come from the Bureau of Labor Statistics occupation Lawyers (SOC 23-1011), named by SOC code, with the caveat that BLS classifies by job duties rather than by admission status.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'The two-day format, the 1390 passing score, the exam application fee, and the February 2026 and July 2025 pass-rate statistics were taken from the State Bar of California\u2019s bar exam pages and its published results announcements.',
   lastReviewed: '2026-08',

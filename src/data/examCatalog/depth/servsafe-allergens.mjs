@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Food safety & hospitality certifications desk',
     bio: 'We cover the National Restaurant Association ServSafe program. Format and fee facts come from ServSafe official pages and are revised; wage figures come from the BLS occupational series named by code. We state plainly when a figure is not published.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the ServSafe Allergens course structure and exam against ServSafe official pages; verified BLS food-service wage data. Reviewed 2026-08.',
   lastReviewed: '2026-08',

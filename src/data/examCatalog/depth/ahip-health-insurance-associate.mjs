@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Insurance & healthcare coverage desk',
     bio: 'This desk covers insurance and Medicare-related credentials. Exam structure and certification requirements come from AHIP\'s published program pages, which are revised annually around each Annual Election Period; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against AHIP\'s certification program pages, Medicare Advantage and Part D product training requirements, and BLS OOH Insurance Sales Agents (SOC 41-3021), May 2024 data.',
   lastReviewed: '2026-08',

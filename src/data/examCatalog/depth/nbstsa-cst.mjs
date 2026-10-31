@@ -5,7 +5,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Allied-health certification desk',
     bio: 'This guide is compiled and maintained by our allied-health desk. CST exam structure, fees, eligibility and renewal terms come from the National Board of Surgical Technology and Surgical Assisting (NBSTSA) official pages and the 2025 CST Exam Application; pass rates come from NBSTSA\'s published annual Certification Data reports, the authoritative source. Wage figures come from the BLS occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified the CST format (175 questions, 150 scored plus 25 unscored, 4 hours), the NBSTSA first-time pass rates for 2021-2025, the exam fee structure, and the 4-year renewal with 60 CEUs against NBSTSA\'s official publications.',
   lastReviewed: '2026-08',

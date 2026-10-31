@@ -7,7 +7,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Project management & business certifications desk',
     bio: 'This guide is compiled and maintained by our project-management desk. The PMP is owned by the Project Management Institute (PMI) and its exam structure, domain weights, fees and renewal terms come from PMI’s own certification pages and Exam Content Outline (ECO). Vendor exams in this space are revised on a multi-year cycle, and PMI does change the ECO and the exam experience between cycles, so we state plainly which version a figure belongs to and what changed at the cutover. Wage figures come from the Bureau of Labor Statistics occupational series closest to the role, named by SOC code, with the caveat that BLS classifies by job duties rather than by certificate.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Exam structure, domain weights, fees and renewal terms were taken from PMI’s certification pages and the current PMP Exam Content Outline, and checked against the July 2026 exam update announced by PMI.',
   lastReviewed: '2026-08',

@@ -3,7 +3,7 @@ const data = {
     name: 'TestPrepPilot Editorial Board',
     title: 'Developer & systems certifications desk',
     bio: 'This desk covers developer and IT certifications. Exam structure, fees and rules come from the certifying body\'s official pages (Python Institute, LPI, AHIMA), which are revised regularly; wage figures come from the Bureau of Labor Statistics Occupational Outlook Handbook series named by SOC code. When a figure is not published, we say so plainly rather than guessing.',
-    url: '/editorial-policy'
+    url: '/editorial-policy/'
   },
   reviewedBy: 'Verified against the Python Institute\'s PCEP exam page and exam syllabus (PCEP-30-02), and BLS OOH Software Developers (SOC 15-1252), May 2024 data.',
   lastReviewed: '2026-08',
