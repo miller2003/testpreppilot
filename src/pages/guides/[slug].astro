@@ -2,7 +2,10 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BreadcrumbNav from '../../components/BreadcrumbNav.astro';
 import TopicHubs from '../../components/TopicHubs.astro';
-import { guideArticles, getGuideBySlug } from '../../data/guides';
+import MometrixPrep from '../../components/MometrixPrep.astro';
+import InlineDisclosure from '../../components/InlineDisclosure.astro';
+import { guideArticles } from '../../data/guides';
+import { mometrixFor } from '../../data/mometrix.mjs';
 import { buildTitle, clampDesc } from '../../lib/seoTitle';
 
 export function getStaticPaths() {
@@ -14,6 +17,11 @@ export function getStaticPaths() {
 
 const { article } = Astro.props;
 const SITE = 'https://testpreppilot.com';
+const dateModified = article.dateModifiedISO || article.dateISO;
+// The affiliate block only renders when the exam slug has a mapped product,
+// so the disclosure line follows the same condition.
+const prep = article.prep && mometrixFor(article.prep.examSlug) ? article.prep : undefined;
+const LETTERS = ['A', 'B', 'C', 'D', 'E'];
 const canonicalUrl = new URL(`/guides/${article.slug}/`, Astro.site || SITE).toString();
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
@@ -37,7 +45,7 @@ const articleSchema = {
   author: { '@id': `${SITE}/#editorial-board` },
   publisher: { '@id': `${SITE}/#organization` },
   datePublished: article.dateISO,
-  dateModified: article.dateISO,
+  dateModified,
   about: {
     '@type': 'Thing',
     name: article.category,
@@ -61,12 +69,12 @@ const faqSchema = {
 ---
 
 <BaseLayout
-  title={buildTitle(article.title, [' — TestPrepPilot Guides', ' — Guides', ''])}
+  title={buildTitle(article.metaTitle || article.title, [' — TestPrepPilot Guides', ' — Guides', ''])}
   description={clampDesc(article.description, 157)}
   canonical={canonicalUrl}
   ogType="article"
   articlePublishedTime={article.dateISO}
-  articleModifiedTime={article.dateISO}
+  articleModifiedTime={dateModified}
 >
   {/* BreadcrumbNav emits the page's single BreadcrumbList JSON-LD itself. */}
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
@@ -84,25 +92,81 @@ const faqSchema = {
         <span class="dot" aria-hidden="true">•</span>
         <span>{article.readTime}</span>
       </div>
+      {prep && <InlineDisclosure />}
     </header>
 
     <main class="article-body">
-      {article.sections.map((section) => (
-        <section class="article-section">
-          <h2>{section.heading}</h2>
-          {section.paragraphs.map((p) => <p>{p}</p>)}
-          {section.list && (
-            <ul class="article-list">
-              {section.list.map((item) => (
-                <li>
-                  <strong>{item.title}.</strong> {item.text}
-                </li>
-              ))}
-            </ul>
+      {article.sections.map((section, i) => (
+        <Fragment>
+          <section class="article-section">
+            <h2>{section.heading}</h2>
+            {section.paragraphs.map((p) => <p>{p}</p>)}
+            {section.list && section.ordered && (
+              <ol class="article-list article-steps">
+                {section.list.map((item) => (
+                  <li>
+                    <strong>{item.href ? <a href={item.href}>{item.title}</a> : item.title}.</strong> {item.text}
+                  </li>
+                ))}
+              </ol>
+            )}
+            {section.list && !section.ordered && (
+              <ul class="article-list">
+                {section.list.map((item) => (
+                  <li>
+                    <strong>{item.href ? <a href={item.href}>{item.title}</a> : item.title}.</strong> {item.text}
+                  </li>
+                ))}
+              </ul>
+            )}
+            {section.table && (
+              <div class="table-wrap">
+                <table class="article-table">
+                  {section.table.caption && <caption>{section.table.caption}</caption>}
+                  <thead>
+                    <tr>{section.table.head.map((h) => <th scope="col">{h}</th>)}</tr>
+                  </thead>
+                  <tbody>
+                    {section.table.rows.map((row) => (
+                      <tr>
+                        {row.map((cell, c) => (c === 0 ? <th scope="row">{cell}</th> : <td>{cell}</td>))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                {section.table.note && <p class="table-note">{section.table.note}</p>}
+              </div>
+            )}
+            {section.callout && <p class="callout">{section.callout}</p>}
+          </section>
+          {prep && i === prep.afterSection && (
+            <MometrixPrep slug={prep.examSlug} examName={prep.examName} placement="guide-inline" />
           )}
-          {section.callout && <p class="callout">{section.callout}</p>}
-        </section>
+        </Fragment>
       ))}
+
+      {article.practice && (
+        <section class="article-section practice" id="practice">
+          <h2>{article.practice.heading}</h2>
+          <p>{article.practice.intro}</p>
+          <ol class="practice-list">
+            {article.practice.items.map((item, n) => (
+              <li class="practice-item">
+                <p class="practice-q"><span class="practice-num">Q{n + 1}</span> {item.q}</p>
+                <ul class="practice-options">
+                  {item.options.map((o, k) => (
+                    <li><span class="practice-letter">{LETTERS[k]}.</span> {o}</li>
+                  ))}
+                </ul>
+                <details class="practice-answer">
+                  <summary>Show answer</summary>
+                  <p><strong>Answer: {LETTERS[item.answer]}.</strong> {item.why}</p>
+                </details>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
 
       {/* GEO rule 2.5: FAQ at the bottom, one concrete question per entry.
           The FAQPage JSON-LD above is generated from this same array. */}
@@ -117,6 +181,22 @@ const faqSchema = {
           ))}
         </div>
       </section>
+
+      {prep && (
+        <MometrixPrep slug={prep.examSlug} examName={prep.examName} variant="compact" placement="guide-summary" />
+      )}
+
+      {article.sources && article.sources.length > 0 && (
+        <section class="article-sources" id="sources">
+          <h2>Sources</h2>
+          <p>Checked against these primary sources in {article.dateDisplay}. Agencies change their rules without notice, so confirm anything you are about to pay for or sign on the official page.</p>
+          <ul>
+            {article.sources.map((s) => (
+              <li><a href={s.href} rel="noopener" target="_blank">{s.label}</a></li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <aside class="related-panel">
         <h3>Keep reading</h3>
@@ -153,6 +233,36 @@ const faqSchema = {
   .article-list { padding-left: 1.25rem; margin: 0 0 1.35rem; }
   .article-list li { font-family: var(--font-body); font-size: var(--fs-prose); line-height: 1.7; margin-bottom: 0.85rem; color: var(--ink); }
   .article-list strong { color: var(--ink); }
+  .article-list a, .article-section p a { color: var(--primary); text-underline-offset: 3px; }
+  .article-steps { padding-left: 1.5rem; }
+  .article-steps li::marker { font-family: var(--font-mono); font-weight: 700; color: var(--primary); }
+
+  /* Tables scroll inside their own box so the page never scrolls sideways. */
+  .table-wrap { margin: 0 0 1.5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .article-table { width: 100%; min-width: 520px; border-collapse: collapse; font-family: var(--font-body); font-size: 0.98rem; line-height: 1.55; }
+  .article-table caption { text-align: left; font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); padding-bottom: 0.6rem; }
+  .article-table th, .article-table td { text-align: left; vertical-align: top; padding: 0.7rem 0.85rem; border-bottom: 1px solid var(--line); color: var(--ink); }
+  .article-table thead th { font-family: var(--font-heading); font-size: 0.95rem; border-bottom: 2px solid var(--ink); }
+  .article-table tbody th { font-weight: 600; }
+  .table-note { font-size: 0.88rem !important; color: var(--muted) !important; margin: 0.6rem 0 0 !important; line-height: 1.6 !important; }
+
+  /* Practice questions */
+  .practice-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem; }
+  .practice-item { border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); padding: 1.15rem 1.35rem; }
+  .practice-q { margin: 0 0 0.75rem !important; font-weight: 600; }
+  .practice-num { font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary); margin-right: 0.35rem; }
+  .practice-options { list-style: none; padding: 0; margin: 0 0 0.75rem; display: flex; flex-direction: column; gap: 0.35rem; }
+  .practice-options li { font-family: var(--font-body); line-height: 1.55; color: var(--ink); }
+  .practice-letter { font-family: var(--font-mono); font-weight: 700; margin-right: 0.3rem; }
+  .practice-answer summary { cursor: pointer; font-family: var(--font-mono); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--primary); font-weight: 700; min-height: 44px; display: flex; align-items: center; }
+  .practice-answer p { margin: 0.4rem 0 0 !important; color: var(--muted) !important; font-size: 1rem !important; line-height: 1.7 !important; }
+
+  /* Sources */
+  .article-sources { margin-top: 2.5rem; padding-top: 1.75rem; border-top: 1px solid var(--line); }
+  .article-sources h2 { font-family: var(--font-heading); font-size: var(--fs-h3); margin: 0 0 0.75rem; color: var(--ink); }
+  .article-sources p { color: var(--muted); font-size: 0.95rem; line-height: 1.65; margin: 0 0 0.85rem; }
+  .article-sources ul { margin: 0 0 1.5rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem; }
+  .article-sources a { color: var(--primary); font-size: 0.95rem; overflow-wrap: anywhere; }
 
   .callout {
     background: var(--cream);

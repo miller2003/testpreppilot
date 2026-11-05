@@ -3,16 +3,61 @@
 // with no placeholder links. Bodies are structured so the template stays
 // declarative and the prose stays easy to maintain.
 
+import { jobEntryGuides } from './guidesJobEntry';
+
 export interface GuideListItem {
   title: string;
   text: string;
+  /** Optional internal link for the item title (e.g. the exam page it describes). */
+  href?: string;
+}
+
+export interface GuideTable {
+  caption?: string;
+  head: string[];
+  rows: string[][];
+  note?: string;
 }
 
 export interface GuideSection {
   heading: string;
   paragraphs: string[];
   list?: GuideListItem[];
+  /** Render `list` as a numbered sequence (steps of a process). */
+  ordered?: boolean;
+  table?: GuideTable;
   callout?: string;
+}
+
+/** An editor-written practice item. Never a live or recalled exam question. */
+export interface GuidePracticeItem {
+  q: string;
+  options: string[];
+  /** Zero-based index into `options`. */
+  answer: number;
+  why: string;
+}
+
+export interface GuidePractice {
+  heading: string;
+  intro: string;
+  items: GuidePracticeItem[];
+}
+
+/**
+ * Affiliate study-material block (MometrixPrep). `examSlug` must be a key in
+ * scripts/mometrix/exam-map.mjs; the block renders nothing when it is not.
+ */
+export interface GuidePrep {
+  examSlug: string;
+  examName: string;
+  /** Zero-based section index the full block renders after. */
+  afterSection: number;
+}
+
+export interface GuideSource {
+  label: string;
+  href: string;
 }
 
 export interface GuideRelated {
@@ -42,9 +87,19 @@ export interface GuideArticle {
   // JSON-LD from the same array, so the structured data can never disagree
   // with the visible text. Answers must stay grounded in the article body.
   faqs: GuideFaq[];
+  /** Set when the guide was revised after first publication. */
+  dateModifiedISO?: string;
+  /** <title> override (≤60 chars) when the H1 is too long for the SERP. */
+  metaTitle?: string;
+  prep?: GuidePrep;
+  practice?: GuidePractice;
+  /** Primary sources the facts were checked against, listed at the end. */
+  sources?: GuideSource[];
+  /** Exam pages that should link back to this guide (GuideLink component). */
+  examSlugs?: string[];
 }
 
-export const guideArticles: GuideArticle[] = [
+const coreGuides: GuideArticle[] = [
   {
     slug: 'study-plan-working-full-time',
     title: 'How to Build a Realistic Study Plan While Working Full-Time',
@@ -292,6 +347,14 @@ export const guideArticles: GuideArticle[] = [
   },
 ];
 
+// Job-entry hiring guides first: they are the ones the hub should lead with.
+export const guideArticles: GuideArticle[] = [...jobEntryGuides, ...coreGuides];
+
 export function getGuideBySlug(slug: string): GuideArticle | undefined {
   return guideArticles.find((a) => a.slug === slug);
+}
+
+/** Guides that name this exam slug in `examSlugs`. */
+export function guidesForExam(examSlug: string): GuideArticle[] {
+  return guideArticles.filter((a) => a.examSlugs?.includes(examSlug));
 }

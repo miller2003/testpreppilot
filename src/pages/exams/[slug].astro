@@ -8,6 +8,7 @@ import AuthorByline from '../../components/AuthorByline.astro';
 import RelatedExams from '../../components/RelatedExams.astro';
 import SidebarTOC from '../../components/SidebarTOC.astro';
 import MometrixPrep from '../../components/MometrixPrep.astro';
+import GuideLink from '../../components/GuideLink.astro';
 import StateExamSections from '../../components/StateExamSections.astro';
 import { mometrixFor } from '../../data/mometrix.mjs';
 import { depthFor, depthSections } from '../../data/examCatalog/examDepth.mjs';
@@ -1074,6 +1075,9 @@ const articleSchema = {
 
       {/* ── NATIONAL: study materials (Mometrix affiliate) ──── */}
       {mode === 'national' && hasPrep && <MometrixPrep slug={exam.slug} examName={exam.name} placement="exam-inline" />}
+
+      {/* Editorial guide that covers this exam's whole hiring process, if any. */}
+      {mode === 'national' && <GuideLink slug={exam.slug} />}
 
       {/* ── NATIONAL: costs & timeline ──────────────────────── */}
       {mode === 'national' && (costs || natTimeline.length > 0) && (
